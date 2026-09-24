@@ -1,0 +1,66 @@
+{
+  "schema": "real2sim.part-observation/1",
+  "source_image": "inputs/utility_room_original.jpg",
+  "source_sha256": "dfe25afbfb885ae9bc377691dd18ebd4259ffa72917ca725e3809ef40624c29c",
+  "image_size": [1702, 1276],
+  "roi": [600, 540, 880, 765],
+  "revision_reason": "Prior independent corner backprojections did not preserve furniture topology. Re-observed original crop; rear chair posts belong to rear seat corners, not the front edge. No averaging of independent foot rays is allowed.",
+  "targets": [
+    {
+      "entity": "table",
+      "category": "trestle_table",
+      "parts": ["top", "leg_near_left", "leg_near_right", "leg_far_left", "leg_far_right", "cross_near", "cross_far", "long_stretcher", "brace_near", "brace_far"],
+      "interpretation": "Rectangular thin gray top on two wooden end trestles, two legs per trestle; lower cross rails and a longitudinal stretcher. Exact hidden mortises and rear bracing are hypotheses.",
+      "constraints": ["rectangular top", "parallel end trestles", "continuous load path from top to four feet", "stretcher joins end cross rails", "single rigid local frame"],
+      "observations": [
+        {"id":"t_top_0","landmark":"top_0","uv":[615,576],"visibility":"observed","sigma_px":4},
+        {"id":"t_top_1","landmark":"top_1","uv":[740,548],"visibility":"observed","sigma_px":4},
+        {"id":"t_top_2","landmark":"top_2","uv":[849,557],"visibility":"observed","sigma_px":4},
+        {"id":"t_top_3","landmark":"top_3","uv":[716,596],"visibility":"observed","sigma_px":4},
+        {"id":"t_foot_0","landmark":"foot_0","uv":[638,724],"visibility":"observed","sigma_px":4},
+        {"id":"t_foot_3","landmark":"foot_3","uv":[720,747],"visibility":"observed","sigma_px":4}
+      ],
+      "uncertain": ["far feet partly hidden by chairs and rails; not used as measured landmarks", "underside diagonal brace arrangement partly occluded", "absolute dimensions inherit ceiling-height prior"]
+    },
+    {
+      "entity":"chair_near",
+      "category":"wooden_chair",
+      "parts":["seat_board","pad","front_left_leg","front_right_leg","rear_left_leg","rear_right_leg","front_apron","back_apron","left_apron","right_apron","back_left_post","back_right_post","back_rail"],
+      "interpretation":"Four legs and perimeter seat frame; two rear posts continue above the rear seat edge to a bowed low back rail. The visible rail extends forward at its ends; no separate armrests are inferred.",
+      "constraints":["rectangular seat and coherent rigid frame","rear posts on rear seat edge only","four feet on floor","pad supported by seat board","rear rail connected to both posts"],
+      "observations":[
+        {"id":"n_seat_0","landmark":"seat_0","uv":[766,639],"visibility":"observed","sigma_px":4},
+        {"id":"n_seat_1","landmark":"seat_1","uv":[801,624],"visibility":"partial","sigma_px":7},
+        {"id":"n_seat_2","landmark":"seat_2","uv":[862,640],"visibility":"observed","sigma_px":4},
+        {"id":"n_seat_3","landmark":"seat_3","uv":[827,655],"visibility":"observed","sigma_px":4},
+        {"id":"n_foot_0","landmark":"foot_0","uv":[774,723],"visibility":"observed","sigma_px":4},
+        {"id":"n_foot_1","landmark":"foot_1","uv":[808,700],"visibility":"partial","sigma_px":7},
+        {"id":"n_foot_2","landmark":"foot_2","uv":[861,715],"visibility":"observed","sigma_px":4},
+        {"id":"n_foot_3","landmark":"foot_3","uv":[829,736],"visibility":"observed","sigma_px":4},
+        {"id":"n_back_post_2","landmark":"back_post_2","uv":[858,598],"visibility":"observed","sigma_px":5},
+        {"id":"n_back_post_3","landmark":"back_post_3","uv":[826,607],"visibility":"observed","sigma_px":5}
+      ],
+      "occlusion":[{"front":"table","back":"chair_near","region":"left tip of back rail overlaps projected table stretcher; projected overlap is not a physical connection"}],
+      "uncertain":["bowed back-rail curvature and hidden joinery estimated","front-right foot partly shadowed","green pad interpreted as foam, material unmeasured"]
+    },
+    {
+      "entity":"chair_far",
+      "category":"wooden_chair",
+      "parts":["seat_board","pad","front_left_leg","front_right_leg","rear_left_leg","rear_right_leg","front_apron","back_apron","left_apron","right_apron","back_left_post","back_right_post","back_rail"],
+      "interpretation":"Same apparent furniture family as near chair, opposite facing. Table occludes much of seat frame and some feet; hidden connections must remain plausible without being claimed observed.",
+      "constraints":["same width/depth/seat/back heights as near chair within shared family assumption","rear posts support back rail","four feet on floor","opposite approximate facing to near chair"],
+      "observations":[
+        {"id":"f_seat_0","landmark":"seat_0","uv":[629,611],"visibility":"observed","sigma_px":5},
+        {"id":"f_seat_1","landmark":"seat_1","uv":[672,600],"visibility":"partial","sigma_px":7},
+        {"id":"f_seat_2","landmark":"seat_2","uv":[710,612],"visibility":"partial","sigma_px":7},
+        {"id":"f_seat_3","landmark":"seat_3","uv":[663,626],"visibility":"observed","sigma_px":5},
+        {"id":"f_foot_0","landmark":"foot_0","uv":[627,682],"visibility":"observed","sigma_px":5},
+        {"id":"f_back_post_0","landmark":"back_post_0","uv":[629,568],"visibility":"observed","sigma_px":5},
+        {"id":"f_back_post_1","landmark":"back_post_1","uv":[669,561],"visibility":"observed","sigma_px":5}
+      ],
+      "occlusion":[{"front":"table","back":"chair_far","region":"top of seat and most inner leg connections"}],
+      "uncertain":["three feet not used as observed position constraints","same furniture family is a structural prior, no exact SKU confirmed"]
+    }
+  ],
+  "acceptance_before_fit":{"landmark_median_px":9,"landmark_max_px":18,"joint_tolerance_m":0.008,"floor_tolerance_m":0.004,"unexpected_interpenetration_tolerance_m":0.002,"requires_manual_source_and_multiview_review":true,"independent_reality_accuracy":false}
+}

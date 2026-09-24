@@ -1,0 +1,11 @@
+{
+  "branch": "A",
+  "validation_attempt": 4,
+  "sources": {
+    "scene.blend": "d12a7047f8263ca4201d4470d813f45826a980b21edb66fb19431261f5ff072a",
+    "scene.glb": "c480c5fb3d388a3bf4919264b09f6db5d8b16bdefefe320ba31f6dc6b3073b1d",
+    "scene.usdc": "4f15c7df1b4b1a278813806a7476d471aebf3f50f490e705eafddd545f4b48eb",
+    "scene_dynamic.xml": "e8d96abb877d1b959b164783f496c7a17ef0baf72d10660b78e512f3d621b86b",
+    "authority_geometry_audit.json": "34fc5d593554423b38995d4b01158b3a1a922955dc25c2a1b4ceef9d26bd7f80"
+  }
+}

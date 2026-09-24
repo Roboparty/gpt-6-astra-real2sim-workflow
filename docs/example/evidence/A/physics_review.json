@@ -1,0 +1,99 @@
+{
+  "decision": "pass",
+  "model_version": 4,
+  "qa_directory": "qa/A/0002",
+  "checks": {
+    "reference_pose": {
+      "status": "pass",
+      "evidence": [
+        "physics_setup.json",
+        "lock_audit.json",
+        "reimport_glb.json",
+        "reimport_usd.json"
+      ]
+    },
+    "limits_or_strain": {
+      "status": "pass",
+      "evidence": [
+        "loading_test_audit.json",
+        "loading_observations.json"
+      ]
+    },
+    "contact": {
+      "status": "pass",
+      "evidence": [
+        "loading_test_audit.json"
+      ]
+    },
+    "solver_stability": {
+      "status": "pass",
+      "evidence": [
+        "loading_test_audit.json"
+      ]
+    },
+    "actual_simulation": {
+      "status": "pass",
+      "evidence": [
+        "dynamics_demo.mp4",
+        "dynamics_start.png",
+        "dynamics_mid.png",
+        "dynamics_end.png"
+      ]
+    }
+  },
+  "loading": {
+    "status": "passed",
+    "engine": "MuJoCo",
+    "version": "3.13.0",
+    "steps": 4000,
+    "timestep_s": 0.0005,
+    "actual_duration_s": 1.9999999999998352,
+    "hinge_observed_range_rad": [
+      0.0,
+      0.9084236927586692
+    ],
+    "upper_limit_exercised": true,
+    "max_cloth_displacement_m": 0.0607353780550946,
+    "max_pad_displacement_m": 0.0029508344950929188,
+    "minimum_contact_distance_m": -0.0024996014539808253,
+    "allowed_penetration_m": 0.005,
+    "solver_warnings": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "physical_parameters": "assumed, not measured",
+    "load_description": "0-300N distributed on cushion top then released; <=0.12N total gentle wind on unpinned garment vertices; 8Nm hinge torque for 1.3s",
+    "geometry_exaggeration": false,
+    "video": "dynamics_demo.mp4",
+    "reference_pose_preserved_in_separate_static_files": true,
+    "deformation_checks": [
+      {
+        "id": "red_garment_cloth",
+        "maximum_sampled_edge_strain": 0.04080230329099055,
+        "minimum_sampled_volume_ratio": null
+      },
+      {
+        "id": "chair_pad_volume",
+        "maximum_sampled_edge_strain": 0.08503709046225538,
+        "minimum_sampled_volume_ratio": 0.9271903003101588
+      }
+    ],
+    "deformation_sample_interval_s": 0.025,
+    "contacts_limits_warnings_checked_every_step": true,
+    "video_playback_speed_vs_physical_time": 0.75
+  },
+  "reference_pose_preserved": true,
+  "review_basis": "Agent inspected actual new start/mid/end frames showing visible green revised pad above its support, cloth motion and moving door, and checked numeric trajectory/load audits and actual GLB/USD reimports. Static furniture structural acceptance remains separate from numerical physics.",
+  "issues": [
+    {
+      "severity": "minor",
+      "blocking": false,
+      "description": "Material/mass/gap parameters are assumptions. Small compliant contact penetration and joint-limit overshoot remain within declared tolerances; 2-second test is not long-horizon or measured physical validation. Curved back-rail collision is approximate/omitted. GLB exact camera requires delivered intrinsics metadata."
+    }
+  ]
+}

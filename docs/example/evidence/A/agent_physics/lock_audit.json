@@ -1,0 +1,135 @@
+{
+  "geometry_camera_sha256": "b49a9a595d14f60d7b35c232102205d87b20ce358743e1d2a9aac2e99c31c113",
+  "shell": {
+    "wall_front": {
+      "present": true,
+      "visible": true
+    },
+    "wall_back": {
+      "present": true,
+      "visible": true
+    },
+    "wall_left": {
+      "present": true,
+      "visible": true
+    },
+    "wall_right": {
+      "present": true,
+      "visible": true
+    },
+    "floor": {
+      "present": true,
+      "visible": true
+    },
+    "ceiling": {
+      "present": true,
+      "visible": true
+    }
+  },
+  "lamp_present": true,
+  "material_pbr_sha256": "da297a4f647f5b4ca8588986a83351cf1c72da04a35e6897cdd68bf698d9e720",
+  "lights": [
+    {
+      "name": "daylight_sun",
+      "type": "SUN",
+      "position": [
+        9.0,
+        10.0,
+        8.0
+      ],
+      "rotation_euler": [
+        1.0343307256698608,
+        2.8470703128391506e-08,
+        2.4087777137756348
+      ],
+      "energy": 24.0,
+      "color": [
+        1.0,
+        0.9800000190734863,
+        0.6499999761581421
+      ],
+      "size": null,
+      "size_y": null,
+      "angle": 0.017999999225139618
+    },
+    {
+      "name": "inferred_broad_secondary_illumination",
+      "type": "AREA",
+      "position": [
+        2.5,
+        -4.400000095367432,
+        2.0999999046325684
+      ],
+      "rotation_euler": [
+        1.4590390920639038,
+        -1.62269842007845e-09,
+        0.15776877105236053
+      ],
+      "energy": 180.0,
+      "color": [
+        1.0,
+        0.9700000286102295,
+        0.8999999761581421
+      ],
+      "size": 3.200000047683716,
+      "size_y": 3.200000047683716,
+      "angle": null
+    },
+    {
+      "name": "left_window_sky",
+      "type": "AREA",
+      "position": [
+        -1.0,
+        -0.6000000238418579,
+        2.0
+      ],
+      "rotation_euler": [
+        1.1071487665176392,
+        8.463569400873894e-09,
+        -1.5707963705062866
+      ],
+      "energy": 162.5,
+      "color": [
+        0.9100000262260437,
+        0.9599999785423279,
+        1.0
+      ],
+      "size": 1.0,
+      "size_y": 1.0,
+      "angle": null
+    },
+    {
+      "name": "window_sky",
+      "type": "AREA",
+      "position": [
+        2.0,
+        1.5,
+        2.4000000953674316
+      ],
+      "rotation_euler": [
+        1.1902899742126465,
+        8.116999339335962e-08,
+        3.141592502593994
+      ],
+      "energy": 650.0,
+      "color": [
+        0.8799999952316284,
+        0.9399999976158142,
+        1.0
+      ],
+      "size": 4.0,
+      "size_y": 4.0,
+      "angle": null
+    }
+  ],
+  "render": {
+    "resolution": [
+      1702,
+      1276
+    ],
+    "percentage": 100,
+    "exposure": 0.0,
+    "view_transform": "AgX",
+    "look": "AgX - Medium High Contrast"
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "variant": 10,
+  "world_strength": 0.65,
+  "window_area_watts": 650,
+  "left_window_watts": 162.5,
+  "sun_strength": 24,
+  "sun_direction": [
+    -9.0,
+    -10.0,
+    -8.0
+  ],
+  "sun_angle_rad": 0.018,
+  "exterior_plate_shadow": false,
+  "exterior_plate_diffuse": false,
+  "secondary_illumination": null,
+  "exposure": 0.0,
+  "color_management": "AgX",
+  "camera_matrix": [
+    [
+      0.9176032543182373,
+      -0.10074771195650101,
+      0.3845181167125702,
+      3.285050392150879
+    ],
+    [
+      0.3971485495567322,
+      0.19183973968029022,
+      -0.8974801301956177,
+      -3.074509620666504
+    ],
+    [
+      0.016653211787343025,
+      0.9762414693832397,
+      0.2160445749759674,
+      1.187325358390808
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "lights": [
+    {
+      "name": "window_sky",
+      "type": "AREA",
+      "energy": 650.0,
+      "color": [
+        0.8799999952316284,
+        0.9399999976158142,
+        1.0
+      ],
+      "position": [
+        2.0,
+        1.5,
+        2.4000000953674316
+      ]
+    },
+    {
+      "name": "daylight_sun",
+      "type": "SUN",
+      "energy": 24.0,
+      "color": [
+        1.0,
+        0.9800000190734863,
+        0.6499999761581421
+      ],
+      "position": [
+        9.0,
+        10.0,
+        8.0
+      ]
+    },
+    {
+      "name": "left_window_sky",
+      "type": "AREA",
+      "energy": 162.5,
+      "color": [
+        0.9100000262260437,
+        0.9599999785423279,
+        1.0
+      ],
+      "position": [
+        -1.0,
+        -0.6000000238418579,
+        2.0
+      ]
+    },
+    {
+      "name": "inferred_broad_secondary_illumination",
+      "type": "AREA",
+      "energy": 180.0,
+      "color": [
+        1.0,
+        0.9700000286102295,
+        0.8999999761581421
+      ],
+      "position": [
+        2.5,
+        -4.400000095367432,
+        2.0999999046325684
+      ]
+    }
+  ]
+}

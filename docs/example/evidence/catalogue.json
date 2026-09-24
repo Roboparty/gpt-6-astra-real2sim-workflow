@@ -1,0 +1,77 @@
+{
+  "sources": [
+    {
+      "id": "CH20",
+      "url": "https://www.carlhansen.com/en/en/collection/chairs/dining-chairs/ch20",
+      "query": "CH20 elbow chair dimensions",
+      "retrieved": "2026-09-22",
+      "findings": "Official bent-wood backrest, upholstered seat; official 3D download links exist.",
+      "identity": "unverified style candidate; no label, finish/seat variant or matching construction established",
+      "used_dimensions": null
+    },
+    {
+      "id": "POANG",
+      "url": "https://www.ikea.com/us/en/p/poaeng-armchair-birch-veneer-gunnared-light-green-s39501906/",
+      "query": "chair birch green seat armchair",
+      "retrieved": "2026-09-22",
+      "findings": "Cantilever bentwood high-back armchair; structurally inconsistent with pictured four-legged dining chairs.",
+      "identity": "rejected",
+      "used_dimensions": null
+    },
+    {
+      "id": "SONGMICS",
+      "url": "https://www.songmics.com/collections/laundry-racks/products/songmics-clothes-drying-rack-with-bamboo-hanging-rods-ullr516-517",
+      "query": "bamboo clothes rack slatted bottom shelf",
+      "retrieved": "2026-09-22",
+      "findings": "Two-tier drying rack with bamboo rods differs from photographed single rail A-frame.",
+      "identity": "rejected",
+      "used_dimensions": null
+    },
+    {
+      "id": "RAGRUND",
+      "url": "https://www.ikea.com/us/en/p/ragrund-chair-with-towel-rack-bamboo-90253074/",
+      "query": "bamboo garment rack shelf",
+      "retrieved": "2026-09-22",
+      "findings": "Chair/towel stand; not the large garment rack.",
+      "identity": "rejected",
+      "used_dimensions": null
+    }
+  ],
+  "queries_also_run": [
+    "black cabinet embossed horizontal ribs folding utility cabinet",
+    "site.3dwarehouse.sketchup.com bamboo clothes rack CH20 black cabinet"
+  ],
+  "conclusion": "No exact SKU/variant verified. Do not transfer catalogue dimensions as measured dimensions.",
+  "priors": [
+    {
+      "entity": "room",
+      "quantity": "height",
+      "value_m": 2.8,
+      "range_m": [
+        2.45,
+        3.15
+      ],
+      "provenance": "common indoor suspended-ceiling assumption, not measured"
+    },
+    {
+      "entity": "table",
+      "quantity": "height",
+      "value_m": 0.74,
+      "range_m": [
+        0.65,
+        0.82
+      ],
+      "provenance": "common desk/dining table prior, cross-check only"
+    },
+    {
+      "entity": "chair_near",
+      "quantity": "seat_height",
+      "value_m": 0.45,
+      "range_m": [
+        0.38,
+        0.51
+      ],
+      "provenance": "common chair prior, cross-check only"
+    }
+  ]
+}

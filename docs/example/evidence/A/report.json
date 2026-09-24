@@ -1,0 +1,2259 @@
+{
+  "case_id": "utility_single_external_example_A",
+  "workflow_profile": "quality_v2",
+  "technical_validation": "passed",
+  "visual_acceptance": "pass",
+  "validation": {
+    "scene": {
+      "status": "passed",
+      "object_count": 38,
+      "enclosure_surfaces": 6,
+      "luminaire_count": 1
+    },
+    "glb": {
+      "status": "passed",
+      "bytes": 7281012,
+      "nodes": 352,
+      "meshes": 315,
+      "materials": 20,
+      "images": 3,
+      "required_entities_present": [
+        "floor",
+        "ceiling",
+        "wall_back",
+        "wall_front",
+        "wall_left",
+        "wall_right"
+      ],
+      "glTF_convention": "metres, Y up; canonical scene is metres, Z up"
+    },
+    "simulation": {
+      "status": "passed",
+      "mujoco_version": "3.13.0",
+      "bodies": 39,
+      "geoms": 513,
+      "visual_meshes": 38,
+      "required_entities_present": [
+        "floor",
+        "ceiling",
+        "wall_back",
+        "wall_front",
+        "wall_left",
+        "wall_right",
+        "ceiling_luminaire"
+      ],
+      "probe_steps": 1500,
+      "probe_final_position_m": [
+        0.11999999999995788,
+        -4.53,
+        0.03184505556028522
+      ],
+      "six_surface_ray_tests": {
+        "left": {
+          "distance_m": 0.05,
+          "expected_m": 0.05,
+          "error_m": 0.0
+        },
+        "right": {
+          "distance_m": 0.0500000477891025,
+          "expected_m": 0.05,
+          "error_m": 4.77891024946997e-08
+        },
+        "back": {
+          "distance_m": 0.05,
+          "expected_m": 0.05,
+          "error_m": 0.0
+        },
+        "front": {
+          "distance_m": 0.05000005699999943,
+          "expected_m": 0.05,
+          "error_m": 5.699999942876399e-08
+        },
+        "ceiling": {
+          "distance_m": 0.0380001300000002,
+          "expected_m": 0.04,
+          "error_m": 0.0019998699999997996
+        },
+        "floor": {
+          "distance_m": 1.3979999999999997,
+          "expected_m": 1.4,
+          "error_m": 0.002000000000000224
+        }
+      },
+      "camera_transfer": [
+        {
+          "camera": "source_camera",
+          "canonical_fx_fy_cx_cy": [
+            610.9599655484669,
+            610.9599655484669,
+            909.7566241535942,
+            618.6661026107615
+          ],
+          "recovered_from_engine_frustum": [
+            610.9599745997625,
+            610.9599449379851,
+            909.7566731740746,
+            618.6660977394795
+          ],
+          "maximum_transfer_error_px": 4.9020480446415604e-05,
+          "interpretation": "format transfer consistency, not physical camera calibration accuracy"
+        }
+      ],
+      "layout_modified": false,
+      "limitations": [
+        "static furniture with explicit conservative collision proxies",
+        "soft fabrics, hinged cabinets and movable objects are not dynamically identified",
+        "OBJ visual meshes use flat per-entity colors in MJCF; textured reference visuals are in Blender/GLB/USD"
+      ],
+      "collision_reference": "https://mujoco.readthedocs.io/en/stable/XMLreference.html#asset-mesh"
+    },
+    "geometry": {
+      "schema": "real2sim.geometry-audit/1",
+      "branch": "A",
+      "spec_sha256": "51e9907beccff978819a6762bf8a0b5359c0bd52e56b71213600a6e0c5d7c5c1",
+      "enclosure_present": [
+        "wall_back",
+        "wall_front",
+        "wall_left",
+        "wall_right",
+        "floor",
+        "ceiling"
+      ],
+      "enclosure_hidden": false,
+      "merged_duplicate_vertices": 0,
+      "semantic_roots_created": [],
+      "units": "metres",
+      "unit_scale": 1.0,
+      "entities": {
+        "baseboards": {
+          "vertices": 480,
+          "triangles": 940,
+          "degenerate_triangles_removed": 0,
+          "world_aabb": [
+            [
+              -0.008500072173774242,
+              -4.650000095367432,
+              0.0
+            ],
+            [
+              4.423285484313965,
+              0.008500000461935997,
+              0.09000000357627869
+            ]
+          ],
+          "local_aabb": [
+            [
+              -0.008500072173774242,
+              -4.650000095367432,
+              0.0
+            ],
+            [
+              4.423285484313965,
+              0.008500000461935997,
+              0.09000000357627869
+            ]
+          ],
+          "root_position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "root_quaternion_wxyz": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "visual_mesh": "meshes/baseboards.obj"
+        },
+        "blinds": {
+          "vertices": 2474,
+          "triangles": 4920,
+          "degenerate_triangles_removed": 0,
+          "world_aabb": [
+            [
+              0.04650000110268593,
+              -1.0274999141693115,
+              0.7799999713897705
+            ],
+            [
+              3.718785285949707,
+              -0.02249997854232788,
+              2.7300000190734863
+            ]
+          ],
+          "local_aabb": [
+            [
+              0.04650000110268593,
+              -1.0274999141693115,
+              0.7799999713897705
+            ],
+            [
+              3.718785285949707,
+              -0.02249997854232788,
+              2.7300000190734863
+            ]
+          ],
+          "root_position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "root_quaternion_wxyz": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "visual_mesh": "meshes/blinds.obj"
+        },
+        "cabinet": {
+          "vertices": 17715,
+          "triangles": 34846,
+          "degenerate_triangles_removed": 0,
+          "world_aabb": [
+            [
+              3.3701553344726562,
+              -1.7166924476623535,
+              0.0
+            ],
+            [
+              4.011775970458984,
+              -0.9333057403564453,
+              0.7455000281333923
+            ]
+          ],
+          "local_aabb": [
+            [
+              3.3701553344726562,
+              -1.7166924476623535,
+              0.0
+            ],
+            [
+              4.011775970458984,
+              -0.9333057403564453,
+              0.7455000281333923
+            ]
+          ],
+          "root_position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "root_quaternion_wxyz": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "visual_mesh": "meshes/cabinet.obj"
+        },
+        "cart_liner": {
+          "vertices": 182,
+          "triangles": 360,
+          "degenerate_triangles_removed": 0,
+          "world_aabb": [
+            [
+              0.26356691122055054,
+              -2.6370911598205566,
+              0.938005805015564
+            ],
+            [
+              1.1056853532791138,
+              -2.2047111988067627,
+              0.9546915292739868
+            ]
+          ],
+          "local_aabb": [
+            [
+              0.26356691122055054,
+              -2.6370911598205566,
+              0.938005805015564
+            ],
+            [
+              1.1056853532791138,
+              -2.2047111988067627,
+              0.9546915292739868
+            ]
+          ],
+          "root_position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "root_quaternion_wxyz": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "visual_mesh": "meshes/cart_liner.obj"
+        },
+        "ceiling": {
+          "vertices": 136,
+          "triangles": 204,
+          "degenerate_triangles_removed": 0,
+          "world_aabb": [
+            [
+              -0.0044999998062849045,
+              -4.6545000076293945,
+              2.7980000972747803
+            ],
+            [
+              4.414785385131836,
+              0.0,
+              2.919999837875366
+            ]
+          ],
+          "local_aabb": [
+            [
+              -0.0044999998062849045,
+              -4.6545000076293945,
+              2.7980000972747803
+            ],
+            [
+              4.414785385131836,
+              0.0,
+              2.919999837875366
+            ]
+          ],
+          "root_position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "root_quaternion_wxyz": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "visual_mesh": "meshes/ceiling.obj"
+        },
+        "ceiling_luminaire": {
+          "vertices": 96,
+          "triangles": 188,
+          "degenerate_triangles_removed": 0,
+          "world_aabb": [
+            [
+              1.7050000429153442,
+              -2.3949999809265137,
+              2.7744998931884766
+            ],
+            [
+              2.2950000762939453,
+              -1.8049999475479126,
+              2.799499988555908
+            ]
+          ],
+          "local_aabb": [
+            [
+              1.7050000429153442,
+              -2.3949999809265137,
+              2.7744998931884766
+            ],
+            [
+              2.2950000762939453,
+              -1.8049999475479126,
+              2.799499988555908
+            ]
+          ],
+          "root_position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "root_quaternion_wxyz": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "visual_mesh": "meshes/ceiling_luminaire.obj"
+        },
+        "chair_far": {
+          "vertices": 1776,
+          "triangles": 3504,
+          "degenerate_triangles_removed": 0,
+          "world_aabb": [
+            [
+              0.3347967267036438,
+              -0.6231372952461243,
+              0.0020000040531158447
+            ],
+            [
+              0.7829626202583313,
+              -0.14403481781482697,
+              0.6766728758811951
+            ]
+          ],
+          "local_aabb": [
+            [
+              0.3347967267036438,
+              -0.6231372952461243,
+              0.0020000040531158447
+            ],
+            [
+              0.7829626202583313,
+              -0.14403481781482697,
+              0.6766728758811951
+            ]
+          ],
+          "root_position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "root_quaternion_wxyz": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "visual_mesh": "meshes/chair_far.obj"
+        },
+        "chair_far_cushion": {
+          "vertices": 96,
+          "triangles": 188,
+          "degenerate_triangles_removed": 0,
+          "world_aabb": [
+            [
+              0.37089747190475464,
+              -0.5698465704917908,
+              0.3874688148498535
+            ],
+            [
+              0.7772071361541748,
+              -0.1859249472618103,
+              0.4174688160419464
+            ]
+          ],
+          "local_aabb": [
+            [
+              0.37089747190475464,
+              -0.5698465704917908,
+              0.3874688148498535
+            ],
+            [
+              0.7772071361541748,
+              -0.1859249472618103,
+              0.4174688160419464
+            ]
+          ],
+          "root_position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "root_quaternion_wxyz": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "visual_mesh": "meshes/chair_far_cushion.obj"
+        },
+        "chair_near": {
+          "vertices": 1776,
+          "triangles": 3504,
+          "degenerate_triangles_removed": 0,
+          "world_aabb": [
+            [
+              1.4946210384368896,
+              -0.7949599027633667,
+              0.0020000040531158447
+            ],
+            [
+              1.9186670780181885,
+              -0.3072330355644226,
+              0.6766728758811951
+            ]
+          ],
+          "local_aabb": [
+            [
+              1.4946210384368896,
+              -0.7949599027633667,
+              0.0020000040531158447
+            ],
+            [
+              1.9186670780181885,
+              -0.3072330355644226,
+              0.6766728758811951
+            ]
+          ],
+          "root_position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "root_quaternion_wxyz": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "visual_mesh": "meshes/chair_near.obj"
+        },
+        "chair_near_cushion": {
+          "vertices": 96,
+          "triangles": 188,
+          "degenerate_triangles_removed": 0,
+          "world_aabb": [
+            [
+              1.4993385076522827,
+              -0.7276391983032227,
+              0.3874688148498535
+            ],
+            [
+              1.8743703365325928,
+              -0.37907394766807556,
+              0.4174688160419464
+            ]
+          ],
+          "local_aabb": [
+            [
+              1.4993385076522827,
+              -0.7276391983032227,
+              0.3874688148498535
+            ],
+            [
+              1.8743703365325928,
+              -0.37907394766807556,
+              0.4174688160419464
+            ]
+          ],
+          "root_position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "root_quaternion_wxyz": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "visual_mesh": "meshes/chair_near_cushion.obj"
+        },
+        "cleaning_cart": {
+          "vertices": 892,
+          "triangles": 1544,
+          "degenerate_triangles_removed": 0,
+          "world_aabb": [
+            [
+              0.16179971396923065,
+              -2.7643465995788574,
+              0.004999998025596142
+            ],
+            [
+              1.5436766147613525,
+              -2.1455845832824707,
+              0.9470000267028809
+            ]
+          ],
+          "local_aabb": [
+            [
+              0.16179971396923065,
+              -2.7643465995788574,
+              0.004999998025596142
+            ],
+            [
+              1.5436766147613525,
+              -2.1455845832824707,
+              0.9470000267028809
+            ]
+          ],
+          "root_position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "root_quaternion_wxyz": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "visual_mesh": "meshes/cleaning_cart.obj"
+        },
+        "cleaning_tools": {
+          "vertices": 354,
+          "triangles": 684,
+          "degenerate_triangles_removed": 0,
+          "world_aabb": [
+            [
+              -1.2050729990005493,
+              -2.6592791080474854,
+              0.650113582611084
+            ],
+            [
+              1.4994529485702515,
+              -1.7593439817428589,
+              1.1513450145721436
+            ]
+          ],
+          "local_aabb": [
+            [
+              -1.2050729990005493,
+              -2.6592791080474854,
+              0.650113582611084
+            ],
+            [
+              1.4994529485702515,
+              -1.7593439817428589,
+              1.1513450145721436
+            ]
+          ],
+          "root_position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "root_quaternion_wxyz": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "visual_mesh": "meshes/cleaning_tools.obj"
+        },
+        "coat_0": {
+          "vertices": 6982,
+          "triangles": 13920,
+          "degenerate_triangles_removed": 0,
+          "world_aabb": [
+            [
+              2.975395441055298,
+              -0.47616881132125854,
+              0.5227622389793396
+            ],
+            [
+              3.2738771438598633,
+              -0.39476773142814636,
+              1.3589074611663818
+            ]
+          ],
+          "local_aabb": [
+            [
+              2.975395441055298,
+              -0.47616881132125854,
+              0.5227622389793396
+            ],
+            [
+              3.2738771438598633,
+              -0.39476773142814636,
+              1.3589074611663818
+            ]
+          ],
+          "root_position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "root_quaternion_wxyz": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "visual_mesh": "meshes/coat_0.obj"
+        },
+        "coat_1": {
+          "vertices": 6982,
+          "triangles": 13920,
+          "degenerate_triangles_removed": 0,
+          "world_aabb": [
+            [
+              3.1149961948394775,
+              -0.4445115625858307,
+              0.489505410194397
+            ],
+            [
+              3.426133632659912,
+              -0.35743802785873413,
+              1.3593720197677612
+            ]
+          ],
+          "local_aabb": [
+            [
+              3.1149961948394775,
+              -0.4445115625858307,
+              0.489505410194397
+            ],
+            [
+              3.426133632659912,
+              -0.35743802785873413,
+              1.3593720197677612
+            ]
+          ],
+          "root_position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "root_quaternion_wxyz": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "visual_mesh": "meshes/coat_1.obj"
+        },
+        "coat_2": {
+          "vertices": 6982,
+          "triangles": 13920,
+          "degenerate_triangles_removed": 0,
+          "world_aabb": [
+            [
+              3.28676176071167,
+              -0.4047275483608246,
+              0.5090427398681641
+            ],
+            [
+              3.54433274269104,
+              -0.3287229835987091,
+              1.397735834121704
+            ]
+          ],
+          "local_aabb": [
+            [
+              3.28676176071167,
+              -0.4047275483608246,
+              0.5090427398681641
+            ],
+            [
+              3.54433274269104,
+              -0.3287229835987091,
+              1.397735834121704
+            ]
+          ],
+          "root_position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "root_quaternion_wxyz": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "visual_mesh": "meshes/coat_2.obj"
+        },
+        "coat_3": {
+          "vertices": 6982,
+          "triangles": 13920,
+          "degenerate_triangles_removed": 0,
+          "world_aabb": [
+            [
+              3.376002311706543,
+              -0.38412079215049744,
+              0.4924248158931732
+            ],
+            [
+              3.5738699436187744,
+              -0.32094770669937134,
+              1.3532624244689941
+            ]
+          ],
+          "local_aabb": [
+            [
+              3.376002311706543,
+              -0.38412079215049744,
+              0.4924248158931732
+            ],
+            [
+              3.5738699436187744,
+              -0.32094770669937134,
+              1.3532624244689941
+            ]
+          ],
+          "root_position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "root_quaternion_wxyz": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "visual_mesh": "meshes/coat_3.obj"
+        },
+        "coat_4": {
+          "vertices": 6982,
+          "triangles": 13920,
+          "degenerate_triangles_removed": 0,
+          "world_aabb": [
+            [
+              3.4821324348449707,
+              -0.36161309480667114,
+              0.37240660190582275
+            ],
+            [
+              3.6872920989990234,
+              -0.30062565207481384,
+              1.3581446409225464
+            ]
+          ],
+          "local_aabb": [
+            [
+              3.4821324348449707,
+              -0.36161309480667114,
+              0.37240660190582275
+            ],
+            [
+              3.6872920989990234,
+              -0.30062565207481384,
+              1.3581446409225464
+            ]
+          ],
+          "root_position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "root_quaternion_wxyz": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "visual_mesh": "meshes/coat_4.obj"
+        },
+        "coat_red": {
+          "vertices": 6982,
+          "triangles": 13920,
+          "degenerate_triangles_removed": 0,
+          "world_aabb": [
+            [
+              3.6286470890045166,
+              -0.3229682743549347,
+              0.6244890093803406
+            ],
+            [
+              3.781342029571533,
+              -0.27654141187667847,
+              1.3252496719360352
+            ]
+          ],
+          "local_aabb": [
+            [
+              3.6286470890045166,
+              -0.3229682743549347,
+              0.6244890093803406
+            ],
+            [
+              3.781342029571533,
+              -0.27654141187667847,
+              1.3252496719360352
+            ]
+          ],
+          "root_position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "root_quaternion_wxyz": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "visual_mesh": "meshes/coat_red.obj"
+        },
+        "column": {
+          "vertices": 96,
+          "triangles": 188,
+          "degenerate_triangles_removed": 0,
+          "world_aabb": [
+            [
+              0.0,
+              -1.3483848571777344,
+              0.0
+            ],
+            [
+              0.15000000596046448,
+              -0.7044870853424072,
+              2.799999952316284
+            ]
+          ],
+          "local_aabb": [
+            [
+              0.0,
+              -1.3483848571777344,
+              0.0
+            ],
+            [
+              0.15000000596046448,
+              -0.7044870853424072,
+              2.799999952316284
+            ]
+          ],
+          "root_position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "root_quaternion_wxyz": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "visual_mesh": "meshes/column.obj"
+        },
+        "door_frame": {
+          "vertices": 288,
+          "triangles": 564,
+          "degenerate_triangles_removed": 0,
+          "world_aabb": [
+            [
+              4.079999923706055,
+              -2.7225000858306885,
+              0.0
+            ],
+            [
+              4.534785270690918,
+              -1.7774999141693115,
+              2.247499942779541
+            ]
+          ],
+          "local_aabb": [
+            [
+              4.079999923706055,
+              -2.7225000858306885,
+              0.0
+            ],
+            [
+              4.534785270690918,
+              -1.7774999141693115,
+              2.247499942779541
+            ]
+          ],
+          "root_position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "root_quaternion_wxyz": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "visual_mesh": "meshes/door_frame.obj"
+        },
+        "door_leaf": {
+          "vertices": 216,
+          "triangles": 408,
+          "degenerate_triangles_removed": 0,
+          "world_aabb": [
+            [
+              4.031000137329102,
+              -2.677999973297119,
+              0.0
+            ],
+            [
+              4.0879998207092285,
+              -1.7983204126358032,
+              2.180000066757202
+            ]
+          ],
+          "local_aabb": [
+            [
+              4.031000137329102,
+              -2.677999973297119,
+              0.0
+            ],
+            [
+              4.0879998207092285,
+              -1.7983204126358032,
+              2.180000066757202
+            ]
+          ],
+          "root_position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "root_quaternion_wxyz": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "visual_mesh": "meshes/door_leaf.obj"
+        },
+        "doorway_unseen_returns": {
+          "vertices": 40,
+          "triangles": 60,
+          "degenerate_triangles_removed": 0,
+          "world_aabb": [
+            [
+              4.414785385131836,
+              -3.240000009536743,
+              -0.09000000357627869
+            ],
+            [
+              4.984785556793213,
+              -1.2599999904632568,
+              2.8999998569488525
+            ]
+          ],
+          "local_aabb": [
+            [
+              4.414785385131836,
+              -3.240000009536743,
+              -0.09000000357627869
+            ],
+            [
+              4.984785556793213,
+              -1.2599999904632568,
+              2.8999998569488525
+            ]
+          ],
+          "root_position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "root_quaternion_wxyz": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "visual_mesh": "meshes/doorway_unseen_returns.obj"
+        },
+        "exterior_backdrop": {
+          "vertices": 1505,
+          "triangles": 2856,
+          "degenerate_triangles_removed": 0,
+          "world_aabb": [
+            [
+              -18.082231521606445,
+              8.0,
+              -9.409696578979492
+            ],
+            [
+              8.096451759338379,
+              8.0,
+              12.690438270568848
+            ]
+          ],
+          "local_aabb": [
+            [
+              -18.082231521606445,
+              8.0,
+              -9.409696578979492
+            ],
+            [
+              8.096451759338379,
+              8.0,
+              12.690438270568848
+            ]
+          ],
+          "root_position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "root_quaternion_wxyz": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "visual_mesh": "meshes/exterior_backdrop.obj"
+        },
+        "external_shading_hypothesis": {
+          "vertices": 8,
+          "triangles": 12,
+          "degenerate_triangles_removed": 0,
+          "world_aabb": [
+            [
+              -0.5,
+              2.940000057220459,
+              3.8000001907348633
+            ],
+            [
+              7.5,
+              3.059999942779541,
+              6.0
+            ]
+          ],
+          "local_aabb": [
+            [
+              -0.5,
+              2.940000057220459,
+              3.8000001907348633
+            ],
+            [
+              7.5,
+              3.059999942779541,
+              6.0
+            ]
+          ],
+          "root_position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "root_quaternion_wxyz": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "visual_mesh": "meshes/external_shading_hypothesis.obj"
+        },
+        "floor": {
+          "vertices": 728,
+          "triangles": 1092,
+          "degenerate_triangles_removed": 0,
+          "world_aabb": [
+            [
+              0.0,
+              -4.650000095367432,
+              -0.12099999934434891
+            ],
+            [
+              4.414785385131836,
+              0.0,
+              0.0020000000949949026
+            ]
+          ],
+          "local_aabb": [
+            [
+              0.0,
+              -4.650000095367432,
+              -0.12099999934434891
+            ],
+            [
+              4.414785385131836,
+              0.0,
+              0.0020000000949949026
+            ]
+          ],
+          "root_position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "root_quaternion_wxyz": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "visual_mesh": "meshes/floor.obj"
+        },
+        "hangers": {
+          "vertices": 4920,
+          "triangles": 9600,
+          "degenerate_triangles_removed": 0,
+          "world_aabb": [
+            [
+              2.949371337890625,
+              -0.44940128922462463,
+              1.3673509359359741
+            ],
+            [
+              3.8871724605560303,
+              -0.21389946341514587,
+              1.512499451637268
+            ]
+          ],
+          "local_aabb": [
+            [
+              2.949371337890625,
+              -0.44940128922462463,
+              1.3673509359359741
+            ],
+            [
+              3.8871724605560303,
+              -0.21389946341514587,
+              1.512499451637268
+            ]
+          ],
+          "root_position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "root_quaternion_wxyz": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "visual_mesh": "meshes/hangers.obj"
+        },
+        "left_foreground_frame": {
+          "vertices": 192,
+          "triangles": 376,
+          "degenerate_triangles_removed": 0,
+          "world_aabb": [
+            [
+              1.9407801628112793,
+              -2.9312996864318848,
+              0.0
+            ],
+            [
+              2.0707802772521973,
+              -2.843799591064453,
+              2.799999952316284
+            ]
+          ],
+          "local_aabb": [
+            [
+              1.9407801628112793,
+              -2.9312996864318848,
+              0.0
+            ],
+            [
+              2.0707802772521973,
+              -2.843799591064453,
+              2.799999952316284
+            ]
+          ],
+          "root_position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "root_quaternion_wxyz": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "visual_mesh": "meshes/left_foreground_frame.obj"
+        },
+        "left_foreground_glass": {
+          "vertices": 96,
+          "triangles": 188,
+          "degenerate_triangles_removed": 0,
+          "world_aabb": [
+            [
+              1.1707801818847656,
+              -2.854799747467041,
+              0.0
+            ],
+            [
+              2.0507802963256836,
+              -2.846799850463867,
+              2.700000047683716
+            ]
+          ],
+          "local_aabb": [
+            [
+              1.1707801818847656,
+              -2.854799747467041,
+              0.0
+            ],
+            [
+              2.0507802963256836,
+              -2.846799850463867,
+              2.700000047683716
+            ]
+          ],
+          "root_position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "root_quaternion_wxyz": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "visual_mesh": "meshes/left_foreground_glass.obj"
+        },
+        "rack": {
+          "vertices": 408,
+          "triangles": 748,
+          "degenerate_triangles_removed": 0,
+          "world_aabb": [
+            [
+              2.7541310787200928,
+              -0.6629566550254822,
+              0.0010000001639127731
+            ],
+            [
+              4.040075302124023,
+              -0.016702566295862198,
+              1.4664783477783203
+            ]
+          ],
+          "local_aabb": [
+            [
+              2.7541310787200928,
+              -0.6629566550254822,
+              0.0010000001639127731
+            ],
+            [
+              4.040075302124023,
+              -0.016702566295862198,
+              1.4664783477783203
+            ]
+          ],
+          "root_position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "root_quaternion_wxyz": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "visual_mesh": "meshes/rack.obj"
+        },
+        "table": {
+          "vertices": 960,
+          "triangles": 1880,
+          "degenerate_triangles_removed": 0,
+          "world_aabb": [
+            [
+              0.8663533926010132,
+              -1.1025179624557495,
+              0.0014168055495247245
+            ],
+            [
+              1.659415364265442,
+              -0.13035015761852264,
+              0.7536647319793701
+            ]
+          ],
+          "local_aabb": [
+            [
+              0.8663533926010132,
+              -1.1025179624557495,
+              0.0014168055495247245
+            ],
+            [
+              1.659415364265442,
+              -0.13035015761852264,
+              0.7536647319793701
+            ]
+          ],
+          "root_position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "root_quaternion_wxyz": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "visual_mesh": "meshes/table.obj"
+        },
+        "wall_back": {
+          "vertices": 32,
+          "triangles": 48,
+          "degenerate_triangles_removed": 0,
+          "world_aabb": [
+            [
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              4.414785385131836,
+              0.11999999731779099,
+              2.8000001907348633
+            ]
+          ],
+          "local_aabb": [
+            [
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              4.414785385131836,
+              0.11999999731779099,
+              2.8000001907348633
+            ]
+          ],
+          "root_position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "root_quaternion_wxyz": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "visual_mesh": "meshes/wall_back.obj"
+        },
+        "wall_front": {
+          "vertices": 8,
+          "triangles": 12,
+          "degenerate_triangles_removed": 0,
+          "world_aabb": [
+            [
+              0.0,
+              -4.769999980926514,
+              0.0
+            ],
+            [
+              4.414785385131836,
+              -4.650000095367432,
+              2.799999952316284
+            ]
+          ],
+          "local_aabb": [
+            [
+              0.0,
+              -4.769999980926514,
+              0.0
+            ],
+            [
+              4.414785385131836,
+              -4.650000095367432,
+              2.799999952316284
+            ]
+          ],
+          "root_position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "root_quaternion_wxyz": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "visual_mesh": "meshes/wall_front.obj"
+        },
+        "wall_left": {
+          "vertices": 24,
+          "triangles": 36,
+          "degenerate_triangles_removed": 0,
+          "world_aabb": [
+            [
+              -0.11999999731779099,
+              -4.649999618530273,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              2.8000001907348633
+            ]
+          ],
+          "local_aabb": [
+            [
+              -0.11999999731779099,
+              -4.649999618530273,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              2.8000001907348633
+            ]
+          ],
+          "root_position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "root_quaternion_wxyz": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "visual_mesh": "meshes/wall_left.obj"
+        },
+        "wall_right": {
+          "vertices": 24,
+          "triangles": 36,
+          "degenerate_triangles_removed": 0,
+          "world_aabb": [
+            [
+              4.414785385131836,
+              -4.650000095367432,
+              0.0
+            ],
+            [
+              4.534785270690918,
+              0.0,
+              2.799999952316284
+            ]
+          ],
+          "local_aabb": [
+            [
+              4.414785385131836,
+              -4.650000095367432,
+              0.0
+            ],
+            [
+              4.534785270690918,
+              0.0,
+              2.799999952316284
+            ]
+          ],
+          "root_position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "root_quaternion_wxyz": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "visual_mesh": "meshes/wall_right.obj"
+        },
+        "warning_sign": {
+          "vertices": 168,
+          "triangles": 320,
+          "degenerate_triangles_removed": 0,
+          "world_aabb": [
+            [
+              0.5010358691215515,
+              -2.546962022781372,
+              0.5311473608016968
+            ],
+            [
+              0.76279217004776,
+              -2.293858051300049,
+              0.8026443719863892
+            ]
+          ],
+          "local_aabb": [
+            [
+              0.5010358691215515,
+              -2.546962022781372,
+              0.5311473608016968
+            ],
+            [
+              0.76279217004776,
+              -2.293858051300049,
+              0.8026443719863892
+            ]
+          ],
+          "root_position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "root_quaternion_wxyz": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "visual_mesh": "meshes/warning_sign.obj"
+        },
+        "wastebasket": {
+          "vertices": 7978,
+          "triangles": 15932,
+          "degenerate_triangles_removed": 0,
+          "world_aabb": [
+            [
+              1.1213773488998413,
+              -1.1843981742858887,
+              0.0010000001639127731
+            ],
+            [
+              1.317371129989624,
+              -0.9883732795715332,
+              0.25289690494537354
+            ]
+          ],
+          "local_aabb": [
+            [
+              1.1213773488998413,
+              -1.1843981742858887,
+              0.0010000001639127731
+            ],
+            [
+              1.317371129989624,
+              -0.9883732795715332,
+              0.25289690494537354
+            ]
+          ],
+          "root_position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "root_quaternion_wxyz": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "visual_mesh": "meshes/wastebasket.obj"
+        },
+        "window_frames": {
+          "vertices": 808,
+          "triangles": 1564,
+          "degenerate_triangles_removed": 0,
+          "world_aabb": [
+            [
+              -0.032499998807907104,
+              -1.0625,
+              0.0
+            ],
+            [
+              3.7522852420806885,
+              0.012500000186264515,
+              2.799999952316284
+            ]
+          ],
+          "local_aabb": [
+            [
+              -0.032499998807907104,
+              -1.0625,
+              0.0
+            ],
+            [
+              3.7522852420806885,
+              0.012500000186264515,
+              2.799999952316284
+            ]
+          ],
+          "root_position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "root_quaternion_wxyz": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "visual_mesh": "meshes/window_frames.obj"
+        },
+        "window_rails": {
+          "vertices": 672,
+          "triangles": 1232,
+          "degenerate_triangles_removed": 0,
+          "world_aabb": [
+            [
+              0.02500000037252903,
+              -1.0199999809265137,
+              0.10000002384185791
+            ],
+            [
+              3.630553722381592,
+              -0.03999999910593033,
+              0.8586055636405945
+            ]
+          ],
+          "local_aabb": [
+            [
+              0.02500000037252903,
+              -1.0199999809265137,
+              0.10000002384185791
+            ],
+            [
+              3.630553722381592,
+              -0.03999999910593033,
+              0.8586055636405945
+            ]
+          ],
+          "root_position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "root_quaternion_wxyz": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "visual_mesh": "meshes/window_rails.obj"
+        }
+      },
+      "warnings": [
+        {
+          "entity": "doorway_unseen_returns",
+          "type": "below_floor",
+          "min_z": -0.09000000357627869
+        },
+        {
+          "entity": "exterior_backdrop",
+          "type": "below_floor",
+          "min_z": -9.409696578979492
+        }
+      ],
+      "camera_reprojection": [
+        {
+          "target": [
+            622.0,
+            195.0
+          ],
+          "render": [
+            616.0086858868599,
+            203.75017023086548
+          ],
+          "error_px": 10.604778350886747
+        },
+        {
+          "target": [
+            648.0,
+            649.0
+          ],
+          "render": [
+            650.8783892989159,
+            652.6968939304352
+          ],
+          "error_px": 4.685312122900867
+        },
+        {
+          "target": [
+            1362.0,
+            40.0
+          ],
+          "render": [
+            1363.0881478786469,
+            40.2220413684845
+          ],
+          "error_px": 1.1105711031366292
+        },
+        {
+          "target": [
+            1258.0,
+            751.0
+          ],
+          "render": [
+            1256.605208158493,
+            750.7511395215988
+          ],
+          "error_px": 1.4168189082746028
+        },
+        {
+          "target": [
+            515.0,
+            154.0
+          ],
+          "render": [
+            518.9905582070351,
+            138.58389353752136
+          ],
+          "error_px": 15.924223474512361
+        },
+        {
+          "target": [
+            574.0,
+            693.0
+          ],
+          "render": [
+            576.9156380295753,
+            684.8175386190414
+          ],
+          "error_px": 8.686404283153314
+        },
+        {
+          "target": [
+            360.0,
+            48.0
+          ],
+          "render": [
+            360.2138167619705,
+            54.650535345077515
+          ],
+          "error_px": 6.653971594756387
+        },
+        {
+          "target": [
+            465.0,
+            718.0
+          ],
+          "render": [
+            461.1528243422508,
+            722.5760273933411
+          ],
+          "error_px": 5.978359912734062
+        }
+      ],
+      "material_portability": "Blender preserves procedural shaders; GLB/USD preserve image textures and supported PBR inputs, but procedural wood/fabric may become flat approximations.",
+      "usd_export": "success",
+      "usd_curve_policy": "evaluated mesh copies; editable native curves retained in scene.blend",
+      "authority_comparison": {
+        "status": "passed",
+        "maximum_bound_error_m": 0.0,
+        "per_entity_errors_m": {
+          "floor": 0.0,
+          "ceiling": 0.0,
+          "wall_back": 0.0,
+          "wall_left": 0.0,
+          "wall_right": 0.0,
+          "door_frame": 0.0,
+          "doorway_unseen_returns": 0.0,
+          "wall_front": 0.0,
+          "column": 0.0,
+          "baseboards": 0.0,
+          "window_frames": 0.0,
+          "window_rails": 0.0,
+          "blinds": 0.0,
+          "exterior_backdrop": 0.0,
+          "external_shading_hypothesis": 0.0,
+          "table": 0.0,
+          "chair_near": 0.0,
+          "chair_near_cushion": 0.0,
+          "chair_far": 0.0,
+          "chair_far_cushion": 0.0,
+          "rack": 0.0,
+          "coat_0": 0.0,
+          "hangers": 0.0,
+          "coat_1": 0.0,
+          "coat_2": 0.0,
+          "coat_3": 0.0,
+          "coat_4": 0.0,
+          "coat_red": 0.0,
+          "cabinet": 0.0,
+          "wastebasket": 0.0,
+          "cleaning_tools": 0.0,
+          "cleaning_cart": 0.0,
+          "warning_sign": 0.0,
+          "cart_liner": 0.0,
+          "left_foreground_frame": 0.0,
+          "left_foreground_glass": 0.0,
+          "door_leaf": 0.0,
+          "ceiling_luminaire": 0.0
+        },
+        "source_native_sha256": "d12a7047f8263ca4201d4470d813f45826a980b21edb66fb19431261f5ff072a"
+      },
+      "usd_export_adapter": {
+        "status": "exported",
+        "evaluation": "evaluated viewport geometry, same as canonical geometry audit",
+        "subdivision": "baked mesh; no implicit extra subdivision on import",
+        "curves": "evaluated mesh copies",
+        "camera_names": "camera data names normalized to stable object ids",
+        "native_blend_modified": false,
+        "roundtrip_validation": "required separately"
+      }
+    },
+    "dynamics": {
+      "status": "passed",
+      "engine": "MuJoCo",
+      "engine_version": "3.13.0",
+      "generated": [
+        {
+          "kind": "hinge",
+          "id": "right_door_hinge",
+          "moving_body": "door_leaf",
+          "reference_world_transform": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "parameter_provenance": "assumed"
+        },
+        {
+          "kind": "cloth",
+          "id": "red_garment_cloth",
+          "entity": "coat_red",
+          "vertices": 299,
+          "elements": 528,
+          "parameter_provenance": "assumed"
+        },
+        {
+          "kind": "soft_body",
+          "id": "chair_pad_volume",
+          "entity": "chair_near_cushion",
+          "vertices": 75,
+          "elements": 192,
+          "parameter_provenance": "assumed"
+        }
+      ],
+      "steps": 2000,
+      "joint_ranges_observed_rad": {
+        "right_door_hinge": [
+          0.0,
+          0.1678496648908592
+        ]
+      },
+      "maximum_flex_displacement_m": 0.04111151754917252,
+      "solver_warnings": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "animation_kind": "numerical_simulation_not_keyframes",
+      "static_reference_modified": false,
+      "limitations": [
+        "Parameters labelled assumed are not physical calibration",
+        "Cloth uses triangular shell bending/stretching; volumetric soft body uses tetrahedral elasticity",
+        "Physics motion is separate from the frozen reconstruction pose"
+      ],
+      "deformation_checks": [
+        {
+          "id": "red_garment_cloth",
+          "maximum_edge_strain": 0.0424712545029442,
+          "minimum_volume_ratio": null
+        },
+        {
+          "id": "chair_pad_volume",
+          "maximum_edge_strain": 0.0002555287971031106,
+          "minimum_volume_ratio": 0.999770311227567
+        }
+      ]
+    },
+    "backend_options": {
+      "requested_integrator": "discrete",
+      "actual_integrator_enum": 4,
+      "engine_version": "3.13.0",
+      "contacts_enabled": true,
+      "reference_geometry_modified": false,
+      "reference_xml_sha256": "1624409fabbcfc35f94dd95e5f8600904a7c65f094356630b111c1ae666f95d1",
+      "solver_reference_xml_sha256": "23f82d1d97ae9e9d4895a7e900a80fa9d2aba8dad5dd53040efcd029d6cf2e92",
+      "documentation": "https://mujoco.readthedocs.io/en/latest/computation/"
+    }
+  },
+  "visual_review": {
+    "decision": "pass",
+    "same_camera_comparison": true,
+    "source_comparison": "source_comparison.jpg",
+    "model_version": 4,
+    "checks": {
+      "geometry": {
+        "status": "pass",
+        "evidence": [
+          "source_comparison.jpg",
+          "furniture_render.png",
+          "structural_audit.json"
+        ]
+      },
+      "materials": {
+        "status": "pass",
+        "evidence": [
+          "source_comparison.jpg",
+          "furniture_render.png",
+          "structural_audit.json"
+        ]
+      },
+      "lighting": {
+        "status": "pass",
+        "evidence": [
+          "source_comparison.jpg",
+          "furniture_render.png",
+          "structural_audit.json"
+        ]
+      },
+      "source_alignment": {
+        "status": "pass",
+        "evidence": [
+          "source_comparison.jpg",
+          "furniture_render.png",
+          "structural_audit.json"
+        ]
+      },
+      "novel_view_completeness": {
+        "status": "pass",
+        "evidence": [
+          "inspect_wall_front.png",
+          "inspect_wall_back.png",
+          "inspect_wall_left.png",
+          "inspect_wall_right.png"
+        ]
+      }
+    },
+    "furniture_local_review": {
+      "status": "pass",
+      "source_crop": "furniture_original.png",
+      "render_crop": "furniture_render.png",
+      "findings": [
+        "Connected table trestles and rails remain clear under final shading.",
+        "Both chairs have rear-edge uprights, supported pads and grounded legs; no prior crossing front-to-back posts or averaged foot displacement.",
+        "Remaining rectangular-table corner fit up to 10.233 px and hidden joinery assumptions are explicitly reported."
+      ]
+    },
+    "fit_metrics": {
+      "kind": "in-sample appearance diagnostic",
+      "render": "source_view.png",
+      "render_resized_for_comparison": false,
+      "source_size": [
+        1702,
+        1276
+      ],
+      "roi_metrics": {
+        "left_wall": {
+          "roi": [
+            70,
+            150,
+            270,
+            480
+          ],
+          "source_linear_luminance_median": 0.31118490348515865,
+          "render_linear_luminance_median": 0.37373216228432626,
+          "absolute_error": 0.06254725879916762,
+          "source_rgb_median": [
+            0.6078431372549019,
+            0.596078431372549,
+            0.5215686274509804
+          ],
+          "render_rgb_median": [
+            0.6588235294117647,
+            0.6470588235294118,
+            0.5803921568627451
+          ]
+        },
+        "column": {
+          "roi": [
+            390,
+            230,
+            485,
+            580
+          ],
+          "source_linear_luminance_median": 0.3845242297302208,
+          "render_linear_luminance_median": 0.2876335614667832,
+          "absolute_error": 0.09689066826343762,
+          "source_rgb_median": [
+            0.6705882352941176,
+            0.6549019607843137,
+            0.5725490196078431
+          ],
+          "render_rgb_median": [
+            0.5843137254901961,
+            0.5764705882352941,
+            0.49411764705882355
+          ]
+        },
+        "carpet": {
+          "roi": [
+            450,
+            850,
+            1050,
+            1180
+          ],
+          "source_linear_luminance_median": 0.0779185017366909,
+          "render_linear_luminance_median": 0.09136930256849377,
+          "absolute_error": 0.013450800831802862,
+          "source_rgb_median": [
+            0.3176470588235294,
+            0.30980392156862746,
+            0.29411764705882354
+          ],
+          "render_rgb_median": [
+            0.3333333333333333,
+            0.33725490196078434,
+            0.3058823529411765
+          ]
+        },
+        "blinds": {
+          "roi": [
+            820,
+            220,
+            1050,
+            430
+          ],
+          "source_linear_luminance_median": 0.10964169679373459,
+          "render_linear_luminance_median": 0.07818666908933652,
+          "absolute_error": 0.031455027704398064,
+          "source_rgb_median": [
+            0.3803921568627451,
+            0.3686274509803922,
+            0.30980392156862746
+          ],
+          "render_rgb_median": [
+            0.32941176470588235,
+            0.30980392156862746,
+            0.2196078431372549
+          ]
+        },
+        "cabinet": {
+          "roi": [
+            1250,
+            780,
+            1410,
+            970
+          ],
+          "source_linear_luminance_median": 0.014079720011885686,
+          "render_linear_luminance_median": 0.017411050881960627,
+          "absolute_error": 0.0033313308700749413,
+          "source_rgb_median": [
+            0.11764705882352941,
+            0.12549019607843137,
+            0.12549019607843137
+          ],
+          "render_rgb_median": [
+            0.1411764705882353,
+            0.1411764705882353,
+            0.12549019607843137
+          ]
+        },
+        "garments": {
+          "roi": [
+            1130,
+            480,
+            1230,
+            620
+          ],
+          "source_linear_luminance_median": 0.005369699543282663,
+          "render_linear_luminance_median": 0.005341618514726297,
+          "absolute_error": 2.808102855636572e-05,
+          "source_rgb_median": [
+            0.050980392156862744,
+            0.06666666666666667,
+            0.07450980392156863
+          ],
+          "render_rgb_median": [
+            0.058823529411764705,
+            0.06666666666666667,
+            0.054901960784313725
+          ]
+        }
+      },
+      "whole_image_srgb_mae": 0.11850072699353931,
+      "independent_accuracy": false
+    },
+    "inspected_render_equivalence": {
+      "mean_8bit_difference": 0.0,
+      "max_8bit_difference": 0.0
+    },
+    "scope": "Source-constrained display and structural reconstruction; no metric or physical truth certificate.",
+    "issues": [
+      {
+        "severity": "minor",
+        "blocking": false,
+        "description": "Fixed-camera tabletop residual, exact back-rail curvature, hidden joinery, fine folds, lettering and precise shadows remain approximations."
+      }
+    ]
+  },
+  "scope": "Engineering integrity, visual likeness and physical truth are separate verdicts.",
+  "physics_review": {
+    "decision": "pass",
+    "model_version": 4,
+    "qa_directory": "qa/A/0002",
+    "checks": {
+      "reference_pose": {
+        "status": "pass",
+        "evidence": [
+          "physics_setup.json",
+          "lock_audit.json",
+          "reimport_glb.json",
+          "reimport_usd.json"
+        ]
+      },
+      "limits_or_strain": {
+        "status": "pass",
+        "evidence": [
+          "loading_test_audit.json",
+          "loading_observations.json"
+        ]
+      },
+      "contact": {
+        "status": "pass",
+        "evidence": [
+          "loading_test_audit.json"
+        ]
+      },
+      "solver_stability": {
+        "status": "pass",
+        "evidence": [
+          "loading_test_audit.json"
+        ]
+      },
+      "actual_simulation": {
+        "status": "pass",
+        "evidence": [
+          "dynamics_demo.mp4",
+          "dynamics_start.png",
+          "dynamics_mid.png",
+          "dynamics_end.png"
+        ]
+      }
+    },
+    "loading": {
+      "status": "passed",
+      "engine": "MuJoCo",
+      "version": "3.13.0",
+      "steps": 4000,
+      "timestep_s": 0.0005,
+      "actual_duration_s": 1.9999999999998352,
+      "hinge_observed_range_rad": [
+        0.0,
+        0.9084236927586692
+      ],
+      "upper_limit_exercised": true,
+      "max_cloth_displacement_m": 0.0607353780550946,
+      "max_pad_displacement_m": 0.0029508344950929188,
+      "minimum_contact_distance_m": -0.0024996014539808253,
+      "allowed_penetration_m": 0.005,
+      "solver_warnings": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "physical_parameters": "assumed, not measured",
+      "load_description": "0-300N distributed on cushion top then released; <=0.12N total gentle wind on unpinned garment vertices; 8Nm hinge torque for 1.3s",
+      "geometry_exaggeration": false,
+      "video": "dynamics_demo.mp4",
+      "reference_pose_preserved_in_separate_static_files": true,
+      "deformation_checks": [
+        {
+          "id": "red_garment_cloth",
+          "maximum_sampled_edge_strain": 0.04080230329099055,
+          "minimum_sampled_volume_ratio": null
+        },
+        {
+          "id": "chair_pad_volume",
+          "maximum_sampled_edge_strain": 0.08503709046225538,
+          "minimum_sampled_volume_ratio": 0.9271903003101588
+        }
+      ],
+      "deformation_sample_interval_s": 0.025,
+      "contacts_limits_warnings_checked_every_step": true,
+      "video_playback_speed_vs_physical_time": 0.75
+    },
+    "reference_pose_preserved": true,
+    "review_basis": "Agent inspected actual new start/mid/end frames showing visible green revised pad above its support, cloth motion and moving door, and checked numeric trajectory/load audits and actual GLB/USD reimports. Static furniture structural acceptance remains separate from numerical physics.",
+    "issues": [
+      {
+        "severity": "minor",
+        "blocking": false,
+        "description": "Material/mass/gap parameters are assumptions. Small compliant contact penetration and joint-limit overshoot remain within declared tolerances; 2-second test is not long-horizon or measured physical validation. Curved back-rail collision is approximate/omitted. GLB exact camera requires delivered intrinsics metadata."
+      }
+    ]
+  }
+}

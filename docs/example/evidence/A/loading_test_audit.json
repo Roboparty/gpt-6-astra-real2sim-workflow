@@ -1,0 +1,46 @@
+{
+  "status": "passed",
+  "engine": "MuJoCo",
+  "version": "3.13.0",
+  "steps": 4000,
+  "timestep_s": 0.0005,
+  "actual_duration_s": 1.9999999999998352,
+  "hinge_observed_range_rad": [
+    0.0,
+    0.9084236927586692
+  ],
+  "upper_limit_exercised": true,
+  "max_cloth_displacement_m": 0.0607353780550946,
+  "max_pad_displacement_m": 0.0029508344950929188,
+  "minimum_contact_distance_m": -0.0024996014539808253,
+  "allowed_penetration_m": 0.005,
+  "solver_warnings": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "physical_parameters": "assumed, not measured",
+  "load_description": "0-300N distributed on cushion top then released; <=0.12N total gentle wind on unpinned garment vertices; 8Nm hinge torque for 1.3s",
+  "geometry_exaggeration": false,
+  "video": "dynamics_demo.mp4",
+  "reference_pose_preserved_in_separate_static_files": true,
+  "deformation_checks": [
+    {
+      "id": "red_garment_cloth",
+      "maximum_sampled_edge_strain": 0.04080230329099055,
+      "minimum_sampled_volume_ratio": null
+    },
+    {
+      "id": "chair_pad_volume",
+      "maximum_sampled_edge_strain": 0.08503709046225538,
+      "minimum_sampled_volume_ratio": 0.9271903003101588
+    }
+  ],
+  "deformation_sample_interval_s": 0.025,
+  "contacts_limits_warnings_checked_every_step": true,
+  "video_playback_speed_vs_physical_time": 0.75
+}

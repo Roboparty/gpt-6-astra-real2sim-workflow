@@ -1,0 +1,11 @@
+{
+  "status": "artifacts_rebuilt_and_numeric_checks_passed",
+  "source_sha256": "dfe25afbfb885ae9bc377691dd18ebd4259ffa72917ca725e3809ef40624c29c",
+  "manual_visual_review_required": true,
+  "scope": "Frozen single-image recipe replay; not a new autonomous reconstruction or new visual approval",
+  "native_blend": "export/scene.blend",
+  "glb": "export/scene.glb",
+  "usd": "export/scene.usdc",
+  "dynamics": "validate/scene_dynamic.xml",
+  "video": "validate/dynamics_demo.mp4"
+}

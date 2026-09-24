@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "evidence-real2sim"
+version = "0.2.0"
+description = "Evidence-first resumable Real2Sim reconstruction workflow"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.24", "opencv-python-headless>=4.8", "scipy>=1.10", "mujoco>=3.2"]
+
+[tool.setuptools]
+packages = ["r2s"]
+
+[tool.setuptools.package-data]
+r2s = ["prompts/*.md"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

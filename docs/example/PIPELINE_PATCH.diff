@@ -1,0 +1,1417 @@
+--- a/workflow/r2s/stage_worker.py
++++ b/workflow/r2s/stage_worker.py
+@@ -6,6 +6,8 @@
+ from .evaluation import glb_check
+ 
+ packet_path=Path(sys.argv[1]).resolve();packet=json.loads(packet_path.read_text());out=Path(packet['output_directory']);stage=packet['stage'];params=packet['parameters'];package=Path(__file__).parent
++from .structure import file_sha
++atomic_json(out/'execution_implementation.json',{'stage':stage,'worker_sha256':file_sha(Path(__file__)),'implementation_files':{p.name:file_sha(p) for p in sorted(package.glob('*.py'))},'scope':'Actual imported worker snapshot; children are bound to this workflow by core.execute.'})
+ def find_artifact(names,preferred=None):
+     stages=list(packet['input_artifacts'])
+     if preferred:stages=sorted(stages,key=lambda x:preferred.index(x) if x in preferred else len(preferred))
+@@ -22,6 +24,13 @@
+ if stage in {'build_render','build_geometry'}:
+     preferred=['agent_calibrate_lighting','agent_materials','agent_review_geometry','agent_model']
+     blend=find_artifact({'model.blend','scene.blend'},preferred);scene=find_artifact({'scene.json'},preferred);shutil.copyfile(scene,out/'scene.json')
++    if stage=='build_geometry':
++        from .structure import file_sha
++        atomic_json(out/'model_binding.json',{'model_sha256':file_sha(blend),'scene_sha256':file_sha(scene),'model_version':json.loads(scene.read_text()).get('model_version')})
++        run([params['blender'],'-b',str(blend),'-t',str(params.get('threads',8)),'--python-exit-code','12','--python',str(package/'blender_structure.py'),'--',str(scene),str(out)])
++        from PIL import Image
++        audit=json.loads((out/'structural_audit.json').read_text());Image.open(packet['original_input_allowlist'][0]).crop(audit['source_crop_xyxy']).save(out/'furniture_original_crop.png')
++        binding=json.loads((out/'model_binding.json').read_text());binding['structural_audit_sha256']=file_sha(out/'structural_audit.json');binding['original_crop_sha256']=file_sha(out/'furniture_original_crop.png');atomic_json(out/'model_binding.json',binding)
+     run([params['blender'],'-b',str(blend),'-t',str(params.get('threads',8)),'--python-exit-code','12','--python',str(package/'blender_render.py'),'--',str(out)])
+ elif stage=='export':
+     preferred=['agent_physics','agent_review','build_render','agent_calibrate_lighting','agent_materials','agent_model']
+--- a/workflow/r2s/core.py
++++ b/workflow/r2s/core.py
+@@ -88,7 +88,10 @@
+             if not isinstance(command,list):raise ContractError('Commands must be argv arrays, never shell strings')
+             argv=[v.replace('{packet}',str(attempt/'packet.json')).replace('{output}',str(attempt)).replace('{case}',str(self.case)) for v in command]
+             if self.stage_map[name][1] and self.config.get('agent_isolation_command'):argv=self.config['agent_isolation_command']+argv
+-            proc=subprocess.run(argv,cwd=attempt,capture_output=True,text=True,timeout=cfg.get('timeout_seconds',3600),shell=False)
++            # Stage cwd differs from the caller. A relative PYTHONPATH could resolve
++            # to an unrelated installed workflow; bind children to this exact snapshot.
++            env=os.environ.copy();env['PYTHONPATH']=str(Path(__file__).resolve().parent.parent)
++            proc=subprocess.run(argv,cwd=attempt,capture_output=True,text=True,timeout=cfg.get('timeout_seconds',3600),shell=False,env=env)
+             (attempt/'stdout.log').write_text(proc.stdout);(attempt/'stderr.log').write_text(proc.stderr)
+             if proc.returncode:raise RuntimeError(f'Stage command exited {proc.returncode}; see attempt logs')
+             response_path=attempt/'response.json'
+--- a/workflow/r2s/contracts.py
++++ b/workflow/r2s/contracts.py
+@@ -26,6 +26,9 @@
+     for c in [scene['camera']]+scene.get('cameras',[]):
+         if c['focal_px']<=0 or min(c['image_size'])<=0:raise ContractError('Invalid camera')
+         if c.get('role','reconstruction')!='reconstruction':raise ContractError('Held-out camera data cannot enter reconstruction scene')
++    if scene.get('structure'):
++        from .structure import structure_contract
++        if not structure_contract(scene['structure'])<=ids:raise ContractError('Assembly owner absent from semantic scene')
+     return {'status':'passed','object_count':len(ids),'enclosure_surfaces':6,'luminaire_count':len(lamps)}
+ 
+ def apply_layout_patch(scene,patch,authority,evidence):
+--- a/workflow/r2s/structure.py
++++ b/workflow/r2s/structure.py
+@@ -0,0 +1,67 @@
++"""Executable evidence contracts for coherent multi-part assemblies.
++These checks reject missing/invalid evidence; they do not replace visual judgement.
++Geometry measurements must be produced by the Blender evaluator on the bound file.
++"""
++import hashlib,json,math
++from pathlib import Path
++from .contracts import ContractError
++
++def file_sha(path):return hashlib.sha256(Path(path).read_bytes()).hexdigest()
++def structure_contract(data):
++    if not isinstance(data,dict) or data.get('schema')!='real2sim.assembly/1':raise ContractError('Missing assembly structure contract')
++    owners=set();entities=set()
++    for a in data.get('assemblies',[]):
++        if a['entity'] in entities:raise ContractError('Duplicate assembly owner')
++        entities.add(a['entity']);parts={p['id']:p for p in a.get('parts',[])}
++        if not parts or len(parts)!=len(a['parts']):raise ContractError('Empty or duplicate assembly parts')
++        for p in parts.values():
++            if p['object'] in owners:raise ContractError('Part assigned to multiple furniture owners')
++            owners.add(p['object'])
++        graph={p:set() for p in parts}
++        for j in a.get('joints',[]):
++            pair=j.get('parts',[])
++            if len(pair)!=2 or pair[0]==pair[1] or any(p not in parts for p in pair):raise ContractError('Unknown or self-connected part')
++            if len(j.get('anchor_world',[]))!=3 or not all(math.isfinite(x) for x in j['anchor_world']):raise ContractError('Joint lacks finite shared anchor')
++            if not 0<j.get('tolerance_m',0)<=.01:raise ContractError('Joint tolerance missing or excessive')
++            graph[pair[0]].add(pair[1]);graph[pair[1]].add(pair[0])
++        visited=set();todo=[next(iter(parts))]
++        while todo:
++            p=todo.pop()
++            if p not in visited:visited.add(p);todo.extend(graph[p]-visited)
++        if visited!=set(parts):raise ContractError('Disconnected assembly graph: '+a['entity'])
++        if not a.get('source_observation_ids') or not a.get('floor_supports'):raise ContractError('Assembly lacks observation binding or support constraints')
++        if any(f['part'] not in parts for f in a['floor_supports']):raise ContractError('Floor constraint references missing part')
++    return entities
++
++def evidence_file(attempt,ref,artifacts):
++    if not isinstance(ref,str) or ref not in artifacts:raise ContractError('Evidence reference is not a delivered artifact: '+str(ref))
++    p=(Path(attempt)/ref).resolve()
++    if not p.is_relative_to(Path(attempt).resolve()) or not p.is_file():raise ContractError('Evidence file missing or escapes attempt')
++    return p
++
++def review_contract(attempt,review,artifacts,scene,binding):
++    structure=scene.get('structure');required=structure_contract(structure)
++    if review.get('geometry_freeze_sha256')!=binding['model_sha256']:raise ContractError('Geometry review is not bound to current model bytes')
++    if review.get('model_version')!=scene.get('model_version'):raise ContractError('Geometry model version mismatch')
++    expected={o['id'] for o in scene['objects']};rows=review.get('per_object',[])
++    if len(rows)!=len(expected) or {r.get('entity') for r in rows}!=expected:raise ContractError('Per-object review must cover the current scene exactly once')
++    for row in rows:
++        if row.get('status') not in ['pass','hypothesized'] or not row.get('findings'):raise ContractError('Object review lacks explicit status/findings')
++        if row['status']=='hypothesized' and not row.get('uncertainty'):raise ContractError('Hypothesized object needs uncertainty')
++        if not row.get('evidence'):raise ContractError('Object review needs file evidence')
++        for ref in row['evidence']:evidence_file(attempt,ref,artifacts)
++    for check in review.get('checks',{}).values():
++        for ref in check.get('evidence',[]):evidence_file(attempt,ref,artifacts)
++    audit_path=evidence_file(attempt,'structural_audit.json',artifacts)
++    if file_sha(audit_path)!=binding.get('structural_audit_sha256'):raise ContractError('Reviewer modified or replaced executable structural audit')
++    audit=json.loads(audit_path.read_text())
++    if audit.get('source_model_sha256')!=binding['model_sha256'] or audit.get('source_scene_sha256')!=binding['scene_sha256']:raise ContractError('Structural measurements use stale model/scene')
++    if audit.get('status')!='passed' or audit.get('failures'):raise ContractError('Unresolved physical furniture structure issue')
++    if {x['entity'] for x in audit.get('assemblies',[])}!=required:raise ContractError('Structural evidence omits furniture')
++    for a in audit['assemblies']:
++        if not all(a.get(k) for k in ['ownership_checked','joints_checked','floor_checked','source_landmarks','isolated_views']):raise ContractError('Incomplete furniture structure evidence')
++        for ref in a['isolated_views']:evidence_file(attempt,ref,artifacts)
++    for ref,sha in audit.get('evidence_hashes',{}).items():
++        if file_sha(evidence_file(attempt,ref,artifacts))!=sha:raise ContractError('Structure evidence bytes changed')
++    if not audit.get('interassembly_checks') or not audit.get('evaluated_visible_meshes'):raise ContractError('Visible furniture intersections were not tested')
++    return audit
+--- a/workflow/r2s/blender_render.py
++++ b/workflow/r2s/blender_render.py
+@@ -1,3 +1,4 @@
++import os
+ import bpy,sys,json
+ from pathlib import Path
+ from mathutils import Matrix,Vector
+@@ -10,7 +11,7 @@
+ try:
+  p=bpy.context.preferences.addons['cycles'].preferences;p.compute_device_type='CUDA';p.get_devices()
+  for d in p.devices:d.use=d.type=='CUDA'
+- sc.cycles.device='GPU' if any(d.use for d in p.devices) else 'CPU'
++ sc.cycles.device='GPU' if os.environ.get('R2S_CPU')!='1' and any(d.use for d in p.devices) else 'CPU'
+ except Exception:sc.cycles.device='CPU'
+ S=json.loads((out/'scene.json').read_text());specs=S.get('cameras') or [S['camera']];cameras=[]
+ for i,c in enumerate(specs):
+--- a/workflow/r2s/blender_structure.py
++++ b/workflow/r2s/blender_structure.py
+@@ -0,0 +1,120 @@
++"""Measure actual evaluated furniture meshes and render isolated/combined evidence.
++Inspection hides non-targets only while making diagnostic pictures; never saves that
++visibility state as a model. Physical overlap checks use visible meshes, not proxies.
++"""
++import bpy,sys,json,hashlib,math,os
++import numpy as np
++from pathlib import Path
++from mathutils import Vector
++from mathutils.bvhtree import BVHTree
++args=sys.argv[sys.argv.index('--')+1:];scene_file=Path(args[0]);out=Path(args[1]);scene=json.loads(scene_file.read_text());structure=scene['structure']
++sha=lambda p:hashlib.sha256(Path(p).read_bytes()).hexdigest()
++result=dict(schema='real2sim.structure-audit/1',source_model_sha256=sha(bpy.data.filepath),source_scene_sha256=sha(scene_file),model_version=scene['model_version'],evaluated_visible_meshes=True,method='Evaluated triangle BVHs, signed solid membership, world-space joint anchors and floor bounds; surface-intersection screening of all non-joint component pairs. No dynamics proxy is used.',assemblies=[],interassembly_checks=[],failures=[],evidence_hashes={})
++deps=bpy.context.evaluated_depsgraph_get();meshes={};owners={}
++for a in structure['assemblies']:
++ for part in a['parts']:
++  o=bpy.data.objects.get(part['object'])
++  if o is None or o.get('furniture_id')!=a['entity'] or o.get('part_id')!=part['id']:
++   result['failures'].append(dict(kind='ownership',part=part));continue
++  ev=o.evaluated_get(deps);me=ev.to_mesh();me.calc_loop_triangles();v=[o.matrix_world@x.co for x in me.vertices];tri=[tuple(t.vertices) for t in me.loop_triangles];bvh=BVHTree.FromPolygons(v,tri,all_triangles=True,epsilon=0)
++  arr=np.array(v);meshes[o.name]=dict(tree=bvh,vertices=v,triangles=tri,lo=arr.min(axis=0),hi=arr.max(axis=0));owners[o.name]=a['entity'];ev.to_mesh_clear()
++def solid_distance(mesh,point):
++ p=Vector(point);near,normal,index,d=mesh['tree'].find_nearest(p)
++ if near is None:return float('inf')
++ # For closed consistently oriented surfaces, the closest triangle gives the
++ # signed distance. Use ray parity only at an ambiguous tangential nearest edge;
++ # repeated ray hits on nearly coincident bevel triangles are numerically fragile.
++ if d<1e-6:return 0.
++ side=(p-near).dot(normal)
++ if abs(side)>1e-7:return -float(d) if side<0 else float(d)
++ direction=Vector((.827,.379,.416)).normalized();origin=p.copy();hits=0
++ for _ in range(128):
++  hit,_,_,dist=mesh['tree'].ray_cast(origin,direction)
++  if hit is None:break
++  hits+=1;origin=hit+direction*1e-5
++ return -float(d) if hits%2 else float(d)
++for a in structure['assemblies']:
++ names={p['id']:p['object'] for p in a['parts']};row=dict(entity=a['entity'],ownership_checked=all(n in meshes for n in names.values()),joints_checked=[],floor_checked=[],source_landmarks=a['fit']['landmarks'],isolated_views=[])
++ for j in a['joints']:
++  if any(names[p] not in meshes for p in j['parts']):continue
++  ds=[max(0.,solid_distance(meshes[names[p]],j['anchor_world'])) for p in j['parts']];ok=max(ds)<=j['tolerance_m'];row['joints_checked'].append(dict(j,measured_anchor_outside_distances_m=ds,status='pass' if ok else 'fail'))
++  if not ok:result['failures'].append(dict(kind='disconnected_joint',entity=a['entity'],joint=j['parts'],distances_m=ds))
++ for f in a['floor_supports']:
++  if names[f['part']] not in meshes:continue
++  z=float(meshes[names[f['part']]]['lo'][2]);ok=abs(z-f['plane_z'])<=f['tolerance_m'];row['floor_checked'].append(dict(part=f['part'],actual_lowest_z_m=z,status='pass' if ok else 'fail'))
++  if not ok:result['failures'].append(dict(kind='floor',entity=a['entity'],part=f['part'],z=z))
++ # Bind every fitted correspondence to its owned evaluated part. Re-measure the
++ # closest actual mesh point, not a copied residual from the parameter fitting file.
++ cal=scene['camera'];R=np.array(cal['rotation_world_to_cv']);C=np.array(cal['position'])
++ for lm in row['source_landmarks']:
++  part=lm.get('part')
++  if part not in names or names[part] not in meshes:
++   result['failures'].append(dict(kind='unbound_source_landmark',entity=a['entity'],landmark=lm['id']));continue
++  point,normal,index,distance=meshes[names[part]]['tree'].find_nearest(Vector(lm['world']))
++  q=(np.array(point)-C)@R.T;uv=q[:2]/q[2]*cal['focal_px']+np.array(cal['principal_point']);lm.update(measured_world_point=list(point),distance_to_bound_mesh_m=float(distance),projected=uv.tolist(),error_px=float(np.linalg.norm(uv-lm['uv'])))
++  if distance>.008:result['failures'].append(dict(kind='landmark_part_mismatch',entity=a['entity'],landmark=lm['id'],distance_m=float(distance)))
++ errors=[v['error_px'] for v in row['source_landmarks']];limits=structure.get('acceptance',{'landmark_median_px':9,'landmark_max_px':18})
++ row['landmark_median_px']=float(np.median(errors));row['landmark_max_px']=max(errors)
++ if row['landmark_median_px']>limits['landmark_median_px'] or max(errors)>limits['landmark_max_px']:result['failures'].append(dict(kind='source_landmarks',entity=a['entity'],median=row['landmark_median_px'],maximum=max(errors)))
++ result['assemblies'].append(row)
++allowed=set()
++for a in structure['assemblies']:
++ names={p['id']:p['object'] for p in a['parts']}
++ for j in a['joints']:allowed.add(tuple(sorted(names[p] for p in j['parts'])))
++names=sorted(meshes);pairs=[]
++for i,n in enumerate(names):
++ for m in names[i+1:]:
++  pair=(n,m);ma,mb=meshes[n],meshes[m];ov=np.minimum(ma['hi'],mb['hi'])-np.maximum(ma['lo'],mb['lo']);cross=owners[n]!=owners[m]
++  record=dict(parts=list(pair),owners=[owners[n],owners[m]],expected_joint=pair in allowed,intersects=False,penetration_sample_m=0.)
++  if np.min(ov)>.00001:
++   overlaps=ma['tree'].overlap(mb['tree'])
++   # Surface intersections plus containment catch both crossing and nested solids.
++   candidate=[]
++   if overlaps:
++    for ia,ib in overlaps[:300]:
++     for me,idx,other in [(ma,ia,mb),(mb,ib,ma)]:
++      verts=[me['vertices'][v] for v in me['triangles'][idx]]
++      for p in verts+[sum(verts,Vector())/3]:candidate.append(-solid_distance(other,p))
++   else:
++    candidate=[-solid_distance(mb,ma['vertices'][0]),-solid_distance(ma,mb['vertices'][0])]
++   depth=max(candidate+[0.]);record.update(intersects=bool(overlaps) or depth>0,penetration_sample_m=depth)
++   if pair not in allowed and depth>structure['unexpected_interpenetration_tolerance_m']:
++    result['failures'].append(dict(kind='unexpected_interpenetration',parts=list(pair),depth_m=depth,cross_furniture=cross))
++   elif pair not in allowed and overlaps and depth==0 and np.min(ov)>.01:
++    # Ambiguous edge-only crossing must be reviewed, not silently called clear.
++    record['requires_visual_intersection_review']=True
++  pairs.append(record)
++  if cross:result['interassembly_checks'].append(record)
++result['component_pair_checks']=pairs
++if os.environ.get('R2S_STRUCTURE_NO_RENDER')=='1':
++ result['status']='passed' if not result['failures'] else 'failed';(out/'structural_audit.json').write_text(json.dumps(result,indent=2));print('STRUCTURE_RESULT',result['status'],json.dumps(result['failures']));sys.exit(0)
++# Views, with coherent shapes exposed from angles unavailable in the source photo.
++sc=bpy.context.scene;sourcecam=sc.camera;visibility={o.name:o.hide_render for o in bpy.data.objects};world_original=sc.world
++sc.render.engine='CYCLES';sc.cycles.samples=24;sc.cycles.use_denoising=True;sc.cycles.device='CPU' if os.environ.get('R2S_CPU')=='1' else 'GPU'
++sc.render.resolution_percentage=100;sc.render.resolution_x=scene['camera']['image_size'][0];sc.render.resolution_y=scene['camera']['image_size'][1]
++uv=np.array([x['uv'] for a in result['assemblies'] for x in a['source_landmarks']]);lo=np.floor(uv.min(axis=0)-30).astype(int);hi=np.ceil(uv.max(axis=0)+30).astype(int);W,H=scene['camera']['image_size'];lo=np.maximum(lo,0);hi=np.minimum(hi,[W,H]);result['source_crop_xyxy']=[*lo.tolist(),*hi.tolist()]
++sc.render.use_border=True;sc.render.use_crop_to_border=True;sc.render.border_min_x=lo[0]/W;sc.render.border_max_x=hi[0]/W;sc.render.border_min_y=1-hi[1]/H;sc.render.border_max_y=1-lo[1]/H;sc.render.filepath=str(out/'furniture_source_view.png');bpy.ops.render.render(write_still=True);sc.render.use_border=False;sc.render.use_crop_to_border=False
++sc.render.resolution_x=700;sc.render.resolution_y=700
++world=bpy.data.worlds.new('structure_inspection_world');world.use_nodes=True;world.node_tree.nodes['Background'].inputs[0].default_value=(.8,.8,.8,1);world.node_tree.nodes['Background'].inputs[1].default_value=.7;sc.world=world
++bpy.ops.object.camera_add();cam=bpy.context.object;cam.name='structure_inspection_camera';cam.data.type='ORTHO';sc.camera=cam
++data=bpy.data.lights.new('structure_inspection_area','AREA');data.energy=500;data.shape='DISK';data.size=3;light=bpy.data.objects.new('structure_inspection_area',data);bpy.context.collection.objects.link(light)
++for o in bpy.data.objects:
++ if o.type=='LIGHT' and o!=light:o.hide_render=True
++allparts=set(meshes)
++groups=[(a['entity'],{p['object'] for p in a['parts']}) for a in structure['assemblies']]+[('combined',allparts)]
++for entity,parts in groups:
++ for o in bpy.data.objects:
++  if o.type in ['MESH','CURVE']:o.hide_render=o.name not in parts
++ lo=np.min([meshes[n]['lo'] for n in parts],axis=0);hi=np.max([meshes[n]['hi'] for n in parts],axis=0);center=(lo+hi)/2;span=max(hi-lo);cam.data.ortho_scale=span*1.55
++ yaw=next((a['frame']['yaw_rad'] for a in structure['assemblies'] if a['entity']==entity),0)
++ for label,delta in [('front',(1.7,-2.6,1.6)),('rear',(-1.7,2.6,1.5)),('side',(2.8,.3,1.1))]:
++  dx,dy,dz=delta;offset=np.array([math.cos(yaw)*dx-math.sin(yaw)*dy,math.sin(yaw)*dx+math.cos(yaw)*dy,dz])*span;cam.location=center+offset;cam.rotation_euler=(Vector(center)-cam.location).to_track_quat('-Z','Y').to_euler();light.location=center+[-1,-2,3];light.rotation_euler=(Vector(center)-light.location).to_track_quat('-Z','Y').to_euler();name=f'structure_{entity}_{label}.png';sc.render.filepath=str(out/name);bpy.ops.render.render(write_still=True)
++  if entity!='combined':next(a for a in result['assemblies'] if a['entity']==entity)['isolated_views'].append(name)
++  else:result.setdefault('combined_views',[]).append(name)
++for o in bpy.data.objects:
++ if o.name in visibility:o.hide_render=visibility[o.name]
++sc.camera=sourcecam;sc.world=world_original
++result['status']='passed' if not result['failures'] else 'failed'
++for p in out.glob('structure_*.png'):result['evidence_hashes'][p.name]=sha(p)
++result['evidence_hashes']['furniture_source_view.png']=sha(out/'furniture_source_view.png')
++(out/'structural_audit.json').write_text(json.dumps(result,indent=2));print('STRUCTURE_RESULT',result['status'],json.dumps(result['failures']))
+--- a/workflow/r2s/quality.py
++++ b/workflow/r2s/quality.py
+@@ -18,7 +18,23 @@
+ def check_quality_stage(stage,attempt,response,profile):
+     if profile!='quality_v2':return
+     files=response.get('artifacts',[])
+-    if stage=='agent_calibrate_room':
++    if stage=='agent_observe':
++        d=_read(attempt,'furniture_observation.json',files)
++        if not d.get('source_sha256') or not d.get('acceptance_before_fit'):raise ContractError('Part observation requires source binding and predeclared acceptance')
++        if not d.get('targets') and not d.get('no_applicable_furniture_reason'):raise ContractError('Furniture observation scope must be explicit')
++        for t in d.get('targets',[]):
++            if not all(t.get(k) for k in ['entity','parts','constraints','observations','uncertain']):raise ContractError('Furniture lacks part ownership, constraints, observations or uncertainty')
++            if any(o.get('visibility') not in ['observed','partial','unobserved'] for o in t['observations']):raise ContractError('Part observation visibility must be explicit')
++    elif stage=='agent_model':
++        from .structure import structure_contract,file_sha
++        d=_read(attempt,'scene.json',files);required=structure_contract(d.get('structure'))
++        obs=_read(attempt,'furniture_observation.json',files)
++        if required!={o['entity'] for o in obs['targets']}:raise ContractError('Model omits an observed assembly')
++        if d['structure']['observation_sha256']!=file_sha(Path(attempt)/'furniture_observation.json'):raise ContractError('Model not bound to actual part observations')
++        packet=json.loads((Path(attempt)/'packet.json').read_text());up=[a for a in packet['input_artifacts']['agent_observe'] if Path(a['path']).name=='furniture_observation.json']
++        if len(up)!=1 or up[0]['sha256']!=d['structure']['observation_sha256']:raise ContractError('Builder used observations different from accepted observation stage')
++        if response.get('parameters',{}).get('model_version')!=d['model_version']:raise ContractError('Model response version differs from actual model')
++    elif stage=='agent_calibrate_room':
+         d=_read(attempt,'room_calibration.json',files);surfaces={s['id']:s for s in d.get('surfaces',[])}
+         required={'wall_front','wall_back','wall_left','wall_right','floor','ceiling'}
+         if set(surfaces)!=required:raise ContractError('Room calibration must account for every wall, floor and ceiling')
+@@ -34,6 +50,9 @@
+         d=_read(attempt,'geometry_review.json',files);_review(d,['camera','room_surfaces','silhouettes','occlusion','support'])
+         if not d.get('per_object') or any(x.get('critical_mismatch') for x in d['per_object']):raise ContractError('Per-object silhouette review is incomplete')
+         if not d.get('geometry_freeze_sha256'):raise ContractError('Freeze geometry before material/light calibration')
++        from .structure import review_contract
++        packet=json.loads((Path(attempt)/'packet.json').read_text());art=packet['input_artifacts']['build_geometry'];src={Path(a['path']).name:Path(a['path']) for a in art}
++        review_contract(attempt,d,files,json.loads(src['scene.json'].read_text()),json.loads(src['model_binding.json'].read_text()))
+     elif stage=='agent_materials':
+         if not {'scene.json','model.blend'}<=set(files):raise ContractError('Material stage must deliver the editable scene, not only recommendations')
+         d=_read(attempt,'material_calibration.json',files)
+@@ -49,6 +68,10 @@
+     elif stage=='agent_review':
+         d=_read(attempt,'review.json',files);_review(d,['geometry','materials','lighting','source_alignment','novel_view_completeness'])
+         if not d.get('source_comparison') or not d.get('same_camera_comparison'):raise ContractError('Original and render must be compared in the same camera')
++        from .structure import evidence_file
++        furniture=d.get('furniture_local_review',{})
++        if furniture.get('status')!='pass' or not furniture.get('source_crop') or not furniture.get('render_crop') or not furniture.get('findings'):raise ContractError('Final appearance review must recheck furniture locally')
++        for key in ['source_crop','render_crop']:evidence_file(attempt,furniture[key],files)
+     elif stage=='agent_physics':
+         d=_read(attempt,'physics_setup.json',files)
+         if not d.get('reference_pose_preserved') or not d.get('parameters_are_measured_or_prior_labelled'):raise ContractError('Physics must preserve reference pose and label parameter provenance')
+--- a/workflow/r2s/profiles.py
++++ b/workflow/r2s/profiles.py
+@@ -15,7 +15,7 @@
+       ('agent_observe',['preprocess'],True),('agent_identify',['agent_observe'],True),
+       ('agent_calibrate',['agent_observe','agent_identify'],True),
+       ('agent_calibrate_room',['agent_calibrate','agent_observe'],True),
+-      ('agent_model',['agent_calibrate_room','agent_calibrate','agent_identify'],True),
++      ('agent_model',['agent_calibrate_room','agent_calibrate','agent_identify','agent_observe'],True),
+       ('build_geometry',['agent_model'],False),
+       ('agent_review_geometry',['build_geometry','agent_observe','agent_calibrate_room'],True),
+       ('agent_materials',['agent_review_geometry','agent_model','agent_observe'],True),
+--- a/workflow/r2s/blender_export.py
++++ b/workflow/r2s/blender_export.py
+@@ -1,3 +1,4 @@
++import os
+ """Shared Blender export/geometry audit; never modifies object placement."""
+ import bpy,bmesh,sys,json,math,hashlib
+ from pathlib import Path
+@@ -11,7 +12,7 @@
+ try:
+  cp=bpy.context.preferences.addons['cycles'].preferences;cp.compute_device_type='CUDA';cp.get_devices()
+  for d in cp.devices:d.use=d.type=='CUDA'
+- sc.cycles.device='GPU' if any(d.use for d in cp.devices) else 'CPU'
++ sc.cycles.device='GPU' if os.environ.get('R2S_CPU')!='1' and any(d.use for d in cp.devices) else 'CPU'
+ except Exception:sc.cycles.device='CPU'
+ groups=defaultdict(list)
+ for o in bpy.data.objects:
+--- a/workflow/r2s/prompts/agent_observe_structure.md
++++ b/workflow/r2s/prompts/agent_observe_structure.md
+@@ -0,0 +1,5 @@
++# Part-level observation supplement
++
++This supplement is mandatory for quality_v2 observation. Preserve source-image identity and give furniture_observation.json with named furniture owners, part inventory, structural constraints, source landmark IDs and pixel coordinates, visibility (observed/partial/unobserved), uncertainty and alternative interpretations. Define acceptance tolerances before fitting. Separate hidden-foot assumptions from visible-foot evidence. Explain occlusion without inventing connections between different furniture.
++
++The modeller consumes this accepted artifact unchanged and binds its hash to the generated assembly and parameter fit. The observation artifact is not a script for arbitrary furniture; its contents must be re-authored after inspecting each new source. When no multipart furniture is applicable, record explicit reasons rather than inventing an assembly.
+--- a/workflow/r2s/prompts/agent_review_geometry.md
++++ b/workflow/r2s/prompts/agent_review_geometry.md
+@@ -5,3 +5,9 @@
+ Deliver geometry_review.json with decision pass/revise, checks for camera, room_surfaces, silhouettes, occlusion and support (each has status and evidence), per_object findings, issues with severity, and geometry_freeze_sha256. Any visible major mismatch remains blocking. Do not reclassify visible shape errors as uncertainty about invisible geometry. If revising, return changes_requested and invalidate agent_calibrate, agent_calibrate_room or agent_model as appropriate.
+ 
+ After acceptance, lock camera, architecture and object layout for material/light calibration. Preserve editable geometry; never replace it with a projected full-room image.
++
++## Enforced structure review
++
++Use build_geometry's model_binding.json and structural_audit.json. A failed mesh audit blocks acceptance; repair the model or correct a demonstrably wrong constraint with evidence and a new revision. The audit uses evaluated visible meshes, not dynamics proxies. Inspect each furniture alone from front/rear/side, the combined assembly from several angles, and the original furniture crop against the source-camera crop. Separate intended joinery/contact, photographic occlusion and unintended penetration. Explicitly inspect feet, rear-post ownership, crossbar endpoints, upholstery support, symmetric/parallel structure and load paths.
++
++geometry_review.json must cover every current scene entity exactly once in per_object, each with entity, status (pass or hypothesized), concrete findings and actual delivered evidence filenames; hypotheses need uncertainty. geometry_freeze_sha256 must equal the current model_binding model hash and model_version must match. Deliver all referenced image/audit files. Empty captions, stale model hashes, missing objects or missing evidence files are rejected. Brightness ROI scores, camera-only landmark residuals, exporter success and a stable simulation cannot substitute for this review. Keep any major local defect blocking, even if the global image looks acceptable.
+--- a/workflow/r2s/prompts/agent_observe.md
++++ b/workflow/r2s/prompts/agent_observe.md
+@@ -7,3 +7,5 @@
+ Deliver observation.json with input hashes, pixel-coordinate convention, evidence, confidence, explicit unknowns and suggested correspondence annotations. Do not invent SKU identities or metric ground truth. Every subsequent reconstruction must preserve four walls, floor, ceiling and luminaires, including conservative hypotheses for invisible parts.
+ 
+ Return response.json using the packet response contract. Document only concise, auditable conclusions and evidence.
++
++For quality_v2, also follow agent_observe_structure.md and deliver furniture_observation.json. This is a required consumed input to the model stage, not optional prose.
+--- a/workflow/r2s/prompts/agent_review.md
++++ b/workflow/r2s/prompts/agent_review.md
+@@ -9,3 +9,5 @@
+ Return response.json with evidence and auditable conclusions.
+ 
+ For workflow_profile quality_v2, review.json must additionally have decision pass/revise, source_comparison, same_camera_comparison, and separate checks for geometry, materials, lighting, source_alignment and novel_view_completeness. Each check needs status and evidence. A major visible mismatch blocks acceptance even if another field calls it nonblocking. Technical integrity, visual likeness and real-world physical accuracy are separate verdicts.
++
++Also deliver furniture_local_review with status, concrete findings, source_crop and render_crop referring to real artifacts. Recheck the accepted furniture structure under final shading: do not let material highlights, source-view occlusion or all-image brightness scores conceal disconnected/incorrect members. A model-version change invalidates the prior local review and requires new images.
+--- a/workflow/r2s/prompts/agent_model.md
++++ b/workflow/r2s/prompts/agent_model.md
+@@ -7,3 +7,9 @@
+ A builds furniture geometry independently from image/spec priors. B may replace only verified exact asset components while retaining the same scene placement; otherwise copy A and log fallback. Keep catalogue body dimensions distinct from decorated assembly bounds. Geometry/appearance corrections need observed evidence. Generative layout repair may report conflicts but must not move evidence-backed objects.
+ 
+ Return response.json. Do not mark complete merely because Blender saved a file.
++
++## Mandatory assembly evidence
++
++Read the accepted furniture_observation.json from the observation stage; carry its exact bytes/hash into the model artifacts. It must assign visible parts to furniture, distinguish observed/partial/hidden landmarks and record alternative interpretations. Do not separately ray-fit surfaces, back rails and feet and join them only by screen proximity. Fit a coherent local furniture frame with shared dimensions, parallel/symmetric members where supported, and a connected load path. Hidden joinery may use labelled priors.
++
++For quality_v2 deliver scene.structure using real2sim.assembly/1: one owner per part, actual Blender object name, explicitly declared joint pairs with a shared world-space anchor/tolerance, floor supports and source observation IDs. The assembly graph must be connected. Store actual fit residuals separately from room/camera residuals, and bind model_version consistently in scene and response.parameters. A layout lock is not a structural certificate. Do not add arbitrary joints to whitelist a visually erroneous crossbar or intersection.
+--- a/case/prepare_physics.py
++++ b/case/prepare_physics.py
+@@ -16,13 +16,19 @@
+  if o.get('entity_id')=='door_frame' and o.type=='MESH':frame_boxes.append(dict(shape='box',position=list(o.matrix_world.translation),dimensions=list(o.dimensions)))
+ objects['door_frame']['parameters']['collision_proxies']=frame_boxes
+ objects['door_leaf']['parameters']['collision_proxies']=[dict(shape='box',position=[4.08,-2.25,1.095],dimensions=[.009,.84,2.16])]+[dict(shape='capsule',**{'from':[4.08,y,.02],'to':[4.08,y,2.18],'radius':.006}) for y in [-2.67,-1.83]]
+-for chair_id in ['chair_near','chair_far']:
+- corrected=[]
+- for leg in objects[chair_id]['parameters']['collision_proxies']:
+-  a=np.array(leg['from']);b=np.array(leg['to']);axis=(b-a)/np.linalg.norm(b-a);radius=.0115
+-  corrected.append(dict(shape='capsule',**{'from':(a+radius*axis).tolist(),'to':(b-radius*axis).tolist(),'radius':radius}))
+-  corrected.append(dict(shape='box',position=[float(a[0]),float(a[1]),.0075],dimensions=[.024,.024,.013]))
+- objects[chair_id]['parameters']['collision_proxies']=corrected
++if s.get('model_version',0)<4:
++ for chair_id in ['chair_near','chair_far']:
++  corrected=[]
++  for leg in objects[chair_id]['parameters']['collision_proxies']:
++   a=np.array(leg['from']);b=np.array(leg['to']);axis=(b-a)/np.linalg.norm(b-a);radius=.0115
++   corrected.append(dict(shape='capsule',**{'from':(a+radius*axis).tolist(),'to':(b-radius*axis).tolist(),'radius':radius}))
++   corrected.append(dict(shape='box',position=[float(a[0]),float(a[1]),.0075],dimensions=[.024,.024,.013]))
++  objects[chair_id]['parameters']['collision_proxies']=corrected
++ 
++else:
++ # Version 4 proxies follow each generated member, with inscribed/shortened beam capsules and oriented seat/apron boxes.
++ assert all(objects[e]['parameters'].get('collision_proxies') for e in ['table','chair_near','chair_far'])
++
+ deps=bpy.context.evaluated_depsgraph_get()
+ def component_proxies(entity):
+  result=[]
+@@ -81,5 +87,8 @@
+ setup['soft_body_parameter_revision']='20kPa candidate was stable under gravity and 50N but inverted under the chosen 300N load. 100kPa is a plausible firm-pad prior tested for numerical demonstration; this tuning is not independent identification of the real cushion.'
+ setup['provenance_consolidation']='Unobserved wall, partial door and foreground glass metadata explicitly marked as hypotheses; no visual geometry/camera/material changed.'
+ setup['chair_collision_revision']='Capsule endpoints are shortened by their radius so spherical ends stay within flat-ended chair legs, instead of protruding 16.5mm into the cushion. Small foot proxies retained. Visual geometry unchanged.'
++if s.get('model_version',0)>=4:
++ setup['chair_collision_revision']='Revised rigid furniture frames supply per-member inscribed and endpoint-shortened capsules plus oriented apron/seat/top boxes. Whole-chair AABBs are not used. Curved back-rail surface collision is approximate/omitted from this demonstration; visible-mesh structure/intersection tests are separately enforced before physics.'
++ setup['furniture_revision']='Near pad rests on the rebuilt seat board and ends ahead of the rear posts. Its new evaluated native envelope is used to construct the tetrahedral rest volume. No old pad trajectory or old collision envelope is reused.'
+ setup['soft_reference_envelope']={'method':'Construct tetrahedral volume from actual native evaluated cushion envelope, including Solidify direction; rounded edges are approximated','native_world_aabb':[seat_lo.tolist(),seat_hi.tolist()],'tet_world_aabb':[np.min(points,axis=0).tolist(),np.max(points,axis=0).tolist()],'maximum_envelope_error_m':float(np.max(abs(np.array([seat_lo,seat_hi])-np.array([np.min(points,axis=0),np.max(points,axis=0)]))))}
+ (out/'physics_setup.json').write_text(json.dumps(setup,indent=2))
+--- a/case/calibrate_materials.py
++++ b/case/calibrate_materials.py
+@@ -1,3 +1,4 @@
++import os
+ import bpy,json,sys,hashlib
+ from pathlib import Path
+ from mathutils import Vector
+@@ -37,7 +38,7 @@
+ try:
+  p=bpy.context.preferences.addons['cycles'].preferences;p.compute_device_type='CUDA';p.get_devices()
+  for d in p.devices:d.use=d.type=='CUDA'
+- sc.cycles.device='GPU'
++ sc.cycles.device='CPU' if os.environ.get('R2S_CPU')=='1' else 'GPU'
+ except:pass
+ bpy.ops.file.pack_all();bpy.ops.wm.save_as_mainfile(filepath=str(out/'model.blend'));bpy.ops.render.render(write_still=True)
+ (out/'geometry_lock.json').write_text(json.dumps(dict(before=before,after=after,identical=True),indent=2))
+--- a/case/furniture_parameters.json
++++ b/case/furniture_parameters.json
+@@ -0,0 +1,584 @@
++{
++  "schema": "real2sim.furniture-fit/1",
++  "source_observation": "case/furniture_observation.json",
++  "source_observation_sha256": "d7feee78a1d884fa0f4bc16d5740a6336945e1721c9b339a8d44d54a47057fa7",
++  "calibration_sha256": "242444febb1f2be9872fe74ecfe69459fd26bc0376200acb132e083b101d4a4b",
++  "model_version": 4,
++  "method": "joint rigid rectangle and assembly fit, shared chair dimensions, floor constraints; fitting points only",
++  "targets": {
++    "table": {
++      "parameters": [
++        1.262884370994383,
++        -0.6164340086568015,
++        -0.10684634538649157,
++        0.7015795294089687,
++        0.903353666780103,
++        0.7536647282564195
++      ],
++      "parameter_names": [
++        "x_m",
++        "y_m",
++        "yaw_rad",
++        "width_m",
++        "length_m",
++        "height_m"
++      ],
++      "observation_ids": [
++        "t_top_0",
++        "t_top_1",
++        "t_top_2",
++        "t_top_3",
++        "t_foot_0",
++        "t_foot_3"
++      ],
++      "landmarks": [
++        {
++          "id": "t_top_0",
++          "landmark": "top_0",
++          "uv": [
++            615,
++            576
++          ],
++          "visibility": "observed",
++          "sigma_px": 4,
++          "world": [
++            0.865926787429087,
++            -1.0281257594761408,
++            0.7536647282564195
++          ],
++          "projected": [
++            607.6809077060324,
++            573.1846241527508
++          ],
++          "error_px": 7.84190366995736
++        },
++        {
++          "id": "t_top_1",
++          "landmark": "top_1",
++          "uv": [
++            740,
++            548
++          ],
++          "visibility": "observed",
++          "sigma_px": 4,
++          "world": [
++            0.9622632823795872,
++            -0.12992359569244688,
++            0.7536647282564195
++          ],
++          "projected": [
++            746.615034149394,
++            555.4505915196921
++          ],
++          "error_px": 9.963432681107285
++        },
++        {
++          "id": "t_top_2",
++          "landmark": "top_2",
++          "uv": [
++            849,
++            557
++          ],
++          "visibility": "observed",
++          "sigma_px": 4,
++          "world": [
++            1.6598419545596792,
++            -0.2047422578374623,
++            0.7536647282564195
++          ],
++          "projected": [
++            843.2120826994021,
++            564.7111753225727
++          ],
++          "error_px": 9.641691321236852
++        },
++        {
++          "id": "t_top_3",
++          "landmark": "top_3",
++          "uv": [
++            716,
++            596
++          ],
++          "visibility": "observed",
++          "sigma_px": 4,
++          "world": [
++            1.5635054596091789,
++            -1.1029444216211561,
++            0.7536647282564195
++          ],
++          "projected": [
++            715.2457421171171,
++            587.621140777057
++          ],
++          "error_px": 8.41273955568505
++        },
++        {
++          "id": "t_foot_0",
++          "landmark": "foot_0",
++          "uv": [
++            638,
++            724
++          ],
++          "visibility": "observed",
++          "sigma_px": 4,
++          "world": [
++            0.9215008491282286,
++            -0.9704889143614333,
++            0.002
++          ],
++          "projected": [
++            639.0309602214911,
++            721.80055635426
++          ],
++          "error_px": 2.4290803463621575
++        },
++        {
++          "id": "t_foot_3",
++          "landmark": "foot_3",
++          "uv": [
++            720,
++            747
++          ],
++          "visibility": "observed",
++          "sigma_px": 4,
++          "world": [
++            1.5214185072031075,
++            -1.0348329638061466,
++            0.002
++          ],
++          "projected": [
++            726.7870454472203,
++            748.6433187332841
++          ],
++          "error_px": 6.9831570483411145
++        }
++      ],
++      "median_error_px": 8.127321612821206,
++      "max_error_px": 9.963432681107285,
++      "uncertainty": [
++        "far feet partly hidden by chairs and rails; not used as measured landmarks",
++        "underside diagonal brace arrangement partly occluded",
++        "absolute dimensions inherit ceiling-height prior"
++      ]
++    },
++    "chair_near": {
++      "parameters": [
++        1.7023032803017566,
++        -0.5546148536735628,
++        -1.6520651588744393,
++        0.33055912497992546,
++        0.3904680353957918,
++        0.41746881692188126,
++        0.6636728466068973
++      ],
++      "parameter_names": [
++        "x_m",
++        "y_m",
++        "yaw_rad",
++        "width_m",
++        "depth_m",
++        "seat_top_m",
++        "back_top_m"
++      ],
++      "observation_ids": [
++        "n_seat_0",
++        "n_seat_1",
++        "n_seat_2",
++        "n_seat_3",
++        "n_foot_0",
++        "n_foot_1",
++        "n_foot_2",
++        "n_foot_3",
++        "n_back_post_2",
++        "n_back_post_3"
++      ],
++      "landmarks": [
++        {
++          "id": "n_seat_0",
++          "landmark": "seat_0",
++          "uv": [
++            766,
++            639
++          ],
++          "visibility": "observed",
++          "sigma_px": 4,
++          "world": [
++            1.4986078507618308,
++            -0.6998378504281335,
++            0.41746881692188126
++          ],
++          "projected": [
++            764.6211553407835,
++            642.4189100192868
++          ],
++          "error_px": 3.6864831905529973
++        },
++        {
++          "id": "n_seat_1",
++          "landmark": "seat_1",
++          "uv": [
++            801,
++            624
++          ],
++          "visibility": "partial",
++          "sigma_px": 7,
++          "world": [
++            1.524793008051184,
++            -0.3783433300307448,
++            0.41746881692188126
++          ],
++          "projected": [
++            805.4137129421888,
++            629.3374749065689
++          ],
++          "error_px": 6.9260017552912565
++        },
++        {
++          "id": "n_seat_2",
++          "landmark": "seat_2",
++          "uv": [
++            862,
++            640
++          ],
++          "visibility": "observed",
++          "sigma_px": 4,
++          "world": [
++            1.8751010251677818,
++            -0.4068752954172194,
++            0.41746881692188126
++          ],
++          "projected": [
++            861.0889803798217,
++            637.9164307506416
++          ],
++          "error_px": 2.274031126704723
++        },
++        {
++          "id": "n_seat_3",
++          "landmark": "seat_3",
++          "uv": [
++            827,
++            655
++          ],
++          "visibility": "observed",
++          "sigma_px": 4,
++          "world": [
++            1.8489158678784285,
++            -0.7283698158146081,
++            0.41746881692188126
++          ],
++          "projected": [
++            823.4705972555665,
++            652.5863013436381
++          ],
++          "error_px": 4.275818627600788
++        },
++        {
++          "id": "n_foot_0",
++          "landmark": "foot_0",
++          "uv": [
++            774,
++            723
++          ],
++          "visibility": "observed",
++          "sigma_px": 4,
++          "world": [
++            1.5158539133041138,
++            -0.6851895287909062,
++            0.002
++          ],
++          "projected": [
++            772.0766756246785,
++            721.9004854515761
++          ],
++          "error_px": 2.2154252176279243
++        },
++        {
++          "id": "n_foot_1",
++          "landmark": "foot_1",
++          "uv": [
++            808,
++            700
++          ],
++          "visibility": "partial",
++          "sigma_px": 7,
++          "world": [
++            1.5394413296884113,
++            -0.3955893925730277,
++            0.002
++          ],
++          "projected": [
++            807.5038348282303,
++            704.3753141475347
++          ],
++          "error_px": 4.403357101950127
++        },
++        {
++          "id": "n_foot_2",
++          "landmark": "foot_2",
++          "uv": [
++            861,
++            715
++          ],
++          "visibility": "observed",
++          "sigma_px": 4,
++          "world": [
++            1.8887526472993994,
++            -0.4240401785562194,
++            0.002
++          ],
++          "projected": [
++            861.9164370007547,
++            716.525274206248
++          ],
++          "error_px": 1.7794151231789204
++        },
++        {
++          "id": "n_foot_3",
++          "landmark": "foot_3",
++          "uv": [
++            829,
++            736
++          ],
++          "visibility": "observed",
++          "sigma_px": 4,
++          "world": [
++            1.865165230915102,
++            -0.7136403147740978,
++            0.002
++          ],
++          "projected": [
++            829.223322583221,
++            736.0529568692264
++          ],
++          "error_px": 0.22951559026517943
++        },
++        {
++          "id": "n_back_post_2",
++          "landmark": "back_post_2",
++          "uv": [
++            858,
++            598
++          ],
++          "visibility": "observed",
++          "sigma_px": 5,
++          "world": [
++            1.8955085522950321,
++            -0.4396401063666288,
++            0.6516728466068973
++          ],
++          "projected": [
++            861.6190731901696,
++            593.8327806946206
++          ],
++          "error_px": 5.51936658457572
++        },
++        {
++          "id": "n_back_post_3",
++          "landmark": "back_post_3",
++          "uv": [
++            826,
++            607
++          ],
++          "visibility": "observed",
++          "sigma_px": 5,
++          "world": [
++            1.8743565180092243,
++            -0.6993392574162163,
++            0.6516728466068973
++          ],
++          "projected": [
++            830.9002717278778,
++            602.2742953259797
++          ],
++          "error_px": 6.807712367094842
++        }
++      ],
++      "median_error_px": 3.981150909076893,
++      "max_error_px": 6.9260017552912565,
++      "uncertainty": [
++        "bowed back-rail curvature and hidden joinery estimated",
++        "front-right foot partly shadowed",
++        "green pad interpreted as foam, material unmeasured"
++      ]
++    },
++    "chair_far": {
++      "parameters": [
++        0.558879683115407,
++        -0.3747168773852648,
++        1.364900764029294,
++        0.33055912497992546,
++        0.3904680353957918,
++        0.41746881692188126,
++        0.6636728466068973
++      ],
++      "parameter_names": [
++        "x_m",
++        "y_m",
++        "yaw_rad",
++        "width_m",
++        "depth_m",
++        "seat_top_m",
++        "back_top_m"
++      ],
++      "observation_ids": [
++        "f_seat_0",
++        "f_seat_1",
++        "f_seat_2",
++        "f_seat_3",
++        "f_foot_0",
++        "f_back_post_0",
++        "f_back_post_1"
++      ],
++      "landmarks": [
++        {
++          "id": "f_seat_0",
++          "landmark": "seat_0",
++          "uv": [
++            629,
++            611
++          ],
++          "visibility": "observed",
++          "sigma_px": 5,
++          "world": [
++            0.3690574617857751,
++            -0.49983107319872006,
++            0.41746881692188126
++          ],
++          "projected": [
++            626.8815808003319,
++            612.5299520521264
++          ],
++          "error_px": 2.6131309166071754
++        },
++        {
++          "id": "f_seat_1",
++          "landmark": "seat_1",
++          "uv": [
++            672,
++            600
++          ],
++          "visibility": "partial",
++          "sigma_px": 7,
++          "world": [
++            0.4350027036377632,
++            -0.18408495020605695,
++            0.41746881692188126
++          ],
++          "projected": [
++            675.2620520372916,
++            604.39651469161
++          ],
++          "error_px": 5.47451595372058
++        },
++        {
++          "id": "f_seat_2",
++          "landmark": "seat_2",
++          "uv": [
++            710,
++            612
++          ],
++          "visibility": "partial",
++          "sigma_px": 7,
++          "world": [
++            0.779047131272467,
++            -0.25594044212203076,
++            0.41746881692188126
++          ],
++          "projected": [
++            710.5940548085098,
++            611.7173473839205
++          ],
++          "error_px": 0.6578705168117782
++        },
++        {
++          "id": "f_seat_3",
++          "landmark": "seat_3",
++          "uv": [
++            663,
++            626
++          ],
++          "visibility": "observed",
++          "sigma_px": 5,
++          "world": [
++            0.7131018894204789,
++            -0.5716865651146938,
++            0.41746881692188126
++          ],
++          "projected": [
++            662.0948132127078,
++            620.8766241931909
++          ],
++          "error_px": 5.202724553316794
++        },
++        {
++          "id": "f_foot_0",
++          "landmark": "foot_0",
++          "uv": [
++            627,
++            682
++          ],
++          "visibility": "observed",
++          "sigma_px": 5,
++          "world": [
++            0.3576453897339079,
++            -0.481102362311876,
++            0.002
++          ],
++          "projected": [
++            633.7040373303498,
++            678.7393040519073
++          ],
++          "error_px": 7.45494832930665
++        },
++        {
++          "id": "f_back_post_0",
++          "landmark": "back_post_0",
++          "uv": [
++            629,
++            568
++          ],
++          "visibility": "observed",
++          "sigma_px": 5,
++          "world": [
++            0.3528810217866142,
++            -0.4647836369308053,
++            0.6516728466068973
++          ],
++          "projected": [
++            626.3689916560396,
++            572.1234326102012
++          ],
++          "error_px": 4.891308761145646
++        },
++        {
++          "id": "f_back_post_1",
++          "landmark": "back_post_1",
++          "uv": [
++            669,
++            561
++          ],
++          "visibility": "observed",
++          "sigma_px": 5,
++          "world": [
++            0.40615074253815997,
++            -0.20972796759299833,
++            0.6516728466068973
++          ],
++          "projected": [
++            666.1222996941369,
++            567.664935888398
++          ],
++          "error_px": 7.259650779949375
++        }
++      ],
++      "median_error_px": 5.202724553316794,
++      "max_error_px": 7.45494832930665,
++      "uncertainty": [
++        "three feet not used as observed position constraints",
++        "same furniture family is a structural prior, no exact SKU confirmed"
++      ]
++    }
++  },
++  "independent_accuracy": false
++}--- a/case/fit_furniture.py
++++ b/case/fit_furniture.py
+@@ -0,0 +1,44 @@
++"""Fit whole rigid furniture frames to explicitly owned source observations.
++No independently backprojected leg/rail points and no post-fit foot averaging.
++This is a case recipe, not a new-photo reconstruction system.
++"""
++import json,hashlib,math
++from pathlib import Path
++import numpy as np
++from scipy.optimize import least_squares
++root=Path(__file__).resolve().parents[1]
++obs=json.loads((root/'case/furniture_observation.json').read_text());cal=json.loads((root/'case/calibration_initial.json').read_text())
++C=np.array(cal['position']);R=np.array(cal['rotation_world_to_cv']);F=cal['focal_px'];PP=np.array(cal['principal_point'])
++def project(p):
++ q=(np.asarray(p)-C)@R.T;return q[...,:2]/q[...,2,None]*F+PP
++def world(p,x,y,a):
++ p=np.array(p,dtype=float);rot=np.array([[np.cos(a),-np.sin(a)],[np.sin(a),np.cos(a)]]);p[...,:2]=p[...,:2]@rot.T+[x,y];return p
++def table_landmarks(p):
++ x,y,a,w,l,h=p;sg=[(-1,-1),(-1,1),(1,1),(1,-1)];out={}
++ for i,(sx,sy) in enumerate(sg):
++  out['top_'+str(i)]=world([sx*w/2,sy*l/2,h],x,y,a)
++  out['foot_'+str(i)]=world([sx*w*.43,sy*l*.43,.002],x,y,a)
++ return out
++def chair_landmarks(p,far=False):
++ x,y,a,w,d,h,bh=p;sg=([(-1,1),(1,1),(1,-1),(-1,-1)] if far else [(1,-1),(-1,-1),(-1,1),(1,1)]);out={}
++ for i,(sx,sy) in enumerate(sg):
++  out['seat_'+str(i)]=world([sx*(w/2-.004),(-d/2+.004 if sy<0 else d/2-.035),h],x,y,a)
++  out['foot_'+str(i)]=world([sx*(w/2-.020),sy*(d/2-.020),.002],x,y,a)
++  if sy>0:out['back_post_'+str(i)]=world([sx*(w/2-.035),d/2-.012,bh-.012],x,y,a)
++ return out
++def residual(points,target):return [(points[v['landmark']][i]-v['uv'][i])/v['sigma_px'] for v in target['observations'] for i in [0,1]]
++t,n,f=obs['targets']
++def tres(p):return residual({k:project(v) for k,v in table_landmarks(p).items()},t)+[(p[5]-.79)/.13]
++tf=least_squares(tres,[1.45,-.87,-.1,.7,1.15,.8],bounds=([.7,-1.5,-.7,.5,.7,.65],[2,-.2,.6,1.0,1.7,.9]),max_nfev=4000)
++# Shared shape, separate poses; the family assumption is explicitly declared.
++def split(p):return np.r_[p[:3],p[6:]],np.r_[p[3:6],p[6:]]
++def cres(p):
++ pn,pf=split(p)
++ return residual({k:project(v) for k,v in chair_landmarks(pn).items()},n)+residual({k:project(v) for k,v in chair_landmarks(pf,True).items()},f)+[(p[6]-.40)/.09,(p[7]-.42)/.09,(p[8]-.46)/.07,(p[9]-.72)/.10]
++cf=least_squares(cres,[1.75,-.65,-1.57,.72,-.49,1.57,.40,.43,.46,.72],bounds=([1.3,-1.2,-2.2,.3,-1.2,.8,.3,.3,.39,.62],[2.3,-.1,-.8,1.2,.1,2.3,.55,.55,.54,.9]),max_nfev=4000)
++pn,pf=split(cf.x);data={}
++for target,p,fn in [(t,tf.x,table_landmarks),(n,pn,chair_landmarks),(f,pf,lambda p:chair_landmarks(p,True))]:
++ lm=fn(p);rows=[dict(v,world=lm[v['landmark']].tolist(),projected=project(lm[v['landmark']]).tolist(),error_px=float(np.linalg.norm(project(lm[v['landmark']])-v['uv']))) for v in target['observations']];err=[v['error_px'] for v in rows]
++ data[target['entity']]=dict(parameters=p.tolist(),parameter_names=['x_m','y_m','yaw_rad','width_m','length_m','height_m'] if target is t else ['x_m','y_m','yaw_rad','width_m','depth_m','seat_top_m','back_top_m'],observation_ids=[v['id'] for v in rows],landmarks=rows,median_error_px=float(np.median(err)),max_error_px=max(err),uncertainty=target['uncertain'])
++result=dict(schema='real2sim.furniture-fit/1',source_observation='case/furniture_observation.json',source_observation_sha256=hashlib.sha256((root/'case/furniture_observation.json').read_bytes()).hexdigest(),calibration_sha256=hashlib.sha256((root/'case/calibration_initial.json').read_bytes()).hexdigest(),model_version=4,method='joint rigid rectangle and assembly fit, shared chair dimensions, floor constraints; fitting points only',targets=data,independent_accuracy=False)
++(root/'case/furniture_parameters.json').write_text(json.dumps(result,indent=2));print(json.dumps(result,indent=2))
+--- a/case/calibrate_lighting.py
++++ b/case/calibrate_lighting.py
+@@ -1,3 +1,4 @@
++import os
+ import bpy,sys,json,hashlib
+ from pathlib import Path
+ from mathutils import Vector
+@@ -42,7 +43,7 @@
+ try:
+  p=bpy.context.preferences.addons['cycles'].preferences;p.compute_device_type='CUDA';p.get_devices()
+  for d in p.devices:d.use=d.type=='CUDA'
+- sc.cycles.device='GPU'
++ sc.cycles.device='CPU' if os.environ.get('R2S_CPU')=='1' else 'GPU'
+ except:pass
+ sc.render.filepath=str(out/'lighting.png');bpy.ops.file.pack_all();bpy.ops.wm.save_as_mainfile(filepath=str(out/'model.blend'));bpy.ops.render.render(write_still=True)
+ (out/'light_parameters.json').write_text(json.dumps(dict(variant=variant,world_strength=sky,window_area_watts=power,left_window_watts=power*.25,sun_strength=sunpower,sun_direction=list(Vector(suntarget)-Vector(sunpos)),sun_angle_rad=.018,exterior_plate_shadow=False,exterior_plate_diffuse=False,secondary_illumination='inferred broad reflected-light approximation, not recovered fixture; 250 W' if variant==5 else None,exposure=sc.view_settings.exposure,color_management=sc.view_settings.view_transform,camera_matrix=[list(x) for x in sc.camera.matrix_world],lights=[dict(name=o.name,type=o.data.type,energy=o.data.energy,color=list(o.data.color),position=list(o.location)) for o in sc.objects if o.type=='LIGHT']),indent=2))
+--- a/case/furniture_observation.json
++++ b/case/furniture_observation.json
+@@ -0,0 +1,66 @@
++{
++  "schema": "real2sim.part-observation/1",
++  "source_image": "inputs/utility_room_original.jpg",
++  "source_sha256": "dfe25afbfb885ae9bc377691dd18ebd4259ffa72917ca725e3809ef40624c29c",
++  "image_size": [1702, 1276],
++  "roi": [600, 540, 880, 765],
++  "revision_reason": "Prior independent corner backprojections did not preserve furniture topology. Re-observed original crop; rear chair posts belong to rear seat corners, not the front edge. No averaging of independent foot rays is allowed.",
++  "targets": [
++    {
++      "entity": "table",
++      "category": "trestle_table",
++      "parts": ["top", "leg_near_left", "leg_near_right", "leg_far_left", "leg_far_right", "cross_near", "cross_far", "long_stretcher", "brace_near", "brace_far"],
++      "interpretation": "Rectangular thin gray top on two wooden end trestles, two legs per trestle; lower cross rails and a longitudinal stretcher. Exact hidden mortises and rear bracing are hypotheses.",
++      "constraints": ["rectangular top", "parallel end trestles", "continuous load path from top to four feet", "stretcher joins end cross rails", "single rigid local frame"],
++      "observations": [
++        {"id":"t_top_0","landmark":"top_0","uv":[615,576],"visibility":"observed","sigma_px":4},
++        {"id":"t_top_1","landmark":"top_1","uv":[740,548],"visibility":"observed","sigma_px":4},
++        {"id":"t_top_2","landmark":"top_2","uv":[849,557],"visibility":"observed","sigma_px":4},
++        {"id":"t_top_3","landmark":"top_3","uv":[716,596],"visibility":"observed","sigma_px":4},
++        {"id":"t_foot_0","landmark":"foot_0","uv":[638,724],"visibility":"observed","sigma_px":4},
++        {"id":"t_foot_3","landmark":"foot_3","uv":[720,747],"visibility":"observed","sigma_px":4}
++      ],
++      "uncertain": ["far feet partly hidden by chairs and rails; not used as measured landmarks", "underside diagonal brace arrangement partly occluded", "absolute dimensions inherit ceiling-height prior"]
++    },
++    {
++      "entity":"chair_near",
++      "category":"wooden_chair",
++      "parts":["seat_board","pad","front_left_leg","front_right_leg","rear_left_leg","rear_right_leg","front_apron","back_apron","left_apron","right_apron","back_left_post","back_right_post","back_rail"],
++      "interpretation":"Four legs and perimeter seat frame; two rear posts continue above the rear seat edge to a bowed low back rail. The visible rail extends forward at its ends; no separate armrests are inferred.",
++      "constraints":["rectangular seat and coherent rigid frame","rear posts on rear seat edge only","four feet on floor","pad supported by seat board","rear rail connected to both posts"],
++      "observations":[
++        {"id":"n_seat_0","landmark":"seat_0","uv":[766,639],"visibility":"observed","sigma_px":4},
++        {"id":"n_seat_1","landmark":"seat_1","uv":[801,624],"visibility":"partial","sigma_px":7},
++        {"id":"n_seat_2","landmark":"seat_2","uv":[862,640],"visibility":"observed","sigma_px":4},
++        {"id":"n_seat_3","landmark":"seat_3","uv":[827,655],"visibility":"observed","sigma_px":4},
++        {"id":"n_foot_0","landmark":"foot_0","uv":[774,723],"visibility":"observed","sigma_px":4},
++        {"id":"n_foot_1","landmark":"foot_1","uv":[808,700],"visibility":"partial","sigma_px":7},
++        {"id":"n_foot_2","landmark":"foot_2","uv":[861,715],"visibility":"observed","sigma_px":4},
++        {"id":"n_foot_3","landmark":"foot_3","uv":[829,736],"visibility":"observed","sigma_px":4},
++        {"id":"n_back_post_2","landmark":"back_post_2","uv":[858,598],"visibility":"observed","sigma_px":5},
++        {"id":"n_back_post_3","landmark":"back_post_3","uv":[826,607],"visibility":"observed","sigma_px":5}
++      ],
++      "occlusion":[{"front":"table","back":"chair_near","region":"left tip of back rail overlaps projected table stretcher; projected overlap is not a physical connection"}],
++      "uncertain":["bowed back-rail curvature and hidden joinery estimated","front-right foot partly shadowed","green pad interpreted as foam, material unmeasured"]
++    },
++    {
++      "entity":"chair_far",
++      "category":"wooden_chair",
++      "parts":["seat_board","pad","front_left_leg","front_right_leg","rear_left_leg","rear_right_leg","front_apron","back_apron","left_apron","right_apron","back_left_post","back_right_post","back_rail"],
++      "interpretation":"Same apparent furniture family as near chair, opposite facing. Table occludes much of seat frame and some feet; hidden connections must remain plausible without being claimed observed.",
++      "constraints":["same width/depth/seat/back heights as near chair within shared family assumption","rear posts support back rail","four feet on floor","opposite approximate facing to near chair"],
++      "observations":[
++        {"id":"f_seat_0","landmark":"seat_0","uv":[629,611],"visibility":"observed","sigma_px":5},
++        {"id":"f_seat_1","landmark":"seat_1","uv":[672,600],"visibility":"partial","sigma_px":7},
++        {"id":"f_seat_2","landmark":"seat_2","uv":[710,612],"visibility":"partial","sigma_px":7},
++        {"id":"f_seat_3","landmark":"seat_3","uv":[663,626],"visibility":"observed","sigma_px":5},
++        {"id":"f_foot_0","landmark":"foot_0","uv":[627,682],"visibility":"observed","sigma_px":5},
++        {"id":"f_back_post_0","landmark":"back_post_0","uv":[629,568],"visibility":"observed","sigma_px":5},
++        {"id":"f_back_post_1","landmark":"back_post_1","uv":[669,561],"visibility":"observed","sigma_px":5}
++      ],
++      "occlusion":[{"front":"table","back":"chair_far","region":"top of seat and most inner leg connections"}],
++      "uncertain":["three feet not used as observed position constraints","same furniture family is a structural prior, no exact SKU confirmed"]
++    }
++  ],
++  "acceptance_before_fit":{"landmark_median_px":9,"landmark_max_px":18,"joint_tolerance_m":0.008,"floor_tolerance_m":0.004,"unexpected_interpenetration_tolerance_m":0.002,"requires_manual_source_and_multiview_review":true,"independent_reality_accuracy":false}
++}
+--- a/case/check_unaffected_geometry.py
++++ b/case/check_unaffected_geometry.py
+@@ -0,0 +1,16 @@
++"""Compare evaluated non-furniture geometry/camera between this task's two candidates."""
++import bpy,sys,hashlib,json
++from pathlib import Path
++args=sys.argv[sys.argv.index('--')+1:];excluded={'table','chair_near','chair_far','chair_near_cushion','chair_far_cushion'}
++def read(path):
++ bpy.ops.wm.open_mainfile(filepath=str(path));deps=bpy.context.evaluated_depsgraph_get();items={}
++ for o in sorted(bpy.data.objects,key=lambda o:o.name):
++  if o.get('entity_id') in excluded or o.type not in ['MESH','CURVE','CAMERA']:continue
++  data=[o.name,o.type]
++  if o.type=='CAMERA':data.extend([list(x) for x in o.matrix_world]);data.extend([o.data.lens,o.data.shift_x,o.data.shift_y])
++  else:
++   ev=o.evaluated_get(deps);me=ev.to_mesh();data.extend([[list(o.matrix_world@v.co) for v in me.vertices],[list(p.vertices) for p in me.polygons]]);ev.to_mesh_clear()
++  items[o.name]=hashlib.sha256(json.dumps(data).encode()).hexdigest()
++ return items
++a,b=read(args[0]),read(args[1]);diff=[n for n in sorted(set(a)|set(b)) if a.get(n)!=b.get(n)];result=dict(status='passed' if not diff else 'failed',excluded_entities=sorted(excluded),evaluated_objects_compared=len(a),changed=diff,method='Exact evaluated world-geometry and source-camera hashes, excluding explicitly revised furniture entities.')
++Path(args[2]).write_text(json.dumps(result,indent=2));assert not diff,diff;print(json.dumps(result))
+--- a/case/build_scene.py
++++ b/case/build_scene.py
+@@ -1,7 +1,7 @@
+ """Case-specific editable model, authored from original image annotations only.
+ Run with Blender --background --python build_scene.py -- OUT [neutral|lit] [version].
+ """
+-import bpy,math,json,sys,random
++import bpy,math,json,sys,random,os
+ from pathlib import Path
+ from mathutils import Vector,Matrix
+ import numpy as np
+@@ -16,7 +16,7 @@
+ try:
+  p=bpy.context.preferences.addons['cycles'].preferences;p.compute_device_type='CUDA';p.get_devices()
+  for d in p.devices:d.use=d.type=='CUDA'
+- sc.cycles.device='GPU'
++ sc.cycles.device='CPU' if os.environ.get('R2S_CPU')=='1' else 'GPU'
+ except:pass
+ def lin(v):return v/12.92 if v<.04045 else ((v+.055)/1.055)**2.4
+ def mat(name,color,rough=.7,metal=0):
+@@ -160,34 +160,38 @@
+  box('external_shading_hypothesis',(3.5,3.0,4.9),(8,.12,2.2),wall)
+  record('external_shading_hypothesis','exterior_shadow_proxy',.15,'unobserved exterior obstruction hypothesis, blocks upper-window direct sun; not a recovered building')
+  entities['external_shading_hypothesis']['kind']='exterior_shadow_proxy';entities['external_shading_hypothesis']['confidence']=.15;entities['external_shading_hypothesis']['evidence']=['inferred exterior solar obstruction, unobserved and not independently validated; source has no strong upper-window far-floor sun pool']
+-# Table: all four corners fit the photo at a plausible height, separately editable trestles.
+-th=.81;top_uv=[[615,576],[739,547],[849,556],[716,597]];tp=[inv(p,z=th) for p in top_uv]
+-mesh('table',[v.tolist() for v in tp],[(0,1,2,3)],topmat,.022,.004)
+-for idx,(a,b) in enumerate([(tp[0],tp[3]),(tp[1],tp[2])]):
+- center=(a+b)/2
+- for q,sgn in [(a,1),(b,-1)]:
+-  up=q+(center-q)*.08;up[2]=th-.025;bottom=up.copy();bottom[2]=.02;bottom[:2]+=(q-center)[:2]*.10
+-  if idx==0:bottom=inv([636,724] if sgn==1 else [720,750],z=.02)
+-  rod('table',up,bottom,.021,wood);proxy.setdefault('table',[]).append(dict(shape='capsule',**{'from':bottom.tolist(),'to':up.tolist(),'radius':.024}))
+-  if version>=3:box('table',(bottom[0],bottom[1],.011),(.033,.025,.022),wood,.002)
+- a2=a*.82+b*.18;b2=a*.18+b*.82;a2[2]=b2[2]=.37;rod('table',a2,b2,.020,wood)
+-rod('table',[(tp[0][0]+tp[3][0])/2,(tp[0][1]+tp[3][1])/2,.44],[(tp[1][0]+tp[2][0])/2,(tp[1][1]+tp[2][1])/2,.44],.023,wood)
+-# Chairs: ray-fitted seat polygon, real thin foam pad, curved low back and tapered legs.
+-def chair(e,seat_uv,foot_uv,back_uv,zseat):
+- q=[inv(p,z=zseat) for p in seat_uv];center=np.mean(q,axis=0);mesh(e,q,[(0,1,2,3)],wood,.025,.005)
+- pad=[v+(center-v)*.05+[0,0,.019] for v in q];o=mesh(e+'_cushion',pad,[(0,1,2,3)],green,.03,.012);record(e+'_cushion','seat_cushion',.77,'green padded raised seat visible in source crop; internal foam inferred')
+- for k in range(4):
+-  up=q[k]+(center-q[k])*.10;up[2]-=.01;bottom=inv(foot_uv[k],z=.012)
+-  if version>=3:bottom[:2]=bottom[:2]*.5+up[:2]*.5
+-  rod(e,bottom,up,.012,wood);proxy.setdefault(e,[]).append(dict(shape='capsule',**{'from':bottom.tolist(),'to':up.tolist(),'radius':.014}))
+-  if version>=3:rod(e,(bottom[0],bottom[1],.001),(bottom[0],bottom[1],.014),.012,black)
+- # Back is behind the seat, continuous low bowed wood strip, no invented armrests.
+- bq=[inv(p,z=zseat+.225) for p in back_uv];mid=(bq[0]+bq[1])/2;mid[2]-=.025
+- curve(e,[bq[0],mid,bq[1]],.022,wood)
+- for a,b in [(bq[0],q[0]),(bq[1],q[1])]:rod(e,a,b,.012,wood)
+- return pad
+-chair('chair_near',[[766,638],[824,626],[860,645],[798,664]],[[764,713],[829,701],[858,698],[833,739]],[[773,610],[862,593]],.44)
+-chair('chair_far',[[643,605],[674,600],[704,615],[668,627]],[[642,691],[667,679],[706,683],[666,710]],[[625,568],[674,559]],.44)
++if version>=4:
++ exec(compile((ROOT/'case/furniture_model.py').read_text(),str(ROOT/'case/furniture_model.py'),'exec'))
++else:
++ # Table: all four corners fit the photo at a plausible height, separately editable trestles.
++ th=.81;top_uv=[[615,576],[739,547],[849,556],[716,597]];tp=[inv(p,z=th) for p in top_uv]
++ mesh('table',[v.tolist() for v in tp],[(0,1,2,3)],topmat,.022,.004)
++ for idx,(a,b) in enumerate([(tp[0],tp[3]),(tp[1],tp[2])]):
++  center=(a+b)/2
++  for q,sgn in [(a,1),(b,-1)]:
++   up=q+(center-q)*.08;up[2]=th-.025;bottom=up.copy();bottom[2]=.02;bottom[:2]+=(q-center)[:2]*.10
++   if idx==0:bottom=inv([636,724] if sgn==1 else [720,750],z=.02)
++   rod('table',up,bottom,.021,wood);proxy.setdefault('table',[]).append(dict(shape='capsule',**{'from':bottom.tolist(),'to':up.tolist(),'radius':.024}))
++   if version>=3:box('table',(bottom[0],bottom[1],.011),(.033,.025,.022),wood,.002)
++  a2=a*.82+b*.18;b2=a*.18+b*.82;a2[2]=b2[2]=.37;rod('table',a2,b2,.020,wood)
++ rod('table',[(tp[0][0]+tp[3][0])/2,(tp[0][1]+tp[3][1])/2,.44],[(tp[1][0]+tp[2][0])/2,(tp[1][1]+tp[2][1])/2,.44],.023,wood)
++ # Chairs: ray-fitted seat polygon, real thin foam pad, curved low back and tapered legs.
++ def chair(e,seat_uv,foot_uv,back_uv,zseat):
++  q=[inv(p,z=zseat) for p in seat_uv];center=np.mean(q,axis=0);mesh(e,q,[(0,1,2,3)],wood,.025,.005)
++  pad=[v+(center-v)*.05+[0,0,.019] for v in q];o=mesh(e+'_cushion',pad,[(0,1,2,3)],green,.03,.012);record(e+'_cushion','seat_cushion',.77,'green padded raised seat visible in source crop; internal foam inferred')
++  for k in range(4):
++   up=q[k]+(center-q[k])*.10;up[2]-=.01;bottom=inv(foot_uv[k],z=.012)
++   if version>=3:bottom[:2]=bottom[:2]*.5+up[:2]*.5
++   rod(e,bottom,up,.012,wood);proxy.setdefault(e,[]).append(dict(shape='capsule',**{'from':bottom.tolist(),'to':up.tolist(),'radius':.014}))
++   if version>=3:rod(e,(bottom[0],bottom[1],.001),(bottom[0],bottom[1],.014),.012,black)
++  # Back is behind the seat, continuous low bowed wood strip, no invented armrests.
++  bq=[inv(p,z=zseat+.225) for p in back_uv];mid=(bq[0]+bq[1])/2;mid[2]-=.025
++  curve(e,[bq[0],mid,bq[1]],.022,wood)
++  for a,b in [(bq[0],q[0]),(bq[1],q[1])]:rod(e,a,b,.012,wood)
++  return pad
++ chair('chair_near',[[766,638],[824,626],[860,645],[798,664]],[[764,713],[829,701],[858,698],[833,739]],[[773,610],[862,593]],.44)
++ chair('chair_far',[[643,605],[674,600],[704,615],[668,627]],[[642,691],[667,679],[706,683],[666,710]],[[625,568],[674,559]],.44)
++ 
+ # Garment rack axis reconstructed by projecting the observed top rail to z=1.45.
+ ra=inv([1064,419],z=1.45);rb=inv([1380,419],z=1.45);axis=rb-ra;axis[2]=0;axis/=np.linalg.norm(axis);n=np.array([-axis[1],axis[0],0]);rackfeet=[]
+ for end,uvfoot in [(ra,[1019,765]),(rb,[1320,766])]:
+@@ -366,7 +370,7 @@
+   if old:old.name=e+'__part'
+   rt=bpy.data.objects.new(e,None);bpy.context.collection.objects.link(rt);rt['entity_id']=e
+   for o in objs:o.parent=rt
+-scene=dict(schema_version='real2sim.scene/1.0',case_id='utility_single_external_example',branch='A',units='m',up_axis='Z',room=room,camera=cal,objects=list(entities.values()),assumptions=['camera and visible window endpoints fitted to source; actual room-right corner is outside those endpoints','opaque room-right return width 0.68m inferred','unobserved front wall and ceiling lamp are completion hypotheses','external building and foliage schematic, not surveyed','black ribbed item function unconfirmed','all dimensions estimated in ceiling-height gauge; no metric truth'],model_version=version,render_mode=mode)
+-(OUT/'scene.json').write_text(json.dumps(scene,indent=2));(OUT/'construction_parameters.json').write_text(json.dumps(dict(calibration=cal,table_height=th,room=room,rack_rail=[ra.tolist(),rb.tolist()],source_coordinates=top_uv,version=version,mode=mode),indent=2))
+-bpy.ops.file.pack_all();bpy.ops.wm.save_as_mainfile(filepath=str(OUT/'model.blend'));sc.render.filepath=str(OUT/'preview.png');bpy.ops.render.render(write_still=True)
++scene=dict(schema_version='real2sim.scene/1.0',case_id='utility_single_external_example',branch='A',units='m',up_axis='Z',room=room,camera=cal,objects=list(entities.values()),assumptions=['camera and visible window endpoints fitted to source; actual room-right corner is outside those endpoints','opaque room-right return width 0.68m inferred','unobserved front wall and ceiling lamp are completion hypotheses','external building and foliage schematic, not surveyed','black ribbed item function unconfirmed','all dimensions estimated in ceiling-height gauge; no metric truth'],model_version=version,render_mode=mode,structure=furniture_structure if version>=4 else None)
++(OUT/'scene.json').write_text(json.dumps(scene,indent=2));(OUT/'construction_parameters.json').write_text(json.dumps(dict(calibration=cal,table_height=th,room=room,rack_rail=[ra.tolist(),rb.tolist()],source_coordinates=top_uv if version<4 else None,version=version,mode=mode),indent=2))
++bpy.ops.file.pack_all();bpy.ops.wm.save_as_mainfile(filepath=str(OUT/'model.blend'));sc.render.filepath=str(OUT/'preview.png');bpy.ops.render.render(write_still=True) if not os.environ.get('R2S_SKIP_PREVIEW') else None
+ print('CASE_MODEL_WRITTEN',OUT)
+--- a/case/author_evidence.py
++++ b/case/author_evidence.py
+@@ -22,7 +22,8 @@
+  ('ceiling_luminaire','unseen ceiling panel light',[],'required complete-shell hypothesis; no visible luminous fixture identified',.1)]
+ obs=dict(schema='case.observation/1',source_sha256='dfe25afbfb885ae9bc377691dd18ebd4259ffa72917ca725e3809ef40624c29c',image_size=[1702,1276],pixel_convention='top-left x right y down',objects=[dict(id=i,description=d,outline_pixels=p,relations=r,confidence=c) for i,d,p,r,c in objects],room=dict(floor='gray modular carpet with alternating pile direction',ceiling='off-white suspended tile grid',back='main window wall with white pier at left',left='white wall and protruding column / short return glazing',right='white wall meeting window edge',front='mostly outside view; doorway margins visible'),lighting=dict(observed='bright daylight, lower window sun patch with crisp rail shadows, warm pale walls, dark clothing and cabinet',unknown='exact location/time, sky/sun strength, camera exposure and WB'),physics_candidates=dict(hinge='partly visible glass door, axis inferred',cloth='red outer garment on rack, hanger-pinned thin shell',soft_body='green chair seat has visible thin raised padded volume; foam interpretation provisional, test sensitivity required'),unknowns=['no camera EXIF','no exact furniture identity','no independent measured dimensions','no hidden-wall evidence','cabinet function/door mechanism unconfirmed','chair seat could instead be a thin removable pad; no measured elastic properties'])
+ protocol=dict(version='1.0',registered_before_geometry=True,resolution=[1702,1276],source_comparison='same camera, uncropped original; all errors are in-sample',geometry=dict(anchor_median_px_max=15,anchor_max_px_max=35,major_object_outline_typical_px_max=25,blocking='any major wrong topology, missing object, contact or occlusion, regardless of aggregate score'),materials=dict(blocking='plastic-looking cloth/carpet, major color or roughness discrepancy'),lighting=dict(blocking='incorrect dominant shadow direction or missing window illumination; compare source ROI medians with target absolute difference <=0.15 linear-normalized luminance where comparable'),completeness='four walls, floor, ceiling, luminaires retained in every candidate; invisible completion labelled',truth_status='no independent truth; no dimension accuracy certificate')
+-write_stage('agent_observe',{'observation.json':obs,'acceptance_protocol.json':protocol},'Original inspected directly; annotated principal objects, visible structure, occlusion, and uncertainty. No old artifacts consulted.')
++furniture=json.loads((ROOT/'case/furniture_observation.json').read_text());obs['part_observation']='furniture_observation.json';obs['revision_note']='Table and chair part ownership re-observed after user identified structural failures; old outline-only review was insufficient.'
++write_stage('agent_observe',{'observation.json':obs,'acceptance_protocol.json':protocol,'furniture_observation.json':furniture},'Original inspected directly; annotated principal objects and detailed furniture ownership/visibility/constraints. Part observations are consumed by the builder. No old-case artifacts consulted.')
+ sources=[
+  dict(id='CH20',url='https://www.carlhansen.com/en/en/collection/chairs/dining-chairs/ch20',query='CH20 elbow chair dimensions',retrieved='2026-09-22',findings='Official bent-wood backrest, upholstered seat; official 3D download links exist.',identity='unverified style candidate; no label, finish/seat variant or matching construction established',used_dimensions=None),
+  dict(id='POANG',url='https://www.ikea.com/us/en/p/poaeng-armchair-birch-veneer-gunnared-light-green-s39501906/',query='chair birch green seat armchair',retrieved='2026-09-22',findings='Cantilever bentwood high-back armchair; structurally inconsistent with pictured four-legged dining chairs.',identity='rejected',used_dimensions=None),
+--- a/case/furniture_model.py
++++ b/case/furniture_model.py
+@@ -0,0 +1,101 @@
++"""Coherent case-specific assemblies driven by the recorded observation/fit files.
++Executed by build_scene.py in its construction namespace. Each part has one owner;
++every intended joint has a shared world anchor, never a screen-space connection.
++"""
++import hashlib
++fitpath=ROOT/'case/furniture_parameters.json';obspath=ROOT/'case/furniture_observation.json'
++fit=json.loads(fitpath.read_text());observation=json.loads(obspath.read_text())
++assert fit['source_observation_sha256']==hashlib.sha256(obspath.read_bytes()).hexdigest()
++assert fit['calibration_sha256']==hashlib.sha256((ROOT/'case/calibration_initial.json').read_bytes()).hexdigest()
++assert observation['source_sha256']==hashlib.sha256((ROOT/observation['source_image']).read_bytes()).hexdigest()
++assert fit['model_version']==version
++assemblies=[]
++def assembly(e,pars):
++ x,y,yaw=pars[:3];c,s=math.cos(yaw),math.sin(yaw)
++ def transform(p):
++  a,b,z=p;return np.array([x+c*a-s*b,y+s*a+c*b,z])
++ spec=dict(entity=e,frame=dict(position=[x,y,0],yaw_rad=yaw),parts=[],joints=[],floor_supports=[],source_observation_ids=fit['targets'][e]['observation_ids'],fit=fit['targets'][e],assumptions=fit['targets'][e]['uncertainty'])
++ assemblies.append(spec)
++ def register(o,role,entity=None):
++  o.name=e+'__'+role;o['furniture_id']=e;o['part_id']=role
++  spec['parts'].append(dict(id=role,object=o.name,entity=entity or e));return o
++ def slab(role,p,dim,m,bevel=.002):
++  o=box(e,transform(p),dim,m,bevel);o.rotation_euler.z=yaw;register(o,role);proxy.setdefault(e,[]).append(dict(shape='box',position=transform(p).tolist(),dimensions=list(dim),yaw=yaw));return o
++ def beam(role,a,b,width,depth,m):
++  a,b=transform(a),transform(b);v=Vector(b-a);o=box(e,(a+b)/2,(width,depth,v.length),m,.0015);o.rotation_euler=v.to_track_quat('Z','Y').to_euler();register(o,role);radius=min(width,depth)*.46;axis=(b-a)/np.linalg.norm(b-a);proxy.setdefault(e,[]).append(dict(shape='capsule',**{'from':(a+radius*axis).tolist(),'to':(b-radius*axis).tolist(),'radius':radius}));return o
++ def joint(a,b,p,kind='join'):
++  spec['joints'].append(dict(parts=[a,b],anchor_world=transform(p).tolist(),kind=kind,tolerance_m=.008))
++ def floor(role,p):spec['floor_supports'].append(dict(part=role,point_world=transform(p).tolist(),plane_z=0,tolerance_m=.004))
++ return spec,transform,register,slab,beam,joint,floor
++
++p=fit['targets']['table']['parameters'];tx,ty,ta,tw,tl,th=p
++sp,T,reg,slab,beam,joint,floor=assembly('table',p)
++for lm in sp['fit']['landmarks']:
++ lm['part']='top' if lm['landmark'].startswith('top_') else ['leg_near_left','leg_far_left','leg_far_right','leg_near_right'][int(lm['landmark'].split('_')[-1])]
++slab('top',(0,0,th-.011),(tw,tl,.022),topmat,.004)
++cross_z=.40
++for sy,end in [(-1,'near'),(1,'far')]:
++ ytop=sy*tl*.46;yfoot=sy*tl*.43
++ frac=(cross_z-.002)/(th-.021-.002);cy=yfoot*(1-frac)+ytop*frac;wx=tw*.43*(1-frac)+tw*.40*frac
++ for sx,side in [(-1,'left'),(1,'right')]:
++  role='leg_'+end+'_'+side;bottom=(sx*tw*.43,yfoot,.002);top=(sx*tw*.40,ytop,th-.017)
++  beam(role,bottom,top,.029,.028,wood);floor(role,bottom);joint(role,'top',top)
++  joint(role,'cross_'+end,(sx*wx,cy,cross_z))
++ beam('cross_'+end,(-wx,cy,cross_z),(wx,cy,cross_z),.032,.028,wood)
++ sp.setdefault('cross_centers',[]).append([0,cy,cross_z]);joint('cross_'+end,'long_stretcher',(0,cy,cross_z))
++beam('long_stretcher',sp['cross_centers'][0],sp['cross_centers'][1],.032,.034,wood)
++for sy,end in [(-1,'near'),(1,'far')]:
++ a=(0,sy*tl*.29,th-.017);b=(0,sy*tl*.12,cross_z);beam('brace_'+end,a,b,.025,.025,wood);joint('brace_'+end,'top',a);joint('brace_'+end,'long_stretcher',b)
++# Crossbars are separate parts, not the union AABB of the table.
++for part in sp['parts']:
++ if 'cross_' in part['id'] or part['id']=='long_stretcher':
++  o=bpy.data.objects[part['object']];a,b=[o.matrix_world@Vector((0,0,z)) for z in [-o.dimensions.z/2,o.dimensions.z/2]]
++  # Visual structure audit is mesh based; capsule collision is only a dynamics surrogate.
++
++for e in ['chair_near','chair_far']:
++ p=fit['targets'][e]['parameters'];x,y,yaw,w,d,h,bh=p;sp,T,reg,slab,beam,joint,floor=assembly(e,p)
++ signs=[(-1,1),(1,1),(1,-1),(-1,-1)] if e=='chair_far' else [(1,-1),(-1,-1),(-1,1),(1,1)]
++ for lm in sp['fit']['landmarks']:
++  sx,sy=signs[int(lm['landmark'].split('_')[-1])];side='left' if sx<0 else 'right';end='front' if sy<0 else 'rear'
++  lm['part']='pad' if lm['landmark'].startswith('seat_') else ('back_'+side+'_post' if lm['landmark'].startswith('back_post_') else end+'_'+side+'_leg')
++ board_top=h-.030;seatq=[[-w/2,-d/2,board_top],[w/2,-d/2,board_top],[w/2,d/2,board_top],[-w/2,d/2,board_top]]
++ board=mesh(e,[T(q).tolist() for q in seatq],[(0,1,2,3)],wood,.019,.004);board.modifiers['physical_thickness'].offset=-1;reg(board,'seat_board')
++ padq=[[-w/2+.004,-d/2+.004,h],[w/2-.004,-d/2+.004,h],[w/2-.004,d/2-.035,h],[-w/2+.004,d/2-.035,h]]
++ pad=mesh(e+'_cushion',[T(q).tolist() for q in padq],[(0,1,2,3)],green,.030,.009);pad.modifiers['physical_thickness'].offset=-1;reg(pad,'pad',e+'_cushion');joint('pad','seat_board',(0,0,board_top),'support_contact')
++ record(e+'_cushion','seat_cushion',.70,'Observed thin raised green pad; foam interpretation and stiffness assumed; rigid frame dimensions jointly fitted to part observations.')
++ legx=w/2-.020;legy=d/2-.020;railspan=w/2+.070;rear_x=w/2-.035
++ def railpoint(xx):return [xx,d/2+.008-.25*(abs(xx)/railspan)**4,bh-.014*(abs(xx)/railspan)**2]
++ rear_y=railpoint(rear_x)[1]
++ for sx,side in [(-1,'left'),(1,'right')]:
++  for sy,end in [(-1,'front'),(1,'rear')]:
++   role=end+'_'+side+'_leg';bottom=(sx*legx,sy*legy,.002);top=(sx*legx,sy*legy,board_top-.005)
++   beam(role,bottom,top,.022,.023,wood);floor(role,bottom);joint(role,'seat_board',top)
++   apron_z=board_top-.035
++   for apr in ([('back' if end=='rear' else 'front')+'_apron',side+'_apron']):joint(role,apr,(sx*legx,sy*legy,apron_z))
++  role='back_'+side+'_post';a=(sx*legx,legy,board_top-.006);b=railpoint(sx*rear_x);b[2]-=.010
++  beam(role,a,b,.023,.021,wood);joint(role,'rear_'+side+'_leg',a);joint(role,'seat_board',a);joint(role,'back_rail',b)
++ # Aprons meet at legs, outside the pad and below the seat.
++ z=board_top-.035
++ slab('front_apron',(0,-legy,z),(2*legx,.019,.034),wood)
++ slab('back_apron',(0,legy,z),(2*legx,.019,.034),wood)
++ slab('left_apron',(-legx,0,z),(.019,2*legy,.034),wood)
++ slab('right_apron',(legx,0,z),(.019,2*legy,.034),wood)
++ for apr,px,py in [('front_apron',0,-legy),('back_apron',0,legy),('left_apron',-legx,0),('right_apron',legx,0)]:joint(apr,'seat_board',(px,py,board_top-.019),'support_contact')
++ # A closed, vertically oriented bowed wood strip (not a cylinder or an armrest).
++ vs=[];fs=[];N=40
++ for i in range(N+1):
++  xx=-railspan+2*railspan*i/N;pt=np.array(railpoint(xx));der=-1.0*np.sign(xx)*abs(xx)**3/railspan**4;normal=np.array([-der,1,0]);normal/=np.linalg.norm(normal)
++  for dn,dz in [(-.010,-.013),(.010,-.013),(.010,.013),(-.010,.013)]:vs.append(T(pt+normal*dn+[0,0,dz]).tolist())
++ for i in range(N):
++  for k in range(4):a=i*4+k;b=i*4+(k+1)%4;fs.append((a,b,b+4,a+4))
++ fs.extend([(3,2,1,0),(N*4,N*4+1,N*4+2,N*4+3)]);reg(mesh(e,vs,fs,wood,0,.0015),'back_rail')
++ # Intended apron corner contacts are named; all other unexpected intersections remain errors.
++ for a,b,xx,yy in [('front_apron','left_apron',-legx,-legy),('front_apron','right_apron',legx,-legy),('back_apron','left_apron',-legx,legy),('back_apron','right_apron',legx,legy)]:joint(a,b,(xx,yy,z))
++ # Uprights meet the rear legs/seat, not the apron below them. Do not invent
++ # direct joint edges merely because parts share a similar projected position.
++ # Structural seat collision supports the volume; legs remain separate.
++ proxy[e].append(dict(shape='box',position=T((0,0,board_top-.010)).tolist(),dimensions=[w,d,.018],yaw=yaw))
++ entities[e]['kind']='wooden_chair';entities[e]['evidence']=['furniture_observation.json: '+', '.join(sp['source_observation_ids']),'Single local rigid frame, shared chair family shape; rear posts connect to the rear edge. Hidden joinery is assumed.']
++entities['table']['kind']='trestle_table';entities['table']['evidence']=['furniture_observation.json: '+', '.join(fit['targets']['table']['observation_ids']),'Rectangular top, paired end trestles with connected crossbars and longitudinal brace; hidden joinery assumed.']
++furniture_structure=dict(schema='real2sim.assembly/1',model_version=version,observation_sha256=hashlib.sha256(obspath.read_bytes()).hexdigest(),parameter_sha256=hashlib.sha256(fitpath.read_bytes()).hexdigest(),assemblies=assemblies,unexpected_interpenetration_tolerance_m=.002,acceptance=observation['acceptance_before_fit'])
++(OUT/'furniture_structure.json').write_text(json.dumps(furniture_structure,indent=2));(OUT/'furniture_observation.json').write_bytes(obspath.read_bytes());(OUT/'furniture_parameters.json').write_bytes(fitpath.read_bytes())
+--- a/public_contract/AGENT_EXECUTION_SPEC.md
++++ b/public_contract/AGENT_EXECUTION_SPEC.md
+@@ -116,3 +116,15 @@
+ ## 对外部署边界
+ 
+ 本资料描述任务合同与现有执行机制。自然语言表单适配、身份鉴权、每用户访问隔离、队列与资源限额、产物下载权限及数据保留策略由服务部署方实现并验证。Prompt 中的访问限制不是操作系统隔离，文件协议也不是网页服务。发布时参照 [CAPABILITIES.md](CAPABILITIES.md) 陈述能力，保留未验证范围。
++# 本次结构证据合同扩展（quality_v2 / assembly gate 1）
++
++以下要求补充原有阶段要求，适用于采用本快照的多部件家具重建。执行器实际检查这些字段；不能仅写“已检查”。
++
++- `agent_observe` 交付 `furniture_observation.json`：原图哈希、家具/部件归属、结构约束、源图点 ID/坐标/可见性、遮挡与不确定性，以及拟合前的接受阈值。
++- `agent_model` 直接依赖该观察阶段。交付相同字节的观察文件，`scene.structure` 使用 `real2sim.assembly/1`，含模型版本、观察/参数哈希和 assemblies。每个 assembly 提供实际 Blender 部件名、唯一归属、连接图、共享世界锚点、容差、落地支撑与源图点绑定。`response.parameters.model_version` 与 scene 一致。
++- 对应点绑定包含 `id`、`uv`、`visibility`、`world` 和所属 `part`。构建器以整件局部坐标/尺寸生成构件；不能用脚点平均或独立面反投影替代结构。检查器重新寻找绑定部件上的实际求值网格点，重算投影和残差。
++- `build_geometry` 输出 `model_binding.json`、`structural_audit.json`、源图局部、同相机局部及逐件/组合检查图。检查实际可见网格的部件归属、接头、落地和非预期相交；合理接头与照片遮挡分开处理。当前 Blender 适配器针对能提供闭合部件与此结构合同的场景，其他拓扑须明确扩充适配和测试，不能伪称已覆盖。
++- `agent_review_geometry` 的 `per_object` 必须精确覆盖当前所有语义实体，各项使用 `entity`、`status`、具体 `findings` 和实际交付文件 `evidence`；假设项另附 `uncertainty`。冻结哈希与模型版本必须绑定当前模型，结构审计副本必须与执行器工件的哈希一致。审计失败不能靠改审核 JSON 放行。
++- `agent_review` 增加 `furniture_local_review`，包含 `status`、`findings`、指向实际文件的 `source_crop` 和 `render_crop`。最终材质/光照下仍须检查部件关系，整体亮度和相机点残差不能代替局部结构。
++- 动力学只验收其实际配置和试验范围。碰撞代理通过，不代表可见家具几何通过；曲面简化、物性先验、接触容差与有限时间窗口必须说明。
++- 子进程由 `core.execute` 绑定当前流程快照的绝对模块路径；worker 记录实际执行代码哈希。源码/输入修订后按依赖重跑并保留旧尝试，不改写成功状态。
+--- a/public_contract/MASTER_PROMPT.md
++++ b/public_contract/MASTER_PROMPT.md
+@@ -59,6 +59,8 @@
+ 使用与原图一致的相机渲染灰模，对每个主要对象检查轮廓、关键点、遮挡、支撑和房间边界；多图/视频还要检查其他允许使用的视图。输出原图叠加、局部差异及修正记录。几何存在明显错位时继续修正，不能提前进入最终材质验收。
+ 
+ 几何通过后冻结相机和几何版本，后续如需修改，必须明确回到相应阶段并重做受影响检查。
++
++对多部件家具，观察记录必须明确部件归属、连接、可见/遮挡状态和不可见部分的假设，并用来源 ID 与哈希绑定生成参数。以整件家具的局部坐标和尺寸约束建模，不可把分别反投影的座面、靠背和脚点简单连接。提供逐件正/侧/后检查、组合检查、原图局部对照，以及基于实际可见网格的连接、落地和非预期穿插审计；动力学代理不能代替它。逐对象审核必须覆盖当前模型，证据必须是实际文件，冻结哈希必须绑定当前模型字节。缺对象、断连接、错版本或证据失效均阻断通过，不能靠整体亮度或相机点残差替代。
+ 
+ ### 第五步：分别校准材质和光照
+ 

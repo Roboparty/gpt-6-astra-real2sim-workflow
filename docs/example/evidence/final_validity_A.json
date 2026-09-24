@@ -1,0 +1,96 @@
+{
+  "branch": "A",
+  "stages": {
+    "ingest": {
+      "status": "succeeded",
+      "attempt": 4,
+      "included_in_freeze": true
+    },
+    "preprocess": {
+      "status": "succeeded",
+      "attempt": 4,
+      "included_in_freeze": true
+    },
+    "agent_observe": {
+      "status": "succeeded",
+      "attempt": 4,
+      "included_in_freeze": true
+    },
+    "agent_identify": {
+      "status": "succeeded",
+      "attempt": 4,
+      "included_in_freeze": true
+    },
+    "agent_calibrate": {
+      "status": "succeeded",
+      "attempt": 4,
+      "included_in_freeze": true
+    },
+    "agent_calibrate_room": {
+      "status": "succeeded",
+      "attempt": 4,
+      "included_in_freeze": true
+    },
+    "agent_model": {
+      "status": "succeeded",
+      "attempt": 12,
+      "included_in_freeze": true
+    },
+    "build_geometry": {
+      "status": "succeeded",
+      "attempt": 12,
+      "included_in_freeze": true
+    },
+    "agent_review_geometry": {
+      "status": "succeeded",
+      "attempt": 11,
+      "included_in_freeze": true
+    },
+    "agent_materials": {
+      "status": "succeeded",
+      "attempt": 5,
+      "included_in_freeze": true
+    },
+    "agent_calibrate_lighting": {
+      "status": "succeeded",
+      "attempt": 6,
+      "included_in_freeze": true
+    },
+    "build_render": {
+      "status": "succeeded",
+      "attempt": 3,
+      "included_in_freeze": true
+    },
+    "agent_review": {
+      "status": "succeeded",
+      "attempt": 3,
+      "included_in_freeze": true
+    },
+    "agent_physics": {
+      "status": "succeeded",
+      "attempt": 4,
+      "included_in_freeze": true
+    },
+    "export": {
+      "status": "succeeded",
+      "attempt": 4,
+      "included_in_freeze": true
+    },
+    "validate": {
+      "status": "succeeded",
+      "attempt": 4,
+      "included_in_freeze": true
+    },
+    "agent_review_physics": {
+      "status": "succeeded",
+      "attempt": 3,
+      "included_in_freeze": true
+    },
+    "report": {
+      "status": "succeeded",
+      "attempt": 2,
+      "included_in_freeze": true
+    }
+  },
+  "freeze_sha256": "564e5141ccc8ad4a94e25127bb79d6f52c185f38269881c9ec34e3b24774b602"
+}

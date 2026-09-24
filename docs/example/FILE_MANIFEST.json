@@ -1,0 +1,1984 @@
+{
+  "schema": "real2sim.delivery-manifest/2",
+  "revision": "furniture-v2/model-4/candidate-019",
+  "scope": "Full remote delivery. Reading copy omits outputs/.",
+  "files": [
+    {
+      "path": "EXAMPLE_WALKTHROUGH.md",
+      "bytes": 12912,
+      "sha256": "5d7e98d10a752a78f646cbd170bafc149bb02c65d6a70178bbefc13fde8a5b66"
+    },
+    {
+      "path": "PIPELINE_CHANGES.md",
+      "bytes": 3049,
+      "sha256": "9f0f78f4ef1fe719837cf10c70b145251d0a8c71da782c535cf196d565ea2aeb"
+    },
+    {
+      "path": "PIPELINE_PATCH.diff",
+      "bytes": 92146,
+      "sha256": "8b479a28f3d89ea598f9d367464e664727d1dc1db22798b4b13bba43129cdc8f"
+    },
+    {
+      "path": "README.md",
+      "bytes": 865,
+      "sha256": "fbf082cbcbf956a16e3740de83941d172b27f2e3a327b4072d9e2c3a6bfbda25"
+    },
+    {
+      "path": "REPLAY.md",
+      "bytes": 4840,
+      "sha256": "504987999ab2aef97e6c48097c66e9fd514cea10f28a814ec57270267e678aa4"
+    },
+    {
+      "path": "RESULTS.md",
+      "bytes": 2964,
+      "sha256": "2ca9e4f28bd9582a5e10738e892e92770a8b1d8d63b50fa55ea1ab258b8a7247"
+    },
+    {
+      "path": "evidence/A/agent_calibrate_lighting/light_parameters.json",
+      "bytes": 1888,
+      "sha256": "a0393499f5f3f4f26b83888c3e8ef903c8d3aaa379009de48a45e0a031be28e6"
+    },
+    {
+      "path": "evidence/A/agent_calibrate_lighting/lighting_calibration.json",
+      "bytes": 9748,
+      "sha256": "14bc442de5f112ce8ff3629410731ad8becc8fcd4881aea49d397ec9d6222449"
+    },
+    {
+      "path": "evidence/A/agent_calibrate_lighting/lock_audit.json",
+      "bytes": 2710,
+      "sha256": "1a58fccbe7d064983b7bfc3458ebe746cac69f12c4c5306a2db74f26aa43ae48"
+    },
+    {
+      "path": "evidence/A/agent_materials/geometry_lock.json",
+      "bytes": 182,
+      "sha256": "6d0cd38085226892bc3878231cd49d853fe5d20e33332255959c882bdea3e39d"
+    },
+    {
+      "path": "evidence/A/agent_materials/lock_audit.json",
+      "bytes": 1252,
+      "sha256": "6fa3d151355468d22192bea90bcab98bbc0b4d0882279088cdfba2059f2460a6"
+    },
+    {
+      "path": "evidence/A/agent_materials/material_calibration.json",
+      "bytes": 209638,
+      "sha256": "146f30ec90fb9896bf9a9f59b4d58b1b771e9f7e9efb5b64c59b85447af15e99"
+    },
+    {
+      "path": "evidence/A/agent_physics/dynamics_parameters.json",
+      "bytes": 93259,
+      "sha256": "fba7401e509a78e6331f794c57df9dadca0cc486ed4e1ee4da4f5042042410b3"
+    },
+    {
+      "path": "evidence/A/agent_physics/lock_audit.json",
+      "bytes": 2710,
+      "sha256": "1a58fccbe7d064983b7bfc3458ebe746cac69f12c4c5306a2db74f26aa43ae48"
+    },
+    {
+      "path": "evidence/A/agent_physics/physics_setup.json",
+      "bytes": 3838,
+      "sha256": "edbcb1c47f0f3975223a9dc2a8427ceedb276121ee0f69ac21ef19eda5bbc950"
+    },
+    {
+      "path": "evidence/A/dynamics_demo.mp4",
+      "bytes": 134424,
+      "sha256": "194d82e6fff5281408e51706ba7da063cd018661528f27f6a58ff76e0a092765"
+    },
+    {
+      "path": "evidence/A/dynamics_end.png",
+      "bytes": 168450,
+      "sha256": "a0c7d9f613872befeb5c3d0ed3b8fa65902e6f20eb35671ddace311ec19573e3"
+    },
+    {
+      "path": "evidence/A/dynamics_mid.png",
+      "bytes": 171971,
+      "sha256": "98401a33b1df19c25f36f2f75ede6c49d3ff57601a99801e92294e3265479559"
+    },
+    {
+      "path": "evidence/A/dynamics_start.png",
+      "bytes": 168103,
+      "sha256": "f47508741e8a417bea90f42919050b111719aac11e63551eb8f03d0b73a8b18b"
+    },
+    {
+      "path": "evidence/A/freeze_paths_relative.json",
+      "bytes": 57526,
+      "sha256": "e7d83ef8ded9a73a7cab972db5744006a4e0b0f3731ba6c37f556ace1058e864"
+    },
+    {
+      "path": "evidence/A/geometry/diagnostic_reverse.png",
+      "bytes": 211313,
+      "sha256": "e9fdcb85b067996ea4aea2ba4f30130654fea038907442ee9f111813f06a9aad"
+    },
+    {
+      "path": "evidence/A/geometry/diagnostic_wide.png",
+      "bytes": 219861,
+      "sha256": "696f4caf58e045277fcdd1ea625807e733268e87c3f3ae1cf010b11d9fe32063"
+    },
+    {
+      "path": "evidence/A/geometry/execution_implementation.json",
+      "bytes": 1850,
+      "sha256": "095ab2babce4f0475c6b91f1b657ebc69d16126f7fda73aff712ca8e5cc00ba2"
+    },
+    {
+      "path": "evidence/A/geometry/furniture_original_crop.png",
+      "bytes": 145033,
+      "sha256": "ff5570bb678fbe745a8a02455c502965262e1fd0c2ab4a6f943b7f25f52b7622"
+    },
+    {
+      "path": "evidence/A/geometry/furniture_source_view.png",
+      "bytes": 125797,
+      "sha256": "03305d25cb687cf1026b2dc447ecf5ae6a5e34c626b6e52866ac33314e1ca402"
+    },
+    {
+      "path": "evidence/A/geometry/geometry_review.json",
+      "bytes": 18274,
+      "sha256": "8e3bf92cd211a6d3b7bc62add175f479a920d4ce2b36ae50f84ed820e838089a"
+    },
+    {
+      "path": "evidence/A/geometry/inspect_wall_back.png",
+      "bytes": 208745,
+      "sha256": "1027e2c1ed433510696939016e17cb5cb8982b71d5356dce22ad16f96e0a83db"
+    },
+    {
+      "path": "evidence/A/geometry/inspect_wall_front.png",
+      "bytes": 159398,
+      "sha256": "680db618e548e209140f5e9903c7dc7932eb18dee7456ca49884de9eb17c025c"
+    },
+    {
+      "path": "evidence/A/geometry/inspect_wall_left.png",
+      "bytes": 172485,
+      "sha256": "78cf9ab634c7f6208227ff1fac4acf468371d387bc3c3696e1819574ed5d7ad9"
+    },
+    {
+      "path": "evidence/A/geometry/inspect_wall_right.png",
+      "bytes": 171370,
+      "sha256": "d5c552bec24e1ec10a4bcbc2ee8eae13702aab0405b25211bc07510785cd8276"
+    },
+    {
+      "path": "evidence/A/geometry/model_binding.json",
+      "bytes": 387,
+      "sha256": "f53bf8a6b155cdfa5f833dabc3cf2f6b88857ca6d904b148fcedcc1e4752d7ce"
+    },
+    {
+      "path": "evidence/A/geometry/source_clay.png",
+      "bytes": 538347,
+      "sha256": "de9f18029be557c746ef2b4a27d1719025fae76652f4817aace23dfdbf6b2f15"
+    },
+    {
+      "path": "evidence/A/geometry/source_view.png",
+      "bytes": 709219,
+      "sha256": "a8fc3e88e9faf968b1bfb54c8ec2977b26871820aab829b0245f10fd74114277"
+    },
+    {
+      "path": "evidence/A/geometry/structural_audit.json",
+      "bytes": 330298,
+      "sha256": "93b922b3745a7ae4be12d2058ceb028db0f9d5bc3c87496ae5b0c6226f25a062"
+    },
+    {
+      "path": "evidence/A/geometry/structure_chair_far_front.png",
+      "bytes": 441221,
+      "sha256": "5d06609027267fd077d2d8f42c48b1881a3ac65360446f2a5af5769c6185f278"
+    },
+    {
+      "path": "evidence/A/geometry/structure_chair_far_rear.png",
+      "bytes": 434564,
+      "sha256": "2d70ce5d61b42727d11cd6fe144d7d9f7eb91ee4b47cd10b9cef540c25eff85b"
+    },
+    {
+      "path": "evidence/A/geometry/structure_chair_far_side.png",
+      "bytes": 418619,
+      "sha256": "74dfb96cab79f195ec272c53acb71a0bb4841f6f53fc748f23f036b610e4ecc7"
+    },
+    {
+      "path": "evidence/A/geometry/structure_chair_near_front.png",
+      "bytes": 437746,
+      "sha256": "9624073f8ecdff874947cd057c29ce3d28fcd8ed6f1d072857056f7b5722e3f9"
+    },
+    {
+      "path": "evidence/A/geometry/structure_chair_near_rear.png",
+      "bytes": 437578,
+      "sha256": "807d7f214e62788ccb75891a953d6a00e585d727090d9a46511fb3fa03f3df02"
+    },
+    {
+      "path": "evidence/A/geometry/structure_chair_near_side.png",
+      "bytes": 415227,
+      "sha256": "a800c1a558c8bff88f7d850cf81c983c314ae68885974e611debec6a99c78794"
+    },
+    {
+      "path": "evidence/A/geometry/structure_combined_front.png",
+      "bytes": 440439,
+      "sha256": "736395846ca170c91a8c53533144302bc4eaa1874bee3a6fa3ac82eb6a95fa8f"
+    },
+    {
+      "path": "evidence/A/geometry/structure_combined_rear.png",
+      "bytes": 442900,
+      "sha256": "5f571635d46f4b84051c26ec74e40e80356f4a5d9f4115803edba4f27d40f452"
+    },
+    {
+      "path": "evidence/A/geometry/structure_combined_side.png",
+      "bytes": 427584,
+      "sha256": "efb6d5eaa1062d155b44ef6b242681f2f3796c18f4cb07088c7d96c8dd367ae8"
+    },
+    {
+      "path": "evidence/A/geometry/structure_table_front.png",
+      "bytes": 435881,
+      "sha256": "69091339ef0b420c5fdad1cd28aa1cbbbe5426cd148c9227d69a716090d8c974"
+    },
+    {
+      "path": "evidence/A/geometry/structure_table_rear.png",
+      "bytes": 442315,
+      "sha256": "a12fccddab2e326004258da723d45934093653de81fe39e110b1a2500935350f"
+    },
+    {
+      "path": "evidence/A/geometry/structure_table_side.png",
+      "bytes": 422316,
+      "sha256": "352856be0537f15778459026e09fae34e9f1602614fcffc52e02de097f285084"
+    },
+    {
+      "path": "evidence/A/input_manifest.json",
+      "bytes": 521,
+      "sha256": "8cf09569e199d6b838386e20892b11e802347a845dfdf278e7ca646ea4412315"
+    },
+    {
+      "path": "evidence/A/loading_observations.json",
+      "bytes": 779,
+      "sha256": "7de9fd644062f993a9bc8679cc205eeb54791b17ce77653158f81b0301e77dc4"
+    },
+    {
+      "path": "evidence/A/loading_test_audit.json",
+      "bytes": 1338,
+      "sha256": "0029535eec03582c16374071e8679b8599e61c7ebd9a9524cc36894b2263c315"
+    },
+    {
+      "path": "evidence/A/loading_trajectory.json",
+      "bytes": 5323746,
+      "sha256": "91ffd8a16153985552642fb655acfd7eb1c773685104fb08f537a3c21fd0b6fb"
+    },
+    {
+      "path": "evidence/A/lock_audit.json",
+      "bytes": 2710,
+      "sha256": "1a58fccbe7d064983b7bfc3458ebe746cac69f12c4c5306a2db74f26aa43ae48"
+    },
+    {
+      "path": "evidence/A/physics_review.json",
+      "bytes": 3085,
+      "sha256": "4b5200caca6120f58f8ca288bc56e1a3cb05c98d82357445045abecd88d7c679"
+    },
+    {
+      "path": "evidence/A/physics_setup.json",
+      "bytes": 3838,
+      "sha256": "edbcb1c47f0f3975223a9dc2a8427ceedb276121ee0f69ac21ef19eda5bbc950"
+    },
+    {
+      "path": "evidence/A/qa_summary.json",
+      "bytes": 17326,
+      "sha256": "908aa92bdc8ccde95a9fd3f947ede8d1cc1fd42517820b4e33f9464cff5ff199"
+    },
+    {
+      "path": "evidence/A/reimport_glb.json",
+      "bytes": 7513,
+      "sha256": "935a4050f7a8a91432e56cf0a560c66adae1aefa61082cf4f82b7f9bccaf386c"
+    },
+    {
+      "path": "evidence/A/reimport_usd.json",
+      "bytes": 7384,
+      "sha256": "d254906cc52d4c307fd5102b1b2ab75f6756b981cc4f604e91a1ccc1c3f3b172"
+    },
+    {
+      "path": "evidence/A/report.json",
+      "bytes": 57214,
+      "sha256": "7a264eef26e8f9ba47dc788e586f9febbcc9d0b187ce1371d46c2117dde2e80b"
+    },
+    {
+      "path": "evidence/A/source_watch.json",
+      "bytes": 3090,
+      "sha256": "176e64b7d00c1a251864e472a32fd254ecea7cadf108dd72d73ca5ee3aae9c90"
+    },
+    {
+      "path": "evidence/A/static/comparison_metrics.json",
+      "bytes": 3340,
+      "sha256": "8907933ad3a8ffa047280c919b8dce50154e007a462138fc7bdfd03f81b4666b"
+    },
+    {
+      "path": "evidence/A/static/furniture_original.png",
+      "bytes": 145033,
+      "sha256": "ff5570bb678fbe745a8a02455c502965262e1fd0c2ab4a6f943b7f25f52b7622"
+    },
+    {
+      "path": "evidence/A/static/furniture_render.png",
+      "bytes": 114557,
+      "sha256": "09076dbd3216b1b13ef589250c3169090b998328cec541dc4ad6ec1213527dd3"
+    },
+    {
+      "path": "evidence/A/static/furniture_source_view.png",
+      "bytes": 125797,
+      "sha256": "03305d25cb687cf1026b2dc447ecf5ae6a5e34c626b6e52866ac33314e1ca402"
+    },
+    {
+      "path": "evidence/A/static/inspect_wall_back.png",
+      "bytes": 785454,
+      "sha256": "7a4ab00457b8e38b9bf51c6af5680431226a702acd36a132a140da83227fb705"
+    },
+    {
+      "path": "evidence/A/static/inspect_wall_front.png",
+      "bytes": 644144,
+      "sha256": "c9d50664c7ac35f378efaf9421de5f382e014258e4d3f2e1f5b6e58ee7cd13aa"
+    },
+    {
+      "path": "evidence/A/static/inspect_wall_left.png",
+      "bytes": 660576,
+      "sha256": "8fe4e47483f081fe1095117658edf98fc5206e0fa3315fb43243a4e02bae84a0"
+    },
+    {
+      "path": "evidence/A/static/inspect_wall_right.png",
+      "bytes": 634715,
+      "sha256": "53457ce85b2f97b70ca31be85cfb9f5ace7b681bde48fa5d885a79ec24a25de6"
+    },
+    {
+      "path": "evidence/A/static/review.json",
+      "bytes": 5690,
+      "sha256": "91b2ed6259beba9440964453c222d582d1765a32b1c9a9e3f883ae54f28bf9db"
+    },
+    {
+      "path": "evidence/A/static/source_comparison.jpg",
+      "bytes": 670514,
+      "sha256": "04d4a32d7523031210ec433c6cb9a8084a4a7ff007e544dea6e6f05fe0a98fd3"
+    },
+    {
+      "path": "evidence/A/static/source_overlay.jpg",
+      "bytes": 327584,
+      "sha256": "17538ae62ff6d22d485f2ada4452c7296f3c6ac1e58385c9fa67fcaf9ba40c41"
+    },
+    {
+      "path": "evidence/A/static/structural_audit.json",
+      "bytes": 330298,
+      "sha256": "93b922b3745a7ae4be12d2058ceb028db0f9d5bc3c87496ae5b0c6226f25a062"
+    },
+    {
+      "path": "evidence/A/static/structure_chair_far_front.png",
+      "bytes": 441221,
+      "sha256": "5d06609027267fd077d2d8f42c48b1881a3ac65360446f2a5af5769c6185f278"
+    },
+    {
+      "path": "evidence/A/static/structure_chair_far_rear.png",
+      "bytes": 434564,
+      "sha256": "2d70ce5d61b42727d11cd6fe144d7d9f7eb91ee4b47cd10b9cef540c25eff85b"
+    },
+    {
+      "path": "evidence/A/static/structure_chair_far_side.png",
+      "bytes": 418619,
+      "sha256": "74dfb96cab79f195ec272c53acb71a0bb4841f6f53fc748f23f036b610e4ecc7"
+    },
+    {
+      "path": "evidence/A/static/structure_chair_near_front.png",
+      "bytes": 437746,
+      "sha256": "9624073f8ecdff874947cd057c29ce3d28fcd8ed6f1d072857056f7b5722e3f9"
+    },
+    {
+      "path": "evidence/A/static/structure_chair_near_rear.png",
+      "bytes": 437578,
+      "sha256": "807d7f214e62788ccb75891a953d6a00e585d727090d9a46511fb3fa03f3df02"
+    },
+    {
+      "path": "evidence/A/static/structure_chair_near_side.png",
+      "bytes": 415227,
+      "sha256": "a800c1a558c8bff88f7d850cf81c983c314ae68885974e611debec6a99c78794"
+    },
+    {
+      "path": "evidence/A/static/structure_combined_front.png",
+      "bytes": 440439,
+      "sha256": "736395846ca170c91a8c53533144302bc4eaa1874bee3a6fa3ac82eb6a95fa8f"
+    },
+    {
+      "path": "evidence/A/static/structure_combined_rear.png",
+      "bytes": 442900,
+      "sha256": "5f571635d46f4b84051c26ec74e40e80356f4a5d9f4115803edba4f27d40f452"
+    },
+    {
+      "path": "evidence/A/static/structure_combined_side.png",
+      "bytes": 427584,
+      "sha256": "efb6d5eaa1062d155b44ef6b242681f2f3796c18f4cb07088c7d96c8dd367ae8"
+    },
+    {
+      "path": "evidence/A/static/structure_table_front.png",
+      "bytes": 435881,
+      "sha256": "69091339ef0b420c5fdad1cd28aa1cbbbe5426cd148c9227d69a716090d8c974"
+    },
+    {
+      "path": "evidence/A/static/structure_table_rear.png",
+      "bytes": 442315,
+      "sha256": "a12fccddab2e326004258da723d45934093653de81fe39e110b1a2500935350f"
+    },
+    {
+      "path": "evidence/A/static/structure_table_side.png",
+      "bytes": 422316,
+      "sha256": "352856be0537f15778459026e09fae34e9f1602614fcffc52e02de097f285084"
+    },
+    {
+      "path": "evidence/AB_geometry_image_check.json",
+      "bytes": 1135,
+      "sha256": "dc3a970a886592be08cd9bfaf65db7b7b2171a935a9e141a8f35e664a8cb8a79"
+    },
+    {
+      "path": "evidence/B/agent_calibrate_lighting/light_parameters.json",
+      "bytes": 1888,
+      "sha256": "a0393499f5f3f4f26b83888c3e8ef903c8d3aaa379009de48a45e0a031be28e6"
+    },
+    {
+      "path": "evidence/B/agent_calibrate_lighting/lighting_calibration.json",
+      "bytes": 9748,
+      "sha256": "14bc442de5f112ce8ff3629410731ad8becc8fcd4881aea49d397ec9d6222449"
+    },
+    {
+      "path": "evidence/B/agent_calibrate_lighting/lock_audit.json",
+      "bytes": 2710,
+      "sha256": "1a58fccbe7d064983b7bfc3458ebe746cac69f12c4c5306a2db74f26aa43ae48"
+    },
+    {
+      "path": "evidence/B/agent_materials/geometry_lock.json",
+      "bytes": 182,
+      "sha256": "6d0cd38085226892bc3878231cd49d853fe5d20e33332255959c882bdea3e39d"
+    },
+    {
+      "path": "evidence/B/agent_materials/lock_audit.json",
+      "bytes": 1252,
+      "sha256": "6fa3d151355468d22192bea90bcab98bbc0b4d0882279088cdfba2059f2460a6"
+    },
+    {
+      "path": "evidence/B/agent_materials/material_calibration.json",
+      "bytes": 209638,
+      "sha256": "146f30ec90fb9896bf9a9f59b4d58b1b771e9f7e9efb5b64c59b85447af15e99"
+    },
+    {
+      "path": "evidence/B/agent_physics/dynamics_parameters.json",
+      "bytes": 93259,
+      "sha256": "fba7401e509a78e6331f794c57df9dadca0cc486ed4e1ee4da4f5042042410b3"
+    },
+    {
+      "path": "evidence/B/agent_physics/lock_audit.json",
+      "bytes": 2710,
+      "sha256": "1a58fccbe7d064983b7bfc3458ebe746cac69f12c4c5306a2db74f26aa43ae48"
+    },
+    {
+      "path": "evidence/B/agent_physics/physics_setup.json",
+      "bytes": 3838,
+      "sha256": "edbcb1c47f0f3975223a9dc2a8427ceedb276121ee0f69ac21ef19eda5bbc950"
+    },
+    {
+      "path": "evidence/B/dynamics_demo.mp4",
+      "bytes": 134424,
+      "sha256": "194d82e6fff5281408e51706ba7da063cd018661528f27f6a58ff76e0a092765"
+    },
+    {
+      "path": "evidence/B/dynamics_end.png",
+      "bytes": 168450,
+      "sha256": "a0c7d9f613872befeb5c3d0ed3b8fa65902e6f20eb35671ddace311ec19573e3"
+    },
+    {
+      "path": "evidence/B/dynamics_mid.png",
+      "bytes": 171971,
+      "sha256": "98401a33b1df19c25f36f2f75ede6c49d3ff57601a99801e92294e3265479559"
+    },
+    {
+      "path": "evidence/B/dynamics_start.png",
+      "bytes": 168103,
+      "sha256": "f47508741e8a417bea90f42919050b111719aac11e63551eb8f03d0b73a8b18b"
+    },
+    {
+      "path": "evidence/B/freeze_paths_relative.json",
+      "bytes": 57526,
+      "sha256": "a018a425d9fb6e597b6639126e23ffe483c364d7061ef81a7cf47bacef628f0f"
+    },
+    {
+      "path": "evidence/B/geometry/diagnostic_reverse.png",
+      "bytes": 211313,
+      "sha256": "3ab85b0cee4e01549501b7453a106494d1ab349a1f843b4153dc7ad2d41e5942"
+    },
+    {
+      "path": "evidence/B/geometry/diagnostic_wide.png",
+      "bytes": 219861,
+      "sha256": "bed6a7818bc8724b3d7f35b998f9fd3351bb7d8b4f912c13d15ed0df063997f8"
+    },
+    {
+      "path": "evidence/B/geometry/execution_implementation.json",
+      "bytes": 1850,
+      "sha256": "095ab2babce4f0475c6b91f1b657ebc69d16126f7fda73aff712ca8e5cc00ba2"
+    },
+    {
+      "path": "evidence/B/geometry/furniture_original_crop.png",
+      "bytes": 145033,
+      "sha256": "ff5570bb678fbe745a8a02455c502965262e1fd0c2ab4a6f943b7f25f52b7622"
+    },
+    {
+      "path": "evidence/B/geometry/furniture_source_view.png",
+      "bytes": 125797,
+      "sha256": "d56c3b7b6378311e31a89d501062eb3ce319f638b28afcdbdd23d63dd8d22df3"
+    },
+    {
+      "path": "evidence/B/geometry/geometry_review.json",
+      "bytes": 18274,
+      "sha256": "8e3bf92cd211a6d3b7bc62add175f479a920d4ce2b36ae50f84ed820e838089a"
+    },
+    {
+      "path": "evidence/B/geometry/inspect_wall_back.png",
+      "bytes": 208745,
+      "sha256": "32a46eb0aa13c5cd56b000db72fcec028dd3c0cd6630dfcca69e9c592e6a2178"
+    },
+    {
+      "path": "evidence/B/geometry/inspect_wall_front.png",
+      "bytes": 159398,
+      "sha256": "cd5240f223fd3c1485709ee7d70d230e184533b103c438a6da26279636fa18b7"
+    },
+    {
+      "path": "evidence/B/geometry/inspect_wall_left.png",
+      "bytes": 172485,
+      "sha256": "75c2f70ad7701aaf33500222cd22387de1a6f70a4c4799770357fb0847784a5a"
+    },
+    {
+      "path": "evidence/B/geometry/inspect_wall_right.png",
+      "bytes": 171370,
+      "sha256": "f7ec86a20d51866fcaffce123281cba81876e17d8de1e333dd45be368f38d91b"
+    },
+    {
+      "path": "evidence/B/geometry/model_binding.json",
+      "bytes": 387,
+      "sha256": "76373d4cf0130012c9f446912dda0390c44704b9a4a23f430508d4628d3cae26"
+    },
+    {
+      "path": "evidence/B/geometry/source_clay.png",
+      "bytes": 538347,
+      "sha256": "140631606b5fc2922cbb3fd50c94aadb0be065af75a5f75e93eef69347d80db6"
+    },
+    {
+      "path": "evidence/B/geometry/source_view.png",
+      "bytes": 709219,
+      "sha256": "f27d117b1037b143ee1fd0ce8369eaa9f5ea37374ccf3b1eedb28a29d1d83df7"
+    },
+    {
+      "path": "evidence/B/geometry/structural_audit.json",
+      "bytes": 330298,
+      "sha256": "a26cb9ebd0b47d62f43ee53a154c727a39f5fa9698e2fbf99ed9ca87f7537a03"
+    },
+    {
+      "path": "evidence/B/geometry/structure_chair_far_front.png",
+      "bytes": 441221,
+      "sha256": "35dfaaafd0d09edb08520e1abb809262b5696203d361a94cc784df9f90b7b2fa"
+    },
+    {
+      "path": "evidence/B/geometry/structure_chair_far_rear.png",
+      "bytes": 434564,
+      "sha256": "7ecfe9a911848437d7d5b8df1f72c516d0e34da9db6fd3123728698f2ec75d73"
+    },
+    {
+      "path": "evidence/B/geometry/structure_chair_far_side.png",
+      "bytes": 418619,
+      "sha256": "b36a2c47a9b3caf1a2237bc21a2faf697630def96a9e9a2c70787cc29152a220"
+    },
+    {
+      "path": "evidence/B/geometry/structure_chair_near_front.png",
+      "bytes": 437746,
+      "sha256": "0fae69dcb773be44821245da9bdf7dd1a5cf4915837ee5dbab5999c6d07c8af6"
+    },
+    {
+      "path": "evidence/B/geometry/structure_chair_near_rear.png",
+      "bytes": 437578,
+      "sha256": "6d4ed1c10563d7c7dead7895ba6dab0430cb169c775107b8afa74966491fa499"
+    },
+    {
+      "path": "evidence/B/geometry/structure_chair_near_side.png",
+      "bytes": 415227,
+      "sha256": "e3ec5ca3e7a9af12e587edef7b552971fb6919e24b22c080942de56484bc4ab9"
+    },
+    {
+      "path": "evidence/B/geometry/structure_combined_front.png",
+      "bytes": 440439,
+      "sha256": "b619e01199dc708da66a6d672e23a7a9b11a5dfb0ed180b1bec7c6a1cb4466df"
+    },
+    {
+      "path": "evidence/B/geometry/structure_combined_rear.png",
+      "bytes": 442900,
+      "sha256": "b70917bd38122ae958b69c8c7b81ddf8efe4ac7b2416947cab66e02ebd23c2a7"
+    },
+    {
+      "path": "evidence/B/geometry/structure_combined_side.png",
+      "bytes": 427584,
+      "sha256": "ec1e2be45edc973176c3172fec6188c7113fef3aa1318224cb7843ed220a8b45"
+    },
+    {
+      "path": "evidence/B/geometry/structure_table_front.png",
+      "bytes": 435881,
+      "sha256": "3bb9455b603ed225d8126f903800ea8078dcf564dceccb2238605e38bde7089f"
+    },
+    {
+      "path": "evidence/B/geometry/structure_table_rear.png",
+      "bytes": 442315,
+      "sha256": "e0a75063c73b6642203e8e05b25a85f2ae8ed815b09a0c42950d769d57419012"
+    },
+    {
+      "path": "evidence/B/geometry/structure_table_side.png",
+      "bytes": 422316,
+      "sha256": "023b1a78a8e347ade6858442cc13a7aa593dc2ef79724b543840329e3fb9df69"
+    },
+    {
+      "path": "evidence/B/input_manifest.json",
+      "bytes": 521,
+      "sha256": "4b7af018fb5d9bffb74c4dc97f3af6126f554c7867a98f4779d692b8fbbf79e2"
+    },
+    {
+      "path": "evidence/B/loading_observations.json",
+      "bytes": 779,
+      "sha256": "7de9fd644062f993a9bc8679cc205eeb54791b17ce77653158f81b0301e77dc4"
+    },
+    {
+      "path": "evidence/B/loading_test_audit.json",
+      "bytes": 1338,
+      "sha256": "0029535eec03582c16374071e8679b8599e61c7ebd9a9524cc36894b2263c315"
+    },
+    {
+      "path": "evidence/B/loading_trajectory.json",
+      "bytes": 5323746,
+      "sha256": "91ffd8a16153985552642fb655acfd7eb1c773685104fb08f537a3c21fd0b6fb"
+    },
+    {
+      "path": "evidence/B/lock_audit.json",
+      "bytes": 2710,
+      "sha256": "1a58fccbe7d064983b7bfc3458ebe746cac69f12c4c5306a2db74f26aa43ae48"
+    },
+    {
+      "path": "evidence/B/physics_review.json",
+      "bytes": 3085,
+      "sha256": "3bd6e845ee9d90e4cf7d2c05445c4bf6f874a2b8b4e1477c7bb67ad7ac36aea6"
+    },
+    {
+      "path": "evidence/B/physics_setup.json",
+      "bytes": 3838,
+      "sha256": "edbcb1c47f0f3975223a9dc2a8427ceedb276121ee0f69ac21ef19eda5bbc950"
+    },
+    {
+      "path": "evidence/B/qa_summary.json",
+      "bytes": 17326,
+      "sha256": "6ad1765b74ab4815a72454432d4bd67de364e2a4430b67171d97f101a51b09b7"
+    },
+    {
+      "path": "evidence/B/reimport_glb.json",
+      "bytes": 7513,
+      "sha256": "935a4050f7a8a91432e56cf0a560c66adae1aefa61082cf4f82b7f9bccaf386c"
+    },
+    {
+      "path": "evidence/B/reimport_usd.json",
+      "bytes": 7384,
+      "sha256": "d254906cc52d4c307fd5102b1b2ab75f6756b981cc4f604e91a1ccc1c3f3b172"
+    },
+    {
+      "path": "evidence/B/report.json",
+      "bytes": 57214,
+      "sha256": "f8456cc15d8811310b9fd42f249ba77db9aded1e84ddeafe7b039c1a434cb592"
+    },
+    {
+      "path": "evidence/B/source_watch.json",
+      "bytes": 3090,
+      "sha256": "176e64b7d00c1a251864e472a32fd254ecea7cadf108dd72d73ca5ee3aae9c90"
+    },
+    {
+      "path": "evidence/B/static/comparison_metrics.json",
+      "bytes": 3340,
+      "sha256": "8907933ad3a8ffa047280c919b8dce50154e007a462138fc7bdfd03f81b4666b"
+    },
+    {
+      "path": "evidence/B/static/furniture_original.png",
+      "bytes": 145033,
+      "sha256": "ff5570bb678fbe745a8a02455c502965262e1fd0c2ab4a6f943b7f25f52b7622"
+    },
+    {
+      "path": "evidence/B/static/furniture_render.png",
+      "bytes": 114557,
+      "sha256": "09076dbd3216b1b13ef589250c3169090b998328cec541dc4ad6ec1213527dd3"
+    },
+    {
+      "path": "evidence/B/static/furniture_source_view.png",
+      "bytes": 125797,
+      "sha256": "d56c3b7b6378311e31a89d501062eb3ce319f638b28afcdbdd23d63dd8d22df3"
+    },
+    {
+      "path": "evidence/B/static/inspect_wall_back.png",
+      "bytes": 785454,
+      "sha256": "1d052910adb519dfc745215ff07de6c385c90bb9d79be302cf6e2f22b7704163"
+    },
+    {
+      "path": "evidence/B/static/inspect_wall_front.png",
+      "bytes": 644144,
+      "sha256": "8bc62aeeeb3942feebab415ec7419322fe5337fc9c6175aab7d41d4305fb2076"
+    },
+    {
+      "path": "evidence/B/static/inspect_wall_left.png",
+      "bytes": 660576,
+      "sha256": "6c71a708f09d67c4b232d46a861a4fb7529fecca6ab1246d905b5a65b0f1cec6"
+    },
+    {
+      "path": "evidence/B/static/inspect_wall_right.png",
+      "bytes": 634715,
+      "sha256": "1a01d2ab2c9e7ba7cb634ea0edc273ff0236bfbd698aba17abbcfa8655002cd7"
+    },
+    {
+      "path": "evidence/B/static/review.json",
+      "bytes": 5690,
+      "sha256": "91b2ed6259beba9440964453c222d582d1765a32b1c9a9e3f883ae54f28bf9db"
+    },
+    {
+      "path": "evidence/B/static/source_comparison.jpg",
+      "bytes": 670514,
+      "sha256": "04d4a32d7523031210ec433c6cb9a8084a4a7ff007e544dea6e6f05fe0a98fd3"
+    },
+    {
+      "path": "evidence/B/static/source_overlay.jpg",
+      "bytes": 327584,
+      "sha256": "17538ae62ff6d22d485f2ada4452c7296f3c6ac1e58385c9fa67fcaf9ba40c41"
+    },
+    {
+      "path": "evidence/B/static/structural_audit.json",
+      "bytes": 330298,
+      "sha256": "a26cb9ebd0b47d62f43ee53a154c727a39f5fa9698e2fbf99ed9ca87f7537a03"
+    },
+    {
+      "path": "evidence/B/static/structure_chair_far_front.png",
+      "bytes": 441221,
+      "sha256": "35dfaaafd0d09edb08520e1abb809262b5696203d361a94cc784df9f90b7b2fa"
+    },
+    {
+      "path": "evidence/B/static/structure_chair_far_rear.png",
+      "bytes": 434564,
+      "sha256": "7ecfe9a911848437d7d5b8df1f72c516d0e34da9db6fd3123728698f2ec75d73"
+    },
+    {
+      "path": "evidence/B/static/structure_chair_far_side.png",
+      "bytes": 418619,
+      "sha256": "b36a2c47a9b3caf1a2237bc21a2faf697630def96a9e9a2c70787cc29152a220"
+    },
+    {
+      "path": "evidence/B/static/structure_chair_near_front.png",
+      "bytes": 437746,
+      "sha256": "0fae69dcb773be44821245da9bdf7dd1a5cf4915837ee5dbab5999c6d07c8af6"
+    },
+    {
+      "path": "evidence/B/static/structure_chair_near_rear.png",
+      "bytes": 437578,
+      "sha256": "6d4ed1c10563d7c7dead7895ba6dab0430cb169c775107b8afa74966491fa499"
+    },
+    {
+      "path": "evidence/B/static/structure_chair_near_side.png",
+      "bytes": 415227,
+      "sha256": "e3ec5ca3e7a9af12e587edef7b552971fb6919e24b22c080942de56484bc4ab9"
+    },
+    {
+      "path": "evidence/B/static/structure_combined_front.png",
+      "bytes": 440439,
+      "sha256": "b619e01199dc708da66a6d672e23a7a9b11a5dfb0ed180b1bec7c6a1cb4466df"
+    },
+    {
+      "path": "evidence/B/static/structure_combined_rear.png",
+      "bytes": 442900,
+      "sha256": "b70917bd38122ae958b69c8c7b81ddf8efe4ac7b2416947cab66e02ebd23c2a7"
+    },
+    {
+      "path": "evidence/B/static/structure_combined_side.png",
+      "bytes": 427584,
+      "sha256": "ec1e2be45edc973176c3172fec6188c7113fef3aa1318224cb7843ed220a8b45"
+    },
+    {
+      "path": "evidence/B/static/structure_table_front.png",
+      "bytes": 435881,
+      "sha256": "3bb9455b603ed225d8126f903800ea8078dcf564dceccb2238605e38bde7089f"
+    },
+    {
+      "path": "evidence/B/static/structure_table_rear.png",
+      "bytes": 442315,
+      "sha256": "e0a75063c73b6642203e8e05b25a85f2ae8ed815b09a0c42950d769d57419012"
+    },
+    {
+      "path": "evidence/B/static/structure_table_side.png",
+      "bytes": 422316,
+      "sha256": "023b1a78a8e347ade6858442cc13a7aa593dc2ef79724b543840329e3fb9df69"
+    },
+    {
+      "path": "evidence/appearance_metrics.json",
+      "bytes": 3337,
+      "sha256": "6b42bb1389b542e7b5f8a2155ff937fcafd0059cf809d27db3ebbdd8515340d5"
+    },
+    {
+      "path": "evidence/assets.json",
+      "bytes": 3797,
+      "sha256": "629071cab0341a8ff4fec87d25757ca3affbbdcddeaac0f55d8ae99fc5b7e9ee"
+    },
+    {
+      "path": "evidence/attempt_inventory.json",
+      "bytes": 1368487,
+      "sha256": "bc413f45c227ea6890eee3f86f8f23122ba5009f789f97c0efc1444e46e1d78e"
+    },
+    {
+      "path": "evidence/catalogue.json",
+      "bytes": 2600,
+      "sha256": "740ee78a35ebfcfe96cbafc59b3db2cc9f374fe440140bfd7b638f4742c75d18"
+    },
+    {
+      "path": "evidence/contract_tests.json",
+      "bytes": 1426,
+      "sha256": "202f8dab74878258effa281ab36bc62c0b75ff22768135badf6cc2a3f9e53a43"
+    },
+    {
+      "path": "evidence/dynamics_sampled_summary.json",
+      "bytes": 16170,
+      "sha256": "be0e36114adf919588c902036c1b4782442e625d2f2b6b34ef1c88d2cb2ad5ff"
+    },
+    {
+      "path": "evidence/final_validity_A.json",
+      "bytes": 2149,
+      "sha256": "566fbfdfbed8a75439adb40baca76e65d3b3028f9fa5d41d96dab168a1c89ae7"
+    },
+    {
+      "path": "evidence/final_validity_B.json",
+      "bytes": 2149,
+      "sha256": "299c4eea18dd6439c4a88b173a7f9b448e5ccb268e555225dbc0a4638ca4a16d"
+    },
+    {
+      "path": "evidence/inspected_view_equivalence.json",
+      "bytes": 1002,
+      "sha256": "54548d6b4a48a5a82abdf606d65124cfa913bf6faba48d246991e802cb2bd9ca"
+    },
+    {
+      "path": "evidence/mesh_mutation_tests.json",
+      "bytes": 6227,
+      "sha256": "84dff49ff917687473ae47659c34c8a1cee1521f3576317dd0f08bf4078f1e2a"
+    },
+    {
+      "path": "evidence/package_blender_dependencies.json",
+      "bytes": 3564,
+      "sha256": "ef46a4e78db1cb2acedf57a73129a4cb114f22ebef09dd40b213f09bd0383417"
+    },
+    {
+      "path": "evidence/package_verification.json",
+      "bytes": 1379,
+      "sha256": "2efa9ff4ded9190364a4cd614e73504b0ac723927a39e6254555fd373a233c9d"
+    },
+    {
+      "path": "evidence/preflight_history.json",
+      "bytes": 3468,
+      "sha256": "1715c3a5b5ef797f4a6edec8185e131a7bbd36da259683a2e0139fb1bc3cb0c4"
+    },
+    {
+      "path": "evidence/replay/REBUILD_RESULT.json",
+      "bytes": 481,
+      "sha256": "edc04c72c7ffc101dae8a34f5e5c2e5384af2da4cf8b8c0665b6b579f048e513"
+    },
+    {
+      "path": "evidence/replay/comparison/comparison_metrics.json",
+      "bytes": 3337,
+      "sha256": "6b42bb1389b542e7b5f8a2155ff937fcafd0059cf809d27db3ebbdd8515340d5"
+    },
+    {
+      "path": "evidence/replay/reimport_glb.json",
+      "bytes": 7513,
+      "sha256": "935a4050f7a8a91432e56cf0a560c66adae1aefa61082cf4f82b7f9bccaf386c"
+    },
+    {
+      "path": "evidence/replay/reimport_usd.json",
+      "bytes": 7384,
+      "sha256": "d254906cc52d4c307fd5102b1b2ab75f6756b981cc4f604e91a1ccc1c3f3b172"
+    },
+    {
+      "path": "evidence/replay/structure/structural_audit.json",
+      "bytes": 330298,
+      "sha256": "82429852b33d6e5a59fe791406aa980153761a5fa1d2d37e062011acbc703371"
+    },
+    {
+      "path": "evidence/replay/validate/loading_test_audit.json",
+      "bytes": 1338,
+      "sha256": "0029535eec03582c16374071e8679b8599e61c7ebd9a9524cc36894b2263c315"
+    },
+    {
+      "path": "evidence/replay_consistency.json",
+      "bytes": 179,
+      "sha256": "8508eb3ffcb182d59f9e67c3949f67a5adfe256790c18a9fdc72ab3f3db4d4dc"
+    },
+    {
+      "path": "evidence/resume_A_verification.json",
+      "bytes": 68,
+      "sha256": "d730006d7865856642af368dd62ed24e6f4fc4a69c77bca9873ec29962d925e3"
+    },
+    {
+      "path": "evidence/resume_B_verification.json",
+      "bytes": 68,
+      "sha256": "d730006d7865856642af368dd62ed24e6f4fc4a69c77bca9873ec29962d925e3"
+    },
+    {
+      "path": "evidence/source_changes.json",
+      "bytes": 5497,
+      "sha256": "86148202de1dbf1215b2cfb4210ae7901bfdcbf4fb4927f82fbb6f5a2f80c323"
+    },
+    {
+      "path": "evidence/stages.json",
+      "bytes": 463629,
+      "sha256": "0576e3869915d2b81e9b96346d78f3a5fdd45ee5ddc3579f62e9f4aac5d1c178"
+    },
+    {
+      "path": "evidence/unaffected_geometry.json",
+      "bytes": 327,
+      "sha256": "5e9ab1443b5c3940d6f61805c8ab605567b0ad90290e337babb5b5b1731bf3da"
+    },
+    {
+      "path": "evidence/versions.json",
+      "bytes": 313,
+      "sha256": "3271a826f876d510712e0cf809142bd6f07f5d2621ef107564bf6c99ee60783a"
+    },
+    {
+      "path": "figures/appearance_review.jpg",
+      "bytes": 257432,
+      "sha256": "4794a3600eb58cf2bcb4f834d5cd4afab84f20ee779a34789839b4e52c58cbed"
+    },
+    {
+      "path": "figures/dynamics_A.mp4",
+      "bytes": 134424,
+      "sha256": "194d82e6fff5281408e51706ba7da063cd018661528f27f6a58ff76e0a092765"
+    },
+    {
+      "path": "figures/dynamics_B.mp4",
+      "bytes": 134424,
+      "sha256": "194d82e6fff5281408e51706ba7da063cd018661528f27f6a58ff76e0a092765"
+    },
+    {
+      "path": "figures/dynamics_sequence.jpg",
+      "bytes": 89078,
+      "sha256": "c84f40c31617a8122d55c57bfbdf17d91e2712df66c88a9d7d08a1069a188f9f"
+    },
+    {
+      "path": "figures/final_A.jpg",
+      "bytes": 392557,
+      "sha256": "e3e3dd9bb5b357ae8d00efa1d673e528b0536cee46cf011d8c0070a15c9759e5"
+    },
+    {
+      "path": "figures/final_B.jpg",
+      "bytes": 392557,
+      "sha256": "e3e3dd9bb5b357ae8d00efa1d673e528b0536cee46cf011d8c0070a15c9759e5"
+    },
+    {
+      "path": "figures/final_clay.jpg",
+      "bytes": 56758,
+      "sha256": "3d1bc7f63c13bb00a239f5269477efbb3cbe99bd804e19be4e14fb0701c47fa7"
+    },
+    {
+      "path": "figures/four_walls.jpg",
+      "bytes": 168855,
+      "sha256": "db8d7eefb6746e99d5c27aa31b14d0231bd38bead23d667cbd96494631e140a7"
+    },
+    {
+      "path": "figures/furniture_before_after.jpg",
+      "bytes": 243168,
+      "sha256": "062df8c204c17c38f545a38b942d74573dbde10ed3975f10cbcfb98528ebb5d8"
+    },
+    {
+      "path": "figures/furniture_multiview.jpg",
+      "bytes": 322310,
+      "sha256": "af3ee9a6c2c008863f510988926a58d4a2305f80b228a9c289da7ada7e208151"
+    },
+    {
+      "path": "figures/novel_views.jpg",
+      "bytes": 154289,
+      "sha256": "bfd42e9615b12e95c7749d951396f656b0ac93c5837b98b7b7e57e9a318d6bc2"
+    },
+    {
+      "path": "figures/source_AB.jpg",
+      "bytes": 338224,
+      "sha256": "c0fd86aad5dd463c0e06dbc2f172043d4bf398eadf453a95d9093225f9504711"
+    },
+    {
+      "path": "figures/source_comparison.jpg",
+      "bytes": 670514,
+      "sha256": "04d4a32d7523031210ec433c6cb9a8084a4a7ff007e544dea6e6f05fe0a98fd3"
+    },
+    {
+      "path": "outputs/A/authority_geometry_audit.json",
+      "bytes": 11317,
+      "sha256": "34fc5d593554423b38995d4b01158b3a1a922955dc25c2a1b4ceef9d26bd7f80"
+    },
+    {
+      "path": "outputs/A/backend_options.json",
+      "bytes": 439,
+      "sha256": "cd24e2c880a3642ac70226825fb253f3d1ef61bef6fc4d1f895f38e69788e32e"
+    },
+    {
+      "path": "outputs/A/collision_recipes.json",
+      "bytes": 134244,
+      "sha256": "7ddc6e70d29617338ebe8aff33a85141bbff394abead9d639e9b86518a8dd5de"
+    },
+    {
+      "path": "outputs/A/dynamics_audit.json",
+      "bytes": 1897,
+      "sha256": "19dcef956a8de6bf3a9d4bfe7d260f9264afed8e0f4eacca5243fcf4ea7e95da"
+    },
+    {
+      "path": "outputs/A/dynamics_trajectory.json",
+      "bytes": 4045540,
+      "sha256": "5b78408a0582b1983cce6dc85b7e7eb7aa28d94d9697bafd4bda988df5c8e04e"
+    },
+    {
+      "path": "outputs/A/geometry_audit.json",
+      "bytes": 34846,
+      "sha256": "9b9cd0d072e992649524bf27bb67c88492b731848d3ca29c078c6bd8cba2666e"
+    },
+    {
+      "path": "outputs/A/meshes/baseboards.obj",
+      "bytes": 28378,
+      "sha256": "dc1a89bf4630ebf908f7f56a5ed8abe0f016eb667631e84b9cdc66713a87fda8"
+    },
+    {
+      "path": "outputs/A/meshes/blinds.obj",
+      "bytes": 158764,
+      "sha256": "7acec43e3387b4ed4473016fdd88fb0796f7e9ac1fc26021bf01b1b180d262d4"
+    },
+    {
+      "path": "outputs/A/meshes/cabinet.obj",
+      "bytes": 1216263,
+      "sha256": "592ebe86a5dda022efda569c52c26ff469fea69f79c910163777f5758a01f1fb"
+    },
+    {
+      "path": "outputs/A/meshes/cart_liner.obj",
+      "bytes": 10470,
+      "sha256": "e124e67d905c58285704717f903bccf1b2ef8407701d963303b80e9da83b898e"
+    },
+    {
+      "path": "outputs/A/meshes/ceiling.obj",
+      "bytes": 6890,
+      "sha256": "40f4a743530267ad11c7805f210bb63c6cb7b8d2c06fda0b8161af97e883e1d6"
+    },
+    {
+      "path": "outputs/A/meshes/ceiling_luminaire.obj",
+      "bytes": 5247,
+      "sha256": "5e9fc5dbab820af06bad375c3dc71fbb8cf9738338e0c21d56b69adb333022b1"
+    },
+    {
+      "path": "outputs/A/meshes/chair_far.obj",
+      "bytes": 111655,
+      "sha256": "2761fa215ded38d533ab98050766698e59afcdcfb23f6e7852c1344e9c198077"
+    },
+    {
+      "path": "outputs/A/meshes/chair_far_cushion.obj",
+      "bytes": 5246,
+      "sha256": "1557f7b34f3e63223c06caafb48a1bb3c22145805fc1919038abcedf6746d9b9"
+    },
+    {
+      "path": "outputs/A/meshes/chair_near.obj",
+      "bytes": 111655,
+      "sha256": "bf66cd561fc6aca90786231dba68733cb7cb98af99124c5661741bb546cf54b7"
+    },
+    {
+      "path": "outputs/A/meshes/chair_near_cushion.obj",
+      "bytes": 5246,
+      "sha256": "9352b765dd772d84ef6a5cd33249b444c033a3dd1e6649b56a1bc1193107ddc8"
+    },
+    {
+      "path": "outputs/A/meshes/cleaning_cart.obj",
+      "bytes": 50478,
+      "sha256": "4fae2ebbf5875e7b6502aaad6143b798f7578524f100215826a06e10994a4f00"
+    },
+    {
+      "path": "outputs/A/meshes/cleaning_tools.obj",
+      "bytes": 20734,
+      "sha256": "4c02fb9969496d2606160c0419c073fa822064d9961be2c7a8be10fc10d0a78c"
+    },
+    {
+      "path": "outputs/A/meshes/coat_0.obj",
+      "bytes": 460555,
+      "sha256": "dcce809806e03f589277a3650b81162d7314686fb345715e3d580660c9d3219a"
+    },
+    {
+      "path": "outputs/A/meshes/coat_1.obj",
+      "bytes": 460555,
+      "sha256": "48a210eaf6c31e662a7ce61386df250d380b7c50947b5810c2b3cca692d0ad54"
+    },
+    {
+      "path": "outputs/A/meshes/coat_2.obj",
+      "bytes": 460555,
+      "sha256": "f41fa8216efd01879eb89218feb3053d4f731933ec1d7a60f5d855783f64d634"
+    },
+    {
+      "path": "outputs/A/meshes/coat_3.obj",
+      "bytes": 460555,
+      "sha256": "886d50aed539d3ed31274d462b47131cdcdadfbf52095266841822aefa060365"
+    },
+    {
+      "path": "outputs/A/meshes/coat_4.obj",
+      "bytes": 460555,
+      "sha256": "440f06103b1d65d6de15302d8e77730be354d182a0629327c3a58d1e761704c4"
+    },
+    {
+      "path": "outputs/A/meshes/coat_red.obj",
+      "bytes": 460555,
+      "sha256": "5b52acd611e3781f375d68ff65583f720d9a56dfbbc3f433dc7c39e2af6d3576"
+    },
+    {
+      "path": "outputs/A/meshes/column.obj",
+      "bytes": 5247,
+      "sha256": "54a144513ca7ce965609c856a51b905c9977910582ad00a7c83440bc27886b2c"
+    },
+    {
+      "path": "outputs/A/meshes/door_frame.obj",
+      "bytes": 16828,
+      "sha256": "f13f00107187ddce7b8b9fb94d9ba5c4aca721c6ad5dac1987c2967e49b64388"
+    },
+    {
+      "path": "outputs/A/meshes/door_leaf.obj",
+      "bytes": 12312,
+      "sha256": "04604687a720322d9be5e14eae19f5ba68497f2854078f69a73a4bb448ed254e"
+    },
+    {
+      "path": "outputs/A/meshes/doorway_unseen_returns.obj",
+      "bytes": 2008,
+      "sha256": "2813093648cb3c32fa7e77257fbb5ac7c82082aa4865bbee65efa49ef79e01e1"
+    },
+    {
+      "path": "outputs/A/meshes/exterior_backdrop.obj",
+      "bytes": 92061,
+      "sha256": "7d3fd1a0d7aff8d89186698c8c717b7c38e68b0b54c386c3d8052e544c7f6871"
+    },
+    {
+      "path": "outputs/A/meshes/external_shading_hypothesis.obj",
+      "bytes": 420,
+      "sha256": "8890df5e007b6bb0f49e90777fd514dc8c4ca8247f2f697b1765b5d472a90255"
+    },
+    {
+      "path": "outputs/A/meshes/floor.obj",
+      "bytes": 38894,
+      "sha256": "683a6ba55d5b75a1b8ac1e0981042ef47ee9f0118c1fe8dc445150abbcb7d672"
+    },
+    {
+      "path": "outputs/A/meshes/hangers.obj",
+      "bytes": 319189,
+      "sha256": "f051084597e8d1c3ff4b87daf2f72bc750d5cb788dec747252e9f4d8f179fbdb"
+    },
+    {
+      "path": "outputs/A/meshes/left_foreground_frame.obj",
+      "bytes": 11028,
+      "sha256": "5fc4fa01f44b95b458720c53c13dd8330388aa8df372e1330e9dd67c71f446b8"
+    },
+    {
+      "path": "outputs/A/meshes/left_foreground_glass.obj",
+      "bytes": 5247,
+      "sha256": "a690aeeafa1726eba419f87e835e669db6fa442a1e2d8522ca364b994178f6b3"
+    },
+    {
+      "path": "outputs/A/meshes/rack.obj",
+      "bytes": 23408,
+      "sha256": "48635d397d57fdde9593140f05f5a96b434419499652e48dfd70af290b4823b4"
+    },
+    {
+      "path": "outputs/A/meshes/table.obj",
+      "bytes": 57428,
+      "sha256": "a89d84df01a36e17be13cb2557fd680320296acd73b9c2c87b1dc68e84c0e69f"
+    },
+    {
+      "path": "outputs/A/meshes/wall_back.obj",
+      "bytes": 1576,
+      "sha256": "2a50e035ae26973355aef1866a0a214236dba570bc72c718ca4d617fea651dca"
+    },
+    {
+      "path": "outputs/A/meshes/wall_front.obj",
+      "bytes": 424,
+      "sha256": "49ad045d8152f0123554b0386b62877094ce2446112cdef021948b787edfba04"
+    },
+    {
+      "path": "outputs/A/meshes/wall_left.obj",
+      "bytes": 1216,
+      "sha256": "c5e265288a9e610b9faac7a7a0b8659c74073767e315659ef517d4381b3915ca"
+    },
+    {
+      "path": "outputs/A/meshes/wall_right.obj",
+      "bytes": 1208,
+      "sha256": "ab80a203c22dd2ba2a25afe200ed86cefaaba80defdc070ad83b337ad817d30a"
+    },
+    {
+      "path": "outputs/A/meshes/warning_sign.obj",
+      "bytes": 9454,
+      "sha256": "33e2d23651abbbda1fb66a099429ae4d5376452973f0f5b7cdd3dae91fcb2c40"
+    },
+    {
+      "path": "outputs/A/meshes/wastebasket.obj",
+      "bytes": 527627,
+      "sha256": "7367daae3134a4b7d54abbae31db278e1cce3829175da8cce69512c0a427a531"
+    },
+    {
+      "path": "outputs/A/meshes/window_frames.obj",
+      "bytes": 47729,
+      "sha256": "7a0cbc43c01ec82e7696acb303dca235f241f8b34ac88395ae3c95175c6ad657"
+    },
+    {
+      "path": "outputs/A/meshes/window_rails.obj",
+      "bytes": 38896,
+      "sha256": "031c710a8cf32c4e3a6c743e8d77042dcc17c2e97cbb81d0430f58b2b151fd63"
+    },
+    {
+      "path": "outputs/A/scene.blend",
+      "bytes": 7743389,
+      "sha256": "d12a7047f8263ca4201d4470d813f45826a980b21edb66fb19431261f5ff072a"
+    },
+    {
+      "path": "outputs/A/scene.glb",
+      "bytes": 7281012,
+      "sha256": "c480c5fb3d388a3bf4919264b09f6db5d8b16bdefefe320ba31f6dc6b3073b1d"
+    },
+    {
+      "path": "outputs/A/scene.json",
+      "bytes": 349002,
+      "sha256": "51e9907beccff978819a6762bf8a0b5359c0bd52e56b71213600a6e0c5d7c5c1"
+    },
+    {
+      "path": "outputs/A/scene.usdc",
+      "bytes": 5578528,
+      "sha256": "4f15c7df1b4b1a278813806a7476d471aebf3f50f490e705eafddd545f4b48eb"
+    },
+    {
+      "path": "outputs/A/scene.xml",
+      "bytes": 125985,
+      "sha256": "1624409fabbcfc35f94dd95e5f8600904a7c65f094356630b111c1ae666f95d1"
+    },
+    {
+      "path": "outputs/A/scene_dynamic.xml",
+      "bytes": 148346,
+      "sha256": "e8d96abb877d1b959b164783f496c7a17ef0baf72d10660b78e512f3d621b86b"
+    },
+    {
+      "path": "outputs/A/scene_evaluated.blend",
+      "bytes": 13056730,
+      "sha256": "c6785303aa8b953b9cbc4c57891614bf1965a93d9b85994bb0bdad1bfa5c3523"
+    },
+    {
+      "path": "outputs/A/scene_solver_reference.xml",
+      "bytes": 126007,
+      "sha256": "23f82d1d97ae9e9d4895a7e900a80fa9d2aba8dad5dd53040efcd029d6cf2e92"
+    },
+    {
+      "path": "outputs/A/simulation_audit.json",
+      "bytes": 2066,
+      "sha256": "6707f312a33efdcb18852648712f57b79f87fc023b8bab22819f9270a4166566"
+    },
+    {
+      "path": "outputs/A/textures/carpet_calibrated_0.png",
+      "bytes": 1437803,
+      "sha256": "97f203e0154d5913c473d6eb8bafd76c52c13b82c3c54778ef3fd01b9ced62ca"
+    },
+    {
+      "path": "outputs/A/textures/carpet_calibrated_1.png",
+      "bytes": 1522230,
+      "sha256": "9491e633dfa10e9e4e0a0b2bcf5155cc835e0bfc42dc85189b6f3699e641468e"
+    },
+    {
+      "path": "outputs/A/textures/color_198219255.hdr",
+      "bytes": 109,
+      "sha256": "547f7f36ae072d670487d6ff53cc8f923ecff918e5126060714ee5724dd49e88"
+    },
+    {
+      "path": "outputs/A/validation.json",
+      "bytes": 43630,
+      "sha256": "e6630928baac3ac1bd372a08deeac1d306765823f4e0fc3da4af56bc0e5c8a48"
+    },
+    {
+      "path": "outputs/B/authority_geometry_audit.json",
+      "bytes": 11317,
+      "sha256": "a3a602aa79c618ff8068ce6c6294ddd1bc6d8535858a11bebe84f83d9674d238"
+    },
+    {
+      "path": "outputs/B/backend_options.json",
+      "bytes": 439,
+      "sha256": "9088efcdd01cf2d16f6eb6c3dbc41847b33540ed9378a00c2cef07e19df84d61"
+    },
+    {
+      "path": "outputs/B/collision_recipes.json",
+      "bytes": 134244,
+      "sha256": "7ddc6e70d29617338ebe8aff33a85141bbff394abead9d639e9b86518a8dd5de"
+    },
+    {
+      "path": "outputs/B/dynamics_audit.json",
+      "bytes": 1897,
+      "sha256": "19dcef956a8de6bf3a9d4bfe7d260f9264afed8e0f4eacca5243fcf4ea7e95da"
+    },
+    {
+      "path": "outputs/B/dynamics_trajectory.json",
+      "bytes": 4045540,
+      "sha256": "5b78408a0582b1983cce6dc85b7e7eb7aa28d94d9697bafd4bda988df5c8e04e"
+    },
+    {
+      "path": "outputs/B/geometry_audit.json",
+      "bytes": 34846,
+      "sha256": "a8bafd09e385dd5bc2c22bb1d866343f74a00bb4e3d3e890a433248ad7f964e4"
+    },
+    {
+      "path": "outputs/B/meshes/baseboards.obj",
+      "bytes": 28378,
+      "sha256": "dc1a89bf4630ebf908f7f56a5ed8abe0f016eb667631e84b9cdc66713a87fda8"
+    },
+    {
+      "path": "outputs/B/meshes/blinds.obj",
+      "bytes": 158764,
+      "sha256": "7acec43e3387b4ed4473016fdd88fb0796f7e9ac1fc26021bf01b1b180d262d4"
+    },
+    {
+      "path": "outputs/B/meshes/cabinet.obj",
+      "bytes": 1216263,
+      "sha256": "592ebe86a5dda022efda569c52c26ff469fea69f79c910163777f5758a01f1fb"
+    },
+    {
+      "path": "outputs/B/meshes/cart_liner.obj",
+      "bytes": 10470,
+      "sha256": "e124e67d905c58285704717f903bccf1b2ef8407701d963303b80e9da83b898e"
+    },
+    {
+      "path": "outputs/B/meshes/ceiling.obj",
+      "bytes": 6890,
+      "sha256": "40f4a743530267ad11c7805f210bb63c6cb7b8d2c06fda0b8161af97e883e1d6"
+    },
+    {
+      "path": "outputs/B/meshes/ceiling_luminaire.obj",
+      "bytes": 5247,
+      "sha256": "5e9fc5dbab820af06bad375c3dc71fbb8cf9738338e0c21d56b69adb333022b1"
+    },
+    {
+      "path": "outputs/B/meshes/chair_far.obj",
+      "bytes": 111655,
+      "sha256": "2761fa215ded38d533ab98050766698e59afcdcfb23f6e7852c1344e9c198077"
+    },
+    {
+      "path": "outputs/B/meshes/chair_far_cushion.obj",
+      "bytes": 5246,
+      "sha256": "1557f7b34f3e63223c06caafb48a1bb3c22145805fc1919038abcedf6746d9b9"
+    },
+    {
+      "path": "outputs/B/meshes/chair_near.obj",
+      "bytes": 111655,
+      "sha256": "bf66cd561fc6aca90786231dba68733cb7cb98af99124c5661741bb546cf54b7"
+    },
+    {
+      "path": "outputs/B/meshes/chair_near_cushion.obj",
+      "bytes": 5246,
+      "sha256": "9352b765dd772d84ef6a5cd33249b444c033a3dd1e6649b56a1bc1193107ddc8"
+    },
+    {
+      "path": "outputs/B/meshes/cleaning_cart.obj",
+      "bytes": 50478,
+      "sha256": "4fae2ebbf5875e7b6502aaad6143b798f7578524f100215826a06e10994a4f00"
+    },
+    {
+      "path": "outputs/B/meshes/cleaning_tools.obj",
+      "bytes": 20734,
+      "sha256": "4c02fb9969496d2606160c0419c073fa822064d9961be2c7a8be10fc10d0a78c"
+    },
+    {
+      "path": "outputs/B/meshes/coat_0.obj",
+      "bytes": 460555,
+      "sha256": "dcce809806e03f589277a3650b81162d7314686fb345715e3d580660c9d3219a"
+    },
+    {
+      "path": "outputs/B/meshes/coat_1.obj",
+      "bytes": 460555,
+      "sha256": "48a210eaf6c31e662a7ce61386df250d380b7c50947b5810c2b3cca692d0ad54"
+    },
+    {
+      "path": "outputs/B/meshes/coat_2.obj",
+      "bytes": 460555,
+      "sha256": "f41fa8216efd01879eb89218feb3053d4f731933ec1d7a60f5d855783f64d634"
+    },
+    {
+      "path": "outputs/B/meshes/coat_3.obj",
+      "bytes": 460555,
+      "sha256": "886d50aed539d3ed31274d462b47131cdcdadfbf52095266841822aefa060365"
+    },
+    {
+      "path": "outputs/B/meshes/coat_4.obj",
+      "bytes": 460555,
+      "sha256": "440f06103b1d65d6de15302d8e77730be354d182a0629327c3a58d1e761704c4"
+    },
+    {
+      "path": "outputs/B/meshes/coat_red.obj",
+      "bytes": 460555,
+      "sha256": "5b52acd611e3781f375d68ff65583f720d9a56dfbbc3f433dc7c39e2af6d3576"
+    },
+    {
+      "path": "outputs/B/meshes/column.obj",
+      "bytes": 5247,
+      "sha256": "54a144513ca7ce965609c856a51b905c9977910582ad00a7c83440bc27886b2c"
+    },
+    {
+      "path": "outputs/B/meshes/door_frame.obj",
+      "bytes": 16828,
+      "sha256": "f13f00107187ddce7b8b9fb94d9ba5c4aca721c6ad5dac1987c2967e49b64388"
+    },
+    {
+      "path": "outputs/B/meshes/door_leaf.obj",
+      "bytes": 12312,
+      "sha256": "04604687a720322d9be5e14eae19f5ba68497f2854078f69a73a4bb448ed254e"
+    },
+    {
+      "path": "outputs/B/meshes/doorway_unseen_returns.obj",
+      "bytes": 2008,
+      "sha256": "2813093648cb3c32fa7e77257fbb5ac7c82082aa4865bbee65efa49ef79e01e1"
+    },
+    {
+      "path": "outputs/B/meshes/exterior_backdrop.obj",
+      "bytes": 92061,
+      "sha256": "7d3fd1a0d7aff8d89186698c8c717b7c38e68b0b54c386c3d8052e544c7f6871"
+    },
+    {
+      "path": "outputs/B/meshes/external_shading_hypothesis.obj",
+      "bytes": 420,
+      "sha256": "8890df5e007b6bb0f49e90777fd514dc8c4ca8247f2f697b1765b5d472a90255"
+    },
+    {
+      "path": "outputs/B/meshes/floor.obj",
+      "bytes": 38894,
+      "sha256": "683a6ba55d5b75a1b8ac1e0981042ef47ee9f0118c1fe8dc445150abbcb7d672"
+    },
+    {
+      "path": "outputs/B/meshes/hangers.obj",
+      "bytes": 319189,
+      "sha256": "f051084597e8d1c3ff4b87daf2f72bc750d5cb788dec747252e9f4d8f179fbdb"
+    },
+    {
+      "path": "outputs/B/meshes/left_foreground_frame.obj",
+      "bytes": 11028,
+      "sha256": "5fc4fa01f44b95b458720c53c13dd8330388aa8df372e1330e9dd67c71f446b8"
+    },
+    {
+      "path": "outputs/B/meshes/left_foreground_glass.obj",
+      "bytes": 5247,
+      "sha256": "a690aeeafa1726eba419f87e835e669db6fa442a1e2d8522ca364b994178f6b3"
+    },
+    {
+      "path": "outputs/B/meshes/rack.obj",
+      "bytes": 23408,
+      "sha256": "48635d397d57fdde9593140f05f5a96b434419499652e48dfd70af290b4823b4"
+    },
+    {
+      "path": "outputs/B/meshes/table.obj",
+      "bytes": 57428,
+      "sha256": "a89d84df01a36e17be13cb2557fd680320296acd73b9c2c87b1dc68e84c0e69f"
+    },
+    {
+      "path": "outputs/B/meshes/wall_back.obj",
+      "bytes": 1576,
+      "sha256": "2a50e035ae26973355aef1866a0a214236dba570bc72c718ca4d617fea651dca"
+    },
+    {
+      "path": "outputs/B/meshes/wall_front.obj",
+      "bytes": 424,
+      "sha256": "49ad045d8152f0123554b0386b62877094ce2446112cdef021948b787edfba04"
+    },
+    {
+      "path": "outputs/B/meshes/wall_left.obj",
+      "bytes": 1216,
+      "sha256": "c5e265288a9e610b9faac7a7a0b8659c74073767e315659ef517d4381b3915ca"
+    },
+    {
+      "path": "outputs/B/meshes/wall_right.obj",
+      "bytes": 1208,
+      "sha256": "ab80a203c22dd2ba2a25afe200ed86cefaaba80defdc070ad83b337ad817d30a"
+    },
+    {
+      "path": "outputs/B/meshes/warning_sign.obj",
+      "bytes": 9454,
+      "sha256": "33e2d23651abbbda1fb66a099429ae4d5376452973f0f5b7cdd3dae91fcb2c40"
+    },
+    {
+      "path": "outputs/B/meshes/wastebasket.obj",
+      "bytes": 527627,
+      "sha256": "7367daae3134a4b7d54abbae31db278e1cce3829175da8cce69512c0a427a531"
+    },
+    {
+      "path": "outputs/B/meshes/window_frames.obj",
+      "bytes": 47729,
+      "sha256": "7a0cbc43c01ec82e7696acb303dca235f241f8b34ac88395ae3c95175c6ad657"
+    },
+    {
+      "path": "outputs/B/meshes/window_rails.obj",
+      "bytes": 38896,
+      "sha256": "031c710a8cf32c4e3a6c743e8d77042dcc17c2e97cbb81d0430f58b2b151fd63"
+    },
+    {
+      "path": "outputs/B/scene.blend",
+      "bytes": 7743389,
+      "sha256": "d7f1d3b319493b5c358436d5b8c068faec0ccdbb93cfdce98953d67e5e908c68"
+    },
+    {
+      "path": "outputs/B/scene.glb",
+      "bytes": 7281012,
+      "sha256": "b4a35f96dabcdb3ceb0ee84a9b553eff74d1a445986a5bc8542811eb18424415"
+    },
+    {
+      "path": "outputs/B/scene.json",
+      "bytes": 350810,
+      "sha256": "2176632c9eef35c14e8765b89d58fe166088c7eb7003c3f01645b4234eafb3c0"
+    },
+    {
+      "path": "outputs/B/scene.usdc",
+      "bytes": 5581679,
+      "sha256": "72a6423130378776557b224b2dcfa8297c2257d94a178c1e555caf343d71910c"
+    },
+    {
+      "path": "outputs/B/scene.xml",
+      "bytes": 125985,
+      "sha256": "71e70b1d60d5ef68cee6198593d2a60ab3362a1177e1773213c2db477b887d46"
+    },
+    {
+      "path": "outputs/B/scene_dynamic.xml",
+      "bytes": 148346,
+      "sha256": "6b7b04739018f918068ae0dde0690597202ac12cdfb04ce1198ed02d465cedb0"
+    },
+    {
+      "path": "outputs/B/scene_evaluated.blend",
+      "bytes": 13056730,
+      "sha256": "21224f2d33cbd4d8a7271319c9c7ac0192a5cdcc1967b2dd232b69e11414b358"
+    },
+    {
+      "path": "outputs/B/scene_solver_reference.xml",
+      "bytes": 126007,
+      "sha256": "02f1378459c1edca270febcaa15a097b4b8d20bfe2b6655b34a2d445e951deca"
+    },
+    {
+      "path": "outputs/B/simulation_audit.json",
+      "bytes": 2066,
+      "sha256": "6707f312a33efdcb18852648712f57b79f87fc023b8bab22819f9270a4166566"
+    },
+    {
+      "path": "outputs/B/textures/carpet_calibrated_0.png",
+      "bytes": 1437803,
+      "sha256": "97f203e0154d5913c473d6eb8bafd76c52c13b82c3c54778ef3fd01b9ced62ca"
+    },
+    {
+      "path": "outputs/B/textures/carpet_calibrated_1.png",
+      "bytes": 1522230,
+      "sha256": "9491e633dfa10e9e4e0a0b2bcf5155cc835e0bfc42dc85189b6f3699e641468e"
+    },
+    {
+      "path": "outputs/B/textures/color_198219255.hdr",
+      "bytes": 109,
+      "sha256": "547f7f36ae072d670487d6ff53cc8f923ecff918e5126060714ee5724dd49e88"
+    },
+    {
+      "path": "outputs/B/validation.json",
+      "bytes": 43630,
+      "sha256": "b4e4a060b46afce01a0f06964826d2f16cf934f0563bdb18a70cd82667986e94"
+    },
+    {
+      "path": "source/USER_REQUEST.md",
+      "bytes": 2425,
+      "sha256": "371b461ea319ac6e2410b9c2a3e7c3a06104455da669674c228fafe83ae2b76b"
+    },
+    {
+      "path": "source/case/author_evidence.py",
+      "bytes": 8632,
+      "sha256": "ce11527c453dc015469aa2a1c812e4a46b5f5a2304778bff1cf6eea778b9ce84"
+    },
+    {
+      "path": "source/case/build_scene.py",
+      "bytes": 33092,
+      "sha256": "55db17a7910284cc6c422979e3a579247ec841a12fde2aaab2063528d23e65bd"
+    },
+    {
+      "path": "source/case/calibrate_lighting.py",
+      "bytes": 4068,
+      "sha256": "80a92d8bdd6bdc87fc432aa82d58879a30109e74c25ce87381d710cdb2414832"
+    },
+    {
+      "path": "source/case/calibrate_materials.py",
+      "bytes": 4624,
+      "sha256": "362149b9ec67c1a1326ed0ef059ef88dcf389c6c6fd97786ec2acd31f4bb15d9"
+    },
+    {
+      "path": "source/case/calibration_initial.json",
+      "bytes": 3488,
+      "sha256": "242444febb1f2be9872fe74ecfe69459fd26bc0376200acb132e083b101d4a4b"
+    },
+    {
+      "path": "source/case/check_unaffected_geometry.py",
+      "bytes": 1380,
+      "sha256": "e2b77b8b6fdea1891e4908dc94863d7bad1a5661d24152e8ca9fd27d40754a9a"
+    },
+    {
+      "path": "source/case/compare.py",
+      "bytes": 2000,
+      "sha256": "e388873d0949279a899979fa97a8cf4e287b4438b13c82e5e00fcdc52babdc94"
+    },
+    {
+      "path": "source/case/contact_peak_probe.py",
+      "bytes": 1822,
+      "sha256": "5f82843a4747f35411616e6a9732d58cfe592041c23139ed35ec2878750cce79"
+    },
+    {
+      "path": "source/case/diagnose_physics.py",
+      "bytes": 1625,
+      "sha256": "8231e1e83b947739af67a506693afd808a4946fbc51f1da0ae0bc9c130f98a9a"
+    },
+    {
+      "path": "source/case/dynamic_demo.py",
+      "bytes": 9588,
+      "sha256": "e7ef9875871403159a245790b7dfc0e7a035cd57a9f57c7f36d4a10f23ab8199"
+    },
+    {
+      "path": "source/case/export_usd_evaluated.py",
+      "bytes": 1595,
+      "sha256": "84e9752cf4950d1899297a1b380e733a68e970a5ee5fba71c40621077092b329"
+    },
+    {
+      "path": "source/case/fit_furniture.py",
+      "bytes": 3762,
+      "sha256": "95843db1f73cf96fa25fccfff9f4684e1307d95983f8585f7c982321992b10f0"
+    },
+    {
+      "path": "source/case/fit_room.py",
+      "bytes": 2829,
+      "sha256": "23478b05a3c45dc5a38715f76432846460b88d159417c90bb34c2cb996727da7"
+    },
+    {
+      "path": "source/case/fit_sun.py",
+      "bytes": 2554,
+      "sha256": "14bf4658e33a555c89176afd76ecfd3306e5def4117d3d13d5e3fc3ee8159702"
+    },
+    {
+      "path": "source/case/furniture_model.py",
+      "bytes": 8783,
+      "sha256": "ad24f14ca7e95c3fa97e8bae912ebcb10eae18dd2293bac0df38500e5b0fbf4f"
+    },
+    {
+      "path": "source/case/furniture_observation.json",
+      "bytes": 5974,
+      "sha256": "d7feee78a1d884fa0f4bc16d5740a6336945e1721c9b339a8d44d54a47057fa7"
+    },
+    {
+      "path": "source/case/furniture_parameters.json",
+      "bytes": 14096,
+      "sha256": "5ae444d8174036cb8860b95b914ece6dbe35aeb0e3f1dfb3c83d58546fbfa948"
+    },
+    {
+      "path": "source/case/hinge_probe.py",
+      "bytes": 1978,
+      "sha256": "8f99becf411b89dda4bfb5f364bedf5a62e1aef2c4534eaf207dce1d999096f0"
+    },
+    {
+      "path": "source/case/loading_probe.py",
+      "bytes": 3184,
+      "sha256": "5747fda65fa27bfabf58b64de15a242ef63d9759d2f7680345421c66d2fc2335"
+    },
+    {
+      "path": "source/case/make_carpet.py",
+      "bytes": 802,
+      "sha256": "01a61828b0c7a4988ae75da665b5ca64e385158aaefacb65ccf264ed25b54f10"
+    },
+    {
+      "path": "source/case/make_exterior.py",
+      "bytes": 1023,
+      "sha256": "211a81de12b732d915b9ed5b7f4f1a0d137bb37ed35eed82a157fa2319b29eec"
+    },
+    {
+      "path": "source/case/model_digest.py",
+      "bytes": 2233,
+      "sha256": "99cdf1bde62209e2135121d34c71beb1c30dba0cff67b3f61dcbed047623ed3c"
+    },
+    {
+      "path": "source/case/physics_material_probe.py",
+      "bytes": 1456,
+      "sha256": "8aee33f60bcca59e5ae11b3d1da12b5cbffe42aef1d92606cd0bb26a26bd849b"
+    },
+    {
+      "path": "source/case/physics_preflight.py",
+      "bytes": 1401,
+      "sha256": "6973526df0027cff51eff55d663dc9aa36cadddcf8fbc9d52a781d2771b162e8"
+    },
+    {
+      "path": "source/case/prepare_export_scene.py",
+      "bytes": 1797,
+      "sha256": "858063a42e6f16f861ad6645b5d8db3fe4b31b2194088fd3c3f183083b530cfa"
+    },
+    {
+      "path": "source/case/prepare_physics.py",
+      "bytes": 12997,
+      "sha256": "b975941933eb673e4c7bd49baf00f40a229f51f76b01a67aa289ad6112c7adb1"
+    },
+    {
+      "path": "source/case/record_calibration.py",
+      "bytes": 3364,
+      "sha256": "5114c58d10167ddfb5d1e9cc9cedaa3bbaa2d323cc1463cf0730c50abdcbe8e7"
+    },
+    {
+      "path": "source/case/reimport_check.py",
+      "bytes": 4695,
+      "sha256": "0d521aab59c4cc006d44bf29884f907b0832fc7adccf8b127c7d0cdccff8ce96"
+    },
+    {
+      "path": "source/case/shadow_target.py",
+      "bytes": 1266,
+      "sha256": "77b067452668f49ed2bff7e35b87bc96323a402d4d14dcef2f148f2d5258c137"
+    },
+    {
+      "path": "source/inputs/utility_room_original.jpg",
+      "bytes": 243723,
+      "sha256": "dfe25afbfb885ae9bc377691dd18ebd4259ffa72917ca725e3809ef40624c29c"
+    },
+    {
+      "path": "source/public_contract/AGENT_EXECUTION_SPEC.md",
+      "bytes": 13716,
+      "sha256": "b2da5c84f5d264348cdb3dfb99f74545dd527861189b3bce2cc185899b785b2c"
+    },
+    {
+      "path": "source/public_contract/CAPABILITIES.md",
+      "bytes": 2149,
+      "sha256": "a15144cc6f7a1470cee57257b6ae56662e63af2b3b0081e2a6c2bb3126444292"
+    },
+    {
+      "path": "source/public_contract/MASTER_PROMPT.md",
+      "bytes": 13876,
+      "sha256": "1d988096aa45160c8e4fc34a4fd159c371d6135d722f6c83e511f46f80189633"
+    },
+    {
+      "path": "source/public_contract/README.md",
+      "bytes": 1287,
+      "sha256": "ba55b5c31881de82cf49c83433c54a6708272f59269eb0386a53e2e2ce68b458"
+    },
+    {
+      "path": "source/public_contract/REQUEST_TEMPLATE.md",
+      "bytes": 2467,
+      "sha256": "3431be2492ddff6727aeae759c01586006e564fdc51dba97e7bbdcdec2b0ebfa"
+    },
+    {
+      "path": "source/public_contract/USER_GUIDE.md",
+      "bytes": 6631,
+      "sha256": "d116ce5c5a209c34c8fc623e0708fb30aa537811e39fae314b90236aed17b813"
+    },
+    {
+      "path": "source/requirements-replay.txt",
+      "bytes": 90,
+      "sha256": "bf84dce68ffbd3ef032afa65ece32d51d2a489753346c5db12436527d94a18fc"
+    },
+    {
+      "path": "source/revision_furniture/contract_test_results.json",
+      "bytes": 1426,
+      "sha256": "202f8dab74878258effa281ab36bc62c0b75ff22768135badf6cc2a3f9e53a43"
+    },
+    {
+      "path": "source/source_manifest.json",
+      "bytes": 459,
+      "sha256": "5c0856053ceb57514ffd261bc60c2ca566c01354cce2c7dcbef98c490dd80733"
+    },
+    {
+      "path": "source/tests/fixtures/scene.json",
+      "bytes": 88347,
+      "sha256": "6f95511bf1f1dcbdb5df4810e2e2a597314b2e05a5a4ea7668cddc023e03c067"
+    },
+    {
+      "path": "source/tests/fixtures/structural_audit.json",
+      "bytes": 328387,
+      "sha256": "f5c4981c962bc572b418b4b5a97e21b594456e8bf314d22663d767c568649bed"
+    },
+    {
+      "path": "source/tools/check_delivery_blender.py",
+      "bytes": 1418,
+      "sha256": "3ed25ddc2bb72313d6f201d3a75c741406b8c3d8bbbf0437a9c2eae7a36730d0"
+    },
+    {
+      "path": "source/tools/export_with_options.py",
+      "bytes": 3930,
+      "sha256": "56b0fd319d11c9010b79ef79eb8acffd257b5033b078e57168a6121e2ad3df04"
+    },
+    {
+      "path": "source/tools/init_case.py",
+      "bytes": 1971,
+      "sha256": "a5dadfb65fdaff2ef71014c98af9b1cf1d216b0fe8bbf5b1beea9e0519eb0013"
+    },
+    {
+      "path": "source/tools/rebuild_artifacts.py",
+      "bytes": 4832,
+      "sha256": "72b017bd43423270f1d3400131199c7a6b70024957251bf71fbb42e63aaaabe3"
+    },
+    {
+      "path": "source/tools/resume_case.py",
+      "bytes": 1393,
+      "sha256": "2f4c2981edb8342afe4084a7aa2772e9c2076ea65adf1c83f33ddffe6d3c7a31"
+    },
+    {
+      "path": "source/tools/run_final_qa.py",
+      "bytes": 2444,
+      "sha256": "e6a80cc52908cd8b9b726cf3fb0689a7473516a4a78cde161ccd3f6e43e87861"
+    },
+    {
+      "path": "source/tools/submit_stage.py",
+      "bytes": 903,
+      "sha256": "cd50da77379b7868536660826a26a6f080a4a4105769a65a9b6007d9b4cbd260"
+    },
+    {
+      "path": "source/tools/test_structure_contract.py",
+      "bytes": 3195,
+      "sha256": "c90dfddb33b0903f07fff60793bf4b792c6baf9e02b5ad703f5a7a409b54878f"
+    },
+    {
+      "path": "source/tools/test_structure_mutations.py",
+      "bytes": 2404,
+      "sha256": "0fb8fbe49bbe60b9f40d48a2b3cb93ba3a6120dc0675c6c9fbfebfe80642d110"
+    },
+    {
+      "path": "source/tools/validate_with_options.py",
+      "bytes": 3163,
+      "sha256": "27021c08cf400f26eecab40c416020acb42a401a0b87336c059ba8cf3562d435"
+    },
+    {
+      "path": "source/workflow/pyproject.toml",
+      "bytes": 476,
+      "sha256": "cee4dc29e8cc520945385327ef2903ce64d4515f9d0e0b24097640fbab950cc7"
+    },
+    {
+      "path": "source/workflow/r2s/__init__.py",
+      "bytes": 94,
+      "sha256": "90468c672e280c4d1d3068cace74a5e828b5441d535e07cb79b6abdbadca826d"
+    },
+    {
+      "path": "source/workflow/r2s/__main__.py",
+      "bytes": 1668,
+      "sha256": "db6f3263401eeb522bee180f14c8fd4172cb95654d88db361bb230a115c22b02"
+    },
+    {
+      "path": "source/workflow/r2s/blender_export.py",
+      "bytes": 9172,
+      "sha256": "97f35d7a219580d0449610d9ff3840dbc750848b2d51891a4f9803a9b51f51d0"
+    },
+    {
+      "path": "source/workflow/r2s/blender_render.py",
+      "bytes": 4739,
+      "sha256": "256c75bfea6713ebd22665d12e3de3747039b6047a8dd76df93f5cfe9764d04a"
+    },
+    {
+      "path": "source/workflow/r2s/blender_structure.py",
+      "bytes": 10572,
+      "sha256": "8c0e1664c2e1e47d152b00a1f46454af4460dbaf2a80528aa35662820523626f"
+    },
+    {
+      "path": "source/workflow/r2s/build_assembly.py",
+      "bytes": 6162,
+      "sha256": "022bc7b36038d034d90647f19990ce73b14afa75d11dd9d2ab501a8cdb395a32"
+    },
+    {
+      "path": "source/workflow/r2s/calibration.py",
+      "bytes": 5672,
+      "sha256": "09c807bed062fd4f494cf4fb651d0c5697ee6d8075d1797ebe5e26544850eaf2"
+    },
+    {
+      "path": "source/workflow/r2s/contracts.py",
+      "bytes": 6437,
+      "sha256": "3d6bbcc956ab09158c80d3427d37abc5a55c931a68b327f19ec3b7a6e7a75738"
+    },
+    {
+      "path": "source/workflow/r2s/core.py",
+      "bytes": 12528,
+      "sha256": "02a587abfa09e2c7fdc8994d8475d0cae8e18275664e990962e89bd5d0b52e25"
+    },
+    {
+      "path": "source/workflow/r2s/dynamics.py",
+      "bytes": 13007,
+      "sha256": "6744facbc70fc05981fd0a25ed2b9bc7df2fec9170dd5231c1cc3445dca895c2"
+    },
+    {
+      "path": "source/workflow/r2s/evaluation.py",
+      "bytes": 4112,
+      "sha256": "91d75751e29579a78b692ae6058956d85f51288399b5b40127c95042379e4d10"
+    },
+    {
+      "path": "source/workflow/r2s/media.py",
+      "bytes": 7774,
+      "sha256": "72dc66d5d4f2b9efeb2c32f75b25aeed4597ced0f3a48a5d1df5eb6508822843"
+    },
+    {
+      "path": "source/workflow/r2s/profiles.py",
+      "bytes": 2667,
+      "sha256": "faad78e0f6ceee3be5727628ca2ae2e2ad9de4aa51c082c72a3d934deea2df2c"
+    },
+    {
+      "path": "source/workflow/r2s/prompts/agent_calibrate.md",
+      "bytes": 864,
+      "sha256": "e4077fc562309fb046b1ff9e49ebaa13fb721502fb4d28deadba704baa9d40c1"
+    },
+    {
+      "path": "source/workflow/r2s/prompts/agent_calibrate_lighting.md",
+      "bytes": 1374,
+      "sha256": "9bee34a28a104cf0b956392ed9fae69a829f7fc4dc00d4948d81a66f0c2dd392"
+    },
+    {
+      "path": "source/workflow/r2s/prompts/agent_calibrate_room.md",
+      "bytes": 1278,
+      "sha256": "3ed47f72ef362532340d46a56a7b6e18900e72a1ca112442673485a608188be7"
+    },
+    {
+      "path": "source/workflow/r2s/prompts/agent_identify.md",
+      "bytes": 1297,
+      "sha256": "0af88bd6033ee17409a8f4f545142aac8e23005df02794758fe2e820ffe75860"
+    },
+    {
+      "path": "source/workflow/r2s/prompts/agent_materials.md",
+      "bytes": 1181,
+      "sha256": "e1c0987fe6f2155f793229dadf92683843552db1588ab9f0f069ec52a6664117"
+    },
+    {
+      "path": "source/workflow/r2s/prompts/agent_model.md",
+      "bytes": 2610,
+      "sha256": "5abe7c5baca9c252ac92cc98535973c83fabc5f7dd0cc6e36f73dfc7fbcaa431"
+    },
+    {
+      "path": "source/workflow/r2s/prompts/agent_observe.md",
+      "bytes": 1438,
+      "sha256": "76921a0bae832945f1763f4418a2a02d789583d463376db03c40c64d34345aeb"
+    },
+    {
+      "path": "source/workflow/r2s/prompts/agent_observe_structure.md",
+      "bytes": 898,
+      "sha256": "6adc08499d7f903db7934591dd64e41889894b537d4a5fc9396fee4a288cfb15"
+    },
+    {
+      "path": "source/workflow/r2s/prompts/agent_physics.md",
+      "bytes": 1782,
+      "sha256": "8856210a8b3e3a504769282ba03b2da6a67db4b559735e903d4f29c614f0fb0d"
+    },
+    {
+      "path": "source/workflow/r2s/prompts/agent_review.md",
+      "bytes": 2100,
+      "sha256": "3cbb90d1236d775e04a15470eda8d65590779ca40ed99ce577a1db890e165e4e"
+    },
+    {
+      "path": "source/workflow/r2s/prompts/agent_review_geometry.md",
+      "bytes": 2476,
+      "sha256": "2600c0bf461e980830ce3f01c08b11b2f02de7d523a2fd09e6ee7ca83135d11d"
+    },
+    {
+      "path": "source/workflow/r2s/prompts/agent_review_physics.md",
+      "bytes": 806,
+      "sha256": "62bf1642b076d8a4a593779762a472115e96c664bd39f585eadb7e148cc9eba2"
+    },
+    {
+      "path": "source/workflow/r2s/quality.py",
+      "bytes": 7731,
+      "sha256": "e2258f8ca2f27e83905da55d962450722f32a9624af7df2fc305d77a010d49ee"
+    },
+    {
+      "path": "source/workflow/r2s/simulation.py",
+      "bytes": 11256,
+      "sha256": "936663fbabdf33eb5f9efeae6920f896c57b2bbf3a7541e5e3d5275451ebb61b"
+    },
+    {
+      "path": "source/workflow/r2s/stage_worker.py",
+      "bytes": 5954,
+      "sha256": "ef03012c96c918c1e2fb43ee720c9ee59c360e78ad6331774ad6cbbabe80d893"
+    },
+    {
+      "path": "source/workflow/r2s/structure.py",
+      "bytes": 5239,
+      "sha256": "e51793445f4fd787d150d2a7f63312b610f37bc8c24797a4736836fa450fa7af"
+    },
+    {
+      "path": "source/workflow/r2s/viewpoints.py",
+      "bytes": 2420,
+      "sha256": "b803f0bc146cc5176e8f92cc6c340c46f66d18919b2526abae80363f3029d529"
+    }
+  ],
+  "file_count": 395,
+  "total_bytes": 150039731
+}

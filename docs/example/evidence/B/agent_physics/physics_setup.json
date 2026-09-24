@@ -1,0 +1,73 @@
+{
+  "reference_pose_preserved": true,
+  "parameters_are_measured_or_prior_labelled": true,
+  "target_decisions": [
+    {
+      "option": "hinges",
+      "entity": "door_leaf",
+      "applicable": true,
+      "reason": "Observed door/handle; axis and opposite-edge mounting are explicit completion priors"
+    },
+    {
+      "option": "cloth",
+      "entity": "coat_red",
+      "applicable": true,
+      "reason": "Observed thin hanging garment; shoulder-pinned triangular shell"
+    },
+    {
+      "option": "soft_bodies",
+      "entity": "chair_near_cushion",
+      "applicable": true,
+      "reason": "Thin raised upholstered-looking green pad is present; volumetric foam surrogate, conditional on cushion interpretation, not cloth relabelled"
+    }
+  ],
+  "rest_checks": {
+    "cloth_max_vertex_difference_m": 1.1873438277021364e-07,
+    "cloth_vertices": 299,
+    "cloth_triangles": 528,
+    "soft_vertices": 75,
+    "soft_tetrahedra": 192
+  },
+  "parameter_provenance": "assumed, plausible values only; no force/displacement measurements supplied",
+  "backend": "MuJoCo 3.13.0",
+  "references": [
+    "https://mujoco.readthedocs.io/en/stable/XMLreference.html#body-flexcomp",
+    "https://mujoco.readthedocs.io/en/stable/modeling.html#deformable-objects"
+  ],
+  "format_scope": "MuJoCo XML and numerical trajectory; not a Blender Cloth cache",
+  "collision_refinement": "Jamb/header parts, individual window frames/rails, blinds, rack and hanger parts replace whole-entity AABBs. Other static garments use 2mm mid-surface strip proxies; micro-wrinkle contact is approximate. No visual transform changed.",
+  "integration": "MuJoCo 3.13 discrete integrator, dt0.0005s; explicit integration and obsolete implicitfast were rejected by actual diagnostics. Final contact-enabled validation is still required.",
+  "hinge_clearance_revision": "Initial collision proxies penetrated the floor by 2mm and jambs by 0.5mm, causing friction lock. Physical proxy bottom clearance is now 15mm and rail radius 6mm; frame is the parent. These are gap priors, not measurements or edits to frozen visual transforms.",
+  "soft_body_parameter_revision": "20kPa candidate was stable under gravity and 50N but inverted under the chosen 300N load. 100kPa is a plausible firm-pad prior tested for numerical demonstration; this tuning is not independent identification of the real cushion.",
+  "provenance_consolidation": "Unobserved wall, partial door and foreground glass metadata explicitly marked as hypotheses; no visual geometry/camera/material changed.",
+  "chair_collision_revision": "Revised rigid furniture frames supply per-member inscribed and endpoint-shortened capsules plus oriented apron/seat/top boxes. Whole-chair AABBs are not used. Curved back-rail surface collision is approximate/omitted from this demonstration; visible-mesh structure/intersection tests are separately enforced before physics.",
+  "furniture_revision": "Near pad rests on the rebuilt seat board and ends ahead of the rear posts. Its new evaluated native envelope is used to construct the tetrahedral rest volume. No old pad trajectory or old collision envelope is reused.",
+  "soft_reference_envelope": {
+    "method": "Construct tetrahedral volume from actual native evaluated cushion envelope, including Solidify direction; rounded edges are approximated",
+    "native_world_aabb": [
+      [
+        1.4993385076522827,
+        -0.7276391983032227,
+        0.3874688148498535
+      ],
+      [
+        1.8743703365325928,
+        -0.37907394766807556,
+        0.4174688160419464
+      ]
+    ],
+    "tet_world_aabb": [
+      [
+        1.4993385076522827,
+        -0.7276391983032227,
+        0.3874688148498535
+      ],
+      [
+        1.8743703365325928,
+        -0.37907394766807556,
+        0.4174688160419464
+      ]
+    ],
+    "maximum_envelope_error_m": 0.0
+  }
+}

@@ -1,0 +1,506 @@
+{
+  "decision": "pass",
+  "model_version": 4,
+  "geometry_freeze_sha256": "cbfff37bcaf055b54768d3818a7da72c926729457e60a137d92925d9916528d5",
+  "checks": {
+    "camera": {
+      "status": "pass",
+      "evidence": [
+        "source_clay.png"
+      ]
+    },
+    "room_surfaces": {
+      "status": "pass",
+      "evidence": [
+        "inspect_wall_front.png",
+        "inspect_wall_back.png",
+        "inspect_wall_left.png",
+        "inspect_wall_right.png"
+      ]
+    },
+    "silhouettes": {
+      "status": "pass",
+      "evidence": [
+        "furniture_original_crop.png",
+        "furniture_source_view.png"
+      ]
+    },
+    "occlusion": {
+      "status": "pass",
+      "evidence": [
+        "furniture_source_view.png",
+        "structure_combined_front.png",
+        "structure_combined_rear.png",
+        "structure_combined_side.png"
+      ]
+    },
+    "support": {
+      "status": "pass",
+      "evidence": [
+        "structural_audit.json",
+        "structure_table_side.png",
+        "structure_chair_near_side.png",
+        "structure_chair_far_side.png"
+      ]
+    }
+  },
+  "per_object": [
+    {
+      "entity": "floor",
+      "status": "pass",
+      "findings": "Full tiled floor retained; all twelve revised furniture feet checked against z=0 using evaluated mesh bounds.",
+      "critical_mismatch": false,
+      "evidence": [
+        "source_clay.png",
+        "diagnostic_reverse.png"
+      ],
+      "uncertainty": "Source-constrained approximation; no independent metric truth."
+    },
+    {
+      "entity": "ceiling",
+      "status": "pass",
+      "findings": "Full ceiling slab/grid retained, unchanged from the same-task baseline; no ceiling deletion in source or four-wall views.",
+      "critical_mismatch": false,
+      "evidence": [
+        "source_clay.png",
+        "diagnostic_reverse.png"
+      ],
+      "uncertainty": "Source-constrained approximation; no independent metric truth."
+    },
+    {
+      "entity": "wall_back",
+      "status": "pass",
+      "findings": "Perforated opaque wall pieces remain around observed window opening, with sill/header/return visible.",
+      "critical_mismatch": false,
+      "evidence": [
+        "source_clay.png",
+        "diagnostic_reverse.png"
+      ],
+      "uncertainty": "Source-constrained approximation; no independent metric truth."
+    },
+    {
+      "entity": "wall_left",
+      "status": "pass",
+      "findings": "Column-adjacent wall and left window return remain continuous in source and left inspection views.",
+      "critical_mismatch": false,
+      "evidence": [
+        "source_clay.png",
+        "diagnostic_reverse.png"
+      ],
+      "uncertainty": "Source-constrained approximation; no independent metric truth."
+    },
+    {
+      "entity": "wall_right",
+      "status": "hypothesized",
+      "findings": "Unseen room-right extension and doorway returns are retained hypotheses, not newly measured planes.",
+      "critical_mismatch": false,
+      "evidence": [
+        "source_clay.png",
+        "diagnostic_reverse.png"
+      ],
+      "uncertainty": "Single image; invisible extent/material/mechanics not measured."
+    },
+    {
+      "entity": "door_frame",
+      "status": "pass",
+      "findings": "Door jamb/header pieces retained, with no furniture-related edits or disconnected wall opening.",
+      "critical_mismatch": false,
+      "evidence": [
+        "source_clay.png",
+        "diagnostic_reverse.png"
+      ],
+      "uncertainty": "Source-constrained approximation; no independent metric truth."
+    },
+    {
+      "entity": "doorway_unseen_returns",
+      "status": "hypothesized",
+      "findings": "Hidden indoor continuation remains an explicitly low-confidence completion.",
+      "critical_mismatch": false,
+      "evidence": [
+        "source_clay.png",
+        "diagnostic_reverse.png"
+      ],
+      "uncertainty": "Single image; invisible extent/material/mechanics not measured."
+    },
+    {
+      "entity": "wall_front",
+      "status": "hypothesized",
+      "findings": "Unobserved complete front enclosure retained; source view cannot calibrate it.",
+      "critical_mismatch": false,
+      "evidence": [
+        "source_clay.png",
+        "diagnostic_reverse.png"
+      ],
+      "uncertainty": "Single image; invisible extent/material/mechanics not measured."
+    },
+    {
+      "entity": "column",
+      "status": "pass",
+      "findings": "Vertical source-fitted column unchanged; camera-fit residual is separate from furniture-fit residual.",
+      "critical_mismatch": false,
+      "evidence": [
+        "source_clay.png",
+        "diagnostic_reverse.png"
+      ],
+      "uncertainty": "Source-constrained approximation; no independent metric truth."
+    },
+    {
+      "entity": "baseboards",
+      "status": "pass",
+      "findings": "Existing low wall strips retained with no geometry changes in the unaffected-geometry hash check.",
+      "critical_mismatch": false,
+      "evidence": [
+        "source_clay.png",
+        "diagnostic_reverse.png"
+      ],
+      "uncertainty": "Source-constrained approximation; no independent metric truth."
+    },
+    {
+      "entity": "window_frames",
+      "status": "pass",
+      "findings": "Observed back/left frames and raised-blind transom unchanged; not a furniture support.",
+      "critical_mismatch": false,
+      "evidence": [
+        "source_clay.png",
+        "diagnostic_reverse.png"
+      ],
+      "uncertainty": "Source-constrained approximation; no independent metric truth."
+    },
+    {
+      "entity": "window_rails",
+      "status": "pass",
+      "findings": "Lower window rails retain separate geometry; projected overlap with furniture is treated as occlusion.",
+      "critical_mismatch": false,
+      "evidence": [
+        "source_clay.png",
+        "diagnostic_reverse.png"
+      ],
+      "uncertainty": "Source-constrained approximation; no independent metric truth."
+    },
+    {
+      "entity": "blinds",
+      "status": "pass",
+      "findings": "Existing thin blind surfaces/end rods retained; exact folds remain approximate.",
+      "critical_mismatch": false,
+      "evidence": [
+        "source_clay.png",
+        "diagnostic_reverse.png"
+      ],
+      "uncertainty": "Source-constrained approximation; no independent metric truth."
+    },
+    {
+      "entity": "exterior_backdrop",
+      "status": "hypothesized",
+      "findings": "Only outdoor source pixels used on a view-dependent background; no recovered exterior depth claim.",
+      "critical_mismatch": false,
+      "evidence": [
+        "source_clay.png",
+        "diagnostic_reverse.png"
+      ],
+      "uncertainty": "Single image; invisible extent/material/mechanics not measured."
+    },
+    {
+      "entity": "external_shading_hypothesis",
+      "status": "hypothesized",
+      "findings": "Unobserved shadow blocker retained as an illumination hypothesis, not surveyed geometry.",
+      "critical_mismatch": false,
+      "evidence": [
+        "source_clay.png",
+        "diagnostic_reverse.png"
+      ],
+      "uncertainty": "Single image; invisible extent/material/mechanics not measured."
+    },
+    {
+      "entity": "table",
+      "status": "pass",
+      "findings": "Rectangular tabletop, two trestles, four legs, cross rails, connected longitudinal stretcher and diagonal braces inspected front/rear/side. No free rail endpoints or unintended chair intersections found. Top corner residual remains approximately 8-10 pixels; hidden bracing is estimated.",
+      "critical_mismatch": false,
+      "evidence": [
+        "furniture_original_crop.png",
+        "furniture_source_view.png",
+        "structure_table_front.png",
+        "structure_table_rear.png",
+        "structure_table_side.png",
+        "structural_audit.json"
+      ],
+      "uncertainty": "Source-constrained approximation; no independent metric truth."
+    },
+    {
+      "entity": "chair_near",
+      "status": "pass",
+      "findings": "Four feet, perimeter aprons and seat form a connected frame. Two back posts attach to the rear seat edge and support the curved rail, rather than crossing from the front edge. Upholstery ends ahead of the posts and rests on the board; no averaging shift of feet.",
+      "critical_mismatch": false,
+      "evidence": [
+        "furniture_original_crop.png",
+        "furniture_source_view.png",
+        "structure_chair_near_front.png",
+        "structure_chair_near_rear.png",
+        "structure_chair_near_side.png",
+        "structural_audit.json"
+      ],
+      "uncertainty": "Source-constrained approximation; no independent metric truth."
+    },
+    {
+      "entity": "chair_near_cushion",
+      "status": "pass",
+      "findings": "Thin closed padded volume lies on the near seat board; rear edge leaves clearance for upright posts. Its altered footprint must drive the next volumetric simulation mesh.",
+      "critical_mismatch": false,
+      "evidence": [
+        "furniture_original_crop.png",
+        "structure_chair_near_rear.png",
+        "structural_audit.json"
+      ],
+      "uncertainty": "Source-constrained approximation; no independent metric truth."
+    },
+    {
+      "entity": "chair_far",
+      "status": "pass",
+      "findings": "Same coherent family frame with independently fitted opposite pose. The tabletop occludes parts in the source; isolated front/rear/side views show four legs and rear-post connections. Hidden feet and joinery are assumptions.",
+      "critical_mismatch": false,
+      "evidence": [
+        "furniture_original_crop.png",
+        "furniture_source_view.png",
+        "structure_chair_far_front.png",
+        "structure_chair_far_rear.png",
+        "structure_chair_far_side.png",
+        "structural_audit.json"
+      ],
+      "uncertainty": "Source-constrained approximation; no independent metric truth."
+    },
+    {
+      "entity": "chair_far_cushion",
+      "status": "pass",
+      "findings": "Thin green far pad has board support and rear-post clearance; material interpretation remains assumed.",
+      "critical_mismatch": false,
+      "evidence": [
+        "furniture_original_crop.png",
+        "structure_chair_far_rear.png",
+        "structural_audit.json"
+      ],
+      "uncertainty": "Source-constrained approximation; no independent metric truth."
+    },
+    {
+      "entity": "rack",
+      "status": "pass",
+      "findings": "Existing four rack feet, rail and low slats retained; unchanged evaluated geometry, no new furniture merge.",
+      "critical_mismatch": false,
+      "evidence": [
+        "source_clay.png",
+        "diagnostic_reverse.png"
+      ],
+      "uncertainty": "Source-constrained approximation; no independent metric truth."
+    },
+    {
+      "entity": "coat_0",
+      "status": "pass",
+      "findings": "Dark left garment retains its source profile and hanger relationship; fine folds approximate.",
+      "critical_mismatch": false,
+      "evidence": [
+        "source_clay.png",
+        "diagnostic_reverse.png"
+      ],
+      "uncertainty": "Source-constrained approximation; no independent metric truth."
+    },
+    {
+      "entity": "hangers",
+      "status": "pass",
+      "findings": "Hanger supports remain above clothing and below the rack rail; unchanged from source-fitted baseline.",
+      "critical_mismatch": false,
+      "evidence": [
+        "source_clay.png",
+        "diagnostic_reverse.png"
+      ],
+      "uncertainty": "Source-constrained approximation; no independent metric truth."
+    },
+    {
+      "entity": "coat_1",
+      "status": "pass",
+      "findings": "Second dark garment retains its lower hem and layered occlusion; no furniture edit.",
+      "critical_mismatch": false,
+      "evidence": [
+        "source_clay.png",
+        "diagnostic_reverse.png"
+      ],
+      "uncertainty": "Source-constrained approximation; no independent metric truth."
+    },
+    {
+      "entity": "coat_2",
+      "status": "pass",
+      "findings": "Teal garment retains source silhouette and layer order; no new geometric claim.",
+      "critical_mismatch": false,
+      "evidence": [
+        "source_clay.png",
+        "diagnostic_reverse.png"
+      ],
+      "uncertainty": "Source-constrained approximation; no independent metric truth."
+    },
+    {
+      "entity": "coat_3",
+      "status": "pass",
+      "findings": "Dark central garment remains a separately editable thin surface, distinct from chairs.",
+      "critical_mismatch": false,
+      "evidence": [
+        "source_clay.png",
+        "diagnostic_reverse.png"
+      ],
+      "uncertainty": "Source-constrained approximation; no independent metric truth."
+    },
+    {
+      "entity": "coat_4",
+      "status": "pass",
+      "findings": "Pale long garment retains lower hem and layered position, with unobserved depth uncertainty.",
+      "critical_mismatch": false,
+      "evidence": [
+        "source_clay.png",
+        "diagnostic_reverse.png"
+      ],
+      "uncertainty": "Source-constrained approximation; no independent metric truth."
+    },
+    {
+      "entity": "coat_red",
+      "status": "pass",
+      "findings": "Red right garment reference mesh is unchanged; its original shoulder pins will be checked again in dynamics.",
+      "critical_mismatch": false,
+      "evidence": [
+        "source_clay.png",
+        "diagnostic_reverse.png"
+      ],
+      "uncertainty": "Source-constrained approximation; no independent metric truth."
+    },
+    {
+      "entity": "cabinet",
+      "status": "pass",
+      "findings": "Ribbed freestanding body and pressed recesses retained; function remains unidentified, no false door mechanism added.",
+      "critical_mismatch": false,
+      "evidence": [
+        "source_clay.png",
+        "diagnostic_reverse.png"
+      ],
+      "uncertainty": "Source-constrained approximation; no independent metric truth."
+    },
+    {
+      "entity": "wastebasket",
+      "status": "pass",
+      "findings": "Bin under near table corner retained and remains separate from revised table legs.",
+      "critical_mismatch": false,
+      "evidence": [
+        "source_clay.png",
+        "diagnostic_reverse.png"
+      ],
+      "uncertainty": "Source-constrained approximation; no independent metric truth."
+    },
+    {
+      "entity": "cleaning_cart",
+      "status": "pass",
+      "findings": "Existing trolley/bin/tray geometry retained; its prior source fit is not inferred from new table metrics.",
+      "critical_mismatch": false,
+      "evidence": [
+        "source_clay.png",
+        "diagnostic_reverse.png"
+      ],
+      "uncertainty": "Source-constrained approximation; no independent metric truth."
+    },
+    {
+      "entity": "warning_sign",
+      "status": "pass",
+      "findings": "Visible yellow panel retained; unreadable exact lettering is not recovered.",
+      "critical_mismatch": false,
+      "evidence": [
+        "source_clay.png",
+        "diagnostic_reverse.png"
+      ],
+      "uncertainty": "Source-constrained approximation; no independent metric truth."
+    },
+    {
+      "entity": "cleaning_tools",
+      "status": "pass",
+      "findings": "Visible tool shafts remain attached to the cart region, unaffected by furniture revision.",
+      "critical_mismatch": false,
+      "evidence": [
+        "source_clay.png",
+        "diagnostic_reverse.png"
+      ],
+      "uncertainty": "Source-constrained approximation; no independent metric truth."
+    },
+    {
+      "entity": "cart_liner",
+      "status": "pass",
+      "findings": "Small crumpled tray liner retained as source detail, not an added soft-body target.",
+      "critical_mismatch": false,
+      "evidence": [
+        "source_clay.png",
+        "diagnostic_reverse.png"
+      ],
+      "uncertainty": "Source-constrained approximation; no independent metric truth."
+    },
+    {
+      "entity": "left_foreground_frame",
+      "status": "pass",
+      "findings": "Cropped dark glass edge remains in its source-constrained location.",
+      "critical_mismatch": false,
+      "evidence": [
+        "source_clay.png",
+        "diagnostic_reverse.png"
+      ],
+      "uncertainty": "Source-constrained approximation; no independent metric truth."
+    },
+    {
+      "entity": "left_foreground_glass",
+      "status": "hypothesized",
+      "findings": "Foreground glass extent outside the image remains a mounting/width hypothesis.",
+      "critical_mismatch": false,
+      "evidence": [
+        "source_clay.png",
+        "diagnostic_reverse.png"
+      ],
+      "uncertainty": "Single image; invisible extent/material/mechanics not measured."
+    },
+    {
+      "entity": "door_leaf",
+      "status": "pass",
+      "findings": "Partial right glass leaf and lever retained; hinge installation remains an assumed completion pending rerun.",
+      "critical_mismatch": false,
+      "evidence": [
+        "source_clay.png",
+        "diagnostic_reverse.png"
+      ],
+      "uncertainty": "Source-constrained approximation; no independent metric truth."
+    },
+    {
+      "entity": "ceiling_luminaire",
+      "status": "hypothesized",
+      "findings": "Unobserved ceiling panel kept as required explicit hypothesis, switched off for daylight scene.",
+      "critical_mismatch": false,
+      "evidence": [
+        "source_clay.png",
+        "diagnostic_reverse.png"
+      ],
+      "uncertainty": "Single image; invisible extent/material/mechanics not measured."
+    }
+  ],
+  "issues": [
+    {
+      "severity": "minor",
+      "blocking": false,
+      "description": "Table rectangular fit retains up to about 10 px corner difference under the fixed room camera. Rear bracing/hidden chair feet/rail curvature use explicit priors. This is not a dimensional survey."
+    }
+  ],
+  "furniture_metrics": [
+    {
+      "entity": "table",
+      "landmark_median_px": 7.619278090886775,
+      "landmark_max_px": 10.23292569485991
+    },
+    {
+      "entity": "chair_near",
+      "landmark_median_px": 4.152913269946444,
+      "landmark_max_px": 7.771713814156395
+    },
+    {
+      "entity": "chair_far",
+      "landmark_median_px": 5.224402124616283,
+      "landmark_max_px": 7.585725010306321
+    }
+  ],
+  "review_basis": "Agent inspected the actual original/local comparison and all twelve isolated/combined diagnostic views; evaluated-mesh audit independently checks connectivity, grounding, part-bound source landmarks and unintended intersections. Earlier table/chair acceptance is superseded."
+}

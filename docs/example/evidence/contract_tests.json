@@ -1,0 +1,52 @@
+{
+  "status": "passed",
+  "scope": "Contract fixtures only; real mesh tests are in mutation_test_results.json",
+  "tests": [
+    {
+      "test": "valid_schema",
+      "rejected": false,
+      "expected_rejected": false,
+      "message": "accepted"
+    },
+    {
+      "test": "missing_object",
+      "rejected": true,
+      "expected_rejected": true,
+      "message": "Per-object review must cover the current scene exactly once"
+    },
+    {
+      "test": "wrong_evidence_reference",
+      "rejected": true,
+      "expected_rejected": true,
+      "message": "Evidence reference is not a delivered artifact: missing.png"
+    },
+    {
+      "test": "old_model_hash",
+      "rejected": true,
+      "expected_rejected": true,
+      "message": "Geometry review is not bound to current model bytes"
+    },
+    {
+      "test": "wrong_model_version",
+      "rejected": true,
+      "expected_rejected": true,
+      "message": "Geometry model version mismatch"
+    },
+    {
+      "test": "missing_object_status",
+      "rejected": true,
+      "expected_rejected": true,
+      "message": "Object review lacks explicit status/findings"
+    },
+    {
+      "test": "reviewer_modified_audit",
+      "rejected": true,
+      "message": "Reviewer modified or replaced executable structural audit"
+    },
+    {
+      "test": "disconnected_declared_graph",
+      "rejected": true,
+      "message": "Disconnected assembly graph: table"
+    }
+  ]
+}

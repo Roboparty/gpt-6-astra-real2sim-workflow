@@ -1,0 +1,42 @@
+{
+  "status": "observations_before_acceptance_gate",
+  "hinge_range": [
+    0.0,
+    0.9084236927586692
+  ],
+  "contact": {
+    "time": 1.8489999999998519,
+    "distance_m": -0.0024996014539808253,
+    "geoms": [
+      "coat_4_agent_collision10",
+      "flex"
+    ],
+    "flex_ids": [
+      -1,
+      1
+    ]
+  },
+  "warnings": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "maximum_sampled_cloth_displacement_m": 0.0607353780550946,
+  "maximum_sampled_pad_displacement_m": 0.0029508344950929188,
+  "deformation": [
+    {
+      "id": "red_garment_cloth",
+      "max_strain": 0.04080230329099055,
+      "min_volume_ratio": 1.0
+    },
+    {
+      "id": "chair_pad_volume",
+      "max_strain": 0.08503709046225538,
+      "min_volume_ratio": 0.9271903003101588
+    }
+  ]
+}

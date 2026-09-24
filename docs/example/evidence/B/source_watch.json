@@ -1,0 +1,99 @@
+{
+  "root": "../..",
+  "stages": {
+    "agent_observe": [
+      {
+        "path": "case/furniture_observation.json",
+        "sha256": "d7feee78a1d884fa0f4bc16d5740a6336945e1721c9b339a8d44d54a47057fa7"
+      },
+      {
+        "path": "case/author_evidence.py",
+        "sha256": "ce11527c453dc015469aa2a1c812e4a46b5f5a2304778bff1cf6eea778b9ce84"
+      }
+    ],
+    "agent_calibrate": [
+      {
+        "path": "case/calibration_initial.json",
+        "sha256": "242444febb1f2be9872fe74ecfe69459fd26bc0376200acb132e083b101d4a4b"
+      },
+      {
+        "path": "case/fit_room.py",
+        "sha256": "23478b05a3c45dc5a38715f76432846460b88d159417c90bb34c2cb996727da7"
+      }
+    ],
+    "agent_model": [
+      {
+        "path": "case/build_scene.py",
+        "sha256": "55db17a7910284cc6c422979e3a579247ec841a12fde2aaab2063528d23e65bd"
+      },
+      {
+        "path": "case/furniture_model.py",
+        "sha256": "ad24f14ca7e95c3fa97e8bae912ebcb10eae18dd2293bac0df38500e5b0fbf4f"
+      },
+      {
+        "path": "case/fit_furniture.py",
+        "sha256": "95843db1f73cf96fa25fccfff9f4684e1307d95983f8585f7c982321992b10f0"
+      },
+      {
+        "path": "case/furniture_parameters.json",
+        "sha256": "5ae444d8174036cb8860b95b914ece6dbe35aeb0e3f1dfb3c83d58546fbfa948"
+      }
+    ],
+    "agent_materials": [
+      {
+        "path": "case/calibrate_materials.py",
+        "sha256": "362149b9ec67c1a1326ed0ef059ef88dcf389c6c6fd97786ec2acd31f4bb15d9"
+      },
+      {
+        "path": "case/make_carpet.py",
+        "sha256": "01a61828b0c7a4988ae75da665b5ca64e385158aaefacb65ccf264ed25b54f10"
+      },
+      {
+        "path": "case/make_exterior.py",
+        "sha256": "211a81de12b732d915b9ed5b7f4f1a0d137bb37ed35eed82a157fa2319b29eec"
+      }
+    ],
+    "agent_calibrate_lighting": [
+      {
+        "path": "case/calibrate_lighting.py",
+        "sha256": "80a92d8bdd6bdc87fc432aa82d58879a30109e74c25ce87381d710cdb2414832"
+      }
+    ],
+    "agent_physics": [
+      {
+        "path": "case/prepare_physics.py",
+        "sha256": "b975941933eb673e4c7bd49baf00f40a229f51f76b01a67aa289ad6112c7adb1"
+      }
+    ],
+    "export": [
+      {
+        "path": "tools/export_with_options.py",
+        "sha256": "56b0fd319d11c9010b79ef79eb8acffd257b5033b078e57168a6121e2ad3df04"
+      },
+      {
+        "path": "case/prepare_export_scene.py",
+        "sha256": "858063a42e6f16f861ad6645b5d8db3fe4b31b2194088fd3c3f183083b530cfa"
+      },
+      {
+        "path": "case/export_usd_evaluated.py",
+        "sha256": "84e9752cf4950d1899297a1b380e733a68e970a5ee5fba71c40621077092b329"
+      }
+    ],
+    "validate": [
+      {
+        "path": "tools/validate_with_options.py",
+        "sha256": "27021c08cf400f26eecab40c416020acb42a401a0b87336c059ba8cf3562d435"
+      }
+    ],
+    "agent_review_physics": [
+      {
+        "path": "case/dynamic_demo.py",
+        "sha256": "e7ef9875871403159a245790b7dfc0e7a035cd57a9f57c7f36d4a10f23ab8199"
+      },
+      {
+        "path": "case/reimport_check.py",
+        "sha256": "0d521aab59c4cc006d44bf29884f907b0832fc7adccf8b127c7d0cdccff8ce96"
+      }
+    ]
+  }
+}

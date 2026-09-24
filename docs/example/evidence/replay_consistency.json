@@ -1,0 +1,5 @@
+{
+  "A_B_loading_audits_identical": true,
+  "approved_vs_replay_loading_audits_identical": true,
+  "scope": "Numerical recipe repeatability only, not measured physical accuracy"
+}

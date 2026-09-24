@@ -1,0 +1,66 @@
+{
+  "geometry_camera_sha256": "b49a9a595d14f60d7b35c232102205d87b20ce358743e1d2a9aac2e99c31c113",
+  "shell": {
+    "wall_front": {
+      "present": true,
+      "visible": true
+    },
+    "wall_back": {
+      "present": true,
+      "visible": true
+    },
+    "wall_left": {
+      "present": true,
+      "visible": true
+    },
+    "wall_right": {
+      "present": true,
+      "visible": true
+    },
+    "floor": {
+      "present": true,
+      "visible": true
+    },
+    "ceiling": {
+      "present": true,
+      "visible": true
+    }
+  },
+  "lamp_present": true,
+  "material_pbr_sha256": "da297a4f647f5b4ca8588986a83351cf1c72da04a35e6897cdd68bf698d9e720",
+  "lights": [
+    {
+      "name": "neutral_calibration_area",
+      "type": "AREA",
+      "position": [
+        2.0,
+        -2.0,
+        2.6500000953674316
+      ],
+      "rotation_euler": [
+        0.36083677411079407,
+        -0.0,
+        0.0
+      ],
+      "energy": 450.0,
+      "color": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "size": 3.0,
+      "size_y": 3.0,
+      "angle": null
+    }
+  ],
+  "render": {
+    "resolution": [
+      1702,
+      1276
+    ],
+    "percentage": 100,
+    "exposure": 0.0,
+    "view_transform": "AgX",
+    "look": "AgX - Medium High Contrast"
+  }
+}

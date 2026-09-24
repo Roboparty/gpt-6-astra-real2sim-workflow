@@ -1,0 +1,562 @@
+[
+  {
+    "time": 0.0005,
+    "hinge_rad": 2.3382716133944228e-07,
+    "cloth_displacement_m": 0.0,
+    "pad_displacement_m": 0.0,
+    "pad_load_N": 0.0
+  },
+  {
+    "time": 0.02550000000000002,
+    "hinge_rad": 0.00030984133201169867,
+    "cloth_displacement_m": 0.006381533410457535,
+    "pad_displacement_m": 0.00015874382556202579,
+    "pad_load_N": 21.428571428571445
+  },
+  {
+    "time": 0.05050000000000004,
+    "hinge_rad": 0.001202785958520101,
+    "cloth_displacement_m": 0.013382760207609465,
+    "pad_displacement_m": 0.00033880724462583955,
+    "pad_load_N": 42.85714285714289
+  },
+  {
+    "time": 0.07550000000000005,
+    "hinge_rad": 0.0026778633705928662,
+    "cloth_displacement_m": 0.017973578143769056,
+    "pad_displacement_m": 0.0005230044508876812,
+    "pad_load_N": 64.28571428571433
+  },
+  {
+    "time": 0.10050000000000008,
+    "hinge_rad": 0.00473387171854711,
+    "cloth_displacement_m": 0.01963431489885229,
+    "pad_displacement_m": 0.0007115660686177187,
+    "pad_load_N": 85.71428571428578
+  },
+  {
+    "time": 0.12550000000000008,
+    "hinge_rad": 0.007369611633998601,
+    "cloth_displacement_m": 0.023054481728631292,
+    "pad_displacement_m": 0.0009049526536899298,
+    "pad_load_N": 107.14285714285722
+  },
+  {
+    "time": 0.1505000000000001,
+    "hinge_rad": 0.010583886224610272,
+    "cloth_displacement_m": 0.02855163049899738,
+    "pad_displacement_m": 0.0011030367251890476,
+    "pad_load_N": 128.57142857142867
+  },
+  {
+    "time": 0.17550000000000013,
+    "hinge_rad": 0.014375501069313356,
+    "cloth_displacement_m": 0.031771580588768174,
+    "pad_displacement_m": 0.0013060336395209569,
+    "pad_load_N": 150.00000000000014
+  },
+  {
+    "time": 0.20050000000000015,
+    "hinge_rad": 0.018743264212858626,
+    "cloth_displacement_m": 0.03591025141370657,
+    "pad_displacement_m": 0.0015149924732376374,
+    "pad_load_N": 171.42857142857156
+  },
+  {
+    "time": 0.22550000000000017,
+    "hinge_rad": 0.023685986160794415,
+    "cloth_displacement_m": 0.04042168887134829,
+    "pad_displacement_m": 0.001729870957117945,
+    "pad_load_N": 192.857142857143
+  },
+  {
+    "time": 0.25050000000000017,
+    "hinge_rad": 0.02920247987496791,
+    "cloth_displacement_m": 0.042273649627596,
+    "pad_displacement_m": 0.001950915969121131,
+    "pad_load_N": 214.28571428571445
+  },
+  {
+    "time": 0.2755000000000002,
+    "hinge_rad": 0.035291560767477734,
+    "cloth_displacement_m": 0.04304864915624005,
+    "pad_displacement_m": 0.0021787331232277335,
+    "pad_load_N": 235.71428571428586
+  },
+  {
+    "time": 0.3005000000000002,
+    "hinge_rad": 0.04195204669612501,
+    "cloth_displacement_m": 0.04288918339963076,
+    "pad_displacement_m": 0.00241383116164194,
+    "pad_load_N": 257.14285714285734
+  },
+  {
+    "time": 0.32550000000000023,
+    "hinge_rad": 0.049182757959344445,
+    "cloth_displacement_m": 0.042839100651506055,
+    "pad_displacement_m": 0.0026567809088054953,
+    "pad_load_N": 278.5714285714288
+  },
+  {
+    "time": 0.35050000000000026,
+    "hinge_rad": 0.056982517291230925,
+    "cloth_displacement_m": 0.043664407946698715,
+    "pad_displacement_m": 0.002908226181229433,
+    "pad_load_N": 300
+  },
+  {
+    "time": 0.3755000000000003,
+    "hinge_rad": 0.06535014985623849,
+    "cloth_displacement_m": 0.044756703591573445,
+    "pad_displacement_m": 0.0029508007921690005,
+    "pad_load_N": 300
+  },
+  {
+    "time": 0.4005000000000003,
+    "hinge_rad": 0.0742844832447451,
+    "cloth_displacement_m": 0.04539036626446109,
+    "pad_displacement_m": 0.0029508344623294077,
+    "pad_load_N": 300
+  },
+  {
+    "time": 0.4255000000000003,
+    "hinge_rad": 0.08378434746725333,
+    "cloth_displacement_m": 0.045083612583867255,
+    "pad_displacement_m": 0.0029508344950423602,
+    "pad_load_N": 300
+  },
+  {
+    "time": 0.45050000000000034,
+    "hinge_rad": 0.09384857494933058,
+    "cloth_displacement_m": 0.04427829683484052,
+    "pad_displacement_m": 0.0029508344950927197,
+    "pad_load_N": 300
+  },
+  {
+    "time": 0.47550000000000037,
+    "hinge_rad": 0.10447600052810063,
+    "cloth_displacement_m": 0.04385400084220554,
+    "pad_displacement_m": 0.0029508344950928455,
+    "pad_load_N": 300
+  },
+  {
+    "time": 0.5005000000000003,
+    "hinge_rad": 0.11566546144547324,
+    "cloth_displacement_m": 0.04381054165997081,
+    "pad_displacement_m": 0.002950834495092871,
+    "pad_load_N": 300
+  },
+  {
+    "time": 0.5254999999999975,
+    "hinge_rad": 0.1274157973445054,
+    "cloth_displacement_m": 0.04450066043712645,
+    "pad_displacement_m": 0.002950834495092871,
+    "pad_load_N": 300
+  },
+  {
+    "time": 0.5504999999999948,
+    "hinge_rad": 0.13972585026384718,
+    "cloth_displacement_m": 0.046411193323497364,
+    "pad_displacement_m": 0.0029508344950928455,
+    "pad_load_N": 300
+  },
+  {
+    "time": 0.575499999999992,
+    "hinge_rad": 0.1525944646321077,
+    "cloth_displacement_m": 0.048719209225019336,
+    "pad_displacement_m": 0.0029508344950928233,
+    "pad_load_N": 300
+  },
+  {
+    "time": 0.6004999999999893,
+    "hinge_rad": 0.16602048726403804,
+    "cloth_displacement_m": 0.05103453626232801,
+    "pad_displacement_m": 0.0029508344950927978,
+    "pad_load_N": 300
+  },
+  {
+    "time": 0.6254999999999865,
+    "hinge_rad": 0.18000276735546392,
+    "cloth_displacement_m": 0.05331050479553205,
+    "pad_displacement_m": 0.0029508344950927978,
+    "pad_load_N": 300
+  },
+  {
+    "time": 0.6504999999999838,
+    "hinge_rad": 0.19454015647730005,
+    "cloth_displacement_m": 0.055194983882164816,
+    "pad_displacement_m": 0.002950834495092871,
+    "pad_load_N": 300
+  },
+  {
+    "time": 0.675499999999981,
+    "hinge_rad": 0.2096315085725978,
+    "cloth_displacement_m": 0.05663151478811096,
+    "pad_displacement_m": 0.0029508344950929188,
+    "pad_load_N": 300
+  },
+  {
+    "time": 0.7004999999999783,
+    "hinge_rad": 0.2252756799501024,
+    "cloth_displacement_m": 0.05772336843222712,
+    "pad_displacement_m": 0.002950834495092871,
+    "pad_load_N": 300
+  },
+  {
+    "time": 0.7254999999999755,
+    "hinge_rad": 0.24147152927968657,
+    "cloth_displacement_m": 0.05855209483623839,
+    "pad_displacement_m": 0.002950834495092871,
+    "pad_load_N": 300
+  },
+  {
+    "time": 0.7504999999999727,
+    "hinge_rad": 0.25821791758802226,
+    "cloth_displacement_m": 0.059359769096353314,
+    "pad_displacement_m": 0.002950834495092871,
+    "pad_load_N": 300
+  },
+  {
+    "time": 0.77549999999997,
+    "hinge_rad": 0.27551370825252,
+    "cloth_displacement_m": 0.06011990063887891,
+    "pad_displacement_m": 0.0029508344950929188,
+    "pad_load_N": 300
+  },
+  {
+    "time": 0.8004999999999672,
+    "hinge_rad": 0.2933577669990508,
+    "cloth_displacement_m": 0.0606066198930326,
+    "pad_displacement_m": 0.002950834495092871,
+    "pad_load_N": 300
+  },
+  {
+    "time": 0.8254999999999645,
+    "hinge_rad": 0.3117489618921535,
+    "cloth_displacement_m": 0.0607353780550946,
+    "pad_displacement_m": 0.002738229981754475,
+    "pad_load_N": 278.57142857145897
+  },
+  {
+    "time": 0.8504999999999617,
+    "hinge_rad": 0.3306861633347926,
+    "cloth_displacement_m": 0.06039346981831664,
+    "pad_displacement_m": 0.0024913214593539654,
+    "pad_load_N": 257.1428571428899
+  },
+  {
+    "time": 0.875499999999959,
+    "hinge_rad": 0.3501682440623054,
+    "cloth_displacement_m": 0.05949042005909451,
+    "pad_displacement_m": 0.002252608267357976,
+    "pad_load_N": 235.71428571432085
+  },
+  {
+    "time": 0.9004999999999562,
+    "hinge_rad": 0.37019407913720004,
+    "cloth_displacement_m": 0.05794019615031094,
+    "pad_displacement_m": 0.0020215018552189297,
+    "pad_load_N": 214.2857142857518
+  },
+  {
+    "time": 0.9254999999999535,
+    "hinge_rad": 0.39076254594427506,
+    "cloth_displacement_m": 0.05611529208177495,
+    "pad_displacement_m": 0.0017974523518428736,
+    "pad_load_N": 192.85714285718274
+  },
+  {
+    "time": 0.9504999999999507,
+    "hinge_rad": 0.4118725241862855,
+    "cloth_displacement_m": 0.053624100027254505,
+    "pad_displacement_m": 0.0015799696665471797,
+    "pad_load_N": 171.42857142861365
+  },
+  {
+    "time": 0.975499999999948,
+    "hinge_rad": 0.433522895878211,
+    "cloth_displacement_m": 0.05044197157585092,
+    "pad_displacement_m": 0.001368441178031224,
+    "pad_load_N": 150.00000000004457
+  },
+  {
+    "time": 1.0004999999999453,
+    "hinge_rad": 0.45571254534379346,
+    "cloth_displacement_m": 0.046641634918792224,
+    "pad_displacement_m": 0.0011627263478148284,
+    "pad_load_N": 128.5714285714755
+  },
+  {
+    "time": 1.0254999999999426,
+    "hinge_rad": 0.4784403592107138,
+    "cloth_displacement_m": 0.04233265928680893,
+    "pad_displacement_m": 0.0009627482507255017,
+    "pad_load_N": 107.14285714290635
+  },
+  {
+    "time": 1.0504999999999398,
+    "hinge_rad": 0.5017052264047921,
+    "cloth_displacement_m": 0.03790892406738695,
+    "pad_displacement_m": 0.0007674559544791527,
+    "pad_load_N": 85.71428571433727
+  },
+  {
+    "time": 1.075499999999937,
+    "hinge_rad": 0.5255060381458176,
+    "cloth_displacement_m": 0.03393580436611213,
+    "pad_displacement_m": 0.0005769406043374265,
+    "pad_load_N": 64.28571428576821
+  },
+  {
+    "time": 1.1004999999999343,
+    "hinge_rad": 0.5498416879425733,
+    "cloth_displacement_m": 0.030652349929438272,
+    "pad_displacement_m": 0.00039100388279131,
+    "pad_load_N": 42.85714285719913
+  },
+  {
+    "time": 1.1254999999999316,
+    "hinge_rad": 0.5747110715886345,
+    "cloth_displacement_m": 0.028004129978395388,
+    "pad_displacement_m": 0.00020931268495980382,
+    "pad_load_N": 21.42857142863007
+  },
+  {
+    "time": 1.1504999999999288,
+    "hinge_rad": 0.6001130871569522,
+    "cloth_displacement_m": 0.026034525947627295,
+    "pad_displacement_m": 3.164240686860775e-05,
+    "pad_load_N": 6.098455074265985e-11
+  },
+  {
+    "time": 1.175499999999926,
+    "hinge_rad": 0.6260466349955188,
+    "cloth_displacement_m": 0.027968299950599226,
+    "pad_displacement_m": 7.044998195257469e-06,
+    "pad_load_N": 0
+  },
+  {
+    "time": 1.2004999999999233,
+    "hinge_rad": 0.6525106177227561,
+    "cloth_displacement_m": 0.03093613769866271,
+    "pad_displacement_m": 7.040476641187842e-06,
+    "pad_load_N": 0
+  },
+  {
+    "time": 1.2254999999999205,
+    "hinge_rad": 0.6795039402224066,
+    "cloth_displacement_m": 0.03380598287195883,
+    "pad_displacement_m": 7.040475550358684e-06,
+    "pad_load_N": 0
+  },
+  {
+    "time": 1.2504999999999178,
+    "hinge_rad": 0.7070255096393987,
+    "cloth_displacement_m": 0.03654726422082515,
+    "pad_displacement_m": 7.040475550065656e-06,
+    "pad_load_N": 0
+  },
+  {
+    "time": 1.275499999999915,
+    "hinge_rad": 0.735074235374692,
+    "cloth_displacement_m": 0.03923935496603591,
+    "pad_displacement_m": 7.040475550065656e-06,
+    "pad_load_N": 0
+  },
+  {
+    "time": 1.3004999999999123,
+    "hinge_rad": 0.7636490290809232,
+    "cloth_displacement_m": 0.04206374960975608,
+    "pad_displacement_m": 7.040475550041073e-06,
+    "pad_load_N": 0
+  },
+  {
+    "time": 1.3254999999999095,
+    "hinge_rad": 0.7924478668182684,
+    "cloth_displacement_m": 0.04464729082415909,
+    "pad_displacement_m": 7.040475550003681e-06,
+    "pad_load_N": 0
+  },
+  {
+    "time": 1.3504999999999068,
+    "hinge_rad": 0.821181348796772,
+    "cloth_displacement_m": 0.04691830396905498,
+    "pad_displacement_m": 7.040475550065656e-06,
+    "pad_load_N": 0
+  },
+  {
+    "time": 1.375499999999904,
+    "hinge_rad": 0.8498496099474496,
+    "cloth_displacement_m": 0.048969343722041384,
+    "pad_displacement_m": 7.040475550028263e-06,
+    "pad_load_N": 0
+  },
+  {
+    "time": 1.4004999999999013,
+    "hinge_rad": 0.8784527849228053,
+    "cloth_displacement_m": 0.050745635513933525,
+    "pad_displacement_m": 7.040475550003681e-06,
+    "pad_load_N": 0
+  },
+  {
+    "time": 1.4254999999998985,
+    "hinge_rad": 0.9051221792424006,
+    "cloth_displacement_m": 0.05221334714786552,
+    "pad_displacement_m": 7.040475550065656e-06,
+    "pad_load_N": 0
+  },
+  {
+    "time": 1.4504999999998958,
+    "hinge_rad": 0.9075666553689019,
+    "cloth_displacement_m": 0.05391518107282899,
+    "pad_displacement_m": 7.040475550065656e-06,
+    "pad_load_N": 0
+  },
+  {
+    "time": 1.475499999999893,
+    "hinge_rad": 0.9038083776496854,
+    "cloth_displacement_m": 0.054266393542927116,
+    "pad_displacement_m": 7.040475550065656e-06,
+    "pad_load_N": 0
+  },
+  {
+    "time": 1.5004999999998903,
+    "hinge_rad": 0.8999982503078278,
+    "cloth_displacement_m": 0.05427850671132933,
+    "pad_displacement_m": 7.040475550065656e-06,
+    "pad_load_N": 0
+  },
+  {
+    "time": 1.5254999999998875,
+    "hinge_rad": 0.8962018879637851,
+    "cloth_displacement_m": 0.05401997806991197,
+    "pad_displacement_m": 7.040475550028263e-06,
+    "pad_load_N": 0
+  },
+  {
+    "time": 1.5504999999998847,
+    "hinge_rad": 0.8924192621988591,
+    "cloth_displacement_m": 0.05354676229418349,
+    "pad_displacement_m": 7.040475550065656e-06,
+    "pad_load_N": 0
+  },
+  {
+    "time": 1.575499999999882,
+    "hinge_rad": 0.8886503446530206,
+    "cloth_displacement_m": 0.05266908504288216,
+    "pad_displacement_m": 7.040475550065656e-06,
+    "pad_load_N": 0
+  },
+  {
+    "time": 1.6004999999998792,
+    "hinge_rad": 0.8848951070247902,
+    "cloth_displacement_m": 0.05122255261804026,
+    "pad_displacement_m": 7.040475550041073e-06,
+    "pad_load_N": 0
+  },
+  {
+    "time": 1.6254999999998765,
+    "hinge_rad": 0.8811535210711209,
+    "cloth_displacement_m": 0.049225172166290014,
+    "pad_displacement_m": 7.0404755500167715e-06,
+    "pad_load_N": 0
+  },
+  {
+    "time": 1.6504999999998737,
+    "hinge_rad": 0.8774255586072776,
+    "cloth_displacement_m": 0.046773403677718935,
+    "pad_displacement_m": 7.040475550065656e-06,
+    "pad_load_N": 0
+  },
+  {
+    "time": 1.675499999999871,
+    "hinge_rad": 0.8737111915066879,
+    "cloth_displacement_m": 0.04481495543909508,
+    "pad_displacement_m": 7.0404755500167715e-06,
+    "pad_load_N": 0
+  },
+  {
+    "time": 1.7004999999998682,
+    "hinge_rad": 0.870010391700889,
+    "cloth_displacement_m": 0.0434721817722911,
+    "pad_displacement_m": 7.040475550065656e-06,
+    "pad_load_N": 0
+  },
+  {
+    "time": 1.7254999999998655,
+    "hinge_rad": 0.8663231311793522,
+    "cloth_displacement_m": 0.042056121373448996,
+    "pad_displacement_m": 7.040475550065656e-06,
+    "pad_load_N": 0
+  },
+  {
+    "time": 1.7504999999998627,
+    "hinge_rad": 0.8626493819893513,
+    "cloth_displacement_m": 0.040614840046429,
+    "pad_displacement_m": 7.040475550065656e-06,
+    "pad_load_N": 0
+  },
+  {
+    "time": 1.77549999999986,
+    "hinge_rad": 0.8589891162359038,
+    "cloth_displacement_m": 0.03919004055204491,
+    "pad_displacement_m": 7.040475549992188e-06,
+    "pad_load_N": 0
+  },
+  {
+    "time": 1.8004999999998572,
+    "hinge_rad": 0.8553423060816189,
+    "cloth_displacement_m": 0.037700995198224264,
+    "pad_displacement_m": 7.0404755500167715e-06,
+    "pad_load_N": 0
+  },
+  {
+    "time": 1.8254999999998545,
+    "hinge_rad": 0.851708923746613,
+    "cloth_displacement_m": 0.03616714523773069,
+    "pad_displacement_m": 7.040475550065656e-06,
+    "pad_load_N": 0
+  },
+  {
+    "time": 1.8504999999998517,
+    "hinge_rad": 0.8480889415082893,
+    "cloth_displacement_m": 0.034534712487413084,
+    "pad_displacement_m": 7.040475550065656e-06,
+    "pad_load_N": 0
+  },
+  {
+    "time": 1.875499999999849,
+    "hinge_rad": 0.8444823317012768,
+    "cloth_displacement_m": 0.03283500982606692,
+    "pad_displacement_m": 7.040475550065656e-06,
+    "pad_load_N": 0
+  },
+  {
+    "time": 1.9004999999998462,
+    "hinge_rad": 0.8408890667173645,
+    "cloth_displacement_m": 0.03132810526119033,
+    "pad_displacement_m": 7.040475550065656e-06,
+    "pad_load_N": 0
+  },
+  {
+    "time": 1.9254999999998434,
+    "hinge_rad": 0.8373091190053272,
+    "cloth_displacement_m": 0.03091831882235327,
+    "pad_displacement_m": 7.040475550065656e-06,
+    "pad_load_N": 0
+  },
+  {
+    "time": 1.9504999999998407,
+    "hinge_rad": 0.8337424610708106,
+    "cloth_displacement_m": 0.030474316826845652,
+    "pad_displacement_m": 7.040475549992188e-06,
+    "pad_load_N": 0
+  },
+  {
+    "time": 1.975499999999838,
+    "hinge_rad": 0.8301890654762366,
+    "cloth_displacement_m": 0.03004585889038806,
+    "pad_displacement_m": 7.040475549992188e-06,
+    "pad_load_N": 0
+  }
+]

@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "excluded_entities": [
+    "chair_far",
+    "chair_far_cushion",
+    "chair_near",
+    "chair_near_cushion",
+    "table"
+  ],
+  "evaluated_objects_compared": 280,
+  "changed": [],
+  "method": "Exact evaluated world-geometry and source-camera hashes, excluding explicitly revised furniture entities."
+}

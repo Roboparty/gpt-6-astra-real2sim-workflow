@@ -1,0 +1,6 @@
+# Keep the audited source bytes unchanged across operating systems.
+* -text
+*.py diff=python
+*.png binary
+*.jpg binary
+*.mp4 binary

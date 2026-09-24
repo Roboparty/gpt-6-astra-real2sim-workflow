@@ -1,0 +1,3509 @@
+{
+  "schema_version": "real2sim.scene/1.0",
+  "case_id": "utility_single_external_example",
+  "branch": "A",
+  "units": "m",
+  "up_axis": "Z",
+  "room": {
+    "x_min": 0,
+    "x_max": 4.414785309210897,
+    "y_min": -4.65,
+    "y_max": 0,
+    "height": 2.8,
+    "thickness": 0.12,
+    "preserve_full_shell": true
+  },
+  "camera": {
+    "position": [
+      3.285050329595899,
+      -3.074509518917179,
+      1.187325390665316
+    ],
+    "rotation_world_to_cv": [
+      [
+        0.9176032550664661,
+        0.39714850729318696,
+        0.016653211288498254
+      ],
+      [
+        0.10074770890480317,
+        -0.19183974948293714,
+        -0.9762414709838735
+      ],
+      [
+        -0.3845180950772785,
+        0.8974801243889011,
+        -0.21604458078142974
+      ]
+    ],
+    "focal_px": 610.9599655484669,
+    "principal_point": [
+      909.7566241535942,
+      618.6661026107615
+    ],
+    "image_size": [
+      1702,
+      1276
+    ],
+    "role": "reconstruction",
+    "fit_landmarks": [
+      {
+        "id": "back_left_top",
+        "xyz": [
+          0.0,
+          0.0,
+          2.8
+        ],
+        "uv": [
+          622.0,
+          195.0
+        ],
+        "predicted": [
+          616.0086740512431,
+          203.7501915000189
+        ],
+        "error_px": 10.604802587094698
+      },
+      {
+        "id": "back_left_floor",
+        "xyz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "uv": [
+          648.0,
+          649.0
+        ],
+        "predicted": [
+          650.8783654660808,
+          652.6968926616479
+        ],
+        "error_px": 4.68529648027451
+      },
+      {
+        "id": "back_right_top",
+        "xyz": [
+          3.734785309210897,
+          0.0,
+          2.8
+        ],
+        "uv": [
+          1362.0,
+          40.0
+        ],
+        "predicted": [
+          1363.088199948949,
+          40.22206977723556
+        ],
+        "error_px": 1.1106278021255394
+      },
+      {
+        "id": "back_right_floor",
+        "xyz": [
+          3.734785309210897,
+          0.0,
+          0.0
+        ],
+        "uv": [
+          1258.0,
+          751.0
+        ],
+        "predicted": [
+          1256.6052118941477,
+          750.7511307401916
+        ],
+        "error_px": 1.4168167731589718
+      },
+      {
+        "id": "column_far_top",
+        "xyz": [
+          0.1500000000000108,
+          -0.7044870026676773,
+          2.8
+        ],
+        "uv": [
+          515.0,
+          154.0
+        ],
+        "predicted": [
+          518.9905624797897,
+          138.58392251310994
+        ],
+        "error_px": 15.924196494231778
+      },
+      {
+        "id": "column_far_floor",
+        "xyz": [
+          0.1500000000000108,
+          -0.7044870026676773,
+          0.0
+        ],
+        "uv": [
+          574.0,
+          693.0
+        ],
+        "predicted": [
+          576.9155912251292,
+          684.8175492935484
+        ],
+        "error_px": 8.686378517861232
+      },
+      {
+        "id": "column_near_top",
+        "xyz": [
+          0.1500000000000108,
+          -1.3483848310459914,
+          2.8
+        ],
+        "uv": [
+          360.0,
+          48.0
+        ],
+        "predicted": [
+          360.21374077104394,
+          54.65053711954715
+        ],
+        "error_px": 6.6539709268737415
+      },
+      {
+        "id": "column_near_floor",
+        "xyz": [
+          0.1500000000000108,
+          -1.3483848310459914,
+          0.0
+        ],
+        "uv": [
+          465.0,
+          718.0
+        ],
+        "predicted": [
+          461.15276265587767,
+          722.5760410654631
+        ],
+        "error_px": 5.978410074159675
+      }
+    ],
+    "median_fit_error_px": 6.316190500516708,
+    "max_fit_error_px": 15.924196494231778,
+    "metric_gauge": "assumed ceiling height 2.8m, plausible 2.45-3.15m; no measured or exact catalogue anchor",
+    "status": "estimated_from_reconstruction_inputs",
+    "distortion": "zero; no EXIF or lens calibration",
+    "room_parameters": {
+      "width": 3.734785309210897,
+      "left_window_depth": 0.7044870026676773,
+      "column_front_y": -1.3483848310459914,
+      "column_width": 0.1500000000000108,
+      "height": 2.8
+    }
+  },
+  "objects": [
+    {
+      "id": "floor",
+      "kind": "custom",
+      "evidence": [
+        "source observation; editable custom geometry"
+      ],
+      "confidence": 0.8,
+      "layout_lock": true,
+      "parameters": {},
+      "asset_resolution": {
+        "mode": "authored_A"
+      },
+      "position": [
+        2.207392692565918,
+        -2.325000047683716,
+        -0.059499999624677
+      ],
+      "dimensions": [
+        4.414785385131836,
+        4.650000095367432,
+        0.12299999943934381
+      ]
+    },
+    {
+      "id": "ceiling",
+      "kind": "custom",
+      "evidence": [
+        "source observation; editable custom geometry"
+      ],
+      "confidence": 0.8,
+      "layout_lock": true,
+      "parameters": {},
+      "asset_resolution": {
+        "mode": "authored_A"
+      },
+      "position": [
+        2.2051426926627755,
+        -2.3272500038146973,
+        2.8589999675750732
+      ],
+      "dimensions": [
+        4.419285384938121,
+        4.6545000076293945,
+        0.12199974060058594
+      ]
+    },
+    {
+      "id": "wall_back",
+      "kind": "custom",
+      "evidence": [
+        "source observation; editable custom geometry"
+      ],
+      "confidence": 0.8,
+      "layout_lock": true,
+      "parameters": {},
+      "asset_resolution": {
+        "mode": "authored_A"
+      },
+      "position": [
+        2.207392692565918,
+        0.05999999865889549,
+        1.4000000953674316
+      ],
+      "dimensions": [
+        4.414785385131836,
+        0.11999999731779099,
+        2.8000001907348633
+      ]
+    },
+    {
+      "id": "wall_left",
+      "kind": "custom",
+      "evidence": [
+        "source observation; editable custom geometry"
+      ],
+      "confidence": 0.8,
+      "layout_lock": true,
+      "parameters": {},
+      "asset_resolution": {
+        "mode": "authored_A"
+      },
+      "position": [
+        -0.05999999865889549,
+        -2.3249998092651367,
+        1.4000000953674316
+      ],
+      "dimensions": [
+        0.11999999731779099,
+        4.649999618530273,
+        2.8000001907348633
+      ]
+    },
+    {
+      "id": "wall_right",
+      "kind": "custom",
+      "evidence": [
+        "source observation; editable custom geometry"
+      ],
+      "confidence": 0.8,
+      "layout_lock": true,
+      "parameters": {},
+      "asset_resolution": {
+        "mode": "authored_A"
+      },
+      "position": [
+        4.474785327911377,
+        -2.325000047683716,
+        1.399999976158142
+      ],
+      "dimensions": [
+        0.11999988555908203,
+        4.650000095367432,
+        2.799999952316284
+      ]
+    },
+    {
+      "id": "door_frame",
+      "kind": "custom",
+      "evidence": [
+        "source observation; editable custom geometry"
+      ],
+      "confidence": 0.8,
+      "layout_lock": true,
+      "parameters": {},
+      "asset_resolution": {
+        "mode": "authored_A"
+      },
+      "position": [
+        4.307392597198486,
+        -2.25,
+        1.1237499713897705
+      ],
+      "dimensions": [
+        0.4547853469848633,
+        0.945000171661377,
+        2.247499942779541
+      ]
+    },
+    {
+      "id": "doorway_unseen_returns",
+      "kind": "custom",
+      "evidence": [
+        "indoor doorway continuation hypothesis; exact hidden corridor plan unknown; prevents unphysical direct outdoor sun through interior door"
+      ],
+      "confidence": 0.15,
+      "layout_lock": true,
+      "parameters": {},
+      "asset_resolution": {
+        "mode": "authored_A"
+      },
+      "position": [
+        4.699785470962524,
+        -2.25,
+        1.404999926686287
+      ],
+      "dimensions": [
+        0.570000171661377,
+        1.9800000190734863,
+        2.9899998605251312
+      ]
+    },
+    {
+      "id": "wall_front",
+      "kind": "custom",
+      "evidence": [
+        "source observation; editable custom geometry"
+      ],
+      "confidence": 0.8,
+      "layout_lock": true,
+      "parameters": {},
+      "asset_resolution": {
+        "mode": "authored_A"
+      },
+      "position": [
+        2.207392692565918,
+        -4.710000038146973,
+        1.399999976158142
+      ],
+      "dimensions": [
+        4.414785385131836,
+        0.11999988555908203,
+        2.799999952316284
+      ]
+    },
+    {
+      "id": "column",
+      "kind": "custom",
+      "evidence": [
+        "source observation; editable custom geometry"
+      ],
+      "confidence": 0.8,
+      "layout_lock": true,
+      "parameters": {},
+      "asset_resolution": {
+        "mode": "authored_A"
+      },
+      "position": [
+        0.07500000298023224,
+        -1.0264359712600708,
+        1.399999976158142
+      ],
+      "dimensions": [
+        0.15000000596046448,
+        0.6438977718353271,
+        2.799999952316284
+      ]
+    },
+    {
+      "id": "baseboards",
+      "kind": "custom",
+      "evidence": [
+        "source observation; editable custom geometry"
+      ],
+      "confidence": 0.8,
+      "layout_lock": true,
+      "parameters": {},
+      "asset_resolution": {
+        "mode": "authored_A"
+      },
+      "position": [
+        2.2073927060700953,
+        -2.320750047452748,
+        0.04500000178813934
+      ],
+      "dimensions": [
+        4.431785556487739,
+        4.658500095829368,
+        0.09000000357627869
+      ]
+    },
+    {
+      "id": "window_frames",
+      "kind": "custom",
+      "evidence": [
+        "source observation; editable custom geometry"
+      ],
+      "confidence": 0.8,
+      "layout_lock": true,
+      "parameters": {},
+      "asset_resolution": {
+        "mode": "authored_A"
+      },
+      "position": [
+        1.8598926216363907,
+        -0.5249999999068677,
+        1.399999976158142
+      ],
+      "dimensions": [
+        3.7847852408885956,
+        1.0750000001862645,
+        2.799999952316284
+      ]
+    },
+    {
+      "id": "window_rails",
+      "kind": "custom",
+      "evidence": [
+        "source observation; editable custom geometry"
+      ],
+      "confidence": 0.8,
+      "layout_lock": true,
+      "parameters": {},
+      "asset_resolution": {
+        "mode": "authored_A"
+      },
+      "position": [
+        1.8277768613770604,
+        -0.529999990016222,
+        0.4793027937412262
+      ],
+      "dimensions": [
+        3.6055537220090628,
+        0.9799999818205833,
+        0.7586055397987366
+      ]
+    },
+    {
+      "id": "blinds",
+      "kind": "custom",
+      "evidence": [
+        "source observation; editable custom geometry"
+      ],
+      "confidence": 0.8,
+      "layout_lock": true,
+      "parameters": {},
+      "asset_resolution": {
+        "mode": "authored_A"
+      },
+      "position": [
+        1.8826426435261965,
+        -0.5249999463558197,
+        1.7549999952316284
+      ],
+      "dimensions": [
+        3.672285284847021,
+        1.0049999356269836,
+        1.9500000476837158
+      ]
+    },
+    {
+      "id": "exterior_backdrop",
+      "kind": "custom",
+      "evidence": [
+        "original outdoor pixel regions only; source-camera projection; external depth unmeasured and novel-view background not validated"
+      ],
+      "confidence": 0.3,
+      "layout_lock": true,
+      "parameters": {},
+      "asset_resolution": {
+        "mode": "authored_A"
+      },
+      "position": [
+        -4.992889881134033,
+        8.0,
+        1.6403708457946777
+      ],
+      "dimensions": [
+        26.178683280944824,
+        0.001,
+        22.10013484954834
+      ]
+    },
+    {
+      "id": "external_shading_hypothesis",
+      "kind": "exterior_shadow_proxy",
+      "evidence": [
+        "inferred exterior solar obstruction, unobserved and not independently validated; source has no strong upper-window far-floor sun pool"
+      ],
+      "confidence": 0.15,
+      "layout_lock": true,
+      "parameters": {},
+      "asset_resolution": {
+        "mode": "authored_A"
+      },
+      "position": [
+        3.5,
+        3.0,
+        4.900000095367432
+      ],
+      "dimensions": [
+        8.0,
+        0.11999988555908203,
+        2.1999998092651367
+      ]
+    },
+    {
+      "id": "table",
+      "kind": "trestle_table",
+      "evidence": [
+        "furniture_observation.json: t_top_0, t_top_1, t_top_2, t_top_3, t_foot_0, t_foot_3",
+        "Rectangular top, paired end trestles with connected crossbars and longitudinal brace; hidden joinery assumed."
+      ],
+      "confidence": 0.8,
+      "layout_lock": true,
+      "parameters": {
+        "collision_proxies": [
+          {
+            "shape": "box",
+            "position": [
+              1.262884370994383,
+              -0.6164340086568015,
+              0.7426647282564195
+            ],
+            "dimensions": [
+              0.7015795294089687,
+              0.903353666780103,
+              0.022
+            ],
+            "yaw": -0.10684634538649157
+          },
+          {
+            "shape": "capsule",
+            "from": [
+              0.9218167306142064,
+              -0.9710001214523897,
+              0.014865973970009895
+            ],
+            "to": [
+              0.9392222329591383,
+              -0.9991683320483381,
+              0.7237987542864096
+            ],
+            "radius": 0.01288
+          },
+          {
+            "shape": "capsule",
+            "from": [
+              1.5210013989026068,
+              -1.0352655542229166,
+              0.014865973970009895
+            ],
+            "to": [
+              1.4980181604896907,
+              -1.059101878438537,
+              0.7237987542864096
+            ],
+            "radius": 0.01288
+          },
+          {
+            "shape": "capsule",
+            "from": [
+              0.9441324684011855,
+              -0.9877628882147064,
+              0.4
+            ],
+            "to": [
+              1.4956383638390702,
+              -1.0469145436585223,
+              0.4
+            ],
+            "radius": 0.01288
+          },
+          {
+            "shape": "capsule",
+            "from": [
+              1.0047673430861594,
+              -0.1976024630906866,
+              0.014865973970009895
+            ],
+            "to": [
+              1.0277505814990755,
+              -0.173766138875066,
+              0.7237987542864096
+            ],
+            "radius": 0.01288
+          },
+          {
+            "shape": "capsule",
+            "from": [
+              1.6039520113745596,
+              -0.2618678958612134,
+              0.014865973970009895
+            ],
+            "to": [
+              1.586546509029628,
+              -0.23369968526526508,
+              0.7237987542864096
+            ],
+            "radius": 0.01288
+          },
+          {
+            "shape": "capsule",
+            "from": [
+              1.030130378149696,
+              -0.1859534736550809,
+              0.4
+            ],
+            "to": [
+              1.5816362735875809,
+              -0.24510512909889667,
+              0.4
+            ],
+            "radius": 0.01288
+          },
+          {
+            "shape": "capsule",
+            "from": [
+              1.2214552035221382,
+              -1.0027026588339487,
+              0.4
+            ],
+            "to": [
+              1.304313538466628,
+              -0.2301653584796544,
+              0.4
+            ],
+            "radius": 0.01472
+          },
+          {
+            "shape": "capsule",
+            "from": [
+              1.2354557586251995,
+              -0.8721671967102349,
+              0.7262018532769228
+            ],
+            "to": [
+              1.2508150204338617,
+              -0.7289637077546827,
+              0.41046287497949674
+            ],
+            "radius": 0.011500000000000002
+          },
+          {
+            "shape": "capsule",
+            "from": [
+              1.2903129833635667,
+              -0.36070082060336817,
+              0.7262018532769228
+            ],
+            "to": [
+              1.2749537215549045,
+              -0.5039043095589204,
+              0.41046287497949674
+            ],
+            "radius": 0.011500000000000002
+          }
+        ]
+      },
+      "asset_resolution": {
+        "mode": "authored_A"
+      },
+      "position": [
+        1.2628843784332275,
+        -0.6164340600371361,
+        0.3775407687644474
+      ],
+      "dimensions": [
+        0.7930619716644287,
+        0.9721678048372269,
+        0.7522479264298454
+      ]
+    },
+    {
+      "id": "chair_near",
+      "kind": "wooden_chair",
+      "evidence": [
+        "furniture_observation.json: n_seat_0, n_seat_1, n_seat_2, n_seat_3, n_foot_0, n_foot_1, n_foot_2, n_foot_3, n_back_post_2, n_back_post_3",
+        "Single local rigid frame, shared chair family shape; rear posts connect to the rear edge. Hidden joinery is assumed."
+      ],
+      "confidence": 0.8,
+      "layout_lock": true,
+      "parameters": {
+        "collision_proxies": [
+          {
+            "shape": "capsule",
+            "from": [
+              1.5394413296884113,
+              -0.3955893925730278,
+              0.01212
+            ],
+            "to": [
+              1.5394413296884113,
+              -0.3955893925730278,
+              0.37234881692188126
+            ],
+            "radius": 0.01012
+          },
+          {
+            "shape": "capsule",
+            "from": [
+              1.8887526472993996,
+              -0.4240401785562194,
+              0.01212
+            ],
+            "to": [
+              1.8887526472993996,
+              -0.4240401785562194,
+              0.37234881692188126
+            ],
+            "radius": 0.01012
+          },
+          {
+            "shape": "capsule",
+            "from": [
+              1.8888701815806812,
+              -0.4245914681009449,
+              0.3911123570151562
+            ],
+            "to": [
+              1.891900385580767,
+              -0.43880451101419,
+              0.6397367876663144
+            ],
+            "radius": 0.00966
+          },
+          {
+            "shape": "capsule",
+            "from": [
+              1.5158539133041136,
+              -0.6851895287909061,
+              0.01212
+            ],
+            "to": [
+              1.5158539133041136,
+              -0.6851895287909061,
+              0.37234881692188126
+            ],
+            "radius": 0.01012
+          },
+          {
+            "shape": "capsule",
+            "from": [
+              1.865165230915102,
+              -0.7136403147740978,
+              0.01212
+            ],
+            "to": [
+              1.865165230915102,
+              -0.7136403147740978,
+              0.37234881692188126
+            ],
+            "radius": 0.01012
+          },
+          {
+            "shape": "capsule",
+            "from": [
+              1.8653704273682543,
+              -0.7131153110740979,
+              0.3911123570151562
+            ],
+            "to": [
+              1.8706606891230884,
+              -0.6995799553085028,
+              0.6397367876663144
+            ],
+            "radius": 0.00966
+          },
+          {
+            "shape": "box",
+            "position": [
+              1.5276476214962624,
+              -0.5403894606819669,
+              0.35246881692188126
+            ],
+            "dimensions": [
+              0.2905591249799255,
+              0.019,
+              0.034
+            ],
+            "yaw": -1.6520651588744393
+          },
+          {
+            "shape": "box",
+            "position": [
+              1.8769589391072508,
+              -0.5688402466651586,
+              0.35246881692188126
+            ],
+            "dimensions": [
+              0.2905591249799255,
+              0.019,
+              0.034
+            ],
+            "yaw": -1.6520651588744393
+          },
+          {
+            "shape": "box",
+            "position": [
+              1.7140969884939055,
+              -0.4098147855646236,
+              0.35246881692188126
+            ],
+            "dimensions": [
+              0.019,
+              0.3504680353957918,
+              0.034
+            ],
+            "yaw": -1.6520651588744393
+          },
+          {
+            "shape": "box",
+            "position": [
+              1.6905095721096077,
+              -0.699414921782502,
+              0.35246881692188126
+            ],
+            "dimensions": [
+              0.019,
+              0.3504680353957918,
+              0.034
+            ],
+            "yaw": -1.6520651588744393
+          },
+          {
+            "shape": "box",
+            "position": [
+              1.7023032803017566,
+              -0.5546148536735628,
+              0.3774688169218813
+            ],
+            "dimensions": [
+              0.33055912497992546,
+              0.3904680353957918,
+              0.018
+            ],
+            "yaw": -1.6520651588744393
+          }
+        ]
+      },
+      "asset_resolution": {
+        "mode": "authored_A"
+      },
+      "position": [
+        1.706644058227539,
+        -0.5510964691638947,
+        0.33933643996715546
+      ],
+      "dimensions": [
+        0.42404603958129883,
+        0.4877268671989441,
+        0.6746728718280792
+      ]
+    },
+    {
+      "id": "chair_near_cushion",
+      "kind": "custom",
+      "evidence": [
+        "source observation; editable custom geometry"
+      ],
+      "confidence": 0.8,
+      "layout_lock": true,
+      "parameters": {},
+      "asset_resolution": {
+        "mode": "authored_A"
+      },
+      "position": [
+        1.6868544220924377,
+        -0.5533565729856491,
+        0.40246881544589996
+      ],
+      "dimensions": [
+        0.37503182888031006,
+        0.3485652506351471,
+        0.030000001192092896
+      ]
+    },
+    {
+      "id": "chair_far",
+      "kind": "wooden_chair",
+      "evidence": [
+        "furniture_observation.json: f_seat_0, f_seat_1, f_seat_2, f_seat_3, f_foot_0, f_back_post_0, f_back_post_1",
+        "Single local rigid frame, shared chair family shape; rear posts connect to the rear edge. Hidden joinery is assumed."
+      ],
+      "confidence": 0.8,
+      "layout_lock": true,
+      "parameters": {
+        "collision_proxies": [
+          {
+            "shape": "capsule",
+            "from": [
+              0.7007109390838561,
+              -0.552753410339133,
+              0.01212
+            ],
+            "to": [
+              0.7007109390838561,
+              -0.552753410339133,
+              0.37234881692188126
+            ],
+            "radius": 0.01012
+          },
+          {
+            "shape": "capsule",
+            "from": [
+              0.3576453897339079,
+              -0.481102362311876,
+              0.01212
+            ],
+            "to": [
+              0.3576453897339079,
+              -0.481102362311876,
+              0.37234881692188126
+            ],
+            "radius": 0.01012
+          },
+          {
+            "shape": "capsule",
+            "from": [
+              0.3575972947309156,
+              -0.48054073846971185,
+              0.3911123570151562
+            ],
+            "to": [
+              0.35635733589624824,
+              -0.46606126240100637,
+              0.6397367876663144
+            ],
+            "radius": 0.00966
+          },
+          {
+            "shape": "capsule",
+            "from": [
+              0.7601139764969062,
+              -0.2683313924586537,
+              0.01212
+            ],
+            "to": [
+              0.7601139764969062,
+              -0.2683313924586537,
+              0.37234881692188126
+            ],
+            "radius": 0.01012
+          },
+          {
+            "shape": "capsule",
+            "from": [
+              0.417048427146958,
+              -0.19668034443139665,
+              0.01212
+            ],
+            "to": [
+              0.417048427146958,
+              -0.19668034443139665,
+              0.37234881692188126
+            ],
+            "radius": 0.01012
+          },
+          {
+            "shape": "capsule",
+            "from": [
+              0.41677956191671783,
+              -0.19717576945838652,
+              0.3911123570151562
+            ],
+            "to": [
+              0.4098478268750419,
+              -0.2099485441940454,
+              0.6397367876663144
+            ],
+            "radius": 0.00966
+          },
+          {
+            "shape": "box",
+            "position": [
+              0.7304124577903811,
+              -0.4105424013988933,
+              0.35246881692188126
+            ],
+            "dimensions": [
+              0.2905591249799255,
+              0.019,
+              0.034
+            ],
+            "yaw": 1.364900764029294
+          },
+          {
+            "shape": "box",
+            "position": [
+              0.38734690844043296,
+              -0.33889135337163634,
+              0.35246881692188126
+            ],
+            "dimensions": [
+              0.2905591249799255,
+              0.019,
+              0.034
+            ],
+            "yaw": 1.364900764029294
+          },
+          {
+            "shape": "box",
+            "position": [
+              0.529178164408882,
+              -0.5169278863255045,
+              0.35246881692188126
+            ],
+            "dimensions": [
+              0.019,
+              0.3504680353957918,
+              0.034
+            ],
+            "yaw": 1.364900764029294
+          },
+          {
+            "shape": "box",
+            "position": [
+              0.5885812018219321,
+              -0.23250586844502516,
+              0.35246881692188126
+            ],
+            "dimensions": [
+              0.019,
+              0.3504680353957918,
+              0.034
+            ],
+            "yaw": 1.364900764029294
+          },
+          {
+            "shape": "box",
+            "position": [
+              0.558879683115407,
+              -0.3747168773852648,
+              0.3774688169218813
+            ],
+            "dimensions": [
+              0.33055912497992546,
+              0.3904680353957918,
+              0.018
+            ],
+            "yaw": 1.364900764029294
+          }
+        ]
+      },
+      "asset_resolution": {
+        "mode": "authored_A"
+      },
+      "position": [
+        0.5588796734809875,
+        -0.3835860565304756,
+        0.33933643996715546
+      ],
+      "dimensions": [
+        0.4481658935546875,
+        0.4791024774312973,
+        0.6746728718280792
+      ]
+    },
+    {
+      "id": "chair_far_cushion",
+      "kind": "custom",
+      "evidence": [
+        "source observation; editable custom geometry"
+      ],
+      "confidence": 0.8,
+      "layout_lock": true,
+      "parameters": {},
+      "asset_resolution": {
+        "mode": "authored_A"
+      },
+      "position": [
+        0.5740523040294647,
+        -0.37788575887680054,
+        0.40246881544589996
+      ],
+      "dimensions": [
+        0.40630966424942017,
+        0.38392162322998047,
+        0.030000001192092896
+      ]
+    },
+    {
+      "id": "rack",
+      "kind": "custom",
+      "evidence": [
+        "source observation; editable custom geometry"
+      ],
+      "confidence": 0.8,
+      "layout_lock": true,
+      "parameters": {
+        "collision_proxies": [
+          {
+            "shape": "capsule",
+            "from": [
+              2.872754780452845,
+              -0.6509566444151831,
+              0.015
+            ],
+            "to": [
+              2.8298288106983,
+              -0.47615000518019324,
+              1.4649999999999999
+            ],
+            "radius": 0.012
+          },
+          {
+            "shape": "capsule",
+            "from": [
+              2.786902840943755,
+              -0.3013433659452034,
+              0.015
+            ],
+            "to": [
+              2.8298288106983,
+              -0.47615000518019324,
+              1.4649999999999999
+            ],
+            "radius": 0.012
+          },
+          {
+            "shape": "capsule",
+            "from": [
+              3.9830249092275447,
+              -0.3783158444105019,
+              0.015
+            ],
+            "to": [
+              3.9400989394729997,
+              -0.20350920517551208,
+              1.4649999999999999
+            ],
+            "radius": 0.012
+          },
+          {
+            "shape": "capsule",
+            "from": [
+              3.8971729697184547,
+              -0.0287025659405222,
+              0.015
+            ],
+            "to": [
+              3.9400989394729997,
+              -0.20350920517551208,
+              1.4649999999999999
+            ],
+            "radius": 0.012
+          }
+        ]
+      },
+      "asset_resolution": {
+        "mode": "authored_A"
+      },
+      "position": [
+        3.397103190422058,
+        -0.3398296106606722,
+        0.7337391739711165
+      ],
+      "dimensions": [
+        1.2859442234039307,
+        0.64625408872962,
+        1.4654783476144075
+      ]
+    },
+    {
+      "id": "coat_0",
+      "kind": "custom",
+      "evidence": [
+        "source observation; editable custom geometry"
+      ],
+      "confidence": 0.8,
+      "layout_lock": true,
+      "parameters": {},
+      "asset_resolution": {
+        "mode": "authored_A"
+      },
+      "position": [
+        3.1246362924575806,
+        -0.43546827137470245,
+        0.9408348500728607
+      ],
+      "dimensions": [
+        0.29848170280456543,
+        0.08140107989311218,
+        0.8361452221870422
+      ]
+    },
+    {
+      "id": "hangers",
+      "kind": "custom",
+      "evidence": [
+        "source observation; editable custom geometry"
+      ],
+      "confidence": 0.8,
+      "layout_lock": true,
+      "parameters": {},
+      "asset_resolution": {
+        "mode": "authored_A"
+      },
+      "position": [
+        3.4182718992233276,
+        -0.33165037631988525,
+        1.439925193786621
+      ],
+      "dimensions": [
+        0.9378011226654053,
+        0.23550182580947876,
+        0.14514851570129395
+      ]
+    },
+    {
+      "id": "coat_1",
+      "kind": "custom",
+      "evidence": [
+        "source observation; editable custom geometry"
+      ],
+      "confidence": 0.8,
+      "layout_lock": true,
+      "parameters": {},
+      "asset_resolution": {
+        "mode": "authored_A"
+      },
+      "position": [
+        3.270564913749695,
+        -0.4009747952222824,
+        0.9244387149810791
+      ],
+      "dimensions": [
+        0.31113743782043457,
+        0.08707353472709656,
+        0.8698666095733643
+      ]
+    },
+    {
+      "id": "coat_2",
+      "kind": "custom",
+      "evidence": [
+        "source observation; editable custom geometry"
+      ],
+      "confidence": 0.8,
+      "layout_lock": true,
+      "parameters": {},
+      "asset_resolution": {
+        "mode": "authored_A"
+      },
+      "position": [
+        3.415547251701355,
+        -0.36672526597976685,
+        0.9533892869949341
+      ],
+      "dimensions": [
+        0.2575709819793701,
+        0.07600456476211548,
+        0.88869309425354
+      ]
+    },
+    {
+      "id": "coat_3",
+      "kind": "custom",
+      "evidence": [
+        "source observation; editable custom geometry"
+      ],
+      "confidence": 0.8,
+      "layout_lock": true,
+      "parameters": {},
+      "asset_resolution": {
+        "mode": "authored_A"
+      },
+      "position": [
+        3.4749361276626587,
+        -0.3525342494249344,
+        0.9228436201810837
+      ],
+      "dimensions": [
+        0.19786763191223145,
+        0.0631730854511261,
+        0.8608376085758209
+      ]
+    },
+    {
+      "id": "coat_4",
+      "kind": "custom",
+      "evidence": [
+        "source observation; editable custom geometry"
+      ],
+      "confidence": 0.8,
+      "layout_lock": true,
+      "parameters": {},
+      "asset_resolution": {
+        "mode": "authored_A"
+      },
+      "position": [
+        3.584712266921997,
+        -0.3311193734407425,
+        0.8652756214141846
+      ],
+      "dimensions": [
+        0.20515966415405273,
+        0.0609874427318573,
+        0.9857380390167236
+      ]
+    },
+    {
+      "id": "coat_red",
+      "kind": "custom",
+      "evidence": [
+        "source observation; editable custom geometry"
+      ],
+      "confidence": 0.8,
+      "layout_lock": true,
+      "parameters": {},
+      "asset_resolution": {
+        "mode": "authored_A"
+      },
+      "position": [
+        3.704994559288025,
+        -0.2997548431158066,
+        0.9748693406581879
+      ],
+      "dimensions": [
+        0.1526949405670166,
+        0.046426862478256226,
+        0.7007606625556946
+      ]
+    },
+    {
+      "id": "cabinet",
+      "kind": "custom",
+      "evidence": [
+        "source observation; editable custom geometry"
+      ],
+      "confidence": 0.8,
+      "layout_lock": true,
+      "parameters": {},
+      "asset_resolution": {
+        "mode": "authored_A"
+      },
+      "position": [
+        3.6909656524658203,
+        -1.3249990940093994,
+        0.37275001406669617
+      ],
+      "dimensions": [
+        0.6416206359863281,
+        0.7833867073059082,
+        0.7455000281333923
+      ]
+    },
+    {
+      "id": "wastebasket",
+      "kind": "custom",
+      "evidence": [
+        "source observation; editable custom geometry"
+      ],
+      "confidence": 0.8,
+      "layout_lock": true,
+      "parameters": {},
+      "asset_resolution": {
+        "mode": "authored_A"
+      },
+      "position": [
+        1.2193742394447327,
+        -1.086385726928711,
+        0.12694845255464315
+      ],
+      "dimensions": [
+        0.19599378108978271,
+        0.19602489471435547,
+        0.25189690478146076
+      ]
+    },
+    {
+      "id": "cleaning_cart",
+      "kind": "custom",
+      "evidence": [
+        "source observation; editable custom geometry"
+      ],
+      "confidence": 0.8,
+      "layout_lock": true,
+      "parameters": {},
+      "asset_resolution": {
+        "mode": "authored_A"
+      },
+      "position": [
+        0.8527381643652916,
+        -2.454965591430664,
+        0.4760000123642385
+      ],
+      "dimensions": [
+        1.3818769007921219,
+        0.6187620162963867,
+        0.9420000286772847
+      ]
+    },
+    {
+      "id": "warning_sign",
+      "kind": "custom",
+      "evidence": [
+        "source observation; editable custom geometry"
+      ],
+      "confidence": 0.8,
+      "layout_lock": true,
+      "parameters": {},
+      "asset_resolution": {
+        "mode": "authored_A"
+      },
+      "position": [
+        0.6319140195846558,
+        -2.4204100370407104,
+        0.666895866394043
+      ],
+      "dimensions": [
+        0.2617563009262085,
+        0.25310397148132324,
+        0.2714970111846924
+      ]
+    },
+    {
+      "id": "cleaning_tools",
+      "kind": "custom",
+      "evidence": [
+        "source observation; editable custom geometry"
+      ],
+      "confidence": 0.8,
+      "layout_lock": true,
+      "parameters": {},
+      "asset_resolution": {
+        "mode": "authored_A"
+      },
+      "position": [
+        0.14718997478485107,
+        -2.209311544895172,
+        0.9007292985916138
+      ],
+      "dimensions": [
+        2.704525947570801,
+        0.8999351263046265,
+        0.5012314319610596
+      ]
+    },
+    {
+      "id": "cart_liner",
+      "kind": "custom",
+      "evidence": [
+        "source observation; editable custom geometry"
+      ],
+      "confidence": 0.8,
+      "layout_lock": true,
+      "parameters": {},
+      "asset_resolution": {
+        "mode": "authored_A"
+      },
+      "position": [
+        0.6846261322498322,
+        -2.4209011793136597,
+        0.9463486671447754
+      ],
+      "dimensions": [
+        0.8421184420585632,
+        0.43237996101379395,
+        0.01668572425842285
+      ]
+    },
+    {
+      "id": "left_foreground_frame",
+      "kind": "custom",
+      "evidence": [
+        "source observation; editable custom geometry"
+      ],
+      "confidence": 0.8,
+      "layout_lock": true,
+      "parameters": {},
+      "asset_resolution": {
+        "mode": "authored_A"
+      },
+      "position": [
+        2.0057802200317383,
+        -2.887549638748169,
+        1.399999976158142
+      ],
+      "dimensions": [
+        0.13000011444091797,
+        0.08750009536743164,
+        2.799999952316284
+      ]
+    },
+    {
+      "id": "left_foreground_glass",
+      "kind": "custom",
+      "evidence": [
+        "source observation; editable custom geometry"
+      ],
+      "confidence": 0.8,
+      "layout_lock": true,
+      "parameters": {},
+      "asset_resolution": {
+        "mode": "authored_A"
+      },
+      "position": [
+        1.6107802391052246,
+        -2.850799798965454,
+        1.350000023841858
+      ],
+      "dimensions": [
+        0.880000114440918,
+        0.007999897003173828,
+        2.700000047683716
+      ]
+    },
+    {
+      "id": "door_leaf",
+      "kind": "custom",
+      "evidence": [
+        "source observation; editable custom geometry"
+      ],
+      "confidence": 0.8,
+      "layout_lock": true,
+      "parameters": {},
+      "asset_resolution": {
+        "mode": "authored_A"
+      },
+      "position": [
+        4.059499979019165,
+        -2.238160192966461,
+        1.090000033378601
+      ],
+      "dimensions": [
+        0.05699968338012695,
+        0.8796795606613159,
+        2.180000066757202
+      ]
+    },
+    {
+      "id": "ceiling_luminaire",
+      "kind": "ceiling_lamp",
+      "evidence": [
+        "unobserved completion hypothesis: ceiling panel, switched off in daylight reconstruction"
+      ],
+      "confidence": 0.1,
+      "layout_lock": true,
+      "parameters": {},
+      "asset_resolution": {
+        "mode": "authored_A"
+      },
+      "position": [
+        2.0000000596046448,
+        -2.099999964237213,
+        2.7869999408721924
+      ],
+      "dimensions": [
+        0.5900000333786011,
+        0.5900000333786011,
+        0.02500009536743164
+      ]
+    }
+  ],
+  "assumptions": [
+    "camera and visible window endpoints fitted to source; actual room-right corner is outside those endpoints",
+    "opaque room-right return width 0.68m inferred",
+    "unobserved front wall and ceiling lamp are completion hypotheses",
+    "external building and foliage schematic, not surveyed",
+    "black ribbed item function unconfirmed",
+    "all dimensions estimated in ceiling-height gauge; no metric truth"
+  ],
+  "model_version": 4,
+  "render_mode": "neutral",
+  "structure": {
+    "schema": "real2sim.assembly/1",
+    "model_version": 4,
+    "observation_sha256": "d7feee78a1d884fa0f4bc16d5740a6336945e1721c9b339a8d44d54a47057fa7",
+    "parameter_sha256": "5ae444d8174036cb8860b95b914ece6dbe35aeb0e3f1dfb3c83d58546fbfa948",
+    "assemblies": [
+      {
+        "entity": "table",
+        "frame": {
+          "position": [
+            1.262884370994383,
+            -0.6164340086568015,
+            0
+          ],
+          "yaw_rad": -0.10684634538649157
+        },
+        "parts": [
+          {
+            "id": "top",
+            "object": "table__top",
+            "entity": "table"
+          },
+          {
+            "id": "leg_near_left",
+            "object": "table__leg_near_left",
+            "entity": "table"
+          },
+          {
+            "id": "leg_near_right",
+            "object": "table__leg_near_right",
+            "entity": "table"
+          },
+          {
+            "id": "cross_near",
+            "object": "table__cross_near",
+            "entity": "table"
+          },
+          {
+            "id": "leg_far_left",
+            "object": "table__leg_far_left",
+            "entity": "table"
+          },
+          {
+            "id": "leg_far_right",
+            "object": "table__leg_far_right",
+            "entity": "table"
+          },
+          {
+            "id": "cross_far",
+            "object": "table__cross_far",
+            "entity": "table"
+          },
+          {
+            "id": "long_stretcher",
+            "object": "table__long_stretcher",
+            "entity": "table"
+          },
+          {
+            "id": "brace_near",
+            "object": "table__brace_near",
+            "entity": "table"
+          },
+          {
+            "id": "brace_far",
+            "object": "table__brace_far",
+            "entity": "table"
+          }
+        ],
+        "joints": [
+          {
+            "parts": [
+              "leg_near_left",
+              "top"
+            ],
+            "anchor_world": [
+              0.9395381144451163,
+              -0.9996795391392945,
+              0.7366647282564195
+            ],
+            "kind": "join",
+            "tolerance_m": 0.008
+          },
+          {
+            "parts": [
+              "leg_near_left",
+              "cross_near"
+            ],
+            "anchor_world": [
+              0.931325918436353,
+              -0.9863893242379472,
+              0.4
+            ],
+            "kind": "join",
+            "tolerance_m": 0.008
+          },
+          {
+            "parts": [
+              "leg_near_right",
+              "top"
+            ],
+            "anchor_world": [
+              1.4976010521891898,
+              -1.059534468855307,
+              0.7366647282564195
+            ],
+            "kind": "join",
+            "tolerance_m": 0.008
+          },
+          {
+            "parts": [
+              "leg_near_right",
+              "cross_near"
+            ],
+            "anchor_world": [
+              1.5084449138039027,
+              -1.0482881076352815,
+              0.4
+            ],
+            "kind": "join",
+            "tolerance_m": 0.008
+          },
+          {
+            "parts": [
+              "cross_near",
+              "long_stretcher"
+            ],
+            "anchor_world": [
+              1.2198854161201278,
+              -1.0173387159366143,
+              0.4
+            ],
+            "kind": "join",
+            "tolerance_m": 0.008
+          },
+          {
+            "parts": [
+              "leg_far_left",
+              "top"
+            ],
+            "anchor_world": [
+              1.0281676897995764,
+              -0.17333354845829613,
+              0.7366647282564195
+            ],
+            "kind": "join",
+            "tolerance_m": 0.008
+          },
+          {
+            "parts": [
+              "leg_far_left",
+              "cross_far"
+            ],
+            "anchor_world": [
+              1.0173238281848636,
+              -0.18457990967832172,
+              0.4
+            ],
+            "kind": "join",
+            "tolerance_m": 0.008
+          },
+          {
+            "parts": [
+              "leg_far_right",
+              "top"
+            ],
+            "anchor_world": [
+              1.58623062754365,
+              -0.2331884781743086,
+              0.7366647282564195
+            ],
+            "kind": "join",
+            "tolerance_m": 0.008
+          },
+          {
+            "parts": [
+              "leg_far_right",
+              "cross_far"
+            ],
+            "anchor_world": [
+              1.5944428235524133,
+              -0.24647869307565584,
+              0.4
+            ],
+            "kind": "join",
+            "tolerance_m": 0.008
+          },
+          {
+            "parts": [
+              "cross_far",
+              "long_stretcher"
+            ],
+            "anchor_world": [
+              1.3058833258686384,
+              -0.21552930137698878,
+              0.4
+            ],
+            "kind": "join",
+            "tolerance_m": 0.008
+          },
+          {
+            "parts": [
+              "brace_near",
+              "top"
+            ],
+            "anchor_world": [
+              1.234946787458738,
+              -0.8769126361540728,
+              0.7366647282564195
+            ],
+            "kind": "join",
+            "tolerance_m": 0.008
+          },
+          {
+            "parts": [
+              "brace_near",
+              "long_stretcher"
+            ],
+            "anchor_world": [
+              1.2513239916003231,
+              -0.7242182683108448,
+              0.4
+            ],
+            "kind": "join",
+            "tolerance_m": 0.008
+          },
+          {
+            "parts": [
+              "brace_far",
+              "top"
+            ],
+            "anchor_world": [
+              1.2908219545300281,
+              -0.3559553811595303,
+              0.7366647282564195
+            ],
+            "kind": "join",
+            "tolerance_m": 0.008
+          },
+          {
+            "parts": [
+              "brace_far",
+              "long_stretcher"
+            ],
+            "anchor_world": [
+              1.274444750388443,
+              -0.5086497490027583,
+              0.4
+            ],
+            "kind": "join",
+            "tolerance_m": 0.008
+          }
+        ],
+        "floor_supports": [
+          {
+            "part": "leg_near_left",
+            "point_world": [
+              0.9215008491282285,
+              -0.9704889143614333,
+              0.002
+            ],
+            "plane_z": 0,
+            "tolerance_m": 0.004
+          },
+          {
+            "part": "leg_near_right",
+            "point_world": [
+              1.5214185072031077,
+              -1.0348329638061466,
+              0.002
+            ],
+            "plane_z": 0,
+            "tolerance_m": 0.004
+          },
+          {
+            "part": "leg_far_left",
+            "point_world": [
+              1.0043502347856585,
+              -0.19803505350745648,
+              0.002
+            ],
+            "plane_z": 0,
+            "tolerance_m": 0.004
+          },
+          {
+            "part": "leg_far_right",
+            "point_world": [
+              1.6042678928605376,
+              -0.2623791029521699,
+              0.002
+            ],
+            "plane_z": 0,
+            "tolerance_m": 0.004
+          }
+        ],
+        "source_observation_ids": [
+          "t_top_0",
+          "t_top_1",
+          "t_top_2",
+          "t_top_3",
+          "t_foot_0",
+          "t_foot_3"
+        ],
+        "fit": {
+          "parameters": [
+            1.262884370994383,
+            -0.6164340086568015,
+            -0.10684634538649157,
+            0.7015795294089687,
+            0.903353666780103,
+            0.7536647282564195
+          ],
+          "parameter_names": [
+            "x_m",
+            "y_m",
+            "yaw_rad",
+            "width_m",
+            "length_m",
+            "height_m"
+          ],
+          "observation_ids": [
+            "t_top_0",
+            "t_top_1",
+            "t_top_2",
+            "t_top_3",
+            "t_foot_0",
+            "t_foot_3"
+          ],
+          "landmarks": [
+            {
+              "id": "t_top_0",
+              "landmark": "top_0",
+              "uv": [
+                615,
+                576
+              ],
+              "visibility": "observed",
+              "sigma_px": 4,
+              "world": [
+                0.865926787429087,
+                -1.0281257594761408,
+                0.7536647282564195
+              ],
+              "projected": [
+                607.6809077060324,
+                573.1846241527508
+              ],
+              "error_px": 7.84190366995736,
+              "part": "top"
+            },
+            {
+              "id": "t_top_1",
+              "landmark": "top_1",
+              "uv": [
+                740,
+                548
+              ],
+              "visibility": "observed",
+              "sigma_px": 4,
+              "world": [
+                0.9622632823795872,
+                -0.12992359569244688,
+                0.7536647282564195
+              ],
+              "projected": [
+                746.615034149394,
+                555.4505915196921
+              ],
+              "error_px": 9.963432681107285,
+              "part": "top"
+            },
+            {
+              "id": "t_top_2",
+              "landmark": "top_2",
+              "uv": [
+                849,
+                557
+              ],
+              "visibility": "observed",
+              "sigma_px": 4,
+              "world": [
+                1.6598419545596792,
+                -0.2047422578374623,
+                0.7536647282564195
+              ],
+              "projected": [
+                843.2120826994021,
+                564.7111753225727
+              ],
+              "error_px": 9.641691321236852,
+              "part": "top"
+            },
+            {
+              "id": "t_top_3",
+              "landmark": "top_3",
+              "uv": [
+                716,
+                596
+              ],
+              "visibility": "observed",
+              "sigma_px": 4,
+              "world": [
+                1.5635054596091789,
+                -1.1029444216211561,
+                0.7536647282564195
+              ],
+              "projected": [
+                715.2457421171171,
+                587.621140777057
+              ],
+              "error_px": 8.41273955568505,
+              "part": "top"
+            },
+            {
+              "id": "t_foot_0",
+              "landmark": "foot_0",
+              "uv": [
+                638,
+                724
+              ],
+              "visibility": "observed",
+              "sigma_px": 4,
+              "world": [
+                0.9215008491282286,
+                -0.9704889143614333,
+                0.002
+              ],
+              "projected": [
+                639.0309602214911,
+                721.80055635426
+              ],
+              "error_px": 2.4290803463621575,
+              "part": "leg_near_left"
+            },
+            {
+              "id": "t_foot_3",
+              "landmark": "foot_3",
+              "uv": [
+                720,
+                747
+              ],
+              "visibility": "observed",
+              "sigma_px": 4,
+              "world": [
+                1.5214185072031075,
+                -1.0348329638061466,
+                0.002
+              ],
+              "projected": [
+                726.7870454472203,
+                748.6433187332841
+              ],
+              "error_px": 6.9831570483411145,
+              "part": "leg_near_right"
+            }
+          ],
+          "median_error_px": 8.127321612821206,
+          "max_error_px": 9.963432681107285,
+          "uncertainty": [
+            "far feet partly hidden by chairs and rails; not used as measured landmarks",
+            "underside diagonal brace arrangement partly occluded",
+            "absolute dimensions inherit ceiling-height prior"
+          ]
+        },
+        "assumptions": [
+          "far feet partly hidden by chairs and rails; not used as measured landmarks",
+          "underside diagonal brace arrangement partly occluded",
+          "absolute dimensions inherit ceiling-height prior"
+        ],
+        "cross_centers": [
+          [
+            0,
+            -0.40320403574293573,
+            0.4
+          ],
+          [
+            0,
+            0.40320403574293573,
+            0.4
+          ]
+        ]
+      },
+      {
+        "entity": "chair_near",
+        "frame": {
+          "position": [
+            1.7023032803017566,
+            -0.5546148536735628,
+            0
+          ],
+          "yaw_rad": -1.6520651588744393
+        },
+        "parts": [
+          {
+            "id": "seat_board",
+            "object": "chair_near__seat_board",
+            "entity": "chair_near"
+          },
+          {
+            "id": "pad",
+            "object": "chair_near__pad",
+            "entity": "chair_near_cushion"
+          },
+          {
+            "id": "front_left_leg",
+            "object": "chair_near__front_left_leg",
+            "entity": "chair_near"
+          },
+          {
+            "id": "rear_left_leg",
+            "object": "chair_near__rear_left_leg",
+            "entity": "chair_near"
+          },
+          {
+            "id": "back_left_post",
+            "object": "chair_near__back_left_post",
+            "entity": "chair_near"
+          },
+          {
+            "id": "front_right_leg",
+            "object": "chair_near__front_right_leg",
+            "entity": "chair_near"
+          },
+          {
+            "id": "rear_right_leg",
+            "object": "chair_near__rear_right_leg",
+            "entity": "chair_near"
+          },
+          {
+            "id": "back_right_post",
+            "object": "chair_near__back_right_post",
+            "entity": "chair_near"
+          },
+          {
+            "id": "front_apron",
+            "object": "chair_near__front_apron",
+            "entity": "chair_near"
+          },
+          {
+            "id": "back_apron",
+            "object": "chair_near__back_apron",
+            "entity": "chair_near"
+          },
+          {
+            "id": "left_apron",
+            "object": "chair_near__left_apron",
+            "entity": "chair_near"
+          },
+          {
+            "id": "right_apron",
+            "object": "chair_near__right_apron",
+            "entity": "chair_near"
+          },
+          {
+            "id": "back_rail",
+            "object": "chair_near__back_rail",
+            "entity": "chair_near"
+          }
+        ],
+        "joints": [
+          {
+            "parts": [
+              "pad",
+              "seat_board"
+            ],
+            "anchor_world": [
+              1.7023032803017566,
+              -0.5546148536735628,
+              0.3874688169218813
+            ],
+            "kind": "support_contact",
+            "tolerance_m": 0.008
+          },
+          {
+            "parts": [
+              "front_left_leg",
+              "seat_board"
+            ],
+            "anchor_world": [
+              1.5394413296884113,
+              -0.3955893925730278,
+              0.3824688169218813
+            ],
+            "kind": "join",
+            "tolerance_m": 0.008
+          },
+          {
+            "parts": [
+              "front_left_leg",
+              "front_apron"
+            ],
+            "anchor_world": [
+              1.5394413296884113,
+              -0.3955893925730278,
+              0.35246881692188126
+            ],
+            "kind": "join",
+            "tolerance_m": 0.008
+          },
+          {
+            "parts": [
+              "front_left_leg",
+              "left_apron"
+            ],
+            "anchor_world": [
+              1.5394413296884113,
+              -0.3955893925730278,
+              0.35246881692188126
+            ],
+            "kind": "join",
+            "tolerance_m": 0.008
+          },
+          {
+            "parts": [
+              "rear_left_leg",
+              "seat_board"
+            ],
+            "anchor_world": [
+              1.8887526472993996,
+              -0.4240401785562194,
+              0.3824688169218813
+            ],
+            "kind": "join",
+            "tolerance_m": 0.008
+          },
+          {
+            "parts": [
+              "rear_left_leg",
+              "back_apron"
+            ],
+            "anchor_world": [
+              1.8887526472993996,
+              -0.4240401785562194,
+              0.35246881692188126
+            ],
+            "kind": "join",
+            "tolerance_m": 0.008
+          },
+          {
+            "parts": [
+              "rear_left_leg",
+              "left_apron"
+            ],
+            "anchor_world": [
+              1.8887526472993996,
+              -0.4240401785562194,
+              0.35246881692188126
+            ],
+            "kind": "join",
+            "tolerance_m": 0.008
+          },
+          {
+            "parts": [
+              "back_left_post",
+              "rear_left_leg"
+            ],
+            "anchor_world": [
+              1.8887526472993996,
+              -0.4240401785562194,
+              0.3814688169218813
+            ],
+            "kind": "join",
+            "tolerance_m": 0.008
+          },
+          {
+            "parts": [
+              "back_left_post",
+              "seat_board"
+            ],
+            "anchor_world": [
+              1.8887526472993996,
+              -0.4240401785562194,
+              0.3814688169218813
+            ],
+            "kind": "join",
+            "tolerance_m": 0.008
+          },
+          {
+            "parts": [
+              "back_left_post",
+              "back_rail"
+            ],
+            "anchor_world": [
+              1.8920179198620486,
+              -0.4393558005589155,
+              0.6493803277595892
+            ],
+            "kind": "join",
+            "tolerance_m": 0.008
+          },
+          {
+            "parts": [
+              "front_right_leg",
+              "seat_board"
+            ],
+            "anchor_world": [
+              1.5158539133041136,
+              -0.6851895287909061,
+              0.3824688169218813
+            ],
+            "kind": "join",
+            "tolerance_m": 0.008
+          },
+          {
+            "parts": [
+              "front_right_leg",
+              "front_apron"
+            ],
+            "anchor_world": [
+              1.5158539133041136,
+              -0.6851895287909061,
+              0.35246881692188126
+            ],
+            "kind": "join",
+            "tolerance_m": 0.008
+          },
+          {
+            "parts": [
+              "front_right_leg",
+              "right_apron"
+            ],
+            "anchor_world": [
+              1.5158539133041136,
+              -0.6851895287909061,
+              0.35246881692188126
+            ],
+            "kind": "join",
+            "tolerance_m": 0.008
+          },
+          {
+            "parts": [
+              "rear_right_leg",
+              "seat_board"
+            ],
+            "anchor_world": [
+              1.865165230915102,
+              -0.7136403147740978,
+              0.3824688169218813
+            ],
+            "kind": "join",
+            "tolerance_m": 0.008
+          },
+          {
+            "parts": [
+              "rear_right_leg",
+              "back_apron"
+            ],
+            "anchor_world": [
+              1.865165230915102,
+              -0.7136403147740978,
+              0.35246881692188126
+            ],
+            "kind": "join",
+            "tolerance_m": 0.008
+          },
+          {
+            "parts": [
+              "rear_right_leg",
+              "right_apron"
+            ],
+            "anchor_world": [
+              1.865165230915102,
+              -0.7136403147740978,
+              0.35246881692188126
+            ],
+            "kind": "join",
+            "tolerance_m": 0.008
+          },
+          {
+            "parts": [
+              "back_right_post",
+              "rear_right_leg"
+            ],
+            "anchor_world": [
+              1.865165230915102,
+              -0.7136403147740978,
+              0.3814688169218813
+            ],
+            "kind": "join",
+            "tolerance_m": 0.008
+          },
+          {
+            "parts": [
+              "back_right_post",
+              "seat_board"
+            ],
+            "anchor_world": [
+              1.865165230915102,
+              -0.7136403147740978,
+              0.3814688169218813
+            ],
+            "kind": "join",
+            "tolerance_m": 0.008
+          },
+          {
+            "parts": [
+              "back_right_post",
+              "back_rail"
+            ],
+            "anchor_world": [
+              1.8708658855762408,
+              -0.6990549516085028,
+              0.6493803277595892
+            ],
+            "kind": "join",
+            "tolerance_m": 0.008
+          },
+          {
+            "parts": [
+              "front_apron",
+              "seat_board"
+            ],
+            "anchor_world": [
+              1.5276476214962624,
+              -0.5403894606819669,
+              0.36846881692188127
+            ],
+            "kind": "support_contact",
+            "tolerance_m": 0.008
+          },
+          {
+            "parts": [
+              "back_apron",
+              "seat_board"
+            ],
+            "anchor_world": [
+              1.8769589391072508,
+              -0.5688402466651586,
+              0.36846881692188127
+            ],
+            "kind": "support_contact",
+            "tolerance_m": 0.008
+          },
+          {
+            "parts": [
+              "left_apron",
+              "seat_board"
+            ],
+            "anchor_world": [
+              1.7140969884939055,
+              -0.4098147855646236,
+              0.36846881692188127
+            ],
+            "kind": "support_contact",
+            "tolerance_m": 0.008
+          },
+          {
+            "parts": [
+              "right_apron",
+              "seat_board"
+            ],
+            "anchor_world": [
+              1.6905095721096077,
+              -0.699414921782502,
+              0.36846881692188127
+            ],
+            "kind": "support_contact",
+            "tolerance_m": 0.008
+          },
+          {
+            "parts": [
+              "front_apron",
+              "left_apron"
+            ],
+            "anchor_world": [
+              1.5394413296884113,
+              -0.3955893925730278,
+              0.35246881692188126
+            ],
+            "kind": "join",
+            "tolerance_m": 0.008
+          },
+          {
+            "parts": [
+              "front_apron",
+              "right_apron"
+            ],
+            "anchor_world": [
+              1.5158539133041136,
+              -0.6851895287909061,
+              0.35246881692188126
+            ],
+            "kind": "join",
+            "tolerance_m": 0.008
+          },
+          {
+            "parts": [
+              "back_apron",
+              "left_apron"
+            ],
+            "anchor_world": [
+              1.8887526472993996,
+              -0.4240401785562194,
+              0.35246881692188126
+            ],
+            "kind": "join",
+            "tolerance_m": 0.008
+          },
+          {
+            "parts": [
+              "back_apron",
+              "right_apron"
+            ],
+            "anchor_world": [
+              1.865165230915102,
+              -0.7136403147740978,
+              0.35246881692188126
+            ],
+            "kind": "join",
+            "tolerance_m": 0.008
+          }
+        ],
+        "floor_supports": [
+          {
+            "part": "front_left_leg",
+            "point_world": [
+              1.5394413296884113,
+              -0.3955893925730278,
+              0.002
+            ],
+            "plane_z": 0,
+            "tolerance_m": 0.004
+          },
+          {
+            "part": "rear_left_leg",
+            "point_world": [
+              1.8887526472993996,
+              -0.4240401785562194,
+              0.002
+            ],
+            "plane_z": 0,
+            "tolerance_m": 0.004
+          },
+          {
+            "part": "front_right_leg",
+            "point_world": [
+              1.5158539133041136,
+              -0.6851895287909061,
+              0.002
+            ],
+            "plane_z": 0,
+            "tolerance_m": 0.004
+          },
+          {
+            "part": "rear_right_leg",
+            "point_world": [
+              1.865165230915102,
+              -0.7136403147740978,
+              0.002
+            ],
+            "plane_z": 0,
+            "tolerance_m": 0.004
+          }
+        ],
+        "source_observation_ids": [
+          "n_seat_0",
+          "n_seat_1",
+          "n_seat_2",
+          "n_seat_3",
+          "n_foot_0",
+          "n_foot_1",
+          "n_foot_2",
+          "n_foot_3",
+          "n_back_post_2",
+          "n_back_post_3"
+        ],
+        "fit": {
+          "parameters": [
+            1.7023032803017566,
+            -0.5546148536735628,
+            -1.6520651588744393,
+            0.33055912497992546,
+            0.3904680353957918,
+            0.41746881692188126,
+            0.6636728466068973
+          ],
+          "parameter_names": [
+            "x_m",
+            "y_m",
+            "yaw_rad",
+            "width_m",
+            "depth_m",
+            "seat_top_m",
+            "back_top_m"
+          ],
+          "observation_ids": [
+            "n_seat_0",
+            "n_seat_1",
+            "n_seat_2",
+            "n_seat_3",
+            "n_foot_0",
+            "n_foot_1",
+            "n_foot_2",
+            "n_foot_3",
+            "n_back_post_2",
+            "n_back_post_3"
+          ],
+          "landmarks": [
+            {
+              "id": "n_seat_0",
+              "landmark": "seat_0",
+              "uv": [
+                766,
+                639
+              ],
+              "visibility": "observed",
+              "sigma_px": 4,
+              "world": [
+                1.4986078507618308,
+                -0.6998378504281335,
+                0.41746881692188126
+              ],
+              "projected": [
+                764.6211553407835,
+                642.4189100192868
+              ],
+              "error_px": 3.6864831905529973,
+              "part": "pad"
+            },
+            {
+              "id": "n_seat_1",
+              "landmark": "seat_1",
+              "uv": [
+                801,
+                624
+              ],
+              "visibility": "partial",
+              "sigma_px": 7,
+              "world": [
+                1.524793008051184,
+                -0.3783433300307448,
+                0.41746881692188126
+              ],
+              "projected": [
+                805.4137129421888,
+                629.3374749065689
+              ],
+              "error_px": 6.9260017552912565,
+              "part": "pad"
+            },
+            {
+              "id": "n_seat_2",
+              "landmark": "seat_2",
+              "uv": [
+                862,
+                640
+              ],
+              "visibility": "observed",
+              "sigma_px": 4,
+              "world": [
+                1.8751010251677818,
+                -0.4068752954172194,
+                0.41746881692188126
+              ],
+              "projected": [
+                861.0889803798217,
+                637.9164307506416
+              ],
+              "error_px": 2.274031126704723,
+              "part": "pad"
+            },
+            {
+              "id": "n_seat_3",
+              "landmark": "seat_3",
+              "uv": [
+                827,
+                655
+              ],
+              "visibility": "observed",
+              "sigma_px": 4,
+              "world": [
+                1.8489158678784285,
+                -0.7283698158146081,
+                0.41746881692188126
+              ],
+              "projected": [
+                823.4705972555665,
+                652.5863013436381
+              ],
+              "error_px": 4.275818627600788,
+              "part": "pad"
+            },
+            {
+              "id": "n_foot_0",
+              "landmark": "foot_0",
+              "uv": [
+                774,
+                723
+              ],
+              "visibility": "observed",
+              "sigma_px": 4,
+              "world": [
+                1.5158539133041138,
+                -0.6851895287909062,
+                0.002
+              ],
+              "projected": [
+                772.0766756246785,
+                721.9004854515761
+              ],
+              "error_px": 2.2154252176279243,
+              "part": "front_right_leg"
+            },
+            {
+              "id": "n_foot_1",
+              "landmark": "foot_1",
+              "uv": [
+                808,
+                700
+              ],
+              "visibility": "partial",
+              "sigma_px": 7,
+              "world": [
+                1.5394413296884113,
+                -0.3955893925730277,
+                0.002
+              ],
+              "projected": [
+                807.5038348282303,
+                704.3753141475347
+              ],
+              "error_px": 4.403357101950127,
+              "part": "front_left_leg"
+            },
+            {
+              "id": "n_foot_2",
+              "landmark": "foot_2",
+              "uv": [
+                861,
+                715
+              ],
+              "visibility": "observed",
+              "sigma_px": 4,
+              "world": [
+                1.8887526472993994,
+                -0.4240401785562194,
+                0.002
+              ],
+              "projected": [
+                861.9164370007547,
+                716.525274206248
+              ],
+              "error_px": 1.7794151231789204,
+              "part": "rear_left_leg"
+            },
+            {
+              "id": "n_foot_3",
+              "landmark": "foot_3",
+              "uv": [
+                829,
+                736
+              ],
+              "visibility": "observed",
+              "sigma_px": 4,
+              "world": [
+                1.865165230915102,
+                -0.7136403147740978,
+                0.002
+              ],
+              "projected": [
+                829.223322583221,
+                736.0529568692264
+              ],
+              "error_px": 0.22951559026517943,
+              "part": "rear_right_leg"
+            },
+            {
+              "id": "n_back_post_2",
+              "landmark": "back_post_2",
+              "uv": [
+                858,
+                598
+              ],
+              "visibility": "observed",
+              "sigma_px": 5,
+              "world": [
+                1.8955085522950321,
+                -0.4396401063666288,
+                0.6516728466068973
+              ],
+              "projected": [
+                861.6190731901696,
+                593.8327806946206
+              ],
+              "error_px": 5.51936658457572,
+              "part": "back_left_post"
+            },
+            {
+              "id": "n_back_post_3",
+              "landmark": "back_post_3",
+              "uv": [
+                826,
+                607
+              ],
+              "visibility": "observed",
+              "sigma_px": 5,
+              "world": [
+                1.8743565180092243,
+                -0.6993392574162163,
+                0.6516728466068973
+              ],
+              "projected": [
+                830.9002717278778,
+                602.2742953259797
+              ],
+              "error_px": 6.807712367094842,
+              "part": "back_right_post"
+            }
+          ],
+          "median_error_px": 3.981150909076893,
+          "max_error_px": 6.9260017552912565,
+          "uncertainty": [
+            "bowed back-rail curvature and hidden joinery estimated",
+            "front-right foot partly shadowed",
+            "green pad interpreted as foam, material unmeasured"
+          ]
+        },
+        "assumptions": [
+          "bowed back-rail curvature and hidden joinery estimated",
+          "front-right foot partly shadowed",
+          "green pad interpreted as foam, material unmeasured"
+        ]
+      },
+      {
+        "entity": "chair_far",
+        "frame": {
+          "position": [
+            0.558879683115407,
+            -0.3747168773852648,
+            0
+          ],
+          "yaw_rad": 1.364900764029294
+        },
+        "parts": [
+          {
+            "id": "seat_board",
+            "object": "chair_far__seat_board",
+            "entity": "chair_far"
+          },
+          {
+            "id": "pad",
+            "object": "chair_far__pad",
+            "entity": "chair_far_cushion"
+          },
+          {
+            "id": "front_left_leg",
+            "object": "chair_far__front_left_leg",
+            "entity": "chair_far"
+          },
+          {
+            "id": "rear_left_leg",
+            "object": "chair_far__rear_left_leg",
+            "entity": "chair_far"
+          },
+          {
+            "id": "back_left_post",
+            "object": "chair_far__back_left_post",
+            "entity": "chair_far"
+          },
+          {
+            "id": "front_right_leg",
+            "object": "chair_far__front_right_leg",
+            "entity": "chair_far"
+          },
+          {
+            "id": "rear_right_leg",
+            "object": "chair_far__rear_right_leg",
+            "entity": "chair_far"
+          },
+          {
+            "id": "back_right_post",
+            "object": "chair_far__back_right_post",
+            "entity": "chair_far"
+          },
+          {
+            "id": "front_apron",
+            "object": "chair_far__front_apron",
+            "entity": "chair_far"
+          },
+          {
+            "id": "back_apron",
+            "object": "chair_far__back_apron",
+            "entity": "chair_far"
+          },
+          {
+            "id": "left_apron",
+            "object": "chair_far__left_apron",
+            "entity": "chair_far"
+          },
+          {
+            "id": "right_apron",
+            "object": "chair_far__right_apron",
+            "entity": "chair_far"
+          },
+          {
+            "id": "back_rail",
+            "object": "chair_far__back_rail",
+            "entity": "chair_far"
+          }
+        ],
+        "joints": [
+          {
+            "parts": [
+              "pad",
+              "seat_board"
+            ],
+            "anchor_world": [
+              0.558879683115407,
+              -0.3747168773852648,
+              0.3874688169218813
+            ],
+            "kind": "support_contact",
+            "tolerance_m": 0.008
+          },
+          {
+            "parts": [
+              "front_left_leg",
+              "seat_board"
+            ],
+            "anchor_world": [
+              0.7007109390838561,
+              -0.552753410339133,
+              0.3824688169218813
+            ],
+            "kind": "join",
+            "tolerance_m": 0.008
+          },
+          {
+            "parts": [
+              "front_left_leg",
+              "front_apron"
+            ],
+            "anchor_world": [
+              0.7007109390838561,
+              -0.552753410339133,
+              0.35246881692188126
+            ],
+            "kind": "join",
+            "tolerance_m": 0.008
+          },
+          {
+            "parts": [
+              "front_left_leg",
+              "left_apron"
+            ],
+            "anchor_world": [
+              0.7007109390838561,
+              -0.552753410339133,
+              0.35246881692188126
+            ],
+            "kind": "join",
+            "tolerance_m": 0.008
+          },
+          {
+            "parts": [
+              "rear_left_leg",
+              "seat_board"
+            ],
+            "anchor_world": [
+              0.3576453897339079,
+              -0.481102362311876,
+              0.3824688169218813
+            ],
+            "kind": "join",
+            "tolerance_m": 0.008
+          },
+          {
+            "parts": [
+              "rear_left_leg",
+              "back_apron"
+            ],
+            "anchor_world": [
+              0.3576453897339079,
+              -0.481102362311876,
+              0.35246881692188126
+            ],
+            "kind": "join",
+            "tolerance_m": 0.008
+          },
+          {
+            "parts": [
+              "rear_left_leg",
+              "left_apron"
+            ],
+            "anchor_world": [
+              0.3576453897339079,
+              -0.481102362311876,
+              0.35246881692188126
+            ],
+            "kind": "join",
+            "tolerance_m": 0.008
+          },
+          {
+            "parts": [
+              "back_left_post",
+              "rear_left_leg"
+            ],
+            "anchor_world": [
+              0.3576453897339079,
+              -0.481102362311876,
+              0.3814688169218813
+            ],
+            "kind": "join",
+            "tolerance_m": 0.008
+          },
+          {
+            "parts": [
+              "back_left_post",
+              "seat_board"
+            ],
+            "anchor_world": [
+              0.3576453897339079,
+              -0.481102362311876,
+              0.3814688169218813
+            ],
+            "kind": "join",
+            "tolerance_m": 0.008
+          },
+          {
+            "parts": [
+              "back_left_post",
+              "back_rail"
+            ],
+            "anchor_world": [
+              0.35630924089325594,
+              -0.46549963855884224,
+              0.6493803277595892
+            ],
+            "kind": "join",
+            "tolerance_m": 0.008
+          },
+          {
+            "parts": [
+              "front_right_leg",
+              "seat_board"
+            ],
+            "anchor_world": [
+              0.7601139764969062,
+              -0.2683313924586537,
+              0.3824688169218813
+            ],
+            "kind": "join",
+            "tolerance_m": 0.008
+          },
+          {
+            "parts": [
+              "front_right_leg",
+              "front_apron"
+            ],
+            "anchor_world": [
+              0.7601139764969062,
+              -0.2683313924586537,
+              0.35246881692188126
+            ],
+            "kind": "join",
+            "tolerance_m": 0.008
+          },
+          {
+            "parts": [
+              "front_right_leg",
+              "right_apron"
+            ],
+            "anchor_world": [
+              0.7601139764969062,
+              -0.2683313924586537,
+              0.35246881692188126
+            ],
+            "kind": "join",
+            "tolerance_m": 0.008
+          },
+          {
+            "parts": [
+              "rear_right_leg",
+              "seat_board"
+            ],
+            "anchor_world": [
+              0.417048427146958,
+              -0.19668034443139665,
+              0.3824688169218813
+            ],
+            "kind": "join",
+            "tolerance_m": 0.008
+          },
+          {
+            "parts": [
+              "rear_right_leg",
+              "back_apron"
+            ],
+            "anchor_world": [
+              0.417048427146958,
+              -0.19668034443139665,
+              0.35246881692188126
+            ],
+            "kind": "join",
+            "tolerance_m": 0.008
+          },
+          {
+            "parts": [
+              "rear_right_leg",
+              "right_apron"
+            ],
+            "anchor_world": [
+              0.417048427146958,
+              -0.19668034443139665,
+              0.35246881692188126
+            ],
+            "kind": "join",
+            "tolerance_m": 0.008
+          },
+          {
+            "parts": [
+              "back_right_post",
+              "rear_right_leg"
+            ],
+            "anchor_world": [
+              0.417048427146958,
+              -0.19668034443139665,
+              0.3814688169218813
+            ],
+            "kind": "join",
+            "tolerance_m": 0.008
+          },
+          {
+            "parts": [
+              "back_right_post",
+              "seat_board"
+            ],
+            "anchor_world": [
+              0.417048427146958,
+              -0.19668034443139665,
+              0.3814688169218813
+            ],
+            "kind": "join",
+            "tolerance_m": 0.008
+          },
+          {
+            "parts": [
+              "back_right_post",
+              "back_rail"
+            ],
+            "anchor_world": [
+              0.40957896164480173,
+              -0.21044396922103528,
+              0.6493803277595892
+            ],
+            "kind": "join",
+            "tolerance_m": 0.008
+          },
+          {
+            "parts": [
+              "front_apron",
+              "seat_board"
+            ],
+            "anchor_world": [
+              0.7304124577903811,
+              -0.4105424013988933,
+              0.36846881692188127
+            ],
+            "kind": "support_contact",
+            "tolerance_m": 0.008
+          },
+          {
+            "parts": [
+              "back_apron",
+              "seat_board"
+            ],
+            "anchor_world": [
+              0.38734690844043296,
+              -0.33889135337163634,
+              0.36846881692188127
+            ],
+            "kind": "support_contact",
+            "tolerance_m": 0.008
+          },
+          {
+            "parts": [
+              "left_apron",
+              "seat_board"
+            ],
+            "anchor_world": [
+              0.529178164408882,
+              -0.5169278863255045,
+              0.36846881692188127
+            ],
+            "kind": "support_contact",
+            "tolerance_m": 0.008
+          },
+          {
+            "parts": [
+              "right_apron",
+              "seat_board"
+            ],
+            "anchor_world": [
+              0.5885812018219321,
+              -0.23250586844502516,
+              0.36846881692188127
+            ],
+            "kind": "support_contact",
+            "tolerance_m": 0.008
+          },
+          {
+            "parts": [
+              "front_apron",
+              "left_apron"
+            ],
+            "anchor_world": [
+              0.7007109390838561,
+              -0.552753410339133,
+              0.35246881692188126
+            ],
+            "kind": "join",
+            "tolerance_m": 0.008
+          },
+          {
+            "parts": [
+              "front_apron",
+              "right_apron"
+            ],
+            "anchor_world": [
+              0.7601139764969062,
+              -0.2683313924586537,
+              0.35246881692188126
+            ],
+            "kind": "join",
+            "tolerance_m": 0.008
+          },
+          {
+            "parts": [
+              "back_apron",
+              "left_apron"
+            ],
+            "anchor_world": [
+              0.3576453897339079,
+              -0.481102362311876,
+              0.35246881692188126
+            ],
+            "kind": "join",
+            "tolerance_m": 0.008
+          },
+          {
+            "parts": [
+              "back_apron",
+              "right_apron"
+            ],
+            "anchor_world": [
+              0.417048427146958,
+              -0.19668034443139665,
+              0.35246881692188126
+            ],
+            "kind": "join",
+            "tolerance_m": 0.008
+          }
+        ],
+        "floor_supports": [
+          {
+            "part": "front_left_leg",
+            "point_world": [
+              0.7007109390838561,
+              -0.552753410339133,
+              0.002
+            ],
+            "plane_z": 0,
+            "tolerance_m": 0.004
+          },
+          {
+            "part": "rear_left_leg",
+            "point_world": [
+              0.3576453897339079,
+              -0.481102362311876,
+              0.002
+            ],
+            "plane_z": 0,
+            "tolerance_m": 0.004
+          },
+          {
+            "part": "front_right_leg",
+            "point_world": [
+              0.7601139764969062,
+              -0.2683313924586537,
+              0.002
+            ],
+            "plane_z": 0,
+            "tolerance_m": 0.004
+          },
+          {
+            "part": "rear_right_leg",
+            "point_world": [
+              0.417048427146958,
+              -0.19668034443139665,
+              0.002
+            ],
+            "plane_z": 0,
+            "tolerance_m": 0.004
+          }
+        ],
+        "source_observation_ids": [
+          "f_seat_0",
+          "f_seat_1",
+          "f_seat_2",
+          "f_seat_3",
+          "f_foot_0",
+          "f_back_post_0",
+          "f_back_post_1"
+        ],
+        "fit": {
+          "parameters": [
+            0.558879683115407,
+            -0.3747168773852648,
+            1.364900764029294,
+            0.33055912497992546,
+            0.3904680353957918,
+            0.41746881692188126,
+            0.6636728466068973
+          ],
+          "parameter_names": [
+            "x_m",
+            "y_m",
+            "yaw_rad",
+            "width_m",
+            "depth_m",
+            "seat_top_m",
+            "back_top_m"
+          ],
+          "observation_ids": [
+            "f_seat_0",
+            "f_seat_1",
+            "f_seat_2",
+            "f_seat_3",
+            "f_foot_0",
+            "f_back_post_0",
+            "f_back_post_1"
+          ],
+          "landmarks": [
+            {
+              "id": "f_seat_0",
+              "landmark": "seat_0",
+              "uv": [
+                629,
+                611
+              ],
+              "visibility": "observed",
+              "sigma_px": 5,
+              "world": [
+                0.3690574617857751,
+                -0.49983107319872006,
+                0.41746881692188126
+              ],
+              "projected": [
+                626.8815808003319,
+                612.5299520521264
+              ],
+              "error_px": 2.6131309166071754,
+              "part": "pad"
+            },
+            {
+              "id": "f_seat_1",
+              "landmark": "seat_1",
+              "uv": [
+                672,
+                600
+              ],
+              "visibility": "partial",
+              "sigma_px": 7,
+              "world": [
+                0.4350027036377632,
+                -0.18408495020605695,
+                0.41746881692188126
+              ],
+              "projected": [
+                675.2620520372916,
+                604.39651469161
+              ],
+              "error_px": 5.47451595372058,
+              "part": "pad"
+            },
+            {
+              "id": "f_seat_2",
+              "landmark": "seat_2",
+              "uv": [
+                710,
+                612
+              ],
+              "visibility": "partial",
+              "sigma_px": 7,
+              "world": [
+                0.779047131272467,
+                -0.25594044212203076,
+                0.41746881692188126
+              ],
+              "projected": [
+                710.5940548085098,
+                611.7173473839205
+              ],
+              "error_px": 0.6578705168117782,
+              "part": "pad"
+            },
+            {
+              "id": "f_seat_3",
+              "landmark": "seat_3",
+              "uv": [
+                663,
+                626
+              ],
+              "visibility": "observed",
+              "sigma_px": 5,
+              "world": [
+                0.7131018894204789,
+                -0.5716865651146938,
+                0.41746881692188126
+              ],
+              "projected": [
+                662.0948132127078,
+                620.8766241931909
+              ],
+              "error_px": 5.202724553316794,
+              "part": "pad"
+            },
+            {
+              "id": "f_foot_0",
+              "landmark": "foot_0",
+              "uv": [
+                627,
+                682
+              ],
+              "visibility": "observed",
+              "sigma_px": 5,
+              "world": [
+                0.3576453897339079,
+                -0.481102362311876,
+                0.002
+              ],
+              "projected": [
+                633.7040373303498,
+                678.7393040519073
+              ],
+              "error_px": 7.45494832930665,
+              "part": "rear_left_leg"
+            },
+            {
+              "id": "f_back_post_0",
+              "landmark": "back_post_0",
+              "uv": [
+                629,
+                568
+              ],
+              "visibility": "observed",
+              "sigma_px": 5,
+              "world": [
+                0.3528810217866142,
+                -0.4647836369308053,
+                0.6516728466068973
+              ],
+              "projected": [
+                626.3689916560396,
+                572.1234326102012
+              ],
+              "error_px": 4.891308761145646,
+              "part": "back_left_post"
+            },
+            {
+              "id": "f_back_post_1",
+              "landmark": "back_post_1",
+              "uv": [
+                669,
+                561
+              ],
+              "visibility": "observed",
+              "sigma_px": 5,
+              "world": [
+                0.40615074253815997,
+                -0.20972796759299833,
+                0.6516728466068973
+              ],
+              "projected": [
+                666.1222996941369,
+                567.664935888398
+              ],
+              "error_px": 7.259650779949375,
+              "part": "back_right_post"
+            }
+          ],
+          "median_error_px": 5.202724553316794,
+          "max_error_px": 7.45494832930665,
+          "uncertainty": [
+            "three feet not used as observed position constraints",
+            "same furniture family is a structural prior, no exact SKU confirmed"
+          ]
+        },
+        "assumptions": [
+          "three feet not used as observed position constraints",
+          "same furniture family is a structural prior, no exact SKU confirmed"
+        ]
+      }
+    ],
+    "unexpected_interpenetration_tolerance_m": 0.002,
+    "acceptance": {
+      "landmark_median_px": 9,
+      "landmark_max_px": 18,
+      "joint_tolerance_m": 0.008,
+      "floor_tolerance_m": 0.004,
+      "unexpected_interpenetration_tolerance_m": 0.002,
+      "requires_manual_source_and_multiview_review": true,
+      "independent_reality_accuracy": false
+    }
+  }
+}

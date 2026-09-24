@@ -1,0 +1,98 @@
+{
+  "strategy_A": "All geometry independently authored; external mesh files not opened.",
+  "strategy_B": "Exact-identity verification precedes any mesh download. No qualifying exact assets.",
+  "objects": [
+    {
+      "entity": "column",
+      "mode": "fallback_A",
+      "reason": "Brand/model/variant cannot be verified from the available view; no similar mesh substitution",
+      "asset_downloaded": false,
+      "licence": "not applicable, no asset adopted"
+    },
+    {
+      "entity": "table",
+      "mode": "fallback_A",
+      "reason": "Brand/model/variant cannot be verified from the available view; no similar mesh substitution",
+      "asset_downloaded": false,
+      "licence": "not applicable, no asset adopted"
+    },
+    {
+      "entity": "chair_near",
+      "mode": "fallback_A",
+      "reason": "Brand/model/variant cannot be verified from the available view; no similar mesh substitution",
+      "asset_downloaded": false,
+      "licence": "not applicable, no asset adopted"
+    },
+    {
+      "entity": "chair_far",
+      "mode": "fallback_A",
+      "reason": "Brand/model/variant cannot be verified from the available view; no similar mesh substitution",
+      "asset_downloaded": false,
+      "licence": "not applicable, no asset adopted"
+    },
+    {
+      "entity": "rack",
+      "mode": "fallback_A",
+      "reason": "Brand/model/variant cannot be verified from the available view; no similar mesh substitution",
+      "asset_downloaded": false,
+      "licence": "not applicable, no asset adopted"
+    },
+    {
+      "entity": "garments",
+      "mode": "fallback_A",
+      "reason": "Brand/model/variant cannot be verified from the available view; no similar mesh substitution",
+      "asset_downloaded": false,
+      "licence": "not applicable, no asset adopted"
+    },
+    {
+      "entity": "cabinet",
+      "mode": "fallback_A",
+      "reason": "Brand/model/variant cannot be verified from the available view; no similar mesh substitution",
+      "asset_downloaded": false,
+      "licence": "not applicable, no asset adopted"
+    },
+    {
+      "entity": "cleaning_cart",
+      "mode": "fallback_A",
+      "reason": "Brand/model/variant cannot be verified from the available view; no similar mesh substitution",
+      "asset_downloaded": false,
+      "licence": "not applicable, no asset adopted"
+    },
+    {
+      "entity": "wastebasket",
+      "mode": "fallback_A",
+      "reason": "Brand/model/variant cannot be verified from the available view; no similar mesh substitution",
+      "asset_downloaded": false,
+      "licence": "not applicable, no asset adopted"
+    },
+    {
+      "entity": "door_leaf",
+      "mode": "fallback_A",
+      "reason": "Brand/model/variant cannot be verified from the available view; no similar mesh substitution",
+      "asset_downloaded": false,
+      "licence": "not applicable, no asset adopted"
+    },
+    {
+      "entity": "window_back",
+      "mode": "fallback_A",
+      "reason": "Brand/model/variant cannot be verified from the available view; no similar mesh substitution",
+      "asset_downloaded": false,
+      "licence": "not applicable, no asset adopted"
+    },
+    {
+      "entity": "window_left",
+      "mode": "fallback_A",
+      "reason": "Brand/model/variant cannot be verified from the available view; no similar mesh substitution",
+      "asset_downloaded": false,
+      "licence": "not applicable, no asset adopted"
+    },
+    {
+      "entity": "ceiling_luminaire",
+      "mode": "fallback_A",
+      "reason": "Brand/model/variant cannot be verified from the available view; no similar mesh substitution",
+      "asset_downloaded": false,
+      "licence": "not applicable, no asset adopted"
+    }
+  ],
+  "controlled_comparison": "If B remains all-fallback, geometry may equal A; do not claim an asset benefit."
+}

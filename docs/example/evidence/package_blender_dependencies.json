@@ -1,0 +1,150 @@
+{
+  "A": [
+    {
+      "file": "scene.blend",
+      "objects": 352,
+      "mesh_objects": 278,
+      "modifier_count": 148,
+      "images": [
+        {
+          "name": "carpet_calibrated_0.png",
+          "packed": true,
+          "portable": true,
+          "path": "packed_original_reference"
+        },
+        {
+          "name": "carpet_calibrated_1.png",
+          "packed": true,
+          "portable": true,
+          "path": "packed_original_reference"
+        },
+        {
+          "name": "exterior_only.png",
+          "packed": true,
+          "portable": true,
+          "path": "packed_original_reference"
+        }
+      ]
+    },
+    {
+      "file": "scene.usdc",
+      "objects": 353,
+      "mesh_objects": 315,
+      "modifier_count": 0,
+      "images": [
+        {
+          "name": "carpet_calibrated_0.png",
+          "packed": false,
+          "portable": true,
+          "path": "outputs/A/textures/carpet_calibrated_0.png"
+        },
+        {
+          "name": "carpet_calibrated_1.png",
+          "packed": false,
+          "portable": true,
+          "path": "outputs/A/textures/carpet_calibrated_1.png"
+        }
+      ]
+    },
+    {
+      "file": "scene.glb",
+      "objects": 352,
+      "mesh_objects": 315,
+      "modifier_count": 0,
+      "images": [
+        {
+          "name": "carpet_calibrated_0",
+          "packed": true,
+          "portable": true,
+          "path": "packed_original_reference"
+        },
+        {
+          "name": "carpet_calibrated_1",
+          "packed": true,
+          "portable": true,
+          "path": "packed_original_reference"
+        },
+        {
+          "name": "exterior_only",
+          "packed": true,
+          "portable": true,
+          "path": "packed_original_reference"
+        }
+      ]
+    }
+  ],
+  "B": [
+    {
+      "file": "scene.blend",
+      "objects": 352,
+      "mesh_objects": 278,
+      "modifier_count": 148,
+      "images": [
+        {
+          "name": "carpet_calibrated_0.png",
+          "packed": true,
+          "portable": true,
+          "path": "packed_original_reference"
+        },
+        {
+          "name": "carpet_calibrated_1.png",
+          "packed": true,
+          "portable": true,
+          "path": "packed_original_reference"
+        },
+        {
+          "name": "exterior_only.png",
+          "packed": true,
+          "portable": true,
+          "path": "packed_original_reference"
+        }
+      ]
+    },
+    {
+      "file": "scene.usdc",
+      "objects": 353,
+      "mesh_objects": 315,
+      "modifier_count": 0,
+      "images": [
+        {
+          "name": "carpet_calibrated_0.png",
+          "packed": false,
+          "portable": true,
+          "path": "outputs/B/textures/carpet_calibrated_0.png"
+        },
+        {
+          "name": "carpet_calibrated_1.png",
+          "packed": false,
+          "portable": true,
+          "path": "outputs/B/textures/carpet_calibrated_1.png"
+        }
+      ]
+    },
+    {
+      "file": "scene.glb",
+      "objects": 352,
+      "mesh_objects": 315,
+      "modifier_count": 0,
+      "images": [
+        {
+          "name": "carpet_calibrated_0",
+          "packed": true,
+          "portable": true,
+          "path": "packed_original_reference"
+        },
+        {
+          "name": "carpet_calibrated_1",
+          "packed": true,
+          "portable": true,
+          "path": "packed_original_reference"
+        },
+        {
+          "name": "exterior_only",
+          "packed": true,
+          "portable": true,
+          "path": "packed_original_reference"
+        }
+      ]
+    }
+  ]
+}

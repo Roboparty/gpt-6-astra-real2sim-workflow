@@ -1,0 +1,136 @@
+[
+  {
+    "candidate": "017",
+    "source": "revision_furniture/preflight017/structural_audit.json",
+    "source_sha256": "8469059ac31c487b189100728fa3327a606234a5a46588dd74d2be25c8653c8a",
+    "status": "failed",
+    "failures": [
+      {
+        "kind": "disconnected_joint",
+        "entity": "chair_near",
+        "joint": [
+          "back_left_post",
+          "back_apron"
+        ],
+        "distances_m": [
+          0.012977809645235538,
+          0.00025848796940408647
+        ]
+      },
+      {
+        "kind": "disconnected_joint",
+        "entity": "chair_near",
+        "joint": [
+          "back_left_post",
+          "left_apron"
+        ],
+        "distances_m": [
+          0.012977809645235538,
+          0.0002583941968623549
+        ]
+      },
+      {
+        "kind": "disconnected_joint",
+        "entity": "chair_near",
+        "joint": [
+          "back_right_post",
+          "back_apron"
+        ],
+        "distances_m": [
+          0.012977806851267815,
+          0.00025845927302725613
+        ]
+      },
+      {
+        "kind": "disconnected_joint",
+        "entity": "chair_near",
+        "joint": [
+          "back_right_post",
+          "right_apron"
+        ],
+        "distances_m": [
+          0.012977806851267815,
+          0.0002583941968623549
+        ]
+      },
+      {
+        "kind": "disconnected_joint",
+        "entity": "chair_far",
+        "joint": [
+          "back_left_post",
+          "back_apron"
+        ],
+        "distances_m": [
+          0.01297780778259039,
+          0.0002584616595413536
+        ]
+      },
+      {
+        "kind": "disconnected_joint",
+        "entity": "chair_far",
+        "joint": [
+          "back_left_post",
+          "left_apron"
+        ],
+        "distances_m": [
+          0.01297780778259039,
+          0.00025843348703347147
+        ]
+      },
+      {
+        "kind": "disconnected_joint",
+        "entity": "chair_far",
+        "joint": [
+          "back_right_post",
+          "back_apron"
+        ],
+        "distances_m": [
+          0.012977809645235538,
+          0.0002584775793366134
+        ]
+      },
+      {
+        "kind": "disconnected_joint",
+        "entity": "chair_far",
+        "joint": [
+          "back_right_post",
+          "right_apron"
+        ],
+        "distances_m": [
+          0.012977809645235538,
+          0.00025845872005447745
+        ]
+      }
+    ],
+    "note": "Retained actual preflight, not an injected failure; original diagnostic files stay in execution workspace."
+  },
+  {
+    "candidate": "018",
+    "source": "revision_furniture/preflight018/structural_audit.json",
+    "source_sha256": "58b62e4accf33a47b725357317c2b3d2d1fd711893a48527ecec18c4932ab9f0",
+    "status": "failed",
+    "failures": [
+      {
+        "kind": "disconnected_joint",
+        "entity": "table",
+        "joint": [
+          "cross_near",
+          "long_stretcher"
+        ],
+        "distances_m": [
+          0.013999998569488525,
+          0.0
+        ]
+      }
+    ],
+    "note": "Retained actual preflight, not an injected failure; original diagnostic files stay in execution workspace."
+  },
+  {
+    "candidate": "019",
+    "source": "revision_furniture/preflight019/structural_audit.json",
+    "source_sha256": "e06a8ccfdb6c018e0558c9c5f58e33f689a2edd14effd4f6fa317aba0495fda0",
+    "status": "passed",
+    "failures": [],
+    "note": "Retained actual preflight, not an injected failure; original diagnostic files stay in execution workspace."
+  }
+]

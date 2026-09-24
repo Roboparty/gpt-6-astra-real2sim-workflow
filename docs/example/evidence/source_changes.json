@@ -1,0 +1,132 @@
+[
+  {
+    "path": "workflow/r2s/stage_worker.py",
+    "before_sha256": "724aff77d621b53d133193ae4500927b5a2e2cf28998f7867c4889c790ccff9f",
+    "after_sha256": "ef03012c96c918c1e2fb43ee720c9ee59c360e78ad6331774ad6cbbabe80d893"
+  },
+  {
+    "path": "workflow/r2s/core.py",
+    "before_sha256": "e9d8d0a892abdf0b5a97a6df3b57216ccc245a5c583a0849e1285ec31c250091",
+    "after_sha256": "02a587abfa09e2c7fdc8994d8475d0cae8e18275664e990962e89bd5d0b52e25"
+  },
+  {
+    "path": "workflow/r2s/contracts.py",
+    "before_sha256": "4aceb44eaaf69247491971570c20a67b297b8d0a2769334d3062dbe7fb73c83a",
+    "after_sha256": "3d6bbcc956ab09158c80d3427d37abc5a55c931a68b327f19ec3b7a6e7a75738"
+  },
+  {
+    "path": "workflow/r2s/structure.py",
+    "before_sha256": null,
+    "after_sha256": "e51793445f4fd787d150d2a7f63312b610f37bc8c24797a4736836fa450fa7af"
+  },
+  {
+    "path": "workflow/r2s/blender_render.py",
+    "before_sha256": "2a467c6277dcebcac3b0c2628755cb086d8ddaeb348472358e82b2d7e47d5ca4",
+    "after_sha256": "256c75bfea6713ebd22665d12e3de3747039b6047a8dd76df93f5cfe9764d04a"
+  },
+  {
+    "path": "workflow/r2s/blender_structure.py",
+    "before_sha256": null,
+    "after_sha256": "8c0e1664c2e1e47d152b00a1f46454af4460dbaf2a80528aa35662820523626f"
+  },
+  {
+    "path": "workflow/r2s/quality.py",
+    "before_sha256": "9059c9c6b4f4470586ee7b83ac1368c6399187c70f016d564d3c804a567518ee",
+    "after_sha256": "e2258f8ca2f27e83905da55d962450722f32a9624af7df2fc305d77a010d49ee"
+  },
+  {
+    "path": "workflow/r2s/profiles.py",
+    "before_sha256": "2d63e7ea9a7d96c5a8079dae61b0b699e9173ab74a2d89c110e3c7fa9a0b7f12",
+    "after_sha256": "faad78e0f6ceee3be5727628ca2ae2e2ad9de4aa51c082c72a3d934deea2df2c"
+  },
+  {
+    "path": "workflow/r2s/blender_export.py",
+    "before_sha256": "d8c41d8fc72fb191fbd10924b03a47761cdd32f03d28fadbef2a64525d524472",
+    "after_sha256": "97f35d7a219580d0449610d9ff3840dbc750848b2d51891a4f9803a9b51f51d0"
+  },
+  {
+    "path": "workflow/r2s/prompts/agent_observe_structure.md",
+    "before_sha256": null,
+    "after_sha256": "6adc08499d7f903db7934591dd64e41889894b537d4a5fc9396fee4a288cfb15"
+  },
+  {
+    "path": "workflow/r2s/prompts/agent_review_geometry.md",
+    "before_sha256": "303e23a93a0fd2ae38b87b622f19469facc36e4a5dc2f66e8b49ab34b2a42a48",
+    "after_sha256": "2600c0bf461e980830ce3f01c08b11b2f02de7d523a2fd09e6ee7ca83135d11d"
+  },
+  {
+    "path": "workflow/r2s/prompts/agent_observe.md",
+    "before_sha256": "762a0bc6234b4a118c64167c0ef043ec5112e6ccd2a194109436ec27d2e54e9c",
+    "after_sha256": "76921a0bae832945f1763f4418a2a02d789583d463376db03c40c64d34345aeb"
+  },
+  {
+    "path": "workflow/r2s/prompts/agent_review.md",
+    "before_sha256": "d5a3cc96b68ffc8fc6006bfdc1c87ed2e7a537f4de9799ff264ec1fe87f9e963",
+    "after_sha256": "3cbb90d1236d775e04a15470eda8d65590779ca40ed99ce577a1db890e165e4e"
+  },
+  {
+    "path": "workflow/r2s/prompts/agent_model.md",
+    "before_sha256": "ca411afe4628fa6a4b26090d0ca7fd091d46c3d55970ac1fcfc3b230f3cc84ae",
+    "after_sha256": "5abe7c5baca9c252ac92cc98535973c83fabc5f7dd0cc6e36f73dfc7fbcaa431"
+  },
+  {
+    "path": "case/prepare_physics.py",
+    "before_sha256": "c77a17dc0ddbac4427d234b569ef3fab7e4c053caae013e5b893b26d0a9c899b",
+    "after_sha256": "b975941933eb673e4c7bd49baf00f40a229f51f76b01a67aa289ad6112c7adb1"
+  },
+  {
+    "path": "case/calibrate_materials.py",
+    "before_sha256": "6a438c3e9f0b884783a2e897bbef02c892c2ba9d81b795aea353d267e5512983",
+    "after_sha256": "362149b9ec67c1a1326ed0ef059ef88dcf389c6c6fd97786ec2acd31f4bb15d9"
+  },
+  {
+    "path": "case/furniture_parameters.json",
+    "before_sha256": null,
+    "after_sha256": "5ae444d8174036cb8860b95b914ece6dbe35aeb0e3f1dfb3c83d58546fbfa948"
+  },
+  {
+    "path": "case/fit_furniture.py",
+    "before_sha256": null,
+    "after_sha256": "95843db1f73cf96fa25fccfff9f4684e1307d95983f8585f7c982321992b10f0"
+  },
+  {
+    "path": "case/calibrate_lighting.py",
+    "before_sha256": "6f268494a4a0a53c33cdb6e55e444e3792b55bed17c6a02ef1233ec2d687aeaa",
+    "after_sha256": "80a92d8bdd6bdc87fc432aa82d58879a30109e74c25ce87381d710cdb2414832"
+  },
+  {
+    "path": "case/furniture_observation.json",
+    "before_sha256": null,
+    "after_sha256": "d7feee78a1d884fa0f4bc16d5740a6336945e1721c9b339a8d44d54a47057fa7"
+  },
+  {
+    "path": "case/check_unaffected_geometry.py",
+    "before_sha256": null,
+    "after_sha256": "e2b77b8b6fdea1891e4908dc94863d7bad1a5661d24152e8ca9fd27d40754a9a"
+  },
+  {
+    "path": "case/build_scene.py",
+    "before_sha256": "465af022bd8553c74145256d1a3835cffe829ca97432104a0eb6a2115e48b05c",
+    "after_sha256": "55db17a7910284cc6c422979e3a579247ec841a12fde2aaab2063528d23e65bd"
+  },
+  {
+    "path": "case/author_evidence.py",
+    "before_sha256": "1db80ed72aa5799ca1e67edc22b5fd19a418389102bf0754b5f5092f26e0c6cc",
+    "after_sha256": "ce11527c453dc015469aa2a1c812e4a46b5f5a2304778bff1cf6eea778b9ce84"
+  },
+  {
+    "path": "case/furniture_model.py",
+    "before_sha256": null,
+    "after_sha256": "ad24f14ca7e95c3fa97e8bae912ebcb10eae18dd2293bac0df38500e5b0fbf4f"
+  },
+  {
+    "path": "public_contract/AGENT_EXECUTION_SPEC.md",
+    "before_sha256": "d18df08d43c4c2ec1f505a930190dc318c2b8723c1e89b5e865811edb08726ca",
+    "after_sha256": "b2da5c84f5d264348cdb3dfb99f74545dd527861189b3bce2cc185899b785b2c"
+  },
+  {
+    "path": "public_contract/MASTER_PROMPT.md",
+    "before_sha256": "a3da83eb9f8be300f78d024db9f1f319aa1ded7c90e47148bbbb344572a547f9",
+    "after_sha256": "1d988096aa45160c8e4fc34a4fd159c371d6135d722f6c83e511f46f80189633"
+  }
+]

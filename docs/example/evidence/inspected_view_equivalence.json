@@ -1,0 +1,62 @@
+[
+  {
+    "file": "structure_chair_far_front.png",
+    "mae": 0.0,
+    "max": 0.0
+  },
+  {
+    "file": "structure_chair_far_rear.png",
+    "mae": 0.0,
+    "max": 0.0
+  },
+  {
+    "file": "structure_chair_far_side.png",
+    "mae": 0.0,
+    "max": 0.0
+  },
+  {
+    "file": "structure_chair_near_front.png",
+    "mae": 0.0,
+    "max": 0.0
+  },
+  {
+    "file": "structure_chair_near_rear.png",
+    "mae": 0.0,
+    "max": 0.0
+  },
+  {
+    "file": "structure_chair_near_side.png",
+    "mae": 0.0,
+    "max": 0.0
+  },
+  {
+    "file": "structure_combined_front.png",
+    "mae": 0.0,
+    "max": 0.0
+  },
+  {
+    "file": "structure_combined_rear.png",
+    "mae": 0.0,
+    "max": 0.0
+  },
+  {
+    "file": "structure_combined_side.png",
+    "mae": 0.0,
+    "max": 0.0
+  },
+  {
+    "file": "structure_table_front.png",
+    "mae": 0.0,
+    "max": 0.0
+  },
+  {
+    "file": "structure_table_rear.png",
+    "mae": 0.0,
+    "max": 0.0
+  },
+  {
+    "file": "structure_table_side.png",
+    "mae": 0.0,
+    "max": 0.0
+  }
+]

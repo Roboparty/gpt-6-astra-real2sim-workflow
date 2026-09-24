@@ -1,0 +1,10 @@
+{
+  "scope": "Publication layout validation; no new full physics/render rerun",
+  "source_compilation": "passed",
+  "contract_tests_passed": 8,
+  "private_path_scan": "passed",
+  "credential_pattern_scan": "passed",
+  "markdown_links": "passed",
+  "historical_mesh_cases": 6,
+  "historical_AB_stages_per_branch": 18
+}

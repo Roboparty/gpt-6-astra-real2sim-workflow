@@ -1,0 +1,25 @@
+{
+  "stage": "build_geometry",
+  "worker_sha256": "ef03012c96c918c1e2fb43ee720c9ee59c360e78ad6331774ad6cbbabe80d893",
+  "implementation_files": {
+    "__init__.py": "90468c672e280c4d1d3068cace74a5e828b5441d535e07cb79b6abdbadca826d",
+    "__main__.py": "db6f3263401eeb522bee180f14c8fd4172cb95654d88db361bb230a115c22b02",
+    "blender_export.py": "97f35d7a219580d0449610d9ff3840dbc750848b2d51891a4f9803a9b51f51d0",
+    "blender_render.py": "256c75bfea6713ebd22665d12e3de3747039b6047a8dd76df93f5cfe9764d04a",
+    "blender_structure.py": "8c0e1664c2e1e47d152b00a1f46454af4460dbaf2a80528aa35662820523626f",
+    "build_assembly.py": "022bc7b36038d034d90647f19990ce73b14afa75d11dd9d2ab501a8cdb395a32",
+    "calibration.py": "09c807bed062fd4f494cf4fb651d0c5697ee6d8075d1797ebe5e26544850eaf2",
+    "contracts.py": "3d6bbcc956ab09158c80d3427d37abc5a55c931a68b327f19ec3b7a6e7a75738",
+    "core.py": "02a587abfa09e2c7fdc8994d8475d0cae8e18275664e990962e89bd5d0b52e25",
+    "dynamics.py": "6744facbc70fc05981fd0a25ed2b9bc7df2fec9170dd5231c1cc3445dca895c2",
+    "evaluation.py": "91d75751e29579a78b692ae6058956d85f51288399b5b40127c95042379e4d10",
+    "media.py": "72dc66d5d4f2b9efeb2c32f75b25aeed4597ced0f3a48a5d1df5eb6508822843",
+    "profiles.py": "faad78e0f6ceee3be5727628ca2ae2e2ad9de4aa51c082c72a3d934deea2df2c",
+    "quality.py": "e2258f8ca2f27e83905da55d962450722f32a9624af7df2fc305d77a010d49ee",
+    "simulation.py": "936663fbabdf33eb5f9efeae6920f896c57b2bbf3a7541e5e3d5275451ebb61b",
+    "stage_worker.py": "ef03012c96c918c1e2fb43ee720c9ee59c360e78ad6331774ad6cbbabe80d893",
+    "structure.py": "e51793445f4fd787d150d2a7f63312b610f37bc8c24797a4736836fa450fa7af",
+    "viewpoints.py": "b803f0bc146cc5176e8f92cc6c340c46f66d18919b2526abae80363f3029d529"
+  },
+  "scope": "Actual imported worker snapshot; children are bound to this workflow by core.execute."
+}

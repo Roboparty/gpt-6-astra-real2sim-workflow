@@ -1,0 +1,222 @@
+{
+  "format": ".usdc",
+  "status": "passed",
+  "actually_reimported": true,
+  "units": "metres, checked after importer axis conversion to Blender Z up",
+  "missing_entities": [],
+  "entity_bounds": [
+    {
+      "entity": "floor",
+      "maximum_bound_error_m": 0.0,
+      "status": "pass"
+    },
+    {
+      "entity": "ceiling",
+      "maximum_bound_error_m": 0.0,
+      "status": "pass"
+    },
+    {
+      "entity": "wall_back",
+      "maximum_bound_error_m": 0.0,
+      "status": "pass"
+    },
+    {
+      "entity": "wall_left",
+      "maximum_bound_error_m": 0.0,
+      "status": "pass"
+    },
+    {
+      "entity": "wall_right",
+      "maximum_bound_error_m": 0.0,
+      "status": "pass"
+    },
+    {
+      "entity": "door_frame",
+      "maximum_bound_error_m": 0.0,
+      "status": "pass"
+    },
+    {
+      "entity": "doorway_unseen_returns",
+      "maximum_bound_error_m": 0.0,
+      "status": "pass"
+    },
+    {
+      "entity": "wall_front",
+      "maximum_bound_error_m": 0.0,
+      "status": "pass"
+    },
+    {
+      "entity": "column",
+      "maximum_bound_error_m": 0.0,
+      "status": "pass"
+    },
+    {
+      "entity": "baseboards",
+      "maximum_bound_error_m": 4.76837158203125e-07,
+      "status": "pass"
+    },
+    {
+      "entity": "window_frames",
+      "maximum_bound_error_m": 0.0,
+      "status": "pass"
+    },
+    {
+      "entity": "window_rails",
+      "maximum_bound_error_m": 0.0,
+      "status": "pass"
+    },
+    {
+      "entity": "blinds",
+      "maximum_bound_error_m": 0.0,
+      "status": "pass"
+    },
+    {
+      "entity": "exterior_backdrop",
+      "maximum_bound_error_m": 0.0,
+      "status": "pass"
+    },
+    {
+      "entity": "external_shading_hypothesis",
+      "maximum_bound_error_m": 0.0,
+      "status": "pass"
+    },
+    {
+      "entity": "table",
+      "maximum_bound_error_m": 1.1641532182693481e-10,
+      "status": "pass"
+    },
+    {
+      "entity": "chair_near",
+      "maximum_bound_error_m": 0.0,
+      "status": "pass"
+    },
+    {
+      "entity": "chair_near_cushion",
+      "maximum_bound_error_m": 0.0,
+      "status": "pass"
+    },
+    {
+      "entity": "chair_far",
+      "maximum_bound_error_m": 0.0,
+      "status": "pass"
+    },
+    {
+      "entity": "chair_far_cushion",
+      "maximum_bound_error_m": 0.0,
+      "status": "pass"
+    },
+    {
+      "entity": "rack",
+      "maximum_bound_error_m": 0.0,
+      "status": "pass"
+    },
+    {
+      "entity": "coat_0",
+      "maximum_bound_error_m": 0.0,
+      "status": "pass"
+    },
+    {
+      "entity": "hangers",
+      "maximum_bound_error_m": 0.0,
+      "status": "pass"
+    },
+    {
+      "entity": "coat_1",
+      "maximum_bound_error_m": 0.0,
+      "status": "pass"
+    },
+    {
+      "entity": "coat_2",
+      "maximum_bound_error_m": 0.0,
+      "status": "pass"
+    },
+    {
+      "entity": "coat_3",
+      "maximum_bound_error_m": 0.0,
+      "status": "pass"
+    },
+    {
+      "entity": "coat_4",
+      "maximum_bound_error_m": 0.0,
+      "status": "pass"
+    },
+    {
+      "entity": "coat_red",
+      "maximum_bound_error_m": 0.0,
+      "status": "pass"
+    },
+    {
+      "entity": "cabinet",
+      "maximum_bound_error_m": 0.0,
+      "status": "pass"
+    },
+    {
+      "entity": "wastebasket",
+      "maximum_bound_error_m": 0.0,
+      "status": "pass"
+    },
+    {
+      "entity": "cleaning_tools",
+      "maximum_bound_error_m": 0.0,
+      "status": "pass"
+    },
+    {
+      "entity": "cleaning_cart",
+      "maximum_bound_error_m": 0.0,
+      "status": "pass"
+    },
+    {
+      "entity": "warning_sign",
+      "maximum_bound_error_m": 0.0,
+      "status": "pass"
+    },
+    {
+      "entity": "cart_liner",
+      "maximum_bound_error_m": 0.0,
+      "status": "pass"
+    },
+    {
+      "entity": "left_foreground_frame",
+      "maximum_bound_error_m": 0.0,
+      "status": "pass"
+    },
+    {
+      "entity": "left_foreground_glass",
+      "maximum_bound_error_m": 0.0,
+      "status": "pass"
+    },
+    {
+      "entity": "door_leaf",
+      "maximum_bound_error_m": 0.0,
+      "status": "pass"
+    },
+    {
+      "entity": "ceiling_luminaire",
+      "maximum_bound_error_m": 0.0,
+      "status": "pass"
+    }
+  ],
+  "cameras": [
+    {
+      "name": "source_camera",
+      "position_error_m": 1.237242680330423e-07,
+      "rotation_matrix_max_error": 4.2263545219078935e-08,
+      "lens_mm": 12.922772407531738,
+      "shift_x": -0.03452210873365402,
+      "shift_y": -0.01135951653122902,
+      "canonical_principal_point_px": [
+        909.7566241535942,
+        618.6661026107615
+      ],
+      "camera_extras": {
+        "r2s_intrinsics_json": "{\"distortion\": \"zero; no EXIF or lens calibration\", \"fit_landmarks\": [{\"error_px\": 10.604802587094698, \"id\": \"back_left_top\", \"predicted\": [616.0086740512431, 203.7501915000189], \"uv\": [622.0, 195.0], \"xyz\": [0.0, 0.0, 2.8]}, {\"error_px\": 4.68529648027451, \"id\": \"back_left_floor\", \"predicted\": [650.8783654660808, 652.6968926616479], \"uv\": [648.0, 649.0], \"xyz\": [0.0, 0.0, 0.0]}, {\"error_px\": 1.1106278021255394, \"id\": \"back_right_top\", \"predicted\": [1363.088199948949, 40.22206977723556], \"uv\": [1362.0, 40.0], \"xyz\": [3.734785309210897, 0.0, 2.8]}, {\"error_px\": 1.4168167731589718, \"id\": \"back_right_floor\", \"predicted\": [1256.6052118941477, 750.7511307401916], \"uv\": [1258.0, 751.0], \"xyz\": [3.734785309210897, 0.0, 0.0]}, {\"error_px\": 15.924196494231778, \"id\": \"column_far_top\", \"predicted\": [518.9905624797897, 138.58392251310994], \"uv\": [515.0, 154.0], \"xyz\": [0.1500000000000108, -0.7044870026676773, 2.8]}, {\"error_px\": 8.686378517861232, \"id\": \"column_far_floor\", \"predicted\": [576.9155912251292, 684.8175492935484], \"uv\": [574.0, 693.0], \"xyz\": [0.1500000000000108, -0.7044870026676773, 0.0]}, {\"error_px\": 6.6539709268737415, \"id\": \"column_near_top\", \"predicted\": [360.21374077104394, 54.65053711954715], \"uv\": [360.0, 48.0], \"xyz\": [0.1500000000000108, -1.3483848310459914, 2.8]}, {\"error_px\": 5.978410074159675, \"id\": \"column_near_floor\", \"predicted\": [461.15276265587767, 722.5760410654631], \"uv\": [465.0, 718.0], \"xyz\": [0.1500000000000108, -1.3483848310459914, 0.0]}], \"focal_px\": 610.9599655484669, \"image_size\": [1702, 1276], \"max_fit_error_px\": 15.924196494231778, \"median_fit_error_px\": 6.316190500516708, \"metric_gauge\": \"assumed ceiling height 2.8m, plausible 2.45-3.15m; no measured or exact catalogue anchor\", \"position\": [3.285050329595899, -3.074509518917179, 1.187325390665316], \"principal_point\": [909.7566241535942, 618.6661026107615], \"role\": \"reconstruction\", \"room_parameters\": {\"column_front_y\": -1.3483848310459914, \"column_width\": 0.1500000000000108, \"height\": 2.8, \"left_window_depth\": 0.7044870026676773, \"width\": 3.734785309210897}, \"rotation_world_to_cv\": [[0.9176032550664661, 0.39714850729318696, 0.016653211288498254], [0.10074770890480317, -0.19183974948293714, -0.9762414709838735], [-0.3845180950772785, 0.8974801243889011, -0.21604458078142974]], \"status\": \"estimated_from_reconstruction_inputs\"}"
+      },
+      "native_camera_projection_max_error_px": 7.601164163643898e-05
+    }
+  ],
+  "limitations": [
+    "USD camera/geometry round trip checked; renderer-specific shading may differ",
+    "Blender procedural microtextures are not guaranteed identical in interchange formats"
+  ],
+  "file": "scene.usdc"
+}

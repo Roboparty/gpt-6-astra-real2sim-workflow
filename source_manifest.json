@@ -1,0 +1,11 @@
+{
+  "source": "inputs/utility_room_original.jpg",
+  "sha256": "dfe25afbfb885ae9bc377691dd18ebd4259ffa72917ca725e3809ef40624c29c",
+  "pixels": [
+    1702,
+    1276
+  ],
+  "provenance": "User attested personally/team photographed on 2026-09-22; no independent metric or physical truth.",
+  "revision": "furniture structure and pipeline revision, model version 4, candidate 019",
+  "rights": "Private authorized processing and delivery; no public publication."
+}

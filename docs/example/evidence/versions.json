@@ -1,0 +1,14 @@
+{
+  "python": "3.10.12",
+  "blender": "4.5.3",
+  "workflow_base": "0.2.0",
+  "workflow_revision": "quality_v2 assembly evidence gate 1",
+  "ffmpeg": "4.4.2",
+  "packages": {
+    "numpy": "2.2.6",
+    "scipy": "1.15.3",
+    "mujoco": "3.13.0",
+    "Pillow": "12.3.0",
+    "opencv-python-headless": "5.0.0.93"
+  }
+}

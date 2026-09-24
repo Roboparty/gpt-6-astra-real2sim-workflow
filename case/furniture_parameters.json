@@ -1,0 +1,584 @@
+{
+  "schema": "real2sim.furniture-fit/1",
+  "source_observation": "case/furniture_observation.json",
+  "source_observation_sha256": "d7feee78a1d884fa0f4bc16d5740a6336945e1721c9b339a8d44d54a47057fa7",
+  "calibration_sha256": "242444febb1f2be9872fe74ecfe69459fd26bc0376200acb132e083b101d4a4b",
+  "model_version": 4,
+  "method": "joint rigid rectangle and assembly fit, shared chair dimensions, floor constraints; fitting points only",
+  "targets": {
+    "table": {
+      "parameters": [
+        1.262884370994383,
+        -0.6164340086568015,
+        -0.10684634538649157,
+        0.7015795294089687,
+        0.903353666780103,
+        0.7536647282564195
+      ],
+      "parameter_names": [
+        "x_m",
+        "y_m",
+        "yaw_rad",
+        "width_m",
+        "length_m",
+        "height_m"
+      ],
+      "observation_ids": [
+        "t_top_0",
+        "t_top_1",
+        "t_top_2",
+        "t_top_3",
+        "t_foot_0",
+        "t_foot_3"
+      ],
+      "landmarks": [
+        {
+          "id": "t_top_0",
+          "landmark": "top_0",
+          "uv": [
+            615,
+            576
+          ],
+          "visibility": "observed",
+          "sigma_px": 4,
+          "world": [
+            0.865926787429087,
+            -1.0281257594761408,
+            0.7536647282564195
+          ],
+          "projected": [
+            607.6809077060324,
+            573.1846241527508
+          ],
+          "error_px": 7.84190366995736
+        },
+        {
+          "id": "t_top_1",
+          "landmark": "top_1",
+          "uv": [
+            740,
+            548
+          ],
+          "visibility": "observed",
+          "sigma_px": 4,
+          "world": [
+            0.9622632823795872,
+            -0.12992359569244688,
+            0.7536647282564195
+          ],
+          "projected": [
+            746.615034149394,
+            555.4505915196921
+          ],
+          "error_px": 9.963432681107285
+        },
+        {
+          "id": "t_top_2",
+          "landmark": "top_2",
+          "uv": [
+            849,
+            557
+          ],
+          "visibility": "observed",
+          "sigma_px": 4,
+          "world": [
+            1.6598419545596792,
+            -0.2047422578374623,
+            0.7536647282564195
+          ],
+          "projected": [
+            843.2120826994021,
+            564.7111753225727
+          ],
+          "error_px": 9.641691321236852
+        },
+        {
+          "id": "t_top_3",
+          "landmark": "top_3",
+          "uv": [
+            716,
+            596
+          ],
+          "visibility": "observed",
+          "sigma_px": 4,
+          "world": [
+            1.5635054596091789,
+            -1.1029444216211561,
+            0.7536647282564195
+          ],
+          "projected": [
+            715.2457421171171,
+            587.621140777057
+          ],
+          "error_px": 8.41273955568505
+        },
+        {
+          "id": "t_foot_0",
+          "landmark": "foot_0",
+          "uv": [
+            638,
+            724
+          ],
+          "visibility": "observed",
+          "sigma_px": 4,
+          "world": [
+            0.9215008491282286,
+            -0.9704889143614333,
+            0.002
+          ],
+          "projected": [
+            639.0309602214911,
+            721.80055635426
+          ],
+          "error_px": 2.4290803463621575
+        },
+        {
+          "id": "t_foot_3",
+          "landmark": "foot_3",
+          "uv": [
+            720,
+            747
+          ],
+          "visibility": "observed",
+          "sigma_px": 4,
+          "world": [
+            1.5214185072031075,
+            -1.0348329638061466,
+            0.002
+          ],
+          "projected": [
+            726.7870454472203,
+            748.6433187332841
+          ],
+          "error_px": 6.9831570483411145
+        }
+      ],
+      "median_error_px": 8.127321612821206,
+      "max_error_px": 9.963432681107285,
+      "uncertainty": [
+        "far feet partly hidden by chairs and rails; not used as measured landmarks",
+        "underside diagonal brace arrangement partly occluded",
+        "absolute dimensions inherit ceiling-height prior"
+      ]
+    },
+    "chair_near": {
+      "parameters": [
+        1.7023032803017566,
+        -0.5546148536735628,
+        -1.6520651588744393,
+        0.33055912497992546,
+        0.3904680353957918,
+        0.41746881692188126,
+        0.6636728466068973
+      ],
+      "parameter_names": [
+        "x_m",
+        "y_m",
+        "yaw_rad",
+        "width_m",
+        "depth_m",
+        "seat_top_m",
+        "back_top_m"
+      ],
+      "observation_ids": [
+        "n_seat_0",
+        "n_seat_1",
+        "n_seat_2",
+        "n_seat_3",
+        "n_foot_0",
+        "n_foot_1",
+        "n_foot_2",
+        "n_foot_3",
+        "n_back_post_2",
+        "n_back_post_3"
+      ],
+      "landmarks": [
+        {
+          "id": "n_seat_0",
+          "landmark": "seat_0",
+          "uv": [
+            766,
+            639
+          ],
+          "visibility": "observed",
+          "sigma_px": 4,
+          "world": [
+            1.4986078507618308,
+            -0.6998378504281335,
+            0.41746881692188126
+          ],
+          "projected": [
+            764.6211553407835,
+            642.4189100192868
+          ],
+          "error_px": 3.6864831905529973
+        },
+        {
+          "id": "n_seat_1",
+          "landmark": "seat_1",
+          "uv": [
+            801,
+            624
+          ],
+          "visibility": "partial",
+          "sigma_px": 7,
+          "world": [
+            1.524793008051184,
+            -0.3783433300307448,
+            0.41746881692188126
+          ],
+          "projected": [
+            805.4137129421888,
+            629.3374749065689
+          ],
+          "error_px": 6.9260017552912565
+        },
+        {
+          "id": "n_seat_2",
+          "landmark": "seat_2",
+          "uv": [
+            862,
+            640
+          ],
+          "visibility": "observed",
+          "sigma_px": 4,
+          "world": [
+            1.8751010251677818,
+            -0.4068752954172194,
+            0.41746881692188126
+          ],
+          "projected": [
+            861.0889803798217,
+            637.9164307506416
+          ],
+          "error_px": 2.274031126704723
+        },
+        {
+          "id": "n_seat_3",
+          "landmark": "seat_3",
+          "uv": [
+            827,
+            655
+          ],
+          "visibility": "observed",
+          "sigma_px": 4,
+          "world": [
+            1.8489158678784285,
+            -0.7283698158146081,
+            0.41746881692188126
+          ],
+          "projected": [
+            823.4705972555665,
+            652.5863013436381
+          ],
+          "error_px": 4.275818627600788
+        },
+        {
+          "id": "n_foot_0",
+          "landmark": "foot_0",
+          "uv": [
+            774,
+            723
+          ],
+          "visibility": "observed",
+          "sigma_px": 4,
+          "world": [
+            1.5158539133041138,
+            -0.6851895287909062,
+            0.002
+          ],
+          "projected": [
+            772.0766756246785,
+            721.9004854515761
+          ],
+          "error_px": 2.2154252176279243
+        },
+        {
+          "id": "n_foot_1",
+          "landmark": "foot_1",
+          "uv": [
+            808,
+            700
+          ],
+          "visibility": "partial",
+          "sigma_px": 7,
+          "world": [
+            1.5394413296884113,
+            -0.3955893925730277,
+            0.002
+          ],
+          "projected": [
+            807.5038348282303,
+            704.3753141475347
+          ],
+          "error_px": 4.403357101950127
+        },
+        {
+          "id": "n_foot_2",
+          "landmark": "foot_2",
+          "uv": [
+            861,
+            715
+          ],
+          "visibility": "observed",
+          "sigma_px": 4,
+          "world": [
+            1.8887526472993994,
+            -0.4240401785562194,
+            0.002
+          ],
+          "projected": [
+            861.9164370007547,
+            716.525274206248
+          ],
+          "error_px": 1.7794151231789204
+        },
+        {
+          "id": "n_foot_3",
+          "landmark": "foot_3",
+          "uv": [
+            829,
+            736
+          ],
+          "visibility": "observed",
+          "sigma_px": 4,
+          "world": [
+            1.865165230915102,
+            -0.7136403147740978,
+            0.002
+          ],
+          "projected": [
+            829.223322583221,
+            736.0529568692264
+          ],
+          "error_px": 0.22951559026517943
+        },
+        {
+          "id": "n_back_post_2",
+          "landmark": "back_post_2",
+          "uv": [
+            858,
+            598
+          ],
+          "visibility": "observed",
+          "sigma_px": 5,
+          "world": [
+            1.8955085522950321,
+            -0.4396401063666288,
+            0.6516728466068973
+          ],
+          "projected": [
+            861.6190731901696,
+            593.8327806946206
+          ],
+          "error_px": 5.51936658457572
+        },
+        {
+          "id": "n_back_post_3",
+          "landmark": "back_post_3",
+          "uv": [
+            826,
+            607
+          ],
+          "visibility": "observed",
+          "sigma_px": 5,
+          "world": [
+            1.8743565180092243,
+            -0.6993392574162163,
+            0.6516728466068973
+          ],
+          "projected": [
+            830.9002717278778,
+            602.2742953259797
+          ],
+          "error_px": 6.807712367094842
+        }
+      ],
+      "median_error_px": 3.981150909076893,
+      "max_error_px": 6.9260017552912565,
+      "uncertainty": [
+        "bowed back-rail curvature and hidden joinery estimated",
+        "front-right foot partly shadowed",
+        "green pad interpreted as foam, material unmeasured"
+      ]
+    },
+    "chair_far": {
+      "parameters": [
+        0.558879683115407,
+        -0.3747168773852648,
+        1.364900764029294,
+        0.33055912497992546,
+        0.3904680353957918,
+        0.41746881692188126,
+        0.6636728466068973
+      ],
+      "parameter_names": [
+        "x_m",
+        "y_m",
+        "yaw_rad",
+        "width_m",
+        "depth_m",
+        "seat_top_m",
+        "back_top_m"
+      ],
+      "observation_ids": [
+        "f_seat_0",
+        "f_seat_1",
+        "f_seat_2",
+        "f_seat_3",
+        "f_foot_0",
+        "f_back_post_0",
+        "f_back_post_1"
+      ],
+      "landmarks": [
+        {
+          "id": "f_seat_0",
+          "landmark": "seat_0",
+          "uv": [
+            629,
+            611
+          ],
+          "visibility": "observed",
+          "sigma_px": 5,
+          "world": [
+            0.3690574617857751,
+            -0.49983107319872006,
+            0.41746881692188126
+          ],
+          "projected": [
+            626.8815808003319,
+            612.5299520521264
+          ],
+          "error_px": 2.6131309166071754
+        },
+        {
+          "id": "f_seat_1",
+          "landmark": "seat_1",
+          "uv": [
+            672,
+            600
+          ],
+          "visibility": "partial",
+          "sigma_px": 7,
+          "world": [
+            0.4350027036377632,
+            -0.18408495020605695,
+            0.41746881692188126
+          ],
+          "projected": [
+            675.2620520372916,
+            604.39651469161
+          ],
+          "error_px": 5.47451595372058
+        },
+        {
+          "id": "f_seat_2",
+          "landmark": "seat_2",
+          "uv": [
+            710,
+            612
+          ],
+          "visibility": "partial",
+          "sigma_px": 7,
+          "world": [
+            0.779047131272467,
+            -0.25594044212203076,
+            0.41746881692188126
+          ],
+          "projected": [
+            710.5940548085098,
+            611.7173473839205
+          ],
+          "error_px": 0.6578705168117782
+        },
+        {
+          "id": "f_seat_3",
+          "landmark": "seat_3",
+          "uv": [
+            663,
+            626
+          ],
+          "visibility": "observed",
+          "sigma_px": 5,
+          "world": [
+            0.7131018894204789,
+            -0.5716865651146938,
+            0.41746881692188126
+          ],
+          "projected": [
+            662.0948132127078,
+            620.8766241931909
+          ],
+          "error_px": 5.202724553316794
+        },
+        {
+          "id": "f_foot_0",
+          "landmark": "foot_0",
+          "uv": [
+            627,
+            682
+          ],
+          "visibility": "observed",
+          "sigma_px": 5,
+          "world": [
+            0.3576453897339079,
+            -0.481102362311876,
+            0.002
+          ],
+          "projected": [
+            633.7040373303498,
+            678.7393040519073
+          ],
+          "error_px": 7.45494832930665
+        },
+        {
+          "id": "f_back_post_0",
+          "landmark": "back_post_0",
+          "uv": [
+            629,
+            568
+          ],
+          "visibility": "observed",
+          "sigma_px": 5,
+          "world": [
+            0.3528810217866142,
+            -0.4647836369308053,
+            0.6516728466068973
+          ],
+          "projected": [
+            626.3689916560396,
+            572.1234326102012
+          ],
+          "error_px": 4.891308761145646
+        },
+        {
+          "id": "f_back_post_1",
+          "landmark": "back_post_1",
+          "uv": [
+            669,
+            561
+          ],
+          "visibility": "observed",
+          "sigma_px": 5,
+          "world": [
+            0.40615074253815997,
+            -0.20972796759299833,
+            0.6516728466068973
+          ],
+          "projected": [
+            666.1222996941369,
+            567.664935888398
+          ],
+          "error_px": 7.259650779949375
+        }
+      ],
+      "median_error_px": 5.202724553316794,
+      "max_error_px": 7.45494832930665,
+      "uncertainty": [
+        "three feet not used as observed position constraints",
+        "same furniture family is a structural prior, no exact SKU confirmed"
+      ]
+    }
+  },
+  "independent_accuracy": false
+}

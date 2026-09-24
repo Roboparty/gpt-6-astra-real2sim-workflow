@@ -1,0 +1,252 @@
+{
+  "status": "passed",
+  "tests": [
+    {
+      "test": "baseline_intended_contacts",
+      "expected": "passed",
+      "actual": "passed",
+      "failures": []
+    },
+    {
+      "test": "detached_leg",
+      "expected": "failed",
+      "actual": "failed",
+      "failures": [
+        {
+          "kind": "disconnected_joint",
+          "entity": "chair_near",
+          "joint": [
+            "front_left_leg",
+            "seat_board"
+          ],
+          "distances_m": [
+            0.06999999284744263,
+            0.0
+          ]
+        },
+        {
+          "kind": "disconnected_joint",
+          "entity": "chair_near",
+          "joint": [
+            "front_left_leg",
+            "front_apron"
+          ],
+          "distances_m": [
+            0.03999999165534973,
+            0.0
+          ]
+        },
+        {
+          "kind": "disconnected_joint",
+          "entity": "chair_near",
+          "joint": [
+            "front_left_leg",
+            "left_apron"
+          ],
+          "distances_m": [
+            0.03999999165534973,
+            0.0
+          ]
+        },
+        {
+          "kind": "floor",
+          "entity": "chair_near",
+          "part": "front_left_leg",
+          "z": -0.06799999624490738
+        },
+        {
+          "kind": "landmark_part_mismatch",
+          "entity": "chair_near",
+          "landmark": "n_foot_1",
+          "distance_m": 0.01100003719329834
+        }
+      ]
+    },
+    {
+      "test": "wrong_crossbar",
+      "expected": "failed",
+      "actual": "failed",
+      "failures": [
+        {
+          "kind": "disconnected_joint",
+          "entity": "table",
+          "joint": [
+            "leg_near_left",
+            "cross_near"
+          ],
+          "distances_m": [
+            0.0,
+            0.1591082513332367
+          ]
+        }
+      ]
+    },
+    {
+      "test": "table_chair_interpenetration",
+      "expected": "failed",
+      "actual": "failed",
+      "failures": [
+        {
+          "kind": "disconnected_joint",
+          "entity": "chair_near",
+          "joint": [
+            "front_left_leg",
+            "seat_board"
+          ],
+          "distances_m": [
+            0.6404203772544861,
+            0.0
+          ]
+        },
+        {
+          "kind": "disconnected_joint",
+          "entity": "chair_near",
+          "joint": [
+            "front_left_leg",
+            "front_apron"
+          ],
+          "distances_m": [
+            0.6404203772544861,
+            0.0
+          ]
+        },
+        {
+          "kind": "disconnected_joint",
+          "entity": "chair_near",
+          "joint": [
+            "front_left_leg",
+            "left_apron"
+          ],
+          "distances_m": [
+            0.6404203772544861,
+            0.0
+          ]
+        },
+        {
+          "kind": "floor",
+          "entity": "chair_near",
+          "part": "front_left_leg",
+          "z": 0.1790979653596878
+        },
+        {
+          "kind": "landmark_part_mismatch",
+          "entity": "chair_near",
+          "landmark": "n_foot_1",
+          "distance_m": 0.6648496985435486
+        },
+        {
+          "kind": "source_landmarks",
+          "entity": "chair_near",
+          "median": 4.152913269946444,
+          "maximum": 84.5120749179859
+        },
+        {
+          "kind": "unexpected_interpenetration",
+          "parts": [
+            "chair_near__front_left_leg",
+            "table__cross_near"
+          ],
+          "depth_m": 0.007798552513122559,
+          "cross_furniture": true
+        },
+        {
+          "kind": "unexpected_interpenetration",
+          "parts": [
+            "chair_near__front_left_leg",
+            "table__leg_near_right"
+          ],
+          "depth_m": 0.00917148683220148,
+          "cross_furniture": true
+        }
+      ]
+    },
+    {
+      "test": "wrong_part_owner",
+      "expected": "failed",
+      "actual": "failed",
+      "failures": [
+        {
+          "kind": "ownership",
+          "part": {
+            "id": "back_rail",
+            "object": "chair_near__back_rail",
+            "entity": "chair_near"
+          }
+        }
+      ]
+    },
+    {
+      "test": "stale_source_landmarks_after_rigid_move",
+      "expected": "failed",
+      "actual": "failed",
+      "failures": [
+        {
+          "kind": "landmark_part_mismatch",
+          "entity": "chair_near",
+          "landmark": "n_seat_0",
+          "distance_m": 0.4009320139884949
+        },
+        {
+          "kind": "landmark_part_mismatch",
+          "entity": "chair_near",
+          "landmark": "n_seat_1",
+          "distance_m": 0.39878129959106445
+        },
+        {
+          "kind": "landmark_part_mismatch",
+          "entity": "chair_near",
+          "landmark": "n_seat_2",
+          "distance_m": 0.04806196317076683
+        },
+        {
+          "kind": "landmark_part_mismatch",
+          "entity": "chair_near",
+          "landmark": "n_seat_3",
+          "distance_m": 0.061581484973430634
+        },
+        {
+          "kind": "landmark_part_mismatch",
+          "entity": "chair_near",
+          "landmark": "n_foot_0",
+          "distance_m": 0.38900282979011536
+        },
+        {
+          "kind": "landmark_part_mismatch",
+          "entity": "chair_near",
+          "landmark": "n_foot_1",
+          "distance_m": 0.38900282979011536
+        },
+        {
+          "kind": "landmark_part_mismatch",
+          "entity": "chair_near",
+          "landmark": "n_foot_2",
+          "distance_m": 0.38900306820869446
+        },
+        {
+          "kind": "landmark_part_mismatch",
+          "entity": "chair_near",
+          "landmark": "n_foot_3",
+          "distance_m": 0.38900306820869446
+        },
+        {
+          "kind": "landmark_part_mismatch",
+          "entity": "chair_near",
+          "landmark": "n_back_post_2",
+          "distance_m": 0.3834425210952759
+        },
+        {
+          "kind": "landmark_part_mismatch",
+          "entity": "chair_near",
+          "landmark": "n_back_post_3",
+          "distance_m": 0.38242512941360474
+        },
+        {
+          "kind": "source_landmarks",
+          "entity": "chair_near",
+          "median": 71.07794332036511,
+          "maximum": 81.29106303445003
+        }
+      ]
+    }
+  ]
+}

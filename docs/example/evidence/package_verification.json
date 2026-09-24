@@ -1,0 +1,53 @@
+{
+  "status": "passed",
+  "checked_at": "2026-09-23T12:22:23.361557+00:00",
+  "reviewed_binary_files_identical": {
+    "A": {
+      "scene.blend": true,
+      "scene_evaluated.blend": true,
+      "scene.glb": true,
+      "scene.usdc": true,
+      "scene.xml": true,
+      "scene_dynamic.xml": true,
+      "scene_solver_reference.xml": true
+    },
+    "B": {
+      "scene.blend": true,
+      "scene_evaluated.blend": true,
+      "scene.glb": true,
+      "scene.usdc": true,
+      "scene.xml": true,
+      "scene_dynamic.xml": true,
+      "scene_solver_reference.xml": true
+    }
+  },
+  "packaged_mujoco_loaded": {
+    "A": {
+      "scene.xml": {
+        "bodies": 39,
+        "flexes": 0
+      },
+      "scene_dynamic.xml": {
+        "bodies": 375,
+        "flexes": 2
+      }
+    },
+    "B": {
+      "scene.xml": {
+        "bodies": 39,
+        "flexes": 0
+      },
+      "scene_dynamic.xml": {
+        "bodies": 375,
+        "flexes": 2
+      }
+    }
+  },
+  "source_compilation": "passed",
+  "executed_workflow_matches_delivered_source": true,
+  "review_evidence_paths_and_hashes": "passed",
+  "internal_text_paths": "none",
+  "cached_resume": "both succeeded with no source changes",
+  "blender_dependency_check": "package_blender_dependencies.json",
+  "old_delivery": "Preserved separately and superseded; current editable models and large archive remain on execution host."
+}
