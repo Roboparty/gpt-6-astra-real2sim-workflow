@@ -1,0 +1,489 @@
+[
+  {
+    "scene": "01_bedroom",
+    "collection": "10 Oak bed and bedding",
+    "assembly_roots": [
+      "10 Oak bed and bedding | move assembly"
+    ],
+    "editable_geometry_objects": 67,
+    "bounds_m": [
+      [
+        -0.8237437009811401,
+        -0.3711990416049957,
+        0.0
+      ],
+      [
+        0.5237410664558411,
+        1.7675000429153442,
+        0.8801940679550171
+      ]
+    ],
+    "cloth_objects": [],
+    "rigid_body_objects": [],
+    "independent_collection": true
+  },
+  {
+    "scene": "01_bedroom",
+    "collection": "40 Wall whiteboard",
+    "assembly_roots": [
+      "40 Wall whiteboard | move assembly"
+    ],
+    "editable_geometry_objects": 1,
+    "bounds_m": [
+      [
+        -0.6290682554244995,
+        1.7720756530761719,
+        0.9324591755867004
+      ],
+      [
+        0.9999713897705078,
+        1.7880756855010986,
+        1.935046911239624
+      ]
+    ],
+    "cloth_objects": [],
+    "rigid_body_objects": [],
+    "independent_collection": true
+  },
+  {
+    "scene": "01_bedroom",
+    "collection": "30 Shoe cabinet | reconstructed hinges",
+    "assembly_roots": [
+      "30 Shoe cabinet | reconstructed hinges | move assembly"
+    ],
+    "editable_geometry_objects": 39,
+    "bounds_m": [
+      [
+        -1.223752498626709,
+        -1.8378937244415283,
+        -3.725290298461914e-09
+      ],
+      [
+        -0.7681424021720886,
+        -0.787893533706665,
+        1.0700000524520874
+      ]
+    ],
+    "cloth_objects": [],
+    "rigid_body_objects": [],
+    "independent_collection": true
+  },
+  {
+    "scene": "01_bedroom",
+    "collection": "20 Wardrobe | reconstructed hinges",
+    "assembly_roots": [
+      "20 Wardrobe | reconstructed hinges | move assembly"
+    ],
+    "editable_geometry_objects": 28,
+    "bounds_m": [
+      [
+        1.1224251985549927,
+        1.135094165802002,
+        -3.725290298461914e-09
+      ],
+      [
+        1.9164252281188965,
+        1.7900757789611816,
+        2.009999990463257
+      ]
+    ],
+    "cloth_objects": [],
+    "rigid_body_objects": [],
+    "independent_collection": true
+  },
+  {
+    "scene": "02_shelving",
+    "collection": "10 Gondola shelving | double sided",
+    "assembly_roots": [
+      "10 Gondola shelving | double sided | move assembly"
+    ],
+    "editable_geometry_objects": 262,
+    "bounds_m": [
+      [
+        -1.0769124031066895,
+        -0.41800233721733093,
+        0.0
+      ],
+      [
+        0.19691240787506104,
+        0.6180023550987244,
+        1.669071078300476
+      ]
+    ],
+    "cloth_objects": [],
+    "rigid_body_objects": [],
+    "independent_collection": true
+  },
+  {
+    "scene": "02_shelving",
+    "collection": "20 Gondola end cap",
+    "assembly_roots": [
+      "20 Gondola end cap | move assembly"
+    ],
+    "editable_geometry_objects": 64,
+    "bounds_m": [
+      [
+        0.17709755897521973,
+        -0.393098384141922,
+        0.0
+      ],
+      [
+        0.6114591956138611,
+        0.5930983424186707,
+        1.669071078300476
+      ]
+    ],
+    "cloth_objects": [],
+    "rigid_body_objects": [],
+    "independent_collection": true
+  },
+  {
+    "scene": "02_shelving",
+    "collection": "30 Shopping trolley",
+    "assembly_roots": [
+      "30 Shopping trolley | move assembly"
+    ],
+    "editable_geometry_objects": 80,
+    "bounds_m": [
+      [
+        0.7920325994491577,
+        1.5507597923278809,
+        0.014999995939433575
+      ],
+      [
+        1.8756062984466553,
+        2.398397207260132,
+        1.0479999780654907
+      ]
+    ],
+    "cloth_objects": [],
+    "rigid_body_objects": [],
+    "independent_collection": true
+  },
+  {
+    "scene": "03_utility",
+    "collection": "10 Cafe table",
+    "assembly_roots": [
+      "10 Cafe table | move assembly"
+    ],
+    "editable_geometry_objects": 9,
+    "bounds_m": [
+      [
+        -1.007548451423645,
+        0.4268608093261719,
+        0.017732761800289154
+      ],
+      [
+        -0.3124516010284424,
+        1.4731391668319702,
+        0.7549999952316284
+      ]
+    ],
+    "cloth_objects": [],
+    "rigid_body_objects": [],
+    "independent_collection": true
+  },
+  {
+    "scene": "03_utility",
+    "collection": "Chair -1.08 1.05",
+    "assembly_roots": [
+      "Chair -1.08 1.05 | move assembly"
+    ],
+    "editable_geometry_objects": 13,
+    "bounds_m": [
+      [
+        -1.284943699836731,
+        0.512168288230896,
+        0.018582569435238838
+      ],
+      [
+        -0.7612874507904053,
+        1.0113846063613892,
+        0.8309960961341858
+      ]
+    ],
+    "cloth_objects": [],
+    "rigid_body_objects": [],
+    "independent_collection": true
+  },
+  {
+    "scene": "03_utility",
+    "collection": "Chair -0.16 0.68",
+    "assembly_roots": [
+      "Chair -0.16 0.68 | move assembly"
+    ],
+    "editable_geometry_objects": 13,
+    "bounds_m": [
+      [
+        -0.29009151458740234,
+        0.5236519575119019,
+        0.018582569435238838
+      ],
+      [
+        0.23356476426124573,
+        1.022868275642395,
+        0.8309960961341858
+      ]
+    ],
+    "cloth_objects": [],
+    "rigid_body_objects": [],
+    "independent_collection": true
+  },
+  {
+    "scene": "03_utility",
+    "collection": "12 Small wastebasket",
+    "assembly_roots": [
+      "12 Small wastebasket | move assembly"
+    ],
+    "editable_geometry_objects": 2,
+    "bounds_m": [
+      [
+        -0.7874876856803894,
+        0.22770178318023682,
+        0.01000000536441803
+      ],
+      [
+        -0.5214877128601074,
+        0.4937017858028412,
+        0.29600000381469727
+      ]
+    ],
+    "cloth_objects": [],
+    "rigid_body_objects": [],
+    "independent_collection": true
+  },
+  {
+    "scene": "03_utility",
+    "collection": "20 Clothing rail",
+    "assembly_roots": [
+      "20 Clothing rail | move assembly"
+    ],
+    "editable_geometry_objects": 12,
+    "bounds_m": [
+      [
+        0.8065669536590576,
+        0.9728273749351501,
+        0.02639945037662983
+      ],
+      [
+        2.1858134269714355,
+        1.554366946220398,
+        1.6188768148422241
+      ]
+    ],
+    "cloth_objects": [],
+    "rigid_body_objects": [],
+    "independent_collection": true
+  },
+  {
+    "scene": "03_utility",
+    "collection": "21 Hanging coat 0",
+    "assembly_roots": [
+      "21 Hanging coat 0 | move assembly"
+    ],
+    "editable_geometry_objects": 5,
+    "bounds_m": [
+      [
+        0.9757331609725952,
+        1.0023165941238403,
+        0.5728798508644104
+      ],
+      [
+        1.2649226188659668,
+        1.4528884887695312,
+        1.6346378326416016
+      ]
+    ],
+    "cloth_objects": [
+      "Flexible coat 0 | sewn open garment"
+    ],
+    "rigid_body_objects": [],
+    "independent_collection": true
+  },
+  {
+    "scene": "03_utility",
+    "collection": "21 Hanging coat 1",
+    "assembly_roots": [
+      "21 Hanging coat 1 | move assembly"
+    ],
+    "editable_geometry_objects": 4,
+    "bounds_m": [
+      [
+        1.1728724241256714,
+        1.0108634233474731,
+        0.6261962056159973
+      ],
+      [
+        1.4527796506881714,
+        1.4444242715835571,
+        1.6346378326416016
+      ]
+    ],
+    "cloth_objects": [],
+    "rigid_body_objects": [],
+    "independent_collection": true
+  },
+  {
+    "scene": "03_utility",
+    "collection": "21 Hanging coat 2",
+    "assembly_roots": [
+      "21 Hanging coat 2 | move assembly"
+    ],
+    "editable_geometry_objects": 5,
+    "bounds_m": [
+      [
+        1.3577730655670166,
+        0.9959065318107605,
+        0.5639938116073608
+      ],
+      [
+        1.6539242267608643,
+        1.4592366218566895,
+        1.6346378326416016
+      ]
+    ],
+    "cloth_objects": [],
+    "rigid_body_objects": [],
+    "independent_collection": true
+  },
+  {
+    "scene": "03_utility",
+    "collection": "21 Hanging coat 3",
+    "assembly_roots": [
+      "21 Hanging coat 3 | move assembly"
+    ],
+    "editable_geometry_objects": 4,
+    "bounds_m": [
+      [
+        1.5571376085281372,
+        1.008726716041565,
+        0.6084240674972534
+      ],
+      [
+        1.8393652439117432,
+        1.446540355682373,
+        1.6346378326416016
+      ]
+    ],
+    "cloth_objects": [],
+    "rigid_body_objects": [],
+    "independent_collection": true
+  },
+  {
+    "scene": "03_utility",
+    "collection": "21 Hanging coat 4",
+    "assembly_roots": [
+      "21 Hanging coat 4 | move assembly"
+    ],
+    "editable_geometry_objects": 5,
+    "bounds_m": [
+      [
+        1.7415432929992676,
+        0.9990177154541016,
+        0.5900231003761292
+      ],
+      [
+        2.027855634689331,
+        1.4658286571502686,
+        1.6346378326416016
+      ]
+    ],
+    "cloth_objects": [
+      "Flexible coat 4 | sewn open garment"
+    ],
+    "rigid_body_objects": [],
+    "independent_collection": true
+  },
+  {
+    "scene": "03_utility",
+    "collection": "30 Black equipment cabinet",
+    "assembly_roots": [
+      "30 Black equipment cabinet | move assembly"
+    ],
+    "editable_geometry_objects": 25,
+    "bounds_m": [
+      [
+        1.7336279153823853,
+        -0.4212947487831116,
+        0.0
+      ],
+      [
+        2.413628101348877,
+        0.3647577464580536,
+        0.9565539360046387
+      ]
+    ],
+    "cloth_objects": [],
+    "rigid_body_objects": [
+      "Cabinet dynamic door"
+    ],
+    "independent_collection": true
+  },
+  {
+    "scene": "03_utility",
+    "collection": "40 Janitorial trolley",
+    "assembly_roots": [
+      "40 Janitorial trolley | move assembly"
+    ],
+    "editable_geometry_objects": 26,
+    "bounds_m": [
+      [
+        -1.447747826576233,
+        -1.3995908498764038,
+        0.009999996051192284
+      ],
+      [
+        -0.6777478456497192,
+        -0.5695908069610596,
+        1.4205248355865479
+      ]
+    ],
+    "cloth_objects": [],
+    "rigid_body_objects": [],
+    "independent_collection": true
+  },
+  {
+    "scene": "03_utility",
+    "collection": "50 Whiteboard",
+    "assembly_roots": [
+      "50 Whiteboard | move assembly"
+    ],
+    "editable_geometry_objects": 1,
+    "bounds_m": [
+      [
+        2.5296080112457275,
+        -1.0008667707443237,
+        1.2722806930541992
+      ],
+      [
+        2.5468719005584717,
+        1.4220668077468872,
+        2.3038597106933594
+      ]
+    ],
+    "cloth_objects": [],
+    "rigid_body_objects": [],
+    "independent_collection": true
+  },
+  {
+    "scene": "03_utility",
+    "collection": "60 Utility detail upgrades",
+    "assembly_roots": [],
+    "editable_geometry_objects": 6,
+    "bounds_m": [
+      [
+        -1.3957476615905762,
+        -1.3466908931732178,
+        0.45977500081062317
+      ],
+      [
+        -0.729748010635376,
+        -0.8165917992591858,
+        1.0128029584884644
+      ]
+    ],
+    "cloth_objects": [],
+    "rigid_body_objects": [],
+    "independent_collection": true
+  }
+]

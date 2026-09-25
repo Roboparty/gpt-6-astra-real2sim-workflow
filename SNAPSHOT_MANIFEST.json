@@ -2,9 +2,10 @@
   "schema": "real2sim.repository-snapshot/1",
   "date": "2026-09-25",
   "project": "GPT-6 Astra Real2sim workflow",
-  "release": "public-preview-20260925",
-  "scope": "Public source, documentation, selected evidence and authorized previews; media has separate terms; large artifacts excluded",
-  "file_count": 199,
+  "release": "main",
+  "previous_release": "public-preview-20260925",
+  "scope": "Public workflow source, full V5 showcase preview, fresh geometry/reference audits; media has separate terms; large model artifacts excluded",
+  "file_count": 211,
   "files": [
     {
       "path": ".gitattributes",
@@ -33,13 +34,13 @@
     },
     {
       "path": "MEDIA_NOTICE.md",
-      "bytes": 1235,
-      "sha256": "7bd279c93ff85e4ce81550764c3ede2607ea863e454efa92660a25dc0136b5fd"
+      "bytes": 2049,
+      "sha256": "58f16f8080eb295eb5c56532935bb85f0dbe18b3fbb4414d7b7d149c2ab6d1d2"
     },
     {
       "path": "PROVENANCE.md",
-      "bytes": 1800,
-      "sha256": "3d9ea091f9b978a36a401abdae82f8e8baf03174a32ca0f8db12e517aa44dac3"
+      "bytes": 2552,
+      "sha256": "e30fdfa918a9757be886f06d87c12b91298f955ce2896ce6324edf79a3057065"
     },
     {
       "path": "PUBLICATION_VALIDATION.json",
@@ -48,18 +49,18 @@
     },
     {
       "path": "README.md",
-      "bytes": 7465,
-      "sha256": "61adf2f4f8afa7803be56f14fc10f9086ac9bd8ad1f8ccf7ab91722afd29e70c"
+      "bytes": 3503,
+      "sha256": "5823479f135780ea31500e8734fbf1e93070c997b67b0ab7bbf05b5e10a03cfc"
     },
     {
       "path": "README_EN.md",
-      "bytes": 6555,
-      "sha256": "96982cfe430b9b8d01b675bb24d881e0f90460d0b41c49d68e3304f555ff2e46"
+      "bytes": 3903,
+      "sha256": "5afa7e4df2677b99a8657dae3b7f1f183b3bd6ae9de986245b3449d462643b91"
     },
     {
       "path": "THIRD_PARTY_NOTICES.md",
-      "bytes": 1355,
-      "sha256": "a2eb2bc766e2e8623c7c7c34da1f5b813518fc66e311f08082ae7c9bb841da40"
+      "bytes": 2530,
+      "sha256": "bf5ea0cf4b9aa5e566131d2f09b3e932d95e59e32b5537b233e4ad4526ceadd0"
     },
     {
       "path": "USER_REQUEST.md",
@@ -213,8 +214,8 @@
     },
     {
       "path": "docs/FURNITURE_SPEC_ENHANCEMENT.md",
-      "bytes": 4573,
-      "sha256": "8bd007afe766439700e6e36b1fc4397836de4dcbcf2d986381505fb3961dc1dd"
+      "bytes": 4937,
+      "sha256": "96441a2bcaf1b7ab9c8ae22fe7fc15e7a8aa32f537ec9fd1c5f884bc61968954"
     },
     {
       "path": "docs/INTEGRATIONS.md",
@@ -742,9 +743,69 @@
       "sha256": "4d8b7c319442b6d5c2358a016c2c9044268ed3ba380326304aff5fefe7fe15a9"
     },
     {
+      "path": "docs/showcase/ACCURACY.md",
+      "bytes": 8530,
+      "sha256": "594d8770447d4edf31af848c2041b81c69a49c9b8b15a4349b6d2732baae2945"
+    },
+    {
+      "path": "docs/showcase/README.md",
+      "bytes": 2222,
+      "sha256": "b8f1f5ac40969ffbed0921a88ed2f0aac83666f4f9de75c883de3edf187a17d3"
+    },
+    {
+      "path": "docs/showcase/evidence/asset_inventory.json",
+      "bytes": 10682,
+      "sha256": "0c611382a43babf042745b4ff1e904a2d6ec298298223dec741ad47f2e51bce6"
+    },
+    {
+      "path": "docs/showcase/evidence/audit_geometry.py",
+      "bytes": 8284,
+      "sha256": "873b078c2b557dd7051dfca89da1333d85c4add781eac9fbf12fee8583a29661"
+    },
+    {
+      "path": "docs/showcase/evidence/geometry_audit.json",
+      "bytes": 659971,
+      "sha256": "5205ea75b249838540a289163b993ac2b23fa1d6c7196d6ca742c28a946685b4"
+    },
+    {
+      "path": "docs/showcase/evidence/measure_reference_surfaces.py",
+      "bytes": 5370,
+      "sha256": "61424ae8cb42ab92eb5d0448f11035cf6c41af19d463b96155ebac86a20afacd"
+    },
+    {
+      "path": "docs/showcase/evidence/publication_checks.json",
+      "bytes": 988,
+      "sha256": "52cc7b06b618c160fe0e047dcb1b930f2011c787c36b2ebeedbb54b598e0df1b"
+    },
+    {
+      "path": "docs/showcase/evidence/standalone_assets.json",
+      "bytes": 10787,
+      "sha256": "95c486d9d074392763423f56164aa62989bdaac3841a6f1190357d4dadeacd97"
+    },
+    {
+      "path": "docs/showcase/evidence/surface_metrics.json",
+      "bytes": 4520,
+      "sha256": "5c35f8f9d002fd59302fbd53a0cc17ad5827701870304af4d668149c756f7eaa"
+    },
+    {
+      "path": "docs/showcase/media/comparison.jpg",
+      "bytes": 988349,
+      "sha256": "488ab573d9a086de9b584797dd1afff7abfaf35005c2a71b5b694fff76d4b354"
+    },
+    {
+      "path": "docs/showcase/media/overview.mp4",
+      "bytes": 5772455,
+      "sha256": "80f8d10660b6619144b10e7f6c6e3bd1cfebd85a97b394072f8a0ae06cc345d4"
+    },
+    {
       "path": "inputs/utility_room_original.jpg",
       "bytes": 243723,
       "sha256": "dfe25afbfb885ae9bc377691dd18ebd4259ffa72917ca725e3809ef40624c29c"
+    },
+    {
+      "path": "licenses/Apache-2.0.txt",
+      "bytes": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
     },
     {
       "path": "public_contract/AGENT_EXECUTION_SPEC.md",

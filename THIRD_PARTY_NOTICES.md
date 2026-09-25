@@ -1,5 +1,13 @@
 # Dependencies and project references
 
+## Three-room showcase credits
+
+- **ArtVIP — X-Humanoid**: VITBERGET and BRUKSVARA reference assets appear in the final comparison section of `docs/showcase/media/overview.mp4`. The [official dataset card](https://huggingface.co/datasets/X-Humanoid/ArtVIP/blob/d22f209/README.md) declares Apache-2.0 (checked 2026-09-25). The video imports geometry into Blender and adds neutral lighting and kinematic replay; it does not run the original PhysX simulation. The BRUKSVARA reference is the brown variant. Reference geometry is not included in this Git repository. [Apache-2.0 text](licenses/Apache-2.0.txt).
+- **Poly Haven**: `oak_veneer_01` and `dirty_carpet` source textures, recorded as CC0 in the source case's material provenance. [Oak veneer](https://polyhaven.com/a/oak_veneer_01), [dirty carpet](https://polyhaven.com/a/dirty_carpet), [licence](https://polyhaven.com/license). Textures were carried forward from an earlier scene package; this project does not claim authorship of them.
+- The bedding pattern was generated in the source task. Original photographs and composed preview media use the separate [media terms](MEDIA_NOTICE.md).
+
+## Runtime and references
+
 The MIT licence in this repository covers project-authored source code, text documentation, and machine-readable metadata. Example media is covered separately by [MEDIA_NOTICE.md](MEDIA_NOTICE.md).
 
 Runtime dependencies are not redistributed as part of this Git repository and retain their own licences. Consult the exact installed version's notices, including transitive dependencies, when distributing an environment or container:

@@ -1,0 +1,380 @@
+[
+  {
+    "id": "01_bedroom_10_oak_bed_and_bedding",
+    "source_scene": "01_bedroom",
+    "source_collection": "10 Oak bed and bedding",
+    "file": "assets_static_pose/01_bedroom_10_oak_bed_and_bedding.blend",
+    "geometry_objects": 67,
+    "dimensions_m": [
+      1.347484827041626,
+      2.1386990547180176,
+      0.8801940679550171
+    ],
+    "source_pivot_m": [
+      -0.15000131726264954,
+      0.6981505155563354,
+      0.0
+    ],
+    "physics": "static rest pose; full physics in main model.blend"
+  },
+  {
+    "id": "01_bedroom_30_shoe_cabinet_reconstructed_hinges",
+    "source_scene": "01_bedroom",
+    "source_collection": "30 Shoe cabinet | reconstructed hinges",
+    "file": "assets_static_pose/01_bedroom_30_shoe_cabinet_reconstructed_hinges.blend",
+    "geometry_objects": 39,
+    "dimensions_m": [
+      0.45561009645462036,
+      1.0500001907348633,
+      1.0700000524520874
+    ],
+    "source_pivot_m": [
+      -0.9959474802017212,
+      -1.3128936290740967,
+      -3.725290298461914e-09
+    ],
+    "physics": "static rest pose; full physics in main model.blend"
+  },
+  {
+    "id": "01_bedroom_20_wardrobe_reconstructed_hinges",
+    "source_scene": "01_bedroom",
+    "source_collection": "20 Wardrobe | reconstructed hinges",
+    "file": "assets_static_pose/01_bedroom_20_wardrobe_reconstructed_hinges.blend",
+    "geometry_objects": 28,
+    "dimensions_m": [
+      0.7940000295639038,
+      0.6549816131591797,
+      2.009999990463257
+    ],
+    "source_pivot_m": [
+      1.5194251537322998,
+      1.4625849723815918,
+      -3.725290298461914e-09
+    ],
+    "physics": "static rest pose; full physics in main model.blend"
+  },
+  {
+    "id": "02_shelving_10_gondola_shelving_double_sided",
+    "source_scene": "02_shelving",
+    "source_collection": "10 Gondola shelving | double sided",
+    "file": "assets_static_pose/02_shelving_10_gondola_shelving_double_sided.blend",
+    "geometry_objects": 262,
+    "dimensions_m": [
+      1.2738248109817505,
+      1.036004662513733,
+      1.669071078300476
+    ],
+    "source_pivot_m": [
+      -0.4399999976158142,
+      0.10000000894069672,
+      0.0
+    ],
+    "physics": "static rest pose; full physics in main model.blend"
+  },
+  {
+    "id": "02_shelving_20_gondola_end_cap",
+    "source_scene": "02_shelving",
+    "source_collection": "20 Gondola end cap",
+    "file": "assets_static_pose/02_shelving_20_gondola_end_cap.blend",
+    "geometry_objects": 64,
+    "dimensions_m": [
+      0.43436163663864136,
+      0.986196756362915,
+      1.669071078300476
+    ],
+    "source_pivot_m": [
+      0.3942783772945404,
+      0.09999997913837433,
+      0.0
+    ],
+    "physics": "static rest pose; full physics in main model.blend"
+  },
+  {
+    "id": "02_shelving_30_shopping_trolley",
+    "source_scene": "02_shelving",
+    "source_collection": "30 Shopping trolley",
+    "file": "assets_static_pose/02_shelving_30_shopping_trolley.blend",
+    "geometry_objects": 80,
+    "dimensions_m": [
+      1.0835736989974976,
+      0.847637414932251,
+      1.0329999923706055
+    ],
+    "source_pivot_m": [
+      1.3338193893432617,
+      1.9745784997940063,
+      0.014999995939433575
+    ],
+    "physics": "static rest pose; full physics in main model.blend"
+  },
+  {
+    "id": "03_utility_10_cafe_table",
+    "source_scene": "03_utility",
+    "source_collection": "10 Cafe table",
+    "file": "assets_static_pose/03_utility_10_cafe_table.blend",
+    "geometry_objects": 9,
+    "dimensions_m": [
+      0.6950968503952026,
+      1.0462783575057983,
+      0.737267255783081
+    ],
+    "source_pivot_m": [
+      -0.6600000262260437,
+      0.949999988079071,
+      0.017732761800289154
+    ],
+    "physics": "static rest pose; full physics in main model.blend"
+  },
+  {
+    "id": "03_utility_chair_1_08_1_05",
+    "source_scene": "03_utility",
+    "source_collection": "Chair -1.08 1.05",
+    "file": "assets_static_pose/03_utility_chair_1_08_1_05.blend",
+    "geometry_objects": 13,
+    "dimensions_m": [
+      0.5236562490463257,
+      0.49921631813049316,
+      0.8124135136604309
+    ],
+    "source_pivot_m": [
+      -1.023115634918213,
+      0.7617764472961426,
+      0.018582569435238838
+    ],
+    "physics": "static rest pose; full physics in main model.blend"
+  },
+  {
+    "id": "03_utility_chair_0_16_0_68",
+    "source_scene": "03_utility",
+    "source_collection": "Chair -0.16 0.68",
+    "file": "assets_static_pose/03_utility_chair_0_16_0_68.blend",
+    "geometry_objects": 13,
+    "dimensions_m": [
+      0.5236562490463257,
+      0.49921631813049316,
+      0.8124135136604309
+    ],
+    "source_pivot_m": [
+      -0.028263375163078308,
+      0.7732601165771484,
+      0.018582569435238838
+    ],
+    "physics": "static rest pose; full physics in main model.blend"
+  },
+  {
+    "id": "03_utility_12_small_wastebasket",
+    "source_scene": "03_utility",
+    "source_collection": "12 Small wastebasket",
+    "file": "assets_static_pose/03_utility_12_small_wastebasket.blend",
+    "geometry_objects": 2,
+    "dimensions_m": [
+      0.265999972820282,
+      0.26600000262260437,
+      0.28600001335144043
+    ],
+    "source_pivot_m": [
+      -0.6544877290725708,
+      0.3607017993927002,
+      0.01000000536441803
+    ],
+    "physics": "static rest pose; full physics in main model.blend"
+  },
+  {
+    "id": "03_utility_20_clothing_rail",
+    "source_scene": "03_utility",
+    "source_collection": "20 Clothing rail",
+    "file": "assets_static_pose/03_utility_20_clothing_rail.blend",
+    "geometry_objects": 12,
+    "dimensions_m": [
+      1.379246473312378,
+      0.5815395712852478,
+      1.5924773216247559
+    ],
+    "source_pivot_m": [
+      1.4961901903152466,
+      1.2635971307754517,
+      0.02639945037662983
+    ],
+    "physics": "static rest pose; full physics in main model.blend"
+  },
+  {
+    "id": "03_utility_21_hanging_coat_0",
+    "source_scene": "03_utility",
+    "source_collection": "21 Hanging coat 0",
+    "file": "assets_static_pose/03_utility_21_hanging_coat_0.blend",
+    "geometry_objects": 5,
+    "dimensions_m": [
+      0.2891894578933716,
+      0.4505718946456909,
+      1.061758041381836
+    ],
+    "source_pivot_m": [
+      1.1203279495239258,
+      1.227602481842041,
+      0.5728798508644104
+    ],
+    "physics": "static rest pose; full physics in main model.blend"
+  },
+  {
+    "id": "03_utility_21_hanging_coat_1",
+    "source_scene": "03_utility",
+    "source_collection": "21 Hanging coat 1",
+    "file": "assets_static_pose/03_utility_21_hanging_coat_1.blend",
+    "geometry_objects": 4,
+    "dimensions_m": [
+      0.2799072265625,
+      0.433560848236084,
+      1.008441686630249
+    ],
+    "source_pivot_m": [
+      1.3128260374069214,
+      1.2276438474655151,
+      0.6261962056159973
+    ],
+    "physics": "static rest pose; full physics in main model.blend"
+  },
+  {
+    "id": "03_utility_21_hanging_coat_2",
+    "source_scene": "03_utility",
+    "source_collection": "21 Hanging coat 2",
+    "file": "assets_static_pose/03_utility_21_hanging_coat_2.blend",
+    "geometry_objects": 5,
+    "dimensions_m": [
+      0.29615116119384766,
+      0.46333009004592896,
+      1.0706440210342407
+    ],
+    "source_pivot_m": [
+      1.5058486461639404,
+      1.2275716066360474,
+      0.5639938116073608
+    ],
+    "physics": "static rest pose; full physics in main model.blend"
+  },
+  {
+    "id": "03_utility_21_hanging_coat_3",
+    "source_scene": "03_utility",
+    "source_collection": "21 Hanging coat 3",
+    "file": "assets_static_pose/03_utility_21_hanging_coat_3.blend",
+    "geometry_objects": 4,
+    "dimensions_m": [
+      0.28222763538360596,
+      0.4378136396408081,
+      1.0262137651443481
+    ],
+    "source_pivot_m": [
+      1.698251485824585,
+      1.2276334762573242,
+      0.6084240674972534
+    ],
+    "physics": "static rest pose; full physics in main model.blend"
+  },
+  {
+    "id": "03_utility_21_hanging_coat_4",
+    "source_scene": "03_utility",
+    "source_collection": "21 Hanging coat 4",
+    "file": "assets_static_pose/03_utility_21_hanging_coat_4.blend",
+    "geometry_objects": 5,
+    "dimensions_m": [
+      0.2863123416900635,
+      0.466810941696167,
+      1.0446147918701172
+    ],
+    "source_pivot_m": [
+      1.8846994638442993,
+      1.232423186302185,
+      0.5900231003761292
+    ],
+    "physics": "static rest pose; full physics in main model.blend"
+  },
+  {
+    "id": "03_utility_30_black_equipment_cabinet",
+    "source_scene": "03_utility",
+    "source_collection": "30 Black equipment cabinet",
+    "file": "assets_static_pose/03_utility_30_black_equipment_cabinet.blend",
+    "geometry_objects": 25,
+    "dimensions_m": [
+      0.6800001859664917,
+      0.7860524654388428,
+      0.9565539360046387
+    ],
+    "source_pivot_m": [
+      2.0736279487609863,
+      -0.02826850116252899,
+      0.0
+    ],
+    "physics": "static rest pose; full physics in main model.blend"
+  },
+  {
+    "id": "03_utility_40_janitorial_trolley",
+    "source_scene": "03_utility",
+    "source_collection": "40 Janitorial trolley",
+    "file": "assets_static_pose/03_utility_40_janitorial_trolley.blend",
+    "geometry_objects": 26,
+    "dimensions_m": [
+      0.7699999809265137,
+      0.8300000429153442,
+      1.410524845123291
+    ],
+    "source_pivot_m": [
+      -1.062747836112976,
+      -0.9845908284187317,
+      0.009999996051192284
+    ],
+    "physics": "static rest pose; full physics in main model.blend"
+  },
+  {
+    "id": "01_bedroom_mattress",
+    "source_scene": "01_bedroom",
+    "source_collection": "mattress",
+    "file": "assets_static_pose/01_bedroom_mattress.blend",
+    "geometry_objects": 1,
+    "dimensions_m": [
+      1.1370834112167358,
+      1.940000057220459,
+      0.13714450597763062
+    ],
+    "source_pivot_m": [
+      -0.15000002086162567,
+      0.7200000286102295,
+      0.31865936517715454
+    ],
+    "physics": "static rest pose; full physics in main model.blend"
+  },
+  {
+    "id": "01_bedroom_duvet",
+    "source_scene": "01_bedroom",
+    "source_collection": "duvet",
+    "file": "assets_static_pose/01_bedroom_duvet.blend",
+    "geometry_objects": 2,
+    "dimensions_m": [
+      1.347484827041626,
+      1.6431469917297363,
+      0.19125103950500488
+    ],
+    "source_pivot_m": [
+      -0.15000131726264954,
+      0.4503744840621948,
+      0.31454551219940186
+    ],
+    "physics": "static rest pose; full physics in main model.blend"
+  },
+  {
+    "id": "01_bedroom_pillow",
+    "source_scene": "01_bedroom",
+    "source_collection": "pillow",
+    "file": "assets_static_pose/01_bedroom_pillow.blend",
+    "geometry_objects": 1,
+    "dimensions_m": [
+      0.6249619722366333,
+      0.43000006675720215,
+      0.1088586151599884
+    ],
+    "source_pivot_m": [
+      -0.13263995945453644,
+      1.3799999952316284,
+      0.4499035179615021
+    ],
+    "physics": "static rest pose; full physics in main model.blend"
+  }
+]

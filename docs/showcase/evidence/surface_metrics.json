@@ -1,0 +1,141 @@
+{
+  "schema": "real2sim.surface-audit/1",
+  "date": "2026-09-25",
+  "inputs": [
+    {
+      "file": "model.blend",
+      "sha256": "4b4199bab8ab17fac48c962f4d8b298607702aea2c790a5a6d88878f862727a1"
+    },
+    {
+      "file": "artvip_comparison.blend",
+      "sha256": "28c2a43c2ad02de09c915c3d6e75acf0241569c04a0a2433181b9d7e8081c58c"
+    }
+  ],
+  "blender_version": "4.5.3 LTS",
+  "method": "Evaluated V5 frame-1 meshes; documented shoe-cabinet room placement inverted by -90 degrees around Z, wardrobe rotation unchanged; metric units, base Z and XY bbox centres aligned; no scale fitting or ICP; shoes excluded; internal surfaces included. Area-weighted sampling in three seeds, nearest point on opposite triangle mesh.",
+  "limits": "Reference-model agreement only. BRUKSVARA reference is brown variant. Sampled maximum is not exact Hausdorff. Seed spread measures sampling variability, not physical uncertainty. References and catalogue dimensions informed modelling, so this is not held-out validation.",
+  "assets": [
+    {
+      "product": "VITBERGET",
+      "triangles_ours": 6308,
+      "triangles_reference": 7274,
+      "samples_per_direction": 60000,
+      "mean_mm": 12.496229022662714,
+      "median_mm": 8.123941719532013,
+      "rms_mm": 18.513680520305876,
+      "p95_mm": 42.984724044799805,
+      "p99_mm": 69.47338581085205,
+      "sampled_max_mm": 81.97907358407974,
+      "thresholds": [
+        {
+          "threshold_mm": 1,
+          "ours_to_ref_fraction": 0.08871666666666667,
+          "ref_to_ours_fraction": 0.0945,
+          "f_score": 0.09151705630856
+        },
+        {
+          "threshold_mm": 5,
+          "ours_to_ref_fraction": 0.3252833333333333,
+          "ref_to_ours_fraction": 0.3284666666666667,
+          "f_score": 0.3268672496282133
+        },
+        {
+          "threshold_mm": 10,
+          "ours_to_ref_fraction": 0.5682166666666667,
+          "ref_to_ours_fraction": 0.6168,
+          "f_score": 0.5915124231726698
+        },
+        {
+          "threshold_mm": 20,
+          "ours_to_ref_fraction": 0.8123333333333334,
+          "ref_to_ours_fraction": 0.8173333333333334,
+          "f_score": 0.8148256630531125
+        },
+        {
+          "threshold_mm": 50,
+          "ours_to_ref_fraction": 0.95135,
+          "ref_to_ours_fraction": 0.97205,
+          "f_score": 0.9615886113132993
+        }
+      ],
+      "runs": [
+        {
+          "seed": 91,
+          "mean_mm": 12.405273570449609,
+          "p95_mm": 42.984724044799805
+        },
+        {
+          "seed": 192,
+          "mean_mm": 12.631350328637124,
+          "p95_mm": 42.98478364944458
+        },
+        {
+          "seed": 293,
+          "mean_mm": 12.452063168901411,
+          "p95_mm": 42.984724044799805
+        }
+      ]
+    },
+    {
+      "product": "BRUKSVARA",
+      "triangles_ours": 5408,
+      "triangles_reference": 3335,
+      "samples_per_direction": 60000,
+      "mean_mm": 14.399382012596,
+      "median_mm": 5.336999893188477,
+      "rms_mm": 25.892776327337504,
+      "p95_mm": 53.164527192711795,
+      "p99_mm": 106.0558669269082,
+      "sampled_max_mm": 187.3246729373932,
+      "thresholds": [
+        {
+          "threshold_mm": 1,
+          "ours_to_ref_fraction": 0.17933333333333334,
+          "ref_to_ours_fraction": 0.22336666666666666,
+          "f_score": 0.19894258201583756
+        },
+        {
+          "threshold_mm": 5,
+          "ours_to_ref_fraction": 0.43925,
+          "ref_to_ours_fraction": 0.5054833333333333,
+          "f_score": 0.47004492449368424
+        },
+        {
+          "threshold_mm": 10,
+          "ours_to_ref_fraction": 0.5520666666666667,
+          "ref_to_ours_fraction": 0.6602666666666667,
+          "f_score": 0.6013382751351846
+        },
+        {
+          "threshold_mm": 20,
+          "ours_to_ref_fraction": 0.6862166666666667,
+          "ref_to_ours_fraction": 0.8516166666666667,
+          "f_score": 0.7600219576604892
+        },
+        {
+          "threshold_mm": 50,
+          "ours_to_ref_fraction": 0.91555,
+          "ref_to_ours_fraction": 0.9759,
+          "f_score": 0.9447622141743107
+        }
+      ],
+      "runs": [
+        {
+          "seed": 91,
+          "mean_mm": 14.383603845504144,
+          "p95_mm": 51.84684190899116
+        },
+        {
+          "seed": 192,
+          "mean_mm": 14.29426081542796,
+          "p95_mm": 54.23221457749598
+        },
+        {
+          "seed": 293,
+          "mean_mm": 14.520281376855884,
+          "p95_mm": 53.48233319818964
+        }
+      ]
+    }
+  ]
+}

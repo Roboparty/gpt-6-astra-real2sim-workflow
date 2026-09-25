@@ -1,0 +1,26 @@
+{
+  "date": "2026-09-25",
+  "scope": "Three-room V5 preview and fresh quantitative geometry/reference audits",
+  "baseline_commit": "6bf412ed47cdafafcd9896b5b79eaac3f30ecee0",
+  "video": {
+    "file": "media/overview.mp4",
+    "sha256": "80f8d10660b6619144b10e7f6c6e3bd1cfebd85a97b394072f8a0ae06cc345d4",
+    "bytes": 5772455,
+    "duration_seconds": 45,
+    "frames": 1080,
+    "fps": 24,
+    "width": 1440,
+    "height": 840,
+    "codec": "h264",
+    "full_decode": "passed",
+    "unchanged_from_authorized_source": true
+  },
+  "model_sha256": "4b4199bab8ab17fac48c962f4d8b298607702aea2c790a5a6d88878f862727a1",
+  "geometry_audit": "fresh Blender execution, 21 groups",
+  "reference_surface_audit": "fresh V5 extraction, 60000 samples per direction per cabinet",
+  "source_model_edited": false,
+  "new_physics_run": false,
+  "independent_physical_ground_truth": false,
+  "changed_document_local_links": "passed",
+  "new_evidence_private_path_scan": "passed"
+}

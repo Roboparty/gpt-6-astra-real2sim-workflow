@@ -2,55 +2,38 @@
 
 [简体中文](README.md) | **English**
 
-**Editable simulation scenes informed by images, furniture specifications, and structural evidence.**
+We reconstruct room photographs as editable 3D scenes, using known furniture dimensions and candidate product specifications to constrain proportions and placement. GPT-6 Astra handles observation, modelling decisions and preview review; Blender and Python build the scene. Optional physics uses the simulator specified by each example.
 
-A community research-engineering workflow for robotics and embodied-AI teams. Use a tool-enabled GPT-6 Astra agent for observation, spatial reasoning, modelling decisions, and preview review. Python, Blender, and MuJoCo execute numerical fitting, scene construction, rendering, simulation, and checks.
+## Preview
 
-This repository supplies prompts, an executor, tool workers, and a verified case recipe. Your agent host supplies model access; no model weights or standalone Astra inference service are bundled. The frozen example can be replayed without a new language-model call. Maintained by Roboparty; this is not an official OpenAI release.
+[![Three rooms: photographs on the left, reconstructions on the right. Play the full 45-second video.](docs/showcase/media/comparison.jpg)](https://github.com/Roboparty/gpt-6-astra-real2sim-workflow/raw/refs/heads/main/docs/showcase/media/overview.mp4)
 
-![Reference photo (left) and reconstructed Blender render (right)](docs/example/figures/source_comparison.jpg)
+**[Play the full 45-second video](https://github.com/Roboparty/gpt-6-astra-real2sim-workflow/raw/refs/heads/main/docs/showcase/media/overview.mp4)** · [Case and quantitative assessment](docs/showcase/README.md)
 
-[Comparison preview](docs/example/figures/comparison_preview.mp4) · [Native physics demonstration](docs/example/figures/dynamics_A.mp4) · [Case walkthrough, Chinese](docs/example/EXAMPLE_WALKTHROUGH.md) · [Results](docs/example/RESULTS.md)
+The video includes photo comparisons, moving cameras, multiple views and interactions. Its final section compares our cabinets with attributed ArtVIP assets using kinematic playback.
 
-## Why furniture specifications matter
+## What we built
 
-| Additional evidence | Reconstruction use | Expected benefit |
-|---|---|---|
-| Verified dimensions, with units and measurement definitions | Add scale and shape constraints after establishing image correspondences | Reduce scale and proportion ambiguity |
-| Exact brand, model, revision, and configuration | Check structural details and specification drawings | Narrow plausible part arrangements and hidden-shape hypotheses |
-| A verified exact-match 3D asset | Operator checks identity, variant, units, usage conditions, and geometry before adoption | Potentially reduce remodelling effort and preserve traceable asset provenance |
-| Unverified or conflicting identification | Keep the uncertainty and fall back to independent modelling | Avoid treating visual similarity as exact identity |
+- **Dimensions and product specifications guide proportions.** The three-room case uses a confirmed 2m bed length and two candidate cabinet specifications. Wardrobe width changed from about 0.96m to 0.794m; shoe-cabinet width changed from about 1.34m to 1.05m, giving scene placement a concrete scale reference.
+- **Editable parts.** Bed frames, shelves, doors, drawers and garments are separate. An inventory covers 21 static asset files for further editing and interaction setup; the large model files are not distributed in Git.
+- **Measurements of the generated geometry.** We publish per-asset dimensions, mesh checks, reference-surface comparisons and the scripts used. Cabinet body dimensions follow the constraints; full depth including handles still differs from catalogue dimensions. See the [quantitative assessment](docs/showcase/ACCURACY.md).
+- **Work that can be resumed.** The workflow records stage outputs, parameters and evidence so changes can be checked without restarting every step.
 
-**Implementation status:** specification use is agent-guided. A numerical dimension-prior fitting utility and exact-asset branch conventions exist, but automated SKU search, a universal exact-asset importer, and end-to-end automated licence verification are not included. The supplied real-photo example used common size priors; every B object fell back to A. It does not measure a catalogue-dimension or exact-asset uplift.
+The video shows the three-room V5 case. A separate utility-room recipe in this repository supports replay, MuJoCo experiments and GLB/USD export checks. Their results are [documented separately](docs/showcase/README.md).
 
-No improvement percentage or comparative accuracy claim is made. See the [specification enhancement guide](docs/FURNITURE_SPEC_ENHANCEMENT.md) for the mechanism, current support, and a proposed controlled comparison.
+## Get started
 
-## Workflow strengths
+### Your own photographs
 
-- **Editable structures:** whole-object frames and owned parts, with connection, grounding, and visible-mesh intersection checks. Full room surfaces remain present; unseen completion is labelled.
-- **Evidence-bound geometry review:** observation hashes, part identities, model versions, and current evidence files are checked. Missing objects, stale evidence, and declared structural failures can block acceptance.
-- **Separate geometry and appearance review:** inspect individual objects and combined views before judging final materials and lighting.
-- **Executed physics and interchange checks:** the example includes a hinge, cloth, and a tetrahedral seat pad in MuJoCo, plus actual GLB/USD reimports.
-- **Traceable revisions:** retain failed attempts, artifact hashes, and revision records instead of replacing the history with a single successful screenshot.
+1. Clone the repository and open it in a GPT-6 Astra agent environment with file access, Python execution and Blender tools.
+2. Complete the [request template](public_contract/REQUEST_TEMPLATE.md) with photographs, intended use, known dimensions and any product references. Leave unknown values unset.
+3. Give the agent the [master prompt](public_contract/MASTER_PROMPT.md) and follow the [user guide](public_contract/USER_GUIDE.md) through observation, modelling and preview review.
 
-## What has been demonstrated
+Your agent environment supplies model access. New scenes require observation and scene-specific modelling; this repository supplies the workflow and tool entry points.
 
-One authorized room photograph was reconstructed with independently authored geometry. The revised example completed both 18-stage branches and an independent artifact-rebuild run. Six mesh regression scenarios and eight contract checks met their expected outcomes. These are test scenarios, not fourteen independent real-world reconstructions.
+### Replay the included recipe
 
-The additional loading test ran for approximately two seconds with zero solver warnings under its declared tolerances and assumed material parameters. Furniture landmark errors are in-sample. There is no independent metric or physical ground truth, and the rectangular tabletop still has a maximum landmark discrepancy of about 10.23 pixels.
-
-GLB needs the supplied intrinsics metadata to reproduce the off-axis source camera. Procedural shading may change across formats. See [results](docs/example/RESULTS.md), the [capability matrix](public_contract/CAPABILITIES.md), and [known implementation limitations](KNOWN_LIMITATIONS.md).
-
-## Quick start
-
-Run the standard-library contract fixtures from the repository root with Python 3.10+:
-
-```bash
-export PYTHONPATH="$PWD/workflow"
-python tools/test_structure_contract.py
-```
-
-For the frozen-case rebuild, prepare an isolated remote environment using `requirements-replay.txt`, Blender 4.5.3, MuJoCo 3.13.0, FFmpeg, and a suitable EGL setup:
+Prepare Python, Blender 4.5.3, MuJoCo 3.13.0, FFmpeg and offscreen rendering using the [replay instructions](docs/example/REPLAY.md), then run:
 
 ```bash
 export R2S_PYTHON=/path/to/venv/bin/python
@@ -61,19 +44,8 @@ export PYTHONPATH="$PWD/workflow"
 "$R2S_PYTHON" tools/rebuild_artifacts.py --output "$PWD/replay_runs/my_replay"
 ```
 
-The output directory must not already exist. This recipe checks the supplied photograph's hash and uses model version 4. New inputs require new observations, fitting, modelling, and visual review. The generic agent stages wait for an operator or configured agent command; a successful recipe run does not fabricate visual approval.
+Use a new output directory. The frozen recipe does not require another language-model call.
 
-## Repository map
+[Furniture specifications](docs/FURNITURE_SPEC_ENHANCEMENT.md) · [Replay results](docs/example/RESULTS.md) · [Limitations](KNOWN_LIMITATIONS.md) · [Integrations](docs/INTEGRATIONS.md)
 
-| Path | Purpose |
-|---|---|
-| `workflow/r2s/` | Execution, contracts, structural audits, rendering, export, simulation |
-| `public_contract/` | Request template and agent instructions |
-| `case/` | Implementations and observations for this photograph |
-| `tools/` | Initialization, resume, submission, replay, regression tools |
-| `tests/fixtures/` | Explicit contract-test fixtures |
-| `docs/example/` | Walkthrough, selected audit records, and previews |
-
-Full models, complete trajectories, duplicate full-resolution audit images, and archives remain in remote artifact storage. They are not bundled in Git; no public model-download endpoint is currently configured. [Artifact scope](ARTIFACTS.md).
-
-Source code, project-authored text documentation, and machine-readable metadata use the [MIT License](LICENSE). Photographs and derived images/videos are covered separately by [MEDIA_NOTICE.md](MEDIA_NOTICE.md). Third-party dependencies retain their own licences. [Provenance](PROVENANCE.md) · [Dependency notices](THIRD_PARTY_NOTICES.md).
+Maintained by Roboparty; not an official OpenAI project. Code: [MIT](LICENSE). Photographs, videos and third-party materials: [media and attribution terms](MEDIA_NOTICE.md).
