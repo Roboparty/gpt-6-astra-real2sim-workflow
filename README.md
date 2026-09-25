@@ -55,13 +55,13 @@ https://github.com/user-attachments/assets/a8fa48d1-d11c-4636-b7ac-6122c9049d21
 
 | 方法／对象 | 重建输入 | 评测范围 | F-score @100 mm |
 |---|---|---|---:|
-| 本项目：VITBERGET 鞋柜 | 单张房间图＋家具规格／参考辅助 | 单件柜体，相对 ArtVIP | 100.00%*（既有采样推导） |
-| 本项目：BRUKSVARA 衣柜 | 单张房间图＋家具规格／参考辅助 | 单件柜体，相对 ArtVIP | 未报告该阈值，待重算 |
+| 本项目：VITBERGET 鞋柜 | 单张房间图＋家具规格／参考辅助 | 单件柜体，相对 ArtVIP | 100.00%（重新测量） |
+| 本项目：BRUKSVARA 衣柜 | 单张房间图＋家具规格／参考辅助 | 单件柜体，相对 ArtVIP | 98.88%（重新测量） |
 | SAM 3D，[Lucida 论文复评][lucida] | **单图生成＋共享估计深度定位** | R2S-Scene，选定物体的场景重建 | 79.4% |
 | SceneGen，[Lucida 论文复评][lucida] | **单图＋实例掩码**；评测作整场景刚性对齐 | 同上 | 35.1% |
 | [Lucida][lucida] | **非单图：视频／多视角＋估计深度** | 同上 | 92.4% |
 
-\* 鞋柜原报告中，双向合计 120,000 个采样距离的最大值为 **81.979 mm < 100 mm**，因此这些既有样本在 100 mm 下的 F-score 确定为 100%；**这不是新测量，也不表示实物“100% 准确”**。衣柜仅保存了 1/5/10/20/50 mm 的阈值统计，没有逐点距离，不能从均值或分位数恢复准确的 100 mm 分数。[原始统计](docs/showcase/evidence/surface_metrics.json) · [重算脚本](docs/showcase/evidence/measure_reference_surfaces.py)
+2026-09-25 已用原 V5 模型和 ArtVIP 参考重新测量。衣柜在 100 mm 下两个方向分别有 **58,667/60,000（97.7783%）** 和 **60,000/60,000（100%）** 的采样点落入阈值，F-score 为 **98.8767%**；鞋柜为 **100%**。输入模型哈希、Blender 4.5.3 版本、配准与采样设置不变，原 1/5/10/20/50 mm 统计全部精确复现。现已保存逐点距离，其他阈值可直接复核。[测量统计](docs/showcase/evidence/surface_metrics.json) · [逐点距离](docs/showcase/evidence/surface_distances.npz) · [复算脚本](docs/showcase/evidence/measure_reference_surfaces.py)
 
 **比较边界：** 本项目测两件独立柜体，保留尺度、对齐底面和包围盒中心，以点到三角面的距离评估，包含内部表面；规格与参考模型参与过制作，并非独立留出测试。论文测多物体场景，包含布局误差，采样和配准也不同。Lucida 复评的 SAM 3D 还使用共享估计深度做米制定位，不能称为纯单 RGB 协议。**鞋柜在 100 mm 下的 100% 不代表超过 Lucida，也不是整间房间的分数。**
 

@@ -5,7 +5,7 @@
   "release": "main",
   "previous_release": "public-preview-20260925",
   "scope": "Public workflow source, full V5 showcase preview, fresh geometry/reference audits; media has separate terms; large model artifacts excluded",
-  "file_count": 211,
+  "file_count": 212,
   "files": [
     {
       "path": ".gitattributes",
@@ -49,13 +49,13 @@
     },
     {
       "path": "README.md",
-      "bytes": 7765,
-      "sha256": "63787296138320f99cdadd3477a5f5d448c1a9d6d7a7feeb27f0b91037dd7cde"
+      "bytes": 7873,
+      "sha256": "c02ddc11d6ffc8a4d4e8b2fd753ecdeda774123b13bc2087ace361ed1dc0c38b"
     },
     {
       "path": "README_EN.md",
-      "bytes": 8936,
-      "sha256": "681ef0eef9466c72013720f788a7d9e0ff87eca490a4c72261863386ca88d43c"
+      "bytes": 9019,
+      "sha256": "b2a800805276b7bca4e91666ce04f30098600d65b2d436d76b4cff6fe78852f1"
     },
     {
       "path": "THIRD_PARTY_NOTICES.md",
@@ -744,8 +744,8 @@
     },
     {
       "path": "docs/showcase/ACCURACY.md",
-      "bytes": 8530,
-      "sha256": "594d8770447d4edf31af848c2041b81c69a49c9b8b15a4349b6d2732baae2945"
+      "bytes": 9720,
+      "sha256": "d659058c6305ecaf5600609b55b8c179337dcc77be7b73161a26b06dca2c9117"
     },
     {
       "path": "docs/showcase/README.md",
@@ -769,8 +769,8 @@
     },
     {
       "path": "docs/showcase/evidence/measure_reference_surfaces.py",
-      "bytes": 5370,
-      "sha256": "61424ae8cb42ab92eb5d0448f11035cf6c41af19d463b96155ebac86a20afacd"
+      "bytes": 6337,
+      "sha256": "a04f0ad18774b4af32106555791a76795679db2e441092693bd067799a60439f"
     },
     {
       "path": "docs/showcase/evidence/publication_checks.json",
@@ -784,8 +784,8 @@
     },
     {
       "path": "docs/showcase/evidence/surface_metrics.json",
-      "bytes": 4520,
-      "sha256": "5c35f8f9d002fd59302fbd53a0cc17ad5827701870304af4d668149c756f7eaa"
+      "bytes": 6251,
+      "sha256": "d5b7dd9919760dee93a1af9052a83053525ad04eadd156803ab8b620e58be9f8"
     },
     {
       "path": "docs/showcase/media/comparison.jpg",
@@ -1061,6 +1061,11 @@
       "path": "workflow/r2s/viewpoints.py",
       "bytes": 2420,
       "sha256": "b803f0bc146cc5176e8f92cc6c340c46f66d18919b2526abae80363f3029d529"
+    },
+    {
+      "path": "docs/showcase/evidence/surface_distances.npz",
+      "bytes": 676914,
+      "sha256": "714433ac053619856b266ad233df806c003cfe6ebef16e4b4b7d8f08975e724a"
     }
   ]
 }

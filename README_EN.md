@@ -55,13 +55,13 @@ Paper values are group means; standard deviations are in Table L.2. **This SimFo
 
 | Method / object | Reconstruction input | Evaluation scope | F-score @100 mm |
 |---|---|---|---:|
-| This project: VITBERGET shoe cabinet | One room image + furniture specifications / reference-assisted modelling | One cabinet, versus ArtVIP | 100.00%* (derived from existing samples) |
-| This project: BRUKSVARA wardrobe | One room image + furniture specifications / reference-assisted modelling | One cabinet, versus ArtVIP | Not reported at this threshold; rerun required |
+| This project: VITBERGET shoe cabinet | One room image + furniture specifications / reference-assisted modelling | One cabinet, versus ArtVIP | 100.00% (remeasured) |
+| This project: BRUKSVARA wardrobe | One room image + furniture specifications / reference-assisted modelling | One cabinet, versus ArtVIP | 98.88% (remeasured) |
 | SAM 3D, [evaluated by Lucida][lucida] | **Single-image generation + shared estimated depth for placement** | R2S-Scene, scene reconstruction of selected instances | 79.4% |
 | SceneGen, [evaluated by Lucida][lucida] | **Single image + instance masks**; whole-scene rigid alignment for evaluation | Same benchmark | 35.1% |
 | [Lucida][lucida] | **Not single-image: video / multi-view evidence + estimated depth** | Same benchmark | 92.4% |
 
-\* The maximum of all **120,000 existing bidirectional shoe-cabinet samples is 81.979 mm**, below 100 mm. Their F-score at 100 mm is therefore exactly 100%. **This is a deterministic inference, not a new measurement or 100% real-world accuracy.** The wardrobe report retains only 1/5/10/20/50 mm threshold statistics, not individual distances; its exact 100 mm score cannot be recovered from means or quantiles. [Original statistics](docs/showcase/evidence/surface_metrics.json) · [Rerun script](docs/showcase/evidence/measure_reference_surfaces.py)
+Remeasured on 2026-09-25 using the unchanged V5 model and ArtVIP reference. At 100 mm, the wardrobe has **58,667/60,000 (97.7783%)** and **60,000/60,000 (100%)** samples within threshold in the two directions, giving **98.8767% F-score**; the shoe cabinet gives **100%**. Input model hashes, Blender 4.5.3, alignment and sampling are unchanged, and all earlier 1/5/10/20/50 mm statistics reproduce exactly. Individual distances are now retained for other thresholds. [Measurement statistics](docs/showcase/evidence/surface_metrics.json) · [Individual distances](docs/showcase/evidence/surface_distances.npz) · [Rerun script](docs/showcase/evidence/measure_reference_surfaces.py)
 
 **Comparability:** Our evaluation measures two independently aligned cabinets at their original scale, using point-to-triangle distances and including internal surfaces. Specifications and reference models informed modelling, so this is not held-out validation. The papers evaluate multi-object scenes, including layout errors, under different sampling and registration protocols. Lucida's SAM 3D baseline also uses shared estimated depth for metric placement; it is not a pure single-RGB protocol. **The shoe cabinet's 100% at 100 mm does not establish superiority over Lucida and is not a room-level score.**
 

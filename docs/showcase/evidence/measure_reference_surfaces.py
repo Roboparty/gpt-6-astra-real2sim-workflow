@@ -7,6 +7,7 @@ import bpy
 import hashlib
 import json
 import math
+import platform
 import sys
 from pathlib import Path
 import numpy as np
@@ -65,6 +66,7 @@ for product, prefix in products:
 
 bpy.ops.wm.open_mainfile(filepath=str(reference))
 rows = []
+distance_arrays = {}
 for product, _ in products:
     scene = bpy.data.scenes['COMPARE_' + product]
     bpy.context.window.scene = scene
@@ -80,20 +82,34 @@ for product, _ in products:
         runs.append({'seed': seed, 'mean_mm': float(ds.mean()), 'p95_mm': float(np.quantile(ds, .95))})
         da.extend(d1); db.extend(d2)
     da, db = np.array(da), np.array(db)
+    assert np.isfinite(da).all() and np.isfinite(db).all()
+    assert (da >= 0).all() and (db >= 0).all()
+    distance_arrays[product + '_ours_to_ref_mm'] = da
+    distance_arrays[product + '_ref_to_ours_mm'] = db
     ds = np.r_[da, db]
     thresholds = []
-    for mm in [1, 5, 10, 20, 50]:
+    for mm in [1, 5, 10, 20, 50, 100]:
         p, r = float(np.mean(da <= mm)), float(np.mean(db <= mm))
         thresholds.append({'threshold_mm': mm, 'ours_to_ref_fraction': p, 'ref_to_ours_fraction': r,
+                           'ours_to_ref_count': int(np.count_nonzero(da <= mm)),
+                           'ref_to_ours_count': int(np.count_nonzero(db <= mm)),
                            'f_score': 2*p*r/(p+r) if p+r else 0})
     rows.append({'product': product, 'triangles_ours': len(a), 'triangles_reference': len(b),
                  'samples_per_direction': len(da), 'mean_mm': float(ds.mean()),
                  'median_mm': float(np.median(ds)), 'rms_mm': float(np.sqrt(np.mean(ds**2))),
                  'p95_mm': float(np.quantile(ds, .95)), 'p99_mm': float(np.quantile(ds, .99)),
                  'sampled_max_mm': float(ds.max()), 'thresholds': thresholds, 'runs': runs})
+output.parent.mkdir(parents=True, exist_ok=True)
+archive = output.with_name('surface_distances.npz')
+np.savez_compressed(archive, **distance_arrays)
 report = {'schema': 'real2sim.surface-audit/1', 'date': '2026-09-25',
           'inputs': [{'file': p.name, 'sha256': hashlib.sha256(p.read_bytes()).hexdigest()} for p in [model, reference]],
           'blender_version': bpy.app.version_string,
+          'platform': platform.system(), 'numpy_version': np.__version__,
+          'measurement_script_sha256': hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
+          'distance_archive': {'file': archive.name, 'units': 'mm',
+                               'sha256': hashlib.sha256(archive.read_bytes()).hexdigest(),
+                               'array_keys': sorted(distance_arrays)},
           'method': 'Evaluated V5 frame-1 meshes; documented shoe-cabinet room placement inverted by -90 degrees around Z, wardrobe rotation unchanged; metric units, base Z and XY bbox centres aligned; no scale fitting or ICP; shoes excluded; internal surfaces included. Area-weighted sampling in three seeds, nearest point on opposite triangle mesh.',
           'limits': 'Reference-model agreement only. BRUKSVARA reference is brown variant. Sampled maximum is not exact Hausdorff. Seed spread measures sampling variability, not physical uncertainty. References and catalogue dimensions informed modelling, so this is not held-out validation.',
           'assets': rows}

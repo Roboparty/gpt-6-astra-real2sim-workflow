@@ -12,6 +12,20 @@
     }
   ],
   "blender_version": "4.5.3 LTS",
+  "platform": "Windows",
+  "numpy_version": "1.26.4",
+  "measurement_script_sha256": "a04f0ad18774b4af32106555791a76795679db2e441092693bd067799a60439f",
+  "distance_archive": {
+    "file": "surface_distances.npz",
+    "units": "mm",
+    "sha256": "714433ac053619856b266ad233df806c003cfe6ebef16e4b4b7d8f08975e724a",
+    "array_keys": [
+      "BRUKSVARA_ours_to_ref_mm",
+      "BRUKSVARA_ref_to_ours_mm",
+      "VITBERGET_ours_to_ref_mm",
+      "VITBERGET_ref_to_ours_mm"
+    ]
+  },
   "method": "Evaluated V5 frame-1 meshes; documented shoe-cabinet room placement inverted by -90 degrees around Z, wardrobe rotation unchanged; metric units, base Z and XY bbox centres aligned; no scale fitting or ICP; shoes excluded; internal surfaces included. Area-weighted sampling in three seeds, nearest point on opposite triangle mesh.",
   "limits": "Reference-model agreement only. BRUKSVARA reference is brown variant. Sampled maximum is not exact Hausdorff. Seed spread measures sampling variability, not physical uncertainty. References and catalogue dimensions informed modelling, so this is not held-out validation.",
   "assets": [
@@ -31,31 +45,49 @@
           "threshold_mm": 1,
           "ours_to_ref_fraction": 0.08871666666666667,
           "ref_to_ours_fraction": 0.0945,
+          "ours_to_ref_count": 5323,
+          "ref_to_ours_count": 5670,
           "f_score": 0.09151705630856
         },
         {
           "threshold_mm": 5,
           "ours_to_ref_fraction": 0.3252833333333333,
           "ref_to_ours_fraction": 0.3284666666666667,
+          "ours_to_ref_count": 19517,
+          "ref_to_ours_count": 19708,
           "f_score": 0.3268672496282133
         },
         {
           "threshold_mm": 10,
           "ours_to_ref_fraction": 0.5682166666666667,
           "ref_to_ours_fraction": 0.6168,
+          "ours_to_ref_count": 34093,
+          "ref_to_ours_count": 37008,
           "f_score": 0.5915124231726698
         },
         {
           "threshold_mm": 20,
           "ours_to_ref_fraction": 0.8123333333333334,
           "ref_to_ours_fraction": 0.8173333333333334,
+          "ours_to_ref_count": 48740,
+          "ref_to_ours_count": 49040,
           "f_score": 0.8148256630531125
         },
         {
           "threshold_mm": 50,
           "ours_to_ref_fraction": 0.95135,
           "ref_to_ours_fraction": 0.97205,
+          "ours_to_ref_count": 57081,
+          "ref_to_ours_count": 58323,
           "f_score": 0.9615886113132993
+        },
+        {
+          "threshold_mm": 100,
+          "ours_to_ref_fraction": 1.0,
+          "ref_to_ours_fraction": 1.0,
+          "ours_to_ref_count": 60000,
+          "ref_to_ours_count": 60000,
+          "f_score": 1.0
         }
       ],
       "runs": [
@@ -92,31 +124,49 @@
           "threshold_mm": 1,
           "ours_to_ref_fraction": 0.17933333333333334,
           "ref_to_ours_fraction": 0.22336666666666666,
+          "ours_to_ref_count": 10760,
+          "ref_to_ours_count": 13402,
           "f_score": 0.19894258201583756
         },
         {
           "threshold_mm": 5,
           "ours_to_ref_fraction": 0.43925,
           "ref_to_ours_fraction": 0.5054833333333333,
+          "ours_to_ref_count": 26355,
+          "ref_to_ours_count": 30329,
           "f_score": 0.47004492449368424
         },
         {
           "threshold_mm": 10,
           "ours_to_ref_fraction": 0.5520666666666667,
           "ref_to_ours_fraction": 0.6602666666666667,
+          "ours_to_ref_count": 33124,
+          "ref_to_ours_count": 39616,
           "f_score": 0.6013382751351846
         },
         {
           "threshold_mm": 20,
           "ours_to_ref_fraction": 0.6862166666666667,
           "ref_to_ours_fraction": 0.8516166666666667,
+          "ours_to_ref_count": 41173,
+          "ref_to_ours_count": 51097,
           "f_score": 0.7600219576604892
         },
         {
           "threshold_mm": 50,
           "ours_to_ref_fraction": 0.91555,
           "ref_to_ours_fraction": 0.9759,
+          "ours_to_ref_count": 54933,
+          "ref_to_ours_count": 58554,
           "f_score": 0.9447622141743107
+        },
+        {
+          "threshold_mm": 100,
+          "ours_to_ref_fraction": 0.9777833333333333,
+          "ref_to_ours_fraction": 1.0,
+          "ours_to_ref_count": 58667,
+          "ref_to_ours_count": 60000,
+          "f_score": 0.9887668854862767
         }
       ],
       "runs": [
