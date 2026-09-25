@@ -1,0 +1,56 @@
+{
+  "date": "2026-09-25",
+  "scope": "Corrected bedroom media and surface-contract publication, separate from V5",
+  "media": {
+    "media/cabinet_comparison.mp4": {
+      "bytes": 699826,
+      "sha256": "b098256fb4aa6720054374b1310b3e005988e249217fcf62a582413dd284dfc2",
+      "frames": 194,
+      "duration_seconds": 16.166666666666668,
+      "fps": 12,
+      "full_decode": "passed remotely"
+    },
+    "media/cabinet_storyboard.jpg": {
+      "bytes": 112140,
+      "sha256": "bcc2ce3af18012b88b3a0cf882b1dc64ea292758f3c36c889a0e964d5dd28e4b"
+    },
+    "media/comparison.jpg": {
+      "bytes": 148175,
+      "sha256": "b330c44ade8381eaf609f2239347516dff8c348faed2e12e33c35d9e3ad0b4bc"
+    },
+    "media/room_preview.mp4": {
+      "bytes": 435027,
+      "sha256": "7a73e6faa3532351e8d034b514b05d262e45c94c7c26bf8cf2257e1d440baf1f",
+      "frames": 97,
+      "duration_seconds": 8.084,
+      "fps": 12,
+      "resolution": [
+        960,
+        720
+      ],
+      "full_decode": "passed remotely",
+      "render": {
+        "source_model_sha256": "7705e3c3e32ff39984b080e6be6d83644d586b3a3ed300052e9ae34016c61167",
+        "blender": "4.5.3 LTS",
+        "frames": 97,
+        "fps": 12,
+        "resolution": [
+          960,
+          720
+        ],
+        "samples": 8,
+        "camera": "fixed original source camera",
+        "full_enclosure_retained": true,
+        "method": "Cycles renders of the complete corrected room; replay of actual MuJoCo trajectories. No camera cuts, generated frames or hidden walls."
+      }
+    },
+    "media/surface_review.jpg": {
+      "bytes": 176270,
+      "sha256": "84540b3175abb88c8e029e1d4585625319129e04f16e1857d93a20645c3d0909"
+    }
+  },
+  "source_image_and_views": "Inspected actual source comparison, neutral/raking surface sheets, room closed/open frames and cabinet storyboard",
+  "full_visual_workflow": 16,
+  "freeze_sha256": "376561bb457cfcac02b18e9b4bbfcc2144428ff25338fdabb629485acba5a2e5",
+  "public_evidence_paths": "Private server paths replaced with logical artifact references; original model SHA retained"
+}

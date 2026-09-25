@@ -1,0 +1,538 @@
+{
+  "schema": "real2sim.bedroom-results/1",
+  "date": "2026-09-25",
+  "result": "corrected single-image bedroom, current workflow",
+  "freeze_sha256": "376561bb457cfcac02b18e9b4bbfcc2144428ff25338fdabb629485acba5a2e5",
+  "source_photo_sha256": "5068deec1cba1e6a167209adca5fb77e4d931db06ed6a3812b9a2b8252d8c866",
+  "reconstruction_model_sha256": "476af8564219bf84b0291601cad6491dbd645a724cd093d688db0b1338a0db52",
+  "workflow_stages": {
+    "ingest": {
+      "status": "succeeded",
+      "attempt": 4,
+      "valid": true
+    },
+    "preprocess": {
+      "status": "succeeded",
+      "attempt": 3,
+      "valid": true
+    },
+    "agent_observe": {
+      "status": "succeeded",
+      "attempt": 3,
+      "valid": true
+    },
+    "agent_identify": {
+      "status": "succeeded",
+      "attempt": 3,
+      "valid": true
+    },
+    "agent_calibrate": {
+      "status": "succeeded",
+      "attempt": 3,
+      "valid": true
+    },
+    "agent_calibrate_room": {
+      "status": "succeeded",
+      "attempt": 3,
+      "valid": true
+    },
+    "agent_model": {
+      "status": "succeeded",
+      "attempt": 3,
+      "valid": true
+    },
+    "build_geometry": {
+      "status": "succeeded",
+      "attempt": 3,
+      "valid": true
+    },
+    "agent_review_geometry": {
+      "status": "succeeded",
+      "attempt": 2,
+      "valid": true
+    },
+    "agent_materials": {
+      "status": "succeeded",
+      "attempt": 1,
+      "valid": true
+    },
+    "agent_calibrate_lighting": {
+      "status": "succeeded",
+      "attempt": 1,
+      "valid": true
+    },
+    "build_render": {
+      "status": "succeeded",
+      "attempt": 1,
+      "valid": true
+    },
+    "agent_review": {
+      "status": "succeeded",
+      "attempt": 1,
+      "valid": true
+    },
+    "export": {
+      "status": "succeeded",
+      "attempt": 1,
+      "valid": true
+    },
+    "validate": {
+      "status": "succeeded",
+      "attempt": 1,
+      "valid": true
+    },
+    "report": {
+      "status": "succeeded",
+      "attempt": 1,
+      "valid": true
+    }
+  },
+  "physics_status": "passed",
+  "cabinet_surface_metrics": [
+    {
+      "variant": "corrected",
+      "product": "VITBERGET",
+      "samples_per_direction": 60000,
+      "mean_mm": 8.016941249019984,
+      "median_mm": 4.282370209693909,
+      "rms_mm": 12.636310683200794,
+      "p95_mm": 28.45752239227295,
+      "sampled_max_mm": 72.94274866580963,
+      "thresholds": [
+        {
+          "threshold_mm": 1,
+          "f_score": 0.15130420832875507,
+          "ours_to_reference": 0.1441,
+          "reference_to_ours": 0.15926666666666667
+        },
+        {
+          "threshold_mm": 5,
+          "f_score": 0.5533644213123139,
+          "ours_to_reference": 0.5354666666666666,
+          "reference_to_ours": 0.5725
+        },
+        {
+          "threshold_mm": 10,
+          "f_score": 0.7167276903237798,
+          "ours_to_reference": 0.6969,
+          "reference_to_ours": 0.7377166666666667
+        },
+        {
+          "threshold_mm": 20,
+          "f_score": 0.8932987818744408,
+          "ours_to_reference": 0.8668166666666667,
+          "reference_to_ours": 0.92145
+        },
+        {
+          "threshold_mm": 50,
+          "f_score": 0.9972994849983845,
+          "ours_to_reference": 0.9965833333333334,
+          "reference_to_ours": 0.9980166666666667
+        },
+        {
+          "threshold_mm": 100,
+          "f_score": 1.0,
+          "ours_to_reference": 1.0,
+          "reference_to_ours": 1.0
+        }
+      ],
+      "runs": [
+        {
+          "seed": 91,
+          "mean_mm": 7.999555329298595
+        },
+        {
+          "seed": 192,
+          "mean_mm": 7.938537855928538
+        },
+        {
+          "seed": 293,
+          "mean_mm": 8.112730561832821
+        }
+      ],
+      "dimensions_m": [
+        1.0604999959468842,
+        0.44300002604722977,
+        1.0699999332427979
+      ],
+      "reference_dimensions_m": [
+        1.0747796893119812,
+        0.41851675510406494,
+        1.0700007677078247
+      ],
+      "dimension_difference_mm": [
+        -14.279693365097046,
+        24.483270943164825,
+        -0.0008344650268554688
+      ]
+    },
+    {
+      "variant": "corrected",
+      "product": "BRUKSVARA",
+      "samples_per_direction": 60000,
+      "mean_mm": 4.7335527459960565,
+      "median_mm": 2.5695906952023506,
+      "rms_mm": 9.560732264329937,
+      "p95_mm": 16.877412796020508,
+      "sampled_max_mm": 100.88412463665009,
+      "thresholds": [
+        {
+          "threshold_mm": 1,
+          "f_score": 0.279603726904769,
+          "ours_to_reference": 0.26321666666666665,
+          "reference_to_ours": 0.2981666666666667
+        },
+        {
+          "threshold_mm": 5,
+          "f_score": 0.7523629720662968,
+          "ours_to_reference": 0.73735,
+          "reference_to_ours": 0.768
+        },
+        {
+          "threshold_mm": 10,
+          "f_score": 0.8582528594073499,
+          "ours_to_reference": 0.8398166666666667,
+          "reference_to_ours": 0.8775166666666666
+        },
+        {
+          "threshold_mm": 20,
+          "f_score": 0.9810937142549746,
+          "ours_to_reference": 0.9786166666666667,
+          "reference_to_ours": 0.9835833333333334
+        },
+        {
+          "threshold_mm": 50,
+          "f_score": 0.9916545315506854,
+          "ours_to_reference": 0.9897166666666667,
+          "reference_to_ours": 0.9936
+        },
+        {
+          "threshold_mm": 100,
+          "f_score": 0.999949997499875,
+          "ours_to_reference": 0.9999,
+          "reference_to_ours": 1.0
+        }
+      ],
+      "runs": [
+        {
+          "seed": 91,
+          "mean_mm": 4.7046694172511625
+        },
+        {
+          "seed": 192,
+          "mean_mm": 4.741341072772439
+        },
+        {
+          "seed": 293,
+          "mean_mm": 4.754647747964569
+        }
+      ],
+      "dimensions_m": [
+        0.7950000762939453,
+        0.6050000190734863,
+        2.009999990463257
+      ],
+      "reference_dimensions_m": [
+        0.7963172197341919,
+        0.5986714959144592,
+        2.0049996476037597
+      ],
+      "dimension_difference_mm": [
+        -1.317143440246582,
+        6.3285231590271,
+        5.000342859497131
+      ]
+    }
+  ],
+  "joint_axes": [
+    {
+      "product": "VITBERGET",
+      "joint": "shoe__door0_hinge",
+      "axis_line_offset_mm": 25.619176847581244,
+      "axis_angle_deg": 0.0,
+      "ours_range_deg": [
+        -95.0,
+        0.0
+      ],
+      "reference": {
+        "path": "/root/E_door2_29/RevoluteJoint",
+        "joint_type": "PhysicsRevoluteJoint",
+        "body0": "/root/E_VITBERGET_shoe_cabinet_storage_white_105x40x107cm_46",
+        "body1": "/root/E_door2_29",
+        "local_pos0": [
+          -0.4871194064617157,
+          -0.18474900722503662,
+          0.5124742984771729
+        ],
+        "local_pos1": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "local_pos0_authored": true,
+        "local_pos1_authored": true,
+        "world_anchor0_stage_units": [
+          -0.4871194064617157,
+          -0.18474900722503662,
+          0.5124742984771729
+        ],
+        "world_anchor1_stage_units": [
+          -0.4871194,
+          -0.184749,
+          0.5124743
+        ],
+        "anchor_mismatch_m": 9.811927788197945e-09,
+        "body1_translation": [
+          -0.4871194,
+          -0.184749,
+          0.5124743
+        ],
+        "body1_world_bbox_stage_units": [
+          [
+            -0.4871194,
+            -0.2102941695688963,
+            0.0893804148166657
+          ],
+          [
+            -0.10966941068115232,
+            -0.16876712091469764,
+            0.9355681851833344
+          ]
+        ],
+        "axis": "Z",
+        "axis_world": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "limits": [
+          -90.0,
+          0.0
+        ],
+        "limit_units": "degrees"
+      },
+      "scope": "Position of vertical axis line; anchor height along the same line is not counted as hinge-axis displacement. Original USD metric transforms."
+    },
+    {
+      "product": "VITBERGET",
+      "joint": "shoe__door1_hinge",
+      "axis_line_offset_mm": 44.21622904617302,
+      "axis_angle_deg": 5.72728773124927e-06,
+      "ours_range_deg": [
+        0.0,
+        95.0
+      ],
+      "reference": {
+        "path": "/root/E_door1_34/RevoluteJoint",
+        "joint_type": "PhysicsRevoluteJoint",
+        "body0": "/root/E_VITBERGET_shoe_cabinet_storage_white_105x40x107cm_46",
+        "body1": "/root/E_door1_34",
+        "local_pos0": [
+          0.27159520983695984,
+          -0.18474900722503662,
+          0.5124742984771729
+        ],
+        "local_pos1": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "local_pos0_authored": true,
+        "local_pos1_authored": true,
+        "world_anchor0_stage_units": [
+          0.27159520983695984,
+          -0.18474900722503662,
+          0.5124742984771729
+        ],
+        "world_anchor1_stage_units": [
+          0.2715952,
+          -0.184749,
+          0.5124743
+        ],
+        "anchor_mismatch_m": 1.229983480147745e-08,
+        "body1_translation": [
+          0.2715952,
+          -0.184749,
+          0.5124743
+        ],
+        "body1_world_bbox_stage_units": [
+          [
+            -0.10585478931884779,
+            -0.21029416956889674,
+            0.08938041321847967
+          ],
+          [
+            0.27159519999999987,
+            -0.16876707860530968,
+            0.9355681851833271
+          ]
+        ],
+        "axis": "Z",
+        "axis_world": [
+          0.0,
+          9.999999873467105e-08,
+          0.999999999999995
+        ],
+        "limits": [
+          0.0,
+          90.0
+        ],
+        "limit_units": "degrees"
+      },
+      "scope": "Position of vertical axis line; anchor height along the same line is not counted as hinge-axis displacement. Original USD metric transforms."
+    },
+    {
+      "product": "BRUKSVARA",
+      "joint": "wardrobe__door0_hinge",
+      "axis_line_offset_mm": 8.25589928368219,
+      "axis_angle_deg": 0.0,
+      "ours_range_deg": [
+        -95.0,
+        0.0
+      ],
+      "reference": {
+        "path": "/root/E_door2_24/RevoluteJoint_left",
+        "joint_type": "PhysicsRevoluteJoint",
+        "body0": "/root/E_BRUKSVARA_wardrobe_with_2_doors_and_2drawers_brown_79x57x201cm_23",
+        "body1": "/root/E_door2_24",
+        "local_pos0": [
+          -0.3942405879497528,
+          -0.280621200799942,
+          1.0369999408721924
+        ],
+        "local_pos1": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "local_pos0_authored": true,
+        "local_pos1_authored": true,
+        "world_anchor0_stage_units": [
+          -0.3942405879497528,
+          -0.280621200799942,
+          1.0369999408721924
+        ],
+        "world_anchor1_stage_units": [
+          -0.3942406,
+          -0.2806212,
+          1.037
+        ],
+        "anchor_mismatch_m": 6.034853758703332e-08,
+        "body1_translation": [
+          -0.3942406,
+          -0.2806212,
+          1.037
+        ],
+        "body1_world_bbox_stage_units": [
+          [
+            -0.39424060999999994,
+            -0.31805028024833204,
+            0.07270187091827385
+          ],
+          [
+            -0.0024486900669097866,
+            -0.2806212500000006,
+            2.0012980098724364
+          ]
+        ],
+        "axis": "Z",
+        "axis_world": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "limits": [
+          -90.0,
+          0.0
+        ],
+        "limit_units": "degrees"
+      },
+      "scope": "Position of vertical axis line; anchor height along the same line is not counted as hinge-axis displacement. Original USD metric transforms."
+    },
+    {
+      "product": "BRUKSVARA",
+      "joint": "wardrobe__door1_hinge",
+      "axis_line_offset_mm": 7.922844208339901,
+      "axis_angle_deg": 0.0,
+      "ours_range_deg": [
+        0.0,
+        95.0
+      ],
+      "reference": {
+        "path": "/root/E_door1_25/RevoluteJoint_right",
+        "joint_type": "PhysicsRevoluteJoint",
+        "body0": "/root/E_BRUKSVARA_wardrobe_with_2_doors_and_2drawers_brown_79x57x201cm_23",
+        "body1": "/root/E_door1_25",
+        "local_pos0": [
+          0.393261194229126,
+          -0.280621200799942,
+          1.2359999418258667
+        ],
+        "local_pos1": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "local_pos0_authored": true,
+        "local_pos1_authored": true,
+        "world_anchor0_stage_units": [
+          0.393261194229126,
+          -0.280621200799942,
+          1.2359999418258667
+        ],
+        "world_anchor1_stage_units": [
+          0.3932612,
+          -0.2806212,
+          1.236
+        ],
+        "anchor_mismatch_m": 5.8465140706152964e-08,
+        "body1_translation": [
+          0.3932612,
+          -0.2806212,
+          1.236
+        ],
+        "body1_world_bbox_stage_units": [
+          [
+            0.0014692900669097675,
+            -0.31805028021276,
+            0.4700465784072876
+          ],
+          [
+            0.3932612099999999,
+            -0.2806212199999999,
+            2.001953421592712
+          ]
+        ],
+        "axis": "Z",
+        "axis_world": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "limits": [
+          0.0,
+          90.0
+        ],
+        "limit_units": "degrees"
+      },
+      "scope": "Position of vertical axis line; anchor height along the same line is not counted as hinge-axis displacement. Original USD metric transforms."
+    }
+  ],
+  "method": "Closed evaluated meshes, original metric scale; shoe rotated -90deg around Z. Align base Z and XY envelope centers; no scale adjustment or ICP. Area-weighted sampling, three seeds and 60000 samples per direction; point-to-triangle unsigned surface distance. Cabinet interiors and hardware included; stored shoes excluded.",
+  "limitations": [
+    "Reference-model agreement, not measured real-world reconstruction accuracy.",
+    "Source-backed revision follows reference access; not blind evaluation. No ArtVIP meshes used to construct the reconstruction.",
+    "BRUKSVARA ArtVIP asset is the brown variant; surface geometry is compared, finish ignored.",
+    "Improvements include independently reconstructed drawers and manufacturer-observed inner shelves; not a door-surface-only ablation.",
+    "Sampled maximum is not exact Hausdorff distance. Joint friction, masses, stops and slide strokes remain assumptions."
+  ],
+  "checks": {
+    "surface_contract_regressions": 13,
+    "actual_mesh_regressions": 4,
+    "structural_contract_regressions": 8,
+    "full_visual_stages": 16,
+    "physics": "4 hinges + 4 sliders; actual MuJoCo cycle and limit tests, 16000 steps each",
+    "native_and_glb_reload": "passed"
+  },
+  "large_assets": "Retained remotely by maintainers; not distributed in this repository."
+}

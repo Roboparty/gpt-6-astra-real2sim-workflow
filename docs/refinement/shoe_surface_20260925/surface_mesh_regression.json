@@ -1,0 +1,56 @@
+{
+  "status": "passed",
+  "tests": [
+    {
+      "case": "actual_rejected_cabinet",
+      "status": "failed",
+      "failures": [
+        {
+          "region": "shoe",
+          "kind": "unsupported_repeated_relief",
+          "measured_count": 20
+        },
+        {
+          "region": "shoe",
+          "kind": "feature_count",
+          "feature": "shoe_panels",
+          "expected": 4,
+          "measured": 2
+        },
+        {
+          "region": "shoe_side",
+          "kind": "overlapping_exterior_component_faces",
+          "count": 12
+        }
+      ]
+    },
+    {
+      "case": "corrected_two_panel_doors",
+      "status": "passed",
+      "counts": [
+        {
+          "id": "shoe_panels",
+          "measured_count": 4
+        }
+      ]
+    },
+    {
+      "case": "evaluated_modifier_changes_panel_count",
+      "rejected": true,
+      "failures": [
+        {
+          "region": "shoe",
+          "kind": "feature_count",
+          "feature": "shoe_panels",
+          "expected": 4,
+          "measured": 6
+        }
+      ]
+    },
+    {
+      "case": "removed_actual_panel_binding",
+      "rejected": true,
+      "reason": "Missing/empty geometric feature group"
+    }
+  ]
+}

@@ -14,14 +14,19 @@ try:
  sc.cycles.device='GPU' if os.environ.get('R2S_CPU')!='1' and any(d.use for d in p.devices) else 'CPU'
 except Exception:sc.cycles.device='CPU'
 S=json.loads((out/'scene.json').read_text());specs=S.get('cameras') or [S['camera']];cameras=[]
+from blender_metadata import synchronize
+(out/'metadata_render_check.json').write_text(json.dumps(synchronize(S),indent=2))
 for i,c in enumerate(specs):
     name='source_camera' if i==0 else f'source_camera_{i:04d}';camera=bpy.data.objects.get(name)
     if camera is None:bpy.ops.object.camera_add();camera=bpy.context.object;camera.name=name
     camera.location=c['position'];camera.rotation_euler=(Matrix(c['rotation_world_to_cv']).transposed()@Matrix(((1,0,0),(0,-1,0),(0,0,-1)))).to_euler();W,H=c['image_size'];camera.data.sensor_fit='HORIZONTAL';camera.data.sensor_width=36;camera.data.lens=c['focal_px']*36/W;camera.data.shift_x=(W/2-c['principal_point'][0])/W;camera.data.shift_y=(c['principal_point'][1]-H/2)/W;camera['frame_id']=c.get('frame_id',str(i));cameras.append(camera)
 sc.camera=cameras[0];sc.render.resolution_x=specs[0]['image_size'][0];sc.render.resolution_y=specs[0]['image_size'][1];bpy.ops.file.pack_all();bpy.ops.wm.save_as_mainfile(filepath=str(out/'scene.blend'))
+if (out/'surface_realization.json').exists():
+    from blender_surfaces import audit
+    audit(out)
 for i,(camera,c) in enumerate(zip(cameras,specs)):
     sc.camera=camera;sc.render.resolution_x=c['image_size'][0];sc.render.resolution_y=c['image_size'][1];sc.render.filepath=str(out/('source_view.png' if i==0 else f'source_view_{i:04d}.png'));bpy.ops.render.render(write_still=True)
-(out/'render_manifest.json').write_text(json.dumps({'frames':[{'frame_id':c.get('frame_id',str(i)),'camera':camera.name,'render':'source_view.png' if i==0 else f'source_view_{i:04d}.png','role':'reconstruction_view'} for i,(camera,c) in enumerate(zip(cameras,specs))]},indent=2))
+(out/'render_manifest.json').write_text(json.dumps({'comparison_settings':{'resolution_percentage':sc.render.resolution_percentage,'view_transform':sc.view_settings.view_transform,'look':sc.view_settings.look,'engine':sc.render.engine},'frames':[{'frame_id':c.get('frame_id',str(i)),'camera':camera.name,'render':'source_view.png' if i==0 else f'source_view_{i:04d}.png','role':'reconstruction_view'} for i,(camera,c) in enumerate(zip(cameras,specs))]},indent=2))
 # Geometry-focused review and complete-enclosure views are available before the Agent review gate.
 sc.camera=cameras[0];sc.render.resolution_x=specs[0]['image_size'][0];sc.render.resolution_y=specs[0]['image_size'][1];sc.cycles.samples=48
 clay=bpy.data.materials.new('review_clay');clay.use_nodes=True;clay.node_tree.nodes['Principled BSDF'].inputs['Base Color'].default_value=(.5,.5,.5,1);clay.node_tree.nodes['Principled BSDF'].inputs['Roughness'].default_value=.8;sc.view_layers[0].material_override=clay;sc.render.filepath=str(out/'source_clay.png');bpy.ops.render.render(write_still=True);sc.view_layers[0].material_override=None

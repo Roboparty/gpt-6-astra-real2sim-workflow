@@ -15,3 +15,7 @@ For reuse beyond viewing and reproducing this project's documented example, obta
 `docs/showcase/media/` includes the photograph/reconstruction comparison and the original 45-second V5 overview, published at the user's request on 2026-09-25. The same example-media terms above apply; these are not MIT-licensed media. The video preserves attribution for its ArtVIP comparison segment. ArtVIP source assets retain Apache-2.0; Poly Haven source textures retain CC0. Those upstream rights are not replaced by this notice. See [third-party credits](THIRD_PARTY_NOTICES.md).
 
 本目录媒体为用户指定公开展示的三场景 V5 对照图与完整版视频。视频中的 ArtVIP 对照、Poly Haven 材质保留各自来源与许可；本项目不主张全部画面素材原创。具体结果及动态类型见[案例说明](docs/showcase/README.md)。
+
+## 新版卧室 / Corrected bedroom
+
+`docs/bedroom/media/` and `docs/refinement/` contain original-photo comparisons and derived previews published under the user's request to update GitHub and the new results. The same separate example-media terms apply. The cabinet comparison attributes ArtVIP; the full-room preview contains the independently authored reconstruction only. No manufacturer gallery images or original ArtVIP meshes are redistributed.

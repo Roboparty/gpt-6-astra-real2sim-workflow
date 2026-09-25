@@ -1,0 +1,108 @@
+{
+  "status": "passed_local_regression",
+  "scope": "PASS for the predeclared local-edit regression only: correct rail overextension and preserve constrained seat structure. Not full-room V5 parity, new-photo generalization or independent accuracy.",
+  "revision_count": 3,
+  "candidates": 4,
+  "elapsed_executor_seconds": 269.9291051561013,
+  "structural_audit_status": "passed",
+  "structural_failures": [],
+  "rail_fit": {
+    "changed_meshes": [
+      "chair_near__back_rail",
+      "chair_far__back_rail"
+    ],
+    "unchanged_mesh_count": 276,
+    "support_curve_and_layout_preserved": true,
+    "half_span_before_m": 0.23527956248996273,
+    "half_span_after_m": 0.15380000000000002,
+    "endpoint_targets_px": [
+      [
+        865,
+        590
+      ],
+      [
+        822,
+        601
+      ]
+    ],
+    "endpoint_uncertainty_px": 5,
+    "endpoint_error_before_px": [
+      29.820378967336143,
+      45.66202041968976
+    ],
+    "endpoint_error_after_px": [
+      5.393235104582942,
+      1.2552628345395427
+    ],
+    "interpretation": "Long overlapping member belongs to table. Rail ends terminate close to rear support posts; far chair shares the same family as an explicit assumption.",
+    "scope": "Fitting residual on the input photograph; not independent accuracy or recovered hidden shape. Collision proxies unchanged; no dynamic validation claimed."
+  },
+  "events": [
+    {
+      "time": "2026-09-25T08:07:24.409646+00:00",
+      "action": "revision_requested",
+      "stage": "agent_model",
+      "affected": [
+        "agent_model",
+        "agent_review",
+        "build_render"
+      ],
+      "reason": "Replace only the two box-like seat pads; preserve their support height, footprint, material and every other mesh."
+    },
+    {
+      "time": "2026-09-25T08:12:54.746658+00:00",
+      "action": "revision_requested",
+      "stage": "agent_model",
+      "affected": [
+        "agent_model",
+        "agent_review",
+        "build_render"
+      ],
+      "reason": "Resolve table-versus-chair ownership at the overlap; retain table and chair supports, shorten rail ends using approximately (822,601) and (865,590) px in the original."
+    },
+    {
+      "time": "2026-09-25T08:19:30.877145+00:00",
+      "action": "revision_requested",
+      "stage": "agent_model",
+      "affected": [
+        "agent_model",
+        "agent_review",
+        "build_render"
+      ],
+      "reason": "Keep shortened rails; reduce pad perimeter radius and depression until original 8mm landmark constraints pass."
+    }
+  ],
+  "final_artifacts": {
+    "review": "<remote-run>/real_case/runs/agent_review/0004",
+    "scene": "<remote-run>/real_case/runs/build_render/0004/scene.blend"
+  },
+  "limitations": [
+    "Existing wood material remains simplified.",
+    "Single original image cannot validate hidden geometry.",
+    "No new-scene generalization or dynamics test.",
+    "Only the reduced local-edit regression graph ran."
+  ],
+  "final_contract_revalidation": [
+    {
+      "attempt": "0001",
+      "status": "changes_requested",
+      "latest_contract_revalidated": true
+    },
+    {
+      "attempt": "0002",
+      "status": "changes_requested",
+      "latest_contract_revalidated": true
+    },
+    {
+      "attempt": "0003",
+      "status": "changes_requested",
+      "latest_contract_revalidated": true
+    },
+    {
+      "attempt": "0004",
+      "status": "complete",
+      "latest_contract_revalidated": true
+    }
+  ],
+  "artifact_location_note": "Large models and immutable attempts remain in the remote experiment; these paths are relative to that preserved run."
+}

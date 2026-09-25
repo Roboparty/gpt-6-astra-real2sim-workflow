@@ -9,3 +9,5 @@ Deliver observation.json with input hashes, pixel-coordinate convention, evidenc
 Return response.json using the packet response contract. Document only concise, auditable conclusions and evidence.
 
 For quality_v2, also follow agent_observe_structure.md and deliver furniture_observation.json. This is a required consumed input to the model stage, not optional prose.
+
+When surface_contract_version >= 1, also follow surfaces.md; source-bound surface artifacts and front/raking review are mandatory.

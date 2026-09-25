@@ -24,6 +24,23 @@ def artifact_list():return [str(p.relative_to(out)) for p in sorted(out.rglob('*
 if stage in {'build_render','build_geometry'}:
     preferred=['agent_calibrate_lighting','agent_materials','agent_review_geometry','agent_model']
     blend=find_artifact({'model.blend','scene.blend'},preferred);scene=find_artifact({'scene.json'},preferred);shutil.copyfile(scene,out/'scene.json')
+    from .surfaces import enabled, realization
+    if enabled(packet):
+        model_dir=find_artifact({'surface_realization.json'},['agent_model']).parent
+        # Validate and carry the accepted source evidence; later material/light
+        # stages cannot substitute a new surface declaration.
+        model_files=[str(p.relative_to(model_dir)) for p in model_dir.rglob('*') if p.is_file()]
+        obs,real=realization(model_dir,model_files)
+        names={'surface_observation.json','surface_realization.json'}
+        for region in obs['regions']:
+            names.add(region['source_crop'])
+            names.update(e['artifact'] for e in region.get('manufacturer_images',[]))
+        from .structure import evidence_file
+        for name in names:
+            source=evidence_file(model_dir,name,model_files);target=out/name
+            target.parent.mkdir(parents=True,exist_ok=True);shutil.copyfile(source,target)
+    scene=out/'scene.json'
+    run([params['blender'],'-b',str(blend),'-t',str(params.get('threads',4)),'--python-exit-code','12','--python',str(package/'blender_metadata.py'),'--',str(scene),'update',str(out/'metadata_sync.json')])
     if stage=='build_geometry':
         from .structure import file_sha
         atomic_json(out/'model_binding.json',{'model_sha256':file_sha(blend),'scene_sha256':file_sha(scene),'model_version':json.loads(scene.read_text()).get('model_version')})
@@ -32,6 +49,9 @@ if stage in {'build_render','build_geometry'}:
         audit=json.loads((out/'structural_audit.json').read_text());Image.open(packet['original_input_allowlist'][0]).crop(audit['source_crop_xyxy']).save(out/'furniture_original_crop.png')
         binding=json.loads((out/'model_binding.json').read_text());binding['structural_audit_sha256']=file_sha(out/'structural_audit.json');binding['original_crop_sha256']=file_sha(out/'furniture_original_crop.png');atomic_json(out/'model_binding.json',binding)
     run([params['blender'],'-b',str(blend),'-t',str(params.get('threads',8)),'--python-exit-code','12','--python',str(package/'blender_render.py'),'--',str(out)])
+    if packet.get('refinement'):
+        from .refinement import write_render_binding
+        write_render_binding(packet,out)
 elif stage=='export':
     preferred=['agent_physics','agent_review','build_render','agent_calibrate_lighting','agent_materials','agent_model']
     blend=find_artifact({'model.blend','scene.blend'},preferred);scene=find_artifact({'scene.json'},preferred);shutil.copyfile(scene,out/'scene.json')

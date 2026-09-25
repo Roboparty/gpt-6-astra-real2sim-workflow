@@ -9,6 +9,8 @@ sys.path.insert(0,str(Path(__file__).parent))
 from viewpoints import diagnostic_focus,safe_camera_position
 args=sys.argv[sys.argv.index('--')+1:]; SPEC=Path(args[0]).resolve();OUT=Path(args[1]).resolve();OUT.mkdir(exist_ok=True,parents=True)
 S=json.loads(SPEC.read_text());sc=bpy.context.scene;original_camera=sc.camera
+from blender_metadata import synchronize
+(OUT/'metadata_export_check.json').write_text(json.dumps(synchronize(S),indent=2))
 try:
  cp=bpy.context.preferences.addons['cycles'].preferences;cp.compute_device_type='CUDA';cp.get_devices()
  for d in cp.devices:d.use=d.type=='CUDA'
