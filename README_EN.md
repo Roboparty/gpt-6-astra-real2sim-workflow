@@ -35,6 +35,41 @@ Mesh checks cover **663 unique geometry objects**: all vertices are finite, 586 
 
 These measurements describe constraint compliance and reference-model agreement. F-score is the harmonic mean of bidirectional surface coverage within the distance threshold. Other assets lack independent physical measurements, so their real-world accuracy remains unmeasured. [Per-asset results, definitions and reproducible scripts](docs/showcase/ACCURACY.md).
 
+## Comparison with leading papers: 10 mm / 100 mm
+
+Checked **2026-09-25**. These representative strong results report absolute distance thresholds; single-image experiments are prioritized. **This is a comparison of published results, not a shared-dataset rerun or a unified leaderboard.** Input labels refer to each specific experiment.
+
+### 10 mm (1 cm): F-score ↑
+
+| Method / object | Reconstruction input | Evaluation scope | F-score @10 mm |
+|---|---|---|---:|
+| This project: VITBERGET shoe cabinet | One room image + furniture specifications / reference-assisted modelling | One cabinet, versus ArtVIP | 59.15% |
+| This project: BRUKSVARA wardrobe | One room image + furniture specifications / reference-assisted modelling | One cabinet, versus ArtVIP | 60.13% |
+| [SimFoundry][simfoundry], automatic | **Single image** | 12 YCB tabletop scenes, easy / medium / hard | 92% / 87% / 81% |
+| [SimFoundry][simfoundry], manually refined | **Single image + 3 min of human tuning per object** | Same scenes, easy / medium / hard | 99% / 97% / 93% |
+| SAM 3D, [evaluated by SimFoundry][simfoundry] | **Single image**; additional global-scale alignment for evaluation | Same scenes, easy / medium / hard | 71% / 66% / 68% |
+
+Paper values are group means; standard deviations are in Table L.2. **This SimFoundry geometry experiment uses a single image, not video.** Appendix L.1.1 specifies that both methods receive only the final fully staged scene image; incremental capture establishes quasi-ground truth. SAM 3D global scale is fitted against the quasi-ground-truth point cloud.
+
+### 100 mm (10 cm): F-score ↑
+
+| Method / object | Reconstruction input | Evaluation scope | F-score @100 mm |
+|---|---|---|---:|
+| This project: VITBERGET shoe cabinet | One room image + furniture specifications / reference-assisted modelling | One cabinet, versus ArtVIP | 100.00%* (derived from existing samples) |
+| This project: BRUKSVARA wardrobe | One room image + furniture specifications / reference-assisted modelling | One cabinet, versus ArtVIP | Not reported at this threshold; rerun required |
+| SAM 3D, [evaluated by Lucida][lucida] | **Single-image generation + shared estimated depth for placement** | R2S-Scene, scene reconstruction of selected instances | 79.4% |
+| SceneGen, [evaluated by Lucida][lucida] | **Single image + instance masks**; whole-scene rigid alignment for evaluation | Same benchmark | 35.1% |
+| [Lucida][lucida] | **Not single-image: video / multi-view evidence + estimated depth** | Same benchmark | 92.4% |
+
+\* The maximum of all **120,000 existing bidirectional shoe-cabinet samples is 81.979 mm**, below 100 mm. Their F-score at 100 mm is therefore exactly 100%. **This is a deterministic inference, not a new measurement or 100% real-world accuracy.** The wardrobe report retains only 1/5/10/20/50 mm threshold statistics, not individual distances; its exact 100 mm score cannot be recovered from means or quantiles. [Original statistics](docs/showcase/evidence/surface_metrics.json) · [Rerun script](docs/showcase/evidence/measure_reference_surfaces.py)
+
+**Comparability:** Our evaluation measures two independently aligned cabinets at their original scale, using point-to-triangle distances and including internal surfaces. Specifications and reference models informed modelling, so this is not held-out validation. The papers evaluate multi-object scenes, including layout errors, under different sampling and registration protocols. Lucida's SAM 3D baseline also uses shared estimated depth for metric placement; it is not a pure single-RGB protocol. **The shoe cabinet's 100% at 100 mm does not establish superiority over Lucida and is not a room-level score.**
+
+Sources: SimFoundry, arXiv:2606.28276v4, Appendix L.1.1–L.1.3 and Table L.2; Lucida, arXiv:2608.30821v1, Section 3.3 and Table 4. Normalized object metrics and diameter-relative thresholds are not converted to millimetres.
+
+[simfoundry]: https://arxiv.org/html/2606.28276v4
+[lucida]: https://arxiv.org/html/2608.30821v1
+
 ## Get started
 
 ### Your own photographs
