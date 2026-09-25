@@ -4,37 +4,23 @@
 
 We reconstruct room photographs as editable 3D scenes, using known furniture dimensions and candidate product specifications to constrain proportions and placement. GPT-6 Astra handles observation, modelling decisions and preview review; Blender and Python build the scene. Optional physics uses the simulator specified by each example.
 
-## Latest: corrected single-image bedroom
+## Preview
 
-![Original photograph and current reconstruction](docs/bedroom/media/comparison.jpg)
+https://github.com/user-attachments/assets/a8fa48d1-d11c-4636-b7ac-6122c9049d21
 
-[Room preview and door/drawer motion](https://github.com/Roboparty/gpt-6-astra-real2sim-workflow/raw/refs/heads/main/docs/bedroom/media/room_preview.mp4) · [ArtVIP cabinet comparison](https://github.com/Roboparty/gpt-6-astra-real2sim-workflow/raw/refs/heads/main/docs/bedroom/media/cabinet_comparison.mp4) · [Current results and evidence](docs/bedroom/README.md)
 
-This bedroom was independently authored from the source photograph and product priors; it does not reuse V5 furniture meshes. The corrected version fixes shoe-door panel topology and shelf-end seams, reconstructs drawers, and completes the full 16-stage visual workflow plus a numerical extension with four hinges and four sliders. New source-bound surface checks reject the earlier incorrect cabinet. Catalogue photographs inform the correction; it follows reference access and is **not blind evaluation**.
+The video includes photo comparisons, moving cameras, multiple views and interactions. Its final section compares our cabinets with attributed ArtVIP assets using kinematic playback.
 
-| Current asset | Mean distance (mm) | Median (mm) | P95 (mm) | F-score @10 mm |
-|---|---:|---:|---:|---:|
-| VITBERGET | 8.02 | 4.28 | 28.46 | 71.67% |
-| BRUKSVARA | 4.73 | 2.57 | 16.88 | 85.83% |
-
-These are model-to-ArtVIP distances, including internal surfaces, not physical-world accuracy. The shoe-cabinet mean changes from 14.23 to 8.02 mm versus the preceding drawer reconstruction; the correction also adds manufacturer-observed inner shelves. The ArtVIP wardrobe is the brown variant. [Protocol, residual joint-axis differences and limitations](docs/bedroom/README.md).
-
-## Historical V5 showcase
-
-[Original 45-second three-room overview](docs/showcase/media/overview.mp4) · [Historical comparison](docs/showcase/README.md)
-
-The V5 discussion and paper-comparison tables below are retained as historical results; they do not describe the new bedroom revision above.
-
-## What the historical V5 case built
+## What we built
 
 - **Dimensions and product specifications guide proportions.** The three-room case uses a confirmed 2m bed length and two candidate cabinet specifications. Wardrobe width changed from about 0.96m to 0.794m; shoe-cabinet width changed from about 1.34m to 1.05m, giving scene placement a concrete scale reference.
 - **Editable parts.** Bed frames, shelves, doors, drawers and garments are separate. An inventory covers 21 static asset files for further editing and interaction setup; the large model files are not distributed in Git.
 - **Measurements of the generated geometry.** We publish per-asset dimensions, mesh checks, reference-surface comparisons and the scripts used. Cabinet body dimensions follow the constraints; full depth including handles still differs from catalogue dimensions. See the [quantitative assessment](docs/showcase/ACCURACY.md).
 - **Work that can be resumed.** The workflow records stage outputs, parameters and evidence so changes can be checked without restarting every step.
 
-The historical 45-second video shows the three-room V5 case. A separate utility-room recipe in this repository supports replay, MuJoCo experiments and GLB/USD export checks. Their results are [documented separately](docs/showcase/README.md). The new bedroom results are listed at the top of this page.
+The video shows the three-room V5 case. A separate utility-room recipe in this repository supports replay, MuJoCo experiments and GLB/USD export checks. Their results are [documented separately](docs/showcase/README.md).
 
-## Historical V5 quantitative assessment
+## Quantitative assessment
 
 We remeasured 21 asset groups from the V5 model. Cabinet surface differences below use ArtVIP references, with 60,000 samples per direction and no scale fitting.
 
@@ -49,7 +35,7 @@ Mesh checks cover **663 unique geometry objects**: all vertices are finite, 586 
 
 These measurements describe constraint compliance and reference-model agreement. F-score is the harmonic mean of bidirectional surface coverage within the distance threshold. Other assets lack independent physical measurements, so their real-world accuracy remains unmeasured. [Per-asset results, definitions and reproducible scripts](docs/showcase/ACCURACY.md).
 
-## Historical V5 / published-paper comparison: 10 mm / 100 mm
+## Comparison with leading papers: 10 mm / 100 mm
 
 Checked **2026-09-25**. These representative strong results report absolute distance thresholds; single-image experiments are prioritized. **This is a comparison of published results, not a shared-dataset rerun or a unified leaderboard.** Input labels refer to each specific experiment.
 
@@ -83,6 +69,8 @@ Sources: SimFoundry, arXiv:2606.28276v4, Appendix L.1.1–L.1.3 and Table L.2; L
 
 [simfoundry]: https://arxiv.org/html/2606.28276v4
 [lucida]: https://arxiv.org/html/2608.30821v1
+
+Supplementary record: [bedroom single-image reconstruction repeat experiment](docs/bedroom/README.md).
 
 ## Get started
 

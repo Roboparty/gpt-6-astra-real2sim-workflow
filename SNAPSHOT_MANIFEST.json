@@ -4,7 +4,7 @@
   "project": "GPT-6 Astra Real2sim workflow",
   "release": "main",
   "previous_release": "public-preview-20260925",
-  "scope": "Current surface/refinement workflow, corrected bedroom media/results, retained historical V5 and original replay evidence; large models excluded",
+  "scope": "Workflow source and validation, original project showcase, supplementary bedroom repeat-experiment records; large models excluded",
   "file_count": 245,
   "files": [
     {
@@ -19,8 +19,8 @@
     },
     {
       "path": "ARTIFACTS.md",
-      "bytes": 2112,
-      "sha256": "bd66db2523cc2ab2b20678b99b4f787207a48fc3b96f49050cc3c3d33576fb03"
+      "bytes": 1898,
+      "sha256": "b9650521653aeeebc6a82d09adf46c3296486979ce61d059d42e89e67fe426f3"
     },
     {
       "path": "case/author_evidence.py",
@@ -194,18 +194,18 @@
     },
     {
       "path": "docs/bedroom/publication_checks.json",
-      "bytes": 2131,
-      "sha256": "dc90ef179786e1ece276c895ec78450832ce60f67a933ce333a34234a77d74fb"
+      "bytes": 2149,
+      "sha256": "baf5bb66e225b6b3c4b6a33e8f0589ebc1aae123c80fd9da1a2a1142e2c9239c"
     },
     {
       "path": "docs/bedroom/README.md",
-      "bytes": 6249,
-      "sha256": "cb9cc9c7186e893388c0258d3556e535ea41e5065fea9560ab25dbd8ae3974d2"
+      "bytes": 6471,
+      "sha256": "cf0643398bad13e4485eca147abe9153257b96a34f6d6f87155169d56313fdcd"
     },
     {
       "path": "docs/bedroom/results.json",
-      "bytes": 15354,
-      "sha256": "1c94ecc2a35855e1ed0ab3e5f478f15e5361e277fd58dc26d2a0acdcd5b7f5ef"
+      "bytes": 15521,
+      "sha256": "404168593775f5ea65f9e62fe91d64c712c2532889d86267ff7603b06d4ed36f"
     },
     {
       "path": "docs/example/evidence/A/agent_calibrate_lighting/light_parameters.json",
@@ -764,8 +764,8 @@
     },
     {
       "path": "docs/REFINEMENT_VALIDATION.md",
-      "bytes": 6839,
-      "sha256": "fffb0c9c02728ce8ae26bd0c2a8c60dc47f8c4abdff296c3608893df0f2b57f3"
+      "bytes": 6868,
+      "sha256": "a358cf9c7a5677ee40fc37843015e81c119f85c3672a383423c2676a0ccbf72d"
     },
     {
       "path": "docs/releases/public-preview-20260925-validation.json",
@@ -834,13 +834,13 @@
     },
     {
       "path": "docs/showcase/README.md",
-      "bytes": 2347,
-      "sha256": "d59729ca32775d657908066bad977f94e86f5fab96b60f100efbab47d54d901a"
+      "bytes": 2222,
+      "sha256": "b8f1f5ac40969ffbed0921a88ed2f0aac83666f4f9de75c883de3edf187a17d3"
     },
     {
       "path": "docs/WORKFLOW_REFINEMENT.md",
-      "bytes": 7159,
-      "sha256": "71af6f015e170b78fb77963eb577656a2e6abb018c2fb6c75570c18cb14bccdd"
+      "bytes": 7165,
+      "sha256": "32862297c699850f98ef4d60973c8649d85f06f6ed6da9d74e1210a33630bed9"
     },
     {
       "path": "inputs/utility_room_original.jpg",
@@ -864,13 +864,13 @@
     },
     {
       "path": "MEDIA_NOTICE.md",
-      "bytes": 2503,
-      "sha256": "13f91d787051ba8fd57ee83c324c970a7f877d7fff4cf79d1a7f7db1da2e55c8"
+      "bytes": 2536,
+      "sha256": "2fda54482add3923411300992c743ff14a7607c94fd25c0e93106b44bd22efdf"
     },
     {
       "path": "PROVENANCE.md",
-      "bytes": 3099,
-      "sha256": "96d7b756bfa6b4c8a6291b690eb19df6d83064e5d3649b2d18d891cb6e5808dd"
+      "bytes": 3325,
+      "sha256": "27ee2603b4c5360e1dc740869ab2ea906e554a700a7a56489ed82102459afc95"
     },
     {
       "path": "public_contract/AGENT_EXECUTION_SPEC.md",
@@ -904,18 +904,18 @@
     },
     {
       "path": "PUBLICATION_VALIDATION.json",
-      "bytes": 989,
-      "sha256": "e93909121d0a077b5da6ab9bf6661eae30252306390259fdef09749978152876"
+      "bytes": 1226,
+      "sha256": "7f65381e09fb198d547c559fd400f768503e66a58e7b73c37964ac6f10dcddd9"
     },
     {
       "path": "README.md",
-      "bytes": 9427,
-      "sha256": "986b45b8bcc3938722bddc3b49e70dcd419db89e0911b4ca6c31585e5c0af0f1"
+      "bytes": 7949,
+      "sha256": "e8a5f3d0b507b3434b1ff356ed4c8c96eae990dd5fe18e6129507d0411bcd8e8"
     },
     {
       "path": "README_EN.md",
-      "bytes": 10747,
-      "sha256": "fe528fe3e4a7f7bca84dbbf08477b5d80848d5a105b21d1b30d28a7f25f80cf6"
+      "bytes": 9123,
+      "sha256": "fb8d6879679e5722775b331106e4107e3c06e7370ac86b70d70f2585ec168ee5"
     },
     {
       "path": "requirements-replay.txt",

@@ -1,5 +1,5 @@
 {
-  "scope": "Current source-bound surface/refinement workflow and corrected single-image bedroom media/results",
+  "scope": "Bedroom repeat-experiment records and workflow validation; original project preview retained",
   "checked_date": "2026-09-25",
   "baseline_commit": "1b3258387d4bee32fadc1ab5f5b1ca66b646fa7e",
   "source_compilation": "passed (AST parse)",
@@ -14,6 +14,11 @@
   "credential_pattern_scan": "passed",
   "markdown_links": "passed",
   "historical_publication_checks": "docs/releases/public-preview-20260925-validation.json",
-  "latest_results": "docs/bedroom/results.json",
-  "latest_media": "docs/bedroom/publication_checks.json"
+  "repeat_experiment_results": "docs/bedroom/results.json",
+  "repeat_experiment_media": "docs/bedroom/publication_checks.json",
+  "presentation_correction": {
+    "project_preview": "original 45-second video and embed restored",
+    "experiment_framing": "repeat experiment, not new-version comparison",
+    "media_bytes_unchanged": true
+  }
 }

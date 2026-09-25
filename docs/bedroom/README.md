@@ -1,14 +1,14 @@
-# 新版卧室单图重建：对照、动作与验收
+# 卧室单图重建重复实验记录
 
-Latest corrected single-image bedroom: full 16-stage visual workflow, four numerical hinges and four sliders. This is separate from the historical V5 showcase. Model-reference distances are not real-world accuracy.
+Repeat experiment on the same bedroom photograph: workflow execution, troubleshooting and validation records. This is not a new-version comparison or a V5-versus-current benchmark. The project preview remains unchanged.
 
-[房间预览](media/room_preview.mp4) · [柜体与 ArtVIP 对照](media/cabinet_comparison.mp4) · [机器可读结果](results.json)
+[本次实验过程录像](media/room_preview.mp4) · [柜体与 ArtVIP 对照](media/cabinet_comparison.mp4) · [机器可读结果](results.json)
 
-![原图与当前重建](media/comparison.jpg)
+![本次重复实验的输入与输出](media/comparison.jpg)
 
-已完成完整 16 阶段视觉流程的本次修订，并完成四门铰链、四抽屉的数值仿真扩展。旧模型、旧验收和未完成的错误视频帧保留；旧表面通过结论由本版取代。
+本次对同一张卧室照片重复执行重建流程，记录完整 16 阶段视觉检查、四门铰链与四抽屉数值仿真，以及实验中发现的表面问题和修复。这里的输入／输出和 ArtVIP 参照用于检查本次实验；不据此比较项目版本优劣。项目首页继续使用原预览视频。实验中的失败尝试与修复记录保留。
 
-## 为什么会错，改了什么
+## 本次实验中的问题与修复
 
 原生成把低对比度表面线条误读为重复几何横条，型号阶段只核对目录尺寸，旧验收又以轮廓/拟合为主，没有逐项核对门板拓扑。鞋柜侧面的层板端部还与外侧面共面，制造了错误横缝。
 
@@ -23,14 +23,14 @@ Latest corrected single-image bedroom: full 16-stage visual workflow, four numer
 
 外观候选尚未通过实物标签确认。目录深度是否包含把手没有明确说明。
 
-## 相对 ArtVIP 的表面差异
+## 本次实验的 ArtVIP 参照测量
 
-单位 mm；同一尺度，底部 Z 和 XY 包围盒中心对齐，不做缩放或 ICP。原始 USD、闭合状态、双向各 60,000 点、三组随机种子，计算点到三角面距离。包含内部结构及五金，不包含摆放的鞋。两列均已包含抽屉；本次改善包含内部层板补全，不是门板单因素实验。
+单位 mm；同一尺度，底部 Z 和 XY 包围盒中心对齐，不做缩放或 ICP。原始 USD、闭合状态、双向各 60,000 点、三组随机种子，计算点到三角面距离。包含内部结构及五金，不包含摆放的鞋。以下记录本次实验最终输出的测量值，不与 V5 做版本比较。实验中的门板修复和内部层板补全同时发生，不能视作单因素实验。
 
-| 对象 | 修正前均值 | 修正后均值 | 修正后 RMS | 修正后 P95 |
-|---|---:|---:|---:|---:|
-| VITBERGET | 14.23 | 8.02 | 12.64 | 28.46 |
-| BRUKSVARA | 4.73 | 4.73 | 9.56 | 16.88 |
+| 对象 | 平均表面差 | RMS | P95 |
+|---|---:|---:|---:|
+| VITBERGET | 8.02 | 12.64 | 28.46 |
+| BRUKSVARA | 4.73 | 9.56 | 16.88 |
 
 这是参考模型一致性，不是实物测量精度；本次修订在接触参考模型之后进行，不属于盲测。BRUKSVARA 参考资产为棕色版本，评估忽略饰面差异。
 
@@ -53,7 +53,7 @@ MuJoCo 3.13.0 实算四个转动关节及四个滑动关节：开关循环 16,00
 
 ## 发布文件与复核
 
-- [单图对照](media/comparison.jpg)、[房间预览视频](media/room_preview.mp4)、[ArtVIP 对照视频](media/cabinet_comparison.mp4)。房间预览为原照片固定视角，保留完整围护结构，播放实际数值轨迹；不是相机巡游。
+- [单图对照](media/comparison.jpg)、[本次实验过程录像](media/room_preview.mp4)、[ArtVIP 对照视频](media/cabinet_comparison.mp4)。实验录像为原照片固定视角，保留完整围护结构，播放实际数值轨迹；不是相机巡游。
 - [表面正视／侧光检查](media/surface_review.jpg)、[动作关键帧](media/cabinet_storyboard.jpg)。
 - [结果和阶段状态](results.json)、[媒体哈希与解码验证](publication_checks.json)。
 - [完整参考差异](../refinement/shoe_surface_20260925/evaluation.json)、[真实网格回归](../refinement/shoe_surface_20260925/surface_mesh_regression.json)。
@@ -63,4 +63,4 @@ MuJoCo 3.13.0 实算四个转动关节及四个滑动关节：开关循环 16,00
 
 Python 合同回归可在安装工作流依赖后运行 `PYTHONPATH=workflow python tools/test_surface_contract.py`。真实网格回归 `tools/test_surface_mesh.py` 需要维护者保留的错误／修正版 Blender 场景及表面证据目录；不是仅克隆仓库便能执行的无资产测试。`tools/render_bedroom_preview.py` 可在 Blender 中用交付的数值回放场景生成房间视频帧。
 
-媒体沿用项目示例的单独条款，见 [MEDIA_NOTICE.md](../../MEDIA_NOTICE.md)。参考资产来源见 [THIRD_PARTY_NOTICES.md](../../THIRD_PARTY_NOTICES.md)。此版床品使用原图派生纹理，木纹和地毯为程序材质；不要套用旧 V5 的素材说明。
+媒体沿用项目示例的单独条款，见 [MEDIA_NOTICE.md](../../MEDIA_NOTICE.md)。参考资产来源见 [THIRD_PARTY_NOTICES.md](../../THIRD_PARTY_NOTICES.md)。本次实验床品使用原图派生纹理，木纹和地毯为程序材质；素材来源按本次实验单独记录。

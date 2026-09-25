@@ -1,7 +1,7 @@
 {
   "schema": "real2sim.bedroom-results/1",
   "date": "2026-09-25",
-  "result": "corrected single-image bedroom, current workflow",
+  "result": "bedroom single-image reconstruction repeat experiment",
   "freeze_sha256": "376561bb457cfcac02b18e9b4bbfcc2144428ff25338fdabb629485acba5a2e5",
   "source_photo_sha256": "5068deec1cba1e6a167209adca5fb77e4d931db06ed6a3812b9a2b8252d8c866",
   "reconstruction_model_sha256": "476af8564219bf84b0291601cad6491dbd645a724cd093d688db0b1338a0db52",
@@ -534,5 +534,7 @@
     "physics": "4 hinges + 4 sliders; actual MuJoCo cycle and limit tests, 16000 steps each",
     "native_and_glb_reload": "passed"
   },
-  "large_assets": "Retained remotely by maintainers; not distributed in this repository."
+  "large_assets": "Retained remotely by maintainers; not distributed in this repository.",
+  "experiment_type": "repeat_experiment",
+  "comparison_scope": "ArtVIP reference measurement within this experiment; no V5-versus-current version comparison"
 }

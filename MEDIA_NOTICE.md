@@ -16,6 +16,6 @@ For reuse beyond viewing and reproducing this project's documented example, obta
 
 本目录媒体为用户指定公开展示的三场景 V5 对照图与完整版视频。视频中的 ArtVIP 对照、Poly Haven 材质保留各自来源与许可；本项目不主张全部画面素材原创。具体结果及动态类型见[案例说明](docs/showcase/README.md)。
 
-## 新版卧室 / Corrected bedroom
+## 卧室重复实验 / Bedroom repeat experiment
 
-`docs/bedroom/media/` and `docs/refinement/` contain original-photo comparisons and derived previews published under the user's request to update GitHub and the new results. The same separate example-media terms apply. The cabinet comparison attributes ArtVIP; the full-room preview contains the independently authored reconstruction only. No manufacturer gallery images or original ArtVIP meshes are redistributed.
+`docs/bedroom/media/` and `docs/refinement/` contain the input/output comparison and recordings of a repeat experiment, published under the user's request to update GitHub and the new results. The same separate example-media terms apply. The cabinet comparison attributes ArtVIP; the full-room preview contains the independently authored reconstruction only. No manufacturer gallery images or original ArtVIP meshes are redistributed.
