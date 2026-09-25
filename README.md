@@ -6,9 +6,8 @@
 
 ## 预览
 
-[![三个房间：左为实拍，右为重建。点击播放45秒完整版](docs/showcase/media/comparison.jpg)](https://github.com/Roboparty/gpt-6-astra-real2sim-workflow/raw/refs/heads/main/docs/showcase/media/overview.mp4)
+https://github.com/user-attachments/assets/a8fa48d1-d11c-4636-b7ac-6122c9049d21
 
-**[播放 45 秒完整版](https://github.com/Roboparty/gpt-6-astra-real2sim-workflow/raw/refs/heads/main/docs/showcase/media/overview.mp4)** · [案例与定量评估](docs/showcase/README.md)
 
 包含三个房间的照片对照、巡游、多视角和交互演示。末段是与 ArtVIP 资产的运动学对照，画面保留来源标注。
 
@@ -20,6 +19,21 @@
 - **让修改可以接着做。** 工作流保存阶段结果、参数与证据；修改几何后重新检查受影响的结果，减少从头重跑。
 
 视频展示的是三场景 V5 案例；仓库另附一个可复跑的杂物房案例，含 MuJoCo 动力学与 GLB/USD 导出检查。两者的结果[分别记录](docs/showcase/README.md)。
+
+## 定量评估
+
+在 V5 原模型上重新测量 21 组资产。两款柜体与 ArtVIP 参考模型的表面差异如下，每个方向采样 60,000 点，保留原始尺度。
+
+| 资产 | 平均表面差 | 中位数 | P95 | F-score @10mm | 含把手整体深度较目录偏差 |
+|---|---:|---:|---:|---:|---:|
+| VITBERGET 鞋柜 | 12.50 mm | 8.12 mm | 42.98 mm | 59.15% | +55.61 mm（13.90%） |
+| BRUKSVARA 衣柜 | 14.40 mm | 5.34 mm | 53.16 mm | 60.13% | +89.98 mm（15.93%） |
+
+床的两根纵向侧梁均为 **2,000 mm**；鞋柜顶板深度 **400.001 mm**、衣柜侧板深度 **565.000 mm**，符合输入尺寸约束。含把手的整装深度仍有上表偏差。
+
+网格检查覆盖 **663 个去重几何对象**：顶点数值全部有限，586 个拓扑封闭，77 个曲线管件存在开放端口；发现 **2,546 个零面积面**，主要在货架、床头装饰、椅座和黑柜加强筋，仍需清理。
+
+以上衡量尺寸约束符合度和参考模型差异。F-score 是距离阈值内双向表面覆盖率的调和平均；缺少独立实测的其他资产尚不能给出实物准确率。[逐资产数据、测量定义与复查脚本](docs/showcase/ACCURACY.md)。
 
 ## 开始使用
 

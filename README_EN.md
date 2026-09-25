@@ -6,9 +6,8 @@ We reconstruct room photographs as editable 3D scenes, using known furniture dim
 
 ## Preview
 
-[![Three rooms: photographs on the left, reconstructions on the right. Play the full 45-second video.](docs/showcase/media/comparison.jpg)](https://github.com/Roboparty/gpt-6-astra-real2sim-workflow/raw/refs/heads/main/docs/showcase/media/overview.mp4)
+https://github.com/user-attachments/assets/a8fa48d1-d11c-4636-b7ac-6122c9049d21
 
-**[Play the full 45-second video](https://github.com/Roboparty/gpt-6-astra-real2sim-workflow/raw/refs/heads/main/docs/showcase/media/overview.mp4)** · [Case and quantitative assessment](docs/showcase/README.md)
 
 The video includes photo comparisons, moving cameras, multiple views and interactions. Its final section compares our cabinets with attributed ArtVIP assets using kinematic playback.
 
@@ -20,6 +19,21 @@ The video includes photo comparisons, moving cameras, multiple views and interac
 - **Work that can be resumed.** The workflow records stage outputs, parameters and evidence so changes can be checked without restarting every step.
 
 The video shows the three-room V5 case. A separate utility-room recipe in this repository supports replay, MuJoCo experiments and GLB/USD export checks. Their results are [documented separately](docs/showcase/README.md).
+
+## Quantitative assessment
+
+We remeasured 21 asset groups from the V5 model. Cabinet surface differences below use ArtVIP references, with 60,000 samples per direction and no scale fitting.
+
+| Asset | Mean surface distance | Median | P95 | F-score @10mm | Full depth including handles vs catalogue |
+|---|---:|---:|---:|---:|---:|
+| VITBERGET shoe cabinet | 12.50 mm | 8.12 mm | 42.98 mm | 59.15% | +55.61 mm (13.90%) |
+| BRUKSVARA wardrobe | 14.40 mm | 5.34 mm | 53.16 mm | 60.13% | +89.98 mm (15.93%) |
+
+Both longitudinal bed rails measure **2,000 mm**. Shoe-cabinet top depth is **400.001 mm**, and wardrobe side-panel depth is **565.000 mm**, matching the input constraints. Full assemblies including handles retain the depth differences above.
+
+Mesh checks cover **663 unique geometry objects**: all vertices are finite, 586 objects have closed topology, and 77 curve-based tubes have open ends. **2,546 zero-area faces** remain, mainly in shelf details, headboard decorations, chair seats and cabinet ribs, and need cleanup.
+
+These measurements describe constraint compliance and reference-model agreement. F-score is the harmonic mean of bidirectional surface coverage within the distance threshold. Other assets lack independent physical measurements, so their real-world accuracy remains unmeasured. [Per-asset results, definitions and reproducible scripts](docs/showcase/ACCURACY.md).
 
 ## Get started
 

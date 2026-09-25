@@ -22,5 +22,11 @@
   "new_physics_run": false,
   "independent_physical_ground_truth": false,
   "changed_document_local_links": "passed",
-  "new_evidence_private_path_scan": "passed"
+  "new_evidence_private_path_scan": "passed",
+  "readme_inline_video": {
+    "github_markdown_native_video": "verified",
+    "readme_assessment_summary": "Chinese and English",
+    "url": "https://github.com/user-attachments/assets/a8fa48d1-d11c-4636-b7ac-6122c9049d21",
+    "source": "unchanged 45-second overview.mp4"
+  }
 }

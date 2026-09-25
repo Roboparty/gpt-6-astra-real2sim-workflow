@@ -49,13 +49,13 @@
     },
     {
       "path": "README.md",
-      "bytes": 3503,
-      "sha256": "5823479f135780ea31500e8734fbf1e93070c997b67b0ab7bbf05b5e10a03cfc"
+      "bytes": 4357,
+      "sha256": "fe3308bbd4bd4a2d1375341a9a7f01034e4b75430653e88b437117f5fa802271"
     },
     {
       "path": "README_EN.md",
-      "bytes": 3903,
-      "sha256": "5afa7e4df2677b99a8657dae3b7f1f183b3bd6ae9de986245b3449d462643b91"
+      "bytes": 4914,
+      "sha256": "46fa7db535fa1c820a5659808372bedb821cbf99e8adfa98adc1b26dfa49dc7f"
     },
     {
       "path": "THIRD_PARTY_NOTICES.md",
@@ -774,8 +774,8 @@
     },
     {
       "path": "docs/showcase/evidence/publication_checks.json",
-      "bytes": 988,
-      "sha256": "52cc7b06b618c160fe0e047dcb1b930f2011c787c36b2ebeedbb54b598e0df1b"
+      "bytes": 1273,
+      "sha256": "da628533ae9e1cd616a648079ffba92541e0fede140195501d434da9d4e2c11e"
     },
     {
       "path": "docs/showcase/evidence/standalone_assets.json",
