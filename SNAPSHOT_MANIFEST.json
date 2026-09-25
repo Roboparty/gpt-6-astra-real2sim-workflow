@@ -1,8 +1,10 @@
 {
   "schema": "real2sim.repository-snapshot/1",
-  "date": "2026-09-24",
-  "scope": "Source, documentation, selected audit records and lightweight previews; large generated artifacts excluded",
-  "file_count": 192,
+  "date": "2026-09-25",
+  "project": "GPT-6 Astra Real2sim workflow",
+  "release": "public-preview-20260925",
+  "scope": "Public source, documentation, selected evidence and authorized previews; media has separate terms; large artifacts excluded",
+  "file_count": 199,
   "files": [
     {
       "path": ".gitattributes",
@@ -16,28 +18,53 @@
     },
     {
       "path": "ARTIFACTS.md",
-      "bytes": 1696,
-      "sha256": "d6dbe25236e4230b54796c4788c72082ca6fa3d8640aa002b98b99e427311143"
+      "bytes": 1898,
+      "sha256": "b9650521653aeeebc6a82d09adf46c3296486979ce61d059d42e89e67fe426f3"
+    },
+    {
+      "path": "KNOWN_LIMITATIONS.md",
+      "bytes": 2813,
+      "sha256": "b0ce7e3f7e1551f5f777a6d3787ea77863409972447ce943f00764095aa8b0a4"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1079,
+      "sha256": "6a4591162e2e80658ec5935715f013cbc7955d8349b7c1ac4a496b5dde9039e7"
+    },
+    {
+      "path": "MEDIA_NOTICE.md",
+      "bytes": 1235,
+      "sha256": "7bd279c93ff85e4ce81550764c3ede2607ea863e454efa92660a25dc0136b5fd"
     },
     {
       "path": "PROVENANCE.md",
-      "bytes": 1169,
-      "sha256": "42cd5e6dc48749a983b62be5b5e5467e95ceec8a1a8c4af0c2fb1c89d0b1ab5d"
+      "bytes": 1800,
+      "sha256": "3d9ea091f9b978a36a401abdae82f8e8baf03174a32ca0f8db12e517aa44dac3"
     },
     {
       "path": "PUBLICATION_VALIDATION.json",
-      "bytes": 318,
-      "sha256": "9983bbc627a12351323815c1b26a81d6d6c0114e00033af4104ee3ed6245b14e"
+      "bytes": 807,
+      "sha256": "c2572784ed5d112f09e7891ac32be36bfcb930cdf9022419b4a088be8c642036"
     },
     {
       "path": "README.md",
-      "bytes": 4317,
-      "sha256": "3e1a6a1d701ff4aa7a4e66d0f3760a8c916a5819abe8e15a2e13d6ceadafbaa8"
+      "bytes": 7465,
+      "sha256": "61adf2f4f8afa7803be56f14fc10f9086ac9bd8ad1f8ccf7ab91722afd29e70c"
+    },
+    {
+      "path": "README_EN.md",
+      "bytes": 6555,
+      "sha256": "96982cfe430b9b8d01b675bb24d881e0f90460d0b41c49d68e3304f555ff2e46"
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "bytes": 1355,
+      "sha256": "a2eb2bc766e2e8623c7c7c34da1f5b813518fc66e311f08082ae7c9bb841da40"
     },
     {
       "path": "USER_REQUEST.md",
-      "bytes": 2425,
-      "sha256": "371b461ea319ac6e2410b9c2a3e7c3a06104455da669674c228fafe83ae2b76b"
+      "bytes": 2751,
+      "sha256": "a1c4a9af386a353faf2774cc77a9178fe9ccd2aa08c7fb27af6dc70d249824e9"
     },
     {
       "path": "case/author_evidence.py",
@@ -185,14 +212,19 @@
       "sha256": "77b067452668f49ed2bff7e35b87bc96323a402d4d14dcef2f148f2d5258c137"
     },
     {
+      "path": "docs/FURNITURE_SPEC_ENHANCEMENT.md",
+      "bytes": 4573,
+      "sha256": "8bd007afe766439700e6e36b1fc4397836de4dcbcf2d986381505fb3961dc1dd"
+    },
+    {
       "path": "docs/INTEGRATIONS.md",
       "bytes": 2017,
       "sha256": "a619ca7737826fbb1fa623dda61b465fe5ded518eb113769b15d49fa66c7f2d6"
     },
     {
       "path": "docs/example/EXAMPLE_WALKTHROUGH.md",
-      "bytes": 12900,
-      "sha256": "0dd8a8960ca1e205a2c458b4418e7430d622b2fd9dfc6f577e5f2b05cf56be14"
+      "bytes": 13282,
+      "sha256": "61d385bfb564f8c38ff32e7a23d8a51bad2fa6112920a7a676cc6a213bc8facd"
     },
     {
       "path": "docs/example/FILE_MANIFEST.json",
@@ -705,6 +737,11 @@
       "sha256": "04d4a32d7523031210ec433c6cb9a8084a4a7ff007e544dea6e6f05fe0a98fd3"
     },
     {
+      "path": "docs/releases/public-preview-20260925.md",
+      "bytes": 1744,
+      "sha256": "4d8b7c319442b6d5c2358a016c2c9044268ed3ba380326304aff5fefe7fe15a9"
+    },
+    {
       "path": "inputs/utility_room_original.jpg",
       "bytes": 243723,
       "sha256": "dfe25afbfb885ae9bc377691dd18ebd4259ffa72917ca725e3809ef40624c29c"
@@ -716,8 +753,8 @@
     },
     {
       "path": "public_contract/CAPABILITIES.md",
-      "bytes": 2149,
-      "sha256": "a15144cc6f7a1470cee57257b6ae56662e63af2b3b0081e2a6c2bb3126444292"
+      "bytes": 2946,
+      "sha256": "f0dac870c40e0a01818290b625580f50b78d3dd29e2288364bd5c27b14be9e40"
     },
     {
       "path": "public_contract/MASTER_PROMPT.md",
@@ -736,8 +773,8 @@
     },
     {
       "path": "public_contract/USER_GUIDE.md",
-      "bytes": 6631,
-      "sha256": "d116ce5c5a209c34c8fc623e0708fb30aa537811e39fae314b90236aed17b813"
+      "bytes": 6733,
+      "sha256": "d5fabb66a6e645cdd5cee8354f58c3f65f94c41576501a8c6a3a1f3c85fc8347"
     },
     {
       "path": "requirements-replay.txt",
@@ -746,8 +783,8 @@
     },
     {
       "path": "source_manifest.json",
-      "bytes": 459,
-      "sha256": "5c0856053ceb57514ffd261bc60c2ca566c01354cce2c7dcbef98c490dd80733"
+      "bytes": 959,
+      "sha256": "c6511cb82e89462c456f16ffb65217bded6f7293b619cf70cbcbe74583160682"
     },
     {
       "path": "tests/fixtures/scene.json",

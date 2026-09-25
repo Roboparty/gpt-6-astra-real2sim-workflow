@@ -1,5 +1,7 @@
 # 单张实拍到可编辑场景：桌椅结构与生成链路修订版
 
+> 本例现作为 **GPT-6 Astra Real2sim workflow** 的授权公开示例。下文记录的是实际构建过程；其中的初始发布限制保留作历史记录，现行范围见 [发布来源说明](../../PROVENANCE.md)。修订前后对比展示结构修复，不是厂家尺寸或同款资产增强实验。
+
 本例从一张获得授权的室内实拍照片出发，完成 A/B 建模、材质/光照、铰链/布料/体积柔体、格式导出和实际重载。**初版虽然走完 18 个阶段，却漏判了桌椅局部结构错误。** 用户指出后，本版通过正式 `revise` 重建桌子和两把椅子，并把观察、部件建模和结构验收连起来。旧模型、旧审核、失败记录和归档保留，不用新结论覆盖历史。
 
 ![原图、已撤销认可的初版与修订后](figures/furniture_before_after.jpg)
@@ -120,4 +122,4 @@ GLB 核心相机不表达偏心主点；精确相机须读取 `scene.json` 或 e
 
 新版冻结配方再次从原图生成所有工件、结构审计、导出、重载和加载演示；结果见 [replay/REBUILD_RESULT.json](evidence/replay/REBUILD_RESULT.json)。它证明本例配方可复跑，不等于任意新照片自动建模或新一次人工视觉认可。
 
-继续阅读：[RESULTS.md](RESULTS.md)、[REPLAY.md](REPLAY.md)、[PIPELINE_CHANGES.md](PIPELINE_CHANGES.md)、[FILE_MANIFEST.json](FILE_MANIFEST.json)。轻量阅读副本不含 `outputs`；完整模型及新归档保留远端，未公开发布。
+继续阅读：[RESULTS.md](RESULTS.md)、[REPLAY.md](REPLAY.md)、[PIPELINE_CHANGES.md](PIPELINE_CHANGES.md)、[FILE_MANIFEST.json](FILE_MANIFEST.json)。Git 仓库不含 `outputs`；完整模型及归档仍保留远端，尚未提供公开下载地址。原图、文档及精选预览按本次发布范围公开。

@@ -7,5 +7,12 @@
   ],
   "provenance": "User attested personally/team photographed on 2026-09-22; no independent metric or physical truth.",
   "revision": "furniture structure and pipeline revision, model version 4, candidate 019",
-  "rights": "Private authorized processing and delivery; no public publication."
+  "rights": "Public inclusion of the source photograph and derived previews as project examples authorized for the 2026-09-25 release. Media is excluded from the software MIT licence; see MEDIA_NOTICE.md.",
+  "publication": {
+    "date": "2026-09-25",
+    "project": "GPT-6 Astra Real2sim workflow",
+    "repository": "Roboparty/gpt-6-astra-real2sim-workflow",
+    "authorization_basis": "User confirmed the proposed public-release scope, MIT source licensing, and separate example-media terms.",
+    "previous_scope": "Private task delivery and private repository snapshot."
+  }
 }
