@@ -27,7 +27,7 @@ def rejected(fn):
 
 with tempfile.TemporaryDirectory() as temp:
     root = Path(temp)
-    atomic_json(root / 'case.json', {'id': 'protocol_fixture', 'mode': 'single', 'workflow_profile': 'quality_v2', 'inputs': [], 'refinement': {'max_revisions': 2}})
+    atomic_json(root / 'case.json', {'id': 'protocol_fixture', 'mode': 'single', 'workflow_profile': 'quality_v2', 'inputs': [], 'refinement': {'max_revisions': 2, 'appearance_contract_version': 0}})
     w = Workflow(root)
     # A reduced dependency graph isolates the runner without pretending to render a room.
     w.stages = [('agent_model', [], True), ('build_render', ['agent_model'], False), ('agent_review', ['build_render'], True), ('validate', ['agent_review'], False), ('report', ['validate'], False)]

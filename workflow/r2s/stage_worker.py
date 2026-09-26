@@ -24,6 +24,16 @@ def artifact_list():return [str(p.relative_to(out)) for p in sorted(out.rglob('*
 if stage in {'build_render','build_geometry'}:
     preferred=['agent_calibrate_lighting','agent_materials','agent_review_geometry','agent_model']
     blend=find_artifact({'model.blend','scene.blend'},preferred);scene=find_artifact({'scene.json'},preferred);shutil.copyfile(scene,out/'scene.json')
+    from .appearance import enabled as holistic_enabled
+    if holistic_enabled(packet):
+        obs=packet.get('appearance_observation')
+        if not obs or file_sha(obs['path'])!=obs['sha256']:raise ContractError('Missing accepted whole-scene observation')
+        shutil.copyfile(obs['path'],out/'appearance_observation.json')
+        if stage=='build_render':
+            materials=find_artifact({'material_calibration.json'},['agent_materials'])
+            shutil.copyfile(materials,out/'material_calibration.json')
+            accepted=find_artifact({'model.blend'},['agent_materials'])
+            run([params['blender'],'-b',str(accepted),'-t',str(params.get('threads',4)),'--python-exit-code','12','--python',str(package/'blender_appearance.py'),'--',str(out/'accepted_material_state.json')])
     from .surfaces import enabled, realization
     if enabled(packet):
         model_dir=find_artifact({'surface_realization.json'},['agent_model']).parent

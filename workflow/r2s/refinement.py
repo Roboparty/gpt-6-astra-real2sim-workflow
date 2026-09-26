@@ -4,6 +4,7 @@ from pathlib import Path
 from .contracts import ContractError
 from .media import file_hash
 from .structure import evidence_file
+from . import appearance
 
 REVIEW_STAGES = {'agent_review_geometry', 'agent_review'}
 DIMENSIONS = ('source_similarity', 'local_detail', 'novel_structure')
@@ -45,6 +46,12 @@ def write_render_binding(packet, out):
                'source_sha256': file_hash(source_path), 'model_version': scene.get('model_version'),
                'protocol_sha256': digest({'cameras': scene.get('cameras', [scene.get('camera')]), 'settings': settings}),
                'object_crops': crops, 'images': {str(p.relative_to(out)): file_hash(p) for p in out.rglob('*.png')}}
+    if appearance.enabled(packet):
+        protocol = json.loads((out/'comparison_protocol.json').read_text())
+        if packet.get('comparison_protocol') and protocol != packet['comparison_protocol']:
+            raise ContractError('Renderer changed the persistent comparison cameras/settings')
+        binding.update(comparison_protocol=protocol, protocol_sha256=digest(protocol),
+                       comparison_images={name: binding['images'][name] for name in appearance.FIXED_VIEWS})
     (out / 'render_binding.json').write_text(json.dumps(binding, indent=2))
     return binding
 
@@ -52,6 +59,9 @@ def write_render_binding(packet, out):
 def limits(config):
     value = {**DEFAULTS, **config.get('refinement', {})}
     value.setdefault('surface_contract_version', 1)
+    value.setdefault('appearance_contract_version', 1)
+    if type(value['appearance_contract_version']) is not int or value['appearance_contract_version'] not in (0, 1):
+        raise ContractError('Unknown appearance contract version')
     if type(value['surface_contract_version']) is not int or value['surface_contract_version'] not in (0, 1):
         raise ContractError('Unknown surface contract version')
     for key in DEFAULTS:
@@ -69,6 +79,8 @@ def check_response(workflow, name, attempt, response):
         return None
     from .surfaces import check_response as check_surfaces
     check_surfaces(workflow,name,attempt,response)
+    packet = json.loads((Path(attempt)/'packet.json').read_text()) if (Path(attempt)/'packet.json').exists() else {}
+    appearance.check_stage(name, attempt, response, packet)
     if name == 'agent_observe':
         files = response.get('artifacts', [])
         obs = json.loads(evidence_file(attempt, 'observation.json', files).read_text())
@@ -151,6 +163,7 @@ def review(attempt, response, packet, best):
             if not expected or file_hash(evidence_file(attempt, ref, files)) != binding['images'].get(expected):
                 raise ContractError('Object crop is missing or stale: ' + row['entity'])
     relation = data.get('comparison', {})
+    appearance.check_review(attempt, response, packet, data, binding, best)
     if best:
         if not artifacts_valid(best['artifacts']):
             raise ContractError('Best candidate evidence changed; restore it before comparing')

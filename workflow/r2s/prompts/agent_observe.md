@@ -11,3 +11,5 @@ Return response.json using the packet response contract. Document only concise, 
 For quality_v2, also follow agent_observe_structure.md and deliver furniture_observation.json. This is a required consumed input to the model stage, not optional prose.
 
 When surface_contract_version >= 1, also follow surfaces.md; source-bound surface artifacts and front/raking review are mandatory.
+
+When appearance_contract_version >= 1, also follow appearance.md. Whole-scene coverage, scoped textures, actual UV/material checks and persistent fixed-view comparisons are mandatory.

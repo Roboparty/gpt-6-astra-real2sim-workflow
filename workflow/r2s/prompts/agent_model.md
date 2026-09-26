@@ -15,3 +15,5 @@ Read the accepted furniture_observation.json from the observation stage; carry i
 For quality_v2 deliver scene.structure using real2sim.assembly/1: one owner per part, actual Blender object name, explicitly declared joint pairs with a shared world-space anchor/tolerance, floor supports and source observation IDs. The assembly graph must be connected. Store actual fit residuals separately from room/camera residuals, and bind model_version consistently in scene and response.parameters. A layout lock is not a structural certificate. Do not add arbitrary joints to whitelist a visually erroneous crossbar or intersection.
 
 When surface_contract_version >= 1, also follow surfaces.md; source-bound surface artifacts and front/raking review are mandatory.
+
+When appearance_contract_version >= 1, also follow appearance.md. Whole-scene coverage, scoped textures, actual UV/material checks and persistent fixed-view comparisons are mandatory.

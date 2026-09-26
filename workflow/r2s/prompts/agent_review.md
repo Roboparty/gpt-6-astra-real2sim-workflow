@@ -13,3 +13,5 @@ For workflow_profile quality_v2, review.json must additionally have decision pas
 Also deliver furniture_local_review with status, concrete findings, source_crop and render_crop referring to real artifacts. Recheck the accepted furniture structure under final shading: do not let material highlights, source-view occlusion or all-image brightness scores conceal disconnected/incorrect members. A model-version change invalidates the prior local review and requires new images.
 
 When surface_contract_version >= 1, also follow surfaces.md; source-bound surface artifacts and front/raking review are mandatory.
+
+When appearance_contract_version >= 1, also follow appearance.md. Whole-scene coverage, scoped textures, actual UV/material checks and persistent fixed-view comparisons are mandatory.

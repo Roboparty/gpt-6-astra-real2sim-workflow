@@ -13,3 +13,5 @@ Use build_geometry's model_binding.json and structural_audit.json. A failed mesh
 geometry_review.json must cover every current scene entity exactly once in per_object, each with entity, status (pass or hypothesized), concrete findings and actual delivered evidence filenames; hypotheses need uncertainty. geometry_freeze_sha256 must equal the current model_binding model hash and model_version must match. Deliver all referenced image/audit files. Empty captions, stale model hashes, missing objects or missing evidence files are rejected. Brightness ROI scores, camera-only landmark residuals, exporter success and a stable simulation cannot substitute for this review. Keep any major local defect blocking, even if the global image looks acceptable.
 
 When surface_contract_version >= 1, also follow surfaces.md; source-bound surface artifacts and front/raking review are mandatory.
+
+When appearance_contract_version >= 1, also follow appearance.md. Whole-scene coverage, scoped textures, actual UV/material checks and persistent fixed-view comparisons are mandatory.

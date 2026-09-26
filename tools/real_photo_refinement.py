@@ -38,7 +38,7 @@ def main():
         source = a.source_root / 'inputs/utility_room_original.jpg'
         atomic_json(a.case / 'case.json', {'id': 'real_photo_local_refinement', 'mode': 'single', 'branch': 'A',
             'workflow_profile': 'quality_v2', 'scope': 'Existing real-photo scene local-edit regression, reduced four-stage graph; not fresh reconstruction or full-scene certification',
-            'inputs': [{'path': str(source), 'sha256': file_hash(source)}], 'refinement': {'max_revisions': 4, 'max_stagnant': 3, 'max_seconds': 3600, 'surface_contract_version': 0},
+            'inputs': [{'path': str(source), 'sha256': file_hash(source)}], 'refinement': {'max_revisions': 4, 'max_stagnant': 3, 'max_seconds': 3600, 'surface_contract_version': 0, 'appearance_contract_version': 0},
             'stages': {'build_render': {'command': [sys.executable, str(Path(__file__).with_name('render_refinement_probe.py')), '{packet}'],
                 'parameters': {'blender': a.blender, 'threads': 4}, 'timeout_seconds': 1800}}})
     w = local_workflow(a.case)

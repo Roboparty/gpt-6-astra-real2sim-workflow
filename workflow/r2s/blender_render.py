@@ -5,6 +5,8 @@ from mathutils import Matrix,Vector
 sys.path.insert(0,str(Path(__file__).parent))
 from viewpoints import diagnostic_focus,safe_camera_position
 out=Path(sys.argv[sys.argv.index('--')+1]);sc=bpy.context.scene
+packet=json.loads((out/'packet.json').read_text()) if (out/'packet.json').exists() else {}
+holistic=packet.get('refinement',{}).get('limits',{}).get('appearance_contract_version',0)>=1
 for name in ['floor','ceiling','wall_back','wall_front','wall_left','wall_right']:
  o=bpy.data.objects.get(name)
  if o is None or o.hide_render:raise ValueError('Required enclosure surface absent/hidden: '+name)
@@ -21,6 +23,12 @@ for i,c in enumerate(specs):
     if camera is None:bpy.ops.object.camera_add();camera=bpy.context.object;camera.name=name
     camera.location=c['position'];camera.rotation_euler=(Matrix(c['rotation_world_to_cv']).transposed()@Matrix(((1,0,0),(0,-1,0),(0,0,-1)))).to_euler();W,H=c['image_size'];camera.data.sensor_fit='HORIZONTAL';camera.data.sensor_width=36;camera.data.lens=c['focal_px']*36/W;camera.data.shift_x=(W/2-c['principal_point'][0])/W;camera.data.shift_y=(c['principal_point'][1]-H/2)/W;camera['frame_id']=c.get('frame_id',str(i));cameras.append(camera)
 sc.camera=cameras[0];sc.render.resolution_x=specs[0]['image_size'][0];sc.render.resolution_y=specs[0]['image_size'][1];bpy.ops.file.pack_all();bpy.ops.wm.save_as_mainfile(filepath=str(out/'scene.blend'))
+if holistic:
+    from blender_appearance import audit as appearance_audit, comparison_views, neutral_view
+    if packet['stage']=='build_render':
+        appearance_audit(out,json.loads((out/'accepted_material_state.json').read_text()))
+    comparison_views(out,S,packet)
+    if packet['stage']=='build_render':neutral_view(out,S)
 if (out/'surface_realization.json').exists():
     from blender_surfaces import audit
     audit(out)

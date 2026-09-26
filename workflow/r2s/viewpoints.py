@@ -2,8 +2,14 @@
 import math
 from mathutils import Vector
 
+def inspection_targets(scene):
+    shell={'floor','ceiling','wall_front','wall_back','wall_left','wall_right'}
+    return [o for o in scene['objects'] if o['id'] not in shell
+            and o['kind'] not in {'framed_art','rug','petal_pendant','tulip_lamp','lamp','room_surface'}
+            and o.get('semantic_class')!='luminaire']
+
 def diagnostic_focus(scene):
-    objects=[o for o in scene['objects'] if o['kind'] not in {'framed_art','rug','petal_pendant','tulip_lamp'} and o.get('semantic_class')!='luminaire']
+    objects=inspection_targets(scene)
     r=scene['room']
     if not objects:return Vector(((r['x_min']+r['x_max'])/2,(r['y_min']+r['y_max'])/2,r['height']*.35))
     return Vector((sum(o['position'][0] for o in objects)/len(objects),sum(o['position'][1] for o in objects)/len(objects),min(1.0,r['height']*.36)))
@@ -11,11 +17,10 @@ def diagnostic_focus(scene):
 def safe_camera_position(scene,ideal):
     import bpy
     r=scene['room'];xm,xM,ym,yM=[r[k] for k in ['x_min','x_max','y_min','y_max']];dx=xM-xm;dy=yM-ym;z=ideal[2]
-    targets=[o for o in scene['objects'] if o['kind'] not in {'framed_art','rug','petal_pendant','tulip_lamp'} and o.get('semantic_class')!='luminaire'];deps=bpy.context.evaluated_depsgraph_get()
+    targets=inspection_targets(scene);deps=bpy.context.evaluated_depsgraph_get()
     def clear(p):
         if not(xm+.05<p[0]<xM-.05 and ym+.05<p[1]<yM-.05):return False
-        for o in scene['objects']:
-            if o['kind'] in {'framed_art','rug'}:continue
+        for o in targets:
             cx,cy,cz=o['position'];W,D,H=o['dimensions']
             if p[2]<cz-.12 or p[2]>cz+H+.12:continue
             t=o.get('rotation_z',0);xx=(p[0]-cx)*math.cos(t)+(p[1]-cy)*math.sin(t);yy=-(p[0]-cx)*math.sin(t)+(p[1]-cy)*math.cos(t)

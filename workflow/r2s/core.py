@@ -53,7 +53,7 @@ class Workflow:
         if name=='ingest':config={k:self.config.get(k) for k in ['mode','inputs','provenance','formal_test']};config['actual_input_hashes']=[file_hash(x['path']) for x in self.config['inputs']]
         source_root=Path(__file__).parent
         source_hash=digest({str(p.relative_to(source_root)):file_hash(p) for p in source_root.rglob('*') if p.is_file() and p.suffix in {'.py','.md'}})
-        return digest({'stage':name,'upstream':up,'config':config,'implementation':source_hash,'branch':self.config.get('branch','A'),'workflow_profile':self.config.get('workflow_profile','legacy_v1'),'physics_options':physics_options(self.config),'refinement_enabled':self.refining,'surface_contract_version':limits(self.config)['surface_contract_version'] if self.refining else 0,'revision_epoch':self.state.get('revision_epochs',{}).get(name,0)})
+        return digest({'stage':name,'upstream':up,'config':config,'implementation':source_hash,'branch':self.config.get('branch','A'),'workflow_profile':self.config.get('workflow_profile','legacy_v1'),'physics_options':physics_options(self.config),'refinement_enabled':self.refining,'surface_contract_version':limits(self.config)['surface_contract_version'] if self.refining else 0,'appearance_contract_version':limits(self.config)['appearance_contract_version'] if self.refining else 0,'revision_epoch':self.state.get('revision_epochs',{}).get(name,0)})
     def valid(self,name):
         item=self.state['stages'].get(name)
         if not item or item['status']!='succeeded':return False
@@ -86,6 +86,14 @@ class Workflow:
             p=safe_path(attempt,rel)
             if p.name.startswith('scene') and p.suffix=='.json':scene_check(json.loads(p.read_text()))
         if candidate:self.record_candidate(name,attempt,response,outputs,*candidate)
+        if self.refining and name in {'build_geometry','build_render'} and limits(self.config)['appearance_contract_version']:
+            from .appearance import upstream
+            binding=json.loads(Path(upstream({'input_artifacts':{name:outputs}},name,'render_binding.json')['path']).read_text())
+            protocol=binding.get('comparison_protocol')
+            if not protocol:raise ContractError('Executable build omitted persistent comparison protocol')
+            history=self.state.setdefault('refinement',{})
+            if history.get('comparison_protocol',protocol)!=protocol:raise ContractError('Fixed comparison protocol changed')
+            history['comparison_protocol']=protocol
         item=self.state['stages'][name];item.update(status='succeeded',outputs=outputs,response=response,finished=now());atomic_json(attempt/'record.json',item);self.save();self.event({'stage':name,'status':'succeeded','attempt':item['attempt']});return True
     def accept(self,name,response_file):
         item=self.state['stages'].get(name)
@@ -118,6 +126,9 @@ class Workflow:
                     if Path(a['path']).name=='observation.json':
                         observed=json.loads(Path(a['path']).read_text());targets=observed.get('appearance_targets',[]);primary=observed.get('appearance_source',primary)
                 packet.update(appearance_targets=targets,appearance_source=primary,comparison_inputs=sources,refinement={'limits':limits(self.config),'history':self.state.get('refinement',{}),'instruction_file':str(Path(__file__).parent/'prompts/refinement.md')})
+                packet['comparison_protocol']=self.state.get('refinement',{}).get('comparison_protocol')
+                for a in self.state['stages'].get('agent_observe',{}).get('outputs',[]):
+                    if Path(a['path']).name=='observation.json':packet['appearance_observation']=a
             atomic_json(attempt/'packet.json',packet)
             if self.stage_map[name][1]:
                 command=self.config.get('agent_command')
@@ -176,7 +187,7 @@ class Workflow:
         record={'case_id':self.config['id'],'frozen_at':now(),'outputs':{n:v['outputs'] for n,v in self.state['stages'].items() if self.valid(n)}};record['sha256']=digest(record);atomic_json(self.root/'freeze.json',record);return record
     def revise(self,name,reason):
         if name not in self.stage_map:raise ContractError('Unknown stage')
-        if self.refining and name in {'agent_observe','agent_calibrate','agent_calibrate_room'}:
+        if self.refining and not limits(self.config)['appearance_contract_version'] and name in {'agent_observe','agent_calibrate','agent_calibrate_room'}:
             for review_stage in REVIEW_STAGES:
                 h=self.state.get('refinement',{}).get(review_stage,{})
                 if h.get('best'):h.setdefault('archived_best',[]).append(h.pop('best'))
@@ -193,11 +204,13 @@ class Workflow:
     def record_candidate(self,name,attempt,response,outputs,data,binding):
         history=self.state.setdefault('refinement',{}).setdefault(name,{'stagnant':0})
         candidate={'directory':str(attempt),'review_sha256':file_hash(attempt/'appearance_review.json'),'protocol_sha256':binding['protocol_sha256'],'image_hashes':list(binding['images'].values()),'artifacts':outputs,'status':response['status'],'source_stages':{n:dict(v) for n,v in self.state['stages'].items() if self.valid(n)}}
+        candidate.update(source_sha256=binding.get('source_sha256'),comparison_images=binding.get('comparison_images',{}),target_entities=list(binding.get('object_crops',{})))
         # References to immutable attempts preserve large models without duplicating them.
         atomic_json(attempt/'candidate.json',candidate)
         if data['comparison']['relation'] in {'baseline','better'}:
             history['best']=candidate;history['stagnant']=0
         else:history['stagnant']+=1
+        history['selected_candidate']=history['best']['directory']
         history['latest']=str(attempt/'candidate.json')
 
     def stop_refinement(self,name,reason):
