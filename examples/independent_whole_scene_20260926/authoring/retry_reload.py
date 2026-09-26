@@ -1,0 +1,5 @@
+import json,shutil,subprocess,hashlib
+from pathlib import Path
+R=Path('/home/wqz/real2sim_whole_scene_20260926');root=R/'delivery_candidate';p=root/'diagnostic_status.json';prior=json.loads(p.read_text());shutil.copyfile(p,root/'diagnostic_status_initial.json');shutil.copyfile(root/'export/reload_validation.json',root/'reload_validation_initial.json')
+tool=R/'repo/tools/reload_scene_exports.py';cmd=['/home/wqz/real2sim_fresh_20260921/runtime/blender-4.5.3-linux-x64/blender','-b','-t','2','--python-exit-code','12','--python',str(tool),'--',str(root/'export')];r=subprocess.run(cmd,capture_output=True,text=True);(root/'reload_retry.log').write_text(r.stdout+'\n'+r.stderr)
+prior['checks']['reload']={'status':'passed' if r.returncode==0 else 'failed','returncode':r.returncode,'initial_result':'reload_validation_initial.json','tool_sha256':hashlib.sha256(tool.read_bytes()).hexdigest(),'change':'Resolve uniquely preserved frame_id after USD camera name collapse. Geometry/camera tolerances unchanged.'};p.write_text(json.dumps(prior,indent=2));print(prior['checks']['reload'])

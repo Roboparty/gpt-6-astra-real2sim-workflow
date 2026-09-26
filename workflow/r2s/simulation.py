@@ -101,11 +101,10 @@ probe=SubElement(world,'body',name='test_probe',pos=fmt(probe_xy+[min(1.2,r['hei
 ElementTree(root).write(OUT/'probe_test.xml',encoding='unicode',xml_declaration=True);pm=mujoco.MjModel.from_xml_path(str(OUT/'probe_test.xml'));pd=mujoco.MjData(pm)
 for _ in range(1500):mujoco.mj_step(pm,pd)
 assert np.isfinite(pd.qpos).all() and abs(float(pd.qpos[2])-.03)<.015,'Sphere floor-support test failed'
-rays={};z=r['height']-.04;mx=(r['x_min']+r['x_max'])/2;my=(r['y_min']+r['y_max'])/2
-for name,origin,direction,expected in [
- ('left',[r['x_min']+.05,my,z],[-1,0,0],.05),('right',[r['x_max']-.05,my,z],[1,0,0],.05),
- ('back',[mx,r['y_max']-.05,z],[0,1,0],.05),('front',[mx,r['y_min']+.05,z],[0,-1,0],.05),
- ('ceiling',[*probe_xy,z],[0,0,1],.04),('floor',[*probe_xy,r['height']*.5],[0,0,-1],r['height']*.5)]:
-  d=mujoco.mj_ray(model,data,np.array(origin,dtype=float),np.array(direction,dtype=float),group,True,-1,rid);rays[name]={'distance_m':float(d),'expected_m':expected,'error_m':float(abs(d-expected))};assert abs(d-expected)<.006,f'{name} ray mismatch'
+if __package__:
+ from .simulation_checks import check_enclosure_rays
+else:
+ from simulation_checks import check_enclosure_rays
+rays=check_enclosure_rays(model,data,r,probe_xy)
 report={'status':'passed','mujoco_version':mujoco.__version__,'bodies':model.nbody,'geoms':model.ngeom,'visual_meshes':model.nmesh,'required_entities_present':required,'probe_steps':1500,'probe_final_position_m':pd.qpos[:3].tolist(),'six_surface_ray_tests':rays,'camera_transfer':camera_transfer,'layout_modified':False,'limitations':['static furniture with explicit conservative collision proxies','soft fabrics, hinged cabinets and movable objects are not dynamically identified','OBJ visual meshes use flat per-entity colors in MJCF; textured reference visuals are in Blender/GLB/USD'],'collision_reference':'https://mujoco.readthedocs.io/en/stable/XMLreference.html#asset-mesh'}
 (OUT/'simulation_audit.json').write_text(json.dumps(report,indent=2));print(json.dumps(report,indent=2))

@@ -1,0 +1,317 @@
+{
+  "camera": {
+    "position": [
+      1.7480085436716677,
+      -1.2246107471273842,
+      1.3833105207796836
+    ],
+    "rotation_world_to_cv": [
+      [
+        0.7251594865885644,
+        0.6875303125980035,
+        0.03802352258143876
+      ],
+      [
+        0.13864879760180743,
+        -0.09170213299504476,
+        -0.9860868266677798
+      ],
+      [
+        -0.6744777460629687,
+        0.7203421326446555,
+        -0.16182392283827085
+      ]
+    ],
+    "focal_px": 681.3127150155914,
+    "principal_point": [
+      851,
+      638
+    ],
+    "image_size": [
+      1702,
+      1276
+    ],
+    "role": "reconstruction"
+  },
+  "parameters": {
+    "bed_width": 1.0848955329864833,
+    "bed_rail_top": 0.2912001861352745,
+    "bed_head_top": 0.8689896801548599,
+    "wardrobe_left_x": 1.186730647895049,
+    "wardrobe_front_y": 1.5787510710907378,
+    "cabinet_front_x": -0.547631750125435,
+    "cabinet_far_y": -0.49999999999999994,
+    "cabinet_width": 0.8039999999999999,
+    "cabinet_height": 1.0612615626029518
+  },
+  "correspondences": [
+    {
+      "id": "bed_foot_left_top",
+      "world": [
+        -0.5424477664932417,
+        0.0,
+        0.2912001861352745
+      ],
+      "uv": [
+        629,
+        797
+      ],
+      "projected": [
+        625.8308068639687,
+        807.3115090141928
+      ],
+      "error_px": 10.787539259870462
+    },
+    {
+      "id": "bed_foot_right_top",
+      "world": [
+        0.5424477664932417,
+        0.0,
+        0.2912001861352745
+      ],
+      "uv": [
+        827,
+        936
+      ],
+      "projected": [
+        824.1430991813569,
+        928.2384749993803
+      ],
+      "error_px": 8.27061984513909
+    },
+    {
+      "id": "bed_foot_left_floor",
+      "world": [
+        -0.5424477664932417,
+        0.0,
+        0.0
+      ],
+      "uv": [
+        635,
+        868
+      ],
+      "projected": [
+        626.9877466010394,
+        878.103637807918
+      ],
+      "error_px": 12.894948680888394
+    },
+    {
+      "id": "bed_foot_right_floor",
+      "world": [
+        0.5424477664932417,
+        0.0,
+        0.0
+      ],
+      "uv": [
+        820,
+        1008
+      ],
+      "projected": [
+        820.8716837123754,
+        1023.0535591890134
+      ],
+      "error_px": 15.078775704663519
+    },
+    {
+      "id": "bed_head_left_top",
+      "world": [
+        -0.5424477664932417,
+        2.0,
+        0.8689896801548599
+      ],
+      "uv": [
+        946,
+        621
+      ],
+      "projected": [
+        943.5190029298575,
+        619.7023312938118
+      ],
+      "error_px": 2.7998733066115595
+    },
+    {
+      "id": "bed_head_right_top",
+      "world": [
+        0.5424477664932417,
+        2.0,
+        0.8689896801548599
+      ],
+      "uv": [
+        1136,
+        647
+      ],
+      "projected": [
+        1131.0525516385053,
+        647.3782288599633
+      ],
+      "error_px": 4.961884960392151
+    },
+    {
+      "id": "wardrobe_top_left",
+      "world": [
+        1.186730647895049,
+        1.5787510710907378,
+        2.01
+      ],
+      "uv": [
+        1307,
+        362
+      ],
+      "projected": [
+        1309.1201735773777,
+        355.3137635617743
+      ],
+      "error_px": 7.014334872678082
+    },
+    {
+      "id": "wardrobe_top_right",
+      "world": [
+        1.980730647895049,
+        1.5787510710907378,
+        2.01
+      ],
+      "uv": [
+        1668,
+        312
+      ],
+      "projected": [
+        1671.2004314632266,
+        311.9380237532415
+      ],
+      "error_px": 3.2010314909373676
+    },
+    {
+      "id": "wardrobe_bottom_left",
+      "world": [
+        1.186730647895049,
+        1.5787510710907378,
+        0.0
+      ],
+      "uv": [
+        1237,
+        906
+      ],
+      "projected": [
+        1232.42412738089,
+        905.4444248073455
+      ],
+      "error_px": 4.609476545228706
+    },
+    {
+      "id": "wardrobe_bottom_right",
+      "world": [
+        1.980730647895049,
+        1.5787510710907378,
+        0.0
+      ],
+      "uv": [
+        1520,
+        1015
+      ],
+      "projected": [
+        1518.3655643366212,
+        1010.0474138195466
+      ],
+      "error_px": 5.215313011943053
+    },
+    {
+      "id": "shoe_cabinet_top_right",
+      "world": [
+        -0.547631750125435,
+        -0.49999999999999994,
+        1.0612615626029518
+      ],
+      "uv": [
+        464,
+        615
+      ],
+      "projected": [
+        472.613332910146,
+        616.4388217731952
+      ],
+      "error_px": 8.732680683273902
+    },
+    {
+      "id": "shoe_cabinet_bottom_right",
+      "world": [
+        -0.547631750125435,
+        -0.49999999999999994,
+        0.0
+      ],
+      "uv": [
+        485,
+        923
+      ],
+      "projected": [
+        488.95479672350973,
+        928.8355557048591
+      ],
+      "error_px": 7.049406181289074
+    },
+    {
+      "id": "shoe_cabinet_door_right_top",
+      "world": [
+        -0.547631750125435,
+        -0.75,
+        0.9112615626029518
+      ],
+      "uv": [
+        377,
+        676
+      ],
+      "projected": [
+        381.11218325610605,
+        673.9153358165674
+      ],
+      "error_px": 4.610409514293222
+    },
+    {
+      "id": "shoe_cabinet_door_right_bottom",
+      "world": [
+        -0.547631750125435,
+        -0.75,
+        0.09
+      ],
+      "uv": [
+        402,
+        951
+      ],
+      "projected": [
+        400.72251216777454,
+        934.4394281116334
+      ],
+      "error_px": 16.6097717152055
+    }
+  ],
+  "residuals": {
+    "median_px": 7.031870526983578,
+    "max_px": 16.6097717152055
+  },
+  "solutions": [
+    {
+      "focal_px": 681.3142983259376,
+      "residual_norm": 33.886056184877404
+    },
+    {
+      "focal_px": 681.3127150155914,
+      "residual_norm": 33.88605614486667
+    },
+    {
+      "focal_px": 681.3129127615583,
+      "residual_norm": 33.88605614487962
+    }
+  ],
+  "coordinate_system": "metres, Z up; bed foot center at origin, head towards +Y; +X towards wardrobe",
+  "priors": [
+    "bed longitudinal rail 2.0m user confirmed",
+    "wardrobe BRUKSVARA dimensions conditional candidate"
+  ],
+  "uncertainty": [
+    "Principal point fixed to image center; no EXIF lens prior",
+    "No radial distortion fitted",
+    "All points are reconstruction observations, not held out",
+    "Shoe cabinet dimensions free estimates",
+    "Visible furniture residuals do not certify silhouettes or hidden geometry"
+  ]
+}

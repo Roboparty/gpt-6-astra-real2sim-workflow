@@ -10,7 +10,7 @@ from r2s.appearance import GROUPS, FIXED_VIEWS, observation, materials, check_re
 from r2s.contracts import ContractError
 from r2s.core import Workflow, atomic_json
 from r2s.media import file_hash
-from r2s.refinement import limits, write_render_binding
+from r2s.refinement import limits, write_render_binding, is_render_image
 
 
 def rejects(action):
@@ -22,6 +22,11 @@ def rejects(action):
 
 
 with tempfile.TemporaryDirectory() as tmp:
+    # The holistic contract requires these actual renders on both sides;
+    # the enclosing refinement gate must recognize them as rendered evidence.
+    assert all(is_render_image(name) for name in FIXED_VIEWS)
+    assert not is_render_image('source_reference.png')
+    assert not is_render_image('comparison_reference.png')
     p = Path(tmp)
     for i, name in enumerate(['original.png', 'neutral.png', 'source_view.png', 'appearance_neutral.png', *FIXED_VIEWS]):
         Image.new('RGB', (32,32), (i*25, 80, 100)).save(p/name)

@@ -11,6 +11,16 @@ args=sys.argv[sys.argv.index('--')+1:];scene_file=Path(args[0]);out=Path(args[1]
 sha=lambda p:hashlib.sha256(Path(p).read_bytes()).hexdigest()
 result=dict(schema='real2sim.structure-audit/1',source_model_sha256=sha(bpy.data.filepath),source_scene_sha256=sha(scene_file),model_version=scene['model_version'],evaluated_visible_meshes=True,method='Evaluated triangle BVHs, signed solid membership, world-space joint anchors and floor bounds; surface-intersection screening of all non-joint component pairs. No dynamics proxy is used.',assemblies=[],interassembly_checks=[],failures=[],evidence_hashes={})
 deps=bpy.context.evaluated_depsgraph_get();meshes={};owners={}
+assembly_entities={a['entity'] for a in structure['assemblies']}
+declared_objects={p['object'] for a in structure['assemblies'] for p in a['parts']}
+# A declared parts list is not proof that all visible furniture was audited.
+# Dressing and accessories sharing an assembly owner need real support bindings
+# too; otherwise a modeller could simply omit a detached/penetrating component.
+for obj in bpy.context.scene.objects:
+ owner=obj.get('entity_id',obj.get('furniture_id',obj.name))
+ if owner in assembly_entities and obj.type in {'MESH','CURVE','SURFACE','FONT','META'} and not obj.hide_render and obj.name not in declared_objects:
+  result['failures'].append(dict(kind='unbound_visible_assembly_geometry',entity=owner,object=obj.name))
+result['visible_assembly_coverage_checked']=True
 for a in structure['assemblies']:
  for part in a['parts']:
   o=bpy.data.objects.get(part['object'])

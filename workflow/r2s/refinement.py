@@ -204,4 +204,4 @@ def review(attempt, response, packet, best):
 
 
 def is_render_image(name):
-    return name.startswith(('source_view','source_clay','diagnostic_','inspect_','isolated_')) or (name.startswith('priority_') and name.endswith('_render.png'))
+    return name in appearance.FIXED_VIEWS or name.startswith(('source_view','source_clay','diagnostic_','inspect_','isolated_')) or (name.startswith('priority_') and name.endswith('_render.png'))

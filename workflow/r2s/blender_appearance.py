@@ -231,7 +231,7 @@ def comparison_views(out, scene, packet):
         bpy.data.objects.remove(cam,do_unlink=True); bpy.data.cameras.remove(camdata)
 
 
-def neutral_view(out, scene):
+def neutral_view(out, scene, filename='appearance_neutral.png'):
     """Full-scene material inspection with a controlled world and camera-side light."""
     from viewpoints import diagnostic_focus
     sc=bpy.context.scene;world=sc.world;exposure=sc.view_settings.exposure;filepath=sc.render.filepath
@@ -245,7 +245,7 @@ def neutral_view(out, scene):
         for light in lights:light.hide_render=True
         sc.world=neutral;sc.view_settings.exposure=0
         lamp.location=sc.camera.location;lamp.rotation_euler=(diagnostic_focus(scene)-lamp.location).to_track_quat('-Z','Y').to_euler()
-        sc.render.filepath=str(Path(out)/'appearance_neutral.png');bpy.ops.render.render(write_still=True)
+        sc.render.filepath=str(Path(out)/filename);bpy.ops.render.render(write_still=True)
     finally:
         sc.world=world;sc.view_settings.exposure=exposure;sc.render.filepath=filepath
         for light,hidden in lights.items():light.hide_render=hidden

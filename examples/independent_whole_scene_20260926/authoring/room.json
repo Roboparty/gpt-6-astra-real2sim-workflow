@@ -1,0 +1,203 @@
+{
+  "room": {
+    "x_min": -1.0760681163312515,
+    "x_max": 2.6,
+    "y_min": -2.2,
+    "y_max": 2.1887510710907376,
+    "height": 2.66683140287836,
+    "thickness": 0.12,
+    "preserve_full_shell": true
+  },
+  "window": {
+    "y0": -0.7498150962320744,
+    "y1": 1.5741735881828403,
+    "bottom": 0.1674491696165059,
+    "top": 2.64683140287836
+  },
+  "blinds": [
+    {
+      "y0": -0.7411518895989908,
+      "y1": -0.11405921757585524,
+      "top": 2.64683140287836,
+      "bottom": 1.308950773254064
+    },
+    {
+      "y0": -0.08919419231670478,
+      "y1": 0.9169107815700603,
+      "top": 2.64683140287836,
+      "bottom": 1.4434838366145788
+    },
+    {
+      "y0": 0.9407370418581587,
+      "y1": 1.5444422670581441,
+      "top": 2.64683140287836,
+      "bottom": 1.4669479529321612
+    }
+  ],
+  "board": {
+    "x0": -0.5762827285112984,
+    "x1": 1.0704889992170623,
+    "z0": 0.8692948219882355,
+    "z1": 1.9621294877540847
+  },
+  "surface_basis": "Source ray-plane intersections conditional on accepted camera; hidden front/right extents conservative assumptions",
+  "uncertainty": "Back wall fixed by conditional wardrobe depth plus estimated clearance; single-view scene scale conditional on bed length interpretation.",
+  "surfaces": [
+    {
+      "id": "wall_back",
+      "plane": {
+        "normal": [
+          0,
+          -1,
+          0
+        ],
+        "point": [
+          0,
+          2.1887510710907376,
+          0
+        ]
+      },
+      "visibility": "partial",
+      "status": "fitted",
+      "evidence": [
+        "Ceiling corner 908,315 and broad rear wall; wardrobe gives estimated rear extent"
+      ],
+      "uncertainty": "Back wall fixed by conditional wardrobe depth plus estimated clearance; single-view scene scale conditional on bed length interpretation.",
+      "image_constraints": [
+        "Ceiling corner 908,315 and broad rear wall; wardrobe gives estimated rear extent"
+      ],
+      "residuals": {
+        "corner_px": 0,
+        "interpretation": "Conditional plane fit; exact corner by construction, not independent accuracy"
+      }
+    },
+    {
+      "id": "wall_left",
+      "plane": {
+        "normal": [
+          1,
+          0,
+          0
+        ],
+        "point": [
+          -1.0760681163312515,
+          0,
+          0
+        ]
+      },
+      "visibility": "partial",
+      "status": "fitted",
+      "evidence": [
+        "Window wall and left wall strip; plane has measured opening, not a solid occluding wall"
+      ],
+      "uncertainty": "Back wall fixed by conditional wardrobe depth plus estimated clearance; single-view scene scale conditional on bed length interpretation.",
+      "image_constraints": [
+        "Window wall and left wall strip; plane has measured opening, not a solid occluding wall"
+      ],
+      "residuals": {
+        "corner_px": 0,
+        "interpretation": "Conditional plane fit; exact corner by construction, not independent accuracy"
+      }
+    },
+    {
+      "id": "wall_front",
+      "plane": {
+        "normal": [
+          0,
+          1,
+          0
+        ],
+        "point": [
+          0,
+          -2.2,
+          0
+        ]
+      },
+      "visibility": "unobserved",
+      "status": "hypothesized",
+      "evidence": [
+        "Behind source camera; conservative enclosed-room completion"
+      ],
+      "uncertainty": "Back wall fixed by conditional wardrobe depth plus estimated clearance; single-view scene scale conditional on bed length interpretation."
+    },
+    {
+      "id": "wall_right",
+      "plane": {
+        "normal": [
+          -1,
+          0,
+          0
+        ],
+        "point": [
+          2.6,
+          0,
+          0
+        ]
+      },
+      "visibility": "unobserved",
+      "status": "hypothesized",
+      "evidence": [
+        "Beyond foreground partition; inferred enclosing wall"
+      ],
+      "uncertainty": "Back wall fixed by conditional wardrobe depth plus estimated clearance; single-view scene scale conditional on bed length interpretation."
+    },
+    {
+      "id": "floor",
+      "plane": {
+        "normal": [
+          0,
+          0,
+          1
+        ],
+        "point": [
+          0,
+          0,
+          0
+        ]
+      },
+      "visibility": "observed",
+      "status": "fitted",
+      "evidence": [
+        "Carpet and visible furniture feet define floor"
+      ],
+      "uncertainty": "Back wall fixed by conditional wardrobe depth plus estimated clearance; single-view scene scale conditional on bed length interpretation.",
+      "image_constraints": [
+        "Carpet and visible furniture feet define floor"
+      ],
+      "residuals": {
+        "corner_px": 7.031870526983578,
+        "interpretation": "Conditional plane fit; exact corner by construction, not independent accuracy"
+      }
+    },
+    {
+      "id": "ceiling",
+      "plane": {
+        "normal": [
+          0,
+          0,
+          -1
+        ],
+        "point": [
+          0,
+          0,
+          2.66683140287836
+        ]
+      },
+      "visibility": "observed",
+      "status": "fitted",
+      "evidence": [
+        "Rear ceiling junction 908,315 and broad tiled ceiling"
+      ],
+      "uncertainty": "Back wall fixed by conditional wardrobe depth plus estimated clearance; single-view scene scale conditional on bed length interpretation.",
+      "image_constraints": [
+        "Rear ceiling junction 908,315 and broad tiled ceiling"
+      ],
+      "residuals": {
+        "corner_px": 0,
+        "interpretation": "Conditional plane fit; exact corner by construction, not independent accuracy"
+      }
+    }
+  ],
+  "openings_and_columns_reviewed": true,
+  "opening_findings": "Three tall glazed window bays, lower safety rails, roller blinds; no separate visible opaque door; right glass partition foreground. No observed load-bearing column beyond window reveal."
+}

@@ -22,14 +22,17 @@ def safe_camera_position(scene,ideal):
         if not(xm+.05<p[0]<xM-.05 and ym+.05<p[1]<yM-.05):return False
         for o in targets:
             cx,cy,cz=o['position'];W,D,H=o['dimensions']
-            if p[2]<cz-.12 or p[2]>cz+H+.12:continue
-            t=o.get('rotation_z',0);xx=(p[0]-cx)*math.cos(t)+(p[1]-cy)*math.sin(t);yy=-(p[0]-cx)*math.sin(t)+(p[1]-cy)*math.cos(t)
+            # Canonical metadata is the evaluated world AABB center and spans.
+            # Applying a local yaw again, or treating center.z as the bottom,
+            # invents occupied space above/around otherwise clear viewpoints.
+            if p[2]<cz-H/2-.12 or p[2]>cz+H/2+.12:continue
+            xx=p[0]-cx;yy=p[1]-cy
             if abs(xx)<W/2+.18 and abs(yy)<D/2+.18:return False
         # A camera can be outside geometry yet be pressed against the back of a shelf.
         # Require unobstructed sightlines to a meaningful fraction of semantic objects.
         seen=0;origin=Vector(p)
         for o in targets:
-            target=Vector(o['position'])+Vector((0,0,o['dimensions'][2]*.6));d=target-origin;distance=d.length
+            target=Vector(o['position']);d=target-origin;distance=d.length
             if distance<.6:continue
             hit,point,normal,index,obj,matrix=bpy.context.scene.ray_cast(deps,origin,d.normalized(),distance=distance+.05)
             if not hit or (obj.get('entity_id')==o['id'] and (point-origin).length>.6):seen+=1
