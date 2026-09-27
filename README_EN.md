@@ -20,7 +20,20 @@ The video includes photo comparisons, moving cameras, multiple views and interac
 
 The video shows the three-room V5 case. A separate utility-room recipe in this repository supports replay, MuJoCo experiments and GLB/USD export checks. Their results are [documented separately](docs/showcase/README.md).
 
-## Quantitative assessment
+## New test: independent whole-scene reconstruction (2026-09-26)
+
+This candidate was authored from the original photograph and newly estimated parameters, reusing generic workflow code without using earlier bedroom/V5/ArtVIP geometry, fitted parameters or construction scripts. An ArtVIP reference evaluation was added on 2026-09-27; the retained candidate was unchanged before and after measurement.
+
+| Current candidate / conditional reference | Mean bidirectional surface distance | F-score @10 mm | F-score @100 mm |
+|---|---:|---:|---:|
+| Shoe cabinet / VITBERGET | 25.84 mm | 47.65% | 96.95% |
+| Wardrobe / BRUKSVARA | 7.47 mm | 80.53% | 99.20% |
+
+**Acceptance: `needs_revision`.** Blender/GLB/USD export and actual re-import passed. Visual review requested changes, and the static simulation check failed on a 25 mm rear-wall collision-surface discrepancy. Formal export/validate/report stages remain unexecuted, and no freeze was created. Neither furniture identity was confirmed by a physical label; these scores measure agreement with the specified references, not whole-scene physical accuracy.
+
+This new test case retains its failed acceptance verdict. Authoring scripts and evaluation records are included in Git; large models and full evidence remain remote. Replay depends on the retained source photograph, workflow state and evidence. [Case and acceptance record](examples/independent_whole_scene_20260926/README.md) · [Evaluation method and full results](examples/independent_whole_scene_20260926/ACCURACY.md)
+
+## Quantitative assessment (original V5 case)
 
 We remeasured 21 asset groups from the V5 model. Cabinet surface differences below use ArtVIP references, with 60,000 samples per direction and no scale fitting.
 
