@@ -1,0 +1,375 @@
+{
+  "schema": "real2sim.independent-artvip-surface-evaluation/1",
+  "status": "complete",
+  "protocol": {
+    "candidate_sha256": "e140b8ae0f133a87cbaa77e576ea164512e57c3bd9a56552841f8596b9126e51",
+    "reference_sha256": {
+      "VITBERGET": "e9f1f0739cd0f0ec3f072cfbe04d72d2eb266a85ab9af76d867ad44d26f2803f",
+      "BRUKSVARA": "b39147e0ed82e38b107e415247fee991a1002990464ec16aefcdd1ef434c27ed"
+    },
+    "started_utc": "2026-09-27T02:05:11.757843+00:00",
+    "seeds": [
+      91,
+      192,
+      293
+    ],
+    "samples_per_seed_per_direction": 20000,
+    "thresholds_mm": [
+      1,
+      5,
+      10,
+      20,
+      50,
+      100
+    ],
+    "alignment": "Preserve metric scale; shoe known front +X rotated -90 degrees to front -Y; wardrobe unchanged; independently align bottom Z and XY envelope centers. No ICP, scaling or optimized registration.",
+    "scope": "Existing closed cabinet surfaces including interiors/hardware; stored footwear excluded by declared structural part identities. Missing interiors remain missing and contribute reference-to-candidate distance.",
+    "no_model_edits": true
+  },
+  "inputs_unchanged": true,
+  "candidate_file": "scene.blend",
+  "references": [
+    {
+      "product": "VITBERGET",
+      "file": "Ikea_furniture/VITBERGET_shoe_cabinet_storage_white_105x40x107cm/model_VITBERGET_shoe_cabinet_storage_white_105x40x107cm.usd",
+      "sha256": "e9f1f0739cd0f0ec3f072cfbe04d72d2eb266a85ab9af76d867ad44d26f2803f"
+    },
+    {
+      "product": "BRUKSVARA",
+      "file": "Ikea_furniture/BRUKSVARA_wardrobe_with_2_doors_and_2 drawers_brown_79x57x201cm/model_BRUKSVARA_wardrobe_with_2_doors_and_2 drawers_brown_79x57x201cm.usd",
+      "sha256": "b39147e0ed82e38b107e415247fee991a1002990464ec16aefcdd1ef434c27ed"
+    }
+  ],
+  "blender_version": "4.5.3 LTS",
+  "numpy_version": "1.26.4",
+  "script_sha256": "820b65cdc91d5b0dd170e6f0bed29567832ecc207864e0ea79d2003edd9a07d5",
+  "distance_archive_sha256": "080e10d484ac571e2e4d679a4030325d5cf8b6f4c5a3805ef7e12c742aedea07",
+  "excluded_footwear": [
+    "shoe_0_0",
+    "shoe_0_1",
+    "shoe_1_0",
+    "shoe_1_1",
+    "shoe_2_0",
+    "shoe_2_1",
+    "shoe_3_0",
+    "shoe_3_1"
+  ],
+  "extraction": {
+    "VITBERGET_candidate": {
+      "dimensions_m": [
+        1.152000069618225,
+        0.40799999237060547,
+        1.061261534690857
+      ],
+      "normalization_translation_m": [
+        1.0760000348091125,
+        -0.7056317925453186,
+        -0.0
+      ],
+      "triangles": 5877,
+      "degenerate_triangles_excluded": 7,
+      "objects": [
+        "shoe_carcass",
+        "shoe_doors",
+        "shoe_drawer_0",
+        "shoe_knob_0_drawer",
+        "shoe_knob_0_door",
+        "shoe_drawer_1",
+        "shoe_knob_1_drawer",
+        "shoe_knob_1_door"
+      ]
+    },
+    "BRUKSVARA_candidate": {
+      "dimensions_m": [
+        0.7955000400543213,
+        0.6134998798370361,
+        2.009999990463257
+      ],
+      "normalization_translation_m": [
+        -1.582980751991272,
+        -1.8385010957717896,
+        -0.0
+      ],
+      "triangles": 3958,
+      "degenerate_triangles_excluded": 2,
+      "objects": [
+        "wardrobe_carcass",
+        "wardrobe_long_door",
+        "wardrobe_knob_long_door",
+        "wardrobe_short_door",
+        "wardrobe_knob_short_door",
+        "wardrobe_upper_drawer",
+        "wardrobe_knob_upper_drawer",
+        "wardrobe_lower_drawer",
+        "wardrobe_knob_lower_drawer"
+      ]
+    },
+    "VITBERGET_reference": {
+      "dimensions_m": [
+        1.0747796893119812,
+        0.41851675510406494,
+        1.0700007677078247
+      ],
+      "normalization_translation_m": [
+        -0.0013602674007415771,
+        0.0010358095169067383,
+        -0.0
+      ],
+      "triangles": 7274,
+      "degenerate_triangles_excluded": 0,
+      "objects": [
+        "P_100",
+        "P_102",
+        "P_103",
+        "P_105",
+        "P_106",
+        "P_85",
+        "P_86",
+        "P_88",
+        "P_89",
+        "P_91",
+        "P_92",
+        "P_93",
+        "P_94",
+        "P_95",
+        "P_96",
+        "P_97",
+        "P_98",
+        "P_99"
+      ]
+    },
+    "BRUKSVARA_reference": {
+      "dimensions_m": [
+        0.7963172197341919,
+        0.5986714959144592,
+        2.0049996476037597
+      ],
+      "normalization_translation_m": [
+        -0.0,
+        0.018714547157287598,
+        9.99999993922529e-09
+      ],
+      "triangles": 3335,
+      "degenerate_triangles_excluded": 50,
+      "objects": [
+        "P_23663c8dd9290406",
+        "P_37348b377d863e9f",
+        "P_398e1b51b194eb19",
+        "P_75258e2b3f4e5228",
+        "P_777f493a5d2e7954",
+        "P_80cc45517afece0d",
+        "P_88e84b9fa6fdbe",
+        "P_9c22b530626b1790",
+        "P_cdbcee83759ee56a",
+        "P_db0216b832e061bf",
+        "P_f9ea5359ccc73e9f"
+      ]
+    }
+  },
+  "assets": [
+    {
+      "product": "VITBERGET",
+      "entity": "shoe_cabinet",
+      "samples_per_direction": 60000,
+      "mean_mm": 25.83860016987603,
+      "median_mm": 12.3557448387146,
+      "rms_mm": 38.63122556359155,
+      "p95_mm": 77.45043039321897,
+      "p99_mm": 139.60629954934114,
+      "sampled_max_mm": 169.85832154750824,
+      "thresholds": [
+        {
+          "threshold_mm": 1,
+          "ours_to_ref_fraction": 0.05248333333333333,
+          "ref_to_ours_fraction": 0.041633333333333335,
+          "ours_to_ref_count": 3149,
+          "ref_to_ours_count": 2498,
+          "f_score": 0.046432926037424
+        },
+        {
+          "threshold_mm": 5,
+          "ours_to_ref_fraction": 0.15905,
+          "ref_to_ours_fraction": 0.13278333333333334,
+          "ours_to_ref_count": 9543,
+          "ref_to_ours_count": 7967,
+          "f_score": 0.14473459166190747
+        },
+        {
+          "threshold_mm": 10,
+          "ours_to_ref_fraction": 0.4686,
+          "ref_to_ours_fraction": 0.4847666666666667,
+          "ours_to_ref_count": 28116,
+          "ref_to_ours_count": 29086,
+          "f_score": 0.47654626062025807
+        },
+        {
+          "threshold_mm": 20,
+          "ours_to_ref_fraction": 0.6272333333333333,
+          "ref_to_ours_fraction": 0.5672333333333334,
+          "ours_to_ref_count": 37634,
+          "ref_to_ours_count": 34034,
+          "f_score": 0.5957263846254024
+        },
+        {
+          "threshold_mm": 50,
+          "ours_to_ref_fraction": 0.8729166666666667,
+          "ref_to_ours_fraction": 0.7841333333333333,
+          "ours_to_ref_count": 52375,
+          "ref_to_ours_count": 47048,
+          "f_score": 0.8261465321572138
+        },
+        {
+          "threshold_mm": 100,
+          "ours_to_ref_fraction": 1.0,
+          "ref_to_ours_fraction": 0.9408,
+          "ours_to_ref_count": 60000,
+          "ref_to_ours_count": 56448,
+          "f_score": 0.9694971145919209
+        }
+      ],
+      "runs": [
+        {
+          "seed": 91,
+          "mean_mm": 25.911793021079898,
+          "p95_mm": 77.42544412612915
+        },
+        {
+          "seed": 192,
+          "mean_mm": 25.81432755516091,
+          "p95_mm": 77.55717039108274
+        },
+        {
+          "seed": 293,
+          "mean_mm": 25.78967993338727,
+          "p95_mm": 77.39329934120178
+        }
+      ],
+      "dimensions_m": [
+        1.152000069618225,
+        0.40799999237060547,
+        1.061261534690857
+      ],
+      "reference_dimensions_m": [
+        1.0747796893119812,
+        0.41851675510406494,
+        1.0700007677078247
+      ],
+      "dimension_difference_mm": [
+        77.2203803062439,
+        -10.516762733459473,
+        -8.739233016967773
+      ],
+      "relative_dimension_error_percent": [
+        7.184763637995097,
+        -2.5128654002978834,
+        -0.8167501632441928
+      ]
+    },
+    {
+      "product": "BRUKSVARA",
+      "entity": "wardrobe",
+      "samples_per_direction": 60000,
+      "mean_mm": 7.469421198540476,
+      "median_mm": 3.31951305270195,
+      "rms_mm": 17.481941795062585,
+      "p95_mm": 19.627660512924194,
+      "p99_mm": 85.2439725399016,
+      "sampled_max_mm": 184.91704761981964,
+      "thresholds": [
+        {
+          "threshold_mm": 1,
+          "ours_to_ref_fraction": 0.28685,
+          "ref_to_ours_fraction": 0.2536833333333333,
+          "ours_to_ref_count": 17211,
+          "ref_to_ours_count": 15221,
+          "f_score": 0.26924912740503204
+        },
+        {
+          "threshold_mm": 5,
+          "ours_to_ref_fraction": 0.6273166666666666,
+          "ref_to_ours_fraction": 0.59415,
+          "ours_to_ref_count": 37639,
+          "ref_to_ours_count": 35649,
+          "f_score": 0.6102830436087763
+        },
+        {
+          "threshold_mm": 10,
+          "ours_to_ref_fraction": 0.8267166666666667,
+          "ref_to_ours_fraction": 0.7848833333333334,
+          "ours_to_ref_count": 49603,
+          "ref_to_ours_count": 47093,
+          "f_score": 0.8052570526874603
+        },
+        {
+          "threshold_mm": 20,
+          "ours_to_ref_fraction": 0.9730166666666666,
+          "ref_to_ours_fraction": 0.9312166666666667,
+          "ours_to_ref_count": 58381,
+          "ref_to_ours_count": 55873,
+          "f_score": 0.9516578888558241
+        },
+        {
+          "threshold_mm": 50,
+          "ours_to_ref_fraction": 0.9833666666666666,
+          "ref_to_ours_fraction": 0.9678666666666667,
+          "ours_to_ref_count": 59002,
+          "ref_to_ours_count": 58072,
+          "f_score": 0.9755551030402424
+        },
+        {
+          "threshold_mm": 100,
+          "ours_to_ref_fraction": 1.0,
+          "ref_to_ours_fraction": 0.9841333333333333,
+          "ours_to_ref_count": 60000,
+          "ref_to_ours_count": 59048,
+          "f_score": 0.9920032255896781
+        }
+      ],
+      "runs": [
+        {
+          "seed": 91,
+          "mean_mm": 7.5732752619926424,
+          "p95_mm": 19.627660512924194
+        },
+        {
+          "seed": 192,
+          "mean_mm": 7.436594932571779,
+          "p95_mm": 19.627660512924194
+        },
+        {
+          "seed": 293,
+          "mean_mm": 7.3983934010570085,
+          "p95_mm": 19.627648126333952
+        }
+      ],
+      "dimensions_m": [
+        0.7955000400543213,
+        0.6134998798370361,
+        2.009999990463257
+      ],
+      "reference_dimensions_m": [
+        0.7963172197341919,
+        0.5986714959144592,
+        2.0049996476037597
+      ],
+      "dimension_difference_mm": [
+        -0.8171796798706055,
+        14.828383922576904,
+        5.000342859497131
+      ],
+      "relative_dimension_error_percent": [
+        -0.10261986801483175,
+        2.476881565895639,
+        0.24939370266090585
+      ]
+    }
+  ],
+  "limitations": [
+    "Reference-model agreement, not measured physical-world error or whole-room accuracy.",
+    "Candidate fixed before this reference evaluation; reference results were not used to revise it. Not a filesystem-isolated third-party blind test.",
+    "Shoe cabinet was unidentified during reconstruction; VITBERGET is evaluated now as the same conditional reference used in the published GitHub benchmark.",
+    "BRUKSVARA reference is the brown variant; finish/material differences are ignored.",
+    "Sampled maximum is not exact Hausdorff; seed range is sampling variability, not real-world uncertainty.",
+    "No hinge/slide geometry accuracy score: current candidate has no reconstructed dynamic joint model."
+  ]
+}

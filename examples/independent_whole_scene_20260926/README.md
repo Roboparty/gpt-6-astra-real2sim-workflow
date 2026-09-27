@@ -2,6 +2,8 @@
 
 2026-09-26. **Verdict: needs_revision.** The current editable candidate is retained; strict visual acceptance and static simulation acceptance are not complete. The user's final direction was to converge and evaluate promptly, so further appearance refinement stopped after the third shaded review.
 
+2026-09-27 update: [ArtVIP surface-distance evaluation](ACCURACY.md) now measures this unchanged candidate with the published GitHub protocol: mean bidirectional distance 25.84 mm for the shoe cabinet and 7.47 mm for the wardrobe; F-score at 10 mm 47.65% / 80.53%. This additional reference evaluation does not change the failed visual or simulation verdict.
+
 This is a case-specific authored reconstruction, not a general photo-to-scene model. It used the authorized original photograph and newly estimated parameters, without consuming old bedroom/V5/ArtVIP geometry, fitted parameters, or construction scripts. Shared generic workflow code was reused. Original and manufacturer photos are deliberately absent from this repository snapshot.
 
 ## Actual results
