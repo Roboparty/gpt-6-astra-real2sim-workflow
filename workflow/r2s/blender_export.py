@@ -69,6 +69,10 @@ for p in cam.get('fit_landmarks',[]):
 report['camera_reprojection']=land
 report['material_portability']='Blender preserves procedural shaders; GLB/USD preserve image textures and supported PBR inputs, but procedural wood/fabric may become flat approximations.'
 (OUT/'geometry_audit.json').write_text(json.dumps(report,indent=2))
+if '--geometry-only' in args[2:]:
+ report['export_scope']='Geometry and collision inputs only; no visual interchange delivery or presentation renders'
+ (OUT/'geometry_audit.json').write_text(json.dumps(report,indent=2))
+ print('GEOMETRY_ONLY_AUDIT_COMPLETE',str(OUT));sys.exit(0)
 bpy.ops.file.pack_all();bpy.ops.wm.save_as_mainfile(filepath=str(OUT/'scene.blend'))
 # Portable visual export; every wall and lamp remains in the model.
 bpy.ops.export_scene.gltf(filepath=str(OUT/'scene.glb'),export_format='GLB',export_apply=True,export_extras=True,export_cameras=True,export_lights=True)

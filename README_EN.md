@@ -87,6 +87,12 @@ Supplementary record: [bedroom single-image reconstruction repeat experiment](do
 
 ## Capability research (2026-09-29)
 
+A prescribed two-round agent A/B, five-group component/combination comparison,
+and fresh DROID contact simulation now have actual results. The combination
+improved coarse cabinet silhouettes and vent-region error but did not improve
+bedding error. Whole-scene visual acceptance and SOTA remain unestablished.
+[Parallel results and retained failures](docs/research/PARALLEL_RESULTS_20260929.md).
+
 The development branch adds structural shell collision repair, fixed-camera
 geometric feedback, sourced material/contact priors and container-task trace
 evaluation. Hinges, cloth and soft bodies remain optional and off by default.

@@ -20,7 +20,7 @@
   "remote_root": "4090-1:/home/wqz/real2sim_capability_20260929",
   "protocol": "PROTOCOL_20260929.md",
   "result": "RESULTS_20260929.md",
-  "latest_update": "UPDATE_20260929T0825.md",
+  "latest_update": "PARALLEL_RESULTS_20260929.md",
   "completed": [
     "Matched retained-room collision failure reproduction and repair",
     "Rectangular opening handling and false-pass negative tests",
@@ -35,16 +35,18 @@
     "Single multi-part assembly audit/review repaired and verified in actual Blender; 21 contract cases passed",
     "Eighteen original-resolution development frames frozen by exact presentation timestamps",
     "CPU sparse-camera initializer tested on all three sources; only one source fully registered, failures retained",
-    "Retained-room two-arm feedback pilot inputs and fixed budget frozen; not yet executed"
+    "Retained-room two-arm feedback pilot inputs and fixed budget frozen; not yet executed",
+    "Executed prescribed two-round render-only versus numeric-feedback agent pilot, retaining final rounds",
+    "Executed five-group component/combined comparison with common metadata normalization and static checks",
+    "Fresh pinned DROID ep2 contact simulation and independent all-step state/control audit passed",
+    "Auxiliary-frame camera attempt preserved all original target hashes but failed readiness; not adopted"
   ],
   "next": [
-    "Execute PILOT_AB_PROTOCOL_20260929.json with two fresh local agents and prescribed two-round endpoint",
-    "Complete frame, camera, annotation, metric and budget protocol for the frozen three-video development cohort; resolve independent held-out data",
-    "Run an agent A/B with and without geometric feedback at identical model settings and budget",
-    "Resolve actual appearance defects and fine part feedback rather than optimize coarse cabinet silhouettes",
-    "Integrate an optional video geometry-reference adapter in a separate input arm",
-    "Connect task evaluation to actual robot controls, full object geometry and contacts from MuJoCo",
-    "Fix zero-furniture and single-part/no-joint workflow coverage and implement evaluated landmark bindings"
+    "Improve bedding/accessory fidelity using fixed fine-detail annotations; current combination is not an overall visual pass",
+    "Address video registration with only two remaining camera attempts in the current budget; retain all three scenes",
+    "Create shared editable initial scenes and source annotations before the full three-video feedback benchmark",
+    "Run contact tasks against newly reconstructed task geometry, not only the pinned external model",
+    "Fix zero-furniture and single-part/no-joint workflow coverage and evaluated landmark bindings"
   ],
   "retained_attempts": [
     "collision_001",
@@ -69,7 +71,17 @@
     "sfm_init_004",
     "sfm_init_005",
     "frame_selection_test_002",
-    "feature_count_audit_001"
+    "feature_count_audit_001",
+    "pilot_ab_001",
+    "appearance_001",
+    "combined_001",
+    "combined_comparison_001",
+    "combined_endpoint_001",
+    "combined_endpoint_002",
+    "appearance_metadata_fix_001",
+    "video_frames_aux_001",
+    "sfm_init_006",
+    "physical_ep2_001/attempt_01"
   ],
   "resource_accounting": {
     "new_gpu_hours": 0,
@@ -80,9 +92,15 @@
     "single_assembly_candidate_revisions_used": 1,
     "note": "CPU test/render wall times are retained in run records/logs; agent cost unknown. GPU/CPU budgets in protocol must not reset across continuations.",
     "heartbeat_0825_selected_run_wall_seconds": 38.66497328109108,
-    "camera_initialization_attempts_used": 5,
+    "camera_initialization_attempts_used": 6,
     "camera_initialization_full_sources": "1/3",
-    "camera_runtime_addon": "pycolmap4.2.0 isolated target; existing Python/NumPy preserved"
+    "camera_runtime_addon": "pycolmap4.2.0 isolated target; existing Python/NumPy preserved",
+    "pose_pilot_candidate_rounds_used": 4,
+    "appearance_unique_proposals_used": 1,
+    "combined_unique_proposals_used": 1,
+    "physical_ep2_simulation_attempts_used": 1,
+    "parallel_selected_run_wall_seconds": 143.0860238011228,
+    "external_ep2_remote_download_bytes": 36050335
   },
   "constraints": [
     "Do not overwrite historical candidates, source photographs or failed evidence",

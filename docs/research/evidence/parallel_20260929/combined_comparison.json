@@ -1,0 +1,2505 @@
+{
+  "schema": "real2sim.combined-comparison/1",
+  "expected_groups": 5,
+  "groups": [
+    {
+      "group": "unchanged_baseline",
+      "status": "evaluated",
+      "model_sha256": "e140b8ae0f133a87cbaa77e576ea164512e57c3bd9a56552841f8596b9126e51",
+      "image_sha256": "d4eefb40194ae5c00e30c1ac645ebb1df9b730d32f70619eaf0b2e2441f5475a",
+      "matched_camera_and_render_settings": true,
+      "appearance": {
+        "bedding": {
+          "rgb_mae": 0.12294109103336326,
+          "mean_absolute_log_luminance_ratio": 0.6676147055435833
+        },
+        "vent": {
+          "rgb_mae": 0.13543323996265177,
+          "mean_absolute_log_luminance_ratio": 0.6901675257680704
+        }
+      },
+      "geometry": {
+        "expected_objects": 2,
+        "passed_objects": 2,
+        "failed_objects": 0,
+        "error_objects": 0,
+        "pass_rate": 1.0,
+        "expected_masks": 2,
+        "mean_iou_with_failures": 0.9543002502228372,
+        "mean_boundary_px_with_failures": 4.948915964571085,
+        "expected_landmarks": 0,
+        "failed_landmarks": 0,
+        "mean_landmark_error_px_with_failures": null
+      },
+      "metadata_returncode": 0,
+      "metadata_sync": {
+        "status": "passed",
+        "evaluated_meshes": true,
+        "tolerance_m": 1e-05,
+        "updated": true,
+        "entities": [
+          {
+            "entity": "bed",
+            "world_aabb": [
+              [
+                -0.7067428231239319,
+                -0.011446597054600716,
+                0.0
+              ],
+              [
+                0.6363198757171631,
+                2.1044437885284424,
+                0.8658517599105835
+              ]
+            ],
+            "max_metadata_error_before_m": 0.008967399597167969
+          },
+          {
+            "entity": "blinds",
+            "world_aabb": [
+              [
+                -1.0105681419372559,
+                -0.7411518692970276,
+                1.0280522108078003
+              ],
+              [
+                -0.9640681147575378,
+                1.5444422960281372,
+                2.647595167160034
+              ]
+            ],
+            "max_metadata_error_before_m": 0.0
+          },
+          {
+            "entity": "ceiling",
+            "world_aabb": [
+              [
+                -1.0760681629180908,
+                -2.200000047683716,
+                2.6668314933776855
+              ],
+              [
+                2.5999999046325684,
+                2.188750982284546,
+                2.7868313789367676
+              ]
+            ],
+            "max_metadata_error_before_m": 0.0
+          },
+          {
+            "entity": "ceiling_fixtures",
+            "world_aabb": [
+              [
+                -0.29244866967201233,
+                -2.0,
+                2.5868313312530518
+              ],
+              [
+                1.8784854412078857,
+                1.6849195957183838,
+                2.6668312549591064
+              ]
+            ],
+            "max_metadata_error_before_m": 0.0
+          },
+          {
+            "entity": "exterior",
+            "world_aabb": [
+              [
+                -6.576067924499512,
+                -4.0,
+                -0.6000000238418579
+              ],
+              [
+                -1.5760679244995117,
+                5.0,
+                1.8711519241333008
+              ]
+            ],
+            "max_metadata_error_before_m": 0.0
+          },
+          {
+            "entity": "floor",
+            "world_aabb": [
+              [
+                -1.0760681629180908,
+                -2.200000047683716,
+                -0.11999999731779099
+              ],
+              [
+                2.5999999046325684,
+                2.188750982284546,
+                0.0
+              ]
+            ],
+            "max_metadata_error_before_m": 0.0
+          },
+          {
+            "entity": "glass_partition",
+            "world_aabb": [
+              [
+                2.0339999198913574,
+                -0.9000000357627869,
+                0.0
+              ],
+              [
+                2.0625,
+                0.7139999866485596,
+                2.440000057220459
+              ]
+            ],
+            "max_metadata_error_before_m": 0.0
+          },
+          {
+            "entity": "reflective_board",
+            "world_aabb": [
+              [
+                -0.5762826800346375,
+                2.1597511768341064,
+                0.8692947626113892
+              ],
+              [
+                1.0704889297485352,
+                2.1677510738372803,
+                1.9621294736862183
+              ]
+            ],
+            "max_metadata_error_before_m": 0.0
+          },
+          {
+            "entity": "shoe_cabinet",
+            "world_aabb": [
+              [
+                -0.9096317291259766,
+                -1.652000069618225,
+                0.0
+              ],
+              [
+                -0.5016317367553711,
+                -0.5,
+                1.061261534690857
+              ]
+            ],
+            "max_metadata_error_before_m": 0.001999974250793457
+          },
+          {
+            "entity": "wall_back",
+            "world_aabb": [
+              [
+                -1.0760681629180908,
+                2.1637511253356934,
+                0.0
+              ],
+              [
+                2.5999999046325684,
+                2.308751106262207,
+                2.6668314933776855
+              ]
+            ],
+            "max_metadata_error_before_m": 0.0
+          },
+          {
+            "entity": "wall_front",
+            "world_aabb": [
+              [
+                -1.0760681629180908,
+                -2.319999933242798,
+                0.0
+              ],
+              [
+                2.5999999046325684,
+                -2.200000047683716,
+                2.6668314933776855
+              ]
+            ],
+            "max_metadata_error_before_m": 0.0
+          },
+          {
+            "entity": "wall_left",
+            "world_aabb": [
+              [
+                -1.1960680484771729,
+                -2.200000047683716,
+                0.0
+              ],
+              [
+                -1.0760681629180908,
+                2.188751220703125,
+                2.6668314933776855
+              ]
+            ],
+            "max_metadata_error_before_m": 0.0
+          },
+          {
+            "entity": "wall_right",
+            "world_aabb": [
+              [
+                2.6000001430511475,
+                -2.200000047683716,
+                0.0
+              ],
+              [
+                2.7200000286102295,
+                2.188750982284546,
+                2.6668314933776855
+              ]
+            ],
+            "max_metadata_error_before_m": 0.0
+          },
+          {
+            "entity": "wardrobe",
+            "world_aabb": [
+              [
+                1.1852307319641113,
+                1.5317511558532715,
+                0.0
+              ],
+              [
+                1.9807307720184326,
+                2.1452510356903076,
+                2.009999990463257
+              ]
+            ],
+            "max_metadata_error_before_m": 0.0014998912811279297
+          },
+          {
+            "entity": "window",
+            "world_aabb": [
+              [
+                -1.1000680923461914,
+                -0.7708151340484619,
+                0.12494917213916779
+              ],
+              [
+                -0.9360681176185608,
+                1.5951735973358154,
+                2.6693315505981445
+              ]
+            ],
+            "max_metadata_error_before_m": 0.0
+          }
+        ]
+      },
+      "geometry_export_returncode": 0,
+      "static_returncode": 0,
+      "static_audit": {
+        "status": "passed",
+        "mujoco_version": "3.13.0",
+        "bodies": 16,
+        "geoms": 37,
+        "visual_meshes": 15,
+        "required_entities_present": [
+          "floor",
+          "ceiling",
+          "wall_back",
+          "wall_front",
+          "wall_left",
+          "wall_right",
+          "ceiling_fixtures"
+        ],
+        "probe_steps": 1500,
+        "probe_final_position_m": [
+          -0.95606812,
+          -2.08,
+          0.029845055560265232
+        ],
+        "six_surface_ray_tests": {
+          "left": {
+            "origin_m": [
+              -1.0260681163312515,
+              -2.08,
+              2.62683140287836
+            ],
+            "hit_body": "wall_left",
+            "distance_m": 0.049999983668748416,
+            "expected_m": 0.05,
+            "error_m": 1.6331251587176077e-08,
+            "rejected_candidate_count": 0,
+            "occluded_examples": []
+          },
+          "right": {
+            "origin_m": [
+              2.5500000000000003,
+              -0.005624464454631273,
+              2.62683140287836
+            ],
+            "hit_body": "wall_right",
+            "distance_m": 0.04999999999999988,
+            "expected_m": 0.05,
+            "error_m": 1.249000902703301e-16,
+            "rejected_candidate_count": 0,
+            "occluded_examples": []
+          },
+          "back": {
+            "origin_m": [
+              0.7619659418343743,
+              2.138751071090738,
+              2.62683140287836
+            ],
+            "hit_body": "wall_back",
+            "distance_m": 0.05000002890926197,
+            "expected_m": 0.05,
+            "error_m": 2.8909261970411215e-08,
+            "rejected_candidate_count": 0,
+            "occluded_examples": []
+          },
+          "front": {
+            "origin_m": [
+              0.7619659418343743,
+              -2.1500000000000004,
+              2.62683140287836
+            ],
+            "hit_body": "wall_front",
+            "distance_m": 0.049999999999999434,
+            "expected_m": 0.05,
+            "error_m": 5.689893001203927e-16,
+            "rejected_candidate_count": 0,
+            "occluded_examples": []
+          },
+          "ceiling": {
+            "origin_m": [
+              -0.9560681163312515,
+              -2.08,
+              2.62683140287836
+            ],
+            "hit_body": "ceiling",
+            "distance_m": 0.039999997121639874,
+            "expected_m": 0.04,
+            "error_m": 2.8783601266346714e-09,
+            "rejected_candidate_count": 0,
+            "occluded_examples": []
+          },
+          "floor": {
+            "origin_m": [
+              -0.9560681163312515,
+              -2.08,
+              1.33341570143918
+            ],
+            "hit_body": "floor",
+            "distance_m": 1.33341570143918,
+            "expected_m": 1.33341570143918,
+            "error_m": 0.0,
+            "rejected_candidate_count": 0,
+            "occluded_examples": []
+          }
+        },
+        "camera_transfer": [
+          {
+            "camera": "source_camera",
+            "canonical_fx_fy_cx_cy": [
+              681.3127150155914,
+              681.3127150155914,
+              851,
+              638
+            ],
+            "recovered_from_engine_frustum": [
+              681.3126995946387,
+              681.3127441616467,
+              851.0,
+              638.0
+            ],
+            "maximum_transfer_error_px": 2.914605533987924e-05,
+            "interpretation": "format transfer consistency, not physical camera calibration accuracy"
+          }
+        ],
+        "layout_modified": false,
+        "limitations": [
+          "static furniture with explicit conservative collision proxies",
+          "soft fabrics, hinged cabinets and movable objects are not dynamically identified",
+          "OBJ visual meshes use flat per-entity colors in MJCF; textured reference visuals are in Blender/GLB/USD"
+        ],
+        "collision_reference": "https://mujoco.readthedocs.io/en/stable/XMLreference.html#asset-mesh",
+        "opening_ray_tests": [
+          {
+            "wall": "wall_left",
+            "bounds": [
+              -0.7498150962320744,
+              1.5741735881828403,
+              0.1674491696165059,
+              2.64683140287836
+            ],
+            "status": "passed",
+            "samples": [
+              {
+                "origin_m": [
+                  -1.0260681163312515,
+                  -0.5174162277905829,
+                  0.41538739294269134
+                ],
+                "wall_distance_m": -1.0
+              },
+              {
+                "origin_m": [
+                  -1.0260681163312515,
+                  -0.5174162277905829,
+                  1.4071402862474331
+                ],
+                "wall_distance_m": -1.0
+              },
+              {
+                "origin_m": [
+                  -1.0260681163312515,
+                  -0.5174162277905829,
+                  2.398893179552175
+                ],
+                "wall_distance_m": -1.0
+              },
+              {
+                "origin_m": [
+                  -1.0260681163312515,
+                  0.412179245975383,
+                  0.41538739294269134
+                ],
+                "wall_distance_m": -1.0
+              },
+              {
+                "origin_m": [
+                  -1.0260681163312515,
+                  0.412179245975383,
+                  1.4071402862474331
+                ],
+                "wall_distance_m": -1.0
+              },
+              {
+                "origin_m": [
+                  -1.0260681163312515,
+                  0.412179245975383,
+                  2.398893179552175
+                ],
+                "wall_distance_m": -1.0
+              },
+              {
+                "origin_m": [
+                  -1.0260681163312515,
+                  1.341774719741349,
+                  0.41538739294269134
+                ],
+                "wall_distance_m": -1.0
+              },
+              {
+                "origin_m": [
+                  -1.0260681163312515,
+                  1.341774719741349,
+                  1.4071402862474331
+                ],
+                "wall_distance_m": -1.0
+              },
+              {
+                "origin_m": [
+                  -1.0260681163312515,
+                  1.341774719741349,
+                  2.398893179552175
+                ],
+                "wall_distance_m": -1.0
+              }
+            ],
+            "scope": "structural wall only; glazing not tested"
+          }
+        ],
+        "structural_collision_source": "axis-aligned canonical room surfaces with declared rectangular openings; visual AABBs excluded"
+      },
+      "input_unchanged": true,
+      "wall_seconds": 4.882275971001945
+    },
+    {
+      "group": "render_only_round2",
+      "status": "evaluated",
+      "model_sha256": "2ca72f6d4285ab6ab5cb8fcebb28555f92efb5d0c27d80de3f224b5fd5edcabc",
+      "image_sha256": "eee79741af1a9d7ba4bce9efbb5fb07eec8be7afe401ca94c333b84f58dde45f",
+      "matched_camera_and_render_settings": true,
+      "appearance": {
+        "bedding": {
+          "rgb_mae": 0.12294959203725066,
+          "mean_absolute_log_luminance_ratio": 0.6680309185329434
+        },
+        "vent": {
+          "rgb_mae": 0.13560364145658263,
+          "mean_absolute_log_luminance_ratio": 0.6924044380629962
+        }
+      },
+      "geometry": {
+        "expected_objects": 2,
+        "passed_objects": 2,
+        "failed_objects": 0,
+        "error_objects": 0,
+        "pass_rate": 1.0,
+        "expected_masks": 2,
+        "mean_iou_with_failures": 0.9608758871344905,
+        "mean_boundary_px_with_failures": 4.204056583663071,
+        "expected_landmarks": 0,
+        "failed_landmarks": 0,
+        "mean_landmark_error_px_with_failures": null
+      },
+      "metadata_returncode": 0,
+      "metadata_sync": {
+        "status": "passed",
+        "evaluated_meshes": true,
+        "tolerance_m": 1e-05,
+        "updated": true,
+        "entities": [
+          {
+            "entity": "bed",
+            "world_aabb": [
+              [
+                -0.7067428231239319,
+                -0.011446597054600716,
+                0.0
+              ],
+              [
+                0.6363198757171631,
+                2.1044437885284424,
+                0.8658517599105835
+              ]
+            ],
+            "max_metadata_error_before_m": 0.0
+          },
+          {
+            "entity": "blinds",
+            "world_aabb": [
+              [
+                -1.0105681419372559,
+                -0.7411518692970276,
+                1.0280522108078003
+              ],
+              [
+                -0.9640681147575378,
+                1.5444422960281372,
+                2.647595167160034
+              ]
+            ],
+            "max_metadata_error_before_m": 0.0
+          },
+          {
+            "entity": "ceiling",
+            "world_aabb": [
+              [
+                -1.0760681629180908,
+                -2.200000047683716,
+                2.6668314933776855
+              ],
+              [
+                2.5999999046325684,
+                2.188750982284546,
+                2.7868313789367676
+              ]
+            ],
+            "max_metadata_error_before_m": 0.0
+          },
+          {
+            "entity": "ceiling_fixtures",
+            "world_aabb": [
+              [
+                -0.29244866967201233,
+                -2.0,
+                2.5868313312530518
+              ],
+              [
+                1.8784854412078857,
+                1.6849195957183838,
+                2.6668312549591064
+              ]
+            ],
+            "max_metadata_error_before_m": 0.0
+          },
+          {
+            "entity": "exterior",
+            "world_aabb": [
+              [
+                -6.576067924499512,
+                -4.0,
+                -0.6000000238418579
+              ],
+              [
+                -1.5760679244995117,
+                5.0,
+                1.8711519241333008
+              ]
+            ],
+            "max_metadata_error_before_m": 0.0
+          },
+          {
+            "entity": "floor",
+            "world_aabb": [
+              [
+                -1.0760681629180908,
+                -2.200000047683716,
+                -0.11999999731779099
+              ],
+              [
+                2.5999999046325684,
+                2.188750982284546,
+                0.0
+              ]
+            ],
+            "max_metadata_error_before_m": 0.0
+          },
+          {
+            "entity": "glass_partition",
+            "world_aabb": [
+              [
+                2.0339999198913574,
+                -0.9000000357627869,
+                0.0
+              ],
+              [
+                2.0625,
+                0.7139999866485596,
+                2.440000057220459
+              ]
+            ],
+            "max_metadata_error_before_m": 0.0
+          },
+          {
+            "entity": "reflective_board",
+            "world_aabb": [
+              [
+                -0.5762826800346375,
+                2.1597511768341064,
+                0.8692947626113892
+              ],
+              [
+                1.0704889297485352,
+                2.1677510738372803,
+                1.9621294736862183
+              ]
+            ],
+            "max_metadata_error_before_m": 0.0
+          },
+          {
+            "entity": "shoe_cabinet",
+            "world_aabb": [
+              [
+                -0.957505464553833,
+                -1.6527329683303833,
+                0.0
+              ],
+              [
+                -0.5195404887199402,
+                -0.4889407157897949,
+                1.061261534690857
+              ]
+            ],
+            "max_metadata_error_before_m": 0.0
+          },
+          {
+            "entity": "wall_back",
+            "world_aabb": [
+              [
+                -1.0760681629180908,
+                2.1637511253356934,
+                0.0
+              ],
+              [
+                2.5999999046325684,
+                2.308751106262207,
+                2.6668314933776855
+              ]
+            ],
+            "max_metadata_error_before_m": 0.0
+          },
+          {
+            "entity": "wall_front",
+            "world_aabb": [
+              [
+                -1.0760681629180908,
+                -2.319999933242798,
+                0.0
+              ],
+              [
+                2.5999999046325684,
+                -2.200000047683716,
+                2.6668314933776855
+              ]
+            ],
+            "max_metadata_error_before_m": 0.0
+          },
+          {
+            "entity": "wall_left",
+            "world_aabb": [
+              [
+                -1.1960680484771729,
+                -2.200000047683716,
+                0.0
+              ],
+              [
+                -1.0760681629180908,
+                2.188751220703125,
+                2.6668314933776855
+              ]
+            ],
+            "max_metadata_error_before_m": 0.0
+          },
+          {
+            "entity": "wall_right",
+            "world_aabb": [
+              [
+                2.6000001430511475,
+                -2.200000047683716,
+                0.0
+              ],
+              [
+                2.7200000286102295,
+                2.188750982284546,
+                2.6668314933776855
+              ]
+            ],
+            "max_metadata_error_before_m": 0.0
+          },
+          {
+            "entity": "wardrobe",
+            "world_aabb": [
+              [
+                1.1839345693588257,
+                1.5270099639892578,
+                0.0
+              ],
+              [
+                1.9986158609390259,
+                2.1603429317474365,
+                2.009999990463257
+              ]
+            ],
+            "max_metadata_error_before_m": 0.0
+          },
+          {
+            "entity": "window",
+            "world_aabb": [
+              [
+                -1.1000680923461914,
+                -0.7708151340484619,
+                0.12494917213916779
+              ],
+              [
+                -0.9360681176185608,
+                1.5951735973358154,
+                2.6693315505981445
+              ]
+            ],
+            "max_metadata_error_before_m": 0.0
+          }
+        ]
+      },
+      "geometry_export_returncode": 0,
+      "static_returncode": 0,
+      "static_audit": {
+        "status": "passed",
+        "mujoco_version": "3.13.0",
+        "bodies": 16,
+        "geoms": 37,
+        "visual_meshes": 15,
+        "required_entities_present": [
+          "floor",
+          "ceiling",
+          "wall_back",
+          "wall_front",
+          "wall_left",
+          "wall_right",
+          "ceiling_fixtures"
+        ],
+        "probe_steps": 1500,
+        "probe_final_position_m": [
+          -0.95606812,
+          -2.08,
+          0.029845055560265232
+        ],
+        "six_surface_ray_tests": {
+          "left": {
+            "origin_m": [
+              -1.0260681163312515,
+              -2.08,
+              2.62683140287836
+            ],
+            "hit_body": "wall_left",
+            "distance_m": 0.049999983668748416,
+            "expected_m": 0.05,
+            "error_m": 1.6331251587176077e-08,
+            "rejected_candidate_count": 0,
+            "occluded_examples": []
+          },
+          "right": {
+            "origin_m": [
+              2.5500000000000003,
+              -0.005624464454631273,
+              2.62683140287836
+            ],
+            "hit_body": "wall_right",
+            "distance_m": 0.04999999999999988,
+            "expected_m": 0.05,
+            "error_m": 1.249000902703301e-16,
+            "rejected_candidate_count": 0,
+            "occluded_examples": []
+          },
+          "back": {
+            "origin_m": [
+              0.7619659418343743,
+              2.138751071090738,
+              2.62683140287836
+            ],
+            "hit_body": "wall_back",
+            "distance_m": 0.05000002890926197,
+            "expected_m": 0.05,
+            "error_m": 2.8909261970411215e-08,
+            "rejected_candidate_count": 0,
+            "occluded_examples": []
+          },
+          "front": {
+            "origin_m": [
+              0.7619659418343743,
+              -2.1500000000000004,
+              2.62683140287836
+            ],
+            "hit_body": "wall_front",
+            "distance_m": 0.049999999999999434,
+            "expected_m": 0.05,
+            "error_m": 5.689893001203927e-16,
+            "rejected_candidate_count": 0,
+            "occluded_examples": []
+          },
+          "ceiling": {
+            "origin_m": [
+              -0.9560681163312515,
+              -2.08,
+              2.62683140287836
+            ],
+            "hit_body": "ceiling",
+            "distance_m": 0.039999997121639874,
+            "expected_m": 0.04,
+            "error_m": 2.8783601266346714e-09,
+            "rejected_candidate_count": 0,
+            "occluded_examples": []
+          },
+          "floor": {
+            "origin_m": [
+              -0.9560681163312515,
+              -2.08,
+              1.33341570143918
+            ],
+            "hit_body": "floor",
+            "distance_m": 1.33341570143918,
+            "expected_m": 1.33341570143918,
+            "error_m": 0.0,
+            "rejected_candidate_count": 0,
+            "occluded_examples": []
+          }
+        },
+        "camera_transfer": [
+          {
+            "camera": "source_camera",
+            "canonical_fx_fy_cx_cy": [
+              681.3127150155914,
+              681.3127150155914,
+              851,
+              638
+            ],
+            "recovered_from_engine_frustum": [
+              681.3126995946387,
+              681.3127441616467,
+              851.0,
+              638.0
+            ],
+            "maximum_transfer_error_px": 2.914605533987924e-05,
+            "interpretation": "format transfer consistency, not physical camera calibration accuracy"
+          }
+        ],
+        "layout_modified": false,
+        "limitations": [
+          "static furniture with explicit conservative collision proxies",
+          "soft fabrics, hinged cabinets and movable objects are not dynamically identified",
+          "OBJ visual meshes use flat per-entity colors in MJCF; textured reference visuals are in Blender/GLB/USD"
+        ],
+        "collision_reference": "https://mujoco.readthedocs.io/en/stable/XMLreference.html#asset-mesh",
+        "opening_ray_tests": [
+          {
+            "wall": "wall_left",
+            "bounds": [
+              -0.7498150962320744,
+              1.5741735881828403,
+              0.1674491696165059,
+              2.64683140287836
+            ],
+            "status": "passed",
+            "samples": [
+              {
+                "origin_m": [
+                  -1.0260681163312515,
+                  -0.5174162277905829,
+                  0.41538739294269134
+                ],
+                "wall_distance_m": -1.0
+              },
+              {
+                "origin_m": [
+                  -1.0260681163312515,
+                  -0.5174162277905829,
+                  1.4071402862474331
+                ],
+                "wall_distance_m": -1.0
+              },
+              {
+                "origin_m": [
+                  -1.0260681163312515,
+                  -0.5174162277905829,
+                  2.398893179552175
+                ],
+                "wall_distance_m": -1.0
+              },
+              {
+                "origin_m": [
+                  -1.0260681163312515,
+                  0.412179245975383,
+                  0.41538739294269134
+                ],
+                "wall_distance_m": -1.0
+              },
+              {
+                "origin_m": [
+                  -1.0260681163312515,
+                  0.412179245975383,
+                  1.4071402862474331
+                ],
+                "wall_distance_m": -1.0
+              },
+              {
+                "origin_m": [
+                  -1.0260681163312515,
+                  0.412179245975383,
+                  2.398893179552175
+                ],
+                "wall_distance_m": -1.0
+              },
+              {
+                "origin_m": [
+                  -1.0260681163312515,
+                  1.341774719741349,
+                  0.41538739294269134
+                ],
+                "wall_distance_m": -1.0
+              },
+              {
+                "origin_m": [
+                  -1.0260681163312515,
+                  1.341774719741349,
+                  1.4071402862474331
+                ],
+                "wall_distance_m": -1.0
+              },
+              {
+                "origin_m": [
+                  -1.0260681163312515,
+                  1.341774719741349,
+                  2.398893179552175
+                ],
+                "wall_distance_m": -1.0
+              }
+            ],
+            "scope": "structural wall only; glazing not tested"
+          }
+        ],
+        "structural_collision_source": "axis-aligned canonical room surfaces with declared rectangular openings; visual AABBs excluded"
+      },
+      "input_unchanged": true,
+      "wall_seconds": 4.9137656019302085
+    },
+    {
+      "group": "numeric_feedback_round2",
+      "status": "evaluated",
+      "model_sha256": "0e6bb6a307729264cefa967fb515b27ebb66c91e194a233a003d1494ba846fe2",
+      "image_sha256": "5b2e78a0741ba87457c5336813576fa398ddc804aa74b00dc172093f1cac9891",
+      "matched_camera_and_render_settings": true,
+      "appearance": {
+        "bedding": {
+          "rgb_mae": 0.12309128967491136,
+          "mean_absolute_log_luminance_ratio": 0.6699514523430674
+        },
+        "vent": {
+          "rgb_mae": 0.13558380018674135,
+          "mean_absolute_log_luminance_ratio": 0.6922649042667294
+        }
+      },
+      "geometry": {
+        "expected_objects": 2,
+        "passed_objects": 2,
+        "failed_objects": 0,
+        "error_objects": 0,
+        "pass_rate": 1.0,
+        "expected_masks": 2,
+        "mean_iou_with_failures": 0.9613228555260039,
+        "mean_boundary_px_with_failures": 4.144214041546291,
+        "expected_landmarks": 0,
+        "failed_landmarks": 0,
+        "mean_landmark_error_px_with_failures": null
+      },
+      "metadata_returncode": 0,
+      "metadata_sync": {
+        "status": "passed",
+        "evaluated_meshes": true,
+        "tolerance_m": 1e-05,
+        "updated": true,
+        "entities": [
+          {
+            "entity": "bed",
+            "world_aabb": [
+              [
+                -0.7067428231239319,
+                -0.011446597054600716,
+                0.0
+              ],
+              [
+                0.6363198757171631,
+                2.1044437885284424,
+                0.8658517599105835
+              ]
+            ],
+            "max_metadata_error_before_m": 0.0
+          },
+          {
+            "entity": "blinds",
+            "world_aabb": [
+              [
+                -1.0105681419372559,
+                -0.7411518692970276,
+                1.0280522108078003
+              ],
+              [
+                -0.9640681147575378,
+                1.5444422960281372,
+                2.647595167160034
+              ]
+            ],
+            "max_metadata_error_before_m": 0.0
+          },
+          {
+            "entity": "ceiling",
+            "world_aabb": [
+              [
+                -1.0760681629180908,
+                -2.200000047683716,
+                2.6668314933776855
+              ],
+              [
+                2.5999999046325684,
+                2.188750982284546,
+                2.7868313789367676
+              ]
+            ],
+            "max_metadata_error_before_m": 0.0
+          },
+          {
+            "entity": "ceiling_fixtures",
+            "world_aabb": [
+              [
+                -0.29244866967201233,
+                -2.0,
+                2.5868313312530518
+              ],
+              [
+                1.8784854412078857,
+                1.6849195957183838,
+                2.6668312549591064
+              ]
+            ],
+            "max_metadata_error_before_m": 0.0
+          },
+          {
+            "entity": "exterior",
+            "world_aabb": [
+              [
+                -6.576067924499512,
+                -4.0,
+                -0.6000000238418579
+              ],
+              [
+                -1.5760679244995117,
+                5.0,
+                1.8711519241333008
+              ]
+            ],
+            "max_metadata_error_before_m": 0.0
+          },
+          {
+            "entity": "floor",
+            "world_aabb": [
+              [
+                -1.0760681629180908,
+                -2.200000047683716,
+                -0.11999999731779099
+              ],
+              [
+                2.5999999046325684,
+                2.188750982284546,
+                0.0
+              ]
+            ],
+            "max_metadata_error_before_m": 0.0
+          },
+          {
+            "entity": "glass_partition",
+            "world_aabb": [
+              [
+                2.0339999198913574,
+                -0.9000000357627869,
+                0.0
+              ],
+              [
+                2.0625,
+                0.7139999866485596,
+                2.440000057220459
+              ]
+            ],
+            "max_metadata_error_before_m": 0.0
+          },
+          {
+            "entity": "reflective_board",
+            "world_aabb": [
+              [
+                -0.5762826800346375,
+                2.1597511768341064,
+                0.8692947626113892
+              ],
+              [
+                1.0704889297485352,
+                2.1677510738372803,
+                1.9621294736862183
+              ]
+            ],
+            "max_metadata_error_before_m": 0.0
+          },
+          {
+            "entity": "shoe_cabinet",
+            "world_aabb": [
+              [
+                -0.9590157270431519,
+                -1.6490591764450073,
+                0.0
+              ],
+              [
+                -0.5282653570175171,
+                -0.4873354434967041,
+                1.061261534690857
+              ]
+            ],
+            "max_metadata_error_before_m": 0.0
+          },
+          {
+            "entity": "wall_back",
+            "world_aabb": [
+              [
+                -1.0760681629180908,
+                2.1637511253356934,
+                0.0
+              ],
+              [
+                2.5999999046325684,
+                2.308751106262207,
+                2.6668314933776855
+              ]
+            ],
+            "max_metadata_error_before_m": 0.0
+          },
+          {
+            "entity": "wall_front",
+            "world_aabb": [
+              [
+                -1.0760681629180908,
+                -2.319999933242798,
+                0.0
+              ],
+              [
+                2.5999999046325684,
+                -2.200000047683716,
+                2.6668314933776855
+              ]
+            ],
+            "max_metadata_error_before_m": 0.0
+          },
+          {
+            "entity": "wall_left",
+            "world_aabb": [
+              [
+                -1.1960680484771729,
+                -2.200000047683716,
+                0.0
+              ],
+              [
+                -1.0760681629180908,
+                2.188751220703125,
+                2.6668314933776855
+              ]
+            ],
+            "max_metadata_error_before_m": 0.0
+          },
+          {
+            "entity": "wall_right",
+            "world_aabb": [
+              [
+                2.6000001430511475,
+                -2.200000047683716,
+                0.0
+              ],
+              [
+                2.7200000286102295,
+                2.188750982284546,
+                2.6668314933776855
+              ]
+            ],
+            "max_metadata_error_before_m": 0.0
+          },
+          {
+            "entity": "wardrobe",
+            "world_aabb": [
+              [
+                1.1852307319641113,
+                1.5317511558532715,
+                0.0
+              ],
+              [
+                1.9807307720184326,
+                2.1452510356903076,
+                2.009999990463257
+              ]
+            ],
+            "max_metadata_error_before_m": 0.0
+          },
+          {
+            "entity": "window",
+            "world_aabb": [
+              [
+                -1.1000680923461914,
+                -0.7708151340484619,
+                0.12494917213916779
+              ],
+              [
+                -0.9360681176185608,
+                1.5951735973358154,
+                2.6693315505981445
+              ]
+            ],
+            "max_metadata_error_before_m": 0.0
+          }
+        ]
+      },
+      "geometry_export_returncode": 0,
+      "static_returncode": 0,
+      "static_audit": {
+        "status": "passed",
+        "mujoco_version": "3.13.0",
+        "bodies": 16,
+        "geoms": 37,
+        "visual_meshes": 15,
+        "required_entities_present": [
+          "floor",
+          "ceiling",
+          "wall_back",
+          "wall_front",
+          "wall_left",
+          "wall_right",
+          "ceiling_fixtures"
+        ],
+        "probe_steps": 1500,
+        "probe_final_position_m": [
+          -0.95606812,
+          -2.08,
+          0.029845055560265232
+        ],
+        "six_surface_ray_tests": {
+          "left": {
+            "origin_m": [
+              -1.0260681163312515,
+              -2.08,
+              2.62683140287836
+            ],
+            "hit_body": "wall_left",
+            "distance_m": 0.049999983668748416,
+            "expected_m": 0.05,
+            "error_m": 1.6331251587176077e-08,
+            "rejected_candidate_count": 0,
+            "occluded_examples": []
+          },
+          "right": {
+            "origin_m": [
+              2.5500000000000003,
+              -0.005624464454631273,
+              2.62683140287836
+            ],
+            "hit_body": "wall_right",
+            "distance_m": 0.04999999999999988,
+            "expected_m": 0.05,
+            "error_m": 1.249000902703301e-16,
+            "rejected_candidate_count": 0,
+            "occluded_examples": []
+          },
+          "back": {
+            "origin_m": [
+              0.7619659418343743,
+              2.138751071090738,
+              2.62683140287836
+            ],
+            "hit_body": "wall_back",
+            "distance_m": 0.05000002890926197,
+            "expected_m": 0.05,
+            "error_m": 2.8909261970411215e-08,
+            "rejected_candidate_count": 0,
+            "occluded_examples": []
+          },
+          "front": {
+            "origin_m": [
+              0.7619659418343743,
+              -2.1500000000000004,
+              2.62683140287836
+            ],
+            "hit_body": "wall_front",
+            "distance_m": 0.049999999999999434,
+            "expected_m": 0.05,
+            "error_m": 5.689893001203927e-16,
+            "rejected_candidate_count": 0,
+            "occluded_examples": []
+          },
+          "ceiling": {
+            "origin_m": [
+              -0.9560681163312515,
+              -2.08,
+              2.62683140287836
+            ],
+            "hit_body": "ceiling",
+            "distance_m": 0.039999997121639874,
+            "expected_m": 0.04,
+            "error_m": 2.8783601266346714e-09,
+            "rejected_candidate_count": 0,
+            "occluded_examples": []
+          },
+          "floor": {
+            "origin_m": [
+              -0.9560681163312515,
+              -2.08,
+              1.33341570143918
+            ],
+            "hit_body": "floor",
+            "distance_m": 1.33341570143918,
+            "expected_m": 1.33341570143918,
+            "error_m": 0.0,
+            "rejected_candidate_count": 0,
+            "occluded_examples": []
+          }
+        },
+        "camera_transfer": [
+          {
+            "camera": "source_camera",
+            "canonical_fx_fy_cx_cy": [
+              681.3127150155914,
+              681.3127150155914,
+              851,
+              638
+            ],
+            "recovered_from_engine_frustum": [
+              681.3126995946387,
+              681.3127441616467,
+              851.0,
+              638.0
+            ],
+            "maximum_transfer_error_px": 2.914605533987924e-05,
+            "interpretation": "format transfer consistency, not physical camera calibration accuracy"
+          }
+        ],
+        "layout_modified": false,
+        "limitations": [
+          "static furniture with explicit conservative collision proxies",
+          "soft fabrics, hinged cabinets and movable objects are not dynamically identified",
+          "OBJ visual meshes use flat per-entity colors in MJCF; textured reference visuals are in Blender/GLB/USD"
+        ],
+        "collision_reference": "https://mujoco.readthedocs.io/en/stable/XMLreference.html#asset-mesh",
+        "opening_ray_tests": [
+          {
+            "wall": "wall_left",
+            "bounds": [
+              -0.7498150962320744,
+              1.5741735881828403,
+              0.1674491696165059,
+              2.64683140287836
+            ],
+            "status": "passed",
+            "samples": [
+              {
+                "origin_m": [
+                  -1.0260681163312515,
+                  -0.5174162277905829,
+                  0.41538739294269134
+                ],
+                "wall_distance_m": -1.0
+              },
+              {
+                "origin_m": [
+                  -1.0260681163312515,
+                  -0.5174162277905829,
+                  1.4071402862474331
+                ],
+                "wall_distance_m": -1.0
+              },
+              {
+                "origin_m": [
+                  -1.0260681163312515,
+                  -0.5174162277905829,
+                  2.398893179552175
+                ],
+                "wall_distance_m": -1.0
+              },
+              {
+                "origin_m": [
+                  -1.0260681163312515,
+                  0.412179245975383,
+                  0.41538739294269134
+                ],
+                "wall_distance_m": -1.0
+              },
+              {
+                "origin_m": [
+                  -1.0260681163312515,
+                  0.412179245975383,
+                  1.4071402862474331
+                ],
+                "wall_distance_m": -1.0
+              },
+              {
+                "origin_m": [
+                  -1.0260681163312515,
+                  0.412179245975383,
+                  2.398893179552175
+                ],
+                "wall_distance_m": -1.0
+              },
+              {
+                "origin_m": [
+                  -1.0260681163312515,
+                  1.341774719741349,
+                  0.41538739294269134
+                ],
+                "wall_distance_m": -1.0
+              },
+              {
+                "origin_m": [
+                  -1.0260681163312515,
+                  1.341774719741349,
+                  1.4071402862474331
+                ],
+                "wall_distance_m": -1.0
+              },
+              {
+                "origin_m": [
+                  -1.0260681163312515,
+                  1.341774719741349,
+                  2.398893179552175
+                ],
+                "wall_distance_m": -1.0
+              }
+            ],
+            "scope": "structural wall only; glazing not tested"
+          }
+        ],
+        "structural_collision_source": "axis-aligned canonical room surfaces with declared rectangular openings; visual AABBs excluded"
+      },
+      "input_unchanged": true,
+      "wall_seconds": 4.856831953977235
+    },
+    {
+      "group": "appearance_only",
+      "status": "evaluated",
+      "model_sha256": "9dc660ff17a12e6acd5cb6ad6f9406176acd30ac4dbac5edaeb1018b6c1630bc",
+      "image_sha256": "7872ed3cf5da5e404887476bc729bc861e37d04cd6e97e4703ef798e16a49584",
+      "matched_camera_and_render_settings": true,
+      "appearance": {
+        "bedding": {
+          "rgb_mae": 0.12308048186594897,
+          "mean_absolute_log_luminance_ratio": 0.6670848286679303
+        },
+        "vent": {
+          "rgb_mae": 0.10728921568627452,
+          "mean_absolute_log_luminance_ratio": 0.46430738172840685
+        }
+      },
+      "geometry": {
+        "expected_objects": 2,
+        "passed_objects": 2,
+        "failed_objects": 0,
+        "error_objects": 0,
+        "pass_rate": 1.0,
+        "expected_masks": 2,
+        "mean_iou_with_failures": 0.9543002502228372,
+        "mean_boundary_px_with_failures": 4.948915964571085,
+        "expected_landmarks": 0,
+        "failed_landmarks": 0,
+        "mean_landmark_error_px_with_failures": null
+      },
+      "metadata_returncode": 0,
+      "metadata_sync": {
+        "status": "passed",
+        "evaluated_meshes": true,
+        "tolerance_m": 1e-05,
+        "updated": true,
+        "entities": [
+          {
+            "entity": "bed",
+            "world_aabb": [
+              [
+                -0.7067428231239319,
+                -0.011446597054600716,
+                0.0
+              ],
+              [
+                0.6363198757171631,
+                2.1044437885284424,
+                0.8658517599105835
+              ]
+            ],
+            "max_metadata_error_before_m": 0.008967399597167969
+          },
+          {
+            "entity": "blinds",
+            "world_aabb": [
+              [
+                -1.0105681419372559,
+                -0.7411518692970276,
+                1.0280522108078003
+              ],
+              [
+                -0.9640681147575378,
+                1.5444422960281372,
+                2.647595167160034
+              ]
+            ],
+            "max_metadata_error_before_m": 0.0
+          },
+          {
+            "entity": "ceiling",
+            "world_aabb": [
+              [
+                -1.0760681629180908,
+                -2.200000047683716,
+                2.6668314933776855
+              ],
+              [
+                2.5999999046325684,
+                2.188750982284546,
+                2.7868313789367676
+              ]
+            ],
+            "max_metadata_error_before_m": 0.0
+          },
+          {
+            "entity": "ceiling_fixtures",
+            "world_aabb": [
+              [
+                -0.29244866967201233,
+                -2.0,
+                2.5868313312530518
+              ],
+              [
+                1.8784854412078857,
+                1.6849195957183838,
+                2.6668312549591064
+              ]
+            ],
+            "max_metadata_error_before_m": 0.0
+          },
+          {
+            "entity": "exterior",
+            "world_aabb": [
+              [
+                -6.576067924499512,
+                -4.0,
+                -0.6000000238418579
+              ],
+              [
+                -1.5760679244995117,
+                5.0,
+                1.8711519241333008
+              ]
+            ],
+            "max_metadata_error_before_m": 0.0
+          },
+          {
+            "entity": "floor",
+            "world_aabb": [
+              [
+                -1.0760681629180908,
+                -2.200000047683716,
+                -0.11999999731779099
+              ],
+              [
+                2.5999999046325684,
+                2.188750982284546,
+                0.0
+              ]
+            ],
+            "max_metadata_error_before_m": 0.0
+          },
+          {
+            "entity": "glass_partition",
+            "world_aabb": [
+              [
+                2.0339999198913574,
+                -0.9000000357627869,
+                0.0
+              ],
+              [
+                2.0625,
+                0.7139999866485596,
+                2.440000057220459
+              ]
+            ],
+            "max_metadata_error_before_m": 0.0
+          },
+          {
+            "entity": "reflective_board",
+            "world_aabb": [
+              [
+                -0.5762826800346375,
+                2.1597511768341064,
+                0.8692947626113892
+              ],
+              [
+                1.0704889297485352,
+                2.1677510738372803,
+                1.9621294736862183
+              ]
+            ],
+            "max_metadata_error_before_m": 0.0
+          },
+          {
+            "entity": "shoe_cabinet",
+            "world_aabb": [
+              [
+                -0.9096317291259766,
+                -1.652000069618225,
+                0.0
+              ],
+              [
+                -0.5016317367553711,
+                -0.5,
+                1.061261534690857
+              ]
+            ],
+            "max_metadata_error_before_m": 0.001999974250793457
+          },
+          {
+            "entity": "wall_back",
+            "world_aabb": [
+              [
+                -1.0760681629180908,
+                2.1637511253356934,
+                0.0
+              ],
+              [
+                2.5999999046325684,
+                2.308751106262207,
+                2.6668314933776855
+              ]
+            ],
+            "max_metadata_error_before_m": 0.0
+          },
+          {
+            "entity": "wall_front",
+            "world_aabb": [
+              [
+                -1.0760681629180908,
+                -2.319999933242798,
+                0.0
+              ],
+              [
+                2.5999999046325684,
+                -2.200000047683716,
+                2.6668314933776855
+              ]
+            ],
+            "max_metadata_error_before_m": 0.0
+          },
+          {
+            "entity": "wall_left",
+            "world_aabb": [
+              [
+                -1.1960680484771729,
+                -2.200000047683716,
+                0.0
+              ],
+              [
+                -1.0760681629180908,
+                2.188751220703125,
+                2.6668314933776855
+              ]
+            ],
+            "max_metadata_error_before_m": 0.0
+          },
+          {
+            "entity": "wall_right",
+            "world_aabb": [
+              [
+                2.6000001430511475,
+                -2.200000047683716,
+                0.0
+              ],
+              [
+                2.7200000286102295,
+                2.188750982284546,
+                2.6668314933776855
+              ]
+            ],
+            "max_metadata_error_before_m": 0.0
+          },
+          {
+            "entity": "wardrobe",
+            "world_aabb": [
+              [
+                1.1852307319641113,
+                1.5317511558532715,
+                0.0
+              ],
+              [
+                1.9807307720184326,
+                2.1452510356903076,
+                2.009999990463257
+              ]
+            ],
+            "max_metadata_error_before_m": 0.0014998912811279297
+          },
+          {
+            "entity": "window",
+            "world_aabb": [
+              [
+                -1.1000680923461914,
+                -0.7708151340484619,
+                0.12494917213916779
+              ],
+              [
+                -0.9360681176185608,
+                1.5951735973358154,
+                2.6693315505981445
+              ]
+            ],
+            "max_metadata_error_before_m": 0.0
+          }
+        ]
+      },
+      "geometry_export_returncode": 0,
+      "static_returncode": 0,
+      "static_audit": {
+        "status": "passed",
+        "mujoco_version": "3.13.0",
+        "bodies": 16,
+        "geoms": 37,
+        "visual_meshes": 15,
+        "required_entities_present": [
+          "floor",
+          "ceiling",
+          "wall_back",
+          "wall_front",
+          "wall_left",
+          "wall_right",
+          "ceiling_fixtures"
+        ],
+        "probe_steps": 1500,
+        "probe_final_position_m": [
+          -0.95606812,
+          -2.08,
+          0.029845055560265232
+        ],
+        "six_surface_ray_tests": {
+          "left": {
+            "origin_m": [
+              -1.0260681163312515,
+              -2.08,
+              2.62683140287836
+            ],
+            "hit_body": "wall_left",
+            "distance_m": 0.049999983668748416,
+            "expected_m": 0.05,
+            "error_m": 1.6331251587176077e-08,
+            "rejected_candidate_count": 0,
+            "occluded_examples": []
+          },
+          "right": {
+            "origin_m": [
+              2.5500000000000003,
+              -0.005624464454631273,
+              2.62683140287836
+            ],
+            "hit_body": "wall_right",
+            "distance_m": 0.04999999999999988,
+            "expected_m": 0.05,
+            "error_m": 1.249000902703301e-16,
+            "rejected_candidate_count": 0,
+            "occluded_examples": []
+          },
+          "back": {
+            "origin_m": [
+              0.7619659418343743,
+              2.138751071090738,
+              2.62683140287836
+            ],
+            "hit_body": "wall_back",
+            "distance_m": 0.05000002890926197,
+            "expected_m": 0.05,
+            "error_m": 2.8909261970411215e-08,
+            "rejected_candidate_count": 0,
+            "occluded_examples": []
+          },
+          "front": {
+            "origin_m": [
+              0.7619659418343743,
+              -2.1500000000000004,
+              2.62683140287836
+            ],
+            "hit_body": "wall_front",
+            "distance_m": 0.049999999999999434,
+            "expected_m": 0.05,
+            "error_m": 5.689893001203927e-16,
+            "rejected_candidate_count": 0,
+            "occluded_examples": []
+          },
+          "ceiling": {
+            "origin_m": [
+              -0.9560681163312515,
+              -2.08,
+              2.62683140287836
+            ],
+            "hit_body": "ceiling",
+            "distance_m": 0.039999997121639874,
+            "expected_m": 0.04,
+            "error_m": 2.8783601266346714e-09,
+            "rejected_candidate_count": 0,
+            "occluded_examples": []
+          },
+          "floor": {
+            "origin_m": [
+              -0.9560681163312515,
+              -2.08,
+              1.33341570143918
+            ],
+            "hit_body": "floor",
+            "distance_m": 1.33341570143918,
+            "expected_m": 1.33341570143918,
+            "error_m": 0.0,
+            "rejected_candidate_count": 0,
+            "occluded_examples": []
+          }
+        },
+        "camera_transfer": [
+          {
+            "camera": "source_camera",
+            "canonical_fx_fy_cx_cy": [
+              681.3127150155914,
+              681.3127150155914,
+              851,
+              638
+            ],
+            "recovered_from_engine_frustum": [
+              681.3126995946387,
+              681.3127441616467,
+              851.0,
+              638.0
+            ],
+            "maximum_transfer_error_px": 2.914605533987924e-05,
+            "interpretation": "format transfer consistency, not physical camera calibration accuracy"
+          }
+        ],
+        "layout_modified": false,
+        "limitations": [
+          "static furniture with explicit conservative collision proxies",
+          "soft fabrics, hinged cabinets and movable objects are not dynamically identified",
+          "OBJ visual meshes use flat per-entity colors in MJCF; textured reference visuals are in Blender/GLB/USD"
+        ],
+        "collision_reference": "https://mujoco.readthedocs.io/en/stable/XMLreference.html#asset-mesh",
+        "opening_ray_tests": [
+          {
+            "wall": "wall_left",
+            "bounds": [
+              -0.7498150962320744,
+              1.5741735881828403,
+              0.1674491696165059,
+              2.64683140287836
+            ],
+            "status": "passed",
+            "samples": [
+              {
+                "origin_m": [
+                  -1.0260681163312515,
+                  -0.5174162277905829,
+                  0.41538739294269134
+                ],
+                "wall_distance_m": -1.0
+              },
+              {
+                "origin_m": [
+                  -1.0260681163312515,
+                  -0.5174162277905829,
+                  1.4071402862474331
+                ],
+                "wall_distance_m": -1.0
+              },
+              {
+                "origin_m": [
+                  -1.0260681163312515,
+                  -0.5174162277905829,
+                  2.398893179552175
+                ],
+                "wall_distance_m": -1.0
+              },
+              {
+                "origin_m": [
+                  -1.0260681163312515,
+                  0.412179245975383,
+                  0.41538739294269134
+                ],
+                "wall_distance_m": -1.0
+              },
+              {
+                "origin_m": [
+                  -1.0260681163312515,
+                  0.412179245975383,
+                  1.4071402862474331
+                ],
+                "wall_distance_m": -1.0
+              },
+              {
+                "origin_m": [
+                  -1.0260681163312515,
+                  0.412179245975383,
+                  2.398893179552175
+                ],
+                "wall_distance_m": -1.0
+              },
+              {
+                "origin_m": [
+                  -1.0260681163312515,
+                  1.341774719741349,
+                  0.41538739294269134
+                ],
+                "wall_distance_m": -1.0
+              },
+              {
+                "origin_m": [
+                  -1.0260681163312515,
+                  1.341774719741349,
+                  1.4071402862474331
+                ],
+                "wall_distance_m": -1.0
+              },
+              {
+                "origin_m": [
+                  -1.0260681163312515,
+                  1.341774719741349,
+                  2.398893179552175
+                ],
+                "wall_distance_m": -1.0
+              }
+            ],
+            "scope": "structural wall only; glazing not tested"
+          }
+        ],
+        "structural_collision_source": "axis-aligned canonical room surfaces with declared rectangular openings; visual AABBs excluded"
+      },
+      "input_unchanged": true,
+      "wall_seconds": 4.859349073027261
+    },
+    {
+      "group": "combined",
+      "status": "evaluated",
+      "model_sha256": "5466a6ee24fa16c10d9b1bf71972ae2c7d53be6aa03dfcfc0491684dfb13e87f",
+      "image_sha256": "fab2e23a7a22963763a632daee90d25d7167719e671089d321c0406646022a9e",
+      "matched_camera_and_render_settings": true,
+      "appearance": {
+        "bedding": {
+          "rgb_mae": 0.12320795420564738,
+          "mean_absolute_log_luminance_ratio": 0.6698844917551644
+        },
+        "vent": {
+          "rgb_mae": 0.10682551353874882,
+          "mean_absolute_log_luminance_ratio": 0.4624811977681583
+        }
+      },
+      "geometry": {
+        "expected_objects": 2,
+        "passed_objects": 2,
+        "failed_objects": 0,
+        "error_objects": 0,
+        "pass_rate": 1.0,
+        "expected_masks": 2,
+        "mean_iou_with_failures": 0.9613228555260039,
+        "mean_boundary_px_with_failures": 4.144214041546291,
+        "expected_landmarks": 0,
+        "failed_landmarks": 0,
+        "mean_landmark_error_px_with_failures": null
+      },
+      "metadata_returncode": 0,
+      "metadata_sync": {
+        "status": "passed",
+        "evaluated_meshes": true,
+        "tolerance_m": 1e-05,
+        "updated": true,
+        "entities": [
+          {
+            "entity": "bed",
+            "world_aabb": [
+              [
+                -0.7067428231239319,
+                -0.011446597054600716,
+                0.0
+              ],
+              [
+                0.6363198757171631,
+                2.1044437885284424,
+                0.8658517599105835
+              ]
+            ],
+            "max_metadata_error_before_m": 0.0
+          },
+          {
+            "entity": "blinds",
+            "world_aabb": [
+              [
+                -1.0105681419372559,
+                -0.7411518692970276,
+                1.0280522108078003
+              ],
+              [
+                -0.9640681147575378,
+                1.5444422960281372,
+                2.647595167160034
+              ]
+            ],
+            "max_metadata_error_before_m": 0.0
+          },
+          {
+            "entity": "ceiling",
+            "world_aabb": [
+              [
+                -1.0760681629180908,
+                -2.200000047683716,
+                2.6668314933776855
+              ],
+              [
+                2.5999999046325684,
+                2.188750982284546,
+                2.7868313789367676
+              ]
+            ],
+            "max_metadata_error_before_m": 0.0
+          },
+          {
+            "entity": "ceiling_fixtures",
+            "world_aabb": [
+              [
+                -0.29244866967201233,
+                -2.0,
+                2.5868313312530518
+              ],
+              [
+                1.8784854412078857,
+                1.6849195957183838,
+                2.6668312549591064
+              ]
+            ],
+            "max_metadata_error_before_m": 0.0
+          },
+          {
+            "entity": "exterior",
+            "world_aabb": [
+              [
+                -6.576067924499512,
+                -4.0,
+                -0.6000000238418579
+              ],
+              [
+                -1.5760679244995117,
+                5.0,
+                1.8711519241333008
+              ]
+            ],
+            "max_metadata_error_before_m": 0.0
+          },
+          {
+            "entity": "floor",
+            "world_aabb": [
+              [
+                -1.0760681629180908,
+                -2.200000047683716,
+                -0.11999999731779099
+              ],
+              [
+                2.5999999046325684,
+                2.188750982284546,
+                0.0
+              ]
+            ],
+            "max_metadata_error_before_m": 0.0
+          },
+          {
+            "entity": "glass_partition",
+            "world_aabb": [
+              [
+                2.0339999198913574,
+                -0.9000000357627869,
+                0.0
+              ],
+              [
+                2.0625,
+                0.7139999866485596,
+                2.440000057220459
+              ]
+            ],
+            "max_metadata_error_before_m": 0.0
+          },
+          {
+            "entity": "reflective_board",
+            "world_aabb": [
+              [
+                -0.5762826800346375,
+                2.1597511768341064,
+                0.8692947626113892
+              ],
+              [
+                1.0704889297485352,
+                2.1677510738372803,
+                1.9621294736862183
+              ]
+            ],
+            "max_metadata_error_before_m": 0.0
+          },
+          {
+            "entity": "shoe_cabinet",
+            "world_aabb": [
+              [
+                -0.9590157270431519,
+                -1.6490591764450073,
+                0.0
+              ],
+              [
+                -0.5282653570175171,
+                -0.4873354434967041,
+                1.061261534690857
+              ]
+            ],
+            "max_metadata_error_before_m": 0.0
+          },
+          {
+            "entity": "wall_back",
+            "world_aabb": [
+              [
+                -1.0760681629180908,
+                2.1637511253356934,
+                0.0
+              ],
+              [
+                2.5999999046325684,
+                2.308751106262207,
+                2.6668314933776855
+              ]
+            ],
+            "max_metadata_error_before_m": 0.0
+          },
+          {
+            "entity": "wall_front",
+            "world_aabb": [
+              [
+                -1.0760681629180908,
+                -2.319999933242798,
+                0.0
+              ],
+              [
+                2.5999999046325684,
+                -2.200000047683716,
+                2.6668314933776855
+              ]
+            ],
+            "max_metadata_error_before_m": 0.0
+          },
+          {
+            "entity": "wall_left",
+            "world_aabb": [
+              [
+                -1.1960680484771729,
+                -2.200000047683716,
+                0.0
+              ],
+              [
+                -1.0760681629180908,
+                2.188751220703125,
+                2.6668314933776855
+              ]
+            ],
+            "max_metadata_error_before_m": 0.0
+          },
+          {
+            "entity": "wall_right",
+            "world_aabb": [
+              [
+                2.6000001430511475,
+                -2.200000047683716,
+                0.0
+              ],
+              [
+                2.7200000286102295,
+                2.188750982284546,
+                2.6668314933776855
+              ]
+            ],
+            "max_metadata_error_before_m": 0.0
+          },
+          {
+            "entity": "wardrobe",
+            "world_aabb": [
+              [
+                1.1852307319641113,
+                1.5317511558532715,
+                0.0
+              ],
+              [
+                1.9807307720184326,
+                2.1452510356903076,
+                2.009999990463257
+              ]
+            ],
+            "max_metadata_error_before_m": 0.0
+          },
+          {
+            "entity": "window",
+            "world_aabb": [
+              [
+                -1.1000680923461914,
+                -0.7708151340484619,
+                0.12494917213916779
+              ],
+              [
+                -0.9360681176185608,
+                1.5951735973358154,
+                2.6693315505981445
+              ]
+            ],
+            "max_metadata_error_before_m": 0.0
+          }
+        ]
+      },
+      "geometry_export_returncode": 0,
+      "static_returncode": 0,
+      "static_audit": {
+        "status": "passed",
+        "mujoco_version": "3.13.0",
+        "bodies": 16,
+        "geoms": 37,
+        "visual_meshes": 15,
+        "required_entities_present": [
+          "floor",
+          "ceiling",
+          "wall_back",
+          "wall_front",
+          "wall_left",
+          "wall_right",
+          "ceiling_fixtures"
+        ],
+        "probe_steps": 1500,
+        "probe_final_position_m": [
+          -0.95606812,
+          -2.08,
+          0.029845055560265232
+        ],
+        "six_surface_ray_tests": {
+          "left": {
+            "origin_m": [
+              -1.0260681163312515,
+              -2.08,
+              2.62683140287836
+            ],
+            "hit_body": "wall_left",
+            "distance_m": 0.049999983668748416,
+            "expected_m": 0.05,
+            "error_m": 1.6331251587176077e-08,
+            "rejected_candidate_count": 0,
+            "occluded_examples": []
+          },
+          "right": {
+            "origin_m": [
+              2.5500000000000003,
+              -0.005624464454631273,
+              2.62683140287836
+            ],
+            "hit_body": "wall_right",
+            "distance_m": 0.04999999999999988,
+            "expected_m": 0.05,
+            "error_m": 1.249000902703301e-16,
+            "rejected_candidate_count": 0,
+            "occluded_examples": []
+          },
+          "back": {
+            "origin_m": [
+              0.7619659418343743,
+              2.138751071090738,
+              2.62683140287836
+            ],
+            "hit_body": "wall_back",
+            "distance_m": 0.05000002890926197,
+            "expected_m": 0.05,
+            "error_m": 2.8909261970411215e-08,
+            "rejected_candidate_count": 0,
+            "occluded_examples": []
+          },
+          "front": {
+            "origin_m": [
+              0.7619659418343743,
+              -2.1500000000000004,
+              2.62683140287836
+            ],
+            "hit_body": "wall_front",
+            "distance_m": 0.049999999999999434,
+            "expected_m": 0.05,
+            "error_m": 5.689893001203927e-16,
+            "rejected_candidate_count": 0,
+            "occluded_examples": []
+          },
+          "ceiling": {
+            "origin_m": [
+              -0.9560681163312515,
+              -2.08,
+              2.62683140287836
+            ],
+            "hit_body": "ceiling",
+            "distance_m": 0.039999997121639874,
+            "expected_m": 0.04,
+            "error_m": 2.8783601266346714e-09,
+            "rejected_candidate_count": 0,
+            "occluded_examples": []
+          },
+          "floor": {
+            "origin_m": [
+              -0.9560681163312515,
+              -2.08,
+              1.33341570143918
+            ],
+            "hit_body": "floor",
+            "distance_m": 1.33341570143918,
+            "expected_m": 1.33341570143918,
+            "error_m": 0.0,
+            "rejected_candidate_count": 0,
+            "occluded_examples": []
+          }
+        },
+        "camera_transfer": [
+          {
+            "camera": "source_camera",
+            "canonical_fx_fy_cx_cy": [
+              681.3127150155914,
+              681.3127150155914,
+              851,
+              638
+            ],
+            "recovered_from_engine_frustum": [
+              681.3126995946387,
+              681.3127441616467,
+              851.0,
+              638.0
+            ],
+            "maximum_transfer_error_px": 2.914605533987924e-05,
+            "interpretation": "format transfer consistency, not physical camera calibration accuracy"
+          }
+        ],
+        "layout_modified": false,
+        "limitations": [
+          "static furniture with explicit conservative collision proxies",
+          "soft fabrics, hinged cabinets and movable objects are not dynamically identified",
+          "OBJ visual meshes use flat per-entity colors in MJCF; textured reference visuals are in Blender/GLB/USD"
+        ],
+        "collision_reference": "https://mujoco.readthedocs.io/en/stable/XMLreference.html#asset-mesh",
+        "opening_ray_tests": [
+          {
+            "wall": "wall_left",
+            "bounds": [
+              -0.7498150962320744,
+              1.5741735881828403,
+              0.1674491696165059,
+              2.64683140287836
+            ],
+            "status": "passed",
+            "samples": [
+              {
+                "origin_m": [
+                  -1.0260681163312515,
+                  -0.5174162277905829,
+                  0.41538739294269134
+                ],
+                "wall_distance_m": -1.0
+              },
+              {
+                "origin_m": [
+                  -1.0260681163312515,
+                  -0.5174162277905829,
+                  1.4071402862474331
+                ],
+                "wall_distance_m": -1.0
+              },
+              {
+                "origin_m": [
+                  -1.0260681163312515,
+                  -0.5174162277905829,
+                  2.398893179552175
+                ],
+                "wall_distance_m": -1.0
+              },
+              {
+                "origin_m": [
+                  -1.0260681163312515,
+                  0.412179245975383,
+                  0.41538739294269134
+                ],
+                "wall_distance_m": -1.0
+              },
+              {
+                "origin_m": [
+                  -1.0260681163312515,
+                  0.412179245975383,
+                  1.4071402862474331
+                ],
+                "wall_distance_m": -1.0
+              },
+              {
+                "origin_m": [
+                  -1.0260681163312515,
+                  0.412179245975383,
+                  2.398893179552175
+                ],
+                "wall_distance_m": -1.0
+              },
+              {
+                "origin_m": [
+                  -1.0260681163312515,
+                  1.341774719741349,
+                  0.41538739294269134
+                ],
+                "wall_distance_m": -1.0
+              },
+              {
+                "origin_m": [
+                  -1.0260681163312515,
+                  1.341774719741349,
+                  1.4071402862474331
+                ],
+                "wall_distance_m": -1.0
+              },
+              {
+                "origin_m": [
+                  -1.0260681163312515,
+                  1.341774719741349,
+                  2.398893179552175
+                ],
+                "wall_distance_m": -1.0
+              }
+            ],
+            "scope": "structural wall only; glazing not tested"
+          }
+        ],
+        "structural_collision_source": "axis-aligned canonical room surfaces with declared rectangular openings; visual AABBs excluded"
+      },
+      "input_unchanged": true,
+      "wall_seconds": 4.973205105983652
+    }
+  ],
+  "metadata_policy": "Same evaluated-geometry metadata synchronization for all five groups; source model and JSON unchanged",
+  "protocol_sha256": "296a9efdeea88e3762b17e7d8333b6e92385f3ef54c7adcf4c439a22654ec9dd",
+  "script_sha256": "e8057a79a46d23b2af6a75b033f97abc502957e119a3b8a1568318a66f212b11",
+  "scope": "One in-sample room, component and combination diagnostics; not independent visual accuracy or SOTA"
+}

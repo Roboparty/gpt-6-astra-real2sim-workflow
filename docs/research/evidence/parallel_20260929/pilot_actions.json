@@ -1,0 +1,94 @@
+{
+  "feedback": [
+    {
+      "actions": [
+        {
+          "entity": "wardrobe",
+          "xy_m": [
+            0.0,
+            0.0
+          ],
+          "yaw_deg": 0.0,
+          "reason": "Keep the initial pose: IoU is 0.9796129 and mean boundary distance is 2.1032 px. The overlay shows a small top-left excess with the remaining edges already close; the mixed corner residuals do not support a reliable whole-entity translation or bounded yaw correction. No improvement is claimed."
+        },
+        {
+          "entity": "shoe_cabinet",
+          "xy_m": [
+            -0.03,
+            0.006
+          ],
+          "yaw_deg": -2.0,
+          "reason": "The initial silhouette contains the entire source polygon, with IoU 0.9289876, height ratio 1.0997831, and strongest excess along the lower-left boundary. Negative world X moves the cabinet away from the camera; negative Z-axis yaw about its initial AABB center moves the long negative-Y end farther away while keeping the positive-Y right edge comparatively stable. A +0.006 m Y offset partly compensates right-edge horizontal motion. This bounded proposal targets lower-left projection excess without scale or Z changes; its actual effect requires the next supplied render and feedback."
+        }
+      ]
+    },
+    {
+      "actions": [
+        {
+          "entity": "wardrobe",
+          "xy_m": [
+            0.0,
+            0.0
+          ],
+          "yaw_deg": 0.0,
+          "reason": "Retain the original wardrobe pose. The round-1 evidence is unchanged at IoU 0.9796129007 and mean boundary distance 2.1031677756 px. The source overlay shows only a small mixed corner discrepancy; a bounded whole-entity pose adjustment is not clearly supported. These values are cumulative from the original model."
+        },
+        {
+          "entity": "shoe_cabinet",
+          "xy_m": [
+            -0.03,
+            0.006
+          ],
+          "yaw_deg": -2.0,
+          "reason": "Retain the tested round-1 pose, cumulative from the original model. The supplied feedback shows IoU increasing from 0.9289875997 to 0.9430328103, mean boundary distance decreasing from 7.7946641535 to 6.1852603075 px, and height ratio decreasing from 1.0997830803 to 1.0737527115. The entire source mask remains contained, and the right edge is already close (width ratio 1.0041152263); the principal remaining excess is lower-left. Negative X translation and negative yaw are already at their permitted bounds, while additional positive Y would shift the right silhouette outward. Preserve the observed gain rather than introduce an unverified final Y tradeoff; no additional improvement is claimed."
+        }
+      ]
+    }
+  ],
+  "control": [
+    {
+      "actions": [
+        {
+          "entity": "wardrobe",
+          "xy_m": [
+            0.0075,
+            0.002
+          ],
+          "yaw_deg": -2.0,
+          "reason": "Cumulative from the initial model, rotating about its initial world-AABB center. The initial render is already close to the source silhouette. Its projected top corners lie slightly too far right while the lower left corner lies too far left. A small negative yaw with compensating positive x translation is a bounded hypothesis for reducing that differential horizontal error. The source's vertical residual cannot all be removed with the allowed horizontal rigid motion; improvement remains unverified."
+        },
+        {
+          "entity": "shoe_cabinet",
+          "xy_m": [
+            -0.028,
+            -0.0084
+          ],
+          "yaw_deg": 2.0,
+          "reason": "Cumulative from the initial model, rotating about its initial world-AABB center. The initial render's visible right silhouette is slightly right of the source, and its lower right corner is too low. The supplied camera projection supports negative x translation and a smaller negative y translation to move this boundary left and reduce its projected height; positive yaw contributes to lifting the lower right corner. This is a whole-entity silhouette hypothesis from the source and initial render, without subsequent render or evaluator verification."
+        }
+      ]
+    },
+    {
+      "actions": [
+        {
+          "entity": "wardrobe",
+          "xy_m": [
+            0.0075,
+            0.002
+          ],
+          "yaw_deg": -2.0,
+          "reason": "Final cumulative correction from the original initial model, about its original world-AABB center. Keep the round-one action: the supplied ordinary render remains close to the source's four-corner silhouette, and visual inspection does not support a further pose change. Small remaining vertical and shape discrepancies are not reliably removable with the allowed horizontal rigid motion. No metric-based improvement claim is made."
+        },
+        {
+          "entity": "shoe_cabinet",
+          "xy_m": [
+            -0.03,
+            0.006
+          ],
+          "yaw_deg": 2.0,
+          "reason": "Final cumulative correction from the original initial model, about its original world-AABB center. In the round-one ordinary render, the lower right silhouette appears slightly left of the source corner and the cropped lower left portion still extends farther down. Retain positive yaw, use the negative-x bound, and revise cumulative y to +0.006 m to shift the projected lower contour modestly right and upward. This balances the full visible outline rather than only the upper right corner; the top edge may retain a small mismatch. This final visual hypothesis has no subsequent render or evaluator verification."
+        }
+      ]
+    }
+  ]
+}

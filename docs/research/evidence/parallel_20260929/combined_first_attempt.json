@@ -1,0 +1,825 @@
+{
+  "schema": "real2sim.combined-comparison/1",
+  "expected_groups": 5,
+  "groups": [
+    {
+      "group": "unchanged_baseline",
+      "status": "failed",
+      "model_sha256": "e140b8ae0f133a87cbaa77e576ea164512e57c3bd9a56552841f8596b9126e51",
+      "image_sha256": "d4eefb40194ae5c00e30c1ac645ebb1df9b730d32f70619eaf0b2e2441f5475a",
+      "matched_camera_and_render_settings": true,
+      "appearance": {
+        "bedding": {
+          "rgb_mae": 0.12294109103336326,
+          "mean_absolute_log_luminance_ratio": 0.6676147055435833
+        },
+        "vent": {
+          "rgb_mae": 0.13543323996265177,
+          "mean_absolute_log_luminance_ratio": 0.6901675257680704
+        }
+      },
+      "geometry": {
+        "expected_objects": 2,
+        "passed_objects": 2,
+        "failed_objects": 0,
+        "error_objects": 0,
+        "pass_rate": 1.0,
+        "expected_masks": 2,
+        "mean_iou_with_failures": 0.9543002502228372,
+        "mean_boundary_px_with_failures": 4.948915964571085,
+        "expected_landmarks": 0,
+        "failed_landmarks": 0,
+        "mean_landmark_error_px_with_failures": null
+      },
+      "geometry_export_returncode": 12,
+      "error": "RuntimeError('Geometry export failed; see retained log')",
+      "wall_seconds": 0.9672583369538188
+    },
+    {
+      "group": "render_only_round2",
+      "status": "evaluated",
+      "model_sha256": "2ca72f6d4285ab6ab5cb8fcebb28555f92efb5d0c27d80de3f224b5fd5edcabc",
+      "image_sha256": "eee79741af1a9d7ba4bce9efbb5fb07eec8be7afe401ca94c333b84f58dde45f",
+      "matched_camera_and_render_settings": true,
+      "appearance": {
+        "bedding": {
+          "rgb_mae": 0.12294959203725066,
+          "mean_absolute_log_luminance_ratio": 0.6680309185329434
+        },
+        "vent": {
+          "rgb_mae": 0.13560364145658263,
+          "mean_absolute_log_luminance_ratio": 0.6924044380629962
+        }
+      },
+      "geometry": {
+        "expected_objects": 2,
+        "passed_objects": 2,
+        "failed_objects": 0,
+        "error_objects": 0,
+        "pass_rate": 1.0,
+        "expected_masks": 2,
+        "mean_iou_with_failures": 0.9608758871344905,
+        "mean_boundary_px_with_failures": 4.204056583663071,
+        "expected_landmarks": 0,
+        "failed_landmarks": 0,
+        "mean_landmark_error_px_with_failures": null
+      },
+      "geometry_export_returncode": 0,
+      "static_returncode": 0,
+      "static_audit": {
+        "status": "passed",
+        "mujoco_version": "3.13.0",
+        "bodies": 16,
+        "geoms": 37,
+        "visual_meshes": 15,
+        "required_entities_present": [
+          "floor",
+          "ceiling",
+          "wall_back",
+          "wall_front",
+          "wall_left",
+          "wall_right",
+          "ceiling_fixtures"
+        ],
+        "probe_steps": 1500,
+        "probe_final_position_m": [
+          -0.95606812,
+          -2.08,
+          0.029845055560265232
+        ],
+        "six_surface_ray_tests": {
+          "left": {
+            "origin_m": [
+              -1.0260681163312515,
+              -2.08,
+              2.62683140287836
+            ],
+            "hit_body": "wall_left",
+            "distance_m": 0.049999983668748416,
+            "expected_m": 0.05,
+            "error_m": 1.6331251587176077e-08,
+            "rejected_candidate_count": 0,
+            "occluded_examples": []
+          },
+          "right": {
+            "origin_m": [
+              2.5500000000000003,
+              -0.005624464454631273,
+              2.62683140287836
+            ],
+            "hit_body": "wall_right",
+            "distance_m": 0.04999999999999988,
+            "expected_m": 0.05,
+            "error_m": 1.249000902703301e-16,
+            "rejected_candidate_count": 0,
+            "occluded_examples": []
+          },
+          "back": {
+            "origin_m": [
+              0.7619659418343743,
+              2.138751071090738,
+              2.62683140287836
+            ],
+            "hit_body": "wall_back",
+            "distance_m": 0.05000002890926197,
+            "expected_m": 0.05,
+            "error_m": 2.8909261970411215e-08,
+            "rejected_candidate_count": 0,
+            "occluded_examples": []
+          },
+          "front": {
+            "origin_m": [
+              0.7619659418343743,
+              -2.1500000000000004,
+              2.62683140287836
+            ],
+            "hit_body": "wall_front",
+            "distance_m": 0.049999999999999434,
+            "expected_m": 0.05,
+            "error_m": 5.689893001203927e-16,
+            "rejected_candidate_count": 0,
+            "occluded_examples": []
+          },
+          "ceiling": {
+            "origin_m": [
+              -0.9560681163312515,
+              -2.08,
+              2.62683140287836
+            ],
+            "hit_body": "ceiling",
+            "distance_m": 0.039999997121639874,
+            "expected_m": 0.04,
+            "error_m": 2.8783601266346714e-09,
+            "rejected_candidate_count": 0,
+            "occluded_examples": []
+          },
+          "floor": {
+            "origin_m": [
+              -0.9560681163312515,
+              -2.08,
+              1.33341570143918
+            ],
+            "hit_body": "floor",
+            "distance_m": 1.33341570143918,
+            "expected_m": 1.33341570143918,
+            "error_m": 0.0,
+            "rejected_candidate_count": 0,
+            "occluded_examples": []
+          }
+        },
+        "camera_transfer": [
+          {
+            "camera": "source_camera",
+            "canonical_fx_fy_cx_cy": [
+              681.3127150155914,
+              681.3127150155914,
+              851,
+              638
+            ],
+            "recovered_from_engine_frustum": [
+              681.3126995946387,
+              681.3127441616467,
+              851.0,
+              638.0
+            ],
+            "maximum_transfer_error_px": 2.914605533987924e-05,
+            "interpretation": "format transfer consistency, not physical camera calibration accuracy"
+          }
+        ],
+        "layout_modified": false,
+        "limitations": [
+          "static furniture with explicit conservative collision proxies",
+          "soft fabrics, hinged cabinets and movable objects are not dynamically identified",
+          "OBJ visual meshes use flat per-entity colors in MJCF; textured reference visuals are in Blender/GLB/USD"
+        ],
+        "collision_reference": "https://mujoco.readthedocs.io/en/stable/XMLreference.html#asset-mesh",
+        "opening_ray_tests": [
+          {
+            "wall": "wall_left",
+            "bounds": [
+              -0.7498150962320744,
+              1.5741735881828403,
+              0.1674491696165059,
+              2.64683140287836
+            ],
+            "status": "passed",
+            "samples": [
+              {
+                "origin_m": [
+                  -1.0260681163312515,
+                  -0.5174162277905829,
+                  0.41538739294269134
+                ],
+                "wall_distance_m": -1.0
+              },
+              {
+                "origin_m": [
+                  -1.0260681163312515,
+                  -0.5174162277905829,
+                  1.4071402862474331
+                ],
+                "wall_distance_m": -1.0
+              },
+              {
+                "origin_m": [
+                  -1.0260681163312515,
+                  -0.5174162277905829,
+                  2.398893179552175
+                ],
+                "wall_distance_m": -1.0
+              },
+              {
+                "origin_m": [
+                  -1.0260681163312515,
+                  0.412179245975383,
+                  0.41538739294269134
+                ],
+                "wall_distance_m": -1.0
+              },
+              {
+                "origin_m": [
+                  -1.0260681163312515,
+                  0.412179245975383,
+                  1.4071402862474331
+                ],
+                "wall_distance_m": -1.0
+              },
+              {
+                "origin_m": [
+                  -1.0260681163312515,
+                  0.412179245975383,
+                  2.398893179552175
+                ],
+                "wall_distance_m": -1.0
+              },
+              {
+                "origin_m": [
+                  -1.0260681163312515,
+                  1.341774719741349,
+                  0.41538739294269134
+                ],
+                "wall_distance_m": -1.0
+              },
+              {
+                "origin_m": [
+                  -1.0260681163312515,
+                  1.341774719741349,
+                  1.4071402862474331
+                ],
+                "wall_distance_m": -1.0
+              },
+              {
+                "origin_m": [
+                  -1.0260681163312515,
+                  1.341774719741349,
+                  2.398893179552175
+                ],
+                "wall_distance_m": -1.0
+              }
+            ],
+            "scope": "structural wall only; glazing not tested"
+          }
+        ],
+        "structural_collision_source": "axis-aligned canonical room surfaces with declared rectangular openings; visual AABBs excluded"
+      },
+      "input_unchanged": true,
+      "wall_seconds": 3.543563087005168
+    },
+    {
+      "group": "numeric_feedback_round2",
+      "status": "evaluated",
+      "model_sha256": "0e6bb6a307729264cefa967fb515b27ebb66c91e194a233a003d1494ba846fe2",
+      "image_sha256": "5b2e78a0741ba87457c5336813576fa398ddc804aa74b00dc172093f1cac9891",
+      "matched_camera_and_render_settings": true,
+      "appearance": {
+        "bedding": {
+          "rgb_mae": 0.12309128967491136,
+          "mean_absolute_log_luminance_ratio": 0.6699514523430674
+        },
+        "vent": {
+          "rgb_mae": 0.13558380018674135,
+          "mean_absolute_log_luminance_ratio": 0.6922649042667294
+        }
+      },
+      "geometry": {
+        "expected_objects": 2,
+        "passed_objects": 2,
+        "failed_objects": 0,
+        "error_objects": 0,
+        "pass_rate": 1.0,
+        "expected_masks": 2,
+        "mean_iou_with_failures": 0.9613228555260039,
+        "mean_boundary_px_with_failures": 4.144214041546291,
+        "expected_landmarks": 0,
+        "failed_landmarks": 0,
+        "mean_landmark_error_px_with_failures": null
+      },
+      "geometry_export_returncode": 0,
+      "static_returncode": 0,
+      "static_audit": {
+        "status": "passed",
+        "mujoco_version": "3.13.0",
+        "bodies": 16,
+        "geoms": 37,
+        "visual_meshes": 15,
+        "required_entities_present": [
+          "floor",
+          "ceiling",
+          "wall_back",
+          "wall_front",
+          "wall_left",
+          "wall_right",
+          "ceiling_fixtures"
+        ],
+        "probe_steps": 1500,
+        "probe_final_position_m": [
+          -0.95606812,
+          -2.08,
+          0.029845055560265232
+        ],
+        "six_surface_ray_tests": {
+          "left": {
+            "origin_m": [
+              -1.0260681163312515,
+              -2.08,
+              2.62683140287836
+            ],
+            "hit_body": "wall_left",
+            "distance_m": 0.049999983668748416,
+            "expected_m": 0.05,
+            "error_m": 1.6331251587176077e-08,
+            "rejected_candidate_count": 0,
+            "occluded_examples": []
+          },
+          "right": {
+            "origin_m": [
+              2.5500000000000003,
+              -0.005624464454631273,
+              2.62683140287836
+            ],
+            "hit_body": "wall_right",
+            "distance_m": 0.04999999999999988,
+            "expected_m": 0.05,
+            "error_m": 1.249000902703301e-16,
+            "rejected_candidate_count": 0,
+            "occluded_examples": []
+          },
+          "back": {
+            "origin_m": [
+              0.7619659418343743,
+              2.138751071090738,
+              2.62683140287836
+            ],
+            "hit_body": "wall_back",
+            "distance_m": 0.05000002890926197,
+            "expected_m": 0.05,
+            "error_m": 2.8909261970411215e-08,
+            "rejected_candidate_count": 0,
+            "occluded_examples": []
+          },
+          "front": {
+            "origin_m": [
+              0.7619659418343743,
+              -2.1500000000000004,
+              2.62683140287836
+            ],
+            "hit_body": "wall_front",
+            "distance_m": 0.049999999999999434,
+            "expected_m": 0.05,
+            "error_m": 5.689893001203927e-16,
+            "rejected_candidate_count": 0,
+            "occluded_examples": []
+          },
+          "ceiling": {
+            "origin_m": [
+              -0.9560681163312515,
+              -2.08,
+              2.62683140287836
+            ],
+            "hit_body": "ceiling",
+            "distance_m": 0.039999997121639874,
+            "expected_m": 0.04,
+            "error_m": 2.8783601266346714e-09,
+            "rejected_candidate_count": 0,
+            "occluded_examples": []
+          },
+          "floor": {
+            "origin_m": [
+              -0.9560681163312515,
+              -2.08,
+              1.33341570143918
+            ],
+            "hit_body": "floor",
+            "distance_m": 1.33341570143918,
+            "expected_m": 1.33341570143918,
+            "error_m": 0.0,
+            "rejected_candidate_count": 0,
+            "occluded_examples": []
+          }
+        },
+        "camera_transfer": [
+          {
+            "camera": "source_camera",
+            "canonical_fx_fy_cx_cy": [
+              681.3127150155914,
+              681.3127150155914,
+              851,
+              638
+            ],
+            "recovered_from_engine_frustum": [
+              681.3126995946387,
+              681.3127441616467,
+              851.0,
+              638.0
+            ],
+            "maximum_transfer_error_px": 2.914605533987924e-05,
+            "interpretation": "format transfer consistency, not physical camera calibration accuracy"
+          }
+        ],
+        "layout_modified": false,
+        "limitations": [
+          "static furniture with explicit conservative collision proxies",
+          "soft fabrics, hinged cabinets and movable objects are not dynamically identified",
+          "OBJ visual meshes use flat per-entity colors in MJCF; textured reference visuals are in Blender/GLB/USD"
+        ],
+        "collision_reference": "https://mujoco.readthedocs.io/en/stable/XMLreference.html#asset-mesh",
+        "opening_ray_tests": [
+          {
+            "wall": "wall_left",
+            "bounds": [
+              -0.7498150962320744,
+              1.5741735881828403,
+              0.1674491696165059,
+              2.64683140287836
+            ],
+            "status": "passed",
+            "samples": [
+              {
+                "origin_m": [
+                  -1.0260681163312515,
+                  -0.5174162277905829,
+                  0.41538739294269134
+                ],
+                "wall_distance_m": -1.0
+              },
+              {
+                "origin_m": [
+                  -1.0260681163312515,
+                  -0.5174162277905829,
+                  1.4071402862474331
+                ],
+                "wall_distance_m": -1.0
+              },
+              {
+                "origin_m": [
+                  -1.0260681163312515,
+                  -0.5174162277905829,
+                  2.398893179552175
+                ],
+                "wall_distance_m": -1.0
+              },
+              {
+                "origin_m": [
+                  -1.0260681163312515,
+                  0.412179245975383,
+                  0.41538739294269134
+                ],
+                "wall_distance_m": -1.0
+              },
+              {
+                "origin_m": [
+                  -1.0260681163312515,
+                  0.412179245975383,
+                  1.4071402862474331
+                ],
+                "wall_distance_m": -1.0
+              },
+              {
+                "origin_m": [
+                  -1.0260681163312515,
+                  0.412179245975383,
+                  2.398893179552175
+                ],
+                "wall_distance_m": -1.0
+              },
+              {
+                "origin_m": [
+                  -1.0260681163312515,
+                  1.341774719741349,
+                  0.41538739294269134
+                ],
+                "wall_distance_m": -1.0
+              },
+              {
+                "origin_m": [
+                  -1.0260681163312515,
+                  1.341774719741349,
+                  1.4071402862474331
+                ],
+                "wall_distance_m": -1.0
+              },
+              {
+                "origin_m": [
+                  -1.0260681163312515,
+                  1.341774719741349,
+                  2.398893179552175
+                ],
+                "wall_distance_m": -1.0
+              }
+            ],
+            "scope": "structural wall only; glazing not tested"
+          }
+        ],
+        "structural_collision_source": "axis-aligned canonical room surfaces with declared rectangular openings; visual AABBs excluded"
+      },
+      "input_unchanged": true,
+      "wall_seconds": 3.408669834025204
+    },
+    {
+      "group": "appearance_only",
+      "status": "failed",
+      "model_sha256": "9dc660ff17a12e6acd5cb6ad6f9406176acd30ac4dbac5edaeb1018b6c1630bc",
+      "image_sha256": "7872ed3cf5da5e404887476bc729bc861e37d04cd6e97e4703ef798e16a49584",
+      "matched_camera_and_render_settings": true,
+      "appearance": {
+        "bedding": {
+          "rgb_mae": 0.12308048186594897,
+          "mean_absolute_log_luminance_ratio": 0.6670848286679303
+        },
+        "vent": {
+          "rgb_mae": 0.10728921568627452,
+          "mean_absolute_log_luminance_ratio": 0.46430738172840685
+        }
+      },
+      "geometry": {
+        "expected_objects": 2,
+        "passed_objects": 2,
+        "failed_objects": 0,
+        "error_objects": 0,
+        "pass_rate": 1.0,
+        "expected_masks": 2,
+        "mean_iou_with_failures": 0.9543002502228372,
+        "mean_boundary_px_with_failures": 4.948915964571085,
+        "expected_landmarks": 0,
+        "failed_landmarks": 0,
+        "mean_landmark_error_px_with_failures": null
+      },
+      "geometry_export_returncode": 12,
+      "error": "RuntimeError('Geometry export failed; see retained log')",
+      "wall_seconds": 0.9671611549565569
+    },
+    {
+      "group": "combined",
+      "status": "evaluated",
+      "model_sha256": "5466a6ee24fa16c10d9b1bf71972ae2c7d53be6aa03dfcfc0491684dfb13e87f",
+      "image_sha256": "fab2e23a7a22963763a632daee90d25d7167719e671089d321c0406646022a9e",
+      "matched_camera_and_render_settings": true,
+      "appearance": {
+        "bedding": {
+          "rgb_mae": 0.12320795420564738,
+          "mean_absolute_log_luminance_ratio": 0.6698844917551644
+        },
+        "vent": {
+          "rgb_mae": 0.10682551353874882,
+          "mean_absolute_log_luminance_ratio": 0.4624811977681583
+        }
+      },
+      "geometry": {
+        "expected_objects": 2,
+        "passed_objects": 2,
+        "failed_objects": 0,
+        "error_objects": 0,
+        "pass_rate": 1.0,
+        "expected_masks": 2,
+        "mean_iou_with_failures": 0.9613228555260039,
+        "mean_boundary_px_with_failures": 4.144214041546291,
+        "expected_landmarks": 0,
+        "failed_landmarks": 0,
+        "mean_landmark_error_px_with_failures": null
+      },
+      "geometry_export_returncode": 0,
+      "static_returncode": 0,
+      "static_audit": {
+        "status": "passed",
+        "mujoco_version": "3.13.0",
+        "bodies": 16,
+        "geoms": 37,
+        "visual_meshes": 15,
+        "required_entities_present": [
+          "floor",
+          "ceiling",
+          "wall_back",
+          "wall_front",
+          "wall_left",
+          "wall_right",
+          "ceiling_fixtures"
+        ],
+        "probe_steps": 1500,
+        "probe_final_position_m": [
+          -0.95606812,
+          -2.08,
+          0.029845055560265232
+        ],
+        "six_surface_ray_tests": {
+          "left": {
+            "origin_m": [
+              -1.0260681163312515,
+              -2.08,
+              2.62683140287836
+            ],
+            "hit_body": "wall_left",
+            "distance_m": 0.049999983668748416,
+            "expected_m": 0.05,
+            "error_m": 1.6331251587176077e-08,
+            "rejected_candidate_count": 0,
+            "occluded_examples": []
+          },
+          "right": {
+            "origin_m": [
+              2.5500000000000003,
+              -0.005624464454631273,
+              2.62683140287836
+            ],
+            "hit_body": "wall_right",
+            "distance_m": 0.04999999999999988,
+            "expected_m": 0.05,
+            "error_m": 1.249000902703301e-16,
+            "rejected_candidate_count": 0,
+            "occluded_examples": []
+          },
+          "back": {
+            "origin_m": [
+              0.7619659418343743,
+              2.138751071090738,
+              2.62683140287836
+            ],
+            "hit_body": "wall_back",
+            "distance_m": 0.05000002890926197,
+            "expected_m": 0.05,
+            "error_m": 2.8909261970411215e-08,
+            "rejected_candidate_count": 0,
+            "occluded_examples": []
+          },
+          "front": {
+            "origin_m": [
+              0.7619659418343743,
+              -2.1500000000000004,
+              2.62683140287836
+            ],
+            "hit_body": "wall_front",
+            "distance_m": 0.049999999999999434,
+            "expected_m": 0.05,
+            "error_m": 5.689893001203927e-16,
+            "rejected_candidate_count": 0,
+            "occluded_examples": []
+          },
+          "ceiling": {
+            "origin_m": [
+              -0.9560681163312515,
+              -2.08,
+              2.62683140287836
+            ],
+            "hit_body": "ceiling",
+            "distance_m": 0.039999997121639874,
+            "expected_m": 0.04,
+            "error_m": 2.8783601266346714e-09,
+            "rejected_candidate_count": 0,
+            "occluded_examples": []
+          },
+          "floor": {
+            "origin_m": [
+              -0.9560681163312515,
+              -2.08,
+              1.33341570143918
+            ],
+            "hit_body": "floor",
+            "distance_m": 1.33341570143918,
+            "expected_m": 1.33341570143918,
+            "error_m": 0.0,
+            "rejected_candidate_count": 0,
+            "occluded_examples": []
+          }
+        },
+        "camera_transfer": [
+          {
+            "camera": "source_camera",
+            "canonical_fx_fy_cx_cy": [
+              681.3127150155914,
+              681.3127150155914,
+              851,
+              638
+            ],
+            "recovered_from_engine_frustum": [
+              681.3126995946387,
+              681.3127441616467,
+              851.0,
+              638.0
+            ],
+            "maximum_transfer_error_px": 2.914605533987924e-05,
+            "interpretation": "format transfer consistency, not physical camera calibration accuracy"
+          }
+        ],
+        "layout_modified": false,
+        "limitations": [
+          "static furniture with explicit conservative collision proxies",
+          "soft fabrics, hinged cabinets and movable objects are not dynamically identified",
+          "OBJ visual meshes use flat per-entity colors in MJCF; textured reference visuals are in Blender/GLB/USD"
+        ],
+        "collision_reference": "https://mujoco.readthedocs.io/en/stable/XMLreference.html#asset-mesh",
+        "opening_ray_tests": [
+          {
+            "wall": "wall_left",
+            "bounds": [
+              -0.7498150962320744,
+              1.5741735881828403,
+              0.1674491696165059,
+              2.64683140287836
+            ],
+            "status": "passed",
+            "samples": [
+              {
+                "origin_m": [
+                  -1.0260681163312515,
+                  -0.5174162277905829,
+                  0.41538739294269134
+                ],
+                "wall_distance_m": -1.0
+              },
+              {
+                "origin_m": [
+                  -1.0260681163312515,
+                  -0.5174162277905829,
+                  1.4071402862474331
+                ],
+                "wall_distance_m": -1.0
+              },
+              {
+                "origin_m": [
+                  -1.0260681163312515,
+                  -0.5174162277905829,
+                  2.398893179552175
+                ],
+                "wall_distance_m": -1.0
+              },
+              {
+                "origin_m": [
+                  -1.0260681163312515,
+                  0.412179245975383,
+                  0.41538739294269134
+                ],
+                "wall_distance_m": -1.0
+              },
+              {
+                "origin_m": [
+                  -1.0260681163312515,
+                  0.412179245975383,
+                  1.4071402862474331
+                ],
+                "wall_distance_m": -1.0
+              },
+              {
+                "origin_m": [
+                  -1.0260681163312515,
+                  0.412179245975383,
+                  2.398893179552175
+                ],
+                "wall_distance_m": -1.0
+              },
+              {
+                "origin_m": [
+                  -1.0260681163312515,
+                  1.341774719741349,
+                  0.41538739294269134
+                ],
+                "wall_distance_m": -1.0
+              },
+              {
+                "origin_m": [
+                  -1.0260681163312515,
+                  1.341774719741349,
+                  1.4071402862474331
+                ],
+                "wall_distance_m": -1.0
+              },
+              {
+                "origin_m": [
+                  -1.0260681163312515,
+                  1.341774719741349,
+                  2.398893179552175
+                ],
+                "wall_distance_m": -1.0
+              }
+            ],
+            "scope": "structural wall only; glazing not tested"
+          }
+        ],
+        "structural_collision_source": "axis-aligned canonical room surfaces with declared rectangular openings; visual AABBs excluded"
+      },
+      "input_unchanged": true,
+      "wall_seconds": 3.4833468249998987
+    }
+  ],
+  "protocol_sha256": "296a9efdeea88e3762b17e7d8333b6e92385f3ef54c7adcf4c439a22654ec9dd",
+  "script_sha256": "84dc81e74a94858e54f6553e2e707dfb5a61040a9d65bc4a335c1dcba316389c",
+  "scope": "One in-sample room, component and combination diagnostics; not independent visual accuracy or SOTA"
+}

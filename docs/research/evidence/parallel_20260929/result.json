@@ -1,0 +1,98 @@
+{
+  "status": "completed",
+  "fresh_simulation": true,
+  "attempt": 1,
+  "simulation_runtime_seconds": 6.577992890030146,
+  "mj_step_calls": 19741,
+  "simulation_integrated_seconds": 19.741000000001144,
+  "initial_handle_deg": 4.571761720685505e-05,
+  "final_logged_handle_deg": 40.0214408249305,
+  "final_solver_handle_deg": 40.0214408249305,
+  "contact_seconds_recomputed": 0.199,
+  "pre_interaction_drift_deg_recomputed": 0.001973353319482903,
+  "original_task_pass_recomputed": true,
+  "original_result_task_pass": true,
+  "result_agrees_with_recomputation": true,
+  "gripper_handle_contact_steps": 199,
+  "gripper_handle_contact_seconds": 0.199,
+  "total_handle_contact_entries": 239,
+  "contact_pair_entry_counts": {
+    "handle_loop_collision_51 / left_inner_finger_collision0": 159,
+    "handle_loop_collision_54 / left_inner_finger_collision0": 37,
+    "handle_loop_collision_57 / left_inner_finger_collision0": 33,
+    "handle_loop_collision_60 / left_inner_finger_collision0": 10
+  },
+  "all_states_finite": true,
+  "control_limits_respected": true,
+  "solver_warnings": {},
+  "state_discontinuities_between_steps": [],
+  "no_between_step_state_injection": true,
+  "historical_replay_read": false,
+  "original_result": {
+    "label": "fresh_nominal",
+    "duration_s": 18.441999912261963,
+    "timestep_s": 0.001,
+    "handle_is_passive": true,
+    "handle_has_actuator_or_pose_script": false,
+    "hinge_frictionloss_Nm": 0.1,
+    "faucet_offset_m": [
+      0,
+      0,
+      0
+    ],
+    "initial_handle_deg": 4.571761720685505e-05,
+    "final_handle_deg": 40.0214408249305,
+    "max_handle_deg": 40.0214408249305,
+    "task_rotation_achieved": true,
+    "contact_seconds": 0.19900000000000015,
+    "contact_pairs_seconds": {
+      "handle_loop_collision_51 / left_inner_finger_collision0": 0.1590000000000001,
+      "handle_loop_collision_54 / left_inner_finger_collision0": 0.037000000000000026,
+      "handle_loop_collision_57 / left_inner_finger_collision0": 0.03300000000000002,
+      "handle_loop_collision_60 / left_inner_finger_collision0": 0.010000000000000002
+    },
+    "peak_contact_force_N": 11.034400482309081,
+    "arm_tracking_rmse_rad": 0.0003933534373039082,
+    "arm_tracking_max_rad": 0.0028513306241082503,
+    "within_position_limits": true,
+    "position_limit_min_margin_rad": 0.7829923991205487,
+    "max_joint_velocity_rad_s": [
+      0.11161196500620504,
+      0.4038675323596897,
+      0.1545312587340425,
+      0.5979121200219997,
+      0.14889260212825375,
+      0.42802951522436955,
+      0.23060487734203142
+    ],
+    "max_motor_torque_Nm": [
+      3.7692859746453005,
+      52.258506781682414,
+      3.213170515464266,
+      24.342908648158165,
+      1.5750395559665469,
+      2.695573327651789,
+      0.34042443503820086
+    ],
+    "max_penetration_m": 5.466872593597703e-05,
+    "penetration_p95_m": 0.0,
+    "max_unintended_penetration_m": 0.0,
+    "unintended_contacts": {},
+    "worst_contact": {
+      "time_s": 17.139,
+      "pair": "handle_loop_collision_54 / left_inner_finger_collision0",
+      "penetration_m": 5.466872593597703e-05
+    },
+    "pre_interaction_drift_deg": 0.001973353319482903
+  },
+  "actual_controls_and_states_sha256": "2cd12b8dbb56896f622be56dc572ff3c9478686bd3fdf89c86e8983917dc4293",
+  "actual_handle_contacts_sha256": "2de33912f154f9c7bf9fd131f08f645f7581338c487552f726acb63a750d3e6a",
+  "total_runtime_seconds": 7.898868927033618,
+  "experiment_config_sha256": "01d55803d663315619eb746e58fb117798d2505ab6e86ec1d42b23657a075b6f",
+  "limitations": [
+    "Reproduces a third-party nominal controller/model under current MuJoCo, not our room reconstruction.",
+    "Original endpoint predicate is lever angle/contact/drift, not validated water-flow shutoff.",
+    "Original unintended-contact exclusions and physical priors remain unchanged.",
+    "No physical parameter search or adaptation was performed; no general SOTA conclusion follows."
+  ]
+}

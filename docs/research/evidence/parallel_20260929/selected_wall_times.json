@@ -1,0 +1,38 @@
+[
+  {
+    "path": "/home/wqz/real2sim_capability_20260929/runs/sfm_init_006/receipt.json",
+    "wall_seconds": 12.865734520950355
+  },
+  {
+    "path": "/home/wqz/real2sim_capability_20260929/runs/video_frames_aux_001/freeze.json",
+    "wall_seconds": 4.703497571055777
+  },
+  {
+    "path": "/home/wqz/real2sim_capability_20260929/runs/appearance_001/actions.json",
+    "wall_seconds": 17.62801795708947
+  },
+  {
+    "path": "/home/wqz/real2sim_capability_20260929/runs/combined_001/actions.json",
+    "wall_seconds": 17.66785665601492
+  },
+  {
+    "path": "/home/wqz/real2sim_capability_20260929/runs/appearance_metadata_fix_001/actions.json",
+    "wall_seconds": 18.130174970952794
+  },
+  {
+    "path": "/home/wqz/real2sim_capability_20260929/runs/pilot_ab_001/control/round1/action_receipt.json",
+    "wall_seconds": 17.961299977032468
+  },
+  {
+    "path": "/home/wqz/real2sim_capability_20260929/runs/pilot_ab_001/control/round2/action_receipt.json",
+    "wall_seconds": 17.950165309011936
+  },
+  {
+    "path": "/home/wqz/real2sim_capability_20260929/runs/pilot_ab_001/feedback/round1/action_receipt.json",
+    "wall_seconds": 18.13826411496848
+  },
+  {
+    "path": "/home/wqz/real2sim_capability_20260929/runs/pilot_ab_001/feedback/round2/action_receipt.json",
+    "wall_seconds": 18.041012724046595
+  }
+]

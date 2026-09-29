@@ -1,0 +1,413 @@
+{
+  "schema": "real2sim.appearance-candidate/1",
+  "status": "rendered",
+  "input_blend": "/home/wqz/real2sim_whole_scene_20260926/delivery_candidate/export/scene.blend",
+  "input_blend_sha256": "e140b8ae0f133a87cbaa77e576ea164512e57c3bd9a56552841f8596b9126e51",
+  "input_scene_sha256": "dbc328d7ac938334900c47e97fc8cc6ad412a98b97836d053367edb12e0dcf9b",
+  "script_sha256": "12bf9813e8a2c47ddc4d8859dbf57977af2bba02d7c8ff548c964d36f7ebf15d",
+  "physical_features": {
+    "hinges": false,
+    "cloth": false,
+    "soft_bodies": false
+  },
+  "source_photo_textures_added": false,
+  "proposal_count": 1,
+  "proposal": {
+    "id": "static_duvet_folds_neutral_vent_v1",
+    "maximum_added_height_m": 0.022,
+    "vent_linear_rgb": [
+      0.36,
+      0.36,
+      0.36
+    ],
+    "vent_roughness": 0.85,
+    "ridge_parameters": [
+      [
+        -0.25,
+        0.32,
+        0.36,
+        0.035,
+        0.4,
+        0.018
+      ],
+      [
+        0.12,
+        0.58,
+        -0.48,
+        0.026,
+        0.36,
+        0.015
+      ],
+      [
+        -0.04,
+        0.86,
+        0.72,
+        0.045,
+        0.46,
+        0.022
+      ],
+      [
+        0.32,
+        0.91,
+        -0.65,
+        0.024,
+        0.31,
+        0.016
+      ],
+      [
+        -0.3,
+        1.11,
+        -0.25,
+        0.04,
+        0.35,
+        0.02
+      ],
+      [
+        0.19,
+        1.21,
+        0.55,
+        0.033,
+        0.3,
+        0.014
+      ]
+    ],
+    "interpretation": "Single procedural geometry hypothesis from authorized baseline/source appearance; no source-photo pixels or parameter search."
+  },
+  "modified_targets": [
+    "bed_duvet",
+    "vent_slot_0",
+    "vent_slot_1",
+    "vent_slot_10",
+    "vent_slot_11",
+    "vent_slot_12",
+    "vent_slot_13",
+    "vent_slot_14",
+    "vent_slot_2",
+    "vent_slot_3",
+    "vent_slot_4",
+    "vent_slot_5",
+    "vent_slot_6",
+    "vent_slot_7",
+    "vent_slot_8",
+    "vent_slot_9"
+  ],
+  "duvet_vertices": 21809,
+  "duvet_modified_vertices": 12425,
+  "duvet_added_height_max_m": 0.022,
+  "duvet_added_height_mean_m": 0.0011516459114010247,
+  "duvet_extent_before": [
+    1.2950595617294312,
+    1.8625719547271729,
+    0.19349563121795654
+  ],
+  "duvet_extent_after": [
+    1.2950595617294312,
+    1.8625719547271729,
+    0.20173919200897217
+  ],
+  "audit": {
+    "status": "passed",
+    "object_count": 471,
+    "non_target_count": 455,
+    "all_object_transforms_unchanged": true,
+    "rigid_dimensions_unchanged": true,
+    "non_target_materials_unchanged": true,
+    "before_non_target_sha256": "813c5d04fa0b832a7e2792da42006d0bfccdce8bf2d8c0ca1a9006d5160874d7",
+    "after_non_target_sha256": "813c5d04fa0b832a7e2792da42006d0bfccdce8bf2d8c0ca1a9006d5160874d7"
+  },
+  "camera": {
+    "name": "source_camera",
+    "matrix_world": [
+      0.7251594662666321,
+      -0.13864880800247192,
+      0.674477756023407,
+      1.7480084896087646,
+      0.6875303387641907,
+      0.09170212596654892,
+      -0.7203420996665955,
+      -1.2246108055114746,
+      0.03802352398633957,
+      0.9860868453979492,
+      0.16182392835617065,
+      1.3833105564117432,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "lens": 14.410844802856445,
+    "shift_x": 0.0,
+    "shift_y": 0.0
+  },
+  "render_settings": {
+    "samples": 8,
+    "denoise": true,
+    "adaptive_sampling": false,
+    "seed": 0,
+    "threads": 2,
+    "device": "CPU",
+    "source_resolution": [
+      1702,
+      1276
+    ],
+    "resolution_percentage": 50,
+    "output_resolution": [
+      851,
+      638
+    ],
+    "view_transform": "AgX",
+    "exposure": 0.0
+  },
+  "metadata_sync": {
+    "status": "passed",
+    "evaluated_meshes": true,
+    "tolerance_m": 1e-05,
+    "updated": true,
+    "entities": [
+      {
+        "entity": "bed",
+        "world_aabb": [
+          [
+            -0.7067428231239319,
+            -0.011446597054600716,
+            0.0
+          ],
+          [
+            0.6363198757171631,
+            2.1044437885284424,
+            0.8658517599105835
+          ]
+        ],
+        "max_metadata_error_before_m": 0.008967399597167969
+      },
+      {
+        "entity": "blinds",
+        "world_aabb": [
+          [
+            -1.0105681419372559,
+            -0.7411518692970276,
+            1.0280522108078003
+          ],
+          [
+            -0.9640681147575378,
+            1.5444422960281372,
+            2.647595167160034
+          ]
+        ],
+        "max_metadata_error_before_m": 0.0
+      },
+      {
+        "entity": "ceiling",
+        "world_aabb": [
+          [
+            -1.0760681629180908,
+            -2.200000047683716,
+            2.6668314933776855
+          ],
+          [
+            2.5999999046325684,
+            2.188750982284546,
+            2.7868313789367676
+          ]
+        ],
+        "max_metadata_error_before_m": 0.0
+      },
+      {
+        "entity": "ceiling_fixtures",
+        "world_aabb": [
+          [
+            -0.29244866967201233,
+            -2.0,
+            2.5868313312530518
+          ],
+          [
+            1.8784854412078857,
+            1.6849195957183838,
+            2.6668312549591064
+          ]
+        ],
+        "max_metadata_error_before_m": 0.0
+      },
+      {
+        "entity": "exterior",
+        "world_aabb": [
+          [
+            -6.576067924499512,
+            -4.0,
+            -0.6000000238418579
+          ],
+          [
+            -1.5760679244995117,
+            5.0,
+            1.8711519241333008
+          ]
+        ],
+        "max_metadata_error_before_m": 0.0
+      },
+      {
+        "entity": "floor",
+        "world_aabb": [
+          [
+            -1.0760681629180908,
+            -2.200000047683716,
+            -0.11999999731779099
+          ],
+          [
+            2.5999999046325684,
+            2.188750982284546,
+            0.0
+          ]
+        ],
+        "max_metadata_error_before_m": 0.0
+      },
+      {
+        "entity": "glass_partition",
+        "world_aabb": [
+          [
+            2.0339999198913574,
+            -0.9000000357627869,
+            0.0
+          ],
+          [
+            2.0625,
+            0.7139999866485596,
+            2.440000057220459
+          ]
+        ],
+        "max_metadata_error_before_m": 0.0
+      },
+      {
+        "entity": "reflective_board",
+        "world_aabb": [
+          [
+            -0.5762826800346375,
+            2.1597511768341064,
+            0.8692947626113892
+          ],
+          [
+            1.0704889297485352,
+            2.1677510738372803,
+            1.9621294736862183
+          ]
+        ],
+        "max_metadata_error_before_m": 0.0
+      },
+      {
+        "entity": "shoe_cabinet",
+        "world_aabb": [
+          [
+            -0.9096317291259766,
+            -1.652000069618225,
+            0.0
+          ],
+          [
+            -0.5016317367553711,
+            -0.5,
+            1.061261534690857
+          ]
+        ],
+        "max_metadata_error_before_m": 0.001999974250793457
+      },
+      {
+        "entity": "wall_back",
+        "world_aabb": [
+          [
+            -1.0760681629180908,
+            2.1637511253356934,
+            0.0
+          ],
+          [
+            2.5999999046325684,
+            2.308751106262207,
+            2.6668314933776855
+          ]
+        ],
+        "max_metadata_error_before_m": 0.0
+      },
+      {
+        "entity": "wall_front",
+        "world_aabb": [
+          [
+            -1.0760681629180908,
+            -2.319999933242798,
+            0.0
+          ],
+          [
+            2.5999999046325684,
+            -2.200000047683716,
+            2.6668314933776855
+          ]
+        ],
+        "max_metadata_error_before_m": 0.0
+      },
+      {
+        "entity": "wall_left",
+        "world_aabb": [
+          [
+            -1.1960680484771729,
+            -2.200000047683716,
+            0.0
+          ],
+          [
+            -1.0760681629180908,
+            2.188751220703125,
+            2.6668314933776855
+          ]
+        ],
+        "max_metadata_error_before_m": 0.0
+      },
+      {
+        "entity": "wall_right",
+        "world_aabb": [
+          [
+            2.6000001430511475,
+            -2.200000047683716,
+            0.0
+          ],
+          [
+            2.7200000286102295,
+            2.188750982284546,
+            2.6668314933776855
+          ]
+        ],
+        "max_metadata_error_before_m": 0.0
+      },
+      {
+        "entity": "wardrobe",
+        "world_aabb": [
+          [
+            1.1852307319641113,
+            1.5317511558532715,
+            0.0
+          ],
+          [
+            1.9807307720184326,
+            2.1452510356903076,
+            2.009999990463257
+          ]
+        ],
+        "max_metadata_error_before_m": 0.0014998912811279297
+      },
+      {
+        "entity": "window",
+        "world_aabb": [
+          [
+            -1.1000680923461914,
+            -0.7708151340484619,
+            0.12494917213916779
+          ],
+          [
+            -0.9360681176185608,
+            1.5951735973358154,
+            2.6693315505981445
+          ]
+        ],
+        "max_metadata_error_before_m": 0.0
+      }
+    ]
+  },
+  "output_blend_sha256": "89627cb903612d1340ad2d4d277e38ae4acd68be60fbe91afdf443d3b3fb0537",
+  "output_scene_sha256": "4ef3fc88b7056ca646af7c0e513250ec32e8075a4545587bd354f2da22145566",
+  "render_sha256": "20bf09692ed846e1dab78acae29616a46241cea419909b9372c721f843dbb275",
+  "wall_seconds": 18.130174970952794
+}

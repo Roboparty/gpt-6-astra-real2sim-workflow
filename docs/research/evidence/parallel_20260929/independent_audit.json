@@ -1,0 +1,91 @@
+{
+  "audit_kind": "independent recomputation from saved fresh step arrays",
+  "all_source_input_hashes_unchanged": {
+    "scene.xml": true,
+    "recorded_trajectory.npz": true,
+    "simulate.py": true,
+    "scene_parameters.json": true
+  },
+  "step_count": 19741,
+  "actual_timestep_min_s": 0.0009999999999994458,
+  "actual_timestep_max_s": 0.0010000000000012221,
+  "state_and_control_all_finite": true,
+  "actual_end_angle_deg": 40.0214408249305,
+  "actual_max_angle_deg": 40.0214408249305,
+  "control_limits_satisfied_all_steps": true,
+  "arm_position_min_margin_all_steps_rad": 0.7829918166088086,
+  "max_arm_speed_all_steps_rad_s": [
+    0.11165348328885229,
+    0.40415318602053246,
+    0.15458219641024593,
+    0.5979504899948181,
+    0.14895533202404065,
+    0.42941944737147564,
+    0.23071612317446658
+  ],
+  "contact_steps_from_sparse_rows": 199,
+  "contact_steps_match_dense_counts": true,
+  "peak_handle_contact_force_N": 11.034400482309081,
+  "maximum_penetration_all_contacts_m": 5.466872593597703e-05,
+  "old_replays_present_in_input": [],
+  "artifacts": {
+    "actual_controls_and_states.npz": {
+      "bytes": 5036889,
+      "sha256": "2cd12b8dbb56896f622be56dc572ff3c9478686bd3fdf89c86e8983917dc4293"
+    },
+    "actual_handle_contacts.npz": {
+      "bytes": 9879,
+      "sha256": "2de33912f154f9c7bf9fd131f08f645f7581338c487552f726acb63a750d3e6a"
+    },
+    "result.json": {
+      "bytes": 3926,
+      "sha256": "b63b67bf573dd44e5b7b4398d1e15801741649bbcd8c26133211e54ba1d89a14"
+    },
+    "runtime_setup.json": {
+      "bytes": 11497,
+      "sha256": "a90aa08dffe657d64d05221b41a3f8eea970d787935da517d898c20a8977c49f"
+    },
+    "experiment_config.json": {
+      "bytes": 850,
+      "sha256": "01d55803d663315619eb746e58fb117798d2505ab6e86ec1d42b23657a075b6f"
+    },
+    "compatibility.patch": {
+      "bytes": 299,
+      "sha256": "72ac82e349aaf8d80ffde91509d9b4694759b3137b77056821e33192aa35cc4b"
+    }
+  },
+  "array_hash_algorithm": "SHA256 of C-order raw array bytes; shape and dtype separately recorded",
+  "array_hashes": {
+    "time": {
+      "sha256": "4afebfb5dcf775465c74c34603ffe9db7bc055cd44ec39d5d4e62fea4255f4d6",
+      "shape": [
+        19741
+      ],
+      "dtype": "float64"
+    },
+    "controls": {
+      "sha256": "33d817c1315445c34fa51e78c4236aaf65f5c7f4226e90804e3c056a2268bcbe",
+      "shape": [
+        19741,
+        8
+      ],
+      "dtype": "float64"
+    },
+    "qpos": {
+      "sha256": "00296f93a2dd1ee062bf74fa690ec1f8b01aafb5e7ef0e64925966cb19be113f",
+      "shape": [
+        19741,
+        14
+      ],
+      "dtype": "float64"
+    },
+    "qvel": {
+      "sha256": "f19d5ea7ef9fb403465db19ae4bc38664c8e3daf9046acae90e5e8623ce9c05f",
+      "shape": [
+        19741,
+        14
+      ],
+      "dtype": "float64"
+    }
+  }
+}

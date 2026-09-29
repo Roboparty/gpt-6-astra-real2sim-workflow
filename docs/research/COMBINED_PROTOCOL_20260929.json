@@ -1,0 +1,17 @@
+{
+  "schema":"real2sim.combined-development-protocol/1",
+  "status":"registered_before_combined_run",
+  "baseline":"retained independent room, original bytes from PILOT_AB_PROTOCOL_20260929.json",
+  "expected_scene_count":1,
+  "expected_candidate_groups":["unchanged_baseline","render_only_round2","numeric_feedback_round2","appearance_only","combined"],
+  "combination_rule":"Combine the final prescribed numeric-feedback pose proposal with the single prescribed appearance proposal; never choose a pose arm or appearance trial after looking at its score",
+  "appearance_scope":"Static geometric textile folds and neutral vent contrast only; preserve all canonical furniture poses and rigid dimensions in appearance-only group",
+  "physical_features":{"hinges":false,"cloth":false,"soft_bodies":false},
+  "metrics":["frozen two-cabinet IoU and contour distance","canonical static collision check","source-image regional appearance residuals on predeclared bedding and vent regions","actual before/after visual inspection"],
+  "appearance_regions_xyxy":{"bedding":[625,700,1135,940],"vent":[1210,30,1490,190]},
+  "appearance_metric":"Mean absolute log luminance ratio and mean RGB absolute difference, same camera/resolution/exposure; in-sample diagnostic, not physical reflectance accuracy",
+  "budget":{"appearance_candidates":1,"combined_candidates":1,"cpu_wall_seconds_per_candidate":1800},
+  "failures":"Retain failed groups and full 5-group inventory. Do not replace failed final-round proposals with earlier or better-scoring ones.",
+  "attribution":"Combined differences cannot be attributed to an individual mechanism; component groups are retained",
+  "scope":"One development scene only. Not three-video benchmark, physical parameter recovery or SOTA"
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "id": "open_concept_g0034",
+    "all_original_hashes_retained": true,
+    "registered_original": 2,
+    "original_denominator": 6,
+    "registered_all": 4,
+    "points": 90
+  },
+  {
+    "id": "bedroom_waterfront_g0024",
+    "all_original_hashes_retained": true,
+    "registered_original": 3,
+    "original_denominator": 6,
+    "registered_all": 6,
+    "points": 1
+  },
+  {
+    "id": "breakfast_nook_kitchen_g0039",
+    "all_original_hashes_retained": true,
+    "registered_original": 5,
+    "original_denominator": 6,
+    "registered_all": 10,
+    "points": 607
+  }
+]
