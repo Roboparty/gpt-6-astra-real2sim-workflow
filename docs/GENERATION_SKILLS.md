@@ -35,6 +35,8 @@ python -m r2s run /new/case
 
 已有真实输出时，设置 `reference.mode: consume`，提供冻结输入清单、raw NPZ 和 provenance 路径；也可用创建器的 `--reference-mode consume --reference-manifest ... --reference-npz ... --reference-provenance ...`。适配器核对原始/预处理允许输入的哈希、固定帧顺序、版本、预处理、相机/点云一致性和置信度格式。生成阶段不得读入 heldout 帧；正式案例拒绝合成 NPZ。消费输出与真实模型运行证据仍分别记录，不能把 contract pass 当作推理成功。
 
+正式参考还必须提供存在且哈希匹配的后端运行收据与日志，绑定输入、输出、模型版本、帧顺序和预处理，并记录实际 forward 与完整权重加载状态。具体格式见[参考契约](../.agents/skills/pi3x-scene-reference/references/contract.md)。消费者只能验证这些生产者声明的一致性，不能认证其真实性；缺失或不一致的凭据返回 `needs_input`。执行阶段不允许用 `r2s accept` 手工改为成功，必须修复输入后重试。
+
 Pi3X 已知准备仍未完成，此接入没有恢复安装或真实推理。原始权重的非商业许可和近似尺度限制见技能资料。
 
 ## RoomKit 在哪里构建
@@ -44,6 +46,10 @@ Pi3X 已知准备仍未完成，此接入没有恢复安装或真实推理。原
 清单的每个 `id` 必须同时对应结构 part id 和 Blender object name；`assembly` 对应 canonical entity。清单只放家具/灯具等非壳体部件，必须覆盖 canonical 非壳体实体。尺寸、隐蔽结构和初始化光照均明确标为 assumed。现有自定义精细 Blender 模型仍可直接提交，不能为了使用 RoomKit 降级成统一圆角盒。静态褶皱不是布料仿真，铰链/布料/体积柔体仍是显式可选功能。
 
 灰模之后继续执行现有 `blender_metadata`、`blender_structure`、固定源图及四墙视图渲染。模板支持不等于结构/视觉通过。
+
+原生适配器把逐部件 `box` 代理写入 canonical `parameters.collision_proxies`，移除 Blender 中仅供作者检查的隐藏碰撞辅助网格，避免其进入视觉导出。混合实体中 `none` 部件不创建代理；当前仿真器无法可靠表达整个实体全部 `none`，适配器明确拒绝，而不静默退回整物 AABB。已有手写 canonical 代理不能与 RoomKit 代理混用。空家具路线要求固定灯具采用与语义实体相同的单网格名称，并保留原有明确空家具声明和审查。
+
+自动 Agent 命令与后续 RoomKit 构建共用剩余 refinement 时间；Agent 已消耗的本阶段时间会在启动构建前扣除。外部手动 `accept` 也受已有预算约束，不会另起预算。
 
 ## 局部差异如何进入修改回路
 

@@ -71,7 +71,7 @@ scene={'schema_version':'real2sim.scene/1.0','units':'m','up_axis':'Z','branch':
           'fit':{'landmarks':[{'id':'front','part':'cabinet_body','world':[0,-.25,.25],'uv':[32,44.6]}]}}]}}
 parts={'schema':'roomkit/1','units':'m','parts':[
     {'id':'cabinet_body','assembly':'cabinet','kind':'box','size':[.5,.5,.5],'position':[0,0,.25],'rotation':[0,0,0],'prior_status':'assumed','prior_source':'synthetic fixture','collision':'box'},
-    {'id':'lamp_mesh','assembly':'lamp','kind':'box','size':[.3,.3,.1],'position':[0,0,2.3],'rotation':[0,0,0],'prior_status':'assumed','prior_source':'synthetic fixture','collision':'none'}]}
+    {'id':'lamp_mesh','assembly':'lamp','kind':'box','size':[.3,.3,.1],'position':[0,0,2.3],'rotation':[0,0,0],'prior_status':'assumed','prior_source':'synthetic fixture','collision':'box'}]}
 directory=Path(w.state['stages']['agent_model']['directory']);atomic_json(directory/'furniture_observation.json',obs)
 scene['structure']['observation_sha256']=file_hash(directory/'furniture_observation.json')
 accept('agent_model',{'scene.json':scene,'furniture_observation.json':obs,'roomkit_parts.json':parts},{'model_version':1})

@@ -1,0 +1,31 @@
+{
+  "status": "passed",
+  "tests": [
+    {
+      "case": "cannot_manually_accept_scene_reference",
+      "passed": true
+    },
+    {
+      "case": "cannot_manually_accept_local_geometry_feedback",
+      "passed": true
+    },
+    {
+      "case": "cannot_manually_accept_local_appearance_feedback",
+      "passed": true
+    },
+    {
+      "case": "required_reference_remains_blocked_and_state_unchanged",
+      "passed": true
+    },
+    {
+      "case": "55_second_agent_leaves_only_5_seconds_of_60_for_builder",
+      "passed": true
+    },
+    {
+      "case": "expired_active_stage_cannot_launch_roomkit",
+      "passed": true
+    }
+  ],
+  "total": 6,
+  "scope": "Actual blocked workflow accept checks plus mocked monotonic clock and builder; no real model API or extra Blender run"
+}

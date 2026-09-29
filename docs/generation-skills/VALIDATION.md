@@ -2,6 +2,12 @@
 
 This validates that native generation executes the adapters and passes their outputs into existing gates. It does not establish real-image reconstruction accuracy, Pi3X inference success, full-scene visual acceptance or SOTA.
 
+Later integration review found and repaired acceptance, provenance, time-budget
+and canonical collision-adapter gaps beyond this initial smoke. See the
+[merged-version validation](../research/UNIFIED_GENERATION_20260929.md) for actual
+export/MuJoCo tests and the expanded rejection checks. This original run record
+and its failures remain historical evidence, not proof of those later fixes.
+
 | Check | Result | Evidence |
 |---|---|---|
 | Skill contracts and CLIs | 49/49 | [case-level results](skill_contracts.json) |

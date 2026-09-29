@@ -14,13 +14,15 @@
     "status": "active"
   },
   "pull_request": {
-    "status": "not_created",
-    "reason": "GitHub connector returned 403 Resource not accessible by integration; Chrome control could not load request-header policy twice. Research branch push succeeded."
+    "status": "existing_generation_integration_pr",
+    "url": "https://github.com/Roboparty/gpt-6-astra-real2sim-workflow/pull/1",
+    "base": "codex/real2sim-capability-research-20260929",
+    "note": "Created by skill delivery thread; consolidated follow-up fixes are on unified/research branches, not yet merged into main"
   },
   "remote_root": "4090-1:/home/wqz/real2sim_capability_20260929",
   "protocol": "PROTOCOL_20260929.md",
   "result": "RESULTS_20260929.md",
-  "latest_update": "UPDATE_20260929T1145.md",
+  "latest_update": "UNIFIED_GENERATION_20260929.md",
   "completed": [
     "Matched retained-room collision failure reproduction and repair",
     "Rectangular opening handling and false-pass negative tests",
@@ -49,7 +51,8 @@
     "Explicit zero-furniture scene validation, actual source-view structural review and geometry-only export passed; seven negative cases and nonempty contract regressions retained",
     "Shared benchmark readiness audited across all three video sources and four methods; HKU pinned documentation now readable but raw inputs absent",
     "Additional retained shell/vent execution with frozen dd51a20 export and actual MuJoCo static probes: both shell/opening/support checks passed; vent-only structure failures retained",
-    "First source-bound visible-box bundle frozen for all 3 videos: 18 frames, 6 identities, 36 observations (17 observed boxes and 19 retained out-of-frame/null entries); internal overlay review and 13 negative contract checks passed"
+    "First source-bound visible-box bundle frozen for all 3 videos: 18 frames, 6 identities, 36 observations (17 observed boxes and 19 retained out-of-frame/null entries); internal overlay review and 13 negative contract checks passed",
+    "Native generation skills integrated with research annotations; executable-stage acceptance, shared Agent/builder budget, canonical RoomKit export and Pi3X receipt-binding fixes verified in 12/12 remote CPU groups"
   ],
   "next": [
     "Expand persistent object inventory with a versioned annotation protocol retaining frozen_v1: current two first-frame identities provide observed boxes in only 9/18 frames; no relabeling missing views or treating boxes as masks/ground truth",
@@ -115,7 +118,8 @@
     "shell_vent_factorial_001 (duplicate conditions retained; added frozen-export/static probes)",
     "annotation_previews_001 initial invocation (missing frames.json; no output)",
     "annotation_previews_001 corrected freeze.json invocation",
-    "annotations_20260929/frozen_v1 (three initial submissions plus one root overlay review)"
+    "annotations_20260929/frozen_v1 (three initial submissions plus one root overlay review)",
+    "unified_validation_001 (merged snapshot plus integration fixes, 12 runner groups)"
   ],
   "resource_accounting": {
     "new_gpu_hours": 0,
@@ -155,7 +159,10 @@
     "annotation_preview_execution_attempts_used": 2,
     "heartbeat_1145_selected_run_wall_seconds": 0.31613075907807797,
     "heartbeat_1145_verified_frame_preview_bytes": 1440886,
-    "heartbeat_1145_accounting_scope": "Measured remote JPEG preparation only; annotation/review/model cost, transfer and uninstrumented test wall times remain unknown. No new camera, appearance, combined or GPU trial."
+    "heartbeat_1145_accounting_scope": "Measured remote JPEG preparation only; annotation/review/model cost, transfer and uninstrumented test wall times remain unknown. No new camera, appearance, combined or GPU trial.",
+    "unified_generation_validation_wall_seconds": 59.61792353808414,
+    "unified_generation_validation_attempts_used": 1,
+    "separate_skill_delivery_accounting": "Prior skill delivery runs and failures remain in docs/generation-skills/VALIDATION.md; they were not reset or reclassified as research camera/appearance proposals"
   },
   "constraints": [
     "Do not overwrite historical candidates, source photographs or failed evidence",
@@ -197,5 +204,16 @@
     "frames_with_observed_boxes": 9,
     "provenance": "Internal agent visual estimates and root overlay review, not independent human ground truth",
     "scope": "Coarse visible boxes, development fitting; not masks, full scene inventory, common initialization or held-out evidence"
+  },
+  "integration": {
+    "status": "validated_development_candidate",
+    "branch": "codex/unified-generation-20260929",
+    "generation_parent": "a08fdcf",
+    "research_parent": "1be6116",
+    "checked_remote_main": "f0e61696e0b1d1b56f2a4df2404ed2cb0d1fff69",
+    "main_updated": false,
+    "native_flow": "quality_v2 opt-in generation_skills",
+    "verification": "evidence/unified_generation_20260929/summary.json",
+    "separate_cross_thread_release_instruction": "Reported by side-chat delegation; current heartbeat still explicitly forbids automatic main merge"
   }
 }

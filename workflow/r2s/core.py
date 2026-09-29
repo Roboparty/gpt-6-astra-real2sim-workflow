@@ -46,6 +46,11 @@ class Workflow:
             limits(self.config)
             if self.config.get('workflow_profile')!='quality_v2':raise ContractError('Refinement requires quality_v2')
     def save(self):atomic_json(self.state_path,self.state)
+    def remaining_refinement_seconds(self):
+        elapsed=self.state.get('refinement',{}).get('elapsed_seconds',0)
+        active=getattr(self,'_active_work_started',None)
+        if active is not None:elapsed+=max(0,time.monotonic()-active)
+        return limits(self.config)['max_seconds']-elapsed
     def event(self,data):
         with (self.root/'events.jsonl').open('a',encoding='utf-8') as f:f.write(json.dumps({'time':now(),**data},ensure_ascii=False)+'\n')
     def fingerprint(self,name):
@@ -115,13 +120,16 @@ class Workflow:
             history['comparison_protocol']=protocol
         item=self.state['stages'][name];item.update(status='succeeded',outputs=outputs,response=response,finished=now());atomic_json(attempt/'record.json',item);self.save();self.event({'stage':name,'status':'succeeded','attempt':item['attempt']});return True
     def accept(self,name,response_file):
+        if name not in self.stage_map or not self.stage_map[name][1]:raise ContractError('Executable stages cannot be accepted manually; fix inputs and retry the stage')
         item=self.state['stages'].get(name)
         allowed={'awaiting_agent','needs_input'} if self.refining else {'awaiting_agent','changes_requested','needs_input'}
         if not item or item['status'] not in allowed:raise ContractError('No pending Agent stage; reviewed attempts are immutable')
         if item['fingerprint']!=self.fingerprint(name):raise ContractError('Inputs changed while Agent worked; stage must be reissued')
         started=time.monotonic()
+        self._active_work_started=started
         try:return self._finish(name,Path(item['directory']),json.loads(Path(response_file).read_text()))
         finally:
+            self._active_work_started=None
             if self.refining and self.config.get('generation_skills'):
                 history=self.state.setdefault('refinement',{});history['elapsed_seconds']=history.get('elapsed_seconds',0)+time.monotonic()-started;self.save()
     def execute(self,name,retry=False):
@@ -179,7 +187,10 @@ class Workflow:
             # to an unrelated installed workflow; bind children to this exact snapshot.
             env=os.environ.copy();env['PYTHONPATH']=str(Path(__file__).resolve().parent.parent)
             timeout=cfg.get('timeout_seconds',3600)
-            if self.refining:timeout=min(timeout,max(1,limits(self.config)['max_seconds']-self.state.get('refinement',{}).get('elapsed_seconds',0)))
+            if self.refining:
+                remaining=self.remaining_refinement_seconds()
+                if remaining<=0:raise subprocess.TimeoutExpired(argv,0)
+                timeout=min(timeout,remaining)
             proc=run_command(argv,attempt,env,timeout)
             (attempt/'stdout.log').write_text(proc.stdout);(attempt/'stderr.log').write_text(proc.stderr)
             if proc.returncode:raise RuntimeError(f'Stage command exited {proc.returncode}; see attempt logs')
@@ -199,9 +210,11 @@ class Workflow:
                 for name,_,_ in self.stages:
                     if self.refining and not self.valid(name) and self.state.get('refinement',{}).get('elapsed_seconds',0)>=limits(self.config)['max_seconds']:return self.stop_refinement(name,'time_budget')
                     started=time.monotonic();timeout_error=None
+                    self._active_work_started=started
                     try:result=self.execute(name,retry=retry_failed)
                     except subprocess.TimeoutExpired as exc:timeout_error=exc
                     finally:
+                        self._active_work_started=None
                         if self.refining:
                             history=self.state.setdefault('refinement',{});history['elapsed_seconds']=history.get('elapsed_seconds',0)+time.monotonic()-started;self.save()
                     if timeout_error:

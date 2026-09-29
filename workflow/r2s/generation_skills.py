@@ -75,6 +75,13 @@ def bindings(config_value, stage):
         for key in ('manifest', 'npz', 'provenance'):
             if cfg.get('reference', {}).get(key):
                 paths.append(Path(cfg['reference'][key]))
+        provenance_path = cfg.get('reference', {}).get('provenance')
+        if provenance_path and Path(provenance_path).is_file():
+            try:
+                provenance = json.loads(Path(provenance_path).read_text(encoding='utf-8'))
+                paths += load(cfg, 'reference', 'reference.py').run_receipt_files(provenance, Path(provenance_path).parent)
+            except (ValueError, AttributeError, TypeError):
+                pass  # Main file remains bound; execution records the invalid receipt.
     if stage == 'agent_model':
         bound_config.update({k:cfg.get(k) for k in ('blender','build_timeout_seconds')})
     local = stage in ('local_geometry_feedback', 'local_appearance_feedback')
@@ -143,7 +150,7 @@ def prepare_model(workflow, attempt, response):
     timeout = cfg.get('build_timeout_seconds', 120)
     if workflow.refining:
         from .refinement import limits
-        remaining = limits(workflow.config)['max_seconds'] - workflow.state.get('refinement', {}).get('elapsed_seconds', 0)
+        remaining = workflow.remaining_refinement_seconds()
         if remaining <= 0:
             raise ContractError('Existing refinement time budget exhausted; no RoomKit launch')
         timeout = min(timeout, remaining)
@@ -165,15 +172,25 @@ def execute(value, out):
                   'inference': 'not_run', 'geometry_accuracy': 'unverified',
                   'reason': ref.get('reason', 'No reference requested'), 'research_budget_consumed': False}
         if mode == 'consume':
-            manifest_path = Path(ref['manifest']); manifest = json.loads(manifest_path.read_text())
-            accepted = {r['sha256'] for r in value['accepted_source_records'] if file_hash(r['path']) == r['sha256']}
-            if any(f['role'] != 'fit' or f['sha256'] not in accepted for f in manifest['frames']):
-                raise ContractError('Generation reference includes heldout/unaccepted input')
-            provenance = json.loads(Path(ref['provenance']).read_text())
-            if value['formal_test'] and provenance.get('kind') != 'backend_output':
-                raise ContractError('Synthetic reference cannot enter a formal generation case')
-            report.update(load(cfg, 'reference', 'reference.py').consume(manifest_path, Path(ref['npz']), provenance, ref.get('threshold', .5)))
-            report['mode'] = 'consume'; report['raw_outputs'] = ref['npz']
+            try:
+                manifest_path = Path(ref['manifest']); manifest = json.loads(manifest_path.read_text())
+                accepted = {r['sha256'] for r in value['accepted_source_records'] if file_hash(r['path']) == r['sha256']}
+                if any(f['role'] != 'fit' or f['sha256'] not in accepted for f in manifest['frames']):
+                    raise ContractError('Generation reference includes heldout/unaccepted input')
+                provenance_path = Path(ref['provenance'])
+                provenance = json.loads(provenance_path.read_text())
+                report.update(load(cfg, 'reference', 'reference.py').consume(
+                    manifest_path, Path(ref['npz']), provenance, ref.get('threshold', .5),
+                    provenance_base=provenance_path.parent, formal=value.get('formal_test', True)))
+                report['mode'] = 'consume'; report['raw_outputs'] = ref['npz']
+                report['reason'] = 'Validated output and retained producer declarations; model execution not independently attested'
+            except (OSError, ValueError, KeyError, TypeError, AttributeError, ContractError) as exc:
+                report.update(mode='blocked', requested_mode='consume', reason=str(exc),
+                              inference='not_verified', origin='invalid_or_unverified')
+                atomic_json(out/'reference_status.json', report)
+                return {'status':'needs_input', 'artifacts':['reference_status.json'],
+                        'evidence':['Reference rejected: ' + str(exc)],
+                        'reasoning_summary':'Invalid reference evidence blocks consumption; no inference was launched.'}
         atomic_json(out/'reference_status.json', report)
         status = 'needs_input' if ref.get('required', False) and mode != 'consume' else 'complete'
         return {'status':status, 'artifacts':['reference_status.json'], 'evidence':['Explicit reference status; no model launch'], 'reasoning_summary':'Reference generation readiness remains distinct from output consumption.'}

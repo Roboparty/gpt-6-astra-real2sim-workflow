@@ -47,7 +47,87 @@ def freeze(config, base):
             'geometry_accuracy': 'unverified'}
 
 
-def consume(manifest_path, npz_path, provenance, threshold):
+def provenance_payload_sha256(provenance):
+    """Bind producer declarations without a circular hash of their receipt pointer."""
+    payload = {k: v for k, v in provenance.items() if k not in ('run_receipt', 'run_receipt_sha256')}
+    return hashlib.sha256(json.dumps(payload, sort_keys=True, separators=(',', ':'),
+                                     allow_nan=False).encode('utf-8')).hexdigest()
+
+
+def run_receipt_files(provenance, base):
+    """Paths for cache invalidation; validation happens separately in consume."""
+    path = provenance.get('run_receipt')
+    if not isinstance(path, str) or not path.strip():
+        return []
+    receipt = (Path(base)/path).resolve()
+    paths = [receipt]
+    if receipt.is_file():
+        try:
+            data = json.loads(receipt.read_text(encoding='utf-8'))
+            log = data.get('run_log', {}).get('path')
+            if isinstance(log, str) and log.strip():
+                paths.append((receipt.parent/log).resolve())
+        except (ValueError, AttributeError, TypeError):
+            pass  # The receipt bytes are still bound; consume rejects malformed data.
+    return paths
+
+
+def validate_backend_run(provenance, base):
+    """Check retained evidence consistency, not authenticity of producer claims.
+
+    Required receipt schema: pi3x-backend-run/1; kind=backend_output,
+    synthetic=false, status=completed, returncode=0, forward_run=true,
+    forward_passes>0, checkpoint_loaded=true, checkpoint_sha256_verified=true,
+    checkpoint_missing_keys=[], checkpoint_unexpected_keys=[], errors=[].
+    Repeat input_sha256, npz_sha256, code_revision, weight_revision,
+    weight_sha256, frame_ids and preprocessing from provenance; bind the remaining
+    provenance payload hash and a retained run_log {path, sha256}. Paths resolve
+    from the provenance file and receipt file respectively, never from CWD.
+    These fields must come from a separately run backend; this adapter runs none.
+    """
+    paths = run_receipt_files(provenance, base)
+    if not paths or not paths[0].is_file():
+        raise ValueError('Backend output needs an existing retained run receipt')
+    receipt_path = paths[0]
+    receipt_sha = sha(receipt_path)
+    if provenance.get('run_receipt_sha256') != receipt_sha:
+        raise ValueError('Backend run receipt hash mismatch')
+    receipt = json.loads(receipt_path.read_text(encoding='utf-8'))
+    if not isinstance(receipt, dict) or receipt.get('schema') != 'pi3x-backend-run/1':
+        raise ValueError('Wrong backend run receipt schema')
+    if (receipt.get('kind') != 'backend_output' or receipt.get('synthetic') is not False
+            or provenance.get('synthetic', False) is not False):
+        raise ValueError('Synthetic or unspecified backend execution is not eligible')
+    if (receipt.get('status') != 'completed' or type(receipt.get('returncode')) is not int
+            or receipt['returncode'] != 0 or receipt.get('errors') != []):
+        raise ValueError('Backend execution did not complete successfully')
+    if (receipt.get('forward_run') is not True or type(receipt.get('forward_passes')) is not int
+            or receipt['forward_passes'] < 1):
+        raise ValueError('Backend receipt does not report an actual forward pass')
+    if (receipt.get('checkpoint_loaded') is not True
+            or receipt.get('checkpoint_sha256_verified') is not True
+            or receipt.get('checkpoint_missing_keys') != []
+            or receipt.get('checkpoint_unexpected_keys') != []):
+        raise ValueError('Backend checkpoint loading is incomplete or incompatible')
+    for key in ('input_sha256', 'npz_sha256', 'code_revision', 'weight_revision',
+                'weight_sha256', 'frame_ids', 'preprocessing'):
+        if key not in receipt or receipt[key] != provenance[key]:
+            raise ValueError('Backend receipt binding mismatch: ' + key)
+    if receipt.get('provenance_payload_sha256') != provenance_payload_sha256(provenance):
+        raise ValueError('Backend receipt provenance payload mismatch')
+    log = receipt.get('run_log')
+    if not isinstance(log, dict) or not isinstance(log.get('path'), str) or not log['path'].strip():
+        raise ValueError('Backend receipt needs a retained execution log')
+    log_path = (receipt_path.parent/log['path']).resolve()
+    if not log_path.is_file() or log.get('sha256') != sha(log_path):
+        raise ValueError('Backend execution log missing or hash mismatch')
+    return {'path': str(receipt_path), 'sha256': receipt_sha,
+            'run_log': {'path': str(log_path), 'sha256': log['sha256']},
+            'validation': 'consistent_retained_producer_declarations',
+            'authenticity': 'not_independently_attested'}
+
+
+def consume(manifest_path, npz_path, provenance, threshold, *, provenance_base=None, formal=False):
     import numpy as np
     manifest = json.loads(manifest_path.read_text(encoding='utf-8'))
     if manifest.get('schema') != 'pi3x-reference-input/1':
@@ -69,8 +149,15 @@ def consume(manifest_path, npz_path, provenance, threshold):
         raise ValueError('Frame order, heldout leakage or preprocessing mismatch')
     if provenance.get('kind') not in ('synthetic_contract', 'backend_output'):
         raise ValueError('Explicit output origin required')
-    if provenance['kind'] == 'backend_output' and not provenance.get('run_receipt'):
-        raise ValueError('Backend output needs a retained run receipt path')
+    if formal and provenance['kind'] != 'backend_output':
+        raise ValueError('Synthetic reference cannot enter a formal generation case')
+    run_binding = None
+    if provenance['kind'] == 'backend_output':
+        if not isinstance(provenance.get('run_receipt'), str) or not provenance['run_receipt'].strip():
+            raise ValueError('Backend output needs a retained run receipt path')
+        if provenance_base is None and not Path(provenance.get('run_receipt', '')).is_absolute():
+            raise ValueError('Relative run receipt requires the provenance file directory')
+        run_binding = validate_backend_run(provenance, provenance_base or manifest_path.parent)
     with np.load(npz_path, allow_pickle=False) as arrays:
         values = {k: arrays[k] for k in ('points', 'local_points', 'conf', 'camera_poses')}
     points, local, conf, poses = [values[k] for k in ('points', 'local_points', 'conf', 'camera_poses')]
@@ -101,6 +188,7 @@ def consume(manifest_path, npz_path, provenance, threshold):
             'scale': 'approximate_unvalidated', 'unobserved': 'unknown',
             'environment': 'not_verified_by_consumer',
             'inference': 'not_run' if provenance['kind'] == 'synthetic_contract' else 'externally_reported_not_independently_verified',
+            'backend_run_binding': run_binding,
             'geometry_accuracy': 'unverified'}
 
 
@@ -111,7 +199,8 @@ if __name__ == '__main__':
     c = sub.add_parser('consume'); c.add_argument('manifest', type=Path); c.add_argument('npz', type=Path)
     c.add_argument('provenance', type=Path); c.add_argument('output', type=Path)
     c.add_argument('--threshold', type=float, default=.5)
+    c.add_argument('--formal', action='store_true', help='Reject synthetic data; require a bound backend execution receipt')
     a = p.parse_args()
-    result = freeze(json.loads(a.config.read_text(encoding='utf-8')), a.config.parent) if a.command == 'freeze' else consume(a.manifest, a.npz, json.loads(a.provenance.read_text(encoding='utf-8')), a.threshold)
+    result = freeze(json.loads(a.config.read_text(encoding='utf-8')), a.config.parent) if a.command == 'freeze' else consume(a.manifest, a.npz, json.loads(a.provenance.read_text(encoding='utf-8')), a.threshold, provenance_base=a.provenance.parent, formal=a.formal)
     with a.output.open('x', encoding='utf-8') as out:
         json.dump(result, out, indent=2, allow_nan=False)

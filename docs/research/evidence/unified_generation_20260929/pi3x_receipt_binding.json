@@ -1,0 +1,183 @@
+{
+  "status": "passed",
+  "count": 36,
+  "checks": [
+    {
+      "name": "synthetic_nonformal_stays_not_run",
+      "status": "passed"
+    },
+    {
+      "name": "synthetic_formal_rejected",
+      "status": "passed",
+      "rejection": "Synthetic reference cannot enter a formal generation case"
+    },
+    {
+      "name": "original_relabel_and_nonexistent_receipt_bypass",
+      "status": "passed",
+      "rejection": "Backend output needs an existing retained run receipt"
+    },
+    {
+      "name": "consistent_backend_shaped_fixture_checks_only",
+      "status": "passed"
+    },
+    {
+      "name": "wrong_schema",
+      "status": "passed",
+      "rejection": "Wrong backend run receipt schema"
+    },
+    {
+      "name": "synthetic_kind",
+      "status": "passed",
+      "rejection": "Synthetic or unspecified backend execution is not eligible"
+    },
+    {
+      "name": "synthetic_flag",
+      "status": "passed",
+      "rejection": "Synthetic or unspecified backend execution is not eligible"
+    },
+    {
+      "name": "failed_status",
+      "status": "passed",
+      "rejection": "Backend execution did not complete successfully"
+    },
+    {
+      "name": "nonzero_returncode",
+      "status": "passed",
+      "rejection": "Backend execution did not complete successfully"
+    },
+    {
+      "name": "false_returncode_not_integer",
+      "status": "passed",
+      "rejection": "Backend execution did not complete successfully"
+    },
+    {
+      "name": "reported_errors",
+      "status": "passed",
+      "rejection": "Backend execution did not complete successfully"
+    },
+    {
+      "name": "forward_not_run",
+      "status": "passed",
+      "rejection": "Backend receipt does not report an actual forward pass"
+    },
+    {
+      "name": "zero_forward_passes",
+      "status": "passed",
+      "rejection": "Backend receipt does not report an actual forward pass"
+    },
+    {
+      "name": "boolean_forward_count",
+      "status": "passed",
+      "rejection": "Backend receipt does not report an actual forward pass"
+    },
+    {
+      "name": "checkpoint_not_loaded",
+      "status": "passed",
+      "rejection": "Backend checkpoint loading is incomplete or incompatible"
+    },
+    {
+      "name": "checkpoint_not_verified",
+      "status": "passed",
+      "rejection": "Backend checkpoint loading is incomplete or incompatible"
+    },
+    {
+      "name": "missing_checkpoint_keys",
+      "status": "passed",
+      "rejection": "Backend checkpoint loading is incomplete or incompatible"
+    },
+    {
+      "name": "unexpected_checkpoint_keys",
+      "status": "passed",
+      "rejection": "Backend checkpoint loading is incomplete or incompatible"
+    },
+    {
+      "name": "input_binding",
+      "status": "passed",
+      "rejection": "Backend receipt binding mismatch: input_sha256"
+    },
+    {
+      "name": "npz_binding",
+      "status": "passed",
+      "rejection": "Backend receipt binding mismatch: npz_sha256"
+    },
+    {
+      "name": "code_binding",
+      "status": "passed",
+      "rejection": "Backend receipt binding mismatch: code_revision"
+    },
+    {
+      "name": "weight_revision_binding",
+      "status": "passed",
+      "rejection": "Backend receipt binding mismatch: weight_revision"
+    },
+    {
+      "name": "weight_bytes_binding",
+      "status": "passed",
+      "rejection": "Backend receipt binding mismatch: weight_sha256"
+    },
+    {
+      "name": "frame_order_binding",
+      "status": "passed",
+      "rejection": "Backend receipt binding mismatch: frame_ids"
+    },
+    {
+      "name": "preprocessing_binding",
+      "status": "passed",
+      "rejection": "Backend receipt binding mismatch: preprocessing"
+    },
+    {
+      "name": "provenance_binding",
+      "status": "passed",
+      "rejection": "Backend receipt provenance payload mismatch"
+    },
+    {
+      "name": "missing_log",
+      "status": "passed",
+      "rejection": "Backend execution log missing or hash mismatch"
+    },
+    {
+      "name": "log_hash",
+      "status": "passed",
+      "rejection": "Backend execution log missing or hash mismatch"
+    },
+    {
+      "name": "missing_forward_field",
+      "status": "passed",
+      "rejection": "Backend receipt does not report an actual forward pass"
+    },
+    {
+      "name": "receipt_hash",
+      "status": "passed",
+      "rejection": "Backend run receipt hash mismatch"
+    },
+    {
+      "name": "synthetic_provenance_flag",
+      "status": "passed",
+      "rejection": "Synthetic or unspecified backend execution is not eligible"
+    },
+    {
+      "name": "native_backend_shaped_contract",
+      "status": "passed"
+    },
+    {
+      "name": "log_drift_invalidates_cache",
+      "status": "passed"
+    },
+    {
+      "name": "native_drift_fail_closed",
+      "status": "passed"
+    },
+    {
+      "name": "receipt_drift_invalidates_cache",
+      "status": "passed"
+    },
+    {
+      "name": "native_original_bypass_fail_closed",
+      "status": "passed"
+    }
+  ],
+  "data_origin": "synthetic_contract",
+  "actual_model_forward": false,
+  "scope": "Contract validation only; backend-shaped positive fixture is fabricated, not inference evidence",
+  "limitation": "Consistent self-reported evidence is not independently authenticated"
+}

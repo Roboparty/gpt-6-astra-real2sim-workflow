@@ -1,0 +1,129 @@
+{
+  "status": "passed",
+  "tests": [
+    {
+      "case": "native_run_reaches_observe",
+      "passed": true
+    },
+    {
+      "case": "blocked_reference_recorded_and_optional",
+      "passed": true
+    },
+    {
+      "case": "blocked_reference_never_inference_success",
+      "passed": true
+    },
+    {
+      "case": "pending_agent_observe",
+      "passed": true
+    },
+    {
+      "case": "accept_agent_observe",
+      "passed": true
+    },
+    {
+      "case": "pending_agent_identify",
+      "passed": true
+    },
+    {
+      "case": "accept_agent_identify",
+      "passed": true
+    },
+    {
+      "case": "pending_agent_calibrate",
+      "passed": true
+    },
+    {
+      "case": "accept_agent_calibrate",
+      "passed": true
+    },
+    {
+      "case": "pending_agent_calibrate_room",
+      "passed": true
+    },
+    {
+      "case": "accept_agent_calibrate_room",
+      "passed": true
+    },
+    {
+      "case": "pending_agent_model",
+      "passed": true
+    },
+    {
+      "case": "accept_agent_model",
+      "passed": true
+    },
+    {
+      "case": "native_model_accept_actually_executes_roomkit",
+      "passed": true
+    },
+    {
+      "case": "native_generated_model_is_declared",
+      "passed": true
+    },
+    {
+      "case": "native_build_and_local_feedback_run",
+      "passed": true
+    },
+    {
+      "case": "existing_structural_audit_executed",
+      "passed": true
+    },
+    {
+      "case": "native_rendered_pixels_consumed_by_refine",
+      "passed": true
+    },
+    {
+      "case": "roi_never_auto_accepts",
+      "passed": true
+    },
+    {
+      "case": "next_native_stage_is_actual_review",
+      "passed": true
+    },
+    {
+      "case": "review_receives_local_feedback_and_skill_instructions",
+      "passed": true
+    },
+    {
+      "case": "complete_candidate_not_frozen",
+      "passed": true
+    },
+    {
+      "case": "native_freeze_rejects_incomplete_visual_and_physics",
+      "passed": true,
+      "retained_error": "Cannot freeze with incomplete or stale required stages: agent_review_geometry, agent_materials, agent_calibrate_lighting, build_render, local_appearance_feedback, agent_review, export, validate, report"
+    },
+    {
+      "case": "geometry_revision_invalidates_roi_reviews_export",
+      "passed": true
+    },
+    {
+      "case": "required_reference_halts_native_flow",
+      "passed": true
+    },
+    {
+      "case": "required_blocker_does_not_reach_modelling",
+      "passed": true
+    },
+    {
+      "case": "native_reference_consumer_executes",
+      "passed": true
+    },
+    {
+      "case": "native_reference_keeps_synthetic_inference_not_run",
+      "passed": true
+    },
+    {
+      "case": "reference_bytes_drift_invalidates_cache",
+      "passed": true
+    }
+  ],
+  "total": 29,
+  "wall_seconds": 23.898602089029737,
+  "structural_status": "passed",
+  "source_roi_mae": 0.2282114127702363,
+  "scope": "Synthetic native generation-to-review integration, no real visual acceptance, no Pi3X inference",
+  "gpu_used": false,
+  "paid_api_requests": 0
+}

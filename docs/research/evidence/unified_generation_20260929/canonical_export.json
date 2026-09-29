@@ -1,0 +1,38 @@
+{
+  "status": "passed",
+  "tests": [
+    {
+      "case": "rotated_furniture",
+      "status": "passed",
+      "canonical_proxy_count": 2,
+      "visual_entities": 8,
+      "structural_status": "passed",
+      "simulation": "passed"
+    },
+    {
+      "case": "empty_room",
+      "status": "passed",
+      "canonical_proxy_count": 1,
+      "visual_entities": 7,
+      "structural_status": "passed",
+      "simulation": "passed"
+    },
+    {
+      "case": "all_none",
+      "status": "rejected_as_expected"
+    },
+    {
+      "case": "conflicting_proxies",
+      "status": "rejected_as_expected"
+    },
+    {
+      "case": "empty_room_name_mismatch",
+      "status": "rejected_as_expected"
+    }
+  ],
+  "wall_seconds": 6.899928668048233,
+  "gpu_hours": 0,
+  "scope": "Synthetic adapter/engine regression; no real reconstruction acceptance",
+  "implementation_sha256": "f8f3a0e34feb285c7e0bc4542e584814ff9d0f161e6740f0285e835a5e658995",
+  "test_sha256": "37fa2c7fb66c4b7e39c4c75f085463ed162a0ee59659c2ab7a1005d9cb3d812d"
+}

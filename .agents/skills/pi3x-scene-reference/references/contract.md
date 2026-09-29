@@ -12,7 +12,24 @@ Use actual retained frame PTS, never frame index/fps when variable-rate timestam
 
 Consumer requires raw floating NPZ arrays (`allow_pickle=False`): `points` and `local_points` [1,N,H,W,3], `conf` [1,N,H,W,1], `camera_poses` [1,N,4,4]. N is the exact ordered fit subset. Heldout frames must not enter this run. The inspected Pi3X model outputs raw confidence logits; apply sigmoid once. Do not apply sigmoid twice based on a generic README or export from another backend. `camera_poses` are OpenCV right/down/forward camera-to-world; point consistency and rotation validity are checked. Intrinsics are not an output of this adapter. Keep supplied intrinsics and preprocessing transforms separately; do not derive an invented focal length.
 
-Provenance JSON keys: `input_sha256`, `npz_sha256`, `code_revision`, `weight_revision`, `weight_sha256`, `preprocessing` (exact manifest value), `frame_ids` (fit order), `kind` (`synthetic_contract` or `backend_output`). A backend output also requires `run_receipt` pointing to retained logs. Consumer checks declarations and numerical consistency; it does not independently attest that the model produced the arrays. Inspect logs/checkpoint loading/return code and actual runtime before reporting inference success.
+Provenance JSON keys: `input_sha256`, `npz_sha256`, `code_revision`, `weight_revision`, `weight_sha256`, `preprocessing` (exact manifest value), `frame_ids` (fit order), `kind` (`synthetic_contract` or `backend_output`). A backend output also requires `run_receipt` and `run_receipt_sha256`; the path resolves relative to the provenance file. A nonempty path alone is insufficient. Consumer checks declarations and numerical consistency; it does not independently attest that the model produced the arrays.
+
+The retained receipt must use `schema: pi3x-backend-run/1`, `kind: backend_output`,
+`synthetic: false`, `status: completed`, integer `returncode: 0`, and `errors: []`.
+It must report `forward_run: true`, positive integer `forward_passes`,
+`checkpoint_loaded: true`, `checkpoint_sha256_verified: true`, and empty
+`checkpoint_missing_keys` / `checkpoint_unexpected_keys`. Bind the same input,
+NPZ, code/weight revisions, weight hash, ordered frame IDs and preprocessing as
+the provenance. Include `provenance_payload_sha256` (canonical JSON SHA256 with
+`run_receipt` and `run_receipt_sha256` excluded) and `run_log: {path, sha256}`;
+the log path is relative to the receipt file. Both receipt and log bytes enter
+native cache binding. Missing, failed, incompatible or mismatched evidence blocks
+consumption with `needs_input`.
+
+All of this verifies consistent retained producer declarations, not their
+authenticity. Even a passing consumer reports execution as externally reported,
+not independently verified. The positive contract fixture is deliberately
+fabricated test data and is not evidence of a Pi3X forward pass.
 
 For future inference, use the pinned official `Pi3X` forward API and save all outputs before confidence filtering. The shipped upstream example principally writes PLY, so PLY alone is insufficient for this consumer. A generation wrapper must retain dense points/local points/conf/camera poses, preprocessing, seed, effective dtype, checkpoint strict-loading evidence, duration, peak memory and errors. That wrapper and real forward pass remain unverified here.
 

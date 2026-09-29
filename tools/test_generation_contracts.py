@@ -69,7 +69,8 @@ check('roi_config_change_invalidates_feedback',lambda:require(bindings(changed,'
 
 value=json.loads((a.smoke/'consumed_reference/runs/scene_reference/0001/packet.json').read_text())
 value['formal_test']=True;out=a.output/'formal_synthetic';out.mkdir()
-check('formal_case_rejects_synthetic_reference',lambda:execute(value,out),True)
+check('formal_case_rejects_synthetic_reference',lambda:require(execute(value,out)['status']=='needs_input'))
+check('formal_rejection_keeps_inference_unverified',lambda:require(json.loads((out/'reference_status.json').read_text())['inference']=='not_verified'))
 
 # The model acceptance path cannot evade a spent refinement budget.
 workflow.refining=True;workflow.config['refinement']={'max_seconds':1};workflow.state['refinement']={'elapsed_seconds':1}

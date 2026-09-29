@@ -1,0 +1,166 @@
+{
+  "scope": "Merged generation release verification, no real reconstruction accuracy or Pi3X inference",
+  "expected_groups": 12,
+  "groups": [
+    {
+      "name": "skill_contracts",
+      "returncode": 0,
+      "status": "passed",
+      "wall_seconds": 0.4746429310180247,
+      "argv": [
+        "/home/wqz/real2sim_fresh_20260921/runtime/venv/bin/python",
+        "tools/test_skill_contracts.py",
+        "--skills",
+        "/home/wqz/real2sim_capability_20260929/runs/unified_validation_001/repo/.agents/skills",
+        "--output",
+        "/home/wqz/real2sim_capability_20260929/runs/unified_validation_001/results/skill_contracts"
+      ]
+    },
+    {
+      "name": "native_flow",
+      "returncode": 0,
+      "status": "passed",
+      "wall_seconds": 24.029935937025584,
+      "argv": [
+        "/home/wqz/real2sim_fresh_20260921/runtime/venv/bin/python",
+        "tools/test_generation_flow.py",
+        "--skills",
+        "/home/wqz/real2sim_capability_20260929/runs/unified_validation_001/repo/.agents/skills",
+        "--blender",
+        "/home/wqz/real2sim_fresh_20260921/runtime/blender-4.5.3-linux-x64/blender",
+        "--output",
+        "/home/wqz/real2sim_capability_20260929/runs/unified_validation_001/results/native_flow"
+      ]
+    },
+    {
+      "name": "generation_contracts",
+      "returncode": 0,
+      "status": "passed",
+      "wall_seconds": 0.13659786398056895,
+      "argv": [
+        "/home/wqz/real2sim_fresh_20260921/runtime/venv/bin/python",
+        "tools/test_generation_contracts.py",
+        "--smoke",
+        "/home/wqz/real2sim_capability_20260929/runs/unified_validation_001/results/native_flow",
+        "--output",
+        "/home/wqz/real2sim_capability_20260929/runs/unified_validation_001/results/generation_contracts"
+      ]
+    },
+    {
+      "name": "accept_budget",
+      "returncode": 0,
+      "status": "passed",
+      "wall_seconds": 0.12248996400739998,
+      "argv": [
+        "/home/wqz/real2sim_fresh_20260921/runtime/venv/bin/python",
+        "tools/test_generation_accept_budget.py",
+        "--smoke",
+        "/home/wqz/real2sim_capability_20260929/runs/unified_validation_001/results/native_flow",
+        "--output",
+        "/home/wqz/real2sim_capability_20260929/runs/unified_validation_001/results/accept_budget"
+      ]
+    },
+    {
+      "name": "research_regressions",
+      "returncode": 0,
+      "status": "passed",
+      "wall_seconds": 23.548186580999754,
+      "argv": [
+        "/home/wqz/real2sim_fresh_20260921/runtime/venv/bin/python",
+        "tools/run_research_checks.py",
+        "--blender",
+        "/home/wqz/real2sim_fresh_20260921/runtime/blender-4.5.3-linux-x64/blender",
+        "--output",
+        "/home/wqz/real2sim_capability_20260929/runs/unified_validation_001/results/research_regressions"
+      ]
+    },
+    {
+      "name": "canonical_export",
+      "returncode": 0,
+      "status": "passed",
+      "wall_seconds": 7.068065127008595,
+      "argv": [
+        "/home/wqz/real2sim_fresh_20260921/runtime/venv/bin/python",
+        "tools/test_roomkit_canonical_export.py",
+        "--skills",
+        "/home/wqz/real2sim_capability_20260929/runs/unified_validation_001/repo/.agents/skills",
+        "--blender",
+        "/home/wqz/real2sim_fresh_20260921/runtime/blender-4.5.3-linux-x64/blender",
+        "--output",
+        "/home/wqz/real2sim_capability_20260929/runs/unified_validation_001/results/canonical_export"
+      ]
+    },
+    {
+      "name": "empty_room",
+      "returncode": 0,
+      "status": "passed",
+      "wall_seconds": 3.9392344260122627,
+      "argv": [
+        "/home/wqz/real2sim_fresh_20260921/runtime/blender-4.5.3-linux-x64/blender",
+        "-b",
+        "-t",
+        "2",
+        "--python-exit-code",
+        "12",
+        "-P",
+        "/home/wqz/real2sim_capability_20260929/runs/unified_validation_001/repo/tools/test_empty_room_blender.py",
+        "--",
+        "/home/wqz/real2sim_capability_20260929/runs/unified_validation_001/results/empty_room"
+      ]
+    },
+    {
+      "name": "single_part_contract",
+      "returncode": 0,
+      "status": "passed",
+      "wall_seconds": 0.04348300502169877,
+      "argv": [
+        "/home/wqz/real2sim_fresh_20260921/runtime/venv/bin/python",
+        "tools/test_single_part_contract.py"
+      ]
+    },
+    {
+      "name": "single_assembly_contract",
+      "returncode": 0,
+      "status": "passed",
+      "wall_seconds": 0.043232257943600416,
+      "argv": [
+        "/home/wqz/real2sim_fresh_20260921/runtime/venv/bin/python",
+        "tools/test_single_assembly_contract.py"
+      ]
+    },
+    {
+      "name": "pose_annotation_update",
+      "returncode": 0,
+      "status": "passed",
+      "wall_seconds": 0.030004212050698698,
+      "argv": [
+        "/home/wqz/real2sim_fresh_20260921/runtime/venv/bin/python",
+        "tools/test_pose_annotation_update.py"
+      ]
+    },
+    {
+      "name": "visible_annotations",
+      "returncode": 0,
+      "status": "passed",
+      "wall_seconds": 0.034657720010727644,
+      "argv": [
+        "/home/wqz/real2sim_fresh_20260921/runtime/venv/bin/python",
+        "tools/test_visible_annotations.py"
+      ]
+    },
+    {
+      "name": "pi3x_receipt_binding",
+      "returncode": 0,
+      "status": "passed",
+      "wall_seconds": 0.14739351300522685,
+      "argv": [
+        "/home/wqz/real2sim_fresh_20260921/runtime/venv/bin/python",
+        "tools/test_pi3x_receipt_binding.py",
+        "--output",
+        "/home/wqz/real2sim_capability_20260929/runs/unified_validation_001/results/pi3x_receipt_binding"
+      ]
+    }
+  ],
+  "gpu_hours": 0,
+  "paid_api_requests": 0
+}

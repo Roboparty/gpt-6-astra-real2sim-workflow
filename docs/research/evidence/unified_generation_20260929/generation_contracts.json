@@ -1,0 +1,99 @@
+{
+  "status": "passed",
+  "total": 21,
+  "tests": [
+    {
+      "case": "legacy_dag_unchanged_without_optin",
+      "passed": true
+    },
+    {
+      "case": "quality_dag_unchanged_without_optin",
+      "passed": true
+    },
+    {
+      "case": "legacy_rejects_silent_optin",
+      "passed": true,
+      "retained_error": "Generation skills require quality_v2"
+    },
+    {
+      "case": "cannot_enable_unbudgeted_inference_mode",
+      "passed": true,
+      "retained_error": "No automatic model inference/installation mode"
+    },
+    {
+      "case": "calibration_receives_reference",
+      "passed": true
+    },
+    {
+      "case": "both_review_phases_receive_feedback",
+      "passed": true
+    },
+    {
+      "case": "frozen_roi_is_upstream_artifact",
+      "passed": true
+    },
+    {
+      "case": "native_feedback_positive",
+      "passed": true
+    },
+    {
+      "case": "feedback_reject_heldout",
+      "passed": true,
+      "retained_error": "Local generation feedback cannot use heldout or unaccepted source"
+    },
+    {
+      "case": "feedback_reject_unaccepted_source",
+      "passed": true,
+      "retained_error": "Local generation feedback cannot use heldout or unaccepted source"
+    },
+    {
+      "case": "feedback_reject_camera_drift",
+      "passed": true,
+      "retained_error": "Frozen local-feedback camera drift"
+    },
+    {
+      "case": "feedback_reject_negative_camera_index",
+      "passed": true,
+      "retained_error": "Invalid frozen camera_index"
+    },
+    {
+      "case": "feedback_reject_unknown_part",
+      "passed": true,
+      "retained_error": "Local region maps to an unknown canonical part"
+    },
+    {
+      "case": "appearance_stage_executes_same_bound_adapter",
+      "passed": true
+    },
+    {
+      "case": "accepted_calibration_roi_consumed",
+      "passed": true
+    },
+    {
+      "case": "missing_protocol_halts_without_fake_report",
+      "passed": true
+    },
+    {
+      "case": "roi_config_change_does_not_restart_ingest",
+      "passed": true
+    },
+    {
+      "case": "roi_config_change_invalidates_feedback",
+      "passed": true
+    },
+    {
+      "case": "formal_case_rejects_synthetic_reference",
+      "passed": true
+    },
+    {
+      "case": "formal_rejection_keeps_inference_unverified",
+      "passed": true
+    },
+    {
+      "case": "roomkit_refuses_exhausted_refinement_budget",
+      "passed": true,
+      "retained_error": "Existing refinement time budget exhausted; no RoomKit launch"
+    }
+  ],
+  "scope": "Native integration contracts, no new model or Blender invocation"
+}
