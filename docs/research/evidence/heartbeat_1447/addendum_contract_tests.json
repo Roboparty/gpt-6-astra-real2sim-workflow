@@ -1,0 +1,48 @@
+{
+  "status": "passed",
+  "total": 10,
+  "tests": [
+    {
+      "case": "all_old_observations_objects_frames_unchanged",
+      "passed": true
+    },
+    {
+      "case": "missing_source",
+      "passed": true
+    },
+    {
+      "case": "duplicate_source",
+      "passed": true
+    },
+    {
+      "case": "overwrite_frozen",
+      "passed": true
+    },
+    {
+      "case": "parent_bytes_changed",
+      "passed": true
+    },
+    {
+      "case": "identity_collision",
+      "passed": true
+    },
+    {
+      "case": "missing_observation",
+      "passed": true
+    },
+    {
+      "case": "unseen_anchor",
+      "passed": true
+    },
+    {
+      "case": "changed_frame_binding",
+      "passed": true
+    },
+    {
+      "case": "changed_denominator",
+      "passed": true
+    }
+  ],
+  "parent_sha256": "dafd8ce5615cb968a912e58902bf1a66d91db2fb9f8de5eba618fb187e6f199a",
+  "scope": "Frozen annotation append invariants only; not semantic label or reconstruction accuracy"
+}

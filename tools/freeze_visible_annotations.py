@@ -40,8 +40,8 @@ def validate_annotation(data, source_id, protocol):
                 raise ValueError('Visible extent requires four finite coordinates')
             x0,y0,x1,y1=box;w,h=protocol['image_size']
             if not 0<=x0<x1<=w or not 0<=y0<y1<=h:raise ValueError('Box outside original raster')
-        if frame==0 and state not in {'visible','partial'}:
-            raise ValueError('Selected persistent object must be observed in first frozen frame')
+        if frame==protocol.get('anchor_frame_ordinal',0) and state not in {'visible','partial'}:
+            raise ValueError('Selected persistent object must be observed in the declared anchor frame')
     if seen!=expected:raise ValueError('Incomplete fixed observation denominator')
     return dict(Counter(r['state'] for r in data['observations']))
 

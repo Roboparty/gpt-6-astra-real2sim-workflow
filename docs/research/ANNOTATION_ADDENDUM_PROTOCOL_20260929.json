@@ -1,0 +1,43 @@
+{
+  "schema": "real2sim.visible-box-addendum-protocol/1",
+  "status": "registered_before_annotation",
+  "sources": [
+    "open_concept_g0034",
+    "bedroom_waterfront_g0024",
+    "breakfast_nook_kitchen_g0039"
+  ],
+  "source_frame_manifest": "evidence/heartbeat_0825/frames.json",
+  "frames_per_source": 6,
+  "objects_per_source": 2,
+  "expected_observations": 36,
+  "image_size": [
+    960,
+    540
+  ],
+  "object_selection": "Append two distinct static physical objects visible directly in last frozen frame 5, excluding all v1 identities. Prefer clearly identifiable geometry; track same IDs in all 6 frames without replacing them. Reflections of an object are not direct observed extent; keep those uncertain or out-of-frame with reason.",
+  "box_definition": "Axis-aligned [left, top, right, bottom] in original 960x540 pixels, enclosing only the observed visible extent of the named object. Never infer a hidden/amodal box. Rectangles contain background and are not segmentation masks.",
+  "states": [
+    "visible",
+    "partial",
+    "out_of_frame",
+    "ambiguous"
+  ],
+  "missing_policy": "Out-of-frame or uncertain identity has bbox null and an explicit reason. Partial occlusion/truncation is retained as partial, with the visible extent only. All 36 observations remain in the inventory.",
+  "annotation_provenance": "Manual visual estimates by internal agents from hash-bound lossy display previews. Original PNG hashes remain authoritative. These are model-authored annotations, not independent human-reviewed labels.",
+  "boundary_uncertainty_px_assumed": 10,
+  "review_budget": "One initial pass per source and one overlay review/correction pass; retain initial submissions and all changes. No reconstruction score is used to select labels.",
+  "data_role": "development_fit; all 18 frames were previously used for SfM, none is held out",
+  "budget": {
+    "gpu_hours": 0,
+    "paid_api_requests": 0,
+    "camera_trials": 0
+  },
+  "scope": "Second development inventory version only. Coverage gain comes from more annotations, not better reconstruction. No masks, metric truth, independent human labels or held-out evidence.",
+  "source_frame_manifest_sha256": "7304109f95fb441e404d0c7d544320b5b6ce11fb1b4b0a34c1d006fe89dd83f3",
+  "parent_manifest": "annotations_20260929/frozen_v1.json",
+  "parent_manifest_sha256": "dafd8ce5615cb968a912e58902bf1a66d91db2fb9f8de5eba618fb187e6f199a",
+  "anchor_frame_ordinal": 5,
+  "expected_new_observations": 36,
+  "expected_combined_observations": 72,
+  "parent_policy": "Preserve every prior object and observation exactly. Added IDs must be disjoint. New annotations are appended, not replacements or changed success denominators."
+}

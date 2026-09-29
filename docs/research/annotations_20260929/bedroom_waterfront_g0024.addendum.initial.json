@@ -1,0 +1,114 @@
+{
+  "schema": "real2sim.visible-box-annotations/1",
+  "source_id": "bedroom_waterfront_g0024",
+  "objects": [
+    {
+      "id": "window_cream_chaise",
+      "label": "Cream upholstered chaise beside the waterfront window",
+      "identity_description": "The cream chaise directly in front of the window, between the large potted plant on its left and the small sculptural side table on its right in anchor frame 5. Track the upholstered furniture body and fitted cushions, not the bed in the foreground or a reflection in the glossy wall panel. The rust and blue loose pillows and pale draped throw are identity cues, not separate extensions of the furniture geometry."
+    },
+    {
+      "id": "window_broadleaf_potted_plant",
+      "label": "Large broadleaf indoor plant in a dark floor pot",
+      "identity_description": "The directly visible large green broadleaf plant with its dark floor planter between the bed and window-side chaise in anchor frame 5. Track the plant-and-planter assembly; exclude outdoor palms, the small bust/table beside the chaise, and all appearances reflected in the glossy wall panel."
+    }
+  ],
+  "observations": [
+    {
+      "frame_ordinal": 0,
+      "object_id": "window_cream_chaise",
+      "state": "out_of_frame",
+      "bbox_xyxy": null,
+      "reason": "A chaise-like shape is visible in the glossy panel reflection, but the physical window-side chaise is not directly in the camera frame. No reflected extent is annotated.",
+      "confidence": "high"
+    },
+    {
+      "frame_ordinal": 0,
+      "object_id": "window_broadleaf_potted_plant",
+      "state": "out_of_frame",
+      "bbox_xyxy": null,
+      "reason": "The broadleaf plant appearance is inside the reflective panel; the physical planter and leaves are not directly visible in the camera frame.",
+      "confidence": "high"
+    },
+    {
+      "frame_ordinal": 1,
+      "object_id": "window_cream_chaise",
+      "state": "out_of_frame",
+      "bbox_xyxy": null,
+      "reason": "The identifiable upholstered chaise appears only in the wall-panel reflection. Its physical body remains outside the direct view.",
+      "confidence": "high"
+    },
+    {
+      "frame_ordinal": 1,
+      "object_id": "window_broadleaf_potted_plant",
+      "state": "out_of_frame",
+      "bbox_xyxy": null,
+      "reason": "Only a reflected appearance of the broadleaf plant is visible; no direct leaf or planter extent can be assigned.",
+      "confidence": "high"
+    },
+    {
+      "frame_ordinal": 2,
+      "object_id": "window_cream_chaise",
+      "state": "out_of_frame",
+      "bbox_xyxy": null,
+      "reason": "The camera reveals part of the waterfront window, but the directly viewed chaise is still beyond the left image edge. The panel reflection is excluded.",
+      "confidence": "medium"
+    },
+    {
+      "frame_ordinal": 2,
+      "object_id": "window_broadleaf_potted_plant",
+      "state": "out_of_frame",
+      "bbox_xyxy": null,
+      "reason": "The indoor potted plant is not directly visible; its panel reflection and the outdoor vegetation do not supply a physical-object box.",
+      "confidence": "high"
+    },
+    {
+      "frame_ordinal": 3,
+      "object_id": "window_cream_chaise",
+      "state": "partial",
+      "bbox_xyxy": [0, 379, 195, 502],
+      "reason": "The chaise is directly visible at the lower left, but its left/back portion is cut by the left image edge and its lower-left area meets the foreground bed. Box covers observed furniture extent only; no reflected duplicate is included.",
+      "confidence": "medium"
+    },
+    {
+      "frame_ordinal": 3,
+      "object_id": "window_broadleaf_potted_plant",
+      "state": "out_of_frame",
+      "bbox_xyxy": null,
+      "reason": "The physical floor plant to the left of the chaise remains outside the direct view. No identifiable planter or indoor leaf extent is visible; the reflected plant and outdoor greenery are excluded.",
+      "confidence": "medium"
+    },
+    {
+      "frame_ordinal": 4,
+      "object_id": "window_cream_chaise",
+      "state": "partial",
+      "bbox_xyxy": [203, 345, 403, 455],
+      "reason": "Direct view of the same window-side chaise. The foreground bed hides part of its lowest left/front edge and the draped throw obscures part of the body; hidden furniture bounds are not inferred.",
+      "confidence": "medium"
+    },
+    {
+      "frame_ordinal": 4,
+      "object_id": "window_broadleaf_potted_plant",
+      "state": "visible",
+      "bbox_xyxy": [11, 331, 194, 459],
+      "reason": "The broadleaf indoor plant and dark floor pot are directly visible at the left of the chaise. Leaf tips define the estimated visible envelope; outdoor vegetation and the reflection are excluded.",
+      "confidence": "medium"
+    },
+    {
+      "frame_ordinal": 5,
+      "object_id": "window_cream_chaise",
+      "state": "partial",
+      "bbox_xyxy": [373, 332, 542, 434],
+      "reason": "Anchor identity is directly visible between the plant and sculptural side table. Foreground bed and the pale throw obscure some lower body surface; visible upholstered/body extent is boxed without completing concealed geometry.",
+      "confidence": "medium"
+    },
+    {
+      "frame_ordinal": 5,
+      "object_id": "window_broadleaf_potted_plant",
+      "state": "visible",
+      "bbox_xyxy": [236, 316, 370, 424],
+      "reason": "Anchor plant-and-planter assembly is directly visible beside the bed and chaise. The box encloses observed leaf tips and pot, not the reflected plant farther right.",
+      "confidence": "medium"
+    }
+  ]
+}

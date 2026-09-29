@@ -1,0 +1,22 @@
+{
+  "scope": "Official individual-frame index reachability only; no frame data acquired",
+  "rows": [
+    {
+      "url": "https://webshare.cvg.cit.tum.de/g/rgbd/dataset/freiburg1/rgbd_dataset_freiburg1_desk/rgb.txt",
+      "status": "unavailable",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "url": "https://webshare.cvg.cit.tum.de/g/rgbd/dataset/freiburg3/rgbd_dataset_freiburg3_cabinet/rgb.txt",
+      "status": "unavailable",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "url": "https://webshare.cvg.cit.tum.de/g/rgbd/dataset/freiburg3/rgbd_dataset_freiburg3_structure_texture_far/rgb.txt",
+      "status": "unavailable",
+      "error": "HTTP Error 404: Not Found"
+    }
+  ],
+  "wall_seconds": 2.4159407489933074,
+  "charge_to_remaining_tum_acquisition_budget": true
+}

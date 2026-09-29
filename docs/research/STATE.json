@@ -22,7 +22,7 @@
   "remote_root": "4090-1:/home/wqz/real2sim_capability_20260929",
   "protocol": "PROTOCOL_20260929.md",
   "result": "RESULTS_20260929.md",
-  "latest_update": "UPDATE_20260929T1346.md",
+  "latest_update": "UPDATE_20260929T1447.md",
   "completed": [
     "Matched retained-room collision failure reproduction and repair",
     "Rectangular opening handling and false-pass negative tests",
@@ -54,11 +54,12 @@
     "First source-bound visible-box bundle frozen for all 3 videos: 18 frames, 6 identities, 36 observations (17 observed boxes and 19 retained out-of-frame/null entries); internal overlay review and 13 negative contract checks passed",
     "Native generation skills integrated with research annotations; executable-stage acceptance, shared Agent/builder budget, canonical RoomKit export and Pi3X receipt-binding fixes verified in 12/12 remote CPU groups",
     "External sensor-reference cohort fixed for three TUM setups; official mocap metadata validated for all three, but complete RGB-D bundles remain 0/3; 25 translation-ATE evaluator tests passed",
-    "Full Blender/GLB/USD export on two frozen RoomKit fixtures: 6/6 source-bound strict checks passed; legacy USD camera-name failures retained; native export/validate gate integrated with 5 mutation controls and 6 stage tests"
+    "Full Blender/GLB/USD export on two frozen RoomKit fixtures: 6/6 source-bound strict checks passed; legacy USD camera-name failures retained; native export/validate gate integrated with 5 mutation controls and 6 stage tests",
+    "Append-only v2 annotations: all 36 v1 observations preserved plus 36 new records, 38 observed boxes and 34 retained nulls; coverage 17/18 frames but selected identity graphs still disconnected in two sources; 10 append checks and v1 regression passed"
   ],
   "next": [
-    "Resolve remote TUM transfer throughput or explicitly resume retained partials within the remaining 516.42s acquisition ledger before any GT-backed camera trial; preserve all three fixed sequences and keep RGB proposer inputs separate from GT/depth",
-    "Expand persistent object inventory with a versioned annotation protocol retaining frozen_v1: current two first-frame identities provide observed boxes in only 9/18 frames; no relabeling missing views or treating boxes as masks/ground truth",
+    "Resolve remote TUM transfer throughput or explicitly resume retained partials within the remaining 514.004059s acquisition ledger; preserve all three fixed sequences and RGB/GT separation",
+    "Register bridge-object annotations or reviewed correspondences for disconnected selected identity graphs; v2 retains 72 observations and 17/18 frame coverage, not a complete common camera/model initialization",
     "Prepare explicit versioned runtime-preparation budget amendment before resuming Pi3X dependency transfer; reuse only officially hash-verified retained wheels, preserve spent 1800 seconds",
     "Preregister common six-frame learned-reference inputs, preprocessing and outputs before camera attempt 7; no GPU launch until environment ready and live external-work check passes",
     "Evaluate the shell+vent development successor through full visual review and task integration; fine textiles/accessories remain visibly approximate, and prior pose pilot remains rejected by fine landmark gate",
@@ -128,7 +129,9 @@
     "tum_trajectory_tests_001 (25 synthetic mathematical/CLI tests)",
     "interchange_001 (two complete exports; legacy checker 4/6 formats, strict source checker 6/6)",
     "interchange_001 strict_negative_controls (one positive plus four in-memory mutations)",
-    "interchange_native_001 (cached actual exports replayed into 6 native stage gate tests)"
+    "interchange_native_001 (cached actual exports replayed into 6 native stage gate tests)",
+    "tum_raw_access_001 (three constructed official-host index HEAD paths returned 404)",
+    "annotations_20260929/frozen_v2 (all v1 records preserved; 3 addendum drafts and one root overlay review)"
   ],
   "resource_accounting": {
     "new_gpu_hours": 0,
@@ -164,7 +167,7 @@
     "empty_room_candidate_revisions_used": 1,
     "empty_room_execution_attempts_used": 2,
     "shell_vent_duplicate_execution_wall_seconds": 46.410337843117304,
-    "annotation_freeze_versions_used": 1,
+    "annotation_freeze_versions_used": 2,
     "annotation_preview_execution_attempts_used": 2,
     "heartbeat_1145_selected_run_wall_seconds": 0.31613075907807797,
     "heartbeat_1145_verified_frame_preview_bytes": 1440886,
@@ -173,8 +176,8 @@
     "unified_generation_validation_attempts_used": 1,
     "separate_skill_delivery_accounting": "Prior skill delivery runs and failures remain in docs/generation-skills/VALIDATION.md; they were not reset or reclassified as research camera/appearance proposals",
     "tum_acquisition_wall_budget_seconds": 900,
-    "tum_acquisition_wall_seconds_used": 383.5799999999581,
-    "tum_acquisition_wall_seconds_remaining": 516.4200000000419,
+    "tum_acquisition_wall_seconds_used": 385.9959407489514,
+    "tum_acquisition_wall_seconds_remaining": 514.0040592510486,
     "tum_retained_partial_archive_bytes": 22020096,
     "tum_metadata_bytes": 638868,
     "tum_metadata_fetch_wall_seconds": 10.140612037968822,
@@ -185,7 +188,10 @@
     "interchange_export_cases": 2,
     "interchange_evaluator_revisions_used": 1,
     "heartbeat_1346_selected_run_wall_seconds": 581.776610820205,
-    "heartbeat_1346_scope": "Two full CPU export/legacy checks plus strict controls/native gates. Native gate fixture replay did not rerun full exporter. No reconstruction proposal or camera/GPU/API cost."
+    "heartbeat_1346_scope": "Two full CPU export/legacy checks plus strict controls/native gates. Native gate fixture replay did not rerun full exporter. No reconstruction proposal or camera/GPU/API cost.",
+    "tum_raw_index_probe_wall_seconds": 2.4159407489933074,
+    "tum_raw_index_probe_attempts_used": 1,
+    "heartbeat_1447_accounting_scope": "Only measured HEAD reachability wall charged to old TUM ledger. Annotation/model/review and uninstrumented local test cost unknown; no archive bytes, GPU/API or camera/candidate trial added."
   },
   "constraints": [
     "Do not overwrite historical candidates, source photographs or failed evidence",
@@ -210,8 +216,9 @@
       "reason": "Official full-archive throughput too slow for frozen 900-second cap; owned worker stopped early with partial files retained",
       "ready_sequences": 0,
       "expected_sequences": 3,
-      "remaining_wall_budget_seconds": 516.4200000000419,
-      "evidence": "evidence/heartbeat_1246/tum_acquisition.json"
+      "remaining_wall_budget_seconds": 514.0040592510486,
+      "evidence": "evidence/heartbeat_1246/tum_acquisition.json",
+      "latest_probe": "evidence/heartbeat_1447/tum_raw_access.json"
     }
   ],
   "latest_development_candidate": {
@@ -225,16 +232,68 @@
   },
   "benchmark_readiness_report": "SHARED_BENCHMARK_READINESS_20260929.md",
   "shared_annotations": {
-    "manifest": "annotations_20260929/frozen_v1.json",
+    "manifest": "annotations_20260929/frozen_v2.json",
     "sources": 3,
     "frames": 18,
-    "object_identities": 6,
-    "observations": 36,
-    "observed_boxes": 17,
-    "out_of_frame_null": 19,
-    "frames_with_observed_boxes": 9,
-    "provenance": "Internal agent visual estimates and root overlay review, not independent human ground truth",
-    "scope": "Coarse visible boxes, development fitting; not masks, full scene inventory, common initialization or held-out evidence"
+    "object_identities": 12,
+    "observations": 72,
+    "observed_boxes": 38,
+    "out_of_frame_null": 34,
+    "frames_with_observed_boxes": 17,
+    "previous_versions": [
+      {
+        "manifest": "annotations_20260929/frozen_v1.json",
+        "sources": 3,
+        "frames": 18,
+        "object_identities": 6,
+        "observations": 36,
+        "observed_boxes": 17,
+        "out_of_frame_null": 19,
+        "frames_with_observed_boxes": 9,
+        "provenance": "Internal agent visual estimates and root overlay review, not independent human ground truth",
+        "scope": "Coarse visible boxes, development fitting; not masks, full scene inventory, common initialization or held-out evidence"
+      }
+    ],
+    "annotation_covisibility_components": {
+      "open_concept_g0034": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3,
+          4,
+          5
+        ]
+      ],
+      "bedroom_waterfront_g0024": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      ],
+      "breakfast_nook_kitchen_g0039": [
+        [
+          0
+        ],
+        [
+          1
+        ],
+        [
+          2,
+          3,
+          4,
+          5
+        ]
+      ]
+    },
+    "provenance": "Internal visual estimates plus root overlay review; all v1 records byte-preserved in their original file and semantically preserved in v2",
+    "scope": "Append-only development inventory, not masks, 3D truth, independent human labels or measured reconstruction uplift"
   },
   "integration": {
     "status": "validated_development_candidate",

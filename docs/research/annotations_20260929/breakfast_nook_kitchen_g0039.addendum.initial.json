@@ -1,0 +1,114 @@
+{
+  "schema": "real2sim.visible-box-annotations/1",
+  "source_id": "breakfast_nook_kitchen_g0039",
+  "objects": [
+    {
+      "id": "over_range_microwave",
+      "label": "Stainless microwave above the cooking range",
+      "identity_description": "The fixed stainless and black microwave directly above the range, with a dark rectangular window and right-side vertical handle/control panel. Include its visible appliance housing and lower lip, excluding surrounding white cabinets and cast shadows. Selected directly from anchor frame 5."
+    },
+    {
+      "id": "double_oven_cooking_range",
+      "label": "Stainless double-oven cooking range",
+      "identity_description": "The single fixed cooking-range appliance below the microwave: rear control panel, black cooktop and two stacked stainless oven fronts. Exclude the white kettle, surrounding cabinets, countertop, island and objects on the cooktop. Selected directly from anchor frame 5; never extend the box to infer concealed lower oven surfaces."
+    }
+  ],
+  "observations": [
+    {
+      "frame_ordinal": 0,
+      "object_id": "over_range_microwave",
+      "state": "out_of_frame",
+      "bbox_xyxy": null,
+      "reason": "The camera faces the patio doorway and clock wall. The kitchen microwave is outside the image; no reflected image is used as its direct visible extent.",
+      "confidence": "high"
+    },
+    {
+      "frame_ordinal": 0,
+      "object_id": "double_oven_cooking_range",
+      "state": "out_of_frame",
+      "bbox_xyxy": null,
+      "reason": "The kitchen cooking range is outside this patio-side view. No hidden or reflected extent is inferred.",
+      "confidence": "high"
+    },
+    {
+      "frame_ordinal": 1,
+      "object_id": "over_range_microwave",
+      "state": "out_of_frame",
+      "bbox_xyxy": null,
+      "reason": "This view shows the breakfast table and the right end of the kitchen cabinets. The tracked microwave is beyond the left image boundary, not the visible white cabinet.",
+      "confidence": "high"
+    },
+    {
+      "frame_ordinal": 1,
+      "object_id": "double_oven_cooking_range",
+      "state": "out_of_frame",
+      "bbox_xyxy": null,
+      "reason": "The cooking range is beyond the left edge of the breakfast-table view. No identifiable range surface is directly visible.",
+      "confidence": "high"
+    },
+    {
+      "frame_ordinal": 2,
+      "object_id": "over_range_microwave",
+      "state": "visible",
+      "bbox_xyxy": [94, 187, 211, 244],
+      "reason": "The microwave housing, dark door and right control strip are directly visible above the range. Box follows the appliance silhouette, excluding the white cabinet above it.",
+      "confidence": "high"
+    },
+    {
+      "frame_ordinal": 2,
+      "object_id": "double_oven_cooking_range",
+      "state": "partial",
+      "bbox_xyxy": [90, 251, 231, 334],
+      "reason": "Rear controls, portions of the black cooktop and upper oven front are visible. The island and foreground plant conceal the lower appliance, while the kettle occludes some cooktop pixels. Box encloses only the remaining observed range surfaces.",
+      "confidence": "medium"
+    },
+    {
+      "frame_ordinal": 3,
+      "object_id": "over_range_microwave",
+      "state": "visible",
+      "bbox_xyxy": [266, 181, 369, 240],
+      "reason": "The same microwave is fully identifiable beneath the cabinet, with its dark window, handle/control strip and stainless housing directly visible.",
+      "confidence": "high"
+    },
+    {
+      "frame_ordinal": 3,
+      "object_id": "double_oven_cooking_range",
+      "state": "partial",
+      "bbox_xyxy": [262, 246, 388, 330],
+      "reason": "Rear control panel, cooktop and the upper oven front are observed. The island and plant hide the lower oven; the kettle also occludes part of the cooktop. No box extension is made behind these occluders.",
+      "confidence": "medium"
+    },
+    {
+      "frame_ordinal": 4,
+      "object_id": "over_range_microwave",
+      "state": "visible",
+      "bbox_xyxy": [265, 132, 400, 212],
+      "reason": "The fixed microwave is directly visible above the cooking range. The lower appliance lip is included and surrounding black backsplash is excluded as far as a rectangular box permits.",
+      "confidence": "high"
+    },
+    {
+      "frame_ordinal": 4,
+      "object_id": "double_oven_cooking_range",
+      "state": "partial",
+      "bbox_xyxy": [259, 225, 425, 368],
+      "reason": "The control panel, cooktop, upper oven door and a small strip below it are visible. The foreground island hides the remaining lower oven, and the kettle overlaps the cooktop. The lower edge is estimated from the last directly visible appliance strip.",
+      "confidence": "medium"
+    },
+    {
+      "frame_ordinal": 5,
+      "object_id": "over_range_microwave",
+      "state": "visible",
+      "bbox_xyxy": [225, 54, 429, 205],
+      "reason": "Anchor view directly shows the microwave window, handle/control panel and stainless housing. The box excludes adjacent cabinet doors and shadows.",
+      "confidence": "high"
+    },
+    {
+      "frame_ordinal": 5,
+      "object_id": "double_oven_cooking_range",
+      "state": "partial",
+      "bbox_xyxy": [201, 222, 485, 540],
+      "reason": "Anchor view directly shows rear controls, cooktop and both oven fronts. The bottom of the appliance is cut by the image boundary and the kettle occludes part of the cooktop. The box stops at the observed image boundary and does not include the kettle above the control panel.",
+      "confidence": "high"
+    }
+  ]
+}

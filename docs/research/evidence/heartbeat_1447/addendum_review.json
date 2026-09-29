@@ -1,0 +1,91 @@
+{
+  "schema": "real2sim.annotation-addendum-review/1",
+  "reviewer": "root internal agent; not independent human labeler",
+  "parent_sha256": "dafd8ce5615cb968a912e58902bf1a66d91db2fb9f8de5eba618fb187e6f199a",
+  "child_sha256": "c9983b03f3978201874fb2ee9db7e5a77a38f16316599ea848797af0ba3ab942",
+  "corrections": [],
+  "parent_records_preserved": true,
+  "sources": [
+    {
+      "id": "open_concept_g0034",
+      "annotation_addendum_sha256": "c692ab8a3d28206dfe44e58019ec167ca5c682adcc087d0af82f7ad3fbae3ac2",
+      "overlay_sha256": "c57eba07145dbd24e4cddeeae54790d357c0e7f03fc1ee19f56cb77e894a8652",
+      "observations": 24,
+      "states": {
+        "visible": 5,
+        "partial": 7,
+        "out_of_frame": 12
+      },
+      "frames_with_observed_boxes": 6,
+      "unlabeled_frame_ordinals": [],
+      "annotation_covisibility_components": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3,
+          4,
+          5
+        ]
+      ],
+      "finding": "Same fixed object identities follow coarse visible extents; reflections do not count as direct object observation. No initial edits requested."
+    },
+    {
+      "id": "bedroom_waterfront_g0024",
+      "annotation_addendum_sha256": "3ac70db51ae330a22068cd2d393edae54cd8ecc7b15cec622ca9a0a1ce9bc2a9",
+      "overlay_sha256": "16d75e0b291a0c1e2254cf18208b74bd2e71264c26ae061078209971c71daa17",
+      "observations": 24,
+      "states": {
+        "visible": 9,
+        "partial": 7,
+        "out_of_frame": 8
+      },
+      "frames_with_observed_boxes": 6,
+      "unlabeled_frame_ordinals": [],
+      "annotation_covisibility_components": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      ],
+      "finding": "Same fixed object identities follow coarse visible extents; reflections do not count as direct object observation. No initial edits requested."
+    },
+    {
+      "id": "breakfast_nook_kitchen_g0039",
+      "annotation_addendum_sha256": "c49562504a026d5afd56a17f9f749da2b8fbc373afd51ae64339188613f0dca4",
+      "overlay_sha256": "28b85e4588ecee8f35e931ea7ddeeb5a34bc194d97392cfcbef4d53c5357f39c",
+      "observations": 24,
+      "states": {
+        "visible": 5,
+        "partial": 5,
+        "out_of_frame": 14
+      },
+      "frames_with_observed_boxes": 5,
+      "unlabeled_frame_ordinals": [
+        1
+      ],
+      "annotation_covisibility_components": [
+        [
+          0
+        ],
+        [
+          1
+        ],
+        [
+          2,
+          3,
+          4,
+          5
+        ]
+      ],
+      "finding": "Same fixed object identities follow coarse visible extents; reflections do not count as direct object observation. No initial edits requested."
+    }
+  ],
+  "scope": "Manual coarse visible boxes, not masks or 3D truth. Co-visibility uses these selected annotations only and is not a feature-match or pose-connectivity verdict."
+}

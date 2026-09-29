@@ -1,0 +1,114 @@
+{
+  "schema": "real2sim.visible-box-annotations/1",
+  "source_id": "open_concept_g0034",
+  "objects": [
+    {
+      "id": "kitchen_stainless_refrigerator",
+      "label": "Stainless side-by-side refrigerator",
+      "identity_description": "Physical stainless two-door refrigerator with a black dispenser on its left door, recessed below white cabinets immediately to the left of the dark blue door. Includes the appliance front and handles; excludes the white cabinet surround. Selected from direct view in anchor frame 5."
+    },
+    {
+      "id": "kitchen_stainless_range_hood",
+      "label": "Stainless chimney range hood",
+      "identity_description": "Physical stainless extractor hood above the cooking range, comprising the sloped broad canopy and visible rectangular chimney, between white glass-front cabinets below the high windows. Excludes the range, wall and reflections in adjacent cabinet glass. Selected from direct view in anchor frame 5."
+    }
+  ],
+  "observations": [
+    {
+      "frame_ordinal": 0,
+      "object_id": "kitchen_stainless_refrigerator",
+      "state": "out_of_frame",
+      "bbox_xyxy": null,
+      "reason": "Living-room-facing view shows only the nearer kitchen cabinets at the right edge; no direct portion of the selected refrigerator is visible beyond that edge.",
+      "confidence": "high"
+    },
+    {
+      "frame_ordinal": 0,
+      "object_id": "kitchen_stainless_range_hood",
+      "state": "out_of_frame",
+      "bbox_xyxy": null,
+      "reason": "The cooking-range wall and selected hood are outside the right side of this view. No reflected object is used as a direct visible extent.",
+      "confidence": "high"
+    },
+    {
+      "frame_ordinal": 1,
+      "object_id": "kitchen_stainless_refrigerator",
+      "state": "out_of_frame",
+      "bbox_xyxy": null,
+      "reason": "The frame remains directed toward the living room and dining table; the refrigerator beyond the visible right-hand cabinets is not directly in frame.",
+      "confidence": "high"
+    },
+    {
+      "frame_ordinal": 1,
+      "object_id": "kitchen_stainless_range_hood",
+      "state": "out_of_frame",
+      "bbox_xyxy": null,
+      "reason": "The selected hood and cooking range remain outside the right image boundary; there is no direct observed hood extent.",
+      "confidence": "high"
+    },
+    {
+      "frame_ordinal": 2,
+      "object_id": "kitchen_stainless_refrigerator",
+      "state": "partial",
+      "bbox_xyxy": [486, 234, 574, 407],
+      "reason": "The dispenser, two stainless doors and right lower edge identify the refrigerator left of the blue door. The foreground island occludes its lower-left portion; the box follows visible appliance extrema without filling a hidden full front.",
+      "confidence": "high"
+    },
+    {
+      "frame_ordinal": 2,
+      "object_id": "kitchen_stainless_range_hood",
+      "state": "partial",
+      "bbox_xyxy": [674, 0, 911, 250],
+      "reason": "Direct close view of the canopy and chimney above the range. The chimney extends past the top image boundary, so the box is clipped at y=0 and does not infer its hidden top.",
+      "confidence": "high"
+    },
+    {
+      "frame_ordinal": 3,
+      "object_id": "kitchen_stainless_refrigerator",
+      "state": "partial",
+      "bbox_xyxy": [291, 246, 393, 382],
+      "reason": "Same recessed refrigerator is directly visible left of the blue door. The island countertop and foreground faucet obscure the lower front; only visible door/body extrema are enclosed.",
+      "confidence": "medium"
+    },
+    {
+      "frame_ordinal": 3,
+      "object_id": "kitchen_stainless_range_hood",
+      "state": "visible",
+      "bbox_xyxy": [544, 108, 756, 275],
+      "reason": "The physical canopy and visible chimney have a clear complete image silhouette above the range. Reflections on stainless metal are surface appearance, and adjacent cabinet-glass reflections are excluded.",
+      "confidence": "high"
+    },
+    {
+      "frame_ordinal": 4,
+      "object_id": "kitchen_stainless_refrigerator",
+      "state": "partial",
+      "bbox_xyxy": [246, 255, 343, 371],
+      "reason": "Same refrigerator with left-door dispenser is directly visible under the white cabinets. Its lower portion is concealed by the island; no lower edge is extrapolated behind the countertop.",
+      "confidence": "medium"
+    },
+    {
+      "frame_ordinal": 4,
+      "object_id": "kitchen_stainless_range_hood",
+      "state": "visible",
+      "bbox_xyxy": [488, 164, 634, 281],
+      "reason": "The same chimney and canopy are directly visible above the cooking range. The foreground pointing hand is to the right and does not occlude the hood; glass reflections are excluded.",
+      "confidence": "high"
+    },
+    {
+      "frame_ordinal": 5,
+      "object_id": "kitchen_stainless_refrigerator",
+      "state": "partial",
+      "bbox_xyxy": [277, 174, 379, 286],
+      "reason": "Anchor-frame direct view shows the stainless doors, dispenser and handles left of the blue door. The island covers the lower appliance body, so the box encloses only the visible portion.",
+      "confidence": "medium"
+    },
+    {
+      "frame_ordinal": 5,
+      "object_id": "kitchen_stainless_range_hood",
+      "state": "visible",
+      "bbox_xyxy": [526, 76, 681, 202],
+      "reason": "Anchor-frame direct view clearly shows the selected canopy and chimney above the range. The box follows their observed silhouette without including the cabinet-glass reflection of the pendant light or surrounding cabinets.",
+      "confidence": "high"
+    }
+  ]
+}
