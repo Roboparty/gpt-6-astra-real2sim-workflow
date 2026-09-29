@@ -1,8 +1,8 @@
 # Known limitations of this public preview
 
-This release packages the verified room example and its execution snapshot. It does not include the proposed `quality_v3` redesign.
+This release consolidates the native generation flow, historical examples and measured research checks. It does not include the proposed `quality_v3` redesign or establish a newly accepted room reconstruction. See the [2026-09-30 integration record](docs/RELEASE_20260930.md).
 
-The 2026-09-29 research branch adds structural shell collision fixes, optional
+The integrated 2026-09-29 research work adds structural shell collision fixes, optional
 fixed-camera geometry feedback, source-bound physical priors and task-trace
 evaluation. See [the measured development results](docs/research/RESULTS_20260929.md).
 These additions are not a new accepted room reconstruction or a SOTA result.
@@ -12,11 +12,12 @@ These additions are not a new accepted room reconstruction or a SOTA result.
 | Generation entry | `tools/rebuild_artifacts.py` is a frozen recipe for the supplied photograph. New scenes need new observations, fitting and modelling; changing only the image path is insufficient. |
 | Agent access | Agent stages require an operator or a configured `agent_command`. There is no bundled Astra inference service or completed automatic model-routing client. |
 | Furniture specifications | Dimension-prior fitting code exists, but the example uses common priors. Automatic SKU search, universal CAD import and a measured specification-uplift benchmark are absent. |
-| Small/empty assembly sets | Single-part/no-joint and single multi-part assemblies support explicitly empty applicable check lists, verified in Blender. Multi-part assemblies require every declared joint measurement; multiple assemblies require exact cross-owner pair coverage. Explicit zero-furniture rooms now support scene validation, source-view structural review and geometry-only export for a complete shell plus fixed luminaires, with one mesh per semantic object and no instances. Full agent delivery, interchange and simulation for this narrow empty-room path remain unverified. See [empty-room evidence](docs/research/EMPTY_ROOM_20260929.md). |
+| Small/empty assembly sets | Single-part and explicit zero-furniture fixtures pass structure, canonical static engine and three-format reload checks. The empty-room path requires a complete shell, fixed luminaires, one mesh per semantic object and no instances. These synthetic checks do not establish full Agent visual acceptance or arbitrary scene support. See [interchange evidence](docs/research/UPDATE_20260929T1346.md). |
 | Mesh audit | Intended for the closed components in this example; intersection screening and signed-distance sampling are not an exact proof for every arbitrary mesh. Visual review remains necessary. |
 | Freeze and evidence | `freeze()` requires every configured stage, including validate/report and applicable reviews, to remain valid. Hash consistency does not itself prove physical truth. |
 | Cache granularity | Any Python/Markdown change under `workflow/r2s` changes the implementation fingerprint for every stage. Current reuse is conservative, not object-level incremental execution. |
-| Export cost | Export currently includes a doubled-resolution, 128-sample render. Export and presentation rendering are not yet fully decoupled. |
+| Export cost | Default delivery export includes a doubled-resolution, 128-sample render. Explicit `--interchange-only` skips presentation/ID renders for file diagnostics and is not complete visual delivery. |
+| Portable appearance | The detailed room becomes visibly different in GLB/USD under the same native rig. Removing the imported floor Normal connection improves USD but worsens GLB; no universal repair is enabled. The GLB all-vertex bound failure from nonsurface source points remains separately recorded. |
 | Interchange and physics | GLB requires extra intrinsics for the off-axis camera; shading can differ across formats. Mass/material/gap values are assumptions and the loading demonstration is finite-duration. |
 | Structural collision | Canonical shell export supports axis-aligned rooms with explicit rectangular wall openings. Arbitrary wall proxy overrides are rejected until coverage validation exists. Window panes and frames remain separate collision geometry. |
 | Geometry feedback | Automatic Blender feedback exports opaque visible masks. Automatic evaluated landmark bindings, transparent-object mask semantics and independent real 3-D measurements remain unresolved. |

@@ -1,0 +1,95 @@
+{
+  "protocol_sha256": "058aef0166d7669ccb7b78b5649984eb50a1d6ed924080bab6239d73783fa5cb",
+  "render_receipt_sha256": "a45047aba7054e3ca23f5ade9b5927143feb38570f47dec1d970a0437ced42c4",
+  "expected_groups": 3,
+  "groups": [
+    {
+      "format": "native",
+      "control_sha256": "4431753cd48e2305e70ef86a4332ac0275497095383638d891c96441bfe17ebc",
+      "ablation_sha256": "0010acaabcfbfc6c6dfbdecf45db794294532c1383fb454ffe079840a1c52676",
+      "control_to_native_full_mae": 0.0,
+      "ablation_to_native_full_mae": 7.656238364413684e-06,
+      "control_to_photo_full_mae": 0.08298565223338128,
+      "ablation_to_photo_full_mae": 0.08298659120601089,
+      "regions": {
+        "bedding": {
+          "control_to_native_mae": 0.0,
+          "ablation_to_native_mae": 7.262164124909218e-07,
+          "control_to_photo_mae": 0.11982938186167713,
+          "ablation_to_photo_mae": 0.11982968089196462
+        },
+        "vent": {
+          "control_to_native_mae": 0.0,
+          "ablation_to_native_mae": 1.0504201680672282e-06,
+          "control_to_photo_mae": 0.10751587301587301,
+          "ablation_to_photo_mae": 0.10751575630252101
+        },
+        "floor": {
+          "control_to_native_mae": 0.0,
+          "ablation_to_native_mae": 4.149808071376684e-08,
+          "control_to_photo_mae": 0.03168594252515821,
+          "ablation_to_photo_mae": 0.0316859010270775
+        }
+      }
+    },
+    {
+      "format": "glb",
+      "control_sha256": "49da2f287aea04b7faee1544632fd16eeab5321f8b7b14c43d2f0111242d8b2c",
+      "ablation_sha256": "f08ee42dd4cfb457336d069fe2c3aab7e853f4175f37ce01207346e8ebe55b4e",
+      "control_to_native_full_mae": 0.07395442809500484,
+      "ablation_to_native_full_mae": 0.1254067623412363,
+      "control_to_photo_full_mae": 0.14048366528303033,
+      "ablation_to_photo_full_mae": 0.17477032308146168,
+      "regions": {
+        "bedding": {
+          "control_to_native_mae": 0.08078461275577768,
+          "ablation_to_native_mae": 0.11532286727327094,
+          "control_to_photo_mae": 0.16786103635353922,
+          "ablation_to_photo_mae": 0.15782669058908966
+        },
+        "vent": {
+          "control_to_native_mae": 0.05951995798319329,
+          "ablation_to_native_mae": 0.07896685340802988,
+          "control_to_photo_mae": 0.1630559056956116,
+          "ablation_to_photo_mae": 0.18105205415499528
+        },
+        "floor": {
+          "control_to_native_mae": 0.17070812324929974,
+          "ablation_to_native_mae": 0.2916652764809627,
+          "control_to_photo_mae": 0.1940096275547256,
+          "ablation_to_photo_mae": 0.2683637721755368
+        }
+      }
+    },
+    {
+      "format": "usdc",
+      "control_sha256": "cd8648c109a40ace3a3ee03aa0631908c607444262c08beaca5919c4f8fe8f53",
+      "ablation_sha256": "d0326f940c7004a2790b7b720f5c4e1d811e7008aad9e1f17457a9007bd557b4",
+      "control_to_native_full_mae": 0.077009231088074,
+      "ablation_to_native_full_mae": 0.048956065879956864,
+      "control_to_photo_full_mae": 0.13785654746938816,
+      "ablation_to_photo_full_mae": 0.10679532806704518,
+      "regions": {
+        "bedding": {
+          "control_to_native_mae": 0.062281430219146484,
+          "ablation_to_native_mae": 0.040031825366312106,
+          "control_to_photo_mae": 0.14063377333504207,
+          "ablation_to_photo_mae": 0.11348912811311886
+        },
+        "vent": {
+          "control_to_native_mae": 0.026505368814192343,
+          "ablation_to_native_mae": 0.03254586834733894,
+          "control_to_photo_mae": 0.1304873949579832,
+          "ablation_to_photo_mae": 0.13588877217553688
+        },
+        "floor": {
+          "control_to_native_mae": 0.17082004357298472,
+          "ablation_to_native_mae": 0.02604166407303662,
+          "control_to_photo_mae": 0.19412154787841066,
+          "ablation_to_photo_mae": 0.02815972611266729
+        }
+      }
+    }
+  ],
+  "scope": "One binary imported-floor Normal-link ablation; not a physically correct normal map or full delivery acceptance"
+}

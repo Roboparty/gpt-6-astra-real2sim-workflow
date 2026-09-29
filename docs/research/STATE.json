@@ -22,7 +22,7 @@
   "remote_root": "4090-1:/home/wqz/real2sim_capability_20260929",
   "protocol": "PROTOCOL_20260929.md",
   "result": "RESULTS_20260929.md",
-  "latest_update": "UPDATE_20260929T1548.md",
+  "latest_update": "../RELEASE_20260930.md",
   "completed": [
     "Matched retained-room collision failure reproduction and repair",
     "Rectangular opening handling and false-pass negative tests",
@@ -56,10 +56,11 @@
     "External sensor-reference cohort fixed for three TUM setups; official mocap metadata validated for all three, but complete RGB-D bundles remain 0/3; 25 translation-ATE evaluator tests passed",
     "Full Blender/GLB/USD export on two frozen RoomKit fixtures: 6/6 source-bound strict checks passed; legacy USD camera-name failures retained; native export/validate gate integrated with 5 mutation controls and 6 stage tests",
     "Append-only v2 annotations: all 36 v1 observations preserved plus 36 new records, 38 observed boxes and 34 retained nulls; coverage 17/18 frames but selected identity graphs still disconnected in two sources; 10 append checks and v1 regression passed",
-    "Detailed-room portability measured with exact preserved source rig: GLB/USD appearance worsens, floor turns black. Original GLB 8.094mm all-vertex bound failure retained; read-only surface analysis attributes that bound difference to nonsurface source vertices, not demonstrated surface shrinkage"
+    "Detailed-room portability measured with exact preserved source rig: GLB/USD appearance worsens, floor turns black. Original GLB 8.094mm all-vertex bound failure retained; read-only surface analysis attributes that bound difference to nonsurface source vertices, not demonstrated surface shrinkage",
+    "Final release candidate verified: 14/14 CPU runner groups pass with executable hashes matched; floor-normal ablation has mixed GLB/USD outcomes and is not enabled as a universal repair"
   ],
   "next": [
-    "Preregister a controlled imported-floor normal-path ablation preserving color/geometry/rig; portable detailed-room appearance is degraded. Separately test source nonsurface-vertex cleanup without rewriting the original all-vertex failure.",
+    "Investigate format-specific normal/tangent or texture interpretation; simple imported-floor Normal disconnection has mixed results and is not promoted. Preserve appearance proposal count 5/8 and original geometry failure.",
     "Resolve remote TUM transfer throughput or explicitly resume retained partials within the remaining 514.004059s acquisition ledger; preserve all three fixed sequences and RGB/GT separation",
     "Register bridge-object annotations or reviewed correspondences for disconnected selected identity graphs; v2 retains 72 observations and 17/18 frame coverage, not a complete common camera/model initialization",
     "Prepare explicit versioned runtime-preparation budget amendment before resuming Pi3X dependency transfer; reuse only officially hash-verified retained wheels, preserve spent 1800 seconds",
@@ -137,7 +138,9 @@
     "portability_001 (artifact-only export; strict 2/3 formats and initial RNA introspection failure)",
     "portability_002 (native render plus retained exact-rig failures)",
     "portability_003 (three controlled-rig diagnostics; GLB geometry failure explicitly retained)",
-    "portability_001/duvet_topology_diagnostic.json (read-only surface-bound inspection)"
+    "portability_001/duvet_topology_diagnostic.json (read-only surface-bound inspection)",
+    "floor_normal_001 (one binary imported-floor Normal-link ablation; mixed outcomes retained)",
+    "release_final_001 (14/14 final release validation groups)"
   ],
   "resource_accounting": {
     "new_gpu_hours": 0,
@@ -152,7 +155,7 @@
     "camera_initialization_full_sources": "1/3",
     "camera_runtime_addon": "pycolmap4.2.0 isolated target; existing Python/NumPy preserved",
     "pose_pilot_candidate_rounds_used": 4,
-    "appearance_unique_proposals_used": 4,
+    "appearance_unique_proposals_used": 5,
     "combined_unique_proposals_used": 2,
     "physical_ep2_simulation_attempts_used": 1,
     "parallel_selected_run_wall_seconds": 143.0860238011228,
@@ -202,7 +205,10 @@
     "portability_renderer_attempts_used": 3,
     "portability_exporter_mode_revisions_used": 1,
     "heartbeat_1548_selected_run_wall_seconds": 82.0521230440354,
-    "heartbeat_1548_scope": "Selected export/strict/render time; topology/material inspection and orchestration not separately timed. No authoring, camera, GPU or paid API candidate added."
+    "heartbeat_1548_scope": "Selected export/strict/render time; topology/material inspection and orchestration not separately timed. No authoring, camera, GPU or paid API candidate added.",
+    "floor_normal_ablation_wall_seconds": 58.571094358107075,
+    "final_release_validation_wall_seconds": 61.31910009076819,
+    "final_release_validation_attempts_used": 1
   },
   "constraints": [
     "Do not overwrite historical candidates, source photographs or failed evidence",
@@ -246,7 +252,8 @@
       "expected_formats": 3,
       "appearance": "degraded in controlled GLB/USD renders",
       "glb_bound_failure_interpretation": "Loose/non-surface source vertices account for all-vertex delta; original registered failure remains",
-      "floor_material": "Already image-textured; Bump to Normal Map conversion is a lead needing causal ablation"
+      "floor_material": "Already image-textured; Bump to Normal Map conversion is a lead needing causal ablation",
+      "floor_normal_ablation": "Universal repair rejected: USD full-photo MAE improves to 0.106795, GLB worsens to 0.174770; native remains authoritative"
     }
   },
   "benchmark_readiness_report": "SHARED_BENCHMARK_READINESS_20260929.md",
@@ -315,7 +322,7 @@
     "scope": "Append-only development inventory, not masks, 3D truth, independent human labels or measured reconstruction uplift"
   },
   "integration": {
-    "status": "validated_development_candidate",
+    "status": "validated_ready_for_main",
     "branch": "codex/unified-generation-20260929",
     "generation_parent": "a08fdcf",
     "research_parent": "1be6116",
@@ -323,8 +330,11 @@
     "main_updated": false,
     "native_flow": "quality_v2 opt-in generation_skills",
     "verification": "evidence/unified_generation_20260929/summary.json",
-    "separate_cross_thread_release_instruction": "Reported by side-chat delegation; current heartbeat still explicitly forbids automatic main merge",
-    "latest_interchange_gate": "UPDATE_20260929T1346.md"
+    "separate_cross_thread_release_instruction": "Superseded for this release by direct current-thread user authorization; later unattended experiments remain on the research branch",
+    "latest_interchange_gate": "UPDATE_20260929T1346.md",
+    "main_publication_authorization": "Direct current-thread user request: validate the best available version promptly and submit to the formal branch",
+    "release_report": "../RELEASE_20260930.md",
+    "final_validation": "evidence/final_release_20260930/validation_summary.json"
   },
   "external_reference_cohort": {
     "protocol": "TUM_REFERENCE_PROTOCOL_20260929.json",

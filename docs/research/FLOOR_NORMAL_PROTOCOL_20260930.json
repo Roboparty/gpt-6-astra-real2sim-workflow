@@ -1,0 +1,99 @@
+{
+  "schema": "real2sim.floor-normal-ablation/1",
+  "status": "registered_before_ablation",
+  "source_model": "/home/wqz/real2sim_capability_20260929/runs/shell_vent_002/shell_vent/model.blend",
+  "source_model_sha256": "4a0adbd949e3339c316e4c7bb99109a08e10c77d69dc80e83dc2b520f0a40402",
+  "source_scene": "/home/wqz/real2sim_capability_20260929/runs/shell_vent_002/shell_vent/scene.json",
+  "source_scene_sha256": "65b70a9d62ec1a5216a94624f1f285df6c1d60297e33af8eedd9d65b406d4d93",
+  "source_photo": "/home/wqz/real2sim_whole_scene_20260926/input/01_bedroom.jpg",
+  "source_sha256": "5068deec1cba1e6a167209adca5fb77e4d931db06ed6a3812b9a2b8252d8c866",
+  "formats": [
+    "native",
+    "glb",
+    "usdc"
+  ],
+  "render": {
+    "width": 851,
+    "height": 638,
+    "samples": 8,
+    "seed": 0,
+    "threads": 2,
+    "device": "CPU",
+    "adaptive": false,
+    "denoise": true
+  },
+  "appearance_regions_xyxy": {
+    "bedding": [
+      625,
+      700,
+      1135,
+      940
+    ],
+    "vent": [
+      1210,
+      30,
+      1490,
+      190
+    ],
+    "floor": [
+      350,
+      1100,
+      1250,
+      1240
+    ]
+  },
+  "comparison": "Same original camera, lights, world and color management in every format. No fitting or chosen best renderer. Report source-photo ROI errors and format-to-native full-image/ROI RGB MAE separately.",
+  "geometry_gate": "Frozen original source vs independent actual blend/GLB/USD reload using existing strict evaluator; all formats retained on failure.",
+  "budget": {
+    "cpu_wall_seconds_per_run": 900,
+    "appearance_proposals_used_before": 4,
+    "new_appearance_proposals": 1,
+    "gpu_hours": 0,
+    "paid_api_requests": 0
+  },
+  "failure_policy": "No omitted formats, threshold tuning, scene edits or historical file overwrites. A geometry failure limits appearance attribution and cannot be promoted.",
+  "scope": "One fixed-source controlled imported-material ablation; effect of normal connection is testable, but no physically correct normal repair, whole scene acceptance, external renderer result or SOTA claim.",
+  "implementation_sha256": {
+    "workflow/r2s/blender_export.py": "ec9d6123271535b8f4de8618a5b8e944b5d999016f93831f8c47a1dd8d4c10d2",
+    "workflow/r2s/interchange.py": "808c48f725c1b24e6b32fae1a545f60e10d520c03f707715b061fb965b47921a",
+    "tools/render_interchange_appearance.py": "4e76567737410e2d2e5fa1814156b18cd580d330f66e73cdf272dc1d28bc84dc",
+    "tools/run_room_portability.py": "50e4db30fe8ea7f901715774e694eb83895673ea0e7a895b00b67d3f833b6841",
+    "tools/score_frozen_regions.py": "f26bb364347e04f07cda864d919b121aa8865c246e14c59762a2dee490c665c2"
+  },
+  "parent_protocol_sha256": "4ecf23301d461caea8f5060b61fdf0a71f4bcf51b57dd710b382d258341030db",
+  "amendment": "One predeclared binary floor normal-path ablation; all earlier geometry and rig failures retained.",
+  "render_failed_geometry_as_diagnostic": true,
+  "floor_normal_ablation": {
+    "entity": "floor",
+    "formats": [
+      "glb",
+      "usdc"
+    ],
+    "operation": "disconnect_only_Principled_BSDF_Normal_input",
+    "expected_material": "carpet_greytaupe",
+    "target_material_count": 1
+  },
+  "controls": {
+    "native": {
+      "render": "/home/wqz/real2sim_capability_20260929/runs/portability_003/native/render.png",
+      "sha256": "4431753cd48e2305e70ef86a4332ac0275497095383638d891c96441bfe17ebc"
+    },
+    "glb": {
+      "render": "/home/wqz/real2sim_capability_20260929/runs/portability_003/glb/render.png",
+      "sha256": "49da2f287aea04b7faee1544632fd16eeab5321f8b7b14c43d2f0111242d8b2c"
+    },
+    "usdc": {
+      "render": "/home/wqz/real2sim_capability_20260929/runs/portability_003/usdc/render.png",
+      "sha256": "cd8648c109a40ace3a3ee03aa0631908c607444262c08beaca5919c4f8fe8f53"
+    }
+  },
+  "hypothesis": "Imported floor normal input contributes to black floor. One binary ablation only; no normal-strength, color, roughness, light, exposure or geometry search.",
+  "held_constant": [
+    "all mesh/UV/geometry",
+    "original rig and rendering recipe",
+    "all non-floor materials",
+    "all floor node values and all non-Normal links",
+    "existing color image data",
+    "source and exported model bytes"
+  ]
+}

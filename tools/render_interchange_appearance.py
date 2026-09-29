@@ -12,6 +12,7 @@ import time
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]/'workflow'))
 from r2s.interchange import capture_scene, compare_snapshots, sha
+from r2s.interchange import canonical_owner
 
 
 def properties(value):
@@ -47,6 +48,45 @@ def rig_state(scene, rig):
 
 def write(path, value):
     path.write_text(json.dumps(value, indent=2, allow_nan=False), encoding='utf-8')
+
+
+def ablate_floor_normal(scene, spec, recipe):
+    """A binary diagnostic only; no new physical normal estimate is created."""
+    if recipe != {'entity':'floor','formats':['glb','usdc'],
+                  'operation':'disconnect_only_Principled_BSDF_Normal_input',
+                  'expected_material':'carpet_greytaupe','target_material_count':1}:
+        raise ValueError('Unregistered normal ablation')
+    ids={o['id'] for o in spec['objects']}
+    targets=[o for o in scene.objects if o.type=='MESH' and canonical_owner(o,ids)=='floor']
+    materials={slot.material for o in targets for slot in o.material_slots if slot.material}
+    if len(materials)!=1:raise ValueError('Expected one floor material')
+    mat=next(iter(materials))
+    import re
+    if not re.fullmatch(r'carpet_greytaupe(?:\.\d{3})?',mat.name) or not mat.use_nodes:raise ValueError('Unexpected floor material')
+    others={m.name:datablock(m) for m in __import__('bpy').data.materials if m!=mat}
+    other_slots={o.name:[slot.material.name if slot.material else None for slot in o.material_slots]
+                 for o in scene.objects if o.type=='MESH' and o not in targets}
+    before=datablock(mat);copied=mat.copy();copied.name=mat.name+'_normal_ablation'
+    shaders=[n for n in copied.node_tree.nodes if n.bl_idname=='ShaderNodeBsdfPrincipled']
+    if len(shaders)!=1 or len(shaders[0].inputs['Normal'].links)!=1:raise ValueError('Expected one linked Principled Normal')
+    link=shaders[0].inputs['Normal'].links[0]
+    removed=[link.from_node.name,link.from_socket.identifier,link.to_node.name,link.to_socket.identifier]
+    copied.node_tree.links.remove(link)
+    after=datablock(copied);normalized=json.loads(json.dumps(after))
+    normalized['properties']['name']=before['properties']['name']
+    expected=json.loads(json.dumps(before));expected['links'].remove(removed)
+    if normalized!=expected:raise ValueError('Floor material changed beyond the Normal connection')
+    for obj in targets:
+        for slot in obj.material_slots:
+            if slot.material==mat:slot.link='OBJECT';slot.material=copied
+    for obj in scene.objects:
+        if obj.type=='MESH' and obj not in targets:
+            if other_slots[obj.name]!=[slot.material.name if slot.material else None for slot in obj.material_slots]:raise ValueError('Non-floor material assignment changed')
+    if any(datablock(__import__('bpy').data.materials[name])!=value for name,value in others.items()):raise ValueError('Non-floor material graph changed')
+    if datablock(mat)!=before:raise ValueError('Original shared material was edited')
+    return {'removed_link':removed,'imported_material_name':mat.name,'target_objects':[o.name for o in targets],
+            'material_before':before,'material_after':after,'non_floor_materials_unchanged':True,
+            'scope':'Normal connection removed on private imported floor material; no physical normal repair'}
 
 
 def main():
@@ -118,6 +158,10 @@ def main():
                 for key, value in color.items(): setattr(scene.view_settings, key, value)
                 if sha(path) != row['export_sha256']: raise ValueError('Export bytes changed during import')
             actual = capture_scene(spec, reference['camera_identity'], reference['projection_context']['pixel_aspect'])
+            if group!='native' and p.get('floor_normal_ablation'):
+                row['normal_ablation']=ablate_floor_normal(scene,spec,p['floor_normal_ablation'])
+                if capture_scene(spec,reference['camera_identity'],reference['projection_context']['pixel_aspect'])!=actual:
+                    raise ValueError('Material ablation changed captured geometry/camera')
             after = rig_state(scene, rig); row['rig_before'] = before; row['rig_after'] = after
             row['rig_preserved'] = before == after
             geometry = compare_snapshots(reference, actual); write(out/'geometry.json', geometry)

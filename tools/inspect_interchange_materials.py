@@ -27,11 +27,18 @@ for label,path in [('native',a.source_model),('glb',a.export_dir/'scene.glb'),('
             if mat is None:continue
             record={'nodes':[],'diffuse_color':list(mat.diffuse_color)}
             if mat.use_nodes:
+                record['links']=[[link.from_node.name,link.from_socket.identifier,link.to_node.name,link.to_socket.identifier] for link in mat.node_tree.links]
                 for node in mat.node_tree.nodes:
                     r={'type':node.bl_idname,'name':node.name}
                     if node.bl_idname=='ShaderNodeBsdfPrincipled':
                         r['base_color']=list(node.inputs['Base Color'].default_value);r['base_color_linked']=node.inputs['Base Color'].is_linked
                         r['base_color_sources']=[link.from_node.bl_idname for link in node.inputs['Base Color'].links]
+                    if node.bl_idname in {'ShaderNodeBump','ShaderNodeNormalMap'}:
+                        r['space']=getattr(node,'space',None)
+                        r['inputs']={s.name:{'linked':s.is_linked,'value':list(s.default_value) if getattr(s,'type','') in {'RGBA','VECTOR'} else s.default_value}
+                                     for s in node.inputs if hasattr(s,'default_value')}
+                    if node.bl_idname=='ShaderNodeTexImage' and node.image:
+                        im=node.image;r['image']={'name':im.name,'size':list(im.size),'colorspace':im.colorspace_settings.name,'source':im.source,'packed':bool(im.packed_file)}
                     record['nodes'].append(r)
             mats[mat.name]=record
     assert sha(path)==original

@@ -1,5 +1,7 @@
 # GPT-6 Astra Real2sim workflow
 
+**2026-09-30 verified integration:** research and native generation are consolidated, with 14/14 final validation groups passing. Blender remains authoritative; portable appearance limitations and the rejected universal normal-disconnection repair are retained. This is not a SOTA claim. [Release and evidence](docs/RELEASE_20260930.md).
+
 **Generation skills:** `quality_v2` can now execute RoomKit component modeling, consume or report blocked Pi3X references, and feed rendered local-region differences into its existing review/revision loop. Skills ship with the repository; model installation and inference are never implied by configuration. [Integration and usage](docs/GENERATION_SKILLS.md).
 
 [简体中文](README.md) | **English**
