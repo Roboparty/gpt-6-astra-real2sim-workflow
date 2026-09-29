@@ -1,0 +1,4 @@
+interface:
+  display_name: "Pi3X Scene Reference"
+  short_description: "Freeze frames and validate uncertain geometry references"
+  default_prompt: "Use $pi3x-scene-reference to freeze inputs and check reference outputs without resuming blocked inference."

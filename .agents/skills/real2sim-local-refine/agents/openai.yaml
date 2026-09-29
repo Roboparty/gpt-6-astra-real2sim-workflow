@@ -1,0 +1,4 @@
+interface:
+  display_name: "Real2Sim Local Refine"
+  short_description: "Source-region diagnosis, isolated edits and regression gates"
+  default_prompt: "Use $real2sim-local-refine to locate a source-region mismatch and propose one isolated part correction."

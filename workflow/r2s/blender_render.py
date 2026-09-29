@@ -6,6 +6,8 @@ sys.path.insert(0,str(Path(__file__).parent))
 from viewpoints import diagnostic_focus,safe_camera_position
 out=Path(sys.argv[sys.argv.index('--')+1]);sc=bpy.context.scene
 packet=json.loads((out/'packet.json').read_text()) if (out/'packet.json').exists() else {}
+inspection_size=packet.get('parameters',{}).get('inspection_resolution',[960,640])
+if len(inspection_size)!=2 or any(type(v) is not int or not 64<=v<=4096 for v in inspection_size):raise ValueError('Invalid inspection_resolution')
 holistic=packet.get('refinement',{}).get('limits',{}).get('appearance_contract_version',0)>=1
 for name in ['floor','ceiling','wall_back','wall_front','wall_left','wall_right']:
  o=bpy.data.objects.get(name)
@@ -45,7 +47,7 @@ try:neutral_view(out,S,'source_clay.png')
 finally:sc.view_layers[0].material_override=None
 r=S['room'];xm,xM,ym,yM,h=[r[k] for k in ['x_min','x_max','y_min','y_max','height']];dx=xM-xm;dy=yM-ym;focus=diagnostic_focus(S);diagnostics=[]
 for name,pos in [('wide',(xM-dx*.12,ym+dy*.12,h*.73)),('reverse',(xm+dx*.2,yM-dy*.08,h*.65))]:
-    chosen=safe_camera_position(S,pos);bpy.ops.object.camera_add(location=chosen);cam=bpy.context.object;cam.rotation_euler=(focus-cam.location).to_track_quat('-Z','Y').to_euler();cam.data.lens=22;sc.camera=cam;sc.render.resolution_x=960;sc.render.resolution_y=640;sc.render.filepath=str(out/f'diagnostic_{name}.png');bpy.ops.render.render(write_still=True);diagnostics.append({'name':name,'position':list(chosen),'target':list(focus),'layout_modified':False})
+    chosen=safe_camera_position(S,pos);bpy.ops.object.camera_add(location=chosen);cam=bpy.context.object;cam.rotation_euler=(focus-cam.location).to_track_quat('-Z','Y').to_euler();cam.data.lens=22;sc.camera=cam;sc.render.resolution_x,sc.render.resolution_y=inspection_size;sc.render.filepath=str(out/f'diagnostic_{name}.png');bpy.ops.render.render(write_still=True);diagnostics.append({'name':name,'position':list(chosen),'target':list(focus),'layout_modified':False,'image_size':inspection_size})
 (out/'diagnostic_cameras.json').write_text(json.dumps(diagnostics,indent=2))
 packet=json.loads((out/'packet.json').read_text()) if (out/'packet.json').exists() else {}
 if packet.get('workflow_profile')=='quality_v2':
@@ -53,5 +55,5 @@ if packet.get('workflow_profile')=='quality_v2':
     center=safe_camera_position(S,((xm+xM)/2,(ym+yM)/2,h*.60))
     wall_targets={'wall_front':((xm+xM)/2,ym,h*.5),'wall_back':((xm+xM)/2,yM,h*.5),'wall_left':(xm,(ym+yM)/2,h*.5),'wall_right':(xM,(ym+yM)/2,h*.5)}
     for name,target in wall_targets.items():
-        bpy.ops.object.camera_add(location=center);cam=bpy.context.object;cam.rotation_euler=(Vector(target)-cam.location).to_track_quat('-Z','Y').to_euler();cam.data.lens=18;sc.camera=cam;sc.render.resolution_x=960;sc.render.resolution_y=640;sc.render.filepath=str(out/f'inspect_{name}.png');bpy.ops.render.render(write_still=True)
+        bpy.ops.object.camera_add(location=center);cam=bpy.context.object;cam.rotation_euler=(Vector(target)-cam.location).to_track_quat('-Z','Y').to_euler();cam.data.lens=18;sc.camera=cam;sc.render.resolution_x,sc.render.resolution_y=inspection_size;sc.render.filepath=str(out/f'inspect_{name}.png');bpy.ops.render.render(write_still=True)
     (out/'four_wall_views.json').write_text(json.dumps({'camera_position':list(center),'targets':wall_targets,'all_walls_retained':True,'interpretation':'inspection views, not proof that invisible walls were measured'},indent=2))

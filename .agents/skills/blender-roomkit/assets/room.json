@@ -1,0 +1,12 @@
+{
+  "schema": "roomkit/1", "units": "m",
+  "parts": [
+    {"id":"floor", "assembly":"room", "kind":"box", "size":[4,4,0.1], "position":[0,0,-0.05], "rotation":[0,0,0], "collision":"box", "prior_status":"assumed", "prior_source":"synthetic fixture floor", "color":[0.4,0.3,0.2]},
+    {"id":"mattress", "assembly":"bed", "kind":"cushion", "size":[1.4,2,0.25], "position":[0,0,0.3], "rotation":[0,0,0], "collision":"box", "prior_status":"assumed", "prior_source":"synthetic fixture; not a real bed measurement"},
+    {"id":"duvet", "assembly":"bed", "kind":"folded-sheet", "size":[1.4,1.8,0.009], "position":[0,-0.1,0.46], "rotation":[0,0,0], "collision":"none", "fold_amplitude":0.025, "prior_status":"assumed", "prior_source":"static fold demonstration", "color":[0.65,0.7,0.8]},
+    {"id":"pillow", "assembly":"bed", "kind":"cushion", "size":[0.55,0.35,0.12], "position":[0,0.65,0.52], "rotation":[0,0,0], "collision":"none", "prior_status":"assumed", "prior_source":"synthetic cushion"},
+    {"id":"toy_body", "assembly":"toy", "kind":"ellipsoid", "size":[0.18,0.15,0.24], "position":[1,0,0.12], "rotation":[0,0,0], "collision":"box", "prior_status":"assumed", "prior_source":"synthetic toy", "color":[0.7,0.2,0.1]},
+    {"id":"shoe_sole", "assembly":"shoe", "kind":"cushion", "size":[0.12,0.28,0.035], "position":[1,0.5,0.0175], "rotation":[0,0,0.2], "collision":"box", "prior_status":"assumed", "prior_source":"synthetic accessory"},
+    {"id":"shoe_upper", "assembly":"shoe", "kind":"ellipsoid", "size":[0.11,0.25,0.09], "position":[1,0.5,0.07], "rotation":[0,0,0.2], "collision":"none", "prior_status":"assumed", "prior_source":"synthetic accessory"}
+  ]
+}

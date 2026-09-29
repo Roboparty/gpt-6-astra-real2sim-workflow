@@ -1,0 +1,232 @@
+{
+  "passed": 49,
+  "total": 49,
+  "wall_seconds": 0.7660000000614673,
+  "scope": "synthetic contracts and CLI; no model inference or real geometry accuracy",
+  "cases": [
+    {
+      "case": "roomkit_valid_all_recipes",
+      "passed": true
+    },
+    {
+      "case": "roomkit_reject_negative_dimension",
+      "passed": true,
+      "retained_error": "Positive dimensions and explicit assumed prior provenance required"
+    },
+    {
+      "case": "roomkit_reject_nan_dimension",
+      "passed": true,
+      "retained_error": "Finite three-vectors required"
+    },
+    {
+      "case": "roomkit_reject_duplicate_part",
+      "passed": true,
+      "retained_error": "Unique nonempty part ids required"
+    },
+    {
+      "case": "roomkit_reject_implicit_prior",
+      "passed": true,
+      "retained_error": "Positive dimensions and explicit assumed prior provenance required"
+    },
+    {
+      "case": "roomkit_reject_unimplemented_cloth",
+      "passed": true,
+      "retained_error": "This static backend does not implement dynamics; use an explicit engine adapter"
+    },
+    {
+      "case": "roomkit_reject_reserved_collision_id",
+      "passed": true,
+      "retained_error": "Unique nonempty part ids required"
+    },
+    {
+      "case": "roomkit_reject_unsupported_recipe",
+      "passed": true,
+      "retained_error": "Unsupported part recipe or missing assembly"
+    },
+    {
+      "case": "pi3x_freeze_ordered_frames",
+      "passed": true
+    },
+    {
+      "case": "pi3x_consume_valid_synthetic",
+      "passed": true
+    },
+    {
+      "case": "pi3x_never_claim_synthetic_inference",
+      "passed": true
+    },
+    {
+      "case": "pi3x_raw_zero_logit_sigmoid_half",
+      "passed": true
+    },
+    {
+      "case": "pi3x_nonidentity_c2w_convention",
+      "passed": true
+    },
+    {
+      "case": "pi3x_reject_heldout_leakage",
+      "passed": true,
+      "retained_error": "Frame order, heldout leakage or preprocessing mismatch"
+    },
+    {
+      "case": "pi3x_reject_wrong_frame_order",
+      "passed": true,
+      "retained_error": "Frame order, heldout leakage or preprocessing mismatch"
+    },
+    {
+      "case": "pi3x_reject_wrong_revision",
+      "passed": true,
+      "retained_error": "Backend revision mismatch: code_revision"
+    },
+    {
+      "case": "pi3x_reject_preprocess_drift",
+      "passed": true,
+      "retained_error": "Frame order, heldout leakage or preprocessing mismatch"
+    },
+    {
+      "case": "pi3x_reject_output_hash_drift",
+      "passed": true,
+      "retained_error": "Input/output provenance hash mismatch"
+    },
+    {
+      "case": "pi3x_reject_backend_without_receipt",
+      "passed": true,
+      "retained_error": "Backend output needs a retained run receipt path"
+    },
+    {
+      "case": "pi3x_reject_nan_point",
+      "passed": true,
+      "retained_error": "Nonfinite or nonfloating output"
+    },
+    {
+      "case": "pi3x_reject_non_rotation",
+      "passed": true,
+      "retained_error": "Pose rotation is not SO(3)"
+    },
+    {
+      "case": "pi3x_reject_world_point_inconsistency",
+      "passed": true,
+      "retained_error": "Global points inconsistent with camera-to-world convention"
+    },
+    {
+      "case": "pi3x_reject_missing_conf_axis",
+      "passed": true,
+      "retained_error": "Pi3X output shapes differ from pinned model API"
+    },
+    {
+      "case": "pi3x_reject_nan_threshold",
+      "passed": true,
+      "retained_error": "Confidence threshold must be in [0,1]"
+    },
+    {
+      "case": "pi3x_reject_duplicate_frame_bytes",
+      "passed": true,
+      "retained_error": "Duplicate frame bytes are not independent observations"
+    },
+    {
+      "case": "pi3x_reject_frame_hash_drift",
+      "passed": true,
+      "retained_error": "Source frame hash drift"
+    },
+    {
+      "case": "refine_diagnose_fixed_regions",
+      "passed": true
+    },
+    {
+      "case": "refine_retains_non_target_regression",
+      "passed": true
+    },
+    {
+      "case": "refine_keeps_heldout_out_of_edit_priority",
+      "passed": true
+    },
+    {
+      "case": "refine_does_not_promote_from_mae",
+      "passed": true
+    },
+    {
+      "case": "refine_reject_camera_drift",
+      "passed": true,
+      "retained_error": "Region denominator or fixed camera binding missing"
+    },
+    {
+      "case": "refine_reject_baseline_camera_drift",
+      "passed": true,
+      "retained_error": "Region denominator or fixed camera binding missing"
+    },
+    {
+      "case": "refine_reject_source_hash_drift",
+      "passed": true,
+      "retained_error": "Image hash mismatch: source"
+    },
+    {
+      "case": "refine_reject_outside_roi",
+      "passed": true,
+      "retained_error": "Region outside source image"
+    },
+    {
+      "case": "refine_reject_empty_denominator",
+      "passed": true,
+      "retained_error": "Region denominator or fixed camera binding missing"
+    },
+    {
+      "case": "refine_edit_one_part",
+      "passed": true
+    },
+    {
+      "case": "refine_preserves_other_parts",
+      "passed": true
+    },
+    {
+      "case": "refine_preserves_original_scene",
+      "passed": true
+    },
+    {
+      "case": "refine_material_only_edit",
+      "passed": true
+    },
+    {
+      "case": "refine_material_preserves_geometry",
+      "passed": true
+    },
+    {
+      "case": "refine_reject_implicit_lighting_adapter",
+      "passed": true,
+      "retained_error": "One geometry/material intervention and source-region reason required"
+    },
+    {
+      "case": "refine_reject_mixed_material_geometry",
+      "passed": true,
+      "retained_error": "Mixed or unsupported intervention; lighting uses its own frozen scene adapter"
+    },
+    {
+      "case": "refine_reject_infinite_parameter",
+      "passed": true,
+      "retained_error": "Invalid fold_amplitude"
+    },
+    {
+      "case": "pi3x_freeze_cli",
+      "passed": true
+    },
+    {
+      "case": "pi3x_refuse_output_overwrite",
+      "passed": true
+    },
+    {
+      "case": "pi3x_consume_cli",
+      "passed": true
+    },
+    {
+      "case": "refine_diagnose_cli",
+      "passed": true
+    },
+    {
+      "case": "refine_edit_cli",
+      "passed": true
+    },
+    {
+      "case": "refine_cli_reject_stale_base",
+      "passed": true
+    }
+  ]
+}

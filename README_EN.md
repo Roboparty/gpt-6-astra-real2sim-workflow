@@ -1,5 +1,7 @@
 # GPT-6 Astra Real2sim workflow
 
+**Generation skills:** `quality_v2` can now execute RoomKit component modeling, consume or report blocked Pi3X references, and feed rendered local-region differences into its existing review/revision loop. Skills ship with the repository; model installation and inference are never implied by configuration. [Integration and usage](docs/GENERATION_SKILLS.md).
+
 [简体中文](README.md) | **English**
 
 We reconstruct room photographs as editable 3D scenes, using known furniture dimensions and candidate product specifications to constrain proportions and placement. GPT-6 Astra handles observation, modelling decisions and preview review; Blender and Python build the scene. Optional physics uses the simulator specified by each example.
