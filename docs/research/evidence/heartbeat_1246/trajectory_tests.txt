@@ -1,0 +1,30 @@
+test_bad_expected_rejected (__main__.TrajectoryTests) ... ok
+test_cli_hashes_and_exclusive_output (__main__.TrajectoryTests) ... ok
+test_collinear_unsupported (__main__.TrajectoryTests) ... ok
+test_duplicate_timestamp_rejected (__main__.TrajectoryTests) ... ok
+test_empty_prediction (__main__.TrajectoryTests) ... ok
+test_expected_formats (__main__.TrajectoryTests) ... ok
+test_fewer_than_three_unsupported (__main__.TrajectoryTests) ... ok
+test_fixed_tolerance (__main__.TrajectoryTests) ... ok
+test_identity (__main__.TrajectoryTests) ... ok
+test_known_rigid_transform (__main__.TrajectoryTests) ... ok
+test_known_similarity_and_scale_distinction (__main__.TrajectoryTests) ... ok
+test_matching_against_exhaustive_oracle (__main__.TrajectoryTests) ... ok
+test_matching_does_not_sacrifice_coverage_for_nearest (__main__.TrajectoryTests) ... ok
+test_matching_minimum_offset (__main__.TrajectoryTests) ... ok
+test_missing_gt_keeps_denominator (__main__.TrajectoryTests) ... ok
+test_missing_prediction_keeps_denominator (__main__.TrajectoryTests) ... ok
+test_no_timestamp_reuse (__main__.TrajectoryTests) ... ok
+test_nonfinite_rejected (__main__.TrajectoryTests) ... ok
+test_orientation_is_not_scored (__main__.TrajectoryTests) ... ok
+test_planar_noncollinear_is_supported (__main__.TrajectoryTests) ... ok
+test_reflection_is_not_a_rotation (__main__.TrajectoryTests) ... ok
+test_report_is_strict_json (__main__.TrajectoryTests) ... ok
+test_tum_parse_and_sort (__main__.TrajectoryTests) ... ok
+test_wrong_column_shape_rejected (__main__.TrajectoryTests) ... ok
+test_zero_quaternion_rejected (__main__.TrajectoryTests) ... ok
+
+----------------------------------------------------------------------
+Ran 25 tests in 0.218s
+
+OK

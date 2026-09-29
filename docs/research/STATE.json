@@ -14,15 +14,15 @@
     "status": "active"
   },
   "pull_request": {
-    "status": "existing_generation_integration_pr",
+    "status": "merged_into_research_branch",
     "url": "https://github.com/Roboparty/gpt-6-astra-real2sim-workflow/pull/1",
     "base": "codex/real2sim-capability-research-20260929",
-    "note": "Created by skill delivery thread; consolidated follow-up fixes are on unified/research branches, not yet merged into main"
+    "note": "PR #1 merged into research at c00f525; main remains a separate pending publication step"
   },
   "remote_root": "4090-1:/home/wqz/real2sim_capability_20260929",
   "protocol": "PROTOCOL_20260929.md",
   "result": "RESULTS_20260929.md",
-  "latest_update": "UNIFIED_GENERATION_20260929.md",
+  "latest_update": "UPDATE_20260929T1246.md",
   "completed": [
     "Matched retained-room collision failure reproduction and repair",
     "Rectangular opening handling and false-pass negative tests",
@@ -52,9 +52,11 @@
     "Shared benchmark readiness audited across all three video sources and four methods; HKU pinned documentation now readable but raw inputs absent",
     "Additional retained shell/vent execution with frozen dd51a20 export and actual MuJoCo static probes: both shell/opening/support checks passed; vent-only structure failures retained",
     "First source-bound visible-box bundle frozen for all 3 videos: 18 frames, 6 identities, 36 observations (17 observed boxes and 19 retained out-of-frame/null entries); internal overlay review and 13 negative contract checks passed",
-    "Native generation skills integrated with research annotations; executable-stage acceptance, shared Agent/builder budget, canonical RoomKit export and Pi3X receipt-binding fixes verified in 12/12 remote CPU groups"
+    "Native generation skills integrated with research annotations; executable-stage acceptance, shared Agent/builder budget, canonical RoomKit export and Pi3X receipt-binding fixes verified in 12/12 remote CPU groups",
+    "External sensor-reference cohort fixed for three TUM setups; official mocap metadata validated for all three, but complete RGB-D bundles remain 0/3; 25 translation-ATE evaluator tests passed"
   ],
   "next": [
+    "Resolve remote TUM transfer throughput or explicitly resume retained partials within the remaining 516.42s acquisition ledger before any GT-backed camera trial; preserve all three fixed sequences and keep RGB proposer inputs separate from GT/depth",
     "Expand persistent object inventory with a versioned annotation protocol retaining frozen_v1: current two first-frame identities provide observed boxes in only 9/18 frames; no relabeling missing views or treating boxes as masks/ground truth",
     "Prepare explicit versioned runtime-preparation budget amendment before resuming Pi3X dependency transfer; reuse only officially hash-verified retained wheels, preserve spent 1800 seconds",
     "Preregister common six-frame learned-reference inputs, preprocessing and outputs before camera attempt 7; no GPU launch until environment ready and live external-work check passes",
@@ -119,7 +121,10 @@
     "annotation_previews_001 initial invocation (missing frames.json; no output)",
     "annotation_previews_001 corrected freeze.json invocation",
     "annotations_20260929/frozen_v1 (three initial submissions plus one root overlay review)",
-    "unified_validation_001 (merged snapshot plus integration fixes, 12 runner groups)"
+    "unified_validation_001 (merged snapshot plus integration fixes, 12 runner groups)",
+    "tum_reference_001 (early slow-source stop after 383.58s, 22020096 partial bytes retained; 0/3 complete)",
+    "tum_metadata_001 (3/3 small official trajectory files validated)",
+    "tum_trajectory_tests_001 (25 synthetic mathematical/CLI tests)"
   ],
   "resource_accounting": {
     "new_gpu_hours": 0,
@@ -162,7 +167,16 @@
     "heartbeat_1145_accounting_scope": "Measured remote JPEG preparation only; annotation/review/model cost, transfer and uninstrumented test wall times remain unknown. No new camera, appearance, combined or GPU trial.",
     "unified_generation_validation_wall_seconds": 59.61792353808414,
     "unified_generation_validation_attempts_used": 1,
-    "separate_skill_delivery_accounting": "Prior skill delivery runs and failures remain in docs/generation-skills/VALIDATION.md; they were not reset or reclassified as research camera/appearance proposals"
+    "separate_skill_delivery_accounting": "Prior skill delivery runs and failures remain in docs/generation-skills/VALIDATION.md; they were not reset or reclassified as research camera/appearance proposals",
+    "tum_acquisition_wall_budget_seconds": 900,
+    "tum_acquisition_wall_seconds_used": 383.5799999999581,
+    "tum_acquisition_wall_seconds_remaining": 516.4200000000419,
+    "tum_retained_partial_archive_bytes": 22020096,
+    "tum_metadata_bytes": 638868,
+    "tum_metadata_fetch_wall_seconds": 10.140612037968822,
+    "tum_trajectory_unit_test_wall_seconds": 0.218,
+    "tum_acquisition_attempts_used": 1,
+    "tum_accounting_scope": "Small metadata fetch overlapped archive acquisition; do not sum as serial allocation. New camera/model trials=0. Failed local test setup and orchestration overhead remain unknown."
   },
   "constraints": [
     "Do not overwrite historical candidates, source photographs or failed evidence",
@@ -181,6 +195,14 @@
       "checkpoint_verified": true,
       "owned_processes_stopped": true,
       "evidence": "evidence/heartbeat_0945/pi3x_preparation_audit.json"
+    },
+    {
+      "scope": "TUM RGB-only sensor-reference bundle",
+      "reason": "Official full-archive throughput too slow for frozen 900-second cap; owned worker stopped early with partial files retained",
+      "ready_sequences": 0,
+      "expected_sequences": 3,
+      "remaining_wall_budget_seconds": 516.4200000000419,
+      "evidence": "evidence/heartbeat_1246/tum_acquisition.json"
     }
   ],
   "latest_development_candidate": {
@@ -215,5 +237,13 @@
     "native_flow": "quality_v2 opt-in generation_skills",
     "verification": "evidence/unified_generation_20260929/summary.json",
     "separate_cross_thread_release_instruction": "Reported by side-chat delegation; current heartbeat still explicitly forbids automatic main merge"
+  },
+  "external_reference_cohort": {
+    "protocol": "TUM_REFERENCE_PROTOCOL_20260929.json",
+    "expected_sequences": 3,
+    "validated_mocap_metadata_sequences": 3,
+    "prepared_rgb_bundles": 0,
+    "scope": "Three setups, not three independent rooms; no predictions evaluated",
+    "report": "UPDATE_20260929T1246.md"
   }
 }

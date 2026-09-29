@@ -1,0 +1,44 @@
+{
+  "schema": "real2sim.tum-acquisition/1",
+  "status": "incomplete_stopped",
+  "expected_sequences": 3,
+  "prepared_sequences": 0,
+  "sources": [
+    {
+      "id": "freiburg1_desk",
+      "status": "interrupted_slow_source",
+      "retained_partial_bytes": 10485760,
+      "expected_archive_bytes": 344011403,
+      "reason": "Early stop after observed throughput projected completion far outside 900-second shared cap; preserve remaining budget and bytes"
+    },
+    {
+      "id": "freiburg3_structure_texture_far",
+      "status": "interrupted_slow_source",
+      "retained_partial_bytes": 11534336,
+      "expected_archive_bytes": 520806553,
+      "reason": "Early stop after observed throughput projected completion far outside 900-second shared cap; preserve remaining budget and bytes"
+    },
+    {
+      "id": "freiburg3_cabinet",
+      "status": "not_started",
+      "retained_partial_bytes": 0,
+      "expected_archive_bytes": 507027217,
+      "reason": "Early stop after observed throughput projected completion far outside 900-second shared cap; preserve remaining budget and bytes"
+    }
+  ],
+  "owned_worker_stop": {
+    "pid": 1959490,
+    "start_ticks": 58567377,
+    "elapsed_seconds": 383.5799999999581,
+    "command_verified": true
+  },
+  "owned_worker_absent": true,
+  "wall_seconds": 383.5799999999581,
+  "shared_wall_budget_seconds": 900,
+  "remaining_wall_budget_seconds": 516.4200000000419,
+  "protocol_sha256": "c7cda961f93f7e94c88e515dd88cb1014de15e845912b8c59c24a445b1d9df97",
+  "scope": "Interrupted data acquisition; no reconstruction/evaluation result. This is not budget exhaustion; future retry must charge the same ledger.",
+  "gpu_hours": 0,
+  "paid_api_requests": 0,
+  "camera_trials": 0
+}

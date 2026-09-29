@@ -1,0 +1,24 @@
+{
+  "scope": "Executed helper/script provenance; unit tests and metadata are not reconstruction evidence",
+  "sha256": {
+    "tools/acquire_tum_reference.py": "325db6c1719daf0cdb4352461a8a1e00510b64ab37f3dcc45205c5216c6d7f2a",
+    "tools/audit_tum_reference.py": "b385139d783f34be398627f81d04f14d2bab7b7f86b085d20217c931fe151381",
+    "tools/evaluate_tum_trajectory.py": "34b4dc99176c99b8d9b8cb3c2894d48481f31f46f11b9ebaec37abb98f0c858d",
+    "tools/test_tum_trajectory.py": "4c4b207efa1fd72bb7913980cc9c66e0c43504706d78815749568e2f08167b94",
+    "docs/research/TUM_REFERENCE_PROTOCOL_20260929.json": "c7cda961f93f7e94c88e515dd88cb1014de15e845912b8c59c24a445b1d9df97"
+  },
+  "test_cases": 25,
+  "remote_test_wall_seconds_from_unittest": 0.218,
+  "retained_setup_failures": [
+    {
+      "scope": "local evaluator tests",
+      "reason": "LabWeft Python has no NumPy; no package installation performed; existing bundled runtime and then remote runtime passed",
+      "elapsed_seconds": null
+    },
+    {
+      "scope": "read-only progress command",
+      "reason": "PowerShell expanded a remote shell loop variable incorrectly; corrected to a direct glob read",
+      "elapsed_seconds": null
+    }
+  ]
+}

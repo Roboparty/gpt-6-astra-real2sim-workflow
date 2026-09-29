@@ -1,0 +1,30 @@
+{
+  "schema": "real2sim.tum-input-audit/1",
+  "acquisition_receipt_sha256": "256c3754f778cd75e3d7ff7a06602754d44e3173c6d918370d1ca65a4e5b4e23",
+  "script_sha256": "b385139d783f34be398627f81d04f14d2bab7b7f86b085d20217c931fe151381",
+  "expected_sequences": 3,
+  "ready_sequences": 0,
+  "sources": [
+    {
+      "source_id": "freiburg1_desk",
+      "status": "not_ready",
+      "expected_frames": 6,
+      "reason": "Acquisition incomplete"
+    },
+    {
+      "source_id": "freiburg3_structure_texture_far",
+      "status": "not_ready",
+      "expected_frames": 6,
+      "reason": "Acquisition incomplete"
+    },
+    {
+      "source_id": "freiburg3_cabinet",
+      "status": "not_ready",
+      "expected_frames": 6,
+      "reason": "Acquisition incomplete"
+    }
+  ],
+  "wall_seconds": 0.0001808319939300418,
+  "scope": "Data decoding and sensor-reference association only; no predicted geometry, calibration accuracy or SOTA",
+  "truth_separation": "Logical directory separation only; not a filesystem sandbox"
+}

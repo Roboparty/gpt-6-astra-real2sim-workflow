@@ -1,0 +1,44 @@
+{
+  "scope": "Official mocap metadata only; no RGB acquisition completion, prediction or reconstruction accuracy",
+  "expected_sequences": 3,
+  "sources": [
+    {
+      "id": "freiburg1_desk",
+      "url": "https://cvg.cit.tum.de/rgbd/dataset/freiburg1/rgbd_dataset_freiburg1_desk-groundtruth.txt",
+      "status": "validated_metadata",
+      "effective_url": "https://webshare.cvg.cit.tum.de/g/rgbd/dataset/freiburg1/rgbd_dataset_freiburg1_desk-groundtruth.txt",
+      "bytes": 158143,
+      "sha256": "48c4fa61f5d78310ea579f404d31d296738c4210c19c2bdac4a5cdf6bff50831",
+      "rows": 2335,
+      "time_span_seconds": 23.399500131607056,
+      "max_quaternion_norm_error": 7.772302043385082e-05
+    },
+    {
+      "id": "freiburg3_structure_texture_far",
+      "url": "https://cvg.cit.tum.de/rgbd/dataset/freiburg3/rgbd_dataset_freiburg3_structure_texture_far-groundtruth.txt",
+      "status": "validated_metadata",
+      "effective_url": "https://webshare.cvg.cit.tum.de/g/rgbd/dataset/freiburg3/rgbd_dataset_freiburg3_structure_texture_far-groundtruth.txt",
+      "bytes": 216404,
+      "sha256": "9012614c9fcc6ac8b1e6908cd771893443d8da23740f73a620f29f88e479b17f",
+      "rows": 3156,
+      "time_span_seconds": 31.549800157546997,
+      "max_quaternion_norm_error": 8.31815404156444e-05
+    },
+    {
+      "id": "freiburg3_cabinet",
+      "url": "https://cvg.cit.tum.de/rgbd/dataset/freiburg3/rgbd_dataset_freiburg3_cabinet-groundtruth.txt",
+      "status": "validated_metadata",
+      "effective_url": "https://webshare.cvg.cit.tum.de/g/rgbd/dataset/freiburg3/rgbd_dataset_freiburg3_cabinet-groundtruth.txt",
+      "bytes": 264321,
+      "sha256": "9e226144820ebd28d34652ef4920e9a559511ac679ba2977b25bc3b709c222b3",
+      "rows": 3859,
+      "time_span_seconds": 38.577799797058105,
+      "max_quaternion_norm_error": 8.500638695707607e-05
+    }
+  ],
+  "wall_seconds": 10.140612037968822,
+  "max_total_wall_seconds": 90,
+  "max_bytes_per_file": 2097152,
+  "gpu_hours": 0,
+  "paid_api_requests": 0
+}
