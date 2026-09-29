@@ -1,0 +1,612 @@
+{
+  "schema": "real2sim.gltf-surface-bounds-diagnostic/1",
+  "status": "inspected",
+  "blender": "4.5.3 LTS",
+  "script_sha256": "ae1a786f28271f5844d828a8c242916936064d306fd19c1c0b6e532e72e4d884",
+  "inputs": [
+    {
+      "path": "/home/wqz/real2sim_capability_20260929/runs/shell_vent_002/shell_vent/model.blend",
+      "expected_sha256": "4a0adbd949e3339c316e4c7bb99109a08e10c77d69dc80e83dc2b520f0a40402"
+    },
+    {
+      "path": "/home/wqz/real2sim_capability_20260929/runs/portability_001/export/scene.glb",
+      "expected_sha256": "be39953b0b0dc81c5b815efc8cd688eef0674c0c3fcc78436ddadf2c9075164d"
+    }
+  ],
+  "area_epsilon_m2": 1e-12,
+  "scope": "World-coordinate mesh diagnostics only. Nonzero-surface AABB agreement can explain loose/degenerate-vertex loss but does not establish full surface, modifier, normal or material equivalence. No cleanup or source mutation.",
+  "source_modifiers": [
+    {
+      "name": "cloth_thickness",
+      "type": "SOLIDIFY",
+      "show_viewport": true,
+      "show_render": true,
+      "show_in_editmode": true,
+      "show_on_cage": false,
+      "show_expanded": true,
+      "is_active": true,
+      "use_pin_to_last": false,
+      "is_override_data": false,
+      "use_apply_on_spline": false,
+      "execution_time": 0.0,
+      "persistent_uid": 129666994,
+      "solidify_mode": "EXTRUDE",
+      "thickness": 0.008999999612569809,
+      "thickness_clamp": 0.0,
+      "use_thickness_angle_clamp": false,
+      "thickness_vertex_group": 0.0,
+      "offset": 1.0,
+      "edge_crease_inner": 0.0,
+      "edge_crease_outer": 0.0,
+      "edge_crease_rim": 0.0,
+      "material_offset": 0,
+      "material_offset_rim": 0,
+      "vertex_group": "",
+      "shell_vertex_group": "",
+      "rim_vertex_group": "",
+      "use_rim": true,
+      "use_even_offset": false,
+      "use_quality_normals": false,
+      "invert_vertex_group": false,
+      "use_flat_faces": false,
+      "use_flip_normals": false,
+      "use_rim_only": false,
+      "nonmanifold_thickness_mode": "CONSTRAINTS",
+      "nonmanifold_boundary_mode": "NONE",
+      "nonmanifold_merge_threshold": 9.999999747378752e-05,
+      "bevel_convex": 0.0
+    }
+  ],
+  "source_raw_mesh": {
+    "object_name": "bed_duvet",
+    "data_name": "bed_duvet",
+    "world_matrix": [
+      [
+        0.9996542930603027,
+        0.026286916807293892,
+        0.0,
+        -0.05855422839522362
+      ],
+      [
+        -0.026286916807293892,
+        0.9996542930603027,
+        0.0,
+        0.049323175102472305
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "vertices": 21809,
+    "edges": 43305,
+    "polygons": 21497,
+    "loop_triangles": 43003,
+    "triangles_at_or_below_epsilon": 54,
+    "nonzero_world_surface_area_m2": 3.5071036367116,
+    "area_epsilon_m2": 1e-12,
+    "all_vertices_aabb": [
+      [
+        -0.6977834701538086,
+        -0.0024497080594301224,
+        0.25981736183166504
+      ],
+      [
+        0.6273230314254761,
+        1.8750548362731934,
+        0.4499253034591675
+      ]
+    ],
+    "triangle_referenced_vertex_count": 21807,
+    "triangle_referenced_vertices_aabb": [
+      [
+        -0.6977834701538086,
+        -0.0024497080594301224,
+        0.2675986588001251
+      ],
+      [
+        0.6273230314254761,
+        1.8750548362731934,
+        0.4499253034591675
+      ]
+    ],
+    "nonzero_surface_vertex_count": 21788,
+    "nonzero_surface_vertices_aabb": [
+      [
+        -0.6977834701538086,
+        -0.0024497080594301224,
+        0.2694931626319885
+      ],
+      [
+        0.6273230314254761,
+        1.8750548362731934,
+        0.4499253034591675
+      ]
+    ],
+    "loose_vertex_count": 2,
+    "loose_vertices_aabb": [
+      [
+        -0.6977834701538086,
+        -0.0024497080594301224,
+        0.25981736183166504
+      ],
+      [
+        0.5788348913192749,
+        0.031120257452130318,
+        0.26060789823532104
+      ]
+    ],
+    "degenerate_only_vertex_count": 19,
+    "degenerate_only_vertices_aabb": [
+      [
+        -0.6977834701538086,
+        -0.0024497080594301224,
+        0.2675986588001251
+      ],
+      [
+        0.5788348913192749,
+        0.031120257452130318,
+        0.31458690762519836
+      ]
+    ],
+    "all_vertex_extreme_examples": [
+      {
+        "axis": 0,
+        "side": "min",
+        "vertex_index": 0,
+        "world": [
+          -0.6977834701538086,
+          0.031120257452130318,
+          0.26060789823532104
+        ],
+        "referenced_by_any_triangle": false,
+        "referenced_by_nonzero_triangle": false
+      },
+      {
+        "axis": 1,
+        "side": "min",
+        "vertex_index": 106,
+        "world": [
+          0.5788348913192749,
+          -0.0024497080594301224,
+          0.2946697473526001
+        ],
+        "referenced_by_any_triangle": true,
+        "referenced_by_nonzero_triangle": true
+      },
+      {
+        "axis": 2,
+        "side": "min",
+        "vertex_index": 110,
+        "world": [
+          0.5788348913192749,
+          -0.0024497080594301224,
+          0.25981736183166504
+        ],
+        "referenced_by_any_triangle": false,
+        "referenced_by_nonzero_triangle": false
+      },
+      {
+        "axis": 0,
+        "side": "max",
+        "vertex_index": 17604,
+        "world": [
+          0.6273230314254761,
+          1.8414849042892456,
+          0.36345261335372925
+        ],
+        "referenced_by_any_triangle": true,
+        "referenced_by_nonzero_triangle": true
+      },
+      {
+        "axis": 1,
+        "side": "max",
+        "vertex_index": 17496,
+        "world": [
+          -0.6492953300476074,
+          1.8750548362731934,
+          0.3103790283203125
+        ],
+        "referenced_by_any_triangle": true,
+        "referenced_by_nonzero_triangle": true
+      },
+      {
+        "axis": 2,
+        "side": "max",
+        "vertex_index": 19497,
+        "world": [
+          0.2956278622150421,
+          1.6407099962234497,
+          0.4499253034591675
+        ],
+        "referenced_by_any_triangle": true,
+        "referenced_by_nonzero_triangle": true
+      }
+    ]
+  },
+  "source_evaluated_mesh": {
+    "object_name": "bed_duvet",
+    "data_name": "bed_duvet",
+    "world_matrix": [
+      [
+        0.9996542930603027,
+        0.026286916807293892,
+        0.0,
+        -0.05855422839522362
+      ],
+      [
+        -0.026286916807293892,
+        0.9996542930603027,
+        0.0,
+        0.049323175102472305
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "vertices": 43618,
+    "edges": 87219,
+    "polygons": 43603,
+    "loop_triangles": 87224,
+    "triangles_at_or_below_epsilon": 68,
+    "nonzero_world_surface_area_m2": 7.06534160458736,
+    "area_epsilon_m2": 1e-12,
+    "all_vertices_aabb": [
+      [
+        -0.7061145305633545,
+        -0.011446597054600716,
+        0.25981736183166504
+      ],
+      [
+        0.6360751986503601,
+        1.8840079307556152,
+        0.458882212638855
+      ]
+    ],
+    "triangle_referenced_vertex_count": 43614,
+    "triangle_referenced_vertices_aabb": [
+      [
+        -0.6980200409889221,
+        -0.011446597054600716,
+        0.2675986588001251
+      ],
+      [
+        0.6360751986503601,
+        1.8840079307556152,
+        0.458882212638855
+      ]
+    ],
+    "nonzero_surface_vertex_count": 43601,
+    "nonzero_surface_vertices_aabb": [
+      [
+        -0.6980200409889221,
+        -0.011446597054600716,
+        0.2675986588001251
+      ],
+      [
+        0.6360751986503601,
+        1.8840079307556152,
+        0.458882212638855
+      ]
+    ],
+    "loose_vertex_count": 4,
+    "loose_vertices_aabb": [
+      [
+        -0.7061145305633545,
+        -0.003124760463833809,
+        0.25981736183166504
+      ],
+      [
+        0.5871455669403076,
+        0.031120257452130318,
+        0.2640044093132019
+      ]
+    ],
+    "degenerate_only_vertex_count": 13,
+    "degenerate_only_vertices_aabb": [
+      [
+        -0.6977834701538086,
+        -0.0024497080594301224,
+        0.2675986588001251
+      ],
+      [
+        0.5788348913192749,
+        0.031120257452130318,
+        0.31458690762519836
+      ]
+    ],
+    "all_vertex_extreme_examples": [
+      {
+        "axis": 0,
+        "side": "min",
+        "vertex_index": 0,
+        "world": [
+          -0.7061145305633545,
+          0.03088301420211792,
+          0.2640044093132019
+        ],
+        "referenced_by_any_triangle": false,
+        "referenced_by_nonzero_triangle": false
+      },
+      {
+        "axis": 1,
+        "side": "min",
+        "vertex_index": 107,
+        "world": [
+          0.5785983204841614,
+          -0.011446597054600716,
+          0.2870509922504425
+        ],
+        "referenced_by_any_triangle": true,
+        "referenced_by_nonzero_triangle": true
+      },
+      {
+        "axis": 2,
+        "side": "min",
+        "vertex_index": 21919,
+        "world": [
+          0.5788348913192749,
+          -0.0024497080594301224,
+          0.25981736183166504
+        ],
+        "referenced_by_any_triangle": false,
+        "referenced_by_nonzero_triangle": false
+      },
+      {
+        "axis": 0,
+        "side": "max",
+        "vertex_index": 17718,
+        "world": [
+          0.6360751986503601,
+          1.8319447040557861,
+          0.3580804765224457
+        ],
+        "referenced_by_any_triangle": true,
+        "referenced_by_nonzero_triangle": true
+      },
+      {
+        "axis": 1,
+        "side": "max",
+        "vertex_index": 17497,
+        "world": [
+          -0.6483774781227112,
+          1.8840079307556152,
+          0.3233885169029236
+        ],
+        "referenced_by_any_triangle": true,
+        "referenced_by_nonzero_triangle": true
+      },
+      {
+        "axis": 2,
+        "side": "max",
+        "vertex_index": 19497,
+        "world": [
+          0.2949705719947815,
+          1.6412943601608276,
+          0.458882212638855
+        ],
+        "referenced_by_any_triangle": true,
+        "referenced_by_nonzero_triangle": true
+      }
+    ]
+  },
+  "source_evaluation_context": {
+    "frame": 1,
+    "depsgraph_mode": "VIEWPORT",
+    "note": "Current evaluated dependency graph, matching strict bounds evaluator; not a render-time displacement bake."
+  },
+  "import_identity_rule": "exact object or mesh-data name",
+  "gltf_meshes": [
+    {
+      "object_name": "bed_duvet",
+      "data_name": "bed_duvet",
+      "world_matrix": [
+        [
+          0.9996544122695923,
+          0.02628692425787449,
+          0.0,
+          -0.05855422839522362
+        ],
+        [
+          -0.02628692425787449,
+          0.9996544122695923,
+          0.0,
+          0.049323175102472305
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "vertices": 43614,
+      "edges": 130836,
+      "polygons": 87224,
+      "loop_triangles": 87224,
+      "triangles_at_or_below_epsilon": 68,
+      "nonzero_world_surface_area_m2": 7.065343365382387,
+      "area_epsilon_m2": 1e-12,
+      "all_vertices_aabb": [
+        [
+          -0.6980201005935669,
+          -0.011446604505181313,
+          0.2675986588001251
+        ],
+        [
+          0.6360753774642944,
+          1.8840081691741943,
+          0.458882212638855
+        ]
+      ],
+      "triangle_referenced_vertex_count": 43614,
+      "triangle_referenced_vertices_aabb": [
+        [
+          -0.6980201005935669,
+          -0.011446604505181313,
+          0.2675986588001251
+        ],
+        [
+          0.6360753774642944,
+          1.8840081691741943,
+          0.458882212638855
+        ]
+      ],
+      "nonzero_surface_vertex_count": 43601,
+      "nonzero_surface_vertices_aabb": [
+        [
+          -0.6980201005935669,
+          -0.011446604505181313,
+          0.2675986588001251
+        ],
+        [
+          0.6360753774642944,
+          1.8840081691741943,
+          0.458882212638855
+        ]
+      ],
+      "loose_vertex_count": 0,
+      "loose_vertices_aabb": null,
+      "degenerate_only_vertex_count": 13,
+      "degenerate_only_vertices_aabb": [
+        [
+          -0.6977835297584534,
+          -0.0024497155100107193,
+          0.2675986588001251
+        ],
+        [
+          0.5788349509239197,
+          0.031120257452130318,
+          0.31458690762519836
+        ]
+      ],
+      "all_vertex_extreme_examples": [
+        {
+          "axis": 0,
+          "side": "min",
+          "vertex_index": 0,
+          "world": [
+            -0.6980201005935669,
+            0.022123368456959724,
+            0.27028369903564453
+          ],
+          "referenced_by_any_triangle": true,
+          "referenced_by_nonzero_triangle": true
+        },
+        {
+          "axis": 1,
+          "side": "min",
+          "vertex_index": 106,
+          "world": [
+            0.5785983800888062,
+            -0.011446604505181313,
+            0.2870509922504425
+          ],
+          "referenced_by_any_triangle": true,
+          "referenced_by_nonzero_triangle": true
+        },
+        {
+          "axis": 2,
+          "side": "min",
+          "vertex_index": 21790,
+          "world": [
+            0.5788349509239197,
+            -0.0024497155100107193,
+            0.2675986588001251
+          ],
+          "referenced_by_any_triangle": true,
+          "referenced_by_nonzero_triangle": true
+        },
+        {
+          "axis": 0,
+          "side": "max",
+          "vertex_index": 17716,
+          "world": [
+            0.6360753774642944,
+            1.8319449424743652,
+            0.3580804765224457
+          ],
+          "referenced_by_any_triangle": true,
+          "referenced_by_nonzero_triangle": true
+        },
+        {
+          "axis": 1,
+          "side": "max",
+          "vertex_index": 17495,
+          "world": [
+            -0.6483775973320007,
+            1.8840081691741943,
+            0.3233885169029236
+          ],
+          "referenced_by_any_triangle": true,
+          "referenced_by_nonzero_triangle": true
+        },
+        {
+          "axis": 2,
+          "side": "max",
+          "vertex_index": 19495,
+          "world": [
+            0.29497063159942627,
+            1.6412945985794067,
+            0.458882212638855
+          ],
+          "referenced_by_any_triangle": true,
+          "referenced_by_nonzero_triangle": true
+        }
+      ]
+    }
+  ],
+  "comparison": {
+    "gltf_all_vertices_aabb": [
+      [
+        -0.6980201005935669,
+        -0.011446604505181313,
+        0.2675986588001251
+      ],
+      [
+        0.6360753774642944,
+        1.8840081691741943,
+        0.458882212638855
+      ]
+    ],
+    "gltf_nonzero_surface_vertices_aabb": [
+      [
+        -0.6980201005935669,
+        -0.011446604505181313,
+        0.2675986588001251
+      ],
+      [
+        0.6360753774642944,
+        1.8840081691741943,
+        0.458882212638855
+      ]
+    ],
+    "source_all_vs_gltf_all_max_delta_m": 0.008094429969787598,
+    "source_surface_vs_gltf_surface_max_delta_m": 2.384185791015625e-07,
+    "source_all_vs_source_surface_max_delta_m": 0.008094489574432373
+  },
+  "source_bytes_unchanged": true
+}

@@ -8,6 +8,7 @@ from bpy_extras.object_utils import world_to_camera_view
 sys.path.insert(0,str(Path(__file__).parent))
 from viewpoints import diagnostic_focus,safe_camera_position
 args=sys.argv[sys.argv.index('--')+1:]; SPEC=Path(args[0]).resolve();OUT=Path(args[1]).resolve();OUT.mkdir(exist_ok=True,parents=True)
+if '--geometry-only' in args[2:] and '--interchange-only' in args[2:]:raise ValueError('Choose geometry-only or interchange-only, not both')
 S=json.loads(SPEC.read_text());sc=bpy.context.scene;original_camera=sc.camera
 from blender_metadata import synchronize
 (OUT/'metadata_export_check.json').write_text(json.dumps(synchronize(S),indent=2))
@@ -103,6 +104,11 @@ try:
  report['usd_export']='success'
  report['usd_curve_policy']='evaluated mesh copies; editable native curves retained in scene.blend'
 except Exception as e:report['usd_export']={'status':'failed','error':str(e)}
+if '--interchange-only' in args[2:]:
+ report['export_scope']='Blender/GLB/USD files and geometry audit only; presentation renders and ID images were not generated'
+ (OUT/'geometry_audit.json').write_text(json.dumps(report,indent=2))
+ if report['usd_export']!='success':raise RuntimeError('USD interchange export failed; retained audit contains the error')
+ print('INTERCHANGE_ONLY_EXPORT_COMPLETE',str(OUT));sys.exit(0)
 # Additional interior views are diagnostics of completed, unobserved geometry, not held-out real-photo tests.
 r=S['room'];xm,xM,ym,yM,h=[r[k] for k in ['x_min','x_max','y_min','y_max','height']];dx=xM-xm;dy=yM-ym
 focus=diagnostic_focus(S)

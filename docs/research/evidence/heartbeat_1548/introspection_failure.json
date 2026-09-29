@@ -1,0 +1,44 @@
+{
+  "status": "failed",
+  "protocol_sha256": "2e2f3ef2065da7ae632d0cd86e65f44381935d2ec5a6d8ce9bddaa54e8c19cea",
+  "script_sha256": "45eb037fa3cb94acd7809c81775bc3341756bcd89274238fc67b385c475fa058",
+  "geometry_evaluator_sha256": "808c48f725c1b24e6b32fae1a545f60e10d520c03f707715b061fb965b47921a",
+  "blender": "4.5.3 LTS",
+  "expected_groups": [
+    "native",
+    "glb",
+    "usdc"
+  ],
+  "groups": [
+    {
+      "group": "native",
+      "status": "failed",
+      "error": "AttributeError(\"'StringProperty' object has no attribute 'is_array'\")",
+      "wall_seconds": 0.3587328540161252
+    },
+    {
+      "group": "glb",
+      "status": "failed",
+      "error": "AttributeError(\"'StringProperty' object has no attribute 'is_array'\")",
+      "wall_seconds": 0.36052266508340836
+    },
+    {
+      "group": "usdc",
+      "status": "failed",
+      "error": "AttributeError(\"'StringProperty' object has no attribute 'is_array'\")",
+      "wall_seconds": 0.35830218193586916
+    }
+  ],
+  "scope": "Controlled original camera/world/light rig; whole-format appearance diagnostic, not isolated shader causality or real reconstruction accuracy. Geometry gate checks ownership/parts/AABBs, not full surface equivalence. Exported cameras/lights are deliberately removed: this is not their interchange acceptance. No material/image-quality pass threshold.",
+  "inputs": {
+    "source_model": {
+      "path": "/home/wqz/real2sim_capability_20260929/runs/shell_vent_002/shell_vent/model.blend",
+      "expected_sha256": "4a0adbd949e3339c316e4c7bb99109a08e10c77d69dc80e83dc2b520f0a40402"
+    },
+    "source_scene": {
+      "path": "/home/wqz/real2sim_capability_20260929/runs/shell_vent_002/shell_vent/scene.json",
+      "expected_sha256": "65b70a9d62ec1a5216a94624f1f285df6c1d60297e33af8eedd9d65b406d4d93"
+    }
+  },
+  "sources_unchanged": true
+}

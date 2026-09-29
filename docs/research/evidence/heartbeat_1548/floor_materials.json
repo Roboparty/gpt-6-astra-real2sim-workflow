@@ -1,0 +1,144 @@
+{
+  "scope": "Material graph declarations only; not a rendered causal proof",
+  "entity": "floor",
+  "formats": [
+    {
+      "format": "native",
+      "model_sha256": "4a0adbd949e3339c316e4c7bb99109a08e10c77d69dc80e83dc2b520f0a40402",
+      "materials": {
+        "carpet_greytaupe": {
+          "nodes": [
+            {
+              "type": "ShaderNodeBsdfPrincipled",
+              "name": "Principled BSDF",
+              "base_color": [
+                0.14000000059604645,
+                0.13500000536441803,
+                0.11500000208616257,
+                1.0
+              ],
+              "base_color_linked": true,
+              "base_color_sources": [
+                "ShaderNodeTexImage"
+              ]
+            },
+            {
+              "type": "ShaderNodeOutputMaterial",
+              "name": "Material Output"
+            },
+            {
+              "type": "ShaderNodeUVMap",
+              "name": "UV Map"
+            },
+            {
+              "type": "ShaderNodeTexImage",
+              "name": "Image Texture"
+            },
+            {
+              "type": "ShaderNodeBump",
+              "name": "Bump"
+            }
+          ],
+          "diffuse_color": [
+            0.800000011920929,
+            0.800000011920929,
+            0.800000011920929,
+            1.0
+          ]
+        }
+      }
+    },
+    {
+      "format": "glb",
+      "model_sha256": "be39953b0b0dc81c5b815efc8cd688eef0674c0c3fcc78436ddadf2c9075164d",
+      "materials": {
+        "carpet_greytaupe": {
+          "nodes": [
+            {
+              "type": "ShaderNodeBsdfPrincipled",
+              "name": "Principled BSDF",
+              "base_color": [
+                0.800000011920929,
+                0.800000011920929,
+                0.800000011920929,
+                1.0
+              ],
+              "base_color_linked": true,
+              "base_color_sources": [
+                "ShaderNodeTexImage"
+              ]
+            },
+            {
+              "type": "ShaderNodeOutputMaterial",
+              "name": "Material Output"
+            },
+            {
+              "type": "ShaderNodeTexImage",
+              "name": "Image Texture"
+            },
+            {
+              "type": "ShaderNodeNormalMap",
+              "name": "Normal Map"
+            },
+            {
+              "type": "ShaderNodeTexImage",
+              "name": "Image Texture.001"
+            }
+          ],
+          "diffuse_color": [
+            0.800000011920929,
+            0.800000011920929,
+            0.800000011920929,
+            1.0
+          ]
+        }
+      }
+    },
+    {
+      "format": "usdc",
+      "model_sha256": "d4e3c89cbefb8eec98e54cf93801119afc30fe367eabdc5c53662aad46ff0bcf",
+      "materials": {
+        "carpet_greytaupe": {
+          "nodes": [
+            {
+              "type": "ShaderNodeBsdfPrincipled",
+              "name": "Principled BSDF",
+              "base_color": [
+                0.800000011920929,
+                0.800000011920929,
+                0.800000011920929,
+                1.0
+              ],
+              "base_color_linked": true,
+              "base_color_sources": [
+                "ShaderNodeTexImage"
+              ]
+            },
+            {
+              "type": "ShaderNodeOutputMaterial",
+              "name": "Material Output"
+            },
+            {
+              "type": "ShaderNodeTexImage",
+              "name": "Image Texture"
+            },
+            {
+              "type": "ShaderNodeUVMap",
+              "name": "UV Map"
+            },
+            {
+              "type": "ShaderNodeNormalMap",
+              "name": "Normal Map"
+            }
+          ],
+          "diffuse_color": [
+            0.800000011920929,
+            0.800000011920929,
+            0.800000011920929,
+            1.0
+          ]
+        }
+      }
+    }
+  ]
+}

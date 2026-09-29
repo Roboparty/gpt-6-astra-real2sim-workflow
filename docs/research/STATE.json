@@ -1,6 +1,6 @@
 {
   "schema": "real2sim.research-state/1",
-  "updated_on": "2026-09-29",
+  "updated_on": "2026-09-30",
   "objective": "Improve general real2sim capability toward independently benchmarked SOTA",
   "status": "active",
   "sota_established": false,
@@ -22,7 +22,7 @@
   "remote_root": "4090-1:/home/wqz/real2sim_capability_20260929",
   "protocol": "PROTOCOL_20260929.md",
   "result": "RESULTS_20260929.md",
-  "latest_update": "UPDATE_20260929T1447.md",
+  "latest_update": "UPDATE_20260929T1548.md",
   "completed": [
     "Matched retained-room collision failure reproduction and repair",
     "Rectangular opening handling and false-pass negative tests",
@@ -55,9 +55,11 @@
     "Native generation skills integrated with research annotations; executable-stage acceptance, shared Agent/builder budget, canonical RoomKit export and Pi3X receipt-binding fixes verified in 12/12 remote CPU groups",
     "External sensor-reference cohort fixed for three TUM setups; official mocap metadata validated for all three, but complete RGB-D bundles remain 0/3; 25 translation-ATE evaluator tests passed",
     "Full Blender/GLB/USD export on two frozen RoomKit fixtures: 6/6 source-bound strict checks passed; legacy USD camera-name failures retained; native export/validate gate integrated with 5 mutation controls and 6 stage tests",
-    "Append-only v2 annotations: all 36 v1 observations preserved plus 36 new records, 38 observed boxes and 34 retained nulls; coverage 17/18 frames but selected identity graphs still disconnected in two sources; 10 append checks and v1 regression passed"
+    "Append-only v2 annotations: all 36 v1 observations preserved plus 36 new records, 38 observed boxes and 34 retained nulls; coverage 17/18 frames but selected identity graphs still disconnected in two sources; 10 append checks and v1 regression passed",
+    "Detailed-room portability measured with exact preserved source rig: GLB/USD appearance worsens, floor turns black. Original GLB 8.094mm all-vertex bound failure retained; read-only surface analysis attributes that bound difference to nonsurface source vertices, not demonstrated surface shrinkage"
   ],
   "next": [
+    "Preregister a controlled imported-floor normal-path ablation preserving color/geometry/rig; portable detailed-room appearance is degraded. Separately test source nonsurface-vertex cleanup without rewriting the original all-vertex failure.",
     "Resolve remote TUM transfer throughput or explicitly resume retained partials within the remaining 514.004059s acquisition ledger; preserve all three fixed sequences and RGB/GT separation",
     "Register bridge-object annotations or reviewed correspondences for disconnected selected identity graphs; v2 retains 72 observations and 17/18 frame coverage, not a complete common camera/model initialization",
     "Prepare explicit versioned runtime-preparation budget amendment before resuming Pi3X dependency transfer; reuse only officially hash-verified retained wheels, preserve spent 1800 seconds",
@@ -131,7 +133,11 @@
     "interchange_001 strict_negative_controls (one positive plus four in-memory mutations)",
     "interchange_native_001 (cached actual exports replayed into 6 native stage gate tests)",
     "tum_raw_access_001 (three constructed official-host index HEAD paths returned 404)",
-    "annotations_20260929/frozen_v2 (all v1 records preserved; 3 addendum drafts and one root overlay review)"
+    "annotations_20260929/frozen_v2 (all v1 records preserved; 3 addendum drafts and one root overlay review)",
+    "portability_001 (artifact-only export; strict 2/3 formats and initial RNA introspection failure)",
+    "portability_002 (native render plus retained exact-rig failures)",
+    "portability_003 (three controlled-rig diagnostics; GLB geometry failure explicitly retained)",
+    "portability_001/duvet_topology_diagnostic.json (read-only surface-bound inspection)"
   ],
   "resource_accounting": {
     "new_gpu_hours": 0,
@@ -191,7 +197,12 @@
     "heartbeat_1346_scope": "Two full CPU export/legacy checks plus strict controls/native gates. Native gate fixture replay did not rerun full exporter. No reconstruction proposal or camera/GPU/API cost.",
     "tum_raw_index_probe_wall_seconds": 2.4159407489933074,
     "tum_raw_index_probe_attempts_used": 1,
-    "heartbeat_1447_accounting_scope": "Only measured HEAD reachability wall charged to old TUM ledger. Annotation/model/review and uninstrumented local test cost unknown; no archive bytes, GPU/API or camera/candidate trial added."
+    "heartbeat_1447_accounting_scope": "Only measured HEAD reachability wall charged to old TUM ledger. Annotation/model/review and uninstrumented local test cost unknown; no archive bytes, GPU/API or camera/candidate trial added.",
+    "portability_export_attempts_used": 1,
+    "portability_renderer_attempts_used": 3,
+    "portability_exporter_mode_revisions_used": 1,
+    "heartbeat_1548_selected_run_wall_seconds": 82.0521230440354,
+    "heartbeat_1548_scope": "Selected export/strict/render time; topology/material inspection and orchestration not separately timed. No authoring, camera, GPU or paid API candidate added."
   },
   "constraints": [
     "Do not overwrite historical candidates, source photographs or failed evidence",
@@ -228,7 +239,15 @@
     "numerical_structure_and_frozen_regions": "passed",
     "full_visual_acceptance": false,
     "new_physical_task_acceptance": false,
-    "scope": "One same-image development room, unchanged original furniture poses. Does not replace frozen baseline."
+    "scope": "One same-image development room, unchanged original furniture poses. Does not replace frozen baseline.",
+    "portable_delivery": {
+      "report": "UPDATE_20260929T1548.md",
+      "original_strict_formats_passed": 2,
+      "expected_formats": 3,
+      "appearance": "degraded in controlled GLB/USD renders",
+      "glb_bound_failure_interpretation": "Loose/non-surface source vertices account for all-vertex delta; original registered failure remains",
+      "floor_material": "Already image-textured; Bump to Normal Map conversion is a lead needing causal ablation"
+    }
   },
   "benchmark_readiness_report": "SHARED_BENCHMARK_READINESS_20260929.md",
   "shared_annotations": {

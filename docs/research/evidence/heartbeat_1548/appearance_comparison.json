@@ -1,0 +1,67 @@
+{
+  "schema": "real2sim.controlled-format-appearance/1",
+  "protocol_sha256": "4ecf23301d461caea8f5060b61fdf0a71f4bcf51b57dd710b382d258341030db",
+  "render_receipt_sha256": "f7d6a71c0905bf0692b063526d9c8d1efd4d4a05a51b328b19fa81af5c746460",
+  "source_photo_sha256": "5068deec1cba1e6a167209adca5fb77e4d931db06ed6a3812b9a2b8252d8c866",
+  "expected_groups": 3,
+  "groups": [
+    {
+      "format": "native",
+      "image_sha256": "4431753cd48e2305e70ef86a4332ac0275497095383638d891c96441bfe17ebc",
+      "geometry_status": "passed",
+      "to_native_full_rgb_mae": 0.0,
+      "to_source_photo_full_rgb_mae": 0.08298565223338128,
+      "regions": {
+        "bedding": {
+          "pixels": 30600,
+          "to_native_rgb_mae": 0.0,
+          "to_source_photo_rgb_mae": 0.11982938186167713
+        },
+        "vent": {
+          "pixels": 11200,
+          "to_native_rgb_mae": 0.0,
+          "to_source_photo_rgb_mae": 0.10751587301587301
+        }
+      }
+    },
+    {
+      "format": "glb",
+      "image_sha256": "49da2f287aea04b7faee1544632fd16eeab5321f8b7b14c43d2f0111242d8b2c",
+      "geometry_status": "failed",
+      "to_native_full_rgb_mae": 0.07395442809500484,
+      "to_source_photo_full_rgb_mae": 0.14048366528303033,
+      "regions": {
+        "bedding": {
+          "pixels": 30600,
+          "to_native_rgb_mae": 0.08078461275577768,
+          "to_source_photo_rgb_mae": 0.16786103635353922
+        },
+        "vent": {
+          "pixels": 11200,
+          "to_native_rgb_mae": 0.05951995798319329,
+          "to_source_photo_rgb_mae": 0.1630559056956116
+        }
+      }
+    },
+    {
+      "format": "usdc",
+      "image_sha256": "cd8648c109a40ace3a3ee03aa0631908c607444262c08beaca5919c4f8fe8f53",
+      "geometry_status": "passed",
+      "to_native_full_rgb_mae": 0.077009231088074,
+      "to_source_photo_full_rgb_mae": 0.13785654746938816,
+      "regions": {
+        "bedding": {
+          "pixels": 30600,
+          "to_native_rgb_mae": 0.062281430219146484,
+          "to_source_photo_rgb_mae": 0.14063377333504207
+        },
+        "vent": {
+          "pixels": 11200,
+          "to_native_rgb_mae": 0.026505368814192343,
+          "to_source_photo_rgb_mae": 0.1304873949579832
+        }
+      }
+    }
+  ],
+  "scope": "Fixed-rig format appearance diagnostic; single fitting image. GLB still fails original all-vertex geometry gate. No image acceptance threshold or material-only causal attribution."
+}

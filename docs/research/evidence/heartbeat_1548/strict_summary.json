@@ -1,0 +1,109 @@
+{
+  "schema": "real2sim.strict-interchange/1",
+  "status": "failed",
+  "inputs": {
+    "source_model": {
+      "path": "/home/wqz/real2sim_capability_20260929/runs/shell_vent_002/shell_vent/model.blend",
+      "sha256": "4a0adbd949e3339c316e4c7bb99109a08e10c77d69dc80e83dc2b520f0a40402"
+    },
+    "source_scene": {
+      "path": "/home/wqz/real2sim_capability_20260929/runs/shell_vent_002/shell_vent/scene.json",
+      "sha256": "65b70a9d62ec1a5216a94624f1f285df6c1d60297e33af8eedd9d65b406d4d93"
+    }
+  },
+  "evaluator_sha256": "808c48f725c1b24e6b32fae1a545f60e10d520c03f707715b061fb965b47921a",
+  "blender_version": "4.5.3 LTS",
+  "thresholds": {
+    "canonical_aabb_m": 0.002,
+    "camera_matrix": 0.0001,
+    "normalized_view_frame": 1e-05
+  },
+  "scope": "Independent frozen-source comparison; actual three-format loading; render-visible ownership and part identity; canonical AABBs; explicit CAMERA identity, world matrix and normalized view frame on original JSON raster. AABB agreement is not full-surface/topology/collision equivalence. Clip distances are recorded but not acceptance-tested. PBR/procedural material, texture, lighting, real-world accuracy and image fidelity are not validated.",
+  "sources_unchanged": true,
+  "records": [
+    {
+      "format": "blend",
+      "path": "/home/wqz/real2sim_capability_20260929/runs/portability_001/export/scene.blend",
+      "status": "passed",
+      "failures": [],
+      "sha256": "05209bde3e560727e53fd2caca5e3a759d168732034e2ef9da1755219c79bade",
+      "bounds_error_by_entity_m": {
+        "floor": 0.0,
+        "ceiling": 0.0,
+        "wall_back": 0.0,
+        "wall_front": 0.0,
+        "wall_right": 0.0,
+        "wall_left": 0.0,
+        "window": 0.0,
+        "blinds": 0.0,
+        "ceiling_fixtures": 0.0,
+        "reflective_board": 0.0,
+        "bed": 0.0,
+        "wardrobe": 0.0,
+        "shoe_cabinet": 0.0,
+        "glass_partition": 0.0,
+        "exterior": 0.0
+      },
+      "maximum_bound_error_m": 0.0,
+      "source_camera_matrix_max_error": 0.0,
+      "source_camera_projection_max_error": 0.0
+    },
+    {
+      "format": "glb",
+      "path": "/home/wqz/real2sim_capability_20260929/runs/portability_001/export/scene.glb",
+      "status": "failed",
+      "failures": [
+        "Source AABB differs by more than 2 mm: bed"
+      ],
+      "sha256": "be39953b0b0dc81c5b815efc8cd688eef0674c0c3fcc78436ddadf2c9075164d",
+      "bounds_error_by_entity_m": {
+        "floor": 0.0,
+        "ceiling": 0.0,
+        "wall_back": 0.0,
+        "wall_front": 0.0,
+        "wall_right": 0.0,
+        "wall_left": 0.0,
+        "window": 0.0,
+        "blinds": 0.0,
+        "ceiling_fixtures": 0.0,
+        "reflective_board": 0.0,
+        "bed": 0.008094429969787598,
+        "wardrobe": 0.0,
+        "shoe_cabinet": 0.0,
+        "glass_partition": 0.0,
+        "exterior": 0.0
+      },
+      "maximum_bound_error_m": 0.008094429969787598,
+      "source_camera_matrix_max_error": 5.960464477539063e-08,
+      "source_camera_projection_max_error": 1.6169595418169536e-07
+    },
+    {
+      "format": "usdc",
+      "path": "/home/wqz/real2sim_capability_20260929/runs/portability_001/export/scene.usdc",
+      "status": "passed",
+      "failures": [],
+      "sha256": "d4e3c89cbefb8eec98e54cf93801119afc30fe367eabdc5c53662aad46ff0bcf",
+      "bounds_error_by_entity_m": {
+        "floor": 0.0,
+        "ceiling": 0.0,
+        "wall_back": 0.0,
+        "wall_front": 0.0,
+        "wall_right": 0.0,
+        "wall_left": 0.0,
+        "window": 0.0,
+        "blinds": 0.0,
+        "ceiling_fixtures": 0.0,
+        "reflective_board": 0.0,
+        "bed": 5.960464477539063e-08,
+        "wardrobe": 0.0,
+        "shoe_cabinet": 0.0,
+        "glass_partition": 0.0,
+        "exterior": 0.0
+      },
+      "maximum_bound_error_m": 5.960464477539063e-08,
+      "source_camera_matrix_max_error": 1.4901161193847656e-08,
+      "source_camera_projection_max_error": 0.0
+    }
+  ],
+  "full_report_sha256": "14ab2cb5f8595af920f1721388814103fc80a8b74a4059a2d08ebef9c87d5a05"
+}

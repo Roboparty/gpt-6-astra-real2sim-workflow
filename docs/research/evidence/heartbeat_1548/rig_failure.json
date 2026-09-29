@@ -1,0 +1,3203 @@
+{
+  "status": "failed",
+  "protocol_sha256": "82abfcaddda621c906bd293cd8f172c21439645fec84f92939f419ca920b8bf8",
+  "script_sha256": "271f2582ff53f539739da0a1ed3cbd8e0c70500d5c553df89a54e9235c4448d0",
+  "geometry_evaluator_sha256": "808c48f725c1b24e6b32fae1a545f60e10d520c03f707715b061fb965b47921a",
+  "blender": "4.5.3 LTS",
+  "expected_groups": [
+    "native",
+    "glb",
+    "usdc"
+  ],
+  "groups": [
+    {
+      "group": "native",
+      "status": "rendered",
+      "rig_before": {
+        "objects": {
+          "source_camera": {
+            "type": "CAMERA",
+            "matrix_world": [
+              [
+                0.7251594662666321,
+                -0.13864880800247192,
+                0.674477756023407,
+                1.7480084896087646
+              ],
+              [
+                0.6875303387641907,
+                0.09170212596654892,
+                -0.7203420996665955,
+                -1.2246108055114746
+              ],
+              [
+                0.03802352398633957,
+                0.9860868453979492,
+                0.16182392835617065,
+                1.3833105564117432
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "data": {
+              "properties": {
+                "name": "Camera.001",
+                "use_fake_user": false,
+                "use_extra_user": false,
+                "is_runtime_data": false,
+                "tag": false,
+                "type": "PERSP",
+                "sensor_fit": "HORIZONTAL",
+                "passepartout_alpha": 0.5,
+                "angle_x": 1.7913762331008911,
+                "angle_y": 1.3887361288070679,
+                "angle": 1.7913762331008911,
+                "clip_start": 0.10000000149011612,
+                "clip_end": 1000.0,
+                "lens": 14.410844802856445,
+                "sensor_width": 36.0,
+                "sensor_height": 24.0,
+                "ortho_scale": 6.0,
+                "display_size": 1.0,
+                "shift_x": 0.0,
+                "shift_y": 0.0,
+                "show_limits": false,
+                "show_mist": false,
+                "show_passepartout": true,
+                "show_safe_areas": false,
+                "show_safe_center": false,
+                "show_name": false,
+                "show_sensor": false,
+                "show_background_images": false,
+                "lens_unit": "MILLIMETERS",
+                "show_composition_center": false,
+                "show_composition_center_diagonal": false,
+                "show_composition_thirds": false,
+                "show_composition_golden": false,
+                "show_composition_golden_tria_a": false,
+                "show_composition_golden_tria_b": false,
+                "show_composition_harmony_tri_a": false,
+                "show_composition_harmony_tri_b": false,
+                "panorama_type": "FISHEYE_EQUISOLID",
+                "fisheye_fov": 3.1415927410125732,
+                "fisheye_lens": 10.5,
+                "latitude_min": -1.5707963705062866,
+                "latitude_max": 1.5707963705062866,
+                "longitude_min": -3.1415927410125732,
+                "longitude_max": 3.1415927410125732,
+                "fisheye_polynomial_k0": -1.1735143743862864e-05,
+                "fisheye_polynomial_k1": -0.019988736137747765,
+                "fisheye_polynomial_k2": -3.3525323033245513e-06,
+                "fisheye_polynomial_k3": 3.0992753181635635e-06,
+                "fisheye_polynomial_k4": -2.60646473293491e-08,
+                "central_cylindrical_range_u_min": -3.1415927410125732,
+                "central_cylindrical_range_u_max": 3.1415927410125732,
+                "central_cylindrical_range_v_min": -1.0,
+                "central_cylindrical_range_v_max": 1.0,
+                "central_cylindrical_radius": 1.0,
+                "custom_filepath": "",
+                "custom_mode": "INTERNAL",
+                "custom_bytecode": "",
+                "custom_bytecode_hash": ""
+              },
+              "nodes": [],
+              "links": []
+            },
+            "hide_render": false
+          },
+          "window_daylight": {
+            "type": "LIGHT",
+            "matrix_world": [
+              [
+                0.0781264379620552,
+                0.47835150361061096,
+                -0.8746863007545471,
+                -0.876068115234375
+              ],
+              [
+                -0.996943473815918,
+                0.03748631849884987,
+                -0.06854572892189026,
+                0.4000000059604645
+              ],
+              [
+                -1.8293863490725926e-07,
+                0.8773680329322815,
+                0.47981807589530945,
+                0.8500000238418579
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "data": {
+              "properties": {
+                "name": "window_daylight",
+                "use_fake_user": false,
+                "use_extra_user": false,
+                "is_runtime_data": false,
+                "tag": false,
+                "type": "AREA",
+                "use_temperature": false,
+                "color": [
+                  1.0,
+                  0.9800000190734863,
+                  0.949999988079071
+                ],
+                "temperature": 6500.0,
+                "specular_factor": 1.0,
+                "diffuse_factor": 1.0,
+                "transmission_factor": 1.0,
+                "volume_factor": 1.0,
+                "use_custom_distance": false,
+                "cutoff_distance": 40.0,
+                "use_shadow": true,
+                "exposure": 0.0,
+                "normalize": true,
+                "use_nodes": false,
+                "energy": 70.0,
+                "shadow_buffer_clip_start": 0.05000000074505806,
+                "shadow_soft_size": 0.0,
+                "shadow_filter_radius": 1.0,
+                "shadow_maximum_resolution": 0.0010000000474974513,
+                "use_shadow_jitter": false,
+                "shadow_jitter_overblur": 10.0,
+                "use_absolute_resolution": false,
+                "shape": "RECTANGLE",
+                "size": 2.1500000953674316,
+                "size_y": 0.800000011920929,
+                "spread": 3.1415927410125732
+              },
+              "nodes": [],
+              "links": []
+            },
+            "hide_render": false
+          },
+          "exterior_sun": {
+            "type": "LIGHT",
+            "matrix_world": [
+              [
+                0.3846152424812317,
+                0.6975590586662292,
+                -0.6045514345169067,
+                0.0
+              ],
+              [
+                -0.9230769872665405,
+                0.29064953327178955,
+                -0.25189629197120667,
+                0.0
+              ],
+              [
+                5.027761318388002e-08,
+                0.6549306511878967,
+                0.7556889653205872,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "data": {
+              "properties": {
+                "name": "exterior_sun",
+                "use_fake_user": false,
+                "use_extra_user": false,
+                "is_runtime_data": false,
+                "tag": false,
+                "type": "SUN",
+                "use_temperature": false,
+                "color": [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "temperature": 6500.0,
+                "specular_factor": 1.0,
+                "diffuse_factor": 1.0,
+                "transmission_factor": 1.0,
+                "volume_factor": 1.0,
+                "use_custom_distance": false,
+                "cutoff_distance": 40.0,
+                "use_shadow": true,
+                "exposure": 0.0,
+                "normalize": true,
+                "use_nodes": false,
+                "angle": 0.3499999940395355,
+                "energy": 3.0,
+                "shadow_buffer_clip_start": 0.05000000074505806,
+                "shadow_soft_size": 0.0,
+                "shadow_filter_radius": 1.0,
+                "shadow_maximum_resolution": 0.0010000000474974513,
+                "use_shadow_jitter": false,
+                "shadow_jitter_overblur": 10.0,
+                "shadow_cascade_max_distance": 200.0,
+                "shadow_cascade_count": 4,
+                "shadow_cascade_exponent": 0.800000011920929,
+                "shadow_cascade_fade": 0.10000000149011612
+              },
+              "nodes": [],
+              "links": []
+            },
+            "hide_render": false
+          }
+        },
+        "camera": "source_camera",
+        "dof": {
+          "use_dof": false,
+          "focus_subtarget": "",
+          "focus_distance": 10.0,
+          "aperture_fstop": 2.799999952316284,
+          "aperture_blades": 0,
+          "aperture_rotation": 0.0,
+          "aperture_ratio": 1.0
+        },
+        "dof_focus": null,
+        "world": {
+          "properties": {
+            "name": "day_world",
+            "use_fake_user": false,
+            "use_extra_user": false,
+            "is_runtime_data": false,
+            "tag": false,
+            "use_eevee_finite_volume": false,
+            "color": [
+              0.05000000074505806,
+              0.05000000074505806,
+              0.05000000074505806
+            ],
+            "use_nodes": true,
+            "lightgroup": "",
+            "probe_resolution": "1024",
+            "sun_threshold": 10.0,
+            "sun_angle": 0.009180432185530663,
+            "use_sun_shadow": true,
+            "sun_shadow_maximum_resolution": 0.0010000000474974513,
+            "sun_shadow_filter_radius": 1.0,
+            "use_sun_shadow_jitter": false,
+            "sun_shadow_jitter_overblur": 10.0
+          },
+          "nodes": [
+            {
+              "properties": {
+                "location": [
+                  -200.0,
+                  100.0
+                ],
+                "location_absolute": [
+                  -200.0,
+                  100.0
+                ],
+                "width": 140.0,
+                "height": 100.0,
+                "name": "Background",
+                "label": "",
+                "warning_propagation": "ALL",
+                "use_custom_color": false,
+                "color": [
+                  0.6079999804496765,
+                  0.6079999804496765,
+                  0.6079999804496765
+                ],
+                "select": true,
+                "show_options": true,
+                "show_preview": false,
+                "hide": false,
+                "mute": false,
+                "show_texture": false,
+                "bl_idname": "ShaderNodeBackground",
+                "bl_label": "Background",
+                "bl_description": "Add background light emission.\nNote: This node should only be used for the world surface output",
+                "bl_icon": "NONE",
+                "bl_width_default": 140.0,
+                "bl_width_min": 100.0,
+                "bl_width_max": 700.0,
+                "bl_height_default": 100.0,
+                "bl_height_min": 30.0,
+                "bl_height_max": 30.0
+              },
+              "inputs": [
+                {
+                  "name": "Color",
+                  "description": "",
+                  "hide": false,
+                  "enabled": true,
+                  "link_limit": 1,
+                  "show_expanded": false,
+                  "hide_value": false,
+                  "pin_gizmo": false,
+                  "type": "RGBA",
+                  "display_shape": "CIRCLE",
+                  "bl_idname": "NodeSocketColor",
+                  "bl_label": "Color",
+                  "bl_subtype_label": "None",
+                  "default_value": [
+                    0.6499999761581421,
+                    0.7300000190734863,
+                    0.800000011920929,
+                    1.0
+                  ]
+                },
+                {
+                  "name": "Strength",
+                  "description": "",
+                  "hide": false,
+                  "enabled": true,
+                  "link_limit": 1,
+                  "show_expanded": false,
+                  "hide_value": false,
+                  "pin_gizmo": false,
+                  "type": "VALUE",
+                  "display_shape": "CIRCLE",
+                  "bl_idname": "NodeSocketFloat",
+                  "bl_label": "Float",
+                  "bl_subtype_label": "None",
+                  "default_value": 4.0
+                },
+                {
+                  "name": "Weight",
+                  "description": "",
+                  "hide": false,
+                  "enabled": false,
+                  "link_limit": 1,
+                  "show_expanded": false,
+                  "hide_value": false,
+                  "pin_gizmo": false,
+                  "type": "VALUE",
+                  "display_shape": "CIRCLE",
+                  "bl_idname": "NodeSocketFloat",
+                  "bl_label": "Float",
+                  "bl_subtype_label": "None",
+                  "default_value": 0.0
+                }
+              ],
+              "image": null
+            },
+            {
+              "properties": {
+                "location": [
+                  200.0,
+                  100.0
+                ],
+                "location_absolute": [
+                  200.0,
+                  100.0
+                ],
+                "width": 140.0,
+                "height": 100.0,
+                "name": "World Output",
+                "label": "",
+                "warning_propagation": "ALL",
+                "use_custom_color": false,
+                "color": [
+                  0.6079999804496765,
+                  0.6079999804496765,
+                  0.6079999804496765
+                ],
+                "select": true,
+                "show_options": true,
+                "show_preview": false,
+                "hide": false,
+                "mute": false,
+                "show_texture": false,
+                "bl_idname": "ShaderNodeOutputWorld",
+                "bl_label": "World Output",
+                "bl_description": "Output light color information to the scene's World",
+                "bl_icon": "NONE",
+                "bl_width_default": 140.0,
+                "bl_width_min": 100.0,
+                "bl_width_max": 700.0,
+                "bl_height_default": 100.0,
+                "bl_height_min": 30.0,
+                "bl_height_max": 30.0,
+                "is_active_output": true,
+                "target": "ALL"
+              },
+              "inputs": [
+                {
+                  "name": "Surface",
+                  "description": "",
+                  "hide": false,
+                  "enabled": true,
+                  "link_limit": 1,
+                  "show_expanded": false,
+                  "hide_value": false,
+                  "pin_gizmo": false,
+                  "type": "SHADER",
+                  "display_shape": "CIRCLE",
+                  "bl_idname": "NodeSocketShader",
+                  "bl_label": "Shader",
+                  "bl_subtype_label": "None"
+                },
+                {
+                  "name": "Volume",
+                  "description": "",
+                  "hide": false,
+                  "enabled": true,
+                  "link_limit": 1,
+                  "show_expanded": false,
+                  "hide_value": false,
+                  "pin_gizmo": false,
+                  "type": "SHADER",
+                  "display_shape": "CIRCLE",
+                  "bl_idname": "NodeSocketShader",
+                  "bl_label": "Shader",
+                  "bl_subtype_label": "None"
+                }
+              ],
+              "image": null
+            }
+          ],
+          "links": [
+            [
+              "Background",
+              "Background",
+              "World Output",
+              "Surface"
+            ]
+          ]
+        },
+        "view": {
+          "look": "AgX - Medium High Contrast",
+          "view_transform": "AgX",
+          "exposure": 0.0,
+          "gamma": 1.0,
+          "use_curve_mapping": false,
+          "use_white_balance": false,
+          "white_balance_temperature": 6500.0,
+          "white_balance_tint": 10.0,
+          "white_balance_whitepoint": [
+            0.9991403222084045,
+            1.0003736019134521,
+            0.998818039894104
+          ],
+          "use_hdr_view": false
+        },
+        "display": {
+          "display_device": "sRGB"
+        },
+        "pixel_aspect": [
+          1.0,
+          1.0
+        ],
+        "film_transparent": false,
+        "dither": 1.0
+      },
+      "rig_after": {
+        "objects": {
+          "source_camera": {
+            "type": "CAMERA",
+            "matrix_world": [
+              [
+                0.7251594662666321,
+                -0.13864880800247192,
+                0.674477756023407,
+                1.7480084896087646
+              ],
+              [
+                0.6875303387641907,
+                0.09170212596654892,
+                -0.7203420996665955,
+                -1.2246108055114746
+              ],
+              [
+                0.03802352398633957,
+                0.9860868453979492,
+                0.16182392835617065,
+                1.3833105564117432
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "data": {
+              "properties": {
+                "name": "Camera.001",
+                "use_fake_user": false,
+                "use_extra_user": false,
+                "is_runtime_data": false,
+                "tag": false,
+                "type": "PERSP",
+                "sensor_fit": "HORIZONTAL",
+                "passepartout_alpha": 0.5,
+                "angle_x": 1.7913762331008911,
+                "angle_y": 1.3887361288070679,
+                "angle": 1.7913762331008911,
+                "clip_start": 0.10000000149011612,
+                "clip_end": 1000.0,
+                "lens": 14.410844802856445,
+                "sensor_width": 36.0,
+                "sensor_height": 24.0,
+                "ortho_scale": 6.0,
+                "display_size": 1.0,
+                "shift_x": 0.0,
+                "shift_y": 0.0,
+                "show_limits": false,
+                "show_mist": false,
+                "show_passepartout": true,
+                "show_safe_areas": false,
+                "show_safe_center": false,
+                "show_name": false,
+                "show_sensor": false,
+                "show_background_images": false,
+                "lens_unit": "MILLIMETERS",
+                "show_composition_center": false,
+                "show_composition_center_diagonal": false,
+                "show_composition_thirds": false,
+                "show_composition_golden": false,
+                "show_composition_golden_tria_a": false,
+                "show_composition_golden_tria_b": false,
+                "show_composition_harmony_tri_a": false,
+                "show_composition_harmony_tri_b": false,
+                "panorama_type": "FISHEYE_EQUISOLID",
+                "fisheye_fov": 3.1415927410125732,
+                "fisheye_lens": 10.5,
+                "latitude_min": -1.5707963705062866,
+                "latitude_max": 1.5707963705062866,
+                "longitude_min": -3.1415927410125732,
+                "longitude_max": 3.1415927410125732,
+                "fisheye_polynomial_k0": -1.1735143743862864e-05,
+                "fisheye_polynomial_k1": -0.019988736137747765,
+                "fisheye_polynomial_k2": -3.3525323033245513e-06,
+                "fisheye_polynomial_k3": 3.0992753181635635e-06,
+                "fisheye_polynomial_k4": -2.60646473293491e-08,
+                "central_cylindrical_range_u_min": -3.1415927410125732,
+                "central_cylindrical_range_u_max": 3.1415927410125732,
+                "central_cylindrical_range_v_min": -1.0,
+                "central_cylindrical_range_v_max": 1.0,
+                "central_cylindrical_radius": 1.0,
+                "custom_filepath": "",
+                "custom_mode": "INTERNAL",
+                "custom_bytecode": "",
+                "custom_bytecode_hash": ""
+              },
+              "nodes": [],
+              "links": []
+            },
+            "hide_render": false
+          },
+          "window_daylight": {
+            "type": "LIGHT",
+            "matrix_world": [
+              [
+                0.0781264379620552,
+                0.47835150361061096,
+                -0.8746863007545471,
+                -0.876068115234375
+              ],
+              [
+                -0.996943473815918,
+                0.03748631849884987,
+                -0.06854572892189026,
+                0.4000000059604645
+              ],
+              [
+                -1.8293863490725926e-07,
+                0.8773680329322815,
+                0.47981807589530945,
+                0.8500000238418579
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "data": {
+              "properties": {
+                "name": "window_daylight",
+                "use_fake_user": false,
+                "use_extra_user": false,
+                "is_runtime_data": false,
+                "tag": false,
+                "type": "AREA",
+                "use_temperature": false,
+                "color": [
+                  1.0,
+                  0.9800000190734863,
+                  0.949999988079071
+                ],
+                "temperature": 6500.0,
+                "specular_factor": 1.0,
+                "diffuse_factor": 1.0,
+                "transmission_factor": 1.0,
+                "volume_factor": 1.0,
+                "use_custom_distance": false,
+                "cutoff_distance": 40.0,
+                "use_shadow": true,
+                "exposure": 0.0,
+                "normalize": true,
+                "use_nodes": false,
+                "energy": 70.0,
+                "shadow_buffer_clip_start": 0.05000000074505806,
+                "shadow_soft_size": 0.0,
+                "shadow_filter_radius": 1.0,
+                "shadow_maximum_resolution": 0.0010000000474974513,
+                "use_shadow_jitter": false,
+                "shadow_jitter_overblur": 10.0,
+                "use_absolute_resolution": false,
+                "shape": "RECTANGLE",
+                "size": 2.1500000953674316,
+                "size_y": 0.800000011920929,
+                "spread": 3.1415927410125732
+              },
+              "nodes": [],
+              "links": []
+            },
+            "hide_render": false
+          },
+          "exterior_sun": {
+            "type": "LIGHT",
+            "matrix_world": [
+              [
+                0.3846152424812317,
+                0.6975590586662292,
+                -0.6045514345169067,
+                0.0
+              ],
+              [
+                -0.9230769872665405,
+                0.29064953327178955,
+                -0.25189629197120667,
+                0.0
+              ],
+              [
+                5.027761318388002e-08,
+                0.6549306511878967,
+                0.7556889653205872,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "data": {
+              "properties": {
+                "name": "exterior_sun",
+                "use_fake_user": false,
+                "use_extra_user": false,
+                "is_runtime_data": false,
+                "tag": false,
+                "type": "SUN",
+                "use_temperature": false,
+                "color": [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "temperature": 6500.0,
+                "specular_factor": 1.0,
+                "diffuse_factor": 1.0,
+                "transmission_factor": 1.0,
+                "volume_factor": 1.0,
+                "use_custom_distance": false,
+                "cutoff_distance": 40.0,
+                "use_shadow": true,
+                "exposure": 0.0,
+                "normalize": true,
+                "use_nodes": false,
+                "angle": 0.3499999940395355,
+                "energy": 3.0,
+                "shadow_buffer_clip_start": 0.05000000074505806,
+                "shadow_soft_size": 0.0,
+                "shadow_filter_radius": 1.0,
+                "shadow_maximum_resolution": 0.0010000000474974513,
+                "use_shadow_jitter": false,
+                "shadow_jitter_overblur": 10.0,
+                "shadow_cascade_max_distance": 200.0,
+                "shadow_cascade_count": 4,
+                "shadow_cascade_exponent": 0.800000011920929,
+                "shadow_cascade_fade": 0.10000000149011612
+              },
+              "nodes": [],
+              "links": []
+            },
+            "hide_render": false
+          }
+        },
+        "camera": "source_camera",
+        "dof": {
+          "use_dof": false,
+          "focus_subtarget": "",
+          "focus_distance": 10.0,
+          "aperture_fstop": 2.799999952316284,
+          "aperture_blades": 0,
+          "aperture_rotation": 0.0,
+          "aperture_ratio": 1.0
+        },
+        "dof_focus": null,
+        "world": {
+          "properties": {
+            "name": "day_world",
+            "use_fake_user": false,
+            "use_extra_user": false,
+            "is_runtime_data": false,
+            "tag": false,
+            "use_eevee_finite_volume": false,
+            "color": [
+              0.05000000074505806,
+              0.05000000074505806,
+              0.05000000074505806
+            ],
+            "use_nodes": true,
+            "lightgroup": "",
+            "probe_resolution": "1024",
+            "sun_threshold": 10.0,
+            "sun_angle": 0.009180432185530663,
+            "use_sun_shadow": true,
+            "sun_shadow_maximum_resolution": 0.0010000000474974513,
+            "sun_shadow_filter_radius": 1.0,
+            "use_sun_shadow_jitter": false,
+            "sun_shadow_jitter_overblur": 10.0
+          },
+          "nodes": [
+            {
+              "properties": {
+                "location": [
+                  -200.0,
+                  100.0
+                ],
+                "location_absolute": [
+                  -200.0,
+                  100.0
+                ],
+                "width": 140.0,
+                "height": 100.0,
+                "name": "Background",
+                "label": "",
+                "warning_propagation": "ALL",
+                "use_custom_color": false,
+                "color": [
+                  0.6079999804496765,
+                  0.6079999804496765,
+                  0.6079999804496765
+                ],
+                "select": true,
+                "show_options": true,
+                "show_preview": false,
+                "hide": false,
+                "mute": false,
+                "show_texture": false,
+                "bl_idname": "ShaderNodeBackground",
+                "bl_label": "Background",
+                "bl_description": "Add background light emission.\nNote: This node should only be used for the world surface output",
+                "bl_icon": "NONE",
+                "bl_width_default": 140.0,
+                "bl_width_min": 100.0,
+                "bl_width_max": 700.0,
+                "bl_height_default": 100.0,
+                "bl_height_min": 30.0,
+                "bl_height_max": 30.0
+              },
+              "inputs": [
+                {
+                  "name": "Color",
+                  "description": "",
+                  "hide": false,
+                  "enabled": true,
+                  "link_limit": 1,
+                  "show_expanded": false,
+                  "hide_value": false,
+                  "pin_gizmo": false,
+                  "type": "RGBA",
+                  "display_shape": "CIRCLE",
+                  "bl_idname": "NodeSocketColor",
+                  "bl_label": "Color",
+                  "bl_subtype_label": "None",
+                  "default_value": [
+                    0.6499999761581421,
+                    0.7300000190734863,
+                    0.800000011920929,
+                    1.0
+                  ]
+                },
+                {
+                  "name": "Strength",
+                  "description": "",
+                  "hide": false,
+                  "enabled": true,
+                  "link_limit": 1,
+                  "show_expanded": false,
+                  "hide_value": false,
+                  "pin_gizmo": false,
+                  "type": "VALUE",
+                  "display_shape": "CIRCLE",
+                  "bl_idname": "NodeSocketFloat",
+                  "bl_label": "Float",
+                  "bl_subtype_label": "None",
+                  "default_value": 4.0
+                },
+                {
+                  "name": "Weight",
+                  "description": "",
+                  "hide": false,
+                  "enabled": false,
+                  "link_limit": 1,
+                  "show_expanded": false,
+                  "hide_value": false,
+                  "pin_gizmo": false,
+                  "type": "VALUE",
+                  "display_shape": "CIRCLE",
+                  "bl_idname": "NodeSocketFloat",
+                  "bl_label": "Float",
+                  "bl_subtype_label": "None",
+                  "default_value": 0.0
+                }
+              ],
+              "image": null
+            },
+            {
+              "properties": {
+                "location": [
+                  200.0,
+                  100.0
+                ],
+                "location_absolute": [
+                  200.0,
+                  100.0
+                ],
+                "width": 140.0,
+                "height": 100.0,
+                "name": "World Output",
+                "label": "",
+                "warning_propagation": "ALL",
+                "use_custom_color": false,
+                "color": [
+                  0.6079999804496765,
+                  0.6079999804496765,
+                  0.6079999804496765
+                ],
+                "select": true,
+                "show_options": true,
+                "show_preview": false,
+                "hide": false,
+                "mute": false,
+                "show_texture": false,
+                "bl_idname": "ShaderNodeOutputWorld",
+                "bl_label": "World Output",
+                "bl_description": "Output light color information to the scene's World",
+                "bl_icon": "NONE",
+                "bl_width_default": 140.0,
+                "bl_width_min": 100.0,
+                "bl_width_max": 700.0,
+                "bl_height_default": 100.0,
+                "bl_height_min": 30.0,
+                "bl_height_max": 30.0,
+                "is_active_output": true,
+                "target": "ALL"
+              },
+              "inputs": [
+                {
+                  "name": "Surface",
+                  "description": "",
+                  "hide": false,
+                  "enabled": true,
+                  "link_limit": 1,
+                  "show_expanded": false,
+                  "hide_value": false,
+                  "pin_gizmo": false,
+                  "type": "SHADER",
+                  "display_shape": "CIRCLE",
+                  "bl_idname": "NodeSocketShader",
+                  "bl_label": "Shader",
+                  "bl_subtype_label": "None"
+                },
+                {
+                  "name": "Volume",
+                  "description": "",
+                  "hide": false,
+                  "enabled": true,
+                  "link_limit": 1,
+                  "show_expanded": false,
+                  "hide_value": false,
+                  "pin_gizmo": false,
+                  "type": "SHADER",
+                  "display_shape": "CIRCLE",
+                  "bl_idname": "NodeSocketShader",
+                  "bl_label": "Shader",
+                  "bl_subtype_label": "None"
+                }
+              ],
+              "image": null
+            }
+          ],
+          "links": [
+            [
+              "Background",
+              "Background",
+              "World Output",
+              "Surface"
+            ]
+          ]
+        },
+        "view": {
+          "look": "AgX - Medium High Contrast",
+          "view_transform": "AgX",
+          "exposure": 0.0,
+          "gamma": 1.0,
+          "use_curve_mapping": false,
+          "use_white_balance": false,
+          "white_balance_temperature": 6500.0,
+          "white_balance_tint": 10.0,
+          "white_balance_whitepoint": [
+            0.9991403222084045,
+            1.0003736019134521,
+            0.998818039894104
+          ],
+          "use_hdr_view": false
+        },
+        "display": {
+          "display_device": "sRGB"
+        },
+        "pixel_aspect": [
+          1.0,
+          1.0
+        ],
+        "film_transparent": false,
+        "dither": 1.0
+      },
+      "rig_preserved": true,
+      "geometry_sha256": "3aac8b2cfcede9d162ed9ef4628d542151410b4439ab20fee410703dc40d87b8",
+      "geometry_status": "passed",
+      "appearance_attribution": "format diagnostic; full surface/material causality not established",
+      "render_sha256": "12da9da3b24f9549e8fd0c71b6f976792073aaccb8320048a738da65a4739734",
+      "render_settings": {
+        "width": 851,
+        "height": 638,
+        "samples": 8,
+        "seed": 0,
+        "threads": 2,
+        "device": "CPU",
+        "adaptive": false,
+        "denoise": true
+      },
+      "wall_seconds": 17.93411764805205
+    },
+    {
+      "group": "glb",
+      "status": "failed",
+      "export_sha256": "be39953b0b0dc81c5b815efc8cd688eef0674c0c3fcc78436ddadf2c9075164d",
+      "removed_imported_rig": [
+        "exterior_sun.001",
+        "source_camera.001"
+      ],
+      "rig_before": {
+        "objects": {
+          "source_camera": {
+            "type": "CAMERA",
+            "matrix_world": [
+              [
+                0.7251594662666321,
+                -0.13864880800247192,
+                0.674477756023407,
+                1.7480084896087646
+              ],
+              [
+                0.6875303387641907,
+                0.09170212596654892,
+                -0.7203420996665955,
+                -1.2246108055114746
+              ],
+              [
+                0.03802352398633957,
+                0.9860868453979492,
+                0.16182392835617065,
+                1.3833105564117432
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "data": {
+              "properties": {
+                "name": "Camera.001",
+                "use_fake_user": false,
+                "use_extra_user": false,
+                "is_runtime_data": false,
+                "tag": false,
+                "type": "PERSP",
+                "sensor_fit": "HORIZONTAL",
+                "passepartout_alpha": 0.5,
+                "angle_x": 1.7913762331008911,
+                "angle_y": 1.3887361288070679,
+                "angle": 1.7913762331008911,
+                "clip_start": 0.10000000149011612,
+                "clip_end": 1000.0,
+                "lens": 14.410844802856445,
+                "sensor_width": 36.0,
+                "sensor_height": 24.0,
+                "ortho_scale": 6.0,
+                "display_size": 1.0,
+                "shift_x": 0.0,
+                "shift_y": 0.0,
+                "show_limits": false,
+                "show_mist": false,
+                "show_passepartout": true,
+                "show_safe_areas": false,
+                "show_safe_center": false,
+                "show_name": false,
+                "show_sensor": false,
+                "show_background_images": false,
+                "lens_unit": "MILLIMETERS",
+                "show_composition_center": false,
+                "show_composition_center_diagonal": false,
+                "show_composition_thirds": false,
+                "show_composition_golden": false,
+                "show_composition_golden_tria_a": false,
+                "show_composition_golden_tria_b": false,
+                "show_composition_harmony_tri_a": false,
+                "show_composition_harmony_tri_b": false,
+                "panorama_type": "FISHEYE_EQUISOLID",
+                "fisheye_fov": 3.1415927410125732,
+                "fisheye_lens": 10.5,
+                "latitude_min": -1.5707963705062866,
+                "latitude_max": 1.5707963705062866,
+                "longitude_min": -3.1415927410125732,
+                "longitude_max": 3.1415927410125732,
+                "fisheye_polynomial_k0": -1.1735143743862864e-05,
+                "fisheye_polynomial_k1": -0.019988736137747765,
+                "fisheye_polynomial_k2": -3.3525323033245513e-06,
+                "fisheye_polynomial_k3": 3.0992753181635635e-06,
+                "fisheye_polynomial_k4": -2.60646473293491e-08,
+                "central_cylindrical_range_u_min": -3.1415927410125732,
+                "central_cylindrical_range_u_max": 3.1415927410125732,
+                "central_cylindrical_range_v_min": -1.0,
+                "central_cylindrical_range_v_max": 1.0,
+                "central_cylindrical_radius": 1.0,
+                "custom_filepath": "",
+                "custom_mode": "INTERNAL",
+                "custom_bytecode": "",
+                "custom_bytecode_hash": ""
+              },
+              "nodes": [],
+              "links": []
+            },
+            "hide_render": false
+          },
+          "window_daylight": {
+            "type": "LIGHT",
+            "matrix_world": [
+              [
+                0.0781264379620552,
+                0.47835150361061096,
+                -0.8746863007545471,
+                -0.876068115234375
+              ],
+              [
+                -0.996943473815918,
+                0.03748631849884987,
+                -0.06854572892189026,
+                0.4000000059604645
+              ],
+              [
+                -1.8293863490725926e-07,
+                0.8773680329322815,
+                0.47981807589530945,
+                0.8500000238418579
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "data": {
+              "properties": {
+                "name": "window_daylight",
+                "use_fake_user": false,
+                "use_extra_user": false,
+                "is_runtime_data": false,
+                "tag": false,
+                "type": "AREA",
+                "use_temperature": false,
+                "color": [
+                  1.0,
+                  0.9800000190734863,
+                  0.949999988079071
+                ],
+                "temperature": 6500.0,
+                "specular_factor": 1.0,
+                "diffuse_factor": 1.0,
+                "transmission_factor": 1.0,
+                "volume_factor": 1.0,
+                "use_custom_distance": false,
+                "cutoff_distance": 40.0,
+                "use_shadow": true,
+                "exposure": 0.0,
+                "normalize": true,
+                "use_nodes": false,
+                "energy": 70.0,
+                "shadow_buffer_clip_start": 0.05000000074505806,
+                "shadow_soft_size": 0.0,
+                "shadow_filter_radius": 1.0,
+                "shadow_maximum_resolution": 0.0010000000474974513,
+                "use_shadow_jitter": false,
+                "shadow_jitter_overblur": 10.0,
+                "use_absolute_resolution": false,
+                "shape": "RECTANGLE",
+                "size": 2.1500000953674316,
+                "size_y": 0.800000011920929,
+                "spread": 3.1415927410125732
+              },
+              "nodes": [],
+              "links": []
+            },
+            "hide_render": false
+          },
+          "exterior_sun": {
+            "type": "LIGHT",
+            "matrix_world": [
+              [
+                0.3846152424812317,
+                0.6975590586662292,
+                -0.6045514345169067,
+                0.0
+              ],
+              [
+                -0.9230769872665405,
+                0.29064953327178955,
+                -0.25189629197120667,
+                0.0
+              ],
+              [
+                5.027761318388002e-08,
+                0.6549306511878967,
+                0.7556889653205872,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "data": {
+              "properties": {
+                "name": "exterior_sun",
+                "use_fake_user": false,
+                "use_extra_user": false,
+                "is_runtime_data": false,
+                "tag": false,
+                "type": "SUN",
+                "use_temperature": false,
+                "color": [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "temperature": 6500.0,
+                "specular_factor": 1.0,
+                "diffuse_factor": 1.0,
+                "transmission_factor": 1.0,
+                "volume_factor": 1.0,
+                "use_custom_distance": false,
+                "cutoff_distance": 40.0,
+                "use_shadow": true,
+                "exposure": 0.0,
+                "normalize": true,
+                "use_nodes": false,
+                "angle": 0.3499999940395355,
+                "energy": 3.0,
+                "shadow_buffer_clip_start": 0.05000000074505806,
+                "shadow_soft_size": 0.0,
+                "shadow_filter_radius": 1.0,
+                "shadow_maximum_resolution": 0.0010000000474974513,
+                "use_shadow_jitter": false,
+                "shadow_jitter_overblur": 10.0,
+                "shadow_cascade_max_distance": 200.0,
+                "shadow_cascade_count": 4,
+                "shadow_cascade_exponent": 0.800000011920929,
+                "shadow_cascade_fade": 0.10000000149011612
+              },
+              "nodes": [],
+              "links": []
+            },
+            "hide_render": false
+          }
+        },
+        "camera": "source_camera",
+        "dof": {
+          "use_dof": false,
+          "focus_subtarget": "",
+          "focus_distance": 10.0,
+          "aperture_fstop": 2.799999952316284,
+          "aperture_blades": 0,
+          "aperture_rotation": 0.0,
+          "aperture_ratio": 1.0
+        },
+        "dof_focus": null,
+        "world": {
+          "properties": {
+            "name": "day_world",
+            "use_fake_user": false,
+            "use_extra_user": false,
+            "is_runtime_data": false,
+            "tag": false,
+            "use_eevee_finite_volume": false,
+            "color": [
+              0.05000000074505806,
+              0.05000000074505806,
+              0.05000000074505806
+            ],
+            "use_nodes": true,
+            "lightgroup": "",
+            "probe_resolution": "1024",
+            "sun_threshold": 10.0,
+            "sun_angle": 0.009180432185530663,
+            "use_sun_shadow": true,
+            "sun_shadow_maximum_resolution": 0.0010000000474974513,
+            "sun_shadow_filter_radius": 1.0,
+            "use_sun_shadow_jitter": false,
+            "sun_shadow_jitter_overblur": 10.0
+          },
+          "nodes": [
+            {
+              "properties": {
+                "location": [
+                  -200.0,
+                  100.0
+                ],
+                "location_absolute": [
+                  -200.0,
+                  100.0
+                ],
+                "width": 140.0,
+                "height": 100.0,
+                "name": "Background",
+                "label": "",
+                "warning_propagation": "ALL",
+                "use_custom_color": false,
+                "color": [
+                  0.6079999804496765,
+                  0.6079999804496765,
+                  0.6079999804496765
+                ],
+                "select": true,
+                "show_options": true,
+                "show_preview": false,
+                "hide": false,
+                "mute": false,
+                "show_texture": false,
+                "bl_idname": "ShaderNodeBackground",
+                "bl_label": "Background",
+                "bl_description": "Add background light emission.\nNote: This node should only be used for the world surface output",
+                "bl_icon": "NONE",
+                "bl_width_default": 140.0,
+                "bl_width_min": 100.0,
+                "bl_width_max": 700.0,
+                "bl_height_default": 100.0,
+                "bl_height_min": 30.0,
+                "bl_height_max": 30.0
+              },
+              "inputs": [
+                {
+                  "name": "Color",
+                  "description": "",
+                  "hide": false,
+                  "enabled": true,
+                  "link_limit": 1,
+                  "show_expanded": false,
+                  "hide_value": false,
+                  "pin_gizmo": false,
+                  "type": "RGBA",
+                  "display_shape": "CIRCLE",
+                  "bl_idname": "NodeSocketColor",
+                  "bl_label": "Color",
+                  "bl_subtype_label": "None",
+                  "default_value": [
+                    0.6499999761581421,
+                    0.7300000190734863,
+                    0.800000011920929,
+                    1.0
+                  ]
+                },
+                {
+                  "name": "Strength",
+                  "description": "",
+                  "hide": false,
+                  "enabled": true,
+                  "link_limit": 1,
+                  "show_expanded": false,
+                  "hide_value": false,
+                  "pin_gizmo": false,
+                  "type": "VALUE",
+                  "display_shape": "CIRCLE",
+                  "bl_idname": "NodeSocketFloat",
+                  "bl_label": "Float",
+                  "bl_subtype_label": "None",
+                  "default_value": 4.0
+                },
+                {
+                  "name": "Weight",
+                  "description": "",
+                  "hide": false,
+                  "enabled": false,
+                  "link_limit": 1,
+                  "show_expanded": false,
+                  "hide_value": false,
+                  "pin_gizmo": false,
+                  "type": "VALUE",
+                  "display_shape": "CIRCLE",
+                  "bl_idname": "NodeSocketFloat",
+                  "bl_label": "Float",
+                  "bl_subtype_label": "None",
+                  "default_value": 0.0
+                }
+              ],
+              "image": null
+            },
+            {
+              "properties": {
+                "location": [
+                  200.0,
+                  100.0
+                ],
+                "location_absolute": [
+                  200.0,
+                  100.0
+                ],
+                "width": 140.0,
+                "height": 100.0,
+                "name": "World Output",
+                "label": "",
+                "warning_propagation": "ALL",
+                "use_custom_color": false,
+                "color": [
+                  0.6079999804496765,
+                  0.6079999804496765,
+                  0.6079999804496765
+                ],
+                "select": true,
+                "show_options": true,
+                "show_preview": false,
+                "hide": false,
+                "mute": false,
+                "show_texture": false,
+                "bl_idname": "ShaderNodeOutputWorld",
+                "bl_label": "World Output",
+                "bl_description": "Output light color information to the scene's World",
+                "bl_icon": "NONE",
+                "bl_width_default": 140.0,
+                "bl_width_min": 100.0,
+                "bl_width_max": 700.0,
+                "bl_height_default": 100.0,
+                "bl_height_min": 30.0,
+                "bl_height_max": 30.0,
+                "is_active_output": true,
+                "target": "ALL"
+              },
+              "inputs": [
+                {
+                  "name": "Surface",
+                  "description": "",
+                  "hide": false,
+                  "enabled": true,
+                  "link_limit": 1,
+                  "show_expanded": false,
+                  "hide_value": false,
+                  "pin_gizmo": false,
+                  "type": "SHADER",
+                  "display_shape": "CIRCLE",
+                  "bl_idname": "NodeSocketShader",
+                  "bl_label": "Shader",
+                  "bl_subtype_label": "None"
+                },
+                {
+                  "name": "Volume",
+                  "description": "",
+                  "hide": false,
+                  "enabled": true,
+                  "link_limit": 1,
+                  "show_expanded": false,
+                  "hide_value": false,
+                  "pin_gizmo": false,
+                  "type": "SHADER",
+                  "display_shape": "CIRCLE",
+                  "bl_idname": "NodeSocketShader",
+                  "bl_label": "Shader",
+                  "bl_subtype_label": "None"
+                }
+              ],
+              "image": null
+            }
+          ],
+          "links": [
+            [
+              "Background",
+              "Background",
+              "World Output",
+              "Surface"
+            ]
+          ]
+        },
+        "view": {
+          "look": "AgX - Medium High Contrast",
+          "view_transform": "AgX",
+          "exposure": 0.0,
+          "gamma": 1.0,
+          "use_curve_mapping": false,
+          "use_white_balance": false,
+          "white_balance_temperature": 6500.0,
+          "white_balance_tint": 10.0,
+          "white_balance_whitepoint": [
+            0.9991403222084045,
+            1.0003736019134521,
+            0.998818039894104
+          ],
+          "use_hdr_view": false
+        },
+        "display": {
+          "display_device": "sRGB"
+        },
+        "pixel_aspect": [
+          1.0,
+          1.0
+        ],
+        "film_transparent": false,
+        "dither": 1.0
+      },
+      "rig_after": {
+        "objects": {
+          "source_camera": {
+            "type": "CAMERA",
+            "matrix_world": [
+              [
+                0.7251594662666321,
+                -0.13864882290363312,
+                0.674477756023407,
+                1.7480084896087646
+              ],
+              [
+                0.6875303387641907,
+                0.09170211851596832,
+                -0.7203420996665955,
+                -1.2246108055114746
+              ],
+              [
+                0.03802353888750076,
+                0.9860868453979492,
+                0.16182392835617065,
+                1.3833105564117432
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "data": {
+              "properties": {
+                "name": "Camera.001",
+                "use_fake_user": false,
+                "use_extra_user": false,
+                "is_runtime_data": false,
+                "tag": false,
+                "type": "PERSP",
+                "sensor_fit": "HORIZONTAL",
+                "passepartout_alpha": 0.5,
+                "angle_x": 1.7913762331008911,
+                "angle_y": 1.3887361288070679,
+                "angle": 1.7913762331008911,
+                "clip_start": 0.10000000149011612,
+                "clip_end": 1000.0,
+                "lens": 14.410844802856445,
+                "sensor_width": 36.0,
+                "sensor_height": 24.0,
+                "ortho_scale": 6.0,
+                "display_size": 1.0,
+                "shift_x": 0.0,
+                "shift_y": 0.0,
+                "show_limits": false,
+                "show_mist": false,
+                "show_passepartout": true,
+                "show_safe_areas": false,
+                "show_safe_center": false,
+                "show_name": false,
+                "show_sensor": false,
+                "show_background_images": false,
+                "lens_unit": "MILLIMETERS",
+                "show_composition_center": false,
+                "show_composition_center_diagonal": false,
+                "show_composition_thirds": false,
+                "show_composition_golden": false,
+                "show_composition_golden_tria_a": false,
+                "show_composition_golden_tria_b": false,
+                "show_composition_harmony_tri_a": false,
+                "show_composition_harmony_tri_b": false,
+                "panorama_type": "FISHEYE_EQUISOLID",
+                "fisheye_fov": 3.1415927410125732,
+                "fisheye_lens": 10.5,
+                "latitude_min": -1.5707963705062866,
+                "latitude_max": 1.5707963705062866,
+                "longitude_min": -3.1415927410125732,
+                "longitude_max": 3.1415927410125732,
+                "fisheye_polynomial_k0": -1.1735143743862864e-05,
+                "fisheye_polynomial_k1": -0.019988736137747765,
+                "fisheye_polynomial_k2": -3.3525323033245513e-06,
+                "fisheye_polynomial_k3": 3.0992753181635635e-06,
+                "fisheye_polynomial_k4": -2.60646473293491e-08,
+                "central_cylindrical_range_u_min": -3.1415927410125732,
+                "central_cylindrical_range_u_max": 3.1415927410125732,
+                "central_cylindrical_range_v_min": -1.0,
+                "central_cylindrical_range_v_max": 1.0,
+                "central_cylindrical_radius": 1.0,
+                "custom_filepath": "",
+                "custom_mode": "INTERNAL",
+                "custom_bytecode": "",
+                "custom_bytecode_hash": ""
+              },
+              "nodes": [],
+              "links": []
+            },
+            "hide_render": false
+          },
+          "window_daylight": {
+            "type": "LIGHT",
+            "matrix_world": [
+              [
+                0.0781262069940567,
+                0.4783514142036438,
+                -0.8746863603591919,
+                -0.876068115234375
+              ],
+              [
+                -0.996943473815918,
+                0.03748612850904465,
+                -0.06854556500911713,
+                0.4000000059604645
+              ],
+              [
+                -2.623842476623395e-07,
+                0.8773680329322815,
+                0.4798179566860199,
+                0.8500000238418579
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "data": {
+              "properties": {
+                "name": "window_daylight",
+                "use_fake_user": false,
+                "use_extra_user": false,
+                "is_runtime_data": false,
+                "tag": false,
+                "type": "AREA",
+                "use_temperature": false,
+                "color": [
+                  1.0,
+                  0.9800000190734863,
+                  0.949999988079071
+                ],
+                "temperature": 6500.0,
+                "specular_factor": 1.0,
+                "diffuse_factor": 1.0,
+                "transmission_factor": 1.0,
+                "volume_factor": 1.0,
+                "use_custom_distance": false,
+                "cutoff_distance": 40.0,
+                "use_shadow": true,
+                "exposure": 0.0,
+                "normalize": true,
+                "use_nodes": false,
+                "energy": 70.0,
+                "shadow_buffer_clip_start": 0.05000000074505806,
+                "shadow_soft_size": 0.0,
+                "shadow_filter_radius": 1.0,
+                "shadow_maximum_resolution": 0.0010000000474974513,
+                "use_shadow_jitter": false,
+                "shadow_jitter_overblur": 10.0,
+                "use_absolute_resolution": false,
+                "shape": "RECTANGLE",
+                "size": 2.1500000953674316,
+                "size_y": 0.800000011920929,
+                "spread": 3.1415927410125732
+              },
+              "nodes": [],
+              "links": []
+            },
+            "hide_render": false
+          },
+          "exterior_sun": {
+            "type": "LIGHT",
+            "matrix_world": [
+              [
+                0.3846152424812317,
+                0.6975589990615845,
+                -0.6045514345169067,
+                0.0
+              ],
+              [
+                -0.9230769872665405,
+                0.29064950346946716,
+                -0.25189629197120667,
+                0.0
+              ],
+              [
+                5.0521297367822626e-08,
+                0.654930591583252,
+                0.7556889653205872,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "data": {
+              "properties": {
+                "name": "exterior_sun",
+                "use_fake_user": false,
+                "use_extra_user": false,
+                "is_runtime_data": false,
+                "tag": false,
+                "type": "SUN",
+                "use_temperature": false,
+                "color": [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "temperature": 6500.0,
+                "specular_factor": 1.0,
+                "diffuse_factor": 1.0,
+                "transmission_factor": 1.0,
+                "volume_factor": 1.0,
+                "use_custom_distance": false,
+                "cutoff_distance": 40.0,
+                "use_shadow": true,
+                "exposure": 0.0,
+                "normalize": true,
+                "use_nodes": false,
+                "angle": 0.3499999940395355,
+                "energy": 3.0,
+                "shadow_buffer_clip_start": 0.05000000074505806,
+                "shadow_soft_size": 0.0,
+                "shadow_filter_radius": 1.0,
+                "shadow_maximum_resolution": 0.0010000000474974513,
+                "use_shadow_jitter": false,
+                "shadow_jitter_overblur": 10.0,
+                "shadow_cascade_max_distance": 200.0,
+                "shadow_cascade_count": 4,
+                "shadow_cascade_exponent": 0.800000011920929,
+                "shadow_cascade_fade": 0.10000000149011612
+              },
+              "nodes": [],
+              "links": []
+            },
+            "hide_render": false
+          }
+        },
+        "camera": "source_camera",
+        "dof": {
+          "use_dof": false,
+          "focus_subtarget": "",
+          "focus_distance": 10.0,
+          "aperture_fstop": 2.799999952316284,
+          "aperture_blades": 0,
+          "aperture_rotation": 0.0,
+          "aperture_ratio": 1.0
+        },
+        "dof_focus": null,
+        "world": {
+          "properties": {
+            "name": "day_world",
+            "use_fake_user": false,
+            "use_extra_user": false,
+            "is_runtime_data": false,
+            "tag": false,
+            "use_eevee_finite_volume": false,
+            "color": [
+              0.05000000074505806,
+              0.05000000074505806,
+              0.05000000074505806
+            ],
+            "use_nodes": true,
+            "lightgroup": "",
+            "probe_resolution": "1024",
+            "sun_threshold": 10.0,
+            "sun_angle": 0.009180432185530663,
+            "use_sun_shadow": true,
+            "sun_shadow_maximum_resolution": 0.0010000000474974513,
+            "sun_shadow_filter_radius": 1.0,
+            "use_sun_shadow_jitter": false,
+            "sun_shadow_jitter_overblur": 10.0
+          },
+          "nodes": [
+            {
+              "properties": {
+                "location": [
+                  -200.0,
+                  100.0
+                ],
+                "location_absolute": [
+                  -200.0,
+                  100.0
+                ],
+                "width": 140.0,
+                "height": 100.0,
+                "name": "Background",
+                "label": "",
+                "warning_propagation": "ALL",
+                "use_custom_color": false,
+                "color": [
+                  0.6079999804496765,
+                  0.6079999804496765,
+                  0.6079999804496765
+                ],
+                "select": true,
+                "show_options": true,
+                "show_preview": false,
+                "hide": false,
+                "mute": false,
+                "show_texture": false,
+                "bl_idname": "ShaderNodeBackground",
+                "bl_label": "Background",
+                "bl_description": "Add background light emission.\nNote: This node should only be used for the world surface output",
+                "bl_icon": "NONE",
+                "bl_width_default": 140.0,
+                "bl_width_min": 100.0,
+                "bl_width_max": 700.0,
+                "bl_height_default": 100.0,
+                "bl_height_min": 30.0,
+                "bl_height_max": 30.0
+              },
+              "inputs": [
+                {
+                  "name": "Color",
+                  "description": "",
+                  "hide": false,
+                  "enabled": true,
+                  "link_limit": 1,
+                  "show_expanded": false,
+                  "hide_value": false,
+                  "pin_gizmo": false,
+                  "type": "RGBA",
+                  "display_shape": "CIRCLE",
+                  "bl_idname": "NodeSocketColor",
+                  "bl_label": "Color",
+                  "bl_subtype_label": "None",
+                  "default_value": [
+                    0.6499999761581421,
+                    0.7300000190734863,
+                    0.800000011920929,
+                    1.0
+                  ]
+                },
+                {
+                  "name": "Strength",
+                  "description": "",
+                  "hide": false,
+                  "enabled": true,
+                  "link_limit": 1,
+                  "show_expanded": false,
+                  "hide_value": false,
+                  "pin_gizmo": false,
+                  "type": "VALUE",
+                  "display_shape": "CIRCLE",
+                  "bl_idname": "NodeSocketFloat",
+                  "bl_label": "Float",
+                  "bl_subtype_label": "None",
+                  "default_value": 4.0
+                },
+                {
+                  "name": "Weight",
+                  "description": "",
+                  "hide": false,
+                  "enabled": false,
+                  "link_limit": 1,
+                  "show_expanded": false,
+                  "hide_value": false,
+                  "pin_gizmo": false,
+                  "type": "VALUE",
+                  "display_shape": "CIRCLE",
+                  "bl_idname": "NodeSocketFloat",
+                  "bl_label": "Float",
+                  "bl_subtype_label": "None",
+                  "default_value": 0.0
+                }
+              ],
+              "image": null
+            },
+            {
+              "properties": {
+                "location": [
+                  200.0,
+                  100.0
+                ],
+                "location_absolute": [
+                  200.0,
+                  100.0
+                ],
+                "width": 140.0,
+                "height": 100.0,
+                "name": "World Output",
+                "label": "",
+                "warning_propagation": "ALL",
+                "use_custom_color": false,
+                "color": [
+                  0.6079999804496765,
+                  0.6079999804496765,
+                  0.6079999804496765
+                ],
+                "select": true,
+                "show_options": true,
+                "show_preview": false,
+                "hide": false,
+                "mute": false,
+                "show_texture": false,
+                "bl_idname": "ShaderNodeOutputWorld",
+                "bl_label": "World Output",
+                "bl_description": "Output light color information to the scene's World",
+                "bl_icon": "NONE",
+                "bl_width_default": 140.0,
+                "bl_width_min": 100.0,
+                "bl_width_max": 700.0,
+                "bl_height_default": 100.0,
+                "bl_height_min": 30.0,
+                "bl_height_max": 30.0,
+                "is_active_output": true,
+                "target": "ALL"
+              },
+              "inputs": [
+                {
+                  "name": "Surface",
+                  "description": "",
+                  "hide": false,
+                  "enabled": true,
+                  "link_limit": 1,
+                  "show_expanded": false,
+                  "hide_value": false,
+                  "pin_gizmo": false,
+                  "type": "SHADER",
+                  "display_shape": "CIRCLE",
+                  "bl_idname": "NodeSocketShader",
+                  "bl_label": "Shader",
+                  "bl_subtype_label": "None"
+                },
+                {
+                  "name": "Volume",
+                  "description": "",
+                  "hide": false,
+                  "enabled": true,
+                  "link_limit": 1,
+                  "show_expanded": false,
+                  "hide_value": false,
+                  "pin_gizmo": false,
+                  "type": "SHADER",
+                  "display_shape": "CIRCLE",
+                  "bl_idname": "NodeSocketShader",
+                  "bl_label": "Shader",
+                  "bl_subtype_label": "None"
+                }
+              ],
+              "image": null
+            }
+          ],
+          "links": [
+            [
+              "Background",
+              "Background",
+              "World Output",
+              "Surface"
+            ]
+          ]
+        },
+        "view": {
+          "look": "AgX - Medium High Contrast",
+          "view_transform": "AgX",
+          "exposure": 0.0,
+          "gamma": 1.0,
+          "use_curve_mapping": false,
+          "use_white_balance": false,
+          "white_balance_temperature": 6500.0,
+          "white_balance_tint": 10.0,
+          "white_balance_whitepoint": [
+            0.9991403222084045,
+            1.0003736019134521,
+            0.998818039894104
+          ],
+          "use_hdr_view": false
+        },
+        "display": {
+          "display_device": "sRGB"
+        },
+        "pixel_aspect": [
+          1.0,
+          1.0
+        ],
+        "film_transparent": false,
+        "dither": 1.0
+      },
+      "rig_preserved": false,
+      "geometry_sha256": "01274d5bb4dbbf0c904972652e346cd4639dd70007b54556c8b5780a4754c807",
+      "geometry_status": "failed",
+      "error": "ValueError('Controlled rig changed')",
+      "wall_seconds": 1.8407713630003855
+    },
+    {
+      "group": "usdc",
+      "status": "failed",
+      "export_sha256": "d4e3c89cbefb8eec98e54cf93801119afc30fe367eabdc5c53662aad46ff0bcf",
+      "removed_imported_rig": [
+        "Camera_001",
+        "exterior_sun.001",
+        "window_daylight.001"
+      ],
+      "rig_before": {
+        "objects": {
+          "source_camera": {
+            "type": "CAMERA",
+            "matrix_world": [
+              [
+                0.7251594662666321,
+                -0.13864880800247192,
+                0.674477756023407,
+                1.7480084896087646
+              ],
+              [
+                0.6875303387641907,
+                0.09170212596654892,
+                -0.7203420996665955,
+                -1.2246108055114746
+              ],
+              [
+                0.03802352398633957,
+                0.9860868453979492,
+                0.16182392835617065,
+                1.3833105564117432
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "data": {
+              "properties": {
+                "name": "Camera.001",
+                "use_fake_user": false,
+                "use_extra_user": false,
+                "is_runtime_data": false,
+                "tag": false,
+                "type": "PERSP",
+                "sensor_fit": "HORIZONTAL",
+                "passepartout_alpha": 0.5,
+                "angle_x": 1.7913762331008911,
+                "angle_y": 1.3887361288070679,
+                "angle": 1.7913762331008911,
+                "clip_start": 0.10000000149011612,
+                "clip_end": 1000.0,
+                "lens": 14.410844802856445,
+                "sensor_width": 36.0,
+                "sensor_height": 24.0,
+                "ortho_scale": 6.0,
+                "display_size": 1.0,
+                "shift_x": 0.0,
+                "shift_y": 0.0,
+                "show_limits": false,
+                "show_mist": false,
+                "show_passepartout": true,
+                "show_safe_areas": false,
+                "show_safe_center": false,
+                "show_name": false,
+                "show_sensor": false,
+                "show_background_images": false,
+                "lens_unit": "MILLIMETERS",
+                "show_composition_center": false,
+                "show_composition_center_diagonal": false,
+                "show_composition_thirds": false,
+                "show_composition_golden": false,
+                "show_composition_golden_tria_a": false,
+                "show_composition_golden_tria_b": false,
+                "show_composition_harmony_tri_a": false,
+                "show_composition_harmony_tri_b": false,
+                "panorama_type": "FISHEYE_EQUISOLID",
+                "fisheye_fov": 3.1415927410125732,
+                "fisheye_lens": 10.5,
+                "latitude_min": -1.5707963705062866,
+                "latitude_max": 1.5707963705062866,
+                "longitude_min": -3.1415927410125732,
+                "longitude_max": 3.1415927410125732,
+                "fisheye_polynomial_k0": -1.1735143743862864e-05,
+                "fisheye_polynomial_k1": -0.019988736137747765,
+                "fisheye_polynomial_k2": -3.3525323033245513e-06,
+                "fisheye_polynomial_k3": 3.0992753181635635e-06,
+                "fisheye_polynomial_k4": -2.60646473293491e-08,
+                "central_cylindrical_range_u_min": -3.1415927410125732,
+                "central_cylindrical_range_u_max": 3.1415927410125732,
+                "central_cylindrical_range_v_min": -1.0,
+                "central_cylindrical_range_v_max": 1.0,
+                "central_cylindrical_radius": 1.0,
+                "custom_filepath": "",
+                "custom_mode": "INTERNAL",
+                "custom_bytecode": "",
+                "custom_bytecode_hash": ""
+              },
+              "nodes": [],
+              "links": []
+            },
+            "hide_render": false
+          },
+          "window_daylight": {
+            "type": "LIGHT",
+            "matrix_world": [
+              [
+                0.0781264379620552,
+                0.47835150361061096,
+                -0.8746863007545471,
+                -0.876068115234375
+              ],
+              [
+                -0.996943473815918,
+                0.03748631849884987,
+                -0.06854572892189026,
+                0.4000000059604645
+              ],
+              [
+                -1.8293863490725926e-07,
+                0.8773680329322815,
+                0.47981807589530945,
+                0.8500000238418579
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "data": {
+              "properties": {
+                "name": "window_daylight",
+                "use_fake_user": false,
+                "use_extra_user": false,
+                "is_runtime_data": false,
+                "tag": false,
+                "type": "AREA",
+                "use_temperature": false,
+                "color": [
+                  1.0,
+                  0.9800000190734863,
+                  0.949999988079071
+                ],
+                "temperature": 6500.0,
+                "specular_factor": 1.0,
+                "diffuse_factor": 1.0,
+                "transmission_factor": 1.0,
+                "volume_factor": 1.0,
+                "use_custom_distance": false,
+                "cutoff_distance": 40.0,
+                "use_shadow": true,
+                "exposure": 0.0,
+                "normalize": true,
+                "use_nodes": false,
+                "energy": 70.0,
+                "shadow_buffer_clip_start": 0.05000000074505806,
+                "shadow_soft_size": 0.0,
+                "shadow_filter_radius": 1.0,
+                "shadow_maximum_resolution": 0.0010000000474974513,
+                "use_shadow_jitter": false,
+                "shadow_jitter_overblur": 10.0,
+                "use_absolute_resolution": false,
+                "shape": "RECTANGLE",
+                "size": 2.1500000953674316,
+                "size_y": 0.800000011920929,
+                "spread": 3.1415927410125732
+              },
+              "nodes": [],
+              "links": []
+            },
+            "hide_render": false
+          },
+          "exterior_sun": {
+            "type": "LIGHT",
+            "matrix_world": [
+              [
+                0.3846152424812317,
+                0.6975590586662292,
+                -0.6045514345169067,
+                0.0
+              ],
+              [
+                -0.9230769872665405,
+                0.29064953327178955,
+                -0.25189629197120667,
+                0.0
+              ],
+              [
+                5.027761318388002e-08,
+                0.6549306511878967,
+                0.7556889653205872,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "data": {
+              "properties": {
+                "name": "exterior_sun",
+                "use_fake_user": false,
+                "use_extra_user": false,
+                "is_runtime_data": false,
+                "tag": false,
+                "type": "SUN",
+                "use_temperature": false,
+                "color": [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "temperature": 6500.0,
+                "specular_factor": 1.0,
+                "diffuse_factor": 1.0,
+                "transmission_factor": 1.0,
+                "volume_factor": 1.0,
+                "use_custom_distance": false,
+                "cutoff_distance": 40.0,
+                "use_shadow": true,
+                "exposure": 0.0,
+                "normalize": true,
+                "use_nodes": false,
+                "angle": 0.3499999940395355,
+                "energy": 3.0,
+                "shadow_buffer_clip_start": 0.05000000074505806,
+                "shadow_soft_size": 0.0,
+                "shadow_filter_radius": 1.0,
+                "shadow_maximum_resolution": 0.0010000000474974513,
+                "use_shadow_jitter": false,
+                "shadow_jitter_overblur": 10.0,
+                "shadow_cascade_max_distance": 200.0,
+                "shadow_cascade_count": 4,
+                "shadow_cascade_exponent": 0.800000011920929,
+                "shadow_cascade_fade": 0.10000000149011612
+              },
+              "nodes": [],
+              "links": []
+            },
+            "hide_render": false
+          }
+        },
+        "camera": "source_camera",
+        "dof": {
+          "use_dof": false,
+          "focus_subtarget": "",
+          "focus_distance": 10.0,
+          "aperture_fstop": 2.799999952316284,
+          "aperture_blades": 0,
+          "aperture_rotation": 0.0,
+          "aperture_ratio": 1.0
+        },
+        "dof_focus": null,
+        "world": {
+          "properties": {
+            "name": "day_world",
+            "use_fake_user": false,
+            "use_extra_user": false,
+            "is_runtime_data": false,
+            "tag": false,
+            "use_eevee_finite_volume": false,
+            "color": [
+              0.05000000074505806,
+              0.05000000074505806,
+              0.05000000074505806
+            ],
+            "use_nodes": true,
+            "lightgroup": "",
+            "probe_resolution": "1024",
+            "sun_threshold": 10.0,
+            "sun_angle": 0.009180432185530663,
+            "use_sun_shadow": true,
+            "sun_shadow_maximum_resolution": 0.0010000000474974513,
+            "sun_shadow_filter_radius": 1.0,
+            "use_sun_shadow_jitter": false,
+            "sun_shadow_jitter_overblur": 10.0
+          },
+          "nodes": [
+            {
+              "properties": {
+                "location": [
+                  -200.0,
+                  100.0
+                ],
+                "location_absolute": [
+                  -200.0,
+                  100.0
+                ],
+                "width": 140.0,
+                "height": 100.0,
+                "name": "Background",
+                "label": "",
+                "warning_propagation": "ALL",
+                "use_custom_color": false,
+                "color": [
+                  0.6079999804496765,
+                  0.6079999804496765,
+                  0.6079999804496765
+                ],
+                "select": true,
+                "show_options": true,
+                "show_preview": false,
+                "hide": false,
+                "mute": false,
+                "show_texture": false,
+                "bl_idname": "ShaderNodeBackground",
+                "bl_label": "Background",
+                "bl_description": "Add background light emission.\nNote: This node should only be used for the world surface output",
+                "bl_icon": "NONE",
+                "bl_width_default": 140.0,
+                "bl_width_min": 100.0,
+                "bl_width_max": 700.0,
+                "bl_height_default": 100.0,
+                "bl_height_min": 30.0,
+                "bl_height_max": 30.0
+              },
+              "inputs": [
+                {
+                  "name": "Color",
+                  "description": "",
+                  "hide": false,
+                  "enabled": true,
+                  "link_limit": 1,
+                  "show_expanded": false,
+                  "hide_value": false,
+                  "pin_gizmo": false,
+                  "type": "RGBA",
+                  "display_shape": "CIRCLE",
+                  "bl_idname": "NodeSocketColor",
+                  "bl_label": "Color",
+                  "bl_subtype_label": "None",
+                  "default_value": [
+                    0.6499999761581421,
+                    0.7300000190734863,
+                    0.800000011920929,
+                    1.0
+                  ]
+                },
+                {
+                  "name": "Strength",
+                  "description": "",
+                  "hide": false,
+                  "enabled": true,
+                  "link_limit": 1,
+                  "show_expanded": false,
+                  "hide_value": false,
+                  "pin_gizmo": false,
+                  "type": "VALUE",
+                  "display_shape": "CIRCLE",
+                  "bl_idname": "NodeSocketFloat",
+                  "bl_label": "Float",
+                  "bl_subtype_label": "None",
+                  "default_value": 4.0
+                },
+                {
+                  "name": "Weight",
+                  "description": "",
+                  "hide": false,
+                  "enabled": false,
+                  "link_limit": 1,
+                  "show_expanded": false,
+                  "hide_value": false,
+                  "pin_gizmo": false,
+                  "type": "VALUE",
+                  "display_shape": "CIRCLE",
+                  "bl_idname": "NodeSocketFloat",
+                  "bl_label": "Float",
+                  "bl_subtype_label": "None",
+                  "default_value": 0.0
+                }
+              ],
+              "image": null
+            },
+            {
+              "properties": {
+                "location": [
+                  200.0,
+                  100.0
+                ],
+                "location_absolute": [
+                  200.0,
+                  100.0
+                ],
+                "width": 140.0,
+                "height": 100.0,
+                "name": "World Output",
+                "label": "",
+                "warning_propagation": "ALL",
+                "use_custom_color": false,
+                "color": [
+                  0.6079999804496765,
+                  0.6079999804496765,
+                  0.6079999804496765
+                ],
+                "select": true,
+                "show_options": true,
+                "show_preview": false,
+                "hide": false,
+                "mute": false,
+                "show_texture": false,
+                "bl_idname": "ShaderNodeOutputWorld",
+                "bl_label": "World Output",
+                "bl_description": "Output light color information to the scene's World",
+                "bl_icon": "NONE",
+                "bl_width_default": 140.0,
+                "bl_width_min": 100.0,
+                "bl_width_max": 700.0,
+                "bl_height_default": 100.0,
+                "bl_height_min": 30.0,
+                "bl_height_max": 30.0,
+                "is_active_output": true,
+                "target": "ALL"
+              },
+              "inputs": [
+                {
+                  "name": "Surface",
+                  "description": "",
+                  "hide": false,
+                  "enabled": true,
+                  "link_limit": 1,
+                  "show_expanded": false,
+                  "hide_value": false,
+                  "pin_gizmo": false,
+                  "type": "SHADER",
+                  "display_shape": "CIRCLE",
+                  "bl_idname": "NodeSocketShader",
+                  "bl_label": "Shader",
+                  "bl_subtype_label": "None"
+                },
+                {
+                  "name": "Volume",
+                  "description": "",
+                  "hide": false,
+                  "enabled": true,
+                  "link_limit": 1,
+                  "show_expanded": false,
+                  "hide_value": false,
+                  "pin_gizmo": false,
+                  "type": "SHADER",
+                  "display_shape": "CIRCLE",
+                  "bl_idname": "NodeSocketShader",
+                  "bl_label": "Shader",
+                  "bl_subtype_label": "None"
+                }
+              ],
+              "image": null
+            }
+          ],
+          "links": [
+            [
+              "Background",
+              "Background",
+              "World Output",
+              "Surface"
+            ]
+          ]
+        },
+        "view": {
+          "look": "AgX - Medium High Contrast",
+          "view_transform": "AgX",
+          "exposure": 0.0,
+          "gamma": 1.0,
+          "use_curve_mapping": false,
+          "use_white_balance": false,
+          "white_balance_temperature": 6500.0,
+          "white_balance_tint": 10.0,
+          "white_balance_whitepoint": [
+            0.9991403222084045,
+            1.0003736019134521,
+            0.998818039894104
+          ],
+          "use_hdr_view": false
+        },
+        "display": {
+          "display_device": "sRGB"
+        },
+        "pixel_aspect": [
+          1.0,
+          1.0
+        ],
+        "film_transparent": false,
+        "dither": 1.0
+      },
+      "rig_after": {
+        "objects": {
+          "source_camera": {
+            "type": "CAMERA",
+            "matrix_world": [
+              [
+                0.7251594662666321,
+                -0.13864882290363312,
+                0.674477756023407,
+                1.7480084896087646
+              ],
+              [
+                0.6875303387641907,
+                0.09170211851596832,
+                -0.7203420996665955,
+                -1.2246108055114746
+              ],
+              [
+                0.03802353888750076,
+                0.9860868453979492,
+                0.16182392835617065,
+                1.3833105564117432
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "data": {
+              "properties": {
+                "name": "Camera.001",
+                "use_fake_user": false,
+                "use_extra_user": false,
+                "is_runtime_data": false,
+                "tag": false,
+                "type": "PERSP",
+                "sensor_fit": "HORIZONTAL",
+                "passepartout_alpha": 0.5,
+                "angle_x": 1.7913762331008911,
+                "angle_y": 1.3887361288070679,
+                "angle": 1.7913762331008911,
+                "clip_start": 0.10000000149011612,
+                "clip_end": 1000.0,
+                "lens": 14.410844802856445,
+                "sensor_width": 36.0,
+                "sensor_height": 24.0,
+                "ortho_scale": 6.0,
+                "display_size": 1.0,
+                "shift_x": 0.0,
+                "shift_y": 0.0,
+                "show_limits": false,
+                "show_mist": false,
+                "show_passepartout": true,
+                "show_safe_areas": false,
+                "show_safe_center": false,
+                "show_name": false,
+                "show_sensor": false,
+                "show_background_images": false,
+                "lens_unit": "MILLIMETERS",
+                "show_composition_center": false,
+                "show_composition_center_diagonal": false,
+                "show_composition_thirds": false,
+                "show_composition_golden": false,
+                "show_composition_golden_tria_a": false,
+                "show_composition_golden_tria_b": false,
+                "show_composition_harmony_tri_a": false,
+                "show_composition_harmony_tri_b": false,
+                "panorama_type": "FISHEYE_EQUISOLID",
+                "fisheye_fov": 3.1415927410125732,
+                "fisheye_lens": 10.5,
+                "latitude_min": -1.5707963705062866,
+                "latitude_max": 1.5707963705062866,
+                "longitude_min": -3.1415927410125732,
+                "longitude_max": 3.1415927410125732,
+                "fisheye_polynomial_k0": -1.1735143743862864e-05,
+                "fisheye_polynomial_k1": -0.019988736137747765,
+                "fisheye_polynomial_k2": -3.3525323033245513e-06,
+                "fisheye_polynomial_k3": 3.0992753181635635e-06,
+                "fisheye_polynomial_k4": -2.60646473293491e-08,
+                "central_cylindrical_range_u_min": -3.1415927410125732,
+                "central_cylindrical_range_u_max": 3.1415927410125732,
+                "central_cylindrical_range_v_min": -1.0,
+                "central_cylindrical_range_v_max": 1.0,
+                "central_cylindrical_radius": 1.0,
+                "custom_filepath": "",
+                "custom_mode": "INTERNAL",
+                "custom_bytecode": "",
+                "custom_bytecode_hash": ""
+              },
+              "nodes": [],
+              "links": []
+            },
+            "hide_render": false
+          },
+          "window_daylight": {
+            "type": "LIGHT",
+            "matrix_world": [
+              [
+                0.0781262069940567,
+                0.4783514142036438,
+                -0.8746863603591919,
+                -0.876068115234375
+              ],
+              [
+                -0.996943473815918,
+                0.03748612850904465,
+                -0.06854556500911713,
+                0.4000000059604645
+              ],
+              [
+                -2.623842476623395e-07,
+                0.8773680329322815,
+                0.4798179566860199,
+                0.8500000238418579
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "data": {
+              "properties": {
+                "name": "window_daylight",
+                "use_fake_user": false,
+                "use_extra_user": false,
+                "is_runtime_data": false,
+                "tag": false,
+                "type": "AREA",
+                "use_temperature": false,
+                "color": [
+                  1.0,
+                  0.9800000190734863,
+                  0.949999988079071
+                ],
+                "temperature": 6500.0,
+                "specular_factor": 1.0,
+                "diffuse_factor": 1.0,
+                "transmission_factor": 1.0,
+                "volume_factor": 1.0,
+                "use_custom_distance": false,
+                "cutoff_distance": 40.0,
+                "use_shadow": true,
+                "exposure": 0.0,
+                "normalize": true,
+                "use_nodes": false,
+                "energy": 70.0,
+                "shadow_buffer_clip_start": 0.05000000074505806,
+                "shadow_soft_size": 0.0,
+                "shadow_filter_radius": 1.0,
+                "shadow_maximum_resolution": 0.0010000000474974513,
+                "use_shadow_jitter": false,
+                "shadow_jitter_overblur": 10.0,
+                "use_absolute_resolution": false,
+                "shape": "RECTANGLE",
+                "size": 2.1500000953674316,
+                "size_y": 0.800000011920929,
+                "spread": 3.1415927410125732
+              },
+              "nodes": [],
+              "links": []
+            },
+            "hide_render": false
+          },
+          "exterior_sun": {
+            "type": "LIGHT",
+            "matrix_world": [
+              [
+                0.3846152424812317,
+                0.6975589990615845,
+                -0.6045514345169067,
+                0.0
+              ],
+              [
+                -0.9230769872665405,
+                0.29064950346946716,
+                -0.25189629197120667,
+                0.0
+              ],
+              [
+                5.0521297367822626e-08,
+                0.654930591583252,
+                0.7556889653205872,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "data": {
+              "properties": {
+                "name": "exterior_sun",
+                "use_fake_user": false,
+                "use_extra_user": false,
+                "is_runtime_data": false,
+                "tag": false,
+                "type": "SUN",
+                "use_temperature": false,
+                "color": [
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "temperature": 6500.0,
+                "specular_factor": 1.0,
+                "diffuse_factor": 1.0,
+                "transmission_factor": 1.0,
+                "volume_factor": 1.0,
+                "use_custom_distance": false,
+                "cutoff_distance": 40.0,
+                "use_shadow": true,
+                "exposure": 0.0,
+                "normalize": true,
+                "use_nodes": false,
+                "angle": 0.3499999940395355,
+                "energy": 3.0,
+                "shadow_buffer_clip_start": 0.05000000074505806,
+                "shadow_soft_size": 0.0,
+                "shadow_filter_radius": 1.0,
+                "shadow_maximum_resolution": 0.0010000000474974513,
+                "use_shadow_jitter": false,
+                "shadow_jitter_overblur": 10.0,
+                "shadow_cascade_max_distance": 200.0,
+                "shadow_cascade_count": 4,
+                "shadow_cascade_exponent": 0.800000011920929,
+                "shadow_cascade_fade": 0.10000000149011612
+              },
+              "nodes": [],
+              "links": []
+            },
+            "hide_render": false
+          }
+        },
+        "camera": "source_camera",
+        "dof": {
+          "use_dof": false,
+          "focus_subtarget": "",
+          "focus_distance": 10.0,
+          "aperture_fstop": 2.799999952316284,
+          "aperture_blades": 0,
+          "aperture_rotation": 0.0,
+          "aperture_ratio": 1.0
+        },
+        "dof_focus": null,
+        "world": {
+          "properties": {
+            "name": "day_world",
+            "use_fake_user": false,
+            "use_extra_user": false,
+            "is_runtime_data": false,
+            "tag": false,
+            "use_eevee_finite_volume": false,
+            "color": [
+              0.05000000074505806,
+              0.05000000074505806,
+              0.05000000074505806
+            ],
+            "use_nodes": true,
+            "lightgroup": "",
+            "probe_resolution": "1024",
+            "sun_threshold": 10.0,
+            "sun_angle": 0.009180432185530663,
+            "use_sun_shadow": true,
+            "sun_shadow_maximum_resolution": 0.0010000000474974513,
+            "sun_shadow_filter_radius": 1.0,
+            "use_sun_shadow_jitter": false,
+            "sun_shadow_jitter_overblur": 10.0
+          },
+          "nodes": [
+            {
+              "properties": {
+                "location": [
+                  -200.0,
+                  100.0
+                ],
+                "location_absolute": [
+                  -200.0,
+                  100.0
+                ],
+                "width": 140.0,
+                "height": 100.0,
+                "name": "Background",
+                "label": "",
+                "warning_propagation": "ALL",
+                "use_custom_color": false,
+                "color": [
+                  0.6079999804496765,
+                  0.6079999804496765,
+                  0.6079999804496765
+                ],
+                "select": true,
+                "show_options": true,
+                "show_preview": false,
+                "hide": false,
+                "mute": false,
+                "show_texture": false,
+                "bl_idname": "ShaderNodeBackground",
+                "bl_label": "Background",
+                "bl_description": "Add background light emission.\nNote: This node should only be used for the world surface output",
+                "bl_icon": "NONE",
+                "bl_width_default": 140.0,
+                "bl_width_min": 100.0,
+                "bl_width_max": 700.0,
+                "bl_height_default": 100.0,
+                "bl_height_min": 30.0,
+                "bl_height_max": 30.0
+              },
+              "inputs": [
+                {
+                  "name": "Color",
+                  "description": "",
+                  "hide": false,
+                  "enabled": true,
+                  "link_limit": 1,
+                  "show_expanded": false,
+                  "hide_value": false,
+                  "pin_gizmo": false,
+                  "type": "RGBA",
+                  "display_shape": "CIRCLE",
+                  "bl_idname": "NodeSocketColor",
+                  "bl_label": "Color",
+                  "bl_subtype_label": "None",
+                  "default_value": [
+                    0.6499999761581421,
+                    0.7300000190734863,
+                    0.800000011920929,
+                    1.0
+                  ]
+                },
+                {
+                  "name": "Strength",
+                  "description": "",
+                  "hide": false,
+                  "enabled": true,
+                  "link_limit": 1,
+                  "show_expanded": false,
+                  "hide_value": false,
+                  "pin_gizmo": false,
+                  "type": "VALUE",
+                  "display_shape": "CIRCLE",
+                  "bl_idname": "NodeSocketFloat",
+                  "bl_label": "Float",
+                  "bl_subtype_label": "None",
+                  "default_value": 4.0
+                },
+                {
+                  "name": "Weight",
+                  "description": "",
+                  "hide": false,
+                  "enabled": false,
+                  "link_limit": 1,
+                  "show_expanded": false,
+                  "hide_value": false,
+                  "pin_gizmo": false,
+                  "type": "VALUE",
+                  "display_shape": "CIRCLE",
+                  "bl_idname": "NodeSocketFloat",
+                  "bl_label": "Float",
+                  "bl_subtype_label": "None",
+                  "default_value": 0.0
+                }
+              ],
+              "image": null
+            },
+            {
+              "properties": {
+                "location": [
+                  200.0,
+                  100.0
+                ],
+                "location_absolute": [
+                  200.0,
+                  100.0
+                ],
+                "width": 140.0,
+                "height": 100.0,
+                "name": "World Output",
+                "label": "",
+                "warning_propagation": "ALL",
+                "use_custom_color": false,
+                "color": [
+                  0.6079999804496765,
+                  0.6079999804496765,
+                  0.6079999804496765
+                ],
+                "select": true,
+                "show_options": true,
+                "show_preview": false,
+                "hide": false,
+                "mute": false,
+                "show_texture": false,
+                "bl_idname": "ShaderNodeOutputWorld",
+                "bl_label": "World Output",
+                "bl_description": "Output light color information to the scene's World",
+                "bl_icon": "NONE",
+                "bl_width_default": 140.0,
+                "bl_width_min": 100.0,
+                "bl_width_max": 700.0,
+                "bl_height_default": 100.0,
+                "bl_height_min": 30.0,
+                "bl_height_max": 30.0,
+                "is_active_output": true,
+                "target": "ALL"
+              },
+              "inputs": [
+                {
+                  "name": "Surface",
+                  "description": "",
+                  "hide": false,
+                  "enabled": true,
+                  "link_limit": 1,
+                  "show_expanded": false,
+                  "hide_value": false,
+                  "pin_gizmo": false,
+                  "type": "SHADER",
+                  "display_shape": "CIRCLE",
+                  "bl_idname": "NodeSocketShader",
+                  "bl_label": "Shader",
+                  "bl_subtype_label": "None"
+                },
+                {
+                  "name": "Volume",
+                  "description": "",
+                  "hide": false,
+                  "enabled": true,
+                  "link_limit": 1,
+                  "show_expanded": false,
+                  "hide_value": false,
+                  "pin_gizmo": false,
+                  "type": "SHADER",
+                  "display_shape": "CIRCLE",
+                  "bl_idname": "NodeSocketShader",
+                  "bl_label": "Shader",
+                  "bl_subtype_label": "None"
+                }
+              ],
+              "image": null
+            },
+            {
+              "properties": {
+                "location": [
+                  -600.0,
+                  100.0
+                ],
+                "location_absolute": [
+                  -600.0,
+                  100.0
+                ],
+                "width": 240.0,
+                "height": 100.0,
+                "name": "Environment Texture",
+                "label": "",
+                "warning_propagation": "ALL",
+                "use_custom_color": false,
+                "color": [
+                  0.6079999804496765,
+                  0.6079999804496765,
+                  0.6079999804496765
+                ],
+                "select": true,
+                "show_options": true,
+                "show_preview": false,
+                "hide": false,
+                "mute": false,
+                "show_texture": false,
+                "bl_idname": "ShaderNodeTexEnvironment",
+                "bl_label": "Environment Texture",
+                "bl_description": "Sample an image file as an environment texture. Typically used to light the scene with the background node",
+                "bl_icon": "NONE",
+                "bl_width_default": 240.0,
+                "bl_width_min": 140.0,
+                "bl_width_max": 700.0,
+                "bl_height_default": 100.0,
+                "bl_height_min": 30.0,
+                "bl_height_max": 30.0,
+                "projection": "EQUIRECTANGULAR",
+                "interpolation": "Linear"
+              },
+              "inputs": [
+                {
+                  "name": "Vector",
+                  "description": "",
+                  "hide": false,
+                  "enabled": true,
+                  "link_limit": 1,
+                  "show_expanded": false,
+                  "hide_value": true,
+                  "pin_gizmo": false,
+                  "type": "VECTOR",
+                  "display_shape": "CIRCLE",
+                  "bl_idname": "NodeSocketVector",
+                  "bl_label": "Vector",
+                  "bl_subtype_label": "None",
+                  "default_value": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ]
+                }
+              ],
+              "image": "color_165186204.hdr"
+            },
+            {
+              "properties": {
+                "location": [
+                  -800.0,
+                  100.0
+                ],
+                "location_absolute": [
+                  -800.0,
+                  100.0
+                ],
+                "width": 140.0,
+                "height": 100.0,
+                "name": "Mapping",
+                "label": "",
+                "warning_propagation": "ALL",
+                "use_custom_color": false,
+                "color": [
+                  0.6079999804496765,
+                  0.6079999804496765,
+                  0.6079999804496765
+                ],
+                "select": true,
+                "show_options": true,
+                "show_preview": false,
+                "hide": false,
+                "mute": false,
+                "show_texture": false,
+                "bl_idname": "ShaderNodeMapping",
+                "bl_label": "Mapping",
+                "bl_description": "Transform the input vector by applying translation, rotation, and scale",
+                "bl_icon": "NONE",
+                "bl_width_default": 140.0,
+                "bl_width_min": 100.0,
+                "bl_width_max": 700.0,
+                "bl_height_default": 100.0,
+                "bl_height_min": 30.0,
+                "bl_height_max": 30.0,
+                "vector_type": "POINT"
+              },
+              "inputs": [
+                {
+                  "name": "Vector",
+                  "description": "",
+                  "hide": false,
+                  "enabled": true,
+                  "link_limit": 1,
+                  "show_expanded": false,
+                  "hide_value": false,
+                  "pin_gizmo": false,
+                  "type": "VECTOR",
+                  "display_shape": "CIRCLE",
+                  "bl_idname": "NodeSocketVector",
+                  "bl_label": "Vector",
+                  "bl_subtype_label": "None",
+                  "default_value": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ]
+                },
+                {
+                  "name": "Location",
+                  "description": "",
+                  "hide": false,
+                  "enabled": true,
+                  "link_limit": 1,
+                  "show_expanded": false,
+                  "hide_value": false,
+                  "pin_gizmo": false,
+                  "type": "VECTOR",
+                  "display_shape": "CIRCLE",
+                  "bl_idname": "NodeSocketVectorTranslation",
+                  "bl_label": "Vector",
+                  "bl_subtype_label": "Translation",
+                  "default_value": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ]
+                },
+                {
+                  "name": "Rotation",
+                  "description": "",
+                  "hide": false,
+                  "enabled": true,
+                  "link_limit": 1,
+                  "show_expanded": false,
+                  "hide_value": false,
+                  "pin_gizmo": false,
+                  "type": "VECTOR",
+                  "display_shape": "CIRCLE",
+                  "bl_idname": "NodeSocketVectorEuler",
+                  "bl_label": "Vector",
+                  "bl_subtype_label": "Euler Angles",
+                  "default_value": [
+                    0.0,
+                    -0.0,
+                    0.0
+                  ]
+                },
+                {
+                  "name": "Scale",
+                  "description": "",
+                  "hide": false,
+                  "enabled": true,
+                  "link_limit": 1,
+                  "show_expanded": false,
+                  "hide_value": false,
+                  "pin_gizmo": false,
+                  "type": "VECTOR",
+                  "display_shape": "CIRCLE",
+                  "bl_idname": "NodeSocketVectorXYZ",
+                  "bl_label": "Vector",
+                  "bl_subtype_label": "XYZ",
+                  "default_value": [
+                    1.0,
+                    1.0,
+                    1.0
+                  ]
+                }
+              ],
+              "image": null
+            },
+            {
+              "properties": {
+                "location": [
+                  -1000.0,
+                  100.0
+                ],
+                "location_absolute": [
+                  -1000.0,
+                  100.0
+                ],
+                "width": 140.0,
+                "height": 100.0,
+                "name": "Texture Coordinate",
+                "label": "",
+                "warning_propagation": "ALL",
+                "use_custom_color": false,
+                "color": [
+                  0.6079999804496765,
+                  0.6079999804496765,
+                  0.6079999804496765
+                ],
+                "select": true,
+                "show_options": true,
+                "show_preview": false,
+                "hide": false,
+                "mute": false,
+                "show_texture": false,
+                "bl_idname": "ShaderNodeTexCoord",
+                "bl_label": "Texture Coordinate",
+                "bl_description": "Retrieve multiple types of texture coordinates.\nTypically used as inputs for texture nodes",
+                "bl_icon": "NONE",
+                "bl_width_default": 140.0,
+                "bl_width_min": 100.0,
+                "bl_width_max": 700.0,
+                "bl_height_default": 100.0,
+                "bl_height_min": 30.0,
+                "bl_height_max": 30.0,
+                "from_instancer": false
+              },
+              "inputs": [],
+              "image": null
+            }
+          ],
+          "links": [
+            [
+              "Background",
+              "Background",
+              "World Output",
+              "Surface"
+            ],
+            [
+              "Environment Texture",
+              "Color",
+              "Background",
+              "Color"
+            ],
+            [
+              "Mapping",
+              "Vector",
+              "Environment Texture",
+              "Vector"
+            ],
+            [
+              "Texture Coordinate",
+              "Generated",
+              "Mapping",
+              "Vector"
+            ]
+          ]
+        },
+        "view": {
+          "look": "AgX - Medium High Contrast",
+          "view_transform": "AgX",
+          "exposure": 0.0,
+          "gamma": 1.0,
+          "use_curve_mapping": false,
+          "use_white_balance": false,
+          "white_balance_temperature": 6500.0,
+          "white_balance_tint": 10.0,
+          "white_balance_whitepoint": [
+            0.9991403222084045,
+            1.0003736019134521,
+            0.998818039894104
+          ],
+          "use_hdr_view": false
+        },
+        "display": {
+          "display_device": "sRGB"
+        },
+        "pixel_aspect": [
+          1.0,
+          1.0
+        ],
+        "film_transparent": false,
+        "dither": 1.0
+      },
+      "rig_preserved": false,
+      "geometry_sha256": "e9eec2bad92fc25c270c54b39dc6e8a2e44c0c79890a0ec3576a4c9fc70ed04f",
+      "geometry_status": "passed",
+      "error": "ValueError('Controlled rig changed')",
+      "wall_seconds": 1.0019280979176983
+    }
+  ],
+  "scope": "Controlled original camera/world/light rig; whole-format appearance diagnostic, not isolated shader causality or real reconstruction accuracy. Geometry gate checks ownership/parts/AABBs, not full surface equivalence. Exported cameras/lights are deliberately removed: this is not their interchange acceptance. No material/image-quality pass threshold.",
+  "inputs": {
+    "source_model": {
+      "path": "/home/wqz/real2sim_capability_20260929/runs/shell_vent_002/shell_vent/model.blend",
+      "expected_sha256": "4a0adbd949e3339c316e4c7bb99109a08e10c77d69dc80e83dc2b520f0a40402"
+    },
+    "source_scene": {
+      "path": "/home/wqz/real2sim_capability_20260929/runs/shell_vent_002/shell_vent/scene.json",
+      "expected_sha256": "65b70a9d62ec1a5216a94624f1f285df6c1d60297e33af8eedd9d65b406d4d93"
+    }
+  },
+  "sources_unchanged": true,
+  "geometry_acceptance": false
+}

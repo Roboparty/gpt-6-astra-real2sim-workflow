@@ -1,0 +1,20 @@
+{
+  "scope": "Instrumented exporter/strict/renderer walls only; read-only topology/material inspection and orchestration overhead not separately measured",
+  "selected_wall_seconds": 82.0521230440354,
+  "render_attempts": 3,
+  "export_attempts": 1,
+  "original_authoring_candidates": 0,
+  "controlled_groups_completed": 3,
+  "geometry_groups_accepted_under_original_gate": 2,
+  "actual_room_strict_formats_passed": 2,
+  "expected_formats": 3,
+  "gpu_hours": 0,
+  "paid_api_requests": 0,
+  "all_final_rig_snapshots_exactly_equal": true,
+  "implementation_sha256": {
+    "workflow/r2s/blender_export.py": "ec9d6123271535b8f4de8618a5b8e944b5d999016f93831f8c47a1dd8d4c10d2",
+    "tools/render_interchange_appearance.py": "98958c2e1fe104de6ee156f3f527957643012eb3fa15bf7009efc7ac1372dc38",
+    "tools/diagnose_gltf_duvet.py": "ae1a786f28271f5844d828a8c242916936064d306fd19c1c0b6e532e72e4d884",
+    "tools/inspect_interchange_materials.py": "fd9c1719cd3edb28291044e7ba23a26e65ff244acec208a7ddf47daa8d6824c0"
+  }
+}

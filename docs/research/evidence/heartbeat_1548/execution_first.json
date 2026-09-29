@@ -1,0 +1,35 @@
+{
+  "schema": "real2sim.room-portability-run/1",
+  "protocol_sha256": "2e2f3ef2065da7ae632d0cd86e65f44381935d2ec5a6d8ce9bddaa54e8c19cea",
+  "script_sha256": "50e4db30fe8ea7f901715774e694eb83895673ea0e7a895b00b67d3f833b6841",
+  "stages": [
+    {
+      "stage": "export",
+      "status": "passed",
+      "returncode": 0,
+      "wall_seconds": 4.499091955949552
+    },
+    {
+      "stage": "strict",
+      "status": "failed",
+      "returncode": 12,
+      "wall_seconds": 3.255792984040454
+    },
+    {
+      "stage": "appearance",
+      "status": "failed",
+      "returncode": 12,
+      "wall_seconds": 1.4631833919556811
+    }
+  ],
+  "scope": "One in-sample authored detailed room; controlled-rig format appearance diagnostic, not isolated material causality, external-renderer equivalence, measured reflectance or SOTA.",
+  "gpu_hours": 0,
+  "paid_api_requests": 0,
+  "wall_seconds": 9.218736410024576,
+  "sources_unchanged": true,
+  "implementation_sha256": {
+    "workflow/r2s/blender_export.py": "ec9d6123271535b8f4de8618a5b8e944b5d999016f93831f8c47a1dd8d4c10d2",
+    "workflow/r2s/interchange.py": "808c48f725c1b24e6b32fae1a545f60e10d520c03f707715b061fb965b47921a",
+    "tools/render_interchange_appearance.py": "45eb037fa3cb94acd7809c81775bc3341756bcd89274238fc67b385c475fa058"
+  }
+}
