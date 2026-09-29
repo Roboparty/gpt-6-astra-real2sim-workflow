@@ -22,7 +22,7 @@
   "remote_root": "4090-1:/home/wqz/real2sim_capability_20260929",
   "protocol": "PROTOCOL_20260929.md",
   "result": "RESULTS_20260929.md",
-  "latest_update": "UPDATE_20260929T1750.md",
+  "latest_update": "UPDATE_20260929T1850.md",
   "completed": [
     "Matched retained-room collision failure reproduction and repair",
     "Rectangular opening handling and false-pass negative tests",
@@ -59,10 +59,11 @@
     "Detailed-room portability measured with exact preserved source rig: GLB/USD appearance worsens, floor turns black. Original GLB 8.094mm all-vertex bound failure retained; read-only surface analysis attributes that bound difference to nonsurface source vertices, not demonstrated surface shrinkage",
     "Final release candidate verified: 14/14 CPU runner groups pass with executable hashes matched; floor-normal ablation has mixed GLB/USD outcomes and is not enabled as a universal repair",
     "User-authorized formal main publication verified at c40a1ea after 14/14 final validation groups; historical branches/baseline/failures retained and mixed normal ablation not enabled by default",
-    "Dedicated floor tangent-normal bake preserves source geometry, old UVs and sRGB color; fixed-rig GLB/USD photo MAE improves to 0.107511/0.106775, but vent errors increase and original GLB 8.094mm bound failure persists; research candidate only"
+    "Dedicated floor tangent-normal bake preserves source geometry, old UVs and sRGB color; fixed-rig GLB/USD photo MAE improves to 0.107511/0.106775, but vent errors increase and original GLB 8.094mm bound failure persists; research candidate only",
+    "Frozen floor normal candidate validated at three prescribed virtual views: 18/18 renders and independent pixel/matrix/hash audit; GLB/USD own-native average MAE improves 35.8/36.0 percent; all six GLB bed-bound failures retained, no real-view or SOTA acceptance"
   ],
   "next": [
-    "Evaluate the dedicated floor tangent-normal candidate across additional views/material fixtures before default adoption; retain vent regression, original GLB bound failure, and appearance count 6/8. Universal normal removal remains rejected.",
+    "Floor tangent-normal bake now improves format fidelity in all six GLB/USD additional virtual-view comparisons; retain original photo vent regression and GLB bound failure. Validate additional material families and actual observed views before adoption; appearance count stays 6/8.",
     "Resolve remote TUM transfer throughput or explicitly resume retained partials within the remaining 514.004059s acquisition ledger; preserve all three fixed sequences and RGB/GT separation",
     "Register bridge-object annotations or reviewed correspondences for disconnected selected identity graphs; v2 retains 72 observations and 17/18 frame coverage, not a complete common camera/model initialization",
     "Prepare explicit versioned runtime-preparation budget amendment before resuming Pi3X dependency transfer; reuse only officially hash-verified retained wheels, preserve spent 1800 seconds",
@@ -144,7 +145,10 @@
     "floor_normal_001 (one binary imported-floor Normal-link ablation; mixed outcomes retained)",
     "release_final_001 (14/14 final release validation groups)",
     "floor_bake_001 (one registered 2048px tangent-normal bake; original sources preserved)",
-    "floor_bake_eval_001 (all three fixed-rig renders retained; strict 2/3 formats; floor/whole-image improvement with vent regression)"
+    "floor_bake_eval_001 (all three fixed-rig renders retained; strict 2/3 formats; floor/whole-image improvement with vent regression)",
+    "portability_view_contract_local_001 (3 tests, 1 local setup error: Pillow absent; no install)",
+    "portability_view_contract_remote_001 (same 3 tests pass in existing runtime)",
+    "portability_views_001 (18 frozen virtual-view cells; 12/18 geometry passes, all six GLB failures retained; 9 scored rows independently recomputed)"
   ],
   "resource_accounting": {
     "new_gpu_hours": 0,
@@ -216,7 +220,12 @@
     "floor_tangent_bake_wall_seconds": 3.730458589969203,
     "floor_tangent_bake_evaluation_wall_seconds": 63.67952359095216,
     "heartbeat_1750_selected_run_wall_seconds": 67.40998218092136,
-    "heartbeat_1750_scope": "Bake plus pipeline wall, including failed GLB strict stage. Material inspection, scoring, preview/transfer, one failed read-only SSH quoting invocation, and agent overhead uninstrumented. No dependency/data download, GPU/API, camera or physical task attempt."
+    "heartbeat_1750_scope": "Bake plus pipeline wall, including failed GLB strict stage. Material inspection, scoring, preview/transfer, one failed read-only SSH quoting invocation, and agent overhead uninstrumented. No dependency/data download, GPU/API, camera or physical task attempt.",
+    "portability_additional_view_validation_attempts_used": 1,
+    "portability_additional_view_render_cells": 18,
+    "heartbeat_1850_selected_run_wall_seconds": 348.5140955890529,
+    "heartbeat_1850_unit_test_wall_seconds": 0.075,
+    "heartbeat_1850_scope": "Single two-arm three-format three-virtual-view validation; no candidate/real-camera fit proposal or new export. Local setup failure retained. Pipeline wall includes child executions and scoring, not added twice. Independent audit, transfer and agent overhead unknown; GPU/API zero."
   },
   "constraints": [
     "Do not overwrite historical candidates, source photographs or failed evidence",
@@ -280,7 +289,21 @@
           "vent region regresses in both interchange formats",
           "original GLB bed all-vertex gate fails",
           "no new physical task or SOTA evidence"
-        ]
+        ],
+        "additional_virtual_views": {
+          "report": "UPDATE_20260929T1850.md",
+          "views": 3,
+          "rendered_cells": 18,
+          "expected_cells": 18,
+          "strict_passed_cells": 12,
+          "expected_comparisons": 9,
+          "scored_comparisons": 9,
+          "glb_mean_own_native_mae_before": 0.07208750492990726,
+          "glb_mean_own_native_mae_after": 0.04629404878104057,
+          "usd_mean_own_native_mae_before": 0.07141338196986842,
+          "usd_mean_own_native_mae_after": 0.04573521320148007,
+          "scope": "Three correlated virtual viewpoints, one fixed asset; no real photograph/3D ground truth at these views."
+        }
       }
     }
   },

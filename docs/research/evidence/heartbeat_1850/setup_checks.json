@@ -1,0 +1,39 @@
+{
+  "schema": "real2sim.view-validation-setup/1",
+  "prelaunch_observation": {
+    "timestamp": null,
+    "source": "Local SSH tool output in heartbeat 2026-09-29T18:50:38Z, before run launch",
+    "disk_free_bytes": 8742608896,
+    "external_cpu_jobs_present": true,
+    "gpu_memory_used_mib": [
+      14699,
+      14931,
+      8778,
+      2742,
+      5513,
+      4379,
+      3307,
+      3381
+    ],
+    "new_job_device": "CPU",
+    "new_job_threads": 2,
+    "cuda_visible_devices": ""
+  },
+  "tests": [
+    {
+      "environment": "local LabWeft venv",
+      "tests_run": 3,
+      "outcome": "failed",
+      "errors": 1,
+      "reason": "Pillow not installed; camera contract tests passed; no dependency installed",
+      "reported_wall_seconds": 0.001
+    },
+    {
+      "environment": "existing remote real2sim runtime venv",
+      "tests_run": 3,
+      "outcome": "passed",
+      "reported_wall_seconds": 0.075
+    }
+  ],
+  "review": "Internal read-only code/method review found no invalidating successful-run control or scoring bug; incomplete-run comparison omission and zero native self-error rows explicitly retained as reporting boundaries."
+}

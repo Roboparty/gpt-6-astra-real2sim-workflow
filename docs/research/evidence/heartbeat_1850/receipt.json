@@ -1,0 +1,1361 @@
+{
+  "schema": "real2sim.portability-view-validation/1",
+  "status": "completed_diagnostic",
+  "protocol_sha256": "b9fb7d1dbd076a9f0ce5a2e31e75c70cb03f02b66ba89c20a886d36166ed5f5b",
+  "script_sha256": "6a0b4ab4b552bf6d63f9fdd204822064cadb0d16192be9a66756216a907b27a2",
+  "expected_cells": 18,
+  "cells": [
+    {
+      "arm": "original",
+      "view": "world_x_minus_030",
+      "format": "native",
+      "status": "rendered",
+      "geometry_status": "passed",
+      "geometry_sha256": "b4a0b5394fac84671ce8355baf526968dc16ef83592341c5f35e9c9d012150cf",
+      "render_sha256": "98f8dbb610df972a02fd5929aeb1213cdf254bc637482975c61969437d0eedd5",
+      "rig_preserved": true,
+      "diagnostic_camera": {
+        "translation_world_m": [
+          -0.3,
+          0,
+          0
+        ],
+        "source_matrix_world": [
+          [
+            0.7251594662666321,
+            -0.13864880800247192,
+            0.674477756023407,
+            1.7480084896087646
+          ],
+          [
+            0.6875303387641907,
+            0.09170212596654892,
+            -0.7203420996665955,
+            -1.2246108055114746
+          ],
+          [
+            0.03802352398633957,
+            0.9860868453979492,
+            0.16182392835617065,
+            1.3833105564117432
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "actual_matrix_world": [
+          [
+            0.7251594662666321,
+            -0.13864882290363312,
+            0.674477756023407,
+            1.4480085372924805
+          ],
+          [
+            0.6875303387641907,
+            0.09170211851596832,
+            -0.7203420996665955,
+            -1.2246108055114746
+          ],
+          [
+            0.03802353888750076,
+            0.9860868453979492,
+            0.16182392835617065,
+            1.3833105564117432
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "scope": "Prescribed virtual view, not an observed or estimated real camera"
+      },
+      "rig_sha256": "9484fc5abffc4aaa264b5d30fc28b36cfa80d1fb2cf5e62f113e48e5fdb99d5d"
+    },
+    {
+      "arm": "original",
+      "view": "world_x_minus_030",
+      "format": "glb",
+      "status": "rendered_geometry_failed",
+      "geometry_status": "failed",
+      "geometry_sha256": "afbd2570a87a12a129611fb4eff3a690db7c279b4e82ce12d69364df6cf8e569",
+      "render_sha256": "00fe26eab558af892cb2d88a7c7177d11b1e009311e8934a547d823def1f327f",
+      "rig_preserved": true,
+      "diagnostic_camera": {
+        "translation_world_m": [
+          -0.3,
+          0,
+          0
+        ],
+        "source_matrix_world": [
+          [
+            0.7251594662666321,
+            -0.13864880800247192,
+            0.674477756023407,
+            1.7480084896087646
+          ],
+          [
+            0.6875303387641907,
+            0.09170212596654892,
+            -0.7203420996665955,
+            -1.2246108055114746
+          ],
+          [
+            0.03802352398633957,
+            0.9860868453979492,
+            0.16182392835617065,
+            1.3833105564117432
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "actual_matrix_world": [
+          [
+            0.7251594662666321,
+            -0.13864882290363312,
+            0.674477756023407,
+            1.4480085372924805
+          ],
+          [
+            0.6875303387641907,
+            0.09170211851596832,
+            -0.7203420996665955,
+            -1.2246108055114746
+          ],
+          [
+            0.03802353888750076,
+            0.9860868453979492,
+            0.16182392835617065,
+            1.3833105564117432
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "scope": "Prescribed virtual view, not an observed or estimated real camera"
+      },
+      "rig_sha256": "9484fc5abffc4aaa264b5d30fc28b36cfa80d1fb2cf5e62f113e48e5fdb99d5d"
+    },
+    {
+      "arm": "original",
+      "view": "world_x_minus_030",
+      "format": "usdc",
+      "status": "rendered",
+      "geometry_status": "passed",
+      "geometry_sha256": "e23087874fe845fee5d7422c77c78cf6d5291bef6d75897dce2d45b12f5ae56a",
+      "render_sha256": "ad59a272e83d8740dc9a54a1de7c1a76a2d36bbb3da20e7bc3c709afb69414a8",
+      "rig_preserved": true,
+      "diagnostic_camera": {
+        "translation_world_m": [
+          -0.3,
+          0,
+          0
+        ],
+        "source_matrix_world": [
+          [
+            0.7251594662666321,
+            -0.13864880800247192,
+            0.674477756023407,
+            1.7480084896087646
+          ],
+          [
+            0.6875303387641907,
+            0.09170212596654892,
+            -0.7203420996665955,
+            -1.2246108055114746
+          ],
+          [
+            0.03802352398633957,
+            0.9860868453979492,
+            0.16182392835617065,
+            1.3833105564117432
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "actual_matrix_world": [
+          [
+            0.7251594662666321,
+            -0.13864882290363312,
+            0.674477756023407,
+            1.4480085372924805
+          ],
+          [
+            0.6875303387641907,
+            0.09170211851596832,
+            -0.7203420996665955,
+            -1.2246108055114746
+          ],
+          [
+            0.03802353888750076,
+            0.9860868453979492,
+            0.16182392835617065,
+            1.3833105564117432
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "scope": "Prescribed virtual view, not an observed or estimated real camera"
+      },
+      "rig_sha256": "9484fc5abffc4aaa264b5d30fc28b36cfa80d1fb2cf5e62f113e48e5fdb99d5d"
+    },
+    {
+      "arm": "original",
+      "view": "world_x_plus_030",
+      "format": "native",
+      "status": "rendered",
+      "geometry_status": "passed",
+      "geometry_sha256": "ed3952b0ad69ba0e46ada372c0bcaef28affd6aa0ce88ad502836986cc1e0427",
+      "render_sha256": "8a4ac0f9c44d98d4cb55fb6bacc17ff392a6e8c1719e402b138f22157d3171c8",
+      "rig_preserved": true,
+      "diagnostic_camera": {
+        "translation_world_m": [
+          0.3,
+          0,
+          0
+        ],
+        "source_matrix_world": [
+          [
+            0.7251594662666321,
+            -0.13864880800247192,
+            0.674477756023407,
+            1.7480084896087646
+          ],
+          [
+            0.6875303387641907,
+            0.09170212596654892,
+            -0.7203420996665955,
+            -1.2246108055114746
+          ],
+          [
+            0.03802352398633957,
+            0.9860868453979492,
+            0.16182392835617065,
+            1.3833105564117432
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "actual_matrix_world": [
+          [
+            0.7251594662666321,
+            -0.13864882290363312,
+            0.674477756023407,
+            2.048008441925049
+          ],
+          [
+            0.6875303387641907,
+            0.09170211851596832,
+            -0.7203420996665955,
+            -1.2246108055114746
+          ],
+          [
+            0.03802353888750076,
+            0.9860868453979492,
+            0.16182392835617065,
+            1.3833105564117432
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "scope": "Prescribed virtual view, not an observed or estimated real camera"
+      },
+      "rig_sha256": "b8d20ffd07e9c599a465887b1cb3018d0d3ec04745b93884db457132574283fa"
+    },
+    {
+      "arm": "original",
+      "view": "world_x_plus_030",
+      "format": "glb",
+      "status": "rendered_geometry_failed",
+      "geometry_status": "failed",
+      "geometry_sha256": "699130bd345d1cdc6a80bb370d993fee6aea14cab05a8039616a716e161adb49",
+      "render_sha256": "badd576f105abb9b83884f119920d99b21a087dc0f4d27a58ddf7cec51929284",
+      "rig_preserved": true,
+      "diagnostic_camera": {
+        "translation_world_m": [
+          0.3,
+          0,
+          0
+        ],
+        "source_matrix_world": [
+          [
+            0.7251594662666321,
+            -0.13864880800247192,
+            0.674477756023407,
+            1.7480084896087646
+          ],
+          [
+            0.6875303387641907,
+            0.09170212596654892,
+            -0.7203420996665955,
+            -1.2246108055114746
+          ],
+          [
+            0.03802352398633957,
+            0.9860868453979492,
+            0.16182392835617065,
+            1.3833105564117432
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "actual_matrix_world": [
+          [
+            0.7251594662666321,
+            -0.13864882290363312,
+            0.674477756023407,
+            2.048008441925049
+          ],
+          [
+            0.6875303387641907,
+            0.09170211851596832,
+            -0.7203420996665955,
+            -1.2246108055114746
+          ],
+          [
+            0.03802353888750076,
+            0.9860868453979492,
+            0.16182392835617065,
+            1.3833105564117432
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "scope": "Prescribed virtual view, not an observed or estimated real camera"
+      },
+      "rig_sha256": "b8d20ffd07e9c599a465887b1cb3018d0d3ec04745b93884db457132574283fa"
+    },
+    {
+      "arm": "original",
+      "view": "world_x_plus_030",
+      "format": "usdc",
+      "status": "rendered",
+      "geometry_status": "passed",
+      "geometry_sha256": "7859586995118173e06f0ad3a46991c31b0cafe3206ca06d08b040c2770398ac",
+      "render_sha256": "274a87450aaf86fcd37453a4976e41255b883d69fd36ec82679805a76c3bcdac",
+      "rig_preserved": true,
+      "diagnostic_camera": {
+        "translation_world_m": [
+          0.3,
+          0,
+          0
+        ],
+        "source_matrix_world": [
+          [
+            0.7251594662666321,
+            -0.13864880800247192,
+            0.674477756023407,
+            1.7480084896087646
+          ],
+          [
+            0.6875303387641907,
+            0.09170212596654892,
+            -0.7203420996665955,
+            -1.2246108055114746
+          ],
+          [
+            0.03802352398633957,
+            0.9860868453979492,
+            0.16182392835617065,
+            1.3833105564117432
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "actual_matrix_world": [
+          [
+            0.7251594662666321,
+            -0.13864882290363312,
+            0.674477756023407,
+            2.048008441925049
+          ],
+          [
+            0.6875303387641907,
+            0.09170211851596832,
+            -0.7203420996665955,
+            -1.2246108055114746
+          ],
+          [
+            0.03802353888750076,
+            0.9860868453979492,
+            0.16182392835617065,
+            1.3833105564117432
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "scope": "Prescribed virtual view, not an observed or estimated real camera"
+      },
+      "rig_sha256": "b8d20ffd07e9c599a465887b1cb3018d0d3ec04745b93884db457132574283fa"
+    },
+    {
+      "arm": "original",
+      "view": "world_z_plus_030",
+      "format": "native",
+      "status": "rendered",
+      "geometry_status": "passed",
+      "geometry_sha256": "5e3642b37558900a6c096b9e8de9560576f92be6977038796e7bca6309808b22",
+      "render_sha256": "6c58c018f5aed274dfc2df66f0c0b1a5023fc860cd8d765e9b373bd614425368",
+      "rig_preserved": true,
+      "diagnostic_camera": {
+        "translation_world_m": [
+          0,
+          0,
+          0.3
+        ],
+        "source_matrix_world": [
+          [
+            0.7251594662666321,
+            -0.13864880800247192,
+            0.674477756023407,
+            1.7480084896087646
+          ],
+          [
+            0.6875303387641907,
+            0.09170212596654892,
+            -0.7203420996665955,
+            -1.2246108055114746
+          ],
+          [
+            0.03802352398633957,
+            0.9860868453979492,
+            0.16182392835617065,
+            1.3833105564117432
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "actual_matrix_world": [
+          [
+            0.7251594662666321,
+            -0.13864882290363312,
+            0.674477756023407,
+            1.7480084896087646
+          ],
+          [
+            0.6875303387641907,
+            0.09170211851596832,
+            -0.7203420996665955,
+            -1.2246108055114746
+          ],
+          [
+            0.03802353888750076,
+            0.9860868453979492,
+            0.16182392835617065,
+            1.6833105087280273
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "scope": "Prescribed virtual view, not an observed or estimated real camera"
+      },
+      "rig_sha256": "f69e7b38748a3c94b660fb66ea48039c1e7f1e96b28e5318d01ff5ec0531d4c1"
+    },
+    {
+      "arm": "original",
+      "view": "world_z_plus_030",
+      "format": "glb",
+      "status": "rendered_geometry_failed",
+      "geometry_status": "failed",
+      "geometry_sha256": "9115793577e349dcd029b10acdb459d3d264cad8fd75597001ddc43f2d16075c",
+      "render_sha256": "16628dbdf7391b2d628fcdadcd0fb05c3acd0697be6f4db2256f119981240fda",
+      "rig_preserved": true,
+      "diagnostic_camera": {
+        "translation_world_m": [
+          0,
+          0,
+          0.3
+        ],
+        "source_matrix_world": [
+          [
+            0.7251594662666321,
+            -0.13864880800247192,
+            0.674477756023407,
+            1.7480084896087646
+          ],
+          [
+            0.6875303387641907,
+            0.09170212596654892,
+            -0.7203420996665955,
+            -1.2246108055114746
+          ],
+          [
+            0.03802352398633957,
+            0.9860868453979492,
+            0.16182392835617065,
+            1.3833105564117432
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "actual_matrix_world": [
+          [
+            0.7251594662666321,
+            -0.13864882290363312,
+            0.674477756023407,
+            1.7480084896087646
+          ],
+          [
+            0.6875303387641907,
+            0.09170211851596832,
+            -0.7203420996665955,
+            -1.2246108055114746
+          ],
+          [
+            0.03802353888750076,
+            0.9860868453979492,
+            0.16182392835617065,
+            1.6833105087280273
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "scope": "Prescribed virtual view, not an observed or estimated real camera"
+      },
+      "rig_sha256": "f69e7b38748a3c94b660fb66ea48039c1e7f1e96b28e5318d01ff5ec0531d4c1"
+    },
+    {
+      "arm": "original",
+      "view": "world_z_plus_030",
+      "format": "usdc",
+      "status": "rendered",
+      "geometry_status": "passed",
+      "geometry_sha256": "c9860a733ab2c823c82af4f3fc1199978cd739895931ce345b7261e6f95748d1",
+      "render_sha256": "3fdfedc25f826f13b3f55ab3286cf93ca75c3f92d08dc1d61ad44bc14c8962a2",
+      "rig_preserved": true,
+      "diagnostic_camera": {
+        "translation_world_m": [
+          0,
+          0,
+          0.3
+        ],
+        "source_matrix_world": [
+          [
+            0.7251594662666321,
+            -0.13864880800247192,
+            0.674477756023407,
+            1.7480084896087646
+          ],
+          [
+            0.6875303387641907,
+            0.09170212596654892,
+            -0.7203420996665955,
+            -1.2246108055114746
+          ],
+          [
+            0.03802352398633957,
+            0.9860868453979492,
+            0.16182392835617065,
+            1.3833105564117432
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "actual_matrix_world": [
+          [
+            0.7251594662666321,
+            -0.13864882290363312,
+            0.674477756023407,
+            1.7480084896087646
+          ],
+          [
+            0.6875303387641907,
+            0.09170211851596832,
+            -0.7203420996665955,
+            -1.2246108055114746
+          ],
+          [
+            0.03802353888750076,
+            0.9860868453979492,
+            0.16182392835617065,
+            1.6833105087280273
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "scope": "Prescribed virtual view, not an observed or estimated real camera"
+      },
+      "rig_sha256": "f69e7b38748a3c94b660fb66ea48039c1e7f1e96b28e5318d01ff5ec0531d4c1"
+    },
+    {
+      "arm": "baked",
+      "view": "world_x_minus_030",
+      "format": "native",
+      "status": "rendered",
+      "geometry_status": "passed",
+      "geometry_sha256": "6e0a7dee8ff5aa88735566da70122ebb48087bd91717f4a8569411fe23e25c89",
+      "render_sha256": "4dd7c1524c15a3be1d81b8aaa82c259c4cd739997c23708a3a87b0850a569e01",
+      "rig_preserved": true,
+      "diagnostic_camera": {
+        "translation_world_m": [
+          -0.3,
+          0,
+          0
+        ],
+        "source_matrix_world": [
+          [
+            0.7251594662666321,
+            -0.13864880800247192,
+            0.674477756023407,
+            1.7480084896087646
+          ],
+          [
+            0.6875303387641907,
+            0.09170212596654892,
+            -0.7203420996665955,
+            -1.2246108055114746
+          ],
+          [
+            0.03802352398633957,
+            0.9860868453979492,
+            0.16182392835617065,
+            1.3833105564117432
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "actual_matrix_world": [
+          [
+            0.7251594662666321,
+            -0.13864882290363312,
+            0.674477756023407,
+            1.4480085372924805
+          ],
+          [
+            0.6875303387641907,
+            0.09170211851596832,
+            -0.7203420996665955,
+            -1.2246108055114746
+          ],
+          [
+            0.03802353888750076,
+            0.9860868453979492,
+            0.16182392835617065,
+            1.3833105564117432
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "scope": "Prescribed virtual view, not an observed or estimated real camera"
+      },
+      "rig_sha256": "9484fc5abffc4aaa264b5d30fc28b36cfa80d1fb2cf5e62f113e48e5fdb99d5d"
+    },
+    {
+      "arm": "baked",
+      "view": "world_x_minus_030",
+      "format": "glb",
+      "status": "rendered_geometry_failed",
+      "geometry_status": "failed",
+      "geometry_sha256": "79359a5e2da8f4bfc6d11e339b4b19acf611e6dd1bcdf066487d81350cb29c4c",
+      "render_sha256": "35ba64ebd93afd45071c706854b3c699a5abdecdda81c1d91a102dfbb1ce1a3d",
+      "rig_preserved": true,
+      "diagnostic_camera": {
+        "translation_world_m": [
+          -0.3,
+          0,
+          0
+        ],
+        "source_matrix_world": [
+          [
+            0.7251594662666321,
+            -0.13864880800247192,
+            0.674477756023407,
+            1.7480084896087646
+          ],
+          [
+            0.6875303387641907,
+            0.09170212596654892,
+            -0.7203420996665955,
+            -1.2246108055114746
+          ],
+          [
+            0.03802352398633957,
+            0.9860868453979492,
+            0.16182392835617065,
+            1.3833105564117432
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "actual_matrix_world": [
+          [
+            0.7251594662666321,
+            -0.13864882290363312,
+            0.674477756023407,
+            1.4480085372924805
+          ],
+          [
+            0.6875303387641907,
+            0.09170211851596832,
+            -0.7203420996665955,
+            -1.2246108055114746
+          ],
+          [
+            0.03802353888750076,
+            0.9860868453979492,
+            0.16182392835617065,
+            1.3833105564117432
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "scope": "Prescribed virtual view, not an observed or estimated real camera"
+      },
+      "rig_sha256": "9484fc5abffc4aaa264b5d30fc28b36cfa80d1fb2cf5e62f113e48e5fdb99d5d"
+    },
+    {
+      "arm": "baked",
+      "view": "world_x_minus_030",
+      "format": "usdc",
+      "status": "rendered",
+      "geometry_status": "passed",
+      "geometry_sha256": "822c03878d012f95e23a5e70299441e03ed1543c9f98e125f58a9f6bc187f365",
+      "render_sha256": "d59f5dcb15a7b241998ecb71eef47785ba6f1a35bd2e46ec88f74ab52fdd4a99",
+      "rig_preserved": true,
+      "diagnostic_camera": {
+        "translation_world_m": [
+          -0.3,
+          0,
+          0
+        ],
+        "source_matrix_world": [
+          [
+            0.7251594662666321,
+            -0.13864880800247192,
+            0.674477756023407,
+            1.7480084896087646
+          ],
+          [
+            0.6875303387641907,
+            0.09170212596654892,
+            -0.7203420996665955,
+            -1.2246108055114746
+          ],
+          [
+            0.03802352398633957,
+            0.9860868453979492,
+            0.16182392835617065,
+            1.3833105564117432
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "actual_matrix_world": [
+          [
+            0.7251594662666321,
+            -0.13864882290363312,
+            0.674477756023407,
+            1.4480085372924805
+          ],
+          [
+            0.6875303387641907,
+            0.09170211851596832,
+            -0.7203420996665955,
+            -1.2246108055114746
+          ],
+          [
+            0.03802353888750076,
+            0.9860868453979492,
+            0.16182392835617065,
+            1.3833105564117432
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "scope": "Prescribed virtual view, not an observed or estimated real camera"
+      },
+      "rig_sha256": "9484fc5abffc4aaa264b5d30fc28b36cfa80d1fb2cf5e62f113e48e5fdb99d5d"
+    },
+    {
+      "arm": "baked",
+      "view": "world_x_plus_030",
+      "format": "native",
+      "status": "rendered",
+      "geometry_status": "passed",
+      "geometry_sha256": "fe7b792929da21162c5c3628aa358347ae73317bc97c027813d328456d0621a9",
+      "render_sha256": "f9fb6ffcd61378fa501021a58a513fc1b8e1154f2c3626482dca5690f09be37e",
+      "rig_preserved": true,
+      "diagnostic_camera": {
+        "translation_world_m": [
+          0.3,
+          0,
+          0
+        ],
+        "source_matrix_world": [
+          [
+            0.7251594662666321,
+            -0.13864880800247192,
+            0.674477756023407,
+            1.7480084896087646
+          ],
+          [
+            0.6875303387641907,
+            0.09170212596654892,
+            -0.7203420996665955,
+            -1.2246108055114746
+          ],
+          [
+            0.03802352398633957,
+            0.9860868453979492,
+            0.16182392835617065,
+            1.3833105564117432
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "actual_matrix_world": [
+          [
+            0.7251594662666321,
+            -0.13864882290363312,
+            0.674477756023407,
+            2.048008441925049
+          ],
+          [
+            0.6875303387641907,
+            0.09170211851596832,
+            -0.7203420996665955,
+            -1.2246108055114746
+          ],
+          [
+            0.03802353888750076,
+            0.9860868453979492,
+            0.16182392835617065,
+            1.3833105564117432
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "scope": "Prescribed virtual view, not an observed or estimated real camera"
+      },
+      "rig_sha256": "b8d20ffd07e9c599a465887b1cb3018d0d3ec04745b93884db457132574283fa"
+    },
+    {
+      "arm": "baked",
+      "view": "world_x_plus_030",
+      "format": "glb",
+      "status": "rendered_geometry_failed",
+      "geometry_status": "failed",
+      "geometry_sha256": "2546f89f4c3d31be25bf4e013dd8f443f293f12756ed3f6037abb3a65582b2fb",
+      "render_sha256": "d4ab319f2fffdd0fa827090760975b8fac2ebc209f091b78259b8c71ed69e401",
+      "rig_preserved": true,
+      "diagnostic_camera": {
+        "translation_world_m": [
+          0.3,
+          0,
+          0
+        ],
+        "source_matrix_world": [
+          [
+            0.7251594662666321,
+            -0.13864880800247192,
+            0.674477756023407,
+            1.7480084896087646
+          ],
+          [
+            0.6875303387641907,
+            0.09170212596654892,
+            -0.7203420996665955,
+            -1.2246108055114746
+          ],
+          [
+            0.03802352398633957,
+            0.9860868453979492,
+            0.16182392835617065,
+            1.3833105564117432
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "actual_matrix_world": [
+          [
+            0.7251594662666321,
+            -0.13864882290363312,
+            0.674477756023407,
+            2.048008441925049
+          ],
+          [
+            0.6875303387641907,
+            0.09170211851596832,
+            -0.7203420996665955,
+            -1.2246108055114746
+          ],
+          [
+            0.03802353888750076,
+            0.9860868453979492,
+            0.16182392835617065,
+            1.3833105564117432
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "scope": "Prescribed virtual view, not an observed or estimated real camera"
+      },
+      "rig_sha256": "b8d20ffd07e9c599a465887b1cb3018d0d3ec04745b93884db457132574283fa"
+    },
+    {
+      "arm": "baked",
+      "view": "world_x_plus_030",
+      "format": "usdc",
+      "status": "rendered",
+      "geometry_status": "passed",
+      "geometry_sha256": "4ee7b4435eed33d1114dc2de06c0fb23a2dcc49185be165a6d5e2ec54585b074",
+      "render_sha256": "a4c875959bb94b0b6742e775bd1b6ed7fdb381690f9ad1c71ed53b26d4fbcc7e",
+      "rig_preserved": true,
+      "diagnostic_camera": {
+        "translation_world_m": [
+          0.3,
+          0,
+          0
+        ],
+        "source_matrix_world": [
+          [
+            0.7251594662666321,
+            -0.13864880800247192,
+            0.674477756023407,
+            1.7480084896087646
+          ],
+          [
+            0.6875303387641907,
+            0.09170212596654892,
+            -0.7203420996665955,
+            -1.2246108055114746
+          ],
+          [
+            0.03802352398633957,
+            0.9860868453979492,
+            0.16182392835617065,
+            1.3833105564117432
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "actual_matrix_world": [
+          [
+            0.7251594662666321,
+            -0.13864882290363312,
+            0.674477756023407,
+            2.048008441925049
+          ],
+          [
+            0.6875303387641907,
+            0.09170211851596832,
+            -0.7203420996665955,
+            -1.2246108055114746
+          ],
+          [
+            0.03802353888750076,
+            0.9860868453979492,
+            0.16182392835617065,
+            1.3833105564117432
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "scope": "Prescribed virtual view, not an observed or estimated real camera"
+      },
+      "rig_sha256": "b8d20ffd07e9c599a465887b1cb3018d0d3ec04745b93884db457132574283fa"
+    },
+    {
+      "arm": "baked",
+      "view": "world_z_plus_030",
+      "format": "native",
+      "status": "rendered",
+      "geometry_status": "passed",
+      "geometry_sha256": "ec9d1d56082043a9d867d2305735cb88c195843f18b33d3a8a540039d5101ac0",
+      "render_sha256": "9070fe7747f1645dc99b3705bcf9fbbc96228b3e47851c3e866e6aae7a93906d",
+      "rig_preserved": true,
+      "diagnostic_camera": {
+        "translation_world_m": [
+          0,
+          0,
+          0.3
+        ],
+        "source_matrix_world": [
+          [
+            0.7251594662666321,
+            -0.13864880800247192,
+            0.674477756023407,
+            1.7480084896087646
+          ],
+          [
+            0.6875303387641907,
+            0.09170212596654892,
+            -0.7203420996665955,
+            -1.2246108055114746
+          ],
+          [
+            0.03802352398633957,
+            0.9860868453979492,
+            0.16182392835617065,
+            1.3833105564117432
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "actual_matrix_world": [
+          [
+            0.7251594662666321,
+            -0.13864882290363312,
+            0.674477756023407,
+            1.7480084896087646
+          ],
+          [
+            0.6875303387641907,
+            0.09170211851596832,
+            -0.7203420996665955,
+            -1.2246108055114746
+          ],
+          [
+            0.03802353888750076,
+            0.9860868453979492,
+            0.16182392835617065,
+            1.6833105087280273
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "scope": "Prescribed virtual view, not an observed or estimated real camera"
+      },
+      "rig_sha256": "f69e7b38748a3c94b660fb66ea48039c1e7f1e96b28e5318d01ff5ec0531d4c1"
+    },
+    {
+      "arm": "baked",
+      "view": "world_z_plus_030",
+      "format": "glb",
+      "status": "rendered_geometry_failed",
+      "geometry_status": "failed",
+      "geometry_sha256": "8f350397f51a124cc1fe39e1bb4a4a1da643edcef2cfca9777060a336c279868",
+      "render_sha256": "e69da051ef6875d46f76bbb3d980b92b9ca692404209ccc871e67c9ebe6a1c05",
+      "rig_preserved": true,
+      "diagnostic_camera": {
+        "translation_world_m": [
+          0,
+          0,
+          0.3
+        ],
+        "source_matrix_world": [
+          [
+            0.7251594662666321,
+            -0.13864880800247192,
+            0.674477756023407,
+            1.7480084896087646
+          ],
+          [
+            0.6875303387641907,
+            0.09170212596654892,
+            -0.7203420996665955,
+            -1.2246108055114746
+          ],
+          [
+            0.03802352398633957,
+            0.9860868453979492,
+            0.16182392835617065,
+            1.3833105564117432
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "actual_matrix_world": [
+          [
+            0.7251594662666321,
+            -0.13864882290363312,
+            0.674477756023407,
+            1.7480084896087646
+          ],
+          [
+            0.6875303387641907,
+            0.09170211851596832,
+            -0.7203420996665955,
+            -1.2246108055114746
+          ],
+          [
+            0.03802353888750076,
+            0.9860868453979492,
+            0.16182392835617065,
+            1.6833105087280273
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "scope": "Prescribed virtual view, not an observed or estimated real camera"
+      },
+      "rig_sha256": "f69e7b38748a3c94b660fb66ea48039c1e7f1e96b28e5318d01ff5ec0531d4c1"
+    },
+    {
+      "arm": "baked",
+      "view": "world_z_plus_030",
+      "format": "usdc",
+      "status": "rendered",
+      "geometry_status": "passed",
+      "geometry_sha256": "bcc4a39f0e6d554deee63024a265ae0897d8f92adc5ae1414f061b17ae438702",
+      "render_sha256": "abc69e28072f3f4ad3206a91bd3409b236a6259ab8cc4302f431be4b5054b4fc",
+      "rig_preserved": true,
+      "diagnostic_camera": {
+        "translation_world_m": [
+          0,
+          0,
+          0.3
+        ],
+        "source_matrix_world": [
+          [
+            0.7251594662666321,
+            -0.13864880800247192,
+            0.674477756023407,
+            1.7480084896087646
+          ],
+          [
+            0.6875303387641907,
+            0.09170212596654892,
+            -0.7203420996665955,
+            -1.2246108055114746
+          ],
+          [
+            0.03802352398633957,
+            0.9860868453979492,
+            0.16182392835617065,
+            1.3833105564117432
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "actual_matrix_world": [
+          [
+            0.7251594662666321,
+            -0.13864882290363312,
+            0.674477756023407,
+            1.7480084896087646
+          ],
+          [
+            0.6875303387641907,
+            0.09170211851596832,
+            -0.7203420996665955,
+            -1.2246108055114746
+          ],
+          [
+            0.03802353888750076,
+            0.9860868453979492,
+            0.16182392835617065,
+            1.6833105087280273
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "scope": "Prescribed virtual view, not an observed or estimated real camera"
+      },
+      "rig_sha256": "f69e7b38748a3c94b660fb66ea48039c1e7f1e96b28e5318d01ff5ec0531d4c1"
+    }
+  ],
+  "executions": [
+    {
+      "arm": "original",
+      "view": "world_x_minus_030",
+      "status": "completed",
+      "protocol_sha256": "126b197bcc080884a95cd14408606d686222a1a505889f97ff8feb3cab1ee138",
+      "free_disk_bytes": 8733564928,
+      "returncode": 0,
+      "receipt_sha256": "0bc8536d3e8466945cef7b69973a9637fd71c7bcbf24498d48341d480ad78275",
+      "source_bytes_unchanged": true,
+      "wall_seconds": 56.606892892043106
+    },
+    {
+      "arm": "original",
+      "view": "world_x_plus_030",
+      "status": "completed",
+      "protocol_sha256": "ad6b35a3d3eb2f6a8250646c26a5892d0afdf70e0eb74527222a2927d7e49708",
+      "free_disk_bytes": 8730587136,
+      "returncode": 0,
+      "receipt_sha256": "53f498bb08cfeff5ad8d19a1db6f9c6887b8df56766aa478ffb66a67982c2772",
+      "source_bytes_unchanged": true,
+      "wall_seconds": 55.13114543899428
+    },
+    {
+      "arm": "original",
+      "view": "world_z_plus_030",
+      "status": "completed",
+      "protocol_sha256": "7c3c09b465f820647d10baddf75116ba18782dc19a65ff46191966b6fb2405df",
+      "free_disk_bytes": 8730808320,
+      "returncode": 0,
+      "receipt_sha256": "b41baeda319d49ed5f1bc5681adbc415833b257d9a45164889496d87c5da0559",
+      "source_bytes_unchanged": true,
+      "wall_seconds": 56.34375494590495
+    },
+    {
+      "arm": "baked",
+      "view": "world_x_minus_030",
+      "status": "completed",
+      "protocol_sha256": "aa802faae9ec0ac4029707663e0cded99e0a7cd463b5f16a40c0ad3b6acd2879",
+      "free_disk_bytes": 8725803008,
+      "returncode": 0,
+      "receipt_sha256": "fe83aa84116d10a8d62ec5f1f6b163bb7d05d4cc739fafe93868742058158ce7",
+      "source_bytes_unchanged": true,
+      "wall_seconds": 59.65254265104886
+    },
+    {
+      "arm": "baked",
+      "view": "world_x_plus_030",
+      "status": "completed",
+      "protocol_sha256": "89a5c53d51f079d59586dff39b75fe5c2288e1d84ada2f570bf2c384048574e1",
+      "free_disk_bytes": 8721821696,
+      "returncode": 0,
+      "receipt_sha256": "80bb90fccc16ec3af608078154ab090ea11ab19a65bd761846b77539a1dbb0cb",
+      "source_bytes_unchanged": true,
+      "wall_seconds": 59.20013261702843
+    },
+    {
+      "arm": "baked",
+      "view": "world_z_plus_030",
+      "status": "completed",
+      "protocol_sha256": "46f4f4d6797580dc0b50fc6d0c47f87a9f907a2ab958ebfe227347a7e71a80bc",
+      "free_disk_bytes": 8718774272,
+      "returncode": 0,
+      "receipt_sha256": "444048ee8e9387c45fce1b7b8c7091c0fd1ef4a7122b1fba66d7e9d837f9c4fb",
+      "source_bytes_unchanged": true,
+      "wall_seconds": 60.60740814101882
+    }
+  ],
+  "gpu_hours": 0,
+  "paid_api_requests": 0,
+  "wall_seconds": 348.5140955890529,
+  "cross_arm_rigs_equal": true,
+  "sources_and_export_dependencies_unchanged": true,
+  "comparison_sha256": "45e60a27272864e91a5c73775c5610b824ef65eaaf85d5b61e295ad757b4bb49"
+}

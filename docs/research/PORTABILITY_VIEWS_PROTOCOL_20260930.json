@@ -1,0 +1,100 @@
+{
+  "schema": "real2sim.portability-view-protocol/1",
+  "status": "registered_before_render",
+  "source_code_revision": "8891121c6f9c04bc37484ffac3a3e9132d990e72",
+  "arms": [
+    {
+      "id": "original",
+      "source_model": "/home/wqz/real2sim_capability_20260929/runs/shell_vent_002/shell_vent/model.blend",
+      "source_scene": "/home/wqz/real2sim_capability_20260929/runs/shell_vent_002/shell_vent/scene.json",
+      "export_dir": "/home/wqz/real2sim_capability_20260929/runs/portability_001/export",
+      "source_model_sha256": "4a0adbd949e3339c316e4c7bb99109a08e10c77d69dc80e83dc2b520f0a40402",
+      "source_scene_sha256": "65b70a9d62ec1a5216a94624f1f285df6c1d60297e33af8eedd9d65b406d4d93",
+      "export_files_sha256": {
+        "scene.glb": "be39953b0b0dc81c5b815efc8cd688eef0674c0c3fcc78436ddadf2c9075164d",
+        "scene.usdc": "d4e3c89cbefb8eec98e54cf93801119afc30fe367eabdc5c53662aad46ff0bcf",
+        "textures/carpet_whole_inferred.png": "22f96acbd8a55125f57dcd8e699dc020dacdd6b7f1e13b1bf2a72453b4ac8a73",
+        "textures/color_165186204.hdr": "d0bc34aca93b0bf8d960ec5a0f9692364a515c586747f65a9c917db533a4dda8",
+        "textures/duvet_inferred_botanical.png": "bf7c915e90cf5838775fc89a13e3f47d9e940c3d8edcef5d8bcb5fa60354a9b8"
+      }
+    },
+    {
+      "id": "baked",
+      "source_model": "/home/wqz/real2sim_capability_20260929/runs/floor_bake_001/model.blend",
+      "source_scene": "/home/wqz/real2sim_capability_20260929/runs/floor_bake_001/scene.json",
+      "export_dir": "/home/wqz/real2sim_capability_20260929/runs/floor_bake_eval_001/export",
+      "source_model_sha256": "469d83230f32c1580a0d609e4833be90b9dcd3cc14f75aa88511c94659b60523",
+      "source_scene_sha256": "65b70a9d62ec1a5216a94624f1f285df6c1d60297e33af8eedd9d65b406d4d93",
+      "export_files_sha256": {
+        "scene.glb": "860a11368e493f7bbe87de81c01e8b6e64e68b202980ef9336497f5e15f6a894",
+        "scene.usdc": "58e616130d867a0ffbceca485dfe7cf25209636c479446b843576154572c9bf5",
+        "textures/carpet_whole_inferred.png": "22f96acbd8a55125f57dcd8e699dc020dacdd6b7f1e13b1bf2a72453b4ac8a73",
+        "textures/color_165186204.hdr": "d0bc34aca93b0bf8d960ec5a0f9692364a515c586747f65a9c917db533a4dda8",
+        "textures/duvet_inferred_botanical.png": "bf7c915e90cf5838775fc89a13e3f47d9e940c3d8edcef5d8bcb5fa60354a9b8",
+        "textures/floor_normal.png": "f654b5a125be98b67f824083dc2723bb121104c18c641b9cae04c0d21a50b734"
+      }
+    }
+  ],
+  "views": [
+    {
+      "id": "world_x_minus_030",
+      "translation_world_m": [
+        -0.3,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "world_x_plus_030",
+      "translation_world_m": [
+        0.3,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "world_z_plus_030",
+      "translation_world_m": [
+        0,
+        0,
+        0.3
+      ]
+    }
+  ],
+  "formats": [
+    "native",
+    "glb",
+    "usdc"
+  ],
+  "render": {
+    "width": 851,
+    "height": 638,
+    "samples": 8,
+    "seed": 0,
+    "threads": 2,
+    "device": "CPU",
+    "adaptive": false,
+    "denoise": true
+  },
+  "budget": {
+    "cpu_wall_seconds": 900,
+    "minimum_free_disk_bytes": 4294967296,
+    "new_candidate_proposals": 0,
+    "appearance_proposals_used": 6,
+    "gpu_hours": 0,
+    "paid_api_requests": 0
+  },
+  "primary_metric": "All three virtual views: full normalized RGB MAE of each format against its own native, also baked-format and baked-native against original-native.",
+  "failure_policy": "Retain all 18 cells, timeouts, unavailable metrics, any view inside geometry and inherited GLB geometry failures. No new edits, exports, fitting, ROI selection, best-of view selection or automatic promotion.",
+  "limits": [
+    "One scene; three correlated artificial views, not independent benchmark samples.",
+    "No observed photo or 3D ground truth at these views.",
+    "Eight samples with denoising; tiny changes may be noise.",
+    "Lighting/camera interchange is deliberately excluded by reuse of original rig."
+  ],
+  "implementation_sha256": {
+    "tools/run_portability_view_validation.py": "6a0b4ab4b552bf6d63f9fdd204822064cadb0d16192be9a66756216a907b27a2",
+    "tools/render_interchange_appearance.py": "940b2e79b720b73b749ec9f2a797c6dca05e6574dec0c4dab80a0f48a4a3bc58",
+    "workflow/r2s/interchange.py": "808c48f725c1b24e6b32fae1a545f60e10d520c03f707715b061fb965b47921a"
+  }
+}

@@ -6,6 +6,7 @@ render:{width:851,height:638,samples:8,seed:0,threads:2}.
 """
 import argparse
 import json
+import math
 from pathlib import Path
 import sys
 import time
@@ -48,6 +49,18 @@ def rig_state(scene, rig):
 
 def write(path, value):
     path.write_text(json.dumps(value, indent=2, allow_nan=False), encoding='utf-8')
+
+
+def camera_translation(protocol):
+    """An explicit diagnostic view, never a fitted or observed camera pose."""
+    value = protocol.get('diagnostic_camera_translation_world_m')
+    if value is None:
+        return None
+    if (not isinstance(value, list) or len(value) != 3 or
+            any(isinstance(x, bool) or not isinstance(x, (int, float)) or
+                not math.isfinite(x) for x in value)):
+        raise ValueError('Diagnostic camera translation must be three finite numbers')
+    return value
 
 
 def ablate_floor_normal(scene, spec, recipe):
@@ -133,6 +146,22 @@ def main():
                 raise ValueError('DOF focus object would be removed; refuse camera change')
             if scene.view_settings.use_curve_mapping:
                 raise ValueError('Custom color-management curves unsupported by this controlled-rig adapter')
+            delta = camera_translation(p)
+            if delta is not None:
+                original_matrix = camera.matrix_world.copy()
+                moved_matrix = original_matrix.copy()
+                for axis, distance in enumerate(delta):
+                    moved_matrix[axis][3] += distance
+                camera.matrix_world = moved_matrix
+                bpy.context.view_layer.update()
+                row['diagnostic_camera'] = {
+                    'translation_world_m': delta,
+                    'source_matrix_world': [list(r) for r in original_matrix],
+                    'actual_matrix_world': [list(r) for r in camera.matrix_world],
+                    'scope': 'Prescribed virtual view, not an observed or estimated real camera'}
+                if any(abs(camera.matrix_world[r][c] - moved_matrix[r][c]) > 1e-6
+                       for r in range(4) for c in range(4)):
+                    raise ValueError('Diagnostic camera translation was not applied exactly')
             reference = capture_scene(spec); before = rig_state(scene, rig)
             matrices = {obj: obj.matrix_world.copy() for obj in rig}
             color = {key: getattr(scene.view_settings, key) for key in ('view_transform', 'look', 'exposure', 'gamma', 'use_curve_mapping')}
