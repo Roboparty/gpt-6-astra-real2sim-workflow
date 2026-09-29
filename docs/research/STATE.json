@@ -20,7 +20,7 @@
   "remote_root": "4090-1:/home/wqz/real2sim_capability_20260929",
   "protocol": "PROTOCOL_20260929.md",
   "result": "RESULTS_20260929.md",
-  "latest_update": "UPDATE_20260929T1045.md",
+  "latest_update": "UPDATE_20260929T1145.md",
   "completed": [
     "Matched retained-room collision failure reproduction and repair",
     "Rectangular opening handling and false-pass negative tests",
@@ -48,10 +48,11 @@
     "Four-condition shell/vent factorial: combined passes 49 joints and all 1128 component checks; same-image bedding MAE improves 2.5308 percent and vent 20.6138 percent; vent-only retains two structural failures",
     "Explicit zero-furniture scene validation, actual source-view structural review and geometry-only export passed; seven negative cases and nonempty contract regressions retained",
     "Shared benchmark readiness audited across all three video sources and four methods; HKU pinned documentation now readable but raw inputs absent",
-    "Additional retained shell/vent execution with frozen dd51a20 export and actual MuJoCo static probes: both shell/opening/support checks passed; vent-only structure failures retained"
+    "Additional retained shell/vent execution with frozen dd51a20 export and actual MuJoCo static probes: both shell/opening/support checks passed; vent-only structure failures retained",
+    "First source-bound visible-box bundle frozen for all 3 videos: 18 frames, 6 identities, 36 observations (17 observed boxes and 19 retained out-of-frame/null entries); internal overlay review and 13 negative contract checks passed"
   ],
   "next": [
-    "Freeze source-bound visible static-object annotations on all three videos without relabeling the 18 SfM input frames as held-out; keep ambiguous/occluded observations explicit",
+    "Expand persistent object inventory with a versioned annotation protocol retaining frozen_v1: current two first-frame identities provide observed boxes in only 9/18 frames; no relabeling missing views or treating boxes as masks/ground truth",
     "Prepare explicit versioned runtime-preparation budget amendment before resuming Pi3X dependency transfer; reuse only officially hash-verified retained wheels, preserve spent 1800 seconds",
     "Preregister common six-frame learned-reference inputs, preprocessing and outputs before camera attempt 7; no GPU launch until environment ready and live external-work check passes",
     "Evaluate the shell+vent development successor through full visual review and task integration; fine textiles/accessories remain visibly approximate, and prior pose pilot remains rejected by fine landmark gate",
@@ -111,7 +112,10 @@
     "empty_room_001.log (deployment import failure)",
     "empty_room_002",
     "local structure_regression_1045 (initial PYTHONPATH failure and corrected isolated run)",
-    "shell_vent_factorial_001 (duplicate conditions retained; added frozen-export/static probes)"
+    "shell_vent_factorial_001 (duplicate conditions retained; added frozen-export/static probes)",
+    "annotation_previews_001 initial invocation (missing frames.json; no output)",
+    "annotation_previews_001 corrected freeze.json invocation",
+    "annotations_20260929/frozen_v1 (three initial submissions plus one root overlay review)"
   ],
   "resource_accounting": {
     "new_gpu_hours": 0,
@@ -146,7 +150,12 @@
     "heartbeat_1045_accounting_scope": "Measured shell/vent conditions, empty-room driver and corrected isolated contract test; deployment failures and other uninstrumented regression/agent overhead remain unknown.",
     "empty_room_candidate_revisions_used": 1,
     "empty_room_execution_attempts_used": 2,
-    "shell_vent_duplicate_execution_wall_seconds": 46.410337843117304
+    "shell_vent_duplicate_execution_wall_seconds": 46.410337843117304,
+    "annotation_freeze_versions_used": 1,
+    "annotation_preview_execution_attempts_used": 2,
+    "heartbeat_1145_selected_run_wall_seconds": 0.31613075907807797,
+    "heartbeat_1145_verified_frame_preview_bytes": 1440886,
+    "heartbeat_1145_accounting_scope": "Measured remote JPEG preparation only; annotation/review/model cost, transfer and uninstrumented test wall times remain unknown. No new camera, appearance, combined or GPU trial."
   },
   "constraints": [
     "Do not overwrite historical candidates, source photographs or failed evidence",
@@ -176,5 +185,17 @@
     "new_physical_task_acceptance": false,
     "scope": "One same-image development room, unchanged original furniture poses. Does not replace frozen baseline."
   },
-  "benchmark_readiness_report": "SHARED_BENCHMARK_READINESS_20260929.md"
+  "benchmark_readiness_report": "SHARED_BENCHMARK_READINESS_20260929.md",
+  "shared_annotations": {
+    "manifest": "annotations_20260929/frozen_v1.json",
+    "sources": 3,
+    "frames": 18,
+    "object_identities": 6,
+    "observations": 36,
+    "observed_boxes": 17,
+    "out_of_frame_null": 19,
+    "frames_with_observed_boxes": 9,
+    "provenance": "Internal agent visual estimates and root overlay review, not independent human ground truth",
+    "scope": "Coarse visible boxes, development fitting; not masks, full scene inventory, common initialization or held-out evidence"
+  }
 }

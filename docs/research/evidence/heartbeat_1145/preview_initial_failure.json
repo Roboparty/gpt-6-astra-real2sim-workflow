@@ -1,0 +1,11 @@
+{
+  "status": "infrastructure_failure_before_output",
+  "attempt": 1,
+  "tool": "prepare_annotation_previews.py",
+  "reason": "Guessed frames.json path did not exist; FileNotFoundError. Verified actual directory listing then used freeze.json unchanged.",
+  "requested_manifest": "/home/wqz/real2sim_capability_20260929/runs/video_frames_001/frames.json",
+  "corrected_manifest": "/home/wqz/real2sim_capability_20260929/runs/video_frames_001/freeze.json",
+  "wall_seconds": null,
+  "output_created": false,
+  "candidate_or_camera_trial_used": false
+}

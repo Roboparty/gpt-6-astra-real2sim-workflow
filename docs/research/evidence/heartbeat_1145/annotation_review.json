@@ -1,0 +1,46 @@
+{
+  "schema": "real2sim.visible-box-review/1",
+  "reviewer": "root internal agent; not independent human annotator",
+  "decision": "retain as coarse development annotations only",
+  "corrections": [],
+  "sources": [
+    {
+      "id": "open_concept_g0034",
+      "annotation_sha256": "f6691182b4da78dca72c6b9b48437eaef0dd5ce3a98d5c410e84b36611f1696d",
+      "overlay_sha256": "c257b35cea6bea6b16b15702a6236381ea454f3516f056cd4c9fbfe51b733d0d",
+      "states": {
+        "visible": 2,
+        "partial": 2,
+        "out_of_frame": 8
+      },
+      "frames_with_observed_boxes": 2,
+      "finding": "Overlay boxes follow selected identities at coarse precision; source turns away are retained as null. No boundary change requested."
+    },
+    {
+      "id": "bedroom_waterfront_g0024",
+      "annotation_sha256": "f1d0a4c2a8c68d0f409c1ec2f8cf01d2e886b0e569c4b42d4826b702535693ac",
+      "overlay_sha256": "4dd56994e43de45a19ebabf55e8fd44a6c9b0c77154c5fe2a4e2f0fe040d177e",
+      "states": {
+        "visible": 7,
+        "partial": 4,
+        "out_of_frame": 1
+      },
+      "frames_with_observed_boxes": 6,
+      "finding": "Overlay boxes follow selected identities at coarse precision; source turns away are retained as null. No boundary change requested."
+    },
+    {
+      "id": "breakfast_nook_kitchen_g0039",
+      "annotation_sha256": "57d925b7731e757937213aa07023381c960ae160fa5afaa7b4bf09d4d9dcb78c",
+      "overlay_sha256": "1c9a8c4ffe6a6e4f6eecc65037a11b534c552bd6b18840bf13dae1e7f17288b5",
+      "states": {
+        "visible": 1,
+        "partial": 1,
+        "out_of_frame": 10
+      },
+      "frames_with_observed_boxes": 1,
+      "finding": "Overlay boxes follow selected identities at coarse precision; source turns away are retained as null. No boundary change requested."
+    }
+  ],
+  "scope": "One overlay review pass; no model-based optimization or relabeling missing cases. +/-10 px is an assumed boundary uncertainty, not calibrated annotation error.",
+  "frozen_manifest_sha256": "dafd8ce5615cb968a912e58902bf1a66d91db2fb9f8de5eba618fb187e6f199a"
+}

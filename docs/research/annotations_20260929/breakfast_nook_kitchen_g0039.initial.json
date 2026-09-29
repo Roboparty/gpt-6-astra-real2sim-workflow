@@ -1,0 +1,114 @@
+{
+  "schema": "real2sim.visible-box-annotations/1",
+  "source_id": "breakfast_nook_kitchen_g0039",
+  "objects": [
+    {
+      "id": "wall_clock",
+      "label": "Round black wall clock",
+      "identity_description": "The black round clock with pale rim and white numerals on the beige wall to the right of the patio doorway in frame 0. Include the clock face and rim, not its cast shadow. This identity does not include the abstract wall painting seen later."
+    },
+    {
+      "id": "floor_vase_vessel",
+      "label": "Tall dark fluted floor vase vessel",
+      "identity_description": "The tall nearly black fluted vase standing on the floor beside the right curtain in frame 0. The object is the vase vessel only, excluding all branches, flowers and foliage. It is not the pink tabletop flower bowl or the kitchen succulent pot seen later."
+    }
+  ],
+  "observations": [
+    {
+      "frame_ordinal": 0,
+      "object_id": "wall_clock",
+      "state": "visible",
+      "bbox_xyxy": [285, 54, 392, 165],
+      "reason": "Clock face and pale outer rim are visible on the beige wall; box excludes the slight surrounding shadow. Coordinates are visual estimates from the provided preview.",
+      "confidence": "high"
+    },
+    {
+      "frame_ordinal": 0,
+      "object_id": "floor_vase_vessel",
+      "state": "partial",
+      "bbox_xyxy": [657, 367, 722, 533],
+      "reason": "Visible dark vessel body and base are boxed. Hanging flowers and foliage obscure the upper neck and lip, so the box does not infer a hidden mouth or include the floral arrangement. The upper boundary is less certain than the body and base.",
+      "confidence": "medium"
+    },
+    {
+      "frame_ordinal": 1,
+      "object_id": "wall_clock",
+      "state": "out_of_frame",
+      "bbox_xyxy": null,
+      "reason": "Camera now faces the breakfast table and patio doorway; the clock-bearing wall beyond the doorway's right side is outside the view. No part of the clock is visible.",
+      "confidence": "high"
+    },
+    {
+      "frame_ordinal": 1,
+      "object_id": "floor_vase_vessel",
+      "state": "out_of_frame",
+      "bbox_xyxy": null,
+      "reason": "The floor vase beside the curtain in frame 0 is outside the right side of this view. The pink bowl on the breakfast table is a different object and is not substituted.",
+      "confidence": "high"
+    },
+    {
+      "frame_ordinal": 2,
+      "object_id": "wall_clock",
+      "state": "out_of_frame",
+      "bbox_xyxy": null,
+      "reason": "View faces the kitchen and breakfast table. The abstract rectangular painting is visible, but the fixed round wall-clock identity is outside the view.",
+      "confidence": "high"
+    },
+    {
+      "frame_ordinal": 2,
+      "object_id": "floor_vase_vessel",
+      "state": "out_of_frame",
+      "bbox_xyxy": null,
+      "reason": "The original curtain-side floor vase is outside the view. The visible pink tabletop bowl and countertop plant pot are different identities.",
+      "confidence": "high"
+    },
+    {
+      "frame_ordinal": 3,
+      "object_id": "wall_clock",
+      "state": "out_of_frame",
+      "bbox_xyxy": null,
+      "reason": "Kitchen cabinets, appliances and a sliver of the abstract painting are visible; none of the round clock is in frame.",
+      "confidence": "high"
+    },
+    {
+      "frame_ordinal": 3,
+      "object_id": "floor_vase_vessel",
+      "state": "out_of_frame",
+      "bbox_xyxy": null,
+      "reason": "Camera faces further into the kitchen and the original floor vase is outside the view. The countertop planter is not the tracked vessel.",
+      "confidence": "high"
+    },
+    {
+      "frame_ordinal": 4,
+      "object_id": "wall_clock",
+      "state": "out_of_frame",
+      "bbox_xyxy": null,
+      "reason": "Close kitchen view contains the stove, microwave, sink and cabinets; the round clock from the patio-side wall is outside the view.",
+      "confidence": "high"
+    },
+    {
+      "frame_ordinal": 4,
+      "object_id": "floor_vase_vessel",
+      "state": "out_of_frame",
+      "bbox_xyxy": null,
+      "reason": "The large foreground patterned planter is a different object. No visible part of the tracked dark floor vase remains in this kitchen view.",
+      "confidence": "high"
+    },
+    {
+      "frame_ordinal": 5,
+      "object_id": "wall_clock",
+      "state": "out_of_frame",
+      "bbox_xyxy": null,
+      "reason": "Final close view is of the kitchen stove, microwave and sink; the tracked clock is outside the view.",
+      "confidence": "high"
+    },
+    {
+      "frame_ordinal": 5,
+      "object_id": "floor_vase_vessel",
+      "state": "out_of_frame",
+      "bbox_xyxy": null,
+      "reason": "Final kitchen view does not contain the curtain-side floor vase. Kitchen pitchers, pots and the sink-side ornament are different identities.",
+      "confidence": "high"
+    }
+  ]
+}

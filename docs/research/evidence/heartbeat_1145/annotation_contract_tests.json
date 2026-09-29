@@ -1,0 +1,59 @@
+{
+  "status": "passed",
+  "positive_observations": 36,
+  "negative_cases": [
+    {
+      "case": "drop_missing_observation",
+      "rejected": true
+    },
+    {
+      "case": "duplicate_replaces_observation",
+      "rejected": true
+    },
+    {
+      "case": "switch_object_identity",
+      "rejected": true
+    },
+    {
+      "case": "infer_hidden_box",
+      "rejected": true
+    },
+    {
+      "case": "nan_coordinate",
+      "rejected": true
+    },
+    {
+      "case": "outside_image",
+      "rejected": true
+    },
+    {
+      "case": "zero_area",
+      "rejected": true
+    },
+    {
+      "case": "missing_reason",
+      "rejected": true
+    },
+    {
+      "case": "boolean_frame",
+      "rejected": true
+    },
+    {
+      "case": "first_frame_unseen_identity",
+      "rejected": true
+    },
+    {
+      "case": "missing_source",
+      "rejected": true
+    },
+    {
+      "case": "overwrite_frozen_output",
+      "rejected": true
+    },
+    {
+      "case": "changed_frame_manifest",
+      "rejected": true
+    }
+  ],
+  "scope": "Contract and source binding checks, not semantic annotation accuracy"
+}

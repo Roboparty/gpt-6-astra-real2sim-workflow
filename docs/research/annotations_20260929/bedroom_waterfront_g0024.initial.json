@@ -1,0 +1,30 @@
+{
+  "schema": "real2sim.visible-box-annotations/1",
+  "source_id": "bedroom_waterfront_g0024",
+  "objects": [
+    {
+      "id": "central_reflective_panel",
+      "label": "Large reflective panel between the two dark shelving bays",
+      "identity_description": "The continuous large glossy grey reflective panel flanked by narrow shelving on its left and the wider two-column shelving bay on its right. Include the panel surface and its thin edge only; exclude the separate dark base drawers and reflected furnishings. Do not assume its mechanism or hidden thickness."
+    },
+    {
+      "id": "right_dark_shelving_bay",
+      "label": "Right two-column dark shelving bay and its attached base cabinet",
+      "identity_description": "The dark shelving bay immediately right of the reflective panel, recognizable by a narrow left column containing the orange/yellow 36 book and a wider right column displaying a pale bowl above a dried-stem vase. Include the attached lower cabinet and outer frame, not the white wall trim. This is distinct from the narrower bay at the panel's left."
+    }
+  ],
+  "observations": [
+    {"frame_ordinal": 0, "object_id": "central_reflective_panel", "state": "visible", "bbox_xyxy": [72, 114, 361, 465], "reason": "Reflective panel perimeter is visible; reflections are not separate tracked objects. Its top and bottom are oblique in this view.", "confidence": "medium"},
+    {"frame_ordinal": 0, "object_id": "right_dark_shelving_bay", "state": "partial", "bbox_xyxy": [356, 94, 560, 540], "reason": "The bay and base are identifiable, but the lowest right base edge approaches/is truncated at the image bottom; box contains observed extent only.", "confidence": "medium"},
+    {"frame_ordinal": 1, "object_id": "central_reflective_panel", "state": "visible", "bbox_xyxy": [107, 124, 378, 454], "reason": "Same glossy panel, fully bounded between shelving bays; exclude the separate lower drawer fronts.", "confidence": "medium"},
+    {"frame_ordinal": 1, "object_id": "right_dark_shelving_bay", "state": "visible", "bbox_xyxy": [374, 103, 570, 532], "reason": "Same recognizable two-column bay; top, side and attached base cabinet boundaries remain visible beside the person.", "confidence": "medium"},
+    {"frame_ordinal": 2, "object_id": "central_reflective_panel", "state": "visible", "bbox_xyxy": [201, 130, 446, 447], "reason": "Same panel seen farther from the wall, with all panel edges visible and reflected sofa/plant inside its surface.", "confidence": "medium"},
+    {"frame_ordinal": 2, "object_id": "right_dark_shelving_bay", "state": "visible", "bbox_xyxy": [442, 102, 636, 529], "reason": "36 book, pale bowl and dried-stem vase establish identity; attached lower cabinet and outer boundary are visible.", "confidence": "medium"},
+    {"frame_ordinal": 3, "object_id": "central_reflective_panel", "state": "visible", "bbox_xyxy": [403, 124, 624, 448], "reason": "Same panel remains fully in view between the bays; its oblique upper edge is included and lower drawer cabinet excluded.", "confidence": "medium"},
+    {"frame_ordinal": 3, "object_id": "right_dark_shelving_bay", "state": "partial", "bbox_xyxy": [618, 70, 866, 540], "reason": "Bay is clearly identified, but the attached lower cabinet continues beyond the bottom edge; no hidden extension is estimated.", "confidence": "high"},
+    {"frame_ordinal": 4, "object_id": "central_reflective_panel", "state": "visible", "bbox_xyxy": [576, 89, 860, 483], "reason": "Same panel remains in frame; reflections change with viewpoint but the borders adjoining left and right shelving are visible.", "confidence": "medium"},
+    {"frame_ordinal": 4, "object_id": "right_dark_shelving_bay", "state": "partial", "bbox_xyxy": [850, 57, 960, 540], "reason": "Only the left column and part of base remain at the right edge; 36 book fixes identity. Right column and lower extent are outside the image.", "confidence": "high"},
+    {"frame_ordinal": 5, "object_id": "central_reflective_panel", "state": "partial", "bbox_xyxy": [737, 89, 960, 489], "reason": "The same reflective panel is identified by its adjacency to the left shelving bay, but its right edge and rightmost surface lie outside the frame.", "confidence": "medium"},
+    {"frame_ordinal": 5, "object_id": "right_dark_shelving_bay", "state": "out_of_frame", "bbox_xyxy": null, "reason": "Camera has panned left; the right-side 36-book/bowl bay is beyond the image right edge. The visible narrow shelving is the different left bay and is not substituted.", "confidence": "high"}
+  ]
+}

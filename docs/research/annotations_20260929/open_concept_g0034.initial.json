@@ -1,0 +1,114 @@
+{
+  "schema": "real2sim.visible-box-annotations/1",
+  "source_id": "open_concept_g0034",
+  "objects": [
+    {
+      "id": "living_room_wall_tv",
+      "label": "Wall-mounted television",
+      "identity_description": "Black rectangular television on the tall pale stone chimney breast between two vertical wood-slat wall panels, directly above the horizontal fireplace; excludes the stone surround."
+    },
+    {
+      "id": "living_room_fireplace_insert",
+      "label": "Horizontal fireplace insert",
+      "identity_description": "Black horizontal fireplace opening and its dark rectangular frame directly below the living-room television on the same pale stone chimney breast; excludes the stone hearth and surrounding wall."
+    }
+  ],
+  "observations": [
+    {
+      "frame_ordinal": 0,
+      "object_id": "living_room_wall_tv",
+      "state": "visible",
+      "bbox_xyxy": [345, 306, 420, 351],
+      "reason": "The television screen and outer rectangular silhouette are visible on the pale chimney breast. Screen reflections are part of the observed television appearance.",
+      "confidence": "high"
+    },
+    {
+      "frame_ordinal": 0,
+      "object_id": "living_room_fireplace_insert",
+      "state": "partial",
+      "bbox_xyxy": [339, 367, 419, 395],
+      "reason": "The horizontal dark insert is visible below the television; decor/plant silhouettes overlap its right-hand area. Box encloses the observed dark frame extent only, without extrapolating hidden edges or including the stone hearth.",
+      "confidence": "medium"
+    },
+    {
+      "frame_ordinal": 1,
+      "object_id": "living_room_wall_tv",
+      "state": "visible",
+      "bbox_xyxy": [365, 227, 437, 272],
+      "reason": "Same television remains clearly identifiable above the same fireplace; its full outer silhouette is visible.",
+      "confidence": "high"
+    },
+    {
+      "frame_ordinal": 1,
+      "object_id": "living_room_fireplace_insert",
+      "state": "partial",
+      "bbox_xyxy": [361, 287, 436, 314],
+      "reason": "Same dark fireplace insert remains below the television, with a plant/decor item overlapping the right side. Bounds cover only the observed insert/frame extent.",
+      "confidence": "medium"
+    },
+    {
+      "frame_ordinal": 2,
+      "object_id": "living_room_wall_tv",
+      "state": "out_of_frame",
+      "bbox_xyxy": null,
+      "reason": "Camera now faces the kitchen; the chimney breast and selected television are beyond the left image boundary. No television extent is observed.",
+      "confidence": "high"
+    },
+    {
+      "frame_ordinal": 2,
+      "object_id": "living_room_fireplace_insert",
+      "state": "out_of_frame",
+      "bbox_xyxy": null,
+      "reason": "The selected chimney-breast fireplace has left the image with the television. The visible kitchen cabinetry is a different object.",
+      "confidence": "high"
+    },
+    {
+      "frame_ordinal": 3,
+      "object_id": "living_room_wall_tv",
+      "state": "out_of_frame",
+      "bbox_xyxy": null,
+      "reason": "View covers the kitchen refrigerator, blue door, range and cabinets; the selected living-room television is outside the image.",
+      "confidence": "high"
+    },
+    {
+      "frame_ordinal": 3,
+      "object_id": "living_room_fireplace_insert",
+      "state": "out_of_frame",
+      "bbox_xyxy": null,
+      "reason": "The selected living-room fireplace is outside this kitchen-facing image. The range/oven is not the tracked fireplace.",
+      "confidence": "high"
+    },
+    {
+      "frame_ordinal": 4,
+      "object_id": "living_room_wall_tv",
+      "state": "out_of_frame",
+      "bbox_xyxy": null,
+      "reason": "Kitchen-facing frame has no visible part of the tracked television or its chimney breast; the foreground hand does not justify inferring a hidden television box.",
+      "confidence": "high"
+    },
+    {
+      "frame_ordinal": 4,
+      "object_id": "living_room_fireplace_insert",
+      "state": "out_of_frame",
+      "bbox_xyxy": null,
+      "reason": "The tracked fireplace wall remains outside the image; no visible extent of this fireplace is present.",
+      "confidence": "high"
+    },
+    {
+      "frame_ordinal": 5,
+      "object_id": "living_room_wall_tv",
+      "state": "out_of_frame",
+      "bbox_xyxy": null,
+      "reason": "Kitchen island, refrigerator and range remain in view, but the selected living-room television is still outside the left side of the view.",
+      "confidence": "high"
+    },
+    {
+      "frame_ordinal": 5,
+      "object_id": "living_room_fireplace_insert",
+      "state": "out_of_frame",
+      "bbox_xyxy": null,
+      "reason": "No portion of the selected living-room fireplace is visible in this kitchen-facing frame; identity is not substituted with the range/oven.",
+      "confidence": "high"
+    }
+  ]
+}

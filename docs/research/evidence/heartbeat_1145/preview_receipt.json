@@ -1,0 +1,174 @@
+{
+  "schema": "real2sim.annotation-previews/1",
+  "frames_manifest_sha256": "7304109f95fb441e404d0c7d544320b5b6ce11fb1b4b0a34c1d006fe89dd83f3",
+  "script_sha256": "999797c02c4b8e0b31d55871d1fb930a1fb854d1ec2b3b0f247b965e4f35c6f1",
+  "sources": [
+    {
+      "id": "open_concept_g0034",
+      "frames": [
+        {
+          "ordinal": 0,
+          "decoded_frame_index": 0,
+          "original_sha256": "b850ac374a7baff420b8193c652881d072e3ef790fbf4a1c979c8486a0a42d9b",
+          "preview": "/home/wqz/real2sim_capability_20260929/runs/annotation_previews_001/open_concept_g0034/frame_00.jpg",
+          "preview_sha256": "0b8905a1ce34e32c334ed71b84ef63ff642cc21617c592528332f40fccb7cf74",
+          "preview_bytes": 97027
+        },
+        {
+          "ordinal": 1,
+          "decoded_frame_index": 180,
+          "original_sha256": "d6657c3a6232484ec0b22ff30e837748e81cd526e29b2ed3b5a049cf1ae0a596",
+          "preview": "/home/wqz/real2sim_capability_20260929/runs/annotation_previews_001/open_concept_g0034/frame_01.jpg",
+          "preview_sha256": "337ea793ba0d8b741c23075d672cb29ebef883f99c38fa24237aae056635fcc6",
+          "preview_bytes": 99925
+        },
+        {
+          "ordinal": 2,
+          "decoded_frame_index": 359,
+          "original_sha256": "6f4eb2f0ec7536d9833d317a8213ad38252848b99d7962bb250e0602e96e9a3c",
+          "preview": "/home/wqz/real2sim_capability_20260929/runs/annotation_previews_001/open_concept_g0034/frame_02.jpg",
+          "preview_sha256": "00c030a1f71fda50aad7488d3e05f93fac0b5af2a53315bd7ff5590144f543ae",
+          "preview_bytes": 92065
+        },
+        {
+          "ordinal": 3,
+          "decoded_frame_index": 539,
+          "original_sha256": "735a700a1877636c888812911150fd7f4a9bdd69db7db28704c286719ebe3610",
+          "preview": "/home/wqz/real2sim_capability_20260929/runs/annotation_previews_001/open_concept_g0034/frame_03.jpg",
+          "preview_sha256": "776e28eef72efff3199559a906c4d9beaf0cec57140267be6476fe97114140ed",
+          "preview_bytes": 82200
+        },
+        {
+          "ordinal": 4,
+          "decoded_frame_index": 718,
+          "original_sha256": "1c5ed5f2f9f1de92fb251ec894c74ff428e09a1c43cf71955e584e60e9eb05ee",
+          "preview": "/home/wqz/real2sim_capability_20260929/runs/annotation_previews_001/open_concept_g0034/frame_04.jpg",
+          "preview_sha256": "1d7217d1602cfebd855fff82cd09de7dea338b381aca15cc7acbdbe7fccfa43e",
+          "preview_bytes": 83395
+        },
+        {
+          "ordinal": 5,
+          "decoded_frame_index": 898,
+          "original_sha256": "d1b028c5d571bc2a94cdd4418fcb6a895ae1ac0174d311678803cb6cb4be2bcb",
+          "preview": "/home/wqz/real2sim_capability_20260929/runs/annotation_previews_001/open_concept_g0034/frame_05.jpg",
+          "preview_sha256": "554a9fa167aa02ab09ba98936f4f5a894a283f91485f208011a85c04a3bdc398",
+          "preview_bytes": 81451
+        }
+      ],
+      "overview": "/home/wqz/real2sim_capability_20260929/runs/annotation_previews_001/open_concept_g0034/overview.jpg",
+      "overview_sha256": "1903dface0a3e6164aa3954af6a230858ac69f055482305f4171733ff9b18daa"
+    },
+    {
+      "id": "bedroom_waterfront_g0024",
+      "frames": [
+        {
+          "ordinal": 0,
+          "decoded_frame_index": 0,
+          "original_sha256": "c04bae5a852f9d8927965f68d1fcf753b20e8f2b20cf74ed6259c4a316870fc2",
+          "preview": "/home/wqz/real2sim_capability_20260929/runs/annotation_previews_001/bedroom_waterfront_g0024/frame_00.jpg",
+          "preview_sha256": "b27f151ba749a6797e76d36feef143c5b44695ef3f41f63ae1a0f1bd87df8231",
+          "preview_bytes": 69894
+        },
+        {
+          "ordinal": 1,
+          "decoded_frame_index": 48,
+          "original_sha256": "af1bdaba1656e604ee67b04c7828f70001d8426935e6ef57c7af28f16a475eea",
+          "preview": "/home/wqz/real2sim_capability_20260929/runs/annotation_previews_001/bedroom_waterfront_g0024/frame_01.jpg",
+          "preview_sha256": "fab3d287418167b3d8d045c1fc247303f9291805ee61a9755d0e0c9c11408da6",
+          "preview_bytes": 74069
+        },
+        {
+          "ordinal": 2,
+          "decoded_frame_index": 97,
+          "original_sha256": "972ce97ca6fcaf94ed1ef608ef485e28d4c975ac2eccaa8757943a1ce5ec386b",
+          "preview": "/home/wqz/real2sim_capability_20260929/runs/annotation_previews_001/bedroom_waterfront_g0024/frame_02.jpg",
+          "preview_sha256": "1d3d9123e4e71251baa452d99f0275efa14b256b2beecdcd35dd71d44138e6e3",
+          "preview_bytes": 67007
+        },
+        {
+          "ordinal": 3,
+          "decoded_frame_index": 145,
+          "original_sha256": "003b81a24e50757aebe4fdeb756d93d2ecaeb654eb71e904ecaafabfbdd642f7",
+          "preview": "/home/wqz/real2sim_capability_20260929/runs/annotation_previews_001/bedroom_waterfront_g0024/frame_03.jpg",
+          "preview_sha256": "e7aa7a188c146ca9a1b7ff5363504b79413926d5b57fd86e9d3daf00a0577201",
+          "preview_bytes": 71286
+        },
+        {
+          "ordinal": 4,
+          "decoded_frame_index": 194,
+          "original_sha256": "b963feef455f2ab04e53ee0be21d7b7c99dd67be734020361ddb09136c4fb18b",
+          "preview": "/home/wqz/real2sim_capability_20260929/runs/annotation_previews_001/bedroom_waterfront_g0024/frame_04.jpg",
+          "preview_sha256": "f1e9615bdfce9f1addfb8a0cd22b0693890b94716c09bbca30f5151500d94763",
+          "preview_bytes": 73196
+        },
+        {
+          "ordinal": 5,
+          "decoded_frame_index": 242,
+          "original_sha256": "4e6a7ffe14abb62ad0299ad7b8a9a70f2b62b5fd8b3ccefbee010fad670c2765",
+          "preview": "/home/wqz/real2sim_capability_20260929/runs/annotation_previews_001/bedroom_waterfront_g0024/frame_05.jpg",
+          "preview_sha256": "7d83db9ac7c8a1fa15914af79e9c891e9ca00c66ee643324b18f9e97a5c98fab",
+          "preview_bytes": 73452
+        }
+      ],
+      "overview": "/home/wqz/real2sim_capability_20260929/runs/annotation_previews_001/bedroom_waterfront_g0024/overview.jpg",
+      "overview_sha256": "f089ee8a8dc616c9ea28a5a55d023b8152dd789929808579f9f9c1eedb64d26d"
+    },
+    {
+      "id": "breakfast_nook_kitchen_g0039",
+      "frames": [
+        {
+          "ordinal": 0,
+          "decoded_frame_index": 0,
+          "original_sha256": "97ff0995ee2d7f8f8f6864632768d40b2956032899fd242744e98ea6c6e99709",
+          "preview": "/home/wqz/real2sim_capability_20260929/runs/annotation_previews_001/breakfast_nook_kitchen_g0039/frame_00.jpg",
+          "preview_sha256": "d0bbae30787f040bbef0d803b6d778b207026fd004c32efc5bbbc52159a747ee",
+          "preview_bytes": 74279
+        },
+        {
+          "ordinal": 1,
+          "decoded_frame_index": 180,
+          "original_sha256": "2f900b4927a7be9eed0cedf9e422398aeed877ebdf2da885dc65098bf7fb4445",
+          "preview": "/home/wqz/real2sim_capability_20260929/runs/annotation_previews_001/breakfast_nook_kitchen_g0039/frame_01.jpg",
+          "preview_sha256": "94ef8f34c35010a244110146786de2af5f566770c47a3993b77845eb3c4bfb2f",
+          "preview_bytes": 94904
+        },
+        {
+          "ordinal": 2,
+          "decoded_frame_index": 359,
+          "original_sha256": "d3db20ac076bf4cc3be43ec85f5ddc07486ae441c986b8e831693a052d3a30c6",
+          "preview": "/home/wqz/real2sim_capability_20260929/runs/annotation_previews_001/breakfast_nook_kitchen_g0039/frame_02.jpg",
+          "preview_sha256": "e867834950ac012097e6a69c343099b653d26930952975946e39649c1506ec10",
+          "preview_bytes": 71545
+        },
+        {
+          "ordinal": 3,
+          "decoded_frame_index": 539,
+          "original_sha256": "10e0db870f937f5eb7957b20ab1b52bbd070e6b24b4540155096a3327c98e4ae",
+          "preview": "/home/wqz/real2sim_capability_20260929/runs/annotation_previews_001/breakfast_nook_kitchen_g0039/frame_03.jpg",
+          "preview_sha256": "98f2df6cd5cc9e2f217e125850a551c921f97ab4586d5b7e92ffff64da099ce5",
+          "preview_bytes": 71968
+        },
+        {
+          "ordinal": 4,
+          "decoded_frame_index": 718,
+          "original_sha256": "8a05ba82f497ad03c9089546df00c3142263462efb404d7b3ffc782619e295ab",
+          "preview": "/home/wqz/real2sim_capability_20260929/runs/annotation_previews_001/breakfast_nook_kitchen_g0039/frame_04.jpg",
+          "preview_sha256": "01bb47ca6a750e1fff9740977da71eaa45b3df29dbe33c99b8be1af4489d84a0",
+          "preview_bytes": 85141
+        },
+        {
+          "ordinal": 5,
+          "decoded_frame_index": 898,
+          "original_sha256": "7f816c6445060cb1313ccaf8d89ae8c6cee296290c163bc6eb542c85c88b4e9f",
+          "preview": "/home/wqz/real2sim_capability_20260929/runs/annotation_previews_001/breakfast_nook_kitchen_g0039/frame_05.jpg",
+          "preview_sha256": "37b423a90bd69118dbf0a0bc86209b581a012fa7e18d90788272e6e1a492d35c",
+          "preview_bytes": 78082
+        }
+      ],
+      "overview": "/home/wqz/real2sim_capability_20260929/runs/annotation_previews_001/breakfast_nook_kitchen_g0039/overview.jpg",
+      "overview_sha256": "82dcc5bf2000e71682f13383740482f54302b0fdd6146522b011a17f966f40aa"
+    }
+  ],
+  "scope": "Lossy RGB display copies only; geometry labels must bind original frame hashes, not these previews",
+  "wall_seconds": 0.31613075907807797
+}

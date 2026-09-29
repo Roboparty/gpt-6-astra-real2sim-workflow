@@ -1,0 +1,661 @@
+{
+  "schema": "real2sim.visible-box-freeze/1",
+  "protocol_sha256": "86379fa67ffb5b4892179df189c52a5e03e9d5c56a32331ec06b4b2f7768e7c9",
+  "frames_manifest_sha256": "7304109f95fb441e404d0c7d544320b5b6ce11fb1b4b0a34c1d006fe89dd83f3",
+  "script_sha256": "36ff4b3b3754151880396067ea26bb4d5c4c00f8b8b4aabcbbba97bfdbc3d70e",
+  "data_role": "development_fit; all 18 frames were previously used for SfM, none is held out",
+  "annotation_provenance": "Manual visual estimates by internal agents from hash-bound lossy display previews. Original PNG hashes remain authoritative. These are model-authored annotations, not independent human-reviewed labels.",
+  "boundary_uncertainty_px_assumed": 10,
+  "scope": "Visible bounding-box diagnostic preparation only. No masks, metric geometry, calibration, material labels, complete scene inventory, common editable initialization, or benchmark accuracy is established.",
+  "sources": [
+    {
+      "id": "open_concept_g0034",
+      "source_video_sha256": "5cc92190193a55e8ab6008dfbf44b80a8c70cf9d9c30b851b7a3c24c3855ed49",
+      "annotation_file": "docs\\research\\annotations_20260929\\open_concept_g0034.initial.json",
+      "annotation_sha256": "f6691182b4da78dca72c6b9b48437eaef0dd5ce3a98d5c410e84b36611f1696d",
+      "objects": [
+        {
+          "id": "living_room_wall_tv",
+          "label": "Wall-mounted television",
+          "identity_description": "Black rectangular television on the tall pale stone chimney breast between two vertical wood-slat wall panels, directly above the horizontal fireplace; excludes the stone surround."
+        },
+        {
+          "id": "living_room_fireplace_insert",
+          "label": "Horizontal fireplace insert",
+          "identity_description": "Black horizontal fireplace opening and its dark rectangular frame directly below the living-room television on the same pale stone chimney breast; excludes the stone hearth and surrounding wall."
+        }
+      ],
+      "frames": [
+        {
+          "ordinal": 0,
+          "path": "/home/wqz/real2sim_capability_20260929/runs/video_frames_001/source_000/frame_000000.png",
+          "sha256": "b850ac374a7baff420b8193c652881d072e3ef790fbf4a1c979c8486a0a42d9b",
+          "image_size": [
+            960,
+            540
+          ],
+          "decoded_frame_index": 0,
+          "pts_seconds": "0.000000"
+        },
+        {
+          "ordinal": 1,
+          "path": "/home/wqz/real2sim_capability_20260929/runs/video_frames_001/source_000/frame_000001.png",
+          "sha256": "d6657c3a6232484ec0b22ff30e837748e81cd526e29b2ed3b5a049cf1ae0a596",
+          "image_size": [
+            960,
+            540
+          ],
+          "decoded_frame_index": 180,
+          "pts_seconds": "3.003000"
+        },
+        {
+          "ordinal": 2,
+          "path": "/home/wqz/real2sim_capability_20260929/runs/video_frames_001/source_000/frame_000002.png",
+          "sha256": "6f4eb2f0ec7536d9833d317a8213ad38252848b99d7962bb250e0602e96e9a3c",
+          "image_size": [
+            960,
+            540
+          ],
+          "decoded_frame_index": 359,
+          "pts_seconds": "5.989316"
+        },
+        {
+          "ordinal": 3,
+          "path": "/home/wqz/real2sim_capability_20260929/runs/video_frames_001/source_000/frame_000003.png",
+          "sha256": "735a700a1877636c888812911150fd7f4a9bdd69db7db28704c286719ebe3610",
+          "image_size": [
+            960,
+            540
+          ],
+          "decoded_frame_index": 539,
+          "pts_seconds": "8.992316"
+        },
+        {
+          "ordinal": 4,
+          "path": "/home/wqz/real2sim_capability_20260929/runs/video_frames_001/source_000/frame_000004.png",
+          "sha256": "1c5ed5f2f9f1de92fb251ec894c74ff428e09a1c43cf71955e584e60e9eb05ee",
+          "image_size": [
+            960,
+            540
+          ],
+          "decoded_frame_index": 718,
+          "pts_seconds": "11.978633"
+        },
+        {
+          "ordinal": 5,
+          "path": "/home/wqz/real2sim_capability_20260929/runs/video_frames_001/source_000/frame_000005.png",
+          "sha256": "d1b028c5d571bc2a94cdd4418fcb6a895ae1ac0174d311678803cb6cb4be2bcb",
+          "image_size": [
+            960,
+            540
+          ],
+          "decoded_frame_index": 898,
+          "pts_seconds": "14.981633"
+        }
+      ],
+      "observations": [
+        {
+          "frame_ordinal": 0,
+          "object_id": "living_room_wall_tv",
+          "state": "visible",
+          "bbox_xyxy": [
+            345,
+            306,
+            420,
+            351
+          ],
+          "reason": "The television screen and outer rectangular silhouette are visible on the pale chimney breast. Screen reflections are part of the observed television appearance.",
+          "confidence": "high"
+        },
+        {
+          "frame_ordinal": 0,
+          "object_id": "living_room_fireplace_insert",
+          "state": "partial",
+          "bbox_xyxy": [
+            339,
+            367,
+            419,
+            395
+          ],
+          "reason": "The horizontal dark insert is visible below the television; decor/plant silhouettes overlap its right-hand area. Box encloses the observed dark frame extent only, without extrapolating hidden edges or including the stone hearth.",
+          "confidence": "medium"
+        },
+        {
+          "frame_ordinal": 1,
+          "object_id": "living_room_wall_tv",
+          "state": "visible",
+          "bbox_xyxy": [
+            365,
+            227,
+            437,
+            272
+          ],
+          "reason": "Same television remains clearly identifiable above the same fireplace; its full outer silhouette is visible.",
+          "confidence": "high"
+        },
+        {
+          "frame_ordinal": 1,
+          "object_id": "living_room_fireplace_insert",
+          "state": "partial",
+          "bbox_xyxy": [
+            361,
+            287,
+            436,
+            314
+          ],
+          "reason": "Same dark fireplace insert remains below the television, with a plant/decor item overlapping the right side. Bounds cover only the observed insert/frame extent.",
+          "confidence": "medium"
+        },
+        {
+          "frame_ordinal": 2,
+          "object_id": "living_room_wall_tv",
+          "state": "out_of_frame",
+          "bbox_xyxy": null,
+          "reason": "Camera now faces the kitchen; the chimney breast and selected television are beyond the left image boundary. No television extent is observed.",
+          "confidence": "high"
+        },
+        {
+          "frame_ordinal": 2,
+          "object_id": "living_room_fireplace_insert",
+          "state": "out_of_frame",
+          "bbox_xyxy": null,
+          "reason": "The selected chimney-breast fireplace has left the image with the television. The visible kitchen cabinetry is a different object.",
+          "confidence": "high"
+        },
+        {
+          "frame_ordinal": 3,
+          "object_id": "living_room_wall_tv",
+          "state": "out_of_frame",
+          "bbox_xyxy": null,
+          "reason": "View covers the kitchen refrigerator, blue door, range and cabinets; the selected living-room television is outside the image.",
+          "confidence": "high"
+        },
+        {
+          "frame_ordinal": 3,
+          "object_id": "living_room_fireplace_insert",
+          "state": "out_of_frame",
+          "bbox_xyxy": null,
+          "reason": "The selected living-room fireplace is outside this kitchen-facing image. The range/oven is not the tracked fireplace.",
+          "confidence": "high"
+        },
+        {
+          "frame_ordinal": 4,
+          "object_id": "living_room_wall_tv",
+          "state": "out_of_frame",
+          "bbox_xyxy": null,
+          "reason": "Kitchen-facing frame has no visible part of the tracked television or its chimney breast; the foreground hand does not justify inferring a hidden television box.",
+          "confidence": "high"
+        },
+        {
+          "frame_ordinal": 4,
+          "object_id": "living_room_fireplace_insert",
+          "state": "out_of_frame",
+          "bbox_xyxy": null,
+          "reason": "The tracked fireplace wall remains outside the image; no visible extent of this fireplace is present.",
+          "confidence": "high"
+        },
+        {
+          "frame_ordinal": 5,
+          "object_id": "living_room_wall_tv",
+          "state": "out_of_frame",
+          "bbox_xyxy": null,
+          "reason": "Kitchen island, refrigerator and range remain in view, but the selected living-room television is still outside the left side of the view.",
+          "confidence": "high"
+        },
+        {
+          "frame_ordinal": 5,
+          "object_id": "living_room_fireplace_insert",
+          "state": "out_of_frame",
+          "bbox_xyxy": null,
+          "reason": "No portion of the selected living-room fireplace is visible in this kitchen-facing frame; identity is not substituted with the range/oven.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": "bedroom_waterfront_g0024",
+      "source_video_sha256": "dc98fd19511837ab9c8888556cbd94c2327945072dd8f9ba653e5b8ded904836",
+      "annotation_file": "docs\\research\\annotations_20260929\\bedroom_waterfront_g0024.initial.json",
+      "annotation_sha256": "f1d0a4c2a8c68d0f409c1ec2f8cf01d2e886b0e569c4b42d4826b702535693ac",
+      "objects": [
+        {
+          "id": "central_reflective_panel",
+          "label": "Large reflective panel between the two dark shelving bays",
+          "identity_description": "The continuous large glossy grey reflective panel flanked by narrow shelving on its left and the wider two-column shelving bay on its right. Include the panel surface and its thin edge only; exclude the separate dark base drawers and reflected furnishings. Do not assume its mechanism or hidden thickness."
+        },
+        {
+          "id": "right_dark_shelving_bay",
+          "label": "Right two-column dark shelving bay and its attached base cabinet",
+          "identity_description": "The dark shelving bay immediately right of the reflective panel, recognizable by a narrow left column containing the orange/yellow 36 book and a wider right column displaying a pale bowl above a dried-stem vase. Include the attached lower cabinet and outer frame, not the white wall trim. This is distinct from the narrower bay at the panel's left."
+        }
+      ],
+      "frames": [
+        {
+          "ordinal": 0,
+          "path": "/home/wqz/real2sim_capability_20260929/runs/video_frames_001/source_001/frame_000000.png",
+          "sha256": "c04bae5a852f9d8927965f68d1fcf753b20e8f2b20cf74ed6259c4a316870fc2",
+          "image_size": [
+            960,
+            540
+          ],
+          "decoded_frame_index": 0,
+          "pts_seconds": "0.000000"
+        },
+        {
+          "ordinal": 1,
+          "path": "/home/wqz/real2sim_capability_20260929/runs/video_frames_001/source_001/frame_000001.png",
+          "sha256": "af1bdaba1656e604ee67b04c7828f70001d8426935e6ef57c7af28f16a475eea",
+          "image_size": [
+            960,
+            540
+          ],
+          "decoded_frame_index": 48,
+          "pts_seconds": "1.601600"
+        },
+        {
+          "ordinal": 2,
+          "path": "/home/wqz/real2sim_capability_20260929/runs/video_frames_001/source_001/frame_000002.png",
+          "sha256": "972ce97ca6fcaf94ed1ef608ef485e28d4c975ac2eccaa8757943a1ce5ec386b",
+          "image_size": [
+            960,
+            540
+          ],
+          "decoded_frame_index": 97,
+          "pts_seconds": "3.236567"
+        },
+        {
+          "ordinal": 3,
+          "path": "/home/wqz/real2sim_capability_20260929/runs/video_frames_001/source_001/frame_000003.png",
+          "sha256": "003b81a24e50757aebe4fdeb756d93d2ecaeb654eb71e904ecaafabfbdd642f7",
+          "image_size": [
+            960,
+            540
+          ],
+          "decoded_frame_index": 145,
+          "pts_seconds": "4.838167"
+        },
+        {
+          "ordinal": 4,
+          "path": "/home/wqz/real2sim_capability_20260929/runs/video_frames_001/source_001/frame_000004.png",
+          "sha256": "b963feef455f2ab04e53ee0be21d7b7c99dd67be734020361ddb09136c4fb18b",
+          "image_size": [
+            960,
+            540
+          ],
+          "decoded_frame_index": 194,
+          "pts_seconds": "6.473133"
+        },
+        {
+          "ordinal": 5,
+          "path": "/home/wqz/real2sim_capability_20260929/runs/video_frames_001/source_001/frame_000005.png",
+          "sha256": "4e6a7ffe14abb62ad0299ad7b8a9a70f2b62b5fd8b3ccefbee010fad670c2765",
+          "image_size": [
+            960,
+            540
+          ],
+          "decoded_frame_index": 242,
+          "pts_seconds": "8.074733"
+        }
+      ],
+      "observations": [
+        {
+          "frame_ordinal": 0,
+          "object_id": "central_reflective_panel",
+          "state": "visible",
+          "bbox_xyxy": [
+            72,
+            114,
+            361,
+            465
+          ],
+          "reason": "Reflective panel perimeter is visible; reflections are not separate tracked objects. Its top and bottom are oblique in this view.",
+          "confidence": "medium"
+        },
+        {
+          "frame_ordinal": 0,
+          "object_id": "right_dark_shelving_bay",
+          "state": "partial",
+          "bbox_xyxy": [
+            356,
+            94,
+            560,
+            540
+          ],
+          "reason": "The bay and base are identifiable, but the lowest right base edge approaches/is truncated at the image bottom; box contains observed extent only.",
+          "confidence": "medium"
+        },
+        {
+          "frame_ordinal": 1,
+          "object_id": "central_reflective_panel",
+          "state": "visible",
+          "bbox_xyxy": [
+            107,
+            124,
+            378,
+            454
+          ],
+          "reason": "Same glossy panel, fully bounded between shelving bays; exclude the separate lower drawer fronts.",
+          "confidence": "medium"
+        },
+        {
+          "frame_ordinal": 1,
+          "object_id": "right_dark_shelving_bay",
+          "state": "visible",
+          "bbox_xyxy": [
+            374,
+            103,
+            570,
+            532
+          ],
+          "reason": "Same recognizable two-column bay; top, side and attached base cabinet boundaries remain visible beside the person.",
+          "confidence": "medium"
+        },
+        {
+          "frame_ordinal": 2,
+          "object_id": "central_reflective_panel",
+          "state": "visible",
+          "bbox_xyxy": [
+            201,
+            130,
+            446,
+            447
+          ],
+          "reason": "Same panel seen farther from the wall, with all panel edges visible and reflected sofa/plant inside its surface.",
+          "confidence": "medium"
+        },
+        {
+          "frame_ordinal": 2,
+          "object_id": "right_dark_shelving_bay",
+          "state": "visible",
+          "bbox_xyxy": [
+            442,
+            102,
+            636,
+            529
+          ],
+          "reason": "36 book, pale bowl and dried-stem vase establish identity; attached lower cabinet and outer boundary are visible.",
+          "confidence": "medium"
+        },
+        {
+          "frame_ordinal": 3,
+          "object_id": "central_reflective_panel",
+          "state": "visible",
+          "bbox_xyxy": [
+            403,
+            124,
+            624,
+            448
+          ],
+          "reason": "Same panel remains fully in view between the bays; its oblique upper edge is included and lower drawer cabinet excluded.",
+          "confidence": "medium"
+        },
+        {
+          "frame_ordinal": 3,
+          "object_id": "right_dark_shelving_bay",
+          "state": "partial",
+          "bbox_xyxy": [
+            618,
+            70,
+            866,
+            540
+          ],
+          "reason": "Bay is clearly identified, but the attached lower cabinet continues beyond the bottom edge; no hidden extension is estimated.",
+          "confidence": "high"
+        },
+        {
+          "frame_ordinal": 4,
+          "object_id": "central_reflective_panel",
+          "state": "visible",
+          "bbox_xyxy": [
+            576,
+            89,
+            860,
+            483
+          ],
+          "reason": "Same panel remains in frame; reflections change with viewpoint but the borders adjoining left and right shelving are visible.",
+          "confidence": "medium"
+        },
+        {
+          "frame_ordinal": 4,
+          "object_id": "right_dark_shelving_bay",
+          "state": "partial",
+          "bbox_xyxy": [
+            850,
+            57,
+            960,
+            540
+          ],
+          "reason": "Only the left column and part of base remain at the right edge; 36 book fixes identity. Right column and lower extent are outside the image.",
+          "confidence": "high"
+        },
+        {
+          "frame_ordinal": 5,
+          "object_id": "central_reflective_panel",
+          "state": "partial",
+          "bbox_xyxy": [
+            737,
+            89,
+            960,
+            489
+          ],
+          "reason": "The same reflective panel is identified by its adjacency to the left shelving bay, but its right edge and rightmost surface lie outside the frame.",
+          "confidence": "medium"
+        },
+        {
+          "frame_ordinal": 5,
+          "object_id": "right_dark_shelving_bay",
+          "state": "out_of_frame",
+          "bbox_xyxy": null,
+          "reason": "Camera has panned left; the right-side 36-book/bowl bay is beyond the image right edge. The visible narrow shelving is the different left bay and is not substituted.",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": "breakfast_nook_kitchen_g0039",
+      "source_video_sha256": "1633ab49a325265c445861d217dce47aa84f2a3b221f5cd6077bf186811636f0",
+      "annotation_file": "docs\\research\\annotations_20260929\\breakfast_nook_kitchen_g0039.initial.json",
+      "annotation_sha256": "57d925b7731e757937213aa07023381c960ae160fa5afaa7b4bf09d4d9dcb78c",
+      "objects": [
+        {
+          "id": "wall_clock",
+          "label": "Round black wall clock",
+          "identity_description": "The black round clock with pale rim and white numerals on the beige wall to the right of the patio doorway in frame 0. Include the clock face and rim, not its cast shadow. This identity does not include the abstract wall painting seen later."
+        },
+        {
+          "id": "floor_vase_vessel",
+          "label": "Tall dark fluted floor vase vessel",
+          "identity_description": "The tall nearly black fluted vase standing on the floor beside the right curtain in frame 0. The object is the vase vessel only, excluding all branches, flowers and foliage. It is not the pink tabletop flower bowl or the kitchen succulent pot seen later."
+        }
+      ],
+      "frames": [
+        {
+          "ordinal": 0,
+          "path": "/home/wqz/real2sim_capability_20260929/runs/video_frames_001/source_002/frame_000000.png",
+          "sha256": "97ff0995ee2d7f8f8f6864632768d40b2956032899fd242744e98ea6c6e99709",
+          "image_size": [
+            960,
+            540
+          ],
+          "decoded_frame_index": 0,
+          "pts_seconds": "0.000000"
+        },
+        {
+          "ordinal": 1,
+          "path": "/home/wqz/real2sim_capability_20260929/runs/video_frames_001/source_002/frame_000001.png",
+          "sha256": "2f900b4927a7be9eed0cedf9e422398aeed877ebdf2da885dc65098bf7fb4445",
+          "image_size": [
+            960,
+            540
+          ],
+          "decoded_frame_index": 180,
+          "pts_seconds": "3.003000"
+        },
+        {
+          "ordinal": 2,
+          "path": "/home/wqz/real2sim_capability_20260929/runs/video_frames_001/source_002/frame_000002.png",
+          "sha256": "d3db20ac076bf4cc3be43ec85f5ddc07486ae441c986b8e831693a052d3a30c6",
+          "image_size": [
+            960,
+            540
+          ],
+          "decoded_frame_index": 359,
+          "pts_seconds": "5.989317"
+        },
+        {
+          "ordinal": 3,
+          "path": "/home/wqz/real2sim_capability_20260929/runs/video_frames_001/source_002/frame_000003.png",
+          "sha256": "10e0db870f937f5eb7957b20ab1b52bbd070e6b24b4540155096a3327c98e4ae",
+          "image_size": [
+            960,
+            540
+          ],
+          "decoded_frame_index": 539,
+          "pts_seconds": "8.992317"
+        },
+        {
+          "ordinal": 4,
+          "path": "/home/wqz/real2sim_capability_20260929/runs/video_frames_001/source_002/frame_000004.png",
+          "sha256": "8a05ba82f497ad03c9089546df00c3142263462efb404d7b3ffc782619e295ab",
+          "image_size": [
+            960,
+            540
+          ],
+          "decoded_frame_index": 718,
+          "pts_seconds": "11.978633"
+        },
+        {
+          "ordinal": 5,
+          "path": "/home/wqz/real2sim_capability_20260929/runs/video_frames_001/source_002/frame_000005.png",
+          "sha256": "7f816c6445060cb1313ccaf8d89ae8c6cee296290c163bc6eb542c85c88b4e9f",
+          "image_size": [
+            960,
+            540
+          ],
+          "decoded_frame_index": 898,
+          "pts_seconds": "14.981633"
+        }
+      ],
+      "observations": [
+        {
+          "frame_ordinal": 0,
+          "object_id": "wall_clock",
+          "state": "visible",
+          "bbox_xyxy": [
+            285,
+            54,
+            392,
+            165
+          ],
+          "reason": "Clock face and pale outer rim are visible on the beige wall; box excludes the slight surrounding shadow. Coordinates are visual estimates from the provided preview.",
+          "confidence": "high"
+        },
+        {
+          "frame_ordinal": 0,
+          "object_id": "floor_vase_vessel",
+          "state": "partial",
+          "bbox_xyxy": [
+            657,
+            367,
+            722,
+            533
+          ],
+          "reason": "Visible dark vessel body and base are boxed. Hanging flowers and foliage obscure the upper neck and lip, so the box does not infer a hidden mouth or include the floral arrangement. The upper boundary is less certain than the body and base.",
+          "confidence": "medium"
+        },
+        {
+          "frame_ordinal": 1,
+          "object_id": "wall_clock",
+          "state": "out_of_frame",
+          "bbox_xyxy": null,
+          "reason": "Camera now faces the breakfast table and patio doorway; the clock-bearing wall beyond the doorway's right side is outside the view. No part of the clock is visible.",
+          "confidence": "high"
+        },
+        {
+          "frame_ordinal": 1,
+          "object_id": "floor_vase_vessel",
+          "state": "out_of_frame",
+          "bbox_xyxy": null,
+          "reason": "The floor vase beside the curtain in frame 0 is outside the right side of this view. The pink bowl on the breakfast table is a different object and is not substituted.",
+          "confidence": "high"
+        },
+        {
+          "frame_ordinal": 2,
+          "object_id": "wall_clock",
+          "state": "out_of_frame",
+          "bbox_xyxy": null,
+          "reason": "View faces the kitchen and breakfast table. The abstract rectangular painting is visible, but the fixed round wall-clock identity is outside the view.",
+          "confidence": "high"
+        },
+        {
+          "frame_ordinal": 2,
+          "object_id": "floor_vase_vessel",
+          "state": "out_of_frame",
+          "bbox_xyxy": null,
+          "reason": "The original curtain-side floor vase is outside the view. The visible pink tabletop bowl and countertop plant pot are different identities.",
+          "confidence": "high"
+        },
+        {
+          "frame_ordinal": 3,
+          "object_id": "wall_clock",
+          "state": "out_of_frame",
+          "bbox_xyxy": null,
+          "reason": "Kitchen cabinets, appliances and a sliver of the abstract painting are visible; none of the round clock is in frame.",
+          "confidence": "high"
+        },
+        {
+          "frame_ordinal": 3,
+          "object_id": "floor_vase_vessel",
+          "state": "out_of_frame",
+          "bbox_xyxy": null,
+          "reason": "Camera faces further into the kitchen and the original floor vase is outside the view. The countertop planter is not the tracked vessel.",
+          "confidence": "high"
+        },
+        {
+          "frame_ordinal": 4,
+          "object_id": "wall_clock",
+          "state": "out_of_frame",
+          "bbox_xyxy": null,
+          "reason": "Close kitchen view contains the stove, microwave, sink and cabinets; the round clock from the patio-side wall is outside the view.",
+          "confidence": "high"
+        },
+        {
+          "frame_ordinal": 4,
+          "object_id": "floor_vase_vessel",
+          "state": "out_of_frame",
+          "bbox_xyxy": null,
+          "reason": "The large foreground patterned planter is a different object. No visible part of the tracked dark floor vase remains in this kitchen view.",
+          "confidence": "high"
+        },
+        {
+          "frame_ordinal": 5,
+          "object_id": "wall_clock",
+          "state": "out_of_frame",
+          "bbox_xyxy": null,
+          "reason": "Final close view is of the kitchen stove, microwave and sink; the tracked clock is outside the view.",
+          "confidence": "high"
+        },
+        {
+          "frame_ordinal": 5,
+          "object_id": "floor_vase_vessel",
+          "state": "out_of_frame",
+          "bbox_xyxy": null,
+          "reason": "Final kitchen view does not contain the curtain-side floor vase. Kitchen pitchers, pots and the sink-side ornament are different identities.",
+          "confidence": "high"
+        }
+      ]
+    }
+  ],
+  "coverage": {
+    "sources": 3,
+    "frames": 18,
+    "objects": 6,
+    "observations": 36,
+    "states": {
+      "visible": 10,
+      "partial": 7,
+      "out_of_frame": 19
+    }
+  },
+  "validation": "Representation and manifest binding passed; semantic/manual review is separate, no image accuracy assertion"
+}
