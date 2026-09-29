@@ -7,12 +7,20 @@
   "baseline_commit": "f0e61696e0b1d1b56f2a4df2404ed2cb0d1fff69",
   "working_branch": "codex/real2sim-capability-research-20260929",
   "first_implementation_commit": "da41861176e57b5de05f7e14599b46df3078e4f8",
-  "continuation": {"automation_id": "real2sim", "kind": "thread heartbeat", "frequency": "hourly", "status": "active"},
-  "pull_request": {"status": "not_created", "reason": "GitHub connector returned 403 Resource not accessible by integration; Chrome control could not load request-header policy twice. Research branch push succeeded."},
+  "continuation": {
+    "automation_id": "real2sim",
+    "kind": "thread heartbeat",
+    "frequency": "hourly",
+    "status": "active"
+  },
+  "pull_request": {
+    "status": "not_created",
+    "reason": "GitHub connector returned 403 Resource not accessible by integration; Chrome control could not load request-header policy twice. Research branch push succeeded."
+  },
   "remote_root": "4090-1:/home/wqz/real2sim_capability_20260929",
   "protocol": "PROTOCOL_20260929.md",
   "result": "RESULTS_20260929.md",
-  "latest_update": "UPDATE_20260929T0724.md",
+  "latest_update": "UPDATE_20260929T0825.md",
   "completed": [
     "Matched retained-room collision failure reproduction and repair",
     "Rectangular opening handling and false-pass negative tests",
@@ -24,9 +32,13 @@
     "14-script regression suite, Blender mask oracle, actual room fitting overlays",
     "Three comparator code revisions pinned; inaccessible fourth comparator retained",
     "Three public development videos acquired remotely with exact hashes and complete decode",
-    "Single multi-part assembly audit/review repaired and verified in actual Blender; 21 contract cases passed"
+    "Single multi-part assembly audit/review repaired and verified in actual Blender; 21 contract cases passed",
+    "Eighteen original-resolution development frames frozen by exact presentation timestamps",
+    "CPU sparse-camera initializer tested on all three sources; only one source fully registered, failures retained",
+    "Retained-room two-arm feedback pilot inputs and fixed budget frozen; not yet executed"
   ],
   "next": [
+    "Execute PILOT_AB_PROTOCOL_20260929.json with two fresh local agents and prescribed two-round endpoint",
     "Complete frame, camera, annotation, metric and budget protocol for the frozen three-video development cohort; resolve independent held-out data",
     "Run an agent A/B with and without geometric feedback at identical model settings and budget",
     "Resolve actual appearance defects and fine part feedback rather than optimize coarse cabinet silhouettes",
@@ -35,11 +47,29 @@
     "Fix zero-furniture and single-part/no-joint workflow coverage and implement evaluated landmark bindings"
   ],
   "retained_attempts": [
-    "collision_001", "collision_openings_001", "collision_final_001",
-    "geometry_instrument_001", "blender_feedback_001",
-    "optional_dynamics_001", "research_checks_001", "research_checks_002",
-    "room_geometry_reference_001", "room_geometry_baseline_001",
-    "single_assembly_001", "single_assembly_002", "video_sources_001"
+    "collision_001",
+    "collision_openings_001",
+    "collision_final_001",
+    "geometry_instrument_001",
+    "blender_feedback_001",
+    "optional_dynamics_001",
+    "research_checks_001",
+    "research_checks_002",
+    "room_geometry_reference_001",
+    "room_geometry_baseline_001",
+    "single_assembly_001",
+    "single_assembly_002",
+    "video_sources_001",
+    "pycolmap_install_001",
+    "frame_selection_test_001",
+    "video_frames_001",
+    "sfm_init_001",
+    "sfm_init_002",
+    "sfm_init_003",
+    "sfm_init_004",
+    "sfm_init_005",
+    "frame_selection_test_002",
+    "feature_count_audit_001"
   ],
   "resource_accounting": {
     "new_gpu_hours": 0,
@@ -48,7 +78,11 @@
     "heartbeat_0724_selected_run_wall_seconds": 102.68742876197211,
     "heartbeat_0724_remote_download_bytes": 7523223,
     "single_assembly_candidate_revisions_used": 1,
-    "note": "CPU test/render wall times are retained in run records/logs; agent cost unknown. GPU/CPU budgets in protocol must not reset across continuations."
+    "note": "CPU test/render wall times are retained in run records/logs; agent cost unknown. GPU/CPU budgets in protocol must not reset across continuations.",
+    "heartbeat_0825_selected_run_wall_seconds": 38.66497328109108,
+    "camera_initialization_attempts_used": 5,
+    "camera_initialization_full_sources": "1/3",
+    "camera_runtime_addon": "pycolmap4.2.0 isolated target; existing Python/NumPy preserved"
   },
   "constraints": [
     "Do not overwrite historical candidates, source photographs or failed evidence",

@@ -1,0 +1,198 @@
+{
+  "sfm_init_001": {
+    "open_concept_g0034": [
+      {
+        "image_id": 1,
+        "count": 3252,
+        "keypoint_data_sha256": "cc5ff593a019b494bd00e4ac4f58fc0f617f5bdb06ada029936e1eebbfc2a901"
+      },
+      {
+        "image_id": 2,
+        "count": 3480,
+        "keypoint_data_sha256": "33487c0e0b1840ca5389817d743fcf3edd913fc67f0d9b8e4bd6679f9cf5e383"
+      },
+      {
+        "image_id": 3,
+        "count": 2501,
+        "keypoint_data_sha256": "244d1a34969aa296b81d0b7599fc4f94a74d13b8bd42724e53ec64dd08c2f4a0"
+      },
+      {
+        "image_id": 4,
+        "count": 3207,
+        "keypoint_data_sha256": "29ebfca1ccad5eee8278f8e0b5a8839d8b9b2d4ea3cc35363ac753bf729d15fc"
+      },
+      {
+        "image_id": 5,
+        "count": 2353,
+        "keypoint_data_sha256": "19d9cd48f30ffb99ea05a52c619121a5b2bcb7e98ed84a80496905425a1445f4"
+      },
+      {
+        "image_id": 6,
+        "count": 2554,
+        "keypoint_data_sha256": "6d496ab9084f53bd5266282810ca6cddbbd1b33793ffe068bf3127c8e5f199b3"
+      }
+    ],
+    "bedroom_waterfront_g0024": [
+      {
+        "image_id": 1,
+        "count": 1582,
+        "keypoint_data_sha256": "8642609e4cd8ca36e34338d94683603fc9885348f1acaf169597169e0a5a2545"
+      },
+      {
+        "image_id": 2,
+        "count": 1762,
+        "keypoint_data_sha256": "54cddfa37d70ec37072d331b7a23f88da6b2c88a74cd8be24bbc9e568dcc9b6b"
+      },
+      {
+        "image_id": 3,
+        "count": 1508,
+        "keypoint_data_sha256": "2386ccb201867a9578162629fcf81300c5792f7069cb4880d888e24156cd2ec1"
+      },
+      {
+        "image_id": 4,
+        "count": 1947,
+        "keypoint_data_sha256": "76d259aa1cde6a5fab24b0add8f40ab7167e73732f2d253a925ac3b5e1b9452c"
+      },
+      {
+        "image_id": 5,
+        "count": 2121,
+        "keypoint_data_sha256": "94973860af2aa1fe91c5f85bbc30d04d3a9e9caffaf018c0223a99a01508201f"
+      },
+      {
+        "image_id": 6,
+        "count": 2140,
+        "keypoint_data_sha256": "b704dbf2de13a6a1b76a63d8b19cb1fbbd0d8a53f0bf4e7153481522ab3bcbe0"
+      }
+    ],
+    "breakfast_nook_kitchen_g0039": [
+      {
+        "image_id": 1,
+        "count": 3010,
+        "keypoint_data_sha256": "b9a94c026132bbcb394897ae4e48dd0acbae80fffbda5c7b6c62ce048ad6049f"
+      },
+      {
+        "image_id": 2,
+        "count": 3753,
+        "keypoint_data_sha256": "a05f0895dc5166ea49044a01acedf0374e1d8fe5a930bb17164f950b0c991bd6"
+      },
+      {
+        "image_id": 3,
+        "count": 2001,
+        "keypoint_data_sha256": "10df7f4f96a9d1170ee95aaa1d6a6a98079e9c54c68b1fca709304aa0f3a3963"
+      },
+      {
+        "image_id": 4,
+        "count": 1902,
+        "keypoint_data_sha256": "c024be1550080d7256bc2dc74658a0d68ae5276f3cc9ea63d24d8cbe62bbe199"
+      },
+      {
+        "image_id": 5,
+        "count": 1663,
+        "keypoint_data_sha256": "a1f56f85c4fed6f6b6097ce64c58125b28c288a05a53849ed0950c046d9aed99"
+      },
+      {
+        "image_id": 6,
+        "count": 3076,
+        "keypoint_data_sha256": "befc4cbb79e1056af97d9a2f279fff9e04ebcfebda5115ec503ad1ade4097a02"
+      }
+    ]
+  },
+  "sfm_init_002": {
+    "open_concept_g0034": [
+      {
+        "image_id": 1,
+        "count": 3252,
+        "keypoint_data_sha256": "cc5ff593a019b494bd00e4ac4f58fc0f617f5bdb06ada029936e1eebbfc2a901"
+      },
+      {
+        "image_id": 2,
+        "count": 3480,
+        "keypoint_data_sha256": "33487c0e0b1840ca5389817d743fcf3edd913fc67f0d9b8e4bd6679f9cf5e383"
+      },
+      {
+        "image_id": 3,
+        "count": 2501,
+        "keypoint_data_sha256": "244d1a34969aa296b81d0b7599fc4f94a74d13b8bd42724e53ec64dd08c2f4a0"
+      },
+      {
+        "image_id": 4,
+        "count": 3207,
+        "keypoint_data_sha256": "29ebfca1ccad5eee8278f8e0b5a8839d8b9b2d4ea3cc35363ac753bf729d15fc"
+      },
+      {
+        "image_id": 5,
+        "count": 2353,
+        "keypoint_data_sha256": "19d9cd48f30ffb99ea05a52c619121a5b2bcb7e98ed84a80496905425a1445f4"
+      },
+      {
+        "image_id": 6,
+        "count": 2554,
+        "keypoint_data_sha256": "6d496ab9084f53bd5266282810ca6cddbbd1b33793ffe068bf3127c8e5f199b3"
+      }
+    ],
+    "bedroom_waterfront_g0024": [
+      {
+        "image_id": 1,
+        "count": 1582,
+        "keypoint_data_sha256": "8642609e4cd8ca36e34338d94683603fc9885348f1acaf169597169e0a5a2545"
+      },
+      {
+        "image_id": 2,
+        "count": 1762,
+        "keypoint_data_sha256": "54cddfa37d70ec37072d331b7a23f88da6b2c88a74cd8be24bbc9e568dcc9b6b"
+      },
+      {
+        "image_id": 3,
+        "count": 1508,
+        "keypoint_data_sha256": "2386ccb201867a9578162629fcf81300c5792f7069cb4880d888e24156cd2ec1"
+      },
+      {
+        "image_id": 4,
+        "count": 1947,
+        "keypoint_data_sha256": "76d259aa1cde6a5fab24b0add8f40ab7167e73732f2d253a925ac3b5e1b9452c"
+      },
+      {
+        "image_id": 5,
+        "count": 2121,
+        "keypoint_data_sha256": "94973860af2aa1fe91c5f85bbc30d04d3a9e9caffaf018c0223a99a01508201f"
+      },
+      {
+        "image_id": 6,
+        "count": 2140,
+        "keypoint_data_sha256": "b704dbf2de13a6a1b76a63d8b19cb1fbbd0d8a53f0bf4e7153481522ab3bcbe0"
+      }
+    ],
+    "breakfast_nook_kitchen_g0039": [
+      {
+        "image_id": 1,
+        "count": 3010,
+        "keypoint_data_sha256": "b9a94c026132bbcb394897ae4e48dd0acbae80fffbda5c7b6c62ce048ad6049f"
+      },
+      {
+        "image_id": 2,
+        "count": 3753,
+        "keypoint_data_sha256": "a05f0895dc5166ea49044a01acedf0374e1d8fe5a930bb17164f950b0c991bd6"
+      },
+      {
+        "image_id": 3,
+        "count": 2001,
+        "keypoint_data_sha256": "10df7f4f96a9d1170ee95aaa1d6a6a98079e9c54c68b1fca709304aa0f3a3963"
+      },
+      {
+        "image_id": 4,
+        "count": 1902,
+        "keypoint_data_sha256": "c024be1550080d7256bc2dc74658a0d68ae5276f3cc9ea63d24d8cbe62bbe199"
+      },
+      {
+        "image_id": 5,
+        "count": 1663,
+        "keypoint_data_sha256": "a1f56f85c4fed6f6b6097ce64c58125b28c288a05a53849ed0950c046d9aed99"
+      },
+      {
+        "image_id": 6,
+        "count": 3076,
+        "keypoint_data_sha256": "befc4cbb79e1056af97d9a2f279fff9e04ebcfebda5115ec503ad1ade4097a02"
+      }
+    ]
+  }
+}

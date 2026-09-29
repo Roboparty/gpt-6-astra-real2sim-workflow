@@ -1,0 +1,712 @@
+{
+  "schema": "real2sim.video-frame-freeze/1",
+  "status": "frozen",
+  "source_receipt_path": "/home/wqz/real2sim_capability_20260929/runs/video_sources_001/receipt.json",
+  "sources": [
+    {
+      "id": "open_concept_g0034",
+      "source_path": "/home/wqz/real2sim_capability_20260929/runs/video_sources_001/open_concept_g0034/source.mp4",
+      "expected_source_sha256": "5cc92190193a55e8ab6008dfbf44b80a8c70cf9d9c30b851b7a3c24c3855ed49",
+      "status": "frozen",
+      "selected_frames": [
+        {
+          "position_fraction": "0",
+          "decoded_frame_index": 0,
+          "target_timestamp_seconds": "0",
+          "target_timestamp_exact": [
+            "0",
+            "1"
+          ],
+          "best_effort_timestamp_time": "0.000000",
+          "distance_to_target_seconds": "0",
+          "path": "/home/wqz/real2sim_capability_20260929/runs/video_frames_001/source_000/frame_000000.png",
+          "sha256": "b850ac374a7baff420b8193c652881d072e3ef790fbf4a1c979c8486a0a42d9b",
+          "bytes": 741575,
+          "image_size": [
+            960,
+            540
+          ]
+        },
+        {
+          "position_fraction": "0.2",
+          "decoded_frame_index": 180,
+          "target_timestamp_seconds": "2.9963266",
+          "target_timestamp_exact": [
+            "14981633",
+            "5000000"
+          ],
+          "best_effort_timestamp_time": "3.003000",
+          "distance_to_target_seconds": "0.0066734",
+          "path": "/home/wqz/real2sim_capability_20260929/runs/video_frames_001/source_000/frame_000001.png",
+          "sha256": "d6657c3a6232484ec0b22ff30e837748e81cd526e29b2ed3b5a049cf1ae0a596",
+          "bytes": 891844,
+          "image_size": [
+            960,
+            540
+          ]
+        },
+        {
+          "position_fraction": "0.4",
+          "decoded_frame_index": 359,
+          "target_timestamp_seconds": "5.9926532",
+          "target_timestamp_exact": [
+            "14981633",
+            "2500000"
+          ],
+          "best_effort_timestamp_time": "5.989316",
+          "distance_to_target_seconds": "0.0033372",
+          "path": "/home/wqz/real2sim_capability_20260929/runs/video_frames_001/source_000/frame_000002.png",
+          "sha256": "6f4eb2f0ec7536d9833d317a8213ad38252848b99d7962bb250e0602e96e9a3c",
+          "bytes": 844428,
+          "image_size": [
+            960,
+            540
+          ]
+        },
+        {
+          "position_fraction": "0.6",
+          "decoded_frame_index": 539,
+          "target_timestamp_seconds": "8.9889798",
+          "target_timestamp_exact": [
+            "44944899",
+            "5000000"
+          ],
+          "best_effort_timestamp_time": "8.992316",
+          "distance_to_target_seconds": "0.0033362",
+          "path": "/home/wqz/real2sim_capability_20260929/runs/video_frames_001/source_000/frame_000003.png",
+          "sha256": "735a700a1877636c888812911150fd7f4a9bdd69db7db28704c286719ebe3610",
+          "bytes": 707941,
+          "image_size": [
+            960,
+            540
+          ]
+        },
+        {
+          "position_fraction": "0.8",
+          "decoded_frame_index": 718,
+          "target_timestamp_seconds": "11.9853064",
+          "target_timestamp_exact": [
+            "14981633",
+            "1250000"
+          ],
+          "best_effort_timestamp_time": "11.978633",
+          "distance_to_target_seconds": "0.0066734",
+          "path": "/home/wqz/real2sim_capability_20260929/runs/video_frames_001/source_000/frame_000004.png",
+          "sha256": "1c5ed5f2f9f1de92fb251ec894c74ff428e09a1c43cf71955e584e60e9eb05ee",
+          "bytes": 735675,
+          "image_size": [
+            960,
+            540
+          ]
+        },
+        {
+          "position_fraction": "1",
+          "decoded_frame_index": 898,
+          "target_timestamp_seconds": "14.981633",
+          "target_timestamp_exact": [
+            "14981633",
+            "1000000"
+          ],
+          "best_effort_timestamp_time": "14.981633",
+          "distance_to_target_seconds": "0",
+          "path": "/home/wqz/real2sim_capability_20260929/runs/video_frames_001/source_000/frame_000005.png",
+          "sha256": "d1b028c5d571bc2a94cdd4418fcb6a895ae1ac0174d311678803cb6cb4be2bcb",
+          "bytes": 714340,
+          "image_size": [
+            960,
+            540
+          ]
+        }
+      ],
+      "error": null,
+      "source_sha256_before": "5cc92190193a55e8ab6008dfbf44b80a8c70cf9d9c30b851b7a3c24c3855ed49",
+      "source_bytes": 3134587,
+      "probe_sha256": "1feec49435de09b85f5bdb715701652e6b04eded242b6faf047cc4f7e2581334",
+      "video": {
+        "index": 0,
+        "codec_name": "h264",
+        "width": 960,
+        "height": 540,
+        "sample_aspect_ratio": "1:1",
+        "nb_frames": "899",
+        "disposition": {
+          "default": 1,
+          "dub": 0,
+          "original": 0,
+          "comment": 0,
+          "lyrics": 0,
+          "karaoke": 0,
+          "forced": 0,
+          "hearing_impaired": 0,
+          "visual_impaired": 0,
+          "clean_effects": 0,
+          "attached_pic": 0,
+          "timed_thumbnails": 0
+        },
+        "tags": {
+          "language": "eng",
+          "handler_name": "VideoHandler",
+          "vendor_id": "[0][0][0][0]",
+          "encoder": "Lavc60.31.102 libx264"
+        }
+      },
+      "decoded_frame_count": 899,
+      "first_timestamp_time": "0.000000",
+      "last_timestamp_time": "14.981633",
+      "pts_span_seconds": "14.981633",
+      "selection": [
+        {
+          "position_fraction": "0",
+          "decoded_frame_index": 0,
+          "target_timestamp_seconds": "0",
+          "target_timestamp_exact": [
+            "0",
+            "1"
+          ],
+          "best_effort_timestamp_time": "0.000000",
+          "distance_to_target_seconds": "0"
+        },
+        {
+          "position_fraction": "0.2",
+          "decoded_frame_index": 180,
+          "target_timestamp_seconds": "2.9963266",
+          "target_timestamp_exact": [
+            "14981633",
+            "5000000"
+          ],
+          "best_effort_timestamp_time": "3.003000",
+          "distance_to_target_seconds": "0.0066734"
+        },
+        {
+          "position_fraction": "0.4",
+          "decoded_frame_index": 359,
+          "target_timestamp_seconds": "5.9926532",
+          "target_timestamp_exact": [
+            "14981633",
+            "2500000"
+          ],
+          "best_effort_timestamp_time": "5.989316",
+          "distance_to_target_seconds": "0.0033372"
+        },
+        {
+          "position_fraction": "0.6",
+          "decoded_frame_index": 539,
+          "target_timestamp_seconds": "8.9889798",
+          "target_timestamp_exact": [
+            "44944899",
+            "5000000"
+          ],
+          "best_effort_timestamp_time": "8.992316",
+          "distance_to_target_seconds": "0.0033362"
+        },
+        {
+          "position_fraction": "0.8",
+          "decoded_frame_index": 718,
+          "target_timestamp_seconds": "11.9853064",
+          "target_timestamp_exact": [
+            "14981633",
+            "1250000"
+          ],
+          "best_effort_timestamp_time": "11.978633",
+          "distance_to_target_seconds": "0.0066734"
+        },
+        {
+          "position_fraction": "1",
+          "decoded_frame_index": 898,
+          "target_timestamp_seconds": "14.981633",
+          "target_timestamp_exact": [
+            "14981633",
+            "1000000"
+          ],
+          "best_effort_timestamp_time": "14.981633",
+          "distance_to_target_seconds": "0"
+        }
+      ],
+      "timing_sha256": "db5ef6f3c177c7d5c23ce25fe696ca860ed78b8af038e48246409c8082fbb9a9",
+      "source_sha256_after": "5cc92190193a55e8ab6008dfbf44b80a8c70cf9d9c30b851b7a3c24c3855ed49",
+      "wall_seconds": 1.6281967610120773
+    },
+    {
+      "id": "bedroom_waterfront_g0024",
+      "source_path": "/home/wqz/real2sim_capability_20260929/runs/video_sources_001/bedroom_waterfront_g0024/source.mp4",
+      "expected_source_sha256": "dc98fd19511837ab9c8888556cbd94c2327945072dd8f9ba653e5b8ded904836",
+      "status": "frozen",
+      "selected_frames": [
+        {
+          "position_fraction": "0",
+          "decoded_frame_index": 0,
+          "target_timestamp_seconds": "0",
+          "target_timestamp_exact": [
+            "0",
+            "1"
+          ],
+          "best_effort_timestamp_time": "0.000000",
+          "distance_to_target_seconds": "0",
+          "path": "/home/wqz/real2sim_capability_20260929/runs/video_frames_001/source_001/frame_000000.png",
+          "sha256": "c04bae5a852f9d8927965f68d1fcf753b20e8f2b20cf74ed6259c4a316870fc2",
+          "bytes": 495890,
+          "image_size": [
+            960,
+            540
+          ]
+        },
+        {
+          "position_fraction": "0.2",
+          "decoded_frame_index": 48,
+          "target_timestamp_seconds": "1.6149466",
+          "target_timestamp_exact": [
+            "8074733",
+            "5000000"
+          ],
+          "best_effort_timestamp_time": "1.601600",
+          "distance_to_target_seconds": "0.0133466",
+          "path": "/home/wqz/real2sim_capability_20260929/runs/video_frames_001/source_001/frame_000001.png",
+          "sha256": "af1bdaba1656e604ee67b04c7828f70001d8426935e6ef57c7af28f16a475eea",
+          "bytes": 671040,
+          "image_size": [
+            960,
+            540
+          ]
+        },
+        {
+          "position_fraction": "0.4",
+          "decoded_frame_index": 97,
+          "target_timestamp_seconds": "3.2298932",
+          "target_timestamp_exact": [
+            "8074733",
+            "2500000"
+          ],
+          "best_effort_timestamp_time": "3.236567",
+          "distance_to_target_seconds": "0.0066738",
+          "path": "/home/wqz/real2sim_capability_20260929/runs/video_frames_001/source_001/frame_000002.png",
+          "sha256": "972ce97ca6fcaf94ed1ef608ef485e28d4c975ac2eccaa8757943a1ce5ec386b",
+          "bytes": 602643,
+          "image_size": [
+            960,
+            540
+          ]
+        },
+        {
+          "position_fraction": "0.6",
+          "decoded_frame_index": 145,
+          "target_timestamp_seconds": "4.8448398",
+          "target_timestamp_exact": [
+            "24224199",
+            "5000000"
+          ],
+          "best_effort_timestamp_time": "4.838167",
+          "distance_to_target_seconds": "0.0066728",
+          "path": "/home/wqz/real2sim_capability_20260929/runs/video_frames_001/source_001/frame_000003.png",
+          "sha256": "003b81a24e50757aebe4fdeb756d93d2ecaeb654eb71e904ecaafabfbdd642f7",
+          "bytes": 596807,
+          "image_size": [
+            960,
+            540
+          ]
+        },
+        {
+          "position_fraction": "0.8",
+          "decoded_frame_index": 194,
+          "target_timestamp_seconds": "6.4597864",
+          "target_timestamp_exact": [
+            "8074733",
+            "1250000"
+          ],
+          "best_effort_timestamp_time": "6.473133",
+          "distance_to_target_seconds": "0.0133466",
+          "path": "/home/wqz/real2sim_capability_20260929/runs/video_frames_001/source_001/frame_000004.png",
+          "sha256": "b963feef455f2ab04e53ee0be21d7b7c99dd67be734020361ddb09136c4fb18b",
+          "bytes": 605720,
+          "image_size": [
+            960,
+            540
+          ]
+        },
+        {
+          "position_fraction": "1",
+          "decoded_frame_index": 242,
+          "target_timestamp_seconds": "8.074733",
+          "target_timestamp_exact": [
+            "8074733",
+            "1000000"
+          ],
+          "best_effort_timestamp_time": "8.074733",
+          "distance_to_target_seconds": "0",
+          "path": "/home/wqz/real2sim_capability_20260929/runs/video_frames_001/source_001/frame_000005.png",
+          "sha256": "4e6a7ffe14abb62ad0299ad7b8a9a70f2b62b5fd8b3ccefbee010fad670c2765",
+          "bytes": 624649,
+          "image_size": [
+            960,
+            540
+          ]
+        }
+      ],
+      "error": null,
+      "source_sha256_before": "dc98fd19511837ab9c8888556cbd94c2327945072dd8f9ba653e5b8ded904836",
+      "source_bytes": 1101575,
+      "probe_sha256": "ab5a37ca599ee74a3e79e8b308ad7b38808fe7d9d8cdb6adbe52b240fb0e1689",
+      "video": {
+        "index": 0,
+        "codec_name": "h264",
+        "width": 960,
+        "height": 540,
+        "sample_aspect_ratio": "1:1",
+        "nb_frames": "243",
+        "disposition": {
+          "default": 1,
+          "dub": 0,
+          "original": 0,
+          "comment": 0,
+          "lyrics": 0,
+          "karaoke": 0,
+          "forced": 0,
+          "hearing_impaired": 0,
+          "visual_impaired": 0,
+          "clean_effects": 0,
+          "attached_pic": 0,
+          "timed_thumbnails": 0
+        },
+        "tags": {
+          "language": "eng",
+          "handler_name": "VideoHandler",
+          "vendor_id": "[0][0][0][0]",
+          "encoder": "Lavc60.31.102 libx264"
+        }
+      },
+      "decoded_frame_count": 243,
+      "first_timestamp_time": "0.000000",
+      "last_timestamp_time": "8.074733",
+      "pts_span_seconds": "8.074733",
+      "selection": [
+        {
+          "position_fraction": "0",
+          "decoded_frame_index": 0,
+          "target_timestamp_seconds": "0",
+          "target_timestamp_exact": [
+            "0",
+            "1"
+          ],
+          "best_effort_timestamp_time": "0.000000",
+          "distance_to_target_seconds": "0"
+        },
+        {
+          "position_fraction": "0.2",
+          "decoded_frame_index": 48,
+          "target_timestamp_seconds": "1.6149466",
+          "target_timestamp_exact": [
+            "8074733",
+            "5000000"
+          ],
+          "best_effort_timestamp_time": "1.601600",
+          "distance_to_target_seconds": "0.0133466"
+        },
+        {
+          "position_fraction": "0.4",
+          "decoded_frame_index": 97,
+          "target_timestamp_seconds": "3.2298932",
+          "target_timestamp_exact": [
+            "8074733",
+            "2500000"
+          ],
+          "best_effort_timestamp_time": "3.236567",
+          "distance_to_target_seconds": "0.0066738"
+        },
+        {
+          "position_fraction": "0.6",
+          "decoded_frame_index": 145,
+          "target_timestamp_seconds": "4.8448398",
+          "target_timestamp_exact": [
+            "24224199",
+            "5000000"
+          ],
+          "best_effort_timestamp_time": "4.838167",
+          "distance_to_target_seconds": "0.0066728"
+        },
+        {
+          "position_fraction": "0.8",
+          "decoded_frame_index": 194,
+          "target_timestamp_seconds": "6.4597864",
+          "target_timestamp_exact": [
+            "8074733",
+            "1250000"
+          ],
+          "best_effort_timestamp_time": "6.473133",
+          "distance_to_target_seconds": "0.0133466"
+        },
+        {
+          "position_fraction": "1",
+          "decoded_frame_index": 242,
+          "target_timestamp_seconds": "8.074733",
+          "target_timestamp_exact": [
+            "8074733",
+            "1000000"
+          ],
+          "best_effort_timestamp_time": "8.074733",
+          "distance_to_target_seconds": "0"
+        }
+      ],
+      "timing_sha256": "1fb23b251281f93f78465c959158d1d20912be0f2ab1ea46cb3820952528b251",
+      "source_sha256_after": "dc98fd19511837ab9c8888556cbd94c2327945072dd8f9ba653e5b8ded904836",
+      "wall_seconds": 0.710378127056174
+    },
+    {
+      "id": "breakfast_nook_kitchen_g0039",
+      "source_path": "/home/wqz/real2sim_capability_20260929/runs/video_sources_001/breakfast_nook_kitchen_g0039/source.mp4",
+      "expected_source_sha256": "1633ab49a325265c445861d217dce47aa84f2a3b221f5cd6077bf186811636f0",
+      "status": "frozen",
+      "selected_frames": [
+        {
+          "position_fraction": "0",
+          "decoded_frame_index": 0,
+          "target_timestamp_seconds": "0",
+          "target_timestamp_exact": [
+            "0",
+            "1"
+          ],
+          "best_effort_timestamp_time": "0.000000",
+          "distance_to_target_seconds": "0",
+          "path": "/home/wqz/real2sim_capability_20260929/runs/video_frames_001/source_002/frame_000000.png",
+          "sha256": "97ff0995ee2d7f8f8f6864632768d40b2956032899fd242744e98ea6c6e99709",
+          "bytes": 551402,
+          "image_size": [
+            960,
+            540
+          ]
+        },
+        {
+          "position_fraction": "0.2",
+          "decoded_frame_index": 180,
+          "target_timestamp_seconds": "2.9963266",
+          "target_timestamp_exact": [
+            "14981633",
+            "5000000"
+          ],
+          "best_effort_timestamp_time": "3.003000",
+          "distance_to_target_seconds": "0.0066734",
+          "path": "/home/wqz/real2sim_capability_20260929/runs/video_frames_001/source_002/frame_000001.png",
+          "sha256": "2f900b4927a7be9eed0cedf9e422398aeed877ebdf2da885dc65098bf7fb4445",
+          "bytes": 778996,
+          "image_size": [
+            960,
+            540
+          ]
+        },
+        {
+          "position_fraction": "0.4",
+          "decoded_frame_index": 359,
+          "target_timestamp_seconds": "5.9926532",
+          "target_timestamp_exact": [
+            "14981633",
+            "2500000"
+          ],
+          "best_effort_timestamp_time": "5.989317",
+          "distance_to_target_seconds": "0.0033362",
+          "path": "/home/wqz/real2sim_capability_20260929/runs/video_frames_001/source_002/frame_000002.png",
+          "sha256": "d3db20ac076bf4cc3be43ec85f5ddc07486ae441c986b8e831693a052d3a30c6",
+          "bytes": 609916,
+          "image_size": [
+            960,
+            540
+          ]
+        },
+        {
+          "position_fraction": "0.6",
+          "decoded_frame_index": 539,
+          "target_timestamp_seconds": "8.9889798",
+          "target_timestamp_exact": [
+            "44944899",
+            "5000000"
+          ],
+          "best_effort_timestamp_time": "8.992317",
+          "distance_to_target_seconds": "0.0033372",
+          "path": "/home/wqz/real2sim_capability_20260929/runs/video_frames_001/source_002/frame_000003.png",
+          "sha256": "10e0db870f937f5eb7957b20ab1b52bbd070e6b24b4540155096a3327c98e4ae",
+          "bytes": 603426,
+          "image_size": [
+            960,
+            540
+          ]
+        },
+        {
+          "position_fraction": "0.8",
+          "decoded_frame_index": 718,
+          "target_timestamp_seconds": "11.9853064",
+          "target_timestamp_exact": [
+            "14981633",
+            "1250000"
+          ],
+          "best_effort_timestamp_time": "11.978633",
+          "distance_to_target_seconds": "0.0066734",
+          "path": "/home/wqz/real2sim_capability_20260929/runs/video_frames_001/source_002/frame_000004.png",
+          "sha256": "8a05ba82f497ad03c9089546df00c3142263462efb404d7b3ffc782619e295ab",
+          "bytes": 722418,
+          "image_size": [
+            960,
+            540
+          ]
+        },
+        {
+          "position_fraction": "1",
+          "decoded_frame_index": 898,
+          "target_timestamp_seconds": "14.981633",
+          "target_timestamp_exact": [
+            "14981633",
+            "1000000"
+          ],
+          "best_effort_timestamp_time": "14.981633",
+          "distance_to_target_seconds": "0",
+          "path": "/home/wqz/real2sim_capability_20260929/runs/video_frames_001/source_002/frame_000005.png",
+          "sha256": "7f816c6445060cb1313ccaf8d89ae8c6cee296290c163bc6eb542c85c88b4e9f",
+          "bytes": 652439,
+          "image_size": [
+            960,
+            540
+          ]
+        }
+      ],
+      "error": null,
+      "source_sha256_before": "1633ab49a325265c445861d217dce47aa84f2a3b221f5cd6077bf186811636f0",
+      "source_bytes": 3287061,
+      "probe_sha256": "ad06e03d965cce9d3e5bf2d67e37e8d7e56ec04f41f57adb3f45707b0c87af51",
+      "video": {
+        "index": 0,
+        "codec_name": "h264",
+        "width": 960,
+        "height": 540,
+        "sample_aspect_ratio": "1:1",
+        "nb_frames": "899",
+        "disposition": {
+          "default": 1,
+          "dub": 0,
+          "original": 0,
+          "comment": 0,
+          "lyrics": 0,
+          "karaoke": 0,
+          "forced": 0,
+          "hearing_impaired": 0,
+          "visual_impaired": 0,
+          "clean_effects": 0,
+          "attached_pic": 0,
+          "timed_thumbnails": 0
+        },
+        "tags": {
+          "language": "und",
+          "handler_name": "VideoHandler",
+          "vendor_id": "[0][0][0][0]",
+          "encoder": "Lavc60.31.102 libx264"
+        }
+      },
+      "decoded_frame_count": 899,
+      "first_timestamp_time": "0.000000",
+      "last_timestamp_time": "14.981633",
+      "pts_span_seconds": "14.981633",
+      "selection": [
+        {
+          "position_fraction": "0",
+          "decoded_frame_index": 0,
+          "target_timestamp_seconds": "0",
+          "target_timestamp_exact": [
+            "0",
+            "1"
+          ],
+          "best_effort_timestamp_time": "0.000000",
+          "distance_to_target_seconds": "0"
+        },
+        {
+          "position_fraction": "0.2",
+          "decoded_frame_index": 180,
+          "target_timestamp_seconds": "2.9963266",
+          "target_timestamp_exact": [
+            "14981633",
+            "5000000"
+          ],
+          "best_effort_timestamp_time": "3.003000",
+          "distance_to_target_seconds": "0.0066734"
+        },
+        {
+          "position_fraction": "0.4",
+          "decoded_frame_index": 359,
+          "target_timestamp_seconds": "5.9926532",
+          "target_timestamp_exact": [
+            "14981633",
+            "2500000"
+          ],
+          "best_effort_timestamp_time": "5.989317",
+          "distance_to_target_seconds": "0.0033362"
+        },
+        {
+          "position_fraction": "0.6",
+          "decoded_frame_index": 539,
+          "target_timestamp_seconds": "8.9889798",
+          "target_timestamp_exact": [
+            "44944899",
+            "5000000"
+          ],
+          "best_effort_timestamp_time": "8.992317",
+          "distance_to_target_seconds": "0.0033372"
+        },
+        {
+          "position_fraction": "0.8",
+          "decoded_frame_index": 718,
+          "target_timestamp_seconds": "11.9853064",
+          "target_timestamp_exact": [
+            "14981633",
+            "1250000"
+          ],
+          "best_effort_timestamp_time": "11.978633",
+          "distance_to_target_seconds": "0.0066734"
+        },
+        {
+          "position_fraction": "1",
+          "decoded_frame_index": 898,
+          "target_timestamp_seconds": "14.981633",
+          "target_timestamp_exact": [
+            "14981633",
+            "1000000"
+          ],
+          "best_effort_timestamp_time": "14.981633",
+          "distance_to_target_seconds": "0"
+        }
+      ],
+      "timing_sha256": "a5dc9be595b1a34907aee8ba8507b8c5d2d3b8271191513f77c3b4a39c6677b1",
+      "source_sha256_after": "1633ab49a325265c445861d217dce47aa84f2a3b221f5cd6077bf186811636f0",
+      "wall_seconds": 1.6164101180620492
+    }
+  ],
+  "errors": [],
+  "method": {
+    "timestamp": "best_effort_timestamp_time of every decoded v:0 frame",
+    "positions": [
+      "0",
+      "0.2",
+      "0.4",
+      "0.6",
+      "0.8",
+      "1"
+    ],
+    "target": "first_PTS + position * (last_PTS - first_PTS)",
+    "nearest": "exact decimal-to-rational distance; ties choose smaller decoded index",
+    "duplicate_selection": "fail; no replacement, sorting or resampling",
+    "raster": "coded width/height, no resize, no autorotate; ffmpeg PNG conversion",
+    "source_docs": [
+      "https://ffmpeg.org/ffprobe.html",
+      "https://ffmpeg.org/ffmpeg-filters.html#select_002c-aselect"
+    ]
+  },
+  "gpu_hours": 0,
+  "paid_api_requests": 0,
+  "scope": "Development source frame freezing only; no reconstruction or benchmark result",
+  "source_receipt_sha256": "d96ccc1601e8d4fae91464c9c4e8c3b27051da0412068279b62d4cd9dd027c43",
+  "cohort_id": "aha-public-development-3-v1",
+  "cohort_sha256": "b10f9bcfae290444c746291506f53cdc8c598bc1edaa2cd07fe2a94f93fcc02a",
+  "expected_scene_count": 3,
+  "tools": {
+    "ffprobe": "ffprobe version 4.4.2-0ubuntu0.22.04.1 Copyright (c) 2007-2021 the FFmpeg developers",
+    "ffmpeg": "ffmpeg version 4.4.2-0ubuntu0.22.04.1 Copyright (c) 2000-2021 the FFmpeg developers"
+  },
+  "frozen_scene_count": 3,
+  "failed_scene_count": 0,
+  "selected_frame_count": 18,
+  "frozen_frame_count": 18,
+  "wall_seconds": 4.03431342006661
+}

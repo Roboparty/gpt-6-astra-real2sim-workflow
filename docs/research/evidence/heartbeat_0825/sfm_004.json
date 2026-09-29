@@ -1,0 +1,618 @@
+{
+  "schema": "real2sim.sfm-initialization/1",
+  "expected_scene_count": 3,
+  "initialized_scene_count": 1,
+  "sources": [
+    {
+      "id": "open_concept_g0034",
+      "status": "incomplete",
+      "returncode": 0,
+      "result": {
+        "expected_frames": 6,
+        "registered_frames": 3,
+        "cameras": [
+          {
+            "frame_name": "frame_0003.png",
+            "position_in_sfm_gauge": [
+              2.7911080002815942,
+              -1.193584386278251,
+              5.202945654510909
+            ],
+            "rotation_world_to_cv": [
+              [
+                0.9720714132731023,
+                -0.039924986413562916,
+                0.23126427081827897
+              ],
+              [
+                -9.792767252189347e-05,
+                0.985354019556751,
+                0.1705211029565698
+              ],
+              [
+                -0.23468523154941903,
+                -0.1657813367156597,
+                0.9578305646038681
+              ]
+            ],
+            "focal_px": 422.54185604866507,
+            "principal_point": [
+              480.0,
+              270.0
+            ],
+            "image_size": [
+              960,
+              540
+            ]
+          },
+          {
+            "frame_name": "frame_0004.png",
+            "position_in_sfm_gauge": [
+              0.10836031907464236,
+              0.3422464169647446,
+              -2.4412423079685857
+            ],
+            "rotation_world_to_cv": [
+              [
+                0.9999674775302443,
+                -0.0019119096583887544,
+                0.007835080296875227
+              ],
+              [
+                0.00037648821704159684,
+                0.9815013061914529,
+                0.1914550709725242
+              ],
+              [
+                -0.008056186344837825,
+                -0.19144589456535757,
+                0.9814701051563656
+              ]
+            ],
+            "focal_px": 422.54185604866507,
+            "principal_point": [
+              480.0,
+              270.0
+            ],
+            "image_size": [
+              960,
+              540
+            ]
+          },
+          {
+            "frame_name": "frame_0005.png",
+            "position_in_sfm_gauge": [
+              -2.8994683193562367,
+              0.8513379693135066,
+              -2.7617033465423226
+            ],
+            "rotation_world_to_cv": [
+              [
+                0.9999543303006503,
+                -0.0022680228064838165,
+                0.009284039289412196
+              ],
+              [
+                0.0021446648819433687,
+                0.9999095759196394,
+                0.013275556363150916
+              ],
+              [
+                -0.009313309053297806,
+                -0.013255038919456525,
+                0.9998687744987946
+              ]
+            ],
+            "focal_px": 422.54185604866507,
+            "principal_point": [
+              480.0,
+              270.0
+            ],
+            "image_size": [
+              960,
+              540
+            ]
+          }
+        ],
+        "coordinate_system": "Arbitrary SfM similarity gauge. No inferred metric scale or gravity alignment is declared measured.",
+        "pycolmap_version": "4.2.0",
+        "physical_scale_m_per_unit": null,
+        "gravity_alignment": null,
+        "point_count": 111,
+        "mean_fit_reprojection_error_px": 0.3829356611611938,
+        "missing_frames": [
+          "frame_0000.png",
+          "frame_0001.png",
+          "frame_0002.png"
+        ],
+        "status": "incomplete",
+        "keypoints": [
+          {
+            "image_id": 1,
+            "count": 3968,
+            "data_sha256": "62a09e66c38f1975f1810710043ad1001524696b8ff41da20521bd6633b3e1e7"
+          },
+          {
+            "image_id": 2,
+            "count": 4490,
+            "data_sha256": "e1051eca03978ded9113b6e00296c78f1d85db9f3c83f106e884f894a4e8151b"
+          },
+          {
+            "image_id": 3,
+            "count": 3188,
+            "data_sha256": "1bebbf084b4c182dd36977fdc64df962a05dbb69ad47d6c8bbae3c7b787b1c0e"
+          },
+          {
+            "image_id": 4,
+            "count": 3946,
+            "data_sha256": "9958e4833c76d349161c9dc8758de192a513d20db16a75873dad7e40c8382dd9"
+          },
+          {
+            "image_id": 5,
+            "count": 3158,
+            "data_sha256": "8357197165e5dd92f11c2e13c33d95f38fc3683d31c28341057806989593655d"
+          },
+          {
+            "image_id": 6,
+            "count": 3519,
+            "data_sha256": "6ab79e5cf6623761a2361acfe5741f8780dfd1293f9b643f6d51e7c88733fe34"
+          }
+        ]
+      },
+      "wall_seconds": 2.8205157739575952
+    },
+    {
+      "id": "bedroom_waterfront_g0024",
+      "status": "initialized",
+      "returncode": 0,
+      "result": {
+        "expected_frames": 6,
+        "registered_frames": 6,
+        "cameras": [
+          {
+            "frame_name": "frame_0000.png",
+            "position_in_sfm_gauge": [
+              -4.847410798109441,
+              0.7679706340731474,
+              0.800822292162019
+            ],
+            "rotation_world_to_cv": [
+              [
+                0.999981945691949,
+                0.005021430228839565,
+                -0.0033005345931908362
+              ],
+              [
+                -0.0049459058053204575,
+                0.9997344831994931,
+                0.022505579699428853
+              ],
+              [
+                0.0034126684440259603,
+                -0.022488849243554973,
+                0.9997412692060841
+              ]
+            ],
+            "focal_px": 491.30039548465135,
+            "principal_point": [
+              480.0,
+              270.0
+            ],
+            "image_size": [
+              960,
+              540
+            ]
+          },
+          {
+            "frame_name": "frame_0001.png",
+            "position_in_sfm_gauge": [
+              -3.4335058946367036,
+              0.24291889613847903,
+              -0.7299954796247483
+            ],
+            "rotation_world_to_cv": [
+              [
+                0.9992375941862737,
+                0.007576436058097116,
+                0.03829919035025986
+              ],
+              [
+                -0.008060960288486251,
+                0.9998892232633145,
+                0.012512478615881407
+              ],
+              [
+                -0.03820014769677363,
+                -0.012811667281935153,
+                0.9991879752566089
+              ]
+            ],
+            "focal_px": 491.30039548465135,
+            "principal_point": [
+              480.0,
+              270.0
+            ],
+            "image_size": [
+              960,
+              540
+            ]
+          },
+          {
+            "frame_name": "frame_0002.png",
+            "position_in_sfm_gauge": [
+              -1.684777118856709,
+              0.028958418747770234,
+              -0.9760913975044196
+            ],
+            "rotation_world_to_cv": [
+              [
+                0.9824193391581958,
+                0.007569198624503628,
+                0.18653404322041758
+              ],
+              [
+                -0.009100137054787289,
+                0.9999315626314442,
+                0.007352384580678674
+              ],
+              [
+                -0.1864656256620986,
+                -0.008920610159676667,
+                0.9824209857086834
+              ]
+            ],
+            "focal_px": 491.30039548465135,
+            "principal_point": [
+              480.0,
+              270.0
+            ],
+            "image_size": [
+              960,
+              540
+            ]
+          },
+          {
+            "frame_name": "frame_0003.png",
+            "position_in_sfm_gauge": [
+              2.08989437025221,
+              0.16293634208125285,
+              -1.6227849040110849
+            ],
+            "rotation_world_to_cv": [
+              [
+                0.8362774665527655,
+                0.00798500760909907,
+                0.5482483366044726
+              ],
+              [
+                -0.012544568191455925,
+                0.9999108625700034,
+                0.0045717308977721895
+              ],
+              [
+                -0.5481629618507422,
+                -0.010700774177337011,
+                0.8363030914010945
+              ]
+            ],
+            "focal_px": 491.30039548465135,
+            "principal_point": [
+              480.0,
+              270.0
+            ],
+            "image_size": [
+              960,
+              540
+            ]
+          },
+          {
+            "frame_name": "frame_0004.png",
+            "position_in_sfm_gauge": [
+              4.264871334148521,
+              -0.34308323049041717,
+              0.3670533215405311
+            ],
+            "rotation_world_to_cv": [
+              [
+                0.5573794396887461,
+                0.00395680454405547,
+                0.8302484591434419
+              ],
+              [
+                -0.0009584589329194096,
+                0.9999910439069528,
+                -0.004122312743683392
+              ],
+              [
+                -0.8302573345467857,
+                0.0015019333150874197,
+                0.5573782401812828
+              ]
+            ],
+            "focal_px": 491.30039548465135,
+            "principal_point": [
+              480.0,
+              270.0
+            ],
+            "image_size": [
+              960,
+              540
+            ]
+          },
+          {
+            "frame_name": "frame_0005.png",
+            "position_in_sfm_gauge": [
+              3.610928107202123,
+              -0.8597010605502322,
+              2.1609961674377063
+            ],
+            "rotation_world_to_cv": [
+              [
+                0.2870102082794048,
+                0.006924356444830483,
+                0.9579024969333975
+              ],
+              [
+                0.012394925469167045,
+                0.9998633154735008,
+                -0.010941489521652817
+              ],
+              [
+                -0.9578473292576569,
+                0.015013449242714975,
+                0.28688515154293004
+              ]
+            ],
+            "focal_px": 491.30039548465135,
+            "principal_point": [
+              480.0,
+              270.0
+            ],
+            "image_size": [
+              960,
+              540
+            ]
+          }
+        ],
+        "coordinate_system": "Arbitrary SfM similarity gauge. No inferred metric scale or gravity alignment is declared measured.",
+        "pycolmap_version": "4.2.0",
+        "physical_scale_m_per_unit": null,
+        "gravity_alignment": null,
+        "point_count": 691,
+        "mean_fit_reprojection_error_px": 1.1224090532813176,
+        "missing_frames": [],
+        "status": "initialized",
+        "keypoints": [
+          {
+            "image_id": 1,
+            "count": 2041,
+            "data_sha256": "b5025995fe465adbe996294a5a634aeb653b52d713b9853484bced34c78cee0a"
+          },
+          {
+            "image_id": 2,
+            "count": 2428,
+            "data_sha256": "a6dfc37d20dd681c688c217f6f3018c04d76378d8e0d567e49b8f26b53d4205b"
+          },
+          {
+            "image_id": 3,
+            "count": 2044,
+            "data_sha256": "fdffa0ddaed0960f70323b8a9b2caeb9c6b699374ac8541f42bee454c5cc5be6"
+          },
+          {
+            "image_id": 4,
+            "count": 2466,
+            "data_sha256": "d0f0948310c0f2b50ca7167ae62ac24554c2feea71c1ef3668082e3a008a0ab3"
+          },
+          {
+            "image_id": 5,
+            "count": 2633,
+            "data_sha256": "c75deef9b087ed490dbacd76c7a4780ef3bb133c9242568e4065121576091852"
+          },
+          {
+            "image_id": 6,
+            "count": 2682,
+            "data_sha256": "47d9696ab57961b91988ffed952cdcbb0c4b814638b9c86f3ee7e5508228d0d0"
+          }
+        ]
+      },
+      "wall_seconds": 2.2684401420410722
+    },
+    {
+      "id": "breakfast_nook_kitchen_g0039",
+      "status": "incomplete",
+      "returncode": 0,
+      "result": {
+        "expected_frames": 6,
+        "registered_frames": 4,
+        "cameras": [
+          {
+            "frame_name": "frame_0002.png",
+            "position_in_sfm_gauge": [
+              1.755113244210636,
+              0.03618299811343998,
+              -3.9444549379434277
+            ],
+            "rotation_world_to_cv": [
+              [
+                0.9689205295053785,
+                0.06246496528910858,
+                -0.23935566760460733
+              ],
+              [
+                -0.06425345112633271,
+                0.9979335568992672,
+                0.0003317118222840344
+              ],
+              [
+                0.23888177310412947,
+                0.015058025295752736,
+                0.9709318999563356
+              ]
+            ],
+            "focal_px": 494.6852927792115,
+            "principal_point": [
+              480.0,
+              270.0
+            ],
+            "image_size": [
+              960,
+              540
+            ]
+          },
+          {
+            "frame_name": "frame_0003.png",
+            "position_in_sfm_gauge": [
+              1.8554189597010151,
+              -0.09404647740947311,
+              -2.0037909179286206
+            ],
+            "rotation_world_to_cv": [
+              [
+                0.9968493749581699,
+                0.03035246263540006,
+                0.07328063630641145
+              ],
+              [
+                -0.02979428840837332,
+                0.9995182034167541,
+                -0.008698357131255779
+              ],
+              [
+                -0.07350934650603673,
+                0.006487607456592929,
+                0.9972734263609677
+              ]
+            ],
+            "focal_px": 494.6852927792115,
+            "principal_point": [
+              480.0,
+              270.0
+            ],
+            "image_size": [
+              960,
+              540
+            ]
+          },
+          {
+            "frame_name": "frame_0005.png",
+            "position_in_sfm_gauge": [
+              -2.9637054550673456,
+              -0.14731622664838817,
+              4.810645660706998
+            ],
+            "rotation_world_to_cv": [
+              [
+                0.9810185931652062,
+                0.058577163495556216,
+                -0.1848546341885277
+              ],
+              [
+                -0.06096573105076184,
+                0.9981134637544392,
+                -0.0072590019673430956
+              ],
+              [
+                0.18408068747591555,
+                0.018391013809211133,
+                0.9827390656270176
+              ]
+            ],
+            "focal_px": 494.6852927792115,
+            "principal_point": [
+              480.0,
+              270.0
+            ],
+            "image_size": [
+              960,
+              540
+            ]
+          },
+          {
+            "frame_name": "frame_0004.png",
+            "position_in_sfm_gauge": [
+              -0.6468267488443048,
+              0.2051797059444212,
+              1.1376001951650512
+            ],
+            "rotation_world_to_cv": [
+              [
+                0.9992002677123019,
+                0.039931051824567146,
+                -0.0020823313492361537
+              ],
+              [
+                -0.039948755162531616,
+                0.9991584855582806,
+                -0.009296111974767303
+              ],
+              [
+                0.001709375508301914,
+                0.009371864119108923,
+                0.999954622069574
+              ]
+            ],
+            "focal_px": 494.6852927792115,
+            "principal_point": [
+              480.0,
+              270.0
+            ],
+            "image_size": [
+              960,
+              540
+            ]
+          }
+        ],
+        "coordinate_system": "Arbitrary SfM similarity gauge. No inferred metric scale or gravity alignment is declared measured.",
+        "pycolmap_version": "4.2.0",
+        "physical_scale_m_per_unit": null,
+        "gravity_alignment": null,
+        "point_count": 131,
+        "mean_fit_reprojection_error_px": 0.4221305563079991,
+        "missing_frames": [
+          "frame_0000.png",
+          "frame_0001.png"
+        ],
+        "status": "incomplete",
+        "keypoints": [
+          {
+            "image_id": 1,
+            "count": 3557,
+            "data_sha256": "2571c3ffb1eb760afc7de98a4bb60b7a745804fff580014cdfdd710342576cc4"
+          },
+          {
+            "image_id": 2,
+            "count": 4492,
+            "data_sha256": "56a2c762957c730ce49f04ad599351b5e834bc47b861145ac85ee559d0b59483"
+          },
+          {
+            "image_id": 3,
+            "count": 2848,
+            "data_sha256": "6ad56d09fcb731d1b357b3682193be83a0ac750c176f58195c1fb38e8d06f7b6"
+          },
+          {
+            "image_id": 4,
+            "count": 2788,
+            "data_sha256": "b2bced95511130364ca268895bf600d63e613a90282dd3319ec789c3ac7191e6"
+          },
+          {
+            "image_id": 5,
+            "count": 2450,
+            "data_sha256": "97e28dab5879a4ceca0bb6193763066ec8b122ae6534021a435958733d8d51ef"
+          },
+          {
+            "image_id": 6,
+            "count": 4320,
+            "data_sha256": "f4bf6fd5e276203cf78a1fab47c3ae78498f6f95537e1a0bcd6c8c4f6de5b729"
+          }
+        ]
+      },
+      "wall_seconds": 2.71898412599694
+    }
+  ],
+  "protocol_sha256": "2ca5106686a8657f3d97e2262e3f1cd28c143e49e29b8ba50ae5ac13e89140db",
+  "frames_receipt_sha256": "7304109f95fb441e404d0c7d544320b5b6ce11fb1b4b0a34c1d006fe89dd83f3",
+  "script_sha256": "3df0358b99f913c4b7bb53da5186614f90d604da27a552acc11d0a410d68e2cd",
+  "wall_seconds": 7.808372180908918,
+  "gpu_hours": 0,
+  "scope": "Shared estimated cameras, not an agent A/B, measured geometry or SOTA"
+}
