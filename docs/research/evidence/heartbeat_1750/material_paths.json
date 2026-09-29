@@ -1,0 +1,417 @@
+{
+  "scope": "Material graph declarations only; not a rendered causal proof",
+  "entity": "floor",
+  "formats": [
+    {
+      "format": "native",
+      "model_sha256": "469d83230f32c1580a0d609e4833be90b9dcd3cc14f75aa88511c94659b60523",
+      "materials": {
+        "carpet_greytaupe.001__floor_normal_private": {
+          "nodes": [
+            {
+              "type": "ShaderNodeBsdfPrincipled",
+              "name": "Principled BSDF",
+              "base_color": [
+                0.14000000059604645,
+                0.13500000536441803,
+                0.11500000208616257,
+                1.0
+              ],
+              "base_color_linked": true,
+              "base_color_sources": [
+                "ShaderNodeTexImage"
+              ]
+            },
+            {
+              "type": "ShaderNodeOutputMaterial",
+              "name": "Material Output"
+            },
+            {
+              "type": "ShaderNodeUVMap",
+              "name": "UV Map"
+            },
+            {
+              "type": "ShaderNodeTexImage",
+              "name": "Image Texture",
+              "image": {
+                "name": "carpet_whole_inferred.png",
+                "size": [
+                  2048,
+                  2048
+                ],
+                "colorspace": "sRGB",
+                "source": "FILE",
+                "packed": true
+              }
+            },
+            {
+              "type": "ShaderNodeBump",
+              "name": "Bump",
+              "space": null,
+              "inputs": {
+                "Strength": {
+                  "linked": false,
+                  "value": 0.30000001192092896
+                },
+                "Distance": {
+                  "linked": false,
+                  "value": 0.0003499999875202775
+                },
+                "Filter Width": {
+                  "linked": false,
+                  "value": 0.10000000149011612
+                },
+                "Height": {
+                  "linked": true,
+                  "value": 1.0
+                },
+                "Normal": {
+                  "linked": false,
+                  "value": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ]
+                }
+              }
+            },
+            {
+              "type": "ShaderNodeTexImage",
+              "name": "PortableFloorNormalTexture",
+              "image": {
+                "name": "PortableFloorNormal",
+                "size": [
+                  2048,
+                  2048
+                ],
+                "colorspace": "Non-Color",
+                "source": "FILE",
+                "packed": true
+              }
+            },
+            {
+              "type": "ShaderNodeUVMap",
+              "name": "UV Map.001"
+            },
+            {
+              "type": "ShaderNodeNormalMap",
+              "name": "Normal Map",
+              "space": "TANGENT",
+              "inputs": {
+                "Strength": {
+                  "linked": false,
+                  "value": 1.0
+                },
+                "Color": {
+                  "linked": true,
+                  "value": [
+                    0.5,
+                    0.5,
+                    1.0,
+                    1.0
+                  ]
+                }
+              }
+            }
+          ],
+          "diffuse_color": [
+            0.800000011920929,
+            0.800000011920929,
+            0.800000011920929,
+            1.0
+          ],
+          "links": [
+            [
+              "Principled BSDF",
+              "BSDF",
+              "Material Output",
+              "Surface"
+            ],
+            [
+              "UV Map",
+              "UV",
+              "Image Texture",
+              "Vector"
+            ],
+            [
+              "Image Texture",
+              "Color",
+              "Principled BSDF",
+              "Base Color"
+            ],
+            [
+              "Image Texture",
+              "Color",
+              "Bump",
+              "Height"
+            ],
+            [
+              "UV Map.001",
+              "UV",
+              "PortableFloorNormalTexture",
+              "Vector"
+            ],
+            [
+              "PortableFloorNormalTexture",
+              "Color",
+              "Normal Map",
+              "Color"
+            ],
+            [
+              "Normal Map",
+              "Normal",
+              "Principled BSDF",
+              "Normal"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "format": "glb",
+      "model_sha256": "860a11368e493f7bbe87de81c01e8b6e64e68b202980ef9336497f5e15f6a894",
+      "materials": {
+        "carpet_greytaupe.001__floor_normal_private": {
+          "nodes": [
+            {
+              "type": "ShaderNodeBsdfPrincipled",
+              "name": "Principled BSDF",
+              "base_color": [
+                0.800000011920929,
+                0.800000011920929,
+                0.800000011920929,
+                1.0
+              ],
+              "base_color_linked": true,
+              "base_color_sources": [
+                "ShaderNodeTexImage"
+              ]
+            },
+            {
+              "type": "ShaderNodeOutputMaterial",
+              "name": "Material Output"
+            },
+            {
+              "type": "ShaderNodeTexImage",
+              "name": "Image Texture",
+              "image": {
+                "name": "carpet_whole_inferred",
+                "size": [
+                  2048,
+                  2048
+                ],
+                "colorspace": "sRGB",
+                "source": "FILE",
+                "packed": true
+              }
+            },
+            {
+              "type": "ShaderNodeNormalMap",
+              "name": "Normal Map",
+              "space": "TANGENT",
+              "inputs": {
+                "Strength": {
+                  "linked": false,
+                  "value": 1.0
+                },
+                "Color": {
+                  "linked": true,
+                  "value": [
+                    0.5,
+                    0.5,
+                    1.0,
+                    1.0
+                  ]
+                }
+              }
+            },
+            {
+              "type": "ShaderNodeTexImage",
+              "name": "Image Texture.001",
+              "image": {
+                "name": "floor_normal",
+                "size": [
+                  2048,
+                  2048
+                ],
+                "colorspace": "Non-Color",
+                "source": "FILE",
+                "packed": true
+              }
+            },
+            {
+              "type": "ShaderNodeUVMap",
+              "name": "UV Map"
+            }
+          ],
+          "diffuse_color": [
+            0.800000011920929,
+            0.800000011920929,
+            0.800000011920929,
+            1.0
+          ],
+          "links": [
+            [
+              "Principled BSDF",
+              "BSDF",
+              "Material Output",
+              "Surface"
+            ],
+            [
+              "Image Texture",
+              "Color",
+              "Principled BSDF",
+              "Base Color"
+            ],
+            [
+              "Normal Map",
+              "Normal",
+              "Principled BSDF",
+              "Normal"
+            ],
+            [
+              "Image Texture.001",
+              "Color",
+              "Normal Map",
+              "Color"
+            ],
+            [
+              "UV Map",
+              "UV",
+              "Image Texture.001",
+              "Vector"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "format": "usdc",
+      "model_sha256": "58e616130d867a0ffbceca485dfe7cf25209636c479446b843576154572c9bf5",
+      "materials": {
+        "carpet_greytaupe_001__floor_normal_private": {
+          "nodes": [
+            {
+              "type": "ShaderNodeBsdfPrincipled",
+              "name": "Principled BSDF",
+              "base_color": [
+                0.800000011920929,
+                0.800000011920929,
+                0.800000011920929,
+                1.0
+              ],
+              "base_color_linked": true,
+              "base_color_sources": [
+                "ShaderNodeTexImage"
+              ]
+            },
+            {
+              "type": "ShaderNodeOutputMaterial",
+              "name": "Material Output"
+            },
+            {
+              "type": "ShaderNodeTexImage",
+              "name": "Image Texture",
+              "image": {
+                "name": "carpet_whole_inferred.png",
+                "size": [
+                  2048,
+                  2048
+                ],
+                "colorspace": "sRGB",
+                "source": "FILE",
+                "packed": false
+              }
+            },
+            {
+              "type": "ShaderNodeUVMap",
+              "name": "UV Map"
+            },
+            {
+              "type": "ShaderNodeNormalMap",
+              "name": "Normal Map",
+              "space": "TANGENT",
+              "inputs": {
+                "Strength": {
+                  "linked": false,
+                  "value": 1.0
+                },
+                "Color": {
+                  "linked": true,
+                  "value": [
+                    0.5,
+                    0.5,
+                    1.0,
+                    1.0
+                  ]
+                }
+              }
+            },
+            {
+              "type": "ShaderNodeTexImage",
+              "name": "Image Texture.001",
+              "image": {
+                "name": "floor_normal.png",
+                "size": [
+                  2048,
+                  2048
+                ],
+                "colorspace": "Non-Color",
+                "source": "FILE",
+                "packed": false
+              }
+            },
+            {
+              "type": "ShaderNodeUVMap",
+              "name": "UV Map.001"
+            }
+          ],
+          "diffuse_color": [
+            0.800000011920929,
+            0.800000011920929,
+            0.800000011920929,
+            1.0
+          ],
+          "links": [
+            [
+              "Principled BSDF",
+              "BSDF",
+              "Material Output",
+              "Surface"
+            ],
+            [
+              "Image Texture",
+              "Color",
+              "Principled BSDF",
+              "Base Color"
+            ],
+            [
+              "UV Map",
+              "UV",
+              "Image Texture",
+              "Vector"
+            ],
+            [
+              "Normal Map",
+              "Normal",
+              "Principled BSDF",
+              "Normal"
+            ],
+            [
+              "Image Texture.001",
+              "Color",
+              "Normal Map",
+              "Color"
+            ],
+            [
+              "UV Map.001",
+              "UV",
+              "Image Texture.001",
+              "Vector"
+            ]
+          ]
+        }
+      }
+    }
+  ]
+}

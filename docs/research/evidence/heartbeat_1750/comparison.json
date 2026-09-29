@@ -1,0 +1,100 @@
+{
+  "schema": "real2sim.portability-render-comparison/1",
+  "protocol_sha256": "ef1d59b3449fb8b2c005e10002a6623f96f553224bd525350c4ffcb61352d156",
+  "render_receipt_sha256": "b79b3df08324a94a7eedafb228e14a9e57597cb4c7197ba56b3ece6b51446996",
+  "script_sha256": "f15d63073ec526e0d9de238f54099065de840cc30c8af2a02d83bb569ad4b545",
+  "expected_formats": 3,
+  "groups": [
+    {
+      "format": "native",
+      "control_sha256": "4431753cd48e2305e70ef86a4332ac0275497095383638d891c96441bfe17ebc",
+      "candidate_sha256": "b313f6740f1fd10b0efd65e48665aa1cf8d6e68f4c07c6ff9c7634563cfb056b",
+      "geometry_status": "passed",
+      "control_to_native_full_mae": 0.0,
+      "candidate_to_native_full_mae": 0.000533182365795471,
+      "control_to_photo_full_mae": 0.08298565223338128,
+      "candidate_to_photo_full_mae": 0.0830128679939069,
+      "regions": {
+        "bedding": {
+          "control_to_native_mae": 0.0,
+          "candidate_to_native_mae": 0.0007896962706651289,
+          "control_to_photo_mae": 0.11982938186167713,
+          "candidate_to_photo_mae": 0.11963432867700455
+        },
+        "vent": {
+          "control_to_native_mae": 0.0,
+          "candidate_to_native_mae": 0.00036052754435107385,
+          "control_to_photo_mae": 0.10751587301587301,
+          "candidate_to_photo_mae": 0.10755800653594771
+        },
+        "floor": {
+          "control_to_native_mae": 0.0,
+          "candidate_to_native_mae": 0.0009399315281668222,
+          "control_to_photo_mae": 0.03168594252515821,
+          "candidate_to_photo_mae": 0.03193078120136944
+        }
+      }
+    },
+    {
+      "format": "glb",
+      "control_sha256": "49da2f287aea04b7faee1544632fd16eeab5321f8b7b14c43d2f0111242d8b2c",
+      "candidate_sha256": "dbdb4a8add12a90f57d50c2af3bcc083f5508dbeeaf5273f4b5490a3be588703",
+      "geometry_status": "failed",
+      "control_to_native_full_mae": 0.07395442809500484,
+      "candidate_to_native_full_mae": 0.0442485891996431,
+      "control_to_photo_full_mae": 0.14048366528303033,
+      "candidate_to_photo_full_mae": 0.10751091429281748,
+      "regions": {
+        "bedding": {
+          "control_to_native_mae": 0.08078461275577768,
+          "candidate_to_native_mae": 0.06346994745610662,
+          "control_to_photo_mae": 0.16786103635353922,
+          "candidate_to_photo_mae": 0.14029971378529627
+        },
+        "vent": {
+          "control_to_native_mae": 0.05951995798319329,
+          "candidate_to_native_mae": 0.06515102707749768,
+          "control_to_photo_mae": 0.1630559056956116,
+          "candidate_to_photo_mae": 0.16814098972922503
+        },
+        "floor": {
+          "control_to_native_mae": 0.17070812324929974,
+          "candidate_to_native_mae": 0.015851727357609712,
+          "control_to_photo_mae": 0.1940096275547256,
+          "candidate_to_photo_mae": 0.02600008299616143
+        }
+      }
+    },
+    {
+      "format": "usdc",
+      "control_sha256": "cd8648c109a40ace3a3ee03aa0631908c607444262c08beaca5919c4f8fe8f53",
+      "candidate_sha256": "f8c7e0f790c5f343119d382676792fcb271edf185f63e2c9d571bef97cf4408c",
+      "geometry_status": "passed",
+      "control_to_native_full_mae": 0.077009231088074,
+      "candidate_to_native_full_mae": 0.0488423683326232,
+      "control_to_photo_full_mae": 0.13785654746938816,
+      "candidate_to_photo_full_mae": 0.10677486327896422,
+      "regions": {
+        "bedding": {
+          "control_to_native_mae": 0.062281430219146484,
+          "candidate_to_native_mae": 0.040057456533811785,
+          "control_to_photo_mae": 0.14063377333504207,
+          "candidate_to_photo_mae": 0.11348485625186895
+        },
+        "vent": {
+          "control_to_native_mae": 0.026505368814192343,
+          "candidate_to_native_mae": 0.03246743697478991,
+          "control_to_photo_mae": 0.1304873949579832,
+          "candidate_to_photo_mae": 0.13583251633986929
+        },
+        "floor": {
+          "control_to_native_mae": 0.17082004357298472,
+          "candidate_to_native_mae": 0.02561780267662621,
+          "control_to_photo_mae": 0.19412154787841066,
+          "candidate_to_photo_mae": 0.028215250544662306
+        }
+      }
+    }
+  ],
+  "scope": "Fixed same-image RGB diagnostics only; all formats and inherited geometry failures retained. No material measurement or SOTA claim."
+}

@@ -1,0 +1,15 @@
+{
+  "schema": "real2sim.floor-bake-evidence-audit/1",
+  "status": "passed",
+  "files_sha256": {
+    "appearance_receipt.json": "b79b3df08324a94a7eedafb228e14a9e57597cb4c7197ba56b3ece6b51446996",
+    "bake_receipt.json": "49926f5c55dc5d58990ecbf2525d702d9fe32d196f49b4dcce3e4b45854620cc",
+    "comparison.json": "4588c436c13dfc741602756d1df1fd4705ff582193cde4f862a3eef55f89ae11",
+    "material_paths.json": "4b6093cf296d73fddcd735bd930f2e6381f67056b4371077ea5c48dc66e7e8c3",
+    "pipeline_receipt.json": "2b9497df90d61b770d22a87c4b39a673c8177b4df9d7cf5bc7d276424ae976d6",
+    "render_protocol.json": "ef1d59b3449fb8b2c005e10002a6623f96f553224bd525350c4ffcb61352d156",
+    "strict_summary.json": "c838c53eecba036c59a73449f4a7f25692d0014e51851fa6d532b83f464f7dc4"
+  },
+  "measured_bake_and_pipeline_wall_seconds": 67.40998218092136,
+  "scope": "Receipt/hash/rig/denominator audit; not scene acceptance. Pixel metrics computed remotely by recorded scoring script. Inspector, preview, transfers, and agent overhead are uninstrumented."
+}

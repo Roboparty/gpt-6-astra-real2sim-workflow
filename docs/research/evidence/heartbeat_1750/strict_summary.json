@@ -1,0 +1,110 @@
+{
+  "schema": "real2sim.strict-interchange/1",
+  "status": "failed",
+  "records": [
+    {
+      "format": "blend",
+      "path": "/home/wqz/real2sim_capability_20260929/runs/floor_bake_eval_001/export/scene.blend",
+      "status": "passed",
+      "failures": [],
+      "sha256": "876f22cd2d786d7900d6f3f12887a785a2bf25d3545d227459cacd739a954ace",
+      "bounds_error_by_entity_m": {
+        "floor": 0.0,
+        "ceiling": 0.0,
+        "wall_back": 0.0,
+        "wall_front": 0.0,
+        "wall_right": 0.0,
+        "wall_left": 0.0,
+        "window": 0.0,
+        "blinds": 0.0,
+        "ceiling_fixtures": 0.0,
+        "reflective_board": 0.0,
+        "bed": 0.0,
+        "wardrobe": 0.0,
+        "shoe_cabinet": 0.0,
+        "glass_partition": 0.0,
+        "exterior": 0.0
+      },
+      "maximum_bound_error_m": 0.0,
+      "source_camera_matrix_max_error": 0.0,
+      "source_camera_projection_max_error": 0.0
+    },
+    {
+      "format": "glb",
+      "path": "/home/wqz/real2sim_capability_20260929/runs/floor_bake_eval_001/export/scene.glb",
+      "status": "failed",
+      "failures": [
+        "Source AABB differs by more than 2 mm: bed"
+      ],
+      "sha256": "860a11368e493f7bbe87de81c01e8b6e64e68b202980ef9336497f5e15f6a894",
+      "bounds_error_by_entity_m": {
+        "floor": 0.0,
+        "ceiling": 0.0,
+        "wall_back": 0.0,
+        "wall_front": 0.0,
+        "wall_right": 0.0,
+        "wall_left": 0.0,
+        "window": 0.0,
+        "blinds": 0.0,
+        "ceiling_fixtures": 0.0,
+        "reflective_board": 0.0,
+        "bed": 0.008094429969787598,
+        "wardrobe": 0.0,
+        "shoe_cabinet": 0.0,
+        "glass_partition": 0.0,
+        "exterior": 0.0
+      },
+      "maximum_bound_error_m": 0.008094429969787598,
+      "source_camera_matrix_max_error": 5.960464477539063e-08,
+      "source_camera_projection_max_error": 1.6169595418169536e-07
+    },
+    {
+      "format": "usdc",
+      "path": "/home/wqz/real2sim_capability_20260929/runs/floor_bake_eval_001/export/scene.usdc",
+      "status": "passed",
+      "failures": [],
+      "sha256": "58e616130d867a0ffbceca485dfe7cf25209636c479446b843576154572c9bf5",
+      "bounds_error_by_entity_m": {
+        "floor": 0.0,
+        "ceiling": 0.0,
+        "wall_back": 0.0,
+        "wall_front": 0.0,
+        "wall_right": 0.0,
+        "wall_left": 0.0,
+        "window": 0.0,
+        "blinds": 0.0,
+        "ceiling_fixtures": 0.0,
+        "reflective_board": 0.0,
+        "bed": 5.960464477539063e-08,
+        "wardrobe": 0.0,
+        "shoe_cabinet": 0.0,
+        "glass_partition": 0.0,
+        "exterior": 0.0
+      },
+      "maximum_bound_error_m": 5.960464477539063e-08,
+      "source_camera_matrix_max_error": 1.4901161193847656e-08,
+      "source_camera_projection_max_error": 0.0
+    }
+  ],
+  "inputs": {
+    "source_model": {
+      "path": "/home/wqz/real2sim_capability_20260929/runs/floor_bake_001/model.blend",
+      "sha256": "469d83230f32c1580a0d609e4833be90b9dcd3cc14f75aa88511c94659b60523"
+    },
+    "source_scene": {
+      "path": "/home/wqz/real2sim_capability_20260929/runs/floor_bake_001/scene.json",
+      "sha256": "65b70a9d62ec1a5216a94624f1f285df6c1d60297e33af8eedd9d65b406d4d93"
+    }
+  },
+  "evaluator_sha256": "808c48f725c1b24e6b32fae1a545f60e10d520c03f707715b061fb965b47921a",
+  "blender_version": "4.5.3 LTS",
+  "thresholds": {
+    "canonical_aabb_m": 0.002,
+    "camera_matrix": 0.0001,
+    "normalized_view_frame": 1e-05
+  },
+  "scope": "Independent frozen-source comparison; actual three-format loading; render-visible ownership and part identity; canonical AABBs; explicit CAMERA identity, world matrix and normalized view frame on original JSON raster. AABB agreement is not full-surface/topology/collision equivalence. Clip distances are recorded but not acceptance-tested. PBR/procedural material, texture, lighting, real-world accuracy and image fidelity are not validated.",
+  "sources_unchanged": true,
+  "full_report_sha256": "3354fcb4f3d3b25279f7a998651260cdfcb45da166633c1c6b29da2497b33f88",
+  "full_report_path": "/home/wqz/real2sim_capability_20260929/runs/floor_bake_eval_001/export/strict_reload_validation.json"
+}

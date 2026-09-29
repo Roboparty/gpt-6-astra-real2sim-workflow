@@ -1,0 +1,35 @@
+{
+  "schema": "real2sim.room-portability-run/1",
+  "protocol_sha256": "ef1d59b3449fb8b2c005e10002a6623f96f553224bd525350c4ffcb61352d156",
+  "script_sha256": "50e4db30fe8ea7f901715774e694eb83895673ea0e7a895b00b67d3f833b6841",
+  "stages": [
+    {
+      "stage": "export",
+      "status": "passed",
+      "returncode": 0,
+      "wall_seconds": 4.517473720014095
+    },
+    {
+      "stage": "strict",
+      "status": "failed",
+      "returncode": 12,
+      "wall_seconds": 3.2548506199382246
+    },
+    {
+      "stage": "appearance",
+      "status": "passed",
+      "returncode": 0,
+      "wall_seconds": 55.90646579593886
+    }
+  ],
+  "scope": "One authored-floor transfer candidate, not fitted physical normals or complete format fidelity. Original GLB all-vertex failure remains; normal and native appearance are compared separately.",
+  "gpu_hours": 0,
+  "paid_api_requests": 0,
+  "wall_seconds": 63.67952359095216,
+  "sources_unchanged": true,
+  "implementation_sha256": {
+    "workflow/r2s/blender_export.py": "ec9d6123271535b8f4de8618a5b8e944b5d999016f93831f8c47a1dd8d4c10d2",
+    "workflow/r2s/interchange.py": "808c48f725c1b24e6b32fae1a545f60e10d520c03f707715b061fb965b47921a",
+    "tools/render_interchange_appearance.py": "4e76567737410e2d2e5fa1814156b18cd580d330f66e73cdf272dc1d28bc84dc"
+  }
+}

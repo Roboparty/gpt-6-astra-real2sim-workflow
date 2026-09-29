@@ -1,0 +1,95 @@
+{
+  "schema": "real2sim.floor-normal-bake/1",
+  "status": "completed",
+  "protocol_sha256": "99eeb400b35448ef5895892193eff4c09c5076a28d498698271e994ef130476d",
+  "script_sha256": "5a08b6df8de59f85dc9e5f9548b421ed315b7dd7752d465858631d6295897175",
+  "helper_sha256": "d2d9f5dd620d74aaf70ba90d71186bf17e177b161dfa0d67d480fe5899538c39",
+  "bake": {
+    "resolution": 2048,
+    "samples": 1,
+    "margin": 16,
+    "normal_space": "TANGENT",
+    "uv_name": "PortableFloorNormalUV",
+    "smart_project_angle_limit": 1.1519173063162575,
+    "smart_project_island_margin": 0.03
+  },
+  "source_model_sha256": "4a0adbd949e3339c316e4c7bb99109a08e10c77d69dc80e83dc2b520f0a40402",
+  "source_scene_sha256": "65b70a9d62ec1a5216a94624f1f285df6c1d60297e33af8eedd9d65b406d4d93",
+  "disk_checks": [
+    {
+      "stage": "bake",
+      "free_bytes": 8783134720,
+      "reserve_bytes": 4294967296
+    },
+    {
+      "stage": "save_png",
+      "free_bytes": 8783073280,
+      "reserve_bytes": 4294967296
+    },
+    {
+      "stage": "save_model",
+      "free_bytes": 8782954496,
+      "reserve_bytes": 4294967296
+    }
+  ],
+  "bake_wall_seconds": 2.4307814029743895,
+  "pixels": {
+    "finite": true,
+    "covered_pixel_count": 2223328,
+    "covered_rgb_min": [
+      0.4941176772117615,
+      0.4941176772117615,
+      1.0
+    ],
+    "covered_rgb_max": [
+      0.5058823823928833,
+      0.5058823823928833,
+      1.0
+    ],
+    "covered_alpha_min": 1.0,
+    "covered_nonzero_rgb_fraction": 1.0,
+    "raw_sha256": "624043757bb1691fa082ee4fe3a54216b24d58c3e020077a02c3e45be8fbe444"
+  },
+  "blender_version": "4.5.3 LTS",
+  "target_object": "floor",
+  "old_active_uv": "FloorUV",
+  "old_render_uv": "FloorUV",
+  "pinned_uv_nodes": [],
+  "uv_coverage": {
+    "uv_min": [
+      0.004036458674818277,
+      0.0040364437736570835
+    ],
+    "uv_max": [
+      0.9959635734558105,
+      0.9269493222236633
+    ],
+    "triangle_area_sum": 0.5295632667839527,
+    "pixel_center_coverage": 2223328,
+    "coverage_fraction": 0.5300827026367188,
+    "interpretation": "Union of base-mesh UV triangles at bake pixel centers; no margin pixels included"
+  },
+  "invariants": {
+    "vertices_topology_old_uv_unchanged": true,
+    "transforms_unchanged": true,
+    "non_target_materials_unchanged": true,
+    "original_node_values_unchanged": true,
+    "original_color_image_and_srgb_unchanged": true,
+    "source_bytes_unchanged": true,
+    "original_geometry_sha256": "e5f587097d5bf8f0d5a6be5aa89a7d5003ee4ed224c64b84badfb537840a28a4",
+    "normal_image_packed": true
+  },
+  "output_hashes": {
+    "model.blend": "469d83230f32c1580a0d609e4833be90b9dcd3cc14f75aa88511c94659b60523",
+    "scene.json": "65b70a9d62ec1a5216a94624f1f285df6c1d60297e33af8eedd9d65b406d4d93",
+    "floor_normal.png": "f654b5a125be98b67f824083dc2723bb121104c18c641b9cae04c0d21a50b734"
+  },
+  "output_bytes": {
+    "model.blend": 21572395,
+    "scene.json": 36208,
+    "floor_normal.png": 80589
+  },
+  "original_color_pixels_sha256": "55c53d03cb8e246ec8628ccaf174034215727f087f8762abddb2973c6c164082",
+  "scope": "Tangent normal portability candidate; no physical-normal accuracy or appearance acceptance established",
+  "wall_seconds": 3.730458589969203
+}

@@ -1,0 +1,99 @@
+{
+  "schema": "real2sim.floor-normal-bake-protocol/1",
+  "status": "registered_before_candidate",
+  "source_model": "/home/wqz/real2sim_capability_20260929/runs/floor_bake_001/model.blend",
+  "source_model_sha256": "469d83230f32c1580a0d609e4833be90b9dcd3cc14f75aa88511c94659b60523",
+  "source_scene": "/home/wqz/real2sim_capability_20260929/runs/floor_bake_001/scene.json",
+  "source_scene_sha256": "65b70a9d62ec1a5216a94624f1f285df6c1d60297e33af8eedd9d65b406d4d93",
+  "source_photo": "/home/wqz/real2sim_whole_scene_20260926/input/01_bedroom.jpg",
+  "source_sha256": "5068deec1cba1e6a167209adca5fb77e4d931db06ed6a3812b9a2b8252d8c866",
+  "formats": [
+    "native",
+    "glb",
+    "usdc"
+  ],
+  "render": {
+    "width": 851,
+    "height": 638,
+    "samples": 8,
+    "seed": 0,
+    "threads": 2,
+    "device": "CPU",
+    "adaptive": false,
+    "denoise": true
+  },
+  "appearance_regions_xyxy": {
+    "bedding": [
+      625,
+      700,
+      1135,
+      940
+    ],
+    "vent": [
+      1210,
+      30,
+      1490,
+      190
+    ],
+    "floor": [
+      350,
+      1100,
+      1250,
+      1240
+    ]
+  },
+  "comparison": "Same original camera, lights, world and color management in every format. No fitting or chosen best renderer. Report source-photo ROI errors and format-to-native full-image/ROI RGB MAE separately.",
+  "geometry_gate": "Frozen original source vs independent actual blend/GLB/USD reload using existing strict evaluator; all formats retained on failure.",
+  "budget": {
+    "cpu_wall_seconds_per_run": 896.2695414100308,
+    "appearance_proposals_used_before": 5,
+    "new_appearance_proposals": 1,
+    "gpu_hours": 0,
+    "paid_api_requests": 0,
+    "minimum_free_disk_bytes": 4294967296
+  },
+  "failure_policy": "No omitted formats, threshold tuning, scene edits or historical file overwrites. A geometry failure limits appearance attribution and cannot be promoted.",
+  "scope": "One authored-floor transfer candidate, not fitted physical normals or complete format fidelity. Original GLB all-vertex failure remains; normal and native appearance are compared separately.",
+  "parent_protocol_sha256": "4ecf23301d461caea8f5060b61fdf0a71f4bcf51b57dd710b382d258341030db",
+  "amendment": "New predeclared tangent-normal bake candidate; no best-of colors, strengths, resolutions or UV parameter search.",
+  "render_failed_geometry_as_diagnostic": true,
+  "bake": {
+    "resolution": 2048,
+    "samples": 1,
+    "margin": 16,
+    "normal_space": "TANGENT",
+    "uv_name": "PortableFloorNormalUV",
+    "smart_project_angle_limit": 1.1519173063162575,
+    "smart_project_island_margin": 0.03
+  },
+  "intervention": "Bake only the authored floor shading normal into a dedicated tangent-space normal texture and UV atlas; preserve original color image/old UV interpretation, material values, geometry and all non-floor materials.",
+  "hypothesis": "A distinct valid normal texture avoids treating color/height pixels as tangent normals or sharing their non-color interpretation with the base-color image.",
+  "controls": {
+    "native": {
+      "render": "/home/wqz/real2sim_capability_20260929/runs/portability_003/native/render.png",
+      "sha256": "4431753cd48e2305e70ef86a4332ac0275497095383638d891c96441bfe17ebc"
+    },
+    "glb": {
+      "render": "/home/wqz/real2sim_capability_20260929/runs/portability_003/glb/render.png",
+      "sha256": "49da2f287aea04b7faee1544632fd16eeab5321f8b7b14c43d2f0111242d8b2c"
+    },
+    "usdc": {
+      "render": "/home/wqz/real2sim_capability_20260929/runs/portability_003/usdc/render.png",
+      "sha256": "cd8648c109a40ace3a3ee03aa0631908c607444262c08beaca5919c4f8fe8f53"
+    }
+  },
+  "bake_quality_gate": {
+    "minimum_nonzero_rgb_fraction_on_uv_faces": 0.99,
+    "all_pixels_finite": true
+  },
+  "implementation_sha256": {
+    "tools/bake_floor_normal_candidate.py": "5a08b6df8de59f85dc9e5f9548b421ed315b7dd7752d465858631d6295897175",
+    "tools/apply_appearance_candidate.py": "d2d9f5dd620d74aaf70ba90d71186bf17e177b161dfa0d67d480fe5899538c39",
+    "workflow/r2s/blender_export.py": "ec9d6123271535b8f4de8618a5b8e944b5d999016f93831f8c47a1dd8d4c10d2",
+    "workflow/r2s/interchange.py": "808c48f725c1b24e6b32fae1a545f60e10d520c03f707715b061fb965b47921a",
+    "tools/render_interchange_appearance.py": "4e76567737410e2d2e5fa1814156b18cd580d330f66e73cdf272dc1d28bc84dc"
+  },
+  "parent_bake_protocol_sha256": "99eeb400b35448ef5895892193eff4c09c5076a28d498698271e994ef130476d",
+  "parent_bake_receipt_sha256": "49926f5c55dc5d58990ecbf2525d702d9fe32d196f49b4dcce3e4b45854620cc",
+  "derivation": "Deterministic binding to the one baked candidate before rendering/scoring; source-authoring protocol and controls unchanged."
+}
