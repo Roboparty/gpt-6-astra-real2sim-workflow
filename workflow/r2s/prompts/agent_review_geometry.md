@@ -23,3 +23,6 @@ These are fixed-camera fitting diagnostics, not held-out or 3-D accuracy. Reques
 a responsible-stage revision for geometric defects; do not mark a failed metric as
 passed just because rendering succeeded. Existing support, structure and complete
 room checks still apply. Unseen-view evaluation must stay outside this agent packet.
+# Generation skills integration
+
+If local_geometry_feedback is present, inspect its part-mapped ROI report alongside the original source, other views and executable structural audit. Do not ignore worse regions or approve from MAE alone. Request one responsible upstream correction through the existing revision mechanism; the dependency graph reruns generation and local feedback.

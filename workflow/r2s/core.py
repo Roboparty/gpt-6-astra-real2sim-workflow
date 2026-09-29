@@ -66,6 +66,9 @@ class Workflow:
                         artifact=path.parent/ref['path'];bindings[str(artifact)]=file_hash(artifact) if artifact.is_file() else 'missing'
                 except (ValueError,KeyError,TypeError):bindings['invalid_protocol']=True
             source_hash=digest({'code':source_hash,'geometry_feedback_inputs':bindings})
+        if self.config.get('generation_skills'):
+            from .generation_skills import bindings as skill_bindings
+            source_hash=digest({'code':source_hash,'generation_skills':skill_bindings(self.config,name)})
         return digest({'stage':name,'upstream':up,'config':config,'implementation':source_hash,'branch':self.config.get('branch','A'),'workflow_profile':self.config.get('workflow_profile','legacy_v1'),'physics_options':physics_options(self.config),'refinement_enabled':self.refining,'surface_contract_version':limits(self.config)['surface_contract_version'] if self.refining else 0,'appearance_contract_version':limits(self.config)['appearance_contract_version'] if self.refining else 0,'revision_epoch':self.state.get('revision_epochs',{}).get(name,0)})
     def valid(self,name):
         item=self.state['stages'].get(name)
@@ -80,6 +83,9 @@ class Workflow:
         return {'schema':'real2sim.agent-packet/1.0','case_id':self.config['id'],'stage':name,'branch':self.config.get('branch','A'),'mode':self.config['mode'],'workflow_profile':self.config.get('workflow_profile','legacy_v1'),'physics_options':physics_options(self.config),'input_artifacts':self.upstream(name),'original_input_allowlist':[e['path'] for e in self.config['inputs']],'parameters':self.config.get('stages',{}).get(name,{}).get('parameters',{}),'output_directory':str(attempt),'instruction_file':str(Path(__file__).parent/'prompts'/(name+'.md')),'constraints':{'no_previous_project_artifacts':True,'formal_real_photography_only':True,'four_walls_floor_ceiling_luminaires_required':True,'external_geometry_allowed':self.config.get('branch','A')=='B','exact_assets_only':True,'unknown_identity_fallback':'A','validation_truth_access':False,'observed_layout_immutable_to_generative_repair':True},'response_contract':{'status':'complete | changes_requested | needs_input','evidence':'nonempty list of evidence records','reasoning_summary':'concise auditable rationale, not private chain of thought','parameters':'estimation and construction parameters','artifacts':'list of paths relative to output_directory','issues':'unresolved issues; never hide failure'}}
     def _finish(self,name,attempt,response):
         if any(not self.valid(dep) for dep in self.stage_map[name][0]):raise ContractError('Upstream artifacts changed while the stage was running')
+        if name=='agent_model' and self.config.get('generation_skills'):
+            from .generation_skills import prepare_model
+            response=prepare_model(self,attempt,response)
         if response.get('status') not in {'complete','changes_requested','needs_input'}:raise ContractError('Unknown response status')
         candidate=check_response(self,name,attempt,response) if self.refining else None
         artifacts=response.get('artifacts',[])
@@ -113,7 +119,11 @@ class Workflow:
         allowed={'awaiting_agent','needs_input'} if self.refining else {'awaiting_agent','changes_requested','needs_input'}
         if not item or item['status'] not in allowed:raise ContractError('No pending Agent stage; reviewed attempts are immutable')
         if item['fingerprint']!=self.fingerprint(name):raise ContractError('Inputs changed while Agent worked; stage must be reissued')
-        return self._finish(name,Path(item['directory']),json.loads(Path(response_file).read_text()))
+        started=time.monotonic()
+        try:return self._finish(name,Path(item['directory']),json.loads(Path(response_file).read_text()))
+        finally:
+            if self.refining and self.config.get('generation_skills'):
+                history=self.state.setdefault('refinement',{});history['elapsed_seconds']=history.get('elapsed_seconds',0)+time.monotonic()-started;self.save()
     def execute(self,name,retry=False):
         if self.valid(name):return 'cached'
         for d in self.stage_map[name][0]:
@@ -147,13 +157,20 @@ class Workflow:
                 packet['comparison_protocol']=self.state.get('refinement',{}).get('comparison_protocol')
                 for a in self.state['stages'].get('agent_observe',{}).get('outputs',[]):
                     if Path(a['path']).name=='observation.json':packet['appearance_observation']=a
+            if self.config.get('generation_skills'):
+                from .generation_skills import packet as skill_packet
+                packet=skill_packet(self,name,packet)
             atomic_json(attempt/'packet.json',packet)
             if self.stage_map[name][1]:
                 command=self.config.get('agent_command')
                 if not command:item['status']='awaiting_agent';self.save();return item['status']
                 # Fail closed when secret validation truth exists unless an isolation wrapper is configured.
                 if self.config.get('sealed_validation') and not self.config.get('agent_isolation_command'):raise ContractError('Sealed validation requires an explicit filesystem isolation wrapper for external agents')
-            else:command=cfg.get('command')
+            else:
+                command=cfg.get('command')
+                if self.config.get('generation_skills') and name in {'scene_reference','local_geometry_feedback','local_appearance_feedback'}:
+                    import sys
+                    command=[sys.executable,'-m','r2s.generation_skills','{packet}']
             if not command:raise ContractError('Executable stage command is not configured: '+name)
             if not isinstance(command,list):raise ContractError('Commands must be argv arrays, never shell strings')
             argv=[v.replace('{packet}',str(attempt/'packet.json')).replace('{output}',str(attempt)).replace('{case}',str(self.case)) for v in command]

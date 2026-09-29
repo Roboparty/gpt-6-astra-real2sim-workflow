@@ -1,0 +1,4 @@
+interface:
+  display_name: "Blender RoomKit"
+  short_description: "Editable room parts, static details and collision proxies"
+  default_prompt: "Use $blender-roomkit to build an isolated component scene with explicit dimension priors."

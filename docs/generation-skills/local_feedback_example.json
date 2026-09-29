@@ -1,0 +1,55 @@
+{
+  "schema": "real2sim-roi-report/1",
+  "regions": [
+    {
+      "view": "source",
+      "role": "fit",
+      "region": "cabinet_region",
+      "part_ids": [
+        "cabinet_body"
+      ],
+      "xyxy": [
+        16,
+        24,
+        48,
+        63
+      ],
+      "baseline_srgb_mae": 0.2282114127702363,
+      "candidate_srgb_mae": 0.2282114127702363,
+      "delta": 0.0,
+      "worsened": false
+    }
+  ],
+  "edit_priority_fit_only": [
+    {
+      "view": "source",
+      "role": "fit",
+      "region": "cabinet_region",
+      "part_ids": [
+        "cabinet_body"
+      ],
+      "xyxy": [
+        16,
+        24,
+        48,
+        63
+      ],
+      "baseline_srgb_mae": 0.2282114127702363,
+      "candidate_srgb_mae": 0.2282114127702363,
+      "delta": 0.0,
+      "worsened": false
+    }
+  ],
+  "acceptance": "not_determined",
+  "geometry_accuracy": "unverified",
+  "note": "sRGB image diagnostic; does not separate material, lighting or shape causes",
+  "status": "diagnostic_only",
+  "protocol_sha256": "17ae9d81042beb8463dea4b327874bed595ab5d8e6630ff84244311504c43e67",
+  "candidate_model_sha256": "26a16d761101d91817d8e4a14a7555d282b9aa3df0bf452662d303152e83d819",
+  "baseline_kind": "same_first_candidate",
+  "regression_requirements": [
+    "structure",
+    "collision",
+    "other_views"
+  ]
+}

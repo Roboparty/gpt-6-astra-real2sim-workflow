@@ -9,7 +9,9 @@ def physics_options(config):
 
 def stages_for(config):
     profile=config.get('workflow_profile','legacy_v1')
-    if profile=='legacy_v1':return list(LEGACY)
+    if profile=='legacy_v1':
+        if config.get('generation_skills') is not None:raise ValueError('Generation skills require quality_v2')
+        return list(LEGACY)
     if profile!='quality_v2':raise ValueError('Unknown workflow_profile')
     stages=[('ingest',[],False),('preprocess',['ingest'],False),
       ('agent_observe',['preprocess'],True),('agent_identify',['agent_observe'],True),
@@ -28,4 +30,6 @@ def stages_for(config):
     stages.append(('validate',['export','agent_calibrate'],False))
     if physical:stages.append(('agent_review_physics',['validate','agent_physics','agent_review'],True))
     stages.append(('report',['validate','agent_review']+(['agent_review_physics'] if physical else []),False))
-    return stages
+    if config.get('generation_skills') is None:return stages
+    from .generation_skills import stages as integrate_skills
+    return integrate_skills(config, stages)

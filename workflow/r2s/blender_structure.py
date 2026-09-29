@@ -131,7 +131,11 @@ if structure.get('scope')=='empty_room':
  (out/'structural_audit.json').write_text(json.dumps(result,indent=2));print('STRUCTURE_RESULT',result['status'],json.dumps(result['failures']));sys.exit(0)
 uv=np.array([x['uv'] for a in result['assemblies'] for x in a['source_landmarks']]);lo=np.floor(uv.min(axis=0)-30).astype(int);hi=np.ceil(uv.max(axis=0)+30).astype(int);W,H=scene['camera']['image_size'];lo=np.maximum(lo,0);hi=np.minimum(hi,[W,H]);result['source_crop_xyxy']=[*lo.tolist(),*hi.tolist()]
 sc.render.use_border=True;sc.render.use_crop_to_border=True;sc.render.border_min_x=lo[0]/W;sc.render.border_max_x=hi[0]/W;sc.render.border_min_y=1-hi[1]/H;sc.render.border_max_y=1-lo[1]/H;sc.render.filepath=str(out/'furniture_source_view.png');bpy.ops.render.render(write_still=True);sc.render.use_border=False;sc.render.use_crop_to_border=False
-sc.render.resolution_x=700;sc.render.resolution_y=700
+inspection_packet=json.loads((out/'packet.json').read_text()) if (out/'packet.json').exists() else {}
+inspection_size=inspection_packet.get('parameters',{}).get('inspection_resolution',[700,700])
+if len(inspection_size)!=2 or any(type(v) is not int or not 64<=v<=4096 for v in inspection_size):raise ValueError('Invalid inspection_resolution')
+sc.render.resolution_x,sc.render.resolution_y=inspection_size
+result['inspection_resolution']=inspection_size
 world=bpy.data.worlds.new('structure_inspection_world');world.use_nodes=True;world.node_tree.nodes['Background'].inputs[0].default_value=(.8,.8,.8,1);world.node_tree.nodes['Background'].inputs[1].default_value=.7;sc.world=world
 bpy.ops.object.camera_add();cam=bpy.context.object;cam.name='structure_inspection_camera';cam.data.type='ORTHO';sc.camera=cam
 data=bpy.data.lights.new('structure_inspection_area','AREA');data.energy=500;data.shape='DISK';data.size=3;light=bpy.data.objects.new('structure_inspection_area',data);bpy.context.collection.objects.link(light)

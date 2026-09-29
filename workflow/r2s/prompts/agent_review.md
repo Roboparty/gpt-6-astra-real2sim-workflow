@@ -15,3 +15,6 @@ Also deliver furniture_local_review with status, concrete findings, source_crop 
 When surface_contract_version >= 1, also follow surfaces.md; source-bound surface artifacts and front/raking review are mandatory.
 
 When appearance_contract_version >= 1, also follow appearance.md. Whole-scene coverage, scoped textures, actual UV/material checks and persistent fixed-view comparisons are mandatory.
+# Generation skills integration
+
+If local_appearance_feedback is present, inspect the bound local report and linked Real2Sim skill. Keep material and lighting interventions separate. The report cannot satisfy visual/structural/physics acceptance by itself; use the existing review contracts and preserve failed regions and candidates.
