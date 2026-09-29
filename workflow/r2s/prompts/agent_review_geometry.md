@@ -15,3 +15,11 @@ geometry_review.json must cover every current scene entity exactly once in per_o
 When surface_contract_version >= 1, also follow surfaces.md; source-bound surface artifacts and front/raking review are mandatory.
 
 When appearance_contract_version >= 1, also follow appearance.md. Whole-scene coverage, scoped textures, actual UV/material checks and persistent fixed-view comparisons are mandatory.
+# Optional numerical feedback
+
+When the build includes geometry_feedback/report.json, inspect every failed row
+and the green-source/magenta-candidate overlays. Missing observations remain failures.
+These are fixed-camera fitting diagnostics, not held-out or 3-D accuracy. Request
+a responsible-stage revision for geometric defects; do not mark a failed metric as
+passed just because rendering succeeded. Existing support, structure and complete
+room checks still apply. Unseen-view evaluation must stay outside this agent packet.

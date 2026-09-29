@@ -2,6 +2,11 @@
 
 This release packages the verified room example and its execution snapshot. It does not include the proposed `quality_v3` redesign.
 
+The 2026-09-29 research branch adds structural shell collision fixes, optional
+fixed-camera geometry feedback, source-bound physical priors and task-trace
+evaluation. See [the measured development results](docs/research/RESULTS_20260929.md).
+These additions are not a new accepted room reconstruction or a SOTA result.
+
 | Area | Current limitation |
 |---|---|
 | Generation entry | `tools/rebuild_artifacts.py` is a frozen recipe for the supplied photograph. New scenes need new observations, fitting and modelling; changing only the image path is insufficient. |
@@ -9,10 +14,14 @@ This release packages the verified room example and its execution snapshot. It d
 | Furniture specifications | Dimension-prior fitting code exists, but the example uses common priors. Automatic SKU search, universal CAD import and a measured specification-uplift benchmark are absent. |
 | Small/empty assembly sets | The current review rejects an empty inter-assembly check list, including a single-assembly scene. The diagnostic renderer also expects nonempty furniture landmarks. These cases need adaptation; do not add invented objects to bypass the checks. The three-furniture example does not exercise these edge cases. |
 | Mesh audit | Intended for the closed components in this example; intersection screening and signed-distance sampling are not an exact proof for every arbitrary mesh. Visual review remains necessary. |
-| Freeze and evidence | `freeze()` explicitly requires `validate`, then includes other valid stages. Operators must additionally ensure every required final review is complete. The published example has actual records for all 18 stages. Hash consistency does not itself prove physical truth. |
+| Freeze and evidence | `freeze()` requires every configured stage, including validate/report and applicable reviews, to remain valid. Hash consistency does not itself prove physical truth. |
 | Cache granularity | Any Python/Markdown change under `workflow/r2s` changes the implementation fingerprint for every stage. Current reuse is conservative, not object-level incremental execution. |
 | Export cost | Export currently includes a doubled-resolution, 128-sample render. Export and presentation rendering are not yet fully decoupled. |
 | Interchange and physics | GLB requires extra intrinsics for the off-axis camera; shading can differ across formats. Mass/material/gap values are assumptions and the loading demonstration is finite-duration. |
+| Structural collision | Canonical shell export supports axis-aligned rooms with explicit rectangular wall openings. Arbitrary wall proxy overrides are rejected until coverage validation exists. Window panes and frames remain separate collision geometry. |
+| Geometry feedback | Automatic Blender feedback exports opaque visible masks. Automatic evaluated landmark bindings, transparent-object mask semantics and independent real 3-D measurements remain unresolved. |
+| Numerical priors | Contact presets are explicit and compiled values are audited; density and PBR values are source-bound references for authors, not automatic changes to fitted masses or shaders. |
+| Task evaluation | The container-task evaluator is tested with synthetic traces; no new robot controller or real-room manipulation success has been established. |
 
 These limitations are retained rather than silently changing the already verified implementation during a presentation release. New generality, efficiency or accuracy claims require corresponding tests and experiments.
 

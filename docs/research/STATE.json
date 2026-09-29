@@ -1,0 +1,51 @@
+{
+  "schema": "real2sim.research-state/1",
+  "updated_on": "2026-09-29",
+  "objective": "Improve general real2sim capability toward independently benchmarked SOTA",
+  "status": "active",
+  "sota_established": false,
+  "baseline_commit": "f0e61696e0b1d1b56f2a4df2404ed2cb0d1fff69",
+  "working_branch": "codex/real2sim-capability-research-20260929",
+  "remote_root": "4090-1:/home/wqz/real2sim_capability_20260929",
+  "protocol": "PROTOCOL_20260929.md",
+  "result": "RESULTS_20260929.md",
+  "completed": [
+    "Matched retained-room collision failure reproduction and repair",
+    "Rectangular opening handling and false-pass negative tests",
+    "Fixed-camera geometry feedback integrated into build and review gates",
+    "Accepted-input and cache binding for source images and masks",
+    "Source-bound material and contact priors with active engine contact verification",
+    "Default-off optional dynamics and finite-parameter validation",
+    "Container-task trace evaluator with synthetic failure cases",
+    "14-script regression suite, Blender mask oracle, actual room fitting overlays"
+  ],
+  "next": [
+    "Freeze a lawful public multi-scene benchmark manifest and competitor revisions; preserve single-image versus video strata",
+    "Run an agent A/B with and without geometric feedback at identical model settings and budget",
+    "Resolve actual appearance defects and fine part feedback rather than optimize coarse cabinet silhouettes",
+    "Integrate an optional video geometry-reference adapter in a separate input arm",
+    "Connect task evaluation to actual robot controls, full object geometry and contacts from MuJoCo",
+    "Fix single-assembly/no-furniture workflow coverage and implement evaluated landmark bindings"
+  ],
+  "retained_attempts": [
+    "collision_001", "collision_openings_001", "collision_final_001",
+    "geometry_instrument_001", "blender_feedback_001",
+    "optional_dynamics_001", "research_checks_001", "research_checks_002",
+    "room_geometry_reference_001", "room_geometry_baseline_001"
+  ],
+  "resource_accounting": {
+    "new_gpu_hours": 0,
+    "new_paid_api_requests": 0,
+    "local_agent_cost": null,
+    "note": "CPU test/render wall times are retained in run records/logs; agent cost unknown. GPU/CPU budgets in protocol must not reset across continuations."
+  },
+  "constraints": [
+    "Do not overwrite historical candidates, source photographs or failed evidence",
+    "Do not declare the original room accepted from engineering checks",
+    "Hinges, cloth and soft bodies remain explicit optional features",
+    "Reference priors are assumed scene parameters, not physical measurements",
+    "Only source-backed shared-benchmark evidence can support a SOTA claim",
+    "Keep large dependencies, data, videos and experimental artifacts remote",
+    "Use local agent orchestration with SSH, never start remote Codex agents"
+  ]
+}

@@ -1,0 +1,159 @@
+{
+  "schema": "real2sim.geometry-feedback-report/1.0",
+  "status": "passed",
+  "protocol_sha256": "3404a9d933d12da769008a717512d768cbdd59bee12545867f327c77ca9e5c4b",
+  "candidate_sha256": "c153081d516982d5a414299d571529d8963032cfd677695fa97d884578b32edf",
+  "candidate_model": {
+    "path": "/home/wqz/real2sim_whole_scene_20260926/delivery_candidate/export/scene.blend",
+    "sha256": "e140b8ae0f133a87cbaa77e576ea164512e57c3bd9a56552841f8596b9126e51"
+  },
+  "global_errors": [],
+  "thresholds": {
+    "minimum_iou": 0.85,
+    "maximum_boundary_mean_px": 30,
+    "maximum_landmark_error_px": 18
+  },
+  "summary": {
+    "expected_objects": 2,
+    "passed_objects": 2,
+    "failed_objects": 0,
+    "error_objects": 0,
+    "pass_rate": 1.0,
+    "expected_masks": 2,
+    "mean_iou_with_failures": 0.9543002502228372,
+    "mean_boundary_px_with_failures": 4.948915964571085,
+    "expected_landmarks": 0,
+    "failed_landmarks": 0,
+    "mean_landmark_error_px_with_failures": null
+  },
+  "by_role": {
+    "fit": {
+      "expected_objects": 2,
+      "passed_objects": 2,
+      "failed_objects": 0,
+      "error_objects": 0,
+      "pass_rate": 1.0,
+      "expected_masks": 2,
+      "mean_iou_with_failures": 0.9543002502228372,
+      "mean_boundary_px_with_failures": 4.948915964571085,
+      "expected_landmarks": 0,
+      "failed_landmarks": 0,
+      "mean_landmark_error_px_with_failures": null
+    },
+    "heldout": {
+      "expected_objects": 0,
+      "passed_objects": 0,
+      "failed_objects": 0,
+      "error_objects": 0,
+      "pass_rate": null,
+      "expected_masks": 0,
+      "mean_iou_with_failures": null,
+      "mean_boundary_px_with_failures": null,
+      "expected_landmarks": 0,
+      "failed_landmarks": 0,
+      "mean_landmark_error_px_with_failures": null
+    }
+  },
+  "results": [
+    {
+      "view_id": "source",
+      "role": "fit",
+      "object_id": "wardrobe",
+      "source": {
+        "path": "/home/wqz/real2sim_whole_scene_20260926/input/01_bedroom.jpg",
+        "sha256": "5068deec1cba1e6a167209adca5fb77e4d931db06ed6a3812b9a2b8252d8c866"
+      },
+      "source_mask": {
+        "path": "/home/wqz/real2sim_capability_20260929/runs/room_geometry_reference_001/mask_0000.png",
+        "sha256": "1367f079618ff9b9ae085139a57e8ea51ea5ce5b2a4c489c88c918331bd45e68"
+      },
+      "render": {
+        "path": "/home/wqz/real2sim_capability_20260929/runs/room_geometry_baseline_001/view_0000_opaque_clay.png",
+        "sha256": "5a9a378ba6507afbb48fab9e471212ed69fbfc73c78424153818e3361bb75bff"
+      },
+      "rendered_mask": {
+        "path": "/home/wqz/real2sim_capability_20260929/runs/room_geometry_baseline_001/view_0000_object_0000_0001.png",
+        "sha256": "d68d844636a376f841f954d42e77c488913e91712106088cbac50a986c5f7f97"
+      },
+      "camera_sha256": "49a96c0625050d60406515f5e5eebe09f88c488ddcb5a4f637256ce6c395f975",
+      "unscored_palette_entities": [],
+      "errors": [],
+      "mask": {
+        "source_pixels": 204685,
+        "rendered_pixels": 205762,
+        "intersection_pixels": 203110,
+        "union_pixels": 207337,
+        "iou": 0.9796129007364821,
+        "boundary_mean_px": 2.103167775624371,
+        "boundary_max_px": 7.0,
+        "centroid_delta_xy_px": [
+          -1.3324080804391087,
+          -3.4123795984052094
+        ],
+        "bbox_scale_xy": [
+          1.0138888888888888,
+          0.9914772727272727
+        ]
+      },
+      "landmarks": [],
+      "overlay": {
+        "path": "/home/wqz/real2sim_capability_20260929/runs/room_geometry_baseline_001/report_overlays/view_0000_object_0000.png",
+        "sha256": "464fc613011f345cef900a132d21dfc9086f767a07a19a081d7239988bbf7ff8"
+      },
+      "status": "passed"
+    },
+    {
+      "view_id": "source",
+      "role": "fit",
+      "object_id": "shoe_cabinet",
+      "source": {
+        "path": "/home/wqz/real2sim_whole_scene_20260926/input/01_bedroom.jpg",
+        "sha256": "5068deec1cba1e6a167209adca5fb77e4d931db06ed6a3812b9a2b8252d8c866"
+      },
+      "source_mask": {
+        "path": "/home/wqz/real2sim_capability_20260929/runs/room_geometry_reference_001/mask_0001.png",
+        "sha256": "5f8e057cc6b1047f1c3e495975ad3538d8b2bf100302f8bc7e825fbc0ee2d440"
+      },
+      "render": {
+        "path": "/home/wqz/real2sim_capability_20260929/runs/room_geometry_baseline_001/view_0000_opaque_clay.png",
+        "sha256": "5a9a378ba6507afbb48fab9e471212ed69fbfc73c78424153818e3361bb75bff"
+      },
+      "rendered_mask": {
+        "path": "/home/wqz/real2sim_capability_20260929/runs/room_geometry_baseline_001/view_0000_object_0001_0001.png",
+        "sha256": "243b30fd2db683c3afecb815a0c94bed8a178f4e76d1cca121b6ae41258ab0c2"
+      },
+      "camera_sha256": "49a96c0625050d60406515f5e5eebe09f88c488ddcb5a4f637256ce6c395f975",
+      "unscored_palette_entities": [],
+      "errors": [],
+      "mask": {
+        "source_pixels": 181448,
+        "rendered_pixels": 195318,
+        "intersection_pixels": 181448,
+        "union_pixels": 195318,
+        "iou": 0.9289875997091922,
+        "boundary_mean_px": 7.7946641535177985,
+        "boundary_max_px": 45.45327270945405,
+        "centroid_delta_xy_px": [
+          0.7422522188617791,
+          4.510119698987637
+        ],
+        "bbox_scale_xy": [
+          1.0061728395061729,
+          1.0997830802603037
+        ]
+      },
+      "landmarks": [],
+      "overlay": {
+        "path": "/home/wqz/real2sim_capability_20260929/runs/room_geometry_baseline_001/report_overlays/view_0000_object_0001.png",
+        "sha256": "f5c48d79c02c453254694d175d14b3d322ea2671b75f35f1d5e9376b61fba72c"
+      },
+      "status": "passed"
+    }
+  ],
+  "interpretation": "Fixed-camera 2-D diagnostic only; fit is in-sample. Heldout means declared unused image evidence, not independently verified 3-D or physical accuracy.",
+  "limitations": [
+    "Camera/model/render bindings are checked declarations, not proof of a trusted renderer.",
+    "Unobserved geometry, friction, material identity and physical task success are not measured.",
+    "Failure penalties are the image diagonal; no failed object or landmark is dropped."
+  ]
+}

@@ -15,6 +15,18 @@ def _review(data,dimensions):
         d=data.get('checks',{}).get(key,{})
         if d.get('status')!='pass' or not d.get('evidence'):raise ContractError('Missing independent quality check: '+key)
 
+def check_geometry_feedback(attempt):
+    """A successful renderer cannot override failed frozen geometry thresholds."""
+    from .structure import file_sha
+    packet=json.loads((Path(attempt)/'packet.json').read_text())
+    for artifacts in packet.get('input_artifacts',{}).values():
+        for artifact in artifacts:
+            path=Path(artifact['path'])
+            if path.name=='report.json' and path.parent.name=='geometry_feedback':
+                if file_sha(path)!=artifact['sha256']:raise ContractError('Geometry feedback evidence changed')
+                report=json.loads(path.read_text())
+                if report.get('status')!='passed':raise ContractError('Frozen geometry feedback thresholds failed; request geometry revision')
+
 def check_quality_stage(stage,attempt,response,profile):
     if profile!='quality_v2':return
     files=response.get('artifacts',[])
@@ -47,6 +59,7 @@ def check_quality_stage(stage,attempt,response,profile):
             else:raise ContractError('Unknown surface visibility')
         if not d.get('openings_and_columns_reviewed'):raise ContractError('Window, doorway, pillar and wall-return review required')
     elif stage=='agent_review_geometry':
+        check_geometry_feedback(attempt)
         d=_read(attempt,'geometry_review.json',files);_review(d,['camera','room_surfaces','silhouettes','occlusion','support'])
         if not d.get('per_object') or any(x.get('critical_mismatch') for x in d['per_object']):raise ContractError('Per-object silhouette review is incomplete')
         if not d.get('geometry_freeze_sha256'):raise ContractError('Freeze geometry before material/light calibration')
@@ -66,6 +79,7 @@ def check_quality_stage(stage,attempt,response,profile):
         if not all(d.get(k) for k in ['lights','comparison_before','comparison_after','metrics_before','metrics_after','uncertainty']):raise ContractError('Lighting needs before/after evidence and residuals')
         if not d.get('exposure_albedo_gauge_fixed'):raise ContractError('Exposure/albedo ambiguity must be controlled')
     elif stage=='agent_review':
+        check_geometry_feedback(attempt)
         d=_read(attempt,'review.json',files);_review(d,['geometry','materials','lighting','source_alignment','novel_view_completeness'])
         if not d.get('source_comparison') or not d.get('same_camera_comparison'):raise ContractError('Original and render must be compared in the same camera')
         from .structure import evidence_file

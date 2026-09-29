@@ -29,6 +29,12 @@ def scene_check(scene):
     if scene.get('structure'):
         from .structure import structure_contract
         if not structure_contract(scene['structure'])<=ids:raise ContractError('Assembly owner absent from semantic scene')
+    if scene.get('physical_priors'):
+        from .physical_priors import validate_physical_priors
+        validate_physical_priors(scene['physical_priors'],ids|{'floor','ceiling','wall_back','wall_front','wall_left','wall_right'})
+    if r.get('openings') or r.get('collision_proxies'):
+        from .shell_collision import SURFACES,shell_boxes
+        for surface in SURFACES:shell_boxes(r,surface)
     return {'status':'passed','object_count':len(ids),'enclosure_surfaces':6,'luminaire_count':len(lamps)}
 
 def apply_layout_patch(scene,patch,authority,evidence):

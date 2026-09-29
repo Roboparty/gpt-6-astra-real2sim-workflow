@@ -1,0 +1,338 @@
+{
+  "schema": "real2sim.collision-comparison/1",
+  "protocol": "PROTOCOL_20260929",
+  "source_export": "/home/wqz/real2sim_whole_scene_20260926/delivery_candidate/export",
+  "input_hashes": {
+    "scene.json": "dbc328d7ac938334900c47e97fc8cc6ad412a98b97836d053367edb12e0dcf9b",
+    "geometry_audit.json": "e65abfedece410967e98e5d901147632dfc659c692118575d548f8ab21168338",
+    "meshes/bed.obj": "d3b92ba08e9383e255cee8a6da61f56f46a5e90bc960fc967998effd04e78d40",
+    "meshes/blinds.obj": "15975fd1684ff97b8d2fa13bbb56cab4e9e7d8c1cb6d3587f3d4420765e8cb38",
+    "meshes/ceiling.obj": "8296250e45c96a36dba1c9cd1477aa915601dd166816d964c9be00abf33a3210",
+    "meshes/ceiling_fixtures.obj": "942cf5c6d3b0b35c02b1582128ef521143fc3d758724856ef92b3049c04c691f",
+    "meshes/exterior.obj": "a0b06067bde0864931e006bf25d12304dd466106baf708b934b1bac68d56f957",
+    "meshes/floor.obj": "383ea6713fe614e99e9bc50b6a1788c56f5d2e188a1261c428f3b560348840c9",
+    "meshes/glass_partition.obj": "9fe68f7dfab711e6ca28c12f2f8508b8b7614398aabb20a76f82ef2a56e33969",
+    "meshes/reflective_board.obj": "c5f41de2b13eb6b9e5a69f76917e38a167f603d33323c2433555b9cf9c04b8ae",
+    "meshes/shoe_cabinet.obj": "9877b64dabadf519739e40cf2133433f453e0f0fab23685455730b5a8ff03769",
+    "meshes/wall_back.obj": "ce294d9bf41ab717cb2bea7d9634a8414d15f222e3d9e511f30e7be0b8c06787",
+    "meshes/wall_front.obj": "029c58f2c91782cee7f103e4f6c47ab8a47222ac9b9aadf3ba4f67bad4b9786a",
+    "meshes/wall_left.obj": "93daf4f31876d29a3a99a85cbdf99574bb081fece776fe3ea22f3dabe93add16",
+    "meshes/wall_right.obj": "a427f4a37d59708b7a85928784fdfba52275236ce58a20ebec88e832b4868969",
+    "meshes/wardrobe.obj": "62dbb93caac02ca9f3dc3f8dd0886b5b4dd2a40d8204fc185084be206173eaa5",
+    "meshes/window.obj": "60d6fe92bbb96395c510ff75ca64eec0ab219ff2912a002be223f6f1c4292324"
+  },
+  "source_unchanged": true,
+  "added_openings_sha256": "f0b14fe133657152799c0ce1ec67ac928057ef378ad00de56c1de9d6e1b4c910",
+  "same_scene_input": true,
+  "denominator": 2,
+  "runs": [
+    {
+      "arm": "baseline",
+      "status": "failed",
+      "returncode": 1,
+      "wall_seconds": 0.6652082919608802,
+      "command": [
+        "/home/wqz/real2sim_fresh_20260921/runtime/venv/bin/python",
+        "/home/wqz/real2sim_capability_20260929/baseline_code/workflow/r2s/simulation.py",
+        "/home/wqz/real2sim_capability_20260929/runs/collision_final_001/baseline/scene.json",
+        "/home/wqz/real2sim_capability_20260929/runs/collision_final_001/baseline"
+      ],
+      "script_sha256": "bf4bc0a8e684b143e40d32072bddff119ed4de0d9aecc74f92ae7d5e0e2f04b0",
+      "scene_sha256": "545e22665120509b259b88a0b78171f50b287342ada6ee41659eb3960da14c29",
+      "implementation": {
+        "__init__.py": "90468c672e280c4d1d3068cace74a5e828b5441d535e07cb79b6abdbadca826d",
+        "__main__.py": "db6f3263401eeb522bee180f14c8fd4172cb95654d88db361bb230a115c22b02",
+        "appearance.py": "563f72ede827cb3f5f01edcef200a33bf05e03e51f8ac211dc273b6612690c0a",
+        "blender_appearance.py": "2fd0c92acb1a45baec512924577caebea105db6d164272ca1cf72ff283ae3808",
+        "blender_export.py": "ef9afddab86ce86c3998a80be68b44df324369dc8d824c3d21b73ef5925e05c3",
+        "blender_metadata.py": "50bb1c5369abf40ea116c67ef5d88eaf2f5e294e2a4a5f9757f2d5b732d03ffc",
+        "blender_render.py": "3ec51910b2573a43d8a765683a26d5e78772c9eae16439d066596ac892c55dec",
+        "blender_structure.py": "b32c046cab2e2044c29ad89fa4f1109f4c3b4257b9b57a5ad5f966f8fc42e4b8",
+        "blender_surfaces.py": "905b5b1337cc93b667f4ddfe67a2c4d1de8a9a1df404720b22431d0e133b1f20",
+        "build_assembly.py": "022bc7b36038d034d90647f19990ce73b14afa75d11dd9d2ab501a8cdb395a32",
+        "calibration.py": "09c807bed062fd4f494cf4fb651d0c5697ee6d8075d1797ebe5e26544850eaf2",
+        "contracts.py": "3d6bbcc956ab09158c80d3427d37abc5a55c931a68b327f19ec3b7a6e7a75738",
+        "core.py": "344ae053cdd01282c0da0cc61837d89f1c4d5a1de1d7a6725330ed7ef627ca0d",
+        "dynamics.py": "6744facbc70fc05981fd0a25ed2b9bc7df2fec9170dd5231c1cc3445dca895c2",
+        "evaluation.py": "91d75751e29579a78b692ae6058956d85f51288399b5b40127c95042379e4d10",
+        "media.py": "72dc66d5d4f2b9efeb2c32f75b25aeed4597ced0f3a48a5d1df5eb6508822843",
+        "profiles.py": "faad78e0f6ceee3be5727628ca2ae2e2ad9de4aa51c082c72a3d934deea2df2c",
+        "quality.py": "e2258f8ca2f27e83905da55d962450722f32a9624af7df2fc305d77a010d49ee",
+        "refinement.py": "2872baaa560a091b2215f5e5a126da6bae9f063f7b61b9a54fb2aaae23f0a545",
+        "simulation.py": "bf4bc0a8e684b143e40d32072bddff119ed4de0d9aecc74f92ae7d5e0e2f04b0",
+        "simulation_checks.py": "5d9c0396bc50ee0a51b1064ade2cbf27db47f6ea398a191bb57d08c1226fc3bc",
+        "stage_worker.py": "50b645788ac72828a029bcfe881978751f08d27d4b9bb9e47f24f166719a3d31",
+        "structure.py": "e51793445f4fd787d150d2a7f63312b610f37bc8c24797a4736836fa450fa7af",
+        "surfaces.py": "a761b497aea5367bb055813c6613565383380529ef0d106525bde375a0a469a6",
+        "viewpoints.py": "b0fb70f246c19b01aa95b412bbb6ded7577ff2783a0550480b362b052b96e593"
+      },
+      "audit": null,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/home/wqz/real2sim_capability_20260929/baseline_code/workflow/r2s/simulation.py\", line 108, in <module>\n    rays=check_enclosure_rays(model,data,r,probe_xy)\n  File \"/home/wqz/real2sim_capability_20260929/baseline_code/workflow/r2s/simulation_checks.py\", line 28, in check_enclosure_rays\n    raise ValueError('No unobstructed valid '+expected_body+' collision-surface ray; candidates: '+str(rejected[:3]))\nValueError: No unobstructed valid wall_back collision-surface ray; candidates: [{'origin_m': [0.7619659418343743, 2.138751071090738, 2.62683140287836], 'hit_body': 'wall_back', 'distance_m': 0.025000038909262237}, {'origin_m': [-0.9560681163312515, 2.138751071090738, 2.62683140287836], 'hit_body': 'wall_back', 'distance_m': 0.025000038909262237}, {'origin_m': [-0.5265596017898451, 2.138751071090738, 2.62683140287836], 'hit_body': 'wall_back', 'distance_m': 0.025000038909262237}]\n"
+    },
+    {
+      "arm": "candidate",
+      "status": "passed",
+      "returncode": 0,
+      "wall_seconds": 0.6651942529715598,
+      "command": [
+        "/home/wqz/real2sim_fresh_20260921/runtime/venv/bin/python",
+        "/home/wqz/real2sim_capability_20260929/repo/workflow/r2s/simulation.py",
+        "/home/wqz/real2sim_capability_20260929/runs/collision_final_001/candidate/scene.json",
+        "/home/wqz/real2sim_capability_20260929/runs/collision_final_001/candidate"
+      ],
+      "script_sha256": "ef97254009cbef3f0cf82591adfb8470500a2b7a6d49ef0fc4fbf928f30d1eff",
+      "scene_sha256": "545e22665120509b259b88a0b78171f50b287342ada6ee41659eb3960da14c29",
+      "implementation": {
+        "__init__.py": "90468c672e280c4d1d3068cace74a5e828b5441d535e07cb79b6abdbadca826d",
+        "__main__.py": "db6f3263401eeb522bee180f14c8fd4172cb95654d88db361bb230a115c22b02",
+        "appearance.py": "563f72ede827cb3f5f01edcef200a33bf05e03e51f8ac211dc273b6612690c0a",
+        "blender_appearance.py": "2fd0c92acb1a45baec512924577caebea105db6d164272ca1cf72ff283ae3808",
+        "blender_export.py": "ef9afddab86ce86c3998a80be68b44df324369dc8d824c3d21b73ef5925e05c3",
+        "blender_geometry_feedback.py": "c3fcf71aa2e4c1a6b5e34d72d28eca087491017dcc9e75ec1d55047a43293eff",
+        "blender_metadata.py": "50bb1c5369abf40ea116c67ef5d88eaf2f5e294e2a4a5f9757f2d5b732d03ffc",
+        "blender_render.py": "3ec51910b2573a43d8a765683a26d5e78772c9eae16439d066596ac892c55dec",
+        "blender_structure.py": "b32c046cab2e2044c29ad89fa4f1109f4c3b4257b9b57a5ad5f966f8fc42e4b8",
+        "blender_surfaces.py": "905b5b1337cc93b667f4ddfe67a2c4d1de8a9a1df404720b22431d0e133b1f20",
+        "build_assembly.py": "022bc7b36038d034d90647f19990ce73b14afa75d11dd9d2ab501a8cdb395a32",
+        "calibration.py": "09c807bed062fd4f494cf4fb651d0c5697ee6d8075d1797ebe5e26544850eaf2",
+        "contracts.py": "0eb7846ae621e0435eef21702604062697320d70ddd7849fd1ceaccb39aa5262",
+        "core.py": "7a5ae32f46cc13ee1429fe7e18c5bd12c509fed6469e4c28cbd36a4085d48819",
+        "dynamics.py": "64003aa812db1b95766c8269ddd80b0f9cb5803ec70b60fe2ce4a4fa9004083a",
+        "evaluation.py": "91d75751e29579a78b692ae6058956d85f51288399b5b40127c95042379e4d10",
+        "geometry_feedback.py": "10a282f89f1ebc6952e960ea48145a46135c27aa696f18884a41b6e4dcd34a04",
+        "media.py": "72dc66d5d4f2b9efeb2c32f75b25aeed4597ced0f3a48a5d1df5eb6508822843",
+        "physical_prior_runtime.py": "397c55cdac764491c3454fc38ba2daba8fc97f02855eb6a8f4d9cbd175f9ef72",
+        "physical_priors.py": "6aff6222d3c04ac43f5ae0745ba65a9d4ab1793acfb2598a6c72b5dc98f70dc5",
+        "profiles.py": "faad78e0f6ceee3be5727628ca2ae2e2ad9de4aa51c082c72a3d934deea2df2c",
+        "quality.py": "5c3ca5a5a45a4ce1cd9f4cc3dc5eca626bbde892c2a2a6e3b92b548d4f75d699",
+        "refinement.py": "2872baaa560a091b2215f5e5a126da6bae9f063f7b61b9a54fb2aaae23f0a545",
+        "shell_collision.py": "c4755f90c4bd2f4b6accff79147706fee4698d18f86445e7bdca64e8e00feef6",
+        "simulation.py": "ef97254009cbef3f0cf82591adfb8470500a2b7a6d49ef0fc4fbf928f30d1eff",
+        "simulation_checks.py": "ce784f935adc8936fb5d109932646df990942552410a8a9202eb4cc91613b959",
+        "stage_worker.py": "a01269d7d07a866f9db0b16c4833b932e75b8ec086ec788db6bc262e62f51765",
+        "structure.py": "e51793445f4fd787d150d2a7f63312b610f37bc8c24797a4736836fa450fa7af",
+        "surfaces.py": "a761b497aea5367bb055813c6613565383380529ef0d106525bde375a0a469a6",
+        "task_evaluation.py": "9a206320f6068fa0571d863c3196901c5ef13449573694df68f5913e3a08487d",
+        "viewpoints.py": "b0fb70f246c19b01aa95b412bbb6ded7577ff2783a0550480b362b052b96e593"
+      },
+      "audit": {
+        "status": "passed",
+        "mujoco_version": "3.13.0",
+        "bodies": 16,
+        "geoms": 37,
+        "visual_meshes": 15,
+        "required_entities_present": [
+          "floor",
+          "ceiling",
+          "wall_back",
+          "wall_front",
+          "wall_left",
+          "wall_right",
+          "ceiling_fixtures"
+        ],
+        "probe_steps": 1500,
+        "probe_final_position_m": [
+          -0.95606812,
+          -2.08,
+          0.029845055560265232
+        ],
+        "six_surface_ray_tests": {
+          "left": {
+            "origin_m": [
+              -1.0260681163312515,
+              -2.08,
+              2.62683140287836
+            ],
+            "hit_body": "wall_left",
+            "distance_m": 0.049999983668748416,
+            "expected_m": 0.05,
+            "error_m": 1.6331251587176077e-08,
+            "rejected_candidate_count": 0,
+            "occluded_examples": []
+          },
+          "right": {
+            "origin_m": [
+              2.5500000000000003,
+              -0.005624464454631273,
+              2.62683140287836
+            ],
+            "hit_body": "wall_right",
+            "distance_m": 0.04999999999999988,
+            "expected_m": 0.05,
+            "error_m": 1.249000902703301e-16,
+            "rejected_candidate_count": 0,
+            "occluded_examples": []
+          },
+          "back": {
+            "origin_m": [
+              0.7619659418343743,
+              2.138751071090738,
+              2.62683140287836
+            ],
+            "hit_body": "wall_back",
+            "distance_m": 0.05000002890926197,
+            "expected_m": 0.05,
+            "error_m": 2.8909261970411215e-08,
+            "rejected_candidate_count": 0,
+            "occluded_examples": []
+          },
+          "front": {
+            "origin_m": [
+              0.7619659418343743,
+              -2.1500000000000004,
+              2.62683140287836
+            ],
+            "hit_body": "wall_front",
+            "distance_m": 0.049999999999999434,
+            "expected_m": 0.05,
+            "error_m": 5.689893001203927e-16,
+            "rejected_candidate_count": 0,
+            "occluded_examples": []
+          },
+          "ceiling": {
+            "origin_m": [
+              -0.9560681163312515,
+              -2.08,
+              2.62683140287836
+            ],
+            "hit_body": "ceiling",
+            "distance_m": 0.039999997121639874,
+            "expected_m": 0.04,
+            "error_m": 2.8783601266346714e-09,
+            "rejected_candidate_count": 0,
+            "occluded_examples": []
+          },
+          "floor": {
+            "origin_m": [
+              -0.9560681163312515,
+              -2.08,
+              1.33341570143918
+            ],
+            "hit_body": "floor",
+            "distance_m": 1.33341570143918,
+            "expected_m": 1.33341570143918,
+            "error_m": 0.0,
+            "rejected_candidate_count": 0,
+            "occluded_examples": []
+          }
+        },
+        "camera_transfer": [
+          {
+            "camera": "source_camera",
+            "canonical_fx_fy_cx_cy": [
+              681.3127150155914,
+              681.3127150155914,
+              851,
+              638
+            ],
+            "recovered_from_engine_frustum": [
+              681.3126995946387,
+              681.3127441616467,
+              851.0,
+              638.0
+            ],
+            "maximum_transfer_error_px": 2.914605533987924e-05,
+            "interpretation": "format transfer consistency, not physical camera calibration accuracy"
+          }
+        ],
+        "layout_modified": false,
+        "limitations": [
+          "static furniture with explicit conservative collision proxies",
+          "soft fabrics, hinged cabinets and movable objects are not dynamically identified",
+          "OBJ visual meshes use flat per-entity colors in MJCF; textured reference visuals are in Blender/GLB/USD"
+        ],
+        "collision_reference": "https://mujoco.readthedocs.io/en/stable/XMLreference.html#asset-mesh",
+        "opening_ray_tests": [
+          {
+            "wall": "wall_left",
+            "bounds": [
+              -0.7498150962320744,
+              1.5741735881828403,
+              0.1674491696165059,
+              2.64683140287836
+            ],
+            "status": "passed",
+            "samples": [
+              {
+                "origin_m": [
+                  -1.0260681163312515,
+                  -0.5174162277905829,
+                  0.41538739294269134
+                ],
+                "wall_distance_m": -1.0
+              },
+              {
+                "origin_m": [
+                  -1.0260681163312515,
+                  -0.5174162277905829,
+                  1.4071402862474331
+                ],
+                "wall_distance_m": -1.0
+              },
+              {
+                "origin_m": [
+                  -1.0260681163312515,
+                  -0.5174162277905829,
+                  2.398893179552175
+                ],
+                "wall_distance_m": -1.0
+              },
+              {
+                "origin_m": [
+                  -1.0260681163312515,
+                  0.412179245975383,
+                  0.41538739294269134
+                ],
+                "wall_distance_m": -1.0
+              },
+              {
+                "origin_m": [
+                  -1.0260681163312515,
+                  0.412179245975383,
+                  1.4071402862474331
+                ],
+                "wall_distance_m": -1.0
+              },
+              {
+                "origin_m": [
+                  -1.0260681163312515,
+                  0.412179245975383,
+                  2.398893179552175
+                ],
+                "wall_distance_m": -1.0
+              },
+              {
+                "origin_m": [
+                  -1.0260681163312515,
+                  1.341774719741349,
+                  0.41538739294269134
+                ],
+                "wall_distance_m": -1.0
+              },
+              {
+                "origin_m": [
+                  -1.0260681163312515,
+                  1.341774719741349,
+                  1.4071402862474331
+                ],
+                "wall_distance_m": -1.0
+              },
+              {
+                "origin_m": [
+                  -1.0260681163312515,
+                  1.341774719741349,
+                  2.398893179552175
+                ],
+                "wall_distance_m": -1.0
+              }
+            ],
+            "scope": "structural wall only; glazing not tested"
+          }
+        ],
+        "structural_collision_source": "axis-aligned canonical room surfaces with declared rectangular openings; visual AABBs excluded"
+      },
+      "stderr_tail": ""
+    }
+  ],
+  "scope": "One retained development scene; no visual acceptance or SOTA claim"
+}

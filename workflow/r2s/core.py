@@ -53,6 +53,19 @@ class Workflow:
         if name=='ingest':config={k:self.config.get(k) for k in ['mode','inputs','provenance','formal_test']};config['actual_input_hashes']=[file_hash(x['path']) for x in self.config['inputs']]
         source_root=Path(__file__).parent
         source_hash=digest({str(p.relative_to(source_root)):file_hash(p) for p in source_root.rglob('*') if p.is_file() and p.suffix in {'.py','.md'}})
+        prior_library=source_root.parents[1]/'public_contract'/'physical_priors.json'
+        if prior_library.exists():source_hash=digest({'code':source_hash,'physical_prior_library':file_hash(prior_library)})
+        protocol_path=config.get('parameters',{}).get('geometry_feedback_protocol')
+        if protocol_path:
+            path=Path(protocol_path).resolve();bindings={str(path):file_hash(path) if path.is_file() else 'missing'}
+            if path.is_file():
+                try:
+                    protocol=json.loads(path.read_text(encoding='utf-8-sig'))
+                    refs=[v['source'] for v in protocol['views']]+[o['mask'] for v in protocol['views'] for o in v['objects'] if 'mask' in o]
+                    for ref in refs:
+                        artifact=path.parent/ref['path'];bindings[str(artifact)]=file_hash(artifact) if artifact.is_file() else 'missing'
+                except (ValueError,KeyError,TypeError):bindings['invalid_protocol']=True
+            source_hash=digest({'code':source_hash,'geometry_feedback_inputs':bindings})
         return digest({'stage':name,'upstream':up,'config':config,'implementation':source_hash,'branch':self.config.get('branch','A'),'workflow_profile':self.config.get('workflow_profile','legacy_v1'),'physics_options':physics_options(self.config),'refinement_enabled':self.refining,'surface_contract_version':limits(self.config)['surface_contract_version'] if self.refining else 0,'appearance_contract_version':limits(self.config)['appearance_contract_version'] if self.refining else 0,'revision_epoch':self.state.get('revision_epochs',{}).get(name,0)})
     def valid(self,name):
         item=self.state['stages'].get(name)
@@ -116,6 +129,11 @@ class Workflow:
             if name=='preprocess':
                 inp=json.loads(Path(self.state['stages']['ingest']['outputs'][0]['path']).read_text());processed=preprocess(inp,attempt,cfg.get('parameters'));return 'succeeded' if self._finish(name,attempt,{'status':'complete','artifacts':['preprocess.json']+[Path(r['path']).name for r in processed['accepted']],'evidence':['original frame sampling and feature correspondences']}) else 'failed'
             packet=self.packet(name,attempt);packet['revision_request']=self.state.get('revision_requests',{}).get(name)
+            if cfg.get('parameters',{}).get('geometry_feedback_protocol'):
+                sources=[{'path':x['path'],'sha256':file_hash(x['path'])} for x in self.config['inputs']]
+                for artifact in self.state['stages'].get('preprocess',{}).get('outputs',[]):
+                    if Path(artifact['path']).name=='preprocess.json':sources+=json.loads(Path(artifact['path']).read_text())['accepted']
+                packet['geometry_feedback_sources']=sources
             if self.refining:
                 targets=[]
                 sources=[{'path':x['path'],'sha256':file_hash(x['path'])} for x in self.config['inputs']] if self.config['mode']!='video' else []

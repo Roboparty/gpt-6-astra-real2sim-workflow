@@ -32,19 +32,23 @@ def apply_features(root,definitions):
         if parent in list(body.iter()):raise ContractError('Articulation cycle')
         if body.find('joint') is not None or body.find('freejoint') is not None:raise ContractError('Moving body already has joints')
         if h.get('parameter_provenance') not in {'measured','manufacturer','assumed'}:raise ContractError('Physics parameter provenance is mandatory')
-        axis=_vec(h['axis_local'],3,'hinge axis');axis/=np.linalg.norm(axis)
-        if not np.isfinite(axis).all():raise ContractError('Zero hinge axis')
+        axis=_vec(h['axis_local'],3,'hinge axis');axis_norm=np.linalg.norm(axis)
+        if not math.isfinite(axis_norm) or axis_norm<1e-12:raise ContractError('Zero or invalid hinge axis')
+        axis/=axis_norm
         anchor=_vec(h['anchor_local'],3,'hinge anchor');limits=_vec(h['range_rad'],2,'hinge limits')
         if not limits[0]<=0<=limits[1] or limits[0]>=limits[1]:raise ContractError('Reference pose must lie within hinge limits')
         mass=float(h['mass_kg']);inertia=_vec(h['inertia_diag_kgm2'],3,'inertia')
-        if mass<=0 or min(inertia)<=0 or 2*max(inertia)>sum(inertia)+1e-9:raise ContractError('Nonphysical mass/inertia')
+        if not math.isfinite(mass) or mass<=0 or min(inertia)<=0 or 2*max(inertia)>sum(inertia)+1e-9:raise ContractError('Nonphysical mass/inertia')
+        center=_vec(h.get('center_of_mass_local',[0,0,0]),3,'center of mass')
+        damping=float(h.get('damping',.2));friction=float(h.get('frictionloss',.05));torque=float(h.get('test_torque_nm',.2))
+        if not all(math.isfinite(v) for v in (damping,friction,torque)) or min(damping,friction)<0:raise ContractError('Invalid hinge damping/friction/torque')
         child_world=_world_transform(body,parents);parent_world=np.eye(4) if parent is world else _world_transform(parent,parents);relative=np.linalg.inv(parent_world)@child_world
         parents[body].remove(body);parent.append(body);parents[body]=parent
         q=Rotation.from_matrix(relative[:3,:3]).as_quat();body.set('pos',fmt(relative[:3,3]));body.set('quat',fmt(q[[3,0,1,2]]))
         old=body.find('inertial')
         if old is not None:body.remove(old)
-        ET.SubElement(body,'inertial',pos=fmt(h.get('center_of_mass_local',[0,0,0])),mass=str(mass),diaginertia=fmt(inertia))
-        ET.SubElement(body,'joint',name=name,type='hinge',axis=fmt(axis),pos=fmt(anchor),limited='true',range=fmt(limits),ref='0',damping=str(h.get('damping',.2)),frictionloss=str(h.get('frictionloss',.05)))
+        ET.SubElement(body,'inertial',pos=fmt(center),mass=str(mass),diaginertia=fmt(inertia))
+        ET.SubElement(body,'joint',name=name,type='hinge',axis=fmt(axis),pos=fmt(anchor),limited='true',range=fmt(limits),ref='0',damping=str(damping),frictionloss=str(friction))
         created.append({'kind':'hinge','id':name,'moving_body':child_id,'reference_world_transform':child_world.tolist(),'parameter_provenance':h['parameter_provenance']})
     for d in definitions.get('deformables',[]):
         name=d['id'];entity=d['entity'];kind=d['kind'];dim=2 if kind=='cloth' else 3 if kind=='soft_body' else 0
@@ -53,31 +57,37 @@ def apply_features(root,definitions):
         if not d.get('rest_shape_matched') or not d.get('evidence'):raise ContractError('Deformable rest shape must be reviewed against the reference object')
         if d.get('parameter_provenance') not in {'measured','manufacturer','assumed'}:raise ContractError('Deformable parameter provenance is mandatory')
         body=bodies[entity]
-        if body.findall('body') or body.find('joint') is not None:raise ContractError('Deformable target must be an isolated component root')
-        points=np.asarray(d['points_local'],float);elements=np.asarray(d['elements'],int)
-        if points.ndim!=2 or points.shape[1]!=3 or not np.isfinite(points).all():raise ContractError('Invalid rest vertices')
-        if elements.ndim!=2 or elements.shape[1]!=dim+1 or elements.min()<0 or elements.max()>=len(points):raise ContractError('Invalid flex topology')
+        if body.findall('body') or body.find('joint') is not None or body.find('freejoint') is not None:raise ContractError('Deformable target must be an isolated component root')
+        points=np.asarray(d['points_local'],float);raw_elements=np.asarray(d['elements'])
+        if points.ndim!=2 or points.shape[1]!=3 or not len(points) or not np.isfinite(points).all():raise ContractError('Invalid rest vertices')
+        if raw_elements.ndim!=2 or raw_elements.shape[1]!=dim+1 or not raw_elements.size or not np.issubdtype(raw_elements.dtype,np.integer):raise ContractError('Invalid flex topology')
+        elements=raw_elements.astype(int)
+        if elements.min()<0 or elements.max()>=len(points):raise ContractError('Invalid flex topology')
         if not d.get('replace_static_geometry'):raise ContractError('Explicitly replace the static component to avoid duplicate geometry/collisions')
         for geom in list(body.findall('geom')):body.remove(geom)
         mass=float(d['mass_kg']);radius=float(d.get('contact_radius_m',.002))
-        if mass<=0 or radius<=0:raise ContractError('Invalid deformable mass/contact thickness')
-        flex=ET.SubElement(body,'flexcomp',name=name,type='direct',dim=str(dim),point=fmt(points),element=' '.join(map(str,elements.ravel())),mass=str(mass),radius=str(radius),rgba=fmt(d.get('rgba',[.7,.5,.3,1])))
+        if not all(math.isfinite(v) for v in (mass,radius)) or mass<=0 or radius<=0:raise ContractError('Invalid deformable mass/contact thickness')
+        elastic_damping=float(d.get('elastic_damping',.001));strain_bound=float(d.get('maximum_allowed_edge_strain',.75))
+        if not all(math.isfinite(v) for v in (elastic_damping,strain_bound)) or elastic_damping<0 or strain_bound<=0:raise ContractError('Invalid elastic damping/strain bound')
+        rgba=_vec(d.get('rgba',[.7,.5,.3,1]),4,'deformable color')
+        flex=ET.SubElement(body,'flexcomp',name=name,type='direct',dim=str(dim),point=fmt(points),element=' '.join(map(str,elements.ravel())),mass=str(mass),radius=str(radius),rgba=fmt(rgba))
         pins=d.get('pinned_vertices',[])
         if pins:
-            if min(pins)<0 or max(pins)>=len(points):raise ContractError('Pinned vertex outside mesh')
+            if any(type(p) is not int for p in pins) or min(pins)<0 or max(pins)>=len(points):raise ContractError('Pinned vertex outside mesh')
             ET.SubElement(flex,'pin',id=' '.join(map(str,pins)))
         if dim==2:
             E=float(d['young_pa']);nu=float(d.get('poisson',.3));thickness=float(d['thickness_m'])
-            if E<=0 or not 0<=nu<.5 or thickness<=0:raise ContractError('Invalid cloth shell material')
-            ET.SubElement(flex,'elasticity',young=str(E),poisson=str(nu),thickness=str(thickness),elastic2d='both',damping=str(d.get('elastic_damping',.001)))
+            if not all(math.isfinite(v) for v in (E,nu,thickness)) or E<=0 or not 0<=nu<.5 or thickness<=0:raise ContractError('Invalid cloth shell material')
+            ET.SubElement(flex,'elasticity',young=str(E),poisson=str(nu),thickness=str(thickness),elastic2d='both',damping=str(elastic_damping))
         else:
             E=float(d['young_pa']);nu=float(d.get('poisson',.3))
-            if E<=0 or not 0<=nu<.5:raise ContractError('Invalid elastic material')
-            ET.SubElement(flex,'elasticity',young=str(E),poisson=str(nu),damping=str(d.get('elastic_damping',.001)))
+            if not all(math.isfinite(v) for v in (E,nu)) or E<=0 or not 0<=nu<.5:raise ContractError('Invalid elastic material')
+            ET.SubElement(flex,'elasticity',young=str(E),poisson=str(nu),damping=str(elastic_damping))
         created.append({'kind':kind,'id':name,'entity':entity,'vertices':len(points),'elements':len(elements),'parameter_provenance':d['parameter_provenance']})
     return root,created
 
 def validate_requested_features(definitions,requested):
+    if any(k not in {'hinges','cloth','soft_bodies'} or type(v) is not bool for k,v in requested.items()):raise ContractError('Physics switches must be named booleans')
     actual={'hinges':bool(definitions.get('hinges')),'cloth':any(d['kind']=='cloth' for d in definitions.get('deformables',[])),'soft_bodies':any(d['kind']=='soft_body' for d in definitions.get('deformables',[]))}
     for key,enabled in actual.items():
         if enabled and not requested.get(key,False):raise ContractError('Unrequested physics feature: '+key)
@@ -88,13 +98,17 @@ def validate_requested_features(definitions,requested):
 def export_and_test(reference_xml,scene,out_dir,requested=None):
     import mujoco
     out_dir=Path(out_dir);definitions=scene.get('dynamics',{})
-    if requested is not None:validate_requested_features(definitions,requested)
+    requested={} if requested is None else requested
+    validate_requested_features(definitions,requested)
     if not definitions.get('hinges') and not definitions.get('deformables'):
         return {'status':'not_applicable' if requested and any(requested.values()) else 'disabled','reason':'No reviewed dynamic recipes; static reference preserved','not_applicable':definitions.get('not_applicable',{})}
+    steps=definitions.get('test_steps',600);timestep=float(definitions.get('timestep_s',.0005))
+    if type(steps) is not int or steps<=0:raise ContractError('Dynamics test_steps must be a positive integer')
+    if not math.isfinite(timestep) or timestep<=0:raise ContractError('Dynamics timestep must be positive and finite')
     source=ET.parse(reference_xml).getroot();root,created=apply_features(source,definitions)
     option=root.find('option')
     if option is None:option=ET.SubElement(root,'option')
-    option.set('timestep',str(definitions.get('timestep_s',.0005)))
+    option.set('timestep',str(timestep))
     xml=out_dir/'scene_dynamic.xml';ET.ElementTree(root).write(xml,encoding='unicode',xml_declaration=True)
     model=mujoco.MjModel.from_xml_path(str(xml));data=mujoco.MjData(model);mujoco.mj_forward(model,data)
     initial=data.flexvert_xpos.copy();samples=[];ranges={};flex_checks=[]
@@ -111,7 +125,7 @@ def export_and_test(reference_xml,scene,out_dir,requested=None):
     for h in definitions.get('hinges',[]):
         jid=mujoco.mj_name2id(model,mujoco.mjtObj.mjOBJ_JOINT,h['id']);bid=mujoco.mj_name2id(model,mujoco.mjtObj.mjOBJ_BODY,h['moving_body']);expected=next(c['reference_world_transform'] for c in created if c['id']==h['id']);assert np.linalg.norm(data.xpos[bid]-np.array(expected)[:3,3])<1e-6
         ranges[h['id']]=[0.,0.]
-    steps=int(definitions.get('test_steps',600));warning_before=data.warning.number.copy()
+    warning_before=data.warning.number.copy()
     for step in range(steps):
         data.qfrc_applied[:]=0
         for h in definitions.get('hinges',[]):

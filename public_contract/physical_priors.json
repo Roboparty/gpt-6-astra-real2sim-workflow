@@ -1,0 +1,132 @@
+{
+  "schema_version": "real2sim.physical_priors/1.0",
+  "retrieved_on": "2026-09-29",
+  "scope": "Reference initialization and sensitivity analysis, never scene-specific physical calibration.",
+  "sources": {
+    "usda_wood_2021": {
+      "title": "USDA Forest Products Laboratory, Wood Handbook FPL-GTR-282, Table 4-6a",
+      "url": "https://www.fpl.fs.usda.gov/documnts/fplgtr/fplgtr282/fpl_gtr282.pdf",
+      "access": "primary_search_excerpt",
+      "locator": "Chapter 4, Table 4-6a, moisture content 12%, specific gravity 0.30-0.70"
+    },
+    "egger_mdf": {
+      "title": "EGGER Eurodekor laminated MDF Environmental Product Declaration",
+      "url": "https://www.egger.com/get_download/971cb671-dc55-4134-910f-df1cf4795572/Environmental_product_declaration_Eurodekor_MDF.pdf",
+      "access": "primary_search_excerpt",
+      "locator": "Section 2.3: gross density 15-19 mm, EN 323, 670-730 kg/m3",
+      "access_note": "Web reader rejects application/octet-stream; numerical table available in primary-source search extract. EN 323 is the test method, not a universal MDF density requirement."
+    },
+    "pilkington_ats129": {
+      "title": "Pilkington ATS-129, Properties of Soda-Lime-Silica Float Glass",
+      "url": "https://www.pilkington.com/-/media/pilkington/site-content/usa/window-manufacturers/technical-bulletins/ats-129---properties-of-soda-lime-silica-float-glass.pdf",
+      "access": "primary_full_text",
+      "locator": "Page 2: density 2500 kg/m3; index of refraction 1.523 at 0.5893 micrometres"
+    },
+    "mujoco_xml": {
+      "title": "MuJoCo XML Reference, body/geom",
+      "url": "https://mujoco.readthedocs.io/en/stable/XMLreference.html#body-geom",
+      "access": "primary_full_text",
+      "locator": "geom friction default 1 0.005 0.0001; condim default 3; density default 1000"
+    },
+    "mujoco_contact": {
+      "title": "MuJoCo Computation, Contact",
+      "url": "https://mujoco.readthedocs.io/en/stable/computation/index.html#contact",
+      "access": "primary_full_text",
+      "locator": "condim 3/4/6 and torsional/rolling friction units of length"
+    },
+    "blender_principled": {
+      "title": "Blender 5.0 Manual, Principled BSDF",
+      "url": "https://docs.blender.org/manual/en/5.0/render/shader_nodes/shader/principled.html",
+      "access": "primary_search_excerpt",
+      "locator": "Metallic endpoints 0 and 1; IOR default 1.5",
+      "access_note": "Manual direct fetch unavailable; parameter semantics read from indexed official manual. Roughness values below are project initialization choices, not Blender standards."
+    }
+  },
+  "materials": {
+    "wood_generic_12pct": {
+      "description": "Wood prior at assumed 12% moisture; species is unidentified",
+      "density": {
+        "value": 560,
+        "range": [336, 784],
+        "unit": "kg/m3",
+        "status": "reference",
+        "source_ids": ["usda_wood_2021"],
+        "basis": "Selected table value at specific gravity 0.50; range spans table specific gravity 0.30-0.70 at 12% moisture, not all wood species or a confidence interval."
+      },
+      "optical": {
+        "metallic": 0,
+        "roughness": 0.5,
+        "roughness_range": [0.2, 0.9],
+        "ior": 1.5,
+        "unit": "dimensionless",
+        "status": "assumed",
+        "source_ids": ["blender_principled"],
+        "basis": "Dielectric shader initialization; roughness range is a project sensitivity interval for unknown finish, not a measured material property."
+      }
+    },
+    "mdf_laminated_15_19mm": {
+      "description": "Product-family analogue for 15-19 mm EGGER laminated MDF",
+      "density": {
+        "value": 700,
+        "range": [670, 730],
+        "unit": "kg/m3",
+        "status": "reference",
+        "source_ids": ["egger_mdf"],
+        "basis": "Default is the midpoint of the manufacturer's gross density interval for 15-19 mm board; not the density of every MDF product."
+      },
+      "optical": {
+        "metallic": 0,
+        "roughness": 0.5,
+        "roughness_range": [0.15, 0.85],
+        "ior": 1.5,
+        "unit": "dimensionless",
+        "status": "assumed",
+        "source_ids": ["blender_principled"],
+        "basis": "Laminate/paint is dielectric; finish roughness is a project initialization and sensitivity interval."
+      }
+    },
+    "glass_soda_lime": {
+      "description": "Soda-lime-silica float glass analogue",
+      "density": {
+        "value": 2500,
+        "range": null,
+        "unit": "kg/m3",
+        "status": "reference",
+        "source_ids": ["pilkington_ats129"],
+        "basis": "Manufacturer reference value; source provides no density uncertainty interval."
+      },
+      "optical": {
+        "metallic": 0,
+        "roughness": 0.05,
+        "roughness_range": [0.0, 0.2],
+        "ior": 1.523,
+        "unit": "dimensionless",
+        "status": "assumed",
+        "source_ids": ["pilkington_ats129", "blender_principled"],
+        "basis": "IOR reference is at wavelength 0.5893 micrometres. Roughness and adopting that IOR for unidentified scene glass are assumptions; transmission/thickness require separate evidence."
+      }
+    }
+  },
+  "contacts": {
+    "mujoco_default_v1": {
+      "friction": [1.0, 0.005, 0.0001],
+      "units": ["dimensionless", "m", "m"],
+      "components": ["sliding", "torsional", "rolling"],
+      "condim": 3,
+      "status": "assumed",
+      "reference_status": "simulator_default",
+      "source_ids": ["mujoco_xml", "mujoco_contact"],
+      "sensitivity_sliding_values": [0.3, 0.6, 1.0],
+      "sensitivity_basis": "Project stress-test values, not a standard or measured confidence interval; execute all values with the same frozen cases.",
+      "basis": "Documented MuJoCo geom default. At condim=3 only sliding participates. The physical pair, finish, load, wetness, wear and speed are unknown; this is not calibrated real friction."
+    }
+  },
+  "completion_bases": ["symmetry", "catalogue", "conservative_closure"],
+  "limitations": [
+    "Backside completion is inferred geometry and cannot be marked observed.",
+    "Material density is not whole-furniture bulk density; do not multiply a hollow cabinet AABB volume by solid material density.",
+    "Optical roughness and contact friction are independent parameters.",
+    "No Young modulus, damping or hinge torque is inferred from appearance. Enable optional dynamics only with explicit component recipes.",
+    "Reference values and uncertainty bounds do not establish physical qualification or SOTA."
+  ]
+}

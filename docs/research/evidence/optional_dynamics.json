@@ -1,0 +1,155 @@
+{
+  "status": "passed",
+  "scope": "synthetic optional-feature engine regression; no room-task or calibration claim",
+  "engine_version": "3.13.0",
+  "static_sha256": "00315fb864c07acf9fc643504b21c4d9f880612784884d1ea7d7ce2a7b4d43a7",
+  "static_reference_unchanged": true,
+  "results": {
+    "hinges": {
+      "status": "passed",
+      "engine": "MuJoCo",
+      "engine_version": "3.13.0",
+      "generated": [
+        {
+          "kind": "hinge",
+          "id": "door_hinge",
+          "moving_body": "door",
+          "reference_world_transform": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              1.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "parameter_provenance": "assumed"
+        }
+      ],
+      "steps": 800,
+      "joint_ranges_observed_rad": {
+        "door_hinge": [
+          0.0,
+          0.015420343846993114
+        ]
+      },
+      "maximum_flex_displacement_m": 0.0,
+      "solver_warnings": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "animation_kind": "numerical_simulation_not_keyframes",
+      "static_reference_modified": false,
+      "limitations": [
+        "Parameters labelled assumed are not physical calibration",
+        "Cloth uses triangular shell bending/stretching; volumetric soft body uses tetrahedral elasticity",
+        "Physics motion is separate from the frozen reconstruction pose"
+      ],
+      "deformation_checks": []
+    },
+    "cloth": {
+      "status": "passed",
+      "engine": "MuJoCo",
+      "engine_version": "3.13.0",
+      "generated": [
+        {
+          "kind": "cloth",
+          "id": "cloth_flex",
+          "entity": "cloth_piece",
+          "vertices": 4,
+          "elements": 2,
+          "parameter_provenance": "assumed"
+        }
+      ],
+      "steps": 800,
+      "joint_ranges_observed_rad": {},
+      "maximum_flex_displacement_m": 0.03131190622916383,
+      "solver_warnings": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "animation_kind": "numerical_simulation_not_keyframes",
+      "static_reference_modified": false,
+      "limitations": [
+        "Parameters labelled assumed are not physical calibration",
+        "Cloth uses triangular shell bending/stretching; volumetric soft body uses tetrahedral elasticity",
+        "Physics motion is separate from the frozen reconstruction pose"
+      ],
+      "deformation_checks": [
+        {
+          "id": "cloth_flex",
+          "maximum_edge_strain": 0.04415007363761747,
+          "minimum_volume_ratio": null
+        }
+      ]
+    },
+    "soft_bodies": {
+      "status": "passed",
+      "engine": "MuJoCo",
+      "engine_version": "3.13.0",
+      "generated": [
+        {
+          "kind": "soft_body",
+          "id": "soft_flex",
+          "entity": "soft_piece",
+          "vertices": 4,
+          "elements": 1,
+          "parameter_provenance": "assumed"
+        }
+      ],
+      "steps": 800,
+      "joint_ranges_observed_rad": {},
+      "maximum_flex_displacement_m": 0.0002453213438617526,
+      "solver_warnings": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "animation_kind": "numerical_simulation_not_keyframes",
+      "static_reference_modified": false,
+      "limitations": [
+        "Parameters labelled assumed are not physical calibration",
+        "Cloth uses triangular shell bending/stretching; volumetric soft body uses tetrahedral elasticity",
+        "Physics motion is separate from the frozen reconstruction pose"
+      ],
+      "deformation_checks": [
+        {
+          "id": "soft_flex",
+          "maximum_edge_strain": 0.008574487509802053,
+          "minimum_volume_ratio": 0.9914255124901976
+        }
+      ]
+    }
+  }
+}

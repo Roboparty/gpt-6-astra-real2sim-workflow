@@ -2,6 +2,16 @@
 
 Read physics_options. All features are off unless enabled. Select actual components and document confirmed versus hypothesized mechanisms. If no suitable target exists, record not_applicable with evidence instead of fabricating a mechanism.
 
+Use the source-bound library in public_contract/physical_priors.json and
+docs/PHYSICAL_PRIORS.md for explicitly assumed initialization. Unknown materials
+may use a documented analogue, never a measured label. Density needs actual material
+volume, not a hollow cabinet's bounding box. Contact friction belongs to a geom
+pair and operating conditions. Store assignments in scene.physical_priors; explicit
+pairs are applied and compiled values audited by the simulation exporter. Optical
+and density values are references for authored shaders/inertias, not automatic
+changes to already fitted appearance or mass. Leave hinges/cloth/soft_bodies off
+unless requested by the corresponding case physics switch.
+
 Hinges: segment moving leaf and fixed frame, define moving_body/parent_body, local pivot and axis, radian limits, mass, COM, inertia, damping and friction. Preserve world reference pose when reparenting. Never rotate an entire cabinet as a substitute for a door joint.
 
 Cloth: use reviewed surface vertices/triangles, attachment vertices, mass, contact thickness, stretch/bending assumptions and actual numerical solving. Soft body: use valid tetrahedra, mass/density, Young modulus, Poisson ratio, damping and collision/contact; test inversion and strain. Distinguish photographic reference pose from stress-free rest shape. One photograph does not identify physical material coefficients; mark assumed values and ranges.

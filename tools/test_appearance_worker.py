@@ -14,6 +14,7 @@ ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT/'workflow'))
 from r2s.media import file_hash
 from r2s.core import atomic_json
+from r2s.contracts import digest
 
 blender=os.environ['R2S_BLENDER']
 env={**os.environ,'PYTHONPATH':str(ROOT/'workflow'),'R2S_CPU':'1','CUDA_VISIBLE_DEVICES':'','OMP_NUM_THREADS':'2','OPENBLAS_NUM_THREADS':'2'}
@@ -54,11 +55,20 @@ bpy.ops.wm.save_as_mainfile(filepath=str(p/'changed.blend'))
     rows=[{'entity':t['entity'],'objects':[t['entity']],'material_names':['white'],'soft_surface':False,'material_class':'dielectric','pbr_parameters':{'white':{'Roughness':.8,'Metallic':0}},'texture_scope':{'application':'constant','mapping':'none'}} for t in targets]
     atomic_json(source/'material_calibration.json',{'materials':rows})
     art=lambda name:{'path':str(source/name),'sha256':file_hash(source/name),'bytes':(source/name).stat().st_size}
+    Image.new('L',(160,120),255).save(source/'reference_mask.png')
+    geometry_protocol={'schema':'real2sim.geometry-feedback-protocol/1.0',
+        'thresholds':{'minimum_iou':.99,'maximum_boundary_mean_px':1.,'maximum_landmark_error_px':1.},
+        'views':[{'id':'source','role':'fit','source':art('original.png'),
+                  'camera':json.loads((source/'scene.json').read_text())['camera'],
+                  'objects':[{'id':'lamp','mask':art('reference_mask.png')}]}]}
+    atomic_json(source/'geometry_protocol.json',geometry_protocol)
     base={'stage':'build_render','mode':'single','workflow_profile':'quality_v2','original_input_allowlist':[str(source/'original.png')],
           'appearance_source':obs['appearance_source'],'appearance_targets':targets,'appearance_observation':art('observation.json'),
           'refinement':{'limits':{'surface_contract_version':0,'appearance_contract_version':1}},
           'parameters':{'blender':blender,'threads':2,'cuda_visible_devices':''},
           'input_artifacts':{'agent_materials':[art('model.blend'),art('scene.json'),art('material_calibration.json')], 'agent_calibrate_lighting':[art('model.blend'),art('scene.json')]}}
+    base['parameters'].update(geometry_feedback_protocol=str(source/'geometry_protocol.json'),geometry_feedback_protocol_sha256=digest(geometry_protocol))
+    base['geometry_feedback_sources']=[art('original.png')]
     protocol=None
     for name,changed in [('accepted',False),('rejected',True)]:
         out=p/name;out.mkdir();packet=json.loads(json.dumps(base));packet['output_directory']=str(out)
@@ -79,4 +89,7 @@ bpy.ops.wm.save_as_mainfile(filepath=str(p/'changed.blend'))
         assert len(binding['comparison_images'])==3
         assert 'appearance_neutral.png' in binding['images']
         assert (out/'response.json').exists()
+        feedback=json.loads((out/'geometry_feedback'/'report.json').read_text())
+        assert feedback['status']=='failed' and feedback['summary']['expected_objects']==1
+        assert feedback['by_role']['heldout']['expected_objects']==0
     print('PASS actual stage_worker build_render, accepted shader snapshot, persistent cameras and detectable lighting-stage shader tampering')

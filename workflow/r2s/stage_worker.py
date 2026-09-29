@@ -59,6 +59,25 @@ if stage in {'build_render','build_geometry'}:
         audit=json.loads((out/'structural_audit.json').read_text());Image.open(packet['original_input_allowlist'][0]).crop(audit['source_crop_xyxy']).save(out/'furniture_original_crop.png')
         binding=json.loads((out/'model_binding.json').read_text());binding['structural_audit_sha256']=file_sha(out/'structural_audit.json');binding['original_crop_sha256']=file_sha(out/'furniture_original_crop.png');atomic_json(out/'model_binding.json',binding)
     run([params['blender'],'-b',str(blend),'-t',str(params.get('threads',8)),'--python-exit-code','12','--python',str(package/'blender_render.py'),'--',str(out)])
+    if params.get('geometry_feedback_protocol'):
+        from .contracts import digest
+        from .geometry_feedback import evaluate_geometry_feedback
+        protocol_path=Path(params['geometry_feedback_protocol']).resolve()
+        protocol=json.loads(protocol_path.read_text(encoding='utf-8-sig'))
+        if digest(protocol)!=params.get('geometry_feedback_protocol_sha256'):raise ContractError('Geometry feedback protocol differs from its frozen digest')
+        if any(v.get('role')!='fit' for v in protocol['views']):raise ContractError('Heldout geometry cannot enter reconstruction feedback; use sealed evaluation after candidate freeze')
+        allowed={a['sha256'] for a in packet.get('geometry_feedback_sources',[])
+                 if Path(a['path']).is_file() and file_sha(a['path'])==a['sha256']}
+        if any(v['source']['sha256'] not in allowed for v in protocol['views']):raise ContractError('Geometry feedback source is not an accepted original or preprocessed frame')
+        feedback_out=out/'geometry_feedback'
+        run([params['blender'],'-b',str(out/'scene.blend'),'-t',str(params.get('threads',4)),'--python-exit-code','12','--python',str(package/'blender_geometry_feedback.py'),'--',str(scene),str(protocol_path),str(feedback_out)])
+        candidate=json.loads((feedback_out/'candidate.json').read_text())
+        feedback=evaluate_geometry_feedback(protocol,candidate,protocol_path.parent,feedback_out,feedback_out/'overlays')
+        feedback['protocol_original_path']=str(protocol_path)
+        atomic_json(feedback_out/'report.json',feedback)
+        shutil.copyfile(protocol_path,feedback_out/'protocol.json')
+        # Failed likeness is feedback for the existing review/revision gate. It is
+        # never relabelled as successful geometry by the executable build stage.
     if packet.get('refinement'):
         from .refinement import write_render_binding
         write_render_binding(packet,out)

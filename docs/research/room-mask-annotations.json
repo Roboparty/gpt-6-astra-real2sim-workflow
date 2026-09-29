@@ -1,0 +1,9 @@
+{
+  "source_sha256": "5068deec1cba1e6a167209adca5fb77e4d931db06ed6a3812b9a2b8252d8c866",
+  "annotation_basis": "Coarse agent-traced exterior polygons, reviewed against the original photo and retained source corner annotations on 2026-09-29. Fitting diagnostic only; cabinet openings and fine hardware are not precisely segmented. Not held-out truth and not a SOTA acceptance set.",
+  "thresholds": {"minimum_iou": 0.85, "maximum_boundary_mean_px": 30, "maximum_landmark_error_px": 18},
+  "objects": [
+    {"id": "wardrobe", "polygons": [[[1307,362],[1668,312],[1520,1015],[1237,906]]]},
+    {"id": "shoe_cabinet", "polygons": [[[0,631],[464,615],[485,923],[29,1075],[0,1040]]]}
+  ]
+}

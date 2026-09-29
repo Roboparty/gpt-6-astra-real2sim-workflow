@@ -85,6 +85,15 @@ Sources: SimFoundry, arXiv:2606.28276v4, Appendix L.1.1–L.1.3 and Table L.2; L
 
 Supplementary record: [bedroom single-image reconstruction repeat experiment](docs/bedroom/README.md).
 
+## Capability research (2026-09-29)
+
+The development branch adds structural shell collision repair, fixed-camera
+geometric feedback, sourced material/contact priors and container-task trace
+evaluation. Hinges, cloth and soft bodies remain optional and off by default.
+The retained room's paired collision check improved from failed to passed;
+14 regression scripts passed. This does not change the historical visual verdict
+or establish SOTA. [Results, evidence and next experiments](docs/research/RESULTS_20260929.md).
+
 ## Get started
 
 ### Your own photographs

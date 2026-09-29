@@ -4,14 +4,22 @@ from pathlib import Path
 from xml.etree.ElementTree import Element,SubElement,ElementTree
 import numpy as np
 import mujoco
+if __package__:
+ from .shell_collision import SURFACES,shell_boxes,box_in_entity_frame
+else:
+ from shell_collision import SURFACES,shell_boxes,box_in_entity_frame
 SPEC=Path(sys.argv[1]).resolve();OUT=Path(sys.argv[2]).resolve();S=json.loads(SPEC.read_text());branch=S.get('branch','A');audit=json.loads((OUT/'geometry_audit.json').read_text());specs={o['id']:o for o in S['objects']}
 def fmt(v):return ' '.join(f'{x:.8g}' for x in v)
 root=Element('mujoco',model='real2sim_'+S['case_id']+'_'+branch);SubElement(root,'compiler',angle='radian',meshdir='meshes',inertiafromgeom='false',fusestatic='false');SubElement(root,'option',timestep='0.002',gravity='0 0 -9.81');asset=SubElement(root,'asset');world=SubElement(root,'worldbody')
 collisions=[]
-def box(body,key,loc,dim,yaw=0):
+def box(body,key,loc,dim,yaw=0,quat=None,source=None):
  assert min(dim)>0
- SubElement(body,'geom',name=key,type='box',pos=fmt(loc),size=fmt(np.array(dim)/2),euler=fmt([0,0,yaw]),group='2',contype='1',conaffinity='1',rgba='0.25 0.6 0.8 0.15',friction='0.7 0.01 0.001')
- collisions.append({'entity':body.attrib['name'],'shape':'box','pos':list(loc),'dimensions':list(dim),'yaw':yaw})
+ orientation={'quat':fmt(quat)} if quat is not None else {'euler':fmt([0,0,yaw])}
+ SubElement(body,'geom',name=key,type='box',pos=fmt(loc),size=fmt(np.array(dim)/2),**orientation,group='2',contype='1',conaffinity='1',rgba='0.25 0.6 0.8 0.15',friction='0.7 0.01 0.001')
+ recipe={'entity':body.attrib['name'],'shape':'box','pos':list(loc),'dimensions':list(dim),'frame':'entity_local'}
+ recipe.update({'quaternion_wxyz':quat} if quat is not None else {'yaw':yaw})
+ if source:recipe['source']=source
+ collisions.append(recipe)
 def capsule(body,key,a,b,r):
  SubElement(body,'geom',name=key,type='capsule',fromto=fmt(list(a)+list(b)),size=str(r),group='2',contype='1',conaffinity='1',rgba='0.2 0.6 0.8 0.15',friction='0.7 0.01 0.001');collisions.append({'entity':body.attrib['name'],'shape':'capsule','from':list(a),'to':list(b),'radius':r})
 for key,e in audit['entities'].items():
@@ -22,9 +30,12 @@ for key,e in audit['entities'].items():
  elif key.startswith('table'):col=[.67,.51,.32,1]
  elif key.startswith('chair'):col=[.83,.75,.72,1]
  SubElement(body,'geom',name=key+'_visual',type='mesh',mesh=key+'_visual_mesh',group='1',contype='0',conaffinity='0',rgba=fmt(col))
- if key in ['floor','ceiling','wall_back','wall_front','wall_left','wall_right','baseboards']:
-  if key=='baseboards':continue
-  lo,hi=np.array(e['local_aabb']);box(body,key+'_collision',(lo+hi)/2,hi-lo);continue
+ if key=='baseboards':continue
+ if key in SURFACES:
+  for i,proxy in enumerate(shell_boxes(S['room'],key)):
+   pos,quat=box_in_entity_frame(proxy,e)
+   box(body,key+f'_collision{i}',pos,proxy['dimensions'],quat=quat,source=proxy['source'])
+  continue
  if key not in specs:continue
  o=specs[key];W,D,H=o['dimensions'];kind=o['kind'];p=o['parameters']
  if p.get('collision_proxies'):
@@ -82,8 +93,20 @@ for index,camera in enumerate(camera_specs):
  # MuJoCo frustum offsets are expressed in sensor coordinates. Verify their transfer
  # back to top-left pixel coordinates below instead of assuming a centered fovy camera.
  SubElement(world,'camera',name=name,pos=fmt(camera['position']),xyaxes=fmt(axes),resolution=f'{W} {H}',sensorsize=fmt([.036,.036*H/W]),focalpixel=fmt([f,f]),principalpixel=fmt([W/2-cx,H/2-cy]),ipd='0')
+prior_report=None
+if S.get('physical_priors'):
+ if __package__:
+  from .physical_prior_runtime import apply_contact_priors,audit_contact_priors
+ else:
+  sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
+  from r2s.physical_prior_runtime import apply_contact_priors,audit_contact_priors
+ prior_report=apply_contact_priors(root,S['physical_priors'],set(audit['entities']))
+ (OUT/'physical_priors_report.json').write_text(json.dumps(prior_report,indent=2))
 ElementTree(root).write(OUT/'scene.xml',encoding='unicode',xml_declaration=True);(OUT/'collision_recipes.json').write_text(json.dumps(collisions,indent=2))
 model=mujoco.MjModel.from_xml_path(str(OUT/'scene.xml'));data=mujoco.MjData(model);mujoco.mj_forward(model,data)
+if prior_report is not None:
+ audit_contact_priors(model,data,prior_report)
+ (OUT/'physical_priors_report.json').write_text(json.dumps(prior_report,indent=2))
 camera_transfer=[]
 for index,camera in enumerate(camera_specs):
  name='source_camera' if index==0 else f'source_camera_{index:04d}';cid=mujoco.mj_name2id(model,mujoco.mjtObj.mjOBJ_CAMERA,name);vc=mujoco.MjvCamera();vc.type=mujoco.mjtCamera.mjCAMERA_FIXED;vc.fixedcamid=cid;view=mujoco.MjvScene(model,maxgeom=max(2000,model.ngeom+50));mujoco.mjv_updateScene(model,data,mujoco.MjvOption(),None,vc,mujoco.mjtCatBit.mjCAT_ALL,view);g=view.camera[0];W,H=camera['image_size'];f=camera['focal_px'];cx,cy=camera['principal_point'];recovered=[g.frustum_near*W/(2*g.frustum_width),g.frustum_near*H/(g.frustum_top-g.frustum_bottom),W/2-g.frustum_center*W/(2*g.frustum_width),H*g.frustum_top/(g.frustum_top-g.frustum_bottom)];error=abs(np.array(recovered)-[f,f,cx,cy]);assert max(error)<.002,'Camera intrinsic transfer mismatch'
@@ -102,9 +125,12 @@ ElementTree(root).write(OUT/'probe_test.xml',encoding='unicode',xml_declaration=
 for _ in range(1500):mujoco.mj_step(pm,pd)
 assert np.isfinite(pd.qpos).all() and abs(float(pd.qpos[2])-.03)<.015,'Sphere floor-support test failed'
 if __package__:
- from .simulation_checks import check_enclosure_rays
+ from .simulation_checks import check_enclosure_rays,check_opening_rays
 else:
- from simulation_checks import check_enclosure_rays
+ from simulation_checks import check_enclosure_rays,check_opening_rays
 rays=check_enclosure_rays(model,data,r,probe_xy)
+opening_rays=check_opening_rays(model,data,r)
 report={'status':'passed','mujoco_version':mujoco.__version__,'bodies':model.nbody,'geoms':model.ngeom,'visual_meshes':model.nmesh,'required_entities_present':required,'probe_steps':1500,'probe_final_position_m':pd.qpos[:3].tolist(),'six_surface_ray_tests':rays,'camera_transfer':camera_transfer,'layout_modified':False,'limitations':['static furniture with explicit conservative collision proxies','soft fabrics, hinged cabinets and movable objects are not dynamically identified','OBJ visual meshes use flat per-entity colors in MJCF; textured reference visuals are in Blender/GLB/USD'],'collision_reference':'https://mujoco.readthedocs.io/en/stable/XMLreference.html#asset-mesh'}
+report['opening_ray_tests']=opening_rays
+report['structural_collision_source']='axis-aligned canonical room surfaces with declared rectangular openings; visual AABBs excluded'
 (OUT/'simulation_audit.json').write_text(json.dumps(report,indent=2));print(json.dumps(report,indent=2))
