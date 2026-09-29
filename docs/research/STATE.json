@@ -57,7 +57,8 @@
     "Full Blender/GLB/USD export on two frozen RoomKit fixtures: 6/6 source-bound strict checks passed; legacy USD camera-name failures retained; native export/validate gate integrated with 5 mutation controls and 6 stage tests",
     "Append-only v2 annotations: all 36 v1 observations preserved plus 36 new records, 38 observed boxes and 34 retained nulls; coverage 17/18 frames but selected identity graphs still disconnected in two sources; 10 append checks and v1 regression passed",
     "Detailed-room portability measured with exact preserved source rig: GLB/USD appearance worsens, floor turns black. Original GLB 8.094mm all-vertex bound failure retained; read-only surface analysis attributes that bound difference to nonsurface source vertices, not demonstrated surface shrinkage",
-    "Final release candidate verified: 14/14 CPU runner groups pass with executable hashes matched; floor-normal ablation has mixed GLB/USD outcomes and is not enabled as a universal repair"
+    "Final release candidate verified: 14/14 CPU runner groups pass with executable hashes matched; floor-normal ablation has mixed GLB/USD outcomes and is not enabled as a universal repair",
+    "User-authorized formal main publication verified at c40a1ea after 14/14 final validation groups; historical branches/baseline/failures retained and mixed normal ablation not enabled by default"
   ],
   "next": [
     "Investigate format-specific normal/tangent or texture interpretation; simple imported-floor Normal disconnection has mixed results and is not promoted. Preserve appearance proposal count 5/8 and original geometry failure.",
@@ -322,19 +323,22 @@
     "scope": "Append-only development inventory, not masks, 3D truth, independent human labels or measured reconstruction uplift"
   },
   "integration": {
-    "status": "validated_ready_for_main",
+    "status": "released_to_main",
     "branch": "codex/unified-generation-20260929",
     "generation_parent": "a08fdcf",
     "research_parent": "1be6116",
-    "checked_remote_main": "f0e61696e0b1d1b56f2a4df2404ed2cb0d1fff69",
-    "main_updated": false,
+    "checked_remote_main": "c40a1eac8bc362b05f954006cd3156f76268a124",
+    "main_updated": true,
     "native_flow": "quality_v2 opt-in generation_skills",
     "verification": "evidence/unified_generation_20260929/summary.json",
     "separate_cross_thread_release_instruction": "Superseded for this release by direct current-thread user authorization; later unattended experiments remain on the research branch",
     "latest_interchange_gate": "UPDATE_20260929T1346.md",
     "main_publication_authorization": "Direct current-thread user request: validate the best available version promptly and submit to the formal branch",
     "release_report": "../RELEASE_20260930.md",
-    "final_validation": "evidence/final_release_20260930/validation_summary.json"
+    "final_validation": "evidence/final_release_20260930/validation_summary.json",
+    "released_code_commit": "c40a1eac8bc362b05f954006cd3156f76268a124",
+    "previous_main": "f0e61696e0b1d1b56f2a4df2404ed2cb0d1fff69",
+    "publication_verification": "Successful normal git push and exact ls-remote main SHA; isolated main checkout Python bytes match final tested snapshot"
   },
   "external_reference_cohort": {
     "protocol": "TUM_REFERENCE_PROTOCOL_20260929.json",
