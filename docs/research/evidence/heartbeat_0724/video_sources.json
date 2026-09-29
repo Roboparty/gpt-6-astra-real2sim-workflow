@@ -1,0 +1,94 @@
+{
+  "schema": "real2sim.source-acquisition/1",
+  "cohort_id": "aha-public-development-3-v1",
+  "cohort_sha256": "b10f9bcfae290444c746291506f53cdc8c598bc1edaa2cd07fe2a94f93fcc02a",
+  "expected_scene_count": 3,
+  "sources": [
+    {
+      "id": "open_concept_g0034",
+      "url": "https://kevinxu02.github.io/real2sim-indoor-site/media/scene-sync/open_concept_g0034/source-web.mp4",
+      "observed_head_bytes": 3134587,
+      "source_sha256": "5cc92190193a55e8ab6008dfbf44b80a8c70cf9d9c30b851b7a3c24c3855ed49",
+      "upstream_clip_uuid": null,
+      "status": "verified",
+      "http_headers": {
+        "Content-Type": "video/mp4",
+        "Content-Length": "3134587",
+        "Last-Modified": "Sun, 27 Sep 2026 05:13:25 GMT",
+        "ETag": "\"6ab8a5f5-2fd47b\""
+      },
+      "actual_bytes": 3134587,
+      "path": "/home/wqz/real2sim_capability_20260929/runs/video_sources_001/open_concept_g0034/source.mp4",
+      "probe_returncode": 0,
+      "video": {
+        "codec_name": "h264",
+        "width": 960,
+        "height": 540,
+        "avg_frame_rate": "19001/317",
+        "duration": "14.998316",
+        "nb_read_frames": "899"
+      },
+      "decode_returncode": 0,
+      "wall_seconds": 3.0800132780568674
+    },
+    {
+      "id": "bedroom_waterfront_g0024",
+      "url": "https://kevinxu02.github.io/real2sim-indoor-site/media/minimax/bedroom_waterfront_g0024/source-web.mp4",
+      "observed_head_bytes": 1101575,
+      "source_sha256": "dc98fd19511837ab9c8888556cbd94c2327945072dd8f9ba653e5b8ded904836",
+      "upstream_clip_uuid": null,
+      "status": "verified",
+      "http_headers": {
+        "Content-Type": "video/mp4",
+        "Content-Length": "1101575",
+        "Last-Modified": "Sun, 27 Sep 2026 05:13:25 GMT",
+        "ETag": "\"6ab8a5f5-10cf07\""
+      },
+      "actual_bytes": 1101575,
+      "path": "/home/wqz/real2sim_capability_20260929/runs/video_sources_001/bedroom_waterfront_g0024/source.mp4",
+      "probe_returncode": 0,
+      "video": {
+        "codec_name": "h264",
+        "width": 960,
+        "height": 540,
+        "avg_frame_rate": "30000/1001",
+        "duration": "8.108100",
+        "nb_read_frames": "243"
+      },
+      "decode_returncode": 0,
+      "wall_seconds": 1.508468218962662
+    },
+    {
+      "id": "breakfast_nook_kitchen_g0039",
+      "url": "https://kevinxu02.github.io/real2sim-indoor-site/media/minimax/breakfast_nook_kitchen_g0039/source-web.mp4",
+      "observed_head_bytes": 3287061,
+      "source_sha256": "1633ab49a325265c445861d217dce47aa84f2a3b221f5cd6077bf186811636f0",
+      "upstream_clip_uuid": null,
+      "status": "verified",
+      "http_headers": {
+        "Content-Type": "video/mp4",
+        "Content-Length": "3287061",
+        "Last-Modified": "Sun, 27 Sep 2026 05:13:25 GMT",
+        "ETag": "\"6ab8a5f5-322815\""
+      },
+      "actual_bytes": 3287061,
+      "path": "/home/wqz/real2sim_capability_20260929/runs/video_sources_001/breakfast_nook_kitchen_g0039/source.mp4",
+      "probe_returncode": 0,
+      "video": {
+        "codec_name": "h264",
+        "width": 960,
+        "height": 540,
+        "avg_frame_rate": "60000/1001",
+        "duration": "14.998317",
+        "nb_read_frames": "899"
+      },
+      "decode_returncode": 0,
+      "wall_seconds": 2.9483281259890646
+    }
+  ],
+  "verified_count": 3,
+  "wall_seconds": 7.538272064994089,
+  "gpu_hours": 0,
+  "paid_api_requests": 0,
+  "scope": "Source bytes and decode only; no reconstruction, benchmark or license expansion"
+}

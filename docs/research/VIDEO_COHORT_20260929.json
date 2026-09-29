@@ -1,0 +1,36 @@
+{
+  "schema": "real2sim.video-cohort/1",
+  "cohort_id": "aha-public-development-3-v1",
+  "status": "source_acquisition_pending",
+  "expected_scene_count": 3,
+  "input_regime": "indoor_video",
+  "split": "development_comparator",
+  "author_tuned": true,
+  "independent_household_count": null,
+  "dataset": "FelixYuan/SpatialVID-HQ",
+  "dataset_revision": "97e22f97447c012ef7460e5989b83a674643a880",
+  "media_license": "CC-BY-NC-SA-4.0",
+  "use_scope": "noncommercial development evaluation; not a commercially deployable dataset or media redistribution",
+  "representation": "AHa3D H264 browser source preview, not original dataset bytes",
+  "metric_ground_truth_available": false,
+  "candidate_code_commit": "82f4b1110cfe4b55fff19df3b3790852ce07b171",
+  "sources": [
+    {"id":"open_concept_g0034","url":"https://kevinxu02.github.io/real2sim-indoor-site/media/scene-sync/open_concept_g0034/source-web.mp4","observed_head_bytes":3134587,"source_sha256":null,"upstream_clip_uuid":null},
+    {"id":"bedroom_waterfront_g0024","url":"https://kevinxu02.github.io/real2sim-indoor-site/media/minimax/bedroom_waterfront_g0024/source-web.mp4","observed_head_bytes":1101575,"source_sha256":null,"upstream_clip_uuid":null},
+    {"id":"breakfast_nook_kitchen_g0039","url":"https://kevinxu02.github.io/real2sim-indoor-site/media/minimax/breakfast_nook_kitchen_g0039/source-web.mp4","observed_head_bytes":3287061,"source_sha256":null,"upstream_clip_uuid":null}
+  ],
+  "evidence": [
+    "https://kevinxu02.github.io/real2sim-indoor-site/provenance/minimax.json",
+    "https://kevinxu02.github.io/real2sim-indoor-site/provenance/scene-sync.json",
+    "https://kevinxu02.github.io/real2sim-indoor-site/ATTRIBUTION.md",
+    "https://huggingface.co/datasets/FelixYuan/SpatialVID-HQ/blob/97e22f97447c012ef7460e5989b83a674643a880/README.md",
+    "https://github.com/NJU-3DV/SpatialVID/blob/main/camera_pose_annotation/README.md"
+  ],
+  "remaining_before_performance_runs": [
+    "Compute and bind actual media hashes and full decode receipts",
+    "Fix frame sampling, accepted cameras, object annotations, model settings and per-arm budget",
+    "Resolve original clip UUID and household overlap; do not claim three independent houses",
+    "Keep estimated depth/poses separate from measured ground truth",
+    "Add a genuinely independent held-out cohort before generalization or SOTA claims"
+  ]
+}

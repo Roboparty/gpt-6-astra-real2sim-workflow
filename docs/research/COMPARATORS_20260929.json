@@ -1,0 +1,68 @@
+{
+  "schema": "real2sim.comparator-snapshot/1",
+  "checked_at_utc": "2026-09-29T07:24:10Z",
+  "scope": "Code revision and public-input availability inventory; not benchmark scores",
+  "method": "git ls-remote against public origin, followed by primary source documentation",
+  "expected_comparator_count": 4,
+  "comparators": [
+    {
+      "id": "aha3d",
+      "repository": "https://github.com/KevinXu02/aha-3d",
+      "ref": "refs/heads/main",
+      "commit": "82f4b1110cfe4b55fff19df3b3790852ce07b171",
+      "git_status": "resolved",
+      "stratum": "indoor_video",
+      "reconstruction_rerun": "pending_source_video_and_runtime",
+      "source_notes": "Main repository references README explicitly excludes source footage. Public project-site media needs separate dataset attribution and license checks. Office48 output geometry and recovered cameras are model predictions, not independent ground truth.",
+      "evidence": [
+        "https://github.com/KevinXu02/aha-3d/blob/82f4b1110cfe4b55fff19df3b3790852ce07b171/references/README.md",
+        "https://github.com/KevinXu02/aha-3d/blob/82f4b1110cfe4b55fff19df3b3790852ce07b171/examples/office48/README.md",
+        "https://github.com/KevinXu02/aha-3d/blob/82f4b1110cfe4b55fff19df3b3790852ce07b171/THIRD_PARTY.md"
+      ]
+    },
+    {
+      "id": "gpt6_real2sim",
+      "repository": "https://github.com/lingxiao-guo/GPT6-real2sim",
+      "ref": "refs/heads/main",
+      "commit": "736da5c2c6da040a653e581b8f8052ae5559ad51",
+      "git_status": "resolved",
+      "stratum": "multiview_robot_demonstration",
+      "reconstruction_rerun": "blocked_missing_raw_episodes",
+      "source_notes": "Published arrays and portable assets support recorded replay. Raw original video/HDF5, some URDF inputs and construction paths are absent; replay validation is not a from-scratch reconstruction rerun.",
+      "case_ids": ["real2sim_ep0", "real2sim_ep2", "real2sim_microphones"],
+      "evidence": [
+        "https://github.com/lingxiao-guo/GPT6-real2sim/blob/736da5c2c6da040a653e581b8f8052ae5559ad51/ARTIFACTS.md",
+        "https://github.com/lingxiao-guo/GPT6-real2sim/blob/736da5c2c6da040a653e581b8f8052ae5559ad51/TASKS_AND_PROMPTS.md"
+      ]
+    },
+    {
+      "id": "hku_three_view",
+      "repository": "https://github.com/hku-sail/Real2Sim_GPT6_ASTRA",
+      "ref": "refs/heads/main",
+      "commit": "a1624d6431eb27e2a437feaf74fb34b7c8e937a2",
+      "git_status": "resolved",
+      "stratum": "multiview_robot_rgb",
+      "reconstruction_rerun": "pending_pinned_input_access_check",
+      "source_notes": "Pinned README fetch returned 503 in this audit. Prior main README described excluded source frames. Do not claim current pinned input availability from that earlier record.",
+      "evidence": ["https://github.com/hku-sail/Real2Sim_GPT6_ASTRA/tree/a1624d6431eb27e2a437feaf74fb34b7c8e937a2"]
+    },
+    {
+      "id": "real2gym",
+      "repository": "https://github.com/cskrren/Real2Gym",
+      "ref": "HEAD",
+      "commit": null,
+      "git_status": "repository_not_found",
+      "stratum": "robot_task_simulation",
+      "reconstruction_rerun": "blocked_public_access",
+      "source_notes": "git ls-remote returned Repository not found; project site returned HTTP404 during this audit. This is observed access failure, not proof of deletion. Retain the comparator in the intended denominator.",
+      "evidence": ["https://cskrren.github.io/real2gym-site/"]
+    }
+  ],
+  "rules": [
+    "Do not pool video, single-image and robot-action input regimes",
+    "Pin data content hashes and runtime/model settings before performance comparisons",
+    "Prior author demonstration scenes are development comparators, not held-out evidence",
+    "Missing access remains a pending or blocked cell, not a removed denominator",
+    "Code license does not automatically license source footage or third-party assets"
+  ]
+}

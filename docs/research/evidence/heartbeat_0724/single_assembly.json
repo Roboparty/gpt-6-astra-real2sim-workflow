@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "scope": "Actual synthetic single-assembly Blender audit and review; not empty-room or source reconstruction acceptance",
+  "blender_version": "4.5.3 LTS",
+  "assembly_count": 1,
+  "cross_assembly_pair_count": 0,
+  "within_assembly_pair_count": 1,
+  "isolated_views": 3,
+  "wall_seconds": 47.15110693697352,
+  "input_hashes": {
+    "model_sha256": "5aa0e2d5d2586f3d1225939b40c335c4779420836dda2dfc67aed1f2bec2020a",
+    "scene_sha256": "8f4e0243e8a914ba509d6828b1694ceb9c4230de54abe435028d8e933c9264b8",
+    "structural_audit_sha256": "ad6267a3db05193bf77a5834ebde36ee81c577b4f6ad682e21875fc06029ec6c"
+  },
+  "implementation_sha256": "8a9e15e04ef6ce98680d05615d6b75ffb752bb9317cec1eac2a59ef8e70bfbde",
+  "test_script_sha256": "01f007770a2b362c6d6b75e89e3f871ec1fffc1cc2ee807514ea9afc1b7f15de"
+}

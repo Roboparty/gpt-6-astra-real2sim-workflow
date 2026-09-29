@@ -3,6 +3,7 @@ These checks reject missing/invalid evidence; they do not replace visual judgeme
 Geometry measurements must be produced by the Blender evaluator on the bound file.
 """
 import hashlib,json,math
+from itertools import combinations
 from pathlib import Path
 from .contracts import ContractError
 
@@ -41,6 +42,7 @@ def evidence_file(attempt,ref,artifacts):
 
 def review_contract(attempt,review,artifacts,scene,binding):
     structure=scene.get('structure');required=structure_contract(structure)
+    if not required:raise ContractError('Structural review requires at least one assembly; empty-furniture review is not supported')
     if review.get('geometry_freeze_sha256')!=binding['model_sha256']:raise ContractError('Geometry review is not bound to current model bytes')
     if review.get('model_version')!=scene.get('model_version'):raise ContractError('Geometry model version mismatch')
     expected={o['id'] for o in scene['objects']};rows=review.get('per_object',[])
@@ -63,5 +65,17 @@ def review_contract(attempt,review,artifacts,scene,binding):
         for ref in a['isolated_views']:evidence_file(attempt,ref,artifacts)
     for ref,sha in audit.get('evidence_hashes',{}).items():
         if file_sha(evidence_file(attempt,ref,artifacts))!=sha:raise ContractError('Structure evidence bytes changed')
-    if not audit.get('interassembly_checks') or not audit.get('evaluated_visible_meshes'):raise ContractError('Visible furniture intersections were not tested')
+    checks=audit.get('interassembly_checks')
+    if not isinstance(checks,list) or not audit.get('evaluated_visible_meshes'):raise ContractError('Visible furniture intersections were not tested')
+    owners={p['object']:a['entity'] for a in structure['assemblies'] for p in a['parts']}
+    expected_pairs={pair for pair in combinations(sorted(owners),2) if owners[pair[0]]!=owners[pair[1]]}
+    checked_pairs=set()
+    for check in checks:
+        parts=check.get('parts') if isinstance(check,dict) else None
+        if not isinstance(parts,list) or len(parts)!=2 or any(not isinstance(p,str) or p not in owners for p in parts):raise ContractError('Invalid interassembly component pair')
+        pair=tuple(sorted(parts))
+        if pair not in expected_pairs or pair in checked_pairs:raise ContractError('Unexpected or duplicate interassembly component pair')
+        if check.get('owners')!=[owners[p] for p in parts]:raise ContractError('Interassembly pair owner mismatch')
+        checked_pairs.add(pair)
+    if checked_pairs!=expected_pairs:raise ContractError('Interassembly evidence does not cover all cross-assembly component pairs')
     return audit

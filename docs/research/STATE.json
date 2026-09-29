@@ -12,6 +12,7 @@
   "remote_root": "4090-1:/home/wqz/real2sim_capability_20260929",
   "protocol": "PROTOCOL_20260929.md",
   "result": "RESULTS_20260929.md",
+  "latest_update": "UPDATE_20260929T0724.md",
   "completed": [
     "Matched retained-room collision failure reproduction and repair",
     "Rectangular opening handling and false-pass negative tests",
@@ -20,26 +21,33 @@
     "Source-bound material and contact priors with active engine contact verification",
     "Default-off optional dynamics and finite-parameter validation",
     "Container-task trace evaluator with synthetic failure cases",
-    "14-script regression suite, Blender mask oracle, actual room fitting overlays"
+    "14-script regression suite, Blender mask oracle, actual room fitting overlays",
+    "Three comparator code revisions pinned; inaccessible fourth comparator retained",
+    "Three public development videos acquired remotely with exact hashes and complete decode",
+    "Single multi-part assembly audit/review repaired and verified in actual Blender; 21 contract cases passed"
   ],
   "next": [
-    "Freeze a lawful public multi-scene benchmark manifest and competitor revisions; preserve single-image versus video strata",
+    "Complete frame, camera, annotation, metric and budget protocol for the frozen three-video development cohort; resolve independent held-out data",
     "Run an agent A/B with and without geometric feedback at identical model settings and budget",
     "Resolve actual appearance defects and fine part feedback rather than optimize coarse cabinet silhouettes",
     "Integrate an optional video geometry-reference adapter in a separate input arm",
     "Connect task evaluation to actual robot controls, full object geometry and contacts from MuJoCo",
-    "Fix single-assembly/no-furniture workflow coverage and implement evaluated landmark bindings"
+    "Fix zero-furniture and single-part/no-joint workflow coverage and implement evaluated landmark bindings"
   ],
   "retained_attempts": [
     "collision_001", "collision_openings_001", "collision_final_001",
     "geometry_instrument_001", "blender_feedback_001",
     "optional_dynamics_001", "research_checks_001", "research_checks_002",
-    "room_geometry_reference_001", "room_geometry_baseline_001"
+    "room_geometry_reference_001", "room_geometry_baseline_001",
+    "single_assembly_001", "single_assembly_002", "video_sources_001"
   ],
   "resource_accounting": {
     "new_gpu_hours": 0,
     "new_paid_api_requests": 0,
     "local_agent_cost": null,
+    "heartbeat_0724_selected_run_wall_seconds": 102.68742876197211,
+    "heartbeat_0724_remote_download_bytes": 7523223,
+    "single_assembly_candidate_revisions_used": 1,
     "note": "CPU test/render wall times are retained in run records/logs; agent cost unknown. GPU/CPU budgets in protocol must not reset across continuations."
   },
   "constraints": [
