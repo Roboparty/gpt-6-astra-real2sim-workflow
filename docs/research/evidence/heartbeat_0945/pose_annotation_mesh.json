@@ -1,0 +1,222 @@
+{
+  "scope": "Annotation binding validation on the same retained mesh; no new pose candidate or full-scene acceptance",
+  "expected_conditions": 2,
+  "conditions": [
+    {
+      "label": "retained_annotations",
+      "returncode": 0,
+      "wall_seconds": 0.9153968630125746,
+      "audit_status": "failed",
+      "failures": [
+        {
+          "kind": "disconnected_joint",
+          "entity": "bed",
+          "joint": [
+            "duvet",
+            "mattress"
+          ],
+          "distances_m": [
+            0.009000003337860107,
+            0.0
+          ]
+        },
+        {
+          "kind": "disconnected_joint",
+          "entity": "bed",
+          "joint": [
+            "pillow",
+            "duvet"
+          ],
+          "distances_m": [
+            0.0,
+            0.008990760892629623
+          ]
+        },
+        {
+          "kind": "disconnected_joint",
+          "entity": "shoe_cabinet",
+          "joint": [
+            "doors",
+            "carcass"
+          ],
+          "distances_m": [
+            0.0028316937386989594,
+            0.01875314861536026
+          ]
+        },
+        {
+          "kind": "disconnected_joint",
+          "entity": "shoe_cabinet",
+          "joint": [
+            "drawer_0",
+            "carcass"
+          ],
+          "distances_m": [
+            0.029675856232643127,
+            0.0466759167611599
+          ]
+        },
+        {
+          "kind": "disconnected_joint",
+          "entity": "shoe_cabinet",
+          "joint": [
+            "knob_0_drawer",
+            "drawer_0"
+          ],
+          "distances_m": [
+            0.007389949169009924,
+            0.03630352020263672
+          ]
+        },
+        {
+          "kind": "disconnected_joint",
+          "entity": "shoe_cabinet",
+          "joint": [
+            "knob_0_door",
+            "doors"
+          ],
+          "distances_m": [
+            0.007389949169009924,
+            0.04280361160635948
+          ]
+        },
+        {
+          "kind": "disconnected_joint",
+          "entity": "shoe_cabinet",
+          "joint": [
+            "drawer_1",
+            "carcass"
+          ],
+          "distances_m": [
+            0.0,
+            0.015929387882351875
+          ]
+        },
+        {
+          "kind": "disconnected_joint",
+          "entity": "shoe_cabinet",
+          "joint": [
+            "knob_1_drawer",
+            "drawer_1"
+          ],
+          "distances_m": [
+            0.0,
+            0.020598741248250008
+          ]
+        },
+        {
+          "kind": "disconnected_joint",
+          "entity": "shoe_cabinet",
+          "joint": [
+            "knob_1_door",
+            "doors"
+          ],
+          "distances_m": [
+            0.0,
+            0.02709883265197277
+          ]
+        },
+        {
+          "kind": "landmark_part_mismatch",
+          "entity": "shoe_cabinet",
+          "landmark": "shoe_cabinet_top_right",
+          "distance_m": 0.010455428622663021
+        },
+        {
+          "kind": "landmark_part_mismatch",
+          "entity": "shoe_cabinet",
+          "landmark": "shoe_cabinet_bottom_right",
+          "distance_m": 0.010455428622663021
+        }
+      ],
+      "joint_count": 49,
+      "joint_failures": 9,
+      "audit_sha256": "06c1cc3433426c88db7038e95d39c42aaf9a01e978e93d71c27551ab4838577c"
+    },
+    {
+      "label": "corrected_annotations",
+      "returncode": 0,
+      "wall_seconds": 0.9157260489882901,
+      "audit_status": "failed",
+      "failures": [
+        {
+          "kind": "disconnected_joint",
+          "entity": "bed",
+          "joint": [
+            "duvet",
+            "mattress"
+          ],
+          "distances_m": [
+            0.009000003337860107,
+            0.0
+          ]
+        },
+        {
+          "kind": "disconnected_joint",
+          "entity": "bed",
+          "joint": [
+            "pillow",
+            "duvet"
+          ],
+          "distances_m": [
+            0.0,
+            0.008990760892629623
+          ]
+        },
+        {
+          "kind": "source_landmarks",
+          "entity": "shoe_cabinet",
+          "median": 6.141549328163848,
+          "maximum": 19.280965552641344
+        }
+      ],
+      "joint_count": 49,
+      "joint_failures": 2,
+      "audit_sha256": "ca992eb7936441cf00b2c872431bd533c4a6924257f38863e30a6f76ac8974b0"
+    }
+  ],
+  "annotation_update": {
+    "status": "updated",
+    "entities": [
+      {
+        "entity": "wardrobe",
+        "pivot_world": [
+          1.583730697631836,
+          1.8377511501312256,
+          1.0049999952316284
+        ],
+        "translation_world": [
+          0.0,
+          0.0,
+          0
+        ],
+        "yaw_rad": 0.0,
+        "joint_anchors_updated": 8,
+        "landmarks_updated": 4
+      },
+      {
+        "entity": "shoe_cabinet",
+        "pivot_world": [
+          -0.7046317458152771,
+          -1.0750000476837158,
+          0.5306307673454285
+        ],
+        "translation_world": [
+          -0.03,
+          0.006,
+          0
+        ],
+        "yaw_rad": -0.03490658503988659,
+        "joint_anchors_updated": 15,
+        "landmarks_updated": 4
+      }
+    ],
+    "observed_uv_unchanged": true,
+    "tolerances_and_support_planes_unchanged": true,
+    "derived_measurements": "invalidated; require a new bound structural audit",
+    "scope": "XY/yaw binding update only, not visual or physical acceptance"
+  },
+  "input_model_unchanged": true,
+  "input_model_sha256": "0e6bb6a307729264cefa967fb515b27ebb66c91e194a233a003d1494ba846fe2",
+  "script_sha256": "74697a1e73241697113f0f199f0061cf08ad05351f61ff74c2a5a2e5327b6ecf"
+}

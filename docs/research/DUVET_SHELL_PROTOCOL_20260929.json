@@ -1,0 +1,17 @@
+{
+  "schema":"real2sim.duvet-shell-orientation/1",
+  "status":"registered_before_execution",
+  "expected_candidates":1,
+  "input_model":"/home/wqz/real2sim_whole_scene_20260926/delivery_candidate/export/scene.blend",
+  "input_model_sha256":"e140b8ae0f133a87cbaa77e576ea164512e57c3bd9a56552841f8596b9126e51",
+  "input_scene":"/home/wqz/real2sim_whole_scene_20260926/delivery_candidate/export/scene.json",
+  "hypothesis":"The existing 9mm Solidify shell uses inward offset while the two frozen attachment anchors require the opposite shell side. Test one orientation correction, not anchor or tolerance edits.",
+  "intervention":{"object":"bed_duvet","modifier":"cloth_thickness","property":"offset","before":-1,"after":1,"thickness_m_unchanged":0.009},
+  "held_constant":["base mesh vertices/faces","all transforms","all materials","camera","lights","source UV","joint anchors","joint tolerances","all optional dynamics off"],
+  "primary_gate":"Existing complete structural audit with identical 49 joints, source landmarks and collision checks; no threshold relaxation",
+  "secondary":"Existing frozen bedding/vent appearance ROIs, same 851x638/8samples/seed0 rendering; actual visual inspection",
+  "failure_policy":"Retain the unique candidate regardless of outcome; do not try another offset or thickness in this registered experiment",
+  "parameter_provenance":"Existing assumed static fabric thickness; orientation correction is not calibrated cloth physics",
+  "cpu_wall_budget_seconds":1800,
+  "scope":"One retained development room. A structural pass does not establish whole-scene photorealism or SOTA."
+}

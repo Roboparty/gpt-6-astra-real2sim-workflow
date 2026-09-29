@@ -6,6 +6,7 @@ from mathutils import Matrix,Vector
 
 repo=Path(__file__).resolve().parents[1];sys.path.insert(0,str(repo/'workflow'))
 from r2s.blender_metadata import synchronize
+from r2s.pose_annotations import update_xy_yaw_annotations
 
 args=sys.argv[sys.argv.index('--')+1:]
 protocol_path,actions_path,out=map(Path,args);protocol=json.loads(protocol_path.read_text());actions=json.loads(actions_path.read_text())['actions']
@@ -14,6 +15,7 @@ sha=lambda p:hashlib.sha256(Path(p).read_bytes()).hexdigest()
 assert sha(bpy.data.filepath)==protocol['shared_model_sha256']
 scene=json.loads(Path(protocol['shared_scene']).read_text());assert sha(protocol['shared_scene'])==protocol['shared_scene_sha256']
 assert len(actions)==2 and {a['entity'] for a in actions}=={'wardrobe','shoe_cabinet'}
+scene,annotation_update=update_xy_yaw_annotations(scene,actions)
 before={o.name:o.matrix_world.copy() for o in bpy.context.scene.objects}
 def owner(o):return o.get('entity_id',o.get('furniture_id',o.name))
 changed=set()
@@ -39,6 +41,7 @@ sc.render.resolution_x=camera['image_size'][0];sc.render.resolution_y=camera['im
 sc.render.filepath=str(out/'ordinary_render.png');bpy.ops.render.render(write_still=True)
 report={'status':'passed','input_blend_sha256':protocol['shared_model_sha256'],'output_blend_sha256':sha(out/'model.blend'),
         'actions':actions,'action_sha256':sha(actions_path),'changed_geometry_objects':len(changed),
-        'other_object_transforms_unchanged':True,'metadata':metadata,'wall_seconds':time.monotonic()-start,
+        'other_object_transforms_unchanged':True,'metadata':metadata,'annotation_update':annotation_update,
+        'pose_annotation_helper_sha256':sha(repo/'workflow/r2s/pose_annotations.py'),'wall_seconds':time.monotonic()-start,
         'script_sha256':sha(__file__),'scope':'Bounded pose edit and ordinary render; not scene acceptance'}
 (out/'action_receipt.json').write_text(json.dumps(report,indent=2))

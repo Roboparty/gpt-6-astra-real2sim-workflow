@@ -1,0 +1,49 @@
+{
+  "status": "blocked",
+  "stop_reason": "Preparation exceeded its fixed 1800 second budget; partial artifacts retained",
+  "elapsed_seconds": 1800.1071946363663,
+  "checkpoint_bytes": 5440325620,
+  "checkpoint_sha256": "69972d6e1c4492cb4d737a84fe940e357087d81c52f5c9b7c160b49c1f41669a",
+  "partial_checkpoint_present": false,
+  "preserved_wheels": 9,
+  "preserved_wheel_bytes": 2076526058,
+  "wheel_status": "unverified; do not install before official PyPI SHA256 verification",
+  "wheel_preservation": "same-device hardlinks; no duplicate file data",
+  "new_runtime_ready": false,
+  "cpu_construction_executed": false,
+  "model_forward_executed": false,
+  "gpu_used": false,
+  "disk_free_bytes": 15375847424,
+  "package_checks": {
+    "new_venv": {
+      "returncode": 0,
+      "versions": {
+        "torch": null,
+        "torchvision": null,
+        "numpy": null,
+        "mujoco": null
+      }
+    },
+    "existing_fresh": {
+      "returncode": 0,
+      "versions": {
+        "torch": null,
+        "torchvision": null,
+        "numpy": "2.2.6",
+        "mujoco": "3.13.0"
+      }
+    },
+    "existing_shinka": {
+      "returncode": 0,
+      "versions": {
+        "torch": null,
+        "torchvision": null,
+        "numpy": "2.2.6",
+        "mujoco": null
+      }
+    }
+  },
+  "worker_pid_exists": false,
+  "previous_child_pid_exists": false,
+  "remaining_gpu_or_inference_work_started": false
+}

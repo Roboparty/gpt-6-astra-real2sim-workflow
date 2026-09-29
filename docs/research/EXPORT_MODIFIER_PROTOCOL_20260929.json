@@ -1,0 +1,14 @@
+{
+  "schema":"real2sim.export-modifier-preservation/1",
+  "registered_conditions":["previous_cleanup","modifier_preserving_cleanup"],
+  "source_model":"/home/wqz/real2sim_whole_scene_20260926/case/runs/build_render/0003/scene.blend",
+  "source_model_sha256":"21c0a80bac17ded60bfe5d7c59b08685d04f95c65174d130fb7cae260e8319d0",
+  "source_scene":"/home/wqz/real2sim_whole_scene_20260926/case/runs/build_render/0003/scene.json",
+  "previous_implementation_commit":"189106f",
+  "intervention":"Skip destructive base-mesh cleanup for any mesh datablock used by modifiers, including shared datablocks; verify evaluated metadata again after other cleanup",
+  "primary_metric":"Maximum evaluated world-AABB error between loaded authored source and exported geometry across all semantic entities",
+  "gate_m":0.00001,
+  "mode":"geometry-only, no source model save, same input and output OBJ protocol",
+  "scope":"Export preservation check, not physical scene accuracy or SOTA",
+  "budget":{"conditions":2,"cpu_wall_seconds_per_condition":300}
+}

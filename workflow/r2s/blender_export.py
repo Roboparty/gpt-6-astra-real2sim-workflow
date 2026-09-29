@@ -35,12 +35,19 @@ required=['wall_back','wall_front','wall_left','wall_right','floor','ceiling']
 assert all(k in groups for k in required),f'Missing full enclosure: {set(required)-set(groups)}'
 assert all(not o.hide_render for k in required for o in groups[k]),'Enclosure hidden in render'
 repaired=0
+protected_meshes={o.data for o in bpy.data.objects if o.type=='MESH' and o.modifiers}
+skipped_modifier_meshes=[]
 for o in bpy.data.objects:
- if o.type=='MESH':
+ if o.type=='MESH' and o.data in protected_meshes:skipped_modifier_meshes.append(o.name)
+ elif o.type=='MESH':
   bm=bmesh.new();bm.from_mesh(o.data);n=len(bm.verts)
   bmesh.ops.remove_doubles(bm,verts=list(bm.verts),dist=1e-7);bmesh.ops.dissolve_degenerate(bm,edges=list(bm.edges),dist=1e-9)
   bmesh.ops.recalc_face_normals(bm,faces=list(bm.faces));repaired+=n-len(bm.verts);bm.to_mesh(o.data);bm.free()
+cleanup_preservation=synchronize(S)
 bpy.context.view_layer.update();deps=bpy.context.evaluated_depsgraph_get();report={'schema':'real2sim.geometry-audit/1','branch':S.get('branch','A'),'spec_sha256':hashlib.sha256(SPEC.read_bytes()).hexdigest(),'enclosure_present':required,'enclosure_hidden':False,'merged_duplicate_vertices':repaired,'semantic_roots_created':semantic_roots_created,'units':'metres','unit_scale':1.0,'entities':{},'warnings':[]}
+report['cleanup_policy']='Preserve base meshes used by modifiers; evaluated export triangles still exclude zero-area faces'
+report['skipped_modifier_meshes']=skipped_modifier_meshes
+report['cleanup_preservation']=cleanup_preservation
 meshdir=OUT/'meshes';meshdir.mkdir(exist_ok=True)
 for key,obs in sorted(groups.items()):
  root=bpy.data.objects.get(key);rootmat=root.matrix_world.copy() if root and root.type=='EMPTY' else Matrix.Identity(4);inv=rootmat.inverted();vs=[];fs=[];world=[];bad=0;deg=0

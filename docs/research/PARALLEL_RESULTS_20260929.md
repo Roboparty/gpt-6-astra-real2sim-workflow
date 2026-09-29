@@ -108,6 +108,17 @@ Six of the first-round eight camera-initialization attempts are now used.
 
 ## Storage, integration and next step
 
+Follow-up structural checks found that the bounded pose tool had not moved its
+joint/landmark annotations with the cabinet. The tool is now corrected for future
+runs; historical pilot outputs and silhouette scores remain unchanged. On the
+same retained posed mesh, updating only those bindings reduced joint-check
+failures from nine to two. Two bed attachment-anchor mismatches near 9 mm were
+also present in the original baseline. The corrected shoe-cabinet maximum
+landmark error is 19.28 px, above the existing 18 px threshold (baseline 16.38 px).
+Thus the coarse-silhouette gain does not pass the finer structure/source-fit gate.
+The earlier static-engine passes concern shell/opening/support probes and do not
+contradict this stricter finding. See [follow-up evidence](UPDATE_20260929T0945.md).
+
 All video, Blender models, physics arrays and meshes remain on `4090-1` under
 `/home/wqz/real2sim_capability_20260929`. The local repository holds code and small
 evidence JSON. All this round's compute used CPU; no new paid model API or GPU

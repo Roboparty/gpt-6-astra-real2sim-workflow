@@ -1,0 +1,228 @@
+{
+  "schema": "real2sim.bedding-color-candidate/1",
+  "status": "rendered",
+  "protocol_path": "/home/wqz/real2sim_capability_20260929/repo/docs/research/BEDDING_COLOR_PROTOCOL_20260929.json",
+  "protocol_sha256": "9f52613c90bea0a995974b00579b993791df6641c4ca8ff62768c3720173c403",
+  "script_sha256": "770a7bfa66a4a6e1b58e0e7d4aa93f57f2a081452c78a018bafc1d32c0be110c",
+  "snapshot_helper_sha256": "12de3d11240cce2b3057008ad73f0f585e1da90cf2c8747a3d34baa9c8a3e89f",
+  "input_blend_sha256": "5466a6ee24fa16c10d9b1bf71972ae2c7d53be6aa03dfcfc0491684dfb13e87f",
+  "input_scene_sha256": "9de4836b554f31af1e72612d8096c466bd47cce740d5e043bc0f373c2e7c3d4a",
+  "input_render_sha256": "fab2e23a7a22963763a632daee90d25d7167719e671089d321c0406646022a9e",
+  "source_sha256": "5068deec1cba1e6a167209adca5fb77e4d931db06ed6a3812b9a2b8252d8c866",
+  "polygon_source_xy": [
+    [
+      700,
+      800
+    ],
+    [
+      980,
+      740
+    ],
+    [
+      1060,
+      772
+    ],
+    [
+      826,
+      882
+    ]
+  ],
+  "proposal_count": 1,
+  "condition": "assumed/fit-prior",
+  "clamp_per_channel": [
+    0.6,
+    1.1
+  ],
+  "photo_textures_added": false,
+  "limitations": [
+    "Display-referred medians and frozen lighting do not identify physical reflectance.",
+    "The same uniform correction is assumed for duvet and pillow; no per-pixel shadow baking."
+  ],
+  "source_statistics": {
+    "original_image_size": [
+      1702,
+      1276
+    ],
+    "image_size": [
+      851,
+      638
+    ],
+    "polygon_native_xy": [
+      [
+        350.0,
+        400.0
+      ],
+      [
+        490.0,
+        370.0
+      ],
+      [
+        530.0,
+        386.0
+      ],
+      [
+        413.0,
+        441.0
+      ]
+    ],
+    "valid_pixels": 5919,
+    "linear_rgb_median": [
+      0.5088813208549338,
+      0.5394794890121072,
+      0.5457244613701866
+    ],
+    "resize": "Pillow LANCZOS, fixed 851x638",
+    "polygon_rasterization": "Pillow ImageDraw polygon filled, source coordinates scaled 0.5",
+    "pillow_version": "12.3.0",
+    "numpy_version": "2.2.6",
+    "path": "/home/wqz/real2sim_whole_scene_20260926/input/01_bedroom.jpg",
+    "sha256": "5068deec1cba1e6a167209adca5fb77e4d931db06ed6a3812b9a2b8252d8c866",
+    "interpretation": "Assumed sRGB EOTF of displayed pixels, not recovered scene radiance or measured albedo."
+  },
+  "baseline_statistics": {
+    "original_image_size": [
+      851,
+      638
+    ],
+    "image_size": [
+      851,
+      638
+    ],
+    "polygon_native_xy": [
+      [
+        350.0,
+        400.0
+      ],
+      [
+        490.0,
+        370.0
+      ],
+      [
+        530.0,
+        386.0
+      ],
+      [
+        413.0,
+        441.0
+      ]
+    ],
+    "valid_pixels": 5919,
+    "linear_rgb_median": [
+      0.5271151257058131,
+      0.5583403896342679,
+      0.5394794890121072
+    ],
+    "resize": "Pillow LANCZOS, fixed 851x638",
+    "polygon_rasterization": "Pillow ImageDraw polygon filled, source coordinates scaled 0.5",
+    "pillow_version": "12.3.0",
+    "numpy_version": "2.2.6",
+    "path": "/home/wqz/real2sim_capability_20260929/runs/combined_001/ordinary_render.png",
+    "sha256": "fab2e23a7a22963763a632daee90d25d7167719e671089d321c0406646022a9e",
+    "interpretation": "Assumed sRGB EOTF of displayed pixels, not recovered scene radiance or measured albedo."
+  },
+  "unclamped_multiplier": [
+    0.965408306531777,
+    0.9662197093881829,
+    1.0115759217639861
+  ],
+  "applied_multiplier": [
+    0.965408306531777,
+    0.9662197093881829,
+    1.0115759217639861
+  ],
+  "clamp_applied": [
+    false,
+    false,
+    false
+  ],
+  "actions": [
+    {
+      "object": "bed_duvet",
+      "original_material": "botanical_cotton_appearance_duvet",
+      "new_material": "botanical_cotton_appearance_duvet_color_fit_prior",
+      "previous_base_color_node": "Image Texture",
+      "multiplier": [
+        0.965408306531777,
+        0.9662197093881829,
+        1.0115759217639861
+      ],
+      "condition": "assumed/fit-prior",
+      "spatially_uniform": true
+    },
+    {
+      "object": "bed_pillow",
+      "original_material": "botanical_cotton",
+      "new_material": "botanical_cotton_color_fit_prior",
+      "previous_base_color_node": "Image Texture",
+      "multiplier": [
+        0.965408306531777,
+        0.9662197093881829,
+        1.0115759217639861
+      ],
+      "condition": "assumed/fit-prior",
+      "spatially_uniform": true
+    }
+  ],
+  "audit": {
+    "status": "passed",
+    "object_count": 471,
+    "mesh_count": 456,
+    "non_target_count": 469,
+    "all_geometry_unchanged": true,
+    "all_transforms_and_dimensions_unchanged": true,
+    "non_target_materials_unchanged": true,
+    "camera_lights_render_settings_unchanged": true,
+    "geometry_before_sha256": "bbe073b9f5c404ab125dcd1d30a954d10428bd138c521c54f536886db372a86b",
+    "geometry_after_sha256": "bbe073b9f5c404ab125dcd1d30a954d10428bd138c521c54f536886db372a86b",
+    "settings_sha256": "5765231f6185846913d8a909e7192e2270627a62ade1c62a7115d6dd46d1352e"
+  },
+  "output_blend_sha256": "9a2a6aa4508a2b6630f0c984a8f68cd96fa4886614bc76f19cf90011f6058727",
+  "output_scene_sha256": "9de4836b554f31af1e72612d8096c466bd47cce740d5e043bc0f373c2e7c3d4a",
+  "candidate_statistics": {
+    "original_image_size": [
+      851,
+      638
+    ],
+    "image_size": [
+      851,
+      638
+    ],
+    "polygon_native_xy": [
+      [
+        350.0,
+        400.0
+      ],
+      [
+        490.0,
+        370.0
+      ],
+      [
+        530.0,
+        386.0
+      ],
+      [
+        413.0,
+        441.0
+      ]
+    ],
+    "valid_pixels": 5919,
+    "linear_rgb_median": [
+      0.5209955732043543,
+      0.5520114015120001,
+      0.5394794890121072
+    ],
+    "resize": "Pillow LANCZOS, fixed 851x638",
+    "polygon_rasterization": "Pillow ImageDraw polygon filled, source coordinates scaled 0.5",
+    "pillow_version": "12.3.0",
+    "numpy_version": "2.2.6",
+    "path": "/home/wqz/real2sim_capability_20260929/runs/bedding_color_001/ordinary_render.png",
+    "sha256": "4e1461f9d782a0f56a1b308c58173b61129aa3ce9b813f5a1fa063c74dfe1c47",
+    "interpretation": "Assumed sRGB EOTF of displayed pixels, not recovered scene radiance or measured albedo."
+  },
+  "fit_polygon_diagnostic": {
+    "before_mean_absolute_linear_median_error": 0.014446559277039825,
+    "after_mean_absolute_linear_median_error": 0.01029704573579763,
+    "scope": "In-sample fitting polygon diagnostic only; not the independent frozen evaluation ROI."
+  },
+  "wall_seconds": 18.411047421977855
+}

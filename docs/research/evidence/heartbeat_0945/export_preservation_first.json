@@ -1,0 +1,42 @@
+{
+  "conditions": [
+    {
+      "condition": "previous_cleanup",
+      "returncode": 12,
+      "worker_sha256": "f33137f6ebe8aef2ef4c1ef3a5f7367ecc623dcaf130e3c90cccacf77d281b7e",
+      "wall_seconds": 0.46514000301249325
+    },
+    {
+      "condition": "modifier_preserving_cleanup",
+      "returncode": 0,
+      "worker_sha256": "5407edde9c9a53911dfee46de56e8c264c13adb4975782bcd1d34d573a461e61",
+      "wall_seconds": 3.1700281359953806,
+      "per_entity_bound_error_m": {
+        "bed": 5.960464477539063e-08,
+        "blinds": 0.0,
+        "ceiling": 0.0,
+        "ceiling_fixtures": 0.0,
+        "exterior": 0.0,
+        "floor": 0.0,
+        "glass_partition": 0.0,
+        "reflective_board": 0.0,
+        "shoe_cabinet": 0.0,
+        "wall_back": 0.0,
+        "wall_front": 0.0,
+        "wall_left": 0.0,
+        "wall_right": 0.0,
+        "wardrobe": 0.0,
+        "window": 0.0
+      },
+      "maximum_bound_error_m": 5.960464477539063e-08,
+      "preservation_gate_pass": true
+    }
+  ],
+  "expected_conditions": 2,
+  "input_hashes": {
+    "model": "21c0a80bac17ded60bfe5d7c59b08685d04f95c65174d130fb7cae260e8319d0",
+    "scene": "dbc328d7ac938334900c47e97fc8cc6ad412a98b97836d053367edb12e0dcf9b"
+  },
+  "inputs_unchanged": true,
+  "protocol_sha256": "6bb57ffdaa136f8244a41f642ddec337d466bf0fe8d23cc347629fc4553b18e9"
+}

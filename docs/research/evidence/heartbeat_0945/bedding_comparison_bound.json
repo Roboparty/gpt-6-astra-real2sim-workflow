@@ -1,0 +1,49 @@
+{
+  "expected_groups": 2,
+  "groups": [
+    {
+      "group": "combined_001",
+      "image_sha256": "fab2e23a7a22963763a632daee90d25d7167719e671089d321c0406646022a9e",
+      "image_size": [
+        851,
+        638
+      ],
+      "metrics": {
+        "bedding": {
+          "rgb_mae": 0.12320795420564738,
+          "mean_absolute_log_luminance_ratio": 0.6698844917551644,
+          "pixels": 30600
+        },
+        "vent": {
+          "rgb_mae": 0.10682551353874882,
+          "mean_absolute_log_luminance_ratio": 0.4624811977681583,
+          "pixels": 11200
+        }
+      }
+    },
+    {
+      "group": "bedding_color_001",
+      "image_sha256": "4e1461f9d782a0f56a1b308c58173b61129aa3ce9b813f5a1fa063c74dfe1c47",
+      "image_size": [
+        851,
+        638
+      ],
+      "metrics": {
+        "bedding": {
+          "rgb_mae": 0.12349792814729378,
+          "mean_absolute_log_luminance_ratio": 0.6741100072883773,
+          "pixels": 30600
+        },
+        "vent": {
+          "rgb_mae": 0.10577264239028945,
+          "mean_absolute_log_luminance_ratio": 0.4561783089393284,
+          "pixels": 11200
+        }
+      }
+    }
+  ],
+  "source_sha256": "5068deec1cba1e6a167209adca5fb77e4d931db06ed6a3812b9a2b8252d8c866",
+  "protocol_sha256": "9f52613c90bea0a995974b00579b993791df6641c4ca8ff62768c3720173c403",
+  "script_sha256": "f26bb364347e04f07cda864d919b121aa8865c246e14c59762a2dee490c665c2",
+  "scope": "Fixed same-image appearance diagnostics; no physical reflectance or held-out accuracy claim"
+}

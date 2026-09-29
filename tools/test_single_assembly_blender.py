@@ -18,7 +18,9 @@ out.mkdir(parents=True,exist_ok=False)
 start=time.monotonic()
 bpy.ops.object.select_all(action='SELECT');bpy.ops.object.delete(use_global=False)
 parts=[]
-for name,position,dimensions in [('base',(0,0,.2),(.4,.4,.4)),('top',(0,0,.5),(.3,.3,.2))]:
+single_part='--single-part' in sys.argv
+part_definitions=[('base',(0,0,.2),(.4,.4,.4))]+([] if single_part else [('top',(0,0,.5),(.3,.3,.2))])
+for name,position,dimensions in part_definitions:
     bpy.ops.mesh.primitive_cube_add(size=1,location=position)
     obj=bpy.context.object;obj.name=name;obj.dimensions=dimensions
     bpy.ops.object.transform_apply(location=False,rotation=False,scale=True)
@@ -35,6 +37,7 @@ assembly={'entity':'cabinet','parts':parts,'source_observation_ids':['synthetic_
           'frame':{'yaw_rad':0},'joints':[{'parts':['base','top'],'anchor_world':[0,0,.4],'tolerance_m':.002}],
           'floor_supports':[{'part':'base','plane_z':0,'tolerance_m':.002}],
           'fit':{'landmarks':[{'id':'corner','world':list(point),'uv':uv,'part':'base'}]}}
+if single_part:assembly['joints']=[]
 scene={'model_version':'single_assembly_engine_fixture','objects':[{'id':'cabinet'}],
        'camera':{'position':list(cam.location),'rotation_world_to_cv':R,'focal_px':200,
                  'principal_point':[160,120],'image_size':[320,240]},
@@ -54,7 +57,7 @@ audit=json.loads((out/'structural_audit.json').read_text())
 binding={'model_sha256':file_sha(model),'scene_sha256':file_sha(spec),
          'structural_audit_sha256':file_sha(out/'structural_audit.json')}
 review={'geometry_freeze_sha256':binding['model_sha256'],'model_version':scene['model_version'],
-        'per_object':[{'entity':'cabinet','status':'pass','findings':'Synthetic connected two-part cabinet',
+        'per_object':[{'entity':'cabinet','status':'pass','findings':'Synthetic supported assembly',
                        'evidence':['furniture_source_view.png']}],
         'checks':{'support':{'status':'pass','evidence':['structure_cabinet_front.png']}}}
 artifacts=[p.name for p in out.iterdir() if p.is_file()]
@@ -68,5 +71,8 @@ report={'status':'passed','scope':'Actual synthetic single-assembly Blender audi
         'wall_seconds':time.monotonic()-start,'input_hashes':binding,
         'implementation_sha256':file_sha(repo/'workflow/r2s/structure.py')}
 report['test_script_sha256']=file_sha(__file__)
+report['single_part']=single_part
+report['declared_joint_count']=len(assembly['joints'])
+report['audited_joint_count']=len(audit['assemblies'][0]['joints_checked'])
 (out/'summary.json').write_text(json.dumps(report,indent=2))
 print(json.dumps(report))

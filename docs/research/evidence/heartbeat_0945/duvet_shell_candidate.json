@@ -1,0 +1,304 @@
+{
+  "schema": "real2sim.duvet-shell-candidate/1",
+  "status": "completed",
+  "protocol_sha256": "e8212246f06b8e7de268488a2d47764809ffd2dad8fd1066d03fe049a9b02bb4",
+  "script_sha256": "053fd55bb1376a604e1d4dc4239529cc5f998373e20939664137366164f9669c",
+  "input_model": "/home/wqz/real2sim_whole_scene_20260926/delivery_candidate/export/scene.blend",
+  "input_model_sha256": "e140b8ae0f133a87cbaa77e576ea164512e57c3bd9a56552841f8596b9126e51",
+  "input_scene": "/home/wqz/real2sim_whole_scene_20260926/delivery_candidate/export/scene.json",
+  "input_scene_sha256": "dbc328d7ac938334900c47e97fc8cc6ad412a98b97836d053367edb12e0dcf9b",
+  "baseline_render_sha256": "d4eefb40194ae5c00e30c1ac645ebb1df9b730d32f70619eaf0b2e2441f5475a",
+  "source_sha256": "5068deec1cba1e6a167209adca5fb77e4d931db06ed6a3812b9a2b8252d8c866",
+  "intervention": {
+    "object": "bed_duvet",
+    "modifier": "cloth_thickness",
+    "property": "offset",
+    "before": -1,
+    "after": 1,
+    "thickness_m_unchanged": 0.009
+  },
+  "candidate_count": 1,
+  "physical_features": {
+    "hinges": false,
+    "cloth": false,
+    "soft_bodies": false
+  },
+  "parameter_provenance": "Existing assumed static 9mm textile thickness; shell orientation test, not cloth-physics calibration",
+  "audit": {
+    "status": "passed",
+    "object_count": 471,
+    "base_mesh_and_uv_before_sha256": "e09b374adcddd367a8bc7829f3048a6e9f84634c7608ba53343d2f7fcd515daa",
+    "base_mesh_and_uv_after_sha256": "e09b374adcddd367a8bc7829f3048a6e9f84634c7608ba53343d2f7fcd515daa",
+    "all_transforms_unchanged": true,
+    "all_materials_unchanged": true,
+    "camera_lights_unchanged": true,
+    "only_modifier_change": {
+      "offset": [
+        -1.0,
+        1.0
+      ]
+    },
+    "thickness_m_before": 0.008999999612569809,
+    "thickness_m_after": 0.008999999612569809,
+    "structure_before_sha256": "8d3c06950aa93e57ff22c3ca6a4a867dc4f93649bafbcd931dd974f0194acd8a",
+    "structure_after_sha256": "8d3c06950aa93e57ff22c3ca6a4a867dc4f93649bafbcd931dd974f0194acd8a",
+    "joint_count_before": 49,
+    "joint_count_after": 49,
+    "aabb_metadata_updates": [
+      {
+        "id": "bed",
+        "before": {
+          "position": [
+            -0.030972391366958618,
+            1.0464985948055983,
+            0.43292587995529175
+          ],
+          "dimensions": [
+            1.334095299243927,
+            2.1158903874456882,
+            0.8658517599105835
+          ]
+        },
+        "after": {
+          "position": [
+            -0.03501966595649719,
+            1.0464985957369208,
+            0.43292587995529175
+          ],
+          "dimensions": [
+            1.3421897292137146,
+            2.115890385583043,
+            0.8658517599105835
+          ]
+        }
+      },
+      {
+        "id": "shoe_cabinet",
+        "before": {
+          "position": [
+            -0.7046317458152771,
+            -1.0750000476837158,
+            0.5306307673454285
+          ],
+          "dimensions": [
+            0.406000018119812,
+            1.1500000953674316,
+            1.061261534690857
+          ]
+        },
+        "after": {
+          "position": [
+            -0.7056317329406738,
+            -1.0760000348091125,
+            0.5306307673454285
+          ],
+          "dimensions": [
+            0.40799999237060547,
+            1.152000069618225,
+            1.061261534690857
+          ]
+        }
+      },
+      {
+        "id": "wardrobe",
+        "before": {
+          "position": [
+            1.583730697631836,
+            1.8377511501312256,
+            1.0049999952316284
+          ],
+          "dimensions": [
+            0.7940001487731934,
+            0.6119999885559082,
+            2.009999990463257
+          ]
+        },
+        "after": {
+          "position": [
+            1.582980751991272,
+            1.8385010957717896,
+            1.0049999952316284
+          ],
+          "dimensions": [
+            0.7955000400543213,
+            0.6134998798370361,
+            2.009999990463257
+          ]
+        }
+      }
+    ],
+    "target_evaluated_dimensions_before": [
+      1.2950595617294312,
+      1.8625719547271729,
+      0.19349563121795654
+    ],
+    "target_evaluated_dimensions_after": [
+      1.2950595617294312,
+      1.8625719547271729,
+      0.19906485080718994
+    ]
+  },
+  "render_settings": {
+    "camera": {
+      "name": "source_camera",
+      "matrix": [
+        0.7251594662666321,
+        -0.13864880800247192,
+        0.674477756023407,
+        1.7480084896087646,
+        0.6875303387641907,
+        0.09170212596654892,
+        -0.7203420996665955,
+        -1.2246108055114746,
+        0.03802352398633957,
+        0.9860868453979492,
+        0.16182392835617065,
+        1.3833105564117432,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "lens": 14.410844802856445,
+      "shift": [
+        0.0,
+        0.0
+      ]
+    },
+    "lights": {
+      "window_daylight": {
+        "matrix": [
+          0.0781264379620552,
+          0.47835150361061096,
+          -0.8746863007545471,
+          -0.876068115234375,
+          -0.996943473815918,
+          0.03748631849884987,
+          -0.06854572892189026,
+          0.4000000059604645,
+          -1.8293863490725926e-07,
+          0.8773680329322815,
+          0.47981807589530945,
+          0.8500000238418579,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "type": "AREA",
+        "energy": 70.0,
+        "color": [
+          1.0,
+          0.9800000190734863,
+          0.949999988079071
+        ]
+      },
+      "exterior_sun": {
+        "matrix": [
+          0.3846152424812317,
+          0.6975590586662292,
+          -0.6045514345169067,
+          0.0,
+          -0.9230769872665405,
+          0.29064953327178955,
+          -0.25189629197120667,
+          0.0,
+          5.027761318388002e-08,
+          0.6549306511878967,
+          0.7556889653205872,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "type": "SUN",
+        "energy": 3.0,
+        "color": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      }
+    },
+    "world": "day_world",
+    "view_transform": "AgX",
+    "exposure": 0.0,
+    "gamma": 1.0,
+    "look": "AgX - Medium High Contrast",
+    "render": {
+      "engine": "CYCLES",
+      "samples": 8,
+      "denoise": true,
+      "adaptive": false,
+      "seed": 0,
+      "resolution": [
+        1702,
+        1276,
+        50
+      ]
+    }
+  },
+  "output_model_sha256": "bcca93ef8508132640e1f0227bb0e842fb7fdbdd52411ffb59dd3122ad10de83",
+  "output_scene_sha256": "65b70a9d62ec1a5216a94624f1f285df6c1d60297e33af8eedd9d65b406d4d93",
+  "output_render_sha256": "f9399bf629fb2efb111fc4f4c4aa690dc2b3641a32d9ba8541074808160fd886",
+  "structural_evaluator_sha256": "b32c046cab2e2044c29ad89fa4f1109f4c3b4257b9b57a5ad5f966f8fc42e4b8",
+  "structural_result": {
+    "status": "passed",
+    "joints_checked": 49,
+    "passed_joints": 49,
+    "failures": [],
+    "audit_sha256": "f6fb5b2bb353be55326c1587dab7ed0ca94ee2ec0efa77f169ac65226d0f3a6d"
+  },
+  "appearance_metrics": {
+    "expected_groups": 2,
+    "groups": [
+      {
+        "group": "unchanged_baseline",
+        "image_sha256": "d4eefb40194ae5c00e30c1ac645ebb1df9b730d32f70619eaf0b2e2441f5475a",
+        "image_size": [
+          851,
+          638
+        ],
+        "metrics": {
+          "bedding": {
+            "rgb_mae": 0.12294109103336326,
+            "mean_absolute_log_luminance_ratio": 0.6676147055435833,
+            "pixels": 30600
+          },
+          "vent": {
+            "rgb_mae": 0.13543323996265177,
+            "mean_absolute_log_luminance_ratio": 0.6901675257680704,
+            "pixels": 11200
+          }
+        }
+      },
+      {
+        "group": "duvet_shell_only",
+        "image_sha256": "f9399bf629fb2efb111fc4f4c4aa690dc2b3641a32d9ba8541074808160fd886",
+        "image_size": [
+          851,
+          638
+        ],
+        "metrics": {
+          "bedding": {
+            "rgb_mae": 0.11988752189328893,
+            "mean_absolute_log_luminance_ratio": 0.657180471597386,
+            "pixels": 30600
+          },
+          "vent": {
+            "rgb_mae": 0.135843720821662,
+            "mean_absolute_log_luminance_ratio": 0.6948363501379902,
+            "pixels": 11200
+          }
+        }
+      }
+    ],
+    "source_sha256": "5068deec1cba1e6a167209adca5fb77e4d931db06ed6a3812b9a2b8252d8c866",
+    "protocol_sha256": "296a9efdeea88e3762b17e7d8333b6e92385f3ef54c7adcf4c439a22654ec9dd",
+    "script_sha256": "f26bb364347e04f07cda864d919b121aa8865c246e14c59762a2dee490c665c2",
+    "scope": "Fixed same-image appearance diagnostics; no physical reflectance or held-out accuracy claim"
+  },
+  "structural_acceptance": "passed",
+  "wall_seconds": 19.72625647392124
+}

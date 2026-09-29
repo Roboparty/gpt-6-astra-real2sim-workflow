@@ -1,0 +1,32 @@
+{
+  "expected_groups": 2,
+  "groups": [
+    {
+      "group": "combined_001",
+      "metrics": {
+        "bedding": {
+          "rgb_mae": 0.12320795420564738,
+          "mean_absolute_log_luminance_ratio": 0.6698844917551644
+        },
+        "vent": {
+          "rgb_mae": 0.10682551353874882,
+          "mean_absolute_log_luminance_ratio": 0.4624811977681583
+        }
+      }
+    },
+    {
+      "group": "bedding_color_001",
+      "metrics": {
+        "bedding": {
+          "rgb_mae": 0.12349792814729378,
+          "mean_absolute_log_luminance_ratio": 0.6741100072883773
+        },
+        "vent": {
+          "rgb_mae": 0.10577264239028945,
+          "mean_absolute_log_luminance_ratio": 0.4561783089393284
+        }
+      }
+    }
+  ],
+  "scope": "Same-image frozen-region fitting diagnostic, not physical material identification"
+}

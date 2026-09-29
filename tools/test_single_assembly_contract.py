@@ -26,7 +26,7 @@ def fixture(count):
     owners={p['object']:a['entity'] for a in assemblies for p in a['parts']}
     audit=dict(status='passed',failures=[],source_model_sha256='1'*64,source_scene_sha256='2'*64,
                evaluated_visible_meshes=True,assemblies=[dict(entity=a['entity'],ownership_checked=True,
-                   joints_checked=[dict(parts=['base','top'],status='pass')],floor_checked=[dict(part='base',status='pass')],
+                   joints_checked=[dict(a['joints'][0],status='pass',measured_anchor_outside_distances_m=[0,0])],floor_checked=[dict(part='base',status='pass')],
                    source_landmarks=[dict(id='synthetic_landmark')],isolated_views=['fixture_evidence.txt']) for a in assemblies],
                interassembly_checks=[dict(parts=list(pair),owners=[owners[p] for p in pair],intersects=False,penetration_sample_m=0)
                    for pair in combinations(sorted(owners),2) if owners[pair[0]]!=owners[pair[1]]])

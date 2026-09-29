@@ -59,9 +59,34 @@ def review_contract(attempt,review,artifacts,scene,binding):
     audit=json.loads(audit_path.read_text())
     if audit.get('source_model_sha256')!=binding['model_sha256'] or audit.get('source_scene_sha256')!=binding['scene_sha256']:raise ContractError('Structural measurements use stale model/scene')
     if audit.get('status')!='passed' or audit.get('failures'):raise ContractError('Unresolved physical furniture structure issue')
-    if {x['entity'] for x in audit.get('assemblies',[])}!=required:raise ContractError('Structural evidence omits furniture')
+    audited_assemblies=audit.get('assemblies',[])
+    if len(audited_assemblies)!=len(required) or {x['entity'] for x in audited_assemblies}!=required:raise ContractError('Structural evidence must cover each furniture assembly exactly once')
+    declared={a['entity']:a for a in structure['assemblies']}
     for a in audit['assemblies']:
-        if not all(a.get(k) for k in ['ownership_checked','joints_checked','floor_checked','source_landmarks','isolated_views']):raise ContractError('Incomplete furniture structure evidence')
+        if not all(a.get(k) for k in ['ownership_checked','floor_checked','source_landmarks','isolated_views']):raise ContractError('Incomplete furniture structure evidence')
+        assembly=declared[a['entity']];part_ids={p['id'] for p in assembly['parts']}
+        joints=assembly.get('joints');checked=a.get('joints_checked')
+        if not isinstance(joints,list) or not isinstance(checked,list):raise ContractError('Declared joints and joint checks must be explicit lists')
+        def joint_key(joint):
+            pair=joint.get('parts') if isinstance(joint,dict) else None
+            if not isinstance(pair,list) or len(pair)!=2 or pair[0]==pair[1] or any(not isinstance(p,str) or p not in part_ids for p in pair):raise ContractError('Invalid audited joint parts')
+            anchor=joint.get('anchor_world');tolerance=joint.get('tolerance_m')
+            if not isinstance(anchor,list) or len(anchor)!=3 or any(type(v) not in (int,float) or not math.isfinite(v) for v in anchor):raise ContractError('Invalid audited joint anchor')
+            if type(tolerance) not in (int,float) or not math.isfinite(tolerance) or not 0<tolerance<=.01:raise ContractError('Invalid audited joint tolerance')
+            return (tuple(sorted(pair)),tuple(anchor),tolerance)
+        expected_joints={joint_key(joint) for joint in joints};seen_joints=set()
+        if len(expected_joints)!=len(joints):raise ContractError('Duplicate declared joint constraint')
+        # A single part has no internal connection to measure. Multi-part graphs
+        # remain connected by structure_contract, and every declared anchor must
+        # have its own bound executable measurement (not just a truthy list).
+        if len(part_ids)==1 and (joints or checked):raise ContractError('Single-part assembly cannot claim an internal joint')
+        for joint in checked:
+            key=joint_key(joint)
+            if key not in expected_joints or key in seen_joints:raise ContractError('Unexpected or duplicate audited joint constraint')
+            distances=joint.get('measured_anchor_outside_distances_m')
+            if joint.get('status')!='pass' or not isinstance(distances,list) or len(distances)!=2 or any(type(v) not in (int,float) or not math.isfinite(v) or v<0 or v>key[2] for v in distances):raise ContractError('Missing or failing executable joint measurement')
+            seen_joints.add(key)
+        if seen_joints!=expected_joints:raise ContractError('Joint evidence does not cover all declared constraints')
         for ref in a['isolated_views']:evidence_file(attempt,ref,artifacts)
     for ref,sha in audit.get('evidence_hashes',{}).items():
         if file_sha(evidence_file(attempt,ref,artifacts))!=sha:raise ContractError('Structure evidence bytes changed')
