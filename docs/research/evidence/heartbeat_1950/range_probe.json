@@ -1,0 +1,95 @@
+{
+  "schema": "real2sim.tum-resume-probe/1",
+  "protocol_sha256": "43108db7cf2093ce79c20aa01cc2edf1ec934b29946355bd8f7941a2ac027dd8",
+  "script_sha256": "adc663634512da56938bea18a123f8959aa8005219bca5a57381ee5fcb210700",
+  "expected_sequences": 3,
+  "prepared_sequences": 0,
+  "sources": [
+    {
+      "id": "freiburg1_desk",
+      "requested_range": [
+        10485760,
+        11010047
+      ],
+      "status": "range_verified",
+      "returncode": 0,
+      "stderr": "",
+      "http": {
+        "http_code": 206,
+        "url_effective": "https://webshare.cvg.cit.tum.de/g/rgbd/dataset/freiburg1/rgbd_dataset_freiburg1_desk.tgz",
+        "size_download": 524288,
+        "speed_download": 231800,
+        "time_total": 2.261808
+      },
+      "response_headers": {
+        "content-range": "bytes 10485760-11010047/344011403",
+        "content-length": "524288",
+        "etag": "\"1481328b-4ae2a151e2840\"",
+        "last-modified": "Fri, 30 Sep 2011 15:14:33 GMT"
+      },
+      "retained_probe_bytes": 524288,
+      "probe_sha256": "7dfb43a8643bfd483d23c7b4bafe8ee7d083658550a3cb56f920fed8e5a22fa7",
+      "wall_seconds": 2.276145110023208
+    },
+    {
+      "id": "freiburg3_structure_texture_far",
+      "requested_range": [
+        11534336,
+        12058623
+      ],
+      "status": "range_verified",
+      "returncode": 0,
+      "stderr": "",
+      "http": {
+        "http_code": 206,
+        "url_effective": "https://webshare.cvg.cit.tum.de/g/rgbd/dataset/freiburg3/rgbd_dataset_freiburg3_structure_texture_far.tgz",
+        "size_download": 524288,
+        "speed_download": 164164,
+        "time_total": 3.193674
+      },
+      "response_headers": {
+        "content-range": "bytes 11534336-12058623/520806553",
+        "content-length": "524288",
+        "etag": "\"1f0ae099-4c6b1880e6b40\"",
+        "last-modified": "Tue, 07 Aug 2012 18:55:01 GMT"
+      },
+      "retained_probe_bytes": 524288,
+      "probe_sha256": "d5718e2fe54c6db6d003b9c1f08e77f66c929071d1f931f45c83c6f5c959d078",
+      "wall_seconds": 3.207294713007286
+    },
+    {
+      "id": "freiburg3_cabinet",
+      "requested_range": [
+        0,
+        524287
+      ],
+      "status": "range_verified",
+      "returncode": 0,
+      "stderr": "",
+      "http": {
+        "http_code": 206,
+        "url_effective": "https://webshare.cvg.cit.tum.de/g/rgbd/dataset/freiburg3/rgbd_dataset_freiburg3_cabinet.tgz",
+        "size_download": 524288,
+        "speed_download": 238663,
+        "time_total": 2.196763
+      },
+      "response_headers": {
+        "content-range": "bytes 0-524287/507027217",
+        "content-length": "524288",
+        "etag": "\"1e389f11-4c6b1b6217680\"",
+        "last-modified": "Tue, 07 Aug 2012 19:07:54 GMT"
+      },
+      "retained_probe_bytes": 524288,
+      "probe_sha256": "b74c369d97432eaa53666b656c5baabe243adfa89719ecdce0b9c8146c57dc6b",
+      "wall_seconds": 2.207496218965389
+    }
+  ],
+  "scope": "Range availability and bounded throughput only; no complete archive or frame readiness.",
+  "wall_seconds": 4.484854349982925,
+  "previous_acquisition_wall_seconds": 385.9959407489514,
+  "cumulative_acquisition_wall_seconds": 390.4807950989343,
+  "remaining_acquisition_wall_seconds": 509.5192049010657,
+  "all_ranges_verified": true,
+  "old_partials_modified": false,
+  "retained_probe_bytes": 1572864
+}

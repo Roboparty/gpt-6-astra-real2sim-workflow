@@ -1,0 +1,6 @@
+{
+  "schema": "real2sim.tum-extraction-refactor-check/1",
+  "status": "passed",
+  "baseline_commit": "68c0d12c21f988475e95fa4b74f692b883cc47f6",
+  "scope": "AST-equivalent extraction body after substituting source id and protocol path parameters; full original frame-selection, extraction limits and input/evaluator layout preserved. Not runtime or acquisition success."
+}

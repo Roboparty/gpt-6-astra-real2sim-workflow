@@ -1,0 +1,415 @@
+{
+  "schema": "real2sim.tum-resumed-acquisition/1",
+  "status": "prepared",
+  "cohort_protocol_sha256": "c7cda961f93f7e94c88e515dd88cb1014de15e845912b8c59c24a445b1d9df97",
+  "resume_manifest_sha256": "2306a3b2c9f0c43caa1519e6b7e3908a17b98b44bc00b87a2b4ca4a989a90957",
+  "script_sha256": "c39129c9baf2b1dfe6e283b94861fd9604ef35b13fc63229ed9745725a7b83a4",
+  "expected_sequences": 3,
+  "previous_spent_wall_seconds": 397.8630447429605,
+  "sources": [
+    {
+      "id": "freiburg1_desk",
+      "status": "prepared",
+      "expected_archive_bytes": 344011403,
+      "reused_prefix_bytes": 19398656,
+      "curl_returncode": 0,
+      "curl_stderr": "",
+      "curl": {
+        "content_type": "application/x-gzip",
+        "errormsg": null,
+        "exitcode": 0,
+        "filename_effective": "/data/real2sim_capability_wqz_20260929/tum_reference_resume_001/freiburg1_desk/source.tgz.partial",
+        "ftp_entry_path": null,
+        "http_code": 206,
+        "http_connect": 0,
+        "http_version": "2",
+        "local_ip": "172.31.0.68",
+        "local_port": 44270,
+        "method": "GET",
+        "num_connects": 1,
+        "num_headers": 10,
+        "num_redirects": 0,
+        "proxy_ssl_verify_result": 0,
+        "redirect_url": null,
+        "referer": null,
+        "remote_ip": "131.159.19.221",
+        "remote_port": 443,
+        "response_code": 206,
+        "scheme": "HTTPS",
+        "size_download": 324612747,
+        "size_header": 373,
+        "size_request": 201,
+        "size_upload": 0,
+        "speed_download": 10917019,
+        "speed_upload": 0,
+        "ssl_verify_result": 0,
+        "time_appconnect": 0.545211,
+        "time_connect": 0.258632,
+        "time_namelookup": 0.001491,
+        "time_pretransfer": 0.545324,
+        "time_redirect": 0.0,
+        "time_starttransfer": 1.059521,
+        "time_total": 29.734557,
+        "url": "https://webshare.cvg.cit.tum.de/g/rgbd/dataset/freiburg1/rgbd_dataset_freiburg1_desk.tgz",
+        "url_effective": "https://webshare.cvg.cit.tum.de/g/rgbd/dataset/freiburg1/rgbd_dataset_freiburg1_desk.tgz",
+        "urlnum": 0,
+        "curl_version": "libcurl/7.81.0 OpenSSL/3.0.2 zlib/1.2.11 brotli/1.0.9 zstd/1.4.8 libidn2/2.3.2 libpsl/0.21.0 (+libidn2/2.3.2) libssh/0.9.6/openssl/zlib nghttp2/1.43.0 librtmp/2.3 OpenLDAP/2.5.13"
+      },
+      "response_headers": {
+        "content-range": "bytes 19398656-344011402/344011403",
+        "etag": "\"1481328b-4ae2a151e2840\"",
+        "content-length": "324612747"
+      },
+      "archive_sha256": "e983d6830916e66dc4a46a71368046b149b283de87769690e7aa4e0b9483530c",
+      "rgb_count": 613,
+      "depth_count": 595,
+      "selected_rgb_count": 6,
+      "selected_depth_matches": 6,
+      "selected_rgb": [
+        {
+          "ordinal": 0,
+          "timestamp": 1305031454.82757,
+          "source_member": "rgb/1305031454.827570.png",
+          "path": "/data/real2sim_capability_wqz_20260929/tum_reference_resume_001/freiburg1_desk/inputs/rgb_00.png",
+          "sha256": "f7e588d88f77a8ee7f4011901bfc372373183cdb81557bbf7da3d613832e16dd",
+          "image_size": [
+            640,
+            480
+          ]
+        },
+        {
+          "ordinal": 1,
+          "timestamp": 1305031458.09169,
+          "source_member": "rgb/1305031458.091690.png",
+          "path": "/data/real2sim_capability_wqz_20260929/tum_reference_resume_001/freiburg1_desk/inputs/rgb_01.png",
+          "sha256": "60e8793e2f901957a862d6c9ebeb8a26f834c98ab90b033ee5d052477891eaca",
+          "image_size": [
+            640,
+            480
+          ]
+        },
+        {
+          "ordinal": 2,
+          "timestamp": 1305031461.359709,
+          "source_member": "rgb/1305031461.359709.png",
+          "path": "/data/real2sim_capability_wqz_20260929/tum_reference_resume_001/freiburg1_desk/inputs/rgb_02.png",
+          "sha256": "fe303d72f9d4e020158a2dd57eaf90a7387920888474e7f8122fae8ab8d9f0b4",
+          "image_size": [
+            640,
+            480
+          ]
+        },
+        {
+          "ordinal": 3,
+          "timestamp": 1305031464.627672,
+          "source_member": "rgb/1305031464.627672.png",
+          "path": "/data/real2sim_capability_wqz_20260929/tum_reference_resume_001/freiburg1_desk/inputs/rgb_03.png",
+          "sha256": "24daed2d53d5df30af0cf239ff64951e578cb20416a485f086038d740f5a0857",
+          "image_size": [
+            640,
+            480
+          ]
+        },
+        {
+          "ordinal": 4,
+          "timestamp": 1305031467.895947,
+          "source_member": "rgb/1305031467.895947.png",
+          "path": "/data/real2sim_capability_wqz_20260929/tum_reference_resume_001/freiburg1_desk/inputs/rgb_04.png",
+          "sha256": "125f311db5ba3c827b3b9f230c4cdaad5363d22db14038fc8ba589435ef47748",
+          "image_size": [
+            640,
+            480
+          ]
+        },
+        {
+          "ordinal": 5,
+          "timestamp": 1305031471.159649,
+          "source_member": "rgb/1305031471.159649.png",
+          "path": "/data/real2sim_capability_wqz_20260929/tum_reference_resume_001/freiburg1_desk/inputs/rgb_05.png",
+          "sha256": "a92f366e3b35e7369e0fc5732dca2367ee0262c4534e8c8bd86232d965dd46c8",
+          "image_size": [
+            640,
+            480
+          ]
+        }
+      ],
+      "groundtruth_rows": 2335,
+      "input_manifest_sha256": "b1e14b8fa206e207645d2e749871751c4049a2f71e60c67984729bdbb88354f8",
+      "evaluator_manifest_sha256": "25243650cd86cb5cb5619dcacead92468fb1ec853bdcd0a087ca36c6d47ea8c9",
+      "extracted_bytes": 3954269,
+      "archive_bytes": 344011403,
+      "wall_seconds": 42.824373848037794
+    },
+    {
+      "id": "freiburg3_structure_texture_far",
+      "status": "prepared",
+      "expected_archive_bytes": 520806553,
+      "reused_prefix_bytes": 20447232,
+      "curl_returncode": 0,
+      "curl_stderr": "",
+      "curl": {
+        "content_type": "application/x-gzip",
+        "errormsg": null,
+        "exitcode": 0,
+        "filename_effective": "/data/real2sim_capability_wqz_20260929/tum_reference_resume_001/freiburg3_structure_texture_far/source.tgz.partial",
+        "ftp_entry_path": null,
+        "http_code": 206,
+        "http_connect": 0,
+        "http_version": "2",
+        "local_ip": "172.31.0.68",
+        "local_port": 44272,
+        "method": "GET",
+        "num_connects": 1,
+        "num_headers": 10,
+        "num_redirects": 0,
+        "proxy_ssl_verify_result": 0,
+        "redirect_url": null,
+        "referer": null,
+        "remote_ip": "131.159.19.221",
+        "remote_port": 443,
+        "response_code": 206,
+        "scheme": "HTTPS",
+        "size_download": 500359321,
+        "size_header": 373,
+        "size_request": 218,
+        "size_upload": 0,
+        "speed_download": 9275817,
+        "speed_upload": 0,
+        "ssl_verify_result": 0,
+        "time_appconnect": 0.655393,
+        "time_connect": 0.314495,
+        "time_namelookup": 0.001328,
+        "time_pretransfer": 0.655511,
+        "time_redirect": 0.0,
+        "time_starttransfer": 1.281863,
+        "time_total": 53.94234,
+        "url": "https://webshare.cvg.cit.tum.de/g/rgbd/dataset/freiburg3/rgbd_dataset_freiburg3_structure_texture_far.tgz",
+        "url_effective": "https://webshare.cvg.cit.tum.de/g/rgbd/dataset/freiburg3/rgbd_dataset_freiburg3_structure_texture_far.tgz",
+        "urlnum": 0,
+        "curl_version": "libcurl/7.81.0 OpenSSL/3.0.2 zlib/1.2.11 brotli/1.0.9 zstd/1.4.8 libidn2/2.3.2 libpsl/0.21.0 (+libidn2/2.3.2) libssh/0.9.6/openssl/zlib nghttp2/1.43.0 librtmp/2.3 OpenLDAP/2.5.13"
+      },
+      "response_headers": {
+        "content-range": "bytes 20447232-520806552/520806553",
+        "etag": "\"1f0ae099-4c6b1880e6b40\"",
+        "content-length": "500359321"
+      },
+      "archive_sha256": "3f58c707f54c93b68fecd77293630e96a76d7b0f2703eb8ad9cff45ba4bbb81a",
+      "rgb_count": 938,
+      "depth_count": 914,
+      "selected_rgb_count": 6,
+      "selected_depth_matches": 5,
+      "selected_rgb": [
+        {
+          "ordinal": 0,
+          "timestamp": 1341839116.809493,
+          "source_member": "rgb/1341839116.809493.png",
+          "path": "/data/real2sim_capability_wqz_20260929/tum_reference_resume_001/freiburg3_structure_texture_far/inputs/rgb_00.png",
+          "sha256": "46d705e2851b7b06c0a99c8a98d35ca0725795fa389ca3f6794ed5cb139ddfed",
+          "image_size": [
+            640,
+            480
+          ]
+        },
+        {
+          "ordinal": 1,
+          "timestamp": 1341839121.901603,
+          "source_member": "rgb/1341839121.901603.png",
+          "path": "/data/real2sim_capability_wqz_20260929/tum_reference_resume_001/freiburg3_structure_texture_far/inputs/rgb_01.png",
+          "sha256": "6a05f7584c598c0a6d52a5eead1f4b1562f37841c8269c50af58a06691c36143",
+          "image_size": [
+            640,
+            480
+          ]
+        },
+        {
+          "ordinal": 2,
+          "timestamp": 1341839126.965564,
+          "source_member": "rgb/1341839126.965564.png",
+          "path": "/data/real2sim_capability_wqz_20260929/tum_reference_resume_001/freiburg3_structure_texture_far/inputs/rgb_02.png",
+          "sha256": "5aa8a8618ccce5dc84062fb70896b14dbaf03a6f0473e111a7b98f5ac81d7e1b",
+          "image_size": [
+            640,
+            480
+          ]
+        },
+        {
+          "ordinal": 3,
+          "timestamp": 1341839132.02566,
+          "source_member": "rgb/1341839132.025660.png",
+          "path": "/data/real2sim_capability_wqz_20260929/tum_reference_resume_001/freiburg3_structure_texture_far/inputs/rgb_03.png",
+          "sha256": "c99a1c96fb845291c3c07ea8a2a3e254293fc0b83a3fe69411e08dc089eb9cd0",
+          "image_size": [
+            640,
+            480
+          ]
+        },
+        {
+          "ordinal": 4,
+          "timestamp": 1341839137.085843,
+          "source_member": "rgb/1341839137.085843.png",
+          "path": "/data/real2sim_capability_wqz_20260929/tum_reference_resume_001/freiburg3_structure_texture_far/inputs/rgb_04.png",
+          "sha256": "c0a557485c19df8ca6cdc70404b3d208af86e6999bd802531382cbe9d2502d6d",
+          "image_size": [
+            640,
+            480
+          ]
+        },
+        {
+          "ordinal": 5,
+          "timestamp": 1341839142.145745,
+          "source_member": "rgb/1341839142.145745.png",
+          "path": "/data/real2sim_capability_wqz_20260929/tum_reference_resume_001/freiburg3_structure_texture_far/inputs/rgb_05.png",
+          "sha256": "c9b7c879a251cf7bed171a855a7e78b7ed6abf9315de4f0cb539af885e0d6934",
+          "image_size": [
+            640,
+            480
+          ]
+        }
+      ],
+      "groundtruth_rows": 3156,
+      "input_manifest_sha256": "b3439f041084edf0991f6631391426aa085a302f143092283ea5f7de73b178c9",
+      "evaluator_manifest_sha256": "3960e1f33a280c8c741c8db5565aecd0014e0f8461d3f21a4f47edbb074f3bca",
+      "extracted_bytes": 3769392,
+      "archive_bytes": 520806553,
+      "wall_seconds": 73.65346436703112
+    },
+    {
+      "id": "freiburg3_cabinet",
+      "status": "prepared",
+      "expected_archive_bytes": 507027217,
+      "reused_prefix_bytes": 8912896,
+      "curl_returncode": 0,
+      "curl_stderr": "",
+      "curl": {
+        "content_type": "application/x-gzip",
+        "errormsg": null,
+        "exitcode": 0,
+        "filename_effective": "/data/real2sim_capability_wqz_20260929/tum_reference_resume_001/freiburg3_cabinet/source.tgz.partial",
+        "ftp_entry_path": null,
+        "http_code": 206,
+        "http_connect": 0,
+        "http_version": "2",
+        "local_ip": "172.31.0.68",
+        "local_port": 59636,
+        "method": "GET",
+        "num_connects": 1,
+        "num_headers": 10,
+        "num_redirects": 0,
+        "proxy_ssl_verify_result": 0,
+        "redirect_url": null,
+        "referer": null,
+        "remote_ip": "131.159.19.221",
+        "remote_port": 443,
+        "response_code": 206,
+        "scheme": "HTTPS",
+        "size_download": 498114321,
+        "size_header": 372,
+        "size_request": 203,
+        "size_upload": 0,
+        "speed_download": 9981843,
+        "speed_upload": 0,
+        "ssl_verify_result": 0,
+        "time_appconnect": 0.610769,
+        "time_connect": 0.291935,
+        "time_namelookup": 0.001215,
+        "time_pretransfer": 0.61089,
+        "time_redirect": 0.0,
+        "time_starttransfer": 1.23318,
+        "time_total": 49.902038,
+        "url": "https://webshare.cvg.cit.tum.de/g/rgbd/dataset/freiburg3/rgbd_dataset_freiburg3_cabinet.tgz",
+        "url_effective": "https://webshare.cvg.cit.tum.de/g/rgbd/dataset/freiburg3/rgbd_dataset_freiburg3_cabinet.tgz",
+        "urlnum": 0,
+        "curl_version": "libcurl/7.81.0 OpenSSL/3.0.2 zlib/1.2.11 brotli/1.0.9 zstd/1.4.8 libidn2/2.3.2 libpsl/0.21.0 (+libidn2/2.3.2) libssh/0.9.6/openssl/zlib nghttp2/1.43.0 librtmp/2.3 OpenLDAP/2.5.13"
+      },
+      "response_headers": {
+        "content-range": "bytes 8912896-507027216/507027217",
+        "etag": "\"1e389f11-4c6b1b6217680\"",
+        "content-length": "498114321"
+      },
+      "archive_sha256": "2689527652c3443b373c2c016125210baba32192566cce76a1d5f04f7c0ba1d4",
+      "rgb_count": 1147,
+      "depth_count": 1121,
+      "selected_rgb_count": 6,
+      "selected_depth_matches": 6,
+      "selected_rgb": [
+        {
+          "ordinal": 0,
+          "timestamp": 1341841282.694561,
+          "source_member": "rgb/1341841282.694561.png",
+          "path": "/data/real2sim_capability_wqz_20260929/tum_reference_resume_001/freiburg3_cabinet/inputs/rgb_00.png",
+          "sha256": "b06174e81e79c4f14e4c8b384873a490db548ba0dd2f1d4495c77ed86e72bea6",
+          "image_size": [
+            640,
+            480
+          ]
+        },
+        {
+          "ordinal": 1,
+          "timestamp": 1341841288.894582,
+          "source_member": "rgb/1341841288.894582.png",
+          "path": "/data/real2sim_capability_wqz_20260929/tum_reference_resume_001/freiburg3_cabinet/inputs/rgb_01.png",
+          "sha256": "22a903c95d9e22806263c79caf717845f3e6981b3a6110b7056574fd231738f5",
+          "image_size": [
+            640,
+            480
+          ]
+        },
+        {
+          "ordinal": 2,
+          "timestamp": 1341841295.062584,
+          "source_member": "rgb/1341841295.062584.png",
+          "path": "/data/real2sim_capability_wqz_20260929/tum_reference_resume_001/freiburg3_cabinet/inputs/rgb_02.png",
+          "sha256": "48da3f672759de21cddf0b160725a287758a073a5376e9abc4c79d62e3c34691",
+          "image_size": [
+            640,
+            480
+          ]
+        },
+        {
+          "ordinal": 3,
+          "timestamp": 1341841301.233494,
+          "source_member": "rgb/1341841301.233494.png",
+          "path": "/data/real2sim_capability_wqz_20260929/tum_reference_resume_001/freiburg3_cabinet/inputs/rgb_03.png",
+          "sha256": "5e7db6edd96a084229d03d8fed5b9b7d835e26c7d8202676fe1bf414a502f105",
+          "image_size": [
+            640,
+            480
+          ]
+        },
+        {
+          "ordinal": 4,
+          "timestamp": 1341841307.43069,
+          "source_member": "rgb/1341841307.430690.png",
+          "path": "/data/real2sim_capability_wqz_20260929/tum_reference_resume_001/freiburg3_cabinet/inputs/rgb_04.png",
+          "sha256": "3361ace7ae533273d7bc9ef0795da2deb852ec59d838a16c158c80d2ee5c3141",
+          "image_size": [
+            640,
+            480
+          ]
+        },
+        {
+          "ordinal": 5,
+          "timestamp": 1341841313.60146,
+          "source_member": "rgb/1341841313.601460.png",
+          "path": "/data/real2sim_capability_wqz_20260929/tum_reference_resume_001/freiburg3_cabinet/inputs/rgb_05.png",
+          "sha256": "7ab1517167420a98f829f25e499fdc096f4ee8922b5993012f35b615a680d954",
+          "image_size": [
+            640,
+            480
+          ]
+        }
+      ],
+      "groundtruth_rows": 3859,
+      "input_manifest_sha256": "285a72ff8374d9c80fe111f03244c0f4eb717eaa5ce870b3a005518c616bbbf9",
+      "evaluator_manifest_sha256": "9023bbf6e397a2344845e841eee87d549186adde417b82f1b2271bce536f2731",
+      "extracted_bytes": 3221885,
+      "archive_bytes": 507027217,
+      "wall_seconds": 70.79294717789162
+    }
+  ],
+  "wall_seconds": 113.61935369402636,
+  "cumulative_acquisition_wall_seconds": 511.48239843698684,
+  "remaining_acquisition_wall_seconds": 388.51760156301316,
+  "prepared_sequences": 3,
+  "scope": "Data preparation only; source HTTP identity and local SHA256, not upstream cryptographic attestation, reconstruction accuracy or SOTA."
+}

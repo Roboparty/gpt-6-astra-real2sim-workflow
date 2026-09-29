@@ -1,0 +1,17 @@
+{
+  "schema": "real2sim.tum-continuation-ledger/1",
+  "prior_used_wall_seconds": 385.9959407489514,
+  "storage_seconds": 0.1406098270090297,
+  "range_probe_seconds": 4.484854349982925,
+  "throughput_probe_seconds": 7.2416398170171306,
+  "resumed_acquisition_seconds": 113.61935369402636,
+  "input_audit_seconds": 0.10530869895592332,
+  "archive_audit_seconds": 8.00972788699437,
+  "cumulative_used_wall_seconds": 519.5974350229371,
+  "remaining_wall_seconds": 380.40256497706287,
+  "shared_cap_seconds": 900,
+  "new_remote_network_payload_bytes": 1349825077,
+  "total_archive_bytes": 1371845173,
+  "preserved_original_partial_bytes": 22020096,
+  "scope": "Count serial phases once; per-source/per-worker times overlap and are not added. Conservative ledger also charges this continuation storage and both readiness audits. Transport/TLS overhead and agent/orchestration cost unknown. No local media relay, GPU/API or model attempt."
+}

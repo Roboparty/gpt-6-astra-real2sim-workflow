@@ -1,0 +1,333 @@
+{
+  "schema": "real2sim.tum-input-audit/1",
+  "acquisition_receipt_sha256": "942db91b6cf79771e7fa0a398f33a14f0d0147307ee26abe971c260f4a503ff3",
+  "script_sha256": "b385139d783f34be398627f81d04f14d2bab7b7f86b085d20217c931fe151381",
+  "expected_sequences": 3,
+  "ready_sequences": 2,
+  "sources": [
+    {
+      "source_id": "freiburg1_desk",
+      "status": "ready",
+      "expected_frames": 6,
+      "observations": [
+        {
+          "ordinal": 0,
+          "timestamp": 1305031454.82757,
+          "rgb_sha256": "f7e588d88f77a8ee7f4011901bfc372373183cdb81557bbf7da3d613832e16dd",
+          "gt_match": true,
+          "gt_timestamp": 1305031454.8295,
+          "gt_gap_seconds": 0.0019299983978271484,
+          "depth_match": true,
+          "depth_gap_seconds": 0.012930154800415039,
+          "valid_depth_pixels": 229996,
+          "total_depth_pixels": 307200,
+          "depth_metres_range": [
+            0.762,
+            3.6018
+          ]
+        },
+        {
+          "ordinal": 1,
+          "timestamp": 1305031458.09169,
+          "rgb_sha256": "60e8793e2f901957a862d6c9ebeb8a26f834c98ab90b033ee5d052477891eaca",
+          "gt_match": true,
+          "gt_timestamp": 1305031458.0894,
+          "gt_gap_seconds": 0.002290010452270508,
+          "depth_match": true,
+          "depth_gap_seconds": 0.014374971389770508,
+          "valid_depth_pixels": 227314,
+          "total_depth_pixels": 307200,
+          "depth_metres_range": [
+            0.8736,
+            3.3264
+          ]
+        },
+        {
+          "ordinal": 2,
+          "timestamp": 1305031461.359709,
+          "rgb_sha256": "fe303d72f9d4e020158a2dd57eaf90a7387920888474e7f8122fae8ab8d9f0b4",
+          "gt_match": true,
+          "gt_timestamp": 1305031461.3593,
+          "gt_gap_seconds": 0.00040912628173828125,
+          "depth_match": true,
+          "depth_gap_seconds": 0.01283407211303711,
+          "valid_depth_pixels": 192633,
+          "total_depth_pixels": 307200,
+          "depth_metres_range": [
+            0.6896,
+            2.7252
+          ]
+        },
+        {
+          "ordinal": 3,
+          "timestamp": 1305031464.627672,
+          "rgb_sha256": "24daed2d53d5df30af0cf239ff64951e578cb20416a485f086038d740f5a0857",
+          "gt_match": true,
+          "gt_timestamp": 1305031464.6293,
+          "gt_gap_seconds": 0.0016281604766845703,
+          "depth_match": true,
+          "depth_gap_seconds": 0.011983871459960938,
+          "valid_depth_pixels": 230394,
+          "total_depth_pixels": 307200,
+          "depth_metres_range": [
+            0.982,
+            3.3586
+          ]
+        },
+        {
+          "ordinal": 4,
+          "timestamp": 1305031467.895947,
+          "rgb_sha256": "125f311db5ba3c827b3b9f230c4cdaad5363d22db14038fc8ba589435ef47748",
+          "gt_match": true,
+          "gt_timestamp": 1305031467.8992,
+          "gt_gap_seconds": 0.0032529830932617188,
+          "depth_match": true,
+          "depth_gap_seconds": 0.0074748992919921875,
+          "valid_depth_pixels": 223474,
+          "total_depth_pixels": 307200,
+          "depth_metres_range": [
+            0.9128,
+            4.2654
+          ]
+        },
+        {
+          "ordinal": 5,
+          "timestamp": 1305031471.159649,
+          "rgb_sha256": "a92f366e3b35e7369e0fc5732dca2367ee0262c4534e8c8bd86232d965dd46c8",
+          "gt_match": true,
+          "gt_timestamp": 1305031471.1592,
+          "gt_gap_seconds": 0.0004489421844482422,
+          "depth_match": true,
+          "depth_gap_seconds": 0.003762960433959961,
+          "valid_depth_pixels": 232009,
+          "total_depth_pixels": 307200,
+          "depth_metres_range": [
+            0.4604,
+            1.3702
+          ]
+        }
+      ],
+      "groundtruth_rows": 2335,
+      "groundtruth_sha256": "48c4fa61f5d78310ea579f404d31d296738c4210c19c2bdac4a5cdf6bff50831",
+      "matched_gt": 6,
+      "matched_depth": 6,
+      "max_quaternion_norm_error": 7.772302043385082e-05,
+      "input_directory_rgb_only": true
+    },
+    {
+      "source_id": "freiburg3_structure_texture_far",
+      "status": "not_ready",
+      "expected_frames": 6,
+      "observations": [
+        {
+          "ordinal": 0,
+          "timestamp": 1341839116.809493,
+          "rgb_sha256": "46d705e2851b7b06c0a99c8a98d35ca0725795fa389ca3f6794ed5cb139ddfed",
+          "gt_match": true,
+          "gt_timestamp": 1341839116.8069,
+          "gt_gap_seconds": 0.0025930404663085938,
+          "depth_match": true,
+          "depth_gap_seconds": 0.00017905235290527344,
+          "valid_depth_pixels": 266898,
+          "total_depth_pixels": 307200,
+          "depth_metres_range": [
+            1.41,
+            4.522
+          ]
+        },
+        {
+          "ordinal": 1,
+          "timestamp": 1341839121.901603,
+          "rgb_sha256": "6a05f7584c598c0a6d52a5eead1f4b1562f37841c8269c50af58a06691c36143",
+          "gt_match": true,
+          "gt_timestamp": 1341839121.8968,
+          "gt_gap_seconds": 0.0048029422760009766,
+          "depth_match": true,
+          "depth_gap_seconds": 1.0967254638671875e-05,
+          "valid_depth_pixels": 262453,
+          "total_depth_pixels": 307200,
+          "depth_metres_range": [
+            1.404,
+            7.835
+          ]
+        },
+        {
+          "ordinal": 2,
+          "timestamp": 1341839126.965564,
+          "rgb_sha256": "5aa8a8618ccce5dc84062fb70896b14dbaf03a6f0473e111a7b98f5ac81d7e1b",
+          "gt_match": true,
+          "gt_timestamp": 1341839126.9669,
+          "gt_gap_seconds": 0.0013360977172851562,
+          "depth_match": true,
+          "depth_gap_seconds": 3.600120544433594e-05,
+          "valid_depth_pixels": 265227,
+          "total_depth_pixels": 307200,
+          "depth_metres_range": [
+            1.37,
+            6.889
+          ]
+        },
+        {
+          "ordinal": 3,
+          "timestamp": 1341839132.02566,
+          "rgb_sha256": "c99a1c96fb845291c3c07ea8a2a3e254293fc0b83a3fe69411e08dc089eb9cd0",
+          "gt_match": true,
+          "gt_timestamp": 1341839132.0268,
+          "gt_gap_seconds": 0.0011398792266845703,
+          "depth_match": true,
+          "depth_gap_seconds": 2.6941299438476562e-05,
+          "valid_depth_pixels": 260251,
+          "total_depth_pixels": 307200,
+          "depth_metres_range": [
+            1.433,
+            7.492
+          ]
+        },
+        {
+          "ordinal": 4,
+          "timestamp": 1341839137.085843,
+          "rgb_sha256": "c0a557485c19df8ca6cdc70404b3d208af86e6999bd802531382cbe9d2502d6d",
+          "gt_match": true,
+          "gt_timestamp": 1341839137.0868,
+          "gt_gap_seconds": 0.0009570121765136719,
+          "depth_match": true,
+          "depth_gap_seconds": 0.0005629062652587891,
+          "valid_depth_pixels": 263116,
+          "total_depth_pixels": 307200,
+          "depth_metres_range": [
+            1.477,
+            9.87
+          ]
+        },
+        {
+          "ordinal": 5,
+          "timestamp": 1341839142.145745,
+          "rgb_sha256": "c9b7c879a251cf7bed171a855a7e78b7ed6abf9315de4f0cb539af885e0d6934",
+          "gt_match": true,
+          "gt_timestamp": 1341839142.1467,
+          "gt_gap_seconds": 0.0009548664093017578,
+          "depth_match": false,
+          "depth_gap_seconds": 0.028994083404541016
+        }
+      ],
+      "groundtruth_rows": 3156,
+      "groundtruth_sha256": "9012614c9fcc6ac8b1e6908cd771893443d8da23740f73a620f29f88e479b17f",
+      "matched_gt": 6,
+      "matched_depth": 5,
+      "max_quaternion_norm_error": 8.31815404156444e-05,
+      "input_directory_rgb_only": true
+    },
+    {
+      "source_id": "freiburg3_cabinet",
+      "status": "ready",
+      "expected_frames": 6,
+      "observations": [
+        {
+          "ordinal": 0,
+          "timestamp": 1341841282.694561,
+          "rgb_sha256": "b06174e81e79c4f14e4c8b384873a490db548ba0dd2f1d4495c77ed86e72bea6",
+          "gt_match": true,
+          "gt_timestamp": 1341841282.6943,
+          "gt_gap_seconds": 0.00026106834411621094,
+          "depth_match": true,
+          "depth_gap_seconds": 5.3882598876953125e-05,
+          "valid_depth_pixels": 266519,
+          "total_depth_pixels": 307200,
+          "depth_metres_range": [
+            0.823,
+            3.269
+          ]
+        },
+        {
+          "ordinal": 1,
+          "timestamp": 1341841288.894582,
+          "rgb_sha256": "22a903c95d9e22806263c79caf717845f3e6981b3a6110b7056574fd231738f5",
+          "gt_match": true,
+          "gt_timestamp": 1341841288.8901,
+          "gt_gap_seconds": 0.0044820308685302734,
+          "depth_match": true,
+          "depth_gap_seconds": 1.0967254638671875e-05,
+          "valid_depth_pixels": 262829,
+          "total_depth_pixels": 307200,
+          "depth_metres_range": [
+            0.943,
+            4.089
+          ]
+        },
+        {
+          "ordinal": 2,
+          "timestamp": 1341841295.062584,
+          "rgb_sha256": "48da3f672759de21cddf0b160725a287758a073a5376e9abc4c79d62e3c34691",
+          "gt_match": true,
+          "gt_timestamp": 1341841295.0597,
+          "gt_gap_seconds": 0.0028839111328125,
+          "depth_match": true,
+          "depth_gap_seconds": 5.0067901611328125e-05,
+          "valid_depth_pixels": 263532,
+          "total_depth_pixels": 307200,
+          "depth_metres_range": [
+            1.05,
+            4.3488
+          ]
+        },
+        {
+          "ordinal": 3,
+          "timestamp": 1341841301.233494,
+          "rgb_sha256": "5e7db6edd96a084229d03d8fed5b9b7d835e26c7d8202676fe1bf414a502f105",
+          "gt_match": true,
+          "gt_timestamp": 1341841301.2298,
+          "gt_gap_seconds": 0.0036940574645996094,
+          "depth_match": true,
+          "depth_gap_seconds": 1.1920928955078125e-05,
+          "valid_depth_pixels": 262159,
+          "total_depth_pixels": 307200,
+          "depth_metres_range": [
+            1.149,
+            4.522
+          ]
+        },
+        {
+          "ordinal": 4,
+          "timestamp": 1341841307.43069,
+          "rgb_sha256": "3361ace7ae533273d7bc9ef0795da2deb852ec59d838a16c158c80d2ee5c3141",
+          "gt_match": true,
+          "gt_timestamp": 1341841307.4297,
+          "gt_gap_seconds": 0.000990152359008789,
+          "depth_match": true,
+          "depth_gap_seconds": 1.8835067749023438e-05,
+          "valid_depth_pixels": 269693,
+          "total_depth_pixels": 307200,
+          "depth_metres_range": [
+            0.946,
+            3.178
+          ]
+        },
+        {
+          "ordinal": 5,
+          "timestamp": 1341841313.60146,
+          "rgb_sha256": "7ab1517167420a98f829f25e499fdc096f4ee8922b5993012f35b615a680d954",
+          "gt_match": true,
+          "gt_timestamp": 1341841313.5996,
+          "gt_gap_seconds": 0.001859903335571289,
+          "depth_match": true,
+          "depth_gap_seconds": 1.0967254638671875e-05,
+          "valid_depth_pixels": 268651,
+          "total_depth_pixels": 307200,
+          "depth_metres_range": [
+            1.1528,
+            3.692
+          ]
+        }
+      ],
+      "groundtruth_rows": 3859,
+      "groundtruth_sha256": "9e226144820ebd28d34652ef4920e9a559511ac679ba2977b25bc3b709c222b3",
+      "matched_gt": 6,
+      "matched_depth": 6,
+      "max_quaternion_norm_error": 8.500638695707607e-05,
+      "input_directory_rgb_only": true
+    }
+  ],
+  "wall_seconds": 0.10530869895592332,
+  "scope": "Data decoding and sensor-reference association only; no predicted geometry, calibration accuracy or SOTA",
+  "truth_separation": "Logical directory separation only; not a filesystem sandbox"
+}

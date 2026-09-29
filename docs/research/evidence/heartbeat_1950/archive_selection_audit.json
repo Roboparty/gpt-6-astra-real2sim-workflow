@@ -1,0 +1,147 @@
+{
+  "schema": "real2sim.tum-archive-selection-audit/1",
+  "protocol_sha256": "c7cda961f93f7e94c88e515dd88cb1014de15e845912b8c59c24a445b1d9df97",
+  "acquisition_receipt_sha256": "942db91b6cf79771e7fa0a398f33a14f0d0147307ee26abe971c260f4a503ff3",
+  "script_sha256": "9e93bda4cb91133b1e1027667f769d86cf2f45dd55d218114a28ae258dbf2d23",
+  "expected_sequences": 3,
+  "sources": [
+    {
+      "id": "freiburg1_desk",
+      "status": "passed",
+      "full_gzip_crc_checked": true,
+      "expanded_tar_bytes": 368220160,
+      "archive_sha256": "e983d6830916e66dc4a46a71368046b149b283de87769690e7aa4e0b9483530c",
+      "frame_selection": [
+        {
+          "ordinal": 0,
+          "rgb_index": 61,
+          "timestamp": 1305031454.82757,
+          "source_member": "rgb/1305031454.827570.png"
+        },
+        {
+          "ordinal": 1,
+          "rgb_index": 159,
+          "timestamp": 1305031458.09169,
+          "source_member": "rgb/1305031458.091690.png"
+        },
+        {
+          "ordinal": 2,
+          "rgb_index": 257,
+          "timestamp": 1305031461.359709,
+          "source_member": "rgb/1305031461.359709.png"
+        },
+        {
+          "ordinal": 3,
+          "rgb_index": 355,
+          "timestamp": 1305031464.627672,
+          "source_member": "rgb/1305031464.627672.png"
+        },
+        {
+          "ordinal": 4,
+          "rgb_index": 453,
+          "timestamp": 1305031467.895947,
+          "source_member": "rgb/1305031467.895947.png"
+        },
+        {
+          "ordinal": 5,
+          "rgb_index": 551,
+          "timestamp": 1305031471.159649,
+          "source_member": "rgb/1305031471.159649.png"
+        }
+      ]
+    },
+    {
+      "id": "freiburg3_structure_texture_far",
+      "status": "passed",
+      "full_gzip_crc_checked": true,
+      "expanded_tar_bytes": 559923200,
+      "archive_sha256": "3f58c707f54c93b68fecd77293630e96a76d7b0f2703eb8ad9cff45ba4bbb81a",
+      "frame_selection": [
+        {
+          "ordinal": 0,
+          "rgb_index": 94,
+          "timestamp": 1341839116.809493,
+          "source_member": "rgb/1341839116.809493.png"
+        },
+        {
+          "ordinal": 1,
+          "rgb_index": 246,
+          "timestamp": 1341839121.901603,
+          "source_member": "rgb/1341839121.901603.png"
+        },
+        {
+          "ordinal": 2,
+          "rgb_index": 396,
+          "timestamp": 1341839126.965564,
+          "source_member": "rgb/1341839126.965564.png"
+        },
+        {
+          "ordinal": 3,
+          "rgb_index": 547,
+          "timestamp": 1341839132.02566,
+          "source_member": "rgb/1341839132.025660.png"
+        },
+        {
+          "ordinal": 4,
+          "rgb_index": 696,
+          "timestamp": 1341839137.085843,
+          "source_member": "rgb/1341839137.085843.png"
+        },
+        {
+          "ordinal": 5,
+          "rgb_index": 844,
+          "timestamp": 1341839142.145745,
+          "source_member": "rgb/1341839142.145745.png"
+        }
+      ]
+    },
+    {
+      "id": "freiburg3_cabinet",
+      "status": "passed",
+      "full_gzip_crc_checked": true,
+      "expanded_tar_bytes": 552816640,
+      "archive_sha256": "2689527652c3443b373c2c016125210baba32192566cce76a1d5f04f7c0ba1d4",
+      "frame_selection": [
+        {
+          "ordinal": 0,
+          "rgb_index": 114,
+          "timestamp": 1341841282.694561,
+          "source_member": "rgb/1341841282.694561.png"
+        },
+        {
+          "ordinal": 1,
+          "rgb_index": 298,
+          "timestamp": 1341841288.894582,
+          "source_member": "rgb/1341841288.894582.png"
+        },
+        {
+          "ordinal": 2,
+          "rgb_index": 482,
+          "timestamp": 1341841295.062584,
+          "source_member": "rgb/1341841295.062584.png"
+        },
+        {
+          "ordinal": 3,
+          "rgb_index": 666,
+          "timestamp": 1341841301.233494,
+          "source_member": "rgb/1341841301.233494.png"
+        },
+        {
+          "ordinal": 4,
+          "rgb_index": 851,
+          "timestamp": 1341841307.43069,
+          "source_member": "rgb/1341841307.430690.png"
+        },
+        {
+          "ordinal": 5,
+          "rgb_index": 1033,
+          "timestamp": 1341841313.60146,
+          "source_member": "rgb/1341841313.601460.png"
+        }
+      ]
+    }
+  ],
+  "passed_sequences": 3,
+  "wall_seconds": 8.00972788699437,
+  "scope": "Archive transport/integrity and fixed selection only. No upstream checksum attestation, model predictions, geometry accuracy or SOTA."
+}

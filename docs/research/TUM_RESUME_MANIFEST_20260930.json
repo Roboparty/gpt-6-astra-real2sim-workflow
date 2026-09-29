@@ -1,0 +1,79 @@
+{
+  "schema": "real2sim.tum-resume-manifest/1",
+  "status": "registered_before_resume",
+  "cohort_protocol_sha256": "c7cda961f93f7e94c88e515dd88cb1014de15e845912b8c59c24a445b1d9df97",
+  "spent_wall_seconds": 397.8630447429605,
+  "sources": [
+    {
+      "id": "freiburg1_desk",
+      "etag": "\"1481328b-4ae2a151e2840\"",
+      "pieces": [
+        {
+          "path": "/data/real2sim_capability_wqz_20260929/retained_partials/freiburg1_desk/source.tgz.partial",
+          "start": 0,
+          "bytes": 10485760,
+          "sha256": "cf254493cc48403ddac1f6439d023aba79772741dfbfcfcf481b94d334a9827e"
+        },
+        {
+          "path": "/data/real2sim_capability_wqz_20260929/tum_resume_probe_001/freiburg1_desk/range.bin",
+          "start": 10485760,
+          "bytes": 524288,
+          "sha256": "7dfb43a8643bfd483d23c7b4bafe8ee7d083658550a3cb56f920fed8e5a22fa7"
+        },
+        {
+          "path": "/data/real2sim_capability_wqz_20260929/tum_throughput_probe_001/freiburg1_desk/range.bin",
+          "start": 11010048,
+          "bytes": 8388608,
+          "sha256": "10efb9f99d3047f0de1ae2294a20a769947e446123bc747846139add1cf3822a"
+        }
+      ]
+    },
+    {
+      "id": "freiburg3_structure_texture_far",
+      "etag": "\"1f0ae099-4c6b1880e6b40\"",
+      "pieces": [
+        {
+          "path": "/data/real2sim_capability_wqz_20260929/retained_partials/freiburg3_structure_texture_far/source.tgz.partial",
+          "start": 0,
+          "bytes": 11534336,
+          "sha256": "b59d5a491cf85444bdbb3a259193b51cdc3c0e695721ce2cb2bb986821ca140e"
+        },
+        {
+          "path": "/data/real2sim_capability_wqz_20260929/tum_resume_probe_001/freiburg3_structure_texture_far/range.bin",
+          "start": 11534336,
+          "bytes": 524288,
+          "sha256": "d5718e2fe54c6db6d003b9c1f08e77f66c929071d1f931f45c83c6f5c959d078"
+        },
+        {
+          "path": "/data/real2sim_capability_wqz_20260929/tum_throughput_probe_001/freiburg3_structure_texture_far/range.bin",
+          "start": 12058624,
+          "bytes": 8388608,
+          "sha256": "baff66d46b517015224a323ed687e2b4a337b168d924887f4075c94056ac3fdc"
+        }
+      ]
+    },
+    {
+      "id": "freiburg3_cabinet",
+      "etag": "\"1e389f11-4c6b1b6217680\"",
+      "pieces": [
+        {
+          "path": "/data/real2sim_capability_wqz_20260929/tum_resume_probe_001/freiburg3_cabinet/range.bin",
+          "start": 0,
+          "bytes": 524288,
+          "sha256": "b74c369d97432eaa53666b656c5baabe243adfa89719ecdce0b9c8146c57dc6b"
+        },
+        {
+          "path": "/data/real2sim_capability_wqz_20260929/tum_throughput_probe_001/freiburg3_cabinet/range.bin",
+          "start": 524288,
+          "bytes": 8388608,
+          "sha256": "c2f593be9ef5c251759488622b14dd21a6cfbea5aef86c28e7b9971ea08abc7c"
+        }
+      ]
+    }
+  ],
+  "implementation_sha256": {
+    "resume_tum_reference.py": "c39129c9baf2b1dfe6e283b94861fd9604ef35b13fc63229ed9745725a7b83a4",
+    "acquire_tum_reference.py": "72a8e290b1bbeb568c754159ca6eeff901a5bbf50b988096b75dd22fb34eef6d"
+  },
+  "policy": "No new cohort/selection thresholds or retries. Concatenate contiguous hash-verified retained pieces into new data-volume partials, then one ETag-bound range transfer per source. Originals/chunks immutable. Same two-worker and cumulative 900-second budget."
+}

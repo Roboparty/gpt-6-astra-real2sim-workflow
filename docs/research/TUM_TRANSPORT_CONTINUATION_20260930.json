@@ -1,0 +1,43 @@
+{
+  "schema": "real2sim.tum-transport-continuation/1",
+  "status": "registered_before_probe",
+  "parent_protocol_sha256": "c7cda961f93f7e94c88e515dd88cb1014de15e845912b8c59c24a445b1d9df97",
+  "sources": [
+    {
+      "id": "freiburg1_desk",
+      "archive_bytes": 344011403,
+      "url": "https://webshare.cvg.cit.tum.de/g/rgbd/dataset/freiburg1/rgbd_dataset_freiburg1_desk.tgz",
+      "setup": "office desk sweep",
+      "retained_partial_bytes": 10485760,
+      "previous_etag": "\"1481328b-4ae2a151e2840\""
+    },
+    {
+      "id": "freiburg3_structure_texture_far",
+      "archive_bytes": 520806553,
+      "url": "https://webshare.cvg.cit.tum.de/g/rgbd/dataset/freiburg3/rgbd_dataset_freiburg3_structure_texture_far.tgz",
+      "setup": "textured zig-zag board setup",
+      "retained_partial_bytes": 11534336,
+      "previous_etag": "\"1f0ae099-4c6b1880e6b40\""
+    },
+    {
+      "id": "freiburg3_cabinet",
+      "archive_bytes": 507027217,
+      "url": "https://webshare.cvg.cit.tum.de/g/rgbd/dataset/freiburg3/rgbd_dataset_freiburg3_cabinet.tgz",
+      "setup": "low-texture cabinet orbit",
+      "retained_partial_bytes": 0,
+      "previous_etag": null
+    }
+  ],
+  "storage_root": "/data/real2sim_capability_wqz_20260929",
+  "source_partials": "/home/wqz/real2sim_capability_20260929/runs/tum_reference_001",
+  "storage_policy": "Create only a new user-owned task directory on the existing data volume. Copy and hash-verify old partials on the same remote host; retain originals unchanged. Home-root symlink for new probes; no local media/dependency relay.",
+  "minimum_free_disk_bytes": 8589934592,
+  "probe_bytes_per_sequence": 524288,
+  "request_timeout_seconds": 12,
+  "parallel_requests": 2,
+  "shared_acquisition_cap_seconds": 900,
+  "previous_acquisition_wall_seconds": 385.9959407489514,
+  "remaining_before_seconds": 514.0040592510486,
+  "failure_policy": "All three frozen sequences retained. No automatic retry, archive substitution, partial appending or budget reset. Preserve every chunk and unsuccessful response. Charge probe elapsed to prior acquisition ledger.",
+  "implementation_sha256": "adc663634512da56938bea18a123f8959aa8005219bca5a57381ee5fcb210700"
+}

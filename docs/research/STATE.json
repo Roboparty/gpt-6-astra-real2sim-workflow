@@ -22,7 +22,7 @@
   "remote_root": "4090-1:/home/wqz/real2sim_capability_20260929",
   "protocol": "PROTOCOL_20260929.md",
   "result": "RESULTS_20260929.md",
-  "latest_update": "UPDATE_20260929T1850.md",
+  "latest_update": "UPDATE_20260929T1950.md",
   "completed": [
     "Matched retained-room collision failure reproduction and repair",
     "Rectangular opening handling and false-pass negative tests",
@@ -60,11 +60,12 @@
     "Final release candidate verified: 14/14 CPU runner groups pass with executable hashes matched; floor-normal ablation has mixed GLB/USD outcomes and is not enabled as a universal repair",
     "User-authorized formal main publication verified at c40a1ea after 14/14 final validation groups; historical branches/baseline/failures retained and mixed normal ablation not enabled by default",
     "Dedicated floor tangent-normal bake preserves source geometry, old UVs and sRGB color; fixed-rig GLB/USD photo MAE improves to 0.107511/0.106775, but vent errors increase and original GLB 8.094mm bound failure persists; research candidate only",
-    "Frozen floor normal candidate validated at three prescribed virtual views: 18/18 renders and independent pixel/matrix/hash audit; GLB/USD own-native average MAE improves 35.8/36.0 percent; all six GLB bed-bound failures retained, no real-view or SOTA acceptance"
+    "Frozen floor normal candidate validated at three prescribed virtual views: 18/18 renders and independent pixel/matrix/hash audit; GLB/USD own-native average MAE improves 35.8/36.0 percent; all six GLB bed-bound failures retained, no real-view or SOTA acceptance",
+    "All three original TUM archives resumed on remote data volume with unchanged sources/selection: 18/18 RGB and mocap matches; depth 17/18 and combined readiness 2/3. Full gzip and independent frame-selection audits pass; one 28.994ms depth gap retained."
   ],
   "next": [
+    "Preregister common RGB-only prediction/camera policy and frozen baseline for all three acquired TUM sequences, with trajectory and depth endpoints separate; 18/18 mocap but only 17/18 depth matches. Preserve failed depth case and existing camera/compute ledger.",
     "Floor tangent-normal bake now improves format fidelity in all six GLB/USD additional virtual-view comparisons; retain original photo vent regression and GLB bound failure. Validate additional material families and actual observed views before adoption; appearance count stays 6/8.",
-    "Resolve remote TUM transfer throughput or explicitly resume retained partials within the remaining 514.004059s acquisition ledger; preserve all three fixed sequences and RGB/GT separation",
     "Register bridge-object annotations or reviewed correspondences for disconnected selected identity graphs; v2 retains 72 observations and 17/18 frame coverage, not a complete common camera/model initialization",
     "Prepare explicit versioned runtime-preparation budget amendment before resuming Pi3X dependency transfer; reuse only officially hash-verified retained wheels, preserve spent 1800 seconds",
     "Preregister common six-frame learned-reference inputs, preprocessing and outputs before camera attempt 7; no GPU launch until environment ready and live external-work check passes",
@@ -148,7 +149,13 @@
     "floor_bake_eval_001 (all three fixed-rig renders retained; strict 2/3 formats; floor/whole-image improvement with vent regression)",
     "portability_view_contract_local_001 (3 tests, 1 local setup error: Pillow absent; no install)",
     "portability_view_contract_remote_001 (same 3 tests pass in existing runtime)",
-    "portability_views_001 (18 frozen virtual-view cells; 12/18 geometry passes, all six GLB failures retained; 9 scored rows independently recomputed)"
+    "portability_views_001 (18 frozen virtual-view cells; 12/18 geometry passes, all six GLB failures retained; 9 scored rows independently recomputed)",
+    "tum_remote_storage_001 (verified copies of 22020096 old bytes; originals remain)",
+    "tum_resume_probe_001 (three 512KiB official ranges verified)",
+    "tum_throughput_probe_001 (three 8MiB official ranges verified)",
+    "tum_reference_resume_001 (3 complete archives/18 RGB; 17 depth matches; missing match retained)",
+    "tum_reference_resume_001/input_audit.json (2/3 combined readiness, 18/18 mocap)",
+    "tum_reference_resume_001/archive_selection_audit.json (3/3 full gzip and unchanged selection)"
   ],
   "resource_accounting": {
     "new_gpu_hours": 0,
@@ -193,13 +200,13 @@
     "unified_generation_validation_attempts_used": 1,
     "separate_skill_delivery_accounting": "Prior skill delivery runs and failures remain in docs/generation-skills/VALIDATION.md; they were not reset or reclassified as research camera/appearance proposals",
     "tum_acquisition_wall_budget_seconds": 900,
-    "tum_acquisition_wall_seconds_used": 385.9959407489514,
-    "tum_acquisition_wall_seconds_remaining": 514.0040592510486,
+    "tum_acquisition_wall_seconds_used": 519.5974350229371,
+    "tum_acquisition_wall_seconds_remaining": 380.40256497706287,
     "tum_retained_partial_archive_bytes": 22020096,
     "tum_metadata_bytes": 638868,
     "tum_metadata_fetch_wall_seconds": 10.140612037968822,
     "tum_trajectory_unit_test_wall_seconds": 0.218,
-    "tum_acquisition_attempts_used": 1,
+    "tum_acquisition_attempts_used": 2,
     "tum_accounting_scope": "Small metadata fetch overlapped archive acquisition; do not sum as serial allocation. New camera/model trials=0. Failed local test setup and orchestration overhead remain unknown.",
     "interchange_export_execution_attempts_used": 1,
     "interchange_export_cases": 2,
@@ -225,7 +232,13 @@
     "portability_additional_view_render_cells": 18,
     "heartbeat_1850_selected_run_wall_seconds": 348.5140955890529,
     "heartbeat_1850_unit_test_wall_seconds": 0.075,
-    "heartbeat_1850_scope": "Single two-arm three-format three-virtual-view validation; no candidate/real-camera fit proposal or new export. Local setup failure retained. Pipeline wall includes child executions and scoring, not added twice. Independent audit, transfer and agent overhead unknown; GPU/API zero."
+    "heartbeat_1850_scope": "Single two-arm three-format three-virtual-view validation; no candidate/real-camera fit proposal or new export. Local setup failure retained. Pipeline wall includes child executions and scoring, not added twice. Independent audit, transfer and agent overhead unknown; GPU/API zero.",
+    "tum_range_probe_attempts_used": 2,
+    "tum_complete_archive_bytes": 1371845173,
+    "tum_1950_network_payload_bytes": 1349825077,
+    "heartbeat_1950_selected_run_wall_seconds": 133.60149427398574,
+    "heartbeat_1950_accounting_scope": "Count serial phases once; per-source/per-worker times overlap and are not added. Conservative ledger also charges this continuation storage and both readiness audits. Transport/TLS overhead and agent/orchestration cost unknown. No local media relay, GPU/API or model attempt.",
+    "tum_retained_original_partials_still_present": true
   },
   "constraints": [
     "Do not overwrite historical candidates, source photographs or failed evidence",
@@ -246,13 +259,14 @@
       "evidence": "evidence/heartbeat_0945/pi3x_preparation_audit.json"
     },
     {
-      "scope": "TUM RGB-only sensor-reference bundle",
-      "reason": "Official full-archive throughput too slow for frozen 900-second cap; owned worker stopped early with partial files retained",
-      "ready_sequences": 0,
+      "scope": "Complete TUM depth-reference coverage",
+      "reason": "Frozen structure_texture_far ordinal 5 has nearest-depth gap 0.028994083404541016 s, exceeding unchanged 0.02 s. Do not resample or silently drop it.",
+      "matched_depth_frames": 17,
+      "expected_frames": 18,
+      "complete_sequences": 2,
       "expected_sequences": 3,
-      "remaining_wall_budget_seconds": 514.0040592510486,
-      "evidence": "evidence/heartbeat_1246/tum_acquisition.json",
-      "latest_probe": "evidence/heartbeat_1447/tum_raw_access.json"
+      "trajectory_reference_sequences": 3,
+      "evidence": "evidence/heartbeat_1950/input_audit.json"
     }
   ],
   "latest_development_candidate": {
@@ -394,8 +408,36 @@
     "protocol": "TUM_REFERENCE_PROTOCOL_20260929.json",
     "expected_sequences": 3,
     "validated_mocap_metadata_sequences": 3,
-    "prepared_rgb_bundles": 0,
-    "scope": "Three setups, not three independent rooms; no predictions evaluated",
-    "report": "UPDATE_20260929T1246.md"
+    "prepared_rgb_bundles": 3,
+    "scope": "Three fixed setups; RGB/mocap available for all 18 frames, one retained missing depth association. No predictions evaluated.",
+    "report": "UPDATE_20260929T1950.md",
+    "trajectory_reference_ready_sequences": 3,
+    "matched_mocap_frames": 18,
+    "matched_depth_frames": 17,
+    "expected_frames": 18,
+    "complete_depth_reference_sequences": 2,
+    "remote_directory": "/data/real2sim_capability_wqz_20260929/tum_reference_resume_001",
+    "fixed_rgb_index": "evidence/heartbeat_1950/fixed_rgb_index.json"
+  },
+  "resolved_blockers": [
+    {
+      "scope": "TUM RGB-only sensor-reference bundle",
+      "reason": "Official full-archive throughput too slow for frozen 900-second cap; owned worker stopped early with partial files retained",
+      "ready_sequences": 0,
+      "expected_sequences": 3,
+      "remaining_wall_budget_seconds": 514.0040592510486,
+      "evidence": "evidence/heartbeat_1246/tum_acquisition.json",
+      "latest_probe": "evidence/heartbeat_1447/tum_raw_access.json",
+      "resolved_by": "UPDATE_20260929T1950.md",
+      "resolution": "All 3 RGB bundles acquired on data volume within cumulative cap; old partials/failures retained. This does not resolve one missing depth association."
+    }
+  ],
+  "remote_large_artifact_storage": {
+    "path": "4090-1:/data/real2sim_capability_wqz_20260929",
+    "workspace_link": "/home/wqz/real2sim_capability_20260929/data_volume",
+    "owner": "wqz",
+    "mode": "0700",
+    "originals_preserved": true,
+    "evidence": "evidence/heartbeat_1950/storage_receipt.json"
   }
 }
