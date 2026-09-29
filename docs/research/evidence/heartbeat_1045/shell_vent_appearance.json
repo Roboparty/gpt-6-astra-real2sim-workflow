@@ -1,0 +1,89 @@
+{
+  "expected_groups": 4,
+  "groups": [
+    {
+      "group": "baseline",
+      "image_sha256": "d4eefb40194ae5c00e30c1ac645ebb1df9b730d32f70619eaf0b2e2441f5475a",
+      "image_size": [
+        851,
+        638
+      ],
+      "metrics": {
+        "bedding": {
+          "rgb_mae": 0.12294109103336326,
+          "mean_absolute_log_luminance_ratio": 0.6676147055435833,
+          "pixels": 30600
+        },
+        "vent": {
+          "rgb_mae": 0.13543323996265177,
+          "mean_absolute_log_luminance_ratio": 0.6901675257680704,
+          "pixels": 11200
+        }
+      }
+    },
+    {
+      "group": "shell_only",
+      "image_sha256": "f9399bf629fb2efb111fc4f4c4aa690dc2b3641a32d9ba8541074808160fd886",
+      "image_size": [
+        851,
+        638
+      ],
+      "metrics": {
+        "bedding": {
+          "rgb_mae": 0.11988752189328893,
+          "mean_absolute_log_luminance_ratio": 0.657180471597386,
+          "pixels": 30600
+        },
+        "vent": {
+          "rgb_mae": 0.135843720821662,
+          "mean_absolute_log_luminance_ratio": 0.6948363501379902,
+          "pixels": 11200
+        }
+      }
+    },
+    {
+      "group": "vent_only",
+      "image_sha256": "1048503df821c5ebc45a13a19f99a9df1b39cba987a3168e96f07a623bacd5e8",
+      "image_size": [
+        851,
+        638
+      ],
+      "metrics": {
+        "bedding": {
+          "rgb_mae": 0.12287069075996412,
+          "mean_absolute_log_luminance_ratio": 0.6665994507506686,
+          "pixels": 30600
+        },
+        "vent": {
+          "rgb_mae": 0.1078420868347339,
+          "mean_absolute_log_luminance_ratio": 0.4664207220097545,
+          "pixels": 11200
+        }
+      }
+    },
+    {
+      "group": "shell_vent",
+      "image_sha256": "564ed5a5103d9aebbd4899d1bef98906cb155918f806c084e2debbfddc6e00ee",
+      "image_size": [
+        851,
+        638
+      ],
+      "metrics": {
+        "bedding": {
+          "rgb_mae": 0.11982968089196462,
+          "mean_absolute_log_luminance_ratio": 0.6562694514104392,
+          "pixels": 30600
+        },
+        "vent": {
+          "rgb_mae": 0.10751528944911298,
+          "mean_absolute_log_luminance_ratio": 0.4653677102672119,
+          "pixels": 11200
+        }
+      }
+    }
+  ],
+  "source_sha256": "5068deec1cba1e6a167209adca5fb77e4d931db06ed6a3812b9a2b8252d8c866",
+  "protocol_sha256": "c1149a74f01544e6b771641b0d976d2387a408d1de288a02c903823c83408d43",
+  "script_sha256": "f26bb364347e04f07cda864d919b121aa8865c246e14c59762a2dee490c665c2",
+  "scope": "Fixed same-image appearance diagnostics; no physical reflectance or held-out accuracy claim"
+}

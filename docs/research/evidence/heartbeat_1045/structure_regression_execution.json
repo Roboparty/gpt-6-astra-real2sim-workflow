@@ -1,0 +1,13 @@
+{
+  "scope": "Original eight-case structure contract suite in fresh output copy; existing artifacts preserved",
+  "initial_invocation": {
+    "status": "infrastructure_failure",
+    "reason": "PYTHONPATH omitted, ModuleNotFoundError r2s before tests, no artifacts written",
+    "wall_seconds": null
+  },
+  "corrected_invocation": {
+    "returncode": 0,
+    "wall_seconds": 0.20399999991059303,
+    "output": "D:\\embodied\\research\\real2sim-capability-20260929\\structure_regression_1045"
+  }
+}

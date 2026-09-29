@@ -1,0 +1,131 @@
+{
+  "status": "passed",
+  "scope": "Synthetic contracts only; no new Blender or physical claim",
+  "tests": [
+    {
+      "name": "single_part_explicit_zero_internal_joints",
+      "rejected": false
+    },
+    {
+      "name": "single_requires_ownership_checked",
+      "rejected": true
+    },
+    {
+      "name": "single_requires_floor_checked",
+      "rejected": true
+    },
+    {
+      "name": "single_requires_source_landmarks",
+      "rejected": true
+    },
+    {
+      "name": "single_requires_isolated_views",
+      "rejected": true
+    },
+    {
+      "name": "single_requires_joints_checked",
+      "rejected": true
+    },
+    {
+      "name": "single_rejects_missing_joint_list",
+      "rejected": true
+    },
+    {
+      "name": "single_requires_explicit_joint_declaration",
+      "rejected": true
+    },
+    {
+      "name": "single_rejects_fabricated_second_part",
+      "rejected": true
+    },
+    {
+      "name": "single_rejects_self_joint",
+      "rejected": true
+    },
+    {
+      "name": "duplicate_assembly_audit",
+      "rejected": true
+    },
+    {
+      "name": "static_audit_hash_still_required",
+      "rejected": true
+    },
+    {
+      "name": "model_hash_still_required",
+      "rejected": true
+    },
+    {
+      "name": "zero_assemblies_not_enabled",
+      "rejected": true
+    },
+    {
+      "name": "multi_complete_measured_joint_coverage",
+      "rejected": false
+    },
+    {
+      "name": "multi_rejects_empty",
+      "rejected": true
+    },
+    {
+      "name": "multi_rejects_missing",
+      "rejected": true
+    },
+    {
+      "name": "multi_rejects_duplicate_replaces_missing",
+      "rejected": true
+    },
+    {
+      "name": "multi_rejects_wrong_part",
+      "rejected": true
+    },
+    {
+      "name": "multi_rejects_wrong_pair",
+      "rejected": true
+    },
+    {
+      "name": "multi_rejects_wrong_anchor",
+      "rejected": true
+    },
+    {
+      "name": "multi_rejects_relaxed_tolerance",
+      "rejected": true
+    },
+    {
+      "name": "multi_rejects_failed_status",
+      "rejected": true
+    },
+    {
+      "name": "multi_rejects_missing_measurement",
+      "rejected": true
+    },
+    {
+      "name": "multi_rejects_excess_distance",
+      "rejected": true
+    },
+    {
+      "name": "multi_rejects_negative_distance",
+      "rejected": true
+    },
+    {
+      "name": "multi_rejects_nan_distance",
+      "rejected": true
+    },
+    {
+      "name": "multi_disconnected_graph_still_rejected",
+      "rejected": true
+    },
+    {
+      "name": "reversed_pair_has_same_constraint_identity",
+      "rejected": false
+    },
+    {
+      "name": "same_pair_distinct_anchors_checked",
+      "rejected": false
+    },
+    {
+      "name": "same_pair_cannot_duplicate_one_anchor",
+      "rejected": true
+    }
+  ]
+}
+SINGLE_PART_NO_JOINT_AND_EXACT_MEASURED_JOINT_COVERAGE_OK

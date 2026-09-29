@@ -20,7 +20,7 @@
   "remote_root": "4090-1:/home/wqz/real2sim_capability_20260929",
   "protocol": "PROTOCOL_20260929.md",
   "result": "RESULTS_20260929.md",
-  "latest_update": "UPDATE_20260929T0945.md",
+  "latest_update": "UPDATE_20260929T1045.md",
   "completed": [
     "Matched retained-room collision failure reproduction and repair",
     "Rectangular opening handling and false-pass negative tests",
@@ -44,15 +44,20 @@
     "Uniform bedding color proposal rejected after frozen region RGB MAE worsened; fitting improvement retained separately",
     "Static duvet shell direction candidate passed 49/49 joints and reduced same-image bedding MAE by 2.48 percent",
     "Modifier-preserving export reduced paired maximum bound drift from 0.00872278 m to 5.96e-8 m",
-    "Pi3X checkpoint hash verified remotely; dependency preparation stopped at its shared 1800-second budget with partial wheels preserved"
+    "Pi3X checkpoint hash verified remotely; dependency preparation stopped at its shared 1800-second budget with partial wheels preserved",
+    "Four-condition shell/vent factorial: combined passes 49 joints and all 1128 component checks; same-image bedding MAE improves 2.5308 percent and vent 20.6138 percent; vent-only retains two structural failures",
+    "Explicit zero-furniture scene validation, actual source-view structural review and geometry-only export passed; seven negative cases and nonempty contract regressions retained",
+    "Shared benchmark readiness audited across all three video sources and four methods; HKU pinned documentation now readable but raw inputs absent",
+    "Additional retained shell/vent execution with frozen dd51a20 export and actual MuJoCo static probes: both shell/opening/support checks passed; vent-only structure failures retained"
   ],
   "next": [
+    "Freeze source-bound visible static-object annotations on all three videos without relabeling the 18 SfM input frames as held-out; keep ambiguous/occluded observations explicit",
     "Prepare explicit versioned runtime-preparation budget amendment before resuming Pi3X dependency transfer; reuse only officially hash-verified retained wheels, preserve spent 1800 seconds",
     "Preregister common six-frame learned-reference inputs, preprocessing and outputs before camera attempt 7; no GPU launch until environment ready and live external-work check passes",
-    "Test quality-gated composition using the shell correction; retained pose pilot still fails fine source landmarks and cannot be adopted solely on coarse IoU",
+    "Evaluate the shell+vent development successor through full visual review and task integration; fine textiles/accessories remain visibly approximate, and prior pose pilot remains rejected by fine landmark gate",
     "Create shared editable initial scenes and source annotations before the full three-video feedback benchmark; independent competitor evaluation remains missing",
     "Run contact tasks against newly reconstructed task geometry, not only the pinned external model",
-    "Address explicit zero-furniture workflow coverage; single-part no-joint support is now verified"
+    "Extend narrow empty-furniture path through complete delivery/interchange and simulation only with additional actual runtime evidence; existing proof covers structure and geometry-only export"
   ],
   "retained_attempts": [
     "collision_001",
@@ -100,7 +105,13 @@
     "export_modifier_preservation_001",
     "export_modifier_preservation_002",
     "runtime_addons/pi3x/prepare_20260929T100715Z",
-    "runtime_addons/pi3x/prepare_20260929T101115Z"
+    "runtime_addons/pi3x/prepare_20260929T101115Z",
+    "shell_vent_001_logs (import failure before geometry)",
+    "shell_vent_002",
+    "empty_room_001.log (deployment import failure)",
+    "empty_room_002",
+    "local structure_regression_1045 (initial PYTHONPATH failure and corrected isolated run)",
+    "shell_vent_factorial_001 (duplicate conditions retained; added frozen-export/static probes)"
   ],
   "resource_accounting": {
     "new_gpu_hours": 0,
@@ -115,8 +126,8 @@
     "camera_initialization_full_sources": "1/3",
     "camera_runtime_addon": "pycolmap4.2.0 isolated target; existing Python/NumPy preserved",
     "pose_pilot_candidate_rounds_used": 4,
-    "appearance_unique_proposals_used": 3,
-    "combined_unique_proposals_used": 1,
+    "appearance_unique_proposals_used": 4,
+    "combined_unique_proposals_used": 2,
     "physical_ep2_simulation_attempts_used": 1,
     "parallel_selected_run_wall_seconds": 143.0860238011228,
     "external_ep2_remote_download_bytes": 36050335,
@@ -129,7 +140,13 @@
     "pi3x_total_network_bytes": null,
     "pi3x_runtime_ready": false,
     "heartbeat_0945_selected_run_wall_seconds": 106.25397710700054,
-    "heartbeat_0945_accounting_scope": "Selected measured render/test walls plus separate preparation elapsed; not total CPU time. Retained bytes are not exact network traffic. Agent costs and uninstrumented overhead remain unknown."
+    "heartbeat_0945_accounting_scope": "Selected measured render/test walls plus separate preparation elapsed; not total CPU time. Retained bytes are not exact network traffic. Agent costs and uninstrumented overhead remain unknown.",
+    "shell_vent_execution_attempts_used": 3,
+    "heartbeat_1045_selected_run_wall_seconds": 90.25557668192778,
+    "heartbeat_1045_accounting_scope": "Measured shell/vent conditions, empty-room driver and corrected isolated contract test; deployment failures and other uninstrumented regression/agent overhead remain unknown.",
+    "empty_room_candidate_revisions_used": 1,
+    "empty_room_execution_attempts_used": 2,
+    "shell_vent_duplicate_execution_wall_seconds": 46.410337843117304
   },
   "constraints": [
     "Do not overwrite historical candidates, source photographs or failed evidence",
@@ -149,5 +166,15 @@
       "owned_processes_stopped": true,
       "evidence": "evidence/heartbeat_0945/pi3x_preparation_audit.json"
     }
-  ]
+  ],
+  "latest_development_candidate": {
+    "remote_directory": "runs/shell_vent_002/shell_vent",
+    "model_sha256": "4a0adbd949e3339c316e4c7bb99109a08e10c77d69dc80e83dc2b520f0a40402",
+    "scene_sha256": "65b70a9d62ec1a5216a94624f1f285df6c1d60297e33af8eedd9d65b406d4d93",
+    "numerical_structure_and_frozen_regions": "passed",
+    "full_visual_acceptance": false,
+    "new_physical_task_acceptance": false,
+    "scope": "One same-image development room, unchanged original furniture poses. Does not replace frozen baseline."
+  },
+  "benchmark_readiness_report": "SHARED_BENCHMARK_READINESS_20260929.md"
 }

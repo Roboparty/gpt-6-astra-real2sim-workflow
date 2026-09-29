@@ -1,0 +1,91 @@
+{
+  "status": "passed",
+  "scope": "Synthetic contract fixtures; no Blender or physical validation",
+  "tests": [
+    {
+      "name": "empty_furniture_not_enabled",
+      "rejected": true
+    },
+    {
+      "name": "single_assembly_empty_cross_pairs",
+      "rejected": false
+    },
+    {
+      "name": "single_still_requires_ownership_checked",
+      "rejected": true
+    },
+    {
+      "name": "single_still_requires_joints_checked",
+      "rejected": true
+    },
+    {
+      "name": "single_still_requires_floor_checked",
+      "rejected": true
+    },
+    {
+      "name": "single_still_requires_source_landmarks",
+      "rejected": true
+    },
+    {
+      "name": "single_still_requires_isolated_views",
+      "rejected": true
+    },
+    {
+      "name": "single_disconnected_parts",
+      "rejected": true
+    },
+    {
+      "name": "single_invalid_interassembly_checks",
+      "rejected": true
+    },
+    {
+      "name": "single_invalid_evaluated_visible_meshes",
+      "rejected": true
+    },
+    {
+      "name": "single_invalid_failures",
+      "rejected": true
+    },
+    {
+      "name": "2_assemblies_complete_pairs",
+      "rejected": false
+    },
+    {
+      "name": "2_assemblies_missing_pair",
+      "rejected": true
+    },
+    {
+      "name": "3_assemblies_complete_pairs",
+      "rejected": false
+    },
+    {
+      "name": "3_assemblies_missing_pair",
+      "rejected": true
+    },
+    {
+      "name": "cross_pairs_empty",
+      "rejected": true
+    },
+    {
+      "name": "cross_pairs_duplicate_replaces_missing",
+      "rejected": true
+    },
+    {
+      "name": "cross_pairs_reversed_duplicate",
+      "rejected": true
+    },
+    {
+      "name": "cross_pairs_unknown_part",
+      "rejected": true
+    },
+    {
+      "name": "cross_pairs_same_owner_pair",
+      "rejected": true
+    },
+    {
+      "name": "cross_pairs_wrong_owner",
+      "rejected": true
+    }
+  ]
+}
+SINGLE_ASSEMBLY_EMPTY_CROSS_PAIRS_AND_EXACT_MULTI_COVERAGE_OK

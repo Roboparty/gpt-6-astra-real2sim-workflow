@@ -8,8 +8,19 @@ from pathlib import Path
 from .contracts import ContractError
 
 def file_sha(path):return hashlib.sha256(Path(path).read_bytes()).hexdigest()
+def empty_room_inventory(scene):
+    structure=scene['structure'];roles={n:'room_shell' for n in structure['shell_objects']}
+    lamps=structure.get('fixed_luminaire_objects',[])
+    if not isinstance(lamps,list) or any(not isinstance(n,str) or not n for n in lamps) or len(set(lamps))!=len(lamps) or set(lamps)&set(roles):raise ContractError('Invalid empty-room luminaire inventory')
+    roles.update({n:'fixed_luminaire' for n in lamps})
+    objects=scene.get('objects',[])
+    if len(objects)!=len(roles) or {o['id'] for o in objects}!=set(roles) or any(o.get('structural_role')!=roles[o['id']] for o in objects):raise ContractError('Empty-room semantic objects must exactly match shell and fixed luminaire inventory')
+    return roles
 def structure_contract(data):
     if not isinstance(data,dict) or data.get('schema')!='real2sim.assembly/1':raise ContractError('Missing assembly structure contract')
+    if data.get('scope')=='empty_room':
+        shell=data.get('shell_objects')
+        if data.get('assemblies')!=[] or not isinstance(shell,list) or not shell or any(not isinstance(n,str) or not n for n in shell) or len(set(shell))!=len(shell):raise ContractError('Empty-room scope requires explicit zero assemblies and unique nonempty shell object names')
     owners=set();entities=set()
     for a in data.get('assemblies',[]):
         if a['entity'] in entities:raise ContractError('Duplicate assembly owner')
@@ -42,7 +53,9 @@ def evidence_file(attempt,ref,artifacts):
 
 def review_contract(attempt,review,artifacts,scene,binding):
     structure=scene.get('structure');required=structure_contract(structure)
-    if not required:raise ContractError('Structural review requires at least one assembly; empty-furniture review is not supported')
+    empty_room=structure.get('scope')=='empty_room'
+    if not required and not empty_room:raise ContractError('Zero assemblies require explicit empty_room scope')
+    if empty_room:empty_room_inventory(scene)
     if review.get('geometry_freeze_sha256')!=binding['model_sha256']:raise ContractError('Geometry review is not bound to current model bytes')
     if review.get('model_version')!=scene.get('model_version'):raise ContractError('Geometry model version mismatch')
     expected={o['id'] for o in scene['objects']};rows=review.get('per_object',[])
@@ -103,4 +116,11 @@ def review_contract(attempt,review,artifacts,scene,binding):
         if check.get('owners')!=[owners[p] for p in parts]:raise ContractError('Interassembly pair owner mismatch')
         checked_pairs.add(pair)
     if checked_pairs!=expected_pairs:raise ContractError('Interassembly evidence does not cover all cross-assembly component pairs')
+    if empty_room:
+        inventory=audit.get('empty_room_inventory',{})
+        if inventory.get('all_geometry_checked') is not True or inventory.get('object_roles')!=empty_room_inventory(scene) or audit.get('component_pair_checks')!=[]:raise ContractError('Empty-room inventory must cover every declared shell and exclude other geometry')
+        ref='furniture_source_view.png'
+        if ref not in audit.get('evidence_hashes',{}):raise ContractError('Empty-room review requires hash-bound full source-camera evidence')
+        check=review.get('checks',{}).get('empty_room',{})
+        if check.get('status')!='pass' or not check.get('findings') or ref not in check.get('evidence',[]):raise ContractError('Empty-room review requires explicit source-view inspection')
     return audit

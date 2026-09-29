@@ -1,0 +1,35 @@
+{
+  "schema": "real2sim.structure-audit/1",
+  "source_model_sha256": "b3827f72ea8f79be68af3d65e7685a32523baafcbae9c42fa6c8bc39609ffb26",
+  "source_scene_sha256": "6449bd171d4cf845207027ecb5b2b307ee30fd01c44695d2f0c8134c3d18fb25",
+  "model_version": "empty_room_synthetic_001",
+  "evaluated_visible_meshes": true,
+  "method": "Evaluated triangle BVHs, signed solid membership, world-space joint anchors and floor bounds; surface-intersection screening of all non-joint component pairs. No dynamics proxy is used.",
+  "assemblies": [],
+  "interassembly_checks": [],
+  "failures": [],
+  "evidence_hashes": {
+    "furniture_source_view.png": "e451fa8ebe49906e7ee7939b35641ee0af99162d107b8cfed953002e2e58645b"
+  },
+  "empty_room_inventory": {
+    "all_geometry_checked": true,
+    "object_roles": {
+      "ceiling": "room_shell",
+      "ceiling_lamp": "fixed_luminaire",
+      "floor": "room_shell",
+      "wall_back": "room_shell",
+      "wall_front": "room_shell",
+      "wall_left": "room_shell",
+      "wall_right": "room_shell"
+    }
+  },
+  "visible_assembly_coverage_checked": true,
+  "component_pair_checks": [],
+  "source_crop_xyxy": [
+    0,
+    0,
+    160,
+    120
+  ],
+  "status": "passed"
+}

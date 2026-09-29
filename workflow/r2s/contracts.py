@@ -29,6 +29,9 @@ def scene_check(scene):
     if scene.get('structure'):
         from .structure import structure_contract
         if not structure_contract(scene['structure'])<=ids:raise ContractError('Assembly owner absent from semantic scene')
+        if scene['structure'].get('scope')=='empty_room':
+            from .structure import empty_room_inventory
+            empty_room_inventory(scene)
     if scene.get('physical_priors'):
         from .physical_priors import validate_physical_priors
         validate_physical_priors(scene['physical_priors'],ids|{'floor','ceiling','wall_back','wall_front','wall_left','wall_right'})

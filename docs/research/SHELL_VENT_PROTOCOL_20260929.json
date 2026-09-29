@@ -1,0 +1,113 @@
+{
+  "schema": "real2sim.shell-vent-factorial/1",
+  "status": "registered_before_execution",
+  "independent_scenes": 1,
+  "source_path": "/home/wqz/real2sim_whole_scene_20260926/input/01_bedroom.jpg",
+  "source_sha256": "5068deec1cba1e6a167209adca5fb77e4d931db06ed6a3812b9a2b8252d8c866",
+  "expected_groups": [
+    "baseline",
+    "shell_only",
+    "vent_only",
+    "shell_vent"
+  ],
+  "new_authoring_conditions": 2,
+  "intervention": {
+    "targets": [
+      "vent_slot_0",
+      "vent_slot_1",
+      "vent_slot_2",
+      "vent_slot_3",
+      "vent_slot_4",
+      "vent_slot_5",
+      "vent_slot_6",
+      "vent_slot_7",
+      "vent_slot_8",
+      "vent_slot_9",
+      "vent_slot_10",
+      "vent_slot_11",
+      "vent_slot_12",
+      "vent_slot_13",
+      "vent_slot_14"
+    ],
+    "linear_rgb": [
+      0.36,
+      0.36,
+      0.36
+    ],
+    "roughness": 0.85,
+    "provenance": "assumed; exact reused appearance_001 proposal, no new fit"
+  },
+  "inputs": {
+    "baseline": {
+      "model": "/home/wqz/real2sim_whole_scene_20260926/delivery_candidate/export/scene.blend",
+      "model_sha256": "e140b8ae0f133a87cbaa77e576ea164512e57c3bd9a56552841f8596b9126e51",
+      "scene": "/home/wqz/real2sim_whole_scene_20260926/delivery_candidate/export/scene.json",
+      "scene_sha256": "dbc328d7ac938334900c47e97fc8cc6ad412a98b97836d053367edb12e0dcf9b",
+      "render": "/home/wqz/real2sim_capability_20260929/runs/combined_comparison_001/baseline/render.png",
+      "render_sha256": "d4eefb40194ae5c00e30c1ac645ebb1df9b730d32f70619eaf0b2e2441f5475a"
+    },
+    "shell_only": {
+      "model": "/home/wqz/real2sim_capability_20260929/runs/duvet_shell_001/model.blend",
+      "model_sha256": "bcca93ef8508132640e1f0227bb0e842fb7fdbdd52411ffb59dd3122ad10de83",
+      "scene": "/home/wqz/real2sim_capability_20260929/runs/duvet_shell_001/scene.json",
+      "scene_sha256": "65b70a9d62ec1a5216a94624f1f285df6c1d60297e33af8eedd9d65b406d4d93",
+      "render": "/home/wqz/real2sim_capability_20260929/runs/duvet_shell_001/ordinary_render.png",
+      "render_sha256": "f9399bf629fb2efb111fc4f4c4aa690dc2b3641a32d9ba8541074808160fd886"
+    }
+  },
+  "structure_denominators": {
+    "assemblies": 3,
+    "joints": 49,
+    "component_pairs": 1128,
+    "cross_assembly_pairs": 719
+  },
+  "appearance_regions_xyxy": {
+    "bedding": [
+      625,
+      700,
+      1135,
+      940
+    ],
+    "vent": [
+      1210,
+      30,
+      1490,
+      190
+    ]
+  },
+  "render": {
+    "resolution": [
+      851,
+      638
+    ],
+    "cycles_samples": 8,
+    "seed": 0,
+    "device": "CPU",
+    "threads": 2,
+    "denoise": true,
+    "adaptive": false
+  },
+  "held_constant": [
+    "all raw mesh and UV bytes",
+    "all evaluated geometry relative to each input",
+    "transforms",
+    "all non-vent materials",
+    "all joint anchors and source UV/tolerances",
+    "camera/lights/world/render settings",
+    "dynamics absent"
+  ],
+  "diagnostic_control": "Baseline and shell-only cached renders are immutable matching render-setting controls; vent-only isolates material effect. Retain all four conditions regardless of pass. No historical appearance result substitutes for vent-only.",
+  "combined_gate": [
+    "all existing structural audit checks pass with exact denominators",
+    "zero ambiguous intersection review flags",
+    "both frozen-region RGB MAEs lower than original baseline; report all secondary metrics and deltas against shell-only even if worse"
+  ],
+  "budget": {
+    "new_appearance_ablation_candidates": 1,
+    "new_combined_candidates": 1,
+    "cpu_wall_seconds_per_new_condition": 1800,
+    "gpu_hours": 0,
+    "paid_api_requests": 0
+  },
+  "scope": "Same-image one-room development factorial. No whole-scene visual acceptance, calibrated reflectance, real geometry accuracy or SOTA."
+}

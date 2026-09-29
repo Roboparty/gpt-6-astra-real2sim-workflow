@@ -11,6 +11,25 @@ args=sys.argv[sys.argv.index('--')+1:];scene_file=Path(args[0]);out=Path(args[1]
 sha=lambda p:hashlib.sha256(Path(p).read_bytes()).hexdigest()
 result=dict(schema='real2sim.structure-audit/1',source_model_sha256=sha(bpy.data.filepath),source_scene_sha256=sha(scene_file),model_version=scene['model_version'],evaluated_visible_meshes=True,method='Evaluated triangle BVHs, signed solid membership, world-space joint anchors and floor bounds; surface-intersection screening of all non-joint component pairs. No dynamics proxy is used.',assemblies=[],interassembly_checks=[],failures=[],evidence_hashes={})
 deps=bpy.context.evaluated_depsgraph_get();meshes={};owners={}
+if structure.get('scope')=='empty_room':
+ # Explicit absence needs an exhaustive inventory, not an empty furniture loop.
+ sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
+ from r2s.structure import structure_contract,empty_room_inventory
+ structure_contract(structure)
+ roles=empty_room_inventory(scene);declared=set(roles);actual=set()
+ if any(item.is_instance for item in deps.object_instances):result['failures'].append(dict(kind='unsupported_empty_room_evaluated_instances'))
+ for obj in bpy.context.scene.objects:
+  if obj.instance_type!='NONE':result['failures'].append(dict(kind='unsupported_empty_room_instance',object=obj.name))
+  if obj.type not in {'MESH','CURVE','SURFACE','FONT','META','VOLUME','POINTCLOUD','GREASEPENCIL'}:continue
+  actual.add(obj.name)
+  if obj.name not in declared or obj.get('geometry_role')!=roles.get(obj.name) or obj.get('furniture_id') or obj.get('part_id') or obj.hide_render or obj.type!='MESH':
+   result['failures'].append(dict(kind='unbound_or_unsupported_empty_room_geometry',object=obj.name));continue
+  ev=obj.evaluated_get(deps);me=ev.to_mesh()
+  valid=bool(me.vertices and me.polygons) and all(math.isfinite(v) for p in me.vertices for v in obj.matrix_world@p.co)
+  if not valid:result['failures'].append(dict(kind='invalid_empty_room_shell_mesh',object=obj.name))
+  ev.to_mesh_clear()
+ if actual!=declared:result['failures'].append(dict(kind='empty_room_shell_inventory_mismatch',missing=sorted(declared-actual),extra=sorted(actual-declared)))
+ result['empty_room_inventory']=dict(all_geometry_checked=True,object_roles={n:roles.get(n) for n in sorted(actual)})
 assembly_entities={a['entity'] for a in structure['assemblies']}
 declared_objects={p['object'] for a in structure['assemblies'] for p in a['parts']}
 # A declared parts list is not proof that all visible furniture was audited.
@@ -102,6 +121,14 @@ if os.environ.get('R2S_STRUCTURE_NO_RENDER')=='1':
 sc=bpy.context.scene;sourcecam=sc.camera;visibility={o.name:o.hide_render for o in bpy.data.objects};world_original=sc.world
 sc.render.engine='CYCLES';sc.cycles.samples=24;sc.cycles.use_denoising=True;sc.cycles.device='CPU' if os.environ.get('R2S_CPU')=='1' else 'GPU'
 sc.render.resolution_percentage=100;sc.render.resolution_x=scene['camera']['image_size'][0];sc.render.resolution_y=scene['camera']['image_size'][1]
+if structure.get('scope')=='empty_room':
+ # Full frame remains compatible with stage_worker's original-image crop path.
+ result['source_crop_xyxy']=[0,0,*scene['camera']['image_size']]
+ sc.render.use_border=False;sc.render.use_crop_to_border=False;sc.render.filepath=str(out/'furniture_source_view.png')
+ bpy.ops.render.render(write_still=True)
+ result['evidence_hashes']['furniture_source_view.png']=sha(out/'furniture_source_view.png')
+ result['status']='passed' if not result['failures'] else 'failed'
+ (out/'structural_audit.json').write_text(json.dumps(result,indent=2));print('STRUCTURE_RESULT',result['status'],json.dumps(result['failures']));sys.exit(0)
 uv=np.array([x['uv'] for a in result['assemblies'] for x in a['source_landmarks']]);lo=np.floor(uv.min(axis=0)-30).astype(int);hi=np.ceil(uv.max(axis=0)+30).astype(int);W,H=scene['camera']['image_size'];lo=np.maximum(lo,0);hi=np.minimum(hi,[W,H]);result['source_crop_xyxy']=[*lo.tolist(),*hi.tolist()]
 sc.render.use_border=True;sc.render.use_crop_to_border=True;sc.render.border_min_x=lo[0]/W;sc.render.border_max_x=hi[0]/W;sc.render.border_min_y=1-hi[1]/H;sc.render.border_max_y=1-lo[1]/H;sc.render.filepath=str(out/'furniture_source_view.png');bpy.ops.render.render(write_still=True);sc.render.use_border=False;sc.render.use_crop_to_border=False
 sc.render.resolution_x=700;sc.render.resolution_y=700
