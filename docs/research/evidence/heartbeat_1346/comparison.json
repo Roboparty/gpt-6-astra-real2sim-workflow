@@ -1,0 +1,19 @@
+{
+  "scope": "Same immutable two fixture exports; legacy failure evidence and independent strict results retained separately",
+  "legacy_passed_formats": 4,
+  "expected_formats": 6,
+  "strict_passed_formats": 6,
+  "strict_max_bound_error_m": 0.0,
+  "strict_max_camera_matrix_error": 3.576278615469164e-07,
+  "strict_max_normalized_projection_error": 4.29153451664277e-08,
+  "measured_selected_wall_seconds": 581.776610820205,
+  "evaluator_location_migration": {
+    "original_executed_path": "tools/validate_scene_interchange.py",
+    "native_path": "workflow/r2s/interchange.py",
+    "identical_core_sha256": "808c48f725c1b24e6b32fae1a545f60e10d520c03f707715b061fb965b47921a",
+    "wrapper_sha256": "622f790d979f42bc444c2ec369845cbe0d84e73efd3965e6235e35b19c5b7cb9"
+  },
+  "source_and_export_files_unchanged": true,
+  "gpu_hours": 0,
+  "paid_api_requests": 0
+}

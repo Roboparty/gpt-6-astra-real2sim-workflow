@@ -15,10 +15,10 @@ def find_artifact(names,preferred=None):
         for a in packet['input_artifacts'][dep]:
             if Path(a['path']).name in names:return Path(a['path'])
     raise ContractError('Missing upstream artifact '+str(names))
-def run(argv):
+def run(argv,log_name=None):
     env=os.environ.copy()
     if 'cuda_visible_devices' in params:env['CUDA_VISIBLE_DEVICES']=str(params['cuda_visible_devices'])
-    r=subprocess.run(argv,capture_output=True,text=True,shell=False,env=env);(out/(Path(argv[0]).stem+'_subprocess.log')).write_text(r.stdout+'\n'+r.stderr)
+    r=subprocess.run(argv,capture_output=True,text=True,shell=False,env=env);(out/(log_name or (Path(argv[0]).stem+'_subprocess.log'))).write_text(r.stdout+'\n'+r.stderr)
     if r.returncode:raise RuntimeError('Subprocess failed: '+str(r.returncode))
 def artifact_list():return [str(p.relative_to(out)) for p in sorted(out.rglob('*')) if p.is_file() and p.name not in {'packet.json','response.json','record.json','stdout.log','stderr.log'}]
 if stage in {'build_render','build_geometry'}:
@@ -84,13 +84,21 @@ if stage in {'build_render','build_geometry'}:
 elif stage=='export':
     preferred=['agent_physics','agent_review','build_render','agent_calibrate_lighting','agent_materials','agent_model']
     blend=find_artifact({'model.blend','scene.blend'},preferred);scene=find_artifact({'scene.json'},preferred);shutil.copyfile(scene,out/'scene.json')
-    run([params['blender'],'-b',str(blend),'-t',str(params.get('threads',8)),'--python-exit-code','12','--python',str(package/'blender_export.py'),'--',str(out/'scene.json'),str(out)])
+    run([params['blender'],'-b',str(blend),'-t',str(params.get('threads',8)),'--python-exit-code','12','--python',str(package/'blender_export.py'),'--',str(out/'scene.json'),str(out)],'export_blender.log')
+    if packet.get('generation_skills'):
+        run([params['blender'],'-b','-t',str(params.get('threads',8)),'--python-exit-code','12','--python',str(package/'interchange.py'),'--',str(out),'--source-model',str(blend),'--source-scene',str(scene)],'interchange_blender.log')
 elif stage=='validate':
     geometry=find_artifact({'geometry_audit.json'});src=geometry.parent
     for p in src.rglob('*'):
         if p.is_file() and p.name not in {'packet.json','response.json','record.json','stdout.log','stderr.log'}:
             q=out/p.relative_to(src);q.parent.mkdir(parents=True,exist_ok=True);shutil.copyfile(p,q)
     scene=json.loads((out/'scene.json').read_text());checks={'scene':scene_check(scene),'glb':glb_check(out/'scene.glb',['floor','ceiling','wall_back','wall_front','wall_left','wall_right'])}
+    if packet.get('generation_skills'):
+        interchange=json.loads((out/'strict_reload_validation.json').read_text())
+        records=interchange.get('records',[])
+        if interchange.get('schema')!='real2sim.strict-interchange/1' or interchange.get('status')!='passed' or interchange.get('sources_unchanged') is not True or [r.get('format') for r in records]!=['blend','glb','usdc']:raise ContractError('Missing or failed source-bound interchange check')
+        if any(r.get('status')!='passed' or r.get('sha256')!=file_sha(out/('scene.'+r['format'])) for r in records):raise ContractError('Interchange file bytes changed after validation')
+        checks['interchange']=interchange
     run([sys.executable,str(package/'simulation.py'),str(out/'scene.json'),str(out)])
     checks['simulation']=json.loads((out/'simulation_audit.json').read_text());checks['geometry']=json.loads((out/'geometry_audit.json').read_text());atomic_json(out/'validation.json',checks)
     from .dynamics import export_and_test

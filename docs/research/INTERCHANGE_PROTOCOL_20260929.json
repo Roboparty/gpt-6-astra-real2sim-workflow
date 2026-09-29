@@ -1,0 +1,60 @@
+{
+  "schema": "real2sim.roomkit-interchange-protocol/1",
+  "status": "registered_before_execution",
+  "code_commit": "8e0d02c",
+  "cases": [
+    {
+      "id": "empty_room",
+      "model": "/home/wqz/real2sim_capability_20260929/runs/unified_validation_001/results/canonical_export/empty_room/model.blend",
+      "model_sha256": "3c7768ad6d0c4984f1ef8d55a13fa8d1878f33d0c2f7f237eb6cbb38e230ab00",
+      "scene": "/home/wqz/real2sim_capability_20260929/runs/unified_validation_001/results/canonical_export/empty_room/scene.json",
+      "scene_sha256": "f8f97dc6bad524e134481948872dcff0a87da2f9d5cf37ea90fafa1523b0949b"
+    },
+    {
+      "id": "rotated_furniture",
+      "model": "/home/wqz/real2sim_capability_20260929/runs/unified_validation_001/results/canonical_export/rotated_furniture/model.blend",
+      "model_sha256": "957dabfecd268910629b694ee645024b1b08ea484ee25fbdbd9940e93a92185b",
+      "scene": "/home/wqz/real2sim_capability_20260929/runs/unified_validation_001/results/canonical_export/rotated_furniture/scene.json",
+      "scene_sha256": "5ed86001fc165e38459a0f75cf26f8d138afe854ad3109a0b9e336bc365fca83"
+    }
+  ],
+  "expected_cases": 2,
+  "formats": [
+    "blend",
+    "glb",
+    "usdc"
+  ],
+  "expected_format_checks": 6,
+  "gates": {
+    "shared_export_completes": true,
+    "preserve_source_files": true,
+    "required_entities_and_parts_retained": true,
+    "maximum_roundtrip_aabb_error_m": 0.002,
+    "maximum_source_camera_matrix_error": 0.0001,
+    "portable_existing_image_references": true
+  },
+  "resource_budget": {
+    "cpu_threads": 2,
+    "cpu_wall_seconds_per_case": 900,
+    "gpu_hours": 0,
+    "paid_api_requests": 0,
+    "candidate_proposals": 1
+  },
+  "scope": "Actual file interchange on two synthetic already-validated RoomKit fixtures; not photorealism, complete surface equality, physics qualification, real reconstruction or SOTA. Do not replace failed cases or formats.",
+  "evaluator_sha256": {
+    "workflow/r2s/blender_export.py": "5407edde9c9a53911dfee46de56e8c264c13adb4975782bcd1d34d573a461e61",
+    "workflow/r2s/blender_metadata.py": "50bb1c5369abf40ea116c67ef5d88eaf2f5e294e2a4a5f9757f2d5b732d03ffc",
+    "workflow/r2s/viewpoints.py": "b0fb70f246c19b01aa95b412bbb6ded7577ff2783a0550480b362b052b96e593",
+    "tools/reload_scene_exports.py": "1c0ddd328bc6226915cb281f7d81aefc2849e0a94532a3575f3396b74bb2e2a5"
+  },
+  "legacy_reload_role": "Legacy diagnostic only; final format conclusion additionally requires frozen-original source geometry, visible ownership/parts and real-camera projection checks. Legacy pass is not full format acceptance.",
+  "strict_gates": {
+    "original_source_model_reference": true,
+    "no_unowned_visible_geometry": true,
+    "parts_require_visible_geometry_and_correct_owner": true,
+    "source_camera_type": "CAMERA",
+    "normalized_camera_view_frame_max_error": 1e-05,
+    "maximum_roundtrip_aabb_error_m": 0.002,
+    "maximum_source_camera_matrix_error": 0.0001
+  }
+}

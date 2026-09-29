@@ -1,0 +1,12 @@
+[
+  {
+    "name": "negative_controls",
+    "returncode": 0,
+    "wall_seconds": 0.4145076241111383
+  },
+  {
+    "name": "empty_room_strict",
+    "returncode": 0,
+    "wall_seconds": 0.6151329870335758
+  }
+]

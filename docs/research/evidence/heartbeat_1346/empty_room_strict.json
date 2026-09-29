@@ -1,0 +1,1306 @@
+{
+  "schema": "real2sim.strict-interchange/1",
+  "status": "passed",
+  "records": [
+    {
+      "format": "blend",
+      "path": "/home/wqz/real2sim_capability_20260929/runs/interchange_001/empty_room/scene.blend",
+      "status": "passed",
+      "failures": [],
+      "sha256": "25a7a987da4cdc16d51d7163f1b468b5c64f1d8a505e0a18533c03db354c86e6",
+      "bounds_error_by_entity_m": {
+        "lamp": 0.0,
+        "floor": 0.0,
+        "ceiling": 0.0,
+        "wall_back": 0.0,
+        "wall_front": 0.0,
+        "wall_left": 0.0,
+        "wall_right": 0.0
+      },
+      "maximum_bound_error_m": 0.0,
+      "source_camera_matrix_max_error": 0.0,
+      "source_camera_projection_max_error": 0.0,
+      "actual": {
+        "failures": [],
+        "bounds": {
+          "lamp": [
+            [
+              -0.15000000596046448,
+              -0.15000000596046448,
+              2.75
+            ],
+            [
+              0.15000000596046448,
+              0.15000000596046448,
+              2.8499999046325684
+            ]
+          ],
+          "floor": [
+            [
+              -2.0,
+              -2.0,
+              -0.10000000149011612
+            ],
+            [
+              2.0,
+              2.0,
+              0.0
+            ]
+          ],
+          "ceiling": [
+            [
+              -2.0,
+              -2.0,
+              3.0
+            ],
+            [
+              2.0,
+              2.0,
+              3.0999999046325684
+            ]
+          ],
+          "wall_back": [
+            [
+              -2.0,
+              2.0,
+              0.0
+            ],
+            [
+              2.0,
+              2.0999999046325684,
+              3.0
+            ]
+          ],
+          "wall_front": [
+            [
+              -2.0,
+              -2.0999999046325684,
+              0.0
+            ],
+            [
+              2.0,
+              -2.0,
+              3.0
+            ]
+          ],
+          "wall_left": [
+            [
+              -2.0999999046325684,
+              -2.0,
+              0.0
+            ],
+            [
+              -2.0,
+              2.0,
+              3.0
+            ]
+          ],
+          "wall_right": [
+            [
+              2.0,
+              -2.0,
+              0.0
+            ],
+            [
+              2.0999999046325684,
+              2.0,
+              3.0
+            ]
+          ]
+        },
+        "geometry": [
+          {
+            "name": "lamp",
+            "data_name": "lamp",
+            "type": "MESH",
+            "owner": "lamp",
+            "instance": false,
+            "vertices": 8,
+            "triangles": 12,
+            "world_aabb": [
+              [
+                -0.15000000596046448,
+                -0.15000000596046448,
+                2.75
+              ],
+              [
+                0.15000000596046448,
+                0.15000000596046448,
+                2.8499999046325684
+              ]
+            ]
+          },
+          {
+            "name": "floor",
+            "data_name": "floor",
+            "type": "MESH",
+            "owner": "floor",
+            "instance": false,
+            "vertices": 8,
+            "triangles": 12,
+            "world_aabb": [
+              [
+                -2.0,
+                -2.0,
+                -0.10000000149011612
+              ],
+              [
+                2.0,
+                2.0,
+                0.0
+              ]
+            ]
+          },
+          {
+            "name": "ceiling",
+            "data_name": "ceiling",
+            "type": "MESH",
+            "owner": "ceiling",
+            "instance": false,
+            "vertices": 8,
+            "triangles": 12,
+            "world_aabb": [
+              [
+                -2.0,
+                -2.0,
+                3.0
+              ],
+              [
+                2.0,
+                2.0,
+                3.0999999046325684
+              ]
+            ]
+          },
+          {
+            "name": "wall_back",
+            "data_name": "wall_back",
+            "type": "MESH",
+            "owner": "wall_back",
+            "instance": false,
+            "vertices": 8,
+            "triangles": 12,
+            "world_aabb": [
+              [
+                -2.0,
+                2.0,
+                0.0
+              ],
+              [
+                2.0,
+                2.0999999046325684,
+                3.0
+              ]
+            ]
+          },
+          {
+            "name": "wall_front",
+            "data_name": "wall_front",
+            "type": "MESH",
+            "owner": "wall_front",
+            "instance": false,
+            "vertices": 8,
+            "triangles": 12,
+            "world_aabb": [
+              [
+                -2.0,
+                -2.0999999046325684,
+                0.0
+              ],
+              [
+                2.0,
+                -2.0,
+                3.0
+              ]
+            ]
+          },
+          {
+            "name": "wall_left",
+            "data_name": "wall_left",
+            "type": "MESH",
+            "owner": "wall_left",
+            "instance": false,
+            "vertices": 8,
+            "triangles": 12,
+            "world_aabb": [
+              [
+                -2.0999999046325684,
+                -2.0,
+                0.0
+              ],
+              [
+                -2.0,
+                2.0,
+                3.0
+              ]
+            ]
+          },
+          {
+            "name": "wall_right",
+            "data_name": "wall_right",
+            "type": "MESH",
+            "owner": "wall_right",
+            "instance": false,
+            "vertices": 8,
+            "triangles": 12,
+            "world_aabb": [
+              [
+                2.0,
+                -2.0,
+                0.0
+              ],
+              [
+                2.0999999046325684,
+                2.0,
+                3.0
+              ]
+            ]
+          }
+        ],
+        "camera": {
+          "name": "source_camera",
+          "data_name": "Camera",
+          "type": "CAMERA",
+          "projection_type": "PERSP",
+          "world_matrix": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              -4.371138828673793e-08,
+              -1.0,
+              -1.5
+            ],
+            [
+              0.0,
+              1.0,
+              -4.371138828673793e-08,
+              1.5
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "normalized_view_frame_xy": [
+            [
+              -0.8,
+              -0.6
+            ],
+            [
+              -0.8,
+              0.6
+            ],
+            [
+              0.8,
+              -0.6
+            ],
+            [
+              0.8,
+              0.6
+            ]
+          ],
+          "clip_start": 0.10000000149011612,
+          "clip_end": 1000.0
+        },
+        "projection_context": {
+          "source_image_size": [
+            160,
+            120
+          ],
+          "pixel_aspect": [
+            1.0,
+            1.0
+          ]
+        },
+        "required_parts": [],
+        "camera_identity": {
+          "object_name": "source_camera",
+          "data_name": "Camera",
+          "frame_id": null
+        }
+      }
+    },
+    {
+      "format": "glb",
+      "path": "/home/wqz/real2sim_capability_20260929/runs/interchange_001/empty_room/scene.glb",
+      "status": "passed",
+      "failures": [],
+      "sha256": "b85a00067ecc0ff3a84d476ad5537db124886cdb9cff28498ddffee384345fa0",
+      "bounds_error_by_entity_m": {
+        "lamp": 0.0,
+        "floor": 0.0,
+        "ceiling": 0.0,
+        "wall_back": 0.0,
+        "wall_front": 0.0,
+        "wall_left": 0.0,
+        "wall_right": 0.0
+      },
+      "maximum_bound_error_m": 0.0,
+      "source_camera_matrix_max_error": 1.1920928955078125e-07,
+      "source_camera_projection_max_error": 4.29153451664277e-08,
+      "actual": {
+        "failures": [],
+        "bounds": {
+          "floor": [
+            [
+              -2.0,
+              -2.0,
+              -0.10000000149011612
+            ],
+            [
+              2.0,
+              2.0,
+              0.0
+            ]
+          ],
+          "ceiling": [
+            [
+              -2.0,
+              -2.0,
+              3.0
+            ],
+            [
+              2.0,
+              2.0,
+              3.0999999046325684
+            ]
+          ],
+          "wall_back": [
+            [
+              -2.0,
+              2.0,
+              0.0
+            ],
+            [
+              2.0,
+              2.0999999046325684,
+              3.0
+            ]
+          ],
+          "wall_front": [
+            [
+              -2.0,
+              -2.0999999046325684,
+              0.0
+            ],
+            [
+              2.0,
+              -2.0,
+              3.0
+            ]
+          ],
+          "wall_left": [
+            [
+              -2.0999999046325684,
+              -2.0,
+              0.0
+            ],
+            [
+              -2.0,
+              2.0,
+              3.0
+            ]
+          ],
+          "wall_right": [
+            [
+              2.0,
+              -2.0,
+              0.0
+            ],
+            [
+              2.0999999046325684,
+              2.0,
+              3.0
+            ]
+          ],
+          "lamp": [
+            [
+              -0.15000000596046448,
+              -0.15000000596046448,
+              2.75
+            ],
+            [
+              0.15000000596046448,
+              0.15000000596046448,
+              2.8499999046325684
+            ]
+          ]
+        },
+        "geometry": [
+          {
+            "name": "floor",
+            "data_name": "floor",
+            "type": "MESH",
+            "owner": "floor",
+            "instance": false,
+            "vertices": 24,
+            "triangles": 12,
+            "world_aabb": [
+              [
+                -2.0,
+                -2.0,
+                -0.10000000149011612
+              ],
+              [
+                2.0,
+                2.0,
+                0.0
+              ]
+            ]
+          },
+          {
+            "name": "ceiling",
+            "data_name": "ceiling",
+            "type": "MESH",
+            "owner": "ceiling",
+            "instance": false,
+            "vertices": 24,
+            "triangles": 12,
+            "world_aabb": [
+              [
+                -2.0,
+                -2.0,
+                3.0
+              ],
+              [
+                2.0,
+                2.0,
+                3.0999999046325684
+              ]
+            ]
+          },
+          {
+            "name": "wall_back",
+            "data_name": "wall_back",
+            "type": "MESH",
+            "owner": "wall_back",
+            "instance": false,
+            "vertices": 24,
+            "triangles": 12,
+            "world_aabb": [
+              [
+                -2.0,
+                2.0,
+                0.0
+              ],
+              [
+                2.0,
+                2.0999999046325684,
+                3.0
+              ]
+            ]
+          },
+          {
+            "name": "wall_front",
+            "data_name": "wall_front",
+            "type": "MESH",
+            "owner": "wall_front",
+            "instance": false,
+            "vertices": 24,
+            "triangles": 12,
+            "world_aabb": [
+              [
+                -2.0,
+                -2.0999999046325684,
+                0.0
+              ],
+              [
+                2.0,
+                -2.0,
+                3.0
+              ]
+            ]
+          },
+          {
+            "name": "wall_left",
+            "data_name": "wall_left",
+            "type": "MESH",
+            "owner": "wall_left",
+            "instance": false,
+            "vertices": 24,
+            "triangles": 12,
+            "world_aabb": [
+              [
+                -2.0999999046325684,
+                -2.0,
+                0.0
+              ],
+              [
+                -2.0,
+                2.0,
+                3.0
+              ]
+            ]
+          },
+          {
+            "name": "wall_right",
+            "data_name": "wall_right",
+            "type": "MESH",
+            "owner": "wall_right",
+            "instance": false,
+            "vertices": 24,
+            "triangles": 12,
+            "world_aabb": [
+              [
+                2.0,
+                -2.0,
+                0.0
+              ],
+              [
+                2.0999999046325684,
+                2.0,
+                3.0
+              ]
+            ]
+          },
+          {
+            "name": "lamp",
+            "data_name": "lamp",
+            "type": "MESH",
+            "owner": "lamp",
+            "instance": false,
+            "vertices": 24,
+            "triangles": 12,
+            "world_aabb": [
+              [
+                -0.15000000596046448,
+                -0.15000000596046448,
+                2.75
+              ],
+              [
+                0.15000000596046448,
+                0.15000000596046448,
+                2.8499999046325684
+              ]
+            ]
+          }
+        ],
+        "camera": {
+          "name": "source_camera",
+          "data_name": "Camera",
+          "type": "CAMERA",
+          "projection_type": "PERSP",
+          "world_matrix": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              -1.3435885648505064e-07,
+              -1.0000001192092896,
+              -1.5
+            ],
+            [
+              0.0,
+              1.0000001192092896,
+              -1.3435885648505064e-07,
+              1.5
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "normalized_view_frame_xy": [
+            [
+              -0.8000000429153452,
+              -0.6000000143051151
+            ],
+            [
+              -0.8000000429153452,
+              0.6000000143051151
+            ],
+            [
+              0.8000000429153452,
+              -0.6000000143051151
+            ],
+            [
+              0.8000000429153452,
+              0.6000000143051151
+            ]
+          ],
+          "clip_start": 0.10000000149011612,
+          "clip_end": 1000.0
+        },
+        "projection_context": {
+          "source_image_size": [
+            160,
+            120
+          ],
+          "pixel_aspect": [
+            1.0,
+            1.0
+          ]
+        },
+        "required_parts": [],
+        "camera_identity": {
+          "object_name": "source_camera",
+          "data_name": "Camera",
+          "frame_id": null
+        }
+      }
+    },
+    {
+      "format": "usdc",
+      "path": "/home/wqz/real2sim_capability_20260929/runs/interchange_001/empty_room/scene.usdc",
+      "status": "passed",
+      "failures": [],
+      "sha256": "14f87aed48dc94cde0242b59f1819449cdbd61f6e437190041b112cfe852d0cf",
+      "bounds_error_by_entity_m": {
+        "lamp": 0.0,
+        "floor": 0.0,
+        "ceiling": 0.0,
+        "wall_back": 0.0,
+        "wall_front": 0.0,
+        "wall_left": 0.0,
+        "wall_right": 0.0
+      },
+      "maximum_bound_error_m": 0.0,
+      "source_camera_matrix_max_error": 3.576278615469164e-07,
+      "source_camera_projection_max_error": 0.0,
+      "actual": {
+        "failures": [],
+        "bounds": {
+          "ceiling": [
+            [
+              -2.0,
+              -2.0,
+              3.0
+            ],
+            [
+              2.0,
+              2.0,
+              3.0999999046325684
+            ]
+          ],
+          "floor": [
+            [
+              -2.0,
+              -2.0,
+              -0.10000000149011612
+            ],
+            [
+              2.0,
+              2.0,
+              0.0
+            ]
+          ],
+          "lamp": [
+            [
+              -0.15000000596046448,
+              -0.15000000596046448,
+              2.75
+            ],
+            [
+              0.15000000596046448,
+              0.15000000596046448,
+              2.8499999046325684
+            ]
+          ],
+          "wall_back": [
+            [
+              -2.0,
+              2.0,
+              0.0
+            ],
+            [
+              2.0,
+              2.0999999046325684,
+              3.0
+            ]
+          ],
+          "wall_front": [
+            [
+              -2.0,
+              -2.0999999046325684,
+              0.0
+            ],
+            [
+              2.0,
+              -2.0,
+              3.0
+            ]
+          ],
+          "wall_left": [
+            [
+              -2.0999999046325684,
+              -2.0,
+              0.0
+            ],
+            [
+              -2.0,
+              2.0,
+              3.0
+            ]
+          ],
+          "wall_right": [
+            [
+              2.0,
+              -2.0,
+              0.0
+            ],
+            [
+              2.0999999046325684,
+              2.0,
+              3.0
+            ]
+          ]
+        },
+        "geometry": [
+          {
+            "name": "ceiling",
+            "data_name": "ceiling",
+            "type": "MESH",
+            "owner": "ceiling",
+            "instance": false,
+            "vertices": 8,
+            "triangles": 12,
+            "world_aabb": [
+              [
+                -2.0,
+                -2.0,
+                3.0
+              ],
+              [
+                2.0,
+                2.0,
+                3.0999999046325684
+              ]
+            ]
+          },
+          {
+            "name": "floor",
+            "data_name": "floor",
+            "type": "MESH",
+            "owner": "floor",
+            "instance": false,
+            "vertices": 8,
+            "triangles": 12,
+            "world_aabb": [
+              [
+                -2.0,
+                -2.0,
+                -0.10000000149011612
+              ],
+              [
+                2.0,
+                2.0,
+                0.0
+              ]
+            ]
+          },
+          {
+            "name": "lamp",
+            "data_name": "lamp",
+            "type": "MESH",
+            "owner": "lamp",
+            "instance": false,
+            "vertices": 8,
+            "triangles": 12,
+            "world_aabb": [
+              [
+                -0.15000000596046448,
+                -0.15000000596046448,
+                2.75
+              ],
+              [
+                0.15000000596046448,
+                0.15000000596046448,
+                2.8499999046325684
+              ]
+            ]
+          },
+          {
+            "name": "wall_back",
+            "data_name": "wall_back",
+            "type": "MESH",
+            "owner": "wall_back",
+            "instance": false,
+            "vertices": 8,
+            "triangles": 12,
+            "world_aabb": [
+              [
+                -2.0,
+                2.0,
+                0.0
+              ],
+              [
+                2.0,
+                2.0999999046325684,
+                3.0
+              ]
+            ]
+          },
+          {
+            "name": "wall_front",
+            "data_name": "wall_front",
+            "type": "MESH",
+            "owner": "wall_front",
+            "instance": false,
+            "vertices": 8,
+            "triangles": 12,
+            "world_aabb": [
+              [
+                -2.0,
+                -2.0999999046325684,
+                0.0
+              ],
+              [
+                2.0,
+                -2.0,
+                3.0
+              ]
+            ]
+          },
+          {
+            "name": "wall_left",
+            "data_name": "wall_left",
+            "type": "MESH",
+            "owner": "wall_left",
+            "instance": false,
+            "vertices": 8,
+            "triangles": 12,
+            "world_aabb": [
+              [
+                -2.0999999046325684,
+                -2.0,
+                0.0
+              ],
+              [
+                -2.0,
+                2.0,
+                3.0
+              ]
+            ]
+          },
+          {
+            "name": "wall_right",
+            "data_name": "wall_right",
+            "type": "MESH",
+            "owner": "wall_right",
+            "instance": false,
+            "vertices": 8,
+            "triangles": 12,
+            "world_aabb": [
+              [
+                2.0,
+                -2.0,
+                0.0
+              ],
+              [
+                2.0999999046325684,
+                2.0,
+                3.0
+              ]
+            ]
+          }
+        ],
+        "camera": {
+          "name": "Camera",
+          "data_name": "Camera",
+          "type": "CAMERA",
+          "projection_type": "PERSP",
+          "world_matrix": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              3.1391647326017846e-07,
+              -1.0,
+              -1.5
+            ],
+            [
+              0.0,
+              1.0,
+              3.1391647326017846e-07,
+              1.5
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "normalized_view_frame_xy": [
+            [
+              -0.8,
+              -0.6
+            ],
+            [
+              -0.8,
+              0.6
+            ],
+            [
+              0.8,
+              -0.6
+            ],
+            [
+              0.8,
+              0.6
+            ]
+          ],
+          "clip_start": 0.10000000149011612,
+          "clip_end": 1000.0
+        },
+        "projection_context": {
+          "source_image_size": [
+            160,
+            120
+          ],
+          "pixel_aspect": [
+            1.0,
+            1.0
+          ]
+        },
+        "required_parts": [],
+        "camera_identity": {
+          "object_name": "source_camera",
+          "data_name": "Camera",
+          "frame_id": null
+        }
+      }
+    }
+  ],
+  "inputs": {
+    "source_model": {
+      "path": "/home/wqz/real2sim_capability_20260929/runs/unified_validation_001/results/canonical_export/empty_room/model.blend",
+      "sha256": "3c7768ad6d0c4984f1ef8d55a13fa8d1878f33d0c2f7f237eb6cbb38e230ab00"
+    },
+    "source_scene": {
+      "path": "/home/wqz/real2sim_capability_20260929/runs/unified_validation_001/results/canonical_export/empty_room/scene.json",
+      "sha256": "f8f97dc6bad524e134481948872dcff0a87da2f9d5cf37ea90fafa1523b0949b"
+    }
+  },
+  "evaluator_sha256": "808c48f725c1b24e6b32fae1a545f60e10d520c03f707715b061fb965b47921a",
+  "blender_version": "4.5.3 LTS",
+  "thresholds": {
+    "canonical_aabb_m": 0.002,
+    "camera_matrix": 0.0001,
+    "normalized_view_frame": 1e-05
+  },
+  "scope": "Independent frozen-source comparison; actual three-format loading; render-visible ownership and part identity; canonical AABBs; explicit CAMERA identity, world matrix and normalized view frame on original JSON raster. AABB agreement is not full-surface/topology/collision equivalence. Clip distances are recorded but not acceptance-tested. PBR/procedural material, texture, lighting, real-world accuracy and image fidelity are not validated.",
+  "source_snapshot": {
+    "failures": [],
+    "bounds": {
+      "lamp": [
+        [
+          -0.15000000596046448,
+          -0.15000000596046448,
+          2.75
+        ],
+        [
+          0.15000000596046448,
+          0.15000000596046448,
+          2.8499999046325684
+        ]
+      ],
+      "floor": [
+        [
+          -2.0,
+          -2.0,
+          -0.10000000149011612
+        ],
+        [
+          2.0,
+          2.0,
+          0.0
+        ]
+      ],
+      "ceiling": [
+        [
+          -2.0,
+          -2.0,
+          3.0
+        ],
+        [
+          2.0,
+          2.0,
+          3.0999999046325684
+        ]
+      ],
+      "wall_back": [
+        [
+          -2.0,
+          2.0,
+          0.0
+        ],
+        [
+          2.0,
+          2.0999999046325684,
+          3.0
+        ]
+      ],
+      "wall_front": [
+        [
+          -2.0,
+          -2.0999999046325684,
+          0.0
+        ],
+        [
+          2.0,
+          -2.0,
+          3.0
+        ]
+      ],
+      "wall_left": [
+        [
+          -2.0999999046325684,
+          -2.0,
+          0.0
+        ],
+        [
+          -2.0,
+          2.0,
+          3.0
+        ]
+      ],
+      "wall_right": [
+        [
+          2.0,
+          -2.0,
+          0.0
+        ],
+        [
+          2.0999999046325684,
+          2.0,
+          3.0
+        ]
+      ]
+    },
+    "geometry": [
+      {
+        "name": "lamp",
+        "data_name": "Cube",
+        "type": "MESH",
+        "owner": "lamp",
+        "instance": false,
+        "vertices": 8,
+        "triangles": 12,
+        "world_aabb": [
+          [
+            -0.15000000596046448,
+            -0.15000000596046448,
+            2.75
+          ],
+          [
+            0.15000000596046448,
+            0.15000000596046448,
+            2.8499999046325684
+          ]
+        ]
+      },
+      {
+        "name": "floor",
+        "data_name": "Cube.002",
+        "type": "MESH",
+        "owner": "floor",
+        "instance": false,
+        "vertices": 8,
+        "triangles": 12,
+        "world_aabb": [
+          [
+            -2.0,
+            -2.0,
+            -0.10000000149011612
+          ],
+          [
+            2.0,
+            2.0,
+            0.0
+          ]
+        ]
+      },
+      {
+        "name": "ceiling",
+        "data_name": "Cube.003",
+        "type": "MESH",
+        "owner": "ceiling",
+        "instance": false,
+        "vertices": 8,
+        "triangles": 12,
+        "world_aabb": [
+          [
+            -2.0,
+            -2.0,
+            3.0
+          ],
+          [
+            2.0,
+            2.0,
+            3.0999999046325684
+          ]
+        ]
+      },
+      {
+        "name": "wall_back",
+        "data_name": "Cube.004",
+        "type": "MESH",
+        "owner": "wall_back",
+        "instance": false,
+        "vertices": 8,
+        "triangles": 12,
+        "world_aabb": [
+          [
+            -2.0,
+            2.0,
+            0.0
+          ],
+          [
+            2.0,
+            2.0999999046325684,
+            3.0
+          ]
+        ]
+      },
+      {
+        "name": "wall_front",
+        "data_name": "Cube.005",
+        "type": "MESH",
+        "owner": "wall_front",
+        "instance": false,
+        "vertices": 8,
+        "triangles": 12,
+        "world_aabb": [
+          [
+            -2.0,
+            -2.0999999046325684,
+            0.0
+          ],
+          [
+            2.0,
+            -2.0,
+            3.0
+          ]
+        ]
+      },
+      {
+        "name": "wall_left",
+        "data_name": "Cube.006",
+        "type": "MESH",
+        "owner": "wall_left",
+        "instance": false,
+        "vertices": 8,
+        "triangles": 12,
+        "world_aabb": [
+          [
+            -2.0999999046325684,
+            -2.0,
+            0.0
+          ],
+          [
+            -2.0,
+            2.0,
+            3.0
+          ]
+        ]
+      },
+      {
+        "name": "wall_right",
+        "data_name": "Cube.007",
+        "type": "MESH",
+        "owner": "wall_right",
+        "instance": false,
+        "vertices": 8,
+        "triangles": 12,
+        "world_aabb": [
+          [
+            2.0,
+            -2.0,
+            0.0
+          ],
+          [
+            2.0999999046325684,
+            2.0,
+            3.0
+          ]
+        ]
+      }
+    ],
+    "camera": {
+      "name": "source_camera",
+      "data_name": "Camera",
+      "type": "CAMERA",
+      "projection_type": "PERSP",
+      "world_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -1.5
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          1.5
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "normalized_view_frame_xy": [
+        [
+          -0.8,
+          -0.6
+        ],
+        [
+          -0.8,
+          0.6
+        ],
+        [
+          0.8,
+          -0.6
+        ],
+        [
+          0.8,
+          0.6
+        ]
+      ],
+      "clip_start": 0.10000000149011612,
+      "clip_end": 1000.0
+    },
+    "projection_context": {
+      "source_image_size": [
+        160,
+        120
+      ],
+      "pixel_aspect": [
+        1.0,
+        1.0
+      ]
+    },
+    "required_parts": [],
+    "camera_identity": {
+      "object_name": "source_camera",
+      "data_name": "Camera",
+      "frame_id": null
+    }
+  },
+  "sources_unchanged": true
+}

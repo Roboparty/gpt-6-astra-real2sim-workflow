@@ -1,0 +1,54 @@
+{
+  "status": "passed",
+  "cases": [
+    {
+      "case": "valid_export",
+      "passed": true,
+      "expected_rejection": false,
+      "retained_error": null,
+      "wall_seconds": 0.6793837989680469
+    },
+    {
+      "case": "valid_validate",
+      "passed": true,
+      "expected_rejection": false,
+      "retained_error": null,
+      "wall_seconds": 0.45361759595107287
+    },
+    {
+      "case": "bad_export",
+      "passed": true,
+      "expected_rejection": true,
+      "retained_error": "RuntimeError('Subprocess failed: 12')",
+      "wall_seconds": 0.5858451119856909
+    },
+    {
+      "case": "missing_receipt",
+      "passed": true,
+      "expected_rejection": true,
+      "retained_error": "FileNotFoundError(2, 'No such file or directory')",
+      "wall_seconds": 0.011642465949989855
+    },
+    {
+      "case": "changed_bytes",
+      "passed": true,
+      "expected_rejection": true,
+      "retained_error": "ContractError('Invalid GLB header')",
+      "wall_seconds": 0.011307343025691807
+    },
+    {
+      "case": "empty_records",
+      "passed": true,
+      "expected_rejection": true,
+      "retained_error": "ContractError('Missing or failed source-bound interchange check')",
+      "wall_seconds": 0.010697724996134639
+    }
+  ],
+  "sources_unchanged": true,
+  "wall_seconds": 1.7750454470515251,
+  "scope": "Synthetic native stage packets with reused actual export fixtures. Blender re-import and MuJoCo validation run; no new full exporter execution or complete Agent workflow acceptance.",
+  "implementation_sha256": {
+    "workflow/r2s/stage_worker.py": "6038759931a84d59e72cd508af4221cc373fb70b9ff45bb273fa1d28486e66fd",
+    "workflow/r2s/interchange.py": "808c48f725c1b24e6b32fae1a545f60e10d520c03f707715b061fb965b47921a"
+  }
+}

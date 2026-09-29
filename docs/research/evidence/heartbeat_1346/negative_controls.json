@@ -1,0 +1,50 @@
+{
+  "status": "passed",
+  "cases": [
+    {
+      "case": "unchanged",
+      "passed": true,
+      "observed_status": "passed",
+      "retained_failures": []
+    },
+    {
+      "case": "fake_camera",
+      "passed": true,
+      "observed_status": "failed",
+      "retained_failures": [
+        "Explicit source CAMERA missing or ambiguous: 0 matches",
+        "Cannot compare a valid source CAMERA"
+      ]
+    },
+    {
+      "case": "orphan_mesh",
+      "passed": true,
+      "observed_status": "failed",
+      "retained_failures": [
+        "Unowned visible geometry: strict_negative_unowned_mesh"
+      ]
+    },
+    {
+      "case": "removed_part",
+      "passed": true,
+      "observed_status": "failed",
+      "retained_failures": [
+        "Required visible part missing, wrong-owner or ambiguous: sofa/sofa_body (0 matches)"
+      ]
+    },
+    {
+      "case": "changed_fov",
+      "passed": true,
+      "observed_status": "failed",
+      "retained_failures": [
+        "Source camera normalized view frame changed (FOV/shift)"
+      ]
+    }
+  ],
+  "sources_unchanged": true,
+  "source_hashes": {
+    "model": "957dabfecd268910629b694ee645024b1b08ea484ee25fbdbd9940e93a92185b",
+    "scene": "5ed86001fc165e38459a0f75cf26f8d138afe854ad3109a0b9e336bc365fca83"
+  },
+  "scope": "Real Blender fixture in-memory negative controls; no scene saved, no interchange fidelity claim from these controls alone."
+}

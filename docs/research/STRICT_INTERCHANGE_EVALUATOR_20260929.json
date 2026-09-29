@@ -1,0 +1,34 @@
+{
+  "schema": "real2sim.strict-interchange-evaluator/1",
+  "status": "registered_before_strict_evaluation",
+  "export_protocol_sha256": "6c0fe6431621303efaad82fe4484aa2f6e6d468cc7214e9a52b44a2ae587a64b",
+  "expected_cases": 2,
+  "expected_format_checks": 6,
+  "formats": [
+    "blend",
+    "glb",
+    "usdc"
+  ],
+  "thresholds": {
+    "original_source_model_reference": true,
+    "no_unowned_visible_geometry": true,
+    "parts_require_visible_geometry_and_correct_owner": true,
+    "source_camera_type": "CAMERA",
+    "normalized_camera_view_frame_max_error": 1e-05,
+    "maximum_roundtrip_aabb_error_m": 0.002,
+    "maximum_source_camera_matrix_error": 0.0001
+  },
+  "evaluators": {
+    "tools/validate_scene_interchange.py": "808c48f725c1b24e6b32fae1a545f60e10d520c03f707715b061fb965b47921a",
+    "tools/test_validate_scene_interchange.py": "6fe78962205abfeaf19c7a6e3751b7d71d483cdf5ff43bb94043a576bd79db25"
+  },
+  "negative_controls": [
+    "unchanged",
+    "fake_camera",
+    "orphan_mesh",
+    "removed_part",
+    "changed_fov"
+  ],
+  "failure_policy": "All three format rows retained even on loading/check failure. Frozen source model/scene and export files are never rewritten. Legacy reload is diagnostic, not the final acceptance gate.",
+  "scope": "Source-relative geometry inventory/AABB and camera projection representation only; not full mesh/surface/texture/material/lighting/collision equality or reconstruction accuracy."
+}

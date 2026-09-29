@@ -22,7 +22,7 @@
   "remote_root": "4090-1:/home/wqz/real2sim_capability_20260929",
   "protocol": "PROTOCOL_20260929.md",
   "result": "RESULTS_20260929.md",
-  "latest_update": "UPDATE_20260929T1246.md",
+  "latest_update": "UPDATE_20260929T1346.md",
   "completed": [
     "Matched retained-room collision failure reproduction and repair",
     "Rectangular opening handling and false-pass negative tests",
@@ -53,7 +53,8 @@
     "Additional retained shell/vent execution with frozen dd51a20 export and actual MuJoCo static probes: both shell/opening/support checks passed; vent-only structure failures retained",
     "First source-bound visible-box bundle frozen for all 3 videos: 18 frames, 6 identities, 36 observations (17 observed boxes and 19 retained out-of-frame/null entries); internal overlay review and 13 negative contract checks passed",
     "Native generation skills integrated with research annotations; executable-stage acceptance, shared Agent/builder budget, canonical RoomKit export and Pi3X receipt-binding fixes verified in 12/12 remote CPU groups",
-    "External sensor-reference cohort fixed for three TUM setups; official mocap metadata validated for all three, but complete RGB-D bundles remain 0/3; 25 translation-ATE evaluator tests passed"
+    "External sensor-reference cohort fixed for three TUM setups; official mocap metadata validated for all three, but complete RGB-D bundles remain 0/3; 25 translation-ATE evaluator tests passed",
+    "Full Blender/GLB/USD export on two frozen RoomKit fixtures: 6/6 source-bound strict checks passed; legacy USD camera-name failures retained; native export/validate gate integrated with 5 mutation controls and 6 stage tests"
   ],
   "next": [
     "Resolve remote TUM transfer throughput or explicitly resume retained partials within the remaining 516.42s acquisition ledger before any GT-backed camera trial; preserve all three fixed sequences and keep RGB proposer inputs separate from GT/depth",
@@ -63,7 +64,7 @@
     "Evaluate the shell+vent development successor through full visual review and task integration; fine textiles/accessories remain visibly approximate, and prior pose pilot remains rejected by fine landmark gate",
     "Create shared editable initial scenes and source annotations before the full three-video feedback benchmark; independent competitor evaluation remains missing",
     "Run contact tasks against newly reconstructed task geometry, not only the pinned external model",
-    "Extend narrow empty-furniture path through complete delivery/interchange and simulation only with additional actual runtime evidence; existing proof covers structure and geometry-only export"
+    "Extend source-bound interchange validation to reconstructed detailed scenes and measure surface/material/lighting fidelity; two synthetic RoomKit fixtures now cover full file export, reload, native gate and static engine paths"
   ],
   "retained_attempts": [
     "collision_001",
@@ -124,7 +125,10 @@
     "unified_validation_001 (merged snapshot plus integration fixes, 12 runner groups)",
     "tum_reference_001 (early slow-source stop after 383.58s, 22020096 partial bytes retained; 0/3 complete)",
     "tum_metadata_001 (3/3 small official trajectory files validated)",
-    "tum_trajectory_tests_001 (25 synthetic mathematical/CLI tests)"
+    "tum_trajectory_tests_001 (25 synthetic mathematical/CLI tests)",
+    "interchange_001 (two complete exports; legacy checker 4/6 formats, strict source checker 6/6)",
+    "interchange_001 strict_negative_controls (one positive plus four in-memory mutations)",
+    "interchange_native_001 (cached actual exports replayed into 6 native stage gate tests)"
   ],
   "resource_accounting": {
     "new_gpu_hours": 0,
@@ -176,7 +180,12 @@
     "tum_metadata_fetch_wall_seconds": 10.140612037968822,
     "tum_trajectory_unit_test_wall_seconds": 0.218,
     "tum_acquisition_attempts_used": 1,
-    "tum_accounting_scope": "Small metadata fetch overlapped archive acquisition; do not sum as serial allocation. New camera/model trials=0. Failed local test setup and orchestration overhead remain unknown."
+    "tum_accounting_scope": "Small metadata fetch overlapped archive acquisition; do not sum as serial allocation. New camera/model trials=0. Failed local test setup and orchestration overhead remain unknown.",
+    "interchange_export_execution_attempts_used": 1,
+    "interchange_export_cases": 2,
+    "interchange_evaluator_revisions_used": 1,
+    "heartbeat_1346_selected_run_wall_seconds": 581.776610820205,
+    "heartbeat_1346_scope": "Two full CPU export/legacy checks plus strict controls/native gates. Native gate fixture replay did not rerun full exporter. No reconstruction proposal or camera/GPU/API cost."
   },
   "constraints": [
     "Do not overwrite historical candidates, source photographs or failed evidence",
@@ -236,7 +245,8 @@
     "main_updated": false,
     "native_flow": "quality_v2 opt-in generation_skills",
     "verification": "evidence/unified_generation_20260929/summary.json",
-    "separate_cross_thread_release_instruction": "Reported by side-chat delegation; current heartbeat still explicitly forbids automatic main merge"
+    "separate_cross_thread_release_instruction": "Reported by side-chat delegation; current heartbeat still explicitly forbids automatic main merge",
+    "latest_interchange_gate": "UPDATE_20260929T1346.md"
   },
   "external_reference_cohort": {
     "protocol": "TUM_REFERENCE_PROTOCOL_20260929.json",
