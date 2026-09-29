@@ -1,0 +1,9 @@
+Blender 4.5.3 LTS (hash 67807e1800cc built 2025-09-09 01:38:15)
+Traceback (most recent call last):
+  File "/home/wqz/real2sim_capability_20260929/tools/test_empty_room_blender.py", line 10, in <module>
+    from r2s.structure import review_contract,file_sha
+ModuleNotFoundError: No module named 'r2s'
+
+Error: script failed, file: 'tools/test_empty_room_blender.py', exiting.
+
+Blender quit

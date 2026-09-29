@@ -1,0 +1,9 @@
+Blender 4.5.3 LTS (hash 67807e1800cc built 2025-09-09 01:38:15)
+Traceback (most recent call last):
+  File "/home/wqz/real2sim_capability_20260929/repo/tools/run_shell_vent_factorial.py", line 15, in <module>
+    from apply_bedding_color_candidate import geometry_fingerprint, scene_settings
+ModuleNotFoundError: No module named 'apply_bedding_color_candidate'
+
+Error: script failed, file: '/home/wqz/real2sim_capability_20260929/repo/tools/run_shell_vent_factorial.py', exiting.
+
+Blender quit
