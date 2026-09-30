@@ -1,0 +1,19 @@
+{
+  "status": "native_partial_gate_passed",
+  "required_stages_completed": [
+    "ingest",
+    "preprocess",
+    "agent_observe",
+    "agent_identify",
+    "validate_web_research"
+  ],
+  "web_report": {
+    "path": "/data/real2sim_capability_wqz_20260929/desk1_web_phase_20260930/native_case/runs/validate_web_research/0001/web_research_report.json",
+    "sha256": "7a4fd8e4fc111a0c107dc8c01f9e7ab24b76882bbfdfc1e13b2c07e5b941c6a6",
+    "bytes": 25750
+  },
+  "source_sha256": "f125bdbe59e6e978d22e5143131291a1ef5206239928007a01d26aabb1bb9578",
+  "remaining_native_stages": "calibration/room/model/material/render/review/export not yet delivered by this smoke case",
+  "no_full_workflow_acceptance_claim": true,
+  "workflow_source": "/data/real2sim_capability_wqz_20260929/desk1_web_phase_20260930/native_code/workflow"
+}

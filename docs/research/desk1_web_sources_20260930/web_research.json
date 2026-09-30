@@ -1,0 +1,357 @@
+{
+  "schema": "real2sim.web-research/1",
+  "source_sha256": "f125bdbe59e6e978d22e5143131291a1ef5206239928007a01d26aabb1bb9578",
+  "queries": [
+    {
+      "id": "q001",
+      "query": "site.ycbbenchmarks.com sugar box pudding box gelatin box large marker dimensions"
+    },
+    {
+      "id": "q002",
+      "query": "site.dominofulfillment.com sugar 1 lb box dimensions"
+    },
+    {
+      "id": "q003",
+      "query": "site.expo.com low odor dry erase chisel black marker dimensions"
+    },
+    {
+      "id": "q004",
+      "query": "YCB object model set dimensions sugar box pudding box gelatin box marker Calli 2015 table"
+    },
+    {
+      "id": "q005",
+      "query": "site.ycbbenchmarks.com \"Dimensions\""
+    },
+    {
+      "id": "q006",
+      "query": "site.eng.yale.edu \"Pudding\" \"Sugar\""
+    },
+    {
+      "id": "q007",
+      "query": "site.kraftheinz.com jell-o chocolate cook serve pudding 3.4 oz strawberry gelatin 3 oz"
+    },
+    {
+      "id": "q008",
+      "query": "site.dominosugar.com \"1 lb\" \"Granulated\""
+    },
+    {
+      "id": "q009",
+      "query": "site.kraftheinz.com \"Strawberry\" \"Gelatin\" \"3 oz\""
+    },
+    {
+      "id": "q010",
+      "query": "\"The YCB Object and Model Set\" \"Table I\" pdf Calli"
+    },
+    {
+      "id": "q011",
+      "query": "site.dfifoodservice.com \"Granulated\" \"1 lb\" \"Carton\""
+    },
+    {
+      "id": "q012",
+      "query": "site.dominosugar.com \"Premium Pure Cane\" \"Granulated Sugar\""
+    },
+    {
+      "id": "q013",
+      "query": "site.kraftheinzawayfromhome.com \"20651\" dimensions"
+    },
+    {
+      "id": "q014",
+      "query": "site.expomarkers.com \"80001\""
+    },
+    {
+      "id": "q015",
+      "query": "site.kraftheinz.com \"strawberry banana\" \"3 oz\""
+    },
+    {
+      "id": "q016",
+      "query": "site.kraftheinz.com \"00043000206911\""
+    },
+    {
+      "id": "q017",
+      "query": "site.dfifoodservice.com \"Granulated\" \"Carton\""
+    },
+    {
+      "id": "q018",
+      "query": "\"Strawberry Banana\" \"site:myfoodandfamily.com\""
+    },
+    {
+      "id": "q019",
+      "query": "\"Strawberry Banana\" \"site:kraftheinz.com\""
+    },
+    {
+      "id": "q020",
+      "query": "\"Chocolate Pudding\" \"206911\" \"site:kraftheinz.com\""
+    },
+    {
+      "id": "q021",
+      "query": "\"Strawberry Banana\" \"site:smartlabel.kraftheinz.com\""
+    },
+    {
+      "id": "q022",
+      "query": "Jell-O Strawberry Banana gelatin mix"
+    },
+    {
+      "id": "q023",
+      "query": "Chocolate cook serve 5 oz 20691"
+    }
+  ],
+  "sources": [
+    {
+      "id": "ycb_icar2015",
+      "url": "https://www.ri.cmu.edu/pub_files/2015/7/ICAR-FINAL.pdf",
+      "title": "The YCB Object and Model Set: Towards Common Benchmarks for Manipulation Research",
+      "publisher": "Berk Calli et al.; author paper hosted by Carnegie Mellon University Robotics Institute",
+      "retrieved_at": "2026-09-30T06:52:59Z",
+      "type": "research_paper",
+      "snapshot_path": "snapshots/ycb_icar2015_table_numeric_excerpt.txt",
+      "snapshot_sha256": "5f3cd477afc461ced368d5c944b8823e2db2d897d30c30efd25589dcadd25909"
+    },
+    {
+      "id": "ycb_arxiv2015v1",
+      "url": "https://arxiv.org/pdf/1502.03143v1",
+      "title": "Benchmarking in Manipulation Research: The YCB Object and Model Set and Benchmarking Protocols",
+      "publisher": "Berk Calli et al.; author-submitted arXiv preprint 1502.03143v1, 2015-02-10",
+      "retrieved_at": "2026-09-30T06:52:59Z",
+      "type": "research_paper",
+      "snapshot_path": "snapshots/ycb_arxiv2015v1_table_numeric_excerpt.txt",
+      "snapshot_sha256": "1c8e03b4d6cc8e5a9f1f2e56977925b6171dc1cf37931a0f16dbed135c2c63d2"
+    },
+    {
+      "id": "expo_chisel",
+      "url": "https://www.expomarkers.com/markers/dry-erase-markers/expo-low-odor-dry-erase-markers-chisel-tip-/SAP_1920940A.html",
+      "title": "EXPO Low Odor Dry Erase Markers, Chisel Tip",
+      "publisher": "EXPO / Newell Brands",
+      "retrieved_at": "2026-09-30T07:12:11Z",
+      "type": "manufacturer",
+      "snapshot_path": "snapshots/expo_chisel_feature_excerpt.txt",
+      "snapshot_sha256": "38c3a9976999ec03f0eded8ed2d6ae14995b0d46e5f1eb077c39897a29f64c2c"
+    }
+  ],
+  "objects": [
+    {
+      "object_id": "domino_sugar_box",
+      "identity_match": "family",
+      "priors": [
+        {
+          "parameter": "dimensions",
+          "value": [
+            89,
+            38,
+            175
+          ],
+          "unit": "mm",
+          "axis_order": [
+            "width",
+            "depth",
+            "height"
+          ],
+          "source_id": "ycb_icar2015",
+          "dimension_kind": "object",
+          "status": "sourced_prior",
+          "uncertainty_fraction": null,
+          "uncertainty_note": "Paper gives no metrology tolerance. Packaging version and carton wear can differ; reference mass is not used as proof of the source net contents.",
+          "claim_locator": "Table I, PDF page 4, rows 4, 8, 9 and 40; semantic axes inferred from observed front; paper does not specify axes"
+        },
+        {
+          "parameter": "dimensions",
+          "value": [
+            89,
+            38,
+            175
+          ],
+          "unit": "mm",
+          "axis_order": [
+            "width",
+            "depth",
+            "height"
+          ],
+          "source_id": "ycb_arxiv2015v1",
+          "dimension_kind": "object",
+          "status": "sourced_prior",
+          "uncertainty_fraction": null,
+          "uncertainty_note": "Paper gives no metrology tolerance. Packaging version and carton wear can differ; reference mass is not used as proof of the source net contents.",
+          "claim_locator": "Table II, PDF page 7; sugar/pudding/gelatin and L Erasable Marker rows; semantic axes inferred from observed front; paper does not specify axes"
+        }
+      ],
+      "unresolved": [
+        "One-pound granulated carton visually supported; UPC and packaging revision not reliably readable. Do not substitute powdered sugar, cubes or a current bag.",
+        "Not observed; exact reverse artwork and seam placement unresolved.",
+        "Published nominal reference dimensions; this photographed instance and tolerance are not independently measured."
+      ]
+    },
+    {
+      "object_id": "chocolate_jello_box",
+      "identity_match": "family",
+      "priors": [
+        {
+          "parameter": "dimensions",
+          "value": [
+            110,
+            35,
+            89
+          ],
+          "unit": "mm",
+          "axis_order": [
+            "width",
+            "depth",
+            "height"
+          ],
+          "source_id": "ycb_icar2015",
+          "dimension_kind": "object",
+          "status": "sourced_prior",
+          "uncertainty_fraction": null,
+          "uncertainty_note": "Possible consumer pack-size/version mismatch remains. Do not derive a different box scale from current net weight or treat the paper's dimensions as a manufacturer tolerance.",
+          "claim_locator": "Table I, PDF page 4, rows 4, 8, 9 and 40; semantic axes inferred from observed front; paper does not specify axes"
+        },
+        {
+          "parameter": "dimensions",
+          "value": [
+            110,
+            35,
+            89
+          ],
+          "unit": "mm",
+          "axis_order": [
+            "width",
+            "depth",
+            "height"
+          ],
+          "source_id": "ycb_arxiv2015v1",
+          "dimension_kind": "object",
+          "status": "sourced_prior",
+          "uncertainty_fraction": null,
+          "uncertainty_note": "Possible consumer pack-size/version mismatch remains. Do not derive a different box scale from current net weight or treat the paper's dimensions as a manufacturer tolerance.",
+          "claim_locator": "Table II, PDF page 7; sugar/pudding/gelatin and L Erasable Marker rows; semantic axes inferred from observed front; paper does not specify axes"
+        }
+      ],
+      "unresolved": [
+        "Cook & Serve chocolate is directly readable. Barcode appears to include 20691 but full UPC/check digit and net-weight line are not confidently recovered. Do not assert 3.4 oz or 5 oz as exact from current web text.",
+        "Broad reverse face is against the desk and unseen; near directions/barcode panel is directly observed.",
+        "Published nominal reference dimensions; this photographed instance and tolerance are not independently measured."
+      ]
+    },
+    {
+      "object_id": "red_jello_box",
+      "identity_match": "family",
+      "priors": [
+        {
+          "parameter": "dimensions",
+          "value": [
+            85,
+            28,
+            73
+          ],
+          "unit": "mm",
+          "axis_order": [
+            "width",
+            "depth",
+            "height"
+          ],
+          "source_id": "ycb_icar2015",
+          "dimension_kind": "object",
+          "status": "sourced_prior",
+          "uncertainty_fraction": null,
+          "uncertainty_note": "No reported dimensional tolerance; historical packaging, flavour and region may change the carton. Current manufacturer family matches are not exact instance verification.",
+          "claim_locator": "Table I, PDF page 4, rows 4, 8, 9 and 40; semantic axes inferred from observed front; paper does not specify axes"
+        },
+        {
+          "parameter": "dimensions",
+          "value": [
+            85,
+            28,
+            73
+          ],
+          "unit": "mm",
+          "axis_order": [
+            "width",
+            "depth",
+            "height"
+          ],
+          "source_id": "ycb_arxiv2015v1",
+          "dimension_kind": "object",
+          "status": "sourced_prior",
+          "uncertainty_fraction": null,
+          "uncertainty_note": "No reported dimensional tolerance; historical packaging, flavour and region may change the carton. Current manufacturer family matches are not exact instance verification.",
+          "claim_locator": "Table II, PDF page 7; sugar/pudding/gelatin and L Erasable Marker rows; semantic axes inferred from observed front; paper does not specify axes"
+        }
+      ],
+      "unresolved": [
+        "Flavour is Strawberry Banana, not plain Strawberry. Small net-weight print and UPC are not reliable enough for an exact SKU/region claim.",
+        "Not observed; do not substitute modern Canadian or zero-sugar back artwork as recovered truth.",
+        "Published nominal reference dimensions; this photographed instance and tolerance are not independently measured."
+      ]
+    },
+    {
+      "object_id": "expo_marker",
+      "identity_match": "family",
+      "priors": [
+        {
+          "parameter": "dimensions",
+          "value": [
+            18,
+            18,
+            121
+          ],
+          "unit": "mm",
+          "axis_order": [
+            "width",
+            "depth",
+            "height"
+          ],
+          "source_id": "ycb_icar2015",
+          "dimension_kind": "object",
+          "status": "sourced_prior",
+          "uncertainty_fraction": null,
+          "uncertainty_note": "Earlier author table reports 19 x 119 mm for L Erasable Marker. Do not silently average, cherry-pick or call either an exact current EXPO specification.",
+          "claim_locator": "Table I, PDF page 4, rows 4, 8, 9 and 40; transverse duplicated as width/depth only as an unverified circular-envelope hypothesis; conflicts block consumption"
+        },
+        {
+          "parameter": "dimensions",
+          "value": [
+            19,
+            19,
+            119
+          ],
+          "unit": "mm",
+          "axis_order": [
+            "width",
+            "depth",
+            "height"
+          ],
+          "source_id": "ycb_arxiv2015v1",
+          "dimension_kind": "object",
+          "status": "sourced_prior",
+          "uncertainty_fraction": null,
+          "uncertainty_note": "Object-set revision or measurement convention may differ; the papers do not resolve the cause.",
+          "claim_locator": "Table II, PDF page 7; sugar/pudding/gelatin and L Erasable Marker rows; transverse duplicated as width/depth only as an unverified circular-envelope hypothesis; conflicts block consumption"
+        }
+      ],
+      "unresolved": [
+        "EXPO low-odor large marker family matches. Capped writing tip is hidden; chisel versus another tip and retail multipack SKU are not confirmed by the source.",
+        "Opposite barrel side and writing tip are unobserved.",
+        "Published nominal reference dimensions; this photographed instance and tolerance are not independently measured."
+      ],
+      "details": [
+        {
+          "parameter": "tip_family",
+          "value": "Current EXPO chisel variant supports varying line widths; the source image does not reveal the capped tip.",
+          "source_id": "expo_chisel",
+          "status": "sourced_prior",
+          "claim_locator": "Product Details, Features, line 87",
+          "uncertainty_note": "Family-level hypothesis; hidden tip and retail SKU unconfirmed. Do not expose a chisel nib as an observed detail."
+        }
+      ]
+    }
+  ],
+  "source_inspection_derivative": {
+    "path": "D:/embodied/research/real2sim-capability-20260929/preview/desk1/source.jpg",
+    "sha256": "e72341e16451cbf4c2b6445657b0ad9afb4c592f0b5a910429038ca1f1f10788",
+    "image_size_wh": [
+      1280,
+      720
+    ],
+    "inspection": "Original image viewed; pudding barcode and gelatin flavour inspected using an in-memory enlarged crop of the same pixels. No generated detail or GT was used."
+  },
+  "research_ledger": "query_attempt_ledger.json",
+  "search_budget_registration": "observed counts; no preregistered cap before earlier lookup"
+}

@@ -1,0 +1,178 @@
+{
+  "schema": "real2sim.desk1-comparator-discovery/1",
+  "checked_date": "2026-09-30",
+  "status": "primary_source_research_only_not_an_execution_protocol",
+  "scope": "Public official documentation, small source/config files, repository/Hugging Face metadata, and read-only installed-distribution metadata. No checkpoint body download, installation, model import, GPU inference, paid API invocation, benchmark rerun or automation restart.",
+  "preserved_baseline": {
+    "code_commit": "e048866e3545d39424e75b1e3d334935f7b75b0f",
+    "case": "SimFoundry YCB Desk 1 / Easy",
+    "original_source_url": "https://arxiv.org/html/2606.28276v4/figs/imgs/qualitative_results/ycb_desk_3/ycb_desk_3.jpg",
+    "original_source_sha256": "f125bdbe59e6e978d22e5143131291a1ef5206239928007a01d26aabb1bb9578",
+    "foreground_objects": 4,
+    "foreground_mesh_parts": 6,
+    "model_sha256": "b170ee70448a941e32a7777da1a9bc5af13bb4e727c32326c13a6af175a748ca",
+    "local_record": "docs/research/DESK1_EDITABLE_DELIVERY_20260930.md",
+    "historical_paper_renderings": "Published comparisons only, fetched after baseline authoring freeze. They are neither new reruns nor permitted modeling inputs. Tuned public results remain comparison-only.",
+    "old_automation": "remains stopped; this research does not resume it",
+    "new_measurement_budget": "not allocated here; parent task must preregister separately"
+  },
+  "runtime_read_only_inventory": {
+    "host": "4090-1",
+    "interpreter": "/home/wqz/real2sim_capability_20260929/runtime_addons/pi3x/venv/bin/python",
+    "method": "importlib.metadata.version only; no torch/CUDA/model import",
+    "installed_distribution_versions": {"torch": "2.5.1", "torchvision": "0.20.1", "numpy": "1.26.4"},
+    "no_distribution_metadata_found": ["transformers", "diffusers", "kaolin", "pytorch3d", "spconv-cu121", "gsplat", "xformers", "nvdiffrast", "pymeshlab", "xatlas", "omegaconf", "rembg", "trimesh", "flash-attn", "sam3d_objects", "trellis2", "hy3dgen"],
+    "limits": "One existing interpreter inspected, not a complete host/cache inventory. Source checkouts can exist without package metadata. HF account entitlements, installed weights in other locations, GPU occupancy and CUDA compiler compatibility were not tested.",
+    "immediately_verified_runnable_new_comparators": [],
+    "interpretation": "No newly surveyed comparator is established ready in the inspected Pi3X runtime. Preserve that environment; any dependency setup requires a separately budgeted isolated environment."
+  },
+  "comparators": [
+    {
+      "id": "sam3d_objects",
+      "official_repository": "https://github.com/facebookresearch/sam-3d-objects",
+      "code_commit": "f91db411c50efee93d8db7aeb323885650f6f722",
+      "commit_date": "2026-06-02T21:16:44Z",
+      "code_metadata_source": "https://api.github.com/repos/facebookresearch/sam-3d-objects/commits/main",
+      "weights": {
+        "repository": "facebook/sam-3d-objects",
+        "revision": "2e73555018d2741ccd486e56c24fac41155a1dc6",
+        "metadata_source": "https://huggingface.co/api/models/facebook/sam-3d-objects",
+        "gated": "manual",
+        "unauthenticated_pipeline_yaml_head_status": 401,
+        "account_access": "not inspected; anonymous rejection does not establish this user's authenticated entitlement",
+        "checkpoint_blob_sha256": null,
+        "blob_hash_limitation": "Public gated tree metadata redacts LFS object hashes; no checkpoint bytes read.",
+        "observed_large_files": {"checkpoints/ss_generator.ckpt": 6690136964, "checkpoints/slat_generator.ckpt": 4906537684},
+        "complete_dependency_lock": false,
+        "reason_incomplete": "Gated pipeline configuration was unavailable anonymously; auxiliary model closure and exact file variants still require inspection after authorized access."
+      },
+      "license": {"code_and_checkpoints": "SAM License (custom), not MIT/Apache", "source": "https://github.com/facebookresearch/sam-3d-objects/blob/f91db411c50efee93d8db7aeb323885650f6f722/LICENSE", "note": "Retain the actual agreement and research attribution; HF model access requires approval. No gated terms were accepted in this task."},
+      "hardware_and_dependencies": {
+        "official_minimum_gpu_vram_gb": 32,
+        "official_platform": "Linux 64-bit",
+        "official_environment": "Python 3.11.0; CUDA 12.1 environment; PyTorch3D separate install; Hydra patch",
+        "selected_pins": {"kaolin": "0.17.0", "spconv-cu121": "2.3.8", "xformers": "0.0.28.post3", "torchaudio": "2.5.1+cu121", "gsplat_git": "2323de5905d5e90e035f792fe65bad0fedd413e7", "MoGe_git": "a8c37341bc0325ca99b9d57981cc3bb2bd3e255b"},
+        "sources": ["https://github.com/facebookresearch/sam-3d-objects/blob/f91db411c50efee93d8db7aeb323885650f6f722/doc/setup.md", "https://github.com/facebookresearch/sam-3d-objects/blob/f91db411c50efee93d8db7aeb323885650f6f722/environments/default.yml", "https://github.com/facebookresearch/sam-3d-objects/blob/f91db411c50efee93d8db7aeb323885650f6f722/requirements.txt", "https://github.com/facebookresearch/sam-3d-objects/blob/f91db411c50efee93d8db7aeb323885650f6f722/requirements.inference.txt"]
+      },
+      "official_inference": {
+        "example": "https://github.com/facebookresearch/sam-3d-objects/blob/f91db411c50efee93d8db7aeb323885650f6f722/demo.py",
+        "adapter": "https://github.com/facebookresearch/sam-3d-objects/blob/f91db411c50efee93d8db7aeb323885650f6f722/notebook/inference.py",
+        "construction": "Inference(checkpoints/hf/pipeline.yaml, compile=False)",
+        "call": "inference(image, mask, seed=42)",
+        "input_contract": "Full source RGB plus the selected object's mask; official adapter embeds mask in alpha. Four Desk1 objects imply four fixed-mask calls, preserving relative layout outputs.",
+        "official_demo_export": "output['gs'].save_ply(...)",
+        "mesh_caution": "Demo PLY is Gaussian output, not a closed collision mesh. Explicitly preserve decoded mesh/layout outputs and validate them before editable/physics claims. The public adapter leaves mesh, texture and layout postprocessing disabled by default.",
+        "pointmap_policy": "Optional pointmap must be omitted in the RGB-only arm; supplying Pi3X/GT depth would define a separate information regime."
+      },
+      "existing_4090_assessment": "Official 32 GB minimum exceeds a standard 24 GB RTX 4090; official prerequisites plus gated weights are not present/verified in the inspected runtime. Offload or reduced-memory forks are separate modified methods requiring their own frozen implementation and evidence. Do not assume multiple 24 GB GPUs pool memory automatically.",
+      "external_paid_api_required_for_local_inference": false,
+      "priority": "Most directly relevant object/layout baseline, pending weights entitlement and suitable VRAM/runtime. Not immediately runnable."
+    },
+    {
+      "id": "simfoundry",
+      "official_repository": "https://github.com/NVlabs/SimFoundry",
+      "official_project": "https://research.nvidia.com/labs/gear/simfoundry/",
+      "code_commit": "9e34ebefcd020583fbb755a8b57268dce78eca26",
+      "commit_date": "2026-08-27T02:13:06Z",
+      "code_metadata_source": "https://api.github.com/repos/NVlabs/SimFoundry/commits/main",
+      "publication_status": "Public rigid/articulated scene reconstruction code and modular wrappers exist. Published policy-training/data-generation results are broader than the released training code; README still identifies that pipeline as unreleased.",
+      "license": "NVIDIA-owned source Apache-2.0; dependency weights, simulation assets and external services have separate terms.",
+      "default_pipeline": {
+        "input": "Public wrapper accepts video/stereo/ZED; reconstruction stages choose a canonical frame. A one-image Desk1 replay needs an explicit adapter/calibration contract rather than silently substituting a new video.",
+        "services": "Main VLM stages use Gemini through Vertex AI or a Gemini API key; no authorized paid calls have been made here.",
+        "gated_dependencies": ["facebook/sam3", "facebook/dinov3-vitl16-pretrain-lvd1689m (backend dependent)", "briaai/RMBG-2.0"],
+        "disk_full_install_gb_approx": 250,
+        "environments": ["simfoundry", "hunyuan", "any6d", "da3", "optional background/articulation environments"],
+        "gpu_notes": "Official installation guide says 16 GiB minimum; standard 24 GiB use requires s7_mesh.low_vram=true, reducing the mesh stage from about 29 GiB to about 6 GiB through CPU offload. These are upstream estimates, not local measurements.",
+        "sources": ["https://github.com/NVlabs/SimFoundry/blob/9e34ebefcd020583fbb755a8b57268dce78eca26/docs/INSTALL.md", "https://github.com/NVlabs/SimFoundry/blob/9e34ebefcd020583fbb755a8b57268dce78eca26/scripts/pipeline/README.md", "https://github.com/NVlabs/SimFoundry/blob/9e34ebefcd020583fbb755a8b57268dce78eca26/README.md"]
+      },
+      "mesh_backend_freeze": {
+        "default": "Hunyuan3D-2.1",
+        "upstream_code_commit_used_by_installer": "82920d643c0dc2f7bfd7255f45f62d386edfe60c",
+        "additional_patch": "patches/Hunyuan3D-2.1.patch at the frozen SimFoundry commit; do not identify this as unmodified upstream Hunyuan",
+        "weight_repository": "tencent/Hunyuan3D-2.1",
+        "weight_revision_discovered": "0b94677654c57bb9a6b6845cd7b704ccf551d327",
+        "weight_metadata_source": "https://huggingface.co/api/models/tencent/Hunyuan3D-2.1",
+        "installer_source": "https://github.com/NVlabs/SimFoundry/blob/9e34ebefcd020583fbb755a8b57268dce78eca26/scripts/installation/install_hunyuan.sh",
+        "other_backends": ["TRELLIS.2", "Pixal3D"],
+        "complete_pipeline_checkpoint_and_service_lock": false,
+        "remaining_lock_work": "Resolve every selected backend/depth/segmentation checkpoint revision, dependency patch, and actual Gemini model/version before an execution protocol. A code commit alone does not freeze mutable from_pretrained/API defaults."
+      },
+      "desk1_reproduction_assets": {
+        "public_example_dataset": "nadunRanawaka1/simfoundry-assets",
+        "dataset_revision": "beac75a98d99a881eacff25dd53a3ec9ce8efcfc",
+        "metadata_source": "https://huggingface.co/api/datasets/nadunRanawaka1/simfoundry-assets",
+        "gated": false,
+        "finding": "Inspected public file listing contains DROID/YAM examples, not an identified Desk1 quasi-GT/camera/pose package. Recursive official code tree was not truncated and yielded no Desk1/YCB benchmark paths under the inspected name filters.",
+        "limitation": "Not locating the package here does not prove it is unavailable everywhere. The public Desk1 RGB/display images remain usable as published evidence, not substitutes for benchmark GT or a rerun."
+      },
+      "existing_4090_assessment": "Hardware-feasible under the official low-VRAM setting, but substantial new environments/checkpoints and gated/service access are missing or unverified. Full SimFoundry is not a low-cost drop-in to the current Pi3X environment. A standalone mesh backend is a narrower comparator, not a full SimFoundry rerun.",
+      "priority": "Freeze full pipeline only after service budget/access and exact Desk1 input/calibration/evaluator artifacts are resolved."
+    },
+    {
+      "id": "trellis2",
+      "official_repository": "https://github.com/microsoft/TRELLIS.2",
+      "code_commit": "75fbf0183001ed9876c8dbb35de6b68552ee08bd",
+      "commit_date": "2026-06-05T05:19:14Z",
+      "code_metadata_source": "https://api.github.com/repos/microsoft/TRELLIS.2/commits/main",
+      "weights": {"repository": "microsoft/TRELLIS.2-4B", "revision": "af44b45f2e35a493886929c6d786e563ec68364d", "gated": false, "license": "MIT", "metadata_source": "https://huggingface.co/api/models/microsoft/TRELLIS.2-4B"},
+      "default_pipeline_dependencies": [
+        {"repository": "microsoft/TRELLIS-image-large", "revision": "25e0d31ffbebe4b5a97464dd851910efc3002d96", "gated": false, "role": "sparse structure decoder", "metadata_source": "https://huggingface.co/api/models/microsoft/TRELLIS-image-large"},
+        {"repository": "facebook/dinov3-vitl16-pretrain-lvd1689m", "revision": "ea8dc2863c51be0a264bab82070e3e8836b02d51", "gated": "manual", "role": "image conditioning", "metadata_source": "https://huggingface.co/api/models/facebook/dinov3-vitl16-pretrain-lvd1689m"},
+        {"repository": "briaai/RMBG-2.0", "revision": "5df4c9c76d8170882c34f6986e848ee07fd0ba43", "gated": "auto", "role": "background removal", "metadata_source": "https://huggingface.co/api/models/briaai/RMBG-2.0"}
+      ],
+      "dependency_evidence": "https://huggingface.co/microsoft/TRELLIS.2-4B/blob/af44b45f2e35a493886929c6d786e563ec68364d/pipeline.json",
+      "loader_caution": "Official from_pretrained constructs both image conditioning and background-removal models. Supplying RGBA does not establish that gated dependency loading is avoided. A bypass requires an explicitly modified loader/configuration, not an undocumented baseline substitution.",
+      "loader_source": "https://github.com/microsoft/TRELLIS.2/blob/75fbf0183001ed9876c8dbb35de6b68552ee08bd/trellis2/pipelines/trellis2_image_to_3d.py",
+      "hardware_and_dependencies": "Official minimum 24 GB; tested upstream on A100/H100. CUDA toolkit 12.4 recommended; setup defaults to Torch 2.6.0/cu124 and compiled flash-attn, nvdiffrast/nvdiffrec, CuMesh, O-Voxel and FlexGEMM. The installed Pi3X Torch stack is not this environment.",
+      "official_example": "https://github.com/microsoft/TRELLIS.2/blob/75fbf0183001ed9876c8dbb35de6b68552ee08bd/example.py",
+      "output_contract": "Single isolated image to object mesh/PBR asset; default 1024_cascade. A fixed 512 configuration is a separately declared resource choice. Canonical asset output does not automatically recover Desk1 scene pose or metric dimensions.",
+      "runtime_speed_boundary": "Published approximately 3/17/60-second timings use H100 and different resolutions; do not estimate this host's runtime from those numbers.",
+      "external_paid_api_required_for_local_inference": false,
+      "existing_4090_assessment": "24 GB class GPU reaches only the documented minimum; substantial compiled dependencies and gated auxiliary weights remain. No successful local import/inference or low-cost readiness has been established.",
+      "sources": ["https://github.com/microsoft/TRELLIS.2/blob/75fbf0183001ed9876c8dbb35de6b68552ee08bd/README.md", "https://huggingface.co/microsoft/TRELLIS.2-4B"],
+      "priority": "Secondary asset-quality comparator after dependency access/build budget; not first low-cost route."
+    },
+    {
+      "id": "hunyuan3d_2_0",
+      "official_repository": "https://github.com/Tencent-Hunyuan/Hunyuan3D-2",
+      "code_commit": "f8db63096c8282cb27354314d896feba5ba6ff8a",
+      "commit_date": "2025-10-28T09:58:12Z",
+      "code_metadata_source": "https://api.github.com/repos/Tencent-Hunyuan/Hunyuan3D-2/commits/main",
+      "weights": {"repository": "tencent/Hunyuan3D-2", "revision": "9cd649ba6913f7a852e3286bad86bfa9a2d83dcf", "gated": false, "metadata_source": "https://huggingface.co/api/models/tencent/Hunyuan3D-2", "selected_variant_pending": true},
+      "license": {"root_license": "Tencent Hunyuan 3D 2.0 Community License Agreement", "source": "https://github.com/Tencent-Hunyuan/Hunyuan3D-2/blob/f8db63096c8282cb27354314d896feba5ba6ff8a/LICENSE", "weight_license": "https://huggingface.co/tencent/Hunyuan3D-2/blob/9cd649ba6913f7a852e3286bad86bfa9a2d83dcf/LICENSE", "relevant_boundaries": "Custom geographic, distribution and use restrictions; not MIT/Apache. Root and weight LICENSE files were checked; some code headers retain older inconsistent non-commercial wording. Do not use model outputs to train another model without resolving the applicable terms."},
+      "hardware_and_dependencies": "Upstream Hunyuan3D-2 README lists 6 GB for shape and 16 GB for shape plus texture. These figures concern 2.0, not SimFoundry's default 2.1. Python requirements include Torch, diffusers, transformers, trimesh, pymeshlab and xatlas; texture rendering introduces additional compiled components.",
+      "official_example": "https://github.com/Tencent-Hunyuan/Hunyuan3D-2/blob/f8db63096c8282cb27354314d896feba5ba6ff8a/minimal_demo.py",
+      "shape_api": "Hunyuan3DDiTFlowMatchingPipeline.from_pretrained(...); pipeline(image=RGBA)[0]",
+      "texture_api": "Hunyuan3DPaintPipeline applied to the generated mesh and the same object image",
+      "input_contract": "Use frozen visible masks to supply RGBA object crops; do not synthesize unseen object views or use publicly tuned comparison renders. Per-object shape generation still needs a separately fixed scene placement/scale policy.",
+      "external_paid_api_required_for_local_inference": false,
+      "existing_4090_assessment": "Most plausible small hardware-cost starting point of these new methods, especially shape-only. Still not installed/qualified in the inspected runtime; requires a bounded isolated setup, pinned model variant and remote-only checkpoint acquisition before an actual run.",
+      "sources": ["https://github.com/Tencent-Hunyuan/Hunyuan3D-2/blob/f8db63096c8282cb27354314d896feba5ba6ff8a/README.md", "https://github.com/Tencent-Hunyuan/Hunyuan3D-2/blob/f8db63096c8282cb27354314d896feba5ba6ff8a/requirements.txt"],
+      "priority": "First prospective no-service asset baseline under a new limited setup/run budget; not equivalent to full SimFoundry or an already runnable method."
+    }
+  ],
+  "paper_protocol_boundary": {
+    "paper": "https://arxiv.org/html/2606.28276v4",
+    "sections": ["L.1.1", "L.1.2", "L.1.3", "Table L.3"],
+    "quasi_gt": "Objects were staged incrementally; FoundationPose with known YCB CAD inferred each unobscured pose. The paper says only the final staged scene image was supplied to reconstruction methods.",
+    "sam3d_alignment": "Axis conversion and the SimFoundry world transform were applied. One scene-wide scale about the camera origin was selected using GT point-cloud Chamfer distance.",
+    "metrics": "Chamfer distance, F1 at 0.01 m, and bounding-box position error against quasi-GT; difficulty-group means are not Desk1's individual result.",
+    "consequence": "Paper-scale-aligned geometry and no-GT metric reconstruction are distinct evaluation regimes. Do not silently fit GT scale/poses in authoring or describe GT-aligned scores as recovered physical scale.",
+    "current_missing_evidence": "Matching Desk1 quasi-GT meshes/poses, camera/world transform, metric sampling implementation and case-level reference outputs have not been identified in the inspected released assets. No numeric claim of beating its reported F1/Chamfer is supported."
+  },
+  "recommended_next_protocol": {
+    "arms": [
+      "A0: immutable e048866 Desk1 authoring baseline",
+      "A1: same source/masks/camera allowance plus independently sourced numeric product dimensions; provenance and uncertainty recorded, no GT CAD/pose import",
+      "B: one declared learned object generator with frozen source-visible masks, seed, steps, resolution and complete four-object denominator",
+      "Optional separate later track: full SimFoundry after service/access/input/calibration requirements are resolved"
+    ],
+    "information_fairness": "Catalog dimensions/details make an RGB-plus-prior arm. Either give identical priors/layout fitting budgets to competing arms or report the information advantage explicitly. Do not call current source-projected-texture authoring an equal-input zero-shot foundation-model run.",
+    "primary_first_step": "Freeze source image, four visible object masks/identity list, numerical-prior ledger and evaluator before new candidate outputs. Keep all four objects, failed runs and infrastructure costs. Register setup cost separately from inference and author time.",
+    "image_diagnostics": "Fixed-camera per-object silhouettes, holes/occlusion order and source-view appearance may be compared as development diagnostics. Source-projected textures can score well without correct 3D shape. Virtual views inspect plausibility, not held-out real accuracy.",
+    "geometry_and_physics": "Report closedness, thin-structure survival, part editability, geometric interpenetration and actual task contact separately. Assumed dimensions/material/friction remain priors; generated meshes or pretty previews do not establish physical recovery.",
+    "sota_path": "Obtain matched Desk1 quasi-GT or expand to an independently frozen multi-scene dataset with evaluator-only geometry/poses. Reproduce candidate baselines on identical allowed inputs and retained failures, then report uncertainty. One Desk1 image or a comparison against published showcase pictures cannot establish SOTA.",
+    "execution_authorization": "This file proposes no automatic install, service call or run. New budgets and live external-work checks belong to the parent task's next registered experiment."
+  }
+}

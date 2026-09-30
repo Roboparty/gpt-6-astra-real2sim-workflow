@@ -1,0 +1,28 @@
+{
+  "status": "native_camera_consumption_passed",
+  "fit_sha256": "8de8a59052c7595e1d264c925ccd598b5a3ef4502e9a74def659f1574008ab52",
+  "accepted_report_sha256": "e8d9d6655e5df100c141be1b8eaf826cfb2dbc231e73fddd969ee3905abedcd1",
+  "accepted_calibration_artifact": {
+    "path": "/data/real2sim_capability_wqz_20260929/desk1_web_phase_20260930/native_case_after_review/runs/agent_calibrate/0001/calibration.json",
+    "sha256": "8de8a59052c7595e1d264c925ccd598b5a3ef4502e9a74def659f1574008ab52",
+    "bytes": 13375
+  },
+  "validation_scope": "Actual executable web gate and actual camera-fit acceptance; room/model/material/render/review/export stages of this native case remain unperformed",
+  "sota_established": false,
+  "accepted_as_best_method": false,
+  "revalidation": {
+    "original_fit_web_report_sha256": "7a4fd8e4fc111a0c107dc8c01f9e7ab24b76882bbfdfc1e13b2c07e5b941c6a6",
+    "revalidated_web_report_sha256": "e8d9d6655e5df100c141be1b8eaf826cfb2dbc231e73fddd969ee3905abedcd1",
+    "verified_identical_fields": [
+      "bundle_sha256",
+      "queries",
+      "objects",
+      "model_priors",
+      "model_details",
+      "conflicts",
+      "source metadata and snapshot hashes excluding relocation path"
+    ],
+    "new_camera_fit_performed": false,
+    "original_fit_and_hash_preserved": true
+  }
+}

@@ -1,0 +1,31 @@
+capture_id: desk1-web-20260930-005-arxiv-table
+retrieved_at_utc: 2026-09-30T06:52:59Z
+access_date: 2026-09-30
+requested_source_url: https://arxiv.org/pdf/1502.03143
+pinned_source_url: https://arxiv.org/pdf/1502.03143v1
+version_evidence: Original abstract-page submission history read in desk1-web-20260930-010 lists only v1, dated 2015-02-10.
+publisher: arXiv; original author submission by Berk Calli and colleagues
+title: Benchmarking in Manipulation Research: The YCB Object and Model Set and Benchmarking Protocols
+locator: Table II, PDF page 7 (zero-based page 6); object rows 3, 4, 5, 37
+capture_type: verbatim numeric-cell substrings from the fetched PDF text extraction
+unit: mm, established by the table column heading
+limitations: Numeric cells only, not the full table or PDF. Object mappings below are annotation metadata, not quoted text. Marker values conflict with ICAR and are retained without averaging.
+
+object_mapping: domino_sugar_box; source_row: 3; extracted_text_line: 674
+verbatim_numeric_cell:
+38 x 89 x 175
+
+object_mapping: chocolate_pudding_box; source_row: 4; extracted_text_line: 675
+verbatim_numeric_cell:
+35 x 110 x 89
+
+object_mapping: strawberry_banana_gelatin_box; source_row: 5; extracted_text_line: 676
+verbatim_numeric_cell:
+28 x 85 x 73
+
+object_mapping: expo_large_marker; source_row: 37; extracted_text_lines: 725-726
+verbatim_numeric_cell:
+19 x 119
+
+quote_accounting: 18 whitespace-delimited words in numeric-cell excerpts. The earlier candidate file quoted 2 words from this paper; combined excerpt total 20. Bibliographic metadata is separate.
+integrity_scope: UTF-8 excerpt transcribed from actual fetched text, not a byte-preserving downloaded PDF. Its future hash binds this excerpt file, not the original PDF bytes.

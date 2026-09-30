@@ -10,8 +10,10 @@
   "continuation": {
     "automation_id": "real2sim",
     "kind": "thread heartbeat",
-    "frequency": "hourly",
-    "status": "active"
+    "frequency": null,
+    "status": "deleted_by_user_request",
+    "stopped_on": "2026-09-30",
+    "stop_reason": "User explicitly requested: stop automatic task"
   },
   "pull_request": {
     "status": "merged_into_research_branch",
@@ -22,7 +24,7 @@
   "remote_root": "4090-1:/home/wqz/real2sim_capability_20260929",
   "protocol": "PROTOCOL_20260929.md",
   "result": "RESULTS_20260929.md",
-  "latest_update": "DESK1_EDITABLE_DELIVERY_20260930.md",
+  "latest_update": "DESK1_WEB_COMPARISON_20260930.md",
   "completed": [
     "Matched retained-room collision failure reproduction and repair",
     "Rectangular opening handling and false-pass negative tests",
@@ -66,12 +68,16 @@
     "Reconciled existing Pi3X installation/startup receipts and spent GPU time without reinstalling or changing old preparation budget; frozen RGB-only TUM Pi3X predicts 18/18 cameras across 3/3 sources with Sim3 ATE 0.018361/0.009635/0.024986m; classical reference remains 1/3, comparison is not matched-compute or SOTA",
     "Read-only Pi3X depth audit against retained TUM sensors:17/18 frames,4247148 valid GT pixels; raw AbsRel7.79/14.32(partial)/39.77 percent versus trajectory-scaled6.81/1.70(partial)/3.41 percent. Full18-frame score remains null; independent interpolation/metric recomputation agrees.",
     "Waterfront six-view input reused to author new173-part editable Blender model; two candidates preserved, three actual matching view comparisons0/3/5 delivered, saved-model reopen passed. User subsequently selects SimFoundry Desk1/Easy as next concrete comparison case.",
-    "User-selected SimFoundry Desk1/Easy delivered: single real image -> 4 editable closed objects/6 foreground mesh parts -> source-view render plus explicitly virtual inspection. Published SAM3D/SimFoundry images fetched only after model freeze. Geometry/camera assumptions and source-projected texture limits retained; no GT model/pose used."
+    "User-selected SimFoundry Desk1/Easy delivered: single real image -> 4 editable closed objects/6 foreground mesh parts -> source-view render plus explicitly virtual inspection. Published SAM3D/SimFoundry images fetched only after model freeze. Geometry/camera assumptions and source-projected texture limits retained; no GT model/pose used.",
+    "Source-backed web dimensions/details executable gate integrated into native quality_v2; 35 tests and actual Desk1 evidence/camera acceptance passed",
+    "Three actual Desk1 cuboid variants saved/rendered and reopened; web prior consistency improved but same-image heldout error worsened",
+    "Pinned Hunyuan3D-2 actual four-object shape inference completed once each; independent raw mesh readback4/4watertight; full-scene/metric/SOTA unverified"
   ],
   "next": [
-    "Prioritize user review/feedback on the delivered Desk1 editable model and source-view comparison. No new authoring/model/camera candidate without a versioned scope/budget amendment; both current case revisions are used.",
-    "If quantitative validation is later requested, obtain matching Desk1 quasi-GT or use a separately scoped calibrated dataset; never assign paper group means to this case or use GT models/poses as reconstruction.",
-    "Retain Waterfront173-part/3-real-view delivery and unvalidated reference bridge patch. Do not resume unrelated depth/benchmark/native-interface work ahead of concrete user feedback."
+    "Obtain independent matching Desk1 dimension/camera/pose or real second-view evidence before claiming metric superiority or SOTA.",
+    "Use source-supported SKU uncertainty to weight web priors; retain source-only method and observed alignment regressions.",
+    "Complete third-party scene replays only under explicit access/service/resource protocol; published renderings and Hunyuan shape assets are not full scene reruns.",
+    "Keep previous BOP work and automatic task stopped; preserve all earlier results and budgets."
   ],
   "retained_attempts": [
     "collision_001",
@@ -172,10 +178,15 @@
     "simfoundry_desk1/authoring_001 (first closed-mesh authoring; support materials too bright, preserved)",
     "simfoundry_desk1/authoring_002 (only support material revision; foreground geometry/camera byte-equivalent on reopen; final4objects6parts)",
     "simfoundry_desk1/authoring_freeze.json (model frozen before published comparison fetch)",
-    "simfoundry_desk1/comparison_only (published images, not reproduced runs)"
+    "simfoundry_desk1/comparison_only (published images, not reproduced runs)",
+    "desk1_web_phase_20260930/native_case and native_case_after_review (actual source evidence/camera gates, separate code snapshots)",
+    "desk1_web_phase_20260930/B,C,D fitting (all4starts each; training-based selection; heldout regressions retained)",
+    "desk1_web_phase_20260930/native_phase_receipt.json (all3 pre-model/render import failures plus3 entrypoint repairs retained)",
+    "desk1_web_phase_20260930/hunyuan2/setup_revision_001 and setup_revision_002 (same original setup deadline and preserved wheels)",
+    "desk1_web_phase_20260930/hunyuan2/objects (all4once-onlyrawshapeoutputs; no retry/best seed/GTalignment)"
   ],
   "resource_accounting": {
-    "new_gpu_hours": 0.010596260615824981,
+    "new_gpu_hours": 0.032303073016098804,
     "new_paid_api_requests": 0,
     "local_agent_cost": null,
     "heartbeat_0724_selected_run_wall_seconds": 102.68742876197211,
@@ -187,7 +198,7 @@
     "camera_initialization_full_sources": "1/3",
     "camera_runtime_addon": "pycolmap4.2.0 isolated target; existing Python/NumPy preserved",
     "pose_pilot_candidate_rounds_used": 4,
-    "appearance_unique_proposals_used": 10,
+    "appearance_unique_proposals_used": 13,
     "combined_unique_proposals_used": 2,
     "physical_ep2_simulation_attempts_used": 1,
     "parallel_selected_run_wall_seconds": 143.0860238011228,
@@ -283,7 +294,17 @@
     "desk1_authoring_candidate_limit": 2,
     "desk1_authoring_scope_amendment": "DESK1_AUTHORING_SCOPE_20260930.json",
     "desk1_cpu_wall_seconds": 153.9484215839766,
-    "desk1_scope": "Explicit new user-selected case, versioned two-candidate authoring-only extension; cumulative appearance10 preserves prior8. Original model/camera8/8 unchanged. No new learned inference/GPU/API. One assumed rendering camera, no pose search or GT. Read-only verification/orchestration time not instrumented."
+    "desk1_scope": "Explicit new user-selected case, versioned two-candidate authoring-only extension; cumulative appearance10 preserves prior8. Original model/camera8/8 unchanged. No new learned inference/GPU/API. One assumed rendering camera, no pose search or GT. Read-only verification/orchestration time not instrumented.",
+    "gpu_hours_before_desk1_web_phase": 0.010596260615824981,
+    "desk1_web_native_candidates_used": 3,
+    "desk1_web_render_cells": 6,
+    "desk1_hunyuan_object_attempts_used": 4,
+    "desk1_web_native_wall_seconds": 216.73112055996899,
+    "desk1_hunyuan_gpu_wall_seconds": 78.14452464098576,
+    "desk1_hunyuan_download_conservative_bytes": 6342946060,
+    "desk1_web_accounting_scope": "New phase added without resetting oldcamera8/8, oldappearance10 or GPU costs; selected process walls are not total CPU/agent cost",
+    "desk1_web_joint_camera_fit_cells": 3,
+    "desk1_web_solver_starts_total": 12
   },
   "constraints": [
     "Do not overwrite historical candidates, source photographs or failed evidence",
@@ -604,6 +625,103 @@
     "virtual_inspection_views": 1,
     "editable_objects": 4,
     "foreground_mesh_parts": 6,
-    "published_comparisons": "SAM3D and SimFoundry zero-shot images fetched only after authoring freeze; not rerun or geometry-ground-truth scoring"
+    "published_comparisons": "SAM3D and SimFoundry zero-shot images fetched only after authoring freeze; not rerun or geometry-ground-truth scoring",
+    "latest_comparison_report": "DESK1_WEB_COMPARISON_20260930.md",
+    "sota_established": false
+  },
+  "pending_user_request": {
+    "task": "User-selected Desk1 comparison and source-backed dimensions/details chain toward evidenced SOTA",
+    "status": "development_comparison_completed_sota_unestablished",
+    "phase_protocol": "DESK1_WEB_PHASE_20260930.json",
+    "report": "DESK1_WEB_COMPARISON_20260930.md",
+    "mode": "manual user turn",
+    "remaining_evidence": "Independent Desk1 metric geometry/camera/real heldout view and complete third-party scene reruns are unavailable in this phase"
+  },
+  "automation_stop": {
+    "automation_id": "real2sim",
+    "deleted": true,
+    "active_related_remote_processes_observed": false,
+    "artifacts_and_uncommitted_work_preserved": true
+  },
+  "desk1_web_phase_20260930": {
+    "schema": "real2sim.desk1-phase-summary/1",
+    "date": "2026-09-30",
+    "status": "development_comparison_completed_sota_unestablished",
+    "source_sha256": "f125bdbe59e6e978d22e5143131291a1ef5206239928007a01d26aabb1bb9578",
+    "phase_sha256": "20ac8c1919af37a4dfeffe5a1e2378648d615545040256dd6898e8e658fce1bf",
+    "report": "DESK1_WEB_COMPARISON_20260930.md",
+    "sota_established": false,
+    "independent_source_images": 1,
+    "expected_objects": 4,
+    "native_new_scene_candidates": 3,
+    "native_new_renders": 6,
+    "native_joint_camera_fit_cells": 3,
+    "native_solver_starts_total": 12,
+    "hunyuan_shape_outputs": 4,
+    "hunyuan_expected_outputs": 4,
+    "native_comparison_wall_seconds": 216.73112055996899,
+    "hunyuan_gpu_process_wall_seconds": 78.14452464098576,
+    "new_paid_api_requests": 0,
+    "new_remote_download_conservative_bytes": 6342946060,
+    "tests": [
+      {
+        "suite": "test_web_research.py",
+        "passed": 23
+      },
+      {
+        "suite": "test_web_research_native.py",
+        "passed": 11
+      },
+      {
+        "suite": "test_desk1_source_only.py",
+        "passed": 1
+      }
+    ],
+    "native_gate_scope": "Actual Desk1 web evidence and camera-fit consumption; remaining full native scene workflow stages unperformed",
+    "hunyuan_scope": "Raw shape assets only; no metric scale, pose, camera, texture or complete-scene performance",
+    "model_snapshot_scope": "Existing fits/models retain original hashes and native_code snapshot. Review fixes validated separately in native_code_after_review; no model retry or historical source reassignment.",
+    "evidence_hashes": {
+      "evidence\\desk1_web_phase_20260930\\baseline_audit.json": "b4f532e71d422854e9bc799141d9e0c92871448739bb4de8f42afa544c2872c4",
+      "evidence\\desk1_web_phase_20260930\\camera_consumption_receipt.json": "b65da4224844b10c3ff35925e9e08870b38f86ea15023dc2eb1b7f581037bfa2",
+      "evidence\\desk1_web_phase_20260930\\comparison_diagnostics.json": "bea145f688899eb038c42fad563408d3592182cf1248a075a4a0b3adef958672",
+      "evidence\\desk1_web_phase_20260930\\comparison_diagnostics_blend_verified.json": "5969687da4bd7a53b66e78b16766a583cd5a976a1c3e322cb675fc0240f2107e",
+      "evidence\\desk1_web_phase_20260930\\completion_audit.json": "fa6df6c318baabc6fb31449739e8d0e32d7fa581775107e283965f5bcb8fabcc",
+      "evidence\\desk1_web_phase_20260930\\independent_mesh_audit.json": "274ce9dac6335045cc8446a437cd38fb9bccf3087048df9d8d3d1ab58eeabaee",
+      "evidence\\desk1_web_phase_20260930\\inference_receipt.json": "ffc83e489ac4dd1be4e038942f54ed16265469f6cd2505c0124091ee04f137fc",
+      "evidence\\desk1_web_phase_20260930\\native_phase_receipt.json": "00d1dbf53596f7a24860cc2383da91570bd3752aaf15e6d792645ce141bf1e62",
+      "evidence\\desk1_web_phase_20260930\\partial_gate_receipt.json": "3a0ee0c66ffe392ad1652615b645f47eee76c797bed7f0dded424cf0ff75e0f0",
+      "evidence\\desk1_web_phase_20260930\\receipt.json": "fba9af8652e0eca615a4b205d1834193c85fcd76e4f5c3d2880d6ecc7213db7e",
+      "evidence\\desk1_web_phase_20260930\\web_research_report.json": "7a4fd8e4fc111a0c107dc8c01f9e7ab24b76882bbfdfc1e13b2c07e5b941c6a6",
+      "evidence\\desk1_web_phase_20260930\\after_review\\camera_consumption_receipt.json": "1cfb282fa03f2007675003c0166775a5e83ccc3841f5804df356f39e503fcbf9",
+      "evidence\\desk1_web_phase_20260930\\after_review\\partial_gate_receipt.json": "af4b7ef4da60766f77075e4b483e0efdd383f96f5e37b97df372f206054f68d3",
+      "evidence\\desk1_web_phase_20260930\\after_review\\web_research_report.json": "e8d9d6655e5df100c141be1b8eaf826cfb2dbc231e73fddd969ee3905abedcd1"
+    },
+    "current_validation_code_hashes": {
+      "workflow\\r2s\\core.py": "6a8640815e1e7793bb6b325796938f44c472b7dca4695926be49be5a67ba04ac",
+      "workflow\\r2s\\profiles.py": "73298fd77b9570a04fdb2e1c9a543a5d104e559700527498c6276f32bef3beb0",
+      "workflow\\r2s\\web_research.py": "c61c27075fc1d43edd1d9213f5c2e418f03678de0de6385baa52783253257b09",
+      "workflow\\r2s\\web_integration.py": "be24c97f4cfb8517aa68faac8ef0992ee61a62ed8b9c4702abe36451d6d00336",
+      "tools\\test_web_research.py": "cb2debcb41ec6424a3efa1d99e6f60c295b67fed03f9c7e4f927175e926bead9",
+      "tools\\test_web_research_native.py": "cda1c5190019a2aa9aa5c7038abf1adc9431cf9437d77a03797100bdeb630021",
+      "tools\\test_desk1_source_only.py": "0d16834dfa389d40fd87dcc7e97f7723f8fad999469f5a9da49f3791c997c2a5"
+    },
+    "automation": "deleted_by_user_request; not restarted",
+    "owned_inference_processes": "finished; GPU4 released; completion audit retained",
+    "retained_validation_setup_errors": [
+      "SCP connection reset before revised camera acceptance helper transfer",
+      "Old helper rejected original-web-report CLI flag; corrected after successful transfer"
+    ],
+    "full_scene_third_party_reruns": {
+      "SAM3D": "not_run",
+      "SimFoundry": "not_run",
+      "Hunyuan3D2": "shape_assets_only"
+    }
+  },
+  "previous_pending_user_request": {
+    "task": "BOP-YCBV standard-source reconstruction smoke/test and conditional main release",
+    "phase_protocol": "BOP_YCBV_PHASE1_20260930.json",
+    "main_publication_authorized_after_scene_validation": true,
+    "desk1_preview": "C:/Users/73505/.codex/visualizations/2026/09/29/01a0ebab-9ef1-7543-8913-2a7a4b71c76f/desk1-3d.html",
+    "status": "automatic_work_stopped_by_user"
   }
 }

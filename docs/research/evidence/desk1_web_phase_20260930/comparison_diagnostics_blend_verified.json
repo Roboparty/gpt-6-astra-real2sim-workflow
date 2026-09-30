@@ -1,0 +1,256 @@
+{
+  "schema": "real2sim.desk1-cuboid-evaluation/1",
+  "status": "diagnostics_recomputed",
+  "source_sha256": "f125bdbe59e6e978d22e5143131291a1ef5206239928007a01d26aabb1bb9578",
+  "annotation_sha256": "1ec5236e93c48791c1102c961c183577227c3e9ae794107f1d6bc5671b495d28",
+  "evaluator_sha256": "91d6c30d401d29db0a01df6b05aa83b0aad22b94e0c4803b3fa2bc995a850d7e",
+  "records": [
+    {
+      "arm": "A_retained_ray_fit",
+      "bindings": {
+        "model_sha256": "b170ee70448a941e32a7777da1a9bc5af13bb4e727c32326c13a6af175a748ca",
+        "audit_sha256": "b4f532e71d422854e9bc799141d9e0c92871448739bb4de8f42afa544c2872c4"
+      },
+      "source_render_sha256": "074f713d7ca6d51a43da355cecafa8d5d362f6d80349bc9ff052ec162934b9a7",
+      "foreground_rgb_mae_0_255": 12.473546850307415,
+      "box_orthogonality_max_deviation_deg": 21.307677032094205,
+      "box_orthogonality_mean_deviation_deg": 6.267220957931999,
+      "closed_foreground_mesh_parts": 6,
+      "foreground_mesh_parts": 6,
+      "per_box": [
+        {
+          "object_id": "domino_sugar_box",
+          "source_corner_mean_distance_px": 0.0001585063167249025,
+          "projected_prebevel_footprint_iou": 0.9887797157319042,
+          "rgb_mae_0_255_in_source_roi": 9.252115672523836,
+          "orthogonality_angle_deviation_deg": [
+            4.30915060590533,
+            1.3119145635020857,
+            4.933001999030083
+          ],
+          "closed_prebevel_mesh": true
+        },
+        {
+          "object_id": "chocolate_jello_box",
+          "source_corner_mean_distance_px": 0.00012826799259907018,
+          "projected_prebevel_footprint_iou": 1.0,
+          "rgb_mae_0_255_in_source_roi": 19.794142812273233,
+          "orthogonality_angle_deviation_deg": [
+            4.622504783392969,
+            4.308959397936206,
+            5.58484609685712
+          ],
+          "closed_prebevel_mesh": true
+        },
+        {
+          "object_id": "red_jello_box",
+          "source_corner_mean_distance_px": 0.000134646876571929,
+          "projected_prebevel_footprint_iou": 1.0,
+          "rgb_mae_0_255_in_source_roi": 7.757028999221921,
+          "orthogonality_angle_deviation_deg": [
+            21.307677032094205,
+            4.029189071998388,
+            5.9977450706715985
+          ],
+          "closed_prebevel_mesh": true
+        }
+      ],
+      "training_corner_mean_distance_px": 0.00014408814393639726,
+      "same_image_heldout_corner_mean_distance_px": null,
+      "baseline_point_scope": "All these manual corners already used to build A; A has no legitimate heldout endpoint",
+      "prior_relative_absolute_deviation_mean": null
+    },
+    {
+      "arm": "B_image_cuboids",
+      "bindings": {
+        "model_sha256": "b4ad7a79792afa29ad46d9aa57401168f963421bb1196d180b22c74b65da06dc",
+        "fit_sha256": "becd75552fef037a1201258de83009c448700a2566c59499893e625226f41977",
+        "receipt_sha256": "3d0bb427cec9ea16d45f29b5c99165f645f38374ddd631e65b093f9bed75ec4e",
+        "blend_audit_sha256": "430d83f0f22782138df12143c0ecb39f041e955b4383973ef21c0cab2866a081",
+        "solver_blender_max_vertex_distance_px": 0.00017717901474376433
+      },
+      "source_render_sha256": "d76e1cf0d55e5fc001b6eea4de9a46a9604230636e7017b0272269c6ca8be763",
+      "foreground_rgb_mae_0_255": 14.589669054457787,
+      "box_orthogonality_max_deviation_deg": 1.2322467952685656e-05,
+      "box_orthogonality_mean_deviation_deg": 2.6565181880439722e-06,
+      "closed_foreground_mesh_parts": 6,
+      "foreground_mesh_parts": 6,
+      "per_box": [
+        {
+          "object_id": "domino_sugar_box",
+          "source_corner_mean_distance_px": 0.8703961859538817,
+          "projected_prebevel_footprint_iou": 0.9900457611926216,
+          "rgb_mae_0_255_in_source_roi": 11.980600425498384,
+          "orthogonality_angle_deviation_deg": [
+            1.1233201433924478e-05,
+            0.0,
+            0.0
+          ],
+          "closed_prebevel_mesh": true
+        },
+        {
+          "object_id": "chocolate_jello_box",
+          "source_corner_mean_distance_px": 1.413340724586748,
+          "projected_prebevel_footprint_iou": 0.9850016092693917,
+          "rgb_mae_0_255_in_source_roi": 20.32458220965873,
+          "orthogonality_angle_deviation_deg": [
+            3.529943057856144e-07,
+            0.0,
+            0.0
+          ],
+          "closed_prebevel_mesh": true
+        },
+        {
+          "object_id": "red_jello_box",
+          "source_corner_mean_distance_px": 1.3202303740060248,
+          "projected_prebevel_footprint_iou": 0.9826332288401254,
+          "rgb_mae_0_255_in_source_roi": 8.616638277290603,
+          "orthogonality_angle_deviation_deg": [
+            1.2322467952685656e-05,
+            0.0,
+            0.0
+          ],
+          "closed_prebevel_mesh": true
+        }
+      ],
+      "training_corner_mean_distance_px": 0.9447253528404054,
+      "same_image_heldout_corner_mean_distance_px": 2.740904880233094,
+      "baseline_point_scope": "18 fitting corners; 3 same-image heldout corners",
+      "prior_relative_absolute_deviation_mean": 0.0707999393212916
+    },
+    {
+      "arm": "C_web_soft_cuboids",
+      "bindings": {
+        "model_sha256": "78b12135ca7ca51d3fc94f70a1636c5779238d29b5302dfb8a03fa989feefa37",
+        "fit_sha256": "8de8a59052c7595e1d264c925ccd598b5a3ef4502e9a74def659f1574008ab52",
+        "receipt_sha256": "bb084441a372f1ae236501f8b6be00b06eddc8a7388012402391ec5e32d7a028",
+        "blend_audit_sha256": "2dbd0f2b8271ea4902c8c3067effb0fe201eeab481ed13eaf85c2969487a0692",
+        "solver_blender_max_vertex_distance_px": 9.136715185786982e-05
+      },
+      "source_render_sha256": "3a012b0cb3595a414614686d339a6a092f424f02391b1e2ab3bcac8bf0e66d0a",
+      "foreground_rgb_mae_0_255": 14.52749420355054,
+      "box_orthogonality_max_deviation_deg": 4.201046715479606e-05,
+      "box_orthogonality_mean_deviation_deg": 5.635690870222889e-06,
+      "closed_foreground_mesh_parts": 6,
+      "foreground_mesh_parts": 6,
+      "per_box": [
+        {
+          "object_id": "domino_sugar_box",
+          "source_corner_mean_distance_px": 2.366405018124303,
+          "projected_prebevel_footprint_iou": 0.984932131678699,
+          "rgb_mae_0_255_in_source_roi": 11.96919601817561,
+          "orthogonality_angle_deviation_deg": [
+            4.201046715479606e-05,
+            0.0,
+            0.0
+          ],
+          "closed_prebevel_mesh": true
+        },
+        {
+          "object_id": "chocolate_jello_box",
+          "source_corner_mean_distance_px": 1.8628451920421933,
+          "projected_prebevel_footprint_iou": 0.983462598551375,
+          "rgb_mae_0_255_in_source_roi": 20.163184629214456,
+          "orthogonality_angle_deviation_deg": [
+            2.3503467190266747e-06,
+            0.0,
+            0.0
+          ],
+          "closed_prebevel_mesh": true
+        },
+        {
+          "object_id": "red_jello_box",
+          "source_corner_mean_distance_px": 2.0704313242742525,
+          "projected_prebevel_footprint_iou": 0.9627172778084884,
+          "rgb_mae_0_255_in_source_roi": 8.716001093516708,
+          "orthogonality_angle_deviation_deg": [
+            6.3604039581832694e-06,
+            0.0,
+            0.0
+          ],
+          "closed_prebevel_mesh": true
+        }
+      ],
+      "training_corner_mean_distance_px": 1.4832596665638418,
+      "same_image_heldout_corner_mean_distance_px": 5.799698914312031,
+      "baseline_point_scope": "18 fitting corners; 3 same-image heldout corners",
+      "prior_relative_absolute_deviation_mean": 0.02536005553627183
+    },
+    {
+      "arm": "D_web_fixed_cuboids",
+      "bindings": {
+        "model_sha256": "c6c4cbbf2d052854050ebdaf3e756bfb85ddf91dbfe9f350ba6ad6607d9038ef",
+        "fit_sha256": "dea02bf3ae1b0220a58f4457a9342d8d2e469677c62d18c43c77ec3524b8780a",
+        "receipt_sha256": "cff5ce7d0b9f2f3cda8d2b0fafa2139eed747ea6856f8deb4a9f130ce04a14d3",
+        "blend_audit_sha256": "18fb1f3940876b4797478c3727fd6fb2e7444daaadb5681286431936c0b0448b",
+        "solver_blender_max_vertex_distance_px": 0.00022190414349432545
+      },
+      "source_render_sha256": "d63ecc19635d0c4faad5481bca88bc9a3753199970801d8a081614b569c9896c",
+      "foreground_rgb_mae_0_255": 14.892102409708043,
+      "box_orthogonality_max_deviation_deg": 1.796276697518806e-05,
+      "box_orthogonality_mean_deviation_deg": 2.630468822909885e-06,
+      "closed_foreground_mesh_parts": 6,
+      "foreground_mesh_parts": 6,
+      "per_box": [
+        {
+          "object_id": "domino_sugar_box",
+          "source_corner_mean_distance_px": 3.547900310886146,
+          "projected_prebevel_footprint_iou": 0.9694779116465864,
+          "rgb_mae_0_255_in_source_roi": 12.551850392666719,
+          "orthogonality_angle_deviation_deg": [
+            4.873896884305395e-06,
+            0.0,
+            0.0
+          ],
+          "closed_prebevel_mesh": true
+        },
+        {
+          "object_id": "chocolate_jello_box",
+          "source_corner_mean_distance_px": 3.0453386507971913,
+          "projected_prebevel_footprint_iou": 0.9630515515830553,
+          "rgb_mae_0_255_in_source_roi": 20.14155592379591,
+          "orthogonality_angle_deviation_deg": [
+            8.37555546695512e-07,
+            0.0,
+            0.0
+          ],
+          "closed_prebevel_mesh": true
+        },
+        {
+          "object_id": "red_jello_box",
+          "source_corner_mean_distance_px": 2.7080389668086853,
+          "projected_prebevel_footprint_iou": 0.9496039000609384,
+          "rgb_mae_0_255_in_source_roi": 9.00323849178811,
+          "orthogonality_angle_deviation_deg": [
+            1.796276697518806e-05,
+            0.0,
+            0.0
+          ],
+          "closed_prebevel_mesh": true
+        }
+      ],
+      "training_corner_mean_distance_px": 2.285227332217624,
+      "same_image_heldout_corner_mean_distance_px": 7.99161783984231,
+      "baseline_point_scope": "18 fitting corners; 3 same-image heldout corners",
+      "prior_relative_absolute_deviation_mean": 0.0
+    }
+  ],
+  "independent_source_images": 1,
+  "geometry_readback": "Actual saved Blender files, read-only; solver projection checked <=0.01px",
+  "fitted_boxes": 3,
+  "full_object_denominator": 4,
+  "marker_numeric_web_prior": "excluded due to conflicting source dimensions",
+  "heldout_points": 3,
+  "sota_established": false,
+  "independent_3d_accuracy": null,
+  "real_novel_view_accuracy": null,
+  "limits": [
+    "Same-image heldout corners are manually estimated and not independent 3D truth.",
+    "The old ray-fit baseline used all source corners and cannot receive a heldout score.",
+    "Nominal dimension deviation is an objective diagnostic, not instance accuracy.",
+    "Visible source-photo texture contains captured illumination; MAE can reward source projection.",
+    "Footprint masks and angle checks use prebevel mesh geometry, not actual render silhouette.",
+    "Closed/editable/orthogonal geometry is not physics, collision or reconstruction qualification.",
+    "One scene and three correlated heldout corners do not establish statistical superiority."
+  ]
+}

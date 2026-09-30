@@ -1,0 +1,198 @@
+{
+  "status": "completed",
+  "protocol_sha256": "b8dd3f1f0a1d325bc6ad4bb89b943771e5e76db17809bc0ae33b60717f943171",
+  "script_sha256": "78c8af21164bb56b0d3cd6d70d464d9ad3a1e5d9458601307c4b8d26f4c46387",
+  "expected_objects": 4,
+  "objects": [
+    {
+      "id": "domino_sugar_box",
+      "status": "generated",
+      "attempts": 1,
+      "gpu_preflight": {
+        "selected": [
+          "4",
+          "GPU-5d966f02-7752-f9ad-d25e-bf5668fc07d7",
+          "5411",
+          "0"
+        ],
+        "compute_processes": [
+          "GPU-fa295861-0e06-9501-0117-314198790aba, 3764741, 10214",
+          "GPU-0aef4098-60ce-0fe9-ecef-d0e9986677f3, 3764742, 10124",
+          "GPU-4c25e43c-9b1c-dfad-9e64-df1538711653, 1035736, 4226",
+          "GPU-5d966f02-7752-f9ad-d25e-bf5668fc07d7, 1093287, 5404"
+        ]
+      },
+      "rgba_sha256": "2fd4b9de71aac57bc677c598b20713fbac9aecde36e5f52575dd3a654cdc8cb3",
+      "forward_wall_seconds": 10.707947638002224,
+      "vertices": 122898,
+      "faces": 245792,
+      "watertight": true,
+      "volume": 1.0930916608853711,
+      "bounds": [
+        [
+          -0.5822089910507202,
+          -0.998130202293396,
+          -0.25749677419662476
+        ],
+        [
+          0.5709700584411621,
+          0.9900829792022705,
+          0.2575755715370178
+        ]
+      ],
+      "peak_reserved_bytes": 6027214848,
+      "output_sha256": {
+        "shape.ply": "d30b89a5dae00fd0ded6695ca4e95c0048f0124fce7f1a3b99bc1d69edb990cb",
+        "shape.glb": "2aaf9a847b127af70ec9af019ff8f212267319cb76b586f06f2237127986e146"
+      }
+    },
+    {
+      "id": "chocolate_jello_box",
+      "status": "generated",
+      "attempts": 1,
+      "gpu_preflight": {
+        "selected": [
+          "4",
+          "GPU-5d966f02-7752-f9ad-d25e-bf5668fc07d7",
+          "5491",
+          "6"
+        ],
+        "compute_processes": [
+          "GPU-fa295861-0e06-9501-0117-314198790aba, 3764741, 10214",
+          "GPU-0aef4098-60ce-0fe9-ecef-d0e9986677f3, 3764742, 10124",
+          "GPU-4c25e43c-9b1c-dfad-9e64-df1538711653, 1035736, 4226",
+          "GPU-5d966f02-7752-f9ad-d25e-bf5668fc07d7, 1093287, 5484"
+        ]
+      },
+      "rgba_sha256": "cd6583afe0b129fb9718def53ebef9d9ab8d4a6e84b862a0367d468ff45af676",
+      "forward_wall_seconds": 10.452419740962796,
+      "vertices": 161450,
+      "faces": 322896,
+      "watertight": true,
+      "volume": 1.7011616917418388,
+      "bounds": [
+        [
+          -0.9981058835983276,
+          -0.2988891303539276,
+          -0.7477908730506897
+        ],
+        [
+          0.9902764558792114,
+          0.29201799631118774,
+          0.7381753325462341
+        ]
+      ],
+      "peak_reserved_bytes": 6027214848,
+      "output_sha256": {
+        "shape.ply": "65bfa05fe36b6d16aa6d9ef8dc0d06bbb7ec872b74a68dc7b9045bac414c4d9c",
+        "shape.glb": "a8fc7c8f9af39fd9b62eb988f5ef45d70ebf829083ac2a29d3583af8ecb6be36"
+      }
+    },
+    {
+      "id": "red_jello_box",
+      "status": "generated",
+      "attempts": 1,
+      "gpu_preflight": {
+        "selected": [
+          "4",
+          "GPU-5d966f02-7752-f9ad-d25e-bf5668fc07d7",
+          "5491",
+          "0"
+        ],
+        "compute_processes": [
+          "GPU-fa295861-0e06-9501-0117-314198790aba, 3764741, 10214",
+          "GPU-0aef4098-60ce-0fe9-ecef-d0e9986677f3, 3764742, 10124",
+          "GPU-4c25e43c-9b1c-dfad-9e64-df1538711653, 1035736, 4226",
+          "GPU-5d966f02-7752-f9ad-d25e-bf5668fc07d7, 1093287, 5484"
+        ]
+      },
+      "rgba_sha256": "b693f743721948701696e6bfbcfd08c822e1a8589eab2dcbad7aa97ae5206974",
+      "forward_wall_seconds": 10.466437961091287,
+      "vertices": 168136,
+      "faces": 336268,
+      "watertight": true,
+      "volume": 1.6399751015556854,
+      "bounds": [
+        [
+          -0.9983795881271362,
+          -0.8880317807197571,
+          -0.25567108392715454
+        ],
+        [
+          0.9905421137809753,
+          0.8830322027206421,
+          0.2487795650959015
+        ]
+      ],
+      "peak_reserved_bytes": 6027214848,
+      "output_sha256": {
+        "shape.ply": "e1ade579cbc9ef8e9b8d5de4381c48548568990822c945e15438dc1ea3bf8cb5",
+        "shape.glb": "d814af72f7e96205aa38bf557492c2eeea7894fd230ad3d158b284f39e41afbd"
+      }
+    },
+    {
+      "id": "expo_marker",
+      "status": "generated",
+      "attempts": 1,
+      "gpu_preflight": {
+        "selected": [
+          "4",
+          "GPU-5d966f02-7752-f9ad-d25e-bf5668fc07d7",
+          "5491",
+          "0"
+        ],
+        "compute_processes": [
+          "GPU-fa295861-0e06-9501-0117-314198790aba, 3764741, 10214",
+          "GPU-0aef4098-60ce-0fe9-ecef-d0e9986677f3, 3764742, 10124",
+          "GPU-4c25e43c-9b1c-dfad-9e64-df1538711653, 1035736, 4226",
+          "GPU-5d966f02-7752-f9ad-d25e-bf5668fc07d7, 1093287, 5484"
+        ]
+      },
+      "rgba_sha256": "46ed0d7caf9df3ac4e5acc9229d186c5c09b428a59b0f77444afd9cde6ab78e8",
+      "forward_wall_seconds": 10.432876958977431,
+      "vertices": 26612,
+      "faces": 53220,
+      "watertight": true,
+      "volume": 0.058347140194744934,
+      "bounds": [
+        [
+          -0.9974115490913391,
+          -0.1019645482301712,
+          -0.10760199278593063
+        ],
+        [
+          0.9895352721214294,
+          0.09462369233369827,
+          0.09951324015855789
+        ]
+      ],
+      "peak_reserved_bytes": 6027214848,
+      "output_sha256": {
+        "shape.ply": "a4ac0faafd0459c4725b26fcdfed37a6c78f0026defb3c1b6172824799dd33c1",
+        "shape.glb": "74569313681b765520e0dfacf88a8fd5932906eb2af6cb3c6063892973fda100"
+      }
+    }
+  ],
+  "gpu_preflight": {
+    "selected": [
+      "4",
+      "GPU-5d966f02-7752-f9ad-d25e-bf5668fc07d7",
+      "1",
+      "0"
+    ],
+    "compute_processes": [
+      "GPU-fa295861-0e06-9501-0117-314198790aba, 3764741, 10214",
+      "GPU-0aef4098-60ce-0fe9-ecef-d0e9986677f3, 3764742, 10124",
+      "GPU-4c25e43c-9b1c-dfad-9e64-df1538711653, 1035736, 4226"
+    ]
+  },
+  "runtime": {
+    "torch": "2.5.1+cu124",
+    "numpy": "1.26.4",
+    "cuda": "12.4"
+  },
+  "checkpoint_loaded": true,
+  "gpu_process_wall_seconds": 76.83732977102045,
+  "source_unchanged": true,
+  "scope": "Four shape-only object attempts, no GT/layout/metric-scale/texture recovery claim, no postprocessing or best-of selection."
+}

@@ -1,0 +1,11 @@
+{
+  "schema": "real2sim.additional-source-fetch/1",
+  "date": "2026-09-30",
+  "calls": 1,
+  "search_queries": 0,
+  "operations": [
+    {"url":"https://www.kraftheinz.com/jell-o/products/00043000206515-chocolate-pudding-pie-filling-mix","status":"failed","error":"400 Timeout fetching","content_archived":false},
+    {"url":"https://www.expomarkers.com/markers/dry-erase-markers/expo-low-odor-dry-erase-markers-chisel-tip-/SAP_1920940A.html","status":"text_returned","excerpt":"snapshots/expo_chisel_feature_excerpt.txt","locator":"Features, line 87","snapshot_recorded_at":"2026-09-30T07:12:11Z"}
+  ],
+  "scope": "Additional root fetch after the preserved agent ledger. No search-query count reset; failed Kraft fetch does not erase earlier agent retrieval."
+}

@@ -1,0 +1,38 @@
+{
+  "owned_process_states": [
+    {
+      "pid": 957801,
+      "state": "absent"
+    },
+    {
+      "pid": 959414,
+      "state": "absent"
+    },
+    {
+      "pid": 1033490,
+      "state": "absent"
+    },
+    {
+      "pid": 1079074,
+      "state": "absent"
+    }
+  ],
+  "active_owned_runner_pids": [],
+  "exportable_evidence_secret_scan": {
+    "receipt.json": false,
+    "setup_receipt.json": false,
+    "inference_receipt.json": false,
+    "output_audit.json": false,
+    "preview/receipt.json": false,
+    "worker.log": false,
+    "worker_resume.log": false,
+    "worker_weights.log": false,
+    "inference.log": false,
+    "pip_resolution_resume.json": false,
+    "pip_resolution_resume.log": false,
+    "pip_install.log": false,
+    "shape_import.log": false,
+    "config_transport_recovery.json": false
+  },
+  "remote_transport_url_not_scanned_or_exported": true
+}

@@ -10,6 +10,14 @@ A builds furniture geometry independently from image/spec priors. B may replace 
 
 Return response.json. Do not mark complete merely because Blender saved a file.
 
+When validate_web_research is upstream, use only its model_priors/model_details.
+Record response.parameters.web_research_consumption with report_sha256 and
+used_priors:[{object_id,parameter,application}]; identify actual scene/part parameters
+affected. When none are used, record used_priors:[] and unconsumed_reason. Retain
+identity uncertainty, unquantified source tolerances, hypothetical hidden details
+and the prior/instance-measurement distinction. Source archive integrity alone
+does not prove that an authored dimension or hidden face is correct.
+
 ## Mandatory assembly evidence
 
 Read the accepted furniture_observation.json from the observation stage; carry its exact bytes/hash into the model artifacts. It must assign visible parts to furniture, distinguish observed/partial/hidden landmarks and record alternative interpretations. Do not separately ray-fit surfaces, back rails and feet and join them only by screen proximity. Fit a coherent local furniture frame with shared dimensions, parallel/symmetric members where supported, and a connected load path. Hidden joinery may use labelled priors.

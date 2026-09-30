@@ -13,3 +13,11 @@ leaves as separate entities. Missing declarations mean a solid shell and must no
 be advertised as recovered openings. The exporter uses canonical wall planes,
 not decorative visual bounds. Record inferred backside geometry separately in
 scene.physical_priors.completions, with observed:false and its evidence/assumption.
+# Web evidence decisions
+
+When validate_web_research is upstream, read its web_research_report.json and use
+only model_priors/model_details. Record response.parameters.web_research_consumption
+with the accepted report_sha256 and used_priors:[{object_id,parameter,application}].
+If no prior applies to the room, provide used_priors:[] and unconsumed_reason.
+External specifications remain uncertain priors; do not turn them into measured
+room dimensions or select unresolved conflicting product values.

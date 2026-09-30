@@ -1,0 +1,187 @@
+{
+  "schema": "real2sim.actual-web-research-ledger/1",
+  "case": "Desk1",
+  "access_date": "2026-09-30",
+  "scope": "All 10 performed web-tool calls in this agent's Desk1 specification search, including 23 exact submitted search queries and retained unsuccessful operations. No new search was run while writing this ledger.",
+  "capture_id_policy": "Local capture IDs identify these recorded operations. Source URLs and page/line locators identify evidence; capture IDs are not publisher-issued identifiers.",
+  "query_results_policy": "Queries batched in one web call returned one combined result set; per-query hit attribution and per-query wall time were not exposed and remain unknown. Incidental retailer/nonprimary results were not promoted to accepted dimension evidence.",
+  "pre_registered_search_budget": null,
+  "budget_note": "No finite search-call/query cap was registered before these calls. The completed observed count is bounded at 10 calls / 23 queries; this is accounting, not a retrospectively claimed preregistration.",
+  "calls": [
+    {
+      "capture_id": "desk1-web-20260930-001",
+      "called_at_utc": "2026-09-30T06:52:08Z",
+      "search_queries": [
+        {"q": "site.ycbbenchmarks.com sugar box pudding box gelatin box large marker dimensions"},
+        {"q": "site.dominofulfillment.com sugar 1 lb box dimensions"},
+        {"q": "site.expo.com low odor dry erase chisel black marker dimensions"}
+      ],
+      "response_length": "long",
+      "status": "combined_search_results_returned",
+      "observed_relevant_results": ["EXPO manufacturer low-odor chisel page", "DFI powdered-sugar case page", "Domino package-equivalents page"],
+      "outcome": "No accepted individual dimensions yet; DFI result later rejected as wrong product and shipping-case scope."
+    },
+    {
+      "capture_id": "desk1-web-20260930-002",
+      "called_at_utc": "2026-09-30T06:52:25Z",
+      "search_queries": [
+        {"q": "YCB object model set dimensions sugar box pudding box gelatin box marker Calli 2015 table"},
+        {"q": "site.ycbbenchmarks.com \"Dimensions\""},
+        {"q": "site.eng.yale.edu \"Pudding\" \"Sugar\""},
+        {"q": "site.kraftheinz.com jell-o chocolate cook serve pudding 3.4 oz strawberry gelatin 3 oz"}
+      ],
+      "response_length": "long",
+      "status": "combined_search_results_returned",
+      "outcome": "Found Kraft Heinz chocolate 3.4 oz page and indexed YCB table copies. Nonprimary table copies served only as discovery leads; primary author papers were fetched later."
+    },
+    {
+      "capture_id": "desk1-web-20260930-003",
+      "called_at_utc": "2026-09-30T06:52:36Z",
+      "search_queries": [
+        {"q": "site.dominosugar.com \"1 lb\" \"Granulated\""},
+        {"q": "site.kraftheinz.com \"Strawberry\" \"Gelatin\" \"3 oz\""},
+        {"q": "\"The YCB Object and Model Set\" \"Table I\" pdf Calli"}
+      ],
+      "open_attempts": [
+        {"url": "https://www.ycbbenchmarks.com/", "status": "failed", "observed_error": "Internal Error; no page content"},
+        {"url": "https://arxiv.org/abs/1502.03143", "status": "text_returned"},
+        {"url": "https://rll.eecs.berkeley.edu/ycb/", "status": "failed", "observed_error": "Internal Error; no page content"},
+        {"url": "https://www.kraftheinz.com/jell-o/products/00043000206515-chocolate-pudding-pie-filling-mix", "status": "text_returned"}
+      ],
+      "response_length": "long",
+      "outcome": "Primary CMU paper URL discovered. Plain strawberry product is not exact match to the original Strawberry Banana label."
+    },
+    {
+      "capture_id": "desk1-web-20260930-004",
+      "called_at_utc": "2026-09-30T06:52:50Z",
+      "search_queries": [
+        {"q": "site.dfifoodservice.com \"Granulated\" \"1 lb\" \"Carton\""},
+        {"q": "site.dominosugar.com \"Premium Pure Cane\" \"Granulated Sugar\""},
+        {"q": "site.kraftheinzawayfromhome.com \"20651\" dimensions"},
+        {"q": "site.expomarkers.com \"80001\""}
+      ],
+      "open_attempts": [
+        {"url": "https://www.ri.cmu.edu/pub_files/2015/7/ICAR-FINAL.pdf", "status": "failed", "observed_error": "Internal Error on first explicit PDF open"},
+        {"url": "https://arxiv.org/pdf/1502.03143", "status": "pdf_text_returned", "pages": 35}
+      ],
+      "response_length": "long",
+      "outcome": "ArXiv paper readable; CMU first-open failure retained. Product search did not establish a manufacturer single-object dimension."
+    },
+    {
+      "capture_id": "desk1-web-20260930-005",
+      "called_at_utc": "2026-09-30T06:52:59Z",
+      "find_attempts": [
+        {"url": "https://arxiv.org/pdf/1502.03143", "pattern": "Sugar Box", "status": "matched"},
+        {"url": "https://arxiv.org/pdf/1502.03143", "pattern": "Large Marker", "status": "no_matching_text"},
+        {"url": "https://arxiv.org/pdf/1502.03143", "pattern": "Dims.", "status": "matched"},
+        {"url": "https://arxiv.org/pdf/1502.03143", "pattern": "Erasable", "status": "matched"}
+      ],
+      "open_attempts": [
+        {"url": "https://www.ri.cmu.edu/pub_files/2015/7/ICAR-FINAL.pdf", "status": "pdf_text_returned", "pages": 8, "is_retry_of": "desk1-web-20260930-004"}
+      ],
+      "response_length": "long",
+      "outcome": "ArXiv Table II dimensions extracted. CMU retry succeeded; both failed and successful attempts retained.",
+      "excerpt_snapshot": "snapshots/ycb_arxiv2015v1_table_numeric_excerpt.txt"
+    },
+    {
+      "capture_id": "desk1-web-20260930-006",
+      "called_at_utc": "2026-09-30T06:53:33Z",
+      "find_attempts": [
+        {"url": "https://www.ri.cmu.edu/pub_files/2015/7/ICAR-FINAL.pdf", "pattern": "Sugar Box", "status": "matched"},
+        {"url": "https://www.ri.cmu.edu/pub_files/2015/7/ICAR-FINAL.pdf", "pattern": "Large Marker", "status": "matched"}
+      ],
+      "screenshot_attempts": [
+        {"url": "https://www.ri.cmu.edu/pub_files/2015/7/ICAR-FINAL.pdf", "zero_based_page": 2, "status": "retrieval_metadata_returned_pixels_not_forwarded_for_inspection", "note": "This is PDF page 3, not the dimensions table page 4. Not used as table verification."},
+        {"url": "https://arxiv.org/pdf/1502.03143", "zero_based_page": 6, "status": "retrieval_metadata_returned_pixels_not_forwarded_for_inspection"}
+      ],
+      "response_length": "short",
+      "outcome": "CMU numeric evidence comes from returned text/table locators, not an asserted screenshot visual check.",
+      "excerpt_snapshot": "snapshots/ycb_icar2015_table_numeric_excerpt.txt"
+    },
+    {
+      "capture_id": "desk1-web-20260930-007",
+      "called_at_utc": "2026-09-30T06:53:59Z",
+      "search_queries": [
+        {"q": "site.kraftheinz.com \"strawberry banana\" \"3 oz\""},
+        {"q": "site.kraftheinz.com \"00043000206911\""},
+        {"q": "site.dfifoodservice.com \"Granulated\" \"Carton\""}
+      ],
+      "open_attempts": [
+        {"url": "https://www.dominosugar.com/products/granulated-sugar", "status": "text_returned"}
+      ],
+      "response_length": "long",
+      "outcome": "Retailer candidates appeared but were not accepted as primary dimension evidence. Original-image crop confirmed Strawberry Banana; UPC remained uncertain."
+    },
+    {
+      "capture_id": "desk1-web-20260930-008",
+      "called_at_utc": "2026-09-30T06:54:34Z",
+      "search_queries": [
+        {"q": "\"Strawberry Banana\" \"site:myfoodandfamily.com\""},
+        {"q": "\"Strawberry Banana\" \"site:kraftheinz.com\""},
+        {"q": "\"Chocolate Pudding\" \"206911\" \"site:kraftheinz.com\""},
+        {"q": "\"Strawberry Banana\" \"site:smartlabel.kraftheinz.com\""}
+      ],
+      "find_attempts": [
+        {"url": "https://www.kraftheinz.com/jell-o/products/00043000206515-chocolate-pudding-pie-filling-mix", "pattern": "5 oz", "status": "no_matching_text", "note": "Earlier search result text listed a 5 oz option; this find did not confirm it."},
+        {"url": "https://www.dominosugar.com/products/granulated-sugar", "pattern": "1 lb", "status": "no_matching_text"},
+        {"url": "https://www.dominosugar.com/products/granulated-sugar", "pattern": "Size", "status": "no_matching_text"}
+      ],
+      "response_length": "long",
+      "outcome": "Poorly quoted site operators returned irrelevant results; preserve literal submitted strings, not corrected hypothetical queries. No accepted specification resulted."
+    },
+    {
+      "capture_id": "desk1-web-20260930-009",
+      "called_at_utc": "2026-09-30T06:54:44Z",
+      "search_queries": [
+        {"q": "Jell-O Strawberry Banana gelatin mix", "domains": ["kraftheinz.com", "myfoodandfamily.com", "smartlabel.kraftheinz.com"]},
+        {"q": "Chocolate cook serve 5 oz 20691", "domains": ["kraftheinz.com", "myfoodandfamily.com"]}
+      ],
+      "open_attempts": [
+        {"url": "https://www.kraftheinz.com/jell-o/products/00043000206911-chocolate-pudding-pie-filling-mix", "status": "failed", "observed_error": "URL not accessible via this tool", "url_origin": "Guessed manufacturer URL based on candidate UPC; not an observed successful source"}
+      ],
+      "response_length": "long",
+      "outcome": "Found Canadian regular Strawberry Banana and US zero-sugar pages; both mismatches retained. No exact historic US SKU or physical carton specification established."
+    },
+    {
+      "capture_id": "desk1-web-20260930-010",
+      "called_at_utc": "2026-09-30T06:54:58Z",
+      "find_attempts": [
+        {"url": "https://arxiv.org/abs/1502.03143", "pattern": "Submission history", "status": "matched", "outcome": "Only v1 listed, submitted 2015-02-10"}
+      ],
+      "open_attempts": [
+        {"url": "https://prd.dfifoodservice.com/products/dominor-pure-cane-powdered-10x-1-lb-carton", "status": "text_returned", "requested_via": "previous search-result reference"},
+        {"url": "https://www.expomarkers.com/markers/dry-erase-markers/expo-low-odor-dry-erase-markers-chisel-tip-/SAP_1920940A.html?actionPoint=Show&bvstate=pg%3A4%2Fct%3Ar", "status": "text_returned", "requested_via": "previous search-result reference"},
+        {"url": "https://www.kraftheinz.com/en-CA/jell-o/products/00066188013102-strawberry-banana-jelly-powder-gelatin-mix", "status": "text_returned", "requested_via": "previous search-result reference"}
+      ],
+      "response_length": "short",
+      "outcome": "Confirmed shipping-case rejection, manufacturer marker-family scope, Canadian packaging mismatch and arXiv version."
+    }
+  ],
+  "image_inspection_attempts": [
+    {"called_at_utc": "2026-09-30T06:52:08Z", "operation": "view original source.jpg", "status": "displayed", "image_sha256": "e72341e16451cbf4c2b6445657b0ad9afb4c592f0b5a910429038ca1f1f10788"},
+    {"called_at_utc": "2026-09-30T06:53:33Z", "operation": "in-memory PNG crop enlargement", "canvas_wh": [800, 520], "crops_xyxy": [[520,468,788,649],[852,352,1004,495]], "resized_wh": [[536,362],[304,286]], "status": "display_failed", "observed_error": "image content omitted because it could not be processed", "cause": "unknown; no invented explanation", "file_written": false},
+    {"called_at_utc": "2026-09-30T06:53:59Z", "operation": "in-memory JPEG crop enlargement, quality 80", "canvas_wh": [600,390], "crops_xyxy": [[530,470,782,648],[853,352,1003,495]], "resized_wh": [[400,283],[240,229]], "status": "displayed", "file_written": false, "outcome": "Flavour read as Strawberry Banana; full pudding UPC still not reliably established"}
+  ],
+  "summary": {
+    "web_calls": 10,
+    "submitted_search_queries": 23,
+    "explicit_open_attempts": 12,
+    "explicit_open_failures": 4,
+    "find_attempts": 10,
+    "find_no_match": 4,
+    "pdf_screenshot_attempts": 2,
+    "pdf_screenshots_visually_inspected": 0,
+    "local_image_display_attempts": 3,
+    "local_image_display_failures": 1,
+    "first_call_utc": "2026-09-30T06:52:08Z",
+    "last_call_utc": "2026-09-30T06:54:58Z",
+    "summed_network_wall_seconds": null,
+    "network_bytes": null,
+    "cost": null,
+    "additional_queries_during_archiving": 0,
+    "new_inference_requests": 0,
+    "paid_api_requests": 0
+  },
+  "archive_limits": "Only two minimal primary-paper numeric excerpts are archived here. Manufacturer documents and other search-result bodies were read but not converted to immutable local content snapshots; do not treat those candidates as locally archived full-source evidence.",
+  "original_annotation_hash_preserved": "The source.jpg hash above is unchanged from specification_candidates.json. Root may additionally bind its upstream original and resizing provenance; this ledger does not relabel a display preview as the upstream original."
+}

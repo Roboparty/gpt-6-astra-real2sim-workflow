@@ -1,0 +1,29 @@
+capture_id: desk1-web-20260930-006-icar-table
+retrieved_at_utc: 2026-09-30T06:53:33Z
+access_date: 2026-09-30
+source_url: https://www.ri.cmu.edu/pub_files/2015/7/ICAR-FINAL.pdf
+publisher: Carnegie Mellon University Robotics Institute; original paper by Berk Calli and colleagues
+title: The YCB Object and Model Set: Towards Common Benchmarks for Manipulation Research
+locator: Table I, PDF page 4 (zero-based page 3); object rows 4, 8, 9, 40
+capture_type: verbatim numeric-cell substrings from the fetched PDF text extraction
+unit: mm, established by the table column heading
+limitations: Numeric cells only, not the full table or PDF. Source did not provide semantic axis names or dimensional tolerances. Object mappings below are annotation metadata, not quoted table text.
+
+object_mapping: domino_sugar_box; source_row: 4; extracted_text_line: 308
+verbatim_numeric_cell:
+38 x 89 x 175
+
+object_mapping: chocolate_pudding_box; source_row: 8; extracted_text_line: 319
+verbatim_numeric_cell:
+35 x 110 x 89
+
+object_mapping: strawberry_banana_gelatin_box; source_row: 9; extracted_text_line: 320
+verbatim_numeric_cell:
+28 x 85 x 73
+
+object_mapping: expo_large_marker; source_row: 40; extracted_text_lines: 358-359
+verbatim_numeric_cell:
+18 x 121
+
+quote_accounting: 18 whitespace-delimited words in numeric-cell excerpts. The earlier candidate file quoted 5 words from this paper; combined excerpt total 23. Bibliographic metadata is separate.
+integrity_scope: UTF-8 excerpt transcribed from actual fetched text, not a byte-preserving downloaded PDF. Its future hash binds this excerpt file, not the original PDF bytes.

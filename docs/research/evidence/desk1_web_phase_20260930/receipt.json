@@ -1,0 +1,449 @@
+{
+  "schema": "real2sim.desk1-hunyuan2/1",
+  "status": "completed",
+  "protocol_sha256": "b8dd3f1f0a1d325bc6ad4bb89b943771e5e76db17809bc0ae33b60717f943171",
+  "parent_protocol_sha256": "20ac8c1919af37a4dfeffe5a1e2378648d615545040256dd6898e8e658fce1bf",
+  "annotation_sha256": "1ec5236e93c48791c1102c961c183577227c3e9ae794107f1d6bc5671b495d28",
+  "runner_sha256": "480a6c3ffef9599953ca00bb621b887bb9c620879babf387999fb95d835d78f7",
+  "expected_objects": 4,
+  "objects": [
+    {
+      "id": "domino_sugar_box",
+      "status": "generated",
+      "attempts": 1,
+      "gpu_preflight": {
+        "selected": [
+          "4",
+          "GPU-5d966f02-7752-f9ad-d25e-bf5668fc07d7",
+          "5411",
+          "0"
+        ],
+        "compute_processes": [
+          "GPU-fa295861-0e06-9501-0117-314198790aba, 3764741, 10214",
+          "GPU-0aef4098-60ce-0fe9-ecef-d0e9986677f3, 3764742, 10124",
+          "GPU-4c25e43c-9b1c-dfad-9e64-df1538711653, 1035736, 4226",
+          "GPU-5d966f02-7752-f9ad-d25e-bf5668fc07d7, 1093287, 5404"
+        ]
+      },
+      "rgba_sha256": "2fd4b9de71aac57bc677c598b20713fbac9aecde36e5f52575dd3a654cdc8cb3",
+      "forward_wall_seconds": 10.707947638002224,
+      "vertices": 122898,
+      "faces": 245792,
+      "watertight": true,
+      "volume": 1.0930916608853711,
+      "bounds": [
+        [
+          -0.5822089910507202,
+          -0.998130202293396,
+          -0.25749677419662476
+        ],
+        [
+          0.5709700584411621,
+          0.9900829792022705,
+          0.2575755715370178
+        ]
+      ],
+      "peak_reserved_bytes": 6027214848,
+      "output_sha256": {
+        "shape.ply": "d30b89a5dae00fd0ded6695ca4e95c0048f0124fce7f1a3b99bc1d69edb990cb",
+        "shape.glb": "2aaf9a847b127af70ec9af019ff8f212267319cb76b586f06f2237127986e146"
+      }
+    },
+    {
+      "id": "chocolate_jello_box",
+      "status": "generated",
+      "attempts": 1,
+      "gpu_preflight": {
+        "selected": [
+          "4",
+          "GPU-5d966f02-7752-f9ad-d25e-bf5668fc07d7",
+          "5491",
+          "6"
+        ],
+        "compute_processes": [
+          "GPU-fa295861-0e06-9501-0117-314198790aba, 3764741, 10214",
+          "GPU-0aef4098-60ce-0fe9-ecef-d0e9986677f3, 3764742, 10124",
+          "GPU-4c25e43c-9b1c-dfad-9e64-df1538711653, 1035736, 4226",
+          "GPU-5d966f02-7752-f9ad-d25e-bf5668fc07d7, 1093287, 5484"
+        ]
+      },
+      "rgba_sha256": "cd6583afe0b129fb9718def53ebef9d9ab8d4a6e84b862a0367d468ff45af676",
+      "forward_wall_seconds": 10.452419740962796,
+      "vertices": 161450,
+      "faces": 322896,
+      "watertight": true,
+      "volume": 1.7011616917418388,
+      "bounds": [
+        [
+          -0.9981058835983276,
+          -0.2988891303539276,
+          -0.7477908730506897
+        ],
+        [
+          0.9902764558792114,
+          0.29201799631118774,
+          0.7381753325462341
+        ]
+      ],
+      "peak_reserved_bytes": 6027214848,
+      "output_sha256": {
+        "shape.ply": "65bfa05fe36b6d16aa6d9ef8dc0d06bbb7ec872b74a68dc7b9045bac414c4d9c",
+        "shape.glb": "a8fc7c8f9af39fd9b62eb988f5ef45d70ebf829083ac2a29d3583af8ecb6be36"
+      }
+    },
+    {
+      "id": "red_jello_box",
+      "status": "generated",
+      "attempts": 1,
+      "gpu_preflight": {
+        "selected": [
+          "4",
+          "GPU-5d966f02-7752-f9ad-d25e-bf5668fc07d7",
+          "5491",
+          "0"
+        ],
+        "compute_processes": [
+          "GPU-fa295861-0e06-9501-0117-314198790aba, 3764741, 10214",
+          "GPU-0aef4098-60ce-0fe9-ecef-d0e9986677f3, 3764742, 10124",
+          "GPU-4c25e43c-9b1c-dfad-9e64-df1538711653, 1035736, 4226",
+          "GPU-5d966f02-7752-f9ad-d25e-bf5668fc07d7, 1093287, 5484"
+        ]
+      },
+      "rgba_sha256": "b693f743721948701696e6bfbcfd08c822e1a8589eab2dcbad7aa97ae5206974",
+      "forward_wall_seconds": 10.466437961091287,
+      "vertices": 168136,
+      "faces": 336268,
+      "watertight": true,
+      "volume": 1.6399751015556854,
+      "bounds": [
+        [
+          -0.9983795881271362,
+          -0.8880317807197571,
+          -0.25567108392715454
+        ],
+        [
+          0.9905421137809753,
+          0.8830322027206421,
+          0.2487795650959015
+        ]
+      ],
+      "peak_reserved_bytes": 6027214848,
+      "output_sha256": {
+        "shape.ply": "e1ade579cbc9ef8e9b8d5de4381c48548568990822c945e15438dc1ea3bf8cb5",
+        "shape.glb": "d814af72f7e96205aa38bf557492c2eeea7894fd230ad3d158b284f39e41afbd"
+      }
+    },
+    {
+      "id": "expo_marker",
+      "status": "generated",
+      "attempts": 1,
+      "gpu_preflight": {
+        "selected": [
+          "4",
+          "GPU-5d966f02-7752-f9ad-d25e-bf5668fc07d7",
+          "5491",
+          "0"
+        ],
+        "compute_processes": [
+          "GPU-fa295861-0e06-9501-0117-314198790aba, 3764741, 10214",
+          "GPU-0aef4098-60ce-0fe9-ecef-d0e9986677f3, 3764742, 10124",
+          "GPU-4c25e43c-9b1c-dfad-9e64-df1538711653, 1035736, 4226",
+          "GPU-5d966f02-7752-f9ad-d25e-bf5668fc07d7, 1093287, 5484"
+        ]
+      },
+      "rgba_sha256": "46ed0d7caf9df3ac4e5acc9229d186c5c09b428a59b0f77444afd9cde6ab78e8",
+      "forward_wall_seconds": 10.432876958977431,
+      "vertices": 26612,
+      "faces": 53220,
+      "watertight": true,
+      "volume": 0.058347140194744934,
+      "bounds": [
+        [
+          -0.9974115490913391,
+          -0.1019645482301712,
+          -0.10760199278593063
+        ],
+        [
+          0.9895352721214294,
+          0.09462369233369827,
+          0.09951324015855789
+        ]
+      ],
+      "peak_reserved_bytes": 6027214848,
+      "output_sha256": {
+        "shape.ply": "a4ac0faafd0459c4725b26fcdfed37a6c78f0026defb3c1b6172824799dd33c1",
+        "shape.glb": "74569313681b765520e0dfacf88a8fd5932906eb2af6cb3c6063892973fda100"
+      }
+    }
+  ],
+  "gpu_process_wall_seconds": 78.14452464098576,
+  "paid_api_requests": 0,
+  "base_environment_metadata_before": "579670499eff403823a34cebe1451dd1dc54ac5056076716b2720fdc2745b205",
+  "input_masks": [
+    {
+      "id": "domino_sugar_box",
+      "polygon_xy": [
+        [
+          98,
+          399
+        ],
+        [
+          363,
+          356
+        ],
+        [
+          410,
+          387
+        ],
+        [
+          465,
+          808
+        ],
+        [
+          220,
+          891
+        ],
+        [
+          184,
+          831
+        ]
+      ],
+      "bbox_xyxy": [
+        98,
+        356,
+        466,
+        892
+      ],
+      "rgba_path": "/data/real2sim_capability_wqz_20260929/desk1_web_phase_20260930/hunyuan2/inputs/domino_sugar_box_rgba.png",
+      "rgba_sha256": "2fd4b9de71aac57bc677c598b20713fbac9aecde36e5f52575dd3a654cdc8cb3",
+      "mask_sha256": "74502400eaae4a8f07b8955f72841f406c2c0b2381e4deacd5774df23f5bd88b",
+      "mask_pixels": 142188,
+      "source_rgb_unchanged": true
+    },
+    {
+      "id": "chocolate_jello_box",
+      "polygon_xy": [
+        [
+          795,
+          822
+        ],
+        [
+          894,
+          708
+        ],
+        [
+          1167,
+          758
+        ],
+        [
+          1162,
+          826
+        ],
+        [
+          1094,
+          970
+        ],
+        [
+          798,
+          898
+        ]
+      ],
+      "bbox_xyxy": [
+        795,
+        708,
+        1168,
+        971
+      ],
+      "rgba_path": "/data/real2sim_capability_wqz_20260929/desk1_web_phase_20260930/hunyuan2/inputs/chocolate_jello_box_rgba.png",
+      "rgba_sha256": "cd6583afe0b129fb9718def53ebef9d9ab8d4a6e84b862a0367d468ff45af676",
+      "mask_sha256": "4c9623cbc0a0cd955e23c88917ae0bf64cc50369f3032456f294d68175a2f605",
+      "mask_pixels": 68482,
+      "source_rgb_unchanged": true
+    },
+    {
+      "id": "red_jello_box",
+      "polygon_xy": [
+        [
+          1282,
+          720
+        ],
+        [
+          1298,
+          561
+        ],
+        [
+          1462,
+          531
+        ],
+        [
+          1498,
+          548
+        ],
+        [
+          1478,
+          705
+        ],
+        [
+          1316,
+          740
+        ]
+      ],
+      "bbox_xyxy": [
+        1282,
+        531,
+        1499,
+        741
+      ],
+      "rgba_path": "/data/real2sim_capability_wqz_20260929/desk1_web_phase_20260930/hunyuan2/inputs/red_jello_box_rgba.png",
+      "rgba_sha256": "b693f743721948701696e6bfbcfd08c822e1a8589eab2dcbad7aa97ae5206974",
+      "mask_sha256": "cd08bab270b6dcaadf1b9dbe7fb6b5b09905234cc0268c8fdaaa0372cb792041",
+      "mask_pixels": 35390,
+      "source_rgb_unchanged": true
+    },
+    {
+      "id": "expo_marker",
+      "polygon_xy": [
+        [
+          1318,
+          822
+        ],
+        [
+          1319,
+          817
+        ],
+        [
+          1320,
+          815
+        ],
+        [
+          1324,
+          809
+        ],
+        [
+          1326,
+          807
+        ],
+        [
+          1330,
+          805
+        ],
+        [
+          1333,
+          804
+        ],
+        [
+          1340,
+          804
+        ],
+        [
+          1657,
+          899
+        ],
+        [
+          1662,
+          902
+        ],
+        [
+          1666,
+          906
+        ],
+        [
+          1669,
+          911
+        ],
+        [
+          1670,
+          916
+        ],
+        [
+          1669,
+          922
+        ],
+        [
+          1666,
+          927
+        ],
+        [
+          1662,
+          931
+        ],
+        [
+          1657,
+          934
+        ],
+        [
+          1646,
+          934
+        ],
+        [
+          1333,
+          840
+        ],
+        [
+          1330,
+          839
+        ],
+        [
+          1326,
+          837
+        ],
+        [
+          1324,
+          835
+        ],
+        [
+          1320,
+          829
+        ],
+        [
+          1319,
+          827
+        ]
+      ],
+      "bbox_xyxy": [
+        1318,
+        804,
+        1671,
+        935
+      ],
+      "rgba_path": "/data/real2sim_capability_wqz_20260929/desk1_web_phase_20260930/hunyuan2/inputs/expo_marker_rgba.png",
+      "rgba_sha256": "46ed0d7caf9df3ac4e5acc9229d186c5c09b428a59b0f77444afd9cde6ab78e8",
+      "mask_sha256": "b9f7aa40d2046f6353f5b4e0cfa83df14ce6c376b3dbceefce3979f776581693",
+      "mask_pixels": 13189,
+      "source_rgb_unchanged": true
+    }
+  ],
+  "setup_revision": {
+    "previous_runner_sha256": "480a6c3ffef9599953ca00bb621b887bb9c620879babf387999fb95d835d78f7",
+    "runner_sha256": "78c8af21164bb56b0d3cd6d70d464d9ad3a1e5d9458601307c4b8d26f4c46387",
+    "reason": "resume-weights; unchanged original setup deadline, cumulative download charges and inference configuration"
+  },
+  "setup_receipt_sha256": "ebf604f83d45ff694f267e8100c8b2e41bd789d6ec60fea7281e3a35b05b3651",
+  "source_unchanged": true,
+  "base_environment_metadata_unchanged": true,
+  "wall_seconds": 1355.0362639777595,
+  "previous_errors": [
+    "RuntimeError(\"Setup blocked; URLError(ConnectionResetError(104, 'Connection reset by peer'))\")"
+  ],
+  "previous_setup_revisions": [
+    {
+      "previous_runner_sha256": "480a6c3ffef9599953ca00bb621b887bb9c620879babf387999fb95d835d78f7",
+      "runner_sha256": "187a5c59a1ff1d40f746c15fd529acebf8d7ca5cbf668c66eb1f0c567c940290",
+      "reason": "Reuse officially verified resolver wheel bytes and exact existing SciPy read-only; unchanged setup deadline/inference configuration"
+    }
+  ],
+  "gpu_preflight": {
+    "selected": [
+      "4",
+      "GPU-5d966f02-7752-f9ad-d25e-bf5668fc07d7",
+      "1",
+      "0"
+    ],
+    "compute_processes": [
+      "GPU-fa295861-0e06-9501-0117-314198790aba, 3764741, 10214",
+      "GPU-0aef4098-60ce-0fe9-ecef-d0e9986677f3, 3764742, 10124",
+      "GPU-4c25e43c-9b1c-dfad-9e64-df1538711653, 1035736, 4226"
+    ]
+  },
+  "inference_receipt_sha256": "ffc83e489ac4dd1be4e038942f54ed16265469f6cd2505c0124091ee04f137fc"
+}

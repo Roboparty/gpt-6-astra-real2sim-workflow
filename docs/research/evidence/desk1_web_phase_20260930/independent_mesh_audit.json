@@ -1,0 +1,139 @@
+{
+  "schema": "real2sim.desk1-shape-independent-audit/1",
+  "objects": [
+    {
+      "object_id": "domino_sugar_box",
+      "status": "loaded",
+      "path": "/data/real2sim_capability_wqz_20260929/desk1_web_phase_20260930/hunyuan2/objects/domino_sugar_box/shape.ply",
+      "sha256": "d30b89a5dae00fd0ded6695ca4e95c0048f0124fce7f1a3b99bc1d69edb990cb",
+      "bytes": 4670293,
+      "vertices": 122898,
+      "faces": 245792,
+      "watertight": true,
+      "winding_consistent": true,
+      "extents_raw_model_units": [
+        1.1531790494918823,
+        1.9882131814956665,
+        0.5150723457336426
+      ],
+      "bounds_raw_model_units": [
+        [
+          -0.5822089910507202,
+          -0.998130202293396,
+          -0.25749677419662476
+        ],
+        [
+          0.5709700584411621,
+          0.9900829792022705,
+          0.2575755715370178
+        ]
+      ],
+      "finite_vertices": true,
+      "unit_status": "canonical model units; metric dimension not recovered",
+      "source_unchanged": true
+    },
+    {
+      "object_id": "chocolate_jello_box",
+      "status": "loaded",
+      "path": "/data/real2sim_capability_wqz_20260929/desk1_web_phase_20260930/hunyuan2/objects/chocolate_jello_box/shape.ply",
+      "sha256": "65bfa05fe36b6d16aa6d9ef8dc0d06bbb7ec872b74a68dc7b9045bac414c4d9c",
+      "bytes": 6135269,
+      "vertices": 161450,
+      "faces": 322896,
+      "watertight": true,
+      "winding_consistent": true,
+      "extents_raw_model_units": [
+        1.988382339477539,
+        0.5909071266651154,
+        1.4859662055969238
+      ],
+      "bounds_raw_model_units": [
+        [
+          -0.9981058835983276,
+          -0.2988891303539276,
+          -0.7477908730506897
+        ],
+        [
+          0.9902764558792114,
+          0.29201799631118774,
+          0.7381753325462341
+        ]
+      ],
+      "finite_vertices": true,
+      "unit_status": "canonical model units; metric dimension not recovered",
+      "source_unchanged": true
+    },
+    {
+      "object_id": "red_jello_box",
+      "status": "loaded",
+      "path": "/data/real2sim_capability_wqz_20260929/desk1_web_phase_20260930/hunyuan2/objects/red_jello_box/shape.ply",
+      "sha256": "e1ade579cbc9ef8e9b8d5de4381c48548568990822c945e15438dc1ea3bf8cb5",
+      "bytes": 6389337,
+      "vertices": 168136,
+      "faces": 336268,
+      "watertight": true,
+      "winding_consistent": true,
+      "extents_raw_model_units": [
+        1.9889217019081116,
+        1.7710639834403992,
+        0.504450649023056
+      ],
+      "bounds_raw_model_units": [
+        [
+          -0.9983795881271362,
+          -0.8880317807197571,
+          -0.25567108392715454
+        ],
+        [
+          0.9905421137809753,
+          0.8830322027206421,
+          0.2487795650959015
+        ]
+      ],
+      "finite_vertices": true,
+      "unit_status": "canonical model units; metric dimension not recovered",
+      "source_unchanged": true
+    },
+    {
+      "object_id": "expo_marker",
+      "status": "loaded",
+      "path": "/data/real2sim_capability_wqz_20260929/desk1_web_phase_20260930/hunyuan2/objects/expo_marker/shape.ply",
+      "sha256": "a4ac0faafd0459c4725b26fcdfed37a6c78f0026defb3c1b6172824799dd33c1",
+      "bytes": 1011423,
+      "vertices": 26612,
+      "faces": 53220,
+      "watertight": true,
+      "winding_consistent": true,
+      "extents_raw_model_units": [
+        1.9869468212127686,
+        0.19658824056386948,
+        0.20711523294448853
+      ],
+      "bounds_raw_model_units": [
+        [
+          -0.9974115490913391,
+          -0.1019645482301712,
+          -0.10760199278593063
+        ],
+        [
+          0.9895352721214294,
+          0.09462369233369827,
+          0.09951324015855789
+        ]
+      ],
+      "finite_vertices": true,
+      "unit_status": "canonical model units; metric dimension not recovered",
+      "source_unchanged": true
+    }
+  ],
+  "expected_objects": 4,
+  "loaded_objects": 4,
+  "watertight_objects": 4,
+  "audit_script_sha256": "63310c8c44be09a78c8ee79feac2a2617264e2bb2606543680488b60d7ed16c0",
+  "independent_geometry_accuracy": null,
+  "sota_established": false,
+  "limits": [
+    "Topology readback only; no GT metric scale, pose, camera, appearance or full-scene evaluation.",
+    "Raw generative shape stays unchanged; watertight does not establish correct anatomy, physical scale or collision quality."
+  ]
+}

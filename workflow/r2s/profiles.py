@@ -7,10 +7,23 @@ def physics_options(config):
     if any(type(v) is not bool for v in result.values()):raise ValueError('Physics switches must be booleans')
     return result
 
+def web_research_options(config):
+    value=config.get('web_research')
+    if value is None:return None
+    if not isinstance(value,dict):raise ValueError('web_research must be an object')
+    enabled=value.get('enabled',True)
+    if type(enabled) is not bool:raise ValueError('web_research.enabled must be boolean')
+    result={'enabled':enabled,'max_queries':value.get('max_queries',8),'max_sources':value.get('max_sources',12)}
+    for key in ['max_queries','max_sources']:
+        if type(result[key]) is not int or not 0<=result[key]<=100:raise ValueError('web_research '+key+' must be an integer in 0..100')
+    return result if enabled else None
+
 def stages_for(config):
     profile=config.get('workflow_profile','legacy_v1')
+    web=web_research_options(config)
     if profile=='legacy_v1':
         if config.get('generation_skills') is not None:raise ValueError('Generation skills require quality_v2')
+        if web is not None:raise ValueError('Web research requires quality_v2')
         return list(LEGACY)
     if profile!='quality_v2':raise ValueError('Unknown workflow_profile')
     stages=[('ingest',[],False),('preprocess',['ingest'],False),
@@ -30,6 +43,11 @@ def stages_for(config):
     stages.append(('validate',['export','agent_calibrate'],False))
     if physical:stages.append(('agent_review_physics',['validate','agent_physics','agent_review'],True))
     stages.append(('report',['validate','agent_review']+(['agent_review_physics'] if physical else []),False))
+    if web is not None:
+        at=next(i for i,s in enumerate(stages) if s[0]=='agent_identify')+1
+        stages.insert(at,('validate_web_research',['agent_identify'],False))
+        consumers={'agent_calibrate','agent_calibrate_room','agent_model','agent_materials'}
+        stages=[(n,d+(['validate_web_research'] if n in consumers else []),a) for n,d,a in stages]
     if config.get('generation_skills') is None:return stages
     from .generation_skills import stages as integrate_skills
     return integrate_skills(config, stages)

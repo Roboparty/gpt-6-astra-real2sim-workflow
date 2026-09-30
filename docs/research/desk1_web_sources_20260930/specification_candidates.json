@@ -1,0 +1,273 @@
+{
+  "schema": "real2sim.external-specification-candidates/1",
+  "access_date": "2026-09-30",
+  "case": "Desk1",
+  "status": "source_backed_candidates_not_instance_measurements",
+  "source_image": {
+    "path": "D:/embodied/research/real2sim-capability-20260929/preview/desk1/source.jpg",
+    "sha256": "e72341e16451cbf4c2b6445657b0ad9afb4c592f0b5a910429038ca1f1f10788",
+    "image_size_wh": [1280, 720],
+    "inspection": "Original image viewed; pudding barcode and gelatin flavour inspected using an in-memory enlarged crop of the same pixels. No generated detail or GT was used."
+  },
+  "policy": {
+    "parameter_provenance": "external_prior_assumed_for_this_instance",
+    "desk1_gt_cad_or_pose_accessed": false,
+    "new_model_calls": 0,
+    "paid_api_requests": 0,
+    "automatic_research_restarted": false,
+    "geometry_axis_policy": "Object-local semantic dimensions only. No camera/world axes or pose inferred from a product specification.",
+    "uncertainty_policy": "Unreported measurement tolerances remain null. No invented percentages or millimetre error bars. Published disagreements are retained separately.",
+    "texture_policy": "Visible source artwork may guide appearance; current manufacturer artwork is not an exact historic back-face reconstruction. Do not use Desk1 GT textures/meshes."
+  },
+  "sources": [
+    {
+      "id": "ycb_icar2015",
+      "url": "https://www.ri.cmu.edu/pub_files/2015/7/ICAR-FINAL.pdf",
+      "title": "The YCB Object and Model Set: Towards Common Benchmarks for Manipulation Research",
+      "publisher": "Berk Calli et al.; author paper hosted by Carnegie Mellon University Robotics Institute",
+      "access_date": "2026-09-30",
+      "primary_source": true,
+      "locator": "Table I, PDF page 4, rows 4, 8, 9 and 40",
+      "excerpt": "Object Set Items and Properties",
+      "scope": "Published nominal dimensions of physical YCB reference items, not Desk1 instance GT CAD or pose."
+    },
+    {
+      "id": "ycb_arxiv2015v1",
+      "url": "https://arxiv.org/pdf/1502.03143v1",
+      "title": "Benchmarking in Manipulation Research: The YCB Object and Model Set and Benchmarking Protocols",
+      "publisher": "Berk Calli et al.; author-submitted arXiv preprint 1502.03143v1, 2015-02-10",
+      "access_date": "2026-09-30",
+      "primary_source": true,
+      "locator": "Table II, PDF page 7; sugar/pudding/gelatin and L Erasable Marker rows",
+      "excerpt": "Dims. (mm)",
+      "scope": "Earlier author table. Box dimensions agree with the ICAR paper; large-marker dimensions differ."
+    },
+    {
+      "id": "domino_granulated",
+      "url": "https://www.dominosugar.com/products/granulated-sugar",
+      "title": "Granulated Sugar | Domino Sugar",
+      "publisher": "Domino Foods Inc., ASR Group",
+      "access_date": "2026-09-30",
+      "primary_source": true,
+      "excerpt": "Granulated Sugar",
+      "scope": "Manufacturer product-family confirmation. No verified physical dimension of the pictured historic one-pound carton found on this page."
+    },
+    {
+      "id": "kraft_chocolate_34",
+      "url": "https://www.kraftheinz.com/jell-o/products/00043000206515-chocolate-pudding-pie-filling-mix",
+      "title": "Chocolate Pudding & Pie Filling Mix",
+      "publisher": "Kraft Heinz / Jell-O, United States",
+      "access_date": "2026-09-30",
+      "primary_source": true,
+      "excerpt": "One 3.4 oz box",
+      "scope": "Current Cook & Serve chocolate product; page lists 3.4 oz and a 5 oz option. Individually sealed inner pouch. No carton dimensions found."
+    },
+    {
+      "id": "kraft_strawberry_banana_ca",
+      "url": "https://www.kraftheinz.com/en-CA/jell-o/products/00066188013102-strawberry-banana-jelly-powder-gelatin-mix",
+      "title": "Strawberry Banana Jelly Powder Mix",
+      "publisher": "Kraft Heinz / Jell-O, Canada",
+      "access_date": "2026-09-30",
+      "primary_source": true,
+      "excerpt": "85 gr",
+      "scope": "Same flavour, current Canadian 85 g product and sealed pouch; region/label differ from the source. No carton dimensions found."
+    },
+    {
+      "id": "kraft_strawberry_banana_zero",
+      "url": "https://www.kraftheinz.com/jell-o/products/00043000201503-zero-sugar-strawberry-banana-flavor-gelatin",
+      "title": "Zero Sugar Strawberry Banana Flavor Gelatin",
+      "publisher": "Kraft Heinz / Jell-O, United States",
+      "access_date": "2026-09-30",
+      "primary_source": true,
+      "excerpt": "Zero Sugar",
+      "scope": "Rejected as exact SKU: 0.6 oz zero-sugar product, with 0.3 oz option, not established as the photographed regular gelatin box."
+    },
+    {
+      "id": "expo_chisel",
+      "url": "https://www.expomarkers.com/markers/dry-erase-markers/expo-low-odor-dry-erase-markers-chisel-tip-/SAP_1920940A.html",
+      "title": "EXPO Low Odor Dry Erase Markers, Chisel Tip",
+      "publisher": "EXPO / Newell Brands",
+      "access_date": "2026-09-30",
+      "primary_source": true,
+      "excerpt": "Versatile chisel tip creates multiple line widths",
+      "scope": "Manufacturer confirms low-odor dry-erase chisel product family; item 1920940A is a 36-count black pack. No individual-marker dimensions found."
+    },
+    {
+      "id": "domino_wrong_powdered_case",
+      "url": "https://prd.dfifoodservice.com/products/dominor-pure-cane-powdered-10x-1-lb-carton",
+      "title": "Domino Pure Cane Powdered 10X - 1 lb. Carton",
+      "publisher": "Domino Foods Inc. Foodservice",
+      "access_date": "2026-09-30",
+      "primary_source": true,
+      "excerpt": "Case dimensions (DxWxH)",
+      "scope": "Explicitly rejected: powdered sugar instead of granulated, and dimension field describes a 24-carton shipping case."
+    }
+  ],
+  "objects": [
+    {
+      "id": "domino_sugar_box",
+      "image_identity": {
+        "visible_text": ["Domino", "SUGAR", "PREMIUM PURE CANE GRANULATED", "NET WT 16 OZ (1 LB) 454g"],
+        "description": "Yellow-and-white rectangular carton, standing with front print upside down. Barcode panel and folded carton edge are visible.",
+        "brand_family_match": "high",
+        "exact_sku": null,
+        "sku_match": "One-pound granulated carton visually supported; UPC and packaging revision not reliably readable. Do not substitute powdered sugar, cubes or a current bag.",
+        "back_face": "Not observed; exact reverse artwork and seam placement unresolved."
+      },
+      "dimension_candidates": [
+        {
+          "source_ids": ["ycb_icar2015", "ycb_arxiv2015v1"],
+          "source_raw_dimensions": [38, 89, 175],
+          "unit": "mm",
+          "dimension_scope": "single physical reference carton, not shipping packaging",
+          "axis_mapping": {"depth_front_to_back": 38, "front_width": 89, "front_height": 175},
+          "axis_mapping_basis": "Paper gives an unlabeled dimension tuple; semantic mapping inferred from the front-panel aspect and thin carton depth in the real source photo. Not a paper-defined XYZ frame.",
+          "exact_or_estimated": "Published nominal reference dimensions; estimated prior for Desk1",
+          "exact_instance_measurement": false,
+          "reported_tolerance_mm": null,
+          "uncertainty": "Paper gives no metrology tolerance. Packaging version and carton wear can differ; reference mass is not used as proof of the source net contents.",
+          "recommended_status": "usable_external_prior_with_identity_caveat"
+        }
+      ],
+      "manufacturer_candidate": {"source_id": "domino_granulated", "physical_dimensions": null, "identity_match": "family_only"},
+      "structural_details": [
+        {"basis": "real_source_image", "detail": "Planar printed paperboard faces, folded end-panel edge and slight edge wear are directly visible; keep print upside down relative to the upright source object."},
+        {"basis": "completion_assumption", "detail": "Complete the unseen face as a planar carton wall. No measured cardboard thickness, flap depth or exact reverse label was found; leave numerical values unspecified."}
+      ]
+    },
+    {
+      "id": "chocolate_pudding_box",
+      "image_identity": {
+        "visible_text": ["Chocolate", "JELL-O", "COOK & SERVE", "Microwave Directions"],
+        "description": "Brown-and-white box resting on its broad back face; front artwork faces upward. The near narrow panel has a directions block and barcode, and another narrow side carries fine print.",
+        "brand_family_match": "high",
+        "exact_sku": null,
+        "sku_match": "Cook & Serve chocolate is directly readable. Barcode appears to include 20691 but full UPC/check digit and net-weight line are not confidently recovered. Do not assert 3.4 oz or 5 oz as exact from current web text.",
+        "back_face": "Broad reverse face is against the desk and unseen; near directions/barcode panel is directly observed."
+      },
+      "dimension_candidates": [
+        {
+          "source_ids": ["ycb_icar2015", "ycb_arxiv2015v1"],
+          "source_raw_dimensions": [35, 110, 89],
+          "unit": "mm",
+          "dimension_scope": "single physical reference carton, not shipping packaging",
+          "axis_mapping": {"depth_front_to_back": 35, "front_width": 110, "front_height": 89},
+          "axis_mapping_basis": "Unlabeled published tuple mapped to the printed front and the thin side from the photograph. In the photographed pose the thickness is approximately the table-normal extent; this is not a GT pose.",
+          "exact_or_estimated": "Published nominal reference dimensions; estimated prior for Desk1",
+          "exact_instance_measurement": false,
+          "reported_tolerance_mm": null,
+          "uncertainty": "Possible consumer pack-size/version mismatch remains. Do not derive a different box scale from current net weight or treat the paper's dimensions as a manufacturer tolerance.",
+          "recommended_status": "usable_external_prior_with_identity_caveat"
+        }
+      ],
+      "manufacturer_candidates": [
+        {"source_id": "kraft_chocolate_34", "gtin_from_official_url": "00043000206515", "pack": "one 3.4 oz retail box", "physical_dimensions": null, "identity_match": "same product family; exact SKU unconfirmed", "status": "retain_not_exact"}
+      ],
+      "structural_details": [
+        {"basis": "real_source_image", "detail": "Separate front art, directions/barcode narrow face, printed side panel and folded corner; use actual observed print placement rather than copying a generic brown box."},
+        {"basis": "manufacturer_family", "source_id": "kraft_chocolate_34", "detail": "Powder is in a sealed inner pouch; this does not establish the unseen outer reverse label or justify modelling exposed pudding."},
+        {"basis": "unknown", "detail": "Exact historical back-panel art, flap geometry, cardboard thickness and full UPC remain unresolved."}
+      ]
+    },
+    {
+      "id": "strawberry_banana_gelatin_box",
+      "image_identity": {
+        "visible_text": ["JELL-O", "Strawberry Banana"],
+        "description": "Red-and-white carton with red gelatin image, standing behind the pudding. Top folded panel and one narrow side are directly visible.",
+        "brand_family_match": "high",
+        "exact_sku": null,
+        "sku_match": "Flavour is Strawberry Banana, not plain Strawberry. Small net-weight print and UPC are not reliable enough for an exact SKU/region claim.",
+        "back_face": "Not observed; do not substitute modern Canadian or zero-sugar back artwork as recovered truth."
+      },
+      "dimension_candidates": [
+        {
+          "source_ids": ["ycb_icar2015", "ycb_arxiv2015v1"],
+          "source_raw_dimensions": [28, 85, 73],
+          "unit": "mm",
+          "dimension_scope": "single physical reference carton, not shipping packaging",
+          "axis_mapping": {"depth_front_to_back": 28, "front_width": 85, "front_height": 73},
+          "axis_mapping_basis": "Semantic ordering inferred from visible front and narrow side. The papers do not attach world-coordinate axes to the tuple.",
+          "exact_or_estimated": "Published nominal reference dimensions; estimated prior for Desk1",
+          "exact_instance_measurement": false,
+          "reported_tolerance_mm": null,
+          "uncertainty": "No reported dimensional tolerance; historical packaging, flavour and region may change the carton. Current manufacturer family matches are not exact instance verification.",
+          "recommended_status": "usable_external_prior_with_identity_caveat"
+        }
+      ],
+      "manufacturer_candidates": [
+        {"source_id": "kraft_strawberry_banana_ca", "gtin_from_official_url": "00066188013102", "pack": "85 g Canadian retail pack", "physical_dimensions": null, "identity_match": "same flavour, region and packaging mismatch", "status": "family_structure_only"},
+        {"source_id": "kraft_strawberry_banana_zero", "gtin_from_official_url": "00043000201503", "pack": "0.6 oz zero-sugar retail pack", "physical_dimensions": null, "identity_match": "wrong/unsupported formula and pack", "status": "reject_exact_match"}
+      ],
+      "structural_details": [
+        {"basis": "real_source_image", "detail": "Thin rectangular paperboard carton, top folded seams, separately printed side, red front artwork; corner creases are observable."},
+        {"basis": "manufacturer_family", "source_id": "kraft_strawberry_banana_ca", "detail": "Same-flavour current family uses a sealed powder pouch inside; no numeric outer-box or flap dimensions are supplied."},
+        {"basis": "unknown", "detail": "Reverse label layout, exact original region/SKU and board thickness remain unknown."}
+      ]
+    },
+    {
+      "id": "expo_large_marker",
+      "image_identity": {
+        "visible_text": ["EXPO", "low odor"],
+        "description": "White-barrel dry-erase marker with black label and black capped end, lying diagonally on the desk; cap clip/protrusion and a white tail are visible.",
+        "brand_family_match": "high",
+        "exact_sku": null,
+        "sku_match": "EXPO low-odor large marker family matches. Capped writing tip is hidden; chisel versus another tip and retail multipack SKU are not confirmed by the source.",
+        "back_face": "Opposite barrel side and writing tip are unobserved."
+      },
+      "dimension_candidates": [
+        {
+          "source_ids": ["ycb_icar2015"],
+          "source_raw_dimensions": [18, 121],
+          "unit": "mm",
+          "dimension_scope": "single physical reference marker, not retail multipack",
+          "axis_mapping": {"nominal_transverse_size": 18, "end_to_end_length": 121},
+          "axis_mapping_basis": "Transverse versus longitudinal interpretation from elongated object geometry. Table does not specify whether 18 mm is barrel diameter or maximum cap/clip envelope, nor cap-on convention.",
+          "exact_or_estimated": "Published nominal reference dimensions; estimated prior for Desk1",
+          "exact_instance_measurement": false,
+          "reported_tolerance_mm": null,
+          "uncertainty": "Earlier author table reports 19 x 119 mm for L Erasable Marker. Do not silently average, cherry-pick or call either an exact current EXPO specification.",
+          "recommended_status": "candidate_reference_prior_keep_conflict"
+        },
+        {
+          "source_ids": ["ycb_arxiv2015v1"],
+          "source_raw_dimensions": [19, 119],
+          "unit": "mm",
+          "dimension_scope": "single L Erasable Marker reference item, not shipping packaging",
+          "axis_mapping": {"nominal_transverse_size": 19, "end_to_end_length": 119},
+          "axis_mapping_basis": "Same semantic interpretation; barrel/cap/clip scope remains unspecified.",
+          "exact_or_estimated": "Conflicting published nominal reference dimensions; estimated prior for Desk1",
+          "exact_instance_measurement": false,
+          "reported_tolerance_mm": null,
+          "uncertainty": "Object-set revision or measurement convention may differ; the papers do not resolve the cause.",
+          "recommended_status": "retained_alternative_not_silently_merged"
+        }
+      ],
+      "manufacturer_candidate": {"source_id": "expo_chisel", "item_number": "1920940A", "pack": "36 black markers", "physical_dimensions": null, "identity_match": "family only; hidden tip and pack SKU unconfirmed"},
+      "structural_details": [
+        {"basis": "real_source_image", "detail": "Model separate black cap, white barrel, printed wrap/label and white rear section; visible cap protrusion should not be replaced by a perfect bare cylinder."},
+        {"basis": "manufacturer_family", "source_id": "expo_chisel", "detail": "Official chisel variant is low-odor dry-erase and offers varying line widths; this supports a product-family hypothesis, not visibility of the capped tip."},
+        {"basis": "unknown", "detail": "Cap length, clip envelope, barrel cross-section, taper, opposite-side print and material optical constants are not numerically specified by the checked sources."}
+      ]
+    }
+  ],
+  "rejected_dimension_candidates": [
+    {
+      "source_id": "domino_wrong_powdered_case",
+      "raw_dimensions": [12.58, 16.13, 7.82],
+      "unit": null,
+      "axis_mapping": ["case_depth", "case_width", "case_height"],
+      "unit_note": "Table header does not explicitly state dimension unit; no conversion attempted.",
+      "pack_sku": "Material 401367, case of 24 one-pound powdered-sugar cartons",
+      "exact_or_estimated": "Reported shipping-case field, wrong product",
+      "uncertainty": "Not an individual granulated-sugar carton measurement",
+      "disposition": "reject_for_object_geometry"
+    }
+  ],
+  "access_limitations": [
+    "YCB benchmark homepage and Berkeley YCB landing page returned access errors through the browser fetch; original author papers were used instead.",
+    "No exact historic US Strawberry Banana manufacturer packaging specification was established; current Canadian and zero-sugar pages are retained with explicit mismatch.",
+    "A guessed manufacturer 5 oz chocolate URL was inaccessible; no unsupported official 5 oz SKU or dimensions were promoted.",
+    "Retailer search snippets were not used as accepted dimension evidence. No shipping or multipack dimension was assigned to an individual object."
+  ],
+  "pipeline_recommendation": "Bind this source image hash and explicit source IDs to each adopted prior. Freeze one dimension candidate per arm before fitting; derive pose only from allowed real images/calibration. Keep a source-only baseline and an external-prior-assisted route distinct. Backside completion and physical material values remain assumed; these sources establish neither reconstruction acceptance nor SOTA."
+}

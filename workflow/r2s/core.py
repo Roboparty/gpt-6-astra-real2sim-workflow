@@ -5,7 +5,7 @@ from datetime import datetime,timezone
 from .contracts import ContractError,digest,scene_check
 from .media import file_hash,ingest,preprocess
 
-from .profiles import LEGACY, stages_for, physics_options
+from .profiles import LEGACY, stages_for, physics_options, web_research_options
 from .quality import check_quality_stage
 from .refinement import REVIEW_STAGES, limits, check_response
 STAGES=LEGACY
@@ -74,6 +74,22 @@ class Workflow:
         if self.config.get('generation_skills'):
             from .generation_skills import bindings as skill_bindings
             source_hash=digest({'code':source_hash,'generation_skills':skill_bindings(self.config,name)})
+        web=web_research_options(self.config)
+        if web and name in {'agent_identify','validate_web_research','agent_calibrate','agent_calibrate_room','agent_model','agent_materials'}:
+            source_hash=digest({'code':source_hash,'web_research_options':web})
+        if web and name=='validate_web_research':
+            from .web_research import evidence_paths
+            bindings={}
+            for artifact in self.state['stages'].get('agent_identify',{}).get('outputs',[]):
+                path=Path(artifact['path'])
+                if path.name=='web_research.json':
+                    bindings[str(path)]=file_hash(path) if path.is_file() else 'missing'
+                    if path.is_file():
+                        try:
+                            for snapshot in evidence_paths(json.loads(path.read_text(encoding='utf-8-sig')),path.parent):
+                                bindings[str(snapshot)]=file_hash(snapshot) if snapshot.is_file() else 'missing'
+                        except (ValueError,KeyError,TypeError):bindings['invalid_web_bundle']=True
+            source_hash=digest({'code':source_hash,'web_research_evidence':bindings})
         return digest({'stage':name,'upstream':up,'config':config,'implementation':source_hash,'branch':self.config.get('branch','A'),'workflow_profile':self.config.get('workflow_profile','legacy_v1'),'physics_options':physics_options(self.config),'refinement_enabled':self.refining,'surface_contract_version':limits(self.config)['surface_contract_version'] if self.refining else 0,'appearance_contract_version':limits(self.config)['appearance_contract_version'] if self.refining else 0,'revision_epoch':self.state.get('revision_epochs',{}).get(name,0)})
     def valid(self,name):
         item=self.state['stages'].get(name)
@@ -103,6 +119,9 @@ class Workflow:
             if candidate:self.record_candidate(name,attempt,response,outputs,*candidate)
             item=self.state['stages'][name];item.update(status=response['status'],response=response,outputs=outputs,finished=now());atomic_json(attempt/'record.json',item);self.save();self.event({'stage':name,'status':item['status']});return False
         if self.stage_map[name][1] and (not response.get('evidence') or not response.get('reasoning_summary')):raise ContractError('Agent output lacks explicit evidence or rationale')
+        if web_research_options(self.config):
+            from .web_integration import check_consumption
+            check_consumption(self,name,response)
         if name=='agent_review' and any(i.get('blocking') for i in response.get('issues',[]) if isinstance(i,dict)):raise ContractError('Blocking visual issues cannot be marked complete')
         check_quality_stage(name,attempt,response,self.config.get('workflow_profile','legacy_v1'))
         if not artifacts:raise ContractError('Stage cannot complete without artifacts')
@@ -147,6 +166,10 @@ class Workflow:
             if name=='preprocess':
                 inp=json.loads(Path(self.state['stages']['ingest']['outputs'][0]['path']).read_text());processed=preprocess(inp,attempt,cfg.get('parameters'));return 'succeeded' if self._finish(name,attempt,{'status':'complete','artifacts':['preprocess.json']+[Path(r['path']).name for r in processed['accepted']],'evidence':['original frame sampling and feature correspondences']}) else 'failed'
             packet=self.packet(name,attempt);packet['revision_request']=self.state.get('revision_requests',{}).get(name)
+            web=web_research_options(self.config)
+            if web:
+                packet['web_research']=web
+                if name=='validate_web_research':packet['parameters']={**packet['parameters'],**web}
             if cfg.get('parameters',{}).get('geometry_feedback_protocol'):
                 sources=[{'path':x['path'],'sha256':file_hash(x['path'])} for x in self.config['inputs']]
                 for artifact in self.state['stages'].get('preprocess',{}).get('outputs',[]):
@@ -176,6 +199,9 @@ class Workflow:
                 if self.config.get('sealed_validation') and not self.config.get('agent_isolation_command'):raise ContractError('Sealed validation requires an explicit filesystem isolation wrapper for external agents')
             else:
                 command=cfg.get('command')
+                if web and name=='validate_web_research':
+                    import sys
+                    command=[sys.executable,'-m','r2s.web_research','{packet}']
                 if self.config.get('generation_skills') and name in {'scene_reference','local_geometry_feedback','local_appearance_feedback'}:
                     import sys
                     command=[sys.executable,'-m','r2s.generation_skills','{packet}']

@@ -1,0 +1,26 @@
+{
+  "schema": "real2sim.desk1-comparison-phase/1",
+  "status": "frozen_before_new_fits_and_models",
+  "case": "Desk1 / Easy, SimFoundry public real image",
+  "source_sha256": "f125bdbe59e6e978d22e5143131291a1ef5206239928007a01d26aabb1bb9578",
+  "source_remote": "/data/real2sim_capability_wqz_20260929/simfoundry_desk1/source/input.jpg",
+  "annotation_file": "DESK1_SCENE_REVISION2_20260930.json",
+  "old_baseline_model_sha256": "b170ee70448a941e32a7777da1a9bc5af13bb4e727c32326c13a6af175a748ca",
+  "old_baseline_remote": "/data/real2sim_capability_wqz_20260929/simfoundry_desk1/authoring_002/scene.blend",
+  "methods": [
+    {"id":"A_retained_ray_fit","run":"retained actual model/render","scope":"closed image-corner solids; assumed camera/height"},
+    {"id":"B_image_cuboids","run":"new","scope":"joint camera and orthogonal cuboids; dimensions inferred from the original baseline rays; no internet dimensions"},
+    {"id":"C_web_soft_cuboids","run":"new","scope":"same camera/cuboid fitter with source-backed nominal dimensions; 10 percent model regularization is an experiment assumption, not a publisher tolerance"},
+    {"id":"D_web_fixed_cuboids","run":"new","scope":"same fitter with fixed nominal dimensions; detect product-prior/image incompatibility"},
+    {"id":"E_hunyuan3d2_shape","run":"bounded runtime attempt","scope":"four independent RGBA crops; official pinned shape model; no metric-scale or texture recovery claim"},
+    {"id":"SAM3D","run":"availability cell","scope":"official gated weights and >=32GB requirement; published display separately"},
+    {"id":"SimFoundry","run":"availability cell","scope":"official dependency/Gemini setup; published display separately"}
+  ],
+  "common_inputs": {"rgb_images":1,"objects":4,"no_gt_cad_pose_depth":true,"no_comparator_renders_for_new_modeling":true,"missing_outputs_stay_in_denominator":true},
+  "fit_protocol": {"image_raster":[1280,720],"training":"all four observed top corners and bottom indices 0/1 per box","holdout_same_image":"sugar bottom3; pudding bottom2; gelatin bottom3; no second real view","camera_principal_point":"image centre, distortion zero assumed","starts":4,"maximum_solver_evaluations_per_start":2000,"robust_loss":"soft_l1 at 4px","minimum_box_dimensions_m":0.005,"maximum_box_dimensions_m":0.3,"marker":"two source endpoints after camera fit; conflicted web dimensions ineligible"},
+  "render_protocol": {"renderer":"Blender 4.5.3 LTS Cycles CPU","threads":2,"samples":24,"source_resolution":[1280,720],"virtual_resolution":[960,640],"virtual_view_is_not_real_holdout":true,"common_source_projective_texture":"visible local faces, captured illumination retained; hidden faces assumed"},
+  "new_phase_limits": {"new_native_candidates":3,"new_native_renders":6,"hunyuan_object_attempts":4,"hunyuan_gpu_process_wall_seconds":3600,"remote_download_gib":25,"paid_api_requests":0,"new_search_query_limit":32,"new_source_limit":12,"local_large_downloads":0},
+  "prior_spend_retained": {"camera_attempts_used":8,"camera_attempts_limit":8,"appearance_attempts_cumulative":10,"conservative_gpu_hours":0.01059626,"paid_api_requests":0},
+  "automation":"stopped; no scheduled research restart",
+  "reporting": ["training and same-image heldout reprojection separated","web-prior deviation is a fitting diagnostic, not independent dimension accuracy","foreground appearance uses captured source texture and is not independent photometric validation","box orthogonality/topology/editability are properties, not true recovered geometry","all resource costs, failed starts and blocked comparators retained","single image/case without GT cannot substantiate SOTA"]
+}
