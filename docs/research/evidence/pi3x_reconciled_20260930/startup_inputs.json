@@ -1,0 +1,54 @@
+{
+  "source": "bedroom_waterfront_g0024",
+  "source_manifest_sha256": "7304109f95fb441e404d0c7d544320b5b6ce11fb1b4b0a34c1d006fe89dd83f3",
+  "frames": [
+    {
+      "ordinal": 0,
+      "original_path": "/home/wqz/real2sim_capability_20260929/runs/video_frames_001/source_001/frame_000000.png",
+      "sha256": "c04bae5a852f9d8927965f68d1fcf753b20e8f2b20cf74ed6259c4a316870fc2",
+      "pts_seconds": "0.000000"
+    },
+    {
+      "ordinal": 1,
+      "original_path": "/home/wqz/real2sim_capability_20260929/runs/video_frames_001/source_001/frame_000001.png",
+      "sha256": "af1bdaba1656e604ee67b04c7828f70001d8426935e6ef57c7af28f16a475eea",
+      "pts_seconds": "1.601600"
+    },
+    {
+      "ordinal": 2,
+      "original_path": "/home/wqz/real2sim_capability_20260929/runs/video_frames_001/source_001/frame_000002.png",
+      "sha256": "972ce97ca6fcaf94ed1ef608ef485e28d4c975ac2eccaa8757943a1ce5ec386b",
+      "pts_seconds": "3.236567"
+    },
+    {
+      "ordinal": 3,
+      "original_path": "/home/wqz/real2sim_capability_20260929/runs/video_frames_001/source_001/frame_000003.png",
+      "sha256": "003b81a24e50757aebe4fdeb756d93d2ecaeb654eb71e904ecaafabfbdd642f7",
+      "pts_seconds": "4.838167"
+    },
+    {
+      "ordinal": 4,
+      "original_path": "/home/wqz/real2sim_capability_20260929/runs/video_frames_001/source_001/frame_000004.png",
+      "sha256": "b963feef455f2ab04e53ee0be21d7b7c99dd67be734020361ddb09136c4fb18b",
+      "pts_seconds": "6.473133"
+    },
+    {
+      "ordinal": 5,
+      "original_path": "/home/wqz/real2sim_capability_20260929/runs/video_frames_001/source_001/frame_000005.png",
+      "sha256": "4e6a7ffe14abb62ad0299ad7b8a9a70f2b62b5fd8b3ccefbee010fad670c2765",
+      "pts_seconds": "8.074733"
+    }
+  ],
+  "preprocessing": {
+    "loader": "pinned pi3.utils.basic.load_multimodal_data",
+    "pixel_limit": 255000,
+    "resize": "Pillow LANCZOS to common dimensions divisible by 14",
+    "source_rgb_size": [
+      960,
+      540
+    ],
+    "crop": "none",
+    "input_conditions": "RGB only",
+    "seed": 0
+  }
+}

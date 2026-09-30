@@ -1,0 +1,136 @@
+{
+  "status": "completed",
+  "phase": "complete",
+  "pid": 2851242,
+  "gpu_uuid": "GPU-cebad0aa-f06a-6660-6ee4-cd673b55e55a",
+  "script_sha256": "35cc21e0f7941647dbd1811ea66188b1f31041f95ce8e57b9588e1b2ada71609",
+  "model_source_sha256": "d29a67eec7cc38e110baa1a07aac1b178f0317a8ded9e391f07da33f09ef5b7a",
+  "loader_source_sha256": "d4eb33dbc753d4f5a2f3cba161bc5b96068005e789430a8ddc5062c1cc504ad1",
+  "source_code_revision": "9fa3ddb3f8d53041f8b2738df404f62223bbaa7b",
+  "weight_revision": "bb1deea4d7423de5b30691739cb451a3f57dc1d5",
+  "weight_sha256": "69972d6e1c4492cb4d737a84fe940e357087d81c52f5c9b7c160b49c1f41669a",
+  "checkpoint_loaded": true,
+  "forward_run": true,
+  "forward_passes": 1,
+  "scope": "Explicit user-requested installation/startup verification on real frames, not a shared-benchmark/SOTA result",
+  "preprocessing": {
+    "loader": "pinned pi3.utils.basic.load_multimodal_data",
+    "pixel_limit": 255000,
+    "resize": "Pillow LANCZOS to common dimensions divisible by 14",
+    "source_rgb_size": [
+      960,
+      540
+    ],
+    "crop": "none",
+    "input_conditions": "RGB only",
+    "seed": 0,
+    "output_size_wh": [
+      672,
+      378
+    ]
+  },
+  "gpu_preflight": {
+    "compute_apps": [
+      "GPU-fa295861-0e06-9501-0117-314198790aba, 3764741, 10214 MiB",
+      "GPU-0aef4098-60ce-0fe9-ecef-d0e9986677f3, 3764742, 10124 MiB",
+      "GPU-4c25e43c-9b1c-dfad-9e64-df1538711653, 1035736, 4226 MiB"
+    ],
+    "selected": [
+      "GPU-cebad0aa-f06a-6660-6ee4-cd673b55e55a",
+      " 1",
+      " 0"
+    ]
+  },
+  "input_manifest_sha256": "6bed7d92291d22999b27939699aa6376d37741beeb42154158e202b4016f4dbd",
+  "wall_seconds": 17.63480457291007,
+  "checkpoint_sha256_verified": true,
+  "runtime": {
+    "torch": "2.5.1+cu124",
+    "cuda": "12.4",
+    "numpy": "1.26.4",
+    "device": "NVIDIA GeForce RTX 4090",
+    "capability": [
+      8,
+      9
+    ]
+  },
+  "checkpoint_missing_keys": [],
+  "checkpoint_unexpected_keys": [],
+  "input_tensor_shape": [
+    1,
+    6,
+    3,
+    378,
+    672
+  ],
+  "inference_seconds": 1.2738774829776958,
+  "peak_allocated_bytes": 7172203008,
+  "peak_reserved_bytes": 9347006464,
+  "outputs": {
+    "points": {
+      "shape": [
+        1,
+        6,
+        378,
+        672,
+        3
+      ],
+      "dtype": "float32",
+      "finite": true
+    },
+    "local_points": {
+      "shape": [
+        1,
+        6,
+        378,
+        672,
+        3
+      ],
+      "dtype": "float32",
+      "finite": true
+    },
+    "rays": {
+      "shape": [
+        1,
+        6,
+        378,
+        672,
+        3
+      ],
+      "dtype": "float32",
+      "finite": true
+    },
+    "conf": {
+      "shape": [
+        1,
+        6,
+        378,
+        672,
+        1
+      ],
+      "dtype": "float32",
+      "finite": true
+    },
+    "camera_poses": {
+      "shape": [
+        1,
+        6,
+        4,
+        4
+      ],
+      "dtype": "float32",
+      "finite": true
+    },
+    "metric": {
+      "shape": [
+        1
+      ],
+      "dtype": "float32",
+      "finite": true
+    }
+  },
+  "predictions_sha256": "4e52c4329a0974826e6d2a08c576075641e43e24d1bbe7c4e523e3f66ad7aaa0",
+  "gpu_seconds": 1.2738774829776958,
+  "gpu_session_wall_seconds": 11.52654833800625,
+  "geometry_accuracy": "unverified"
+}

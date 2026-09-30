@@ -22,7 +22,7 @@
   "remote_root": "4090-1:/home/wqz/real2sim_capability_20260929",
   "protocol": "PROTOCOL_20260929.md",
   "result": "RESULTS_20260929.md",
-  "latest_update": "TUM_SFM_BASELINE_20260930.md",
+  "latest_update": "TUM_PI3X_COMPARISON_20260930.md",
   "completed": [
     "Matched retained-room collision failure reproduction and repair",
     "Rectangular opening handling and false-pass negative tests",
@@ -62,14 +62,13 @@
     "Dedicated floor tangent-normal bake preserves source geometry, old UVs and sRGB color; fixed-rig GLB/USD photo MAE improves to 0.107511/0.106775, but vent errors increase and original GLB 8.094mm bound failure persists; research candidate only",
     "Frozen floor normal candidate validated at three prescribed virtual views: 18/18 renders and independent pixel/matrix/hash audit; GLB/USD own-native average MAE improves 35.8/36.0 percent; all six GLB bed-bound failures retained, no real-view or SOTA acceptance",
     "All three original TUM archives resumed on remote data volume with unchanged sources/selection: 18/18 RGB and mocap matches; depth 17/18 and combined readiness 2/3. Full gzip and independent frame-selection audits pass; one 28.994ms depth gap retained.",
-    "TUM RGB-only unknown-intrinsics PyCOLMAP reference executed on all 3 fixed sequences: only texture-board 6/6 poses/374 points, Sim3 translation ATE 0.0130648m after GT alignment; desk/cabinet 0/6 retain null ATE; persisted-pose and all-pair graph audits complete"
+    "TUM RGB-only unknown-intrinsics PyCOLMAP reference executed on all 3 fixed sequences: only texture-board 6/6 poses/374 points, Sim3 translation ATE 0.0130648m after GT alignment; desk/cabinet 0/6 retain null ATE; persisted-pose and all-pair graph audits complete",
+    "Reconciled existing Pi3X installation/startup receipts and spent GPU time without reinstalling or changing old preparation budget; frozen RGB-only TUM Pi3X predicts 18/18 cameras across 3/3 sources with Sim3 ATE 0.018361/0.009635/0.024986m; classical reference remains 1/3, comparison is not matched-compute or SOTA"
   ],
   "next": [
-    "Use frozen TUM SfM reference as a full-denominator comparator. Before camera attempt 8, preregister one justified learned-reference or matching intervention; retain desk/cabinet 0/6 and board 6/6. No tuning against GT or best-of stitching; full cohort remains 3.",
+    "Audit retained Pi3X depth/point outputs against the 17 available TUM depth references and build provenance-bound native reference consumption without new inference. Camera candidate cap8/8 reached; no ninth candidate without versioned amendment. Do not claim matched-budget agent uplift.",
     "Floor tangent-normal bake now improves format fidelity in all six GLB/USD additional virtual-view comparisons; retain original photo vent regression and GLB bound failure. Validate additional material families and actual observed views before adoption; appearance count stays 6/8.",
     "Register bridge-object annotations or reviewed correspondences for disconnected selected identity graphs; v2 retains 72 observations and 17/18 frame coverage, not a complete common camera/model initialization",
-    "Prepare explicit versioned runtime-preparation budget amendment before resuming Pi3X dependency transfer; reuse only officially hash-verified retained wheels, preserve spent 1800 seconds",
-    "Preregister common six-frame learned-reference inputs, preprocessing and outputs before camera attempt 8; no GPU launch until environment ready and live external-work check passes",
     "Evaluate the shell+vent development successor through full visual review and task integration; fine textiles/accessories remain visibly approximate, and prior pose pilot remains rejected by fine landmark gate",
     "Create shared editable initial scenes and source annotations before the full three-video feedback benchmark; independent competitor evaluation remains missing",
     "Run contact tasks against newly reconstructed task geometry, not only the pinned external model",
@@ -159,10 +158,15 @@
     "tum_reference_resume_001/archive_selection_audit.json (3/3 full gzip and unchanged selection)",
     "tum_sfm_007 (fixed original CPU configuration; 1/3 complete, 6/18 registered; overall nonzero return retained)",
     "tum_sfm_007_evaluation (all 18 expected timestamps; 2/3 full ATE withheld)",
-    "tum_sfm_007_evaluation/model_audit.json (no rerun; original RGB and persisted poses checked, all 45 pair cells retained)"
+    "tum_sfm_007_evaluation/model_audit.json (no rerun; original RGB and persisted poses checked, all 45 pair cells retained)",
+    "pi3x/completion_20260929T151117Z (separate failed install, 168.529979s, reconciled)",
+    "pi3x/completion_20260929T151428Z (separate completed install, 90.375579s, reconciled)",
+    "pi3x/startup_forward_001 (separate Waterfront startup, one forward, all raw outputs preserved)",
+    "tum_pi3x_008 (one frozen RGB-only three-source configuration, all 18 poses predicted)",
+    "tum_pi3x_008_evaluation (all three full trajectories scored, raw arrays and classical failures retained)"
   ],
   "resource_accounting": {
-    "new_gpu_hours": 0,
+    "new_gpu_hours": 0.010596260615824981,
     "new_paid_api_requests": 0,
     "local_agent_cost": null,
     "heartbeat_0724_selected_run_wall_seconds": 102.68742876197211,
@@ -170,7 +174,7 @@
     "single_assembly_candidate_revisions_used": 1,
     "note": "CPU test/render wall times are retained in run records/logs; agent cost unknown. GPU/CPU budgets in protocol must not reset across continuations.",
     "heartbeat_0825_selected_run_wall_seconds": 38.66497328109108,
-    "camera_initialization_attempts_used": 7,
+    "camera_initialization_attempts_used": 8,
     "camera_initialization_full_sources": "1/3",
     "camera_runtime_addon": "pycolmap4.2.0 isolated target; existing Python/NumPy preserved",
     "pose_pilot_candidate_rounds_used": 4,
@@ -186,7 +190,7 @@
     "pi3x_verified_checkpoint_bytes": 5440325620,
     "pi3x_unverified_preserved_wheel_bytes": 2076526058,
     "pi3x_total_network_bytes": null,
-    "pi3x_runtime_ready": false,
+    "pi3x_runtime_ready": true,
     "heartbeat_0945_selected_run_wall_seconds": 106.25397710700054,
     "heartbeat_0945_accounting_scope": "Selected measured render/test walls plus separate preparation elapsed; not total CPU time. Retained bytes are not exact network traffic. Agent costs and uninstrumented overhead remain unknown.",
     "shell_vent_execution_attempts_used": 3,
@@ -248,7 +252,15 @@
     "tum_sfm_registered_frames": "6/18",
     "tum_sfm_007_wall_seconds": 4.5026551249902695,
     "tum_sfm_007_evaluation_wall_seconds": 0.030734737985767424,
-    "tum_sfm_007_accounting_scope": "One predeclared classical reference on the full three-source cohort; charge camera attempt 7/8. No feature/threshold fitting, retry, GPU/API, data transfer or acquisition-ledger reset. Read-only model audit and orchestration wall not separately instrumented."
+    "tum_sfm_007_accounting_scope": "One predeclared classical reference on the full three-source cohort; charge camera attempt 7/8. No feature/threshold fitting, retry, GPU/API, data transfer or acquisition-ledger reset. Read-only model audit and orchestration wall not separately instrumented.",
+    "pi3x_external_installation_reported_seconds": 258.90555787086487,
+    "pi3x_external_startup_forward_passes": 1,
+    "tum_pi3x_forward_passes": 3,
+    "tum_pi3x_008_wall_seconds": 20.51173364405986,
+    "tum_pi3x_008_evaluation_seconds": 0.2515998719027266,
+    "observed_pi3x_gpu_session_seconds": 25.53291581105441,
+    "observed_pi3x_forward_seconds": 2.9699132210807875,
+    "pi3x_accounting_correction": "Earlier new_gpu_hours=0 did not include separate startup records. Now conservatively charge full startup+new cohort walls; historical per-run claims and original1800-second setup budget are not rewritten."
   },
   "constraints": [
     "Do not overwrite historical candidates, source photographs or failed evidence",
@@ -261,14 +273,6 @@
   ],
   "blockers": [
     {
-      "scope": "Pi3X dependency preparation",
-      "reason": "Fixed shared 1800-second preparation budget exhausted during PyPI transfer",
-      "runtime_ready": false,
-      "checkpoint_verified": true,
-      "owned_processes_stopped": true,
-      "evidence": "evidence/heartbeat_0945/pi3x_preparation_audit.json"
-    },
-    {
       "scope": "Complete TUM depth-reference coverage",
       "reason": "Frozen structure_texture_far ordinal 5 has nearest-depth gap 0.028994083404541016 s, exceeding unchanged 0.02 s. Do not resample or silently drop it.",
       "matched_depth_frames": 17,
@@ -277,6 +281,11 @@
       "expected_sequences": 3,
       "trajectory_reference_sequences": 3,
       "evidence": "evidence/heartbeat_1950/input_audit.json"
+    },
+    {
+      "scope": "New camera candidate experiments",
+      "reason": "Frozen first-round candidate cap reached at 8/8. Require a versioned budget amendment before any ninth candidate; existing predictions can be audited or consumed without re-inference.",
+      "evidence": "evidence/tum_pi3x_008/ledger.json"
     }
   ],
   "latest_development_candidate": {
@@ -442,6 +451,20 @@
         "freiburg3_cabinet"
       ],
       "scope": "GT-aligned translation-only diagnostic, unknown native scale; no cohort mean, no SOTA."
+    },
+    "learned_reference": {
+      "report": "TUM_PI3X_COMPARISON_20260930.md",
+      "predicted_sources": 3,
+      "expected_sources": 3,
+      "predicted_frames": 18,
+      "expected_frames": 18,
+      "sim3_ate_rmse_m": {
+        "freiburg1_desk": 0.018360940977990875,
+        "freiburg3_structure_texture_far": 0.009635311294448518,
+        "freiburg3_cabinet": 0.02498552247136779
+      },
+      "native_reference_consumption_verified": false,
+      "scope": "Same RGB frame identities, different preprocessing/device/runtime; one seed, GT-aligned translations only. No SOTA."
     }
   },
   "resolved_blockers": [
@@ -455,6 +478,16 @@
       "latest_probe": "evidence/heartbeat_1447/tum_raw_access.json",
       "resolved_by": "UPDATE_20260929T1950.md",
       "resolution": "All 3 RGB bundles acquired on data volume within cumulative cap; old partials/failures retained. This does not resolve one missing depth association."
+    },
+    {
+      "scope": "Pi3X dependency preparation",
+      "reason": "Fixed shared 1800-second preparation budget exhausted during PyPI transfer",
+      "runtime_ready": false,
+      "checkpoint_verified": true,
+      "owned_processes_stopped": true,
+      "evidence": "evidence/heartbeat_0945/pi3x_preparation_audit.json",
+      "resolved_by": "TUM_PI3X_COMPARISON_20260930.md",
+      "resolution": "Existing separate completed installation/startup independently rechecked, then used without new installation; old failed preparation retained."
     }
   ],
   "remote_large_artifact_storage": {

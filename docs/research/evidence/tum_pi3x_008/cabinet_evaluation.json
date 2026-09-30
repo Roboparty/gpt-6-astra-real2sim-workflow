@@ -1,0 +1,249 @@
+{
+  "schema": "real2sim.tum-translation-ate/1",
+  "status": "evaluated",
+  "expected_count": 6,
+  "matched_prediction_count": 6,
+  "matched_ground_truth_count": 6,
+  "complete_correspondence_count": 6,
+  "coverage": {
+    "prediction": 1.0,
+    "ground_truth": 1.0,
+    "complete": 1.0
+  },
+  "missing_prediction_ordinals": [],
+  "missing_ground_truth_ordinals": [],
+  "unused_prediction_count": 0,
+  "unused_ground_truth_count": 3853,
+  "observations": [
+    {
+      "expected_ordinal": 0,
+      "expected_timestamp": 1341841282.694561,
+      "prediction": {
+        "timestamp": 1341841282.694561,
+        "offset_seconds": 0.0,
+        "translation": [
+          -0.8803582191467285,
+          -0.9456818103790283,
+          0.8923426270484924
+        ]
+      },
+      "ground_truth": {
+        "timestamp": 1341841282.6943,
+        "offset_seconds": -0.00026106834411621094,
+        "translation": [
+          -1.728,
+          1.4335,
+          1.092
+        ]
+      },
+      "missing": []
+    },
+    {
+      "expected_ordinal": 1,
+      "expected_timestamp": 1341841288.894582,
+      "prediction": {
+        "timestamp": 1341841288.894582,
+        "offset_seconds": 0.0,
+        "translation": [
+          1.1603224277496338,
+          -1.4511798620224,
+          0.3994528651237488
+        ]
+      },
+      "ground_truth": {
+        "timestamp": 1341841288.8901,
+        "offset_seconds": -0.0044820308685302734,
+        "translation": [
+          -0.2868,
+          0.8547,
+          1.0416
+        ]
+      },
+      "missing": []
+    },
+    {
+      "expected_ordinal": 2,
+      "expected_timestamp": 1341841295.062584,
+      "prediction": {
+        "timestamp": 1341841295.062584,
+        "offset_seconds": 0.0,
+        "translation": [
+          1.6558341979980469,
+          -0.6804960370063782,
+          -0.8177400827407837
+        ]
+      },
+      "ground_truth": {
+        "timestamp": 1341841295.0597,
+        "offset_seconds": -0.0028839111328125,
+        "translation": [
+          -0.3123,
+          -0.2614,
+          1.0348
+        ]
+      },
+      "missing": []
+    },
+    {
+      "expected_ordinal": 3,
+      "expected_timestamp": 1341841301.233494,
+      "prediction": {
+        "timestamp": 1341841301.233494,
+        "offset_seconds": 0.0,
+        "translation": [
+          0.5375741720199585,
+          0.486888587474823,
+          -1.6676186323165894
+        ]
+      },
+      "ground_truth": {
+        "timestamp": 1341841301.2298,
+        "offset_seconds": -0.0036940574645996094,
+        "translation": [
+          -1.4515,
+          -0.908,
+          1.1046
+        ]
+      },
+      "missing": []
+    },
+    {
+      "expected_ordinal": 4,
+      "expected_timestamp": 1341841307.43069,
+      "prediction": {
+        "timestamp": 1341841307.43069,
+        "offset_seconds": 0.0,
+        "translation": [
+          -0.9392638206481934,
+          0.7091964483261108,
+          -1.1647982597351074
+        ]
+      },
+      "ground_truth": {
+        "timestamp": 1341841307.4297,
+        "offset_seconds": -0.000990152359008789,
+        "translation": [
+          -2.4258,
+          -0.3341,
+          1.1501
+        ]
+      },
+      "missing": []
+    },
+    {
+      "expected_ordinal": 5,
+      "expected_timestamp": 1341841313.60146,
+      "prediction": {
+        "timestamp": 1341841313.60146,
+        "offset_seconds": 0.0,
+        "translation": [
+          -1.8043346405029297,
+          0.2759177088737488,
+          -0.30560559034347534
+        ]
+      },
+      "ground_truth": {
+        "timestamp": 1341841313.5996,
+        "offset_seconds": -0.001859903335571289,
+        "translation": [
+          -2.8463,
+          0.5381,
+          1.2699
+        ]
+      },
+      "missing": []
+    }
+  ],
+  "sim3_ate": {
+    "rmse_m": 0.02498552247136779,
+    "mean_m": 0.021184424855944756,
+    "median_m": 0.018356001506214272,
+    "max_m": 0.04405185971934508,
+    "residuals_m": [
+      0.02410829789238168,
+      0.008872372591160747,
+      0.012603705120046866,
+      0.006812551481360095,
+      0.030657762331374072,
+      0.04405185971934508
+    ],
+    "alignment": {
+      "rotation": [
+        [
+          0.8674691934277152,
+          -0.49481795685123836,
+          0.051501340093583405
+        ],
+        [
+          -0.3334459604181843,
+          -0.5014750229959315,
+          0.7983336350123443
+        ],
+        [
+          -0.3692031824546797,
+          -0.7097027482607033,
+          -0.6000091825768509
+        ]
+      ],
+      "translation_m": [
+        -1.5597262630363389,
+        0.3698488012973943,
+        0.7713320878048724
+      ],
+      "scale": 0.727756503965027,
+      "rotation_determinant": 0.9999999999999989,
+      "reflection_allowed": false
+    }
+  },
+  "se3_ate": {
+    "rmse_m": 0.4695857768230092,
+    "mean_m": 0.46849995451476234,
+    "median_m": 0.4732570844767965,
+    "max_m": 0.5098127811391866,
+    "residuals_m": [
+      0.4831512604694879,
+      0.5098127811391866,
+      0.49772457204177745,
+      0.42120943109037495,
+      0.43573877386364185,
+      0.4633629084841051
+    ],
+    "alignment": {
+      "rotation": [
+        [
+          0.8674691934277152,
+          -0.49481795685123836,
+          0.051501340093583405
+        ],
+        [
+          -0.3334459604181843,
+          -0.5014750229959315,
+          0.7983336350123443
+        ],
+        [
+          -0.3692031824546797,
+          -0.7097027482607033,
+          -0.6000091825768509
+        ]
+      ],
+      "translation_m": [
+        -1.5789079935142745,
+        0.4257305616876671,
+        0.6425837013204256
+      ],
+      "scale": 1.0,
+      "rotation_determinant": 0.9999999999999989,
+      "reflection_allowed": false
+    }
+  },
+  "matching": {
+    "max_timestamp_diff_seconds": 0.02,
+    "rule": "Independently associate prediction and GT to expected RGB timestamps; one-to-one monotone maximum count, then minimum sum absolute offset. No interpolation, offset fitting or resampling."
+  },
+  "scope": "Independent translation-only ATE implementation, not official TUM evaluator output. Sim(3) is an additional monocular diagnostic. Quaternion fields validated but orientation not scored. All expected RGB frames retained. No accuracy pass threshold or SOTA claim.",
+  "scale_interpretation": "Sim(3) scale is fitted from GT globally, not measured or recovered metric scale. SE(3) uses scale=1 and is interpretable as metric ATE only for predictions already in metres.",
+  "inputs": {
+    "prediction_sha256": "85814ec70c25df6a9a3e17ca2e2cee811cbd6b3f3c0619a4c0c35b6f97d65f42",
+    "ground_truth_sha256": "9e226144820ebd28d34652ef4920e9a559511ac679ba2977b25bc3b709c222b3"
+  }
+}

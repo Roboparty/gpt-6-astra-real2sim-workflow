@@ -1,0 +1,37 @@
+{
+  "schema": "real2sim.tum-pi3x-protocol/1",
+  "status": "registered_before_inference",
+  "cohort": "tum-frozen-six-rgb-v1",
+  "source_ids": [
+    "freiburg1_desk",
+    "freiburg3_structure_texture_far",
+    "freiburg3_cabinet"
+  ],
+  "frames_sha256": "6586ab88affeba1a51f0285a8c8cda5d7d6cdd8dc415108c7193f73f99f157a5",
+  "runtime_root": "/home/wqz/real2sim_capability_20260929/runtime_addons/pi3x",
+  "source_revision": "9fa3ddb3f8d53041f8b2738df404f62223bbaa7b",
+  "weight_revision": "bb1deea4d7423de5b30691739cb451a3f57dc1d5",
+  "weight_sha256": "69972d6e1c4492cb4d737a84fe940e357087d81c52f5c9b7c160b49c1f41669a",
+  "source_sha256": {
+    "source/pi3/models/pi3x.py": "d29a67eec7cc38e110baa1a07aac1b178f0317a8ded9e391f07da33f09ef5b7a",
+    "source/pi3/utils/basic.py": "d4eb33dbc753d4f5a2f3cba161bc5b96068005e789430a8ddc5062c1cc504ad1"
+  },
+  "runner_sha256": "8fd481dfa42e6823ec9f5546d37bf1ab36ca3a1620d02288cad990953ca77522",
+  "gpu_uuid": "GPU-cebad0aa-f06a-6660-6ee4-cd673b55e55a",
+  "seed": 0,
+  "pixel_limit": 255000,
+  "output_hw": [
+    434,
+    574
+  ],
+  "preprocessing": "Pinned loader: RGB 640x480 -> Pillow LANCZOS 574x434, divisible by14, no crop. RGB-only, no supplied calibration/poses/depth; bf16 autocast. Resizing differs from full-resolution classical baseline and is reported, not treated as equal-compute A/B.",
+  "max_wall_seconds": 600,
+  "camera_attempt_before": 7,
+  "camera_attempt_after": 8,
+  "previous_external_startup_forward_passes": 1,
+  "previous_external_gpu_session_wall_seconds": 11.52654833800625,
+  "total_gpu_budget_hours": 4,
+  "evaluation": "Same fixed six RGB timestamps and existing 20ms TUM translation evaluator; GT opened only after prediction complete. Full denominator; Sim3 fitted scale is not recovered physical scale. Retain incomplete rows and all raw tensors.",
+  "failure_policy": "One forward per source, one seed/configuration; no retry, resampling, GT tuning or best-of selection. Entire cohort stays three; external GPU work blocks execution.",
+  "evaluation_code_sha256": "34b4dc99176c99b8d9b8cb3c2894d48481f31f46f11b9ebaec37abb98f0c858d"
+}

@@ -1,0 +1,21 @@
+{
+  "schema": "real2sim.pi3x-runtime-reconciliation/1",
+  "status": "ready_for_frozen_research_inference",
+  "historical_preparation_seconds_preserved": 1800.1071946363663,
+  "separate_installation_failed_seconds": 168.5299789905548,
+  "separate_installation_completed_seconds": 90.37557888031006,
+  "separate_startup_forward_passes": 1,
+  "separate_startup_gpu_session_wall_seconds": 11.52654833800625,
+  "separate_startup_whole_run_wall_seconds": 17.63480457291007,
+  "read_only_recheck": {
+    "input_hashes_unchanged": true,
+    "model_script_loader_hashes_unchanged": true,
+    "all_output_arrays_finite": true,
+    "camera_count": 6,
+    "point_transform_max_error": 1.430511474609375e-06,
+    "wall_seconds": 0.22335944301448762,
+    "pip_check": "No broken requirements found."
+  },
+  "source": "Existing separate installation/startup records plus current read-only checks; local supporting status D:/embodied/pi3x-start-20260929/STATUS.md. Historical permission text in those records does not authorize any new unlimited installation. None was performed.",
+  "scope": "Previous startup is separately recorded qualification, not a full-cohort candidate comparison. Its compute is imported into observed totals; original failed preparation and old research ledgers stay intact."
+}

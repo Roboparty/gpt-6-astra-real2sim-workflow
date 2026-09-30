@@ -1,0 +1,15 @@
+{
+  "schema": "real2sim.pi3x-resource-ledger/1",
+  "camera_attempt_before": 7,
+  "camera_attempt_after": 8,
+  "camera_candidate_cap": 8,
+  "external_startup_whole_wall_seconds": 17.63480457291007,
+  "new_three_source_whole_wall_seconds": 20.51173364405986,
+  "observed_gpu_session_wall_seconds": 25.53291581105441,
+  "observed_forward_seconds": 2.9699132210807875,
+  "conservative_charged_gpu_hours": 0.010596260615824981,
+  "gpu_budget_hours": 4,
+  "evaluation_cpu_wall_seconds": 0.2515998719027266,
+  "new_paid_api_requests": 0,
+  "scope": "Charge full recorded startup and cohort walls conservatively, not only kernel time. Earlier external startup explicitly retained separately from cohort candidate count; old research setup cap not reset. Installation/agent costs outside measured fields remain unknown."
+}

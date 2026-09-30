@@ -1,0 +1,47 @@
+{
+  "schema": "real2sim.tum-pi3x-evaluation/1",
+  "prediction_receipt_sha256": "b5a66932b9e25fc4c76b3b91cd7c65115e2917142d89522c40294e2f80433b2d",
+  "script_sha256": "ae846b9b94cb8c0e6173888706640cd53a5e64ebf296e10158041cb6915b577c",
+  "evaluator_sha256": "34b4dc99176c99b8d9b8cb3c2894d48481f31f46f11b9ebaec37abb98f0c858d",
+  "expected_sources": 3,
+  "expected_frames": 18,
+  "evaluated_sources": 3,
+  "predicted_frames": 18,
+  "sources": [
+    {
+      "id": "freiburg1_desk",
+      "expected_frames": 6,
+      "predicted_frames": 6,
+      "status": "evaluated",
+      "sim3_ate_rmse_m": 0.018360940977990875,
+      "residual_recomputed_rmse_m": 0.018360940977990948,
+      "fitted_scale": 0.9877349689863586,
+      "prediction_sha256": "9dba391e71d71f2e9846e5154c5eb40f9f09c5eaf64633632e61cd96dec62db3",
+      "evaluation_sha256": "908369be1530018adfe1bd79f2d7db01d156158a79d84dbdd086e1e4b87096b6"
+    },
+    {
+      "id": "freiburg3_structure_texture_far",
+      "expected_frames": 6,
+      "predicted_frames": 6,
+      "status": "evaluated",
+      "sim3_ate_rmse_m": 0.009635311294448518,
+      "residual_recomputed_rmse_m": 0.009635311294448624,
+      "fitted_scale": 1.1725971078080373,
+      "prediction_sha256": "38ee9665915fc037f3953bb1a991b5740e024d7e54ded8dce5493b03878bf059",
+      "evaluation_sha256": "2b2f7bbffbfd1b2672be9b328004f05cf324c05374151a5a445e65b793693b47"
+    },
+    {
+      "id": "freiburg3_cabinet",
+      "expected_frames": 6,
+      "predicted_frames": 6,
+      "status": "evaluated",
+      "sim3_ate_rmse_m": 0.02498552247136779,
+      "residual_recomputed_rmse_m": 0.0249855224713679,
+      "fitted_scale": 0.727756503965027,
+      "prediction_sha256": "85814ec70c25df6a9a3e17ca2e2cee811cbd6b3f3c0619a4c0c35b6f97d65f42",
+      "evaluation_sha256": "e47c8a5a5329bb3fc65dd2f3d33baf0a121f47d132a3339eea69f734b8b1d12e"
+    }
+  ],
+  "wall_seconds": 0.2515998719027266,
+  "scope": "One-seed learned reference on same six RGB frames as classical comparator. Different preprocessing/device/budget, not matched-budget agent A/B. Sim3 fitted from GT, not metric scale recovery; orientation/depth/physics and SOTA not evaluated."
+}

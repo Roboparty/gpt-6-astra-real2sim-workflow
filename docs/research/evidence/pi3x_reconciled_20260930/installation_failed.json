@@ -1,0 +1,111 @@
+{
+  "status": "failed",
+  "phase": "resume_nvidia_cufft_cu12",
+  "pid": 2809874,
+  "started_epoch": 1790694677.607913,
+  "attempt": "/home/wqz/real2sim_capability_20260929/runtime_addons/pi3x/completion_20260929T151117Z",
+  "user_request": "Complete installation and start; no artificial elapsed-time budget",
+  "old_preparation_records_preserved": true,
+  "wheels": [
+    {
+      "filename": "nvidia_cuda_runtime_cu12-12.4.127-py3-none-manylinux2014_x86_64.whl",
+      "source": "/home/wqz/real2sim_capability_20260929/runtime_addons/pi3x/wheel_partials/17f0327dc568-nvidia_cuda_runtime_cu12-12.4.127-py3-none-manylinux2014_x86_64.whl.unverified",
+      "initial_bytes": 883737,
+      "expected_bytes": 883737,
+      "official_sha256": "64403288fa2136ee8e467cdc9c9427e0434110899d07c779f25b5c068934faa5",
+      "initial_sha256": "64403288fa2136ee8e467cdc9c9427e0434110899d07c779f25b5c068934faa5",
+      "status": "verified",
+      "final_bytes": 883737,
+      "verified_path": "/home/wqz/real2sim_capability_20260929/runtime_addons/pi3x/completion_20260929T151117Z/wheelhouse/nvidia_cuda_runtime_cu12-12.4.127-py3-none-manylinux2014_x86_64.whl"
+    },
+    {
+      "filename": "nvidia_cuda_nvrtc_cu12-12.4.127-py3-none-manylinux2014_x86_64.whl",
+      "source": "/home/wqz/real2sim_capability_20260929/runtime_addons/pi3x/wheel_partials/730339b19d4f-nvidia_cuda_nvrtc_cu12-12.4.127-py3-none-manylinux2014_x86_64.whl.unverified",
+      "initial_bytes": 24640306,
+      "expected_bytes": 24640306,
+      "official_sha256": "a178759ebb095827bd30ef56598ec182b85547f1508941a3d560eb7ea1fbf338",
+      "initial_sha256": "a178759ebb095827bd30ef56598ec182b85547f1508941a3d560eb7ea1fbf338",
+      "status": "verified",
+      "final_bytes": 24640306,
+      "verified_path": "/home/wqz/real2sim_capability_20260929/runtime_addons/pi3x/completion_20260929T151117Z/wheelhouse/nvidia_cuda_nvrtc_cu12-12.4.127-py3-none-manylinux2014_x86_64.whl"
+    },
+    {
+      "filename": "nvidia_cudnn_cu12-9.1.0.70-py3-none-manylinux2014_x86_64.whl",
+      "source": "/home/wqz/real2sim_capability_20260929/runtime_addons/pi3x/wheel_partials/c8b5dfe786dd-nvidia_cudnn_cu12-9.1.0.70-py3-none-manylinux2014_x86_64.whl.unverified",
+      "initial_bytes": 664752741,
+      "expected_bytes": 664752741,
+      "official_sha256": "165764f44ef8c61fcdfdfdbe769d687e06374059fbb388b6c89ecb0e28793a6f",
+      "initial_sha256": "165764f44ef8c61fcdfdfdbe769d687e06374059fbb388b6c89ecb0e28793a6f",
+      "status": "verified",
+      "final_bytes": 664752741,
+      "verified_path": "/home/wqz/real2sim_capability_20260929/runtime_addons/pi3x/completion_20260929T151117Z/wheelhouse/nvidia_cudnn_cu12-9.1.0.70-py3-none-manylinux2014_x86_64.whl"
+    },
+    {
+      "filename": "torch-2.5.1-cp310-cp310-manylinux1_x86_64.whl",
+      "source": "/home/wqz/real2sim_capability_20260929/runtime_addons/pi3x/wheel_partials/c7d561b7bbf8-torch-2.5.1-cp310-cp310-manylinux1_x86_64.whl.unverified",
+      "initial_bytes": 906446312,
+      "expected_bytes": 906446312,
+      "official_sha256": "71328e1bbe39d213b8721678f9dcac30dfc452a46d586f1d514a6aa0a99d4744",
+      "initial_sha256": "71328e1bbe39d213b8721678f9dcac30dfc452a46d586f1d514a6aa0a99d4744",
+      "status": "verified",
+      "final_bytes": 906446312,
+      "verified_path": "/home/wqz/real2sim_capability_20260929/runtime_addons/pi3x/completion_20260929T151117Z/wheelhouse/torch-2.5.1-cp310-cp310-manylinux1_x86_64.whl"
+    },
+    {
+      "filename": "numpy-1.26.4-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "source": "/home/wqz/real2sim_capability_20260929/runtime_addons/pi3x/wheel_partials/10de453116df-numpy-1.26.4-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.unverified",
+      "initial_bytes": 18240889,
+      "expected_bytes": 18240889,
+      "official_sha256": "ffa75af20b44f8dba823498024771d5ac50620e6915abac414251bd971b4529f",
+      "initial_sha256": "ffa75af20b44f8dba823498024771d5ac50620e6915abac414251bd971b4529f",
+      "status": "verified",
+      "final_bytes": 18240889,
+      "verified_path": "/home/wqz/real2sim_capability_20260929/runtime_addons/pi3x/completion_20260929T151117Z/wheelhouse/numpy-1.26.4-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl"
+    },
+    {
+      "filename": "torchvision-0.20.1-cp310-cp310-manylinux1_x86_64.whl",
+      "source": "/home/wqz/real2sim_capability_20260929/runtime_addons/pi3x/wheel_partials/11bc298b3fb9-torchvision-0.20.1-cp310-cp310-manylinux1_x86_64.whl.unverified",
+      "initial_bytes": 7238975,
+      "expected_bytes": 7238975,
+      "official_sha256": "8ffbdf8bf5b30eade22d459f5a313329eeadb20dc75efa142987b53c007098c3",
+      "initial_sha256": "8ffbdf8bf5b30eade22d459f5a313329eeadb20dc75efa142987b53c007098c3",
+      "status": "verified",
+      "final_bytes": 7238975,
+      "verified_path": "/home/wqz/real2sim_capability_20260929/runtime_addons/pi3x/completion_20260929T151117Z/wheelhouse/torchvision-0.20.1-cp310-cp310-manylinux1_x86_64.whl"
+    },
+    {
+      "filename": "nvidia_cuda_cupti_cu12-12.4.127-py3-none-manylinux2014_x86_64.whl",
+      "source": "/home/wqz/real2sim_capability_20260929/runtime_addons/pi3x/wheel_partials/19b67b1dad51-nvidia_cuda_cupti_cu12-12.4.127-py3-none-manylinux2014_x86_64.whl.unverified",
+      "initial_bytes": 13813957,
+      "expected_bytes": 13813957,
+      "official_sha256": "9dec60f5ac126f7bb551c055072b69d85392b13311fcc1bcda2202d172df30fb",
+      "initial_sha256": "9dec60f5ac126f7bb551c055072b69d85392b13311fcc1bcda2202d172df30fb",
+      "status": "verified",
+      "final_bytes": 13813957,
+      "verified_path": "/home/wqz/real2sim_capability_20260929/runtime_addons/pi3x/completion_20260929T151117Z/wheelhouse/nvidia_cuda_cupti_cu12-12.4.127-py3-none-manylinux2014_x86_64.whl"
+    },
+    {
+      "filename": "nvidia_cublas_cu12-12.4.5.8-py3-none-manylinux2014_x86_64.whl",
+      "source": "/home/wqz/real2sim_capability_20260929/runtime_addons/pi3x/wheel_partials/47eb52f6e729-nvidia_cublas_cu12-12.4.5.8-py3-none-manylinux2014_x86_64.whl.unverified",
+      "initial_bytes": 363438805,
+      "expected_bytes": 363438805,
+      "official_sha256": "2fc8da60df463fdefa81e323eef2e36489e1c94335b5358bcb38360adf75ac9b",
+      "initial_sha256": "2fc8da60df463fdefa81e323eef2e36489e1c94335b5358bcb38360adf75ac9b",
+      "status": "verified",
+      "final_bytes": 363438805,
+      "verified_path": "/home/wqz/real2sim_capability_20260929/runtime_addons/pi3x/completion_20260929T151117Z/wheelhouse/nvidia_cublas_cu12-12.4.5.8-py3-none-manylinux2014_x86_64.whl"
+    },
+    {
+      "filename": "nvidia_cufft_cu12-11.2.1.3-py3-none-manylinux2014_x86_64.whl",
+      "source": "/home/wqz/real2sim_capability_20260929/runtime_addons/pi3x/wheel_partials/2c24e35d60be-nvidia_cufft_cu12-11.2.1.3-py3-none-manylinux2014_x86_64.whl.unverified",
+      "initial_bytes": 77070336,
+      "expected_bytes": 211459117,
+      "official_sha256": "f083fc24912aa410be21fa16d157fed2055dab1cc4b6934a0e03cba69eb242b9",
+      "initial_sha256": "41033b5f34b6357db10b9cee04aa53932e60c3532387173d35353706aa7aea18",
+      "status": "checking",
+      "current_bytes": 85458944
+    }
+  ],
+  "elapsed_seconds": 168.5299789905548,
+  "error": "KeyboardInterrupt()"
+}

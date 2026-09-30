@@ -1,3 +1,7 @@
+> Historical preparation report. The original 1800-second failure below is retained.
+> [2026-09-30 reconciliation and TUM inference](TUM_PI3X_COMPARISON_20260930.md)
+> verifies the subsequently completed separate runtime and records its costs.
+
 # Isolated Pi3X runtime preparation, 2026-09-29
 
 **Checkpoint and source are ready; the new environment is not ready.** The preparation stopped at its shared 30-minute deadline while downloading dependencies. The checkpoint's exact size and SHA256 passed verification. CPU model construction could not run because installation did not finish.
