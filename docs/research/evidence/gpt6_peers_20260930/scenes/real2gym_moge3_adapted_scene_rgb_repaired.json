@@ -1,0 +1,36 @@
+{
+  "status": "rendered",
+  "parent_model_sha256": "13b4c7b1245044c5aa3066e607b62c4f3ba0956d76db5cb1bc8fd11c59537ba2",
+  "model_sha256": "c8af57b1c2250541be24e6ff27d0f7b67003ac464f6070d52cebf92295716a2f",
+  "extension_sha256": "dfffe40177ff1ce823fe4f654be96c086589408b865d0f9c6ee638d568c20b88",
+  "script_sha256": "d7ec4298b1710854fbb97440fb3beeee12bbd3d74476bba05bd27dbf6d86c2b1",
+  "source_sha256": "f125bdbe59e6e978d22e5143131291a1ef5206239928007a01d26aabb1bb9578",
+  "foreground_and_source_camera_unchanged": true,
+  "boundary_samples": 86,
+  "world_wall_line_center": [
+    0.07770043681311399,
+    0.17230190983693897
+  ],
+  "world_wall_direction": [
+    0.9997759091435803,
+    0.02116911656464668
+  ],
+  "support_extent": [
+    1.6743473783134113,
+    1.2070111817492808
+  ],
+  "renders": [
+    {
+      "kind": "source",
+      "sha256": "4b7c228ee62dc655e35ec224f74cb078c7a319268f7bbe21a0532485d80c6737",
+      "wall_seconds": 42.86338537093252
+    },
+    {
+      "kind": "virtual_display_only",
+      "sha256": "6a2bfe351ea95aa66f877e5d5b446c81455209744612cddc2bdd32fd9ac7a4a8",
+      "wall_seconds": 25.863631232990883
+    }
+  ],
+  "scope": "Background feedback only; source point/camera model and all foreground meshes preserved",
+  "wall_seconds": 69.13154377194587
+}

@@ -1,0 +1,161 @@
+{
+  "status": "rendered",
+  "source_sha256": "f125bdbe59e6e978d22e5143131291a1ef5206239928007a01d26aabb1bb9578",
+  "phase_sha256": "cdd1d6c0f823dc8754d2273e5f92721b27e82ab9ca1f2acd117c351c4984fdc5",
+  "reference_sha256": "6287a4ec53cdd5bd4563bbd0776d2f99ace82f4544361cf6aacd195be8b9d967",
+  "script_sha256": "7ddab9cef2a5e820977fd9113594e87948afe15732d59b6c4a83cec96e4449c9",
+  "model_sha256": "13b4c7b1245044c5aa3066e607b62c4f3ba0956d76db5cb1bc8fd11c59537ba2",
+  "masks": [
+    {
+      "object_id": "domino_sugar_box",
+      "sha256": "74502400eaae4a8f07b8955f72841f406c2c0b2381e4deacd5774df23f5bd88b",
+      "origin": "prior source-image manual polygon, not SAM"
+    },
+    {
+      "object_id": "chocolate_jello_box",
+      "sha256": "4c9623cbc0a0cd955e23c88917ae0bf64cc50369f3032456f294d68175a2f605",
+      "origin": "prior source-image manual polygon, not SAM"
+    },
+    {
+      "object_id": "red_jello_box",
+      "sha256": "cd08bab270b6dcaadf1b9dbe7fb6b5b09905234cc0268c8fdaaa0372cb792041",
+      "origin": "prior source-image manual polygon, not SAM"
+    },
+    {
+      "object_id": "expo_marker",
+      "sha256": "b9f7aa40d2046f6353f5b4e0cfa83df14ce6c376b3dbceefce3979f776581693",
+      "origin": "prior source-image manual polygon, not SAM"
+    }
+  ],
+  "reference_kind": "moge3_metric_estimate",
+  "scale": {
+    "kind": "moge3_metric_estimate",
+    "factor": 1.0,
+    "status": "MoGe model metric estimate, not independently measured"
+  },
+  "camera": {
+    "position": [
+      0.0,
+      -0.65,
+      0.4559870660305023
+    ],
+    "optical_rotation_to_world": [
+      [
+        0.9999975003088304,
+        -0.002044804616182337,
+        -0.0009045165406944921
+      ],
+      [
+        2.7173810293948386e-11,
+        -0.4045373180765863,
+        0.9145214768097446
+      ],
+      [
+        -0.002235928550362587,
+        -0.914519190788269,
+        -0.40453630685806274
+      ]
+    ],
+    "fx_px": 863.2876586914062,
+    "fy_px": 863.2876396179199,
+    "K_normalized": [
+      [
+        0.6744434833526611,
+        0.0,
+        0.5
+      ],
+      [
+        0.0,
+        1.1990106105804443,
+        0.5
+      ],
+      [
+        0.0,
+        0.0,
+        1.0
+      ]
+    ]
+  },
+  "table_plane": {
+    "inliers": 5536,
+    "sampled_points": 6000,
+    "tolerance_model_m": 0.0031142983436584473,
+    "rmse_model_m": 0.0011168387718498707
+  },
+  "decisions": [
+    {
+      "object_id": "domino_sugar_box",
+      "reference_points": 63206,
+      "dimensions_m_estimated": [
+        0.13360139460746126,
+        0.0597401855895473,
+        0.263192804183799
+      ],
+      "center_xy": [
+        -0.3548430990035377,
+        -0.03714174610770993
+      ],
+      "support": "assumed on inferred table plane",
+      "hidden_completion": "orthogonal carton, unknown back/bottom details",
+      "prior_scale": "MoGe metric estimate, not instance measurement"
+    },
+    {
+      "object_id": "chocolate_jello_box",
+      "reference_points": 30439,
+      "dimensions_m_estimated": [
+        0.1333181348751667,
+        0.16474638796855517,
+        0.051899591183042645
+      ],
+      "center_xy": [
+        0.015632860668483427,
+        -0.06360864833212865
+      ],
+      "support": "assumed on inferred table plane",
+      "hidden_completion": "orthogonal carton, unknown back/bottom details",
+      "prior_scale": "MoGe metric estimate, not instance measurement"
+    },
+    {
+      "object_id": "red_jello_box",
+      "reference_points": 15727,
+      "dimensions_m_estimated": [
+        0.03689363696344483,
+        0.13154042080586026,
+        0.11455909936768462
+      ],
+      "center_xy": [
+        0.2770877835150377,
+        0.09690592114654564
+      ],
+      "support": "assumed on inferred table plane",
+      "hidden_completion": "orthogonal carton, unknown back/bottom details",
+      "prior_scale": "MoGe metric estimate, not instance measurement"
+    },
+    {
+      "object_id": "expo_marker",
+      "reference_points": 5856,
+      "radius_m_estimated": 0.012402106713792972,
+      "length_m_estimated": 0.171048651961931,
+      "hidden_completion": "three cylinder sections; cap ratios assumed from visible RGB, not manufacturer specification"
+    }
+  ],
+  "expected_objects": 4,
+  "semantic_objects": 4,
+  "foreground_parts": 6,
+  "renders": [
+    {
+      "kind": "source",
+      "sha256": "24f19dfb6facd7e10f49ab7452593b74fc42702a6a283b4de63f3d663743a9a1",
+      "wall_seconds": 39.20242545497604
+    },
+    {
+      "kind": "virtual_no_real_reference",
+      "camera_scope": "display view fitted to candidate bounds; not a matched real or old-world camera",
+      "sha256": "a5469afc286d5a24cae03d935840706b8820d1932b0bd081817af4f7d6ffbed0",
+      "wall_seconds": 23.72387793206144
+    }
+  ],
+  "scope": "static workflow adaptation; no exact GPT6Astra version confirmation, no independent3D/physics/true novelview quality",
+  "wall_seconds": 63.7658528330503,
+  "source_unchanged": true
+}

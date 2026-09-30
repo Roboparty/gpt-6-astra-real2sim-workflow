@@ -1,0 +1,17 @@
+{
+  "status": "failed",
+  "original_attempts": 1,
+  "additional_attempts": 0,
+  "original_gpu_seconds": 10.281640190980397,
+  "repair_sha256": "1e6bfc0034d0ea88adfbbd037d7725643f06dc6c3d8f294249422a1464ce3de4",
+  "script_sha256": "6a2fe083fc0dbfe7ddd7b3303568308b19761af29166b7f38922cf6feb131333",
+  "model_sha256": "9b41b7b9f65ad80aab7ad686f5e9cc0d1fd33f1964022618dfbcd52fc1fb7925",
+  "gpu_preflight": {
+    "index": 7,
+    "uuid": "GPU-fc202f1b-be60-2f38-a813-c912659ba1d0"
+  },
+  "returncode": 1,
+  "gpu_process_wall_seconds": 2.9197778559755534,
+  "cumulative_attempts": 1,
+  "cumulative_gpu_seconds": 13.20141804695595
+}

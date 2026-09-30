@@ -1,0 +1,25 @@
+{
+  "schema":"real2sim.gpt6-peer-static-comparison/1",
+  "status":"frozen_before_new_runtime_and_inference",
+  "user_scope":"Search other GPT-6 Real2Sim projects and compare reconstruction effects on Desk1, in this manual turn only",
+  "automation":"stopped; do not create or resume scheduled work",
+  "source_image":"/data/real2sim_capability_wqz_20260929/simfoundry_desk1/source/input.jpg",
+  "source_sha256":"f125bdbe59e6e978d22e5143131291a1ef5206239928007a01d26aabb1bb9578",
+  "peers":[
+    {"id":"aha3d","repository":"KevinXu02/aha-3d","commit":"82f4b1110cfe4b55fff19df3b3790852ce07b171","scope":"original video reference/asset harness; no matching Desk1 result identified in inspected public code/docs"},
+    {"id":"hku_astra","repository":"hku-sail/Real2Sim_GPT6_ASTRA","commit":"a1624d6431eb27e2a437feaf74fb34b7c8e937a2","scope":"three-view recorded robot reconstruction/replay plus a general workflow document; released builder is case-specific"},
+    {"id":"lingxiao","repository":"lingxiao-guo/GPT6-real2sim","commit":"736da5c2c6da040a653e581b8f8052ae5559ad51","scope":"DROID/YAM case snapshots; raw robot episode and calibration input required for original fitters"},
+    {"id":"real2gym","repository":"real2gym/Real2Gym","commit":"512548cd01777b48d9cd98cc1d8d07efb8ed0e55","scope":"v5.2 single-RGB MoGe-3 plus RGB-led instance modelling; static-stage adaptation selected for this test"}
+  ],
+  "new_method":"Real2Gym-inspired MoGe-3 single-frame static adaptation; current GPT-6-family assistant authors deterministic editable geometry from original RGB and new model references. Not an independent GPT-6 Astra rerun, not an author-provided Desk1 result, and not full dynamic Real2Gym.",
+  "reconstruction_inputs":["sole original Desk1 RGB","four existing source-only manual instance masks, reused and labelled manual rather than SAM","fresh MoGe-3 points/depth/intrinsics/normal/mask"],
+  "forbidden_reconstruction_inputs":["old Desk1 blend models","old fitted camera/pose/dimension values","GT meshes/poses/depth","paper comparison renderings"],
+  "segmentation_deviation":"Reuse the frozen manual source polygons from the prior Hunyuan input package. Do not claim SAM inference or independent heldout-corner testing: mask shapes originated from previous manual corner observations.",
+  "moge":{"code":"74fbce054ebed49800de42d0ad0e83495065719a","repo":"Ruicheng/moge-3-vitl","revision":"184008f877d7ad1ad4c2cd2182a9bd1f63d0e5be","file":"model.pt","bytes":1481333394,"sha256":"9b41b7b9f65ad80aab7ad686f5e9cc0d1fd33f1964022618dfbcd52fc1fb7925","utils3d_commit":"62f09d58509485564e24d5d9f6aac9ee9ebc0c37","flex_gemm_commit":"b2fadb29d41846c7981ade6801ffc689fae119cf","numpy":"2.2.6","triton":"3.2.0","input_resize_max":1280,"resolution_level":9,"refine_steps":3,"fp16":false,"seed":2026,"force_projection":true,"apply_mask":true},
+  "geometry_recipe":"Robust source-table plane from predicted points; transform to Z-up. Fit three supported orthogonal cartons to their instance point clouds via XY minimum-area rectangles and robust height. Fit the lying marker as capped cylindrical parts from its cloud. Hidden completion is assumed. No old 2D/camera fitting values reused.",
+  "appearance_recipe":"Common source-photo local projection for visible faces, same captured-lighting caveat as retained methods; hidden materials assumed; no image generation or external assets",
+  "limits":{"remote_download_bytes":4294967296,"setup_wall_seconds":1800,"gpu_process_wall_seconds":600,"model_inference_calls":1,"new_scene_candidates":1,"render_cells":2,"render_timeout_seconds":600,"cpu_threads":2,"paid_external_api_requests":0,"local_large_downloads":0},
+  "render":{"blender":"4.5.3 LTS","engine":"Cycles CPU","samples":24,"source_resolution":[1280,720],"virtual_resolution":[960,640],"virtual_view_has_real_reference":false},
+  "reporting":"All 4 objects and failures retained. Source-view foreground MAE/footprint and geometry/parameter diagnostics only; no independent 3D truth or SOTA. Native old A/B/C/D results and their hashes retained. Inference/install/scene generation/quality success are separate.",
+  "prior_costs_untouched":{"camera_bank_used":8,"camera_bank_limit":8,"appearance_proposals_cumulative":13,"conservative_gpu_hours":0.032303073016098804}
+}

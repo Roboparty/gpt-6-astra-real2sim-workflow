@@ -1,0 +1,35 @@
+{
+  "status": "blocked_or_failed",
+  "source_sha256": "f125bdbe59e6e978d22e5143131291a1ef5206239928007a01d26aabb1bb9578",
+  "phase_sha256": "a2ff88cb4d1905072b6b60595fa27a4c1d6bce72f888e2df07ed9479faeaa14a",
+  "script_sha256": "6f6117f81a7016df37ecb3e2e83a280fa0071d11fa60d4a3e98bedbd5a2c57ed",
+  "inference_calls": 1,
+  "input_images": 1,
+  "gpu_process_wall_seconds": 11.767392448033206,
+  "errors": [
+    {
+      "type": "KeyError",
+      "summary": "'confidence'"
+    }
+  ],
+  "gpu_preflight": {
+    "index": 7,
+    "uuid": "GPU-fc202f1b-be60-2f38-a813-c912659ba1d0",
+    "used_mib": 1,
+    "utilization": 0
+  },
+  "runtime": {
+    "torch": "2.5.1+cu124",
+    "numpy": "1.26.4"
+  },
+  "checkpoint_loaded_strictly": true,
+  "input_tensor_shape": [
+    1,
+    1,
+    3,
+    378,
+    672
+  ],
+  "forward_seconds": 0.6809669900685549,
+  "wall_seconds": 18.204529569949955
+}

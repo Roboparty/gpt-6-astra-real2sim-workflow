@@ -1,0 +1,106 @@
+{
+  "status": "blocked_or_failed",
+  "phase_sha256": "cdd1d6c0f823dc8754d2273e5f92721b27e82ab9ca1f2acd117c351c4984fdc5",
+  "script_sha256": "537037f4364fda7d20b66f708041a592ff30e26c2fe10455d958ae15a112190d",
+  "downloads": [
+    {
+      "id": "MoGe",
+      "source_url": "https://codeload.github.com/microsoft/MoGe/tar.gz/74fbce054ebed49800de42d0ad0e83495065719a",
+      "status": "downloaded",
+      "streamed_bytes": 11532273,
+      "sha256": "cc6f3525cec7694b97d6d9af7d8854f546cda082f3abc944be17dfb6ad892309",
+      "bytes": 11532273,
+      "wall_seconds": 2.3918394870124757
+    },
+    {
+      "id": "utils3d-moge",
+      "source_url": "https://codeload.github.com/EasternJournalist/utils3d-moge/tar.gz/62f09d58509485564e24d5d9f6aac9ee9ebc0c37",
+      "status": "downloaded",
+      "streamed_bytes": 373969,
+      "sha256": "a6917f2e641b1221daf2e2df06f4605e1754defa07abf4059fc514ddbebffc68",
+      "bytes": 373969,
+      "wall_seconds": 1.071705732960254
+    },
+    {
+      "id": "FlexGEMM",
+      "source_url": "https://codeload.github.com/JeffreyXiang/FlexGEMM/tar.gz/b2fadb29d41846c7981ade6801ffc689fae119cf",
+      "status": "downloaded",
+      "streamed_bytes": 529588,
+      "sha256": "729c3c21026d211aec1fd5fc07ed8856f8d47ed5d0324ef12f701c1addc2526a",
+      "bytes": 529588,
+      "wall_seconds": 1.2235251620877534
+    },
+    {
+      "id": "triton-3.2.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "source_url": "https://files.pythonhosted.org/packages/01/65/3ffa90e158a2c82f0716eee8d26a725d241549b7d7aaf7e4f44ac03ebd89/triton-3.2.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "status": "verified",
+      "sha256": "b3e54983cd51875855da7c68ec05c05cf8bb08df361b1d5b69e05e40b0c9bd62",
+      "bytes": 253090354
+    },
+    {
+      "id": "numpy-2.2.6-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "source_url": "https://files.pythonhosted.org/packages/b4/63/3de6a34ad7ad6646ac7d2f55ebc6ad439dbbf9c4370017c50cf403fb19b5/numpy-2.2.6-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "status": "verified",
+      "sha256": "fc7b73d02efb0e18c000e9ad8b83480dfcd5dfd11065997ed4c6747470ae8915",
+      "bytes": 16801050
+    },
+    {
+      "id": "model",
+      "source_url": "https://huggingface.co/Ruicheng/moge-3-vitl/resolve/184008f877d7ad1ad4c2cd2182a9bd1f63d0e5be/model.pt",
+      "status": "downloading",
+      "streamed_bytes": 0
+    },
+    {
+      "id": "model",
+      "source_url": "https://huggingface.co/Ruicheng/moge-3-vitl/resolve/184008f877d7ad1ad4c2cd2182a9bd1f63d0e5be/model.pt",
+      "status": "verified",
+      "streamed_bytes": 1481333394,
+      "sha256": "9b41b7b9f65ad80aab7ad686f5e9cc0d1fd33f1964022618dfbcd52fc1fb7925",
+      "bytes": 1481333394,
+      "wall_seconds": 44.123165899072774
+    }
+  ],
+  "network_streamed_bytes": 1763660628,
+  "gpu_process_wall_seconds": 10.281640190980397,
+  "model_calls": 1,
+  "paid_external_api_requests": 0,
+  "errors": [
+    {
+      "type": "RuntimeError",
+      "summary": "Actual MoGe inference process failed; see retained log"
+    }
+  ],
+  "commands": [
+    {
+      "id": "wheel_download",
+      "returncode": 0,
+      "wall_seconds": 539.1357902189484
+    },
+    {
+      "id": "wheel_install",
+      "returncode": 0,
+      "wall_seconds": 6.175318364053965
+    },
+    {
+      "id": "moge_import",
+      "returncode": 1,
+      "wall_seconds": 2.568658197997138
+    }
+  ],
+  "wall_seconds": 554.6786261999514,
+  "errors_retained": [
+    {
+      "type": "URLError",
+      "summary": "<urlopen error [Errno 104] Connection reset by peer>"
+    }
+  ],
+  "resume_wall_seconds": 54.51947265409399,
+  "setup_wall_seconds": 1400.0176656246185,
+  "network_conservative_bytes": 2032096084,
+  "gpu_preflight": {
+    "index": 7,
+    "uuid": "GPU-fc202f1b-be60-2f38-a813-c912659ba1d0",
+    "used_mib": 1,
+    "utilization": 0
+  }
+}

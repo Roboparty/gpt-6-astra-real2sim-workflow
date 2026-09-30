@@ -1,0 +1,22 @@
+{
+  "schema":"real2sim.gpt6-peer-singleframe-extension/1",
+  "status":"frozen_before_singleframe_Pi3X_inference",
+  "parent_phase":"DESK1_GPT6_PEERS_PHASE_20260930.json",
+  "purpose":"Add one AHa-3D-inspired Pi3X reference control on the identical Desk1 RGB; compare reference mechanisms with common editable instance authoring",
+  "original_project":"KevinXu02/aha-3d",
+  "original_project_commit":"82f4b1110cfe4b55fff19df3b3790852ce07b171",
+  "adaptation":"Exactly one photograph, not a video or repeated fake frames. Pi3X RGB-only reference; manual source masks instead of SAM3; no multi-view TSDF fusion, human reconstruction or original full AHa workflow. Current assistant uses common carton/cylinder adapter.",
+  "source_image":"/data/real2sim_capability_wqz_20260929/simfoundry_desk1/source/input.jpg",
+  "source_sha256":"f125bdbe59e6e978d22e5143131291a1ef5206239928007a01d26aabb1bb9578",
+  "runtime_root":"/home/wqz/real2sim_capability_20260929/runtime_addons/pi3x",
+  "source_commit":"9fa3ddb3f8d53041f8b2738df404f62223bbaa7b",
+  "weight_sha256":"69972d6e1c4492cb4d737a84fe940e357087d81c52f5c9b7c160b49c1f41669a",
+  "source_hashes":{"source/pi3/models/pi3x.py":"d29a67eec7cc38e110baa1a07aac1b178f0317a8ded9e391f07da33f09ef5b7a","source/pi3/utils/basic.py":"d4eb33dbc753d4f5a2f3cba161bc5b96068005e789430a8ddc5062c1cc504ad1"},
+  "inference":{"input_photographs":1,"forward_calls":1,"seed":2026,"pixel_limit":255000,"dtype":"bfloat16 autocast","conditions":{"intrinsics":null,"poses":null,"depths":null}},
+  "camera_adapter":"Fit a centred pinhole focal from predicted local point directions and source raster, then reproject predicted Z through that camera. Preserve original raw tensors and pre-projection residual; do not call self-consistency independent accuracy.",
+  "scale_adapter":"Uniformly anchor the predicted sugar-carton height to the public nominal0.175m as an assumed family prior. All geometry/camera coordinates scaled together; no claim of recovered true metric scale.",
+  "reference_inputs_only":"original RGB, pinned model, existing source-only labelled manual masks and declared nominal height anchor; no old scene/camera/pose values or GT",
+  "limits":{"new_inference_calls":1,"gpu_process_wall_seconds":600,"new_scene_candidates":1,"render_cells":2,"cpu_threads":2,"remote_checkpoint_download_bytes":0,"paid_external_api_requests":0},
+  "prior_attempts":"MoGe dependency CPU-only driver check and canonical HF transport failure retained with original1800s setup clock and4GiB cap; no inference had started at extension freeze",
+  "automation":"stopped; manual comparison only"
+}

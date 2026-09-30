@@ -1,0 +1,90 @@
+{
+  "status": "inferred",
+  "source_sha256": "f125bdbe59e6e978d22e5143131291a1ef5206239928007a01d26aabb1bb9578",
+  "model_sha256": "9b41b7b9f65ad80aab7ad686f5e9cc0d1fd33f1964022618dfbcd52fc1fb7925",
+  "inference_calls": 1,
+  "runtime": {
+    "torch": "2.5.1",
+    "torchvision": "0.20.1",
+    "numpy": "2.2.6",
+    "triton": "3.4.0"
+  },
+  "script_sha256": "537037f4364fda7d20b66f708041a592ff30e26c2fe10455d958ae15a112190d",
+  "outputs": [
+    {
+      "path": "/data/real2sim_capability_wqz_20260929/gpt6_peers_20260930/moge3_triton34/reference/input.png",
+      "sha256": "cbea5a1a28e5cdc6c442f881526f27a1d3ea875ea213a264b845e6e2f08805f1",
+      "bytes": 882604
+    },
+    {
+      "path": "/data/real2sim_capability_wqz_20260929/gpt6_peers_20260930/moge3_triton34/reference/depth_preview.png",
+      "sha256": "756f2a2df2938e36686a21b2b435c18cfe718d15f9eac4649396a2a73c78e1a2",
+      "bytes": 162324
+    },
+    {
+      "path": "/data/real2sim_capability_wqz_20260929/gpt6_peers_20260930/moge3_triton34/reference/prediction.npz",
+      "sha256": "6287a4ec53cdd5bd4563bbd0776d2f99ace82f4544361cf6aacd195be8b9d967",
+      "bytes": 21467711
+    },
+    {
+      "path": "/data/real2sim_capability_wqz_20260929/gpt6_peers_20260930/moge3_triton34/reference/normal_preview.png",
+      "sha256": "0b47ca52447142615576c2b7c03012801de4ff5df8addfd070d401fa5ad4be51",
+      "bytes": 480668
+    }
+  ],
+  "load_warnings": [],
+  "forward_wall_seconds": 6.8802390329074115,
+  "wall_seconds": 14.28364902897738,
+  "checkpoint_loaded": true,
+  "peak_memory_allocated_bytes": 2614755328,
+  "peak_memory_reserved_bytes": 3128950784,
+  "output_shapes": {
+    "points": [
+      720,
+      1280,
+      3
+    ],
+    "intrinsics": [
+      3,
+      3
+    ],
+    "depth": [
+      720,
+      1280
+    ],
+    "mask": [
+      720,
+      1280
+    ],
+    "normal": [
+      720,
+      1280,
+      3
+    ]
+  },
+  "finite_positive_depth_pixels": 921600,
+  "raster": [
+    1280,
+    720
+  ],
+  "intrinsics": [
+    [
+      0.6744434833526611,
+      0.0,
+      0.5
+    ],
+    [
+      0.0,
+      1.1990106105804443,
+      0.5
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "confidence_status": "unavailable unless explicitly output by this model",
+  "metric_scale_status": "model estimate, not independently measured",
+  "source_unchanged": true
+}

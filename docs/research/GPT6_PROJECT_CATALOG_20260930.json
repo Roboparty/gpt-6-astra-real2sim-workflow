@@ -1,0 +1,67 @@
+{
+  "schema": "real2sim.gpt6-project-search/1",
+  "checked_date": "2026-09-30",
+  "model_evidence_scope": "Project titles/author documentation report GPT-6 Astra use; no authenticated historical model session/version was audited.",
+  "source_scope": "Public official repositories/pages; forks and catalogs are discovery leads, not independent reconstruction methods.",
+  "projects": [
+    {
+      "id": "aha",
+      "repository": "KevinXu02/aha-3d",
+      "commit": "82f4b1110cfe4b55fff19df3b3790852ce07b171",
+      "url": "https://github.com/KevinXu02/aha-3d/tree/82f4b1110cfe4b55fff19df3b3790852ce07b171",
+      "tree_complete": true,
+      "tree_items": 930,
+      "matching_desk1_named_paths": [],
+      "desk1_result_status": "No matching Desk1 output identified in documented cases and inspected complete path listing; absence of names is not proof of global absence."
+    },
+    {
+      "id": "hku",
+      "repository": "hku-sail/Real2Sim_GPT6_ASTRA",
+      "commit": "a1624d6431eb27e2a437feaf74fb34b7c8e937a2",
+      "url": "https://github.com/hku-sail/Real2Sim_GPT6_ASTRA/tree/a1624d6431eb27e2a437feaf74fb34b7c8e937a2",
+      "tree_complete": true,
+      "tree_items": 55,
+      "matching_desk1_named_paths": [],
+      "desk1_result_status": "No matching Desk1 output identified in documented cases and inspected complete path listing; absence of names is not proof of global absence."
+    },
+    {
+      "id": "lingxiao",
+      "repository": "lingxiao-guo/GPT6-real2sim",
+      "commit": "736da5c2c6da040a653e581b8f8052ae5559ad51",
+      "url": "https://github.com/lingxiao-guo/GPT6-real2sim/tree/736da5c2c6da040a653e581b8f8052ae5559ad51",
+      "tree_complete": true,
+      "tree_items": 998,
+      "matching_desk1_named_paths": [],
+      "desk1_result_status": "No matching Desk1 output identified in documented cases and inspected complete path listing; absence of names is not proof of global absence."
+    },
+    {
+      "id": "real2gym",
+      "repository": "real2gym/Real2Gym",
+      "commit": "512548cd01777b48d9cd98cc1d8d07efb8ed0e55",
+      "url": "https://github.com/real2gym/Real2Gym/tree/512548cd01777b48d9cd98cc1d8d07efb8ed0e55",
+      "tree_complete": true,
+      "tree_items": 89,
+      "matching_desk1_named_paths": [],
+      "desk1_result_status": "No matching Desk1 output identified in documented cases and inspected complete path listing; absence of names is not proof of global absence."
+    }
+  ],
+  "discovery_corrections": [
+    {
+      "old_url": "https://github.com/cskrren/Real2Gym",
+      "current_url": "https://github.com/real2gym/Real2Gym",
+      "old_status": "404 retained",
+      "current_status": "Public current repository found and pinned"
+    }
+  ],
+  "excluded": [
+    {
+      "name": "HARMONY",
+      "reason": "Paper compares with GPT-6 Astra but is not thereby a GPT-6-primary Real2Sim project."
+    },
+    {
+      "name": "Forks/awesome lists/social demos",
+      "reason": "Do not count unchanged forks as new methods; unverified project indexes are not execution evidence."
+    }
+  ],
+  "automation": "stopped"
+}

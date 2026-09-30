@@ -1,0 +1,11 @@
+{
+  "schema":"real2sim.runtime-compatibility-upgrade/1",
+  "status":"frozen_before_unmodified_FlexGEMM_second_forward",
+  "original_failure_retained":"MoGe3 forward attempt1 on Triton3.2 failed; process-local property shim hash-build passed but lookup compilation failed before an additional model call. Both failures and GPU time retained.",
+  "new_runtime":"Triton3.4.0, first checked official source defining dtype.itemsize as primitive_bitwidth//8. No process-local shim used. MoGe and FlexGEMM source/checkpoint/hyperparameters unchanged.",
+  "new_setup_limit_seconds":900,
+  "network_limit":"Shared original4GiB cap including all earlier downloads; add at most200MiB verified official PyPI wheel, no model redownload",
+  "inference_limit":"One additional MoGe forward; total model attempts2.600s cumulative GPU process cap subtracts initial forward and failed compatibility-test process; not reset.",
+  "quality_scope":"Runtime adaptation recorded explicitly, not original full Real2Gym/GPT6Astra reproduction. One static scene candidate, no seed search.",
+  "automation":"stopped; manual turn only"
+}

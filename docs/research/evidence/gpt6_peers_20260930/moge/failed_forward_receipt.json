@@ -1,0 +1,15 @@
+{
+  "status": "started",
+  "source_sha256": "f125bdbe59e6e978d22e5143131291a1ef5206239928007a01d26aabb1bb9578",
+  "model_sha256": "9b41b7b9f65ad80aab7ad686f5e9cc0d1fd33f1964022618dfbcd52fc1fb7925",
+  "inference_calls": 1,
+  "runtime": {
+    "torch": "2.5.1",
+    "torchvision": "0.20.1",
+    "numpy": "2.2.6",
+    "triton": "3.2.0"
+  },
+  "script_sha256": "537037f4364fda7d20b66f708041a592ff30e26c2fe10455d958ae15a112190d",
+  "outputs": [],
+  "load_warnings": []
+}

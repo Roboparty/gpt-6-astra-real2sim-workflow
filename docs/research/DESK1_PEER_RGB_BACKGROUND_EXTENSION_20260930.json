@@ -1,0 +1,15 @@
+{
+  "schema":"real2sim.paired-rgb-background-review/1",
+  "status":"frozen_before_background_revision",
+  "reason":"Initial two adapted source renders visibly truncate the support table at the right side and misplace the wall/table boundary. Preserve both initial scenes and metrics; apply the same deterministic RGB-background correction to both whole scenes.",
+  "change":"Extend the existing support plane to all observed dark-table ray intersections and foreground support bounds. Place one vertical back-wall plane along the RGB-detected wall/table boundary. Do not alter foreground geometry, source camera, materials or light settings.",
+  "inputs":"same original RGB, each candidate's existing estimated camera and support plane, labelled source masks; no previous native Desk1 fit or GT",
+  "new_scene_candidates":2,
+  "new_render_cells":4,
+  "new_gpu_inference_calls":0,
+  "new_paid_external_api_requests":0,
+  "cpu_threads":2,
+  "selection":"Both revised whole scenes reported alongside both originals; no per-object result stitching or best-of filtering",
+  "scope":"RGB feedback adaptation within this manual comparison, not authors' full independent GPT6Astra frameworks",
+  "automation":"stopped"
+}

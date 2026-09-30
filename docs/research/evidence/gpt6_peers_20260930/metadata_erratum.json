@@ -1,0 +1,9 @@
+{
+  "schema":"real2sim.metadata-erratum/1",
+  "scope":"Initial common instance authoring receipts",
+  "issue":"Per-carton decisions.prior_scale reused the MoGe-specific text in the Pi3X adaptation. The global reference_kind/scale object correctly recorded the relative Pi3X source and assumed0.175m sugar anchor.",
+  "correct_interpretation":"Pi3X coordinates were uniformly scaled by an assumed historical family sugar-height prior, not independent MoGe metric inference or recovered true scale. MoGe scale remained a model metric estimate.",
+  "preservation":"Original receipts and scene hashes unchanged; actual builder source archived in code/model_builder_used.py. Future builder metadata text corrected without changing geometry, camera, materials or renderer.",
+  "new_inference_calls":0,
+  "new_scene_candidates":0
+}

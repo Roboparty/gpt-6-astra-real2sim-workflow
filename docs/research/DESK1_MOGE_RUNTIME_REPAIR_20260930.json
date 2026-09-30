@@ -1,0 +1,14 @@
+{
+  "schema":"real2sim.runtime-repair-extension/1",
+  "status":"frozen_before_second_MoGe_forward",
+  "reason":"Official pinned FlexGEMM uses Triton dtype.itemsize; selected supported-minimum Triton3.2 lacks the property. Preserve first failed forward and original dependencies/source. Add a process-local byte-width compatibility property and verify real hash-map lookup before retry.",
+  "source_and_weights_unchanged":true,
+  "network_downloads_added":0,
+  "seed_resolution_refinement_unchanged":true,
+  "compatibility":"triton.language.dtype.itemsize returns primitive_bitwidth//8 for8/16/32/64-bit types. No upstream source files or model weights rewritten. GPU hash build/lookup roundtrip must pass before model rerun.",
+  "original_failed_attempt":"gpt6_peers_20260930/moge3/inference_receipt.json, inference_calls1, no reconstructed scene",
+  "new_attempt":"gpt6_peers_20260930/moge3_retry, additional_forward_calls1; cumulative_MoGe_forward_attempts2",
+  "budget":"Original4GiB download cap and600s cumulative GPU process cap retained. Kernel test and retry are added to failed GPU process wall; no cost reset. Preparation1400.018s retained; this no-download compatibility check has a separately recorded300s CPU repair limit.",
+  "quality_claim":"A patched runtime adaptation, not an unmodified full Real2Gym/Astra replication. No success-filtering or seed selection.",
+  "automation":"stopped; manual turn only"
+}
