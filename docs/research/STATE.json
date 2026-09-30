@@ -22,7 +22,7 @@
   "remote_root": "4090-1:/home/wqz/real2sim_capability_20260929",
   "protocol": "PROTOCOL_20260929.md",
   "result": "RESULTS_20260929.md",
-  "latest_update": "UPDATE_20260929T1950.md",
+  "latest_update": "TUM_SFM_BASELINE_20260930.md",
   "completed": [
     "Matched retained-room collision failure reproduction and repair",
     "Rectangular opening handling and false-pass negative tests",
@@ -61,14 +61,15 @@
     "User-authorized formal main publication verified at c40a1ea after 14/14 final validation groups; historical branches/baseline/failures retained and mixed normal ablation not enabled by default",
     "Dedicated floor tangent-normal bake preserves source geometry, old UVs and sRGB color; fixed-rig GLB/USD photo MAE improves to 0.107511/0.106775, but vent errors increase and original GLB 8.094mm bound failure persists; research candidate only",
     "Frozen floor normal candidate validated at three prescribed virtual views: 18/18 renders and independent pixel/matrix/hash audit; GLB/USD own-native average MAE improves 35.8/36.0 percent; all six GLB bed-bound failures retained, no real-view or SOTA acceptance",
-    "All three original TUM archives resumed on remote data volume with unchanged sources/selection: 18/18 RGB and mocap matches; depth 17/18 and combined readiness 2/3. Full gzip and independent frame-selection audits pass; one 28.994ms depth gap retained."
+    "All three original TUM archives resumed on remote data volume with unchanged sources/selection: 18/18 RGB and mocap matches; depth 17/18 and combined readiness 2/3. Full gzip and independent frame-selection audits pass; one 28.994ms depth gap retained.",
+    "TUM RGB-only unknown-intrinsics PyCOLMAP reference executed on all 3 fixed sequences: only texture-board 6/6 poses/374 points, Sim3 translation ATE 0.0130648m after GT alignment; desk/cabinet 0/6 retain null ATE; persisted-pose and all-pair graph audits complete"
   ],
   "next": [
-    "Preregister common RGB-only prediction/camera policy and frozen baseline for all three acquired TUM sequences, with trajectory and depth endpoints separate; 18/18 mocap but only 17/18 depth matches. Preserve failed depth case and existing camera/compute ledger.",
+    "Use frozen TUM SfM reference as a full-denominator comparator. Before camera attempt 8, preregister one justified learned-reference or matching intervention; retain desk/cabinet 0/6 and board 6/6. No tuning against GT or best-of stitching; full cohort remains 3.",
     "Floor tangent-normal bake now improves format fidelity in all six GLB/USD additional virtual-view comparisons; retain original photo vent regression and GLB bound failure. Validate additional material families and actual observed views before adoption; appearance count stays 6/8.",
     "Register bridge-object annotations or reviewed correspondences for disconnected selected identity graphs; v2 retains 72 observations and 17/18 frame coverage, not a complete common camera/model initialization",
     "Prepare explicit versioned runtime-preparation budget amendment before resuming Pi3X dependency transfer; reuse only officially hash-verified retained wheels, preserve spent 1800 seconds",
-    "Preregister common six-frame learned-reference inputs, preprocessing and outputs before camera attempt 7; no GPU launch until environment ready and live external-work check passes",
+    "Preregister common six-frame learned-reference inputs, preprocessing and outputs before camera attempt 8; no GPU launch until environment ready and live external-work check passes",
     "Evaluate the shell+vent development successor through full visual review and task integration; fine textiles/accessories remain visibly approximate, and prior pose pilot remains rejected by fine landmark gate",
     "Create shared editable initial scenes and source annotations before the full three-video feedback benchmark; independent competitor evaluation remains missing",
     "Run contact tasks against newly reconstructed task geometry, not only the pinned external model",
@@ -155,7 +156,10 @@
     "tum_throughput_probe_001 (three 8MiB official ranges verified)",
     "tum_reference_resume_001 (3 complete archives/18 RGB; 17 depth matches; missing match retained)",
     "tum_reference_resume_001/input_audit.json (2/3 combined readiness, 18/18 mocap)",
-    "tum_reference_resume_001/archive_selection_audit.json (3/3 full gzip and unchanged selection)"
+    "tum_reference_resume_001/archive_selection_audit.json (3/3 full gzip and unchanged selection)",
+    "tum_sfm_007 (fixed original CPU configuration; 1/3 complete, 6/18 registered; overall nonzero return retained)",
+    "tum_sfm_007_evaluation (all 18 expected timestamps; 2/3 full ATE withheld)",
+    "tum_sfm_007_evaluation/model_audit.json (no rerun; original RGB and persisted poses checked, all 45 pair cells retained)"
   ],
   "resource_accounting": {
     "new_gpu_hours": 0,
@@ -166,7 +170,7 @@
     "single_assembly_candidate_revisions_used": 1,
     "note": "CPU test/render wall times are retained in run records/logs; agent cost unknown. GPU/CPU budgets in protocol must not reset across continuations.",
     "heartbeat_0825_selected_run_wall_seconds": 38.66497328109108,
-    "camera_initialization_attempts_used": 6,
+    "camera_initialization_attempts_used": 7,
     "camera_initialization_full_sources": "1/3",
     "camera_runtime_addon": "pycolmap4.2.0 isolated target; existing Python/NumPy preserved",
     "pose_pilot_candidate_rounds_used": 4,
@@ -238,7 +242,13 @@
     "tum_1950_network_payload_bytes": 1349825077,
     "heartbeat_1950_selected_run_wall_seconds": 133.60149427398574,
     "heartbeat_1950_accounting_scope": "Count serial phases once; per-source/per-worker times overlap and are not added. Conservative ledger also charges this continuation storage and both readiness audits. Transport/TLS overhead and agent/orchestration cost unknown. No local media relay, GPU/API or model attempt.",
-    "tum_retained_original_partials_still_present": true
+    "tum_retained_original_partials_still_present": true,
+    "tum_sfm_attempts_used": 1,
+    "tum_sfm_initialized_sources": "1/3",
+    "tum_sfm_registered_frames": "6/18",
+    "tum_sfm_007_wall_seconds": 4.5026551249902695,
+    "tum_sfm_007_evaluation_wall_seconds": 0.030734737985767424,
+    "tum_sfm_007_accounting_scope": "One predeclared classical reference on the full three-source cohort; charge camera attempt 7/8. No feature/threshold fitting, retry, GPU/API, data transfer or acquisition-ledger reset. Read-only model audit and orchestration wall not separately instrumented."
   },
   "constraints": [
     "Do not overwrite historical candidates, source photographs or failed evidence",
@@ -409,7 +419,7 @@
     "expected_sequences": 3,
     "validated_mocap_metadata_sequences": 3,
     "prepared_rgb_bundles": 3,
-    "scope": "Three fixed setups; RGB/mocap available for all 18 frames, one retained missing depth association. No predictions evaluated.",
+    "scope": "Three fixed setups; 18 RGB/mocap and 17 depth matches. Classical RGB-only baseline evaluated: 1/3 full trajectories; no SOTA.",
     "report": "UPDATE_20260929T1950.md",
     "trajectory_reference_ready_sequences": 3,
     "matched_mocap_frames": 18,
@@ -417,7 +427,22 @@
     "expected_frames": 18,
     "complete_depth_reference_sequences": 2,
     "remote_directory": "/data/real2sim_capability_wqz_20260929/tum_reference_resume_001",
-    "fixed_rgb_index": "evidence/heartbeat_1950/fixed_rgb_index.json"
+    "fixed_rgb_index": "evidence/heartbeat_1950/fixed_rgb_index.json",
+    "baseline": {
+      "report": "TUM_SFM_BASELINE_20260930.md",
+      "protocol": "TUM_SFM_PROTOCOL_20260930.json",
+      "initialized_sources": 1,
+      "expected_sources": 3,
+      "registered_frames": 6,
+      "expected_frames": 18,
+      "successful_source": "freiburg3_structure_texture_far",
+      "successful_source_sim3_ate_rmse_m": 0.013064818677938267,
+      "failed_sources": [
+        "freiburg1_desk",
+        "freiburg3_cabinet"
+      ],
+      "scope": "GT-aligned translation-only diagnostic, unknown native scale; no cohort mean, no SOTA."
+    }
   },
   "resolved_blockers": [
     {

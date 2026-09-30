@@ -1,0 +1,222 @@
+{
+  "status": "frozen",
+  "cohort_id": "tum-frozen-six-rgb-v1",
+  "sources": [
+    {
+      "id": "freiburg1_desk",
+      "status": "frozen",
+      "selected_frames": [
+        {
+          "ordinal": 0,
+          "timestamp": 1305031454.82757,
+          "source_member": "rgb/1305031454.827570.png",
+          "path": "/data/real2sim_capability_wqz_20260929/tum_reference_resume_001/freiburg1_desk/inputs/rgb_00.png",
+          "sha256": "f7e588d88f77a8ee7f4011901bfc372373183cdb81557bbf7da3d613832e16dd",
+          "image_size": [
+            640,
+            480
+          ]
+        },
+        {
+          "ordinal": 1,
+          "timestamp": 1305031458.09169,
+          "source_member": "rgb/1305031458.091690.png",
+          "path": "/data/real2sim_capability_wqz_20260929/tum_reference_resume_001/freiburg1_desk/inputs/rgb_01.png",
+          "sha256": "60e8793e2f901957a862d6c9ebeb8a26f834c98ab90b033ee5d052477891eaca",
+          "image_size": [
+            640,
+            480
+          ]
+        },
+        {
+          "ordinal": 2,
+          "timestamp": 1305031461.359709,
+          "source_member": "rgb/1305031461.359709.png",
+          "path": "/data/real2sim_capability_wqz_20260929/tum_reference_resume_001/freiburg1_desk/inputs/rgb_02.png",
+          "sha256": "fe303d72f9d4e020158a2dd57eaf90a7387920888474e7f8122fae8ab8d9f0b4",
+          "image_size": [
+            640,
+            480
+          ]
+        },
+        {
+          "ordinal": 3,
+          "timestamp": 1305031464.627672,
+          "source_member": "rgb/1305031464.627672.png",
+          "path": "/data/real2sim_capability_wqz_20260929/tum_reference_resume_001/freiburg1_desk/inputs/rgb_03.png",
+          "sha256": "24daed2d53d5df30af0cf239ff64951e578cb20416a485f086038d740f5a0857",
+          "image_size": [
+            640,
+            480
+          ]
+        },
+        {
+          "ordinal": 4,
+          "timestamp": 1305031467.895947,
+          "source_member": "rgb/1305031467.895947.png",
+          "path": "/data/real2sim_capability_wqz_20260929/tum_reference_resume_001/freiburg1_desk/inputs/rgb_04.png",
+          "sha256": "125f311db5ba3c827b3b9f230c4cdaad5363d22db14038fc8ba589435ef47748",
+          "image_size": [
+            640,
+            480
+          ]
+        },
+        {
+          "ordinal": 5,
+          "timestamp": 1305031471.159649,
+          "source_member": "rgb/1305031471.159649.png",
+          "path": "/data/real2sim_capability_wqz_20260929/tum_reference_resume_001/freiburg1_desk/inputs/rgb_05.png",
+          "sha256": "a92f366e3b35e7369e0fc5732dca2367ee0262c4534e8c8bd86232d965dd46c8",
+          "image_size": [
+            640,
+            480
+          ]
+        }
+      ]
+    },
+    {
+      "id": "freiburg3_structure_texture_far",
+      "status": "frozen",
+      "selected_frames": [
+        {
+          "ordinal": 0,
+          "timestamp": 1341839116.809493,
+          "source_member": "rgb/1341839116.809493.png",
+          "path": "/data/real2sim_capability_wqz_20260929/tum_reference_resume_001/freiburg3_structure_texture_far/inputs/rgb_00.png",
+          "sha256": "46d705e2851b7b06c0a99c8a98d35ca0725795fa389ca3f6794ed5cb139ddfed",
+          "image_size": [
+            640,
+            480
+          ]
+        },
+        {
+          "ordinal": 1,
+          "timestamp": 1341839121.901603,
+          "source_member": "rgb/1341839121.901603.png",
+          "path": "/data/real2sim_capability_wqz_20260929/tum_reference_resume_001/freiburg3_structure_texture_far/inputs/rgb_01.png",
+          "sha256": "6a05f7584c598c0a6d52a5eead1f4b1562f37841c8269c50af58a06691c36143",
+          "image_size": [
+            640,
+            480
+          ]
+        },
+        {
+          "ordinal": 2,
+          "timestamp": 1341839126.965564,
+          "source_member": "rgb/1341839126.965564.png",
+          "path": "/data/real2sim_capability_wqz_20260929/tum_reference_resume_001/freiburg3_structure_texture_far/inputs/rgb_02.png",
+          "sha256": "5aa8a8618ccce5dc84062fb70896b14dbaf03a6f0473e111a7b98f5ac81d7e1b",
+          "image_size": [
+            640,
+            480
+          ]
+        },
+        {
+          "ordinal": 3,
+          "timestamp": 1341839132.02566,
+          "source_member": "rgb/1341839132.025660.png",
+          "path": "/data/real2sim_capability_wqz_20260929/tum_reference_resume_001/freiburg3_structure_texture_far/inputs/rgb_03.png",
+          "sha256": "c99a1c96fb845291c3c07ea8a2a3e254293fc0b83a3fe69411e08dc089eb9cd0",
+          "image_size": [
+            640,
+            480
+          ]
+        },
+        {
+          "ordinal": 4,
+          "timestamp": 1341839137.085843,
+          "source_member": "rgb/1341839137.085843.png",
+          "path": "/data/real2sim_capability_wqz_20260929/tum_reference_resume_001/freiburg3_structure_texture_far/inputs/rgb_04.png",
+          "sha256": "c0a557485c19df8ca6cdc70404b3d208af86e6999bd802531382cbe9d2502d6d",
+          "image_size": [
+            640,
+            480
+          ]
+        },
+        {
+          "ordinal": 5,
+          "timestamp": 1341839142.145745,
+          "source_member": "rgb/1341839142.145745.png",
+          "path": "/data/real2sim_capability_wqz_20260929/tum_reference_resume_001/freiburg3_structure_texture_far/inputs/rgb_05.png",
+          "sha256": "c9b7c879a251cf7bed171a855a7e78b7ed6abf9315de4f0cb539af885e0d6934",
+          "image_size": [
+            640,
+            480
+          ]
+        }
+      ]
+    },
+    {
+      "id": "freiburg3_cabinet",
+      "status": "frozen",
+      "selected_frames": [
+        {
+          "ordinal": 0,
+          "timestamp": 1341841282.694561,
+          "source_member": "rgb/1341841282.694561.png",
+          "path": "/data/real2sim_capability_wqz_20260929/tum_reference_resume_001/freiburg3_cabinet/inputs/rgb_00.png",
+          "sha256": "b06174e81e79c4f14e4c8b384873a490db548ba0dd2f1d4495c77ed86e72bea6",
+          "image_size": [
+            640,
+            480
+          ]
+        },
+        {
+          "ordinal": 1,
+          "timestamp": 1341841288.894582,
+          "source_member": "rgb/1341841288.894582.png",
+          "path": "/data/real2sim_capability_wqz_20260929/tum_reference_resume_001/freiburg3_cabinet/inputs/rgb_01.png",
+          "sha256": "22a903c95d9e22806263c79caf717845f3e6981b3a6110b7056574fd231738f5",
+          "image_size": [
+            640,
+            480
+          ]
+        },
+        {
+          "ordinal": 2,
+          "timestamp": 1341841295.062584,
+          "source_member": "rgb/1341841295.062584.png",
+          "path": "/data/real2sim_capability_wqz_20260929/tum_reference_resume_001/freiburg3_cabinet/inputs/rgb_02.png",
+          "sha256": "48da3f672759de21cddf0b160725a287758a073a5376e9abc4c79d62e3c34691",
+          "image_size": [
+            640,
+            480
+          ]
+        },
+        {
+          "ordinal": 3,
+          "timestamp": 1341841301.233494,
+          "source_member": "rgb/1341841301.233494.png",
+          "path": "/data/real2sim_capability_wqz_20260929/tum_reference_resume_001/freiburg3_cabinet/inputs/rgb_03.png",
+          "sha256": "5e7db6edd96a084229d03d8fed5b9b7d835e26c7d8202676fe1bf414a502f105",
+          "image_size": [
+            640,
+            480
+          ]
+        },
+        {
+          "ordinal": 4,
+          "timestamp": 1341841307.43069,
+          "source_member": "rgb/1341841307.430690.png",
+          "path": "/data/real2sim_capability_wqz_20260929/tum_reference_resume_001/freiburg3_cabinet/inputs/rgb_04.png",
+          "sha256": "3361ace7ae533273d7bc9ef0795da2deb852ec59d838a16c158c80d2ee5c3141",
+          "image_size": [
+            640,
+            480
+          ]
+        },
+        {
+          "ordinal": 5,
+          "timestamp": 1341841313.60146,
+          "source_member": "rgb/1341841313.601460.png",
+          "path": "/data/real2sim_capability_wqz_20260929/tum_reference_resume_001/freiburg3_cabinet/inputs/rgb_05.png",
+          "sha256": "7ab1517167420a98f829f25e499fdc096f4ee8922b5993012f35b615a680d954",
+          "image_size": [
+            640,
+            480
+          ]
+        }
+      ]
+    }
+  ]
+}

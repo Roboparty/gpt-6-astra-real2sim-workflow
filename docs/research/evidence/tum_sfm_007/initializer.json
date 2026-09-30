@@ -1,0 +1,390 @@
+{
+  "schema": "real2sim.sfm-initialization/1",
+  "expected_scene_count": 3,
+  "initialized_scene_count": 1,
+  "sources": [
+    {
+      "id": "freiburg1_desk",
+      "status": "incomplete",
+      "directory": "/data/real2sim_capability_wqz_20260929/tum_sfm_007/source_000",
+      "returncode": 0,
+      "result": {
+        "expected_frames": 6,
+        "registered_frames": 0,
+        "cameras": [],
+        "coordinate_system": "Arbitrary SfM similarity gauge. No inferred metric scale or gravity alignment is declared measured.",
+        "pycolmap_version": "4.2.0",
+        "physical_scale_m_per_unit": null,
+        "gravity_alignment": null,
+        "missing_frames": [
+          "frame_0000.png",
+          "frame_0001.png",
+          "frame_0002.png",
+          "frame_0003.png",
+          "frame_0004.png",
+          "frame_0005.png"
+        ],
+        "status": "incomplete",
+        "keypoints": [
+          {
+            "image_id": 1,
+            "count": 2064,
+            "data_sha256": "68f5fb2d7d77de27016b20fcb6fe615e6fd8097cfa1520b5911a2da078741070"
+          },
+          {
+            "image_id": 2,
+            "count": 3690,
+            "data_sha256": "706e21d35fffd984c1c8d0ff0008f772fc5d8247af60d7eb9d0a14c82ed4ddc1"
+          },
+          {
+            "image_id": 3,
+            "count": 2157,
+            "data_sha256": "670f43e6f17619354ffde82f35845aa5fb03a285afc8e8aa01f52556febd74f9"
+          },
+          {
+            "image_id": 4,
+            "count": 1373,
+            "data_sha256": "bc012b996a368482b12973849aafa2a09e253708989d96c22596b7ad0ce81fff"
+          },
+          {
+            "image_id": 5,
+            "count": 1579,
+            "data_sha256": "28b098b3675b6eb68b0f9a277e5d0a93763d5698f0b289f4f8a17320017d8617"
+          },
+          {
+            "image_id": 6,
+            "count": 1911,
+            "data_sha256": "732ad8114f7ce18e1f262dcc0ddcfb038e2dbf4f782c05c57d25f86459b5831d"
+          }
+        ]
+      },
+      "wall_seconds": 1.8673073180252686
+    },
+    {
+      "id": "freiburg3_structure_texture_far",
+      "status": "initialized",
+      "directory": "/data/real2sim_capability_wqz_20260929/tum_sfm_007/source_001",
+      "returncode": 0,
+      "result": {
+        "expected_frames": 6,
+        "registered_frames": 6,
+        "cameras": [
+          {
+            "frame_name": "frame_0000.png",
+            "position_in_sfm_gauge": [
+              3.7657032779529698,
+              -1.2786313489531267,
+              3.306873484759476
+            ],
+            "rotation_world_to_cv": [
+              [
+                0.3508847905608219,
+                -0.31061086691794887,
+                0.8834029392669964
+              ],
+              [
+                0.3870770014511961,
+                0.907126353503694,
+                0.16520645788419397
+              ],
+              [
+                -0.8526730080755689,
+                0.2839765274306514,
+                0.4385271635461019
+              ]
+            ],
+            "focal_px": 548.1801595724633,
+            "principal_point": [
+              320.0,
+              240.0
+            ],
+            "image_size": [
+              640,
+              480
+            ]
+          },
+          {
+            "frame_name": "frame_0001.png",
+            "position_in_sfm_gauge": [
+              3.015212714516167,
+              -0.3784704506519566,
+              0.8165207586268546
+            ],
+            "rotation_world_to_cv": [
+              [
+                0.5712972642314039,
+                -0.29187601953307385,
+                0.7670904934251515
+              ],
+              [
+                0.33819457792945584,
+                0.9353108177999794,
+                0.10401010318931106
+              ],
+              [
+                -0.7478260916421884,
+                0.2000051582531376,
+                0.6330513986488828
+              ]
+            ],
+            "focal_px": 548.1801595724633,
+            "principal_point": [
+              320.0,
+              240.0
+            ],
+            "image_size": [
+              640,
+              480
+            ]
+          },
+          {
+            "frame_name": "frame_0002.png",
+            "position_in_sfm_gauge": [
+              1.514843735372118,
+              0.19415492694009706,
+              -0.5980609141780656
+            ],
+            "rotation_world_to_cv": [
+              [
+                0.7681666141359946,
+                -0.30071347604388604,
+                0.5652357545771899
+              ],
+              [
+                0.3110812477154004,
+                0.9469242714248892,
+                0.0810116134037123
+              ],
+              [
+                -0.5595967389528568,
+                0.1136038270132042,
+                0.8209419347562179
+              ]
+            ],
+            "focal_px": 548.1801595724633,
+            "principal_point": [
+              320.0,
+              240.0
+            ],
+            "image_size": [
+              640,
+              480
+            ]
+          },
+          {
+            "frame_name": "frame_0003.png",
+            "position_in_sfm_gauge": [
+              -0.7077729518837516,
+              0.36792766848700276,
+              -0.9568844745578484
+            ],
+            "rotation_world_to_cv": [
+              [
+                0.9659898043663104,
+                -0.12062687722335447,
+                0.22872003487162887
+              ],
+              [
+                0.13004977403468748,
+                0.9911525648787218,
+                -0.026526390780839966
+              ],
+              [
+                -0.22349665351826656,
+                0.05536921189318907,
+                0.9731307703697705
+              ]
+            ],
+            "focal_px": 548.1801595724633,
+            "principal_point": [
+              320.0,
+              240.0
+            ],
+            "image_size": [
+              640,
+              480
+            ]
+          },
+          {
+            "frame_name": "frame_0004.png",
+            "position_in_sfm_gauge": [
+              -2.7276238045794643,
+              0.49674662839769995,
+              -1.3908081476495127
+            ],
+            "rotation_world_to_cv": [
+              [
+                0.999669110661435,
+                -0.004787460377086855,
+                0.025273492289618813
+              ],
+              [
+                0.0046834726486051585,
+                0.999980329184,
+                0.0041720892858050735
+              ],
+              [
+                -0.025292968851547765,
+                -0.004052341076067696,
+                0.9996718682940307
+              ]
+            ],
+            "focal_px": 548.1801595724633,
+            "principal_point": [
+              320.0,
+              240.0
+            ],
+            "image_size": [
+              640,
+              480
+            ]
+          },
+          {
+            "frame_name": "frame_0005.png",
+            "position_in_sfm_gauge": [
+              -4.86036297137804,
+              0.5982725757802827,
+              -1.1776407070008996
+            ],
+            "rotation_world_to_cv": [
+              [
+                0.9189758127193624,
+                0.035599942315601776,
+                -0.39270357745240037
+              ],
+              [
+                -0.05861717736418129,
+                0.9971841748268268,
+                -0.04677336841405249
+              ],
+              [
+                0.389932663615968,
+                0.06600276950300188,
+                0.918474905625238
+              ]
+            ],
+            "focal_px": 548.1801595724633,
+            "principal_point": [
+              320.0,
+              240.0
+            ],
+            "image_size": [
+              640,
+              480
+            ]
+          }
+        ],
+        "coordinate_system": "Arbitrary SfM similarity gauge. No inferred metric scale or gravity alignment is declared measured.",
+        "pycolmap_version": "4.2.0",
+        "physical_scale_m_per_unit": null,
+        "gravity_alignment": null,
+        "point_count": 374,
+        "mean_fit_reprojection_error_px": 0.4714431080171133,
+        "missing_frames": [],
+        "status": "initialized",
+        "keypoints": [
+          {
+            "image_id": 1,
+            "count": 2604,
+            "data_sha256": "62c33c5e374dee88d61d0f64c1a3c9a3af479f9718d5410ddc9866b9370a59c7"
+          },
+          {
+            "image_id": 2,
+            "count": 2851,
+            "data_sha256": "422274be9baf9f05516b412c2b9c4b54bfe4c851be24ac8945e01a58a70346fe"
+          },
+          {
+            "image_id": 3,
+            "count": 2268,
+            "data_sha256": "eaf7a3c94fd00855c3070d332e3f607338b2e2b4fefd09b24cc2f40d1f2b9cfa"
+          },
+          {
+            "image_id": 4,
+            "count": 1994,
+            "data_sha256": "37969b5fc29a0cdccf4f77156ba5ac46ce6203017339b45e0d3f975c93ee526f"
+          },
+          {
+            "image_id": 5,
+            "count": 1697,
+            "data_sha256": "fabd436875af2f0cbffb0cfc46cb0d04b5956e6e54ecfa895c5c45095d7e86c8"
+          },
+          {
+            "image_id": 6,
+            "count": 1696,
+            "data_sha256": "c2a4e7645f58523a98972ea852644e3cd47eba8d8478cbf26e9dfa034444c330"
+          }
+        ]
+      },
+      "wall_seconds": 1.9181589700747281
+    },
+    {
+      "id": "freiburg3_cabinet",
+      "status": "incomplete",
+      "directory": "/data/real2sim_capability_wqz_20260929/tum_sfm_007/source_002",
+      "returncode": 0,
+      "result": {
+        "expected_frames": 6,
+        "registered_frames": 0,
+        "cameras": [],
+        "coordinate_system": "Arbitrary SfM similarity gauge. No inferred metric scale or gravity alignment is declared measured.",
+        "pycolmap_version": "4.2.0",
+        "physical_scale_m_per_unit": null,
+        "gravity_alignment": null,
+        "missing_frames": [
+          "frame_0000.png",
+          "frame_0001.png",
+          "frame_0002.png",
+          "frame_0003.png",
+          "frame_0004.png",
+          "frame_0005.png"
+        ],
+        "status": "incomplete",
+        "keypoints": [
+          {
+            "image_id": 1,
+            "count": 237,
+            "data_sha256": "b85d7e289b899ea05ace2f708ab96437115715edda0fed11ed85aa739b94617d"
+          },
+          {
+            "image_id": 2,
+            "count": 311,
+            "data_sha256": "7ec38032aa620f0081d3e7269173476efe92b5e6f0eaa78e560920f82b716038"
+          },
+          {
+            "image_id": 3,
+            "count": 50,
+            "data_sha256": "0ab021688a7b181ab1ad8abf4cc095c799525303f76dd5f3f3fa4ec3b592b17c"
+          },
+          {
+            "image_id": 4,
+            "count": 70,
+            "data_sha256": "a652c027b9799341cc0480aaeba8a7b4e4fb72b49537356160eabecd17ec2a33"
+          },
+          {
+            "image_id": 5,
+            "count": 16,
+            "data_sha256": "c92ab947486adab845651418bc02a51a53871124052b2f2cc6bb98edabda732b"
+          },
+          {
+            "image_id": 6,
+            "count": 131,
+            "data_sha256": "4348adec4f06aa25feb755425bf01ada08f306b1a20d9b59c92ab57ed34e522c"
+          }
+        ]
+      },
+      "wall_seconds": 0.7163798769470304
+    }
+  ],
+  "protocol_sha256": "a68edf0b56ea13d62d70297cb83bbf8aafca315760af63fe886e4fbb620c44e5",
+  "frames_receipt_sha256": "6586ab88affeba1a51f0285a8c8cda5d7d6cdd8dc415108c7193f73f99f157a5",
+  "script_sha256": "f37a1b1a4175cc1aed9941f7c82bf74043fee0b103e0cc7a480404b4be02614f",
+  "snapshots": {
+    "protocol.json": "a68edf0b56ea13d62d70297cb83bbf8aafca315760af63fe886e4fbb620c44e5",
+    "frames.json": "6586ab88affeba1a51f0285a8c8cda5d7d6cdd8dc415108c7193f73f99f157a5",
+    "initializer_snapshot.py": "f37a1b1a4175cc1aed9941f7c82bf74043fee0b103e0cc7a480404b4be02614f"
+  },
+  "original_inputs_unchanged": true,
+  "wall_seconds": 4.5026551249902695,
+  "gpu_hours": 0,
+  "scope": "Shared estimated cameras, not an agent A/B, measured geometry or SOTA"
+}

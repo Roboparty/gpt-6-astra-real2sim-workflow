@@ -1,0 +1,141 @@
+{
+  "schema": "real2sim.tum-translation-ate/1",
+  "status": "incomplete",
+  "expected_count": 6,
+  "matched_prediction_count": 0,
+  "matched_ground_truth_count": 6,
+  "complete_correspondence_count": 0,
+  "coverage": {
+    "prediction": 0.0,
+    "ground_truth": 1.0,
+    "complete": 0.0
+  },
+  "missing_prediction_ordinals": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "missing_ground_truth_ordinals": [],
+  "unused_prediction_count": 0,
+  "unused_ground_truth_count": 2329,
+  "observations": [
+    {
+      "expected_ordinal": 0,
+      "expected_timestamp": 1305031454.82757,
+      "prediction": null,
+      "ground_truth": {
+        "timestamp": 1305031454.8295,
+        "offset_seconds": 0.0019299983978271484,
+        "translation": [
+          1.2848,
+          0.4165,
+          1.5234
+        ]
+      },
+      "missing": [
+        "prediction"
+      ]
+    },
+    {
+      "expected_ordinal": 1,
+      "expected_timestamp": 1305031458.09169,
+      "prediction": null,
+      "ground_truth": {
+        "timestamp": 1305031458.0894,
+        "offset_seconds": -0.002290010452270508,
+        "translation": [
+          0.2713,
+          -0.3333,
+          1.6971
+        ]
+      },
+      "missing": [
+        "prediction"
+      ]
+    },
+    {
+      "expected_ordinal": 2,
+      "expected_timestamp": 1305031461.359709,
+      "prediction": null,
+      "ground_truth": {
+        "timestamp": 1305031461.3593,
+        "offset_seconds": -0.00040912628173828125,
+        "translation": [
+          -0.6851,
+          0.4623,
+          1.4467
+        ]
+      },
+      "missing": [
+        "prediction"
+      ]
+    },
+    {
+      "expected_ordinal": 3,
+      "expected_timestamp": 1305031464.627672,
+      "prediction": null,
+      "ground_truth": {
+        "timestamp": 1305031464.6293,
+        "offset_seconds": 0.0016281604766845703,
+        "translation": [
+          -0.0735,
+          -0.4179,
+          1.7767
+        ]
+      },
+      "missing": [
+        "prediction"
+      ]
+    },
+    {
+      "expected_ordinal": 4,
+      "expected_timestamp": 1305031467.895947,
+      "prediction": null,
+      "ground_truth": {
+        "timestamp": 1305031467.8992,
+        "offset_seconds": 0.0032529830932617188,
+        "translation": [
+          1.7116,
+          -0.0719,
+          1.448
+        ]
+      },
+      "missing": [
+        "prediction"
+      ]
+    },
+    {
+      "expected_ordinal": 5,
+      "expected_timestamp": 1305031471.159649,
+      "prediction": null,
+      "ground_truth": {
+        "timestamp": 1305031471.1592,
+        "offset_seconds": -0.0004489421844482422,
+        "translation": [
+          1.0461,
+          0.0645,
+          1.2386
+        ]
+      },
+      "missing": [
+        "prediction"
+      ]
+    }
+  ],
+  "sim3_ate": null,
+  "se3_ate": null,
+  "matching": {
+    "max_timestamp_diff_seconds": 0.02,
+    "rule": "Independently associate prediction and GT to expected RGB timestamps; one-to-one monotone maximum count, then minimum sum absolute offset. No interpolation, offset fitting or resampling."
+  },
+  "scope": "Independent translation-only ATE implementation, not official TUM evaluator output. Sim(3) is an additional monocular diagnostic. Quaternion fields validated but orientation not scored. All expected RGB frames retained. No accuracy pass threshold or SOTA claim.",
+  "scale_interpretation": "Sim(3) scale is fitted from GT globally, not measured or recovered metric scale. SE(3) uses scale=1 and is interpretable as metric ATE only for predictions already in metres.",
+  "reason": "Full-denominator ATE withheld: missing prediction or GT observations",
+  "inputs": {
+    "prediction_sha256": "ff5fca8cdbfda1a4e79e8bcea5b1010e2704fcd5360827eff9459a9f94cabfe1",
+    "ground_truth_sha256": "48c4fa61f5d78310ea579f404d31d296738c4210c19c2bdac4a5cdf6bff50831"
+  }
+}

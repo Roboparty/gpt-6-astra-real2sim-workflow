@@ -1,0 +1,401 @@
+{
+  "schema": "real2sim.tum-sfm-model-audit/1",
+  "initializer_receipt_sha256": "94265dda074e57c1db9fe1d3c9f5143e0475269b036a3a2dabd62802693c107e",
+  "script_sha256": "1dd35e7d340c35b120e756f82954422ee565c02f2c1343c6019aae8234d9480f",
+  "sources": [
+    {
+      "id": "freiburg1_desk",
+      "keypoint_counts": [
+        2064,
+        3690,
+        2157,
+        1373,
+        1579,
+        1911
+      ],
+      "pairs": [
+        {
+          "first": "frame_0000.png",
+          "second": "frame_0001.png",
+          "raw_matches": 42,
+          "verified_matches": 28,
+          "configuration": 3
+        },
+        {
+          "first": "frame_0000.png",
+          "second": "frame_0002.png",
+          "raw_matches": 0,
+          "verified_matches": 0,
+          "configuration": 0
+        },
+        {
+          "first": "frame_0000.png",
+          "second": "frame_0003.png",
+          "raw_matches": 0,
+          "verified_matches": 0,
+          "configuration": 0
+        },
+        {
+          "first": "frame_0000.png",
+          "second": "frame_0004.png",
+          "raw_matches": 41,
+          "verified_matches": 32,
+          "configuration": 3
+        },
+        {
+          "first": "frame_0000.png",
+          "second": "frame_0005.png",
+          "raw_matches": 47,
+          "verified_matches": 43,
+          "configuration": 3
+        },
+        {
+          "first": "frame_0001.png",
+          "second": "frame_0002.png",
+          "raw_matches": 32,
+          "verified_matches": 0,
+          "configuration": 0
+        },
+        {
+          "first": "frame_0001.png",
+          "second": "frame_0003.png",
+          "raw_matches": 52,
+          "verified_matches": 42,
+          "configuration": 3
+        },
+        {
+          "first": "frame_0001.png",
+          "second": "frame_0004.png",
+          "raw_matches": 0,
+          "verified_matches": 0,
+          "configuration": 0
+        },
+        {
+          "first": "frame_0001.png",
+          "second": "frame_0005.png",
+          "raw_matches": 19,
+          "verified_matches": 0,
+          "configuration": 0
+        },
+        {
+          "first": "frame_0002.png",
+          "second": "frame_0003.png",
+          "raw_matches": 0,
+          "verified_matches": 0,
+          "configuration": 0
+        },
+        {
+          "first": "frame_0002.png",
+          "second": "frame_0004.png",
+          "raw_matches": 0,
+          "verified_matches": 0,
+          "configuration": 0
+        },
+        {
+          "first": "frame_0002.png",
+          "second": "frame_0005.png",
+          "raw_matches": 17,
+          "verified_matches": 0,
+          "configuration": 0
+        },
+        {
+          "first": "frame_0003.png",
+          "second": "frame_0004.png",
+          "raw_matches": 19,
+          "verified_matches": 0,
+          "configuration": 0
+        },
+        {
+          "first": "frame_0003.png",
+          "second": "frame_0005.png",
+          "raw_matches": 0,
+          "verified_matches": 0,
+          "configuration": 0
+        },
+        {
+          "first": "frame_0004.png",
+          "second": "frame_0005.png",
+          "raw_matches": 87,
+          "verified_matches": 74,
+          "configuration": 3
+        }
+      ],
+      "verified_nonzero_edges": 5,
+      "persisted_model_center_max_error": null,
+      "model_sha256": {},
+      "database_sha256": "0b447eac27cae83972801ad6d7d29e7b7beb073e9ab0259fcb572f9fd78a26ec",
+      "effective_options_sha256": "3047bb9015fe1f90734eb906dd37f7e54fdb6789922b792b69e398d448821504",
+      "log_sha256": "f2388b75d471f750a070b5f8af8a990f6417b92b187cfdfd5af38705c1c5223d",
+      "initialization_log": [
+        "I20260930 09:51:54.258457 140043651121152 incremental_pipeline.cc:472] => No good initial image pair found.",
+        "I20260930 09:51:54.261920 140043651121152 incremental_pipeline.cc:472] => No good initial image pair found.",
+        "I20260930 09:51:54.264604 140043651121152 incremental_pipeline.cc:472] => No good initial image pair found.",
+        "I20260930 09:51:54.270929 140043651121152 incremental_pipeline.cc:791] Discarding reconstruction due to bad initial pair",
+        "I20260930 09:51:54.274398 140043651121152 incremental_pipeline.cc:791] Discarding reconstruction due to bad initial pair",
+        "I20260930 09:51:54.274644 140043651121152 incremental_pipeline.cc:472] => No good initial image pair found.",
+        "I20260930 09:51:54.279043 140043651121152 incremental_pipeline.cc:791] Discarding reconstruction due to bad initial pair",
+        "I20260930 09:51:54.284061 140043651121152 incremental_pipeline.cc:791] Discarding reconstruction due to bad initial pair",
+        "I20260930 09:51:54.284321 140043651121152 incremental_pipeline.cc:472] => No good initial image pair found."
+      ]
+    },
+    {
+      "id": "freiburg3_structure_texture_far",
+      "keypoint_counts": [
+        2604,
+        2851,
+        2268,
+        1994,
+        1697,
+        1696
+      ],
+      "pairs": [
+        {
+          "first": "frame_0000.png",
+          "second": "frame_0001.png",
+          "raw_matches": 240,
+          "verified_matches": 220,
+          "configuration": 3
+        },
+        {
+          "first": "frame_0000.png",
+          "second": "frame_0002.png",
+          "raw_matches": 89,
+          "verified_matches": 63,
+          "configuration": 3
+        },
+        {
+          "first": "frame_0000.png",
+          "second": "frame_0003.png",
+          "raw_matches": 37,
+          "verified_matches": 15,
+          "configuration": 3
+        },
+        {
+          "first": "frame_0000.png",
+          "second": "frame_0004.png",
+          "raw_matches": 49,
+          "verified_matches": 18,
+          "configuration": 3
+        },
+        {
+          "first": "frame_0000.png",
+          "second": "frame_0005.png",
+          "raw_matches": 50,
+          "verified_matches": 20,
+          "configuration": 3
+        },
+        {
+          "first": "frame_0001.png",
+          "second": "frame_0002.png",
+          "raw_matches": 253,
+          "verified_matches": 233,
+          "configuration": 3
+        },
+        {
+          "first": "frame_0001.png",
+          "second": "frame_0003.png",
+          "raw_matches": 57,
+          "verified_matches": 36,
+          "configuration": 3
+        },
+        {
+          "first": "frame_0001.png",
+          "second": "frame_0004.png",
+          "raw_matches": 57,
+          "verified_matches": 30,
+          "configuration": 3
+        },
+        {
+          "first": "frame_0001.png",
+          "second": "frame_0005.png",
+          "raw_matches": 44,
+          "verified_matches": 24,
+          "configuration": 3
+        },
+        {
+          "first": "frame_0002.png",
+          "second": "frame_0003.png",
+          "raw_matches": 274,
+          "verified_matches": 256,
+          "configuration": 3
+        },
+        {
+          "first": "frame_0002.png",
+          "second": "frame_0004.png",
+          "raw_matches": 198,
+          "verified_matches": 163,
+          "configuration": 6
+        },
+        {
+          "first": "frame_0002.png",
+          "second": "frame_0005.png",
+          "raw_matches": 111,
+          "verified_matches": 75,
+          "configuration": 6
+        },
+        {
+          "first": "frame_0003.png",
+          "second": "frame_0004.png",
+          "raw_matches": 311,
+          "verified_matches": 299,
+          "configuration": 3
+        },
+        {
+          "first": "frame_0003.png",
+          "second": "frame_0005.png",
+          "raw_matches": 126,
+          "verified_matches": 112,
+          "configuration": 3
+        },
+        {
+          "first": "frame_0004.png",
+          "second": "frame_0005.png",
+          "raw_matches": 319,
+          "verified_matches": 306,
+          "configuration": 3
+        }
+      ],
+      "verified_nonzero_edges": 15,
+      "persisted_model_center_max_error": 1.6653345369377348e-15,
+      "model_sha256": {
+        "frames.txt": "b5c83790c191fe29e6d6713ebf661e9495cc4dbddd9559e7c6d59ac9e9bee1a8",
+        "cameras.txt": "2d2dbe359073e4c942bf0e3f059e5267e3e774d08d320ab87af69cabfede7f42",
+        "images.txt": "4c8aec235bcb27737fcefcaa9da31518ddd6c7089222f91050e873417892f561",
+        "rigs.txt": "8472bec629acf5f8204018b1b34b699709d2b4d203898facf500c0edec35ca68",
+        "points3D.txt": "a954b0df70dce17f92ff3f4d74c0eee04055618ae7b5095e26850414ebe0f909"
+      },
+      "database_sha256": "0b25cb3806d84ef2a7ec4ca20fed92a4e00d5beb61df021576b3cd321eb08986",
+      "effective_options_sha256": "3047bb9015fe1f90734eb906dd37f7e54fdb6789922b792b69e398d448821504",
+      "log_sha256": "750b855d9d104791c680acbd4993a07d7eec7fc0ac7c7f1e8a3b151b6ef0f391",
+      "initialization_log": []
+    },
+    {
+      "id": "freiburg3_cabinet",
+      "keypoint_counts": [
+        237,
+        311,
+        50,
+        70,
+        16,
+        131
+      ],
+      "pairs": [
+        {
+          "first": "frame_0000.png",
+          "second": "frame_0001.png",
+          "raw_matches": 0,
+          "verified_matches": 0,
+          "configuration": 0
+        },
+        {
+          "first": "frame_0000.png",
+          "second": "frame_0002.png",
+          "raw_matches": 0,
+          "verified_matches": 0,
+          "configuration": 0
+        },
+        {
+          "first": "frame_0000.png",
+          "second": "frame_0003.png",
+          "raw_matches": 0,
+          "verified_matches": 0,
+          "configuration": 0
+        },
+        {
+          "first": "frame_0000.png",
+          "second": "frame_0004.png",
+          "raw_matches": 0,
+          "verified_matches": 0,
+          "configuration": 0
+        },
+        {
+          "first": "frame_0000.png",
+          "second": "frame_0005.png",
+          "raw_matches": 0,
+          "verified_matches": 0,
+          "configuration": 0
+        },
+        {
+          "first": "frame_0001.png",
+          "second": "frame_0002.png",
+          "raw_matches": 0,
+          "verified_matches": 0,
+          "configuration": 0
+        },
+        {
+          "first": "frame_0001.png",
+          "second": "frame_0003.png",
+          "raw_matches": 0,
+          "verified_matches": 0,
+          "configuration": 0
+        },
+        {
+          "first": "frame_0001.png",
+          "second": "frame_0004.png",
+          "raw_matches": 0,
+          "verified_matches": 0,
+          "configuration": 0
+        },
+        {
+          "first": "frame_0001.png",
+          "second": "frame_0005.png",
+          "raw_matches": 0,
+          "verified_matches": 0,
+          "configuration": 0
+        },
+        {
+          "first": "frame_0002.png",
+          "second": "frame_0003.png",
+          "raw_matches": 0,
+          "verified_matches": 0,
+          "configuration": 0
+        },
+        {
+          "first": "frame_0002.png",
+          "second": "frame_0004.png",
+          "raw_matches": 0,
+          "verified_matches": 0,
+          "configuration": 0
+        },
+        {
+          "first": "frame_0002.png",
+          "second": "frame_0005.png",
+          "raw_matches": 0,
+          "verified_matches": 0,
+          "configuration": 0
+        },
+        {
+          "first": "frame_0003.png",
+          "second": "frame_0004.png",
+          "raw_matches": 0,
+          "verified_matches": 0,
+          "configuration": 0
+        },
+        {
+          "first": "frame_0003.png",
+          "second": "frame_0005.png",
+          "raw_matches": 0,
+          "verified_matches": 0,
+          "configuration": 0
+        },
+        {
+          "first": "frame_0004.png",
+          "second": "frame_0005.png",
+          "raw_matches": 0,
+          "verified_matches": 0,
+          "configuration": 0
+        }
+      ],
+      "verified_nonzero_edges": 0,
+      "persisted_model_center_max_error": null,
+      "model_sha256": {},
+      "database_sha256": "38b33bba5247d94af341d4f0c3c487d6d7b80b2a6a023f514c75e8adc8a1f92d",
+      "effective_options_sha256": "3047bb9015fe1f90734eb906dd37f7e54fdb6789922b792b69e398d448821504",
+      "log_sha256": "2402ec7565d64122e4ec06a4a41a8fc5836c7a3fc1ff1b8d400bf06de5742a14",
+      "initialization_log": [
+        "W20260930 09:51:56.931095 140237516857344 incremental_pipeline.cc:390] No images with matches"
+      ]
+    }
+  ],
+  "scope": "Read-only persisted poses, original RGB hashes and all 15 pair counts per scene; no new fit or threshold changes."
+}

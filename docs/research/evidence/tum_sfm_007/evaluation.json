@@ -1,0 +1,68 @@
+{
+  "schema": "real2sim.tum-sfm-evaluation/1",
+  "initializer_receipt_sha256": "94265dda074e57c1db9fe1d3c9f5143e0475269b036a3a2dabd62802693c107e",
+  "rgb_index_sha256": "a7786321bed66138394e3bc4dedff133c0e76812a7cedb2f3af557388a97de0e",
+  "script_sha256": "6774ad32522138fb3275e0ee12f1021972ba1ebd3c05fd465987b4483875aed6",
+  "evaluator_sha256": "34b4dc99176c99b8d9b8cb3c2894d48481f31f46f11b9ebaec37abb98f0c858d",
+  "expected_sources": 3,
+  "expected_frames": 18,
+  "sources": [
+    {
+      "id": "freiburg1_desk",
+      "initialization_status": "incomplete",
+      "expected_frames": 6,
+      "registered_frames": 0,
+      "evaluation_status": "incomplete",
+      "missing_prediction_ordinals": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "sim3_ate_rmse_m": null,
+      "residual_recomputed_rmse_m": null,
+      "point_count": null,
+      "prediction_sha256": "ff5fca8cdbfda1a4e79e8bcea5b1010e2704fcd5360827eff9459a9f94cabfe1",
+      "evaluation_sha256": "d888a1f3d11fc6608b4c37900af37abead985f2e46a95df84aa2f8585e928aa4"
+    },
+    {
+      "id": "freiburg3_structure_texture_far",
+      "initialization_status": "initialized",
+      "expected_frames": 6,
+      "registered_frames": 6,
+      "evaluation_status": "evaluated",
+      "missing_prediction_ordinals": [],
+      "sim3_ate_rmse_m": 0.013064818677938267,
+      "residual_recomputed_rmse_m": 0.013064818677938142,
+      "point_count": 374,
+      "prediction_sha256": "f0758e084f6f75673e9bf0f7f1ae4abdd474ddff3f9b8a992e69442e8051b322",
+      "evaluation_sha256": "a1968dbf2a71bc03d68868e73967cce14df562bf9eb110f5941af7478c850797"
+    },
+    {
+      "id": "freiburg3_cabinet",
+      "initialization_status": "incomplete",
+      "expected_frames": 6,
+      "registered_frames": 0,
+      "evaluation_status": "incomplete",
+      "missing_prediction_ordinals": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "sim3_ate_rmse_m": null,
+      "residual_recomputed_rmse_m": null,
+      "point_count": null,
+      "prediction_sha256": "ff5fca8cdbfda1a4e79e8bcea5b1010e2704fcd5360827eff9459a9f94cabfe1",
+      "evaluation_sha256": "96a0c58c917e3557e554bba4f231e99836c4c9930167486403c64d0ef38df9eb"
+    }
+  ],
+  "scope": "Unknown-intrinsics RGB-only classical reference, one seed. Sim3 scale uses GT alignment; no recovered metric scale or SOTA. SE3 values are unscaled-gauge diagnostics, not physical metre errors.",
+  "fully_evaluated_sources": 1,
+  "registered_frames": 6,
+  "wall_seconds": 0.030734737985767424
+}
