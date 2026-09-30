@@ -1,0 +1,13 @@
+{
+  "schema": "real2sim.tum-depth-verification/1",
+  "tests": {
+    "methods": 5,
+    "result": "passed",
+    "reported_wall_seconds": 0.001,
+    "environment": "existing remote real2sim runtime",
+    "test_source_sha256": "288cc355e7d445ec6a69ca687fc73f4cc2d1969ff708903d46035737fc0b0235"
+  },
+  "protocol_and_executed_code_hashes_match": true,
+  "independent_audit_status": "passed",
+  "no_new_inference": true
+}

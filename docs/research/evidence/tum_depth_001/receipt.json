@@ -1,0 +1,628 @@
+{
+  "schema": "real2sim.tum-depth-evaluation/1",
+  "protocol_sha256": "76658f9d9e70b83fd604c74d0a4a0cc32f69d16d9f282f584f16540645f9a72a",
+  "evaluator_sha256": "778429bc08c602b202b4a31d21ea606fc5cd4cb69a106f536b8aa8f3b2f043a7",
+  "expected_sources": 3,
+  "expected_frames": 18,
+  "sources": [
+    {
+      "id": "freiburg1_desk",
+      "expected_frames": 6,
+      "status": "complete",
+      "frames": [
+        {
+          "ordinal": 0,
+          "rgb_timestamp": 1305031454.82757,
+          "status": "evaluated",
+          "depth_gap_seconds": 0.012930154800415039,
+          "raw": {
+            "reference_valid_pixels": 229996,
+            "total_pixels": 307200,
+            "invalid_prediction_pixels": 0,
+            "status": "evaluated",
+            "abs_rel": 0.07355891761802223,
+            "rmse_m": 0.12408686675839119,
+            "mae_m": 0.08533845431433132,
+            "delta_1": 0.9868823805631403,
+            "prediction_coverage": 1.0
+          },
+          "trajectory_scaled": {
+            "reference_valid_pixels": 229996,
+            "total_pixels": 307200,
+            "invalid_prediction_pixels": 0,
+            "status": "evaluated",
+            "abs_rel": 0.06403964939160814,
+            "rmse_m": 0.1223031284283338,
+            "mae_m": 0.0776242527955177,
+            "delta_1": 0.987234560601054,
+            "prediction_coverage": 1.0
+          },
+          "depth_sha256": "ae82d75ead9d3e5aa7f99ecfe157330c9115c09a626a83902e02157c09e33c66"
+        },
+        {
+          "ordinal": 1,
+          "rgb_timestamp": 1305031458.09169,
+          "status": "evaluated",
+          "depth_gap_seconds": 0.014374971389770508,
+          "raw": {
+            "reference_valid_pixels": 227314,
+            "total_pixels": 307200,
+            "invalid_prediction_pixels": 0,
+            "status": "evaluated",
+            "abs_rel": 0.04866608617083278,
+            "rmse_m": 0.11407384380678626,
+            "mae_m": 0.07053821077654829,
+            "delta_1": 0.9927721125843547,
+            "prediction_coverage": 1.0
+          },
+          "trajectory_scaled": {
+            "reference_valid_pixels": 227314,
+            "total_pixels": 307200,
+            "invalid_prediction_pixels": 0,
+            "status": "evaluated",
+            "abs_rel": 0.039613340634534956,
+            "rmse_m": 0.10875779447213127,
+            "mae_m": 0.05951714005598185,
+            "delta_1": 0.9928073061931953,
+            "prediction_coverage": 1.0
+          },
+          "depth_sha256": "d939a8b9d42c88889c8b39394ad04b7f420e54c1f9f07d0c51d0921cdab0799d"
+        },
+        {
+          "ordinal": 2,
+          "rgb_timestamp": 1305031461.359709,
+          "status": "evaluated",
+          "depth_gap_seconds": 0.01283407211303711,
+          "raw": {
+            "reference_valid_pixels": 192633,
+            "total_pixels": 307200,
+            "invalid_prediction_pixels": 0,
+            "status": "evaluated",
+            "abs_rel": 0.05438545132658044,
+            "rmse_m": 0.11589081813465762,
+            "mae_m": 0.056236330657278503,
+            "delta_1": 0.980304516879247,
+            "prediction_coverage": 1.0
+          },
+          "trajectory_scaled": {
+            "reference_valid_pixels": 192633,
+            "total_pixels": 307200,
+            "invalid_prediction_pixels": 0,
+            "status": "evaluated",
+            "abs_rel": 0.04515178106899536,
+            "rmse_m": 0.11335110220505017,
+            "mae_m": 0.04877205631159998,
+            "delta_1": 0.9809430367590184,
+            "prediction_coverage": 1.0
+          },
+          "depth_sha256": "738e302d884b10651c38a978ecd98fff0cfb2a39bf701b62c6e2f1dc5b69c487"
+        },
+        {
+          "ordinal": 3,
+          "rgb_timestamp": 1305031464.627672,
+          "status": "evaluated",
+          "depth_gap_seconds": 0.011983871459960938,
+          "raw": {
+            "reference_valid_pixels": 230394,
+            "total_pixels": 307200,
+            "invalid_prediction_pixels": 0,
+            "status": "evaluated",
+            "abs_rel": 0.10112653560670112,
+            "rmse_m": 0.2893715666566693,
+            "mae_m": 0.16577981360435143,
+            "delta_1": 0.921595180430046,
+            "prediction_coverage": 1.0
+          },
+          "trajectory_scaled": {
+            "reference_valid_pixels": 230394,
+            "total_pixels": 307200,
+            "invalid_prediction_pixels": 0,
+            "status": "evaluated",
+            "abs_rel": 0.09218886972559259,
+            "rmse_m": 0.2829072232149264,
+            "mae_m": 0.15431842967972603,
+            "delta_1": 0.9222766217870257,
+            "prediction_coverage": 1.0
+          },
+          "depth_sha256": "fecd061586a60896eb161eec5ad856decb6828fb46b70fbb633c22a409e9815a"
+        },
+        {
+          "ordinal": 4,
+          "rgb_timestamp": 1305031467.895947,
+          "status": "evaluated",
+          "depth_gap_seconds": 0.0074748992919921875,
+          "raw": {
+            "reference_valid_pixels": 223474,
+            "total_pixels": 307200,
+            "invalid_prediction_pixels": 0,
+            "status": "evaluated",
+            "abs_rel": 0.07314981029920142,
+            "rmse_m": 0.18603326976860454,
+            "mae_m": 0.1306624574384401,
+            "delta_1": 0.9821634731557138,
+            "prediction_coverage": 1.0
+          },
+          "trajectory_scaled": {
+            "reference_valid_pixels": 223474,
+            "total_pixels": 307200,
+            "invalid_prediction_pixels": 0,
+            "status": "evaluated",
+            "abs_rel": 0.06463074717612158,
+            "rmse_m": 0.18429367026938792,
+            "mae_m": 0.12068557341511436,
+            "delta_1": 0.9822261202645498,
+            "prediction_coverage": 1.0
+          },
+          "depth_sha256": "a1d991f195a78e42e79b66bb285b638742164067f1af38a8fba3a4eda2bdc36b"
+        },
+        {
+          "ordinal": 5,
+          "rgb_timestamp": 1305031471.159649,
+          "status": "evaluated",
+          "depth_gap_seconds": 0.003762960433959961,
+          "raw": {
+            "reference_valid_pixels": 232009,
+            "total_pixels": 307200,
+            "invalid_prediction_pixels": 0,
+            "status": "evaluated",
+            "abs_rel": 0.11643343730179953,
+            "rmse_m": 0.07194611981742556,
+            "mae_m": 0.07100935289229128,
+            "delta_1": 0.9994396769090854,
+            "prediction_coverage": 1.0
+          },
+          "trajectory_scaled": {
+            "reference_valid_pixels": 232009,
+            "total_pixels": 307200,
+            "invalid_prediction_pixels": 0,
+            "status": "evaluated",
+            "abs_rel": 0.10274547444787133,
+            "rmse_m": 0.06343845917180632,
+            "mae_m": 0.062467694912414766,
+            "delta_1": 0.999547431349646,
+            "prediction_coverage": 1.0
+          },
+          "depth_sha256": "974ce33300086ad4aa81f4f13da314862c7fd762eceb04448186af6de4be4895"
+        }
+      ],
+      "npz_sha256": "05a6d8d06fa182eadf52767bbbefcad9144a6512bed58e97b9a5c6bcc47f88c6",
+      "fixed_trajectory_scale": 0.9877349689863586,
+      "matched_reference_frames": 6,
+      "evaluated_frames": 6,
+      "full_six_frame_metrics": {
+        "raw": {
+          "abs_rel": 0.07788670638718959,
+          "rmse_m": 0.15023374749042243,
+          "mae_m": 0.09659410328054015,
+          "delta_1": 0.9771928900869312
+        },
+        "trajectory_scaled": {
+          "abs_rel": 0.06806164374078733,
+          "rmse_m": 0.14584189629360597,
+          "mae_m": 0.08723085786172578,
+          "delta_1": 0.9775058461590816
+        }
+      },
+      "available_frame_diagnostic": {
+        "frame_count": 6,
+        "metrics": {
+          "raw": {
+            "abs_rel": 0.07788670638718959,
+            "rmse_m": 0.15023374749042243,
+            "mae_m": 0.09659410328054015,
+            "delta_1": 0.9771928900869312
+          },
+          "trajectory_scaled": {
+            "abs_rel": 0.06806164374078733,
+            "rmse_m": 0.14584189629360597,
+            "mae_m": 0.08723085786172578,
+            "delta_1": 0.9775058461590816
+          }
+        }
+      }
+    },
+    {
+      "id": "freiburg3_structure_texture_far",
+      "expected_frames": 6,
+      "status": "incomplete",
+      "frames": [
+        {
+          "ordinal": 0,
+          "rgb_timestamp": 1341839116.809493,
+          "status": "evaluated",
+          "depth_gap_seconds": 0.00017905235290527344,
+          "raw": {
+            "reference_valid_pixels": 266898,
+            "total_pixels": 307200,
+            "invalid_prediction_pixels": 0,
+            "status": "evaluated",
+            "abs_rel": 0.15949491519395775,
+            "rmse_m": 0.39563412079377147,
+            "mae_m": 0.352838753524789,
+            "delta_1": 0.9737465248896582,
+            "prediction_coverage": 1.0
+          },
+          "trajectory_scaled": {
+            "reference_valid_pixels": 266898,
+            "total_pixels": 307200,
+            "invalid_prediction_pixels": 0,
+            "status": "evaluated",
+            "abs_rel": 0.01953099931459958,
+            "rmse_m": 0.16585331586214302,
+            "mae_m": 0.051543490489752854,
+            "delta_1": 0.9915136119416407,
+            "prediction_coverage": 1.0
+          },
+          "depth_sha256": "0b9c1ea0682ae245aa445bef895efdcc65c1d0e494735582c2611e39a425f369"
+        },
+        {
+          "ordinal": 1,
+          "rgb_timestamp": 1341839121.901603,
+          "status": "evaluated",
+          "depth_gap_seconds": 1.0967254638671875e-05,
+          "raw": {
+            "reference_valid_pixels": 262453,
+            "total_pixels": 307200,
+            "invalid_prediction_pixels": 0,
+            "status": "evaluated",
+            "abs_rel": 0.15121165703071568,
+            "rmse_m": 0.3751499893524168,
+            "mae_m": 0.34781406119287245,
+            "delta_1": 0.994970528056452,
+            "prediction_coverage": 1.0
+          },
+          "trajectory_scaled": {
+            "reference_valid_pixels": 262453,
+            "total_pixels": 307200,
+            "invalid_prediction_pixels": 0,
+            "status": "evaluated",
+            "abs_rel": 0.01104190559603497,
+            "rmse_m": 0.12418592227959323,
+            "mae_m": 0.031031333739415575,
+            "delta_1": 0.9970242291000675,
+            "prediction_coverage": 1.0
+          },
+          "depth_sha256": "cf1cfd1878030f453eaf1bef14058dba11c85a02cfa7c3aabe8d5f74a4b20aec"
+        },
+        {
+          "ordinal": 2,
+          "rgb_timestamp": 1341839126.965564,
+          "status": "evaluated",
+          "depth_gap_seconds": 3.600120544433594e-05,
+          "raw": {
+            "reference_valid_pixels": 265227,
+            "total_pixels": 307200,
+            "invalid_prediction_pixels": 0,
+            "status": "evaluated",
+            "abs_rel": 0.14411872984694815,
+            "rmse_m": 0.3538717418369812,
+            "mae_m": 0.32886931027218247,
+            "delta_1": 0.995445410912162,
+            "prediction_coverage": 1.0
+          },
+          "trajectory_scaled": {
+            "reference_valid_pixels": 265227,
+            "total_pixels": 307200,
+            "invalid_prediction_pixels": 0,
+            "status": "evaluated",
+            "abs_rel": 0.0098800221461376,
+            "rmse_m": 0.10669220720724787,
+            "mae_m": 0.027298173175164538,
+            "delta_1": 0.9986389017709358,
+            "prediction_coverage": 1.0
+          },
+          "depth_sha256": "337b8b06a9dc78e0a243f14145ade67b7d8d214fcc67dcfd8c2f518c7a27b777"
+        },
+        {
+          "ordinal": 3,
+          "rgb_timestamp": 1341839132.02566,
+          "status": "evaluated",
+          "depth_gap_seconds": 2.6941299438476562e-05,
+          "raw": {
+            "reference_valid_pixels": 260251,
+            "total_pixels": 307200,
+            "invalid_prediction_pixels": 0,
+            "status": "evaluated",
+            "abs_rel": 0.1345988782633469,
+            "rmse_m": 0.3428955737978271,
+            "mae_m": 0.29302509362563733,
+            "delta_1": 0.9978943404636293,
+            "prediction_coverage": 1.0
+          },
+          "trajectory_scaled": {
+            "reference_valid_pixels": 260251,
+            "total_pixels": 307200,
+            "invalid_prediction_pixels": 0,
+            "status": "evaluated",
+            "abs_rel": 0.017353882739670142,
+            "rmse_m": 0.15749209334836423,
+            "mae_m": 0.047755561654927704,
+            "delta_1": 0.9982939546822106,
+            "prediction_coverage": 1.0
+          },
+          "depth_sha256": "25d0aa119ad85c4840b4735f06b74d0782db6b85cddb823a02434e6373082c85"
+        },
+        {
+          "ordinal": 4,
+          "rgb_timestamp": 1341839137.085843,
+          "status": "evaluated",
+          "depth_gap_seconds": 0.0005629062652587891,
+          "raw": {
+            "reference_valid_pixels": 263116,
+            "total_pixels": 307200,
+            "invalid_prediction_pixels": 0,
+            "status": "evaluated",
+            "abs_rel": 0.12671613533064371,
+            "rmse_m": 0.2816671249083791,
+            "mae_m": 0.25680132474398587,
+            "delta_1": 0.9926344274008422,
+            "prediction_coverage": 1.0
+          },
+          "trajectory_scaled": {
+            "reference_valid_pixels": 263116,
+            "total_pixels": 307200,
+            "invalid_prediction_pixels": 0,
+            "status": "evaluated",
+            "abs_rel": 0.02729235965880394,
+            "rmse_m": 0.1079035998637402,
+            "mae_m": 0.06095118006701981,
+            "delta_1": 0.997274966174615,
+            "prediction_coverage": 1.0
+          },
+          "depth_sha256": "ad6fba3f2194b3d52a18adc18a5fd79a1d50d5f2311efc826b05cfcebfcf81a1"
+        },
+        {
+          "ordinal": 5,
+          "rgb_timestamp": 1341839142.145745,
+          "status": "missing_reference",
+          "depth_gap_seconds": 0.028994083404541016,
+          "raw": null,
+          "trajectory_scaled": null
+        }
+      ],
+      "npz_sha256": "9c215746dc295a8d93b08a44f3c620e3533ec1021e380024e80c442aef1799ac",
+      "fixed_trajectory_scale": 1.1725971078080373,
+      "matched_reference_frames": 5,
+      "evaluated_frames": 5,
+      "full_six_frame_metrics": null,
+      "available_frame_diagnostic": {
+        "frame_count": 5,
+        "metrics": {
+          "raw": {
+            "abs_rel": 0.14322806313312247,
+            "rmse_m": 0.34984371013787513,
+            "mae_m": 0.31586970867189346,
+            "delta_1": 0.9909382463445487
+          },
+          "trajectory_scaled": {
+            "abs_rel": 0.01701983389104925,
+            "rmse_m": 0.1324254277122177,
+            "mae_m": 0.04371594782525609,
+            "delta_1": 0.9965491327338938
+          }
+        }
+      }
+    },
+    {
+      "id": "freiburg3_cabinet",
+      "expected_frames": 6,
+      "status": "complete",
+      "frames": [
+        {
+          "ordinal": 0,
+          "rgb_timestamp": 1341841282.694561,
+          "status": "evaluated",
+          "depth_gap_seconds": 5.3882598876953125e-05,
+          "raw": {
+            "reference_valid_pixels": 266519,
+            "total_pixels": 307200,
+            "invalid_prediction_pixels": 0,
+            "status": "evaluated",
+            "abs_rel": 0.40942376346463644,
+            "rmse_m": 0.6331027156357261,
+            "mae_m": 0.5939734172880664,
+            "delta_1": 0.004806411550396032,
+            "prediction_coverage": 1.0
+          },
+          "trajectory_scaled": {
+            "reference_valid_pixels": 266519,
+            "total_pixels": 307200,
+            "invalid_prediction_pixels": 0,
+            "status": "evaluated",
+            "abs_rel": 0.034999169148749114,
+            "rmse_m": 0.14677019880908926,
+            "mae_m": 0.05291847851349444,
+            "delta_1": 0.9865375451656355,
+            "prediction_coverage": 1.0
+          },
+          "depth_sha256": "e4501372f04744931fda5aa9916b249c8c8847f748497cf3219d58f978ecf9a3"
+        },
+        {
+          "ordinal": 1,
+          "rgb_timestamp": 1341841288.894582,
+          "status": "evaluated",
+          "depth_gap_seconds": 1.0967254638671875e-05,
+          "raw": {
+            "reference_valid_pixels": 262829,
+            "total_pixels": 307200,
+            "invalid_prediction_pixels": 0,
+            "status": "evaluated",
+            "abs_rel": 0.3720956599990815,
+            "rmse_m": 0.61224559163186,
+            "mae_m": 0.5813363525213538,
+            "delta_1": 0.029018867780952636,
+            "prediction_coverage": 1.0
+          },
+          "trajectory_scaled": {
+            "reference_valid_pixels": 262829,
+            "total_pixels": 307200,
+            "invalid_prediction_pixels": 0,
+            "status": "evaluated",
+            "abs_rel": 0.025648106663594288,
+            "rmse_m": 0.25550558788813543,
+            "mae_m": 0.0650311980968661,
+            "delta_1": 0.9681275658317765,
+            "prediction_coverage": 1.0
+          },
+          "depth_sha256": "808513513644b98341a988fa984610f53a2a928796a0a7e09224ed6dcad48bb1"
+        },
+        {
+          "ordinal": 2,
+          "rgb_timestamp": 1341841295.062584,
+          "status": "evaluated",
+          "depth_gap_seconds": 5.0067901611328125e-05,
+          "raw": {
+            "reference_valid_pixels": 263532,
+            "total_pixels": 307200,
+            "invalid_prediction_pixels": 0,
+            "status": "evaluated",
+            "abs_rel": 0.40902322691067416,
+            "rmse_m": 0.6997173939641717,
+            "mae_m": 0.666008940568762,
+            "delta_1": 0.030948803181397325,
+            "prediction_coverage": 1.0
+          },
+          "trajectory_scaled": {
+            "reference_valid_pixels": 263532,
+            "total_pixels": 307200,
+            "invalid_prediction_pixels": 0,
+            "status": "evaluated",
+            "abs_rel": 0.04383707641945344,
+            "rmse_m": 0.19791808457598944,
+            "mae_m": 0.0848776247877521,
+            "delta_1": 0.9821349968884234,
+            "prediction_coverage": 1.0
+          },
+          "depth_sha256": "12a0ddc7a07d1eb42234abbcdd7e2a004aa025c4ef9f8ba3ed2532a2b555c1db"
+        },
+        {
+          "ordinal": 3,
+          "rgb_timestamp": 1341841301.233494,
+          "status": "evaluated",
+          "depth_gap_seconds": 1.1920928955078125e-05,
+          "raw": {
+            "reference_valid_pixels": 262159,
+            "total_pixels": 307200,
+            "invalid_prediction_pixels": 0,
+            "status": "evaluated",
+            "abs_rel": 0.3933433306715189,
+            "rmse_m": 0.746195847656124,
+            "mae_m": 0.6939614118606124,
+            "delta_1": 0.011569314805137341,
+            "prediction_coverage": 1.0
+          },
+          "trajectory_scaled": {
+            "reference_valid_pixels": 262159,
+            "total_pixels": 307200,
+            "invalid_prediction_pixels": 0,
+            "status": "evaluated",
+            "abs_rel": 0.03115912367091126,
+            "rmse_m": 0.20771499994286002,
+            "mae_m": 0.06912793242666085,
+            "delta_1": 0.9821215369298785,
+            "prediction_coverage": 1.0
+          },
+          "depth_sha256": "7b3ffe39b5f9e120da2953341fa918b356e6fc63f6388f0546a6042b9328ef04"
+        },
+        {
+          "ordinal": 4,
+          "rgb_timestamp": 1341841307.43069,
+          "status": "evaluated",
+          "depth_gap_seconds": 1.8835067749023438e-05,
+          "raw": {
+            "reference_valid_pixels": 269693,
+            "total_pixels": 307200,
+            "invalid_prediction_pixels": 0,
+            "status": "evaluated",
+            "abs_rel": 0.4408394386458394,
+            "rmse_m": 0.6831569811680461,
+            "mae_m": 0.6584651243972885,
+            "delta_1": 0.005684240970288439,
+            "prediction_coverage": 1.0
+          },
+          "trajectory_scaled": {
+            "reference_valid_pixels": 269693,
+            "total_pixels": 307200,
+            "invalid_prediction_pixels": 0,
+            "status": "evaluated",
+            "abs_rel": 0.052417558769513865,
+            "rmse_m": 0.10400281904808822,
+            "mae_m": 0.07841160465160768,
+            "delta_1": 0.9945753134119165,
+            "prediction_coverage": 1.0
+          },
+          "depth_sha256": "99ffc8bb65b5392bbfdd9e3a53ff4cde406f7c5baf5159a663f37a87132c77cc"
+        },
+        {
+          "ordinal": 5,
+          "rgb_timestamp": 1341841313.60146,
+          "status": "evaluated",
+          "depth_gap_seconds": 1.0967254638671875e-05,
+          "raw": {
+            "reference_valid_pixels": 268651,
+            "total_pixels": 307200,
+            "invalid_prediction_pixels": 0,
+            "status": "evaluated",
+            "abs_rel": 0.3615811477000437,
+            "rmse_m": 0.7313515312768086,
+            "mae_m": 0.6814015914009787,
+            "delta_1": 0.0035808539703928144,
+            "prediction_coverage": 1.0
+          },
+          "trajectory_scaled": {
+            "reference_valid_pixels": 268651,
+            "total_pixels": 307200,
+            "invalid_prediction_pixels": 0,
+            "status": "evaluated",
+            "abs_rel": 0.01657234927027508,
+            "rmse_m": 0.0866008754226847,
+            "mae_m": 0.03249326705634695,
+            "delta_1": 0.9957677432803154,
+            "prediction_coverage": 1.0
+          },
+          "depth_sha256": "997635df868b4c1750128fd70df42a8310d6fff1cd2e7825521187aa8b82a502"
+        }
+      ],
+      "npz_sha256": "30855ecceaa78baf70e7ff1938129a80b85f9a4b0bd1cacbf159d220e3691241",
+      "fixed_trajectory_scale": 0.727756503965027,
+      "matched_reference_frames": 6,
+      "evaluated_frames": 6,
+      "full_six_frame_metrics": {
+        "raw": {
+          "abs_rel": 0.3977177612319657,
+          "rmse_m": 0.6842950102221228,
+          "mae_m": 0.6458578063395103,
+          "delta_1": 0.014268082043094099
+        },
+        "trajectory_scaled": {
+          "abs_rel": 0.03410556399041617,
+          "rmse_m": 0.16641876094780786,
+          "mae_m": 0.06381001758878801,
+          "delta_1": 0.9848774502513242
+        }
+      },
+      "available_frame_diagnostic": {
+        "frame_count": 6,
+        "metrics": {
+          "raw": {
+            "abs_rel": 0.3977177612319657,
+            "rmse_m": 0.6842950102221228,
+            "mae_m": 0.6458578063395103,
+            "delta_1": 0.014268082043094099
+          },
+          "trajectory_scaled": {
+            "abs_rel": 0.03410556399041617,
+            "rmse_m": 0.16641876094780786,
+            "mae_m": 0.06381001758878801,
+            "delta_1": 0.9848774502513242
+          }
+        }
+      }
+    }
+  ],
+  "scope": "Read-only depth diagnostics on retained outputs, not a new model candidate. Different-time RGB/depth <=20ms can still contain motion mismatch. GT has missing pixels; no complete-surface truth, geometry/task acceptance or SOTA.",
+  "evaluated_frames": 17,
+  "complete_sources": 2,
+  "full_18_frame_metrics": null,
+  "wall_seconds": 0.38084934500511736
+}

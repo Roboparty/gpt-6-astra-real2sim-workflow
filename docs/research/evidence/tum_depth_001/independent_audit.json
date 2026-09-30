@@ -1,0 +1,15 @@
+{
+  "schema": "real2sim.tum-depth-independent-audit/1",
+  "status": "passed",
+  "result_sha256": "a8ed218a52261a09b91cdaed737f5b268c6a14806acfb1a0a355cfc1425173ba",
+  "script_sha256": "2e9f3a32ca9454fc6093bcf36b26218bde133a7f74a5ffc5d31aedc3e7eaff36",
+  "frames_recomputed": 17,
+  "missing_reference_frames": 1,
+  "reference_valid_pixels": 4247148,
+  "expected_pixels_18_frames": 5529600,
+  "matched_frame_pixels": 5222400,
+  "max_abs_rel_difference": 1.3149362848574597e-10,
+  "max_rmse_difference_m": 4.463772684815126e-10,
+  "wall_seconds": 0.3931058979360387,
+  "scope": "Explicit pixel-center bilinear interpolation independent of PIL resizing, plus alternative summation of primary depth metrics. No confidence filtering or new model inference."
+}

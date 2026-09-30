@@ -22,7 +22,7 @@
   "remote_root": "4090-1:/home/wqz/real2sim_capability_20260929",
   "protocol": "PROTOCOL_20260929.md",
   "result": "RESULTS_20260929.md",
-  "latest_update": "TUM_PI3X_COMPARISON_20260930.md",
+  "latest_update": "TUM_DEPTH_AUDIT_20260930.md",
   "completed": [
     "Matched retained-room collision failure reproduction and repair",
     "Rectangular opening handling and false-pass negative tests",
@@ -63,10 +63,11 @@
     "Frozen floor normal candidate validated at three prescribed virtual views: 18/18 renders and independent pixel/matrix/hash audit; GLB/USD own-native average MAE improves 35.8/36.0 percent; all six GLB bed-bound failures retained, no real-view or SOTA acceptance",
     "All three original TUM archives resumed on remote data volume with unchanged sources/selection: 18/18 RGB and mocap matches; depth 17/18 and combined readiness 2/3. Full gzip and independent frame-selection audits pass; one 28.994ms depth gap retained.",
     "TUM RGB-only unknown-intrinsics PyCOLMAP reference executed on all 3 fixed sequences: only texture-board 6/6 poses/374 points, Sim3 translation ATE 0.0130648m after GT alignment; desk/cabinet 0/6 retain null ATE; persisted-pose and all-pair graph audits complete",
-    "Reconciled existing Pi3X installation/startup receipts and spent GPU time without reinstalling or changing old preparation budget; frozen RGB-only TUM Pi3X predicts 18/18 cameras across 3/3 sources with Sim3 ATE 0.018361/0.009635/0.024986m; classical reference remains 1/3, comparison is not matched-compute or SOTA"
+    "Reconciled existing Pi3X installation/startup receipts and spent GPU time without reinstalling or changing old preparation budget; frozen RGB-only TUM Pi3X predicts 18/18 cameras across 3/3 sources with Sim3 ATE 0.018361/0.009635/0.024986m; classical reference remains 1/3, comparison is not matched-compute or SOTA",
+    "Read-only Pi3X depth audit against retained TUM sensors:17/18 frames,4247148 valid GT pixels; raw AbsRel7.79/14.32(partial)/39.77 percent versus trajectory-scaled6.81/1.70(partial)/3.41 percent. Full18-frame score remains null; independent interpolation/metric recomputation agrees."
   ],
   "next": [
-    "Audit retained Pi3X depth/point outputs against the 17 available TUM depth references and build provenance-bound native reference consumption without new inference. Camera candidate cap8/8 reached; no ninth candidate without versioned amendment. Do not claim matched-budget agent uplift.",
+    "Bind retained Pi3X outputs into native reference consumption with complete provenance and explicit unverified scale. Raw cabinet depth AbsRel39.77 percent shows aligned camera ATE is insufficient; do not apply GT-fitted scale to production or claim dense geometry acceptance. Camera cap8/8 unchanged.",
     "Floor tangent-normal bake now improves format fidelity in all six GLB/USD additional virtual-view comparisons; retain original photo vent regression and GLB bound failure. Validate additional material families and actual observed views before adoption; appearance count stays 6/8.",
     "Register bridge-object annotations or reviewed correspondences for disconnected selected identity graphs; v2 retains 72 observations and 17/18 frame coverage, not a complete common camera/model initialization",
     "Evaluate the shell+vent development successor through full visual review and task integration; fine textiles/accessories remain visibly approximate, and prior pose pilot remains rejected by fine landmark gate",
@@ -163,7 +164,10 @@
     "pi3x/completion_20260929T151428Z (separate completed install, 90.375579s, reconciled)",
     "pi3x/startup_forward_001 (separate Waterfront startup, one forward, all raw outputs preserved)",
     "tum_pi3x_008 (one frozen RGB-only three-source configuration, all 18 poses predicted)",
-    "tum_pi3x_008_evaluation (all three full trajectories scored, raw arrays and classical failures retained)"
+    "tum_pi3x_008_evaluation (all three full trajectories scored, raw arrays and classical failures retained)",
+    "tum_depth_001 (frozen protocol, no new model; all18 frames retained, one unavailable depth)",
+    "tum_depth_001/independent_audit.json (alternative pixel-center interpolation and primary metric sums on17 frames)",
+    "tum_depth_001_code/test_tum_depth.py (5 methods including invalid-prediction/missing-reference guards)"
   ],
   "resource_accounting": {
     "new_gpu_hours": 0.010596260615824981,
@@ -260,7 +264,12 @@
     "tum_pi3x_008_evaluation_seconds": 0.2515998719027266,
     "observed_pi3x_gpu_session_seconds": 25.53291581105441,
     "observed_pi3x_forward_seconds": 2.9699132210807875,
-    "pi3x_accounting_correction": "Earlier new_gpu_hours=0 did not include separate startup records. Now conservatively charge full startup+new cohort walls; historical per-run claims and original1800-second setup budget are not rewritten."
+    "pi3x_accounting_correction": "Earlier new_gpu_hours=0 did not include separate startup records. Now conservatively charge full startup+new cohort walls; historical per-run claims and original1800-second setup budget are not rewritten.",
+    "tum_depth_evaluation_wall_seconds": 0.38084934500511736,
+    "tum_depth_independent_audit_wall_seconds": 0.3931058979360387,
+    "tum_depth_tests_wall_seconds": 0.001,
+    "tum_depth_new_model_passes": 0,
+    "tum_depth_scope": "Read-only reuse; no camera/GPU/API attempt or acquisition budget change. CPU evaluation and independent audit measured separately; orchestration overhead unknown."
   },
   "constraints": [
     "Do not overwrite historical candidates, source photographs or failed evidence",
@@ -464,7 +473,70 @@
         "freiburg3_cabinet": 0.02498552247136779
       },
       "native_reference_consumption_verified": false,
-      "scope": "Same RGB frame identities, different preprocessing/device/runtime; one seed, GT-aligned translations only. No SOTA."
+      "scope": "Same RGB frame identities, different preprocessing/device/runtime; one seed, GT-aligned translations only. No SOTA.",
+      "depth_audit": {
+        "report": "TUM_DEPTH_AUDIT_20260930.md",
+        "evaluated_frames": 17,
+        "expected_frames": 18,
+        "complete_sources": 2,
+        "expected_sources": 3,
+        "reference_valid_pixels": 4247148,
+        "full_cohort_metrics": null,
+        "source_diagnostics": {
+          "freiburg1_desk": {
+            "frame_count": 6,
+            "metrics": {
+              "raw": {
+                "abs_rel": 0.07788670638718959,
+                "rmse_m": 0.15023374749042243,
+                "mae_m": 0.09659410328054015,
+                "delta_1": 0.9771928900869312
+              },
+              "trajectory_scaled": {
+                "abs_rel": 0.06806164374078733,
+                "rmse_m": 0.14584189629360597,
+                "mae_m": 0.08723085786172578,
+                "delta_1": 0.9775058461590816
+              }
+            }
+          },
+          "freiburg3_structure_texture_far": {
+            "frame_count": 5,
+            "metrics": {
+              "raw": {
+                "abs_rel": 0.14322806313312247,
+                "rmse_m": 0.34984371013787513,
+                "mae_m": 0.31586970867189346,
+                "delta_1": 0.9909382463445487
+              },
+              "trajectory_scaled": {
+                "abs_rel": 0.01701983389104925,
+                "rmse_m": 0.1324254277122177,
+                "mae_m": 0.04371594782525609,
+                "delta_1": 0.9965491327338938
+              }
+            }
+          },
+          "freiburg3_cabinet": {
+            "frame_count": 6,
+            "metrics": {
+              "raw": {
+                "abs_rel": 0.3977177612319657,
+                "rmse_m": 0.6842950102221228,
+                "mae_m": 0.6458578063395103,
+                "delta_1": 0.014268082043094099
+              },
+              "trajectory_scaled": {
+                "abs_rel": 0.03410556399041617,
+                "rmse_m": 0.16641876094780786,
+                "mae_m": 0.06381001758878801,
+                "delta_1": 0.9848774502513242
+              }
+            }
+          }
+        },
+        "scope": "Raw learned-scale and fixed GT-trajectory-scaled depth; no confidence filter or depth fitting. Scale/geometry not accepted."
+      }
     }
   },
   "resolved_blockers": [

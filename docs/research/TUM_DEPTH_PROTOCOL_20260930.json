@@ -1,0 +1,37 @@
+{
+  "schema": "real2sim.tum-depth-protocol/1",
+  "status": "registered_before_depth_scoring",
+  "source_ids": [
+    "freiburg1_desk",
+    "freiburg3_structure_texture_far",
+    "freiburg3_cabinet"
+  ],
+  "prediction_root": "/data/real2sim_capability_wqz_20260929/tum_pi3x_008",
+  "rgb_index": "/data/real2sim_capability_wqz_20260929/tum_pi3x_008_code/fixed_rgb_index.json",
+  "rgb_index_sha256": "a7786321bed66138394e3bc4dedff133c0e76812a7cedb2f3af557388a97de0e",
+  "prediction_receipt": "/data/real2sim_capability_wqz_20260929/tum_pi3x_008/receipt.json",
+  "prediction_receipt_sha256": "b5a66932b9e25fc4c76b3b91cd7c65115e2917142d89522c40294e2f80433b2d",
+  "trajectory_evaluation": "/data/real2sim_capability_wqz_20260929/tum_pi3x_008_evaluation/receipt.json",
+  "trajectory_evaluation_sha256": "df61ae0f42b8e374382bc2ec62b00f8b3024a473a9ea2efb95dabaaf919d7de8",
+  "evaluator_sha256": "778429bc08c602b202b4a31d21ea606fc5cd4cb69a106f536b8aa8f3b2f043a7",
+  "depth_convention": "Registered RGB optical-axis Z in metres; uint16/5000, zero invalid. No extra depth correction. Predicted local_points[...,2] already includes learned metric factor.",
+  "resampling": "Predicted axial Z float32 574x434 ->640x480 PIL BILINEAR, no crop; GT never interpolated.",
+  "metrics": [
+    "frame-macro AbsRel",
+    "frame-macro RMSE(m)",
+    "frame-macro MAE(m)",
+    "delta1 ratio <1.25",
+    "reference pixel coverage"
+  ],
+  "scale_arms": [
+    "raw learned-scale Z",
+    "same Z times previously frozen trajectory Sim3 scale; no depth-derived fitting"
+  ],
+  "pixel_policy": "All GT>0 pixels included. Any nonfinite/nonpositive prediction at valid GT invalidates full frame scores. No confidence mask, depth clipping, edge erosion or threshold search.",
+  "frame_policy": "All18 expected RGB frames retained. Existing20ms depth gate unchanged; board ordinal5 is missing. Full6/18-frame scores null if any frame unavailable; available-frame diagnostics explicitly labelled.",
+  "official_format_source": "https://cvg.cit.tum.de/data/datasets/rgbd-dataset/file_formats",
+  "max_cpu_wall_seconds": 300,
+  "new_inference_passes": 0,
+  "new_camera_candidates": 0,
+  "scope": "Read-only depth diagnostics on retained outputs, not a new model candidate. Different-time RGB/depth <=20ms can still contain motion mismatch. GT has missing pixels; no complete-surface truth, geometry/task acceptance or SOTA."
+}
