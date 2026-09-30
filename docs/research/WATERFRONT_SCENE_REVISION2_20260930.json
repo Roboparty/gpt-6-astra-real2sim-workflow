@@ -1,0 +1,107 @@
+{
+  "schema": "real2sim.waterfront-editable-scene/1",
+  "source_id": "bedroom_waterfront_g0024",
+  "input_manifest": "/home/wqz/real2sim_capability_20260929/runtime_addons/pi3x/startup_forward_001/input_manifest.json",
+  "input_manifest_sha256": "6bed7d92291d22999b27939699aa6376d37741beeb42154158e202b4016f4dbd",
+  "npz": "/home/wqz/real2sim_capability_20260929/runtime_addons/pi3x/startup_forward_001/predictions.npz",
+  "npz_sha256": "4e52c4329a0974826e6d2a08c576075641e43e24d1bbe7c4e523e3f66ad7aaa0",
+  "views": [
+    0,
+    3,
+    5
+  ],
+  "render_wh": [
+    640,
+    360
+  ],
+  "samples": 20,
+  "furniture": {
+    "parts": {
+      "bed": {
+        "center": [
+          -2.25,
+          -0.55,
+          0.025
+        ],
+        "size": [
+          1.95,
+          2.2,
+          0.48
+        ],
+        "rotation_z": -1.5707963267948966
+      },
+      "chaise": {
+        "center": [
+          -1.0,
+          1.7,
+          0.025
+        ],
+        "size": [
+          0.9,
+          1.35,
+          0.8
+        ],
+        "rotation_z": -1.5707963267948966
+      },
+      "plant": {
+        "center": [
+          -2.24,
+          1.55,
+          0.025
+        ],
+        "height": 0.97
+      },
+      "side_table": {
+        "center": [
+          0.08,
+          2.0,
+          0.025
+        ],
+        "radius": 0.23,
+        "height": 0.55
+      }
+    }
+  },
+  "scope": "New full editable authoring of a real six-view bedroom, not old independent-room retouch. Reuse frozen Pi3X output; derive pinhole projection from retained rays and one shared rigid room gauge. All dimensions/materials/backside and gauge gravity are unmeasured assumptions. People omitted, reflections modeled by approximate mirror; exterior is explicitly captured background plane.",
+  "resources": {
+    "camera_attempts_used": 8,
+    "new_inference": 0,
+    "new_gpu_hours": 0,
+    "cpu_threads": 2,
+    "max_run_wall_seconds": 1200,
+    "appearance_proposals_before": 7,
+    "appearance_proposals_after": 8
+  },
+  "implementation_sha256": {
+    "tools/build_waterfront_scene.py": "d45e35ffc5e5f0f78a34d2190910a971403bc287b7d1411501615e987264c25c",
+    "tools/waterfront_primitives.py": "3831f36ebaae53efcb1d99061786130c87668bcc2fea69aca5d3658d0e6f9ec8"
+  },
+  "previous_candidate": "waterfront_scene_001",
+  "previous_protocol_sha256": "24e676106c4f480955ab875244eb611574c8427d9e8235daab605859698add05",
+  "material_overrides": {
+    "mirror": {
+      "roughness": 0.018
+    },
+    "navy": {
+      "color": [
+        0.001,
+        0.003,
+        0.012
+      ]
+    },
+    "wood": {
+      "color": [
+        0.032,
+        0.038,
+        0.035
+      ]
+    }
+  },
+  "part_local_z_offsets": {
+    "bed_navy_throw": 0.14
+  },
+  "window_light_rotation_x": -1.5707963267948966,
+  "window_light_energy": 180,
+  "hide_area_lights_from_glossy": true,
+  "revision_reason": "One visible-defect iteration: chaise axis correction, plant envelope correction, remove textile interpenetration, suppress unrealistic reflected area-light cards, correct inward window-light direction. Same cameras, input images, no model inference; mixed authoring revision, not a causal ablation."
+}

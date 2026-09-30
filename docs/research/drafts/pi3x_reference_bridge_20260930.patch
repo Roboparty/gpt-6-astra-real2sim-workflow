@@ -1,0 +1,157 @@
+diff --git a/.agents/skills/pi3x-scene-reference/scripts/reference.py b/.agents/skills/pi3x-scene-reference/scripts/reference.py
+index fa66662..806d6b0 100644
+--- a/.agents/skills/pi3x-scene-reference/scripts/reference.py
++++ b/.agents/skills/pi3x-scene-reference/scripts/reference.py
+@@ -8,6 +8,9 @@
+ CODE_REV = '9fa3ddb3f8d53041f8b2738df404f62223bbaa7b'
+ WEIGHT_REV = 'bb1deea4d7423de5b30691739cb451a3f57dc1d5'
+ WEIGHT_SHA = '69972d6e1c4492cb4d737a84fe940e357087d81c52f5c9b7c160b49c1f41669a'
++# Explicit compatibility with the retained, reviewed three-source research runner.
++# This is not a general conversion from arbitrary success-shaped JSON receipts.
++TUM_RUNNER_SHA = '8fd481dfa42e6823ec9f5546d37bf1ab36ca3a1620d02288cad990953ca77522'
+ 
+ 
+ def sha(path):
+@@ -64,6 +67,12 @@ def run_receipt_files(provenance, base):
+     if receipt.is_file():
+         try:
+             data = json.loads(receipt.read_text(encoding='utf-8'))
++            if data.get('schema') == 'real2sim.tum-pi3x-prediction/1':
++                imported = provenance.get('research_run', {})
++                for name in ('protocol', 'frames', 'runner'):
++                    value = imported.get(name, {}).get('path')
++                    if isinstance(value, str) and value.strip():
++                        paths.append((Path(base)/value).resolve())
+             log = data.get('run_log', {}).get('path')
+             if isinstance(log, str) and log.strip():
+                 paths.append((receipt.parent/log).resolve())
+@@ -72,7 +81,98 @@ def run_receipt_files(provenance, base):
+     return paths
+ 
+ 
+-def validate_backend_run(provenance, base):
++def research_preprocessing(protocol):
++    """Canonical actual recipe for the single supported research runner."""
++    if (protocol.get('output_hw') != [434, 574] or protocol.get('pixel_limit') != 255000
++            or type(protocol.get('seed')) is not int or protocol['seed'] != 0):
++        raise ValueError('Unsupported research preprocessing')
++    return dict(loader='pinned pi3.utils.basic.load_multimodal_data', resize='Pillow LANCZOS',
++                crop='none', color='RGB', source_rgb_size=[640, 480], output_size_wh=[574, 434],
++                pixel_limit=255000, conditions='RGB only', autocast='bfloat16', seed=0)
++
++
++def validate_research_run(provenance, base, receipt, receipt_path, manifest):
++    if manifest is None or provenance.get('synthetic', False) is not False:
++        raise ValueError('Research receipt requires a real input manifest')
++    imported = provenance.get('research_run')
++    if not isinstance(imported, dict):
++        raise ValueError('Missing explicit research import bindings')
++    dependencies = {}
++    for name in ('protocol', 'frames', 'runner'):
++        item = imported.get(name)
++        if not isinstance(item, dict) or not isinstance(item.get('path'), str) or not item['path'].strip():
++            raise ValueError('Missing research dependency: ' + name)
++        path = (Path(base)/item['path']).resolve()
++        if not path.is_file() or sha(path) != item.get('sha256'):
++            raise ValueError('Research dependency hash mismatch: ' + name)
++        dependencies[name] = {'path': str(path), 'sha256': sha(path)}
++    protocol = json.loads(Path(dependencies['protocol']['path']).read_text())
++    frames = json.loads(Path(dependencies['frames']['path']).read_text())
++    if (receipt.get('status') != 'predicted' or 'error' in receipt
++            or receipt.get('checkpoint_loaded_strictly') is not True
++            or receipt.get('source_inputs_unchanged') is not True
++            or receipt.get('expected_sources') != 3 or receipt.get('expected_frames') != 18):
++        raise ValueError('Research cohort did not complete its strict input/loading checks')
++    if (receipt.get('runner_sha256') != TUM_RUNNER_SHA
++            or dependencies['runner']['sha256'] != TUM_RUNNER_SHA
++            or protocol.get('runner_sha256') != TUM_RUNNER_SHA):
++        raise ValueError('Unknown or changed research runner')
++    if (receipt.get('protocol_sha256') != dependencies['protocol']['sha256']
++            or receipt.get('frames_sha256') != dependencies['frames']['sha256']
++            or protocol.get('frames_sha256') != dependencies['frames']['sha256']):
++        raise ValueError('Research protocol/frame chain mismatch')
++    if (protocol.get('schema') != 'real2sim.tum-pi3x-protocol/1'
++            or protocol.get('source_revision') != CODE_REV
++            or protocol.get('weight_revision') != WEIGHT_REV
++            or protocol.get('weight_sha256') != WEIGHT_SHA
++            or protocol.get('source_sha256') != {
++                'source/pi3/models/pi3x.py': 'd29a67eec7cc38e110baa1a07aac1b178f0317a8ded9e391f07da33f09ef5b7a',
++                'source/pi3/utils/basic.py': 'd4eb33dbc753d4f5a2f3cba161bc5b96068005e789430a8ddc5062c1cc504ad1'}):
++        raise ValueError('Research model/weight contract mismatch')
++    expected_ids = ['freiburg1_desk', 'freiburg3_structure_texture_far', 'freiburg3_cabinet']
++    if (protocol.get('source_ids') != expected_ids or frames.get('status') != 'frozen'
++            or frames.get('cohort_id') != 'tum-frozen-six-rgb-v1'
++            or protocol.get('cohort') != frames['cohort_id']
++            or [s.get('id') for s in frames.get('sources', [])] != expected_ids
++            or [s.get('id') for s in receipt.get('sources', [])] != expected_ids):
++        raise ValueError('Research cohort identity/order mismatch')
++    source_id = imported.get('source_id')
++    if source_id not in expected_ids:
++        raise ValueError('Unknown research source')
++    index = expected_ids.index(source_id)
++    original = frames['sources'][index]
++    for row in receipt['sources']:
++        seconds = row.get('forward_seconds')
++        if (row.get('status') != 'predicted' or 'error' in row or row.get('camera_count') != 6
++                or type(seconds) not in (float, int) or not math.isfinite(seconds) or seconds <= 0):
++            raise ValueError('Incomplete source forward in retained cohort')
++    row = receipt['sources'][index]
++    if row.get('predictions_sha256') != provenance['npz_sha256']:
++        raise ValueError('Research source/output mismatch')
++    source_frames = original.get('selected_frames', [])
++    if original.get('status') != 'frozen' or len(source_frames) != 6 or len(manifest.get('frames', [])) != 6:
++        raise ValueError('Incomplete source frame binding')
++    if len({f.get('sha256') for f in source_frames}) != 6:
++        raise ValueError('Repeated source frame bytes')
++    for n, (source, frame) in enumerate(zip(source_frames, manifest['frames'])):
++        if (source.get('ordinal') != n or frame.get('id') != f'{source_id}:{n:02d}'
++                or frame.get('role') != 'fit' or frame.get('sha256') != source.get('sha256')
++                or frame.get('pts_seconds') != source.get('timestamp')
++                or frame.get('image_size') != source.get('image_size') or frame.get('image_size') != [640, 480]):
++            raise ValueError('Research frame identity/order/time mismatch')
++    if provenance.get('preprocessing') != research_preprocessing(protocol):
++        raise ValueError('Research preprocessing differs from executed recipe')
++    return {'path': str(receipt_path), 'sha256': sha(receipt_path),
++            'validation': 'consistent_retained_research_runner_declarations',
++            'authenticity': 'not_independently_attested', 'source_id': source_id,
++            'execution_record_kind': 'original_structured_receipt',
++            'dependencies': dependencies,
++            'camera_poses_declaration': row.get('poses_camera_to_world'),
++            'input_manifest_timing': 'post_run_view_of_predeclared_hashed_frames',
++            'raw_stdout_log': 'not_retained_by_original_runner; not fabricated'}
++
++
++def validate_backend_run(provenance, base, *, manifest=None):
+     """Check retained evidence consistency, not authenticity of producer claims.
+ 
+     Required receipt schema: pi3x-backend-run/1; kind=backend_output,
+@@ -93,6 +193,8 @@ def validate_backend_run(provenance, base):
+     if provenance.get('run_receipt_sha256') != receipt_sha:
+         raise ValueError('Backend run receipt hash mismatch')
+     receipt = json.loads(receipt_path.read_text(encoding='utf-8'))
++    if isinstance(receipt, dict) and receipt.get('schema') == 'real2sim.tum-pi3x-prediction/1':
++        return validate_research_run(provenance, base, receipt, receipt_path, manifest)
+     if not isinstance(receipt, dict) or receipt.get('schema') != 'pi3x-backend-run/1':
+         raise ValueError('Wrong backend run receipt schema')
+     if (receipt.get('kind') != 'backend_output' or receipt.get('synthetic') is not False
+@@ -157,7 +259,7 @@ def consume(manifest_path, npz_path, provenance, threshold, *, provenance_base=N
+             raise ValueError('Backend output needs a retained run receipt path')
+         if provenance_base is None and not Path(provenance.get('run_receipt', '')).is_absolute():
+             raise ValueError('Relative run receipt requires the provenance file directory')
+-        run_binding = validate_backend_run(provenance, provenance_base or manifest_path.parent)
++        run_binding = validate_backend_run(provenance, provenance_base or manifest_path.parent, manifest=manifest)
+     with np.load(npz_path, allow_pickle=False) as arrays:
+         values = {k: arrays[k] for k in ('points', 'local_points', 'conf', 'camera_poses')}
+     points, local, conf, poses = [values[k] for k in ('points', 'local_points', 'conf', 'camera_poses')]
+@@ -165,6 +267,11 @@ def consume(manifest_path, npz_path, provenance, threshold, *, provenance_base=N
+         raise ValueError('Expected points [1,N,H,W,3]')
+     if local.shape != points.shape or conf.shape != points.shape[:-1]+(1,) or poses.shape != (1, len(fit), 4, 4):
+         raise ValueError('Pi3X output shapes differ from pinned model API')
++    if run_binding and 'camera_poses_declaration' in run_binding:
++        declared = np.asarray(run_binding.pop('camera_poses_declaration'), dtype=poses.dtype)
++        if declared.shape != poses[0].shape or not np.array_equal(declared, poses[0]):
++            raise ValueError('Research receipt camera matrices differ from raw output')
++        run_binding['camera_pose_receipt_match'] = True
+     size = manifest['preprocessing'].get('output_size_wh')
+     if size is not None and list(points.shape[2:4]) != [size[1], size[0]]:
+         raise ValueError('Output raster differs from frozen preprocessing')

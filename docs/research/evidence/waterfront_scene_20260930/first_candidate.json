@@ -1,0 +1,73 @@
+{
+  "status": "rendered",
+  "protocol_sha256": "24e676106c4f480955ab875244eb611574c8427d9e8235daab605859698add05",
+  "script_sha256": "37ada6515603a584cd675637c14974fd98fb9a42adb8fc0b59c7fefeafc1e6b3",
+  "helper_sha256": "3831f36ebaae53efcb1d99061786130c87668bcc2fea69aca5d3658d0e6f9ec8",
+  "source_npz_sha256": "4e52c4329a0974826e6d2a08c576075641e43e24d1bbe7c4e523e3f66ad7aaa0",
+  "model_sha256": "576c437f2bffbc61d2f98749a3db455017883d3dd795fc3caf7682b0c791c801",
+  "mesh_parts": 173,
+  "assemblies": {
+    "room": 6,
+    "doorway": 5,
+    "window": 7,
+    "exterior_reference": 1,
+    "mirror_wall": 4,
+    "shelves_entry": 10,
+    "shelves_window": 16,
+    "base_cabinet": 10,
+    "shelf_accessories": 26,
+    "ceiling_details": 13,
+    "bed": 18,
+    "chaise": 12,
+    "plant": 34,
+    "side_table": 11
+  },
+  "alignment": {
+    "world_to_room_rotation": [
+      [
+        -0.8188834190368652,
+        0.28611063957214355,
+        0.49756473302841187
+      ],
+      [
+        -0.11268626153469086,
+        0.7698835134506226,
+        -0.6281570196151733
+      ],
+      [
+        -0.562789261341095,
+        -0.5704560279846191,
+        -0.5982040762901306
+      ]
+    ],
+    "world_origin": [
+      0.556028425693512,
+      1.8253002166748047,
+      0.3147180676460266
+    ],
+    "scale_factor": 1.0,
+    "status": "assumed gravity/cabinet axes from existing prediction; no measured scale"
+  },
+  "renders": [
+    {
+      "frame": 0,
+      "path": "/data/real2sim_capability_wqz_20260929/waterfront_scene_001/view_00.png",
+      "sha256": "280e9adc5e46551c13955ea994fa3f62cd204152da3b8ca6a918d5cb43a4b683",
+      "wall_seconds": 14.206238506943919
+    },
+    {
+      "frame": 3,
+      "path": "/data/real2sim_capability_wqz_20260929/waterfront_scene_001/view_03.png",
+      "sha256": "1d1fcc142f490994c11bea0ca0e637f219a1747a0603ec1ff5e2902804e92393",
+      "wall_seconds": 13.955010700039566
+    },
+    {
+      "frame": 5,
+      "path": "/data/real2sim_capability_wqz_20260929/waterfront_scene_001/view_05.png",
+      "sha256": "7cd01fde24b8dfc751ffd1f5d97b2b525abe233023d3c1bc387bcc62bb4285ab",
+      "wall_seconds": 14.478270296007395
+    }
+  ],
+  "wall_seconds": 43.61569171398878,
+  "source_inputs_unchanged": true
+}

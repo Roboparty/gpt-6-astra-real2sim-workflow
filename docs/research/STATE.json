@@ -22,7 +22,7 @@
   "remote_root": "4090-1:/home/wqz/real2sim_capability_20260929",
   "protocol": "PROTOCOL_20260929.md",
   "result": "RESULTS_20260929.md",
-  "latest_update": "TUM_DEPTH_AUDIT_20260930.md",
+  "latest_update": "WATERFRONT_EDITABLE_DELIVERY_20260930.md",
   "completed": [
     "Matched retained-room collision failure reproduction and repair",
     "Rectangular opening handling and false-pass negative tests",
@@ -64,9 +64,11 @@
     "All three original TUM archives resumed on remote data volume with unchanged sources/selection: 18/18 RGB and mocap matches; depth 17/18 and combined readiness 2/3. Full gzip and independent frame-selection audits pass; one 28.994ms depth gap retained.",
     "TUM RGB-only unknown-intrinsics PyCOLMAP reference executed on all 3 fixed sequences: only texture-board 6/6 poses/374 points, Sim3 translation ATE 0.0130648m after GT alignment; desk/cabinet 0/6 retain null ATE; persisted-pose and all-pair graph audits complete",
     "Reconciled existing Pi3X installation/startup receipts and spent GPU time without reinstalling or changing old preparation budget; frozen RGB-only TUM Pi3X predicts 18/18 cameras across 3/3 sources with Sim3 ATE 0.018361/0.009635/0.024986m; classical reference remains 1/3, comparison is not matched-compute or SOTA",
-    "Read-only Pi3X depth audit against retained TUM sensors:17/18 frames,4247148 valid GT pixels; raw AbsRel7.79/14.32(partial)/39.77 percent versus trajectory-scaled6.81/1.70(partial)/3.41 percent. Full18-frame score remains null; independent interpolation/metric recomputation agrees."
+    "Read-only Pi3X depth audit against retained TUM sensors:17/18 frames,4247148 valid GT pixels; raw AbsRel7.79/14.32(partial)/39.77 percent versus trajectory-scaled6.81/1.70(partial)/3.41 percent. Full18-frame score remains null; independent interpolation/metric recomputation agrees.",
+    "Waterfront six-view input reused to author new173-part editable Blender model; two candidates preserved, three actual matching view comparisons0/3/5 delivered, saved-model reopen passed. User subsequently selects SimFoundry Desk1/Easy as next concrete comparison case."
   ],
   "next": [
+    "Deliver user-selected SimFoundry Desk1/Easy image reconstruction, with versioned authoring scope/budget before new case execution. Keep previous camera/model caps and all costs; no new learned model/camera run. Compare competitor images only after authoring. One real view only.",
     "Bind retained Pi3X outputs into native reference consumption with complete provenance and explicit unverified scale. Raw cabinet depth AbsRel39.77 percent shows aligned camera ATE is insufficient; do not apply GT-fitted scale to production or claim dense geometry acceptance. Camera cap8/8 unchanged.",
     "Floor tangent-normal bake now improves format fidelity in all six GLB/USD additional virtual-view comparisons; retain original photo vent regression and GLB bound failure. Validate additional material families and actual observed views before adoption; appearance count stays 6/8.",
     "Register bridge-object annotations or reviewed correspondences for disconnected selected identity graphs; v2 retains 72 observations and 17/18 frame coverage, not a complete common camera/model initialization",
@@ -167,7 +169,10 @@
     "tum_pi3x_008_evaluation (all three full trajectories scored, raw arrays and classical failures retained)",
     "tum_depth_001 (frozen protocol, no new model; all18 frames retained, one unavailable depth)",
     "tum_depth_001/independent_audit.json (alternative pixel-center interpolation and primary metric sums on17 frames)",
-    "tum_depth_001_code/test_tum_depth.py (5 methods including invalid-prediction/missing-reference guards)"
+    "tum_depth_001_code/test_tum_depth.py (5 methods including invalid-prediction/missing-reference guards)",
+    "waterfront_scene_001 (new full editable reconstruction; first real-view renders; visible cloth/light/chair issues retained)",
+    "waterfront_scene_002 (same cameras, one mixed visible-defect revision;173mesh parts;3 source-corresponding renders; model reopen passes)",
+    "native_reference_bridge_draft (unvalidated patch archived; active consumer restored unchanged)"
   ],
   "resource_accounting": {
     "new_gpu_hours": 0.010596260615824981,
@@ -182,7 +187,7 @@
     "camera_initialization_full_sources": "1/3",
     "camera_runtime_addon": "pycolmap4.2.0 isolated target; existing Python/NumPy preserved",
     "pose_pilot_candidate_rounds_used": 4,
-    "appearance_unique_proposals_used": 6,
+    "appearance_unique_proposals_used": 8,
     "combined_unique_proposals_used": 2,
     "physical_ep2_simulation_attempts_used": 1,
     "parallel_selected_run_wall_seconds": 143.0860238011228,
@@ -269,7 +274,10 @@
     "tum_depth_independent_audit_wall_seconds": 0.3931058979360387,
     "tum_depth_tests_wall_seconds": 0.001,
     "tum_depth_new_model_passes": 0,
-    "tum_depth_scope": "Read-only reuse; no camera/GPU/API attempt or acquisition budget change. CPU evaluation and independent audit measured separately; orchestration overhead unknown."
+    "tum_depth_scope": "Read-only reuse; no camera/GPU/API attempt or acquisition budget change. CPU evaluation and independent audit measured separately; orchestration overhead unknown.",
+    "waterfront_authoring_candidates_used": 2,
+    "waterfront_cpu_wall_seconds": 82.43346438196022,
+    "waterfront_scope": "Two new scene authoring/render candidates charged7/8 and8/8; camera8/8 unchanged, no inference/GPU/API. First version and unvalidated bridge draft retained."
   },
   "constraints": [
     "Do not overwrite historical candidates, source photographs or failed evidence",
@@ -295,6 +303,10 @@
       "scope": "New camera candidate experiments",
       "reason": "Frozen first-round candidate cap reached at 8/8. Require a versioned budget amendment before any ninth candidate; existing predictions can be audited or consumed without re-inference.",
       "evidence": "evidence/tum_pi3x_008/ledger.json"
+    },
+    {
+      "scope": "First-round appearance proposals",
+      "reason": "8/8 now used including the two retained Waterfront authoring candidates; a new case requires an explicit versioned authoring budget, preserving old ledger."
     }
   ],
   "latest_development_candidate": {
@@ -569,5 +581,14 @@
     "mode": "0700",
     "originals_preserved": true,
     "evidence": "evidence/heartbeat_1950/storage_receipt.json"
+  },
+  "delivery_focus": {
+    "user_selected_case": "SimFoundry YCB Desk 1 / Easy",
+    "source_image_url": "https://arxiv.org/html/2606.28276v4/figs/imgs/qualitative_results/ycb_desk_3/ycb_desk_3.jpg",
+    "source_sha256": "f125bdbe59e6e978d22e5143131291a1ef5206239928007a01d26aabb1bb9578",
+    "scope": "Real image -> editable object/part model -> same-view render comparison. Only one known real view. Competitor renders evaluation-only after authoring; no GT model/pose assembly as reconstruction. Do not delay for unrelated benchmarks/physics.",
+    "waterfront_completed_checkpoint": "/data/real2sim_capability_wqz_20260929/waterfront_scene_002/scene.blend",
+    "native_bridge_draft": "drafts/pi3x_reference_bridge_20260930.patch",
+    "draft_status": "saved_unvalidated_not_active"
   }
 }

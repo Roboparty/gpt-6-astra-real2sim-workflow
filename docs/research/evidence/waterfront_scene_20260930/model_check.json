@@ -1,0 +1,30 @@
+{
+  "status": "passed",
+  "model_sha256": "e511efc8eff7c333e82db9d39c2cd94be7524ab281f5b156b20def004c4f30b8",
+  "model_bytes": 4107369,
+  "editable_mesh_parts": 173,
+  "real_source_cameras": 6,
+  "packed_images": [
+    "frame_000005.png"
+  ],
+  "max_saved_camera_matrix_error": 8.940696716308594e-07,
+  "active_dynamics": false,
+  "named_assemblies": {
+    "room": 6,
+    "doorway": 5,
+    "window": 7,
+    "exterior_reference": 1,
+    "mirror_wall": 4,
+    "shelves_entry": 10,
+    "shelves_window": 16,
+    "base_cabinet": 10,
+    "shelf_accessories": 26,
+    "ceiling_details": 13,
+    "bed": 18,
+    "chaise": 12,
+    "plant": 34,
+    "side_table": 11
+  },
+  "scale_status": "learned_unvalidated; author dimensions assumed",
+  "scope": "Actual saved Blender reopen/structure/camera preservation only. Not visual acceptance, measured geometry, collision or robotics qualification."
+}

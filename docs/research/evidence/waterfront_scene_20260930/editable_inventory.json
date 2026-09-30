@@ -1,0 +1,2770 @@
+[
+  {
+    "name": "room_floor",
+    "assembly": "room",
+    "type": "MESH",
+    "dimensions": [
+      5.5,
+      6.900000095367432,
+      0.14000000059604645
+    ],
+    "location": [
+      -1.0,
+      -0.20000000298023224,
+      -0.07000000029802322
+    ],
+    "parent": null
+  },
+  {
+    "name": "room_ceiling",
+    "assembly": "room",
+    "type": "MESH",
+    "dimensions": [
+      5.5,
+      6.900000095367432,
+      0.14000000059604645
+    ],
+    "location": [
+      -1.0,
+      -0.20000000298023224,
+      2.7200000286102295
+    ],
+    "parent": null
+  },
+  {
+    "name": "room_left_wall",
+    "assembly": "room",
+    "type": "MESH",
+    "dimensions": [
+      0.1599999964237213,
+      6.300000190734863,
+      2.5999999046325684
+    ],
+    "location": [
+      -3.549999952316284,
+      -0.20000000298023224,
+      1.2999999523162842
+    ],
+    "parent": null
+  },
+  {
+    "name": "room_rear_unobserved",
+    "assembly": "room",
+    "type": "MESH",
+    "dimensions": [
+      5.099999904632568,
+      0.14000000059604645,
+      2.5999999046325684
+    ],
+    "location": [
+      -1.0,
+      -3.549999952316284,
+      1.2999999523162842
+    ],
+    "parent": null
+  },
+  {
+    "name": "headboard_dark_wall",
+    "assembly": "room",
+    "type": "MESH",
+    "dimensions": [
+      0.03500000014901161,
+      4.050000190734863,
+      2.4700000286102295
+    ],
+    "location": [
+      -3.4549999237060547,
+      0.07999999821186066,
+      1.2400000095367432
+    ],
+    "parent": null
+  },
+  {
+    "name": "room_right_main",
+    "assembly": "room",
+    "type": "MESH",
+    "dimensions": [
+      0.14000000059604645,
+      4.840000152587891,
+      2.5999999046325684
+    ],
+    "location": [
+      1.5,
+      0.49000000953674316,
+      1.2999999523162842
+    ],
+    "parent": null
+  },
+  {
+    "name": "door_lintel",
+    "assembly": "doorway",
+    "type": "MESH",
+    "dimensions": [
+      0.14000000059604645,
+      1.0499999523162842,
+      0.25
+    ],
+    "location": [
+      1.5,
+      -2.6500000953674316,
+      2.4800000190734863
+    ],
+    "parent": null
+  },
+  {
+    "name": "door_rear_jamb",
+    "assembly": "doorway",
+    "type": "MESH",
+    "dimensions": [
+      0.20000000298023224,
+      0.09000000357627869,
+      2.4000000953674316
+    ],
+    "location": [
+      1.5,
+      -3.200000047683716,
+      1.190000057220459
+    ],
+    "parent": null
+  },
+  {
+    "name": "door_front_jamb",
+    "assembly": "doorway",
+    "type": "MESH",
+    "dimensions": [
+      0.23999999463558197,
+      0.11999999731779099,
+      2.440000057220459
+    ],
+    "location": [
+      1.4600000381469727,
+      -2.0999999046325684,
+      1.2200000286102295
+    ],
+    "parent": null
+  },
+  {
+    "name": "hall_backwall_assumed",
+    "assembly": "doorway",
+    "type": "MESH",
+    "dimensions": [
+      0.10000000149011612,
+      1.0,
+      2.4000000953674316
+    ],
+    "location": [
+      2.549999952316284,
+      -2.6500000953674316,
+      1.2000000476837158
+    ],
+    "parent": null
+  },
+  {
+    "name": "hall_floor_assumed",
+    "assembly": "doorway",
+    "type": "MESH",
+    "dimensions": [
+      1.2000000476837158,
+      1.0499999523162842,
+      0.07000000029802322
+    ],
+    "location": [
+      2.0,
+      -2.6500000953674316,
+      -0.03500000014901161
+    ],
+    "parent": null
+  },
+  {
+    "name": "window_left_jamb",
+    "assembly": "window",
+    "type": "MESH",
+    "dimensions": [
+      0.1599999964237213,
+      0.15000000596046448,
+      2.549999952316284
+    ],
+    "location": [
+      -3.25,
+      2.9200000762939453,
+      1.2699999809265137
+    ],
+    "parent": null
+  },
+  {
+    "name": "window_right_jamb",
+    "assembly": "window",
+    "type": "MESH",
+    "dimensions": [
+      0.1599999964237213,
+      0.15000000596046448,
+      2.549999952316284
+    ],
+    "location": [
+      1.399999976158142,
+      2.9200000762939453,
+      1.2699999809265137
+    ],
+    "parent": null
+  },
+  {
+    "name": "window_header",
+    "assembly": "window",
+    "type": "MESH",
+    "dimensions": [
+      4.699999809265137,
+      0.1599999964237213,
+      0.1599999964237213
+    ],
+    "location": [
+      -0.9399999976158142,
+      2.9200000762939453,
+      2.430000066757202
+    ],
+    "parent": null
+  },
+  {
+    "name": "window_sill",
+    "assembly": "window",
+    "type": "MESH",
+    "dimensions": [
+      4.699999809265137,
+      0.20000000298023224,
+      0.11999999731779099
+    ],
+    "location": [
+      -0.9399999976158142,
+      2.9200000762939453,
+      0.10999999940395355
+    ],
+    "parent": null
+  },
+  {
+    "name": "window_mullion_0",
+    "assembly": "window",
+    "type": "MESH",
+    "dimensions": [
+      0.04500000178813934,
+      0.07999999821186066,
+      2.180000066757202
+    ],
+    "location": [
+      -1.9900000095367432,
+      2.880000114440918,
+      1.2699999809265137
+    ],
+    "parent": null
+  },
+  {
+    "name": "window_mullion_1",
+    "assembly": "window",
+    "type": "MESH",
+    "dimensions": [
+      0.04500000178813934,
+      0.07999999821186066,
+      2.180000066757202
+    ],
+    "location": [
+      -0.7400000095367432,
+      2.880000114440918,
+      1.2699999809265137
+    ],
+    "parent": null
+  },
+  {
+    "name": "window_mullion_2",
+    "assembly": "window",
+    "type": "MESH",
+    "dimensions": [
+      0.04500000178813934,
+      0.07999999821186066,
+      2.180000066757202
+    ],
+    "location": [
+      0.47999998927116394,
+      2.880000114440918,
+      1.2699999809265137
+    ],
+    "parent": null
+  },
+  {
+    "name": "exterior_reference_backplate",
+    "assembly": "exterior_reference",
+    "type": "MESH",
+    "dimensions": [
+      4.75,
+      0.0,
+      2.450000047683716
+    ],
+    "location": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "parent": null
+  },
+  {
+    "name": "mirror_panel",
+    "assembly": "mirror_wall",
+    "type": "MESH",
+    "dimensions": [
+      0.02500000037252903,
+      2.0999999046325684,
+      1.8700000047683716
+    ],
+    "location": [
+      1.065000057220459,
+      0.0,
+      1.3969999551773071
+    ],
+    "parent": null
+  },
+  {
+    "name": "mirror_upper_trim",
+    "assembly": "mirror_wall",
+    "type": "MESH",
+    "dimensions": [
+      0.07999999821186066,
+      2.1600000858306885,
+      0.04500000178813934
+    ],
+    "location": [
+      1.0700000524520874,
+      0.0,
+      2.3550000190734863
+    ],
+    "parent": null
+  },
+  {
+    "name": "mirror_lower_trim",
+    "assembly": "mirror_wall",
+    "type": "MESH",
+    "dimensions": [
+      0.09000000357627869,
+      2.1600000858306885,
+      0.03500000014901161
+    ],
+    "location": [
+      1.0449999570846558,
+      0.0,
+      0.4449999928474426
+    ],
+    "parent": null
+  },
+  {
+    "name": "cabinet_plaster_header",
+    "assembly": "mirror_wall",
+    "type": "MESH",
+    "dimensions": [
+      0.20000000298023224,
+      4.400000095367432,
+      0.14000000059604645
+    ],
+    "location": [
+      1.1299999952316284,
+      -0.05000000074505806,
+      2.4700000286102295
+    ],
+    "parent": null
+  },
+  {
+    "name": "shelves_entry_back",
+    "assembly": "shelves_entry",
+    "type": "MESH",
+    "dimensions": [
+      0.04500000178813934,
+      1.0,
+      2.0999999046325684
+    ],
+    "location": [
+      1.399999976158142,
+      -1.559999942779541,
+      1.3700000047683716
+    ],
+    "parent": null
+  },
+  {
+    "name": "shelves_entry_side_0",
+    "assembly": "shelves_entry",
+    "type": "MESH",
+    "dimensions": [
+      0.33000001311302185,
+      0.03500000014901161,
+      2.130000114440918
+    ],
+    "location": [
+      1.2350000143051147,
+      -2.059999942779541,
+      1.3700000047683716
+    ],
+    "parent": null
+  },
+  {
+    "name": "shelves_entry_side_1",
+    "assembly": "shelves_entry",
+    "type": "MESH",
+    "dimensions": [
+      0.33000001311302185,
+      0.03500000014901161,
+      2.130000114440918
+    ],
+    "location": [
+      1.2350000143051147,
+      -1.059999942779541,
+      1.3700000047683716
+    ],
+    "parent": null
+  },
+  {
+    "name": "shelves_entry_shelf_0",
+    "assembly": "shelves_entry",
+    "type": "MESH",
+    "dimensions": [
+      0.33000001311302185,
+      1.0,
+      0.03500000014901161
+    ],
+    "location": [
+      1.2350000143051147,
+      -1.559999942779541,
+      0.41999998688697815
+    ],
+    "parent": null
+  },
+  {
+    "name": "shelves_entry_shelf_1",
+    "assembly": "shelves_entry",
+    "type": "MESH",
+    "dimensions": [
+      0.33000001311302185,
+      1.0,
+      0.03500000014901161
+    ],
+    "location": [
+      1.2350000143051147,
+      -1.559999942779541,
+      2.009999990463257
+    ],
+    "parent": null
+  },
+  {
+    "name": "shelves_entry_shelf_2",
+    "assembly": "shelves_entry",
+    "type": "MESH",
+    "dimensions": [
+      0.33000001311302185,
+      1.0,
+      0.03500000014901161
+    ],
+    "location": [
+      1.2350000143051147,
+      -1.559999942779541,
+      2.390000104904175
+    ],
+    "parent": null
+  },
+  {
+    "name": "entry_shelves_divider",
+    "assembly": "shelves_entry",
+    "type": "MESH",
+    "dimensions": [
+      0.33000001311302185,
+      0.03500000014901161,
+      1.9500000476837158
+    ],
+    "location": [
+      1.2350000143051147,
+      -1.4500000476837158,
+      1.399999976158142
+    ],
+    "parent": null
+  },
+  {
+    "name": "entry_narrow_shelf_0",
+    "assembly": "shelves_entry",
+    "type": "MESH",
+    "dimensions": [
+      0.33000001311302185,
+      0.38999998569488525,
+      0.02800000086426735
+    ],
+    "location": [
+      1.2350000143051147,
+      -1.25,
+      0.9599999785423279
+    ],
+    "parent": null
+  },
+  {
+    "name": "entry_narrow_shelf_1",
+    "assembly": "shelves_entry",
+    "type": "MESH",
+    "dimensions": [
+      0.33000001311302185,
+      0.38999998569488525,
+      0.02800000086426735
+    ],
+    "location": [
+      1.2350000143051147,
+      -1.25,
+      1.5
+    ],
+    "parent": null
+  },
+  {
+    "name": "entry_narrow_shelf_2",
+    "assembly": "shelves_entry",
+    "type": "MESH",
+    "dimensions": [
+      0.33000001311302185,
+      0.38999998569488525,
+      0.02800000086426735
+    ],
+    "location": [
+      1.2350000143051147,
+      -1.25,
+      1.9500000476837158
+    ],
+    "parent": null
+  },
+  {
+    "name": "shelves_window_back",
+    "assembly": "shelves_window",
+    "type": "MESH",
+    "dimensions": [
+      0.04500000178813934,
+      0.8899999856948853,
+      2.0999999046325684
+    ],
+    "location": [
+      1.399999976158142,
+      1.5049999952316284,
+      1.3700000047683716
+    ],
+    "parent": null
+  },
+  {
+    "name": "shelves_window_side_0",
+    "assembly": "shelves_window",
+    "type": "MESH",
+    "dimensions": [
+      0.33000001311302185,
+      0.03500000014901161,
+      2.130000114440918
+    ],
+    "location": [
+      1.2350000143051147,
+      1.059999942779541,
+      1.3700000047683716
+    ],
+    "parent": null
+  },
+  {
+    "name": "shelves_window_side_1",
+    "assembly": "shelves_window",
+    "type": "MESH",
+    "dimensions": [
+      0.33000001311302185,
+      0.03500000014901161,
+      2.130000114440918
+    ],
+    "location": [
+      1.2350000143051147,
+      1.9500000476837158,
+      1.3700000047683716
+    ],
+    "parent": null
+  },
+  {
+    "name": "shelves_window_shelf_0",
+    "assembly": "shelves_window",
+    "type": "MESH",
+    "dimensions": [
+      0.33000001311302185,
+      0.8899999856948853,
+      0.03500000014901161
+    ],
+    "location": [
+      1.2350000143051147,
+      1.5049999952316284,
+      0.36000001430511475
+    ],
+    "parent": null
+  },
+  {
+    "name": "shelves_window_shelf_1",
+    "assembly": "shelves_window",
+    "type": "MESH",
+    "dimensions": [
+      0.33000001311302185,
+      0.8899999856948853,
+      0.03500000014901161
+    ],
+    "location": [
+      1.2350000143051147,
+      1.5049999952316284,
+      0.7599999904632568
+    ],
+    "parent": null
+  },
+  {
+    "name": "shelves_window_shelf_2",
+    "assembly": "shelves_window",
+    "type": "MESH",
+    "dimensions": [
+      0.33000001311302185,
+      0.8899999856948853,
+      0.03500000014901161
+    ],
+    "location": [
+      1.2350000143051147,
+      1.5049999952316284,
+      1.149999976158142
+    ],
+    "parent": null
+  },
+  {
+    "name": "shelves_window_shelf_3",
+    "assembly": "shelves_window",
+    "type": "MESH",
+    "dimensions": [
+      0.33000001311302185,
+      0.8899999856948853,
+      0.03500000014901161
+    ],
+    "location": [
+      1.2350000143051147,
+      1.5049999952316284,
+      1.5499999523162842
+    ],
+    "parent": null
+  },
+  {
+    "name": "shelves_window_shelf_4",
+    "assembly": "shelves_window",
+    "type": "MESH",
+    "dimensions": [
+      0.33000001311302185,
+      0.8899999856948853,
+      0.03500000014901161
+    ],
+    "location": [
+      1.2350000143051147,
+      1.5049999952316284,
+      1.940000057220459
+    ],
+    "parent": null
+  },
+  {
+    "name": "shelves_window_shelf_5",
+    "assembly": "shelves_window",
+    "type": "MESH",
+    "dimensions": [
+      0.33000001311302185,
+      0.8899999856948853,
+      0.03500000014901161
+    ],
+    "location": [
+      1.2350000143051147,
+      1.5049999952316284,
+      2.390000104904175
+    ],
+    "parent": null
+  },
+  {
+    "name": "window_low_cubby_back_0",
+    "assembly": "shelves_window",
+    "type": "MESH",
+    "dimensions": [
+      0.03999999910593033,
+      0.27000001072883606,
+      0.25
+    ],
+    "location": [
+      1.3700000047683716,
+      1.190000057220459,
+      0.1899999976158142
+    ],
+    "parent": null
+  },
+  {
+    "name": "window_low_cubby_divider_0",
+    "assembly": "shelves_window",
+    "type": "MESH",
+    "dimensions": [
+      0.36000001430511475,
+      0.02500000037252903,
+      0.25
+    ],
+    "location": [
+      1.2100000381469727,
+      1.3300000429153442,
+      0.1899999976158142
+    ],
+    "parent": null
+  },
+  {
+    "name": "window_low_cubby_back_1",
+    "assembly": "shelves_window",
+    "type": "MESH",
+    "dimensions": [
+      0.03999999910593033,
+      0.27000001072883606,
+      0.25
+    ],
+    "location": [
+      1.3700000047683716,
+      1.4900000095367432,
+      0.1899999976158142
+    ],
+    "parent": null
+  },
+  {
+    "name": "window_low_cubby_divider_1",
+    "assembly": "shelves_window",
+    "type": "MESH",
+    "dimensions": [
+      0.36000001430511475,
+      0.02500000037252903,
+      0.25
+    ],
+    "location": [
+      1.2100000381469727,
+      1.6299999952316284,
+      0.1899999976158142
+    ],
+    "parent": null
+  },
+  {
+    "name": "window_low_cubby_back_2",
+    "assembly": "shelves_window",
+    "type": "MESH",
+    "dimensions": [
+      0.03999999910593033,
+      0.27000001072883606,
+      0.25
+    ],
+    "location": [
+      1.3700000047683716,
+      1.7899999618530273,
+      0.1899999976158142
+    ],
+    "parent": null
+  },
+  {
+    "name": "window_low_cubby_divider_2",
+    "assembly": "shelves_window",
+    "type": "MESH",
+    "dimensions": [
+      0.36000001430511475,
+      0.02500000037252903,
+      0.25
+    ],
+    "location": [
+      1.2100000381469727,
+      1.9299999475479126,
+      0.1899999976158142
+    ],
+    "parent": null
+  },
+  {
+    "name": "window_low_cubby_floor",
+    "assembly": "shelves_window",
+    "type": "MESH",
+    "dimensions": [
+      0.3799999952316284,
+      0.8700000047683716,
+      0.03500000014901161
+    ],
+    "location": [
+      1.2100000381469727,
+      1.5199999809265137,
+      0.04500000178813934
+    ],
+    "parent": null
+  },
+  {
+    "name": "base_cabinet_0",
+    "assembly": "base_cabinet",
+    "type": "MESH",
+    "dimensions": [
+      0.3799999952316284,
+      0.6000000238418579,
+      0.4000000059604645
+    ],
+    "location": [
+      1.2200000286102295,
+      -1.7599999904632568,
+      0.23000000417232513
+    ],
+    "parent": null
+  },
+  {
+    "name": "base_door_0",
+    "assembly": "base_cabinet",
+    "type": "MESH",
+    "dimensions": [
+      0.027000000700354576,
+      0.5879999995231628,
+      0.36500000953674316
+    ],
+    "location": [
+      1.0149999856948853,
+      -1.7599999904632568,
+      0.23499999940395355
+    ],
+    "parent": null
+  },
+  {
+    "name": "base_cabinet_1",
+    "assembly": "base_cabinet",
+    "type": "MESH",
+    "dimensions": [
+      0.3799999952316284,
+      0.3799999952316284,
+      0.4000000059604645
+    ],
+    "location": [
+      1.2200000286102295,
+      -1.25,
+      0.23000000417232513
+    ],
+    "parent": null
+  },
+  {
+    "name": "base_door_1",
+    "assembly": "base_cabinet",
+    "type": "MESH",
+    "dimensions": [
+      0.027000000700354576,
+      0.36800000071525574,
+      0.36500000953674316
+    ],
+    "location": [
+      1.0149999856948853,
+      -1.25,
+      0.23499999940395355
+    ],
+    "parent": null
+  },
+  {
+    "name": "base_cabinet_2",
+    "assembly": "base_cabinet",
+    "type": "MESH",
+    "dimensions": [
+      0.3799999952316284,
+      0.6800000071525574,
+      0.4000000059604645
+    ],
+    "location": [
+      1.2200000286102295,
+      -0.699999988079071,
+      0.23000000417232513
+    ],
+    "parent": null
+  },
+  {
+    "name": "base_door_2",
+    "assembly": "base_cabinet",
+    "type": "MESH",
+    "dimensions": [
+      0.027000000700354576,
+      0.6679999828338623,
+      0.36500000953674316
+    ],
+    "location": [
+      1.0149999856948853,
+      -0.699999988079071,
+      0.23499999940395355
+    ],
+    "parent": null
+  },
+  {
+    "name": "base_cabinet_3",
+    "assembly": "base_cabinet",
+    "type": "MESH",
+    "dimensions": [
+      0.3799999952316284,
+      0.6800000071525574,
+      0.4000000059604645
+    ],
+    "location": [
+      1.2200000286102295,
+      0.0,
+      0.23000000417232513
+    ],
+    "parent": null
+  },
+  {
+    "name": "base_door_3",
+    "assembly": "base_cabinet",
+    "type": "MESH",
+    "dimensions": [
+      0.027000000700354576,
+      0.6679999828338623,
+      0.36500000953674316
+    ],
+    "location": [
+      1.0149999856948853,
+      0.0,
+      0.23499999940395355
+    ],
+    "parent": null
+  },
+  {
+    "name": "base_cabinet_4",
+    "assembly": "base_cabinet",
+    "type": "MESH",
+    "dimensions": [
+      0.3799999952316284,
+      0.6800000071525574,
+      0.4000000059604645
+    ],
+    "location": [
+      1.2200000286102295,
+      0.699999988079071,
+      0.23000000417232513
+    ],
+    "parent": null
+  },
+  {
+    "name": "base_door_4",
+    "assembly": "base_cabinet",
+    "type": "MESH",
+    "dimensions": [
+      0.027000000700354576,
+      0.6679999828338623,
+      0.36500000953674316
+    ],
+    "location": [
+      1.0149999856948853,
+      0.699999988079071,
+      0.23499999940395355
+    ],
+    "parent": null
+  },
+  {
+    "name": "book_0_0",
+    "assembly": "shelf_accessories",
+    "type": "MESH",
+    "dimensions": [
+      0.12999999523162842,
+      0.03799999877810478,
+      0.23000000417232513
+    ],
+    "location": [
+      1.1299999952316284,
+      -1.2799999713897705,
+      1.6399999856948853
+    ],
+    "parent": null
+  },
+  {
+    "name": "book_0_1",
+    "assembly": "shelf_accessories",
+    "type": "MESH",
+    "dimensions": [
+      0.12999999523162842,
+      0.03799999877810478,
+      0.2840000092983246
+    ],
+    "location": [
+      1.1299999952316284,
+      -1.2330000400543213,
+      1.6670000553131104
+    ],
+    "parent": null
+  },
+  {
+    "name": "book_0_2",
+    "assembly": "shelf_accessories",
+    "type": "MESH",
+    "dimensions": [
+      0.12999999523162842,
+      0.03799999877810478,
+      0.23000000417232513
+    ],
+    "location": [
+      1.1299999952316284,
+      -1.1859999895095825,
+      1.6399999856948853
+    ],
+    "parent": null
+  },
+  {
+    "name": "book_0_3",
+    "assembly": "shelf_accessories",
+    "type": "MESH",
+    "dimensions": [
+      0.12999999523162842,
+      0.03799999877810478,
+      0.2840000092983246
+    ],
+    "location": [
+      1.1299999952316284,
+      -1.1390000581741333,
+      1.6670000553131104
+    ],
+    "parent": null
+  },
+  {
+    "name": "book_0_4",
+    "assembly": "shelf_accessories",
+    "type": "MESH",
+    "dimensions": [
+      0.12999999523162842,
+      0.03799999877810478,
+      0.23000000417232513
+    ],
+    "location": [
+      1.1299999952316284,
+      -1.0920000076293945,
+      1.6399999856948853
+    ],
+    "parent": null
+  },
+  {
+    "name": "book_1_0",
+    "assembly": "shelf_accessories",
+    "type": "MESH",
+    "dimensions": [
+      0.12999999523162842,
+      0.03799999877810478,
+      0.23000000417232513
+    ],
+    "location": [
+      1.1299999952316284,
+      -1.2000000476837158,
+      0.5699999928474426
+    ],
+    "parent": null
+  },
+  {
+    "name": "book_1_1",
+    "assembly": "shelf_accessories",
+    "type": "MESH",
+    "dimensions": [
+      0.12999999523162842,
+      0.03799999877810478,
+      0.2840000092983246
+    ],
+    "location": [
+      1.1299999952316284,
+      -1.152999997138977,
+      0.597000002861023
+    ],
+    "parent": null
+  },
+  {
+    "name": "book_1_2",
+    "assembly": "shelf_accessories",
+    "type": "MESH",
+    "dimensions": [
+      0.12999999523162842,
+      0.03799999877810478,
+      0.23000000417232513
+    ],
+    "location": [
+      1.1299999952316284,
+      -1.1059999465942383,
+      0.5699999928474426
+    ],
+    "parent": null
+  },
+  {
+    "name": "book_1_3",
+    "assembly": "shelf_accessories",
+    "type": "MESH",
+    "dimensions": [
+      0.12999999523162842,
+      0.03799999877810478,
+      0.2840000092983246
+    ],
+    "location": [
+      1.1299999952316284,
+      -1.059000015258789,
+      0.597000002861023
+    ],
+    "parent": null
+  },
+  {
+    "name": "book_2_0",
+    "assembly": "shelf_accessories",
+    "type": "MESH",
+    "dimensions": [
+      0.12999999523162842,
+      0.03799999877810478,
+      0.23000000417232513
+    ],
+    "location": [
+      1.1299999952316284,
+      1.4500000476837158,
+      1.2899999618530273
+    ],
+    "parent": null
+  },
+  {
+    "name": "book_2_1",
+    "assembly": "shelf_accessories",
+    "type": "MESH",
+    "dimensions": [
+      0.12999999523162842,
+      0.03799999877810478,
+      0.2840000092983246
+    ],
+    "location": [
+      1.1299999952316284,
+      1.496999979019165,
+      1.3170000314712524
+    ],
+    "parent": null
+  },
+  {
+    "name": "book_2_2",
+    "assembly": "shelf_accessories",
+    "type": "MESH",
+    "dimensions": [
+      0.12999999523162842,
+      0.03799999877810478,
+      0.23000000417232513
+    ],
+    "location": [
+      1.1299999952316284,
+      1.5440000295639038,
+      1.2899999618530273
+    ],
+    "parent": null
+  },
+  {
+    "name": "book_2_3",
+    "assembly": "shelf_accessories",
+    "type": "MESH",
+    "dimensions": [
+      0.12999999523162842,
+      0.03799999877810478,
+      0.2840000092983246
+    ],
+    "location": [
+      1.1299999952316284,
+      1.590999960899353,
+      1.3170000314712524
+    ],
+    "parent": null
+  },
+  {
+    "name": "ceramic_vase_0",
+    "assembly": "shelf_accessories",
+    "type": "MESH",
+    "dimensions": [
+      0.12999999523162842,
+      0.15000000596046448,
+      0.23000000417232513
+    ],
+    "location": [
+      1.190000057220459,
+      -1.2699999809265137,
+      2.130000114440918
+    ],
+    "parent": null
+  },
+  {
+    "name": "ceramic_vase_1",
+    "assembly": "shelf_accessories",
+    "type": "MESH",
+    "dimensions": [
+      0.12999999523162842,
+      0.15000000596046448,
+      0.23000000417232513
+    ],
+    "location": [
+      1.190000057220459,
+      1.5,
+      1.7799999713897705
+    ],
+    "parent": null
+  },
+  {
+    "name": "ceramic_vase_2",
+    "assembly": "shelf_accessories",
+    "type": "MESH",
+    "dimensions": [
+      0.12999999523162842,
+      0.15000000596046448,
+      0.23000000417232513
+    ],
+    "location": [
+      1.190000057220459,
+      1.5199999809265137,
+      0.9100000262260437
+    ],
+    "parent": null
+  },
+  {
+    "name": "sculptural_bowl",
+    "assembly": "shelf_accessories",
+    "type": "MESH",
+    "dimensions": [
+      0.1899999976158142,
+      0.36000001430511475,
+      0.17000000178813934
+    ],
+    "location": [
+      1.2000000476837158,
+      -1.7699999809265137,
+      2.1500000953674316
+    ],
+    "parent": null
+  },
+  {
+    "name": "display_clock",
+    "assembly": "shelf_accessories",
+    "type": "MESH",
+    "dimensions": [
+      0.23000000417232513,
+      0.23000000417232513,
+      0.027000000700354576
+    ],
+    "location": [
+      1.1399999856948853,
+      1.559999942779541,
+      2.130000114440918
+    ],
+    "parent": null
+  },
+  {
+    "name": "dry_stem_0",
+    "assembly": "shelf_accessories",
+    "type": "MESH",
+    "dimensions": [
+      0.00800000037997961,
+      0.007000000216066837,
+      0.4099999964237213
+    ],
+    "location": [
+      1.190000057220459,
+      -1.8179999589920044,
+      0.7300000190734863
+    ],
+    "parent": null
+  },
+  {
+    "name": "dry_stem_1",
+    "assembly": "shelf_accessories",
+    "type": "MESH",
+    "dimensions": [
+      0.00800000037997961,
+      0.007000000216066837,
+      0.43299999833106995
+    ],
+    "location": [
+      1.190000057220459,
+      -1.8020000457763672,
+      0.7300000190734863
+    ],
+    "parent": null
+  },
+  {
+    "name": "dry_stem_2",
+    "assembly": "shelf_accessories",
+    "type": "MESH",
+    "dimensions": [
+      0.00800000037997961,
+      0.007000000216066837,
+      0.4560000002384186
+    ],
+    "location": [
+      1.190000057220459,
+      -1.7860000133514404,
+      0.7300000190734863
+    ],
+    "parent": null
+  },
+  {
+    "name": "dry_stem_3",
+    "assembly": "shelf_accessories",
+    "type": "MESH",
+    "dimensions": [
+      0.00800000037997961,
+      0.007000000216066837,
+      0.4099999964237213
+    ],
+    "location": [
+      1.190000057220459,
+      -1.7699999809265137,
+      0.7300000190734863
+    ],
+    "parent": null
+  },
+  {
+    "name": "dry_stem_4",
+    "assembly": "shelf_accessories",
+    "type": "MESH",
+    "dimensions": [
+      0.00800000037997961,
+      0.007000000216066837,
+      0.43299999833106995
+    ],
+    "location": [
+      1.190000057220459,
+      -1.753999948501587,
+      0.7300000190734863
+    ],
+    "parent": null
+  },
+  {
+    "name": "dry_stem_5",
+    "assembly": "shelf_accessories",
+    "type": "MESH",
+    "dimensions": [
+      0.00800000037997961,
+      0.007000000216066837,
+      0.4560000002384186
+    ],
+    "location": [
+      1.190000057220459,
+      -1.7380000352859497,
+      0.7300000190734863
+    ],
+    "parent": null
+  },
+  {
+    "name": "dry_stem_6",
+    "assembly": "shelf_accessories",
+    "type": "MESH",
+    "dimensions": [
+      0.00800000037997961,
+      0.007000000216066837,
+      0.4099999964237213
+    ],
+    "location": [
+      1.190000057220459,
+      -1.722000002861023,
+      0.7300000190734863
+    ],
+    "parent": null
+  },
+  {
+    "name": "entry_flower_vase",
+    "assembly": "shelf_accessories",
+    "type": "MESH",
+    "dimensions": [
+      0.10599999874830246,
+      0.10599999874830246,
+      0.20000000298023224
+    ],
+    "location": [
+      1.2000000476837158,
+      -1.7699999809265137,
+      0.5600000023841858
+    ],
+    "parent": null
+  },
+  {
+    "name": "ceiling_window_soffit",
+    "assembly": "ceiling_details",
+    "type": "MESH",
+    "dimensions": [
+      4.760000228881836,
+      0.47999998927116394,
+      0.11999999731779099
+    ],
+    "location": [
+      -0.9200000166893005,
+      2.619999885559082,
+      2.5199999809265137
+    ],
+    "parent": null
+  },
+  {
+    "name": "ceiling_left_soffit",
+    "assembly": "ceiling_details",
+    "type": "MESH",
+    "dimensions": [
+      0.47999998927116394,
+      5.119999885559082,
+      0.11999999731779099
+    ],
+    "location": [
+      -3.2200000286102295,
+      -0.10000000149011612,
+      2.5299999713897705
+    ],
+    "parent": null
+  },
+  {
+    "name": "recessed_light_trim_0",
+    "assembly": "ceiling_details",
+    "type": "MESH",
+    "dimensions": [
+      0.0949999988079071,
+      0.0949999988079071,
+      0.02199999988079071
+    ],
+    "location": [
+      -2.299999952316284,
+      1.5499999523162842,
+      2.634999990463257
+    ],
+    "parent": null
+  },
+  {
+    "name": "recessed_light_dark_0",
+    "assembly": "ceiling_details",
+    "type": "MESH",
+    "dimensions": [
+      0.054999999701976776,
+      0.054999999701976776,
+      0.00800000037997961
+    ],
+    "location": [
+      -2.299999952316284,
+      1.5499999523162842,
+      2.61899995803833
+    ],
+    "parent": null
+  },
+  {
+    "name": "recessed_light_trim_1",
+    "assembly": "ceiling_details",
+    "type": "MESH",
+    "dimensions": [
+      0.0949999988079071,
+      0.0949999988079071,
+      0.02199999988079071
+    ],
+    "location": [
+      -0.5,
+      1.5499999523162842,
+      2.634999990463257
+    ],
+    "parent": null
+  },
+  {
+    "name": "recessed_light_dark_1",
+    "assembly": "ceiling_details",
+    "type": "MESH",
+    "dimensions": [
+      0.054999999701976776,
+      0.054999999701976776,
+      0.00800000037997961
+    ],
+    "location": [
+      -0.5,
+      1.5499999523162842,
+      2.61899995803833
+    ],
+    "parent": null
+  },
+  {
+    "name": "recessed_light_trim_2",
+    "assembly": "ceiling_details",
+    "type": "MESH",
+    "dimensions": [
+      0.0949999988079071,
+      0.0949999988079071,
+      0.02199999988079071
+    ],
+    "location": [
+      0.6499999761581421,
+      0.75,
+      2.634999990463257
+    ],
+    "parent": null
+  },
+  {
+    "name": "recessed_light_dark_2",
+    "assembly": "ceiling_details",
+    "type": "MESH",
+    "dimensions": [
+      0.054999999701976776,
+      0.054999999701976776,
+      0.00800000037997961
+    ],
+    "location": [
+      0.6499999761581421,
+      0.75,
+      2.61899995803833
+    ],
+    "parent": null
+  },
+  {
+    "name": "recessed_light_trim_3",
+    "assembly": "ceiling_details",
+    "type": "MESH",
+    "dimensions": [
+      0.0949999988079071,
+      0.0949999988079071,
+      0.02199999988079071
+    ],
+    "location": [
+      -2.25,
+      -0.5,
+      2.634999990463257
+    ],
+    "parent": null
+  },
+  {
+    "name": "recessed_light_dark_3",
+    "assembly": "ceiling_details",
+    "type": "MESH",
+    "dimensions": [
+      0.054999999701976776,
+      0.054999999701976776,
+      0.00800000037997961
+    ],
+    "location": [
+      -2.25,
+      -0.5,
+      2.61899995803833
+    ],
+    "parent": null
+  },
+  {
+    "name": "recessed_light_trim_4",
+    "assembly": "ceiling_details",
+    "type": "MESH",
+    "dimensions": [
+      0.0949999988079071,
+      0.0949999988079071,
+      0.02199999988079071
+    ],
+    "location": [
+      -0.550000011920929,
+      -0.5,
+      2.634999990463257
+    ],
+    "parent": null
+  },
+  {
+    "name": "recessed_light_dark_4",
+    "assembly": "ceiling_details",
+    "type": "MESH",
+    "dimensions": [
+      0.054999999701976776,
+      0.054999999701976776,
+      0.00800000037997961
+    ],
+    "location": [
+      -0.550000011920929,
+      -0.5,
+      2.61899995803833
+    ],
+    "parent": null
+  },
+  {
+    "name": "ceiling_speaker",
+    "assembly": "ceiling_details",
+    "type": "MESH",
+    "dimensions": [
+      0.23999999463558197,
+      0.23999999463558197,
+      0.014000000432133675
+    ],
+    "location": [
+      -1.600000023841858,
+      0.5,
+      2.630000114440918
+    ],
+    "parent": null
+  },
+  {
+    "name": "bed_base",
+    "assembly": "bed",
+    "type": "MESH",
+    "dimensions": [
+      1.8914999961853027,
+      2.134000062942505,
+      0.1728000044822693
+    ],
+    "location": [
+      0.0,
+      0.0,
+      0.1151999980211258
+    ],
+    "parent": "bed"
+  },
+  {
+    "name": "bed_mattress",
+    "assembly": "bed",
+    "type": "MESH",
+    "dimensions": [
+      1.9500000476837158,
+      2.200000047683716,
+      0.19200000166893005
+    ],
+    "location": [
+      0.0,
+      0.0,
+      0.31679999828338623
+    ],
+    "parent": "bed"
+  },
+  {
+    "name": "bed_headboard",
+    "assembly": "bed",
+    "type": "MESH",
+    "dimensions": [
+      2.066999912261963,
+      0.11999999731779099,
+      0.6335999965667725
+    ],
+    "location": [
+      0.0,
+      -1.0779999494552612,
+      0.4415999948978424
+    ],
+    "parent": "bed"
+  },
+  {
+    "name": "bed_sheet",
+    "assembly": "bed",
+    "type": "MESH",
+    "dimensions": [
+      2.1059999465942383,
+      2.375999927520752,
+      0.15023301541805267
+    ],
+    "location": [
+      0.0,
+      0.014999999664723873,
+      0.41999998688697815
+    ],
+    "parent": "bed"
+  },
+  {
+    "name": "bed_white_pillow_back_0",
+    "assembly": "bed",
+    "type": "MESH",
+    "dimensions": [
+      0.8774999976158142,
+      0.18000000715255737,
+      0.36479997634887695
+    ],
+    "location": [
+      -0.5070000290870667,
+      -0.7919999957084656,
+      0.5375999808311462
+    ],
+    "parent": "bed"
+  },
+  {
+    "name": "bed_white_pillow_front_0",
+    "assembly": "bed",
+    "type": "MESH",
+    "dimensions": [
+      0.7799999713897705,
+      0.18999998271465302,
+      0.2831999659538269
+    ],
+    "location": [
+      -0.5070000290870667,
+      -0.527999997138977,
+      0.4991999864578247
+    ],
+    "parent": "bed"
+  },
+  {
+    "name": "bed_blush_pillow_0",
+    "assembly": "bed",
+    "type": "MESH",
+    "dimensions": [
+      0.48750001192092896,
+      0.17000000178813934,
+      0.2879999876022339
+    ],
+    "location": [
+      -0.5678399801254272,
+      -0.2639999985694885,
+      0.4896000027656555
+    ],
+    "parent": "bed"
+  },
+  {
+    "name": "bed_white_pillow_back_1",
+    "assembly": "bed",
+    "type": "MESH",
+    "dimensions": [
+      0.8774999976158142,
+      0.18000000715255737,
+      0.36479997634887695
+    ],
+    "location": [
+      0.5070000290870667,
+      -0.7919999957084656,
+      0.5375999808311462
+    ],
+    "parent": "bed"
+  },
+  {
+    "name": "bed_white_pillow_front_1",
+    "assembly": "bed",
+    "type": "MESH",
+    "dimensions": [
+      0.7799999713897705,
+      0.18999998271465302,
+      0.2831999659538269
+    ],
+    "location": [
+      0.5070000290870667,
+      -0.527999997138977,
+      0.4991999864578247
+    ],
+    "parent": "bed"
+  },
+  {
+    "name": "bed_blush_pillow_1",
+    "assembly": "bed",
+    "type": "MESH",
+    "dimensions": [
+      0.48750001192092896,
+      0.17000000178813934,
+      0.2879999876022339
+    ],
+    "location": [
+      0.5678399801254272,
+      -0.2639999985694885,
+      0.4896000027656555
+    ],
+    "parent": "bed"
+  },
+  {
+    "name": "bed_geometric_pillow",
+    "assembly": "bed",
+    "type": "MESH",
+    "dimensions": [
+      0.6240000128746033,
+      0.18000000715255737,
+      0.225600004196167
+    ],
+    "location": [
+      0.0,
+      -0.28600001335144043,
+      0.47519999742507935
+    ],
+    "parent": "bed"
+  },
+  {
+    "name": "bed_geometric_patch_0",
+    "assembly": "bed",
+    "type": "MESH",
+    "dimensions": [
+      0.16769999265670776,
+      0.0,
+      0.08640000224113464
+    ],
+    "location": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "parent": "bed_geometric_pillow"
+  },
+  {
+    "name": "bed_geometric_patch_1",
+    "assembly": "bed",
+    "type": "MESH",
+    "dimensions": [
+      0.16769999265670776,
+      0.0,
+      0.08640000224113464
+    ],
+    "location": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "parent": "bed_geometric_pillow"
+  },
+  {
+    "name": "bed_geometric_patch_2",
+    "assembly": "bed",
+    "type": "MESH",
+    "dimensions": [
+      0.16769999265670776,
+      0.0,
+      0.08640000224113464
+    ],
+    "location": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "parent": "bed_geometric_pillow"
+  },
+  {
+    "name": "bed_geometric_patch_3",
+    "assembly": "bed",
+    "type": "MESH",
+    "dimensions": [
+      0.16769999265670776,
+      0.0,
+      0.08640000224113464
+    ],
+    "location": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "parent": "bed_geometric_pillow"
+  },
+  {
+    "name": "bed_geometric_patch_4",
+    "assembly": "bed",
+    "type": "MESH",
+    "dimensions": [
+      0.16769999265670776,
+      0.0,
+      0.08640000224113464
+    ],
+    "location": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "parent": "bed_geometric_pillow"
+  },
+  {
+    "name": "bed_geometric_patch_5",
+    "assembly": "bed",
+    "type": "MESH",
+    "dimensions": [
+      0.16769999265670776,
+      0.0,
+      0.08640000224113464
+    ],
+    "location": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "parent": "bed_geometric_pillow"
+  },
+  {
+    "name": "bed_navy_throw",
+    "assembly": "bed",
+    "type": "MESH",
+    "dimensions": [
+      1.7054438591003418,
+      1.2813441753387451,
+      0.34963348507881165
+    ],
+    "location": [
+      0.19499999284744263,
+      0.5059999823570251,
+      0.6007999777793884
+    ],
+    "parent": "bed"
+  },
+  {
+    "name": "chaise_leg_0_0",
+    "assembly": "chaise",
+    "type": "MESH",
+    "dimensions": [
+      0.06499999761581421,
+      0.06499999761581421,
+      0.1599999964237213
+    ],
+    "location": [
+      -0.3330000042915344,
+      -0.5264999866485596,
+      0.07999999821186066
+    ],
+    "parent": "chaise"
+  },
+  {
+    "name": "chaise_leg_0_1",
+    "assembly": "chaise",
+    "type": "MESH",
+    "dimensions": [
+      0.06499999761581421,
+      0.06499999761581421,
+      0.1599999964237213
+    ],
+    "location": [
+      -0.3330000042915344,
+      0.5264999866485596,
+      0.07999999821186066
+    ],
+    "parent": "chaise"
+  },
+  {
+    "name": "chaise_leg_1_0",
+    "assembly": "chaise",
+    "type": "MESH",
+    "dimensions": [
+      0.06499999761581421,
+      0.06499999761581421,
+      0.1599999964237213
+    ],
+    "location": [
+      0.3330000042915344,
+      -0.5264999866485596,
+      0.07999999821186066
+    ],
+    "parent": "chaise"
+  },
+  {
+    "name": "chaise_leg_1_1",
+    "assembly": "chaise",
+    "type": "MESH",
+    "dimensions": [
+      0.06499999761581421,
+      0.06499999761581421,
+      0.1599999964237213
+    ],
+    "location": [
+      0.3330000042915344,
+      0.5264999866485596,
+      0.07999999821186066
+    ],
+    "parent": "chaise"
+  },
+  {
+    "name": "chaise_base",
+    "assembly": "chaise",
+    "type": "MESH",
+    "dimensions": [
+      0.8999999761581421,
+      1.350000023841858,
+      0.17599999904632568
+    ],
+    "location": [
+      0.0,
+      0.0,
+      0.23199999332427979
+    ],
+    "parent": "chaise"
+  },
+  {
+    "name": "chaise_seat",
+    "assembly": "chaise",
+    "type": "MESH",
+    "dimensions": [
+      0.8190000057220459,
+      1.1744999885559082,
+      0.17599999904632568
+    ],
+    "location": [
+      0.0,
+      0.04724999889731407,
+      0.36800000071525574
+    ],
+    "parent": "chaise"
+  },
+  {
+    "name": "chaise_back",
+    "assembly": "chaise",
+    "type": "MESH",
+    "dimensions": [
+      0.828000009059906,
+      0.20250000059604645,
+      0.4399999976158142
+    ],
+    "location": [
+      0.0,
+      -0.5400000214576721,
+      0.5600000023841858
+    ],
+    "parent": "chaise"
+  },
+  {
+    "name": "chaise_arm_0",
+    "assembly": "chaise",
+    "type": "MESH",
+    "dimensions": [
+      0.11699999868869781,
+      0.6884999871253967,
+      0.2720000147819519
+    ],
+    "location": [
+      -0.4050000011920929,
+      -0.296999990940094,
+      0.42399999499320984
+    ],
+    "parent": "chaise"
+  },
+  {
+    "name": "chaise_arm_1",
+    "assembly": "chaise",
+    "type": "MESH",
+    "dimensions": [
+      0.11699999868869781,
+      0.6884999871253967,
+      0.2720000147819519
+    ],
+    "location": [
+      0.4050000011920929,
+      -0.296999990940094,
+      0.42399999499320984
+    ],
+    "parent": "chaise"
+  },
+  {
+    "name": "chaise_rust_pillow",
+    "assembly": "chaise",
+    "type": "MESH",
+    "dimensions": [
+      0.4860000014305115,
+      0.13999998569488525,
+      0.351999968290329
+    ],
+    "location": [
+      -0.0989999994635582,
+      -0.3779999911785126,
+      0.5759999752044678
+    ],
+    "parent": "chaise"
+  },
+  {
+    "name": "chaise_blue_pillow",
+    "assembly": "chaise",
+    "type": "MESH",
+    "dimensions": [
+      0.3869999945163727,
+      0.14000000059604645,
+      0.2879999577999115
+    ],
+    "location": [
+      0.13500000536441803,
+      -0.27000001072883606,
+      0.527999997138977
+    ],
+    "parent": "chaise"
+  },
+  {
+    "name": "chaise_white_throw",
+    "assembly": "chaise",
+    "type": "MESH",
+    "dimensions": [
+      0.9089999794960022,
+      0.4860000014305115,
+      0.1572428047657013
+    ],
+    "location": [
+      0.0,
+      0.3375000059604645,
+      0.46000000834465027
+    ],
+    "parent": "chaise"
+  },
+  {
+    "name": "plant_pot",
+    "assembly": "plant",
+    "type": "MESH",
+    "dimensions": [
+      0.31040000915527344,
+      0.31040000915527344,
+      0.26190000772476196
+    ],
+    "location": [
+      0.0,
+      0.0,
+      0.13095000386238098
+    ],
+    "parent": "plant"
+  },
+  {
+    "name": "plant_soil",
+    "assembly": "plant",
+    "type": "MESH",
+    "dimensions": [
+      0.27935999631881714,
+      0.27935999631881714,
+      0.013580000028014183
+    ],
+    "location": [
+      0.0,
+      0.0,
+      0.25142401456832886
+    ],
+    "parent": "plant"
+  },
+  {
+    "name": "plant_stem_00",
+    "assembly": "plant",
+    "type": "MESH",
+    "dimensions": [
+      0.011640000157058239,
+      0.011640000157058239,
+      0.34494635462760925
+    ],
+    "location": [
+      0.0484984815120697,
+      0.00038383505307137966,
+      0.4012235999107361
+    ],
+    "parent": "plant"
+  },
+  {
+    "name": "plant_leaf_00",
+    "assembly": "plant",
+    "type": "MESH",
+    "dimensions": [
+      0.49224764108657837,
+      0.32117870450019836,
+      0.29418236017227173
+    ],
+    "location": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "parent": "plant"
+  },
+  {
+    "name": "plant_stem_01",
+    "assembly": "plant",
+    "type": "MESH",
+    "dimensions": [
+      0.011639999225735664,
+      0.011639999225735664,
+      0.2853512763977051
+    ],
+    "location": [
+      -0.03873200714588165,
+      0.029190436005592346,
+      0.3698893189430237
+    ],
+    "parent": "plant"
+  },
+  {
+    "name": "plant_leaf_01",
+    "assembly": "plant",
+    "type": "MESH",
+    "dimensions": [
+      0.3791366219520569,
+      0.32487359642982483,
+      0.28114718198776245
+    ],
+    "location": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "parent": "plant"
+  },
+  {
+    "name": "plant_stem_02",
+    "assembly": "plant",
+    "type": "MESH",
+    "dimensions": [
+      0.011640000157058239,
+      0.011640000157058239,
+      0.33248645067214966
+    ],
+    "location": [
+      -0.004009847063571215,
+      -0.04833395406603813,
+      0.39472121000289917
+    ],
+    "parent": "plant"
+  },
+  {
+    "name": "plant_leaf_02",
+    "assembly": "plant",
+    "type": "MESH",
+    "dimensions": [
+      0.2454654425382614,
+      0.4008275866508484,
+      0.24043413996696472
+    ],
+    "location": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "parent": "plant"
+  },
+  {
+    "name": "plant_stem_03",
+    "assembly": "plant",
+    "type": "MESH",
+    "dimensions": [
+      0.011640000157058239,
+      0.011640000157058239,
+      0.568291187286377
+    ],
+    "location": [
+      0.029487445950508118,
+      0.03850637003779411,
+      0.5156858563423157
+    ],
+    "parent": "plant"
+  },
+  {
+    "name": "plant_leaf_03",
+    "assembly": "plant",
+    "type": "MESH",
+    "dimensions": [
+      0.27490514516830444,
+      0.314348965883255,
+      0.231944739818573
+    ],
+    "location": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "parent": "plant"
+  },
+  {
+    "name": "plant_stem_04",
+    "assembly": "plant",
+    "type": "MESH",
+    "dimensions": [
+      0.011640000157058239,
+      0.011640000157058239,
+      0.5227317214012146
+    ],
+    "location": [
+      -0.048027943819761276,
+      -0.0067503005266189575,
+      0.4925365447998047
+    ],
+    "parent": "plant"
+  },
+  {
+    "name": "plant_leaf_04",
+    "assembly": "plant",
+    "type": "MESH",
+    "dimensions": [
+      0.5281937718391418,
+      0.26038169860839844,
+      0.3185754418373108
+    ],
+    "location": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "parent": "plant"
+  },
+  {
+    "name": "plant_stem_05",
+    "assembly": "plant",
+    "type": "MESH",
+    "dimensions": [
+      0.011640000157058239,
+      0.011640000157058239,
+      0.4359825551509857
+    ],
+    "location": [
+      0.04405533894896507,
+      -0.020282430574297905,
+      0.4482375383377075
+    ],
+    "parent": "plant"
+  },
+  {
+    "name": "plant_leaf_05",
+    "assembly": "plant",
+    "type": "MESH",
+    "dimensions": [
+      0.3205532431602478,
+      0.22506076097488403,
+      0.21076196432113647
+    ],
+    "location": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "parent": "plant"
+  },
+  {
+    "name": "plant_stem_06",
+    "assembly": "plant",
+    "type": "MESH",
+    "dimensions": [
+      0.011639999225735664,
+      0.011640000157058239,
+      0.5467174053192139
+    ],
+    "location": [
+      -0.020062077790498734,
+      0.04415612295269966,
+      0.5047318339347839
+    ],
+    "parent": "plant"
+  },
+  {
+    "name": "plant_leaf_06",
+    "assembly": "plant",
+    "type": "MESH",
+    "dimensions": [
+      0.22403380274772644,
+      0.33275121450424194,
+      0.21827930212020874
+    ],
+    "location": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "parent": "plant"
+  },
+  {
+    "name": "plant_stem_07",
+    "assembly": "plant",
+    "type": "MESH",
+    "dimensions": [
+      0.011640000157058239,
+      0.011640000157058239,
+      0.5664271712303162
+    ],
+    "location": [
+      -0.020177721977233887,
+      -0.04410339519381523,
+      0.5147398710250854
+    ],
+    "parent": "plant"
+  },
+  {
+    "name": "plant_leaf_07",
+    "assembly": "plant",
+    "type": "MESH",
+    "dimensions": [
+      0.2131035327911377,
+      0.3515520691871643,
+      0.23089706897735596
+    ],
+    "location": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "parent": "plant"
+  },
+  {
+    "name": "plant_stem_08",
+    "assembly": "plant",
+    "type": "MESH",
+    "dimensions": [
+      0.011639999225735664,
+      0.011640000157058239,
+      0.5225928425788879
+    ],
+    "location": [
+      0.04571065679192543,
+      0.01621067523956299,
+      0.4924658536911011
+    ],
+    "parent": "plant"
+  },
+  {
+    "name": "plant_leaf_08",
+    "assembly": "plant",
+    "type": "MESH",
+    "dimensions": [
+      0.502609133720398,
+      0.2852807343006134,
+      0.3183056712150574
+    ],
+    "location": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "parent": "plant"
+  },
+  {
+    "name": "plant_stem_09",
+    "assembly": "plant",
+    "type": "MESH",
+    "dimensions": [
+      0.011640000157058239,
+      0.011639999225735664,
+      0.3727036714553833
+    ],
+    "location": [
+      -0.0466286726295948,
+      0.013342291116714478,
+      0.41563987731933594
+    ],
+    "parent": "plant"
+  },
+  {
+    "name": "plant_leaf_09",
+    "assembly": "plant",
+    "type": "MESH",
+    "dimensions": [
+      0.4969005286693573,
+      0.2586252689361572,
+      0.30859312415122986
+    ],
+    "location": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "parent": "plant"
+  },
+  {
+    "name": "plant_stem_10",
+    "assembly": "plant",
+    "type": "MESH",
+    "dimensions": [
+      0.011640000157058239,
+      0.011640000157058239,
+      0.5732160806655884
+    ],
+    "location": [
+      0.013228639960289001,
+      -0.04666104540228844,
+      0.5181846022605896
+    ],
+    "parent": "plant"
+  },
+  {
+    "name": "plant_leaf_10",
+    "assembly": "plant",
+    "type": "MESH",
+    "dimensions": [
+      0.26794424653053284,
+      0.4627847373485565,
+      0.2872297167778015
+    ],
+    "location": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "parent": "plant"
+  },
+  {
+    "name": "plant_stem_11",
+    "assembly": "plant",
+    "type": "MESH",
+    "dimensions": [
+      0.011640000157058239,
+      0.011640000157058239,
+      0.3280012011528015
+    ],
+    "location": [
+      0.016586758196353912,
+      0.04557553678750992,
+      0.39237505197525024
+    ],
+    "parent": "plant"
+  },
+  {
+    "name": "plant_leaf_11",
+    "assembly": "plant",
+    "type": "MESH",
+    "dimensions": [
+      0.31603941321372986,
+      0.4567180871963501,
+      0.2900715172290802
+    ],
+    "location": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "parent": "plant"
+  },
+  {
+    "name": "plant_stem_12",
+    "assembly": "plant",
+    "type": "MESH",
+    "dimensions": [
+      0.011640000157058239,
+      0.011640000157058239,
+      0.3684958815574646
+    ],
+    "location": [
+      -0.04145757108926773,
+      -0.025169819593429565,
+      0.4134599566459656
+    ],
+    "parent": "plant"
+  },
+  {
+    "name": "plant_leaf_12",
+    "assembly": "plant",
+    "type": "MESH",
+    "dimensions": [
+      0.44919198751449585,
+      0.33738768100738525,
+      0.31335294246673584
+    ],
+    "location": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "parent": "plant"
+  },
+  {
+    "name": "plant_stem_13",
+    "assembly": "plant",
+    "type": "MESH",
+    "dimensions": [
+      0.011639999225735664,
+      0.011640000157058239,
+      0.45131781697273254
+    ],
+    "location": [
+      0.04633017256855965,
+      -0.014344517141580582,
+      0.4560953378677368
+    ],
+    "parent": "plant"
+  },
+  {
+    "name": "plant_leaf_13",
+    "assembly": "plant",
+    "type": "MESH",
+    "dimensions": [
+      0.4665418267250061,
+      0.26028919219970703,
+      0.29161006212234497
+    ],
+    "location": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "parent": "plant"
+  },
+  {
+    "name": "plant_stem_14",
+    "assembly": "plant",
+    "type": "MESH",
+    "dimensions": [
+      0.011640000157058239,
+      0.011640000157058239,
+      0.4699798822402954
+    ],
+    "location": [
+      -0.02867976948618889,
+      0.03911164402961731,
+      0.46564048528671265
+    ],
+    "parent": "plant"
+  },
+  {
+    "name": "plant_leaf_14",
+    "assembly": "plant",
+    "type": "MESH",
+    "dimensions": [
+      0.2813517451286316,
+      0.3541550934314728,
+      0.2619718313217163
+    ],
+    "location": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "parent": "plant"
+  },
+  {
+    "name": "plant_stem_15",
+    "assembly": "plant",
+    "type": "MESH",
+    "dimensions": [
+      0.011639999225735664,
+      0.011639999225735664,
+      0.5558559894561768
+    ],
+    "location": [
+      0.0010201225522905588,
+      -0.048489268869161606,
+      0.5093734860420227
+    ],
+    "parent": "plant"
+  },
+  {
+    "name": "plant_leaf_15",
+    "assembly": "plant",
+    "type": "MESH",
+    "dimensions": [
+      0.20687396824359894,
+      0.38808900117874146,
+      0.23212838172912598
+    ],
+    "location": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "parent": "plant"
+  },
+  {
+    "name": "side_table_lower",
+    "assembly": "side_table",
+    "type": "MESH",
+    "dimensions": [
+      0.46000000834465027,
+      0.46000000834465027,
+      0.05000000074505806
+    ],
+    "location": [
+      0.0,
+      0.0,
+      0.03500000014901161
+    ],
+    "parent": "side_table"
+  },
+  {
+    "name": "side_table_waist",
+    "assembly": "side_table",
+    "type": "MESH",
+    "dimensions": [
+      0.3449999988079071,
+      0.3449999988079071,
+      0.2199999988079071
+    ],
+    "location": [
+      0.0,
+      0.0,
+      0.13199999928474426
+    ],
+    "parent": "side_table"
+  },
+  {
+    "name": "side_table_middle",
+    "assembly": "side_table",
+    "type": "MESH",
+    "dimensions": [
+      0.46000000834465027,
+      0.46000000834465027,
+      0.02800000086426735
+    ],
+    "location": [
+      0.0,
+      0.0,
+      0.2639999985694885
+    ],
+    "parent": "side_table"
+  },
+  {
+    "name": "side_table_post_0",
+    "assembly": "side_table",
+    "type": "MESH",
+    "dimensions": [
+      0.02199999988079071,
+      0.02199999988079071,
+      0.2694999873638153
+    ],
+    "location": [
+      0.14949999749660492,
+      0.0,
+      0.40424996614456177
+    ],
+    "parent": "side_table"
+  },
+  {
+    "name": "side_table_post_1",
+    "assembly": "side_table",
+    "type": "MESH",
+    "dimensions": [
+      0.02199999988079071,
+      0.02199999988079071,
+      0.2694999873638153
+    ],
+    "location": [
+      -0.07474999874830246,
+      0.1294707953929901,
+      0.40424996614456177
+    ],
+    "parent": "side_table"
+  },
+  {
+    "name": "side_table_post_2",
+    "assembly": "side_table",
+    "type": "MESH",
+    "dimensions": [
+      0.02199999988079071,
+      0.02199999988079071,
+      0.2694999873638153
+    ],
+    "location": [
+      -0.07474999874830246,
+      -0.1294707953929901,
+      0.40424996614456177
+    ],
+    "parent": "side_table"
+  },
+  {
+    "name": "side_table_top",
+    "assembly": "side_table",
+    "type": "MESH",
+    "dimensions": [
+      0.40939998626708984,
+      0.40939998626708984,
+      0.02500000037252903
+    ],
+    "location": [
+      0.0,
+      0.0,
+      0.550000011920929
+    ],
+    "parent": "side_table"
+  },
+  {
+    "name": "side_table_sculpture_plinth",
+    "assembly": "side_table",
+    "type": "MESH",
+    "dimensions": [
+      0.12189999967813492,
+      0.09889999777078629,
+      0.06499999761581421
+    ],
+    "location": [
+      0.0,
+      0.0,
+      0.5899999737739563
+    ],
+    "parent": "side_table"
+  },
+  {
+    "name": "side_table_sculpture_shoulders",
+    "assembly": "side_table",
+    "type": "MESH",
+    "dimensions": [
+      0.195499986410141,
+      0.10580000281333923,
+      0.14000000059604645
+    ],
+    "location": [
+      0.0,
+      0.0,
+      0.699999988079071
+    ],
+    "parent": "side_table"
+  },
+  {
+    "name": "side_table_sculpture_neck",
+    "assembly": "side_table",
+    "type": "MESH",
+    "dimensions": [
+      0.06440000236034393,
+      0.06440000236034393,
+      0.12999999523162842
+    ],
+    "location": [
+      0.0,
+      0.0,
+      0.7799999713897705
+    ],
+    "parent": "side_table"
+  },
+  {
+    "name": "side_table_sculpture_head",
+    "assembly": "side_table",
+    "type": "MESH",
+    "dimensions": [
+      0.10809999704360962,
+      0.0966000109910965,
+      0.1899999976158142
+    ],
+    "location": [
+      0.0,
+      0.0,
+      0.8799999952316284
+    ],
+    "parent": "side_table"
+  }
+]
