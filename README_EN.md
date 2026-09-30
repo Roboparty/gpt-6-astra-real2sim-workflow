@@ -1,12 +1,44 @@
 # GPT-6 Astra Real2sim workflow
 
+### Single-image Real2Sim with editable scenes, web retrieval, hinges and deformables
+
+[简体中文](README.md) | **English**
+
+Build editable 3D parts and scenes from one RGB photograph. GPT-6 Astra handles observation, modelling decisions and preview review; Blender and Python construct the scene. Web retrieval supplies traceable candidate dimensions, product identities and material information, with optional joint and deformable simulation.
+
+| Capability | What the workflow provides | Usage and evidence |
+|---|---|---|
+| **Single-image reconstruction** | Start without capturing video or multiple views; edit parts, camera, layout and local geometry. Absolute scale requires a dimension reference or an explicit prior. | [Editable Desk1 scene](docs/research/DESK1_EDITABLE_DELIVERY_20260930.md) |
+| **Web retrieval** | Retrieve candidate specifications and material information, retain source snapshots, units and conflicts, and record whether modelling actually consumed each prior. | [Native retrieval pipeline](docs/WEB_RESEARCH_CHAIN.md) |
+| **Hinged interaction** | Separate panels from frames, define axes and joint limits, and check motion and contact in simulation. | [Dynamics example and measurements](docs/example/RESULTS.md) |
+| **Cloth and volumetric soft bodies** | Support surface bending/stretching and volumetric compression, with displacement, contact and stability checks. | [Configuration and scope](public_contract/USER_GUIDE.md) |
+
+Hinges, cloth and volumetric soft bodies are independently optional and off by default, with retained simulation examples. One photograph cannot identify real elastic parameters. The Desk1 comparison below evaluates static appearance, not these dynamics capabilities.
+
+## Latest comparison: the same Desk1 source image
+
+![Desk1 source, native reconstruction and actual Pi3X / MoGe-3 static-adaptation renders](examples/desk1_gpt6_peers_20260930/comparison_rgb_revised.jpg)
+
+**Under this experiment's static-adaptation conditions, our web-prior variant C has lower source-image error than the two reference adaptations.** All rows use the same photograph and four foreground regions. RGB MAE ranges from 0 to 255; lower is better.
+
+| Executed condition | Foreground RGB MAE ↓ | Full-frame RGB MAE ↓ |
+|---|---:|---:|
+| **Ours C: single image + soft web dimension priors** | **14.48** | **15.37** |
+| AHa-inspired: Pi3X single-image static adaptation + RGB background revision | 15.68 | 16.28 |
+| Real2Gym-inspired: MoGe-3 static adaptation + RGB background revision | 17.75 | 22.51 |
+
+**Comparison scope:** both reference routes share our instance adapter. The authors' complete frameworks and independent Astra iterations were not run, and supervision and optimisation budgets were not matched. These scores measure source-image agreement, not ground-truth 3D accuracy, full-project rankings or single-image SOTA. Retained candidate A has lower image error but a measured maximum right-angle deviation of 21.3°; all versions and failures remain available. [Full comparison and measurements](docs/research/DESK1_GPT6_PROJECT_COMPARISON_20260930.md) · [Web-prior A/B/C experiment](docs/research/DESK1_WEB_COMPARISON_20260930.md)
+
+Generation skills, unified generation, independent-scene work and the research branch are consolidated into the native `quality_v2` workflow. [Homepage and branch integration record](docs/RELEASE_DESK1_20260930.md).
+
+<details>
+<summary>Earlier updates and validation records</summary>
+
 **2026-09-30 verified integration:** research and native generation are consolidated, with 14/14 final validation groups passing. Blender remains authoritative; portable appearance limitations and the rejected universal normal-disconnection repair are retained. This is not a SOTA claim. [Release and evidence](docs/RELEASE_20260930.md).
 
 **Generation skills:** `quality_v2` can now execute RoomKit component modeling, consume or report blocked Pi3X references, and feed rendered local-region differences into its existing review/revision loop. Skills ship with the repository; model installation and inference are never implied by configuration. [Integration and usage](docs/GENERATION_SKILLS.md).
 
-[简体中文](README.md) | **English**
-
-We reconstruct room photographs as editable 3D scenes, using known furniture dimensions and candidate product specifications to constrain proportions and placement. GPT-6 Astra handles observation, modelling decisions and preview review; Blender and Python build the scene. Optional physics uses the simulator specified by each example.
+</details>
 
 ## Preview
 
