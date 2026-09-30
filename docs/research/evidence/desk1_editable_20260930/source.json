@@ -1,0 +1,12 @@
+{
+  "source_url": "https://arxiv.org/html/2606.28276v4/figs/imgs/qualitative_results/ycb_desk_3/ycb_desk_3.jpg",
+  "sha256": "f125bdbe59e6e978d22e5143131291a1ef5206239928007a01d26aabb1bb9578",
+  "bytes": 430554,
+  "image_size": [
+    1920,
+    1080
+  ],
+  "wall_seconds": 2.3557829950004816,
+  "role": "sole_modeling_input",
+  "comparison_images_seen": false
+}

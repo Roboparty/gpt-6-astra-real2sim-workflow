@@ -1,0 +1,53 @@
+{
+  "status": "passed",
+  "model_sha256": "b170ee70448a941e32a7777da1a9bc5af13bb4e727c32326c13a6af175a748ca",
+  "model_bytes": 1498284,
+  "object_count": 4,
+  "foreground_mesh_parts": 6,
+  "part_checks": [
+    {
+      "name": "chocolate_jello_box",
+      "object_id": "chocolate_jello_box",
+      "closed": true,
+      "volume_m3_abs": 0.00024879808194762447
+    },
+    {
+      "name": "domino_sugar_box",
+      "object_id": "domino_sugar_box",
+      "closed": true,
+      "volume_m3_abs": 0.0004000184237559412
+    },
+    {
+      "name": "expo_black_cap",
+      "object_id": "expo_marker",
+      "closed": true,
+      "volume_m3_abs": 2.7130198453810462e-06
+    },
+    {
+      "name": "expo_white_barrel",
+      "object_id": "expo_marker",
+      "closed": true,
+      "volume_m3_abs": 7.18841743769827e-06
+    },
+    {
+      "name": "expo_white_end_plug",
+      "object_id": "expo_marker",
+      "closed": true,
+      "volume_m3_abs": 6.988738637762316e-07
+    },
+    {
+      "name": "red_jello_box",
+      "object_id": "red_jello_box",
+      "closed": true,
+      "volume_m3_abs": 7.813849794747826e-05
+    }
+  ],
+  "foreground_geometry_and_camera_unchanged_between_versions": true,
+  "packed_images": [
+    {
+      "name": "input.jpg",
+      "sha256": "f125bdbe59e6e978d22e5143131291a1ef5206239928007a01d26aabb1bb9578"
+    }
+  ],
+  "scope": "Saved editable closed meshes and image packing verified; dimensions/camera are assumptions, no GT/physics accuracy claim."
+}

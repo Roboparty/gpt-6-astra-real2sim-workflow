@@ -1,0 +1,37 @@
+{
+  "status": "rendered",
+  "source_sha256": "f125bdbe59e6e978d22e5143131291a1ef5206239928007a01d26aabb1bb9578",
+  "protocol_sha256": "1ec5236e93c48791c1102c961c183577227c3e9ae794107f1d6bc5671b495d28",
+  "script_sha256": "e220183de3bed40ad8baea9bf7118b07413c3b2e5d9a06827d7340cb16309ce0",
+  "model_sha256": "b170ee70448a941e32a7777da1a9bc5af13bb4e727c32326c13a6af175a748ca",
+  "editable_object_count": 4,
+  "foreground_mesh_parts": 6,
+  "camera_assumed": {
+    "focal_px": 2000,
+    "position": [
+      0,
+      -0.65,
+      0.43
+    ],
+    "down_pitch_deg": 30,
+    "roll_deg": 0.8,
+    "status": "assumed, no calibration files available; no new model/camera inference"
+  },
+  "comparison_images_used_for_modeling": false,
+  "renders": [
+    {
+      "kind": "source_corresponding_assumed_camera",
+      "path": "/data/real2sim_capability_wqz_20260929/simfoundry_desk1/authoring_002/source_view.png",
+      "sha256": "074f713d7ca6d51a43da355cecafa8d5d362f6d80349bc9ff052ec162934b9a7",
+      "wall_seconds": 46.310218438040465
+    },
+    {
+      "kind": "virtual_only_no_real_reference",
+      "path": "/data/real2sim_capability_wqz_20260929/simfoundry_desk1/authoring_002/virtual_inspection.png",
+      "sha256": "e9761c946c526fc300bb675f1eb3081ba06cea3e8938d41ff9347791acaab8e7",
+      "wall_seconds": 29.16613976994995
+    }
+  ],
+  "wall_seconds": 75.57842289097607,
+  "source_unchanged": true
+}

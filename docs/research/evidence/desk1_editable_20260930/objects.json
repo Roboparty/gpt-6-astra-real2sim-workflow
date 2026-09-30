@@ -1,0 +1,68 @@
+[
+  {
+    "name": "domino_sugar_box",
+    "object_id": "domino_sugar_box",
+    "dimensions": [
+      0.10700421035289764,
+      0.0698230117559433,
+      0.17499999701976776
+    ],
+    "vertex_count": 8,
+    "face_count": 6
+  },
+  {
+    "name": "chocolate_jello_box",
+    "object_id": "chocolate_jello_box",
+    "dimensions": [
+      0.12287607789039612,
+      0.10238301008939743,
+      0.03500000014901161
+    ],
+    "vertex_count": 8,
+    "face_count": 6
+  },
+  {
+    "name": "red_jello_box",
+    "object_id": "red_jello_box",
+    "dimensions": [
+      0.07474040985107422,
+      0.044531650841236115,
+      0.0729999989271164
+    ],
+    "vertex_count": 8,
+    "face_count": 6
+  },
+  {
+    "name": "expo_black_cap",
+    "object_id": "expo_marker",
+    "dimensions": [
+      0.02647724375128746,
+      0.021731765940785408,
+      0.012000001035630703
+    ],
+    "vertex_count": 128,
+    "face_count": 66
+  },
+  {
+    "name": "expo_white_barrel",
+    "object_id": "expo_marker",
+    "dimensions": [
+      0.07087128609418869,
+      0.0455499030649662,
+      0.011040003970265388
+    ],
+    "vertex_count": 128,
+    "face_count": 66
+  },
+  {
+    "name": "expo_white_end_plug",
+    "object_id": "expo_marker",
+    "dimensions": [
+      0.011367745697498322,
+      0.012838456779718399,
+      0.01104000024497509
+    ],
+    "vertex_count": 128,
+    "face_count": 66
+  }
+]

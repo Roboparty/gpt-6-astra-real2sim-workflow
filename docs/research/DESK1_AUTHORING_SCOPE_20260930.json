@@ -1,0 +1,19 @@
+{
+  "schema": "real2sim.authoring-scope-amendment/1",
+  "case": "simfoundry_ycb_desk1_easy",
+  "reason": "User explicitly selected a new concrete single-image case after the Waterfront checkpoint. This versioned authoring-only scope does not reopen the exhausted learned/model camera benchmark budget.",
+  "prior_camera_candidates_used": 8,
+  "prior_camera_candidate_cap": 8,
+  "prior_appearance_candidates_used": 8,
+  "new_case_authoring_candidates_max": 2,
+  "appearance_cumulative_max_after_case": 10,
+  "new_learned_model_or_camera_runs": 0,
+  "new_paid_api_requests": 0,
+  "new_gpu_hours": 0,
+  "cpu_threads": 2,
+  "max_cpu_wall_seconds_per_authoring_run": 600,
+  "scope": "A single assumed rendering camera and image-outline-driven editable solid authoring. No new camera model, SfM, Pi3X or parameter sweep; no GT models or poses. Original caps, all candidate counts/costs/failures retained.",
+  "input": "https://arxiv.org/html/2606.28276v4/figs/imgs/qualitative_results/ycb_desk_3/ycb_desk_3.jpg",
+  "input_sha256": "f125bdbe59e6e978d22e5143131291a1ef5206239928007a01d26aabb1bb9578",
+  "comparison_policy": "SAM3D and SimFoundry public renderings fetched/viewed only after authoring model freeze; they are not modeling inputs. No per-case F1 without matching GT. Only one real view is available; virtual inspection views are labelled virtual."
+}

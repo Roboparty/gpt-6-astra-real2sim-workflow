@@ -22,7 +22,7 @@
   "remote_root": "4090-1:/home/wqz/real2sim_capability_20260929",
   "protocol": "PROTOCOL_20260929.md",
   "result": "RESULTS_20260929.md",
-  "latest_update": "WATERFRONT_EDITABLE_DELIVERY_20260930.md",
+  "latest_update": "DESK1_EDITABLE_DELIVERY_20260930.md",
   "completed": [
     "Matched retained-room collision failure reproduction and repair",
     "Rectangular opening handling and false-pass negative tests",
@@ -65,17 +65,13 @@
     "TUM RGB-only unknown-intrinsics PyCOLMAP reference executed on all 3 fixed sequences: only texture-board 6/6 poses/374 points, Sim3 translation ATE 0.0130648m after GT alignment; desk/cabinet 0/6 retain null ATE; persisted-pose and all-pair graph audits complete",
     "Reconciled existing Pi3X installation/startup receipts and spent GPU time without reinstalling or changing old preparation budget; frozen RGB-only TUM Pi3X predicts 18/18 cameras across 3/3 sources with Sim3 ATE 0.018361/0.009635/0.024986m; classical reference remains 1/3, comparison is not matched-compute or SOTA",
     "Read-only Pi3X depth audit against retained TUM sensors:17/18 frames,4247148 valid GT pixels; raw AbsRel7.79/14.32(partial)/39.77 percent versus trajectory-scaled6.81/1.70(partial)/3.41 percent. Full18-frame score remains null; independent interpolation/metric recomputation agrees.",
-    "Waterfront six-view input reused to author new173-part editable Blender model; two candidates preserved, three actual matching view comparisons0/3/5 delivered, saved-model reopen passed. User subsequently selects SimFoundry Desk1/Easy as next concrete comparison case."
+    "Waterfront six-view input reused to author new173-part editable Blender model; two candidates preserved, three actual matching view comparisons0/3/5 delivered, saved-model reopen passed. User subsequently selects SimFoundry Desk1/Easy as next concrete comparison case.",
+    "User-selected SimFoundry Desk1/Easy delivered: single real image -> 4 editable closed objects/6 foreground mesh parts -> source-view render plus explicitly virtual inspection. Published SAM3D/SimFoundry images fetched only after model freeze. Geometry/camera assumptions and source-projected texture limits retained; no GT model/pose used."
   ],
   "next": [
-    "Deliver user-selected SimFoundry Desk1/Easy image reconstruction, with versioned authoring scope/budget before new case execution. Keep previous camera/model caps and all costs; no new learned model/camera run. Compare competitor images only after authoring. One real view only.",
-    "Bind retained Pi3X outputs into native reference consumption with complete provenance and explicit unverified scale. Raw cabinet depth AbsRel39.77 percent shows aligned camera ATE is insufficient; do not apply GT-fitted scale to production or claim dense geometry acceptance. Camera cap8/8 unchanged.",
-    "Floor tangent-normal bake now improves format fidelity in all six GLB/USD additional virtual-view comparisons; retain original photo vent regression and GLB bound failure. Validate additional material families and actual observed views before adoption; appearance count stays 6/8.",
-    "Register bridge-object annotations or reviewed correspondences for disconnected selected identity graphs; v2 retains 72 observations and 17/18 frame coverage, not a complete common camera/model initialization",
-    "Evaluate the shell+vent development successor through full visual review and task integration; fine textiles/accessories remain visibly approximate, and prior pose pilot remains rejected by fine landmark gate",
-    "Create shared editable initial scenes and source annotations before the full three-video feedback benchmark; independent competitor evaluation remains missing",
-    "Run contact tasks against newly reconstructed task geometry, not only the pinned external model",
-    "Extend source-bound interchange validation to reconstructed detailed scenes and measure surface/material/lighting fidelity; two synthetic RoomKit fixtures now cover full file export, reload, native gate and static engine paths"
+    "Prioritize user review/feedback on the delivered Desk1 editable model and source-view comparison. No new authoring/model/camera candidate without a versioned scope/budget amendment; both current case revisions are used.",
+    "If quantitative validation is later requested, obtain matching Desk1 quasi-GT or use a separately scoped calibrated dataset; never assign paper group means to this case or use GT models/poses as reconstruction.",
+    "Retain Waterfront173-part/3-real-view delivery and unvalidated reference bridge patch. Do not resume unrelated depth/benchmark/native-interface work ahead of concrete user feedback."
   ],
   "retained_attempts": [
     "collision_001",
@@ -172,7 +168,11 @@
     "tum_depth_001_code/test_tum_depth.py (5 methods including invalid-prediction/missing-reference guards)",
     "waterfront_scene_001 (new full editable reconstruction; first real-view renders; visible cloth/light/chair issues retained)",
     "waterfront_scene_002 (same cameras, one mixed visible-defect revision;173mesh parts;3 source-corresponding renders; model reopen passes)",
-    "native_reference_bridge_draft (unvalidated patch archived; active consumer restored unchanged)"
+    "native_reference_bridge_draft (unvalidated patch archived; active consumer restored unchanged)",
+    "simfoundry_desk1/authoring_001 (first closed-mesh authoring; support materials too bright, preserved)",
+    "simfoundry_desk1/authoring_002 (only support material revision; foreground geometry/camera byte-equivalent on reopen; final4objects6parts)",
+    "simfoundry_desk1/authoring_freeze.json (model frozen before published comparison fetch)",
+    "simfoundry_desk1/comparison_only (published images, not reproduced runs)"
   ],
   "resource_accounting": {
     "new_gpu_hours": 0.010596260615824981,
@@ -187,7 +187,7 @@
     "camera_initialization_full_sources": "1/3",
     "camera_runtime_addon": "pycolmap4.2.0 isolated target; existing Python/NumPy preserved",
     "pose_pilot_candidate_rounds_used": 4,
-    "appearance_unique_proposals_used": 8,
+    "appearance_unique_proposals_used": 10,
     "combined_unique_proposals_used": 2,
     "physical_ep2_simulation_attempts_used": 1,
     "parallel_selected_run_wall_seconds": 143.0860238011228,
@@ -277,7 +277,13 @@
     "tum_depth_scope": "Read-only reuse; no camera/GPU/API attempt or acquisition budget change. CPU evaluation and independent audit measured separately; orchestration overhead unknown.",
     "waterfront_authoring_candidates_used": 2,
     "waterfront_cpu_wall_seconds": 82.43346438196022,
-    "waterfront_scope": "Two new scene authoring/render candidates charged7/8 and8/8; camera8/8 unchanged, no inference/GPU/API. First version and unvalidated bridge draft retained."
+    "waterfront_scope": "Two new scene authoring/render candidates charged7/8 and8/8; camera8/8 unchanged, no inference/GPU/API. First version and unvalidated bridge draft retained.",
+    "appearance_round1_candidates_used": 8,
+    "desk1_authoring_candidates_used": 2,
+    "desk1_authoring_candidate_limit": 2,
+    "desk1_authoring_scope_amendment": "DESK1_AUTHORING_SCOPE_20260930.json",
+    "desk1_cpu_wall_seconds": 153.9484215839766,
+    "desk1_scope": "Explicit new user-selected case, versioned two-candidate authoring-only extension; cumulative appearance10 preserves prior8. Original model/camera8/8 unchanged. No new learned inference/GPU/API. One assumed rendering camera, no pose search or GT. Read-only verification/orchestration time not instrumented."
   },
   "constraints": [
     "Do not overwrite historical candidates, source photographs or failed evidence",
@@ -589,6 +595,15 @@
     "scope": "Real image -> editable object/part model -> same-view render comparison. Only one known real view. Competitor renders evaluation-only after authoring; no GT model/pose assembly as reconstruction. Do not delay for unrelated benchmarks/physics.",
     "waterfront_completed_checkpoint": "/data/real2sim_capability_wqz_20260929/waterfront_scene_002/scene.blend",
     "native_bridge_draft": "drafts/pi3x_reference_bridge_20260930.patch",
-    "draft_status": "saved_unvalidated_not_active"
+    "draft_status": "saved_unvalidated_not_active",
+    "status": "delivered_for_review",
+    "report": "DESK1_EDITABLE_DELIVERY_20260930.md",
+    "model": "/data/real2sim_capability_wqz_20260929/simfoundry_desk1/authoring_002/scene.blend",
+    "model_sha256": "b170ee70448a941e32a7777da1a9bc5af13bb4e727c32326c13a6af175a748ca",
+    "real_input_views": 1,
+    "virtual_inspection_views": 1,
+    "editable_objects": 4,
+    "foreground_mesh_parts": 6,
+    "published_comparisons": "SAM3D and SimFoundry zero-shot images fetched only after authoring freeze; not rerun or geometry-ground-truth scoring"
   }
 }

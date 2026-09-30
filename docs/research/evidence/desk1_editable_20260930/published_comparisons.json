@@ -1,0 +1,28 @@
+[
+  {
+    "file": "sam3d.jpg",
+    "url": "https://arxiv.org/html/2606.28276v4/figs/imgs/qualitative_results/ycb_desk_3/sam3d.jpg",
+    "sha256": "bc0abdf5ac519615d3ad740f9585611643c2440d36b827553ea4a6c0209baf34",
+    "bytes": 201655,
+    "image_size": [
+      1920,
+      1080
+    ],
+    "wall_seconds": 0.7076442799298093,
+    "role": "published_comparison_only_not_rerun",
+    "model_frozen_sha256": "b170ee70448a941e32a7777da1a9bc5af13bb4e727c32326c13a6af175a748ca"
+  },
+  {
+    "file": "pipeline_non_interactive.jpg",
+    "url": "https://arxiv.org/html/2606.28276v4/figs/imgs/qualitative_results/ycb_desk_3/pipeline_non_interactive.jpg",
+    "sha256": "6510736dd9f6766839e685987e5dff021a45fbd3af7db2459bd015bc161c06b1",
+    "bytes": 180038,
+    "image_size": [
+      1920,
+      1080
+    ],
+    "wall_seconds": 1.2209267320577055,
+    "role": "published_comparison_only_not_rerun",
+    "model_frozen_sha256": "b170ee70448a941e32a7777da1a9bc5af13bb4e727c32326c13a6af175a748ca"
+  }
+]
