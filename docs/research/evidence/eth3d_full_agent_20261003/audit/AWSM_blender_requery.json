@@ -1,0 +1,18 @@
+{
+  "method": "AWSM",
+  "depth_valid_masks_identical": true,
+  "depth_compared_positions": 89640,
+  "depth_max_difference_m": 0.0009268441912841929,
+  "depth_mean_difference_m": 1.1397921938718366e-06,
+  "depth_differences_over_1mm": 0,
+  "laser_nearest_compared": 100000,
+  "laser_nearest_max_difference_m": 0.001274224603548646,
+  "laser_nearest_mean_difference_m": 3.4890703256962754e-07,
+  "laser_nearest_differences_over_1mm": 2,
+  "sample_regeneration_byte_identical": true,
+  "sample_regeneration_max_difference_m": 0.0,
+  "area_total_m2": 6559.243309392157,
+  "unique_visible_objects": 815,
+  "seconds": 4.056859682314098,
+  "verification_convention": "Independent model-coordinate BVH queries: transform INPUT camera/laser points forward by G; evaluator used inverseG geometry in INPUT gauge. Transparent faces remain opaque for geometry. No model writes."
+}

@@ -1,0 +1,516 @@
+{
+  "status": "PASS",
+  "pair_count": 39,
+  "all8_exposed_heldout_preserved_each": true,
+  "checks": [
+    {
+      "method": "baseline",
+      "frame_id": "DSC_0675",
+      "split": "reconstruction",
+      "source_render_hashes_verified": true,
+      "render_pixels_equal_saved_evaluator": true,
+      "package_render_bytes_equal_evaluator": false,
+      "source_resize_matches": [
+        "lanczos"
+      ],
+      "baseline_score_equal_previous": true
+    },
+    {
+      "method": "baseline",
+      "frame_id": "DSC_0683",
+      "split": "reconstruction",
+      "source_render_hashes_verified": true,
+      "render_pixels_equal_saved_evaluator": true,
+      "package_render_bytes_equal_evaluator": false,
+      "source_resize_matches": [
+        "lanczos"
+      ],
+      "baseline_score_equal_previous": true
+    },
+    {
+      "method": "baseline",
+      "frame_id": "DSC_0692",
+      "split": "reconstruction",
+      "source_render_hashes_verified": true,
+      "render_pixels_equal_saved_evaluator": true,
+      "package_render_bytes_equal_evaluator": false,
+      "source_resize_matches": [
+        "lanczos"
+      ],
+      "baseline_score_equal_previous": true
+    },
+    {
+      "method": "baseline",
+      "frame_id": "DSC_0701",
+      "split": "reconstruction",
+      "source_render_hashes_verified": true,
+      "render_pixels_equal_saved_evaluator": true,
+      "package_render_bytes_equal_evaluator": false,
+      "source_resize_matches": [
+        "lanczos"
+      ],
+      "baseline_score_equal_previous": true
+    },
+    {
+      "method": "baseline",
+      "frame_id": "DSC_0710",
+      "split": "reconstruction",
+      "source_render_hashes_verified": true,
+      "render_pixels_equal_saved_evaluator": true,
+      "package_render_bytes_equal_evaluator": false,
+      "source_resize_matches": [
+        "lanczos"
+      ],
+      "baseline_score_equal_previous": true
+    },
+    {
+      "method": "baseline",
+      "frame_id": "DSC_0679",
+      "split": "heldout",
+      "source_render_hashes_verified": true,
+      "render_pixels_equal_saved_evaluator": true,
+      "package_render_bytes_equal_evaluator": false,
+      "source_resize_matches": [
+        "lanczos"
+      ],
+      "baseline_score_equal_previous": true
+    },
+    {
+      "method": "baseline",
+      "frame_id": "DSC_0684",
+      "split": "heldout",
+      "source_render_hashes_verified": true,
+      "render_pixels_equal_saved_evaluator": true,
+      "package_render_bytes_equal_evaluator": false,
+      "source_resize_matches": [
+        "lanczos"
+      ],
+      "baseline_score_equal_previous": true
+    },
+    {
+      "method": "baseline",
+      "frame_id": "DSC_0689",
+      "split": "heldout",
+      "source_render_hashes_verified": true,
+      "render_pixels_equal_saved_evaluator": true,
+      "package_render_bytes_equal_evaluator": false,
+      "source_resize_matches": [
+        "lanczos"
+      ],
+      "baseline_score_equal_previous": true
+    },
+    {
+      "method": "baseline",
+      "frame_id": "DSC_0694",
+      "split": "heldout",
+      "source_render_hashes_verified": true,
+      "render_pixels_equal_saved_evaluator": true,
+      "package_render_bytes_equal_evaluator": false,
+      "source_resize_matches": [
+        "lanczos"
+      ],
+      "baseline_score_equal_previous": true
+    },
+    {
+      "method": "baseline",
+      "frame_id": "DSC_0699",
+      "split": "heldout",
+      "source_render_hashes_verified": true,
+      "render_pixels_equal_saved_evaluator": true,
+      "package_render_bytes_equal_evaluator": false,
+      "source_resize_matches": [
+        "lanczos"
+      ],
+      "baseline_score_equal_previous": true
+    },
+    {
+      "method": "baseline",
+      "frame_id": "DSC_0704",
+      "split": "heldout",
+      "source_render_hashes_verified": true,
+      "render_pixels_equal_saved_evaluator": true,
+      "package_render_bytes_equal_evaluator": false,
+      "source_resize_matches": [
+        "lanczos"
+      ],
+      "baseline_score_equal_previous": true
+    },
+    {
+      "method": "baseline",
+      "frame_id": "DSC_0709",
+      "split": "heldout",
+      "source_render_hashes_verified": true,
+      "render_pixels_equal_saved_evaluator": true,
+      "package_render_bytes_equal_evaluator": false,
+      "source_resize_matches": [
+        "lanczos"
+      ],
+      "baseline_score_equal_previous": true
+    },
+    {
+      "method": "baseline",
+      "frame_id": "DSC_0714",
+      "split": "heldout",
+      "source_render_hashes_verified": true,
+      "render_pixels_equal_saved_evaluator": true,
+      "package_render_bytes_equal_evaluator": false,
+      "source_resize_matches": [
+        "lanczos"
+      ],
+      "baseline_score_equal_previous": true
+    },
+    {
+      "method": "geometry_v4",
+      "frame_id": "DSC_0675",
+      "split": "reconstruction",
+      "source_render_hashes_verified": true,
+      "render_pixels_equal_saved_evaluator": true,
+      "package_render_bytes_equal_evaluator": false,
+      "source_resize_matches": [
+        "lanczos"
+      ],
+      "baseline_score_equal_previous": true
+    },
+    {
+      "method": "geometry_v4",
+      "frame_id": "DSC_0683",
+      "split": "reconstruction",
+      "source_render_hashes_verified": true,
+      "render_pixels_equal_saved_evaluator": true,
+      "package_render_bytes_equal_evaluator": false,
+      "source_resize_matches": [
+        "lanczos"
+      ],
+      "baseline_score_equal_previous": true
+    },
+    {
+      "method": "geometry_v4",
+      "frame_id": "DSC_0692",
+      "split": "reconstruction",
+      "source_render_hashes_verified": true,
+      "render_pixels_equal_saved_evaluator": true,
+      "package_render_bytes_equal_evaluator": false,
+      "source_resize_matches": [
+        "lanczos"
+      ],
+      "baseline_score_equal_previous": true
+    },
+    {
+      "method": "geometry_v4",
+      "frame_id": "DSC_0701",
+      "split": "reconstruction",
+      "source_render_hashes_verified": true,
+      "render_pixels_equal_saved_evaluator": true,
+      "package_render_bytes_equal_evaluator": false,
+      "source_resize_matches": [
+        "lanczos"
+      ],
+      "baseline_score_equal_previous": true
+    },
+    {
+      "method": "geometry_v4",
+      "frame_id": "DSC_0710",
+      "split": "reconstruction",
+      "source_render_hashes_verified": true,
+      "render_pixels_equal_saved_evaluator": true,
+      "package_render_bytes_equal_evaluator": false,
+      "source_resize_matches": [
+        "lanczos"
+      ],
+      "baseline_score_equal_previous": true
+    },
+    {
+      "method": "geometry_v4",
+      "frame_id": "DSC_0679",
+      "split": "heldout",
+      "source_render_hashes_verified": true,
+      "render_pixels_equal_saved_evaluator": true,
+      "package_render_bytes_equal_evaluator": false,
+      "source_resize_matches": [
+        "lanczos"
+      ],
+      "baseline_score_equal_previous": true
+    },
+    {
+      "method": "geometry_v4",
+      "frame_id": "DSC_0684",
+      "split": "heldout",
+      "source_render_hashes_verified": true,
+      "render_pixels_equal_saved_evaluator": true,
+      "package_render_bytes_equal_evaluator": false,
+      "source_resize_matches": [
+        "lanczos"
+      ],
+      "baseline_score_equal_previous": true
+    },
+    {
+      "method": "geometry_v4",
+      "frame_id": "DSC_0689",
+      "split": "heldout",
+      "source_render_hashes_verified": true,
+      "render_pixels_equal_saved_evaluator": true,
+      "package_render_bytes_equal_evaluator": false,
+      "source_resize_matches": [
+        "lanczos"
+      ],
+      "baseline_score_equal_previous": true
+    },
+    {
+      "method": "geometry_v4",
+      "frame_id": "DSC_0694",
+      "split": "heldout",
+      "source_render_hashes_verified": true,
+      "render_pixels_equal_saved_evaluator": true,
+      "package_render_bytes_equal_evaluator": false,
+      "source_resize_matches": [
+        "lanczos"
+      ],
+      "baseline_score_equal_previous": true
+    },
+    {
+      "method": "geometry_v4",
+      "frame_id": "DSC_0699",
+      "split": "heldout",
+      "source_render_hashes_verified": true,
+      "render_pixels_equal_saved_evaluator": true,
+      "package_render_bytes_equal_evaluator": false,
+      "source_resize_matches": [
+        "lanczos"
+      ],
+      "baseline_score_equal_previous": true
+    },
+    {
+      "method": "geometry_v4",
+      "frame_id": "DSC_0704",
+      "split": "heldout",
+      "source_render_hashes_verified": true,
+      "render_pixels_equal_saved_evaluator": true,
+      "package_render_bytes_equal_evaluator": false,
+      "source_resize_matches": [
+        "lanczos"
+      ],
+      "baseline_score_equal_previous": true
+    },
+    {
+      "method": "geometry_v4",
+      "frame_id": "DSC_0709",
+      "split": "heldout",
+      "source_render_hashes_verified": true,
+      "render_pixels_equal_saved_evaluator": true,
+      "package_render_bytes_equal_evaluator": false,
+      "source_resize_matches": [
+        "lanczos"
+      ],
+      "baseline_score_equal_previous": true
+    },
+    {
+      "method": "geometry_v4",
+      "frame_id": "DSC_0714",
+      "split": "heldout",
+      "source_render_hashes_verified": true,
+      "render_pixels_equal_saved_evaluator": true,
+      "package_render_bytes_equal_evaluator": false,
+      "source_resize_matches": [
+        "lanczos"
+      ],
+      "baseline_score_equal_previous": true
+    },
+    {
+      "method": "texture_v4",
+      "frame_id": "DSC_0675",
+      "split": "reconstruction",
+      "source_render_hashes_verified": true,
+      "render_pixels_equal_saved_evaluator": true,
+      "package_render_bytes_equal_evaluator": false,
+      "source_resize_matches": [
+        "lanczos"
+      ],
+      "baseline_score_equal_previous": true
+    },
+    {
+      "method": "texture_v4",
+      "frame_id": "DSC_0683",
+      "split": "reconstruction",
+      "source_render_hashes_verified": true,
+      "render_pixels_equal_saved_evaluator": true,
+      "package_render_bytes_equal_evaluator": false,
+      "source_resize_matches": [
+        "lanczos"
+      ],
+      "baseline_score_equal_previous": true
+    },
+    {
+      "method": "texture_v4",
+      "frame_id": "DSC_0692",
+      "split": "reconstruction",
+      "source_render_hashes_verified": true,
+      "render_pixels_equal_saved_evaluator": true,
+      "package_render_bytes_equal_evaluator": false,
+      "source_resize_matches": [
+        "lanczos"
+      ],
+      "baseline_score_equal_previous": true
+    },
+    {
+      "method": "texture_v4",
+      "frame_id": "DSC_0701",
+      "split": "reconstruction",
+      "source_render_hashes_verified": true,
+      "render_pixels_equal_saved_evaluator": true,
+      "package_render_bytes_equal_evaluator": false,
+      "source_resize_matches": [
+        "lanczos"
+      ],
+      "baseline_score_equal_previous": true
+    },
+    {
+      "method": "texture_v4",
+      "frame_id": "DSC_0710",
+      "split": "reconstruction",
+      "source_render_hashes_verified": true,
+      "render_pixels_equal_saved_evaluator": true,
+      "package_render_bytes_equal_evaluator": false,
+      "source_resize_matches": [
+        "lanczos"
+      ],
+      "baseline_score_equal_previous": true
+    },
+    {
+      "method": "texture_v4",
+      "frame_id": "DSC_0679",
+      "split": "heldout",
+      "source_render_hashes_verified": true,
+      "render_pixels_equal_saved_evaluator": true,
+      "package_render_bytes_equal_evaluator": false,
+      "source_resize_matches": [
+        "lanczos"
+      ],
+      "baseline_score_equal_previous": true
+    },
+    {
+      "method": "texture_v4",
+      "frame_id": "DSC_0684",
+      "split": "heldout",
+      "source_render_hashes_verified": true,
+      "render_pixels_equal_saved_evaluator": true,
+      "package_render_bytes_equal_evaluator": false,
+      "source_resize_matches": [
+        "lanczos"
+      ],
+      "baseline_score_equal_previous": true
+    },
+    {
+      "method": "texture_v4",
+      "frame_id": "DSC_0689",
+      "split": "heldout",
+      "source_render_hashes_verified": true,
+      "render_pixels_equal_saved_evaluator": true,
+      "package_render_bytes_equal_evaluator": false,
+      "source_resize_matches": [
+        "lanczos"
+      ],
+      "baseline_score_equal_previous": true
+    },
+    {
+      "method": "texture_v4",
+      "frame_id": "DSC_0694",
+      "split": "heldout",
+      "source_render_hashes_verified": true,
+      "render_pixels_equal_saved_evaluator": true,
+      "package_render_bytes_equal_evaluator": false,
+      "source_resize_matches": [
+        "lanczos"
+      ],
+      "baseline_score_equal_previous": true
+    },
+    {
+      "method": "texture_v4",
+      "frame_id": "DSC_0699",
+      "split": "heldout",
+      "source_render_hashes_verified": true,
+      "render_pixels_equal_saved_evaluator": true,
+      "package_render_bytes_equal_evaluator": false,
+      "source_resize_matches": [
+        "lanczos"
+      ],
+      "baseline_score_equal_previous": true
+    },
+    {
+      "method": "texture_v4",
+      "frame_id": "DSC_0704",
+      "split": "heldout",
+      "source_render_hashes_verified": true,
+      "render_pixels_equal_saved_evaluator": true,
+      "package_render_bytes_equal_evaluator": false,
+      "source_resize_matches": [
+        "lanczos"
+      ],
+      "baseline_score_equal_previous": true
+    },
+    {
+      "method": "texture_v4",
+      "frame_id": "DSC_0709",
+      "split": "heldout",
+      "source_render_hashes_verified": true,
+      "render_pixels_equal_saved_evaluator": true,
+      "package_render_bytes_equal_evaluator": false,
+      "source_resize_matches": [
+        "lanczos"
+      ],
+      "baseline_score_equal_previous": true
+    },
+    {
+      "method": "texture_v4",
+      "frame_id": "DSC_0714",
+      "split": "heldout",
+      "source_render_hashes_verified": true,
+      "render_pixels_equal_saved_evaluator": true,
+      "package_render_bytes_equal_evaluator": false,
+      "source_resize_matches": [
+        "lanczos"
+      ],
+      "baseline_score_equal_previous": true
+    }
+  ],
+  "means": {
+    "baseline": {
+      "reconstruction": {
+        "count": 5,
+        "mean": 0.508864802122116
+      },
+      "heldout": {
+        "count": 8,
+        "mean": 0.5562385879456997
+      }
+    },
+    "geometry_v4": {
+      "reconstruction": {
+        "count": 5,
+        "mean": 0.5085168957710267
+      },
+      "heldout": {
+        "count": 8,
+        "mean": 0.5521374642848969
+      }
+    },
+    "texture_v4": {
+      "reconstruction": {
+        "count": 5,
+        "mean": 0.3915189623832703
+      },
+      "heldout": {
+        "count": 8,
+        "mean": 0.4112602695822716
+      }
+    }
+  },
+  "baseline_all13_values_exactly_match_previous": true,
+  "LPIPS_runner_and_weight_provenance_matches_previous": true,
+  "live_weight_file_sha256_verified_on_4090_1": [
+    "7be5be791159472b1fbf3c69796f7cb30dca7ad8466c2df70058c37116cdee02",
+    "df73285e35b22355a2df87cdb6b70b343713b667eddbda73e1977e0c860835c0"
+  ],
+  "identical_image_sanity": 0.0,
+  "neural_forward_rerun": false,
+  "note": "Pair PNG byte encoding may differ from saved evaluator files; pixel arrays were independently proven identical for all39renders. All source resize/hash identities andscoreaggregation were checked."
+}

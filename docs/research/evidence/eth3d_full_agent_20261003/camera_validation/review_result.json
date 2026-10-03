@@ -1,0 +1,112 @@
+{
+  "blender_projection": {
+    "blender": "4.5.4 LTS",
+    "max_projection_error_px": 1.8978628681433152e-05,
+    "count": 8
+  },
+  "structural_status": "passed",
+  "structural_failure_count": 0,
+  "tests": [
+    {
+      "name": "matched_crop_viewA",
+      "passed": true,
+      "crop": [
+        22,
+        26,
+        125,
+        120
+      ],
+      "render_size": [
+        103,
+        94
+      ],
+      "original_size": [
+        103,
+        94
+      ]
+    },
+    {
+      "name": "matched_crop_viewB",
+      "passed": true,
+      "crop": [
+        41,
+        31,
+        139,
+        130
+      ],
+      "render_size": [
+        98,
+        99
+      ],
+      "original_size": [
+        98,
+        99
+      ]
+    },
+    {
+      "name": "assembly_camera_default",
+      "passed": true
+    },
+    {
+      "name": "landmark_camera_override",
+      "passed": true
+    },
+    {
+      "name": "worker_hash_drift_guard",
+      "passed": true
+    },
+    {
+      "name": "worker_null_constraints_legacy_fallback",
+      "passed": true
+    },
+    {
+      "name": "review_baseline",
+      "passed": true
+    },
+    {
+      "name": "review_wrong_resolved_frame",
+      "passed": true,
+      "error": "Landmark source camera/crop binding mismatch"
+    },
+    {
+      "name": "review_wrong_source_hash",
+      "passed": true,
+      "error": "Source crop hash differs from its declared camera image"
+    },
+    {
+      "name": "review_missing_crop_hash",
+      "passed": true,
+      "error": "Source crop/render is not hash-bound audit evidence"
+    },
+    {
+      "name": "review_missing_source_views",
+      "passed": true,
+      "error": "Missing or unexpected multi-camera source evidence"
+    },
+    {
+      "name": "two_camera_single_rigid_gauge",
+      "passed": true,
+      "max_camera_coordinate_error": 0.0
+    },
+    {
+      "name": "reject_scale",
+      "passed": true
+    },
+    {
+      "name": "reject_reflection",
+      "passed": true
+    },
+    {
+      "name": "reject_shear",
+      "passed": true
+    }
+  ],
+  "code_hashes": {
+    "blender_camera.py": "62f034a890d21bc3a6530b6552eb3b1e1917683fc62e7d9bfd5e2a2aa13344ff",
+    "blender_structure.py": "e7aea6e251137b4a84919919a00af4a0b2e08c1c7215af8e0531fc12b2ec62f9",
+    "camera.py": "5421dc48b2ba9d59e608846fe881a6ff81204a7fdf99e07059329625d0fc2e50",
+    "media.py": "467bbe5328a1778073c9f2f19ac4d78a4ec7bc80f67890c4600e44bd7a8e308f",
+    "stage_worker.py": "83bd15a3b51f34696844c90f69ad946037ec56d515c2be3912ba53b297f401d4",
+    "structure.py": "3ef85ef5fe075d80f152a50d4a0b7d5ae299d2b2f204668c5babff9c167bffe5"
+  }
+}

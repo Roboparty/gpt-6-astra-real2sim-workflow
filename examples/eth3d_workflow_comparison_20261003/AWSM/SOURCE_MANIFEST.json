@@ -1,0 +1,102 @@
+{
+  "kind": "final authored code and selected small evidence, preserved bytes",
+  "source_archive_sha256": "15da8797b4be28105d03cdc9e8d0d797cc4574d2bc96fbf67d1da9f60bbebf99",
+  "files": [
+    {
+      "path": "analysis/final_portability_and_native_bindings.json",
+      "bytes": 1385,
+      "sha256": "5e1282e6e61e09f0d6b9baaa05f800e6b86fc34479590505e07193ec0b3a3e80"
+    },
+    {
+      "path": "analysis/final_protocol_bookend.json",
+      "bytes": 967,
+      "sha256": "bc05b9852fa68f111a09b949f0712240727e4201236651474a49798f46fbea54"
+    },
+    {
+      "path": "analysis/layout_parameter_evidence.json",
+      "bytes": 2674,
+      "sha256": "2406f5a84f388e6dd66f6426409931381d1c39c36c8029bab0f6b35126c7f3c1"
+    },
+    {
+      "path": "analysis/measurement_summary.json",
+      "bytes": 29192,
+      "sha256": "67995c94bd113dce444b976ca8b6016aeb7fbb6866d0cba8d1ad61b02928f28e"
+    },
+    {
+      "path": "analysis/v2_change_evidence.json",
+      "bytes": 1616,
+      "sha256": "56a9e244d8a07d6d1c556e810413881097aef59e768e5e06d633d7e20af084b3"
+    },
+    {
+      "path": "build_scene.py",
+      "bytes": 4762,
+      "sha256": "065232a18995c56801e55dbc7f3c12956a2ed582dd1f629f664529b7c8c53587"
+    },
+    {
+      "path": "cameras.json",
+      "bytes": 38522,
+      "sha256": "392d37a70255afdbb8bbe8017b07e8dc2f6d19f2205a86796b7cbe0d202cbcb1"
+    },
+    {
+      "path": "colliders.json",
+      "bytes": 17055,
+      "sha256": "bacb572075d2f25f6fe253a1ecea0ccc0243753659d3225ffe0274ccec21c0fc"
+    },
+    {
+      "path": "input_access_log.json",
+      "bytes": 3779,
+      "sha256": "e7916994ed675f1e127e8ce261221a7dcae7b7388cb7a9f442a002e0a02c9879"
+    },
+    {
+      "path": "iteration_log.json",
+      "bytes": 3830,
+      "sha256": "db670b043661ffcd2a763b04687d1873236fd1a91274710a05859ab1086ee75e"
+    },
+    {
+      "path": "layout.json",
+      "bytes": 956123,
+      "sha256": "c42084bfd0f15243e9b30d6e59f4efc4ccd8211d94cb3a331df567e93c2afdff"
+    },
+    {
+      "path": "model_from_input.json",
+      "bytes": 415,
+      "sha256": "649870ab4edc674fe06ad063a71f3082aa9c613a18e6b5445bc0a3e2b8f1c62d"
+    },
+    {
+      "path": "modelling_manifest.json",
+      "bytes": 3410,
+      "sha256": "ba3a0d761b8e6a6231207930b43e4eecf91d1014990cba6295fd63d15629d6ba"
+    },
+    {
+      "path": "objects.json",
+      "bytes": 73640,
+      "sha256": "94d44686d00324a5d6fb79fc4a429b772adea5e07e16393467d15c990048117c"
+    },
+    {
+      "path": "tools/audit_cameras.py",
+      "bytes": 2551,
+      "sha256": "1cc77be4f035787ab2a45d35db9aae80328ac1d57f499989349d8f562935dd4e"
+    },
+    {
+      "path": "tools/audit_windshield.py",
+      "bytes": 2068,
+      "sha256": "09bdebbee9c073aa3f99e6d8bfc6cda4c9d53c411b9309e273a51fe78315167a"
+    },
+    {
+      "path": "tools/layout_v1.py",
+      "bytes": 17670,
+      "sha256": "ae37d46a29ca75f7c305ccc4bd6128aa4e48295c6c1ce6c2f231272675464271"
+    },
+    {
+      "path": "tools/layout_v2.py",
+      "bytes": 10857,
+      "sha256": "a84b40f4fc9b4b0438c0803d6bf58a2d4ff2c8802f203339106188e12bfbfeca"
+    },
+    {
+      "path": "tools/measure.py",
+      "bytes": 3289,
+      "sha256": "b73645281ae939af470cb536032a211a24f84f61452bbbcac2e4ac71422d42c7"
+    }
+  ],
+  "excluded": "Full models, raw RGB/depth,4.7MB point measurements, private conversation; retained remotely"
+}

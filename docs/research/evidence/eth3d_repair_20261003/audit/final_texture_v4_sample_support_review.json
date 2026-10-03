@@ -1,0 +1,1533 @@
+{
+  "status": "PASS",
+  "samples": 96,
+  "visible_object_set_matches_robust_collection_helper": true,
+  "uv_failures": [],
+  "failures": [],
+  "max_uv_error": 2.9718330796235648e-08,
+  "samples_detail": [
+    {
+      "object": "column_0_lower",
+      "polygon": 2,
+      "sample_tile_pixel": [
+        14,
+        18
+      ],
+      "same_object_first_hit_source_exists": true,
+      "first_hit_sources": [
+        12,
+        13,
+        14
+      ],
+      "atlas_matches": true,
+      "uv_max_error": 0.0
+    },
+    {
+      "object": "lumber_board_4_1",
+      "polygon": 1,
+      "sample_tile_pixel": [
+        142,
+        5
+      ],
+      "same_object_first_hit_source_exists": true,
+      "first_hit_sources": [
+        25
+      ],
+      "atlas_matches": true,
+      "uv_max_error": 0.0
+    },
+    {
+      "object": "wall_left",
+      "polygon": 0,
+      "sample_tile_pixel": [
+        100,
+        14
+      ],
+      "same_object_first_hit_source_exists": true,
+      "first_hit_sources": [
+        20
+      ],
+      "atlas_matches": true,
+      "uv_max_error": 0.0
+    },
+    {
+      "object": "crate1_long_0_0",
+      "polygon": 3,
+      "sample_tile_pixel": [
+        57,
+        4
+      ],
+      "same_object_first_hit_source_exists": true,
+      "first_hit_sources": [
+        11
+      ],
+      "atlas_matches": true,
+      "uv_max_error": 0.0
+    },
+    {
+      "object": "column_7_lower",
+      "polygon": 1,
+      "sample_tile_pixel": [
+        20,
+        0
+      ],
+      "same_object_first_hit_source_exists": true,
+      "first_hit_sources": [
+        16,
+        17,
+        18
+      ],
+      "atlas_matches": true,
+      "uv_max_error": 0.0
+    },
+    {
+      "object": "van_windshield_frame1",
+      "polygon": 1,
+      "sample_tile_pixel": [
+        35,
+        3
+      ],
+      "same_object_first_hit_source_exists": true,
+      "first_hit_sources": [
+        12,
+        13,
+        14
+      ],
+      "atlas_matches": true,
+      "uv_max_error": 2.4340404802813964e-08
+    },
+    {
+      "object": "door_leaf_2_rail_2",
+      "polygon": 4,
+      "sample_tile_pixel": [
+        24,
+        5
+      ],
+      "same_object_first_hit_source_exists": true,
+      "first_hit_sources": [
+        0,
+        1,
+        26
+      ],
+      "atlas_matches": true,
+      "uv_max_error": 0.0
+    },
+    {
+      "object": "rack_sack_0_0_1",
+      "polygon": 72,
+      "sample_tile_pixel": [
+        6,
+        0
+      ],
+      "same_object_first_hit_source_exists": true,
+      "first_hit_sources": [
+        6,
+        7,
+        8
+      ],
+      "atlas_matches": true,
+      "uv_max_error": 2.3110585889440927e-08
+    },
+    {
+      "object": "rack_sack_0_0_3",
+      "polygon": 57,
+      "sample_tile_pixel": [
+        6,
+        3
+      ],
+      "same_object_first_hit_source_exists": true,
+      "first_hit_sources": [
+        7
+      ],
+      "atlas_matches": true,
+      "uv_max_error": 2.691211786753911e-08
+    },
+    {
+      "object": "column_0_upper",
+      "polygon": 3,
+      "sample_tile_pixel": [
+        82,
+        3
+      ],
+      "same_object_first_hit_source_exists": true,
+      "first_hit_sources": [
+        12,
+        13,
+        14,
+        29,
+        31
+      ],
+      "atlas_matches": true,
+      "uv_max_error": 0.0
+    },
+    {
+      "object": "lumber_board_3_2",
+      "polygon": 5,
+      "sample_tile_pixel": [
+        8,
+        0
+      ],
+      "same_object_first_hit_source_exists": true,
+      "first_hit_sources": [
+        24,
+        25
+      ],
+      "atlas_matches": true,
+      "uv_max_error": 0.0
+    },
+    {
+      "object": "rack_sack_0_1_1",
+      "polygon": 61,
+      "sample_tile_pixel": [
+        2,
+        1
+      ],
+      "same_object_first_hit_source_exists": true,
+      "first_hit_sources": [
+        7,
+        8
+      ],
+      "atlas_matches": true,
+      "uv_max_error": 2.9718330796235648e-08
+    },
+    {
+      "object": "column_3_lower",
+      "polygon": 2,
+      "sample_tile_pixel": [
+        70,
+        11
+      ],
+      "same_object_first_hit_source_exists": true,
+      "first_hit_sources": [
+        22,
+        32,
+        33,
+        34
+      ],
+      "atlas_matches": true,
+      "uv_max_error": 0.0
+    },
+    {
+      "object": "rack_sack_0_0_2",
+      "polygon": 28,
+      "sample_tile_pixel": [
+        3,
+        6
+      ],
+      "same_object_first_hit_source_exists": true,
+      "first_hit_sources": [
+        7,
+        8,
+        9
+      ],
+      "atlas_matches": true,
+      "uv_max_error": 1.7166854826555777e-08
+    },
+    {
+      "object": "rack_sack_1_0_1",
+      "polygon": 28,
+      "sample_tile_pixel": [
+        2,
+        5
+      ],
+      "same_object_first_hit_source_exists": true,
+      "first_hit_sources": [
+        7
+      ],
+      "atlas_matches": true,
+      "uv_max_error": 1.082732881130255e-08
+    },
+    {
+      "object": "rack_sack_0_1_0",
+      "polygon": 25,
+      "sample_tile_pixel": [
+        4,
+        0
+      ],
+      "same_object_first_hit_source_exists": true,
+      "first_hit_sources": [
+        7,
+        9
+      ],
+      "atlas_matches": true,
+      "uv_max_error": 2.7514094558256375e-08
+    },
+    {
+      "object": "door_leaf_4_rail_2",
+      "polygon": 4,
+      "sample_tile_pixel": [
+        23,
+        1
+      ],
+      "same_object_first_hit_source_exists": true,
+      "first_hit_sources": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "atlas_matches": true,
+      "uv_max_error": 0.0
+    },
+    {
+      "object": "rack_pallet_2_1_0",
+      "polygon": 3,
+      "sample_tile_pixel": [
+        83,
+        0
+      ],
+      "same_object_first_hit_source_exists": true,
+      "first_hit_sources": [
+        7,
+        9
+      ],
+      "atlas_matches": true,
+      "uv_max_error": 0.0
+    },
+    {
+      "object": "door_leaf_0_rail_2",
+      "polygon": 0,
+      "sample_tile_pixel": [
+        16,
+        2
+      ],
+      "same_object_first_hit_source_exists": true,
+      "first_hit_sources": [
+        0,
+        25,
+        26,
+        27
+      ],
+      "atlas_matches": true,
+      "uv_max_error": 0.0
+    },
+    {
+      "object": "rack_sack_0_0_1",
+      "polygon": 29,
+      "sample_tile_pixel": [
+        1,
+        4
+      ],
+      "same_object_first_hit_source_exists": true,
+      "first_hit_sources": [
+        6,
+        7,
+        8
+      ],
+      "atlas_matches": true,
+      "uv_max_error": 1.8788691491522513e-08
+    },
+    {
+      "object": "rack_sack_0_0_2",
+      "polygon": 73,
+      "sample_tile_pixel": [
+        8,
+        2
+      ],
+      "same_object_first_hit_source_exists": true,
+      "first_hit_sources": [
+        7,
+        8,
+        9
+      ],
+      "atlas_matches": true,
+      "uv_max_error": 2.2525272758144865e-08
+    },
+    {
+      "object": "ceiling",
+      "polygon": 4,
+      "sample_tile_pixel": [
+        689,
+        253
+      ],
+      "same_object_first_hit_source_exists": true,
+      "first_hit_sources": [
+        15,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        32,
+        33,
+        34,
+        35
+      ],
+      "atlas_matches": true,
+      "uv_max_error": 0.0
+    },
+    {
+      "object": "column_3_lower",
+      "polygon": 1,
+      "sample_tile_pixel": [
+        22,
+        15
+      ],
+      "same_object_first_hit_source_exists": true,
+      "first_hit_sources": [
+        21,
+        22,
+        23,
+        28
+      ],
+      "atlas_matches": true,
+      "uv_max_error": 0.0
+    },
+    {
+      "object": "rack_sack_2_0_3",
+      "polygon": 42,
+      "sample_tile_pixel": [
+        5,
+        2
+      ],
+      "same_object_first_hit_source_exists": true,
+      "first_hit_sources": [
+        7,
+        8
+      ],
+      "atlas_matches": true,
+      "uv_max_error": 1.9459275524269515e-08
+    },
+    {
+      "object": "crate1_long_5_0",
+      "polygon": 3,
+      "sample_tile_pixel": [
+        57,
+        1
+      ],
+      "same_object_first_hit_source_exists": true,
+      "first_hit_sources": [
+        11
+      ],
+      "atlas_matches": true,
+      "uv_max_error": 0.0
+    },
+    {
+      "object": "door_leaf_1_upright_-1",
+      "polygon": 1,
+      "sample_tile_pixel": [
+        21,
+        0
+      ],
+      "same_object_first_hit_source_exists": true,
+      "first_hit_sources": [
+        0,
+        25,
+        26,
+        27
+      ],
+      "atlas_matches": true,
+      "uv_max_error": 0.0
+    },
+    {
+      "object": "compactor_yellow_front",
+      "polygon": 2,
+      "sample_tile_pixel": [
+        44,
+        8
+      ],
+      "same_object_first_hit_source_exists": true,
+      "first_hit_sources": [
+        18,
+        19,
+        20,
+        22,
+        32,
+        33,
+        34,
+        35
+      ],
+      "atlas_matches": true,
+      "uv_max_error": 0.0
+    },
+    {
+      "object": "rack_sack_2_1_3",
+      "polygon": 42,
+      "sample_tile_pixel": [
+        10,
+        3
+      ],
+      "same_object_first_hit_source_exists": true,
+      "first_hit_sources": [
+        6,
+        7,
+        8
+      ],
+      "atlas_matches": true,
+      "uv_max_error": 1.2024320483750017e-08
+    },
+    {
+      "object": "rack_pallet_joist_1_0_2",
+      "polygon": 0,
+      "sample_tile_pixel": [
+        35,
+        2
+      ],
+      "same_object_first_hit_source_exists": true,
+      "first_hit_sources": [
+        6,
+        7
+      ],
+      "atlas_matches": true,
+      "uv_max_error": 0.0
+    },
+    {
+      "object": "rack_sack_1_1_1",
+      "polygon": 60,
+      "sample_tile_pixel": [
+        8,
+        2
+      ],
+      "same_object_first_hit_source_exists": true,
+      "first_hit_sources": [
+        7,
+        8
+      ],
+      "atlas_matches": true,
+      "uv_max_error": 2.5510660917049677e-08
+    },
+    {
+      "object": "rack_sack_1_1_1",
+      "polygon": 57,
+      "sample_tile_pixel": [
+        7,
+        3
+      ],
+      "same_object_first_hit_source_exists": true,
+      "first_hit_sources": [
+        7
+      ],
+      "atlas_matches": true,
+      "uv_max_error": 2.4341431537067137e-08
+    },
+    {
+      "object": "column_0_base",
+      "polygon": 2,
+      "sample_tile_pixel": [
+        15,
+        0
+      ],
+      "same_object_first_hit_source_exists": true,
+      "first_hit_sources": [
+        12,
+        13,
+        14,
+        31
+      ],
+      "atlas_matches": true,
+      "uv_max_error": 0.0
+    },
+    {
+      "object": "wall_right",
+      "polygon": 14,
+      "sample_tile_pixel": [
+        135,
+        16
+      ],
+      "same_object_first_hit_source_exists": true,
+      "first_hit_sources": [
+        24,
+        25,
+        26,
+        28
+      ],
+      "atlas_matches": true,
+      "uv_max_error": 0.0
+    },
+    {
+      "object": "van_cab_body",
+      "polygon": 10,
+      "sample_tile_pixel": [
+        33,
+        21
+      ],
+      "same_object_first_hit_source_exists": true,
+      "first_hit_sources": [
+        12,
+        13,
+        14
+      ],
+      "atlas_matches": true,
+      "uv_max_error": 1.2028216062054398e-09
+    },
+    {
+      "object": "flatbed_frame",
+      "polygon": 3,
+      "sample_tile_pixel": [
+        40,
+        3
+      ],
+      "same_object_first_hit_source_exists": true,
+      "first_hit_sources": [
+        4,
+        8
+      ],
+      "atlas_matches": true,
+      "uv_max_error": 0.0
+    },
+    {
+      "object": "floor",
+      "polygon": 45,
+      "sample_tile_pixel": [
+        44,
+        20
+      ],
+      "same_object_first_hit_source_exists": true,
+      "first_hit_sources": [
+        24,
+        25,
+        26,
+        28
+      ],
+      "atlas_matches": true,
+      "uv_max_error": 0.0
+    },
+    {
+      "object": "crate0_long_4_0",
+      "polygon": 3,
+      "sample_tile_pixel": [
+        48,
+        2
+      ],
+      "same_object_first_hit_source_exists": true,
+      "first_hit_sources": [
+        8,
+        9,
+        10,
+        11,
+        31
+      ],
+      "atlas_matches": true,
+      "uv_max_error": 0.0
+    },
+    {
+      "object": "floor",
+      "polygon": 14,
+      "sample_tile_pixel": [
+        493,
+        9
+      ],
+      "same_object_first_hit_source_exists": true,
+      "first_hit_sources": [
+        20,
+        22,
+        23,
+        24,
+        28,
+        32,
+        35
+      ],
+      "atlas_matches": true,
+      "uv_max_error": 0.0
+    },
+    {
+      "object": "crate1_strap0",
+      "polygon": 0,
+      "sample_tile_pixel": [
+        3,
+        5
+      ],
+      "same_object_first_hit_source_exists": true,
+      "first_hit_sources": [
+        11
+      ],
+      "atlas_matches": true,
+      "uv_max_error": 0.0
+    },
+    {
+      "object": "crate0_foot0",
+      "polygon": 0,
+      "sample_tile_pixel": [
+        12,
+        6
+      ],
+      "same_object_first_hit_source_exists": true,
+      "first_hit_sources": [
+        10,
+        11
+      ],
+      "atlas_matches": true,
+      "uv_max_error": 0.0
+    },
+    {
+      "object": "skip1_rim1",
+      "polygon": 3,
+      "sample_tile_pixel": [
+        44,
+        3
+      ],
+      "same_object_first_hit_source_exists": true,
+      "first_hit_sources": [
+        10,
+        12
+      ],
+      "atlas_matches": true,
+      "uv_max_error": 0.0
+    },
+    {
+      "object": "rack_sack_0_0_1",
+      "polygon": 77,
+      "sample_tile_pixel": [
+        5,
+        0
+      ],
+      "same_object_first_hit_source_exists": true,
+      "first_hit_sources": [
+        6,
+        7,
+        8
+      ],
+      "atlas_matches": true,
+      "uv_max_error": 2.3068793764124962e-08
+    },
+    {
+      "object": "rack_sack_0_0_2",
+      "polygon": 61,
+      "sample_tile_pixel": [
+        7,
+        0
+      ],
+      "same_object_first_hit_source_exists": true,
+      "first_hit_sources": [
+        7
+      ],
+      "atlas_matches": true,
+      "uv_max_error": 2.904483531462887e-08
+    },
+    {
+      "object": "rack_sack_1_0_1",
+      "polygon": 72,
+      "sample_tile_pixel": [
+        1,
+        2
+      ],
+      "same_object_first_hit_source_exists": true,
+      "first_hit_sources": [
+        9,
+        10
+      ],
+      "atlas_matches": true,
+      "uv_max_error": 1.406714456031466e-08
+    },
+    {
+      "object": "rack_sack_1_0_2",
+      "polygon": 45,
+      "sample_tile_pixel": [
+        0,
+        2
+      ],
+      "same_object_first_hit_source_exists": true,
+      "first_hit_sources": [
+        8
+      ],
+      "atlas_matches": true,
+      "uv_max_error": 1.8243873411982747e-08
+    },
+    {
+      "object": "rack_sack_2_1_3",
+      "polygon": 45,
+      "sample_tile_pixel": [
+        5,
+        3
+      ],
+      "same_object_first_hit_source_exists": true,
+      "first_hit_sources": [
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "atlas_matches": true,
+      "uv_max_error": 1.4247947099921277e-08
+    },
+    {
+      "object": "ceiling",
+      "polygon": 63,
+      "sample_tile_pixel": [
+        264,
+        341
+      ],
+      "same_object_first_hit_source_exists": true,
+      "first_hit_sources": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "atlas_matches": true,
+      "uv_max_error": 0.0
+    },
+    {
+      "object": "lumber_board_7_1",
+      "polygon": 1,
+      "sample_tile_pixel": [
+        7,
+        5
+      ],
+      "same_object_first_hit_source_exists": true,
+      "first_hit_sources": [
+        28
+      ],
+      "atlas_matches": true,
+      "uv_max_error": 0.0
+    },
+    {
+      "object": "crate0_short_0_1",
+      "polygon": 0,
+      "sample_tile_pixel": [
+        43,
+        6
+      ],
+      "same_object_first_hit_source_exists": true,
+      "first_hit_sources": [
+        29,
+        30
+      ],
+      "atlas_matches": true,
+      "uv_max_error": 0.0
+    },
+    {
+      "object": "crate0_long_0_0",
+      "polygon": 3,
+      "sample_tile_pixel": [
+        21,
+        1
+      ],
+      "same_object_first_hit_source_exists": true,
+      "first_hit_sources": [
+        8,
+        9,
+        10,
+        11,
+        31
+      ],
+      "atlas_matches": true,
+      "uv_max_error": 0.0
+    },
+    {
+      "object": "rack_sack_0_0_2",
+      "polygon": 77,
+      "sample_tile_pixel": [
+        5,
+        2
+      ],
+      "same_object_first_hit_source_exists": true,
+      "first_hit_sources": [
+        7,
+        8
+      ],
+      "atlas_matches": true,
+      "uv_max_error": 1.4764679812095949e-08
+    },
+    {
+      "object": "rack_pallet_0_0_0",
+      "polygon": 3,
+      "sample_tile_pixel": [
+        64,
+        3
+      ],
+      "same_object_first_hit_source_exists": true,
+      "first_hit_sources": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "atlas_matches": true,
+      "uv_max_error": 0.0
+    },
+    {
+      "object": "rack_sack_0_1_0",
+      "polygon": 61,
+      "sample_tile_pixel": [
+        7,
+        1
+      ],
+      "same_object_first_hit_source_exists": true,
+      "first_hit_sources": [
+        7,
+        8
+      ],
+      "atlas_matches": true,
+      "uv_max_error": 2.70124268508809e-08
+    },
+    {
+      "object": "ceiling",
+      "polygon": 30,
+      "sample_tile_pixel": [
+        94,
+        5
+      ],
+      "same_object_first_hit_source_exists": true,
+      "first_hit_sources": [
+        28
+      ],
+      "atlas_matches": true,
+      "uv_max_error": 0.0
+    },
+    {
+      "object": "door_leaf_5_rail_1",
+      "polygon": 0,
+      "sample_tile_pixel": [
+        28,
+        2
+      ],
+      "same_object_first_hit_source_exists": true,
+      "first_hit_sources": [
+        2,
+        3,
+        26,
+        27
+      ],
+      "atlas_matches": true,
+      "uv_max_error": 0.0
+    },
+    {
+      "object": "rack_sack_0_1_1",
+      "polygon": 29,
+      "sample_tile_pixel": [
+        3,
+        2
+      ],
+      "same_object_first_hit_source_exists": true,
+      "first_hit_sources": [
+        7,
+        8
+      ],
+      "atlas_matches": true,
+      "uv_max_error": 6.938771890396822e-09
+    },
+    {
+      "object": "skip1_rim0",
+      "polygon": 3,
+      "sample_tile_pixel": [
+        65,
+        0
+      ],
+      "same_object_first_hit_source_exists": true,
+      "first_hit_sources": [
+        9,
+        29
+      ],
+      "atlas_matches": true,
+      "uv_max_error": 0.0
+    },
+    {
+      "object": "rack_sack_2_0_3",
+      "polygon": 29,
+      "sample_tile_pixel": [
+        3,
+        0
+      ],
+      "same_object_first_hit_source_exists": true,
+      "first_hit_sources": [
+        7,
+        8
+      ],
+      "atlas_matches": true,
+      "uv_max_error": 2.4543122978393228e-08
+    },
+    {
+      "object": "column_2_upper",
+      "polygon": 3,
+      "sample_tile_pixel": [
+        95,
+        16
+      ],
+      "same_object_first_hit_source_exists": true,
+      "first_hit_sources": [
+        19,
+        32
+      ],
+      "atlas_matches": true,
+      "uv_max_error": 0.0
+    },
+    {
+      "object": "column_6_lower",
+      "polygon": 3,
+      "sample_tile_pixel": [
+        47,
+        3
+      ],
+      "same_object_first_hit_source_exists": true,
+      "first_hit_sources": [
+        33,
+        34
+      ],
+      "atlas_matches": true,
+      "uv_max_error": 0.0
+    },
+    {
+      "object": "rack_pallet_3_2_0",
+      "polygon": 3,
+      "sample_tile_pixel": [
+        16,
+        3
+      ],
+      "same_object_first_hit_source_exists": true,
+      "first_hit_sources": [
+        2,
+        3,
+        7,
+        8
+      ],
+      "atlas_matches": true,
+      "uv_max_error": 0.0
+    },
+    {
+      "object": "door_leaf_6_rail_2",
+      "polygon": 0,
+      "sample_tile_pixel": [
+        1,
+        4
+      ],
+      "same_object_first_hit_source_exists": true,
+      "first_hit_sources": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "atlas_matches": true,
+      "uv_max_error": 0.0
+    },
+    {
+      "object": "door_leaf_4_upright_1",
+      "polygon": 3,
+      "sample_tile_pixel": [
+        116,
+        5
+      ],
+      "same_object_first_hit_source_exists": true,
+      "first_hit_sources": [
+        0
+      ],
+      "atlas_matches": true,
+      "uv_max_error": 0.0
+    },
+    {
+      "object": "crate0_short_4_1",
+      "polygon": 0,
+      "sample_tile_pixel": [
+        40,
+        1
+      ],
+      "same_object_first_hit_source_exists": true,
+      "first_hit_sources": [
+        29,
+        30
+      ],
+      "atlas_matches": true,
+      "uv_max_error": 0.0
+    },
+    {
+      "object": "rack_sack_0_0_0",
+      "polygon": 60,
+      "sample_tile_pixel": [
+        6,
+        0
+      ],
+      "same_object_first_hit_source_exists": true,
+      "first_hit_sources": [
+        7
+      ],
+      "atlas_matches": true,
+      "uv_max_error": 2.6664460528458278e-08
+    },
+    {
+      "object": "crate0_short_2_1",
+      "polygon": 0,
+      "sample_tile_pixel": [
+        29,
+        2
+      ],
+      "same_object_first_hit_source_exists": true,
+      "first_hit_sources": [
+        29,
+        30
+      ],
+      "atlas_matches": true,
+      "uv_max_error": 0.0
+    },
+    {
+      "object": "crate1_base",
+      "polygon": 5,
+      "sample_tile_pixel": [
+        50,
+        32
+      ],
+      "same_object_first_hit_source_exists": true,
+      "first_hit_sources": [
+        9
+      ],
+      "atlas_matches": true,
+      "uv_max_error": 0.0
+    },
+    {
+      "object": "rack_pallet_joist_2_1_1",
+      "polygon": 0,
+      "sample_tile_pixel": [
+        46,
+        5
+      ],
+      "same_object_first_hit_source_exists": true,
+      "first_hit_sources": [
+        5,
+        6,
+        9
+      ],
+      "atlas_matches": true,
+      "uv_max_error": 0.0
+    },
+    {
+      "object": "rack_sack_0_0_3",
+      "polygon": 73,
+      "sample_tile_pixel": [
+        7,
+        2
+      ],
+      "same_object_first_hit_source_exists": true,
+      "first_hit_sources": [
+        7,
+        8,
+        9
+      ],
+      "atlas_matches": true,
+      "uv_max_error": 1.6040321737520458e-08
+    },
+    {
+      "object": "car_rear_frame0",
+      "polygon": 0,
+      "sample_tile_pixel": [
+        43,
+        5
+      ],
+      "same_object_first_hit_source_exists": true,
+      "first_hit_sources": [
+        10,
+        11,
+        12,
+        13
+      ],
+      "atlas_matches": true,
+      "uv_max_error": 2.569622292725171e-10
+    },
+    {
+      "object": "door_leaf_3_upright_-1",
+      "polygon": 1,
+      "sample_tile_pixel": [
+        98,
+        3
+      ],
+      "same_object_first_hit_source_exists": true,
+      "first_hit_sources": [
+        2,
+        3,
+        26,
+        27
+      ],
+      "atlas_matches": true,
+      "uv_max_error": 0.0
+    },
+    {
+      "object": "rack_upright_0_0",
+      "polygon": 3,
+      "sample_tile_pixel": [
+        22,
+        4
+      ],
+      "same_object_first_hit_source_exists": true,
+      "first_hit_sources": [
+        6,
+        7,
+        8
+      ],
+      "atlas_matches": true,
+      "uv_max_error": 0.0
+    },
+    {
+      "object": "crate0_foot1",
+      "polygon": 3,
+      "sample_tile_pixel": [
+        0,
+        0
+      ],
+      "same_object_first_hit_source_exists": true,
+      "first_hit_sources": [
+        8,
+        9,
+        31
+      ],
+      "atlas_matches": true,
+      "uv_max_error": 0.0
+    },
+    {
+      "object": "column_0_base",
+      "polygon": 3,
+      "sample_tile_pixel": [
+        10,
+        1
+      ],
+      "same_object_first_hit_source_exists": true,
+      "first_hit_sources": [
+        13,
+        14,
+        31
+      ],
+      "atlas_matches": true,
+      "uv_max_error": 0.0
+    },
+    {
+      "object": "crate0_short_1_0",
+      "polygon": 0,
+      "sample_tile_pixel": [
+        31,
+        4
+      ],
+      "same_object_first_hit_source_exists": true,
+      "first_hit_sources": [
+        11
+      ],
+      "atlas_matches": true,
+      "uv_max_error": 0.0
+    },
+    {
+      "object": "rack_sack_1_0_2",
+      "polygon": 60,
+      "sample_tile_pixel": [
+        2,
+        1
+      ],
+      "same_object_first_hit_source_exists": true,
+      "first_hit_sources": [
+        8,
+        9,
+        10,
+        11
+      ],
+      "atlas_matches": true,
+      "uv_max_error": 2.2162791823987504e-08
+    },
+    {
+      "object": "door_leaf_6_panel_1",
+      "polygon": 0,
+      "sample_tile_pixel": [
+        20,
+        26
+      ],
+      "same_object_first_hit_source_exists": true,
+      "first_hit_sources": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        27
+      ],
+      "atlas_matches": true,
+      "uv_max_error": 0.0
+    },
+    {
+      "object": "door_leaf_4_rail_1",
+      "polygon": 0,
+      "sample_tile_pixel": [
+        7,
+        4
+      ],
+      "same_object_first_hit_source_exists": true,
+      "first_hit_sources": [
+        0,
+        1,
+        26,
+        27
+      ],
+      "atlas_matches": true,
+      "uv_max_error": 0.0
+    },
+    {
+      "object": "crate1_short_1_0",
+      "polygon": 5,
+      "sample_tile_pixel": [
+        30,
+        0
+      ],
+      "same_object_first_hit_source_exists": true,
+      "first_hit_sources": [
+        11
+      ],
+      "atlas_matches": true,
+      "uv_max_error": 0.0
+    },
+    {
+      "object": "rack_upright_2_0",
+      "polygon": 0,
+      "sample_tile_pixel": [
+        0,
+        3
+      ],
+      "same_object_first_hit_source_exists": true,
+      "first_hit_sources": [
+        3
+      ],
+      "atlas_matches": true,
+      "uv_max_error": 0.0
+    },
+    {
+      "object": "rack_sack_1_1_2",
+      "polygon": 72,
+      "sample_tile_pixel": [
+        3,
+        0
+      ],
+      "same_object_first_hit_source_exists": true,
+      "first_hit_sources": [
+        4,
+        5
+      ],
+      "atlas_matches": true,
+      "uv_max_error": 2.1868896693533202e-08
+    },
+    {
+      "object": "rack_sack_2_1_0",
+      "polygon": 41,
+      "sample_tile_pixel": [
+        9,
+        1
+      ],
+      "same_object_first_hit_source_exists": true,
+      "first_hit_sources": [
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "atlas_matches": true,
+      "uv_max_error": 1.0382912307704828e-08
+    },
+    {
+      "object": "rack_sack_1_1_0",
+      "polygon": 60,
+      "sample_tile_pixel": [
+        8,
+        5
+      ],
+      "same_object_first_hit_source_exists": true,
+      "first_hit_sources": [
+        7
+      ],
+      "atlas_matches": true,
+      "uv_max_error": 1.4042348950304984e-08
+    },
+    {
+      "object": "compactor_arm0",
+      "polygon": 2,
+      "sample_tile_pixel": [
+        12,
+        0
+      ],
+      "same_object_first_hit_source_exists": true,
+      "first_hit_sources": [
+        18,
+        19,
+        20
+      ],
+      "atlas_matches": true,
+      "uv_max_error": 0.0
+    },
+    {
+      "object": "rack_sack_0_0_2",
+      "polygon": 72,
+      "sample_tile_pixel": [
+        2,
+        2
+      ],
+      "same_object_first_hit_source_exists": true,
+      "first_hit_sources": [
+        6,
+        7
+      ],
+      "atlas_matches": true,
+      "uv_max_error": 2.1380413883775873e-08
+    },
+    {
+      "object": "ceiling",
+      "polygon": 13,
+      "sample_tile_pixel": [
+        171,
+        0
+      ],
+      "same_object_first_hit_source_exists": true,
+      "first_hit_sources": [
+        22,
+        33,
+        34
+      ],
+      "atlas_matches": true,
+      "uv_max_error": 0.0
+    },
+    {
+      "object": "fire_cabinet",
+      "polygon": 2,
+      "sample_tile_pixel": [
+        19,
+        1
+      ],
+      "same_object_first_hit_source_exists": true,
+      "first_hit_sources": [
+        14,
+        15
+      ],
+      "atlas_matches": true,
+      "uv_max_error": 0.0
+    },
+    {
+      "object": "rack_sack_0_1_2",
+      "polygon": 45,
+      "sample_tile_pixel": [
+        7,
+        0
+      ],
+      "same_object_first_hit_source_exists": true,
+      "first_hit_sources": [
+        4,
+        5,
+        7,
+        8
+      ],
+      "atlas_matches": true,
+      "uv_max_error": 2.4981468005336183e-08
+    },
+    {
+      "object": "rack_sack_1_0_1",
+      "polygon": 77,
+      "sample_tile_pixel": [
+        6,
+        2
+      ],
+      "same_object_first_hit_source_exists": true,
+      "first_hit_sources": [
+        6,
+        7
+      ],
+      "atlas_matches": true,
+      "uv_max_error": 1.1494839247117028e-08
+    },
+    {
+      "object": "column_2_base",
+      "polygon": 2,
+      "sample_tile_pixel": [
+        12,
+        0
+      ],
+      "same_object_first_hit_source_exists": true,
+      "first_hit_sources": [
+        17,
+        18,
+        19
+      ],
+      "atlas_matches": true,
+      "uv_max_error": 0.0
+    },
+    {
+      "object": "rack_pallet_3_1_5",
+      "polygon": 3,
+      "sample_tile_pixel": [
+        101,
+        3
+      ],
+      "same_object_first_hit_source_exists": true,
+      "first_hit_sources": [
+        10
+      ],
+      "atlas_matches": true,
+      "uv_max_error": 0.0
+    },
+    {
+      "object": "column_2_lower",
+      "polygon": 1,
+      "sample_tile_pixel": [
+        32,
+        14
+      ],
+      "same_object_first_hit_source_exists": true,
+      "first_hit_sources": [
+        16
+      ],
+      "atlas_matches": true,
+      "uv_max_error": 0.0
+    },
+    {
+      "object": "van_chassis",
+      "polygon": 5,
+      "sample_tile_pixel": [
+        267,
+        52
+      ],
+      "same_object_first_hit_source_exists": true,
+      "first_hit_sources": [
+        14
+      ],
+      "atlas_matches": true,
+      "uv_max_error": 1.1802738786315103e-09
+    },
+    {
+      "object": "rack_sack_2_1_2",
+      "polygon": 42,
+      "sample_tile_pixel": [
+        3,
+        0
+      ],
+      "same_object_first_hit_source_exists": true,
+      "first_hit_sources": [
+        7,
+        9
+      ],
+      "atlas_matches": true,
+      "uv_max_error": 1.4867052644529366e-08
+    },
+    {
+      "object": "column_6_base",
+      "polygon": 3,
+      "sample_tile_pixel": [
+        9,
+        3
+      ],
+      "same_object_first_hit_source_exists": true,
+      "first_hit_sources": [
+        22,
+        32,
+        33,
+        34
+      ],
+      "atlas_matches": true,
+      "uv_max_error": 0.0
+    },
+    {
+      "object": "door_leaf_1_rail_2",
+      "polygon": 4,
+      "sample_tile_pixel": [
+        17,
+        3
+      ],
+      "same_object_first_hit_source_exists": true,
+      "first_hit_sources": [
+        0,
+        1,
+        25,
+        26,
+        27
+      ],
+      "atlas_matches": true,
+      "uv_max_error": 0.0
+    }
+  ],
+  "scope": "96deterministic supportedtexel samples: actualUV/atlas andfullscene-first-hit existence against onlyrecorded36sourceframes. Doesnotrerunallmillionsofvisibilityrays orallDA3/grazing/colourfilters."
+}

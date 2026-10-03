@@ -1,0 +1,36 @@
+{
+  "method": "geometry_v1",
+  "status": "frozen_for_exposed_test_diagnostic",
+  "model_sha256": "67b1f48fedcb86e58e43952d630d141d26943902bf7d830b5247c55291bb766b",
+  "model_from_input": [
+    [
+      0.9985254456168041,
+      -0.0029571798849103935,
+      0.05420506934679546,
+      0.0
+    ],
+    [
+      0.0025512528002570685,
+      0.9999681954851007,
+      0.007556396457319363,
+      0.0
+    ],
+    [
+      -0.05422569100446581,
+      -0.007406963304842917,
+      0.998501232512854,
+      1.477518807930019
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "quality_status": "shell_checks_passed; native_geometry_review_pending",
+  "scope": "Geometry-only repair selected from36mappinginputs, no new GT feedback; prior test exposed",
+  "visual_acceptance": false,
+  "physical_acceptance": false,
+  "native_delivery_acceptance": false
+}

@@ -1,0 +1,62 @@
+{
+  "v1_paired": {
+    "report": "checks/v1_paired/report.json",
+    "sha256": "a9dedb96c9dc829aaad09b06fbbb30350b0fa97274b14666b15aa28ee0e8ae03",
+    "model_sha256": "8b240c1b63d64f36b8c28ae4b3fa4ae4f73d1d36385b19e25bdfde7007282b0e",
+    "views": 10,
+    "input_domain_pixels": 191370,
+    "covered_pixels": 191258,
+    "coverage": 0.9994147463029733,
+    "weighted_missing_penalty_mae_m": 0.5835768196248545,
+    "seconds": 162.32881631993223,
+    "scope": "Only frozen input predicted-depth consistency, not independent/GT physical accuracy"
+  },
+  "v1_all_initial": {
+    "report": "checks/v1_all_initial/report.json",
+    "sha256": "3cd52b1771887a22fc9650cfbf0c135d1879c328cfc9e4ed7beddc1d6824c768",
+    "model_sha256": "8b240c1b63d64f36b8c28ae4b3fa4ae4f73d1d36385b19e25bdfde7007282b0e",
+    "views": 36,
+    "input_domain_pixels": 689349,
+    "covered_pixels": 688929,
+    "coverage": 0.9993907295143679,
+    "weighted_missing_penalty_mae_m": 0.6394792425121049,
+    "seconds": 3.7334422380663455,
+    "scope": "Only frozen input predicted-depth consistency, not independent/GT physical accuracy"
+  },
+  "v2_paired": {
+    "report": "checks/v2_paired_retry1/report.json",
+    "sha256": "1d8507adb69bc10bf38bc6008d30f551d614ea553017df430163fad97e1fbbc0",
+    "model_sha256": "a00d441b2d3293b8105e9d9fbe3b8670b64a0057b92ef062512dcbda62c04a68",
+    "views": 10,
+    "input_domain_pixels": 191370,
+    "covered_pixels": 191258,
+    "coverage": 0.9994147463029733,
+    "weighted_missing_penalty_mae_m": 0.4695492272779414,
+    "seconds": 161.39428007102106,
+    "scope": "Only frozen input predicted-depth consistency, not independent/GT physical accuracy"
+  },
+  "v2_all_major_repair": {
+    "report": "checks/v2_all_major_repair/report.json",
+    "sha256": "d7e9fcf622ead28190154111ee42c4ecbf61e86e99366f9501a8084c11b3ca35",
+    "model_sha256": "a00d441b2d3293b8105e9d9fbe3b8670b64a0057b92ef062512dcbda62c04a68",
+    "views": 36,
+    "input_domain_pixels": 689349,
+    "covered_pixels": 688934,
+    "coverage": 0.9993979827344349,
+    "weighted_missing_penalty_mae_m": 0.5358925123092224,
+    "seconds": 3.6786801910493523,
+    "scope": "Only frozen input predicted-depth consistency, not independent/GT physical accuracy"
+  },
+  "v3_paired": {
+    "report": "checks/v3_paired/report.json",
+    "sha256": "043af65ca2116cd1ebcc8648f67fdf2d59ec56a2c6c9945e5b861c28cb07ca7d",
+    "model_sha256": "4d53b2a7fa076a6892592e555f33b55b07476dc2f6dab58651ab146fc1acdf85",
+    "views": 10,
+    "input_domain_pixels": 191370,
+    "covered_pixels": 191258,
+    "coverage": 0.9994147463029733,
+    "weighted_missing_penalty_mae_m": 0.46846674393568727,
+    "seconds": 161.35561813996173,
+    "scope": "Only frozen input predicted-depth consistency, not independent/GT physical accuracy"
+  }
+}

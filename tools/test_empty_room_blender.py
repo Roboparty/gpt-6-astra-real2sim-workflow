@@ -4,7 +4,7 @@ Run inside Blender; all outputs stay in a fresh remote directory.
 import copy,json,os,subprocess,sys,time
 from pathlib import Path
 import bpy
-from mathutils import Vector
+from mathutils import Vector,Matrix
 
 repo=Path(__file__).resolve().parents[1];sys.path.insert(0,str(repo/'workflow'))
 from r2s.structure import review_contract,file_sha
@@ -23,10 +23,13 @@ for name,pos,size in specs:
  objects.append(dict(id=name,kind=name,structural_role=role,position=list(pos),dimensions=list(size),evidence=['synthetic fixture'],confidence=1))
 bpy.ops.object.light_add(type='AREA',location=(0,0,2.8));bpy.context.object.data.energy=300
 bpy.ops.object.camera_add(location=(1.6,-1.6,1.6));cam=bpy.context.object;cam.rotation_euler=(Vector((0,1,1.3))-cam.location).to_track_quat('-Z','Y').to_euler();bpy.context.scene.camera=cam
+bpy.context.view_layer.update()
 scene=dict(schema_version='real2sim.scene/1.0',units='m',up_axis='Z',model_version='empty_room_synthetic_001',
  room=dict(x_min=-2,x_max=2,y_min=-2,y_max=2,height=3,thickness=.1,preserve_full_shell=True),objects=objects,
- camera=dict(position=list(cam.location),focal_px=100,principal_point=[80,60],image_size=[160,120]),
+ camera=dict(position=list(cam.location),rotation_world_to_cv=[list(row) for row in Matrix.Diagonal((1,-1,-1))@cam.matrix_world.to_3x3().transposed()],focal_px=100,principal_point=[80,60],image_size=[160,120]),
  structure=dict(schema='real2sim.assembly/1',scope='empty_room',assemblies=[],shell_objects=[x[0] for x in specs[:-1]],fixed_luminaire_objects=['ceiling_lamp'],unexpected_interpenetration_tolerance_m=.002))
+from r2s.blender_camera import apply_camera
+apply_camera(bpy.context.scene,cam,scene['camera'])
 schema_result=scene_check(scene);spec=out/'scene.json';spec.write_text(json.dumps(scene));model=out/'model.blend';bpy.ops.wm.save_as_mainfile(filepath=str(model))
 env=dict(os.environ,R2S_CPU='1',OMP_NUM_THREADS='2',OPENBLAS_NUM_THREADS='2');env.pop('R2S_STRUCTURE_NO_RENDER',None)
 def run_worker(script,dest,input_model=model,extra=(),no_render=False):

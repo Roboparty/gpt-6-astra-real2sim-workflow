@@ -1,0 +1,30 @@
+{
+  "scene_sha256_before": "8bf7eaa7bb795118b58c5782d313f071826990bc999cf94d4568c8db508abcd2",
+  "scene_sha256_after": "8bf7eaa7bb795118b58c5782d313f071826990bc999cf94d4568c8db508abcd2",
+  "resaved": false,
+  "image_datablocks": [],
+  "unpacked_external_image_dependencies": [],
+  "linked_libraries": [],
+  "glb_external_uris": [],
+  "glb_embedded_images_count": 0,
+  "portability_pass": true,
+  "native_bindings": {
+    "semantic_collections": 49,
+    "visible_named_mesh_components": 815,
+    "tagged_semantic_mesh_components": 815,
+    "separate_collision_proxy_meshes": 46,
+    "proxy_hide_render_and_exclude": true,
+    "blender_rigid_body_objects": 0,
+    "blender_constraints": 0,
+    "saved_blender_cameras": 0,
+    "camera_metadata_frames": 36,
+    "saved_area_lights": 21,
+    "native_materials": 17
+  },
+  "limitations": [
+    "Collision proxies are native separate meshes only; no Blender rigid-body, mass, friction, articulation or dynamics acceptance",
+    "Input camera poses live in cameras.json and are instantiated transiently by the checker; export contains no cameras",
+    "Blender procedural texture nodes remain editable; GLB materials retain portable base-color/PBR values, not procedural concrete/wood noise",
+    "Hidden geometry, materials, lights and physical properties remain inferred; independent verdict LIMITED, not visual or physical acceptance"
+  ]
+}

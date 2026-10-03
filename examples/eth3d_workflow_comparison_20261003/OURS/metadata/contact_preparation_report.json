@@ -1,0 +1,209 @@
+{
+  "status": "connected",
+  "assemblies": [
+    {
+      "entity": "garage_door",
+      "parts": 86,
+      "connected_components": 1,
+      "disconnected_groups": [],
+      "landmark_errors_px": [
+        6.5665505624373575,
+        5.763771657572188,
+        2.409379613998661
+      ],
+      "lowest_z_m": -0.009999990463256836
+    },
+    {
+      "entity": "storage_rack",
+      "parts": 169,
+      "connected_components": 1,
+      "disconnected_groups": [],
+      "landmark_errors_px": [
+        6.3780898144017755,
+        10.327356329129065,
+        1.891805993317948
+      ],
+      "lowest_z_m": 0.0
+    },
+    {
+      "entity": "wood_crate_0",
+      "parts": 32,
+      "connected_components": 1,
+      "disconnected_groups": [],
+      "landmark_errors_px": [
+        6.544699540919538,
+        1.5375852001479702,
+        0.2537964287402867
+      ],
+      "lowest_z_m": 0.0
+    },
+    {
+      "entity": "wood_crate_1",
+      "parts": 32,
+      "connected_components": 1,
+      "disconnected_groups": [],
+      "landmark_errors_px": [
+        1.5846126542115684,
+        6.48255858029784
+      ],
+      "lowest_z_m": 0.0
+    },
+    {
+      "entity": "lime_skip_0",
+      "parts": 7,
+      "connected_components": 1,
+      "disconnected_groups": [],
+      "landmark_errors_px": [
+        9.985258147664597,
+        25.555872397288407,
+        41.009554132999824
+      ],
+      "lowest_z_m": 0.0
+    },
+    {
+      "entity": "lime_skip_1",
+      "parts": 7,
+      "connected_components": 1,
+      "disconnected_groups": [],
+      "landmark_errors_px": [
+        3.1062120947874985,
+        5.839866485386009
+      ],
+      "lowest_z_m": 0.0
+    },
+    {
+      "entity": "white_trailer",
+      "parts": 14,
+      "connected_components": 1,
+      "disconnected_groups": [],
+      "landmark_errors_px": [
+        3.9759036176372273,
+        3.7513178052501073,
+        1.0929010910268828
+      ],
+      "lowest_z_m": -4.371139006309477e-09
+    },
+    {
+      "entity": "flatbed_trailer",
+      "parts": 7,
+      "connected_components": 1,
+      "disconnected_groups": [],
+      "landmark_errors_px": [
+        0.5772383693501179,
+        2.9028094844697723
+      ],
+      "lowest_z_m": -3.4969109830029765e-09
+    },
+    {
+      "entity": "white_van",
+      "parts": 36,
+      "connected_components": 1,
+      "disconnected_groups": [],
+      "landmark_errors_px": [
+        33.555615174005375,
+        1.6585584945785277,
+        7.06424954094994
+      ],
+      "lowest_z_m": -5.463923535842241e-09
+    },
+    {
+      "entity": "black_car",
+      "parts": 17,
+      "connected_components": 1,
+      "disconnected_groups": [],
+      "landmark_errors_px": [
+        27.565525221533278,
+        2.370181197243042,
+        4.735366598254674
+      ],
+      "lowest_z_m": -4.152581833949398e-09
+    },
+    {
+      "entity": "lumber_cart",
+      "parts": 36,
+      "connected_components": 1,
+      "disconnected_groups": [],
+      "landmark_errors_px": [
+        2.0983619953081285,
+        3.3768834275003643,
+        10.866020308854894,
+        12.265824349872334
+      ],
+      "lowest_z_m": -2.642237095784594e-09
+    },
+    {
+      "entity": "mesh_cage_0",
+      "parts": 70,
+      "connected_components": 1,
+      "disconnected_groups": [],
+      "landmark_errors_px": [
+        0.8562469376692838,
+        1.3653185845899338,
+        12.86705797186453
+      ],
+      "lowest_z_m": 0.0
+    },
+    {
+      "entity": "mesh_cage_1",
+      "parts": 84,
+      "connected_components": 1,
+      "disconnected_groups": [],
+      "landmark_errors_px": [
+        4.885665494470312,
+        4.870053239461352
+      ],
+      "lowest_z_m": 0.0
+    },
+    {
+      "entity": "mesh_cage_2",
+      "parts": 88,
+      "connected_components": 1,
+      "disconnected_groups": [],
+      "landmark_errors_px": [
+        30.5976985820212,
+        5.492950618394545
+      ],
+      "lowest_z_m": 0.0
+    }
+  ],
+  "source_model_sha256": "479ae5faaec98aa6da11801823eaaa5db43eb8c299399f30f865f660be4db78c",
+  "note": "Author contact preparation does not replace native structural audit or visual acceptance",
+  "trailer_debug": {
+    "trailer_floor": {
+      "lo": [
+        10.02500057220459,
+        7.079999923706055,
+        0.45500001311302185
+      ],
+      "hi": [
+        14.675000190734863,
+        9.15999984741211,
+        0.625
+      ]
+    },
+    "trailer_towA": {
+      "lo": [
+        8.659167289733887,
+        7.260112762451172,
+        0.47499993443489075
+      ],
+      "hi": [
+        10.270833015441895,
+        8.159887313842773,
+        0.5649999976158142
+      ]
+    },
+    "trailer_towB": {
+      "lo": [
+        8.658968925476074,
+        8.080217361450195,
+        0.47499993443489075
+      ],
+      "hi": [
+        10.271031379699707,
+        8.989782333374023,
+        0.5649999976158142
+      ]
+    }
+  }
+}

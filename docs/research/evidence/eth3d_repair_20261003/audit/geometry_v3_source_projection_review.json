@@ -1,0 +1,327 @@
+{
+  "status": "PASS",
+  "assemblies": [
+    {
+      "entity": "garage_door",
+      "median_px": 5.763771657572188,
+      "max_px": 6.5665505624373575,
+      "passed": true,
+      "landmarks": [
+        {
+          "id": "garage_door_observed_endpoint_0",
+          "frame": "DSC_0675",
+          "error_px": 6.5665505624373575
+        },
+        {
+          "id": "garage_door_observed_endpoint_1",
+          "frame": "DSC_0675",
+          "error_px": 5.763771657572188
+        },
+        {
+          "id": "garage_door_observed_endpoint_2",
+          "frame": "DSC_0675",
+          "error_px": 2.409379613998661
+        }
+      ]
+    },
+    {
+      "entity": "storage_rack",
+      "median_px": 6.3780898144017755,
+      "max_px": 10.327356329129065,
+      "passed": true,
+      "landmarks": [
+        {
+          "id": "storage_rack_observed_endpoint_0",
+          "frame": "DSC_0685",
+          "error_px": 6.3780898144017755
+        },
+        {
+          "id": "storage_rack_observed_endpoint_1",
+          "frame": "DSC_0685",
+          "error_px": 10.327356329129065
+        },
+        {
+          "id": "storage_rack_observed_endpoint_2",
+          "frame": "DSC_0685",
+          "error_px": 1.891805993317948
+        }
+      ]
+    },
+    {
+      "entity": "wood_crate_0",
+      "median_px": 1.5375852001479702,
+      "max_px": 6.544699540919538,
+      "passed": true,
+      "landmarks": [
+        {
+          "id": "wood_crate_0_observed_endpoint_0",
+          "frame": "DSC_0685",
+          "error_px": 6.544699540919538
+        },
+        {
+          "id": "wood_crate_0_observed_endpoint_1",
+          "frame": "DSC_0685",
+          "error_px": 1.5375852001479702
+        },
+        {
+          "id": "wood_crate_0_observed_endpoint_2",
+          "frame": "DSC_0685",
+          "error_px": 0.2537964287402867
+        }
+      ]
+    },
+    {
+      "entity": "wood_crate_1",
+      "median_px": 4.033585617254705,
+      "max_px": 6.48255858029784,
+      "passed": true,
+      "landmarks": [
+        {
+          "id": "wood_crate_1_observed_endpoint_0",
+          "frame": "DSC_0685",
+          "error_px": 1.5846126542115684
+        },
+        {
+          "id": "wood_crate_1_observed_endpoint_1",
+          "frame": "DSC_0685",
+          "error_px": 6.48255858029784
+        }
+      ]
+    },
+    {
+      "entity": "lime_skip_0",
+      "median_px": 0.13167334413540083,
+      "max_px": 0.24495762744990546,
+      "passed": true,
+      "landmarks": [
+        {
+          "id": "lime_skip_0_observed_endpoint_0",
+          "frame": "DSC_0685",
+          "error_px": 0.24495762744990546
+        },
+        {
+          "id": "lime_skip_0_observed_endpoint_1",
+          "frame": "DSC_0685",
+          "error_px": 0.13167334413540083
+        },
+        {
+          "id": "lime_skip_0_observed_endpoint_2",
+          "frame": "DSC_0685",
+          "error_px": 1.3227535644002513e-05
+        }
+      ]
+    },
+    {
+      "entity": "lime_skip_1",
+      "median_px": 4.473039290086754,
+      "max_px": 5.839866485386009,
+      "passed": true,
+      "landmarks": [
+        {
+          "id": "lime_skip_1_observed_endpoint_0",
+          "frame": "DSC_0685",
+          "error_px": 3.1062120947874985
+        },
+        {
+          "id": "lime_skip_1_observed_endpoint_1",
+          "frame": "DSC_0685",
+          "error_px": 5.839866485386009
+        }
+      ]
+    },
+    {
+      "entity": "white_trailer",
+      "median_px": 3.7513178052501073,
+      "max_px": 3.9759036176372273,
+      "passed": true,
+      "landmarks": [
+        {
+          "id": "white_trailer_observed_endpoint_0",
+          "frame": "DSC_0685",
+          "error_px": 3.9759036176372273
+        },
+        {
+          "id": "white_trailer_observed_endpoint_1",
+          "frame": "DSC_0685",
+          "error_px": 3.7513178052501073
+        },
+        {
+          "id": "white_trailer_observed_endpoint_2",
+          "frame": "DSC_0685",
+          "error_px": 1.0929010910268828
+        }
+      ]
+    },
+    {
+      "entity": "flatbed_trailer",
+      "median_px": 1.7400239269099451,
+      "max_px": 2.9028094844697723,
+      "passed": true,
+      "landmarks": [
+        {
+          "id": "flatbed_trailer_observed_endpoint_0",
+          "frame": "DSC_0685",
+          "error_px": 0.5772383693501179
+        },
+        {
+          "id": "flatbed_trailer_observed_endpoint_1",
+          "frame": "DSC_0685",
+          "error_px": 2.9028094844697723
+        }
+      ]
+    },
+    {
+      "entity": "white_van",
+      "median_px": 1.897655069450004,
+      "max_px": 14.059104731267752,
+      "passed": true,
+      "landmarks": [
+        {
+          "id": "white_van_observed_endpoint_0",
+          "frame": "DSC_0690",
+          "error_px": 0.13110577658035347
+        },
+        {
+          "id": "white_van_observed_endpoint_1",
+          "frame": "DSC_0690",
+          "error_px": 1.897655069450004
+        },
+        {
+          "id": "white_van_observed_endpoint_2",
+          "frame": "DSC_0690",
+          "error_px": 14.059104731267752
+        }
+      ]
+    },
+    {
+      "entity": "black_car",
+      "median_px": 0.88326148486666,
+      "max_px": 2.442002308225463,
+      "passed": true,
+      "landmarks": [
+        {
+          "id": "black_car_observed_endpoint_0",
+          "frame": "DSC_0690",
+          "error_px": 0.32052544775920494
+        },
+        {
+          "id": "black_car_observed_endpoint_1",
+          "frame": "DSC_0690",
+          "error_px": 0.88326148486666
+        },
+        {
+          "id": "black_car_observed_endpoint_2",
+          "frame": "DSC_0690",
+          "error_px": 2.442002308225463
+        }
+      ]
+    },
+    {
+      "entity": "lumber_cart",
+      "median_px": 7.12145186817763,
+      "max_px": 12.265824349872334,
+      "passed": true,
+      "landmarks": [
+        {
+          "id": "lumber_cart_observed_endpoint_0",
+          "frame": "DSC_0705",
+          "error_px": 2.0983619953081285
+        },
+        {
+          "id": "lumber_cart_observed_endpoint_1",
+          "frame": "DSC_0705",
+          "error_px": 3.3768834275003643
+        },
+        {
+          "id": "lumber_cart_observed_endpoint_2",
+          "frame": "DSC_0705",
+          "error_px": 10.866020308854894
+        },
+        {
+          "id": "lumber_cart_observed_endpoint_3",
+          "frame": "DSC_0705",
+          "error_px": 12.265824349872334
+        }
+      ]
+    },
+    {
+      "entity": "mesh_cage_0",
+      "median_px": 1.3653185845899338,
+      "max_px": 12.86705797186453,
+      "passed": true,
+      "landmarks": [
+        {
+          "id": "mesh_cage_0_observed_endpoint_0",
+          "frame": "DSC_0710",
+          "error_px": 0.8562469376692838
+        },
+        {
+          "id": "mesh_cage_0_observed_endpoint_1",
+          "frame": "DSC_0710",
+          "error_px": 1.3653185845899338
+        },
+        {
+          "id": "mesh_cage_0_observed_endpoint_2",
+          "frame": "DSC_0710",
+          "error_px": 12.86705797186453
+        }
+      ]
+    },
+    {
+      "entity": "mesh_cage_1",
+      "median_px": 4.877859366965832,
+      "max_px": 4.885665494470312,
+      "passed": true,
+      "landmarks": [
+        {
+          "id": "mesh_cage_1_observed_endpoint_0",
+          "frame": "DSC_0710",
+          "error_px": 4.885665494470312
+        },
+        {
+          "id": "mesh_cage_1_observed_endpoint_1",
+          "frame": "DSC_0710",
+          "error_px": 4.870053239461352
+        }
+      ]
+    },
+    {
+      "entity": "mesh_cage_2",
+      "median_px": 0.010856069267613556,
+      "max_px": 0.012500654806305297,
+      "passed": true,
+      "landmarks": [
+        {
+          "id": "mesh_cage_2_observed_endpoint_0",
+          "frame": "DSC_0700",
+          "error_px": 0.012500654806305297
+        },
+        {
+          "id": "mesh_cage_2_observed_endpoint_1",
+          "frame": "DSC_0700",
+          "error_px": 0.009211483728921816
+        }
+      ]
+    }
+  ],
+  "rim_two_view_reprojection": [
+    {
+      "source_frame": 8,
+      "target_frame": 9,
+      "source_error_px": 0.24495840610466732,
+      "target_error_px": 0.21684547048768996,
+      "sum_px": 0.4618038765923573,
+      "reported_sum": 0.4618038765923572
+    },
+    {
+      "source_frame": 8,
+      "target_frame": 9,
+      "source_error_px": 0.13166646424231868,
+      "target_error_px": 0.12790690958503925,
+      "sum_px": 0.2595733738273579,
+      "reported_sum": 0.2595733738272988
+    }
+  ],
+  "foot_scope": "frame8DA3+floor contact only;9tracking failed, not declared multi-view verified",
+  "not_claimed": "Rim projection agreement is not metric ground truth. Foot uses frame8 learned depth+floor contact assumption; failed frame9tracking is not multi-view validation."
+}

@@ -1,0 +1,4808 @@
+[
+  {
+    "component": "floor",
+    "entity": "floor",
+    "material": "floor",
+    "geometry": "box"
+  },
+  {
+    "component": "ceiling",
+    "entity": "ceiling",
+    "material": "ceiling",
+    "geometry": "box"
+  },
+  {
+    "component": "wall_left",
+    "entity": "wall_left",
+    "material": "wall",
+    "geometry": "box"
+  },
+  {
+    "component": "wall_right",
+    "entity": "wall_right",
+    "material": "wall",
+    "geometry": "box"
+  },
+  {
+    "component": "wall_front",
+    "entity": "wall_front",
+    "material": "wall",
+    "geometry": "box"
+  },
+  {
+    "component": "wall_back",
+    "entity": "wall_back",
+    "material": "wall",
+    "geometry": "box"
+  },
+  {
+    "component": "main_side_wall",
+    "entity": "main_side_wall",
+    "material": "wall",
+    "geometry": "box"
+  },
+  {
+    "component": "corridor_north_wall",
+    "entity": "corridor_north_wall",
+    "material": "wall",
+    "geometry": "box"
+  },
+  {
+    "component": "corridor_south_wall",
+    "entity": "corridor_south_wall",
+    "material": "ceiling",
+    "geometry": "box"
+  },
+  {
+    "component": "cage_upper_wall",
+    "entity": "cage_upper_wall",
+    "material": "wall",
+    "geometry": "box"
+  },
+  {
+    "component": "lumber_back_wall",
+    "entity": "lumber_back_wall",
+    "material": "wall",
+    "geometry": "box"
+  },
+  {
+    "component": "entrance_soffit",
+    "entity": "entrance_soffit",
+    "material": "wall",
+    "geometry": "box"
+  },
+  {
+    "component": "entrance_recess_door",
+    "entity": "entrance_recess_door",
+    "material": "yellow",
+    "geometry": "box"
+  },
+  {
+    "component": "entry_sign_0",
+    "entity": "entry_sign_0",
+    "material": "yellow",
+    "geometry": "box"
+  },
+  {
+    "component": "entry_sign_1",
+    "entity": "entry_sign_1",
+    "material": "yellow",
+    "geometry": "box"
+  },
+  {
+    "component": "entry_sign_2",
+    "entity": "entry_sign_2",
+    "material": "yellow",
+    "geometry": "box"
+  },
+  {
+    "component": "garage_reveal",
+    "entity": "garage_reveal",
+    "material": "wall",
+    "geometry": "box"
+  },
+  {
+    "component": "rack_back_wall",
+    "entity": "rack_back_wall",
+    "material": "wall",
+    "geometry": "box"
+  },
+  {
+    "component": "main_dock_sidewall",
+    "entity": "main_dock_sidewall",
+    "material": "wall",
+    "geometry": "box"
+  },
+  {
+    "component": "yellow_side_door",
+    "entity": "yellow_side_door",
+    "material": "yellow",
+    "geometry": "box"
+  },
+  {
+    "component": "yellow_door_rail0",
+    "entity": "yellow_door_rail0",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "yellow_door_rail1",
+    "entity": "yellow_door_rail1",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "yellow_door_rail2",
+    "entity": "yellow_door_rail2",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "yellow_door_rail3",
+    "entity": "yellow_door_rail3",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "loading_platform",
+    "entity": "loading_platform",
+    "material": "dock",
+    "geometry": "box"
+  },
+  {
+    "component": "dock_blue_door",
+    "entity": "dock_blue_door",
+    "material": "blue_door",
+    "geometry": "box"
+  },
+  {
+    "component": "far_corridor_door",
+    "entity": "far_corridor_door",
+    "material": "blue_door",
+    "geometry": "box"
+  },
+  {
+    "component": "column_0_base",
+    "entity": "column_0",
+    "material": "wall",
+    "geometry": "box"
+  },
+  {
+    "component": "column_0_lower",
+    "entity": "column_0",
+    "material": "hazard",
+    "geometry": "box"
+  },
+  {
+    "component": "column_0_upper",
+    "entity": "column_0",
+    "material": "wall",
+    "geometry": "box"
+  },
+  {
+    "component": "column_1_base",
+    "entity": "column_1",
+    "material": "wall",
+    "geometry": "box"
+  },
+  {
+    "component": "column_1_lower",
+    "entity": "column_1",
+    "material": "hazard",
+    "geometry": "box"
+  },
+  {
+    "component": "column_1_upper",
+    "entity": "column_1",
+    "material": "wall",
+    "geometry": "box"
+  },
+  {
+    "component": "column_2_base",
+    "entity": "column_2",
+    "material": "wall",
+    "geometry": "box"
+  },
+  {
+    "component": "column_2_lower",
+    "entity": "column_2",
+    "material": "hazard",
+    "geometry": "box"
+  },
+  {
+    "component": "column_2_upper",
+    "entity": "column_2",
+    "material": "wall",
+    "geometry": "box"
+  },
+  {
+    "component": "column_3_base",
+    "entity": "column_3",
+    "material": "wall",
+    "geometry": "box"
+  },
+  {
+    "component": "column_3_lower",
+    "entity": "column_3",
+    "material": "hazard",
+    "geometry": "box"
+  },
+  {
+    "component": "column_3_upper",
+    "entity": "column_3",
+    "material": "wall",
+    "geometry": "box"
+  },
+  {
+    "component": "column_4_base",
+    "entity": "column_4",
+    "material": "wall",
+    "geometry": "box"
+  },
+  {
+    "component": "column_4_lower",
+    "entity": "column_4",
+    "material": "hazard",
+    "geometry": "box"
+  },
+  {
+    "component": "column_4_upper",
+    "entity": "column_4",
+    "material": "wall",
+    "geometry": "box"
+  },
+  {
+    "component": "column_5_base",
+    "entity": "column_5",
+    "material": "wall",
+    "geometry": "box"
+  },
+  {
+    "component": "column_5_lower",
+    "entity": "column_5",
+    "material": "hazard",
+    "geometry": "box"
+  },
+  {
+    "component": "column_5_upper",
+    "entity": "column_5",
+    "material": "wall",
+    "geometry": "box"
+  },
+  {
+    "component": "column_6_base",
+    "entity": "column_6",
+    "material": "wall",
+    "geometry": "box"
+  },
+  {
+    "component": "column_6_lower",
+    "entity": "column_6",
+    "material": "hazard",
+    "geometry": "box"
+  },
+  {
+    "component": "column_6_upper",
+    "entity": "column_6",
+    "material": "wall",
+    "geometry": "box"
+  },
+  {
+    "component": "column_7_base",
+    "entity": "column_7",
+    "material": "wall",
+    "geometry": "box"
+  },
+  {
+    "component": "column_7_lower",
+    "entity": "column_7",
+    "material": "hazard",
+    "geometry": "box"
+  },
+  {
+    "component": "column_7_upper",
+    "entity": "column_7",
+    "material": "wall",
+    "geometry": "box"
+  },
+  {
+    "component": "door_leaf_0_panel_0",
+    "entity": "garage_door",
+    "material": "door",
+    "geometry": "box"
+  },
+  {
+    "component": "door_leaf_0_panel_1",
+    "entity": "garage_door",
+    "material": "door",
+    "geometry": "box"
+  },
+  {
+    "component": "door_leaf_0_upright_-1",
+    "entity": "garage_door",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "door_leaf_0_upright_1",
+    "entity": "garage_door",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "door_leaf_0_rail_0",
+    "entity": "garage_door",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "door_leaf_0_rail_1",
+    "entity": "garage_door",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "door_leaf_0_rail_2",
+    "entity": "garage_door",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "door_leaf_0_hinge_0",
+    "entity": "garage_door",
+    "material": "bright_metal",
+    "geometry": "cylinder"
+  },
+  {
+    "component": "door_leaf_0_hinge_1",
+    "entity": "garage_door",
+    "material": "bright_metal",
+    "geometry": "cylinder"
+  },
+  {
+    "component": "door_leaf_0_hinge_2",
+    "entity": "garage_door",
+    "material": "bright_metal",
+    "geometry": "cylinder"
+  },
+  {
+    "component": "door_leaf_0_hinge_3",
+    "entity": "garage_door",
+    "material": "bright_metal",
+    "geometry": "cylinder"
+  },
+  {
+    "component": "door_leaf_1_panel_0",
+    "entity": "garage_door",
+    "material": "door",
+    "geometry": "box"
+  },
+  {
+    "component": "door_leaf_1_panel_1",
+    "entity": "garage_door",
+    "material": "door",
+    "geometry": "box"
+  },
+  {
+    "component": "door_leaf_1_upright_-1",
+    "entity": "garage_door",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "door_leaf_1_upright_1",
+    "entity": "garage_door",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "door_leaf_1_rail_0",
+    "entity": "garage_door",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "door_leaf_1_rail_1",
+    "entity": "garage_door",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "door_leaf_1_rail_2",
+    "entity": "garage_door",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "door_leaf_1_hinge_0",
+    "entity": "garage_door",
+    "material": "bright_metal",
+    "geometry": "cylinder"
+  },
+  {
+    "component": "door_leaf_1_hinge_1",
+    "entity": "garage_door",
+    "material": "bright_metal",
+    "geometry": "cylinder"
+  },
+  {
+    "component": "door_leaf_1_hinge_2",
+    "entity": "garage_door",
+    "material": "bright_metal",
+    "geometry": "cylinder"
+  },
+  {
+    "component": "door_leaf_1_hinge_3",
+    "entity": "garage_door",
+    "material": "bright_metal",
+    "geometry": "cylinder"
+  },
+  {
+    "component": "door_leaf_2_panel_0",
+    "entity": "garage_door",
+    "material": "door",
+    "geometry": "box"
+  },
+  {
+    "component": "door_leaf_2_panel_1",
+    "entity": "garage_door",
+    "material": "door",
+    "geometry": "box"
+  },
+  {
+    "component": "door_leaf_2_upright_-1",
+    "entity": "garage_door",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "door_leaf_2_upright_1",
+    "entity": "garage_door",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "door_leaf_2_rail_0",
+    "entity": "garage_door",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "door_leaf_2_rail_1",
+    "entity": "garage_door",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "door_leaf_2_rail_2",
+    "entity": "garage_door",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "door_leaf_2_hinge_0",
+    "entity": "garage_door",
+    "material": "bright_metal",
+    "geometry": "cylinder"
+  },
+  {
+    "component": "door_leaf_2_hinge_1",
+    "entity": "garage_door",
+    "material": "bright_metal",
+    "geometry": "cylinder"
+  },
+  {
+    "component": "door_leaf_2_hinge_2",
+    "entity": "garage_door",
+    "material": "bright_metal",
+    "geometry": "cylinder"
+  },
+  {
+    "component": "door_leaf_2_hinge_3",
+    "entity": "garage_door",
+    "material": "bright_metal",
+    "geometry": "cylinder"
+  },
+  {
+    "component": "door_leaf_3_panel_0",
+    "entity": "garage_door",
+    "material": "door",
+    "geometry": "box"
+  },
+  {
+    "component": "door_leaf_3_panel_1",
+    "entity": "garage_door",
+    "material": "door",
+    "geometry": "box"
+  },
+  {
+    "component": "door_leaf_3_upright_-1",
+    "entity": "garage_door",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "door_leaf_3_upright_1",
+    "entity": "garage_door",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "door_leaf_3_rail_0",
+    "entity": "garage_door",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "door_leaf_3_rail_1",
+    "entity": "garage_door",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "door_leaf_3_rail_2",
+    "entity": "garage_door",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "door_leaf_3_hinge_0",
+    "entity": "garage_door",
+    "material": "bright_metal",
+    "geometry": "cylinder"
+  },
+  {
+    "component": "door_leaf_3_hinge_1",
+    "entity": "garage_door",
+    "material": "bright_metal",
+    "geometry": "cylinder"
+  },
+  {
+    "component": "door_leaf_3_hinge_2",
+    "entity": "garage_door",
+    "material": "bright_metal",
+    "geometry": "cylinder"
+  },
+  {
+    "component": "door_leaf_3_hinge_3",
+    "entity": "garage_door",
+    "material": "bright_metal",
+    "geometry": "cylinder"
+  },
+  {
+    "component": "door_leaf_4_panel_0",
+    "entity": "garage_door",
+    "material": "door",
+    "geometry": "box"
+  },
+  {
+    "component": "door_leaf_4_panel_1",
+    "entity": "garage_door",
+    "material": "door",
+    "geometry": "box"
+  },
+  {
+    "component": "door_leaf_4_upright_-1",
+    "entity": "garage_door",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "door_leaf_4_upright_1",
+    "entity": "garage_door",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "door_leaf_4_rail_0",
+    "entity": "garage_door",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "door_leaf_4_rail_1",
+    "entity": "garage_door",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "door_leaf_4_rail_2",
+    "entity": "garage_door",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "door_leaf_4_hinge_0",
+    "entity": "garage_door",
+    "material": "bright_metal",
+    "geometry": "cylinder"
+  },
+  {
+    "component": "door_leaf_4_hinge_1",
+    "entity": "garage_door",
+    "material": "bright_metal",
+    "geometry": "cylinder"
+  },
+  {
+    "component": "door_leaf_4_hinge_2",
+    "entity": "garage_door",
+    "material": "bright_metal",
+    "geometry": "cylinder"
+  },
+  {
+    "component": "door_leaf_4_hinge_3",
+    "entity": "garage_door",
+    "material": "bright_metal",
+    "geometry": "cylinder"
+  },
+  {
+    "component": "door_leaf_5_panel_0",
+    "entity": "garage_door",
+    "material": "door",
+    "geometry": "box"
+  },
+  {
+    "component": "door_leaf_5_panel_1",
+    "entity": "garage_door",
+    "material": "door",
+    "geometry": "box"
+  },
+  {
+    "component": "door_leaf_5_upright_-1",
+    "entity": "garage_door",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "door_leaf_5_upright_1",
+    "entity": "garage_door",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "door_leaf_5_rail_0",
+    "entity": "garage_door",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "door_leaf_5_rail_1",
+    "entity": "garage_door",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "door_leaf_5_rail_2",
+    "entity": "garage_door",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "door_leaf_5_hinge_0",
+    "entity": "garage_door",
+    "material": "bright_metal",
+    "geometry": "cylinder"
+  },
+  {
+    "component": "door_leaf_5_hinge_1",
+    "entity": "garage_door",
+    "material": "bright_metal",
+    "geometry": "cylinder"
+  },
+  {
+    "component": "door_leaf_5_hinge_2",
+    "entity": "garage_door",
+    "material": "bright_metal",
+    "geometry": "cylinder"
+  },
+  {
+    "component": "door_leaf_5_hinge_3",
+    "entity": "garage_door",
+    "material": "bright_metal",
+    "geometry": "cylinder"
+  },
+  {
+    "component": "door_leaf_6_panel_0",
+    "entity": "garage_door",
+    "material": "door",
+    "geometry": "box"
+  },
+  {
+    "component": "door_leaf_6_panel_1",
+    "entity": "garage_door",
+    "material": "door",
+    "geometry": "box"
+  },
+  {
+    "component": "door_leaf_6_upright_-1",
+    "entity": "garage_door",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "door_leaf_6_upright_1",
+    "entity": "garage_door",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "door_leaf_6_rail_0",
+    "entity": "garage_door",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "door_leaf_6_rail_1",
+    "entity": "garage_door",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "door_leaf_6_rail_2",
+    "entity": "garage_door",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "door_leaf_6_hinge_0",
+    "entity": "garage_door",
+    "material": "bright_metal",
+    "geometry": "cylinder"
+  },
+  {
+    "component": "door_leaf_6_hinge_1",
+    "entity": "garage_door",
+    "material": "bright_metal",
+    "geometry": "cylinder"
+  },
+  {
+    "component": "door_leaf_6_hinge_2",
+    "entity": "garage_door",
+    "material": "bright_metal",
+    "geometry": "cylinder"
+  },
+  {
+    "component": "door_leaf_6_hinge_3",
+    "entity": "garage_door",
+    "material": "bright_metal",
+    "geometry": "cylinder"
+  },
+  {
+    "component": "door_upper_track",
+    "entity": "garage_door",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "door_header",
+    "entity": "garage_door",
+    "material": "wall",
+    "geometry": "box"
+  },
+  {
+    "component": "door_hanger0",
+    "entity": "garage_door",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "door_hanger1",
+    "entity": "garage_door",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "door_hanger2",
+    "entity": "garage_door",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "door_hanger3",
+    "entity": "garage_door",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "door_hanger4",
+    "entity": "garage_door",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "door_hanger5",
+    "entity": "garage_door",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "door_hanger6",
+    "entity": "garage_door",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "rack_upright_0_0",
+    "entity": "storage_rack",
+    "material": "blue",
+    "geometry": "box"
+  },
+  {
+    "component": "rack_upright_0_1",
+    "entity": "storage_rack",
+    "material": "blue",
+    "geometry": "box"
+  },
+  {
+    "component": "rack_upright_1_0",
+    "entity": "storage_rack",
+    "material": "blue",
+    "geometry": "box"
+  },
+  {
+    "component": "rack_upright_1_1",
+    "entity": "storage_rack",
+    "material": "blue",
+    "geometry": "box"
+  },
+  {
+    "component": "rack_upright_2_0",
+    "entity": "storage_rack",
+    "material": "blue",
+    "geometry": "box"
+  },
+  {
+    "component": "rack_upright_2_1",
+    "entity": "storage_rack",
+    "material": "blue",
+    "geometry": "box"
+  },
+  {
+    "component": "rack_upright_3_0",
+    "entity": "storage_rack",
+    "material": "blue",
+    "geometry": "box"
+  },
+  {
+    "component": "rack_upright_3_1",
+    "entity": "storage_rack",
+    "material": "blue",
+    "geometry": "box"
+  },
+  {
+    "component": "rack_beam_0_0",
+    "entity": "storage_rack",
+    "material": "orange",
+    "geometry": "box"
+  },
+  {
+    "component": "rack_beam_0_1",
+    "entity": "storage_rack",
+    "material": "orange",
+    "geometry": "box"
+  },
+  {
+    "component": "rack_pallet_joist_0_0_0",
+    "entity": "storage_rack",
+    "material": "wood_y",
+    "geometry": "box"
+  },
+  {
+    "component": "rack_pallet_joist_0_0_1",
+    "entity": "storage_rack",
+    "material": "wood_y",
+    "geometry": "box"
+  },
+  {
+    "component": "rack_pallet_joist_0_0_2",
+    "entity": "storage_rack",
+    "material": "wood_y",
+    "geometry": "box"
+  },
+  {
+    "component": "rack_pallet_0_0_0",
+    "entity": "storage_rack",
+    "material": "lumber",
+    "geometry": "box"
+  },
+  {
+    "component": "rack_pallet_0_0_1",
+    "entity": "storage_rack",
+    "material": "lumber",
+    "geometry": "box"
+  },
+  {
+    "component": "rack_pallet_0_0_2",
+    "entity": "storage_rack",
+    "material": "lumber",
+    "geometry": "box"
+  },
+  {
+    "component": "rack_pallet_0_0_3",
+    "entity": "storage_rack",
+    "material": "lumber",
+    "geometry": "box"
+  },
+  {
+    "component": "rack_pallet_0_0_4",
+    "entity": "storage_rack",
+    "material": "lumber",
+    "geometry": "box"
+  },
+  {
+    "component": "rack_pallet_0_0_5",
+    "entity": "storage_rack",
+    "material": "lumber",
+    "geometry": "box"
+  },
+  {
+    "component": "rack_sack_0_0_0",
+    "entity": "storage_rack",
+    "material": "bag",
+    "geometry": "custom_mesh"
+  },
+  {
+    "component": "rack_sack_0_0_1",
+    "entity": "storage_rack",
+    "material": "bag",
+    "geometry": "custom_mesh"
+  },
+  {
+    "component": "rack_sack_0_0_2",
+    "entity": "storage_rack",
+    "material": "bag",
+    "geometry": "custom_mesh"
+  },
+  {
+    "component": "rack_sack_0_0_3",
+    "entity": "storage_rack",
+    "material": "bag",
+    "geometry": "custom_mesh"
+  },
+  {
+    "component": "rack_sack_0_0_4",
+    "entity": "storage_rack",
+    "material": "bag",
+    "geometry": "custom_mesh"
+  },
+  {
+    "component": "rack_pallet_joist_0_1_0",
+    "entity": "storage_rack",
+    "material": "wood_y",
+    "geometry": "box"
+  },
+  {
+    "component": "rack_pallet_joist_0_1_1",
+    "entity": "storage_rack",
+    "material": "wood_y",
+    "geometry": "box"
+  },
+  {
+    "component": "rack_pallet_joist_0_1_2",
+    "entity": "storage_rack",
+    "material": "wood_y",
+    "geometry": "box"
+  },
+  {
+    "component": "rack_pallet_0_1_0",
+    "entity": "storage_rack",
+    "material": "lumber",
+    "geometry": "box"
+  },
+  {
+    "component": "rack_pallet_0_1_1",
+    "entity": "storage_rack",
+    "material": "lumber",
+    "geometry": "box"
+  },
+  {
+    "component": "rack_pallet_0_1_2",
+    "entity": "storage_rack",
+    "material": "lumber",
+    "geometry": "box"
+  },
+  {
+    "component": "rack_pallet_0_1_3",
+    "entity": "storage_rack",
+    "material": "lumber",
+    "geometry": "box"
+  },
+  {
+    "component": "rack_pallet_0_1_4",
+    "entity": "storage_rack",
+    "material": "lumber",
+    "geometry": "box"
+  },
+  {
+    "component": "rack_pallet_0_1_5",
+    "entity": "storage_rack",
+    "material": "lumber",
+    "geometry": "box"
+  },
+  {
+    "component": "rack_sack_0_1_0",
+    "entity": "storage_rack",
+    "material": "bag",
+    "geometry": "custom_mesh"
+  },
+  {
+    "component": "rack_sack_0_1_1",
+    "entity": "storage_rack",
+    "material": "bag",
+    "geometry": "custom_mesh"
+  },
+  {
+    "component": "rack_sack_0_1_2",
+    "entity": "storage_rack",
+    "material": "bag",
+    "geometry": "custom_mesh"
+  },
+  {
+    "component": "rack_sack_0_1_3",
+    "entity": "storage_rack",
+    "material": "bag",
+    "geometry": "custom_mesh"
+  },
+  {
+    "component": "rack_pallet_joist_0_2_0",
+    "entity": "storage_rack",
+    "material": "wood_y",
+    "geometry": "box"
+  },
+  {
+    "component": "rack_pallet_joist_0_2_1",
+    "entity": "storage_rack",
+    "material": "wood_y",
+    "geometry": "box"
+  },
+  {
+    "component": "rack_pallet_joist_0_2_2",
+    "entity": "storage_rack",
+    "material": "wood_y",
+    "geometry": "box"
+  },
+  {
+    "component": "rack_pallet_0_2_0",
+    "entity": "storage_rack",
+    "material": "lumber",
+    "geometry": "box"
+  },
+  {
+    "component": "rack_pallet_0_2_1",
+    "entity": "storage_rack",
+    "material": "lumber",
+    "geometry": "box"
+  },
+  {
+    "component": "rack_pallet_0_2_2",
+    "entity": "storage_rack",
+    "material": "lumber",
+    "geometry": "box"
+  },
+  {
+    "component": "rack_pallet_0_2_3",
+    "entity": "storage_rack",
+    "material": "lumber",
+    "geometry": "box"
+  },
+  {
+    "component": "rack_pallet_0_2_4",
+    "entity": "storage_rack",
+    "material": "lumber",
+    "geometry": "box"
+  },
+  {
+    "component": "rack_pallet_0_2_5",
+    "entity": "storage_rack",
+    "material": "lumber",
+    "geometry": "box"
+  },
+  {
+    "component": "rack_sack_0_2_0",
+    "entity": "storage_rack",
+    "material": "bag",
+    "geometry": "custom_mesh"
+  },
+  {
+    "component": "rack_sack_0_2_1",
+    "entity": "storage_rack",
+    "material": "bag",
+    "geometry": "custom_mesh"
+  },
+  {
+    "component": "rack_sack_0_2_2",
+    "entity": "storage_rack",
+    "material": "bag",
+    "geometry": "custom_mesh"
+  },
+  {
+    "component": "rack_sack_0_2_3",
+    "entity": "storage_rack",
+    "material": "bag",
+    "geometry": "custom_mesh"
+  },
+  {
+    "component": "rack_beam_1_0",
+    "entity": "storage_rack",
+    "material": "orange",
+    "geometry": "box"
+  },
+  {
+    "component": "rack_beam_1_1",
+    "entity": "storage_rack",
+    "material": "orange",
+    "geometry": "box"
+  },
+  {
+    "component": "rack_pallet_joist_1_0_0",
+    "entity": "storage_rack",
+    "material": "wood_y",
+    "geometry": "box"
+  },
+  {
+    "component": "rack_pallet_joist_1_0_1",
+    "entity": "storage_rack",
+    "material": "wood_y",
+    "geometry": "box"
+  },
+  {
+    "component": "rack_pallet_joist_1_0_2",
+    "entity": "storage_rack",
+    "material": "wood_y",
+    "geometry": "box"
+  },
+  {
+    "component": "rack_pallet_1_0_0",
+    "entity": "storage_rack",
+    "material": "lumber",
+    "geometry": "box"
+  },
+  {
+    "component": "rack_pallet_1_0_1",
+    "entity": "storage_rack",
+    "material": "lumber",
+    "geometry": "box"
+  },
+  {
+    "component": "rack_pallet_1_0_2",
+    "entity": "storage_rack",
+    "material": "lumber",
+    "geometry": "box"
+  },
+  {
+    "component": "rack_pallet_1_0_3",
+    "entity": "storage_rack",
+    "material": "lumber",
+    "geometry": "box"
+  },
+  {
+    "component": "rack_pallet_1_0_4",
+    "entity": "storage_rack",
+    "material": "lumber",
+    "geometry": "box"
+  },
+  {
+    "component": "rack_pallet_1_0_5",
+    "entity": "storage_rack",
+    "material": "lumber",
+    "geometry": "box"
+  },
+  {
+    "component": "rack_sack_1_0_0",
+    "entity": "storage_rack",
+    "material": "bag",
+    "geometry": "custom_mesh"
+  },
+  {
+    "component": "rack_sack_1_0_1",
+    "entity": "storage_rack",
+    "material": "bag",
+    "geometry": "custom_mesh"
+  },
+  {
+    "component": "rack_sack_1_0_2",
+    "entity": "storage_rack",
+    "material": "bag",
+    "geometry": "custom_mesh"
+  },
+  {
+    "component": "rack_sack_1_0_3",
+    "entity": "storage_rack",
+    "material": "bag",
+    "geometry": "custom_mesh"
+  },
+  {
+    "component": "rack_pallet_joist_1_1_0",
+    "entity": "storage_rack",
+    "material": "wood_y",
+    "geometry": "box"
+  },
+  {
+    "component": "rack_pallet_joist_1_1_1",
+    "entity": "storage_rack",
+    "material": "wood_y",
+    "geometry": "box"
+  },
+  {
+    "component": "rack_pallet_joist_1_1_2",
+    "entity": "storage_rack",
+    "material": "wood_y",
+    "geometry": "box"
+  },
+  {
+    "component": "rack_pallet_1_1_0",
+    "entity": "storage_rack",
+    "material": "lumber",
+    "geometry": "box"
+  },
+  {
+    "component": "rack_pallet_1_1_1",
+    "entity": "storage_rack",
+    "material": "lumber",
+    "geometry": "box"
+  },
+  {
+    "component": "rack_pallet_1_1_2",
+    "entity": "storage_rack",
+    "material": "lumber",
+    "geometry": "box"
+  },
+  {
+    "component": "rack_pallet_1_1_3",
+    "entity": "storage_rack",
+    "material": "lumber",
+    "geometry": "box"
+  },
+  {
+    "component": "rack_pallet_1_1_4",
+    "entity": "storage_rack",
+    "material": "lumber",
+    "geometry": "box"
+  },
+  {
+    "component": "rack_pallet_1_1_5",
+    "entity": "storage_rack",
+    "material": "lumber",
+    "geometry": "box"
+  },
+  {
+    "component": "rack_sack_1_1_0",
+    "entity": "storage_rack",
+    "material": "bag",
+    "geometry": "custom_mesh"
+  },
+  {
+    "component": "rack_sack_1_1_1",
+    "entity": "storage_rack",
+    "material": "bag",
+    "geometry": "custom_mesh"
+  },
+  {
+    "component": "rack_sack_1_1_2",
+    "entity": "storage_rack",
+    "material": "bag",
+    "geometry": "custom_mesh"
+  },
+  {
+    "component": "rack_sack_1_1_3",
+    "entity": "storage_rack",
+    "material": "bag",
+    "geometry": "custom_mesh"
+  },
+  {
+    "component": "rack_pallet_joist_1_2_0",
+    "entity": "storage_rack",
+    "material": "wood_y",
+    "geometry": "box"
+  },
+  {
+    "component": "rack_pallet_joist_1_2_1",
+    "entity": "storage_rack",
+    "material": "wood_y",
+    "geometry": "box"
+  },
+  {
+    "component": "rack_pallet_joist_1_2_2",
+    "entity": "storage_rack",
+    "material": "wood_y",
+    "geometry": "box"
+  },
+  {
+    "component": "rack_pallet_1_2_0",
+    "entity": "storage_rack",
+    "material": "lumber",
+    "geometry": "box"
+  },
+  {
+    "component": "rack_pallet_1_2_1",
+    "entity": "storage_rack",
+    "material": "lumber",
+    "geometry": "box"
+  },
+  {
+    "component": "rack_pallet_1_2_2",
+    "entity": "storage_rack",
+    "material": "lumber",
+    "geometry": "box"
+  },
+  {
+    "component": "rack_pallet_1_2_3",
+    "entity": "storage_rack",
+    "material": "lumber",
+    "geometry": "box"
+  },
+  {
+    "component": "rack_pallet_1_2_4",
+    "entity": "storage_rack",
+    "material": "lumber",
+    "geometry": "box"
+  },
+  {
+    "component": "rack_pallet_1_2_5",
+    "entity": "storage_rack",
+    "material": "lumber",
+    "geometry": "box"
+  },
+  {
+    "component": "rack_sack_1_2_0",
+    "entity": "storage_rack",
+    "material": "bag",
+    "geometry": "custom_mesh"
+  },
+  {
+    "component": "rack_sack_1_2_1",
+    "entity": "storage_rack",
+    "material": "bag",
+    "geometry": "custom_mesh"
+  },
+  {
+    "component": "rack_sack_1_2_2",
+    "entity": "storage_rack",
+    "material": "bag",
+    "geometry": "custom_mesh"
+  },
+  {
+    "component": "rack_sack_1_2_3",
+    "entity": "storage_rack",
+    "material": "bag",
+    "geometry": "custom_mesh"
+  },
+  {
+    "component": "rack_sack_1_2_4",
+    "entity": "storage_rack",
+    "material": "bag",
+    "geometry": "custom_mesh"
+  },
+  {
+    "component": "rack_beam_2_0",
+    "entity": "storage_rack",
+    "material": "orange",
+    "geometry": "box"
+  },
+  {
+    "component": "rack_beam_2_1",
+    "entity": "storage_rack",
+    "material": "orange",
+    "geometry": "box"
+  },
+  {
+    "component": "rack_pallet_joist_2_0_0",
+    "entity": "storage_rack",
+    "material": "wood_y",
+    "geometry": "box"
+  },
+  {
+    "component": "rack_pallet_joist_2_0_1",
+    "entity": "storage_rack",
+    "material": "wood_y",
+    "geometry": "box"
+  },
+  {
+    "component": "rack_pallet_joist_2_0_2",
+    "entity": "storage_rack",
+    "material": "wood_y",
+    "geometry": "box"
+  },
+  {
+    "component": "rack_pallet_2_0_0",
+    "entity": "storage_rack",
+    "material": "lumber",
+    "geometry": "box"
+  },
+  {
+    "component": "rack_pallet_2_0_1",
+    "entity": "storage_rack",
+    "material": "lumber",
+    "geometry": "box"
+  },
+  {
+    "component": "rack_pallet_2_0_2",
+    "entity": "storage_rack",
+    "material": "lumber",
+    "geometry": "box"
+  },
+  {
+    "component": "rack_pallet_2_0_3",
+    "entity": "storage_rack",
+    "material": "lumber",
+    "geometry": "box"
+  },
+  {
+    "component": "rack_pallet_2_0_4",
+    "entity": "storage_rack",
+    "material": "lumber",
+    "geometry": "box"
+  },
+  {
+    "component": "rack_pallet_2_0_5",
+    "entity": "storage_rack",
+    "material": "lumber",
+    "geometry": "box"
+  },
+  {
+    "component": "rack_sack_2_0_0",
+    "entity": "storage_rack",
+    "material": "bag",
+    "geometry": "custom_mesh"
+  },
+  {
+    "component": "rack_sack_2_0_1",
+    "entity": "storage_rack",
+    "material": "bag",
+    "geometry": "custom_mesh"
+  },
+  {
+    "component": "rack_sack_2_0_2",
+    "entity": "storage_rack",
+    "material": "bag",
+    "geometry": "custom_mesh"
+  },
+  {
+    "component": "rack_sack_2_0_3",
+    "entity": "storage_rack",
+    "material": "bag",
+    "geometry": "custom_mesh"
+  },
+  {
+    "component": "rack_pallet_joist_2_1_0",
+    "entity": "storage_rack",
+    "material": "wood_y",
+    "geometry": "box"
+  },
+  {
+    "component": "rack_pallet_joist_2_1_1",
+    "entity": "storage_rack",
+    "material": "wood_y",
+    "geometry": "box"
+  },
+  {
+    "component": "rack_pallet_joist_2_1_2",
+    "entity": "storage_rack",
+    "material": "wood_y",
+    "geometry": "box"
+  },
+  {
+    "component": "rack_pallet_2_1_0",
+    "entity": "storage_rack",
+    "material": "lumber",
+    "geometry": "box"
+  },
+  {
+    "component": "rack_pallet_2_1_1",
+    "entity": "storage_rack",
+    "material": "lumber",
+    "geometry": "box"
+  },
+  {
+    "component": "rack_pallet_2_1_2",
+    "entity": "storage_rack",
+    "material": "lumber",
+    "geometry": "box"
+  },
+  {
+    "component": "rack_pallet_2_1_3",
+    "entity": "storage_rack",
+    "material": "lumber",
+    "geometry": "box"
+  },
+  {
+    "component": "rack_pallet_2_1_4",
+    "entity": "storage_rack",
+    "material": "lumber",
+    "geometry": "box"
+  },
+  {
+    "component": "rack_pallet_2_1_5",
+    "entity": "storage_rack",
+    "material": "lumber",
+    "geometry": "box"
+  },
+  {
+    "component": "rack_sack_2_1_0",
+    "entity": "storage_rack",
+    "material": "bag",
+    "geometry": "custom_mesh"
+  },
+  {
+    "component": "rack_sack_2_1_1",
+    "entity": "storage_rack",
+    "material": "bag",
+    "geometry": "custom_mesh"
+  },
+  {
+    "component": "rack_sack_2_1_2",
+    "entity": "storage_rack",
+    "material": "bag",
+    "geometry": "custom_mesh"
+  },
+  {
+    "component": "rack_sack_2_1_3",
+    "entity": "storage_rack",
+    "material": "bag",
+    "geometry": "custom_mesh"
+  },
+  {
+    "component": "rack_sack_2_1_4",
+    "entity": "storage_rack",
+    "material": "bag",
+    "geometry": "custom_mesh"
+  },
+  {
+    "component": "rack_pallet_joist_2_2_0",
+    "entity": "storage_rack",
+    "material": "wood_y",
+    "geometry": "box"
+  },
+  {
+    "component": "rack_pallet_joist_2_2_1",
+    "entity": "storage_rack",
+    "material": "wood_y",
+    "geometry": "box"
+  },
+  {
+    "component": "rack_pallet_joist_2_2_2",
+    "entity": "storage_rack",
+    "material": "wood_y",
+    "geometry": "box"
+  },
+  {
+    "component": "rack_pallet_2_2_0",
+    "entity": "storage_rack",
+    "material": "lumber",
+    "geometry": "box"
+  },
+  {
+    "component": "rack_pallet_2_2_1",
+    "entity": "storage_rack",
+    "material": "lumber",
+    "geometry": "box"
+  },
+  {
+    "component": "rack_pallet_2_2_2",
+    "entity": "storage_rack",
+    "material": "lumber",
+    "geometry": "box"
+  },
+  {
+    "component": "rack_pallet_2_2_3",
+    "entity": "storage_rack",
+    "material": "lumber",
+    "geometry": "box"
+  },
+  {
+    "component": "rack_pallet_2_2_4",
+    "entity": "storage_rack",
+    "material": "lumber",
+    "geometry": "box"
+  },
+  {
+    "component": "rack_pallet_2_2_5",
+    "entity": "storage_rack",
+    "material": "lumber",
+    "geometry": "box"
+  },
+  {
+    "component": "rack_sack_2_2_0",
+    "entity": "storage_rack",
+    "material": "bag",
+    "geometry": "custom_mesh"
+  },
+  {
+    "component": "rack_sack_2_2_1",
+    "entity": "storage_rack",
+    "material": "bag",
+    "geometry": "custom_mesh"
+  },
+  {
+    "component": "rack_sack_2_2_2",
+    "entity": "storage_rack",
+    "material": "bag",
+    "geometry": "custom_mesh"
+  },
+  {
+    "component": "rack_sack_2_2_3",
+    "entity": "storage_rack",
+    "material": "bag",
+    "geometry": "custom_mesh"
+  },
+  {
+    "component": "rack_beam_3_0",
+    "entity": "storage_rack",
+    "material": "orange",
+    "geometry": "box"
+  },
+  {
+    "component": "rack_beam_3_1",
+    "entity": "storage_rack",
+    "material": "orange",
+    "geometry": "box"
+  },
+  {
+    "component": "rack_pallet_joist_3_0_0",
+    "entity": "storage_rack",
+    "material": "wood_y",
+    "geometry": "box"
+  },
+  {
+    "component": "rack_pallet_joist_3_0_1",
+    "entity": "storage_rack",
+    "material": "wood_y",
+    "geometry": "box"
+  },
+  {
+    "component": "rack_pallet_joist_3_0_2",
+    "entity": "storage_rack",
+    "material": "wood_y",
+    "geometry": "box"
+  },
+  {
+    "component": "rack_pallet_3_0_0",
+    "entity": "storage_rack",
+    "material": "lumber",
+    "geometry": "box"
+  },
+  {
+    "component": "rack_pallet_3_0_1",
+    "entity": "storage_rack",
+    "material": "lumber",
+    "geometry": "box"
+  },
+  {
+    "component": "rack_pallet_3_0_2",
+    "entity": "storage_rack",
+    "material": "lumber",
+    "geometry": "box"
+  },
+  {
+    "component": "rack_pallet_3_0_3",
+    "entity": "storage_rack",
+    "material": "lumber",
+    "geometry": "box"
+  },
+  {
+    "component": "rack_pallet_3_0_4",
+    "entity": "storage_rack",
+    "material": "lumber",
+    "geometry": "box"
+  },
+  {
+    "component": "rack_pallet_3_0_5",
+    "entity": "storage_rack",
+    "material": "lumber",
+    "geometry": "box"
+  },
+  {
+    "component": "top_folded_bag_0_0",
+    "entity": "storage_rack",
+    "material": "bag",
+    "geometry": "box"
+  },
+  {
+    "component": "top_folded_bag_0_1",
+    "entity": "storage_rack",
+    "material": "bag",
+    "geometry": "box"
+  },
+  {
+    "component": "top_folded_bag_0_2",
+    "entity": "storage_rack",
+    "material": "bag",
+    "geometry": "box"
+  },
+  {
+    "component": "rack_pallet_joist_3_1_0",
+    "entity": "storage_rack",
+    "material": "wood_y",
+    "geometry": "box"
+  },
+  {
+    "component": "rack_pallet_joist_3_1_1",
+    "entity": "storage_rack",
+    "material": "wood_y",
+    "geometry": "box"
+  },
+  {
+    "component": "rack_pallet_joist_3_1_2",
+    "entity": "storage_rack",
+    "material": "wood_y",
+    "geometry": "box"
+  },
+  {
+    "component": "rack_pallet_3_1_0",
+    "entity": "storage_rack",
+    "material": "lumber",
+    "geometry": "box"
+  },
+  {
+    "component": "rack_pallet_3_1_1",
+    "entity": "storage_rack",
+    "material": "lumber",
+    "geometry": "box"
+  },
+  {
+    "component": "rack_pallet_3_1_2",
+    "entity": "storage_rack",
+    "material": "lumber",
+    "geometry": "box"
+  },
+  {
+    "component": "rack_pallet_3_1_3",
+    "entity": "storage_rack",
+    "material": "lumber",
+    "geometry": "box"
+  },
+  {
+    "component": "rack_pallet_3_1_4",
+    "entity": "storage_rack",
+    "material": "lumber",
+    "geometry": "box"
+  },
+  {
+    "component": "rack_pallet_3_1_5",
+    "entity": "storage_rack",
+    "material": "lumber",
+    "geometry": "box"
+  },
+  {
+    "component": "top_folded_bag_1_0",
+    "entity": "storage_rack",
+    "material": "bag",
+    "geometry": "box"
+  },
+  {
+    "component": "top_folded_bag_1_1",
+    "entity": "storage_rack",
+    "material": "bag",
+    "geometry": "box"
+  },
+  {
+    "component": "top_folded_bag_1_2",
+    "entity": "storage_rack",
+    "material": "bag",
+    "geometry": "box"
+  },
+  {
+    "component": "rack_pallet_joist_3_2_0",
+    "entity": "storage_rack",
+    "material": "wood_y",
+    "geometry": "box"
+  },
+  {
+    "component": "rack_pallet_joist_3_2_1",
+    "entity": "storage_rack",
+    "material": "wood_y",
+    "geometry": "box"
+  },
+  {
+    "component": "rack_pallet_joist_3_2_2",
+    "entity": "storage_rack",
+    "material": "wood_y",
+    "geometry": "box"
+  },
+  {
+    "component": "rack_pallet_3_2_0",
+    "entity": "storage_rack",
+    "material": "lumber",
+    "geometry": "box"
+  },
+  {
+    "component": "rack_pallet_3_2_1",
+    "entity": "storage_rack",
+    "material": "lumber",
+    "geometry": "box"
+  },
+  {
+    "component": "rack_pallet_3_2_2",
+    "entity": "storage_rack",
+    "material": "lumber",
+    "geometry": "box"
+  },
+  {
+    "component": "rack_pallet_3_2_3",
+    "entity": "storage_rack",
+    "material": "lumber",
+    "geometry": "box"
+  },
+  {
+    "component": "rack_pallet_3_2_4",
+    "entity": "storage_rack",
+    "material": "lumber",
+    "geometry": "box"
+  },
+  {
+    "component": "rack_pallet_3_2_5",
+    "entity": "storage_rack",
+    "material": "lumber",
+    "geometry": "box"
+  },
+  {
+    "component": "crate0_foot0",
+    "entity": "wood_crate_0",
+    "material": "wood_y",
+    "geometry": "box"
+  },
+  {
+    "component": "crate0_foot1",
+    "entity": "wood_crate_0",
+    "material": "wood_y",
+    "geometry": "box"
+  },
+  {
+    "component": "crate0_foot2",
+    "entity": "wood_crate_0",
+    "material": "wood_y",
+    "geometry": "box"
+  },
+  {
+    "component": "crate0_base",
+    "entity": "wood_crate_0",
+    "material": "wood",
+    "geometry": "box"
+  },
+  {
+    "component": "crate0_long_0_0",
+    "entity": "wood_crate_0",
+    "material": "wood",
+    "geometry": "box"
+  },
+  {
+    "component": "crate0_short_0_0",
+    "entity": "wood_crate_0",
+    "material": "wood_y",
+    "geometry": "box"
+  },
+  {
+    "component": "crate0_long_0_1",
+    "entity": "wood_crate_0",
+    "material": "wood",
+    "geometry": "box"
+  },
+  {
+    "component": "crate0_short_0_1",
+    "entity": "wood_crate_0",
+    "material": "wood_y",
+    "geometry": "box"
+  },
+  {
+    "component": "crate0_long_1_0",
+    "entity": "wood_crate_0",
+    "material": "wood",
+    "geometry": "box"
+  },
+  {
+    "component": "crate0_short_1_0",
+    "entity": "wood_crate_0",
+    "material": "wood_y",
+    "geometry": "box"
+  },
+  {
+    "component": "crate0_long_1_1",
+    "entity": "wood_crate_0",
+    "material": "wood",
+    "geometry": "box"
+  },
+  {
+    "component": "crate0_short_1_1",
+    "entity": "wood_crate_0",
+    "material": "wood_y",
+    "geometry": "box"
+  },
+  {
+    "component": "crate0_long_2_0",
+    "entity": "wood_crate_0",
+    "material": "wood",
+    "geometry": "box"
+  },
+  {
+    "component": "crate0_short_2_0",
+    "entity": "wood_crate_0",
+    "material": "wood_y",
+    "geometry": "box"
+  },
+  {
+    "component": "crate0_long_2_1",
+    "entity": "wood_crate_0",
+    "material": "wood",
+    "geometry": "box"
+  },
+  {
+    "component": "crate0_short_2_1",
+    "entity": "wood_crate_0",
+    "material": "wood_y",
+    "geometry": "box"
+  },
+  {
+    "component": "crate0_long_3_0",
+    "entity": "wood_crate_0",
+    "material": "wood",
+    "geometry": "box"
+  },
+  {
+    "component": "crate0_short_3_0",
+    "entity": "wood_crate_0",
+    "material": "wood_y",
+    "geometry": "box"
+  },
+  {
+    "component": "crate0_long_3_1",
+    "entity": "wood_crate_0",
+    "material": "wood",
+    "geometry": "box"
+  },
+  {
+    "component": "crate0_short_3_1",
+    "entity": "wood_crate_0",
+    "material": "wood_y",
+    "geometry": "box"
+  },
+  {
+    "component": "crate0_long_4_0",
+    "entity": "wood_crate_0",
+    "material": "wood",
+    "geometry": "box"
+  },
+  {
+    "component": "crate0_short_4_0",
+    "entity": "wood_crate_0",
+    "material": "wood_y",
+    "geometry": "box"
+  },
+  {
+    "component": "crate0_long_4_1",
+    "entity": "wood_crate_0",
+    "material": "wood",
+    "geometry": "box"
+  },
+  {
+    "component": "crate0_short_4_1",
+    "entity": "wood_crate_0",
+    "material": "wood_y",
+    "geometry": "box"
+  },
+  {
+    "component": "crate0_long_5_0",
+    "entity": "wood_crate_0",
+    "material": "wood",
+    "geometry": "box"
+  },
+  {
+    "component": "crate0_short_5_0",
+    "entity": "wood_crate_0",
+    "material": "wood_y",
+    "geometry": "box"
+  },
+  {
+    "component": "crate0_long_5_1",
+    "entity": "wood_crate_0",
+    "material": "wood",
+    "geometry": "box"
+  },
+  {
+    "component": "crate0_short_5_1",
+    "entity": "wood_crate_0",
+    "material": "wood_y",
+    "geometry": "box"
+  },
+  {
+    "component": "crate0_strap0",
+    "entity": "wood_crate_0",
+    "material": "rust",
+    "geometry": "box"
+  },
+  {
+    "component": "crate0_strap1",
+    "entity": "wood_crate_0",
+    "material": "rust",
+    "geometry": "box"
+  },
+  {
+    "component": "crate0_strap2",
+    "entity": "wood_crate_0",
+    "material": "rust",
+    "geometry": "box"
+  },
+  {
+    "component": "crate0_strap3",
+    "entity": "wood_crate_0",
+    "material": "rust",
+    "geometry": "box"
+  },
+  {
+    "component": "crate1_foot0",
+    "entity": "wood_crate_1",
+    "material": "wood_y",
+    "geometry": "box"
+  },
+  {
+    "component": "crate1_foot1",
+    "entity": "wood_crate_1",
+    "material": "wood_y",
+    "geometry": "box"
+  },
+  {
+    "component": "crate1_foot2",
+    "entity": "wood_crate_1",
+    "material": "wood_y",
+    "geometry": "box"
+  },
+  {
+    "component": "crate1_base",
+    "entity": "wood_crate_1",
+    "material": "wood",
+    "geometry": "box"
+  },
+  {
+    "component": "crate1_long_0_0",
+    "entity": "wood_crate_1",
+    "material": "wood",
+    "geometry": "box"
+  },
+  {
+    "component": "crate1_short_0_0",
+    "entity": "wood_crate_1",
+    "material": "wood_y",
+    "geometry": "box"
+  },
+  {
+    "component": "crate1_long_0_1",
+    "entity": "wood_crate_1",
+    "material": "wood",
+    "geometry": "box"
+  },
+  {
+    "component": "crate1_short_0_1",
+    "entity": "wood_crate_1",
+    "material": "wood_y",
+    "geometry": "box"
+  },
+  {
+    "component": "crate1_long_1_0",
+    "entity": "wood_crate_1",
+    "material": "wood",
+    "geometry": "box"
+  },
+  {
+    "component": "crate1_short_1_0",
+    "entity": "wood_crate_1",
+    "material": "wood_y",
+    "geometry": "box"
+  },
+  {
+    "component": "crate1_long_1_1",
+    "entity": "wood_crate_1",
+    "material": "wood",
+    "geometry": "box"
+  },
+  {
+    "component": "crate1_short_1_1",
+    "entity": "wood_crate_1",
+    "material": "wood_y",
+    "geometry": "box"
+  },
+  {
+    "component": "crate1_long_2_0",
+    "entity": "wood_crate_1",
+    "material": "wood",
+    "geometry": "box"
+  },
+  {
+    "component": "crate1_short_2_0",
+    "entity": "wood_crate_1",
+    "material": "wood_y",
+    "geometry": "box"
+  },
+  {
+    "component": "crate1_long_2_1",
+    "entity": "wood_crate_1",
+    "material": "wood",
+    "geometry": "box"
+  },
+  {
+    "component": "crate1_short_2_1",
+    "entity": "wood_crate_1",
+    "material": "wood_y",
+    "geometry": "box"
+  },
+  {
+    "component": "crate1_long_3_0",
+    "entity": "wood_crate_1",
+    "material": "wood",
+    "geometry": "box"
+  },
+  {
+    "component": "crate1_short_3_0",
+    "entity": "wood_crate_1",
+    "material": "wood_y",
+    "geometry": "box"
+  },
+  {
+    "component": "crate1_long_3_1",
+    "entity": "wood_crate_1",
+    "material": "wood",
+    "geometry": "box"
+  },
+  {
+    "component": "crate1_short_3_1",
+    "entity": "wood_crate_1",
+    "material": "wood_y",
+    "geometry": "box"
+  },
+  {
+    "component": "crate1_long_4_0",
+    "entity": "wood_crate_1",
+    "material": "wood",
+    "geometry": "box"
+  },
+  {
+    "component": "crate1_short_4_0",
+    "entity": "wood_crate_1",
+    "material": "wood_y",
+    "geometry": "box"
+  },
+  {
+    "component": "crate1_long_4_1",
+    "entity": "wood_crate_1",
+    "material": "wood",
+    "geometry": "box"
+  },
+  {
+    "component": "crate1_short_4_1",
+    "entity": "wood_crate_1",
+    "material": "wood_y",
+    "geometry": "box"
+  },
+  {
+    "component": "crate1_long_5_0",
+    "entity": "wood_crate_1",
+    "material": "wood",
+    "geometry": "box"
+  },
+  {
+    "component": "crate1_short_5_0",
+    "entity": "wood_crate_1",
+    "material": "wood_y",
+    "geometry": "box"
+  },
+  {
+    "component": "crate1_long_5_1",
+    "entity": "wood_crate_1",
+    "material": "wood",
+    "geometry": "box"
+  },
+  {
+    "component": "crate1_short_5_1",
+    "entity": "wood_crate_1",
+    "material": "wood_y",
+    "geometry": "box"
+  },
+  {
+    "component": "crate1_strap0",
+    "entity": "wood_crate_1",
+    "material": "rust",
+    "geometry": "box"
+  },
+  {
+    "component": "crate1_strap1",
+    "entity": "wood_crate_1",
+    "material": "rust",
+    "geometry": "box"
+  },
+  {
+    "component": "crate1_strap2",
+    "entity": "wood_crate_1",
+    "material": "rust",
+    "geometry": "box"
+  },
+  {
+    "component": "crate1_strap3",
+    "entity": "wood_crate_1",
+    "material": "rust",
+    "geometry": "box"
+  },
+  {
+    "component": "skip0_shell",
+    "entity": "lime_skip_0",
+    "material": "lime",
+    "geometry": "custom_mesh"
+  },
+  {
+    "component": "skip0_foot0",
+    "entity": "lime_skip_0",
+    "material": "lime",
+    "geometry": "box"
+  },
+  {
+    "component": "skip0_foot1",
+    "entity": "lime_skip_0",
+    "material": "lime",
+    "geometry": "box"
+  },
+  {
+    "component": "skip0_rim0",
+    "entity": "lime_skip_0",
+    "material": "lime",
+    "geometry": "box"
+  },
+  {
+    "component": "skip0_rim1",
+    "entity": "lime_skip_0",
+    "material": "lime",
+    "geometry": "box"
+  },
+  {
+    "component": "skip0_side_rim0",
+    "entity": "lime_skip_0",
+    "material": "lime",
+    "geometry": "box"
+  },
+  {
+    "component": "skip0_side_rim1",
+    "entity": "lime_skip_0",
+    "material": "lime",
+    "geometry": "box"
+  },
+  {
+    "component": "skip1_shell",
+    "entity": "lime_skip_1",
+    "material": "lime",
+    "geometry": "custom_mesh"
+  },
+  {
+    "component": "skip1_foot0",
+    "entity": "lime_skip_1",
+    "material": "lime",
+    "geometry": "box"
+  },
+  {
+    "component": "skip1_foot1",
+    "entity": "lime_skip_1",
+    "material": "lime",
+    "geometry": "box"
+  },
+  {
+    "component": "skip1_rim0",
+    "entity": "lime_skip_1",
+    "material": "lime",
+    "geometry": "box"
+  },
+  {
+    "component": "skip1_rim1",
+    "entity": "lime_skip_1",
+    "material": "lime",
+    "geometry": "box"
+  },
+  {
+    "component": "skip1_side_rim0",
+    "entity": "lime_skip_1",
+    "material": "lime",
+    "geometry": "box"
+  },
+  {
+    "component": "skip1_side_rim1",
+    "entity": "lime_skip_1",
+    "material": "lime",
+    "geometry": "box"
+  },
+  {
+    "component": "trailer_box",
+    "entity": "white_trailer",
+    "material": "white_vehicle",
+    "geometry": "box"
+  },
+  {
+    "component": "trailer_floor",
+    "entity": "white_trailer",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "trailer_wheel_12.9_-1",
+    "entity": "white_trailer",
+    "material": "rubber",
+    "geometry": "cylinder"
+  },
+  {
+    "component": "trailer_hub_12.9_-1",
+    "entity": "white_trailer",
+    "material": "bright_metal",
+    "geometry": "cylinder"
+  },
+  {
+    "component": "trailer_wheel_12.9_1",
+    "entity": "white_trailer",
+    "material": "rubber",
+    "geometry": "cylinder"
+  },
+  {
+    "component": "trailer_hub_12.9_1",
+    "entity": "white_trailer",
+    "material": "bright_metal",
+    "geometry": "cylinder"
+  },
+  {
+    "component": "trailer_wheel_13.65_-1",
+    "entity": "white_trailer",
+    "material": "rubber",
+    "geometry": "cylinder"
+  },
+  {
+    "component": "trailer_hub_13.65_-1",
+    "entity": "white_trailer",
+    "material": "bright_metal",
+    "geometry": "cylinder"
+  },
+  {
+    "component": "trailer_wheel_13.65_1",
+    "entity": "white_trailer",
+    "material": "rubber",
+    "geometry": "cylinder"
+  },
+  {
+    "component": "trailer_hub_13.65_1",
+    "entity": "white_trailer",
+    "material": "bright_metal",
+    "geometry": "cylinder"
+  },
+  {
+    "component": "trailer_window_0",
+    "entity": "white_trailer",
+    "material": "glass",
+    "geometry": "box"
+  },
+  {
+    "component": "trailer_window_1",
+    "entity": "white_trailer",
+    "material": "glass",
+    "geometry": "box"
+  },
+  {
+    "component": "trailer_towA",
+    "entity": "white_trailer",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "trailer_towB",
+    "entity": "white_trailer",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "flatbed_frame",
+    "entity": "flatbed_trailer",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "flatbed_deck",
+    "entity": "flatbed_trailer",
+    "material": "door",
+    "geometry": "box"
+  },
+  {
+    "component": "flatbed_wheel-1",
+    "entity": "flatbed_trailer",
+    "material": "rubber",
+    "geometry": "cylinder"
+  },
+  {
+    "component": "flatbed_wheel1",
+    "entity": "flatbed_trailer",
+    "material": "rubber",
+    "geometry": "cylinder"
+  },
+  {
+    "component": "flatbed_towA",
+    "entity": "flatbed_trailer",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "flatbed_towB",
+    "entity": "flatbed_trailer",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "flatbed_hitch",
+    "entity": "flatbed_trailer",
+    "material": "bright_metal",
+    "geometry": "cylinder"
+  },
+  {
+    "component": "sign_base",
+    "entity": "sign_base",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "sign_pole",
+    "entity": "sign_pole",
+    "material": "bright_metal",
+    "geometry": "cylinder"
+  },
+  {
+    "component": "no_parking_red",
+    "entity": "no_parking_red",
+    "material": "red",
+    "geometry": "cylinder"
+  },
+  {
+    "component": "no_parking_blue",
+    "entity": "no_parking_blue",
+    "material": "blue",
+    "geometry": "cylinder"
+  },
+  {
+    "component": "no_parking_slashA",
+    "entity": "no_parking_red",
+    "material": "red",
+    "geometry": "box"
+  },
+  {
+    "component": "no_parking_slashB",
+    "entity": "no_parking_red",
+    "material": "red",
+    "geometry": "box"
+  },
+  {
+    "component": "van_cab_body",
+    "entity": "white_van",
+    "material": "white_vehicle",
+    "geometry": "custom_mesh"
+  },
+  {
+    "component": "van_cargo_box",
+    "entity": "white_van",
+    "material": "white_vehicle",
+    "geometry": "box"
+  },
+  {
+    "component": "van_chassis",
+    "entity": "white_van",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "van_windshield",
+    "entity": "white_van",
+    "material": "glass",
+    "geometry": "custom_mesh"
+  },
+  {
+    "component": "van_windshield_frame0",
+    "entity": "white_van",
+    "material": "white_vehicle",
+    "geometry": "box"
+  },
+  {
+    "component": "van_windshield_frame1",
+    "entity": "white_van",
+    "material": "white_vehicle",
+    "geometry": "box"
+  },
+  {
+    "component": "van_windshield_frame2",
+    "entity": "white_van",
+    "material": "white_vehicle",
+    "geometry": "box"
+  },
+  {
+    "component": "van_windshield_frame3",
+    "entity": "white_van",
+    "material": "white_vehicle",
+    "geometry": "box"
+  },
+  {
+    "component": "van_windshield_divider",
+    "entity": "white_van",
+    "material": "rubber",
+    "geometry": "box"
+  },
+  {
+    "component": "van_side_glass-1",
+    "entity": "white_van",
+    "material": "glass",
+    "geometry": "custom_mesh"
+  },
+  {
+    "component": "van_mirror-1",
+    "entity": "white_van",
+    "material": "rubber",
+    "geometry": "box"
+  },
+  {
+    "component": "van_mirror_stem-1",
+    "entity": "white_van",
+    "material": "rubber",
+    "geometry": "box"
+  },
+  {
+    "component": "van_tyre-1_0",
+    "entity": "white_van",
+    "material": "rubber",
+    "geometry": "cylinder"
+  },
+  {
+    "component": "van_hub-1_0",
+    "entity": "white_van",
+    "material": "bright_metal",
+    "geometry": "cylinder"
+  },
+  {
+    "component": "van_tyre-1_1",
+    "entity": "white_van",
+    "material": "rubber",
+    "geometry": "cylinder"
+  },
+  {
+    "component": "van_hub-1_1",
+    "entity": "white_van",
+    "material": "bright_metal",
+    "geometry": "cylinder"
+  },
+  {
+    "component": "van_side_glass1",
+    "entity": "white_van",
+    "material": "glass",
+    "geometry": "custom_mesh"
+  },
+  {
+    "component": "van_mirror1",
+    "entity": "white_van",
+    "material": "rubber",
+    "geometry": "box"
+  },
+  {
+    "component": "van_mirror_stem1",
+    "entity": "white_van",
+    "material": "rubber",
+    "geometry": "box"
+  },
+  {
+    "component": "van_tyre1_0",
+    "entity": "white_van",
+    "material": "rubber",
+    "geometry": "cylinder"
+  },
+  {
+    "component": "van_hub1_0",
+    "entity": "white_van",
+    "material": "bright_metal",
+    "geometry": "cylinder"
+  },
+  {
+    "component": "van_tyre1_1",
+    "entity": "white_van",
+    "material": "rubber",
+    "geometry": "cylinder"
+  },
+  {
+    "component": "van_hub1_1",
+    "entity": "white_van",
+    "material": "bright_metal",
+    "geometry": "cylinder"
+  },
+  {
+    "component": "van_front_bumper",
+    "entity": "white_van",
+    "material": "rubber",
+    "geometry": "box"
+  },
+  {
+    "component": "van_grille",
+    "entity": "white_van",
+    "material": "rubber",
+    "geometry": "box"
+  },
+  {
+    "component": "van_headlamp-1",
+    "entity": "white_van",
+    "material": "door",
+    "geometry": "box"
+  },
+  {
+    "component": "van_headlamp1",
+    "entity": "white_van",
+    "material": "door",
+    "geometry": "box"
+  },
+  {
+    "component": "van_cooler",
+    "entity": "white_van",
+    "material": "white_vehicle",
+    "geometry": "box"
+  },
+  {
+    "component": "van_cooler_vent0",
+    "entity": "white_van",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "van_cooler_vent1",
+    "entity": "white_van",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "van_cooler_vent2",
+    "entity": "white_van",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "van_cooler_vent3",
+    "entity": "white_van",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "van_cooler_vent4",
+    "entity": "white_van",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "van_cooler_vent5",
+    "entity": "white_van",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "van_cooler_vent6",
+    "entity": "white_van",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "car_lower_body",
+    "entity": "black_car",
+    "material": "black_vehicle",
+    "geometry": "custom_mesh"
+  },
+  {
+    "component": "car_upper_body",
+    "entity": "black_car",
+    "material": "black_vehicle",
+    "geometry": "custom_mesh"
+  },
+  {
+    "component": "car_rear_glass",
+    "entity": "black_car",
+    "material": "glass",
+    "geometry": "custom_mesh"
+  },
+  {
+    "component": "car_rear_frame0",
+    "entity": "black_car",
+    "material": "black_vehicle",
+    "geometry": "box"
+  },
+  {
+    "component": "car_rear_frame1",
+    "entity": "black_car",
+    "material": "black_vehicle",
+    "geometry": "box"
+  },
+  {
+    "component": "car_rear_frame2",
+    "entity": "black_car",
+    "material": "black_vehicle",
+    "geometry": "box"
+  },
+  {
+    "component": "car_rear_frame3",
+    "entity": "black_car",
+    "material": "black_vehicle",
+    "geometry": "box"
+  },
+  {
+    "component": "car_tyre-1_0",
+    "entity": "black_car",
+    "material": "rubber",
+    "geometry": "cylinder"
+  },
+  {
+    "component": "car_hub-1_0",
+    "entity": "black_car",
+    "material": "steel",
+    "geometry": "cylinder"
+  },
+  {
+    "component": "car_tyre-1_1",
+    "entity": "black_car",
+    "material": "rubber",
+    "geometry": "cylinder"
+  },
+  {
+    "component": "car_hub-1_1",
+    "entity": "black_car",
+    "material": "steel",
+    "geometry": "cylinder"
+  },
+  {
+    "component": "car_tail_light-1",
+    "entity": "black_car",
+    "material": "red",
+    "geometry": "box"
+  },
+  {
+    "component": "car_tyre1_0",
+    "entity": "black_car",
+    "material": "rubber",
+    "geometry": "cylinder"
+  },
+  {
+    "component": "car_hub1_0",
+    "entity": "black_car",
+    "material": "steel",
+    "geometry": "cylinder"
+  },
+  {
+    "component": "car_tyre1_1",
+    "entity": "black_car",
+    "material": "rubber",
+    "geometry": "cylinder"
+  },
+  {
+    "component": "car_hub1_1",
+    "entity": "black_car",
+    "material": "steel",
+    "geometry": "cylinder"
+  },
+  {
+    "component": "car_tail_light1",
+    "entity": "black_car",
+    "material": "red",
+    "geometry": "box"
+  },
+  {
+    "component": "cart_floor_frame",
+    "entity": "lumber_cart",
+    "material": "blue",
+    "geometry": "box"
+  },
+  {
+    "component": "cart_upright0",
+    "entity": "lumber_cart",
+    "material": "blue",
+    "geometry": "box"
+  },
+  {
+    "component": "cart_upright1",
+    "entity": "lumber_cart",
+    "material": "blue",
+    "geometry": "box"
+  },
+  {
+    "component": "cart_upright2",
+    "entity": "lumber_cart",
+    "material": "blue",
+    "geometry": "box"
+  },
+  {
+    "component": "cart_crossbar",
+    "entity": "lumber_cart",
+    "material": "blue",
+    "geometry": "box"
+  },
+  {
+    "component": "cart_caster-1_-1",
+    "entity": "lumber_cart",
+    "material": "rubber",
+    "geometry": "cylinder"
+  },
+  {
+    "component": "cart_caster-1_1",
+    "entity": "lumber_cart",
+    "material": "rubber",
+    "geometry": "cylinder"
+  },
+  {
+    "component": "cart_caster1_-1",
+    "entity": "lumber_cart",
+    "material": "rubber",
+    "geometry": "cylinder"
+  },
+  {
+    "component": "cart_caster1_1",
+    "entity": "lumber_cart",
+    "material": "rubber",
+    "geometry": "cylinder"
+  },
+  {
+    "component": "lumber_board_0_0",
+    "entity": "lumber_cart",
+    "material": "lumber",
+    "geometry": "box"
+  },
+  {
+    "component": "lumber_board_0_1",
+    "entity": "lumber_cart",
+    "material": "lumber",
+    "geometry": "box"
+  },
+  {
+    "component": "lumber_board_0_2",
+    "entity": "lumber_cart",
+    "material": "lumber",
+    "geometry": "box"
+  },
+  {
+    "component": "lumber_board_1_0",
+    "entity": "lumber_cart",
+    "material": "lumber",
+    "geometry": "box"
+  },
+  {
+    "component": "lumber_board_1_1",
+    "entity": "lumber_cart",
+    "material": "lumber",
+    "geometry": "box"
+  },
+  {
+    "component": "lumber_board_1_2",
+    "entity": "lumber_cart",
+    "material": "lumber",
+    "geometry": "box"
+  },
+  {
+    "component": "lumber_board_2_0",
+    "entity": "lumber_cart",
+    "material": "lumber",
+    "geometry": "box"
+  },
+  {
+    "component": "lumber_board_2_1",
+    "entity": "lumber_cart",
+    "material": "lumber",
+    "geometry": "box"
+  },
+  {
+    "component": "lumber_board_2_2",
+    "entity": "lumber_cart",
+    "material": "lumber",
+    "geometry": "box"
+  },
+  {
+    "component": "lumber_board_3_0",
+    "entity": "lumber_cart",
+    "material": "lumber",
+    "geometry": "box"
+  },
+  {
+    "component": "lumber_board_3_1",
+    "entity": "lumber_cart",
+    "material": "lumber",
+    "geometry": "box"
+  },
+  {
+    "component": "lumber_board_3_2",
+    "entity": "lumber_cart",
+    "material": "lumber",
+    "geometry": "box"
+  },
+  {
+    "component": "lumber_board_4_0",
+    "entity": "lumber_cart",
+    "material": "lumber",
+    "geometry": "box"
+  },
+  {
+    "component": "lumber_board_4_1",
+    "entity": "lumber_cart",
+    "material": "lumber",
+    "geometry": "box"
+  },
+  {
+    "component": "lumber_board_4_2",
+    "entity": "lumber_cart",
+    "material": "lumber",
+    "geometry": "box"
+  },
+  {
+    "component": "lumber_board_5_0",
+    "entity": "lumber_cart",
+    "material": "lumber",
+    "geometry": "box"
+  },
+  {
+    "component": "lumber_board_5_1",
+    "entity": "lumber_cart",
+    "material": "lumber",
+    "geometry": "box"
+  },
+  {
+    "component": "lumber_board_5_2",
+    "entity": "lumber_cart",
+    "material": "lumber",
+    "geometry": "box"
+  },
+  {
+    "component": "lumber_board_6_0",
+    "entity": "lumber_cart",
+    "material": "lumber",
+    "geometry": "box"
+  },
+  {
+    "component": "lumber_board_6_1",
+    "entity": "lumber_cart",
+    "material": "lumber",
+    "geometry": "box"
+  },
+  {
+    "component": "lumber_board_6_2",
+    "entity": "lumber_cart",
+    "material": "lumber",
+    "geometry": "box"
+  },
+  {
+    "component": "lumber_board_7_0",
+    "entity": "lumber_cart",
+    "material": "lumber",
+    "geometry": "box"
+  },
+  {
+    "component": "lumber_board_7_1",
+    "entity": "lumber_cart",
+    "material": "lumber",
+    "geometry": "box"
+  },
+  {
+    "component": "lumber_board_7_2",
+    "entity": "lumber_cart",
+    "material": "lumber",
+    "geometry": "box"
+  },
+  {
+    "component": "lumber_board_8_0",
+    "entity": "lumber_cart",
+    "material": "lumber",
+    "geometry": "box"
+  },
+  {
+    "component": "lumber_board_8_1",
+    "entity": "lumber_cart",
+    "material": "lumber",
+    "geometry": "box"
+  },
+  {
+    "component": "lumber_board_8_2",
+    "entity": "lumber_cart",
+    "material": "lumber",
+    "geometry": "box"
+  },
+  {
+    "component": "cage0_side0",
+    "entity": "mesh_cage_0",
+    "material": "bright_metal",
+    "geometry": "box"
+  },
+  {
+    "component": "cage0_side1",
+    "entity": "mesh_cage_0",
+    "material": "bright_metal",
+    "geometry": "box"
+  },
+  {
+    "component": "cage0_rail0",
+    "entity": "mesh_cage_0",
+    "material": "bright_metal",
+    "geometry": "box"
+  },
+  {
+    "component": "cage0_rail1",
+    "entity": "mesh_cage_0",
+    "material": "bright_metal",
+    "geometry": "box"
+  },
+  {
+    "component": "cage0_wireV0",
+    "entity": "mesh_cage_0",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage0_wireV1",
+    "entity": "mesh_cage_0",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage0_wireV2",
+    "entity": "mesh_cage_0",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage0_wireV3",
+    "entity": "mesh_cage_0",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage0_wireV4",
+    "entity": "mesh_cage_0",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage0_wireV5",
+    "entity": "mesh_cage_0",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage0_wireV6",
+    "entity": "mesh_cage_0",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage0_wireV7",
+    "entity": "mesh_cage_0",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage0_wireV8",
+    "entity": "mesh_cage_0",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage0_wireV9",
+    "entity": "mesh_cage_0",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage0_wireV10",
+    "entity": "mesh_cage_0",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage0_wireV11",
+    "entity": "mesh_cage_0",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage0_wireV12",
+    "entity": "mesh_cage_0",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage0_wireV13",
+    "entity": "mesh_cage_0",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage0_wireV14",
+    "entity": "mesh_cage_0",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage0_wireV15",
+    "entity": "mesh_cage_0",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage0_wireV16",
+    "entity": "mesh_cage_0",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage0_wireV17",
+    "entity": "mesh_cage_0",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage0_wireV18",
+    "entity": "mesh_cage_0",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage0_wireV19",
+    "entity": "mesh_cage_0",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage0_wireV20",
+    "entity": "mesh_cage_0",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage0_wireV21",
+    "entity": "mesh_cage_0",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage0_wireV22",
+    "entity": "mesh_cage_0",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage0_wireV23",
+    "entity": "mesh_cage_0",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage0_wireV24",
+    "entity": "mesh_cage_0",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage0_wireV25",
+    "entity": "mesh_cage_0",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage0_wireV26",
+    "entity": "mesh_cage_0",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage0_wireV27",
+    "entity": "mesh_cage_0",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage0_wireV28",
+    "entity": "mesh_cage_0",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage0_wireV29",
+    "entity": "mesh_cage_0",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage0_wireV30",
+    "entity": "mesh_cage_0",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage0_wireV31",
+    "entity": "mesh_cage_0",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage0_wireV32",
+    "entity": "mesh_cage_0",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage0_wireV33",
+    "entity": "mesh_cage_0",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage0_wireV34",
+    "entity": "mesh_cage_0",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage0_wireV35",
+    "entity": "mesh_cage_0",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage0_wireV36",
+    "entity": "mesh_cage_0",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage0_wireH0",
+    "entity": "mesh_cage_0",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage0_wireH1",
+    "entity": "mesh_cage_0",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage0_wireH2",
+    "entity": "mesh_cage_0",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage0_wireH3",
+    "entity": "mesh_cage_0",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage0_wireH4",
+    "entity": "mesh_cage_0",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage0_wireH5",
+    "entity": "mesh_cage_0",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage0_wireH6",
+    "entity": "mesh_cage_0",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage0_wireH7",
+    "entity": "mesh_cage_0",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage0_wireH8",
+    "entity": "mesh_cage_0",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage0_wireH9",
+    "entity": "mesh_cage_0",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage0_wireH10",
+    "entity": "mesh_cage_0",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage0_wireH11",
+    "entity": "mesh_cage_0",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage0_wireH12",
+    "entity": "mesh_cage_0",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage0_wireH13",
+    "entity": "mesh_cage_0",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage0_wireH14",
+    "entity": "mesh_cage_0",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage0_wireH15",
+    "entity": "mesh_cage_0",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage0_wireH16",
+    "entity": "mesh_cage_0",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage0_wireH17",
+    "entity": "mesh_cage_0",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage0_wireH18",
+    "entity": "mesh_cage_0",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage0_wireH19",
+    "entity": "mesh_cage_0",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage0_wireH20",
+    "entity": "mesh_cage_0",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage0_wireH21",
+    "entity": "mesh_cage_0",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage0_wireH22",
+    "entity": "mesh_cage_0",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage0_wireH23",
+    "entity": "mesh_cage_0",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage0_wireH24",
+    "entity": "mesh_cage_0",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage0_wireH25",
+    "entity": "mesh_cage_0",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage0_wireH26",
+    "entity": "mesh_cage_0",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage0_wireH27",
+    "entity": "mesh_cage_0",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage0_wireH28",
+    "entity": "mesh_cage_0",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage1_side0",
+    "entity": "mesh_cage_1",
+    "material": "bright_metal",
+    "geometry": "box"
+  },
+  {
+    "component": "cage1_side1",
+    "entity": "mesh_cage_1",
+    "material": "bright_metal",
+    "geometry": "box"
+  },
+  {
+    "component": "cage1_rail0",
+    "entity": "mesh_cage_1",
+    "material": "bright_metal",
+    "geometry": "box"
+  },
+  {
+    "component": "cage1_rail1",
+    "entity": "mesh_cage_1",
+    "material": "bright_metal",
+    "geometry": "box"
+  },
+  {
+    "component": "cage1_wireV0",
+    "entity": "mesh_cage_1",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage1_wireV1",
+    "entity": "mesh_cage_1",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage1_wireV2",
+    "entity": "mesh_cage_1",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage1_wireV3",
+    "entity": "mesh_cage_1",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage1_wireV4",
+    "entity": "mesh_cage_1",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage1_wireV5",
+    "entity": "mesh_cage_1",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage1_wireV6",
+    "entity": "mesh_cage_1",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage1_wireV7",
+    "entity": "mesh_cage_1",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage1_wireV8",
+    "entity": "mesh_cage_1",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage1_wireV9",
+    "entity": "mesh_cage_1",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage1_wireV10",
+    "entity": "mesh_cage_1",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage1_wireV11",
+    "entity": "mesh_cage_1",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage1_wireV12",
+    "entity": "mesh_cage_1",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage1_wireV13",
+    "entity": "mesh_cage_1",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage1_wireV14",
+    "entity": "mesh_cage_1",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage1_wireV15",
+    "entity": "mesh_cage_1",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage1_wireV16",
+    "entity": "mesh_cage_1",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage1_wireV17",
+    "entity": "mesh_cage_1",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage1_wireV18",
+    "entity": "mesh_cage_1",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage1_wireV19",
+    "entity": "mesh_cage_1",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage1_wireV20",
+    "entity": "mesh_cage_1",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage1_wireV21",
+    "entity": "mesh_cage_1",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage1_wireV22",
+    "entity": "mesh_cage_1",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage1_wireV23",
+    "entity": "mesh_cage_1",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage1_wireV24",
+    "entity": "mesh_cage_1",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage1_wireV25",
+    "entity": "mesh_cage_1",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage1_wireV26",
+    "entity": "mesh_cage_1",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage1_wireV27",
+    "entity": "mesh_cage_1",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage1_wireV28",
+    "entity": "mesh_cage_1",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage1_wireV29",
+    "entity": "mesh_cage_1",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage1_wireV30",
+    "entity": "mesh_cage_1",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage1_wireV31",
+    "entity": "mesh_cage_1",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage1_wireV32",
+    "entity": "mesh_cage_1",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage1_wireV33",
+    "entity": "mesh_cage_1",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage1_wireV34",
+    "entity": "mesh_cage_1",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage1_wireV35",
+    "entity": "mesh_cage_1",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage1_wireV36",
+    "entity": "mesh_cage_1",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage1_wireV37",
+    "entity": "mesh_cage_1",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage1_wireV38",
+    "entity": "mesh_cage_1",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage1_wireV39",
+    "entity": "mesh_cage_1",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage1_wireV40",
+    "entity": "mesh_cage_1",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage1_wireV41",
+    "entity": "mesh_cage_1",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage1_wireV42",
+    "entity": "mesh_cage_1",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage1_wireV43",
+    "entity": "mesh_cage_1",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage1_wireV44",
+    "entity": "mesh_cage_1",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage1_wireV45",
+    "entity": "mesh_cage_1",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage1_wireV46",
+    "entity": "mesh_cage_1",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage1_wireV47",
+    "entity": "mesh_cage_1",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage1_wireV48",
+    "entity": "mesh_cage_1",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage1_wireV49",
+    "entity": "mesh_cage_1",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage1_wireV50",
+    "entity": "mesh_cage_1",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage1_wireH0",
+    "entity": "mesh_cage_1",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage1_wireH1",
+    "entity": "mesh_cage_1",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage1_wireH2",
+    "entity": "mesh_cage_1",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage1_wireH3",
+    "entity": "mesh_cage_1",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage1_wireH4",
+    "entity": "mesh_cage_1",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage1_wireH5",
+    "entity": "mesh_cage_1",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage1_wireH6",
+    "entity": "mesh_cage_1",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage1_wireH7",
+    "entity": "mesh_cage_1",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage1_wireH8",
+    "entity": "mesh_cage_1",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage1_wireH9",
+    "entity": "mesh_cage_1",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage1_wireH10",
+    "entity": "mesh_cage_1",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage1_wireH11",
+    "entity": "mesh_cage_1",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage1_wireH12",
+    "entity": "mesh_cage_1",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage1_wireH13",
+    "entity": "mesh_cage_1",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage1_wireH14",
+    "entity": "mesh_cage_1",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage1_wireH15",
+    "entity": "mesh_cage_1",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage1_wireH16",
+    "entity": "mesh_cage_1",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage1_wireH17",
+    "entity": "mesh_cage_1",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage1_wireH18",
+    "entity": "mesh_cage_1",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage1_wireH19",
+    "entity": "mesh_cage_1",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage1_wireH20",
+    "entity": "mesh_cage_1",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage1_wireH21",
+    "entity": "mesh_cage_1",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage1_wireH22",
+    "entity": "mesh_cage_1",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage1_wireH23",
+    "entity": "mesh_cage_1",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage1_wireH24",
+    "entity": "mesh_cage_1",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage1_wireH25",
+    "entity": "mesh_cage_1",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage1_wireH26",
+    "entity": "mesh_cage_1",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage1_wireH27",
+    "entity": "mesh_cage_1",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage1_wireH28",
+    "entity": "mesh_cage_1",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage2_side0",
+    "entity": "mesh_cage_2",
+    "material": "bright_metal",
+    "geometry": "box"
+  },
+  {
+    "component": "cage2_side1",
+    "entity": "mesh_cage_2",
+    "material": "bright_metal",
+    "geometry": "box"
+  },
+  {
+    "component": "cage2_rail0",
+    "entity": "mesh_cage_2",
+    "material": "bright_metal",
+    "geometry": "box"
+  },
+  {
+    "component": "cage2_rail1",
+    "entity": "mesh_cage_2",
+    "material": "bright_metal",
+    "geometry": "box"
+  },
+  {
+    "component": "cage2_wireV0",
+    "entity": "mesh_cage_2",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage2_wireV1",
+    "entity": "mesh_cage_2",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage2_wireV2",
+    "entity": "mesh_cage_2",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage2_wireV3",
+    "entity": "mesh_cage_2",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage2_wireV4",
+    "entity": "mesh_cage_2",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage2_wireV5",
+    "entity": "mesh_cage_2",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage2_wireV6",
+    "entity": "mesh_cage_2",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage2_wireV7",
+    "entity": "mesh_cage_2",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage2_wireV8",
+    "entity": "mesh_cage_2",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage2_wireV9",
+    "entity": "mesh_cage_2",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage2_wireV10",
+    "entity": "mesh_cage_2",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage2_wireV11",
+    "entity": "mesh_cage_2",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage2_wireV12",
+    "entity": "mesh_cage_2",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage2_wireV13",
+    "entity": "mesh_cage_2",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage2_wireV14",
+    "entity": "mesh_cage_2",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage2_wireV15",
+    "entity": "mesh_cage_2",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage2_wireV16",
+    "entity": "mesh_cage_2",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage2_wireV17",
+    "entity": "mesh_cage_2",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage2_wireV18",
+    "entity": "mesh_cage_2",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage2_wireV19",
+    "entity": "mesh_cage_2",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage2_wireV20",
+    "entity": "mesh_cage_2",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage2_wireV21",
+    "entity": "mesh_cage_2",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage2_wireV22",
+    "entity": "mesh_cage_2",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage2_wireV23",
+    "entity": "mesh_cage_2",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage2_wireV24",
+    "entity": "mesh_cage_2",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage2_wireV25",
+    "entity": "mesh_cage_2",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage2_wireV26",
+    "entity": "mesh_cage_2",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage2_wireV27",
+    "entity": "mesh_cage_2",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage2_wireV28",
+    "entity": "mesh_cage_2",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage2_wireV29",
+    "entity": "mesh_cage_2",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage2_wireV30",
+    "entity": "mesh_cage_2",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage2_wireV31",
+    "entity": "mesh_cage_2",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage2_wireV32",
+    "entity": "mesh_cage_2",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage2_wireV33",
+    "entity": "mesh_cage_2",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage2_wireV34",
+    "entity": "mesh_cage_2",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage2_wireV35",
+    "entity": "mesh_cage_2",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage2_wireV36",
+    "entity": "mesh_cage_2",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage2_wireV37",
+    "entity": "mesh_cage_2",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage2_wireV38",
+    "entity": "mesh_cage_2",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage2_wireV39",
+    "entity": "mesh_cage_2",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage2_wireV40",
+    "entity": "mesh_cage_2",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage2_wireV41",
+    "entity": "mesh_cage_2",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage2_wireV42",
+    "entity": "mesh_cage_2",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage2_wireV43",
+    "entity": "mesh_cage_2",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage2_wireV44",
+    "entity": "mesh_cage_2",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage2_wireV45",
+    "entity": "mesh_cage_2",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage2_wireV46",
+    "entity": "mesh_cage_2",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage2_wireV47",
+    "entity": "mesh_cage_2",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage2_wireV48",
+    "entity": "mesh_cage_2",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage2_wireV49",
+    "entity": "mesh_cage_2",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage2_wireV50",
+    "entity": "mesh_cage_2",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage2_wireV51",
+    "entity": "mesh_cage_2",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage2_wireV52",
+    "entity": "mesh_cage_2",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage2_wireV53",
+    "entity": "mesh_cage_2",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage2_wireV54",
+    "entity": "mesh_cage_2",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage2_wireH0",
+    "entity": "mesh_cage_2",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage2_wireH1",
+    "entity": "mesh_cage_2",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage2_wireH2",
+    "entity": "mesh_cage_2",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage2_wireH3",
+    "entity": "mesh_cage_2",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage2_wireH4",
+    "entity": "mesh_cage_2",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage2_wireH5",
+    "entity": "mesh_cage_2",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage2_wireH6",
+    "entity": "mesh_cage_2",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage2_wireH7",
+    "entity": "mesh_cage_2",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage2_wireH8",
+    "entity": "mesh_cage_2",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage2_wireH9",
+    "entity": "mesh_cage_2",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage2_wireH10",
+    "entity": "mesh_cage_2",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage2_wireH11",
+    "entity": "mesh_cage_2",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage2_wireH12",
+    "entity": "mesh_cage_2",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage2_wireH13",
+    "entity": "mesh_cage_2",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage2_wireH14",
+    "entity": "mesh_cage_2",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage2_wireH15",
+    "entity": "mesh_cage_2",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage2_wireH16",
+    "entity": "mesh_cage_2",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage2_wireH17",
+    "entity": "mesh_cage_2",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage2_wireH18",
+    "entity": "mesh_cage_2",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage2_wireH19",
+    "entity": "mesh_cage_2",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage2_wireH20",
+    "entity": "mesh_cage_2",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage2_wireH21",
+    "entity": "mesh_cage_2",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage2_wireH22",
+    "entity": "mesh_cage_2",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage2_wireH23",
+    "entity": "mesh_cage_2",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage2_wireH24",
+    "entity": "mesh_cage_2",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage2_wireH25",
+    "entity": "mesh_cage_2",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage2_wireH26",
+    "entity": "mesh_cage_2",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage2_wireH27",
+    "entity": "mesh_cage_2",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage2_wireH28",
+    "entity": "mesh_cage_2",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "cage_machine",
+    "entity": "cage_machine",
+    "material": "door",
+    "geometry": "box"
+  },
+  {
+    "component": "cage_machine_fan",
+    "entity": "cage_machine_fan",
+    "material": "steel",
+    "geometry": "cylinder"
+  },
+  {
+    "component": "cage_bin0",
+    "entity": "cage_bin0",
+    "material": "rubber",
+    "geometry": "box"
+  },
+  {
+    "component": "cage_bin1",
+    "entity": "cage_bin1",
+    "material": "rubber",
+    "geometry": "box"
+  },
+  {
+    "component": "cage_bin2",
+    "entity": "cage_bin2",
+    "material": "rubber",
+    "geometry": "box"
+  },
+  {
+    "component": "compactor_body",
+    "entity": "compactor_body",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "compactor_hopper",
+    "entity": "compactor_hopper",
+    "material": "steel",
+    "geometry": "custom_mesh"
+  },
+  {
+    "component": "compactor_hopper_Xa",
+    "entity": "compactor_hopper",
+    "material": "bright_metal",
+    "geometry": "box"
+  },
+  {
+    "component": "compactor_hopper_Xb",
+    "entity": "compactor_hopper",
+    "material": "bright_metal",
+    "geometry": "box"
+  },
+  {
+    "component": "compactor_yellow_front",
+    "entity": "compactor_yellow_front",
+    "material": "yellow",
+    "geometry": "box"
+  },
+  {
+    "component": "compactor_arm0",
+    "entity": "compactor_arm0",
+    "material": "yellow",
+    "geometry": "box"
+  },
+  {
+    "component": "compactor_pivot0",
+    "entity": "compactor_pivot0",
+    "material": "steel",
+    "geometry": "cylinder"
+  },
+  {
+    "component": "compactor_foot0",
+    "entity": "compactor_foot0",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "compactor_arm1",
+    "entity": "compactor_arm1",
+    "material": "yellow",
+    "geometry": "box"
+  },
+  {
+    "component": "compactor_pivot1",
+    "entity": "compactor_pivot1",
+    "material": "steel",
+    "geometry": "cylinder"
+  },
+  {
+    "component": "compactor_foot1",
+    "entity": "compactor_foot1",
+    "material": "steel",
+    "geometry": "box"
+  },
+  {
+    "component": "compactor_lower_crossbar",
+    "entity": "compactor_lower_crossbar",
+    "material": "yellow",
+    "geometry": "box"
+  },
+  {
+    "component": "fire_cabinet",
+    "entity": "fire_cabinet",
+    "material": "red",
+    "geometry": "box"
+  },
+  {
+    "component": "extinguisher",
+    "entity": "extinguisher",
+    "material": "red",
+    "geometry": "cylinder"
+  },
+  {
+    "component": "luminaire_-10.0_-5.5",
+    "entity": "luminaire_-10.0_-5.5",
+    "material": "light",
+    "geometry": "box"
+  },
+  {
+    "component": "luminaire_-5.3_-5.5",
+    "entity": "luminaire_-5.3_-5.5",
+    "material": "light",
+    "geometry": "box"
+  },
+  {
+    "component": "luminaire_-0.6_-5.5",
+    "entity": "luminaire_-0.6_-5.5",
+    "material": "light",
+    "geometry": "box"
+  },
+  {
+    "component": "luminaire_4.1_-5.5",
+    "entity": "luminaire_4.1_-5.5",
+    "material": "light",
+    "geometry": "box"
+  },
+  {
+    "component": "luminaire_8.8_-5.5",
+    "entity": "luminaire_8.8_-5.5",
+    "material": "light",
+    "geometry": "box"
+  },
+  {
+    "component": "luminaire_13.0_-5.5",
+    "entity": "luminaire_13.0_-5.5",
+    "material": "light",
+    "geometry": "box"
+  },
+  {
+    "component": "luminaire_-10.0_0.0",
+    "entity": "luminaire_-10.0_0.0",
+    "material": "light",
+    "geometry": "box"
+  },
+  {
+    "component": "luminaire_-5.3_0.0",
+    "entity": "luminaire_-5.3_0.0",
+    "material": "light",
+    "geometry": "box"
+  },
+  {
+    "component": "luminaire_-0.6_0.0",
+    "entity": "luminaire_-0.6_0.0",
+    "material": "light",
+    "geometry": "box"
+  },
+  {
+    "component": "luminaire_4.1_0.0",
+    "entity": "luminaire_4.1_0.0",
+    "material": "light",
+    "geometry": "box"
+  },
+  {
+    "component": "luminaire_8.8_0.0",
+    "entity": "luminaire_8.8_0.0",
+    "material": "light",
+    "geometry": "box"
+  },
+  {
+    "component": "luminaire_13.0_0.0",
+    "entity": "luminaire_13.0_0.0",
+    "material": "light",
+    "geometry": "box"
+  },
+  {
+    "component": "luminaire_-10.0_5.5",
+    "entity": "luminaire_-10.0_5.5",
+    "material": "light",
+    "geometry": "box"
+  },
+  {
+    "component": "luminaire_-5.3_5.5",
+    "entity": "luminaire_-5.3_5.5",
+    "material": "light",
+    "geometry": "box"
+  },
+  {
+    "component": "luminaire_-0.6_5.5",
+    "entity": "luminaire_-0.6_5.5",
+    "material": "light",
+    "geometry": "box"
+  },
+  {
+    "component": "luminaire_4.1_5.5",
+    "entity": "luminaire_4.1_5.5",
+    "material": "light",
+    "geometry": "box"
+  },
+  {
+    "component": "luminaire_8.8_5.5",
+    "entity": "luminaire_8.8_5.5",
+    "material": "light",
+    "geometry": "box"
+  },
+  {
+    "component": "luminaire_13.0_5.5",
+    "entity": "luminaire_13.0_5.5",
+    "material": "light",
+    "geometry": "box"
+  },
+  {
+    "component": "luminaire_-10.0_11.0",
+    "entity": "luminaire_-10.0_11.0",
+    "material": "light",
+    "geometry": "box"
+  },
+  {
+    "component": "luminaire_-5.3_11.0",
+    "entity": "luminaire_-5.3_11.0",
+    "material": "light",
+    "geometry": "box"
+  },
+  {
+    "component": "luminaire_-0.6_11.0",
+    "entity": "luminaire_-0.6_11.0",
+    "material": "light",
+    "geometry": "box"
+  },
+  {
+    "component": "luminaire_4.1_11.0",
+    "entity": "luminaire_4.1_11.0",
+    "material": "light",
+    "geometry": "box"
+  },
+  {
+    "component": "luminaire_8.8_11.0",
+    "entity": "luminaire_8.8_11.0",
+    "material": "light",
+    "geometry": "box"
+  },
+  {
+    "component": "luminaire_13.0_11.0",
+    "entity": "luminaire_13.0_11.0",
+    "material": "light",
+    "geometry": "box"
+  },
+  {
+    "component": "corridor_luminaire_-17",
+    "entity": "corridor_luminaire_-17",
+    "material": "light",
+    "geometry": "box"
+  },
+  {
+    "component": "corridor_luminaire_-22",
+    "entity": "corridor_luminaire_-22",
+    "material": "light",
+    "geometry": "box"
+  },
+  {
+    "component": "corridor_luminaire_-27",
+    "entity": "corridor_luminaire_-27",
+    "material": "light",
+    "geometry": "box"
+  },
+  {
+    "component": "corridor_luminaire_-32",
+    "entity": "corridor_luminaire_-32",
+    "material": "light",
+    "geometry": "box"
+  },
+  {
+    "component": "corridor_luminaire_-37",
+    "entity": "corridor_luminaire_-37",
+    "material": "light",
+    "geometry": "box"
+  },
+  {
+    "component": "corridor_luminaire_-42",
+    "entity": "corridor_luminaire_-42",
+    "material": "light",
+    "geometry": "box"
+  },
+  {
+    "component": "corridor_luminaire_-47",
+    "entity": "corridor_luminaire_-47",
+    "material": "light",
+    "geometry": "box"
+  },
+  {
+    "component": "ceiling_pipe0",
+    "entity": "ceiling_pipe0",
+    "material": "bright_metal",
+    "geometry": "cylinder"
+  },
+  {
+    "component": "ceiling_pipe1",
+    "entity": "ceiling_pipe1",
+    "material": "bright_metal",
+    "geometry": "cylinder"
+  },
+  {
+    "component": "ceiling_pipe2",
+    "entity": "ceiling_pipe2",
+    "material": "bright_metal",
+    "geometry": "cylinder"
+  },
+  {
+    "component": "main_ceiling_pipe0",
+    "entity": "main_ceiling_pipe0",
+    "material": "bright_metal",
+    "geometry": "cylinder"
+  },
+  {
+    "component": "main_ceiling_pipe1",
+    "entity": "main_ceiling_pipe1",
+    "material": "bright_metal",
+    "geometry": "cylinder"
+  },
+  {
+    "component": "main_ceiling_pipe2",
+    "entity": "main_ceiling_pipe2",
+    "material": "bright_metal",
+    "geometry": "cylinder"
+  },
+  {
+    "component": "entry_sign_0_lettering",
+    "entity": "entry_sign_0",
+    "material": "rubber",
+    "geometry": "source_observed_realized_text_mesh"
+  },
+  {
+    "component": "entry_sign_1_lettering",
+    "entity": "entry_sign_1",
+    "material": "rubber",
+    "geometry": "source_observed_realized_text_mesh"
+  },
+  {
+    "component": "entry_sign_2_lettering",
+    "entity": "entry_sign_2",
+    "material": "rubber",
+    "geometry": "source_observed_realized_text_mesh"
+  },
+  {
+    "component": "van_observed_hood_SV",
+    "entity": "white_van",
+    "material": "red",
+    "geometry": "source_observed_realized_text_mesh"
+  }
+]

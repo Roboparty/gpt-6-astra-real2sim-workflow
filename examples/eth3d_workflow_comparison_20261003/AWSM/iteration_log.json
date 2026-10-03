@@ -1,0 +1,87 @@
+[
+  {
+    "version": 1,
+    "action": "fresh measured semantic construction",
+    "reason": "RGB inventory + robust plane fits + labelled interior depth points; mixed-region errors retained",
+    "measurement_files": [
+      "analysis/measurements.json",
+      "analysis/point_measurements.json"
+    ],
+    "geometry_sources": "own input RGB, K/T, frozen DA3 only",
+    "status": "ready_for_independent_review",
+    "paired_checks": 10,
+    "full_input_pass": 1,
+    "source_model_sha256": "77d140a99d58386ad08fe1bab1fe124b2d69684c19fb222d529f75f1ca950735",
+    "checks": [
+      "checks/v1_paired",
+      "checks/v1_all"
+    ],
+    "infrastructure_history": "paired held pending visibility audit, then cleared by identical mesh signatures and retained compatibility receipt",
+    "self_review_notes": "analysis/v1_rgb_notes.json"
+  },
+  {
+    "version": 2,
+    "action": "five independent reviewer repairs",
+    "changes": [
+      {
+        "issue": 1,
+        "change": "cut cab slope face, exterior windshield and separate window borders",
+        "evidence": "review triangle first-hit audit12, RGB12/13; prior glass117.7..146.1mm occluded",
+        "assumption": "same cab shape retained, glazing mount6mm exterior inference"
+      },
+      {
+        "issue": 2,
+        "change": "center_column x-4.36,y1.2,sx0.60,sy0.58; adjacent x-4.32,y0.63,sx0.56,sy0.33, separate contacts/gap",
+        "evidence": "depth points16/17 fronts~-4.04, ybands0.63/1.2; v1frame16 middle signedmedian+0.216m",
+        "assumption": "unseen cross-section depth inferred; far truck column unchanged"
+      },
+      {
+        "issue": 3,
+        "change": "replace vertical walls with open tapered shells top2.3x2.3,bottom2.0x1.4; rim0.13, thickness0.055, independent feet",
+        "evidence": "RGB8/9/12 silhouette, top depthz1.45..1.49 and bottomz0.125..0.183",
+        "assumption": "taper slope hidden side inferred; v1centres retained"
+      },
+      {
+        "issue": 4,
+        "change": "load endpoints shorten/angle/varied, cartcenterx0.4 from0.95, rearposts y-7.72, add connected upper frame",
+        "evidence": "RGB24/28 triangulation retained residual1.3..3px for accepted points and10px rejected; internal depth samples",
+        "assumption": "per-plank interpolation inferred; no camera change"
+      },
+      {
+        "issue": 5,
+        "change": "uniform boxes replaced by irregular ring-surface filled sacks; unequal level occupancy; top layered flat sacks plus separated bulkbag",
+        "evidence": "RGB4/8/9 visible shelf occupancy; beams/uprights unchanged",
+        "assumption": "hidden sacks and exact folds unobservable, approximate"
+      }
+    ],
+    "status": "ready_for_root_freeze",
+    "input_reference_unchanged": true,
+    "camera_gauge_unchanged": true,
+    "paired_checks": 10,
+    "full_input_pass": 2,
+    "model_sha256": "8bf7eaa7bb795118b58c5782d313f071826990bc999cf94d4568c8db508abcd2",
+    "checks": [
+      "checks/v2_paired",
+      "checks/v2_all"
+    ],
+    "derived_residuals": [
+      "signed_absolute_relative_errors.npz",
+      "spatial_residuals.json"
+    ],
+    "actual_source_comparisons_inspected": 10,
+    "independent_review": "technical_freeze_approved_LIMITED",
+    "final_full_input_pass": 3,
+    "final_pass_geometry_unchanged": true,
+    "final_pass_path": "checks/v2_final_all"
+  },
+  {
+    "phase": "final_protocol_bookend",
+    "scene_version": 2,
+    "new_scene_version": false,
+    "new_paired_renders": 0,
+    "full_input_pass": 3,
+    "model_sha256": "8bf7eaa7bb795118b58c5782d313f071826990bc999cf94d4568c8db508abcd2",
+    "reason": "Independent v2 review approved technical freeze as LIMITED. Exactly third36-view input-depth pass repeats unchanged reviewed geometry to close AWSM protocol; no new modelling trial or metric-driven update.",
+    "status": "complete"
+  }
+]

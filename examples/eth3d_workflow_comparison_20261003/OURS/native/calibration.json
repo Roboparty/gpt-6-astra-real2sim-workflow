@@ -1,0 +1,1727 @@
+{
+  "camera_constraints": {
+    "cameras": [
+      {
+        "frame_id": "DSC_0675",
+        "role": "reconstruction",
+        "position": [
+          0.843498276804403,
+          -2.6860399908609054,
+          1.4836155400370055
+        ],
+        "rotation_world_to_cv": [
+          [
+            0.00585477779987108,
+            -0.9998945969911264,
+            -0.013285950657270488
+          ],
+          [
+            0.1727006571983007,
+            0.014097590154393007,
+            -0.9848734644385105
+          ],
+          [
+            0.9849569556991766,
+            0.0034717228852618747,
+            0.17276499228726508
+          ]
+        ],
+        "focal_px": 658.8769329896908,
+        "focal_y_px": 658.6909625151148,
+        "principal_point": [
+          602.0592783505155,
+          398.33722611850067
+        ],
+        "image_size": [
+          1200,
+          799
+        ],
+        "pose_source": "ground_truth",
+        "evidence": [
+          "ETH3D registered reference camera, diagnostic input; no laser geometry/depth exposed"
+        ],
+        "input_index": 0,
+        "source_sha256": "e14725171523ed699d6036f7dbabcae822d432fd529ec526df4e3d326f72d50a",
+        "source_frame": null,
+        "pixel_coordinates": "integer_centers",
+        "processed_sha256": "d9ec972776e2beaeb5cfb6dce6aa3cd4fd6d002d29de98a9aeacbb21f9ddaf3e",
+        "processed_path": "/home/wqz/real2sim_agent_compare_20261003/OURS/native_case/runs/preprocess/0001/frame_00000.png"
+      },
+      {
+        "frame_id": "DSC_0676",
+        "role": "reconstruction",
+        "position": [
+          0.8661134514108774,
+          -1.9547499724992166,
+          1.4888262145260562
+        ],
+        "rotation_world_to_cv": [
+          [
+            0.03827517490393893,
+            -0.9991817788808854,
+            -0.013068425249529423
+          ],
+          [
+            0.16925549285419397,
+            0.019371522378884787,
+            -0.9853818154702312
+          ],
+          [
+            0.9848287105506001,
+            0.03550375857784667,
+            0.1698584528426218
+          ]
+        ],
+        "focal_px": 658.8769329896908,
+        "focal_y_px": 658.6909625151148,
+        "principal_point": [
+          602.0592783505155,
+          398.33722611850067
+        ],
+        "image_size": [
+          1200,
+          799
+        ],
+        "pose_source": "ground_truth",
+        "evidence": [
+          "ETH3D registered reference camera, diagnostic input; no laser geometry/depth exposed"
+        ],
+        "input_index": 1,
+        "source_sha256": "bcd637e9db0cb5d9bfaf855ca7848117386fd42ea11671ae8903177e87e36e78",
+        "source_frame": null,
+        "pixel_coordinates": "integer_centers",
+        "processed_sha256": "8355f88f2e091b36dd5c645c0bdc9e70dead0c93a427f64c898d6421958fb1ea",
+        "processed_path": "/home/wqz/real2sim_agent_compare_20261003/OURS/native_case/runs/preprocess/0001/frame_00001.png"
+      },
+      {
+        "frame_id": "DSC_0677",
+        "role": "reconstruction",
+        "position": [
+          0.8810873155755812,
+          -1.256720637235811,
+          1.4940815393178706
+        ],
+        "rotation_world_to_cv": [
+          [
+            0.05185088107981125,
+            -0.9986072773640855,
+            -0.009746369926053306
+          ],
+          [
+            0.16727520904627916,
+            0.018306251853711823,
+            -0.985740272882057
+          ],
+          [
+            0.9845458295934076,
+            0.049481175597965305,
+            0.16799143636409705
+          ]
+        ],
+        "focal_px": 658.8769329896908,
+        "focal_y_px": 658.6909625151148,
+        "principal_point": [
+          602.0592783505155,
+          398.33722611850067
+        ],
+        "image_size": [
+          1200,
+          799
+        ],
+        "pose_source": "ground_truth",
+        "evidence": [
+          "ETH3D registered reference camera, diagnostic input; no laser geometry/depth exposed"
+        ],
+        "input_index": 2,
+        "source_sha256": "c82e19bf07b5c3059ab3ac1fc84d2b3b27efbbef0351115e2eb03d27a1433efb",
+        "source_frame": null,
+        "pixel_coordinates": "integer_centers",
+        "processed_sha256": "ef161e917c4bc4fc5afe11b45496d69121c5dbe03da9f6fa99daa888783053f8",
+        "processed_path": "/home/wqz/real2sim_agent_compare_20261003/OURS/native_case/runs/preprocess/0001/frame_00002.png"
+      },
+      {
+        "frame_id": "DSC_0678",
+        "role": "reconstruction",
+        "position": [
+          0.8612561259659143,
+          -0.5365452382425964,
+          1.5006390460289578
+        ],
+        "rotation_world_to_cv": [
+          [
+            0.08713926229227371,
+            -0.9961019267471676,
+            -0.013700383123800413
+          ],
+          [
+            0.16481998817022983,
+            0.0279789302693504,
+            -0.9859267472589168
+          ],
+          [
+            0.9824668546402591,
+            0.0836548324459706,
+            0.16661557112620945
+          ]
+        ],
+        "focal_px": 658.8769329896908,
+        "focal_y_px": 658.6909625151148,
+        "principal_point": [
+          602.0592783505155,
+          398.33722611850067
+        ],
+        "image_size": [
+          1200,
+          799
+        ],
+        "pose_source": "ground_truth",
+        "evidence": [
+          "ETH3D registered reference camera, diagnostic input; no laser geometry/depth exposed"
+        ],
+        "input_index": 3,
+        "source_sha256": "e3fdb5210f4b395d68041aef629c61047fc7e635eb95d4fbcb2fdaf5678dff78",
+        "source_frame": null,
+        "pixel_coordinates": "integer_centers",
+        "processed_sha256": "3e016ef54518a930c8aa284f1b9bef683de6b55467983bb74b62545f93b34a50",
+        "processed_path": "/home/wqz/real2sim_agent_compare_20261003/OURS/native_case/runs/preprocess/0001/frame_00003.png"
+      },
+      {
+        "frame_id": "DSC_0680",
+        "role": "reconstruction",
+        "position": [
+          0.8769719395415073,
+          0.8961633152354033,
+          1.5106379401224526
+        ],
+        "rotation_world_to_cv": [
+          [
+            0.02322536970795471,
+            -0.9997040942572752,
+            -0.0072322975028108
+          ],
+          [
+            0.169652713190248,
+            0.011070530571535259,
+            -0.9854417284954254
+          ],
+          [
+            0.9852301959994507,
+            0.02166026957600131,
+            0.16985962914353336
+          ]
+        ],
+        "focal_px": 658.8769329896908,
+        "focal_y_px": 658.6909625151148,
+        "principal_point": [
+          602.0592783505155,
+          398.33722611850067
+        ],
+        "image_size": [
+          1200,
+          799
+        ],
+        "pose_source": "ground_truth",
+        "evidence": [
+          "ETH3D registered reference camera, diagnostic input; no laser geometry/depth exposed"
+        ],
+        "input_index": 4,
+        "source_sha256": "dde0b1e3a680c28aaeb9e1d464f72f714bc45eeaa74b58fed6b412e8fad18c65",
+        "source_frame": null,
+        "pixel_coordinates": "integer_centers",
+        "processed_sha256": "cd560025d0b5c026a7ef0944d4b0da6b7540e13adf4054bc287cb16d062a60d8",
+        "processed_path": "/home/wqz/real2sim_agent_compare_20261003/OURS/native_case/runs/preprocess/0001/frame_00004.png"
+      },
+      {
+        "frame_id": "DSC_0681",
+        "role": "reconstruction",
+        "position": [
+          0.8656507684444071,
+          1.4322192772851763,
+          1.5128515717917612
+        ],
+        "rotation_world_to_cv": [
+          [
+            0.0804707488276931,
+            -0.9966820245254941,
+            -0.01222295262495149
+          ],
+          [
+            0.16548381734465717,
+            0.02545146789111545,
+            -0.9858840342450158
+          ],
+          [
+            0.982923987284953,
+            0.07731212563336363,
+            0.16698284477724212
+          ]
+        ],
+        "focal_px": 658.8769329896908,
+        "focal_y_px": 658.6909625151148,
+        "principal_point": [
+          602.0592783505155,
+          398.33722611850067
+        ],
+        "image_size": [
+          1200,
+          799
+        ],
+        "pose_source": "ground_truth",
+        "evidence": [
+          "ETH3D registered reference camera, diagnostic input; no laser geometry/depth exposed"
+        ],
+        "input_index": 5,
+        "source_sha256": "41f65e5ed0ad177869f7ca24f837293fabb8807b3041b4ad7998368ab7707620",
+        "source_frame": null,
+        "pixel_coordinates": "integer_centers",
+        "processed_sha256": "90cf8d9e12531db7f1d3aaa3f03ce246c853e672669f3604ee7d438718f033e2",
+        "processed_path": "/home/wqz/real2sim_agent_compare_20261003/OURS/native_case/runs/preprocess/0001/frame_00005.png"
+      },
+      {
+        "frame_id": "DSC_0682",
+        "role": "reconstruction",
+        "position": [
+          0.8972260831590572,
+          2.191135336033953,
+          1.512220800843472
+        ],
+        "rotation_world_to_cv": [
+          [
+            0.32582407338397745,
+            -0.9454115755792724,
+            -0.005968748963579645
+          ],
+          [
+            0.1560935381123907,
+            0.0600201278873176,
+            -0.985917030793132
+          ],
+          [
+            0.9324556185486942,
+            0.3203038198478247,
+            0.16712864035785174
+          ]
+        ],
+        "focal_px": 658.8769329896908,
+        "focal_y_px": 658.6909625151148,
+        "principal_point": [
+          602.0592783505155,
+          398.33722611850067
+        ],
+        "image_size": [
+          1200,
+          799
+        ],
+        "pose_source": "ground_truth",
+        "evidence": [
+          "ETH3D registered reference camera, diagnostic input; no laser geometry/depth exposed"
+        ],
+        "input_index": 6,
+        "source_sha256": "3ea6a5ff48323669490de2caee6db0378e3388b6344b669ee8139d5f7b3a32ce",
+        "source_frame": null,
+        "pixel_coordinates": "integer_centers",
+        "processed_sha256": "d714205af7b59da2dc1658ee8b8f0d24bd74273f7ff462f88a6919b8b03e8393",
+        "processed_path": "/home/wqz/real2sim_agent_compare_20261003/OURS/native_case/runs/preprocess/0001/frame_00006.png"
+      },
+      {
+        "frame_id": "DSC_0683",
+        "role": "reconstruction",
+        "position": [
+          0.9554433594972642,
+          3.085565247842603,
+          1.5122111086815955
+        ],
+        "rotation_world_to_cv": [
+          [
+            0.3450208279480706,
+            -0.9385558089228092,
+            -0.008580315802982344
+          ],
+          [
+            0.15605234473024618,
+            0.0663757527291956,
+            -0.9855160704695917
+          ],
+          [
+            0.9255313576460932,
+            0.33868459218996616,
+            0.16936485180490066
+          ]
+        ],
+        "focal_px": 658.8769329896908,
+        "focal_y_px": 658.6909625151148,
+        "principal_point": [
+          602.0592783505155,
+          398.33722611850067
+        ],
+        "image_size": [
+          1200,
+          799
+        ],
+        "pose_source": "ground_truth",
+        "evidence": [
+          "ETH3D registered reference camera, diagnostic input; no laser geometry/depth exposed"
+        ],
+        "input_index": 7,
+        "source_sha256": "4cce2504a70458f522d1fcd476a376b0a9f30c6d7ee9145a05c9f41ca8cd625b",
+        "source_frame": null,
+        "pixel_coordinates": "integer_centers",
+        "processed_sha256": "a90ed8afa3a5daebc53076f82931c1cdb9a059af595f19ea11ecc919675594b8",
+        "processed_path": "/home/wqz/real2sim_agent_compare_20261003/OURS/native_case/runs/preprocess/0001/frame_00007.png"
+      },
+      {
+        "frame_id": "DSC_0685",
+        "role": "reconstruction",
+        "position": [
+          0.8339315854491556,
+          4.439637243688995,
+          1.5002293086887837
+        ],
+        "rotation_world_to_cv": [
+          [
+            0.7521454996350339,
+            -0.6588963639795993,
+            -0.01152080349752111
+          ],
+          [
+            -0.04585475274983277,
+            -0.034888312123620445,
+            -0.9983386936943875
+          ],
+          [
+            0.6573997939070385,
+            0.7514242391696105,
+            -0.05645461681169191
+          ]
+        ],
+        "focal_px": 658.8769329896908,
+        "focal_y_px": 658.6909625151148,
+        "principal_point": [
+          602.0592783505155,
+          398.33722611850067
+        ],
+        "image_size": [
+          1200,
+          799
+        ],
+        "pose_source": "ground_truth",
+        "evidence": [
+          "ETH3D registered reference camera, diagnostic input; no laser geometry/depth exposed"
+        ],
+        "input_index": 8,
+        "source_sha256": "9684fbf04b95fe4465757e269bb3bb6a4924c406ac7511acbf1e825597b4962b",
+        "source_frame": null,
+        "pixel_coordinates": "integer_centers",
+        "processed_sha256": "c3e2befc67cea7e27e24b491f68c292efbaa78b0849856423324874dd34999d2",
+        "processed_path": "/home/wqz/real2sim_agent_compare_20261003/OURS/native_case/runs/preprocess/0001/frame_00008.png"
+      },
+      {
+        "frame_id": "DSC_0686",
+        "role": "reconstruction",
+        "position": [
+          0.4361066879382546,
+          4.7552322655781545,
+          1.4984775642866812
+        ],
+        "rotation_world_to_cv": [
+          [
+            0.8873097828726318,
+            -0.4610930411510355,
+            -0.00863461757185554
+          ],
+          [
+            -0.03329606460081246,
+            -0.04537694386385412,
+            -0.9984148962468833
+          ],
+          [
+            0.45997034828412725,
+            0.886190803590099,
+            -0.055615989892409984
+          ]
+        ],
+        "focal_px": 658.8769329896908,
+        "focal_y_px": 658.6909625151148,
+        "principal_point": [
+          602.0592783505155,
+          398.33722611850067
+        ],
+        "image_size": [
+          1200,
+          799
+        ],
+        "pose_source": "ground_truth",
+        "evidence": [
+          "ETH3D registered reference camera, diagnostic input; no laser geometry/depth exposed"
+        ],
+        "input_index": 9,
+        "source_sha256": "41315267c887821ef94034b2470e650c240284c304c1bd7a37e2f1a1060f1856",
+        "source_frame": null,
+        "pixel_coordinates": "integer_centers",
+        "processed_sha256": "ba9bab88f5bc620a13388b1dc613f5d8fbbe88c35c22d179578dce8ebbb3b468",
+        "processed_path": "/home/wqz/real2sim_agent_compare_20261003/OURS/native_case/runs/preprocess/0001/frame_00009.png"
+      },
+      {
+        "frame_id": "DSC_0687",
+        "role": "reconstruction",
+        "position": [
+          -0.09854675454289441,
+          4.834723333098589,
+          1.4986299959382796
+        ],
+        "rotation_world_to_cv": [
+          [
+            0.9504329898338398,
+            -0.3109292871665091,
+            0.000331990414532264
+          ],
+          [
+            -0.017897231936261193,
+            -0.05577326027404627,
+            -0.9982830422918261
+          ],
+          [
+            0.31041395091800966,
+            0.9487951948763919,
+            -0.05857352008323821
+          ]
+        ],
+        "focal_px": 658.8769329896908,
+        "focal_y_px": 658.6909625151148,
+        "principal_point": [
+          602.0592783505155,
+          398.33722611850067
+        ],
+        "image_size": [
+          1200,
+          799
+        ],
+        "pose_source": "ground_truth",
+        "evidence": [
+          "ETH3D registered reference camera, diagnostic input; no laser geometry/depth exposed"
+        ],
+        "input_index": 10,
+        "source_sha256": "9950ab16a0500d5b7ea2af03243aa1f7c857b8a6713357723b15f718b257a955",
+        "source_frame": null,
+        "pixel_coordinates": "integer_centers",
+        "processed_sha256": "2d857e2097b9080a6541d40b824b0a4803a0f49ceb54556890feb6543eb0b541",
+        "processed_path": "/home/wqz/real2sim_agent_compare_20261003/OURS/native_case/runs/preprocess/0001/frame_00010.png"
+      },
+      {
+        "frame_id": "DSC_0688",
+        "role": "reconstruction",
+        "position": [
+          -0.6757121584706566,
+          4.702456599599199,
+          1.4967844932014027
+        ],
+        "rotation_world_to_cv": [
+          [
+            0.9405619722064427,
+            -0.3396187071873389,
+            0.001519923526970341
+          ],
+          [
+            -0.018414126630220393,
+            -0.055465004015090844,
+            -0.998290815980019
+          ],
+          [
+            0.33912253888465366,
+            0.9389263906494516,
+            -0.05842205544501147
+          ]
+        ],
+        "focal_px": 658.8769329896908,
+        "focal_y_px": 658.6909625151148,
+        "principal_point": [
+          602.0592783505155,
+          398.33722611850067
+        ],
+        "image_size": [
+          1200,
+          799
+        ],
+        "pose_source": "ground_truth",
+        "evidence": [
+          "ETH3D registered reference camera, diagnostic input; no laser geometry/depth exposed"
+        ],
+        "input_index": 11,
+        "source_sha256": "c1139b0cc408999f938f7e24f3ff4e917e96d7d28a49644f72b8ba0b4b1f61ab",
+        "source_frame": null,
+        "pixel_coordinates": "integer_centers",
+        "processed_sha256": "00d8190339dd3d4c80b364ee5b2c64a10c1eb54063e7a16cf289d76e6d038cf7",
+        "processed_path": "/home/wqz/real2sim_agent_compare_20261003/OURS/native_case/runs/preprocess/0001/frame_00011.png"
+      },
+      {
+        "frame_id": "DSC_0690",
+        "role": "reconstruction",
+        "position": [
+          -1.5363870179122443,
+          4.590750537623682,
+          1.4925207012236177
+        ],
+        "rotation_world_to_cv": [
+          [
+            0.9724781142514636,
+            0.2329834521064479,
+            -0.0022423974847119938
+          ],
+          [
+            0.011283009898755797,
+            -0.056704141966275316,
+            -0.9983272679695235
+          ],
+          [
+            -0.23272088644885644,
+            0.970826117967801,
+            -0.05777229164597395
+          ]
+        ],
+        "focal_px": 658.8769329896908,
+        "focal_y_px": 658.6909625151148,
+        "principal_point": [
+          602.0592783505155,
+          398.33722611850067
+        ],
+        "image_size": [
+          1200,
+          799
+        ],
+        "pose_source": "ground_truth",
+        "evidence": [
+          "ETH3D registered reference camera, diagnostic input; no laser geometry/depth exposed"
+        ],
+        "input_index": 12,
+        "source_sha256": "61316c7eccdcc97ca0305888d2d4c83ee57f8edba74d77b777f7d228b8531e4f",
+        "source_frame": null,
+        "pixel_coordinates": "integer_centers",
+        "processed_sha256": "5a49841813a516532d2e42521cfaa516d5adcafa3ed950dd3f018c461e349dc1",
+        "processed_path": "/home/wqz/real2sim_agent_compare_20261003/OURS/native_case/runs/preprocess/0001/frame_00012.png"
+      },
+      {
+        "frame_id": "DSC_0691",
+        "role": "reconstruction",
+        "position": [
+          -1.9330158322355244,
+          4.380827074885193,
+          1.491638664641735
+        ],
+        "rotation_world_to_cv": [
+          [
+            0.8218166262019425,
+            0.5697445944339772,
+            -0.002920618311238424
+          ],
+          [
+            0.030100502864922975,
+            -0.04853568640132826,
+            -0.9983677913839324
+          ],
+          [
+            -0.5689564066124362,
+            0.820387337943983,
+            -0.05703703284576939
+          ]
+        ],
+        "focal_px": 658.8769329896908,
+        "focal_y_px": 658.6909625151148,
+        "principal_point": [
+          602.0592783505155,
+          398.33722611850067
+        ],
+        "image_size": [
+          1200,
+          799
+        ],
+        "pose_source": "ground_truth",
+        "evidence": [
+          "ETH3D registered reference camera, diagnostic input; no laser geometry/depth exposed"
+        ],
+        "input_index": 13,
+        "source_sha256": "9e08342c9cf69273bb9b0f3cc809c2e24373a047aaa448318f93d8fbd7085048",
+        "source_frame": null,
+        "pixel_coordinates": "integer_centers",
+        "processed_sha256": "907084a596e7bd325f2a5b202ec1086b96b8bd93d9f29ba0926f360625a91e78",
+        "processed_path": "/home/wqz/real2sim_agent_compare_20261003/OURS/native_case/runs/preprocess/0001/frame_00013.png"
+      },
+      {
+        "frame_id": "DSC_0692",
+        "role": "reconstruction",
+        "position": [
+          -2.1491727473949096,
+          3.8681483577235904,
+          1.4924636507426081
+        ],
+        "rotation_world_to_cv": [
+          [
+            0.5713508737585423,
+            0.8206787243402135,
+            -0.006679107026371949
+          ],
+          [
+            0.04709801846048284,
+            -0.0409119790387678,
+            -0.998052096149408
+          ],
+          [
+            -0.819353376579633,
+            0.5699233644854815,
+            -0.062027436680092016
+          ]
+        ],
+        "focal_px": 658.8769329896908,
+        "focal_y_px": 658.6909625151148,
+        "principal_point": [
+          602.0592783505155,
+          398.33722611850067
+        ],
+        "image_size": [
+          1200,
+          799
+        ],
+        "pose_source": "ground_truth",
+        "evidence": [
+          "ETH3D registered reference camera, diagnostic input; no laser geometry/depth exposed"
+        ],
+        "input_index": 14,
+        "source_sha256": "2b64b82222e4c0ed01eaa8019b89970acb9e8a8db02aa833af3391d7a5100294",
+        "source_frame": null,
+        "pixel_coordinates": "integer_centers",
+        "processed_sha256": "0abe3cea19b578bbc617af5119862ddd6b5e0af66f9dcadf38efe04c9d567cff",
+        "processed_path": "/home/wqz/real2sim_agent_compare_20261003/OURS/native_case/runs/preprocess/0001/frame_00014.png"
+      },
+      {
+        "frame_id": "DSC_0693",
+        "role": "reconstruction",
+        "position": [
+          -2.0294481969180618,
+          3.1700487411381792,
+          1.4925277872106246
+        ],
+        "rotation_world_to_cv": [
+          [
+            0.21775715664840675,
+            0.9760021428582749,
+            -0.0012797907863787196
+          ],
+          [
+            0.05752152562309013,
+            -0.014142661010681809,
+            -0.998244088001291
+          ],
+          [
+            -0.9743064686321209,
+            0.21730117872573212,
+            -0.05922079791774155
+          ]
+        ],
+        "focal_px": 658.8769329896908,
+        "focal_y_px": 658.6909625151148,
+        "principal_point": [
+          602.0592783505155,
+          398.33722611850067
+        ],
+        "image_size": [
+          1200,
+          799
+        ],
+        "pose_source": "ground_truth",
+        "evidence": [
+          "ETH3D registered reference camera, diagnostic input; no laser geometry/depth exposed"
+        ],
+        "input_index": 15,
+        "source_sha256": "52081c3fcc23b585402651a841a5b32d812f5ba5cba4ce72ce60b155ecbd4fd9",
+        "source_frame": null,
+        "pixel_coordinates": "integer_centers",
+        "processed_sha256": "f3f66569e8be70581f0956906fe5aa2b7fe230d18305d0de93f95c8c0819e7c4",
+        "processed_path": "/home/wqz/real2sim_agent_compare_20261003/OURS/native_case/runs/preprocess/0001/frame_00015.png"
+      },
+      {
+        "frame_id": "DSC_0695",
+        "role": "reconstruction",
+        "position": [
+          -1.8259370304933924,
+          1.918451151560263,
+          1.489895184999616
+        ],
+        "rotation_world_to_cv": [
+          [
+            -0.11865592668406003,
+            0.9929130605138525,
+            -0.0066652324611644765
+          ],
+          [
+            0.060072063184419024,
+            0.0004781000169150507,
+            -0.9981939283752135
+          ],
+          [
+            -0.9911166017616264,
+            -0.11884201984730906,
+            -0.059703065508377666
+          ]
+        ],
+        "focal_px": 658.8769329896908,
+        "focal_y_px": 658.6909625151148,
+        "principal_point": [
+          602.0592783505155,
+          398.33722611850067
+        ],
+        "image_size": [
+          1200,
+          799
+        ],
+        "pose_source": "ground_truth",
+        "evidence": [
+          "ETH3D registered reference camera, diagnostic input; no laser geometry/depth exposed"
+        ],
+        "input_index": 16,
+        "source_sha256": "eaf34c6a5e2d1388eddf2d7d6875a475b959cf05a7e0fc6add7bb13b9b971da6",
+        "source_frame": null,
+        "pixel_coordinates": "integer_centers",
+        "processed_sha256": "3aa201a6d06b75783b06ff278d6d8ffedba5d33a441c544e767474a14be5d8e2",
+        "processed_path": "/home/wqz/real2sim_agent_compare_20261003/OURS/native_case/runs/preprocess/0001/frame_00016.png"
+      },
+      {
+        "frame_id": "DSC_0696",
+        "role": "reconstruction",
+        "position": [
+          -1.6442976173157844,
+          1.1566532948361297,
+          1.4890520856185077
+        ],
+        "rotation_world_to_cv": [
+          [
+            -0.1523273228542348,
+            0.9882991863521214,
+            -0.00781696666209047
+          ],
+          [
+            0.06064376587766566,
+            0.0014521224506320836,
+            -0.9981584167859144
+          ],
+          [
+            -0.9864677999672552,
+            -0.15252084970954927,
+            -0.06015538239958692
+          ]
+        ],
+        "focal_px": 658.8769329896908,
+        "focal_y_px": 658.6909625151148,
+        "principal_point": [
+          602.0592783505155,
+          398.33722611850067
+        ],
+        "image_size": [
+          1200,
+          799
+        ],
+        "pose_source": "ground_truth",
+        "evidence": [
+          "ETH3D registered reference camera, diagnostic input; no laser geometry/depth exposed"
+        ],
+        "input_index": 17,
+        "source_sha256": "1235090c5e37154e47a896055d0a00c99a3d1b89ca469dcfc3d099ce597488e7",
+        "source_frame": null,
+        "pixel_coordinates": "integer_centers",
+        "processed_sha256": "1763a8764a10b8c0226d734e30d0c3e299bec153511df79781030c56d71fd3e5",
+        "processed_path": "/home/wqz/real2sim_agent_compare_20261003/OURS/native_case/runs/preprocess/0001/frame_00017.png"
+      },
+      {
+        "frame_id": "DSC_0697",
+        "role": "reconstruction",
+        "position": [
+          -1.527897773357607,
+          0.40419734102549193,
+          1.485447530410955
+        ],
+        "rotation_world_to_cv": [
+          [
+            -0.3031856174138526,
+            0.9529295013557232,
+            -0.0019613361041855015
+          ],
+          [
+            0.05929648413661359,
+            0.0168115624884554,
+            -0.9980988419669333
+          ],
+          [
+            -0.9510848586547983,
+            -0.30272551397698433,
+            -0.0616023930132047
+          ]
+        ],
+        "focal_px": 658.8769329896908,
+        "focal_y_px": 658.6909625151148,
+        "principal_point": [
+          602.0592783505155,
+          398.33722611850067
+        ],
+        "image_size": [
+          1200,
+          799
+        ],
+        "pose_source": "ground_truth",
+        "evidence": [
+          "ETH3D registered reference camera, diagnostic input; no laser geometry/depth exposed"
+        ],
+        "input_index": 18,
+        "source_sha256": "6128fc349db933c11fb0dcb8b0a33e44d324e1a16c46d8a76b4a5a4e5544267c",
+        "source_frame": null,
+        "pixel_coordinates": "integer_centers",
+        "processed_sha256": "b2716a13e71b9d815e4b1e5716653c0812627265c7c737979456d6954f79f2a8",
+        "processed_path": "/home/wqz/real2sim_agent_compare_20261003/OURS/native_case/runs/preprocess/0001/frame_00018.png"
+      },
+      {
+        "frame_id": "DSC_0698",
+        "role": "reconstruction",
+        "position": [
+          -1.3729977211215159,
+          -0.3884462828528829,
+          1.482363780129783
+        ],
+        "rotation_world_to_cv": [
+          [
+            -0.1247716324659058,
+            0.9921847503673954,
+            -0.0012086646273648857
+          ],
+          [
+            0.059733395311565934,
+            0.006295753734213522,
+            -0.9981945125923453
+          ],
+          [
+            -0.9903857638396993,
+            -0.12461855649664152,
+            -0.06005209538682414
+          ]
+        ],
+        "focal_px": 658.8769329896908,
+        "focal_y_px": 658.6909625151148,
+        "principal_point": [
+          602.0592783505155,
+          398.33722611850067
+        ],
+        "image_size": [
+          1200,
+          799
+        ],
+        "pose_source": "ground_truth",
+        "evidence": [
+          "ETH3D registered reference camera, diagnostic input; no laser geometry/depth exposed"
+        ],
+        "input_index": 19,
+        "source_sha256": "704da47cb748b67c070d85196a90080ad7692e6d3f6da4e613462f2c23424e01",
+        "source_frame": null,
+        "pixel_coordinates": "integer_centers",
+        "processed_sha256": "e4f7d8d6029c512b3b38bf19e6fcc41c429ce903e1e07892585f275c069a1afb",
+        "processed_path": "/home/wqz/real2sim_agent_compare_20261003/OURS/native_case/runs/preprocess/0001/frame_00019.png"
+      },
+      {
+        "frame_id": "DSC_0700",
+        "role": "reconstruction",
+        "position": [
+          -1.3432615869519124,
+          -1.7780679374621255,
+          1.473856645127541
+        ],
+        "rotation_world_to_cv": [
+          [
+            -0.21128093290651404,
+            0.9774253767774638,
+            1.4885774739043092e-05
+          ],
+          [
+            0.05294951037600852,
+            0.011460809315106502,
+            -0.9985314212386028
+          ],
+          [
+            -0.9759901212313036,
+            -0.2109698620212753,
+            -0.05417564561341167
+          ]
+        ],
+        "focal_px": 658.8769329896908,
+        "focal_y_px": 658.6909625151148,
+        "principal_point": [
+          602.0592783505155,
+          398.33722611850067
+        ],
+        "image_size": [
+          1200,
+          799
+        ],
+        "pose_source": "ground_truth",
+        "evidence": [
+          "ETH3D registered reference camera, diagnostic input; no laser geometry/depth exposed"
+        ],
+        "input_index": 20,
+        "source_sha256": "351bcfa6c3f8226bba97c423b63322b4231ad874f07a3bb3d5e77849805fa1a5",
+        "source_frame": null,
+        "pixel_coordinates": "integer_centers",
+        "processed_sha256": "846f481b266fc7b40c8710c91f54582a142106cb0a9862e6d5dc4a7bc08c0b07",
+        "processed_path": "/home/wqz/real2sim_agent_compare_20261003/OURS/native_case/runs/preprocess/0001/frame_00020.png"
+      },
+      {
+        "frame_id": "DSC_0701",
+        "role": "reconstruction",
+        "position": [
+          -1.0732419421267685,
+          -2.528182075739537,
+          1.467512491458745
+        ],
+        "rotation_world_to_cv": [
+          [
+            -0.43072639862988255,
+            0.9024808797305138,
+            0.0017410468602920368
+          ],
+          [
+            0.05518979556230475,
+            0.028265860299035106,
+            -0.9980757123622168
+          ],
+          [
+            -0.9007934591176399,
+            -0.4298014691254483,
+            -0.06198258746199472
+          ]
+        ],
+        "focal_px": 658.8769329896908,
+        "focal_y_px": 658.6909625151148,
+        "principal_point": [
+          602.0592783505155,
+          398.33722611850067
+        ],
+        "image_size": [
+          1200,
+          799
+        ],
+        "pose_source": "ground_truth",
+        "evidence": [
+          "ETH3D registered reference camera, diagnostic input; no laser geometry/depth exposed"
+        ],
+        "input_index": 21,
+        "source_sha256": "2d21e9dbb56f8773ebee5659cd763a5185e4d60ec3a2724a5bf10b4f6ed46590",
+        "source_frame": null,
+        "pixel_coordinates": "integer_centers",
+        "processed_sha256": "a256276fc1a61d874b4c794462233a4e9e1bcffc41c0506569264630ff7a873b",
+        "processed_path": "/home/wqz/real2sim_agent_compare_20261003/OURS/native_case/runs/preprocess/0001/frame_00021.png"
+      },
+      {
+        "frame_id": "DSC_0702",
+        "role": "reconstruction",
+        "position": [
+          -0.84437562306953,
+          -3.160663479632954,
+          1.462522814230178
+        ],
+        "rotation_world_to_cv": [
+          [
+            -0.4579640709218179,
+            0.8889662902603359,
+            0.0028008080070855783
+          ],
+          [
+            0.04972941700861773,
+            0.028764272429987543,
+            -0.9983484370276525
+          ],
+          [
+            -0.8875786696562168,
+            -0.45706843187027235,
+            -0.05738077865410145
+          ]
+        ],
+        "focal_px": 658.8769329896908,
+        "focal_y_px": 658.6909625151148,
+        "principal_point": [
+          602.0592783505155,
+          398.33722611850067
+        ],
+        "image_size": [
+          1200,
+          799
+        ],
+        "pose_source": "ground_truth",
+        "evidence": [
+          "ETH3D registered reference camera, diagnostic input; no laser geometry/depth exposed"
+        ],
+        "input_index": 22,
+        "source_sha256": "fe09a82412c568d6bbc59388cd11424bce114af910163ddfaf327f3254fffcc3",
+        "source_frame": null,
+        "pixel_coordinates": "integer_centers",
+        "processed_sha256": "b8da6d9499f19ea31ca21f9e6812ae21de0a5155e07d4ee3bcf856390e832ab7",
+        "processed_path": "/home/wqz/real2sim_agent_compare_20261003/OURS/native_case/runs/preprocess/0001/frame_00022.png"
+      },
+      {
+        "frame_id": "DSC_0703",
+        "role": "reconstruction",
+        "position": [
+          -0.29561293009726275,
+          -3.132639768284056,
+          1.464426988055485
+        ],
+        "rotation_world_to_cv": [
+          [
+            -0.8691744174498334,
+            0.4945033121509905,
+            -0.0015186581060382327
+          ],
+          [
+            0.032020328848537824,
+            0.0532160729242615,
+            -0.9980695106669432
+          ],
+          [
+            -0.49346786176120383,
+            -0.8675451134403442,
+            -0.06208820785467867
+          ]
+        ],
+        "focal_px": 658.8769329896908,
+        "focal_y_px": 658.6909625151148,
+        "principal_point": [
+          602.0592783505155,
+          398.33722611850067
+        ],
+        "image_size": [
+          1200,
+          799
+        ],
+        "pose_source": "ground_truth",
+        "evidence": [
+          "ETH3D registered reference camera, diagnostic input; no laser geometry/depth exposed"
+        ],
+        "input_index": 23,
+        "source_sha256": "4bf4471169f97fab050445862c22b7de214d456fdbc0f555d418b21bfd82b384",
+        "source_frame": null,
+        "pixel_coordinates": "integer_centers",
+        "processed_sha256": "7aebc9faed88f2d50acdc632061fea35ae39f6509152ac56e243652b32a76d6c",
+        "processed_path": "/home/wqz/real2sim_agent_compare_20261003/OURS/native_case/runs/preprocess/0001/frame_00023.png"
+      },
+      {
+        "frame_id": "DSC_0705",
+        "role": "reconstruction",
+        "position": [
+          1.0846552815197732,
+          -3.136275617456092,
+          1.4651920213623952
+        ],
+        "rotation_world_to_cv": [
+          [
+            -0.9996152793561153,
+            0.023022971208612172,
+            -0.015467258144979141
+          ],
+          [
+            0.016899666902127023,
+            0.06338099599070847,
+            -0.9978463061042132
+          ],
+          [
+            -0.021993056549583136,
+            -0.99772380554137,
+            -0.06374569255764367
+          ]
+        ],
+        "focal_px": 658.8769329896908,
+        "focal_y_px": 658.6909625151148,
+        "principal_point": [
+          602.0592783505155,
+          398.33722611850067
+        ],
+        "image_size": [
+          1200,
+          799
+        ],
+        "pose_source": "ground_truth",
+        "evidence": [
+          "ETH3D registered reference camera, diagnostic input; no laser geometry/depth exposed"
+        ],
+        "input_index": 24,
+        "source_sha256": "e65e9f1e77619f0811a2f0ae8611f0c0ad56070e2e32a8c8b582778f68a60591",
+        "source_frame": null,
+        "pixel_coordinates": "integer_centers",
+        "processed_sha256": "24f905a57dd56b30a98c20951f5ef8f7c9b33f3c4cf7610dedbbde36e2785773",
+        "processed_path": "/home/wqz/real2sim_agent_compare_20261003/OURS/native_case/runs/preprocess/0001/frame_00024.png"
+      },
+      {
+        "frame_id": "DSC_0706",
+        "role": "reconstruction",
+        "position": [
+          1.5296224498079602,
+          -2.576782875487815,
+          1.4736634072558203
+        ],
+        "rotation_world_to_cv": [
+          [
+            -0.8773521736931197,
+            -0.4797348540758113,
+            -0.010374637382488882
+          ],
+          [
+            -0.018308383395784646,
+            0.055072194060995075,
+            -0.9983145078274386
+          ],
+          [
+            0.47949761877760255,
+            -0.8756834606329893,
+            -0.05710087880620405
+          ]
+        ],
+        "focal_px": 658.8769329896908,
+        "focal_y_px": 658.6909625151148,
+        "principal_point": [
+          602.0592783505155,
+          398.33722611850067
+        ],
+        "image_size": [
+          1200,
+          799
+        ],
+        "pose_source": "ground_truth",
+        "evidence": [
+          "ETH3D registered reference camera, diagnostic input; no laser geometry/depth exposed"
+        ],
+        "input_index": 25,
+        "source_sha256": "b31706c1258e174010467f7f7a8cef30836be72ad1e3f056a18a8d4f6d401608",
+        "source_frame": null,
+        "pixel_coordinates": "integer_centers",
+        "processed_sha256": "32b6d2eabc94300edad5415998586e49f50493dbba4c836cc8d4b0591d143450",
+        "processed_path": "/home/wqz/real2sim_agent_compare_20261003/OURS/native_case/runs/preprocess/0001/frame_00025.png"
+      },
+      {
+        "frame_id": "DSC_0707",
+        "role": "reconstruction",
+        "position": [
+          1.3866819564978587,
+          -1.848965924004036,
+          1.4788549748439312
+        ],
+        "rotation_world_to_cv": [
+          [
+            -0.587084418815119,
+            -0.8093409216257518,
+            -0.01729617780009494
+          ],
+          [
+            -0.033918453528158365,
+            0.04593978703136021,
+            -0.9983682058628327
+          ],
+          [
+            0.8088148265794664,
+            -0.585539758299547,
+            -0.054422125608396356
+          ]
+        ],
+        "focal_px": 658.8769329896908,
+        "focal_y_px": 658.6909625151148,
+        "principal_point": [
+          602.0592783505155,
+          398.33722611850067
+        ],
+        "image_size": [
+          1200,
+          799
+        ],
+        "pose_source": "ground_truth",
+        "evidence": [
+          "ETH3D registered reference camera, diagnostic input; no laser geometry/depth exposed"
+        ],
+        "input_index": 26,
+        "source_sha256": "c321d7ac6582a1441b15e60e9356482bdbd86b22b3c6d522f927379af15bc8ed",
+        "source_frame": null,
+        "pixel_coordinates": "integer_centers",
+        "processed_sha256": "988711f246178e3e5d40b7a702afec48f3b29a4df95f4da0d5f1fa62584d34ee",
+        "processed_path": "/home/wqz/real2sim_agent_compare_20261003/OURS/native_case/runs/preprocess/0001/frame_00026.png"
+      },
+      {
+        "frame_id": "DSC_0708",
+        "role": "reconstruction",
+        "position": [
+          1.2275735625372026,
+          -1.4568999903275304,
+          1.4812169955901218
+        ],
+        "rotation_world_to_cv": [
+          [
+            -0.2239467390902953,
+            -0.9745047177664492,
+            -0.013726365205541621
+          ],
+          [
+            -0.04904227505892128,
+            0.025334197456988016,
+            -0.9984753545762937
+          ],
+          [
+            0.9733666900546104,
+            -0.222932127541418,
+            -0.05346543932288088
+          ]
+        ],
+        "focal_px": 658.8769329896908,
+        "focal_y_px": 658.6909625151148,
+        "principal_point": [
+          602.0592783505155,
+          398.33722611850067
+        ],
+        "image_size": [
+          1200,
+          799
+        ],
+        "pose_source": "ground_truth",
+        "evidence": [
+          "ETH3D registered reference camera, diagnostic input; no laser geometry/depth exposed"
+        ],
+        "input_index": 27,
+        "source_sha256": "0f379f2684664e7224067273e27d483a8ef25017d49a72161e982feb8f8d19c2",
+        "source_frame": null,
+        "pixel_coordinates": "integer_centers",
+        "processed_sha256": "5ce66d4c93deeb44a8e66d96c4c7be6e0baba19d187179b0804e78b88ffbb7c8",
+        "processed_path": "/home/wqz/real2sim_agent_compare_20261003/OURS/native_case/runs/preprocess/0001/frame_00027.png"
+      },
+      {
+        "frame_id": "DSC_0710",
+        "role": "reconstruction",
+        "position": [
+          -0.5538269184505613,
+          -1.2549702794675366,
+          1.4857297457469458
+        ],
+        "rotation_world_to_cv": [
+          [
+            -0.9941871970862951,
+            0.10729991086081947,
+            -0.008862633861114409
+          ],
+          [
+            -0.007772196196477278,
+            -0.15362707719606322,
+            -0.9880983322111611
+          ],
+          [
+            -0.10738440350432388,
+            -0.982285829217471,
+            0.15356802923318888
+          ]
+        ],
+        "focal_px": 658.8769329896908,
+        "focal_y_px": 658.6909625151148,
+        "principal_point": [
+          602.0592783505155,
+          398.33722611850067
+        ],
+        "image_size": [
+          1200,
+          799
+        ],
+        "pose_source": "ground_truth",
+        "evidence": [
+          "ETH3D registered reference camera, diagnostic input; no laser geometry/depth exposed"
+        ],
+        "input_index": 28,
+        "source_sha256": "7ac847c26afec3b75092214284482ead89dc74c083f8546d843ad7e1ab9112cc",
+        "source_frame": null,
+        "pixel_coordinates": "integer_centers",
+        "processed_sha256": "97b63dfa4e084626851f29877eaa616862e3200f5893a951210d27e0899d916d",
+        "processed_path": "/home/wqz/real2sim_agent_compare_20261003/OURS/native_case/runs/preprocess/0001/frame_00028.png"
+      },
+      {
+        "frame_id": "DSC_0711",
+        "role": "reconstruction",
+        "position": [
+          0.15929517674290342,
+          0.14664045492891123,
+          1.3822926021704691
+        ],
+        "rotation_world_to_cv": [
+          [
+            -0.023425620377442526,
+            0.4763830668219157,
+            -0.8789257158345513
+          ],
+          [
+            -0.9997255796168727,
+            -0.0110958338431711,
+            0.02063123677903705
+          ],
+          [
+            7.59581457363142e-05,
+            0.8791678202235742,
+            0.47651226438958444
+          ]
+        ],
+        "focal_px": 658.8769329896908,
+        "focal_y_px": 658.6909625151148,
+        "principal_point": [
+          602.0592783505155,
+          398.33722611850067
+        ],
+        "image_size": [
+          1200,
+          799
+        ],
+        "pose_source": "ground_truth",
+        "evidence": [
+          "ETH3D registered reference camera, diagnostic input; no laser geometry/depth exposed"
+        ],
+        "input_index": 29,
+        "source_sha256": "c572cb4a2cd1936a2b044ea0476caa3fad89006f13cb3692a9c348d846d19627",
+        "source_frame": null,
+        "pixel_coordinates": "integer_centers",
+        "processed_sha256": "b529d914ceb09f4f1afa6333b3d4178377ec9a4f8f26bb08c0e2c75d124ffea7",
+        "processed_path": "/home/wqz/real2sim_agent_compare_20261003/OURS/native_case/runs/preprocess/0001/frame_00029.png"
+      },
+      {
+        "frame_id": "DSC_0712",
+        "role": "reconstruction",
+        "position": [
+          1.2973296886745538,
+          0.19539946205613232,
+          1.3812749454827147
+        ],
+        "rotation_world_to_cv": [
+          [
+            -0.0339379788507911,
+            0.480433654681676,
+            -0.8763741877992134
+          ],
+          [
+            -0.9994239379694665,
+            -0.01638119435086367,
+            0.02972286468769648
+          ],
+          [
+            -7.619138490024761e-05,
+            0.8768780758582387,
+            0.4807128397224538
+          ]
+        ],
+        "focal_px": 658.8769329896908,
+        "focal_y_px": 658.6909625151148,
+        "principal_point": [
+          602.0592783505155,
+          398.33722611850067
+        ],
+        "image_size": [
+          1200,
+          799
+        ],
+        "pose_source": "ground_truth",
+        "evidence": [
+          "ETH3D registered reference camera, diagnostic input; no laser geometry/depth exposed"
+        ],
+        "input_index": 30,
+        "source_sha256": "51bfd696c1fdf9d4b4f9b361a8fa1af680182e3cd1034b102ebeebf50d00c0ec",
+        "source_frame": null,
+        "pixel_coordinates": "integer_centers",
+        "processed_sha256": "001b16c6f1946c065931e24881f268612a4ca769f739e9d92e89dd05e6376543",
+        "processed_path": "/home/wqz/real2sim_agent_compare_20261003/OURS/native_case/runs/preprocess/0001/frame_00030.png"
+      },
+      {
+        "frame_id": "DSC_0713",
+        "role": "reconstruction",
+        "position": [
+          2.182514556384039,
+          0.4038299064007682,
+          1.3843352111640237
+        ],
+        "rotation_world_to_cv": [
+          [
+            -0.12952137270084216,
+            0.46202271197616784,
+            -0.8773592352234498
+          ],
+          [
+            -0.9750020156509165,
+            -0.2204438850423576,
+            0.02784893218926361
+          ],
+          [
+            -0.18054163921472494,
+            0.8590340547182159,
+            0.4790252700474592
+          ]
+        ],
+        "focal_px": 658.8769329896908,
+        "focal_y_px": 658.6909625151148,
+        "principal_point": [
+          602.0592783505155,
+          398.33722611850067
+        ],
+        "image_size": [
+          1200,
+          799
+        ],
+        "pose_source": "ground_truth",
+        "evidence": [
+          "ETH3D registered reference camera, diagnostic input; no laser geometry/depth exposed"
+        ],
+        "input_index": 31,
+        "source_sha256": "19992292d0304c96751a3254528fab8cf2d947aa86bf0fa32b04801233bc7561",
+        "source_frame": null,
+        "pixel_coordinates": "integer_centers",
+        "processed_sha256": "f23885cc80875c28898b5a4b364804fd2433fa8f547f5bc26acabba39456629d",
+        "processed_path": "/home/wqz/real2sim_agent_compare_20261003/OURS/native_case/runs/preprocess/0001/frame_00031.png"
+      },
+      {
+        "frame_id": "DSC_0715",
+        "role": "reconstruction",
+        "position": [
+          0.5111858626124015,
+          -3.9266837343731344,
+          1.4625461225435448
+        ],
+        "rotation_world_to_cv": [
+          [
+            -0.022612496548198167,
+            0.9996660565397184,
+            -0.012508013518779525
+          ],
+          [
+            -0.12035914791147463,
+            -0.015142318372892873,
+            -0.9926149231742979
+          ],
+          [
+            -0.99247284623504,
+            -0.0209400476747833,
+            0.12066136038308321
+          ]
+        ],
+        "focal_px": 658.8769329896908,
+        "focal_y_px": 658.6909625151148,
+        "principal_point": [
+          602.0592783505155,
+          398.33722611850067
+        ],
+        "image_size": [
+          1200,
+          799
+        ],
+        "pose_source": "ground_truth",
+        "evidence": [
+          "ETH3D registered reference camera, diagnostic input; no laser geometry/depth exposed"
+        ],
+        "input_index": 32,
+        "source_sha256": "31e4ffd2e7689cbd09f9e40ca4242c905bacf540f7422a6e98fd5d604a30747f",
+        "source_frame": null,
+        "pixel_coordinates": "integer_centers",
+        "processed_sha256": "81a939035d26a6d2f85bbec8b9b6c8e3498d972da49eb11c3a260ac65b0ebb13",
+        "processed_path": "/home/wqz/real2sim_agent_compare_20261003/OURS/native_case/runs/preprocess/0001/frame_00032.png"
+      },
+      {
+        "frame_id": "DSC_0716",
+        "role": "reconstruction",
+        "position": [
+          0.49602523226820106,
+          -5.326095652647715,
+          1.4670653665107447
+        ],
+        "rotation_world_to_cv": [
+          [
+            -0.044715023974228406,
+            0.9988530499908665,
+            -0.01712165748190801
+          ],
+          [
+            -0.12408076941036165,
+            -0.022559100914048873,
+            -0.992015649890909
+          ],
+          [
+            -0.9912641067311563,
+            -0.042233535133745864,
+            0.12494718570896188
+          ]
+        ],
+        "focal_px": 658.8769329896908,
+        "focal_y_px": 658.6909625151148,
+        "principal_point": [
+          602.0592783505155,
+          398.33722611850067
+        ],
+        "image_size": [
+          1200,
+          799
+        ],
+        "pose_source": "ground_truth",
+        "evidence": [
+          "ETH3D registered reference camera, diagnostic input; no laser geometry/depth exposed"
+        ],
+        "input_index": 33,
+        "source_sha256": "ce1d0f2a5bc2df25919c2a9ff1c63f3d7aa94c6b49682b8006983922879e8cab",
+        "source_frame": null,
+        "pixel_coordinates": "integer_centers",
+        "processed_sha256": "df304c25ff293938853837a781ccde53ba378cdc7bdbe867bb0303cb6999a80f",
+        "processed_path": "/home/wqz/real2sim_agent_compare_20261003/OURS/native_case/runs/preprocess/0001/frame_00033.png"
+      },
+      {
+        "frame_id": "DSC_0717",
+        "role": "reconstruction",
+        "position": [
+          0.48729798789397355,
+          -6.2157781889257775,
+          1.4700121710904055
+        ],
+        "rotation_world_to_cv": [
+          [
+            -0.04353635674369151,
+            0.9990195305788394,
+            -0.008035120628906833
+          ],
+          [
+            -0.1296028655659635,
+            -0.013622393295690701,
+            -0.9914724038711255
+          ],
+          [
+            -0.9906097530705906,
+            -0.042123721617784216,
+            0.1300688632936054
+          ]
+        ],
+        "focal_px": 658.8769329896908,
+        "focal_y_px": 658.6909625151148,
+        "principal_point": [
+          602.0592783505155,
+          398.33722611850067
+        ],
+        "image_size": [
+          1200,
+          799
+        ],
+        "pose_source": "ground_truth",
+        "evidence": [
+          "ETH3D registered reference camera, diagnostic input; no laser geometry/depth exposed"
+        ],
+        "input_index": 34,
+        "source_sha256": "e9b22d9d33bb3b3ea401737a02d9f2376a4fedcc5fe22269b18dc17b1d6c0aa6",
+        "source_frame": null,
+        "pixel_coordinates": "integer_centers",
+        "processed_sha256": "4c33987c26e4ba9bdbe1e2b96486bc8c1c3eba1ac6213416615ebf359147ac11",
+        "processed_path": "/home/wqz/real2sim_agent_compare_20261003/OURS/native_case/runs/preprocess/0001/frame_00034.png"
+      },
+      {
+        "frame_id": "DSC_0718",
+        "role": "reconstruction",
+        "position": [
+          0.2242645017333342,
+          -3.407571295040728,
+          1.4650600744058986
+        ],
+        "rotation_world_to_cv": [
+          [
+            -0.10487092926241759,
+            0.9944381535408332,
+            -0.00973894131488339
+          ],
+          [
+            -0.11788440974847939,
+            -0.022154495204529532,
+            -0.9927801590888513
+          ],
+          [
+            -0.9874742296049499,
+            -0.10296570848845847,
+            0.1195521172609676
+          ]
+        ],
+        "focal_px": 658.8769329896908,
+        "focal_y_px": 658.6909625151148,
+        "principal_point": [
+          602.0592783505155,
+          398.33722611850067
+        ],
+        "image_size": [
+          1200,
+          799
+        ],
+        "pose_source": "ground_truth",
+        "evidence": [
+          "ETH3D registered reference camera, diagnostic input; no laser geometry/depth exposed"
+        ],
+        "input_index": 35,
+        "source_sha256": "86044a587b4a3f5298ee4fcf6ff6f814da7a746825992b6a8515c85b559b140e",
+        "source_frame": null,
+        "pixel_coordinates": "integer_centers",
+        "processed_sha256": "c6587e54a53ce96ef60e8daf8d226489a7f451be7e52173fb40f93e189948b11",
+        "processed_path": "/home/wqz/real2sim_agent_compare_20261003/OURS/native_case/runs/preprocess/0001/frame_00035.png"
+      }
+    ],
+    "sha256": "8d7f8873b06d34f776a12fea7e9e24597e9d42e85eb9033ecf66f336a9c28bfd",
+    "locked": true,
+    "model_from_input": [
+      [
+        0.9985254456168041,
+        -0.0029571798849103935,
+        0.05420506934679546,
+        0.0
+      ],
+      [
+        0.0025512528002570685,
+        0.9999681954851007,
+        0.007556396457319363,
+        0.0
+      ],
+      [
+        -0.05422569100446581,
+        -0.007406963304842917,
+        0.998501232512854,
+        1.477518807930019
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "scope": "GT-pose diagnostic"
+  },
+  "model_from_input": [
+    [
+      0.9985254456168041,
+      -0.0029571798849103935,
+      0.05420506934679546,
+      0.0
+    ],
+    [
+      0.0025512528002570685,
+      0.9999681954851007,
+      0.007556396457319363,
+      0.0
+    ],
+    [
+      -0.05422569100446581,
+      -0.007406963304842917,
+      0.998501232512854,
+      1.477518807930019
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "source_intrinsics_and_poses_locked": true,
+  "metric_scale_source": "Supplied registered reference cameras plus shared pose-conditioned input predicted depth; diagnostic input",
+  "uncertainty": [
+    "Predicted depth is not independent geometry truth",
+    "One rigid gauge maps fitted floor to Z0; no scales or per-camera changes"
+  ],
+  "evidence": [
+    "model_from_input.json",
+    "measurement_raw.json"
+  ]
+}

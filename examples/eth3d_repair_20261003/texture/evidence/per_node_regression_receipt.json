@@ -1,0 +1,62 @@
+{
+  "implementation_sha256": {
+    "appearance.py": "f2126376eaa165a13f973e610895045f7ab93d4b8d149b4a74e30aeeefddc57c",
+    "blender_appearance.py": "cd8f3701bf5e930cb3a2b0c1f1d85eec00320079e4598ce4fda3497fa3a09dee"
+  },
+  "tests": [
+    {
+      "test": "legacy_contract",
+      "command": "/home/wqz/real2sim_fresh_20260921/runtime/venv/bin/python /home/wqz/real2sim_agent_repair_20261003/texture/native_test_snapshot/tools/test_appearance_contract.py",
+      "status": "passed",
+      "evidence_line": "PASS scene coverage, sample scope, UV declarations, fixed-view persistence, complete comparisons and failed-audit rejection",
+      "log_sha256": "3685b7bc11070bfe389615e02412a3bea669baf2187e26ff1993fa13cd1a590e"
+    },
+    {
+      "test": "legacy_blender",
+      "command": "/home/wqz/real2sim_fresh_20260921/runtime/blender-4.5.3-linux-x64/blender -b --factory-startup --threads 2 --python-exit-code 1 --python /home/wqz/real2sim_agent_repair_20261003/texture/native_test_snapshot/tools/test_blender_appearance.py",
+      "status": "passed",
+      "evidence_line": "PASS actual shaders, world mapping, repetition, metallic glass, collapsed UV, omitted assignments, material lock and real fixed-camera renders",
+      "log_sha256": "047197f292fc0e8d9d28b5f174435e7bc6ded1788def2166b20adb0838740dd8"
+    },
+    {
+      "test": "legacy_worker",
+      "command": "R2S_BLENDER=/home/wqz/real2sim_fresh_20260921/runtime/blender-4.5.3-linux-x64/blender /home/wqz/real2sim_fresh_20260921/runtime/venv/bin/python /home/wqz/real2sim_agent_repair_20261003/texture/native_test_snapshot/tools/test_appearance_worker.py",
+      "status": "passed",
+      "evidence_line": "PASS actual stage_worker build_render, accepted shader snapshot, persistent cameras and detectable lighting-stage shader tampering",
+      "log_sha256": "e9e8f7e1e899a5be38c4a08c074264dc55e2f4150cbe07d088e3efb5875c66ce"
+    }
+  ],
+  "per_node_schema": {
+    "cases": 9,
+    "status": "passed",
+    "command": "/home/wqz/real2sim_fresh_20260921/runtime/venv/bin/python /home/wqz/real2sim_agent_repair_20261003/texture/tools/test_per_node_contract.py /home/wqz/real2sim_agent_repair_20261003/texture/native_test_snapshot/workflow"
+  },
+  "per_node_actual_blender": {
+    "cases": 16,
+    "status": "passed",
+    "entrypoint": "/home/wqz/real2sim_agent_repair_20261003/texture/tools/test_per_node_blender.py",
+    "result": "/home/wqz/real2sim_agent_repair_20261003/texture/per_node_validation/test_results.json"
+  },
+  "frozen_v4_native_audit": {
+    "status": "failed_as_required_for_soft_world",
+    "failure_rows": 75,
+    "affected_objects": 45,
+    "rigid_mixed_coordinate_failures": 0,
+    "model_sha256": "f36a6b79c439bf0fd53c2de58c84f4a42b4fddce29208d1fb0a273c1ba39bb2f",
+    "asset_resaved": false
+  },
+  "infrastructure_history": [
+    {
+      "command": "local uv Python3.14 tools/test_appearance_contract.py",
+      "status": "not_run_missing_Pillow",
+      "resolution": "same unchanged tests executed with existing remote Python3.10/Pillow; no installation"
+    }
+  ],
+  "test_runtime": {
+    "Blender": "4.5.3",
+    "Python": "3.10.12",
+    "native_threads": 2,
+    "device": "CPU"
+  },
+  "scope": "Executable old regressions and explicit per-node fixture mutations; not native whole-scene appearance acceptance."
+}

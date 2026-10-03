@@ -4,6 +4,8 @@
 
 [简体中文](README.md) | **English**
 
+**2026-10-03: supplied cameras, real-scene comparison and geometry/texture repair.** Per-frame K/poses propagate through preprocessing, modelling, rendering and structural checks. The independent ETH3D native-workflow/AWSM comparison remains preserved; a follow-up repairs the native candidate's shell, component transforms and source-photo textures. Reused test views are explicitly exposed-test diagnostics. Rejected candidates, local regressions and native acceptance limits remain visible. [Camera contract](docs/CAMERA_OBSERVATIONS.md) · [Original independent comparison](docs/research/ETH3D_WORKFLOW_COMPARISON_20261003.md) · [Repair, previews and validation](docs/research/ETH3D_REPAIR_20261003.md).
+
 Build editable 3D parts and scenes from one RGB photograph. GPT-6 Astra handles observation, modelling decisions and preview review; Blender and Python construct the scene. Web retrieval supplies traceable candidate dimensions, product identities and material information, with optional joint and deformable simulation.
 
 | Capability | What the workflow provides | Usage and evidence |
@@ -164,3 +166,12 @@ Use a new output directory. The frozen recipe does not require another language-
 [Furniture specifications](docs/FURNITURE_SPEC_ENHANCEMENT.md) · [Replay results](docs/example/RESULTS.md) · [Limitations](KNOWN_LIMITATIONS.md) · [Integrations](docs/INTEGRATIONS.md)
 
 Maintained by Roboparty; not an official OpenAI project. Code: [MIT](LICENSE). Photographs, videos and third-party materials: [media and attribution terms](MEDIA_NOTICE.md).
+## Explicit camera inputs and real-scene diagnostic (2026-10-03)
+
+Per-frame intrinsics and poses now flow through ingestion, preprocessing, Agent
+packets, camera locks and Blender/MuJoCo transfer, including unequal focal lengths
+and off-axis principal points. A 36-input / 8-heldout ETH3D delivery-area experiment
+compares three camera conditions with a shared Pi3X reference and static mesh
+adapter. This is not a full semantic Agent reconstruction or physics acceptance.
+See [camera contract](docs/CAMERA_OBSERVATIONS.md) and
+[measured results and limitations](docs/research/ETH3D_CAMERA_20261003.md).

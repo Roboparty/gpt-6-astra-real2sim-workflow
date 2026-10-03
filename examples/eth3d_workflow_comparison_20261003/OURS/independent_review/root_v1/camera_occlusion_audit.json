@@ -1,0 +1,69 @@
+{
+  "method": "OURS",
+  "model_sha256": "8b240c1b63d64f36b8c28ae4b3fa4ae4f73d1d36385b19e25bdfde7007282b0e",
+  "model_unchanged": true,
+  "camera_count": 36,
+  "camera_pose_error_max": 0.0,
+  "K_error_max": 0.0,
+  "camera_identity_all": true,
+  "windshield_frame12": [
+    {
+      "part": "van_windshield",
+      "triangle_centres_sampled": 2,
+      "first_hit_counts": {
+        "van_cab_body": 2
+      },
+      "records": [
+        {
+          "target_distance_m": 6.611164730853035,
+          "first_hit_distance_m": 6.549627304077148,
+          "occluder": "van_cab_body"
+        },
+        {
+          "target_distance_m": 7.148052092544218,
+          "first_hit_distance_m": 7.060804843902588,
+          "occluder": "van_cab_body"
+        }
+      ]
+    }
+  ],
+  "column_frame16": [
+    {
+      "part": "column_1_lower",
+      "box_at640": [
+        172.800619534086,
+        81.86090285164933,
+        298.25673459825146,
+        422.1175285642893
+      ]
+    },
+    {
+      "part": "column_2_lower",
+      "box_at640": [
+        120.91698214970347,
+        88.47299136912952,
+        209.38677530249012,
+        411.0278505296765
+      ]
+    },
+    {
+      "part": "column_6_lower",
+      "box_at640": [
+        307.2087825527609,
+        170.80988470933593,
+        324.46799303589745,
+        236.75011923727
+      ]
+    },
+    {
+      "part": "column_7_lower",
+      "box_at640": [
+        88.37875495294774,
+        173.93856180092226,
+        110.65203238257612,
+        234.6417459812482
+      ]
+    }
+  ],
+  "scope": "Mapping cameras and current v1 model only; no GT geometry or heldout data"
+}

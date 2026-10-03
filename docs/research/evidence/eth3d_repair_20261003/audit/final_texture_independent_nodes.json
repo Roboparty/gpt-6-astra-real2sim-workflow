@@ -1,0 +1,418 @@
+{
+  "base_sha256": "c288f8bb9688defd71f2faeb8dfddfefdeac2c56b714187dde0c2a3125d771b4",
+  "candidate_sha256": "b9e1abb33fb4ab050478c3038127a1cfe755e861ed4b8373d47c0434b8ac2f34",
+  "geometry_exact": true,
+  "object_camera_light_visibility_controls_exact": true,
+  "world_color_cycles_collections_exact": true,
+  "original_materials_unchanged": true,
+  "new_materials_checked": 24,
+  "node_binding_failures": [],
+  "materials": [
+    {
+      "material": "PhotoBaked__wall__atlas0",
+      "passed": true,
+      "original_node_differences": [],
+      "original_links_preserved": true,
+      "fallback_preserved": true,
+      "photo_support_only_in_BaseColor": true,
+      "uv_map": "PhotoAtlas",
+      "new_nodes": [
+        "PhotoSupportMix",
+        "PhotoAtlasUV",
+        "PhotoAtlasImage"
+      ],
+      "alpha": 1.0,
+      "emission_strength": 0.0
+    },
+    {
+      "material": "PhotoBaked__wall__atlas1",
+      "passed": true,
+      "original_node_differences": [],
+      "original_links_preserved": true,
+      "fallback_preserved": true,
+      "photo_support_only_in_BaseColor": true,
+      "uv_map": "PhotoAtlas",
+      "new_nodes": [
+        "PhotoSupportMix",
+        "PhotoAtlasUV",
+        "PhotoAtlasImage"
+      ],
+      "alpha": 1.0,
+      "emission_strength": 0.0
+    },
+    {
+      "material": "PhotoBaked__yellow__atlas1",
+      "passed": true,
+      "original_node_differences": [],
+      "original_links_preserved": true,
+      "fallback_preserved": true,
+      "photo_support_only_in_BaseColor": true,
+      "uv_map": "PhotoAtlas",
+      "new_nodes": [
+        "PhotoSupportMix",
+        "PhotoAtlasUV",
+        "PhotoAtlasImage"
+      ],
+      "alpha": 1.0,
+      "emission_strength": 0.0
+    },
+    {
+      "material": "PhotoBaked__steel__atlas1",
+      "passed": true,
+      "original_node_differences": [],
+      "original_links_preserved": true,
+      "fallback_preserved": true,
+      "photo_support_only_in_BaseColor": true,
+      "uv_map": "PhotoAtlas",
+      "new_nodes": [
+        "PhotoSupportMix",
+        "PhotoAtlasUV",
+        "PhotoAtlasImage"
+      ],
+      "alpha": 1.0,
+      "emission_strength": 0.0
+    },
+    {
+      "material": "PhotoBaked__dock__atlas1",
+      "passed": true,
+      "original_node_differences": [],
+      "original_links_preserved": true,
+      "fallback_preserved": true,
+      "photo_support_only_in_BaseColor": true,
+      "uv_map": "PhotoAtlas",
+      "new_nodes": [
+        "PhotoSupportMix",
+        "PhotoAtlasUV",
+        "PhotoAtlasImage"
+      ],
+      "alpha": 1.0,
+      "emission_strength": 0.0
+    },
+    {
+      "material": "PhotoBaked__blue_door__atlas1",
+      "passed": true,
+      "original_node_differences": [],
+      "original_links_preserved": true,
+      "fallback_preserved": true,
+      "photo_support_only_in_BaseColor": true,
+      "uv_map": "PhotoAtlas",
+      "new_nodes": [
+        "PhotoSupportMix",
+        "PhotoAtlasUV",
+        "PhotoAtlasImage"
+      ],
+      "alpha": 1.0,
+      "emission_strength": 0.0
+    },
+    {
+      "material": "PhotoBaked__blue_door__atlas0",
+      "passed": true,
+      "original_node_differences": [],
+      "original_links_preserved": true,
+      "fallback_preserved": true,
+      "photo_support_only_in_BaseColor": true,
+      "uv_map": "PhotoAtlas",
+      "new_nodes": [
+        "PhotoSupportMix",
+        "PhotoAtlasUV",
+        "PhotoAtlasImage"
+      ],
+      "alpha": 1.0,
+      "emission_strength": 0.0
+    },
+    {
+      "material": "PhotoBaked__hazard__atlas1",
+      "passed": true,
+      "original_node_differences": [],
+      "original_links_preserved": true,
+      "fallback_preserved": true,
+      "photo_support_only_in_BaseColor": true,
+      "uv_map": "PhotoAtlas",
+      "new_nodes": [
+        "PhotoSupportMix",
+        "PhotoAtlasUV",
+        "PhotoAtlasImage"
+      ],
+      "alpha": 1.0,
+      "emission_strength": 0.0
+    },
+    {
+      "material": "PhotoBaked__door__atlas1",
+      "passed": true,
+      "original_node_differences": [],
+      "original_links_preserved": true,
+      "fallback_preserved": true,
+      "photo_support_only_in_BaseColor": true,
+      "uv_map": "PhotoAtlas",
+      "new_nodes": [
+        "PhotoSupportMix",
+        "PhotoAtlasUV",
+        "PhotoAtlasImage"
+      ],
+      "alpha": 1.0,
+      "emission_strength": 0.0
+    },
+    {
+      "material": "PhotoBaked__blue__atlas1",
+      "passed": true,
+      "original_node_differences": [],
+      "original_links_preserved": true,
+      "fallback_preserved": true,
+      "photo_support_only_in_BaseColor": true,
+      "uv_map": "PhotoAtlas",
+      "new_nodes": [
+        "PhotoSupportMix",
+        "PhotoAtlasUV",
+        "PhotoAtlasImage"
+      ],
+      "alpha": 1.0,
+      "emission_strength": 0.0
+    },
+    {
+      "material": "PhotoBaked__orange__atlas1",
+      "passed": true,
+      "original_node_differences": [],
+      "original_links_preserved": true,
+      "fallback_preserved": true,
+      "photo_support_only_in_BaseColor": true,
+      "uv_map": "PhotoAtlas",
+      "new_nodes": [
+        "PhotoSupportMix",
+        "PhotoAtlasUV",
+        "PhotoAtlasImage"
+      ],
+      "alpha": 1.0,
+      "emission_strength": 0.0
+    },
+    {
+      "material": "PhotoBaked__wood_y__atlas1",
+      "passed": true,
+      "original_node_differences": [],
+      "original_links_preserved": true,
+      "fallback_preserved": true,
+      "photo_support_only_in_BaseColor": true,
+      "uv_map": "PhotoAtlas",
+      "new_nodes": [
+        "PhotoSupportMix",
+        "PhotoAtlasUV",
+        "PhotoAtlasImage"
+      ],
+      "alpha": 1.0,
+      "emission_strength": 0.0
+    },
+    {
+      "material": "PhotoBaked__lumber__atlas1",
+      "passed": true,
+      "original_node_differences": [],
+      "original_links_preserved": true,
+      "fallback_preserved": true,
+      "photo_support_only_in_BaseColor": true,
+      "uv_map": "PhotoAtlas",
+      "new_nodes": [
+        "PhotoSupportMix",
+        "PhotoAtlasUV",
+        "PhotoAtlasImage"
+      ],
+      "alpha": 1.0,
+      "emission_strength": 0.0
+    },
+    {
+      "material": "PhotoBaked__bag__atlas1",
+      "passed": true,
+      "original_node_differences": [],
+      "original_links_preserved": true,
+      "fallback_preserved": true,
+      "photo_support_only_in_BaseColor": true,
+      "uv_map": "PhotoAtlas",
+      "new_nodes": [
+        "PhotoSupportMix",
+        "PhotoAtlasUV",
+        "PhotoAtlasImage"
+      ],
+      "alpha": 1.0,
+      "emission_strength": 0.0
+    },
+    {
+      "material": "PhotoBaked__wood__atlas1",
+      "passed": true,
+      "original_node_differences": [],
+      "original_links_preserved": true,
+      "fallback_preserved": true,
+      "photo_support_only_in_BaseColor": true,
+      "uv_map": "PhotoAtlas",
+      "new_nodes": [
+        "PhotoSupportMix",
+        "PhotoAtlasUV",
+        "PhotoAtlasImage"
+      ],
+      "alpha": 1.0,
+      "emission_strength": 0.0
+    },
+    {
+      "material": "PhotoBaked__rust__atlas1",
+      "passed": true,
+      "original_node_differences": [],
+      "original_links_preserved": true,
+      "fallback_preserved": true,
+      "photo_support_only_in_BaseColor": true,
+      "uv_map": "PhotoAtlas",
+      "new_nodes": [
+        "PhotoSupportMix",
+        "PhotoAtlasUV",
+        "PhotoAtlasImage"
+      ],
+      "alpha": 1.0,
+      "emission_strength": 0.0
+    },
+    {
+      "material": "PhotoBaked__lime__atlas1",
+      "passed": true,
+      "original_node_differences": [],
+      "original_links_preserved": true,
+      "fallback_preserved": true,
+      "photo_support_only_in_BaseColor": true,
+      "uv_map": "PhotoAtlas",
+      "new_nodes": [
+        "PhotoSupportMix",
+        "PhotoAtlasUV",
+        "PhotoAtlasImage"
+      ],
+      "alpha": 1.0,
+      "emission_strength": 0.0
+    },
+    {
+      "material": "PhotoBaked__white_vehicle__atlas1",
+      "passed": true,
+      "original_node_differences": [],
+      "original_links_preserved": true,
+      "fallback_preserved": true,
+      "photo_support_only_in_BaseColor": true,
+      "uv_map": "PhotoAtlas",
+      "new_nodes": [
+        "PhotoSupportMix",
+        "PhotoAtlasUV",
+        "PhotoAtlasImage"
+      ],
+      "alpha": 1.0,
+      "emission_strength": 0.0
+    },
+    {
+      "material": "PhotoBaked__red__atlas1",
+      "passed": true,
+      "original_node_differences": [],
+      "original_links_preserved": true,
+      "fallback_preserved": true,
+      "photo_support_only_in_BaseColor": true,
+      "uv_map": "PhotoAtlas",
+      "new_nodes": [
+        "PhotoSupportMix",
+        "PhotoAtlasUV",
+        "PhotoAtlasImage"
+      ],
+      "alpha": 1.0,
+      "emission_strength": 0.0
+    },
+    {
+      "material": "PhotoBaked__black_vehicle__atlas1",
+      "passed": true,
+      "original_node_differences": [],
+      "original_links_preserved": true,
+      "fallback_preserved": true,
+      "photo_support_only_in_BaseColor": true,
+      "uv_map": "PhotoAtlas",
+      "new_nodes": [
+        "PhotoSupportMix",
+        "PhotoAtlasUV",
+        "PhotoAtlasImage"
+      ],
+      "alpha": 1.0,
+      "emission_strength": 0.0
+    },
+    {
+      "material": "PhotoBaked__floor__atlas0",
+      "passed": true,
+      "original_node_differences": [],
+      "original_links_preserved": true,
+      "fallback_preserved": true,
+      "photo_support_only_in_BaseColor": true,
+      "uv_map": "PhotoAtlas",
+      "new_nodes": [
+        "PhotoSupportMix",
+        "PhotoAtlasUV",
+        "PhotoAtlasImage"
+      ],
+      "alpha": 1.0,
+      "emission_strength": 0.0
+    },
+    {
+      "material": "PhotoBaked__floor__atlas1",
+      "passed": true,
+      "original_node_differences": [],
+      "original_links_preserved": true,
+      "fallback_preserved": true,
+      "photo_support_only_in_BaseColor": true,
+      "uv_map": "PhotoAtlas",
+      "new_nodes": [
+        "PhotoSupportMix",
+        "PhotoAtlasUV",
+        "PhotoAtlasImage"
+      ],
+      "alpha": 1.0,
+      "emission_strength": 0.0
+    },
+    {
+      "material": "PhotoBaked__ceiling__atlas0",
+      "passed": true,
+      "original_node_differences": [],
+      "original_links_preserved": true,
+      "fallback_preserved": true,
+      "photo_support_only_in_BaseColor": true,
+      "uv_map": "PhotoAtlas",
+      "new_nodes": [
+        "PhotoSupportMix",
+        "PhotoAtlasUV",
+        "PhotoAtlasImage"
+      ],
+      "alpha": 1.0,
+      "emission_strength": 0.0
+    },
+    {
+      "material": "PhotoBaked__ceiling__atlas1",
+      "passed": true,
+      "original_node_differences": [],
+      "original_links_preserved": true,
+      "fallback_preserved": true,
+      "photo_support_only_in_BaseColor": true,
+      "uv_map": "PhotoAtlas",
+      "new_nodes": [
+        "PhotoSupportMix",
+        "PhotoAtlasUV",
+        "PhotoAtlasImage"
+      ],
+      "alpha": 1.0,
+      "emission_strength": 0.0
+    }
+  ],
+  "images": [
+    {
+      "name": "photo_atlas_00.png",
+      "packed": true,
+      "sha256": "649027e3f00904de2819506a7125042b99c44903bf7c26dd3e067593b6db629e",
+      "colorspace": "sRGB",
+      "alpha_mode": "CHANNEL_PACKED",
+      "matches_external_copy": true
+    },
+    {
+      "name": "photo_atlas_01.png",
+      "packed": true,
+      "sha256": "f62fa7c0956f55acadcd8896068cd810751571f06a3d5dfcd318b7352f87b634",
+      "colorspace": "sRGB",
+      "alpha_mode": "CHANNEL_PACKED",
+      "matches_external_copy": true
+    }
+  ],
+  "uv_binding_failures": [],
+  "linked_libraries": [],
+  "canonical_appearance_status": "failed",
+  "scope": "Independent actual saved geometry/node/link/packed-data inspection. Narrow BaseColor-only implementation verification is not canonical native appearance acceptance or physical albedo validation."
+}

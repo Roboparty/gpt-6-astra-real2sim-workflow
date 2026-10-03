@@ -1,0 +1,293 @@
+{
+  "status": "ready",
+  "GT_access_after_all_models_frozen": true,
+  "model_hashes": {
+    "RGB": "cd133ed3dd4e93e9e1313fe4c1346476a2fcde1f641987e015adf8c61af8f1c6",
+    "RGB_K": "e6e1b2dc9ea179f3a0b0d7b41fc405c21a90aee469aeea9709eb0db73c7dee64",
+    "RGB_K_T": "5f9b36e1746c8c99f37fdcac1d259edb98313b642a0826560cfbef7042360b12"
+  },
+  "truth_grid_sha256": "5859ea44649262f1316e7184a790ddfd398fc6eb1b52c33e148cb2ebe2d7711a",
+  "laser_points_sha256": "1e07dcbd8dbe7e152d0a4261c7d516916842a7367d50604ad22e17995be2982a",
+  "scan_sources": [
+    {
+      "path": "/data/wqz/real2sim-awsm-20261003/eth3d/scan_eval/delivery_area/dslr_scan_eval/scan1.ply",
+      "sha256": "27ca097c6952f36dd563c48483265111dee7b3a07721be40f2ce1ccd4d3d8483",
+      "points": 9312881
+    },
+    {
+      "path": "/data/wqz/real2sim-awsm-20261003/eth3d/scan_eval/delivery_area/dslr_scan_eval/scan2.ply",
+      "sha256": "8a5013e65c293f92107bb1c8bd86e1f207f324b127f09b37e88cf61567a7223c",
+      "points": 15585634
+    }
+  ],
+  "laser_points": 24898515,
+  "depth_axis": "optical Z; upstream GroundTruthCreator writes image_point.z()",
+  "depth_sampling": "160x120 undistorted rays mapped through official THIN_PRISM_FISHEYE into raw GT; nearest containing raw pixel; nonfinite/absent GT excluded and counted",
+  "GT_coverage": [
+    {
+      "frame": "DSC_0675",
+      "valid_gt": 1652,
+      "rays": 19200,
+      "depth_file_sha256": "315d6267d7bd761838f3851dad68db2c1bde2767349e3a707e84400793c6c5be"
+    },
+    {
+      "frame": "DSC_0676",
+      "valid_gt": 1799,
+      "rays": 19200,
+      "depth_file_sha256": "2a91af578c83bcfa0356c7d7153423a31f02166f775638dd4d86a8d894f75bab"
+    },
+    {
+      "frame": "DSC_0677",
+      "valid_gt": 1733,
+      "rays": 19200,
+      "depth_file_sha256": "5a589e6b40d7898575fbb6169286b5c2b3f938200e33a1514b63dac2aedd5524"
+    },
+    {
+      "frame": "DSC_0678",
+      "valid_gt": 1868,
+      "rays": 19200,
+      "depth_file_sha256": "395b4049b9c1f4af6f8860482c2578647357687fd5ebf73c1f5e33eb09e4de55"
+    },
+    {
+      "frame": "DSC_0679",
+      "valid_gt": 1817,
+      "rays": 19200,
+      "depth_file_sha256": "1b3505e9b78f54263347e6cbcb635eb5fcac776bdbbb2eac1cfccbe384d28b1b"
+    },
+    {
+      "frame": "DSC_0680",
+      "valid_gt": 1909,
+      "rays": 19200,
+      "depth_file_sha256": "fd163cfb434fd3290aacc422944818ae9f1d29fe57f8f235f692ae8b909a0a66"
+    },
+    {
+      "frame": "DSC_0681",
+      "valid_gt": 1906,
+      "rays": 19200,
+      "depth_file_sha256": "9b539e928817cb581d1c2afaae72a1b82216e719a8f6d5d765a54b4339039387"
+    },
+    {
+      "frame": "DSC_0682",
+      "valid_gt": 1755,
+      "rays": 19200,
+      "depth_file_sha256": "eb5da27f32669f52866676a34f611c6167e914936bdf1dac3513c01f0e7d95d4"
+    },
+    {
+      "frame": "DSC_0683",
+      "valid_gt": 1637,
+      "rays": 19200,
+      "depth_file_sha256": "baead6b314509ffd2e207a6979b0b598121c096f3297fbe35e06801d6cdd8c5c"
+    },
+    {
+      "frame": "DSC_0684",
+      "valid_gt": 1459,
+      "rays": 19200,
+      "depth_file_sha256": "d05b4da03b3ba11b25c09d5047c8b55f4c61cd77261e0e85b75f3cf38d454a62"
+    },
+    {
+      "frame": "DSC_0685",
+      "valid_gt": 1257,
+      "rays": 19200,
+      "depth_file_sha256": "ae3c6a32c72d64a38c28acc4cff4ba30a0e16dd97af171ab4ee0c32b8044b26b"
+    },
+    {
+      "frame": "DSC_0686",
+      "valid_gt": 1221,
+      "rays": 19200,
+      "depth_file_sha256": "111d42fcbefc5d23424415d5c3dcc845c4d27606965c7a28613230cebe8b155d"
+    },
+    {
+      "frame": "DSC_0687",
+      "valid_gt": 1185,
+      "rays": 19200,
+      "depth_file_sha256": "bec096542c7bb1c86ee119e92574479003f690c6b593964c19ddf7b1bb739667"
+    },
+    {
+      "frame": "DSC_0688",
+      "valid_gt": 1304,
+      "rays": 19200,
+      "depth_file_sha256": "23731eb32a58379968f61e53eb445d17ea733e913f44ac00e6b41f1d5dccec86"
+    },
+    {
+      "frame": "DSC_0689",
+      "valid_gt": 1165,
+      "rays": 19200,
+      "depth_file_sha256": "f19d89de95b70c0b1a18cb993fba9877c676081bd2c7c1ff5c74d561f6b79ab0"
+    },
+    {
+      "frame": "DSC_0690",
+      "valid_gt": 1218,
+      "rays": 19200,
+      "depth_file_sha256": "ea7a3c8fda94f6ea6dea483c1b0dd72100f02f9c2d4087dd9b12ef6915cdf99e"
+    },
+    {
+      "frame": "DSC_0691",
+      "valid_gt": 1105,
+      "rays": 19200,
+      "depth_file_sha256": "53bd330648e214b86d9a4af1bebd5d655cdd7e1af237e7e75656e5515f8d8e42"
+    },
+    {
+      "frame": "DSC_0692",
+      "valid_gt": 1147,
+      "rays": 19200,
+      "depth_file_sha256": "9e58b2b4d70fe7729df11967506272b751e6ee55c41377cdea48aee4a9a1ec57"
+    },
+    {
+      "frame": "DSC_0693",
+      "valid_gt": 1400,
+      "rays": 19200,
+      "depth_file_sha256": "662e2a4c6800727022c3b91eba7b5ab659175ea4abfccc78f462bd12b9f31180"
+    },
+    {
+      "frame": "DSC_0694",
+      "valid_gt": 1292,
+      "rays": 19200,
+      "depth_file_sha256": "d990ca0c210427a6651c5e33d62e59a716e219f4c66410f30b204e179f8c3e53"
+    },
+    {
+      "frame": "DSC_0695",
+      "valid_gt": 1348,
+      "rays": 19200,
+      "depth_file_sha256": "11cbd849c071d3927422d4ebaa313a7010bd7ce8b37b2386eb994f089865adaf"
+    },
+    {
+      "frame": "DSC_0696",
+      "valid_gt": 1448,
+      "rays": 19200,
+      "depth_file_sha256": "98779fbffc5ee20edabbce1505cc17150f940b382a5ee2d8d15eb5a637623ca9"
+    },
+    {
+      "frame": "DSC_0697",
+      "valid_gt": 1597,
+      "rays": 19200,
+      "depth_file_sha256": "2cb1eacdaeade984d0a5960b7cef73db2fc356da19e03d3b70f5b0decaf54ad7"
+    },
+    {
+      "frame": "DSC_0698",
+      "valid_gt": 1632,
+      "rays": 19200,
+      "depth_file_sha256": "0845b1dcfcfc20dddf95188bb2ccab2b6c1df0b2bba285348f7f47128344203f"
+    },
+    {
+      "frame": "DSC_0699",
+      "valid_gt": 1755,
+      "rays": 19200,
+      "depth_file_sha256": "81c1125d0fdfafd8fc41f1ec3cc1efd82a99878bf9726bf4dbcb97453721f6c3"
+    },
+    {
+      "frame": "DSC_0700",
+      "valid_gt": 1819,
+      "rays": 19200,
+      "depth_file_sha256": "5f96b6c3666e714b59d0a7f8a436682edc6ed1d0fc2edf230908a8d214a17a1e"
+    },
+    {
+      "frame": "DSC_0701",
+      "valid_gt": 1805,
+      "rays": 19200,
+      "depth_file_sha256": "1ce54a0964301b1aa82e544b715cd351eea53580b82b6e4c91a689a61ac3fa21"
+    },
+    {
+      "frame": "DSC_0702",
+      "valid_gt": 1767,
+      "rays": 19200,
+      "depth_file_sha256": "9bdbed9c15637edea8886fe4f1d4ce0143ef76667017b34defa3ff7ed8da7af2"
+    },
+    {
+      "frame": "DSC_0703",
+      "valid_gt": 1801,
+      "rays": 19200,
+      "depth_file_sha256": "575de627f4a7c1d6ff907ad372bc5231cb42cfe95e3ecae9a3282c9213338abc"
+    },
+    {
+      "frame": "DSC_0704",
+      "valid_gt": 1810,
+      "rays": 19200,
+      "depth_file_sha256": "8a77a4e20cb63f0a4b6ad4c5febfa03554ad4a97d944808898d8782a90a5d40a"
+    },
+    {
+      "frame": "DSC_0705",
+      "valid_gt": 1669,
+      "rays": 19200,
+      "depth_file_sha256": "19a2866a194fe2fd138a3601cd6b7cf3c622df7f7fcfbe02e47cebe8e645cd5d"
+    },
+    {
+      "frame": "DSC_0706",
+      "valid_gt": 1399,
+      "rays": 19200,
+      "depth_file_sha256": "ecb19c86cc6463acecc42e97be6a29b2ce4ddcc21c0a9a65e0b252f95794833c"
+    },
+    {
+      "frame": "DSC_0707",
+      "valid_gt": 1348,
+      "rays": 19200,
+      "depth_file_sha256": "999700b336d0800f7b573cfed3bfccde4f16cf7d75018d19207fcb7a52181ded"
+    },
+    {
+      "frame": "DSC_0708",
+      "valid_gt": 1421,
+      "rays": 19200,
+      "depth_file_sha256": "4a46d4846c7c46aeff53aa7288009f666d2c016ed81db4ecfd9507932d4ab9b5"
+    },
+    {
+      "frame": "DSC_0709",
+      "valid_gt": 2754,
+      "rays": 19200,
+      "depth_file_sha256": "95ff14a145f171d73dc2bcbef64e9e934c5aaa33fff01c802a7bd0af2ad6eff1"
+    },
+    {
+      "frame": "DSC_0710",
+      "valid_gt": 3067,
+      "rays": 19200,
+      "depth_file_sha256": "ef71f8996615d4515e10dd8ee1045aa85a646d3c619cf0e9ce3e993ce5f4fb3b"
+    },
+    {
+      "frame": "DSC_0711",
+      "valid_gt": 5564,
+      "rays": 19200,
+      "depth_file_sha256": "0b332ed37bb6c3e15ec883cc198cfb2e83a718195f2eefb316a09721b9670130"
+    },
+    {
+      "frame": "DSC_0712",
+      "valid_gt": 5613,
+      "rays": 19200,
+      "depth_file_sha256": "8dcb31f61d89086542d2c04d05d77d5fdf48961e601eb942e57e96f4bd459fd5"
+    },
+    {
+      "frame": "DSC_0713",
+      "valid_gt": 5513,
+      "rays": 19200,
+      "depth_file_sha256": "92ba3ecee4a4a76f126a14752def7ba6ce14c23fbd05c0348b642a455f7dfb60"
+    },
+    {
+      "frame": "DSC_0714",
+      "valid_gt": 4744,
+      "rays": 19200,
+      "depth_file_sha256": "64f8289174a3a7b7d8a747da46b77ddaf8c3c4e8139fe32b5e311c1628d8235a"
+    },
+    {
+      "frame": "DSC_0715",
+      "valid_gt": 3166,
+      "rays": 19200,
+      "depth_file_sha256": "c4fcf565dd58a4a649f9948bda75589baf43ed8eec529df3f8b39c92f90b9ea4"
+    },
+    {
+      "frame": "DSC_0716",
+      "valid_gt": 2745,
+      "rays": 19200,
+      "depth_file_sha256": "51f48509c64d5bb75a8178ec3332b6ebbb35e7c8fa6e9f747d8f73248a572612"
+    },
+    {
+      "frame": "DSC_0717",
+      "valid_gt": 2362,
+      "rays": 19200,
+      "depth_file_sha256": "c796b117bf77dd01d4139785d939c65abcc021a8dc6b1f2bc3aad73345020085"
+    },
+    {
+      "frame": "DSC_0718",
+      "valid_gt": 2899,
+      "rays": 19200,
+      "depth_file_sha256": "eacc50995c4531d27a2e0f008aff5dbd11d5d0c04cd3c14eeec1af37ba584ceb"
+    }
+  ],
+  "truth_scope": "Published ETH3D eval laser points (observed by2+ official images); not all unseen physical surfaces"
+}

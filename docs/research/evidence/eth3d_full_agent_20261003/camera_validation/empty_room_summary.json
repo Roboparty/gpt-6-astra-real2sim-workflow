@@ -1,0 +1,33 @@
+{
+  "status": "passed",
+  "scope": "Actual synthetic empty-furniture inventory, source view, canonical scene check and geometry-only export; not full scene reconstruction or dynamics acceptance",
+  "schema_check": {
+    "status": "passed",
+    "object_count": 7,
+    "enclosure_surfaces": 6,
+    "luminaire_count": 1
+  },
+  "assemblies": 0,
+  "shell_count": 6,
+  "fixed_luminaires": 1,
+  "exported_entities": 7,
+  "negative_checks": [
+    "implicit_zero",
+    "omitted_semantic_object",
+    "wrong_semantic_role",
+    "missing_explicit_review",
+    "no_render_cannot_pass_review",
+    "hidden_furniture_rejected",
+    "geometry_nodes_instance_rejected"
+  ],
+  "wall_seconds": 3.8909763619303703,
+  "model_sha256": "c7a4ec5499a7c5aa87f514558ec759bb442b3ce047dc555a790002579d2afc4b",
+  "scene_sha256": "c3f5a54b68b2e823227d0794202b9e173d3b4c2bcadbf3fc7f55f8bc387475cc",
+  "audit_sha256": "92758fefd28543a0297818831eb6f202106a458a5e136120c0953b51bded7215",
+  "script_sha256": "7cf413fb5884a159e2fa6c1c9db8805dd223f488ca6b75df9bc6f687ddd61b22",
+  "implementation_sha256": {
+    "structure.py": "3ef85ef5fe075d80f152a50d4a0b7d5ae299d2b2f204668c5babff9c167bffe5",
+    "blender_structure.py": "829c25cffb6c68381f832d61b14706cdf0a5e34eb01097835079c3ea3ddc1843",
+    "contracts.py": "64139f2e6ada992064689db6dd8bf04911314ad203a13992ced711ab29b3cb39"
+  }
+}

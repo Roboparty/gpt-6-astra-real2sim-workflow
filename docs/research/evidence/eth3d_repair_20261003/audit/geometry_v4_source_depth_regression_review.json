@@ -1,0 +1,24 @@
+{
+  "scope": "Allowed36source RGB plus frozen DA3 only; notGT",
+  "model_sha256": "506982c1c94a94067b19a58dc1a55d7b9ab6039ca1b8d00f61fba76292cc5542",
+  "model_hash_matches": true,
+  "source_reference_domains_identical": true,
+  "reference_arrays_byte_values_identical": true,
+  "views": 36,
+  "reference_pixels": 689349,
+  "macro_absrel_before": 0.07773398844953455,
+  "macro_absrel_after": 0.06661141835467937,
+  "absrel_improved": 30,
+  "absrel_regressed": 6,
+  "worst_absrel_regression": {
+    "index": 12,
+    "delta_pp": 1.24868633831777
+  },
+  "macro_missing_penalty_before": 0.5335468672799082,
+  "macro_missing_penalty_after": 0.505618221451205,
+  "penalty_improved": 22,
+  "penalty_regressed": 14,
+  "missing_predictions_before": 415,
+  "missing_predictions_after": 1120,
+  "note": "30/6labels refer to conditional AbsRel only. Coverage and30m missing-penalty outcomes are separate and cannot be summarized as all-view improvement."
+}

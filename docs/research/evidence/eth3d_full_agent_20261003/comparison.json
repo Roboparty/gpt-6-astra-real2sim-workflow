@@ -1,0 +1,548 @@
+{
+  "status": "complete",
+  "denominator": 2,
+  "scene": "ETH3D delivery_area",
+  "mapping_views": 36,
+  "heldout_views": 8,
+  "scope": "Independent native quality_v2 authoring vs ported AWSM semantic authoring protocol; common RGB/K/referenceT/DA3 input, no GT depth used in modelling",
+  "awsm_depth_code_sha256": "3be3467a840f68585b51e6f5da06c6b43597f2cb20f7d9276fda495f6545ffc8",
+  "truth_grid_sha256": "5859ea44649262f1316e7184a790ddfd398fc6eb1b52c33e148cb2ebe2d7711a",
+  "methods": [
+    {
+      "id": "OURS",
+      "freeze": {
+        "method": "OURS",
+        "status": "frozen_for_independent_evaluation",
+        "frozen_utc": "2026-10-03T06:01:28.450184+00:00",
+        "model_sha256": "4d53b2a7fa076a6892592e555f33b55b07476dc2f6dab58651ab146fc1acdf85",
+        "model_from_input": [
+          [
+            0.9985254456168041,
+            -0.0029571798849103935,
+            0.05420506934679546,
+            0.0
+          ],
+          [
+            0.0025512528002570685,
+            0.9999681954851007,
+            0.007556396457319363,
+            0.0
+          ],
+          [
+            -0.05422569100446581,
+            -0.007406963304842917,
+            0.998501232512854,
+            1.477518807930019
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "quality_status": "FAILED_NATIVE / LIMITED",
+        "visual_acceptance": false,
+        "physical_acceptance": false,
+        "native_delivery_acceptance": false,
+        "workflow_completion": "Native quality_v2 reached actual build_geometry; structural audit failed5, requireddiagnostics stillrunning at freeze. Semantic measurementcandidate only.",
+        "independent_review_sha256": "87a1c584e6b8c78b8f9fd10c40ba5d02f0a689f63eced39d74fc08569338ea4c",
+        "final_input_check_sha256": "1161fd25d6988f4b94a1f5268a54b2c7aa66a69ae2974d57f289208b24e57598",
+        "reference_manifest_sha256": "a3d9eb6be2b6fabf3ff0d776141d41cf8c1f628051c68637ac2a2a38907acdc3",
+        "source_model_path": "/home/wqz/real2sim_agent_compare_20261003/OURS/models/v3/model.blend",
+        "native_structural_summary_sha256": "190f3c5402dc854ec3299e1f996ad8a4e4d89e2122287a6b7b7eabea7a25822f",
+        "source_builder_sha256": "653f9e6a123056e52f6fe86844a1cda2c32fb3ad233a98c0b32af35e5dc12340",
+        "native_stage_state_sha256": "b82f75c1dbdfa37d85f727d0cec9e53b26baf54914e29f558dfc82eefa1f223c",
+        "scope": "Independent native-stage semantic authoring; benchmarkfreeze is not Workflow.freeze or successfuldelivery; no GTfeedback"
+      },
+      "depth": {
+        "reconstruction": {
+          "views": 36,
+          "GT_valid_pixels": 74079,
+          "GT_grid_pixels": 691200,
+          "absrel": 0.0620064840445088,
+          "rmse_m": 1.0107193522983127,
+          "valid_coverage": 0.999932087020334,
+          "invalid_rate": 6.791297966618481e-05,
+          "missing_penalty_mae_m": 0.3994937121040291,
+          "delta1": 0.9683753974529807
+        },
+        "heldout": {
+          "views": 8,
+          "GT_valid_pixels": 16796,
+          "GT_grid_pixels": 153600,
+          "absrel": 0.06437820941209793,
+          "rmse_m": 1.117824137210846,
+          "valid_coverage": 1.0,
+          "invalid_rate": 0.0,
+          "missing_penalty_mae_m": 0.4285416640341282,
+          "delta1": 0.9622752048341933
+        }
+      },
+      "geometry": {
+        "model_to_laser_mean_m": 3.813943752041009,
+        "laser_to_model_mean_m": 0.11184868723000542,
+        "symmetric_mean_m": 1.9628962196355073,
+        "model_to_laser_p95_m": 16.315534042175205,
+        "laser_to_model_p95_m": 0.41781504005193687,
+        "precision_1cm": 0.00924,
+        "recall_1cm": 0.06791,
+        "fscore_1cm": 0.016266711600777705,
+        "precision_5cm": 0.05837,
+        "recall_5cm": 0.32125,
+        "fscore_5cm": 0.09879017175069806,
+        "precision_10cm": 0.10315,
+        "recall_10cm": 0.77705,
+        "fscore_10cm": 0.18212385253351512
+      },
+      "appearance": [
+        {
+          "frame_id": "DSC_0675",
+          "split": "reconstruction",
+          "source": "/data/wqz/real2sim-awsm-20261003/eth3d/benchmark_v1/observations/rgb/000.png",
+          "render": "/data/wqz/real2sim-agent-compare-20261003/comparison/evaluation/OURS/DSC_0675.png",
+          "size": [
+            640,
+            426
+          ],
+          "render_sha256": "2a411ccd150291326239a88b4c850ce02afa6acf28f267e7cf3944635f4ff920",
+          "psnr_db": 11.906467552150328,
+          "ssim": 0.5559115015024872
+        },
+        {
+          "frame_id": "DSC_0683",
+          "split": "reconstruction",
+          "source": "/data/wqz/real2sim-awsm-20261003/eth3d/benchmark_v1/observations/rgb/007.png",
+          "render": "/data/wqz/real2sim-agent-compare-20261003/comparison/evaluation/OURS/DSC_0683.png",
+          "size": [
+            640,
+            426
+          ],
+          "render_sha256": "9d303ee3afa19d4b69644e4eb20385002e49587b718140e94f8743b83c072ccc",
+          "psnr_db": 13.72782227750897,
+          "ssim": 0.4605160327337244
+        },
+        {
+          "frame_id": "DSC_0692",
+          "split": "reconstruction",
+          "source": "/data/wqz/real2sim-awsm-20261003/eth3d/benchmark_v1/observations/rgb/014.png",
+          "render": "/data/wqz/real2sim-agent-compare-20261003/comparison/evaluation/OURS/DSC_0692.png",
+          "size": [
+            640,
+            426
+          ],
+          "render_sha256": "785a213edca9369da3743968f6edb11af69b5c9a045581ed850f655455edb3a6",
+          "psnr_db": 13.836303881928398,
+          "ssim": 0.6030461195939714
+        },
+        {
+          "frame_id": "DSC_0701",
+          "split": "reconstruction",
+          "source": "/data/wqz/real2sim-awsm-20261003/eth3d/benchmark_v1/observations/rgb/021.png",
+          "render": "/data/wqz/real2sim-agent-compare-20261003/comparison/evaluation/OURS/DSC_0701.png",
+          "size": [
+            640,
+            426
+          ],
+          "render_sha256": "80bb71d42f4c18490f710b83a28516c786bf12c956d4eaf0a5eac7d98ca91451",
+          "psnr_db": 15.410165155564744,
+          "ssim": 0.5707185562709355
+        },
+        {
+          "frame_id": "DSC_0710",
+          "split": "reconstruction",
+          "source": "/data/wqz/real2sim-awsm-20261003/eth3d/benchmark_v1/observations/rgb/028.png",
+          "render": "/data/wqz/real2sim-agent-compare-20261003/comparison/evaluation/OURS/DSC_0710.png",
+          "size": [
+            640,
+            426
+          ],
+          "render_sha256": "bf9095ed4988464a4f7a20deb90b97c49783d545ea76fdf3baf86476a08a066c",
+          "psnr_db": 14.535587063323067,
+          "ssim": 0.5009871066789836
+        },
+        {
+          "frame_id": "DSC_0679",
+          "split": "heldout",
+          "source": "/data/wqz/real2sim-awsm-20261003/eth3d/benchmark_v1/evaluator/withheld_rgb/000.png",
+          "render": "/data/wqz/real2sim-agent-compare-20261003/comparison/evaluation/OURS/DSC_0679.png",
+          "size": [
+            640,
+            426
+          ],
+          "render_sha256": "8272ee6dcaff9064eb658017b5e5920f18ca645d434e29acfcdee836c34555ab",
+          "psnr_db": 12.309056849861953,
+          "ssim": 0.506071087125016
+        },
+        {
+          "frame_id": "DSC_0684",
+          "split": "heldout",
+          "source": "/data/wqz/real2sim-awsm-20261003/eth3d/benchmark_v1/evaluator/withheld_rgb/001.png",
+          "render": "/data/wqz/real2sim-agent-compare-20261003/comparison/evaluation/OURS/DSC_0684.png",
+          "size": [
+            640,
+            426
+          ],
+          "render_sha256": "1b60f845b5de63e660b33eb44eec6b60e72e722c3cb828af00abaf15549a8bc7",
+          "psnr_db": 14.150141458432643,
+          "ssim": 0.4939358213078151
+        },
+        {
+          "frame_id": "DSC_0689",
+          "split": "heldout",
+          "source": "/data/wqz/real2sim-awsm-20261003/eth3d/benchmark_v1/evaluator/withheld_rgb/002.png",
+          "render": "/data/wqz/real2sim-agent-compare-20261003/comparison/evaluation/OURS/DSC_0689.png",
+          "size": [
+            640,
+            426
+          ],
+          "render_sha256": "4fb8e757c3db7e85c1f465f9ff26e91e969f40f81c8ef2a6b4a849f7406cc8a2",
+          "psnr_db": 14.368082107857882,
+          "ssim": 0.49198548146519855
+        },
+        {
+          "frame_id": "DSC_0694",
+          "split": "heldout",
+          "source": "/data/wqz/real2sim-awsm-20261003/eth3d/benchmark_v1/evaluator/withheld_rgb/003.png",
+          "render": "/data/wqz/real2sim-agent-compare-20261003/comparison/evaluation/OURS/DSC_0694.png",
+          "size": [
+            640,
+            426
+          ],
+          "render_sha256": "71c27e283809d73f9707a011fac1b41ae4c1aeb03fcf8ae85e7bb84e9a9fee7f",
+          "psnr_db": 15.03675818242728,
+          "ssim": 0.6150383473136963
+        },
+        {
+          "frame_id": "DSC_0699",
+          "split": "heldout",
+          "source": "/data/wqz/real2sim-awsm-20261003/eth3d/benchmark_v1/evaluator/withheld_rgb/004.png",
+          "render": "/data/wqz/real2sim-agent-compare-20261003/comparison/evaluation/OURS/DSC_0699.png",
+          "size": [
+            640,
+            426
+          ],
+          "render_sha256": "6b0e2dde079f054abf22cd52ef34fb2defe3f6fb6827bc34b93d2c2ba1f9242f",
+          "psnr_db": 14.953029253189342,
+          "ssim": 0.6075457262006194
+        },
+        {
+          "frame_id": "DSC_0704",
+          "split": "heldout",
+          "source": "/data/wqz/real2sim-awsm-20261003/eth3d/benchmark_v1/evaluator/withheld_rgb/005.png",
+          "render": "/data/wqz/real2sim-agent-compare-20261003/comparison/evaluation/OURS/DSC_0704.png",
+          "size": [
+            640,
+            426
+          ],
+          "render_sha256": "e00841c4a03fe4f3f23c62710d5dacbac6a178d98f41b7641772a70072dbbb3d",
+          "psnr_db": 13.207532814566296,
+          "ssim": 0.5456616396831635
+        },
+        {
+          "frame_id": "DSC_0709",
+          "split": "heldout",
+          "source": "/data/wqz/real2sim-awsm-20261003/eth3d/benchmark_v1/evaluator/withheld_rgb/006.png",
+          "render": "/data/wqz/real2sim-agent-compare-20261003/comparison/evaluation/OURS/DSC_0709.png",
+          "size": [
+            640,
+            426
+          ],
+          "render_sha256": "5b6f9cef972f82ae2876381b51be99182e635e226b242ba217c32a78e27e99ba",
+          "psnr_db": 13.227222352190829,
+          "ssim": 0.47937542487843854
+        },
+        {
+          "frame_id": "DSC_0714",
+          "split": "heldout",
+          "source": "/data/wqz/real2sim-awsm-20261003/eth3d/benchmark_v1/evaluator/withheld_rgb/007.png",
+          "render": "/data/wqz/real2sim-agent-compare-20261003/comparison/evaluation/OURS/DSC_0714.png",
+          "size": [
+            640,
+            426
+          ],
+          "render_sha256": "147db035671834049f1eae72ec80f34439e14ab9dbadf686e0f94472206b7e23",
+          "psnr_db": 12.692751957130843,
+          "ssim": 0.4586084366190574
+        }
+      ],
+      "appearance_means": {
+        "reconstruction": {
+          "psnr_db": 13.8832691860951,
+          "ssim": 0.5382358633560205
+        },
+        "heldout": {
+          "psnr_db": 13.743071871957133,
+          "ssim": 0.5247777455741256
+        }
+      }
+    },
+    {
+      "id": "AWSM",
+      "freeze": {
+        "method": "AWSM",
+        "status": "frozen_for_independent_evaluation",
+        "frozen_utc": "2026-10-03T05:31:48.054961+00:00",
+        "model_sha256": "8bf7eaa7bb795118b58c5782d313f071826990bc999cf94d4568c8db508abcd2",
+        "model_from_input": [
+          [
+            0.99837529540149,
+            0.002186867471625334,
+            0.05693845047636353,
+            0.0
+          ],
+          [
+            -0.0029226752216324754,
+            0.9999132565047825,
+            0.012842797029859961,
+            0.0
+          ],
+          [
+            -0.05690542594108765,
+            -0.01298834387683323,
+            0.9982950843422003,
+            1.4796541998118724
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "quality_status": "LIMITED",
+        "visual_acceptance": false,
+        "physical_acceptance": false,
+        "workflow_completion": "published protocol port completed:2versions,20paired checks,3full36-view checks",
+        "independent_review_sha256": "d132652b2b7200586b8e80a3acd35b9ee53687cc6c4ed2e1499fee930c898e46",
+        "final_input_check_sha256": "fe90b9c84bea8fc606d49e09f25971c8b2d20fbb396469cd91e03a1d686860f4",
+        "reference_manifest_sha256": "a3d9eb6be2b6fabf3ff0d776141d41cf8c1f628051c68637ac2a2a38907acdc3",
+        "source_model_path": "/home/wqz/real2sim_agent_compare_20261003/AWSM/scene.blend",
+        "source_evidence_archive_sha256": "15da8797b4be28105d03cdc9e8d0d797cc4574d2bc96fbf67d1da9f60bbebf99",
+        "scope": "Independent semantic authoring under AWSM protocol port to ETH3D; not original World Lobby/model-runtime reproduction; no GT scores fed back"
+      },
+      "depth": {
+        "reconstruction": {
+          "views": 36,
+          "GT_valid_pixels": 74079,
+          "GT_grid_pixels": 691200,
+          "absrel": 0.05339071723735995,
+          "rmse_m": 0.9609075337648392,
+          "valid_coverage": 0.9853524034106953,
+          "invalid_rate": 0.014647596589304694,
+          "missing_penalty_mae_m": 0.7695314524074396,
+          "delta1": 0.9713418870576481
+        },
+        "heldout": {
+          "views": 8,
+          "GT_valid_pixels": 16796,
+          "GT_grid_pixels": 153600,
+          "absrel": 0.04649014328606427,
+          "rmse_m": 1.053662247955799,
+          "valid_coverage": 0.9765958449149221,
+          "invalid_rate": 0.023404155085077857,
+          "missing_penalty_mae_m": 1.0254285652190447,
+          "delta1": 0.9722730452128898
+        }
+      },
+      "geometry": {
+        "model_to_laser_mean_m": 0.8133546352249826,
+        "laser_to_model_mean_m": 0.07665464714558966,
+        "symmetric_mean_m": 0.44500464118528615,
+        "model_to_laser_p95_m": 3.579017276606875,
+        "laser_to_model_p95_m": 0.3464655995368945,
+        "precision_1cm": 0.02963,
+        "recall_1cm": 0.33537,
+        "fscore_1cm": 0.054449386849315065,
+        "precision_5cm": 0.15455,
+        "recall_5cm": 0.75014,
+        "fscore_5cm": 0.2562958295106611,
+        "precision_10cm": 0.21143,
+        "recall_10cm": 0.84325,
+        "fscore_10cm": 0.33808993723214625
+      },
+      "appearance": [
+        {
+          "frame_id": "DSC_0675",
+          "split": "reconstruction",
+          "source": "/data/wqz/real2sim-awsm-20261003/eth3d/benchmark_v1/observations/rgb/000.png",
+          "render": "/data/wqz/real2sim-agent-compare-20261003/comparison/evaluation/AWSM/DSC_0675.png",
+          "size": [
+            640,
+            426
+          ],
+          "render_sha256": "31d133b19b628d8614abb47002474b6f20f4c71597982c52ea04e59b0d2fd12e",
+          "psnr_db": 11.162412946738518,
+          "ssim": 0.4802613060127473
+        },
+        {
+          "frame_id": "DSC_0683",
+          "split": "reconstruction",
+          "source": "/data/wqz/real2sim-awsm-20261003/eth3d/benchmark_v1/observations/rgb/007.png",
+          "render": "/data/wqz/real2sim-agent-compare-20261003/comparison/evaluation/AWSM/DSC_0683.png",
+          "size": [
+            640,
+            426
+          ],
+          "render_sha256": "1d62faef81546b4938449ae04b43e9b822a32e4d739cac583f3417a8b08ebbce",
+          "psnr_db": 12.301810226236169,
+          "ssim": 0.44259751894909144
+        },
+        {
+          "frame_id": "DSC_0692",
+          "split": "reconstruction",
+          "source": "/data/wqz/real2sim-awsm-20261003/eth3d/benchmark_v1/observations/rgb/014.png",
+          "render": "/data/wqz/real2sim-agent-compare-20261003/comparison/evaluation/AWSM/DSC_0692.png",
+          "size": [
+            640,
+            426
+          ],
+          "render_sha256": "b6eb151790d80d21a2237b6a5bd8a4878c014ebaf48beaa3044b45cfcdf62c96",
+          "psnr_db": 12.524007206594131,
+          "ssim": 0.5971288902451889
+        },
+        {
+          "frame_id": "DSC_0701",
+          "split": "reconstruction",
+          "source": "/data/wqz/real2sim-awsm-20261003/eth3d/benchmark_v1/observations/rgb/021.png",
+          "render": "/data/wqz/real2sim-agent-compare-20261003/comparison/evaluation/AWSM/DSC_0701.png",
+          "size": [
+            640,
+            426
+          ],
+          "render_sha256": "b6cde14e2f01e97661410a707c89439256419fa1073cc30f41b6f7c7d7a0bf50",
+          "psnr_db": 15.052809363441783,
+          "ssim": 0.5480733040841368
+        },
+        {
+          "frame_id": "DSC_0710",
+          "split": "reconstruction",
+          "source": "/data/wqz/real2sim-awsm-20261003/eth3d/benchmark_v1/observations/rgb/028.png",
+          "render": "/data/wqz/real2sim-agent-compare-20261003/comparison/evaluation/AWSM/DSC_0710.png",
+          "size": [
+            640,
+            426
+          ],
+          "render_sha256": "0e2ef5d9492b1837d754b996f51c40cc9a3f13e25b2400bdb94af5995091681e",
+          "psnr_db": 15.05864960537979,
+          "ssim": 0.49928285708988374
+        },
+        {
+          "frame_id": "DSC_0679",
+          "split": "heldout",
+          "source": "/data/wqz/real2sim-awsm-20261003/eth3d/benchmark_v1/evaluator/withheld_rgb/000.png",
+          "render": "/data/wqz/real2sim-agent-compare-20261003/comparison/evaluation/AWSM/DSC_0679.png",
+          "size": [
+            640,
+            426
+          ],
+          "render_sha256": "29e55fba193fd2934a6734a00577b006b39488e41b30ace2eae7d523a02fbf1c",
+          "psnr_db": 12.965003761094922,
+          "ssim": 0.5258932033461257
+        },
+        {
+          "frame_id": "DSC_0684",
+          "split": "heldout",
+          "source": "/data/wqz/real2sim-awsm-20261003/eth3d/benchmark_v1/evaluator/withheld_rgb/001.png",
+          "render": "/data/wqz/real2sim-agent-compare-20261003/comparison/evaluation/AWSM/DSC_0684.png",
+          "size": [
+            640,
+            426
+          ],
+          "render_sha256": "a933902284e6569ab109277a52e3e6eeeb3db1bd2b52d58417ed921b581af632",
+          "psnr_db": 12.836387827534946,
+          "ssim": 0.4697697038753865
+        },
+        {
+          "frame_id": "DSC_0689",
+          "split": "heldout",
+          "source": "/data/wqz/real2sim-awsm-20261003/eth3d/benchmark_v1/evaluator/withheld_rgb/002.png",
+          "render": "/data/wqz/real2sim-agent-compare-20261003/comparison/evaluation/AWSM/DSC_0689.png",
+          "size": [
+            640,
+            426
+          ],
+          "render_sha256": "8b0eba907e5a006dfc42b9da676011bcc5f6638ab26e021a7c13178bf497775f",
+          "psnr_db": 13.74330834721496,
+          "ssim": 0.492213338615265
+        },
+        {
+          "frame_id": "DSC_0694",
+          "split": "heldout",
+          "source": "/data/wqz/real2sim-awsm-20261003/eth3d/benchmark_v1/evaluator/withheld_rgb/003.png",
+          "render": "/data/wqz/real2sim-agent-compare-20261003/comparison/evaluation/AWSM/DSC_0694.png",
+          "size": [
+            640,
+            426
+          ],
+          "render_sha256": "64689aa1f47463f6aa58080145eacd8c0fbb17a1d56cb38e0efbba964ed56ae1",
+          "psnr_db": 14.086795508774877,
+          "ssim": 0.568803399297838
+        },
+        {
+          "frame_id": "DSC_0699",
+          "split": "heldout",
+          "source": "/data/wqz/real2sim-awsm-20261003/eth3d/benchmark_v1/evaluator/withheld_rgb/004.png",
+          "render": "/data/wqz/real2sim-agent-compare-20261003/comparison/evaluation/AWSM/DSC_0699.png",
+          "size": [
+            640,
+            426
+          ],
+          "render_sha256": "81b79ac4a8f0f9320e054bb90f521491d40bdada3ba529279108dfd03f967c7f",
+          "psnr_db": 14.005281290963634,
+          "ssim": 0.5713843474475646
+        },
+        {
+          "frame_id": "DSC_0704",
+          "split": "heldout",
+          "source": "/data/wqz/real2sim-awsm-20261003/eth3d/benchmark_v1/evaluator/withheld_rgb/005.png",
+          "render": "/data/wqz/real2sim-agent-compare-20261003/comparison/evaluation/AWSM/DSC_0704.png",
+          "size": [
+            640,
+            426
+          ],
+          "render_sha256": "cde72aed43e7fa163473a5cf80f1b9c0a9891fc2498ad42649664d422af50c62",
+          "psnr_db": 12.179644191904135,
+          "ssim": 0.4911451480636759
+        },
+        {
+          "frame_id": "DSC_0709",
+          "split": "heldout",
+          "source": "/data/wqz/real2sim-awsm-20261003/eth3d/benchmark_v1/evaluator/withheld_rgb/006.png",
+          "render": "/data/wqz/real2sim-agent-compare-20261003/comparison/evaluation/AWSM/DSC_0709.png",
+          "size": [
+            640,
+            426
+          ],
+          "render_sha256": "d0a0a31cb020a75a223b26933638b1e5e0f03042f1da8371eaa006e243e57a39",
+          "psnr_db": 13.558604902622637,
+          "ssim": 0.45597684280422907
+        },
+        {
+          "frame_id": "DSC_0714",
+          "split": "heldout",
+          "source": "/data/wqz/real2sim-awsm-20261003/eth3d/benchmark_v1/evaluator/withheld_rgb/007.png",
+          "render": "/data/wqz/real2sim-agent-compare-20261003/comparison/evaluation/AWSM/DSC_0714.png",
+          "size": [
+            640,
+            426
+          ],
+          "render_sha256": "4e06c08082206a063672992afe3a12c8c81d16c0b16a8fb5fae7ce639fab8d2a",
+          "psnr_db": 12.839212943300973,
+          "ssim": 0.4691497576711037
+        }
+      ],
+      "appearance_means": {
+        "reconstruction": {
+          "psnr_db": 13.219937869678077,
+          "ssim": 0.5134687752762096
+        },
+        "heldout": {
+          "psnr_db": 13.276779846676385,
+          "ssim": 0.5055419676401485
+        }
+      }
+    }
+  ],
+  "lpips_status": "pending"
+}

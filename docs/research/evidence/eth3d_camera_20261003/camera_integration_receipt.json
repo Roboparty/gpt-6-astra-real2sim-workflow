@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "real_images": 36,
+  "accepted_cameras": 36,
+  "preprocess_cache_valid": true,
+  "camera_constraints_sha256": "e0a4fbf73a7db61322c5d02efe9aeb43934840fec285aa0260ea760d39b65619",
+  "agent_packet": "/home/wqz/real2sim_awsm_20261003/eth3d_native_workflow_v1/runs/agent_observe/0001/packet.json",
+  "wall_seconds": 9.240735257044435,
+  "scope": "Native ingest/preprocess/Agent packet and camera lock; not full modelling, review, export or task acceptance"
+}

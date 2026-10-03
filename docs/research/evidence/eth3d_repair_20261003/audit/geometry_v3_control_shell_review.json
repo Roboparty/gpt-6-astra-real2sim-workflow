@@ -1,0 +1,278 @@
+{
+  "model_sha256": "c288f8bb9688defd71f2faeb8dfddfefdeac2c56b714187dde0c2a3125d771b4",
+  "model_unchanged": true,
+  "camera_metadata_exact": true,
+  "rigid_gauge_exact": true,
+  "source_labels_exact": true,
+  "source_label_count": 38,
+  "acceptance_exact": true,
+  "room_guard": {
+    "bounds_only": true,
+    "nonrectangular_topology": true,
+    "topology": "orthogonal_union",
+    "collision_policy": "mesh_only"
+  },
+  "shell_checks": [
+    {
+      "name": "floor",
+      "nonmanifold_edges": 0,
+      "inconsistent_edges": 0,
+      "duplicate_faces": 0,
+      "signed_volume": 188.02613356717214
+    },
+    {
+      "name": "ceiling",
+      "nonmanifold_edges": 0,
+      "inconsistent_edges": 0,
+      "duplicate_faces": 0,
+      "signed_volume": 188.026399738902
+    },
+    {
+      "name": "wall_front",
+      "nonmanifold_edges": 0,
+      "inconsistent_edges": 0,
+      "duplicate_faces": 0,
+      "signed_volume": 59.940513884168
+    },
+    {
+      "name": "wall_back",
+      "nonmanifold_edges": 0,
+      "inconsistent_edges": 0,
+      "duplicate_faces": 0,
+      "signed_volume": 59.94048526173654
+    },
+    {
+      "name": "wall_left",
+      "nonmanifold_edges": 0,
+      "inconsistent_edges": 0,
+      "duplicate_faces": 0,
+      "signed_volume": 31.11265186454613
+    },
+    {
+      "name": "wall_right",
+      "nonmanifold_edges": 0,
+      "inconsistent_edges": 0,
+      "duplicate_faces": 0,
+      "signed_volume": 24.850616934032907
+    }
+  ],
+  "floor_union_cells_checked": 30,
+  "floor_union_failures": 0,
+  "garage_rays_checked": 133,
+  "garage_failures": [],
+  "lights_exact": true,
+  "changed_light_names": [],
+  "material_slot_changes": [],
+  "material_data_changes": [],
+  "settings_exact": true,
+  "settings_differences": {},
+  "visibility_changes": [],
+  "collection_changes": [],
+  "removed_objects": [
+    "corridor_north_wall",
+    "corridor_south_wall",
+    "lumber_back_wall",
+    "main_side_wall",
+    "rack_back_wall"
+  ],
+  "new_objects": [],
+  "matrix_only_landmark_transport_not_an_acceptance_test_for_baked_mesh": true,
+  "matrix_transport_diagnostic": [
+    {
+      "landmark": "garage_door_observed_endpoint_0",
+      "part": "door_leaf_6_rail_2",
+      "difference_m": 0.0
+    },
+    {
+      "landmark": "garage_door_observed_endpoint_1",
+      "part": "door_leaf_6_panel_0",
+      "difference_m": 0.0
+    },
+    {
+      "landmark": "garage_door_observed_endpoint_2",
+      "part": "door_leaf_3_rail_1",
+      "difference_m": 0.0
+    },
+    {
+      "landmark": "storage_rack_observed_endpoint_0",
+      "part": "top_folded_bag_0_2",
+      "difference_m": 0.0
+    },
+    {
+      "landmark": "storage_rack_observed_endpoint_1",
+      "part": "top_folded_bag_0_0",
+      "difference_m": 0.0
+    },
+    {
+      "landmark": "storage_rack_observed_endpoint_2",
+      "part": "rack_pallet_0_0_3",
+      "difference_m": 0.0
+    },
+    {
+      "landmark": "wood_crate_0_observed_endpoint_0",
+      "part": "crate0_strap0",
+      "difference_m": 0.0
+    },
+    {
+      "landmark": "wood_crate_0_observed_endpoint_1",
+      "part": "crate0_foot2",
+      "difference_m": 0.0
+    },
+    {
+      "landmark": "wood_crate_0_observed_endpoint_2",
+      "part": "crate0_strap0",
+      "difference_m": 0.0
+    },
+    {
+      "landmark": "wood_crate_1_observed_endpoint_0",
+      "part": "crate1_strap0",
+      "difference_m": 8.881784197001252e-16
+    },
+    {
+      "landmark": "wood_crate_1_observed_endpoint_1",
+      "part": "crate1_strap0",
+      "difference_m": 0.0
+    },
+    {
+      "landmark": "lime_skip_0_observed_endpoint_0",
+      "part": "skip0_side_rim0",
+      "difference_m": 10.974232465135245
+    },
+    {
+      "landmark": "lime_skip_0_observed_endpoint_1",
+      "part": "skip0_side_rim1",
+      "difference_m": 11.635494134637186
+    },
+    {
+      "landmark": "lime_skip_0_observed_endpoint_2",
+      "part": "skip0_foot0",
+      "difference_m": 9.66213778988259
+    },
+    {
+      "landmark": "lime_skip_1_observed_endpoint_0",
+      "part": "skip1_rim0",
+      "difference_m": 0.0
+    },
+    {
+      "landmark": "lime_skip_1_observed_endpoint_1",
+      "part": "skip1_foot0",
+      "difference_m": 2.220446049250313e-16
+    },
+    {
+      "landmark": "white_trailer_observed_endpoint_0",
+      "part": "trailer_box",
+      "difference_m": 0.0
+    },
+    {
+      "landmark": "white_trailer_observed_endpoint_1",
+      "part": "trailer_box",
+      "difference_m": 0.0
+    },
+    {
+      "landmark": "white_trailer_observed_endpoint_2",
+      "part": "trailer_hub_12.9_-1",
+      "difference_m": 8.881784197001252e-16
+    },
+    {
+      "landmark": "flatbed_trailer_observed_endpoint_0",
+      "part": "flatbed_hitch",
+      "difference_m": 8.881784197001252e-16
+    },
+    {
+      "landmark": "flatbed_trailer_observed_endpoint_1",
+      "part": "flatbed_wheel-1",
+      "difference_m": 0.0
+    },
+    {
+      "landmark": "white_van_observed_endpoint_0",
+      "part": "van_windshield_divider",
+      "difference_m": 0.4846661908704946
+    },
+    {
+      "landmark": "white_van_observed_endpoint_1",
+      "part": "van_hub1_0",
+      "difference_m": 0.12206642255106932
+    },
+    {
+      "landmark": "white_van_observed_endpoint_2",
+      "part": "van_tyre-1_0",
+      "difference_m": 0.1649596662719616
+    },
+    {
+      "landmark": "black_car_observed_endpoint_0",
+      "part": "car_rear_frame1",
+      "difference_m": 0.5140417699480097
+    },
+    {
+      "landmark": "black_car_observed_endpoint_1",
+      "part": "car_lower_body",
+      "difference_m": 0.10602505655283506
+    },
+    {
+      "landmark": "black_car_observed_endpoint_2",
+      "part": "car_tyre-1_0",
+      "difference_m": 0.046166787477357266
+    },
+    {
+      "landmark": "lumber_cart_observed_endpoint_0",
+      "part": "cart_caster1_1",
+      "difference_m": 8.95090418262362e-16
+    },
+    {
+      "landmark": "lumber_cart_observed_endpoint_1",
+      "part": "cart_caster-1_1",
+      "difference_m": 8.88185195937854e-16
+    },
+    {
+      "landmark": "lumber_cart_observed_endpoint_2",
+      "part": "cart_upright2",
+      "difference_m": 3.1401849173675503e-16
+    },
+    {
+      "landmark": "lumber_cart_observed_endpoint_3",
+      "part": "cart_crossbar",
+      "difference_m": 2.220446049250313e-16
+    },
+    {
+      "landmark": "mesh_cage_0_observed_endpoint_0",
+      "part": "cage0_side1",
+      "difference_m": 0.0
+    },
+    {
+      "landmark": "mesh_cage_0_observed_endpoint_1",
+      "part": "cage0_side0",
+      "difference_m": 0.0
+    },
+    {
+      "landmark": "mesh_cage_0_observed_endpoint_2",
+      "part": "cage0_wireV1",
+      "difference_m": 0.0
+    },
+    {
+      "landmark": "mesh_cage_1_observed_endpoint_0",
+      "part": "cage1_wireV48",
+      "difference_m": 0.0
+    },
+    {
+      "landmark": "mesh_cage_1_observed_endpoint_1",
+      "part": "cage1_wireV8",
+      "difference_m": 0.0
+    },
+    {
+      "landmark": "mesh_cage_2_observed_endpoint_0",
+      "part": "cage2_side1",
+      "difference_m": 0.3339830730534353
+    },
+    {
+      "landmark": "mesh_cage_2_observed_endpoint_1",
+      "part": "cage2_wireV13",
+      "difference_m": 0.09935189078093007
+    }
+  ],
+  "unknown_completions": [
+    "cageback1.6m",
+    "hidden roomcorner returns",
+    "longrange terminal position uncertainty"
+  ],
+  "not_claimed": "Per-shell topology/planned coverage is not physical scene accuracy, global collision clearance or support of unobserved completion. Native object audit and fixed-view visual check are separate."
+}

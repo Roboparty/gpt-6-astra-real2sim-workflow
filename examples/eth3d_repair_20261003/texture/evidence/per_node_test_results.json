@@ -1,0 +1,136 @@
+{
+  "cases": [
+    {
+      "case": "frozen_graph",
+      "status": "rigid_mixed_layers_verified_soft_failures_retained",
+      "failures": 75,
+      "model_sha256": "b9e1abb33fb4ab050478c3038127a1cfe755e861ed4b8373d47c0434b8ac2f34"
+    },
+    {
+      "case": "rigid_mixed_positive",
+      "passed": true,
+      "expected_failure_fragment": null,
+      "actual_failures": []
+    },
+    {
+      "case": "missing_node",
+      "passed": true,
+      "expected_failure_fragment": "differ from active nodes",
+      "actual_failures": [
+        "Texture-node declarations differ from active nodes: MixedMat",
+        "Invalid texture-node mapping: MixedMat/Noise"
+      ]
+    },
+    {
+      "case": "extra_node",
+      "passed": true,
+      "expected_failure_fragment": "differ from active nodes",
+      "actual_failures": [
+        "Texture-node declarations differ from active nodes: MixedMat"
+      ]
+    },
+    {
+      "case": "wrong_uv",
+      "passed": true,
+      "expected_failure_fragment": "coordinates",
+      "actual_failures": [
+        "Declared UV material uses other coordinates: MixedMat",
+        "Missing evaluated UV map: panel"
+      ]
+    },
+    {
+      "case": "wrong_world",
+      "passed": true,
+      "expected_failure_fragment": "coordinates",
+      "actual_failures": [
+        "Actual texture coordinates differ from declaration: MixedMat"
+      ]
+    },
+    {
+      "case": "missing_material",
+      "passed": true,
+      "expected_failure_fragment": "every material",
+      "actual_failures": [
+        "Per-node coordinates must declare every material exactly once: fixture",
+        "Texture-node declarations differ from active nodes: MixedMat",
+        "Invalid texture-node mapping: MixedMat/Photo",
+        "Invalid texture-node mapping: MixedMat/Noise"
+      ]
+    },
+    {
+      "case": "extra_material",
+      "passed": true,
+      "expected_failure_fragment": "every material",
+      "actual_failures": [
+        "Per-node coordinates must declare every material exactly once: fixture",
+        "Texture-node declarations differ from active nodes: MixedMat",
+        "Invalid texture-node mapping: MixedMat/Photo",
+        "Invalid texture-node mapping: MixedMat/Noise"
+      ]
+    },
+    {
+      "case": "soft_world_rejected",
+      "passed": true,
+      "expected_failure_fragment": "Soft texture",
+      "actual_failures": [
+        "Soft texture does not follow surface UV: panel/Noise"
+      ]
+    },
+    {
+      "case": "extra_node_field",
+      "passed": true,
+      "expected_failure_fragment": "fields differ",
+      "actual_failures": [
+        "Texture-node coordinate fields differ: MixedMat/Noise"
+      ]
+    },
+    {
+      "case": "soft_uv_positive",
+      "passed": true,
+      "expected_failure_fragment": null,
+      "actual_failures": []
+    },
+    {
+      "case": "explicit_uv_ignores_editor_render_selection",
+      "passed": true,
+      "expected_failure_fragment": null,
+      "actual_failures": []
+    },
+    {
+      "case": "empty_uvmap_uses_render_layer",
+      "passed": true,
+      "expected_failure_fragment": "render-active",
+      "actual_failures": [
+        "Implicit UV reads a different render-active map: panel"
+      ]
+    },
+    {
+      "case": "texcoord_implicit_wrong_render_layer",
+      "passed": true,
+      "expected_failure_fragment": "render-active",
+      "actual_failures": [
+        "Implicit UV reads a different render-active map: panel"
+      ]
+    },
+    {
+      "case": "per_node_two_named_uvs_positive",
+      "passed": true,
+      "expected_failure_fragment": null,
+      "actual_failures": []
+    },
+    {
+      "case": "active_group_rejected",
+      "passed": true,
+      "expected_failure_fragment": "Shader group requires",
+      "actual_failures": [
+        "Appearance adapter requires one active Principled shader: MixedMat",
+        "Shader group requires explicit audit adapter: MixedMat",
+        "Texture-node declarations differ from active nodes: MixedMat"
+      ]
+    }
+  ],
+  "frozen_model_unchanged": true,
+  "frozen_sha256": "b9e1abb33fb4ab050478c3038127a1cfe755e861ed4b8373d47c0434b8ac2f34",
+  "implementation_sha256": "cd8f3701bf5e930cb3a2b0c1f1d85eec00320079e4598ce4fda3497fa3a09dee",
+  "status": "passed"
+}

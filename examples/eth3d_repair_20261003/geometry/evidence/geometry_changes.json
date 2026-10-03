@@ -1,0 +1,6678 @@
+[
+  {
+    "object": "floor",
+    "action": "replace_geometry",
+    "reason": "Rebuilt actual orthogonal-union exterior, not visibility masking"
+  },
+  {
+    "object": "ceiling",
+    "action": "replace_geometry",
+    "reason": "Rebuilt actual orthogonal-union exterior, not visibility masking"
+  },
+  {
+    "object": "wall_front",
+    "action": "replace_geometry",
+    "reason": "Rebuilt actual orthogonal-union exterior, not visibility masking"
+  },
+  {
+    "object": "wall_back",
+    "action": "replace_geometry",
+    "reason": "Rebuilt actual orthogonal-union exterior, not visibility masking"
+  },
+  {
+    "object": "wall_left",
+    "action": "replace_geometry",
+    "reason": "Rebuilt actual orthogonal-union exterior, not visibility masking"
+  },
+  {
+    "object": "wall_right",
+    "action": "replace_geometry",
+    "reason": "Rebuilt actual orthogonal-union exterior, not visibility masking"
+  },
+  {
+    "object": "main_side_wall",
+    "action": "remove_duplicate_old_partition",
+    "reason": "Rebuilt actual orthogonal-union exterior, not visibility masking"
+  },
+  {
+    "object": "corridor_north_wall",
+    "action": "remove_duplicate_old_partition",
+    "reason": "Rebuilt actual orthogonal-union exterior, not visibility masking"
+  },
+  {
+    "object": "corridor_south_wall",
+    "action": "remove_duplicate_old_partition",
+    "reason": "Rebuilt actual orthogonal-union exterior, not visibility masking"
+  },
+  {
+    "object": "rack_back_wall",
+    "action": "remove_duplicate_old_partition",
+    "reason": "Rebuilt actual orthogonal-union exterior, not visibility masking"
+  },
+  {
+    "object": "lumber_back_wall",
+    "action": "remove_duplicate_old_partition",
+    "reason": "Rebuilt actual orthogonal-union exterior, not visibility masking"
+  },
+  {
+    "object": "ceiling_pipe0",
+    "action": "world_axial_pipe_clip_baked",
+    "baseline_bounds": [
+      [
+        -15.0,
+        -7.304999828338623,
+        4.184998989105225
+      ],
+      [
+        14.0,
+        -7.195000171661377,
+        4.2950005531311035
+      ]
+    ],
+    "candidate_bounds": [
+      [
+        -15.0,
+        -7.304999828338623,
+        4.184998989105225
+      ],
+      [
+        5.199999809265137,
+        -7.195000171661377,
+        4.2950005531311035
+      ]
+    ],
+    "axis": "world_X",
+    "radial_yz_preserved": true,
+    "reason": "Clip unsupported run behind closed garage atX5.20; preserve originalXmin-15 in the actual corridor, radius55mm and centerZ4.24. No object.dimensions assignment."
+  },
+  {
+    "object": "ceiling_pipe1",
+    "action": "world_axial_pipe_clip_baked",
+    "baseline_bounds": [
+      [
+        -15.0,
+        -7.014999866485596,
+        4.184998989105225
+      ],
+      [
+        14.0,
+        -6.90500020980835,
+        4.2950005531311035
+      ]
+    ],
+    "candidate_bounds": [
+      [
+        -15.0,
+        -7.014999866485596,
+        4.184998989105225
+      ],
+      [
+        5.199999809265137,
+        -6.90500020980835,
+        4.2950005531311035
+      ]
+    ],
+    "axis": "world_X",
+    "radial_yz_preserved": true,
+    "reason": "Clip unsupported run behind closed garage atX5.20; preserve originalXmin-15 in the actual corridor, radius55mm and centerZ4.24. No object.dimensions assignment."
+  },
+  {
+    "object": "ceiling_pipe2",
+    "action": "world_axial_pipe_clip_baked",
+    "baseline_bounds": [
+      [
+        -15.0,
+        -6.724999904632568,
+        4.184998989105225
+      ],
+      [
+        14.0,
+        -6.615000247955322,
+        4.2950005531311035
+      ]
+    ],
+    "candidate_bounds": [
+      [
+        -15.0,
+        -6.724999904632568,
+        4.184998989105225
+      ],
+      [
+        5.199999809265137,
+        -6.615000247955322,
+        4.2950005531311035
+      ]
+    ],
+    "axis": "world_X",
+    "radial_yz_preserved": true,
+    "reason": "Clip unsupported run behind closed garage atX5.20; preserve originalXmin-15 in the actual corridor, radius55mm and centerZ4.24. No object.dimensions assignment."
+  },
+  {
+    "object": "van_cab_body",
+    "action": "continuous_local_frame_fit_baked_evaluated_vertices",
+    "owner": "white_van",
+    "parameters": [
+      0.009402760462716604,
+      0.5956278452937105,
+      0.9728929705631499,
+      1.2908202591618305,
+      0.9265856599685567,
+      -0.013664259251943455
+    ],
+    "world_transport": [
+      [
+        0.9728021621704102,
+        0.01763753592967987,
+        0.0,
+        -0.3385501205921173
+      ],
+      [
+        -0.013293434865772724,
+        1.2906997203826904,
+        0.0,
+        -2.651217460632324
+      ],
+      [
+        0.0,
+        0.0,
+        0.9265856742858887,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "baseline_evaluated_vertices_sha256": "d08947035815f16b3300733bc1e10a4644382d60f3764da7c410ee6b57c424f6",
+    "candidate_evaluated_vertices_sha256": "395b22aa5c216c24968484147f48e2e573b54ced7a8f8274428721f2d958f2b8",
+    "vertex_count": 20,
+    "modifiers_baked": true,
+    "vertex_correspondence_preserved": true,
+    "wheel_uniform_exception": false,
+    "reason": "Frozen source endpoint fit; preserve affine shear exactly in evaluated mesh, no TRS decomposition"
+  },
+  {
+    "object": "van_cargo_box",
+    "action": "continuous_local_frame_fit_baked_evaluated_vertices",
+    "owner": "white_van",
+    "parameters": [
+      0.009402760462716604,
+      0.5956278452937105,
+      0.9728929705631499,
+      1.2908202591618305,
+      0.9265856599685567,
+      -0.013664259251943455
+    ],
+    "world_transport": [
+      [
+        0.9728021621704102,
+        0.01763753592967987,
+        0.0,
+        -0.33855023980140686
+      ],
+      [
+        -0.013293434865772724,
+        1.2906997203826904,
+        0.0,
+        -2.651217460632324
+      ],
+      [
+        0.0,
+        0.0,
+        0.9265856742858887,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "baseline_evaluated_vertices_sha256": "c8ba91a445bd7f6c52fc075d31f6df1b24ee5f8bba98ef069c4d7148d7fcdaad",
+    "candidate_evaluated_vertices_sha256": "056c396be1b0cdb82ed789321309d5de03a82eee06701b70bb54a607a2dadfc2",
+    "vertex_count": 56,
+    "modifiers_baked": true,
+    "vertex_correspondence_preserved": true,
+    "wheel_uniform_exception": false,
+    "reason": "Frozen source endpoint fit; preserve affine shear exactly in evaluated mesh, no TRS decomposition"
+  },
+  {
+    "object": "van_chassis",
+    "action": "continuous_local_frame_fit_baked_evaluated_vertices",
+    "owner": "white_van",
+    "parameters": [
+      0.009402760462716604,
+      0.5956278452937105,
+      0.9728929705631499,
+      1.2908202591618305,
+      0.9265856599685567,
+      -0.013664259251943455
+    ],
+    "world_transport": [
+      [
+        0.9728021621704102,
+        0.01763753592967987,
+        0.0,
+        -0.33855000138282776
+      ],
+      [
+        -0.013293434865772724,
+        1.2906997203826904,
+        0.0,
+        -2.651217460632324
+      ],
+      [
+        0.0,
+        0.0,
+        0.9265856742858887,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "baseline_evaluated_vertices_sha256": "73b4af77746d7bd8011e7f9b9c85009b14a6dfecb9cb1e22383d8ad7bbaeecae",
+    "candidate_evaluated_vertices_sha256": "4e998c238280315fa70070268fd06f396777217133a93607e30d66a344fb5e09",
+    "vertex_count": 8,
+    "modifiers_baked": true,
+    "vertex_correspondence_preserved": true,
+    "wheel_uniform_exception": false,
+    "reason": "Frozen source endpoint fit; preserve affine shear exactly in evaluated mesh, no TRS decomposition"
+  },
+  {
+    "object": "van_windshield",
+    "action": "continuous_local_frame_fit_baked_evaluated_vertices",
+    "owner": "white_van",
+    "parameters": [
+      0.009402760462716604,
+      0.5956278452937105,
+      0.9728929705631499,
+      1.2908202591618305,
+      0.9265856599685567,
+      -0.013664259251943455
+    ],
+    "world_transport": [
+      [
+        0.9728021621704102,
+        0.01763753592967987,
+        0.0,
+        -0.3385501205921173
+      ],
+      [
+        -0.013293434865772724,
+        1.2906997203826904,
+        0.0,
+        -2.651217460632324
+      ],
+      [
+        0.0,
+        0.0,
+        0.9265856742858887,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "baseline_evaluated_vertices_sha256": "7c7ac4a186319d0036be37e3557281ccf8d4322c538532d01d95cb908b995233",
+    "candidate_evaluated_vertices_sha256": "508d70bbf016f956d0dd39647383a4697f13fac8cb83f7933363bb1076e40421",
+    "vertex_count": 4,
+    "modifiers_baked": true,
+    "vertex_correspondence_preserved": true,
+    "wheel_uniform_exception": false,
+    "reason": "Frozen source endpoint fit; preserve affine shear exactly in evaluated mesh, no TRS decomposition"
+  },
+  {
+    "object": "van_windshield_frame0",
+    "action": "continuous_local_frame_fit_baked_evaluated_vertices",
+    "owner": "white_van",
+    "parameters": [
+      0.009402760462716604,
+      0.5956278452937105,
+      0.9728929705631499,
+      1.2908202591618305,
+      0.9265856599685567,
+      -0.013664259251943455
+    ],
+    "world_transport": [
+      [
+        0.9728021621704102,
+        0.01763753592967987,
+        1.3234889800848443e-23,
+        -0.3385496735572815
+      ],
+      [
+        -0.013293434865772724,
+        1.2906997203826904,
+        -1.1102175321458892e-16,
+        -2.6512181758880615
+      ],
+      [
+        0.0,
+        0.0,
+        0.9265856742858887,
+        -7.669291335332673e-08
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "baseline_evaluated_vertices_sha256": "19e3ac2afb21b529265ad176601be12f5abfc0c186c1e644b13c1549416032ed",
+    "candidate_evaluated_vertices_sha256": "ff9028e2fe8ddcdeb30a571e1698d99943714de24d5aa2a555c7510dd108891d",
+    "vertex_count": 8,
+    "modifiers_baked": true,
+    "vertex_correspondence_preserved": true,
+    "wheel_uniform_exception": false,
+    "reason": "Frozen source endpoint fit; preserve affine shear exactly in evaluated mesh, no TRS decomposition"
+  },
+  {
+    "object": "van_windshield_frame1",
+    "action": "continuous_local_frame_fit_baked_evaluated_vertices",
+    "owner": "white_van",
+    "parameters": [
+      0.009402760462716604,
+      0.5956278452937105,
+      0.9728929705631499,
+      1.2908202591618305,
+      0.9265856599685567,
+      -0.013664259251943455
+    ],
+    "world_transport": [
+      [
+        0.9728021621704102,
+        0.01763753965497017,
+        -1.3452350344778097e-10,
+        -0.33854973316192627
+      ],
+      [
+        -0.013293437659740448,
+        1.2906997203826904,
+        1.4459362596142e-09,
+        -2.651216983795166
+      ],
+      [
+        -4.89013274318495e-10,
+        -2.8297385767928063e-08,
+        0.9265857338905334,
+        -7.062398310608842e-08
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "baseline_evaluated_vertices_sha256": "ad801c8f5972c9d3cdd543a5b41376d21b40c691287f2f78ae728a51d1622e78",
+    "candidate_evaluated_vertices_sha256": "d7ee90a8b3c60fd6142fd3850b9b29440cc9c0ab1e51263632fa94901b743339",
+    "vertex_count": 8,
+    "modifiers_baked": true,
+    "vertex_correspondence_preserved": true,
+    "wheel_uniform_exception": false,
+    "reason": "Frozen source endpoint fit; preserve affine shear exactly in evaluated mesh, no TRS decomposition"
+  },
+  {
+    "object": "van_windshield_frame2",
+    "action": "continuous_local_frame_fit_baked_evaluated_vertices",
+    "owner": "white_van",
+    "parameters": [
+      0.009402760462716604,
+      0.5956278452937105,
+      0.9728929705631499,
+      1.2908202591618305,
+      0.9265856599685567,
+      -0.013664259251943455
+    ],
+    "world_transport": [
+      [
+        0.9728021621704102,
+        0.01763753592967987,
+        1.3234889800848443e-23,
+        -0.33855050802230835
+      ],
+      [
+        -0.013293434865772724,
+        1.2906997203826904,
+        5.46559589744413e-22,
+        -2.651216983795166
+      ],
+      [
+        0.0,
+        0.0,
+        0.9265856742858887,
+        7.669302704016445e-08
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "baseline_evaluated_vertices_sha256": "2d15ef42fa099bc3ac5429e74a3713597ac94ef9460d1c9a25eccf8e0cf026e3",
+    "candidate_evaluated_vertices_sha256": "f090adf65dc3e54c385a4e05b4932e3a99171c9482561e58e03913b78b99b6db",
+    "vertex_count": 8,
+    "modifiers_baked": true,
+    "vertex_correspondence_preserved": true,
+    "wheel_uniform_exception": false,
+    "reason": "Frozen source endpoint fit; preserve affine shear exactly in evaluated mesh, no TRS decomposition"
+  },
+  {
+    "object": "van_windshield_frame3",
+    "action": "continuous_local_frame_fit_baked_evaluated_vertices",
+    "owner": "white_van",
+    "parameters": [
+      0.009402760462716604,
+      0.5956278452937105,
+      0.9728929705631499,
+      1.2908202591618305,
+      0.9265856599685567,
+      -0.013664259251943455
+    ],
+    "world_transport": [
+      [
+        0.9728021025657654,
+        0.01763753406703472,
+        1.599382848382902e-10,
+        -0.3385513424873352
+      ],
+      [
+        -0.013293437659740448,
+        1.2906997203826904,
+        5.995965324245844e-08,
+        -2.651216745376587
+      ],
+      [
+        -4.4715608993328715e-10,
+        -5.944208325558975e-08,
+        0.9265855550765991,
+        4.4722960979015625e-07
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "baseline_evaluated_vertices_sha256": "4cd09db0e801976af53297812d21bc30fd8b50ef774dd22042b540f79bf0af67",
+    "candidate_evaluated_vertices_sha256": "399cb2a05297b06d42ebb78e26dd44d0592b200a5ad25c9ffa9b141921922864",
+    "vertex_count": 8,
+    "modifiers_baked": true,
+    "vertex_correspondence_preserved": true,
+    "wheel_uniform_exception": false,
+    "reason": "Frozen source endpoint fit; preserve affine shear exactly in evaluated mesh, no TRS decomposition"
+  },
+  {
+    "object": "van_windshield_divider",
+    "action": "continuous_local_frame_fit_baked_evaluated_vertices",
+    "owner": "white_van",
+    "parameters": [
+      0.009402760462716604,
+      0.5956278452937105,
+      0.9728929705631499,
+      1.2908202591618305,
+      0.9265856599685567,
+      -0.013664259251943455
+    ],
+    "world_transport": [
+      [
+        0.9728021621704102,
+        0.01763753592967987,
+        -2.1042012576799607e-10,
+        -0.3385504484176636
+      ],
+      [
+        -0.013293434865772724,
+        1.2906997203826904,
+        -5.871092056963789e-08,
+        -2.651219367980957
+      ],
+      [
+        -1.0658141036401503e-14,
+        2.9802313505911115e-08,
+        0.9265856146812439,
+        -8.331689969054423e-07
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "baseline_evaluated_vertices_sha256": "abca526d72828b11cd6203a6f4cdd6c5c05b61f251addb4724cd4430148fa685",
+    "candidate_evaluated_vertices_sha256": "95b85e006f8f53acc2ba1a4b11eff7211d78a5dac62862eb4111cb3c8c6a645a",
+    "vertex_count": 8,
+    "modifiers_baked": true,
+    "vertex_correspondence_preserved": true,
+    "wheel_uniform_exception": false,
+    "reason": "Frozen source endpoint fit; preserve affine shear exactly in evaluated mesh, no TRS decomposition"
+  },
+  {
+    "object": "van_side_glass-1",
+    "action": "continuous_local_frame_fit_baked_evaluated_vertices",
+    "owner": "white_van",
+    "parameters": [
+      0.009402760462716604,
+      0.5956278452937105,
+      0.9728929705631499,
+      1.2908202591618305,
+      0.9265856599685567,
+      -0.013664259251943455
+    ],
+    "world_transport": [
+      [
+        0.9728021621704102,
+        0.01763753592967987,
+        0.0,
+        -0.3385501205921173
+      ],
+      [
+        -0.013293434865772724,
+        1.2906997203826904,
+        0.0,
+        -2.651217460632324
+      ],
+      [
+        0.0,
+        0.0,
+        0.9265856742858887,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "baseline_evaluated_vertices_sha256": "ff4403080ca69dc48d8451961a940f00465ef7afcd611a2c07347cab020fa471",
+    "candidate_evaluated_vertices_sha256": "3f1cd6af359e2195b90052f818718a4fa9ebd2b670d858ae9cb63fd52b151be5",
+    "vertex_count": 4,
+    "modifiers_baked": true,
+    "vertex_correspondence_preserved": true,
+    "wheel_uniform_exception": false,
+    "reason": "Frozen source endpoint fit; preserve affine shear exactly in evaluated mesh, no TRS decomposition"
+  },
+  {
+    "object": "van_mirror-1",
+    "action": "continuous_local_frame_fit_baked_evaluated_vertices",
+    "owner": "white_van",
+    "parameters": [
+      0.009402760462716604,
+      0.5956278452937105,
+      0.9728929705631499,
+      1.2908202591618305,
+      0.9265856599685567,
+      -0.013664259251943455
+    ],
+    "world_transport": [
+      [
+        0.9728021621704102,
+        0.01763753592967987,
+        0.0,
+        -0.33855026960372925
+      ],
+      [
+        -0.013293434865772724,
+        1.2906997203826904,
+        0.0,
+        -2.651217460632324
+      ],
+      [
+        0.0,
+        0.0,
+        0.9265856742858887,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "baseline_evaluated_vertices_sha256": "f6ee8a5a7619ad07669003b60f62f138ab3f4d6485c5bc0bd32572d89dfd64fa",
+    "candidate_evaluated_vertices_sha256": "1dbaceb9a8fddf7c0a10dcf4a5c3e45ce22478ede705ec8a522cbc7e9b494a1b",
+    "vertex_count": 56,
+    "modifiers_baked": true,
+    "vertex_correspondence_preserved": true,
+    "wheel_uniform_exception": false,
+    "reason": "Frozen source endpoint fit; preserve affine shear exactly in evaluated mesh, no TRS decomposition"
+  },
+  {
+    "object": "van_mirror_stem-1",
+    "action": "continuous_local_frame_fit_baked_evaluated_vertices",
+    "owner": "white_van",
+    "parameters": [
+      0.009402760462716604,
+      0.5956278452937105,
+      0.9728929705631499,
+      1.2908202591618305,
+      0.9265856599685567,
+      -0.013664259251943455
+    ],
+    "world_transport": [
+      [
+        0.9728021621704102,
+        0.01763753592967987,
+        6.062821911179128e-10,
+        -0.338550329208374
+      ],
+      [
+        -0.01329343393445015,
+        1.2906997203826904,
+        -3.3667291177152947e-10,
+        -2.6512155532836914
+      ],
+      [
+        5.162537064506978e-15,
+        3.552713678800501e-15,
+        0.9265856146812439,
+        -2.2075994365877705e-08
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "baseline_evaluated_vertices_sha256": "3f9767739fc13e957328e4ad4d20d72d973ee2db930d5b28bbc947e60bf39c12",
+    "candidate_evaluated_vertices_sha256": "38298b12dfead944c8ab9eb0a8385090bd8fca2dcc12d94a3b7b5d72d4bc769b",
+    "vertex_count": 8,
+    "modifiers_baked": true,
+    "vertex_correspondence_preserved": true,
+    "wheel_uniform_exception": false,
+    "reason": "Frozen source endpoint fit; preserve affine shear exactly in evaluated mesh, no TRS decomposition"
+  },
+  {
+    "object": "van_tyre-1_0",
+    "action": "continuous_local_frame_fit_baked_evaluated_vertices",
+    "owner": "white_van",
+    "parameters": [
+      0.009402760462716604,
+      0.5956278452937105,
+      0.9728929705631499,
+      1.2908202591618305,
+      0.9265856599685567,
+      -0.013664259251943455
+    ],
+    "world_transport": [
+      [
+        0.9264991879463196,
+        0.012660699896514416,
+        0.0,
+        -0.6035712361335754
+      ],
+      [
+        -0.012660699896514416,
+        0.9264991879463196,
+        0.0,
+        0.729172945022583
+      ],
+      [
+        0.0,
+        0.0,
+        0.9265856742858887,
+        -3.954852445531287e-09
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "baseline_evaluated_vertices_sha256": "14a51f1879e994a04e69144fc276dc48a39d7dd8c90acabfad46c3c673983fd8",
+    "candidate_evaluated_vertices_sha256": "478822f068e270b87cad342b161c30ed9d37d224bf1b077649dda2c2ee0398c1",
+    "vertex_count": 64,
+    "modifiers_baked": true,
+    "vertex_correspondence_preserved": true,
+    "wheel_uniform_exception": true,
+    "reason": "Frozen source endpoint fit; preserve affine shear exactly in evaluated mesh, no TRS decomposition"
+  },
+  {
+    "object": "van_hub-1_0",
+    "action": "continuous_local_frame_fit_baked_evaluated_vertices",
+    "owner": "white_van",
+    "parameters": [
+      0.009402760462716604,
+      0.5956278452937105,
+      0.9728929705631499,
+      1.2908202591618305,
+      0.9265856599685567,
+      -0.013664259251943455
+    ],
+    "world_transport": [
+      [
+        0.9264991879463196,
+        0.012660699896514416,
+        0.0,
+        -0.6100533604621887
+      ],
+      [
+        -0.012660699896514416,
+        0.9264991879463196,
+        0.0,
+        0.7292620539665222
+      ],
+      [
+        0.0,
+        0.0,
+        0.9265856742858887,
+        -9.62521085057233e-09
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "baseline_evaluated_vertices_sha256": "be683aa49ff8b7b39085c3aa1a55386b533807935c17b7a19337a0be5f483450",
+    "candidate_evaluated_vertices_sha256": "e3765ee0ba7e5a583fc799c5c2b4fd229b79763c8aed3b5569801749ecb42ae7",
+    "vertex_count": 40,
+    "modifiers_baked": true,
+    "vertex_correspondence_preserved": true,
+    "wheel_uniform_exception": true,
+    "reason": "Frozen source endpoint fit; preserve affine shear exactly in evaluated mesh, no TRS decomposition"
+  },
+  {
+    "object": "van_tyre-1_1",
+    "action": "continuous_local_frame_fit_baked_evaluated_vertices",
+    "owner": "white_van",
+    "parameters": [
+      0.009402760462716604,
+      0.5956278452937105,
+      0.9728929705631499,
+      1.2908202591618305,
+      0.9265856599685567,
+      -0.013664259251943455
+    ],
+    "world_transport": [
+      [
+        0.9264991879463196,
+        0.012660699896514416,
+        0.0,
+        -0.5879933834075928
+      ],
+      [
+        -0.012660699896514416,
+        0.9264991879463196,
+        0.0,
+        1.869121789932251
+      ],
+      [
+        0.0,
+        0.0,
+        0.9265856742858887,
+        -3.954852445531287e-09
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "baseline_evaluated_vertices_sha256": "3def9b70b77ceb475cd9ec1f06a857cbf01a4a7f670dfa6a7f6f35ee1e73a67b",
+    "candidate_evaluated_vertices_sha256": "5dde667b5ecde49f40d8d60c16eb3349997ac5dd99bad6c464fa6d857d5e3314",
+    "vertex_count": 64,
+    "modifiers_baked": true,
+    "vertex_correspondence_preserved": true,
+    "wheel_uniform_exception": true,
+    "reason": "Frozen source endpoint fit; preserve affine shear exactly in evaluated mesh, no TRS decomposition"
+  },
+  {
+    "object": "van_hub-1_1",
+    "action": "continuous_local_frame_fit_baked_evaluated_vertices",
+    "owner": "white_van",
+    "parameters": [
+      0.009402760462716604,
+      0.5956278452937105,
+      0.9728929705631499,
+      1.2908202591618305,
+      0.9265856599685567,
+      -0.013664259251943455
+    ],
+    "world_transport": [
+      [
+        0.9264991879463196,
+        0.012660699896514416,
+        0.0,
+        -0.594475507736206
+      ],
+      [
+        -0.012660699896514416,
+        0.9264991879463196,
+        0.0,
+        1.8692108392715454
+      ],
+      [
+        0.0,
+        0.0,
+        0.9265856742858887,
+        -9.62521085057233e-09
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "baseline_evaluated_vertices_sha256": "ed428ef10327341530f6e253daae23a395bc688678ca3326b8519f705f548b84",
+    "candidate_evaluated_vertices_sha256": "e79c27efa28b067c09d598b3919c541e0e7cd4b95a46a0f06e6daabf13bf4896",
+    "vertex_count": 40,
+    "modifiers_baked": true,
+    "vertex_correspondence_preserved": true,
+    "wheel_uniform_exception": true,
+    "reason": "Frozen source endpoint fit; preserve affine shear exactly in evaluated mesh, no TRS decomposition"
+  },
+  {
+    "object": "van_side_glass1",
+    "action": "continuous_local_frame_fit_baked_evaluated_vertices",
+    "owner": "white_van",
+    "parameters": [
+      0.009402760462716604,
+      0.5956278452937105,
+      0.9728929705631499,
+      1.2908202591618305,
+      0.9265856599685567,
+      -0.013664259251943455
+    ],
+    "world_transport": [
+      [
+        0.9728021621704102,
+        0.01763753592967987,
+        0.0,
+        -0.3385501205921173
+      ],
+      [
+        -0.013293434865772724,
+        1.2906997203826904,
+        0.0,
+        -2.651217460632324
+      ],
+      [
+        0.0,
+        0.0,
+        0.9265856742858887,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "baseline_evaluated_vertices_sha256": "472be65293f8689fa7bd60926b993be2ff581a286a67fc14f30c9c2cbbcfc693",
+    "candidate_evaluated_vertices_sha256": "1846d579dbdeb4493e0779c64ee6c84a348d6c1de5c9518dcaec601c07fa4c2f",
+    "vertex_count": 4,
+    "modifiers_baked": true,
+    "vertex_correspondence_preserved": true,
+    "wheel_uniform_exception": false,
+    "reason": "Frozen source endpoint fit; preserve affine shear exactly in evaluated mesh, no TRS decomposition"
+  },
+  {
+    "object": "van_mirror1",
+    "action": "continuous_local_frame_fit_baked_evaluated_vertices",
+    "owner": "white_van",
+    "parameters": [
+      0.009402760462716604,
+      0.5956278452937105,
+      0.9728929705631499,
+      1.2908202591618305,
+      0.9265856599685567,
+      -0.013664259251943455
+    ],
+    "world_transport": [
+      [
+        0.9728021621704102,
+        0.01763753592967987,
+        0.0,
+        -0.33855026960372925
+      ],
+      [
+        -0.013293434865772724,
+        1.2906997203826904,
+        0.0,
+        -2.6512176990509033
+      ],
+      [
+        0.0,
+        0.0,
+        0.9265856742858887,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "baseline_evaluated_vertices_sha256": "ec921e6df63554cac98af940248f1289091268bbc2c4804346a0d06716deb004",
+    "candidate_evaluated_vertices_sha256": "d16e1a27771e396a40f4d6f188574b9ec881b21b0b5df3213e560c27f037d372",
+    "vertex_count": 56,
+    "modifiers_baked": true,
+    "vertex_correspondence_preserved": true,
+    "wheel_uniform_exception": false,
+    "reason": "Frozen source endpoint fit; preserve affine shear exactly in evaluated mesh, no TRS decomposition"
+  },
+  {
+    "object": "van_mirror_stem1",
+    "action": "continuous_local_frame_fit_baked_evaluated_vertices",
+    "owner": "white_van",
+    "parameters": [
+      0.009402760462716604,
+      0.5956278452937105,
+      0.9728929705631499,
+      1.2908202591618305,
+      0.9265856599685567,
+      -0.013664259251943455
+    ],
+    "world_transport": [
+      [
+        0.9728021621704102,
+        0.01763753592967987,
+        6.062713109322715e-10,
+        -0.3385505676269531
+      ],
+      [
+        -0.01329343393445015,
+        1.2906997203826904,
+        1.289883755362098e-10,
+        -2.6512160301208496
+      ],
+      [
+        -5.162537064506978e-15,
+        3.552713678800501e-15,
+        0.9265856146812439,
+        -4.3930859305874037e-07
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "baseline_evaluated_vertices_sha256": "1d75fec8cdd5bf3c3879ae41c54c551ea9b2697a073e23c7397113a477d8c618",
+    "candidate_evaluated_vertices_sha256": "7879e57709e4126fbbb9f4b3fab9680a48bb52edd2a60e12c316df23a6bdaa15",
+    "vertex_count": 8,
+    "modifiers_baked": true,
+    "vertex_correspondence_preserved": true,
+    "wheel_uniform_exception": false,
+    "reason": "Frozen source endpoint fit; preserve affine shear exactly in evaluated mesh, no TRS decomposition"
+  },
+  {
+    "object": "van_tyre1_0",
+    "action": "continuous_local_frame_fit_baked_evaluated_vertices",
+    "owner": "white_van",
+    "parameters": [
+      0.009402760462716604,
+      0.5956278452937105,
+      0.9728929705631499,
+      1.2908202591618305,
+      0.9265856599685567,
+      -0.013664259251943455
+    ],
+    "world_transport": [
+      [
+        0.9264991879463196,
+        0.012660699896514416,
+        0.0,
+        -0.5109651684761047
+      ],
+      [
+        -0.012660699896514416,
+        0.9264991879463196,
+        0.0,
+        0.7279078364372253
+      ],
+      [
+        0.0,
+        0.0,
+        0.9265856742858887,
+        -1.2357133982732194e-08
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "baseline_evaluated_vertices_sha256": "7807eef13232f3d7726c96c6e27d6d250dd253e702c3973f947cb75c0a173c38",
+    "candidate_evaluated_vertices_sha256": "1d373054e581ab825e0fd6b601304a9134b280de42ae00a7b1d84093adde6b58",
+    "vertex_count": 64,
+    "modifiers_baked": true,
+    "vertex_correspondence_preserved": true,
+    "wheel_uniform_exception": true,
+    "reason": "Frozen source endpoint fit; preserve affine shear exactly in evaluated mesh, no TRS decomposition"
+  },
+  {
+    "object": "van_hub1_0",
+    "action": "continuous_local_frame_fit_baked_evaluated_vertices",
+    "owner": "white_van",
+    "parameters": [
+      0.009402760462716604,
+      0.5956278452937105,
+      0.9728929705631499,
+      1.2908202591618305,
+      0.9265856599685567,
+      -0.013664259251943455
+    ],
+    "world_transport": [
+      [
+        0.9264991879463196,
+        0.012660699896514416,
+        0.0,
+        -0.5044825673103333
+      ],
+      [
+        -0.012660699896514416,
+        0.9264991879463196,
+        0.0,
+        0.7278187274932861
+      ],
+      [
+        0.0,
+        0.0,
+        0.9265856742858887,
+        -6.686803999400581e-09
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "baseline_evaluated_vertices_sha256": "2706ca288cd8262635939a2162c85f01f1d1289ef7b9ddc8c84b05583321a6ab",
+    "candidate_evaluated_vertices_sha256": "8968306c7f0e2dcdbe9d0ecb2609c4a75581a8d4203c850dc07b1aa4ffbe799b",
+    "vertex_count": 40,
+    "modifiers_baked": true,
+    "vertex_correspondence_preserved": true,
+    "wheel_uniform_exception": true,
+    "reason": "Frozen source endpoint fit; preserve affine shear exactly in evaluated mesh, no TRS decomposition"
+  },
+  {
+    "object": "van_tyre1_1",
+    "action": "continuous_local_frame_fit_baked_evaluated_vertices",
+    "owner": "white_van",
+    "parameters": [
+      0.009402760462716604,
+      0.5956278452937105,
+      0.9728929705631499,
+      1.2908202591618305,
+      0.9265856599685567,
+      -0.013664259251943455
+    ],
+    "world_transport": [
+      [
+        0.9264991879463196,
+        0.012660699896514416,
+        0.0,
+        -0.49538734555244446
+      ],
+      [
+        -0.012660699896514416,
+        0.9264991879463196,
+        0.0,
+        1.8678566217422485
+      ],
+      [
+        0.0,
+        0.0,
+        0.9265856742858887,
+        -1.2357133982732194e-08
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "baseline_evaluated_vertices_sha256": "bde05480f86d1827c3bc958a962e256346ce9da9c0bead1554615091e5e390f8",
+    "candidate_evaluated_vertices_sha256": "9f1d24f12d4f30b36e24f5c00efce3f7c7de5bef1c478604f772dd3951ec23c2",
+    "vertex_count": 64,
+    "modifiers_baked": true,
+    "vertex_correspondence_preserved": true,
+    "wheel_uniform_exception": true,
+    "reason": "Frozen source endpoint fit; preserve affine shear exactly in evaluated mesh, no TRS decomposition"
+  },
+  {
+    "object": "van_hub1_1",
+    "action": "continuous_local_frame_fit_baked_evaluated_vertices",
+    "owner": "white_van",
+    "parameters": [
+      0.009402760462716604,
+      0.5956278452937105,
+      0.9728929705631499,
+      1.2908202591618305,
+      0.9265856599685567,
+      -0.013664259251943455
+    ],
+    "world_transport": [
+      [
+        0.9264991879463196,
+        0.012660699896514416,
+        0.0,
+        -0.488904744386673
+      ],
+      [
+        -0.012660699896514416,
+        0.9264991879463196,
+        0.0,
+        1.867767572402954
+      ],
+      [
+        0.0,
+        0.0,
+        0.9265856742858887,
+        -6.686803999400581e-09
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "baseline_evaluated_vertices_sha256": "60c86a66db99b7d56fadf7dbbc668b0dba23dd423a499a5f07c6fe4beebbe3e9",
+    "candidate_evaluated_vertices_sha256": "98c01181e49e4c33e5508d4503d240e663f317b0df00f2913e25f044bd475582",
+    "vertex_count": 40,
+    "modifiers_baked": true,
+    "vertex_correspondence_preserved": true,
+    "wheel_uniform_exception": true,
+    "reason": "Frozen source endpoint fit; preserve affine shear exactly in evaluated mesh, no TRS decomposition"
+  },
+  {
+    "object": "van_front_bumper",
+    "action": "continuous_local_frame_fit_baked_evaluated_vertices",
+    "owner": "white_van",
+    "parameters": [
+      0.009402760462716604,
+      0.5956278452937105,
+      0.9728929705631499,
+      1.2908202591618305,
+      0.9265856599685567,
+      -0.013664259251943455
+    ],
+    "world_transport": [
+      [
+        0.9728021621704102,
+        0.01763753592967987,
+        0.0,
+        -0.33855003118515015
+      ],
+      [
+        -0.013293434865772724,
+        1.2906997203826904,
+        0.0,
+        -2.651217460632324
+      ],
+      [
+        0.0,
+        0.0,
+        0.9265856742858887,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "baseline_evaluated_vertices_sha256": "8c62914f1c2eaabb9710c4134bf64e1d139411696b98eff47e0d5881030306f4",
+    "candidate_evaluated_vertices_sha256": "0ad82184ed9512a03f50c44ad37d4be9aa62532a439704d505baa7a61dcda4fa",
+    "vertex_count": 56,
+    "modifiers_baked": true,
+    "vertex_correspondence_preserved": true,
+    "wheel_uniform_exception": false,
+    "reason": "Frozen source endpoint fit; preserve affine shear exactly in evaluated mesh, no TRS decomposition"
+  },
+  {
+    "object": "van_grille",
+    "action": "continuous_local_frame_fit_baked_evaluated_vertices",
+    "owner": "white_van",
+    "parameters": [
+      0.009402760462716604,
+      0.5956278452937105,
+      0.9728929705631499,
+      1.2908202591618305,
+      0.9265856599685567,
+      -0.013664259251943455
+    ],
+    "world_transport": [
+      [
+        0.9728021621704102,
+        0.01763753592967987,
+        0.0,
+        -0.33854997158050537
+      ],
+      [
+        -0.013293434865772724,
+        1.2906997203826904,
+        0.0,
+        -2.651217460632324
+      ],
+      [
+        0.0,
+        0.0,
+        0.9265856742858887,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "baseline_evaluated_vertices_sha256": "0e69cca285a4c96611f39c6308694925225b7f4a994cd32e91efd6419496a3e9",
+    "candidate_evaluated_vertices_sha256": "423ef9d194dee51ded3297657bace517a77412fccc5cd9f22d74e0e39d820a07",
+    "vertex_count": 8,
+    "modifiers_baked": true,
+    "vertex_correspondence_preserved": true,
+    "wheel_uniform_exception": false,
+    "reason": "Frozen source endpoint fit; preserve affine shear exactly in evaluated mesh, no TRS decomposition"
+  },
+  {
+    "object": "van_headlamp-1",
+    "action": "continuous_local_frame_fit_baked_evaluated_vertices",
+    "owner": "white_van",
+    "parameters": [
+      0.009402760462716604,
+      0.5956278452937105,
+      0.9728929705631499,
+      1.2908202591618305,
+      0.9265856599685567,
+      -0.013664259251943455
+    ],
+    "world_transport": [
+      [
+        0.9728021621704102,
+        0.01763753592967987,
+        0.0,
+        -0.3385499119758606
+      ],
+      [
+        -0.013293434865772724,
+        1.2906997203826904,
+        0.0,
+        -2.651217222213745
+      ],
+      [
+        0.0,
+        0.0,
+        0.9265856742858887,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "baseline_evaluated_vertices_sha256": "0aa2c42a4a0e06a026b0e4a6a0178f14f86399e426ba46f21e192ee349dd6e92",
+    "candidate_evaluated_vertices_sha256": "910ee50d4017365f5a323045f157c99b18fc808187f095292902f47c7863f270",
+    "vertex_count": 56,
+    "modifiers_baked": true,
+    "vertex_correspondence_preserved": true,
+    "wheel_uniform_exception": false,
+    "reason": "Frozen source endpoint fit; preserve affine shear exactly in evaluated mesh, no TRS decomposition"
+  },
+  {
+    "object": "van_headlamp1",
+    "action": "continuous_local_frame_fit_baked_evaluated_vertices",
+    "owner": "white_van",
+    "parameters": [
+      0.009402760462716604,
+      0.5956278452937105,
+      0.9728929705631499,
+      1.2908202591618305,
+      0.9265856599685567,
+      -0.013664259251943455
+    ],
+    "world_transport": [
+      [
+        0.9728021621704102,
+        0.01763753592967987,
+        0.0,
+        -0.3385499119758606
+      ],
+      [
+        -0.013293434865772724,
+        1.2906997203826904,
+        0.0,
+        -2.651216983795166
+      ],
+      [
+        0.0,
+        0.0,
+        0.9265856742858887,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "baseline_evaluated_vertices_sha256": "d8cbeb8bccb5ca3809233aaccc05e1894ec425057ddc1353ca0875cf57432c9a",
+    "candidate_evaluated_vertices_sha256": "bddc83b5bbe957ad8a387bfeb35e9a94693d223b30ae013937053b1859ebadc2",
+    "vertex_count": 56,
+    "modifiers_baked": true,
+    "vertex_correspondence_preserved": true,
+    "wheel_uniform_exception": false,
+    "reason": "Frozen source endpoint fit; preserve affine shear exactly in evaluated mesh, no TRS decomposition"
+  },
+  {
+    "object": "van_cooler",
+    "action": "continuous_local_frame_fit_baked_evaluated_vertices",
+    "owner": "white_van",
+    "parameters": [
+      0.009402760462716604,
+      0.5956278452937105,
+      0.9728929705631499,
+      1.2908202591618305,
+      0.9265856599685567,
+      -0.013664259251943455
+    ],
+    "world_transport": [
+      [
+        0.9728021621704102,
+        0.01763753592967987,
+        0.0,
+        -0.3385499119758606
+      ],
+      [
+        -0.013293434865772724,
+        1.2906997203826904,
+        0.0,
+        -2.651217460632324
+      ],
+      [
+        0.0,
+        0.0,
+        0.9265856742858887,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "baseline_evaluated_vertices_sha256": "e96b4496e6b8bf909c691851b687e38af39195439c7115a592752b8a5afc84b8",
+    "candidate_evaluated_vertices_sha256": "1de02d411614aa0d1a76eb5a257cc0c1fdf73d2aa5c68a74e48177effd8dec29",
+    "vertex_count": 56,
+    "modifiers_baked": true,
+    "vertex_correspondence_preserved": true,
+    "wheel_uniform_exception": false,
+    "reason": "Frozen source endpoint fit; preserve affine shear exactly in evaluated mesh, no TRS decomposition"
+  },
+  {
+    "object": "van_cooler_vent0",
+    "action": "continuous_local_frame_fit_baked_evaluated_vertices",
+    "owner": "white_van",
+    "parameters": [
+      0.009402760462716604,
+      0.5956278452937105,
+      0.9728929705631499,
+      1.2908202591618305,
+      0.9265856599685567,
+      -0.013664259251943455
+    ],
+    "world_transport": [
+      [
+        0.9728021621704102,
+        0.01763753592967987,
+        0.0,
+        -0.33855006098747253
+      ],
+      [
+        -0.013293434865772724,
+        1.2906997203826904,
+        0.0,
+        -2.651217460632324
+      ],
+      [
+        0.0,
+        0.0,
+        0.9265856742858887,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "baseline_evaluated_vertices_sha256": "253c92a8e02edb100ae8dc4340e3fe0089cd55a606442d2ef12dd87f4228d44c",
+    "candidate_evaluated_vertices_sha256": "a4b0a2525caa5f14f880e34e2c007f93e4c5fc08f39594cad9f5913055507dee",
+    "vertex_count": 8,
+    "modifiers_baked": true,
+    "vertex_correspondence_preserved": true,
+    "wheel_uniform_exception": false,
+    "reason": "Frozen source endpoint fit; preserve affine shear exactly in evaluated mesh, no TRS decomposition"
+  },
+  {
+    "object": "van_cooler_vent1",
+    "action": "continuous_local_frame_fit_baked_evaluated_vertices",
+    "owner": "white_van",
+    "parameters": [
+      0.009402760462716604,
+      0.5956278452937105,
+      0.9728929705631499,
+      1.2908202591618305,
+      0.9265856599685567,
+      -0.013664259251943455
+    ],
+    "world_transport": [
+      [
+        0.9728021621704102,
+        0.01763753592967987,
+        0.0,
+        -0.33855006098747253
+      ],
+      [
+        -0.013293434865772724,
+        1.2906997203826904,
+        0.0,
+        -2.651217460632324
+      ],
+      [
+        0.0,
+        0.0,
+        0.9265856742858887,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "baseline_evaluated_vertices_sha256": "6d92b957779a5e0c2193a9746879cff17cfa5b647ee587f48105bf1b5bf62809",
+    "candidate_evaluated_vertices_sha256": "0b926aeb07064ff9cf4ff1f75b73b4ebd220631a1fb39a324512d860c68933f0",
+    "vertex_count": 8,
+    "modifiers_baked": true,
+    "vertex_correspondence_preserved": true,
+    "wheel_uniform_exception": false,
+    "reason": "Frozen source endpoint fit; preserve affine shear exactly in evaluated mesh, no TRS decomposition"
+  },
+  {
+    "object": "van_cooler_vent2",
+    "action": "continuous_local_frame_fit_baked_evaluated_vertices",
+    "owner": "white_van",
+    "parameters": [
+      0.009402760462716604,
+      0.5956278452937105,
+      0.9728929705631499,
+      1.2908202591618305,
+      0.9265856599685567,
+      -0.013664259251943455
+    ],
+    "world_transport": [
+      [
+        0.9728021621704102,
+        0.01763753592967987,
+        0.0,
+        -0.33855006098747253
+      ],
+      [
+        -0.013293434865772724,
+        1.2906997203826904,
+        0.0,
+        -2.651217460632324
+      ],
+      [
+        0.0,
+        0.0,
+        0.9265856742858887,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "baseline_evaluated_vertices_sha256": "559bdd444eaabf65dbeef79b75a98df1d8c9deea21af19ea6c14c550814a80e4",
+    "candidate_evaluated_vertices_sha256": "34d12502f827b1705ec27fd83e9a6a8f7ed671414fad20e1d502882a7d4f05b9",
+    "vertex_count": 8,
+    "modifiers_baked": true,
+    "vertex_correspondence_preserved": true,
+    "wheel_uniform_exception": false,
+    "reason": "Frozen source endpoint fit; preserve affine shear exactly in evaluated mesh, no TRS decomposition"
+  },
+  {
+    "object": "van_cooler_vent3",
+    "action": "continuous_local_frame_fit_baked_evaluated_vertices",
+    "owner": "white_van",
+    "parameters": [
+      0.009402760462716604,
+      0.5956278452937105,
+      0.9728929705631499,
+      1.2908202591618305,
+      0.9265856599685567,
+      -0.013664259251943455
+    ],
+    "world_transport": [
+      [
+        0.9728021621704102,
+        0.01763753592967987,
+        0.0,
+        -0.33855006098747253
+      ],
+      [
+        -0.013293434865772724,
+        1.2906997203826904,
+        0.0,
+        -2.651217460632324
+      ],
+      [
+        0.0,
+        0.0,
+        0.9265856742858887,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "baseline_evaluated_vertices_sha256": "eb65e38af7ccfebe206b9bd2af5ab4e3b010eec229138f428563d3314a7f46b9",
+    "candidate_evaluated_vertices_sha256": "4d0b7742252c25d4a041157586a8f4dea0483f9faafcad6dfe028f71b3fb9a86",
+    "vertex_count": 8,
+    "modifiers_baked": true,
+    "vertex_correspondence_preserved": true,
+    "wheel_uniform_exception": false,
+    "reason": "Frozen source endpoint fit; preserve affine shear exactly in evaluated mesh, no TRS decomposition"
+  },
+  {
+    "object": "van_cooler_vent4",
+    "action": "continuous_local_frame_fit_baked_evaluated_vertices",
+    "owner": "white_van",
+    "parameters": [
+      0.009402760462716604,
+      0.5956278452937105,
+      0.9728929705631499,
+      1.2908202591618305,
+      0.9265856599685567,
+      -0.013664259251943455
+    ],
+    "world_transport": [
+      [
+        0.9728021621704102,
+        0.01763753592967987,
+        0.0,
+        -0.33855006098747253
+      ],
+      [
+        -0.013293434865772724,
+        1.2906997203826904,
+        0.0,
+        -2.651217460632324
+      ],
+      [
+        0.0,
+        0.0,
+        0.9265856742858887,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "baseline_evaluated_vertices_sha256": "2ce1d9566650aca780fd8acb0d0362eb342e661635cdb788df0f40d7aaab0fb5",
+    "candidate_evaluated_vertices_sha256": "e9b6637f9db3a8384108ca496ccef4a3f895725b911e6a87ad18bf740137aef1",
+    "vertex_count": 8,
+    "modifiers_baked": true,
+    "vertex_correspondence_preserved": true,
+    "wheel_uniform_exception": false,
+    "reason": "Frozen source endpoint fit; preserve affine shear exactly in evaluated mesh, no TRS decomposition"
+  },
+  {
+    "object": "van_cooler_vent5",
+    "action": "continuous_local_frame_fit_baked_evaluated_vertices",
+    "owner": "white_van",
+    "parameters": [
+      0.009402760462716604,
+      0.5956278452937105,
+      0.9728929705631499,
+      1.2908202591618305,
+      0.9265856599685567,
+      -0.013664259251943455
+    ],
+    "world_transport": [
+      [
+        0.9728021621704102,
+        0.01763753592967987,
+        0.0,
+        -0.33855006098747253
+      ],
+      [
+        -0.013293434865772724,
+        1.2906997203826904,
+        0.0,
+        -2.651217460632324
+      ],
+      [
+        0.0,
+        0.0,
+        0.9265856742858887,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "baseline_evaluated_vertices_sha256": "9ae754e8b8213558ab1495db398078b486299a6d2fb15849ebefcb8f0f460601",
+    "candidate_evaluated_vertices_sha256": "e8c763f00d5ccefa80c5df9105c93bc1a1e1ad477f7ef6afb2d92630858bb0d7",
+    "vertex_count": 8,
+    "modifiers_baked": true,
+    "vertex_correspondence_preserved": true,
+    "wheel_uniform_exception": false,
+    "reason": "Frozen source endpoint fit; preserve affine shear exactly in evaluated mesh, no TRS decomposition"
+  },
+  {
+    "object": "van_cooler_vent6",
+    "action": "continuous_local_frame_fit_baked_evaluated_vertices",
+    "owner": "white_van",
+    "parameters": [
+      0.009402760462716604,
+      0.5956278452937105,
+      0.9728929705631499,
+      1.2908202591618305,
+      0.9265856599685567,
+      -0.013664259251943455
+    ],
+    "world_transport": [
+      [
+        0.9728021621704102,
+        0.01763753592967987,
+        0.0,
+        -0.33855006098747253
+      ],
+      [
+        -0.013293434865772724,
+        1.2906997203826904,
+        0.0,
+        -2.651217460632324
+      ],
+      [
+        0.0,
+        0.0,
+        0.9265856742858887,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "baseline_evaluated_vertices_sha256": "cdf0cd2f6efbc7a7517b5854e3f4de37b60c22823d4ee7733e3de7c1cd9b89c5",
+    "candidate_evaluated_vertices_sha256": "167768d77dd84a34b7e870ec953e7721c8d075cab93e7c36984e5bcd9b6f8a22",
+    "vertex_count": 8,
+    "modifiers_baked": true,
+    "vertex_correspondence_preserved": true,
+    "wheel_uniform_exception": false,
+    "reason": "Frozen source endpoint fit; preserve affine shear exactly in evaluated mesh, no TRS decomposition"
+  },
+  {
+    "object": "van_observed_hood_SV",
+    "action": "continuous_local_frame_fit_baked_evaluated_vertices",
+    "owner": "white_van",
+    "parameters": [
+      0.009402760462716604,
+      0.5956278452937105,
+      0.9728929705631499,
+      1.2908202591618305,
+      0.9265856599685567,
+      -0.013664259251943455
+    ],
+    "world_transport": [
+      [
+        0.9728021621704102,
+        0.01763753592967987,
+        0.0,
+        -0.33855074644088745
+      ],
+      [
+        -0.013293434865772724,
+        1.2906997203826904,
+        0.0,
+        -2.6512181758880615
+      ],
+      [
+        0.0,
+        0.0,
+        0.9265856146812439,
+        1.1920928955078125e-07
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "baseline_evaluated_vertices_sha256": "2627b1eb656dab3c3f0df049eb7c8ea86c9767809192bc15329cbfc1c76507f8",
+    "candidate_evaluated_vertices_sha256": "449e9d8dc6d874aa20c7dd2297beb843276446e197e36ddd154ca9c9137149aa",
+    "vertex_count": 516,
+    "modifiers_baked": true,
+    "vertex_correspondence_preserved": true,
+    "wheel_uniform_exception": false,
+    "reason": "Frozen source endpoint fit; preserve affine shear exactly in evaluated mesh, no TRS decomposition"
+  },
+  {
+    "object": "car_lower_body",
+    "action": "continuous_local_frame_fit_baked_evaluated_vertices",
+    "owner": "black_car",
+    "parameters": [
+      -0.5091506664504554,
+      0.4386726998870608,
+      0.8248932449123282,
+      1.2999999999999998,
+      0.9438426013386608,
+      0.2549171729931734
+    ],
+    "world_transport": [
+      [
+        0.7982361316680908,
+        -0.3278147876262665,
+        0.0,
+        3.290256977081299
+      ],
+      [
+        0.20800939202308655,
+        1.2579894065856934,
+        0.0,
+        -2.4087090492248535
+      ],
+      [
+        0.0,
+        0.0,
+        0.9438425898551941,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "baseline_evaluated_vertices_sha256": "8b4287f76a231b04b3905035dc6cbf5719b07d38449deb544a90f5d07acc800e",
+    "candidate_evaluated_vertices_sha256": "12cdb1e113e65fcef0b8e4561729c08144f8ea22fc644951bc764c6e67319aa6",
+    "vertex_count": 16,
+    "modifiers_baked": true,
+    "vertex_correspondence_preserved": true,
+    "wheel_uniform_exception": false,
+    "reason": "Frozen source endpoint fit; preserve affine shear exactly in evaluated mesh, no TRS decomposition"
+  },
+  {
+    "object": "car_upper_body",
+    "action": "continuous_local_frame_fit_baked_evaluated_vertices",
+    "owner": "black_car",
+    "parameters": [
+      -0.5091506664504554,
+      0.4386726998870608,
+      0.8248932449123282,
+      1.2999999999999998,
+      0.9438426013386608,
+      0.2549171729931734
+    ],
+    "world_transport": [
+      [
+        0.7982361316680908,
+        -0.3278147876262665,
+        0.0,
+        3.290256977081299
+      ],
+      [
+        0.20800939202308655,
+        1.2579894065856934,
+        0.0,
+        -2.4087090492248535
+      ],
+      [
+        0.0,
+        0.0,
+        0.9438425898551941,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "baseline_evaluated_vertices_sha256": "284e8f35b20d629c8de36fe961820147b06a7ea1aa57f55023a7c1751d8ca0a2",
+    "candidate_evaluated_vertices_sha256": "c6da9d43394a339eb188dd56d2b1b4e677dfca1d88e1616a1c02d9ce77a2cf5e",
+    "vertex_count": 16,
+    "modifiers_baked": true,
+    "vertex_correspondence_preserved": true,
+    "wheel_uniform_exception": false,
+    "reason": "Frozen source endpoint fit; preserve affine shear exactly in evaluated mesh, no TRS decomposition"
+  },
+  {
+    "object": "car_rear_glass",
+    "action": "continuous_local_frame_fit_baked_evaluated_vertices",
+    "owner": "black_car",
+    "parameters": [
+      -0.5091506664504554,
+      0.4386726998870608,
+      0.8248932449123282,
+      1.2999999999999998,
+      0.9438426013386608,
+      0.2549171729931734
+    ],
+    "world_transport": [
+      [
+        0.7982361316680908,
+        -0.3278147876262665,
+        0.0,
+        3.290256977081299
+      ],
+      [
+        0.20800939202308655,
+        1.2579894065856934,
+        0.0,
+        -2.4087090492248535
+      ],
+      [
+        0.0,
+        0.0,
+        0.9438425898551941,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "baseline_evaluated_vertices_sha256": "c54fef903e4a9d476da1bb8ec25644fe4706b0d3147886cc72657ffbbc68c897",
+    "candidate_evaluated_vertices_sha256": "42bf71dd41d7b23c23091fbc7fe9842a1e1bc9cd7ea1b5dacfb44144f47a20cb",
+    "vertex_count": 4,
+    "modifiers_baked": true,
+    "vertex_correspondence_preserved": true,
+    "wheel_uniform_exception": false,
+    "reason": "Frozen source endpoint fit; preserve affine shear exactly in evaluated mesh, no TRS decomposition"
+  },
+  {
+    "object": "car_rear_frame0",
+    "action": "continuous_local_frame_fit_baked_evaluated_vertices",
+    "owner": "black_car",
+    "parameters": [
+      -0.5091506664504554,
+      0.4386726998870608,
+      0.8248932449123282,
+      1.2999999999999998,
+      0.9438426013386608,
+      0.2549171729931734
+    ],
+    "world_transport": [
+      [
+        0.7982361316680908,
+        -0.3278147876262665,
+        -1.3234889800848443e-22,
+        3.290256977081299
+      ],
+      [
+        0.20800939202308655,
+        1.2579894065856934,
+        1.776357474674961e-15,
+        -2.4087090492248535
+      ],
+      [
+        0.0,
+        4.235164736271502e-22,
+        0.9438425898551941,
+        -3.1769914698998036e-08
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "baseline_evaluated_vertices_sha256": "579244adb9195eddb3361ed80a1183496dfc9fabcc2c4b6ba3c86da497e7a832",
+    "candidate_evaluated_vertices_sha256": "300b1aba4afbc13c7a6fe7c771dc30d341d9b1b3fa39d95c373d3787c0165f08",
+    "vertex_count": 8,
+    "modifiers_baked": true,
+    "vertex_correspondence_preserved": true,
+    "wheel_uniform_exception": false,
+    "reason": "Frozen source endpoint fit; preserve affine shear exactly in evaluated mesh, no TRS decomposition"
+  },
+  {
+    "object": "car_rear_frame1",
+    "action": "continuous_local_frame_fit_baked_evaluated_vertices",
+    "owner": "black_car",
+    "parameters": [
+      -0.5091506664504554,
+      0.4386726998870608,
+      0.8248932449123282,
+      1.2999999999999998,
+      0.9438426013386608,
+      0.2549171729931734
+    ],
+    "world_transport": [
+      [
+        0.798236072063446,
+        -0.3278147876262665,
+        -9.921123478306981e-09,
+        3.2902565002441406
+      ],
+      [
+        0.20800942182540894,
+        1.2579894065856934,
+        -1.7323062095897512e-08,
+        -2.408708095550537
+      ],
+      [
+        -1.2582930253302038e-09,
+        -4.968706335262141e-09,
+        0.9438425302505493,
+        -4.720271107316876e-08
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "baseline_evaluated_vertices_sha256": "6bff7ec72bd2ec7368a9ef911eea1e0c2052e8b9d7f7f63d8961d7cd6ae99462",
+    "candidate_evaluated_vertices_sha256": "0ef2bda916f13930ab933dfa00acb00c642c3bea0bd8a9b58cb2e20a33af9324",
+    "vertex_count": 8,
+    "modifiers_baked": true,
+    "vertex_correspondence_preserved": true,
+    "wheel_uniform_exception": false,
+    "reason": "Frozen source endpoint fit; preserve affine shear exactly in evaluated mesh, no TRS decomposition"
+  },
+  {
+    "object": "car_rear_frame2",
+    "action": "continuous_local_frame_fit_baked_evaluated_vertices",
+    "owner": "black_car",
+    "parameters": [
+      -0.5091506664504554,
+      0.4386726998870608,
+      0.8248932449123282,
+      1.2999999999999998,
+      0.9438426013386608,
+      0.2549171729931734
+    ],
+    "world_transport": [
+      [
+        0.7982361316680908,
+        -0.3278147876262665,
+        -1.3234889800848443e-22,
+        3.290257215499878
+      ],
+      [
+        0.20800939202308655,
+        1.2579894065856934,
+        5.327043144841498e-22,
+        -2.4087088108062744
+      ],
+      [
+        0.0,
+        4.235164736271502e-22,
+        0.9438425898551941,
+        3.177004259669047e-08
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "baseline_evaluated_vertices_sha256": "28fc0bc33d4bba45aa6a94ad0f2231c09895744f5df7a30da5b5dc391faf1838",
+    "candidate_evaluated_vertices_sha256": "15ef83f09651994c9439e92cfd1a9384e0c0efdeeda8c1d500f0367ab037e905",
+    "vertex_count": 8,
+    "modifiers_baked": true,
+    "vertex_correspondence_preserved": true,
+    "wheel_uniform_exception": false,
+    "reason": "Frozen source endpoint fit; preserve affine shear exactly in evaluated mesh, no TRS decomposition"
+  },
+  {
+    "object": "car_rear_frame3",
+    "action": "continuous_local_frame_fit_baked_evaluated_vertices",
+    "owner": "black_car",
+    "parameters": [
+      -0.5091506664504554,
+      0.4386726998870608,
+      0.8248932449123282,
+      1.2999999999999998,
+      0.9438426013386608,
+      0.2549171729931734
+    ],
+    "world_transport": [
+      [
+        0.7982361316680908,
+        -0.3278147876262665,
+        -1.053099829562143e-08,
+        3.290256977081299
+      ],
+      [
+        0.20800937712192535,
+        1.2579894065856934,
+        -3.0473668033437207e-10,
+        -2.4087095260620117
+      ],
+      [
+        -4.283137400307169e-09,
+        4.28314828049281e-10,
+        0.9438425898551941,
+        -4.976104150955507e-07
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "baseline_evaluated_vertices_sha256": "353820bc331706de6aadbdbdb1a7be1ab42af83ea48b1e0c493031c54e8fd8df",
+    "candidate_evaluated_vertices_sha256": "f2adf9b602a346625b1e3af093cc5f5f6a95c3e50fa00a835225270a7bc9d40e",
+    "vertex_count": 8,
+    "modifiers_baked": true,
+    "vertex_correspondence_preserved": true,
+    "wheel_uniform_exception": false,
+    "reason": "Frozen source endpoint fit; preserve affine shear exactly in evaluated mesh, no TRS decomposition"
+  },
+  {
+    "object": "car_tyre-1_0",
+    "action": "continuous_local_frame_fit_baked_evaluated_vertices",
+    "owner": "black_car",
+    "parameters": [
+      -0.5091506664504554,
+      0.4386726998870608,
+      0.8248932449123282,
+      1.2999999999999998,
+      0.9438426013386608,
+      0.2549171729931734
+    ],
+    "world_transport": [
+      [
+        0.9133415818214417,
+        -0.23800428211688995,
+        0.0,
+        2.61686635017395
+      ],
+      [
+        0.23800428211688995,
+        0.9133415818214417,
+        0.0,
+        1.9207617044448853
+      ],
+      [
+        0.0,
+        0.0,
+        0.9438425898551941,
+        -3.638064072220004e-09
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "baseline_evaluated_vertices_sha256": "9857c9bb68f5a03d76bf23292ae0ad935a94915c2d12b02666f23220a9c65499",
+    "candidate_evaluated_vertices_sha256": "c9dab91c399dfbda5b8766f56027d1115c225d0f09ec413b77f42274e5337c69",
+    "vertex_count": 56,
+    "modifiers_baked": true,
+    "vertex_correspondence_preserved": true,
+    "wheel_uniform_exception": true,
+    "reason": "Frozen source endpoint fit; preserve affine shear exactly in evaluated mesh, no TRS decomposition"
+  },
+  {
+    "object": "car_hub-1_0",
+    "action": "continuous_local_frame_fit_baked_evaluated_vertices",
+    "owner": "black_car",
+    "parameters": [
+      -0.5091506664504554,
+      0.4386726998870608,
+      0.8248932449123282,
+      1.2999999999999998,
+      0.9438426013386608,
+      0.2549171729931734
+    ],
+    "world_transport": [
+      [
+        0.9133415818214417,
+        -0.23800428211688995,
+        0.0,
+        2.6284921169281006
+      ],
+      [
+        0.23800428211688995,
+        0.9133415818214417,
+        0.0,
+        1.923790693283081
+      ],
+      [
+        0.0,
+        0.0,
+        0.9438425898551941,
+        2.1997323074174346e-08
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "baseline_evaluated_vertices_sha256": "5fecc94db58b0c54f4e7d1d51b4001d4df11d5fc2a59e208bd2fa366a6ee25e6",
+    "candidate_evaluated_vertices_sha256": "1fcf892e6421371b5480f5616099d542ddc37025d4d3ff3b6b433eef0da1d227",
+    "vertex_count": 32,
+    "modifiers_baked": true,
+    "vertex_correspondence_preserved": true,
+    "wheel_uniform_exception": true,
+    "reason": "Frozen source endpoint fit; preserve affine shear exactly in evaluated mesh, no TRS decomposition"
+  },
+  {
+    "object": "car_tyre-1_1",
+    "action": "continuous_local_frame_fit_baked_evaluated_vertices",
+    "owner": "black_car",
+    "parameters": [
+      -0.5091506664504554,
+      0.4386726998870608,
+      0.8248932449123282,
+      1.2999999999999998,
+      0.9438426013386608,
+      0.2549171729931734
+    ],
+    "world_transport": [
+      [
+        0.9133415818214417,
+        -0.23800428211688995,
+        0.0,
+        2.4049134254455566
+      ],
+      [
+        0.23800428211688995,
+        0.9133415818214417,
+        0.0,
+        2.734130382537842
+      ],
+      [
+        0.0,
+        0.0,
+        0.9438425898551941,
+        -3.638064072220004e-09
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "baseline_evaluated_vertices_sha256": "530bd2c43176aecfb34364a38e44f8286cd0b3a046974f47c9791ebf1e9d90f0",
+    "candidate_evaluated_vertices_sha256": "a6365b43c8b5fc3a741dcfd5989f118bdc24743cfe093ea74ece4acec9eb93a1",
+    "vertex_count": 56,
+    "modifiers_baked": true,
+    "vertex_correspondence_preserved": true,
+    "wheel_uniform_exception": true,
+    "reason": "Frozen source endpoint fit; preserve affine shear exactly in evaluated mesh, no TRS decomposition"
+  },
+  {
+    "object": "car_hub-1_1",
+    "action": "continuous_local_frame_fit_baked_evaluated_vertices",
+    "owner": "black_car",
+    "parameters": [
+      -0.5091506664504554,
+      0.4386726998870608,
+      0.8248932449123282,
+      1.2999999999999998,
+      0.9438426013386608,
+      0.2549171729931734
+    ],
+    "world_transport": [
+      [
+        0.9133415818214417,
+        -0.23800428211688995,
+        0.0,
+        2.416539192199707
+      ],
+      [
+        0.23800428211688995,
+        0.9133415818214417,
+        0.0,
+        2.737159490585327
+      ],
+      [
+        0.0,
+        0.0,
+        0.9438425898551941,
+        2.1997323074174346e-08
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "baseline_evaluated_vertices_sha256": "4ffdba70b1a68d039cbf02786156cc53debd81ce90c35bc6e4ec9b3691966d53",
+    "candidate_evaluated_vertices_sha256": "040d3e6d6dec0d046cc5ee45d465ffc4ad0eb667271ee19592705dfccd1076e0",
+    "vertex_count": 32,
+    "modifiers_baked": true,
+    "vertex_correspondence_preserved": true,
+    "wheel_uniform_exception": true,
+    "reason": "Frozen source endpoint fit; preserve affine shear exactly in evaluated mesh, no TRS decomposition"
+  },
+  {
+    "object": "car_tail_light-1",
+    "action": "continuous_local_frame_fit_baked_evaluated_vertices",
+    "owner": "black_car",
+    "parameters": [
+      -0.5091506664504554,
+      0.4386726998870608,
+      0.8248932449123282,
+      1.2999999999999998,
+      0.9438426013386608,
+      0.2549171729931734
+    ],
+    "world_transport": [
+      [
+        0.7982361316680908,
+        -0.3278147876262665,
+        0.0,
+        3.290256977081299
+      ],
+      [
+        0.20800939202308655,
+        1.2579894065856934,
+        0.0,
+        -2.4087090492248535
+      ],
+      [
+        0.0,
+        0.0,
+        0.9438425898551941,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "baseline_evaluated_vertices_sha256": "b980d4b0de0646f8d9cc5fc9cc8a92db6675fb63cc0a1016262174ae5d33c8bd",
+    "candidate_evaluated_vertices_sha256": "0842c508414e54fa91193982c951fe48b46f35478800d6a5695e930730c8a0c8",
+    "vertex_count": 56,
+    "modifiers_baked": true,
+    "vertex_correspondence_preserved": true,
+    "wheel_uniform_exception": false,
+    "reason": "Frozen source endpoint fit; preserve affine shear exactly in evaluated mesh, no TRS decomposition"
+  },
+  {
+    "object": "car_tyre1_0",
+    "action": "continuous_local_frame_fit_baked_evaluated_vertices",
+    "owner": "black_car",
+    "parameters": [
+      -0.5091506664504554,
+      0.4386726998870608,
+      0.8248932449123282,
+      1.2999999999999998,
+      0.9438426013386608,
+      0.2549171729931734
+    ],
+    "world_transport": [
+      [
+        0.9133415818214417,
+        -0.23800428211688995,
+        0.0,
+        2.4326975345611572
+      ],
+      [
+        0.23800428211688995,
+        0.9133415818214417,
+        0.0,
+        1.8727699518203735
+      ],
+      [
+        0.0,
+        0.0,
+        0.9438425898551941,
+        2.7679689651449735e-09
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "baseline_evaluated_vertices_sha256": "6b54fd84cba530731eb40457b1ec60c9f243012f30993f1d8004e84888d3621f",
+    "candidate_evaluated_vertices_sha256": "3fe61a05bc49faf40959e8e049da2b2da168652920a27e9ab168dfc0b82a47ae",
+    "vertex_count": 56,
+    "modifiers_baked": true,
+    "vertex_correspondence_preserved": true,
+    "wheel_uniform_exception": true,
+    "reason": "Frozen source endpoint fit; preserve affine shear exactly in evaluated mesh, no TRS decomposition"
+  },
+  {
+    "object": "car_hub1_0",
+    "action": "continuous_local_frame_fit_baked_evaluated_vertices",
+    "owner": "black_car",
+    "parameters": [
+      -0.5091506664504554,
+      0.4386726998870608,
+      0.8248932449123282,
+      1.2999999999999998,
+      0.9438426013386608,
+      0.2549171729931734
+    ],
+    "world_transport": [
+      [
+        0.9133415818214417,
+        -0.23800428211688995,
+        0.0,
+        2.421071767807007
+      ],
+      [
+        0.23800428211688995,
+        0.9133415818214417,
+        0.0,
+        1.8697401285171509
+      ],
+      [
+        0.0,
+        0.0,
+        0.9438425898551941,
+        6.93488999559122e-09
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "baseline_evaluated_vertices_sha256": "361a670c38e96e4be64d25c890f8056c2e20f564a4b7eae8eb10eb6129af9825",
+    "candidate_evaluated_vertices_sha256": "a514c582f77dd65bb36ed2bca02bc92959bd02f0dd854516bbcfdcdcce6b7351",
+    "vertex_count": 32,
+    "modifiers_baked": true,
+    "vertex_correspondence_preserved": true,
+    "wheel_uniform_exception": true,
+    "reason": "Frozen source endpoint fit; preserve affine shear exactly in evaluated mesh, no TRS decomposition"
+  },
+  {
+    "object": "car_tyre1_1",
+    "action": "continuous_local_frame_fit_baked_evaluated_vertices",
+    "owner": "black_car",
+    "parameters": [
+      -0.5091506664504554,
+      0.4386726998870608,
+      0.8248932449123282,
+      1.2999999999999998,
+      0.9438426013386608,
+      0.2549171729931734
+    ],
+    "world_transport": [
+      [
+        0.9133415818214417,
+        -0.23800428211688995,
+        0.0,
+        2.2207448482513428
+      ],
+      [
+        0.23800428211688995,
+        0.9133415818214417,
+        0.0,
+        2.686138868331909
+      ],
+      [
+        0.0,
+        0.0,
+        0.9438425898551941,
+        2.7679689651449735e-09
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "baseline_evaluated_vertices_sha256": "c5ab7c3e5a04ff91051c3bd9d59ed9b19143f8dc39c45b1335846c30297e70ae",
+    "candidate_evaluated_vertices_sha256": "5b5f804f2c79ff18cf3d23a1be8f0c7abe22ded03f472d410399f6d46dbc15f9",
+    "vertex_count": 56,
+    "modifiers_baked": true,
+    "vertex_correspondence_preserved": true,
+    "wheel_uniform_exception": true,
+    "reason": "Frozen source endpoint fit; preserve affine shear exactly in evaluated mesh, no TRS decomposition"
+  },
+  {
+    "object": "car_hub1_1",
+    "action": "continuous_local_frame_fit_baked_evaluated_vertices",
+    "owner": "black_car",
+    "parameters": [
+      -0.5091506664504554,
+      0.4386726998870608,
+      0.8248932449123282,
+      1.2999999999999998,
+      0.9438426013386608,
+      0.2549171729931734
+    ],
+    "world_transport": [
+      [
+        0.9133415818214417,
+        -0.23800428211688995,
+        0.0,
+        2.2091190814971924
+      ],
+      [
+        0.23800428211688995,
+        0.9133415818214417,
+        0.0,
+        2.6831088066101074
+      ],
+      [
+        0.0,
+        0.0,
+        0.9438425898551941,
+        6.93488999559122e-09
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "baseline_evaluated_vertices_sha256": "e0772c3120d84f53881c21c998edb7b0b15bcb9a7d8c16eeb5cdedec0caec636",
+    "candidate_evaluated_vertices_sha256": "9836f4933a91fe45511be6e74b14ccfa57556979e9ffa90ea3343c5acc32f434",
+    "vertex_count": 32,
+    "modifiers_baked": true,
+    "vertex_correspondence_preserved": true,
+    "wheel_uniform_exception": true,
+    "reason": "Frozen source endpoint fit; preserve affine shear exactly in evaluated mesh, no TRS decomposition"
+  },
+  {
+    "object": "car_tail_light1",
+    "action": "continuous_local_frame_fit_baked_evaluated_vertices",
+    "owner": "black_car",
+    "parameters": [
+      -0.5091506664504554,
+      0.4386726998870608,
+      0.8248932449123282,
+      1.2999999999999998,
+      0.9438426013386608,
+      0.2549171729931734
+    ],
+    "world_transport": [
+      [
+        0.7982361316680908,
+        -0.3278147876262665,
+        0.0,
+        3.290256977081299
+      ],
+      [
+        0.20800939202308655,
+        1.2579894065856934,
+        0.0,
+        -2.4087090492248535
+      ],
+      [
+        0.0,
+        0.0,
+        0.9438425898551941,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "baseline_evaluated_vertices_sha256": "12430e34ba73358ee9a730fa70476b8f5f30ae18ad7fcb3643491e198fec5291",
+    "candidate_evaluated_vertices_sha256": "352e69dbc39b53699af74b1a948fd3b059f9a8c90b28d0c3f8e4d90de090e603",
+    "vertex_count": 56,
+    "modifiers_baked": true,
+    "vertex_correspondence_preserved": true,
+    "wheel_uniform_exception": false,
+    "reason": "Frozen source endpoint fit; preserve affine shear exactly in evaluated mesh, no TRS decomposition"
+  },
+  {
+    "object": "cage2_side0",
+    "action": "continuous_local_frame_fit_baked_evaluated_vertices",
+    "owner": "mesh_cage_2",
+    "parameters": [
+      0.09803649779182094,
+      -0.05177552051200947,
+      1.0722230100896921,
+      1.0007272388011492,
+      1.040773709184009,
+      -0.07089765968226606
+    ],
+    "world_transport": [
+      [
+        1.0695295333862305,
+        0.07088971883058548,
+        0.0,
+        1.4044790267944336
+      ],
+      [
+        -0.07595434784889221,
+        0.9982132911682129,
+        0.0,
+        -0.880518913269043
+      ],
+      [
+        0.0,
+        0.0,
+        1.0407737493515015,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "baseline_evaluated_vertices_sha256": "f1ad600aa00aba1403535a030f4bee89c3f6b8e86be2c86c0d0d87f4204e341f",
+    "candidate_evaluated_vertices_sha256": "4304288fc288e40b771c06fc947632d9bfd48bc8bcd71f876e7f69052f0d5904",
+    "vertex_count": 8,
+    "modifiers_baked": true,
+    "vertex_correspondence_preserved": true,
+    "wheel_uniform_exception": false,
+    "reason": "Frozen source endpoint fit; preserve affine shear exactly in evaluated mesh, no TRS decomposition"
+  },
+  {
+    "object": "cage2_side1",
+    "action": "continuous_local_frame_fit_baked_evaluated_vertices",
+    "owner": "mesh_cage_2",
+    "parameters": [
+      0.09803649779182094,
+      -0.05177552051200947,
+      1.0722230100896921,
+      1.0007272388011492,
+      1.040773709184009,
+      -0.07089765968226606
+    ],
+    "world_transport": [
+      [
+        1.0695295333862305,
+        0.07088971883058548,
+        0.0,
+        1.4044790267944336
+      ],
+      [
+        -0.07595434784889221,
+        0.9982132911682129,
+        0.0,
+        -0.8805191516876221
+      ],
+      [
+        0.0,
+        0.0,
+        1.0407737493515015,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "baseline_evaluated_vertices_sha256": "0efb3fe176ef9b4dd0aad3b53ed0e73d7d317056c0e7c759a3d4dd21e10adbdd",
+    "candidate_evaluated_vertices_sha256": "0068f50e7795d169406ab6881302d5cb8bb6d5b243c8a36cc6266bfc8a933fd5",
+    "vertex_count": 8,
+    "modifiers_baked": true,
+    "vertex_correspondence_preserved": true,
+    "wheel_uniform_exception": false,
+    "reason": "Frozen source endpoint fit; preserve affine shear exactly in evaluated mesh, no TRS decomposition"
+  },
+  {
+    "object": "cage2_rail0",
+    "action": "continuous_local_frame_fit_baked_evaluated_vertices",
+    "owner": "mesh_cage_2",
+    "parameters": [
+      0.09803649779182094,
+      -0.05177552051200947,
+      1.0722230100896921,
+      1.0007272388011492,
+      1.040773709184009,
+      -0.07089765968226606
+    ],
+    "world_transport": [
+      [
+        1.0695295333862305,
+        0.07088971883058548,
+        0.0,
+        1.4044790267944336
+      ],
+      [
+        -0.07595434784889221,
+        0.9982132911682129,
+        0.0,
+        -0.8805188536643982
+      ],
+      [
+        0.0,
+        0.0,
+        1.0407737493515015,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "baseline_evaluated_vertices_sha256": "ab99109e5053a386e9d756e64ab834ac0fef84cfdbe636490b5dddf71e3b101e",
+    "candidate_evaluated_vertices_sha256": "0e19da937d3579f1dccf0976a6b686c1cb5953f8932a9576547002b462b9c88d",
+    "vertex_count": 8,
+    "modifiers_baked": true,
+    "vertex_correspondence_preserved": true,
+    "wheel_uniform_exception": false,
+    "reason": "Frozen source endpoint fit; preserve affine shear exactly in evaluated mesh, no TRS decomposition"
+  },
+  {
+    "object": "cage2_rail1",
+    "action": "continuous_local_frame_fit_baked_evaluated_vertices",
+    "owner": "mesh_cage_2",
+    "parameters": [
+      0.09803649779182094,
+      -0.05177552051200947,
+      1.0722230100896921,
+      1.0007272388011492,
+      1.040773709184009,
+      -0.07089765968226606
+    ],
+    "world_transport": [
+      [
+        1.0695295333862305,
+        0.07088971883058548,
+        0.0,
+        1.4044790267944336
+      ],
+      [
+        -0.07595434784889221,
+        0.9982132911682129,
+        0.0,
+        -0.8805188536643982
+      ],
+      [
+        0.0,
+        0.0,
+        1.0407737493515015,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "baseline_evaluated_vertices_sha256": "1a5cec2c3ade0425e64740448c1fd26b485030bd53e4b64b90f5c9e698fb4087",
+    "candidate_evaluated_vertices_sha256": "5f7fb6b82ffc59f20ff34bd04926ebe4f63193c84366501d0c7b453b989b6d57",
+    "vertex_count": 8,
+    "modifiers_baked": true,
+    "vertex_correspondence_preserved": true,
+    "wheel_uniform_exception": false,
+    "reason": "Frozen source endpoint fit; preserve affine shear exactly in evaluated mesh, no TRS decomposition"
+  },
+  {
+    "object": "cage2_wireV0",
+    "action": "continuous_local_frame_fit_baked_evaluated_vertices",
+    "owner": "mesh_cage_2",
+    "parameters": [
+      0.09803649779182094,
+      -0.05177552051200947,
+      1.0722230100896921,
+      1.0007272388011492,
+      1.040773709184009,
+      -0.07089765968226606
+    ],
+    "world_transport": [
+      [
+        1.0695295333862305,
+        0.07088971883058548,
+        0.0,
+        1.4044790267944336
+      ],
+      [
+        -0.07595434784889221,
+        0.9982132911682129,
+        0.0,
+        -0.8805187940597534
+      ],
+      [
+        0.0,
+        0.0,
+        1.0407737493515015,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "baseline_evaluated_vertices_sha256": "edd54c93ad0c662f2e0d2d4a2945cf2fc8fd29b4905675e9896e2b3fa4d72075",
+    "candidate_evaluated_vertices_sha256": "4f02b305594347ed4252331cdc665dae2cee390128669ae89f431f7403f86370",
+    "vertex_count": 8,
+    "modifiers_baked": true,
+    "vertex_correspondence_preserved": true,
+    "wheel_uniform_exception": false,
+    "reason": "Frozen source endpoint fit; preserve affine shear exactly in evaluated mesh, no TRS decomposition"
+  },
+  {
+    "object": "cage2_wireV1",
+    "action": "continuous_local_frame_fit_baked_evaluated_vertices",
+    "owner": "mesh_cage_2",
+    "parameters": [
+      0.09803649779182094,
+      -0.05177552051200947,
+      1.0722230100896921,
+      1.0007272388011492,
+      1.040773709184009,
+      -0.07089765968226606
+    ],
+    "world_transport": [
+      [
+        1.0695295333862305,
+        0.07088971883058548,
+        0.0,
+        1.4044790267944336
+      ],
+      [
+        -0.07595434784889221,
+        0.9982132911682129,
+        0.0,
+        -0.8805189728736877
+      ],
+      [
+        0.0,
+        0.0,
+        1.0407737493515015,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "baseline_evaluated_vertices_sha256": "fc3e857ec8a51fe5b8f85f27e42ba7b1e6436ee798bd1679f0251c36e715020c",
+    "candidate_evaluated_vertices_sha256": "5806774573b9bb6657ebc927a9e98c10874e46d36237c54ccd2f71034710cd04",
+    "vertex_count": 8,
+    "modifiers_baked": true,
+    "vertex_correspondence_preserved": true,
+    "wheel_uniform_exception": false,
+    "reason": "Frozen source endpoint fit; preserve affine shear exactly in evaluated mesh, no TRS decomposition"
+  },
+  {
+    "object": "cage2_wireV2",
+    "action": "continuous_local_frame_fit_baked_evaluated_vertices",
+    "owner": "mesh_cage_2",
+    "parameters": [
+      0.09803649779182094,
+      -0.05177552051200947,
+      1.0722230100896921,
+      1.0007272388011492,
+      1.040773709184009,
+      -0.07089765968226606
+    ],
+    "world_transport": [
+      [
+        1.0695295333862305,
+        0.07088971883058548,
+        0.0,
+        1.4044790267944336
+      ],
+      [
+        -0.07595434784889221,
+        0.9982132911682129,
+        0.0,
+        -0.8805187344551086
+      ],
+      [
+        0.0,
+        0.0,
+        1.0407737493515015,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "baseline_evaluated_vertices_sha256": "796cdc3ac80381cf054df5e75f4703c115b55d9961f8c1856d1c33b99135ded1",
+    "candidate_evaluated_vertices_sha256": "225873a7f3afaecb43a5a510c6f6188c461f08803ab32cf61f19c1d9b5b87e41",
+    "vertex_count": 8,
+    "modifiers_baked": true,
+    "vertex_correspondence_preserved": true,
+    "wheel_uniform_exception": false,
+    "reason": "Frozen source endpoint fit; preserve affine shear exactly in evaluated mesh, no TRS decomposition"
+  },
+  {
+    "object": "cage2_wireV3",
+    "action": "continuous_local_frame_fit_baked_evaluated_vertices",
+    "owner": "mesh_cage_2",
+    "parameters": [
+      0.09803649779182094,
+      -0.05177552051200947,
+      1.0722230100896921,
+      1.0007272388011492,
+      1.040773709184009,
+      -0.07089765968226606
+    ],
+    "world_transport": [
+      [
+        1.0695295333862305,
+        0.07088971883058548,
+        0.0,
+        1.4044790267944336
+      ],
+      [
+        -0.07595434784889221,
+        0.9982132911682129,
+        0.0,
+        -0.880518913269043
+      ],
+      [
+        0.0,
+        0.0,
+        1.0407737493515015,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "baseline_evaluated_vertices_sha256": "a8e481b7d1d5316a860a4931a945b77f4afc83f142f1329e561cd093b859f6d1",
+    "candidate_evaluated_vertices_sha256": "bb4694e2562e67f5cd8bb57cb27267b59e4aceff1a3b16348f8ffc36f1152150",
+    "vertex_count": 8,
+    "modifiers_baked": true,
+    "vertex_correspondence_preserved": true,
+    "wheel_uniform_exception": false,
+    "reason": "Frozen source endpoint fit; preserve affine shear exactly in evaluated mesh, no TRS decomposition"
+  },
+  {
+    "object": "cage2_wireV4",
+    "action": "continuous_local_frame_fit_baked_evaluated_vertices",
+    "owner": "mesh_cage_2",
+    "parameters": [
+      0.09803649779182094,
+      -0.05177552051200947,
+      1.0722230100896921,
+      1.0007272388011492,
+      1.040773709184009,
+      -0.07089765968226606
+    ],
+    "world_transport": [
+      [
+        1.0695295333862305,
+        0.07088971883058548,
+        0.0,
+        1.4044790267944336
+      ],
+      [
+        -0.07595434784889221,
+        0.9982132911682129,
+        0.0,
+        -0.8805186152458191
+      ],
+      [
+        0.0,
+        0.0,
+        1.0407737493515015,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "baseline_evaluated_vertices_sha256": "3a573f7c7755c436adf4e880411fb2c90162e68e3e8fd66518684c7108bf9a71",
+    "candidate_evaluated_vertices_sha256": "8298dbc051fa3514e1f6f39b083f4660608fa18ee39d9c24a095a1948e6fdcea",
+    "vertex_count": 8,
+    "modifiers_baked": true,
+    "vertex_correspondence_preserved": true,
+    "wheel_uniform_exception": false,
+    "reason": "Frozen source endpoint fit; preserve affine shear exactly in evaluated mesh, no TRS decomposition"
+  },
+  {
+    "object": "cage2_wireV5",
+    "action": "continuous_local_frame_fit_baked_evaluated_vertices",
+    "owner": "mesh_cage_2",
+    "parameters": [
+      0.09803649779182094,
+      -0.05177552051200947,
+      1.0722230100896921,
+      1.0007272388011492,
+      1.040773709184009,
+      -0.07089765968226606
+    ],
+    "world_transport": [
+      [
+        1.0695295333862305,
+        0.07088971883058548,
+        0.0,
+        1.4044790267944336
+      ],
+      [
+        -0.07595434784889221,
+        0.9982132911682129,
+        0.0,
+        -0.8805187940597534
+      ],
+      [
+        0.0,
+        0.0,
+        1.0407737493515015,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "baseline_evaluated_vertices_sha256": "eb3c205337813d08585f96b7fafb1732754c0b74aafea6a19b77a15337a191c7",
+    "candidate_evaluated_vertices_sha256": "4bce4815f98f68b3fe68cc76c90bb4ea6aba512eec23e4654e14c284ebeb70c8",
+    "vertex_count": 8,
+    "modifiers_baked": true,
+    "vertex_correspondence_preserved": true,
+    "wheel_uniform_exception": false,
+    "reason": "Frozen source endpoint fit; preserve affine shear exactly in evaluated mesh, no TRS decomposition"
+  },
+  {
+    "object": "cage2_wireV6",
+    "action": "continuous_local_frame_fit_baked_evaluated_vertices",
+    "owner": "mesh_cage_2",
+    "parameters": [
+      0.09803649779182094,
+      -0.05177552051200947,
+      1.0722230100896921,
+      1.0007272388011492,
+      1.040773709184009,
+      -0.07089765968226606
+    ],
+    "world_transport": [
+      [
+        1.0695295333862305,
+        0.07088971883058548,
+        0.0,
+        1.4044790267944336
+      ],
+      [
+        -0.07595434784889221,
+        0.9982132911682129,
+        0.0,
+        -0.8805190324783325
+      ],
+      [
+        0.0,
+        0.0,
+        1.0407737493515015,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "baseline_evaluated_vertices_sha256": "ac8772d917ae83aa2e203aa1f53d960771a750f9cd79c3b3ba3616a8cdee4594",
+    "candidate_evaluated_vertices_sha256": "55796d0392cc3edc4e8fd392fd8f957e31beedf6d5633a3d8b118b3154192390",
+    "vertex_count": 8,
+    "modifiers_baked": true,
+    "vertex_correspondence_preserved": true,
+    "wheel_uniform_exception": false,
+    "reason": "Frozen source endpoint fit; preserve affine shear exactly in evaluated mesh, no TRS decomposition"
+  },
+  {
+    "object": "cage2_wireV7",
+    "action": "continuous_local_frame_fit_baked_evaluated_vertices",
+    "owner": "mesh_cage_2",
+    "parameters": [
+      0.09803649779182094,
+      -0.05177552051200947,
+      1.0722230100896921,
+      1.0007272388011492,
+      1.040773709184009,
+      -0.07089765968226606
+    ],
+    "world_transport": [
+      [
+        1.0695295333862305,
+        0.07088971883058548,
+        0.0,
+        1.4044790267944336
+      ],
+      [
+        -0.07595434784889221,
+        0.9982132911682129,
+        0.0,
+        -0.8805187344551086
+      ],
+      [
+        0.0,
+        0.0,
+        1.0407737493515015,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "baseline_evaluated_vertices_sha256": "455c66ba6ac3cb0bce949e0c9004497fbc89598f97f4f1de444e1962bbfce92b",
+    "candidate_evaluated_vertices_sha256": "edabed4b4f10286c8809eba86953f712733624acc2a4d556ccb534a0ece1c176",
+    "vertex_count": 8,
+    "modifiers_baked": true,
+    "vertex_correspondence_preserved": true,
+    "wheel_uniform_exception": false,
+    "reason": "Frozen source endpoint fit; preserve affine shear exactly in evaluated mesh, no TRS decomposition"
+  },
+  {
+    "object": "cage2_wireV8",
+    "action": "continuous_local_frame_fit_baked_evaluated_vertices",
+    "owner": "mesh_cage_2",
+    "parameters": [
+      0.09803649779182094,
+      -0.05177552051200947,
+      1.0722230100896921,
+      1.0007272388011492,
+      1.040773709184009,
+      -0.07089765968226606
+    ],
+    "world_transport": [
+      [
+        1.0695295333862305,
+        0.07088971883058548,
+        0.0,
+        1.4044790267944336
+      ],
+      [
+        -0.07595434784889221,
+        0.9982132911682129,
+        0.0,
+        -0.8805189728736877
+      ],
+      [
+        0.0,
+        0.0,
+        1.0407737493515015,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "baseline_evaluated_vertices_sha256": "90ced6815d1a6f4dce679742af61c7142b715a30cd63e25ce2ff11d5570020c1",
+    "candidate_evaluated_vertices_sha256": "70f183c6b540856c6902b310b08bb2d1fcb75d263a0e0b26abe67c5f04dbd743",
+    "vertex_count": 8,
+    "modifiers_baked": true,
+    "vertex_correspondence_preserved": true,
+    "wheel_uniform_exception": false,
+    "reason": "Frozen source endpoint fit; preserve affine shear exactly in evaluated mesh, no TRS decomposition"
+  },
+  {
+    "object": "cage2_wireV9",
+    "action": "continuous_local_frame_fit_baked_evaluated_vertices",
+    "owner": "mesh_cage_2",
+    "parameters": [
+      0.09803649779182094,
+      -0.05177552051200947,
+      1.0722230100896921,
+      1.0007272388011492,
+      1.040773709184009,
+      -0.07089765968226606
+    ],
+    "world_transport": [
+      [
+        1.0695295333862305,
+        0.07088971883058548,
+        0.0,
+        1.4044790267944336
+      ],
+      [
+        -0.07595434784889221,
+        0.9982132911682129,
+        0.0,
+        -0.8805190920829773
+      ],
+      [
+        0.0,
+        0.0,
+        1.0407737493515015,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "baseline_evaluated_vertices_sha256": "36683d7518ceb221a0009b1e84eed8e2aabded114e467bce0de859c0f6063d96",
+    "candidate_evaluated_vertices_sha256": "ff7abdd57b8fe560e41387da8cae818964a79493ea423569f66fe1c064593097",
+    "vertex_count": 8,
+    "modifiers_baked": true,
+    "vertex_correspondence_preserved": true,
+    "wheel_uniform_exception": false,
+    "reason": "Frozen source endpoint fit; preserve affine shear exactly in evaluated mesh, no TRS decomposition"
+  },
+  {
+    "object": "cage2_wireV10",
+    "action": "continuous_local_frame_fit_baked_evaluated_vertices",
+    "owner": "mesh_cage_2",
+    "parameters": [
+      0.09803649779182094,
+      -0.05177552051200947,
+      1.0722230100896921,
+      1.0007272388011492,
+      1.040773709184009,
+      -0.07089765968226606
+    ],
+    "world_transport": [
+      [
+        1.0695295333862305,
+        0.07088971883058548,
+        0.0,
+        1.4044790267944336
+      ],
+      [
+        -0.07595434784889221,
+        0.9982132911682129,
+        0.0,
+        -0.8805188536643982
+      ],
+      [
+        0.0,
+        0.0,
+        1.0407737493515015,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "baseline_evaluated_vertices_sha256": "1a8595ae49796d0d9709f75d8cc0c0564bebef5187ee1127848a209e47b30ac9",
+    "candidate_evaluated_vertices_sha256": "5647e78e88e3581fc9908be577645158b5286d6a35598bfd740cf14ebddc626d",
+    "vertex_count": 8,
+    "modifiers_baked": true,
+    "vertex_correspondence_preserved": true,
+    "wheel_uniform_exception": false,
+    "reason": "Frozen source endpoint fit; preserve affine shear exactly in evaluated mesh, no TRS decomposition"
+  },
+  {
+    "object": "cage2_wireV11",
+    "action": "continuous_local_frame_fit_baked_evaluated_vertices",
+    "owner": "mesh_cage_2",
+    "parameters": [
+      0.09803649779182094,
+      -0.05177552051200947,
+      1.0722230100896921,
+      1.0007272388011492,
+      1.040773709184009,
+      -0.07089765968226606
+    ],
+    "world_transport": [
+      [
+        1.0695295333862305,
+        0.07088971883058548,
+        0.0,
+        1.4044790267944336
+      ],
+      [
+        -0.07595434784889221,
+        0.9982132911682129,
+        0.0,
+        -0.8805190324783325
+      ],
+      [
+        0.0,
+        0.0,
+        1.0407737493515015,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "baseline_evaluated_vertices_sha256": "bf2ab9a60e8d814225c52fa9dc91ba8e23f9604a487492097d47b99eff3224b0",
+    "candidate_evaluated_vertices_sha256": "2d08ab53f166bf0899fa7f466d84d0e27551ab9166b45d8bbf9b96625fd32279",
+    "vertex_count": 8,
+    "modifiers_baked": true,
+    "vertex_correspondence_preserved": true,
+    "wheel_uniform_exception": false,
+    "reason": "Frozen source endpoint fit; preserve affine shear exactly in evaluated mesh, no TRS decomposition"
+  },
+  {
+    "object": "cage2_wireV12",
+    "action": "continuous_local_frame_fit_baked_evaluated_vertices",
+    "owner": "mesh_cage_2",
+    "parameters": [
+      0.09803649779182094,
+      -0.05177552051200947,
+      1.0722230100896921,
+      1.0007272388011492,
+      1.040773709184009,
+      -0.07089765968226606
+    ],
+    "world_transport": [
+      [
+        1.0695295333862305,
+        0.07088971883058548,
+        0.0,
+        1.4044790267944336
+      ],
+      [
+        -0.07595434784889221,
+        0.9982132911682129,
+        0.0,
+        -0.8805187940597534
+      ],
+      [
+        0.0,
+        0.0,
+        1.0407737493515015,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "baseline_evaluated_vertices_sha256": "d3523e49ae595681eddb1435436bac53faa8902f18df605f6eeb1e7ef51ca675",
+    "candidate_evaluated_vertices_sha256": "159c2c79769eb84f9322bdbe00a111c78ef8586f78c3146e429466494b958d03",
+    "vertex_count": 8,
+    "modifiers_baked": true,
+    "vertex_correspondence_preserved": true,
+    "wheel_uniform_exception": false,
+    "reason": "Frozen source endpoint fit; preserve affine shear exactly in evaluated mesh, no TRS decomposition"
+  },
+  {
+    "object": "cage2_wireV13",
+    "action": "continuous_local_frame_fit_baked_evaluated_vertices",
+    "owner": "mesh_cage_2",
+    "parameters": [
+      0.09803649779182094,
+      -0.05177552051200947,
+      1.0722230100896921,
+      1.0007272388011492,
+      1.040773709184009,
+      -0.07089765968226606
+    ],
+    "world_transport": [
+      [
+        1.0695295333862305,
+        0.07088971883058548,
+        0.0,
+        1.4044790267944336
+      ],
+      [
+        -0.07595434784889221,
+        0.9982132911682129,
+        0.0,
+        -0.8805189728736877
+      ],
+      [
+        0.0,
+        0.0,
+        1.0407737493515015,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "baseline_evaluated_vertices_sha256": "c9b48f668eb78927874333364f5da121505cfaf8af5edea8a45b3c713212b895",
+    "candidate_evaluated_vertices_sha256": "f4570409443659a67ebb6379d0a8752f49ed68708cdc3a69727f59975f0033c6",
+    "vertex_count": 8,
+    "modifiers_baked": true,
+    "vertex_correspondence_preserved": true,
+    "wheel_uniform_exception": false,
+    "reason": "Frozen source endpoint fit; preserve affine shear exactly in evaluated mesh, no TRS decomposition"
+  },
+  {
+    "object": "cage2_wireV14",
+    "action": "continuous_local_frame_fit_baked_evaluated_vertices",
+    "owner": "mesh_cage_2",
+    "parameters": [
+      0.09803649779182094,
+      -0.05177552051200947,
+      1.0722230100896921,
+      1.0007272388011492,
+      1.040773709184009,
+      -0.07089765968226606
+    ],
+    "world_transport": [
+      [
+        1.0695295333862305,
+        0.07088971883058548,
+        0.0,
+        1.4044790267944336
+      ],
+      [
+        -0.07595434784889221,
+        0.9982132911682129,
+        0.0,
+        -0.8805186748504639
+      ],
+      [
+        0.0,
+        0.0,
+        1.0407737493515015,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "baseline_evaluated_vertices_sha256": "f2929dd86b47c8f16719af5aed77010b7cb445adf6fe3e823f009aa4568cef9f",
+    "candidate_evaluated_vertices_sha256": "99cd4678561c2aca06b5c490ce074c78ae57b85270e156ce1a98cbeb0eb4577d",
+    "vertex_count": 8,
+    "modifiers_baked": true,
+    "vertex_correspondence_preserved": true,
+    "wheel_uniform_exception": false,
+    "reason": "Frozen source endpoint fit; preserve affine shear exactly in evaluated mesh, no TRS decomposition"
+  },
+  {
+    "object": "cage2_wireV15",
+    "action": "continuous_local_frame_fit_baked_evaluated_vertices",
+    "owner": "mesh_cage_2",
+    "parameters": [
+      0.09803649779182094,
+      -0.05177552051200947,
+      1.0722230100896921,
+      1.0007272388011492,
+      1.040773709184009,
+      -0.07089765968226606
+    ],
+    "world_transport": [
+      [
+        1.0695295333862305,
+        0.07088971883058548,
+        0.0,
+        1.4044790267944336
+      ],
+      [
+        -0.07595434784889221,
+        0.9982132911682129,
+        0.0,
+        -0.8805188536643982
+      ],
+      [
+        0.0,
+        0.0,
+        1.0407737493515015,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "baseline_evaluated_vertices_sha256": "ef803bba946a291ed0075d156542e8229f0a2525008dd1bc263a647a4af4cc5a",
+    "candidate_evaluated_vertices_sha256": "702f0ca35552ee6b0880154a501d62ab87f59a2076f2159de50428b41e26ebc2",
+    "vertex_count": 8,
+    "modifiers_baked": true,
+    "vertex_correspondence_preserved": true,
+    "wheel_uniform_exception": false,
+    "reason": "Frozen source endpoint fit; preserve affine shear exactly in evaluated mesh, no TRS decomposition"
+  },
+  {
+    "object": "cage2_wireV16",
+    "action": "continuous_local_frame_fit_baked_evaluated_vertices",
+    "owner": "mesh_cage_2",
+    "parameters": [
+      0.09803649779182094,
+      -0.05177552051200947,
+      1.0722230100896921,
+      1.0007272388011492,
+      1.040773709184009,
+      -0.07089765968226606
+    ],
+    "world_transport": [
+      [
+        1.0695295333862305,
+        0.07088971883058548,
+        0.0,
+        1.4044790267944336
+      ],
+      [
+        -0.07595434784889221,
+        0.9982132911682129,
+        0.0,
+        -0.8805190920829773
+      ],
+      [
+        0.0,
+        0.0,
+        1.0407737493515015,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "baseline_evaluated_vertices_sha256": "166ce1d15795101c26342ca19319d7a58c221daccd291a0943865d246849c7cc",
+    "candidate_evaluated_vertices_sha256": "610da734b407f555680828cf09e9a509543d2078654373652b19826a4018c433",
+    "vertex_count": 8,
+    "modifiers_baked": true,
+    "vertex_correspondence_preserved": true,
+    "wheel_uniform_exception": false,
+    "reason": "Frozen source endpoint fit; preserve affine shear exactly in evaluated mesh, no TRS decomposition"
+  },
+  {
+    "object": "cage2_wireV17",
+    "action": "continuous_local_frame_fit_baked_evaluated_vertices",
+    "owner": "mesh_cage_2",
+    "parameters": [
+      0.09803649779182094,
+      -0.05177552051200947,
+      1.0722230100896921,
+      1.0007272388011492,
+      1.040773709184009,
+      -0.07089765968226606
+    ],
+    "world_transport": [
+      [
+        1.0695295333862305,
+        0.07088971883058548,
+        0.0,
+        1.4044790267944336
+      ],
+      [
+        -0.07595434784889221,
+        0.9982132911682129,
+        0.0,
+        -0.8805187940597534
+      ],
+      [
+        0.0,
+        0.0,
+        1.0407737493515015,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "baseline_evaluated_vertices_sha256": "45d7060be4806e9720dcc6d2c9f10fb9d36ff2f5847c9d7715fc6906b4565388",
+    "candidate_evaluated_vertices_sha256": "9d188065b7758a21eb86ab46a0790e71e997273df23e424a206e1b4077a340b5",
+    "vertex_count": 8,
+    "modifiers_baked": true,
+    "vertex_correspondence_preserved": true,
+    "wheel_uniform_exception": false,
+    "reason": "Frozen source endpoint fit; preserve affine shear exactly in evaluated mesh, no TRS decomposition"
+  },
+  {
+    "object": "cage2_wireV18",
+    "action": "continuous_local_frame_fit_baked_evaluated_vertices",
+    "owner": "mesh_cage_2",
+    "parameters": [
+      0.09803649779182094,
+      -0.05177552051200947,
+      1.0722230100896921,
+      1.0007272388011492,
+      1.040773709184009,
+      -0.07089765968226606
+    ],
+    "world_transport": [
+      [
+        1.0695295333862305,
+        0.07088971883058548,
+        0.0,
+        1.4044790267944336
+      ],
+      [
+        -0.07595434784889221,
+        0.9982132911682129,
+        0.0,
+        -0.8805190324783325
+      ],
+      [
+        0.0,
+        0.0,
+        1.0407737493515015,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "baseline_evaluated_vertices_sha256": "594d616cff0ddaf165353088434c5d568c37f1354730ef5e0a770a87d43b6410",
+    "candidate_evaluated_vertices_sha256": "f1e018b15189216c50b61a2705bb90884f6a83becdfec5cb5dc8472e448c3f57",
+    "vertex_count": 8,
+    "modifiers_baked": true,
+    "vertex_correspondence_preserved": true,
+    "wheel_uniform_exception": false,
+    "reason": "Frozen source endpoint fit; preserve affine shear exactly in evaluated mesh, no TRS decomposition"
+  },
+  {
+    "object": "cage2_wireV19",
+    "action": "continuous_local_frame_fit_baked_evaluated_vertices",
+    "owner": "mesh_cage_2",
+    "parameters": [
+      0.09803649779182094,
+      -0.05177552051200947,
+      1.0722230100896921,
+      1.0007272388011492,
+      1.040773709184009,
+      -0.07089765968226606
+    ],
+    "world_transport": [
+      [
+        1.0695295333862305,
+        0.07088971883058548,
+        0.0,
+        1.4044790267944336
+      ],
+      [
+        -0.07595434784889221,
+        0.9982132911682129,
+        0.0,
+        -0.8805186748504639
+      ],
+      [
+        0.0,
+        0.0,
+        1.0407737493515015,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "baseline_evaluated_vertices_sha256": "4becf7496b4158b8bde1c6bfccda7256bb575abe5f71b330708a32699d7fac24",
+    "candidate_evaluated_vertices_sha256": "272728030fb04d5e2f8a21d714c481cf86e2f91930a1ea685c0950cc15ae2b16",
+    "vertex_count": 8,
+    "modifiers_baked": true,
+    "vertex_correspondence_preserved": true,
+    "wheel_uniform_exception": false,
+    "reason": "Frozen source endpoint fit; preserve affine shear exactly in evaluated mesh, no TRS decomposition"
+  },
+  {
+    "object": "cage2_wireV20",
+    "action": "continuous_local_frame_fit_baked_evaluated_vertices",
+    "owner": "mesh_cage_2",
+    "parameters": [
+      0.09803649779182094,
+      -0.05177552051200947,
+      1.0722230100896921,
+      1.0007272388011492,
+      1.040773709184009,
+      -0.07089765968226606
+    ],
+    "world_transport": [
+      [
+        1.0695295333862305,
+        0.07088971883058548,
+        0.0,
+        1.4044790267944336
+      ],
+      [
+        -0.07595434784889221,
+        0.9982132911682129,
+        0.0,
+        -0.880518913269043
+      ],
+      [
+        0.0,
+        0.0,
+        1.0407737493515015,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "baseline_evaluated_vertices_sha256": "cec9608ca5b85aeffa1117c952e0baa1769cbd9a580e9924db54f0aa8c13a766",
+    "candidate_evaluated_vertices_sha256": "58b0c3d5321502c37eb66e2ccf5cf065ef2c51eedea1549021dd2d4abbc978c9",
+    "vertex_count": 8,
+    "modifiers_baked": true,
+    "vertex_correspondence_preserved": true,
+    "wheel_uniform_exception": false,
+    "reason": "Frozen source endpoint fit; preserve affine shear exactly in evaluated mesh, no TRS decomposition"
+  },
+  {
+    "object": "cage2_wireV21",
+    "action": "continuous_local_frame_fit_baked_evaluated_vertices",
+    "owner": "mesh_cage_2",
+    "parameters": [
+      0.09803649779182094,
+      -0.05177552051200947,
+      1.0722230100896921,
+      1.0007272388011492,
+      1.040773709184009,
+      -0.07089765968226606
+    ],
+    "world_transport": [
+      [
+        1.0695295333862305,
+        0.07088971883058548,
+        0.0,
+        1.4044790267944336
+      ],
+      [
+        -0.07595434784889221,
+        0.9982132911682129,
+        0.0,
+        -0.8805186152458191
+      ],
+      [
+        0.0,
+        0.0,
+        1.0407737493515015,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "baseline_evaluated_vertices_sha256": "aa442490213454be531b784398a0b42531fc20e5dd6a2d8599b5065e1e44ddc4",
+    "candidate_evaluated_vertices_sha256": "865eb9d0583ff74b59edadbed426a5e972015afabfd3ad3fb210cd7418ec6c56",
+    "vertex_count": 8,
+    "modifiers_baked": true,
+    "vertex_correspondence_preserved": true,
+    "wheel_uniform_exception": false,
+    "reason": "Frozen source endpoint fit; preserve affine shear exactly in evaluated mesh, no TRS decomposition"
+  },
+  {
+    "object": "cage2_wireV22",
+    "action": "continuous_local_frame_fit_baked_evaluated_vertices",
+    "owner": "mesh_cage_2",
+    "parameters": [
+      0.09803649779182094,
+      -0.05177552051200947,
+      1.0722230100896921,
+      1.0007272388011492,
+      1.040773709184009,
+      -0.07089765968226606
+    ],
+    "world_transport": [
+      [
+        1.0695295333862305,
+        0.07088971883058548,
+        0.0,
+        1.4044790267944336
+      ],
+      [
+        -0.07595434784889221,
+        0.9982132911682129,
+        0.0,
+        -0.8805188536643982
+      ],
+      [
+        0.0,
+        0.0,
+        1.0407737493515015,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "baseline_evaluated_vertices_sha256": "867a20cd53dadf76059139dd39e9ba0010425eb5eaffbf10b3c5413b2fe19879",
+    "candidate_evaluated_vertices_sha256": "adf52eaabc596fb59d7a8bef05a71f77c1db55ce7e8ed8248662cbee9a1df5f0",
+    "vertex_count": 8,
+    "modifiers_baked": true,
+    "vertex_correspondence_preserved": true,
+    "wheel_uniform_exception": false,
+    "reason": "Frozen source endpoint fit; preserve affine shear exactly in evaluated mesh, no TRS decomposition"
+  },
+  {
+    "object": "cage2_wireV23",
+    "action": "continuous_local_frame_fit_baked_evaluated_vertices",
+    "owner": "mesh_cage_2",
+    "parameters": [
+      0.09803649779182094,
+      -0.05177552051200947,
+      1.0722230100896921,
+      1.0007272388011492,
+      1.040773709184009,
+      -0.07089765968226606
+    ],
+    "world_transport": [
+      [
+        1.0695295333862305,
+        0.07088971883058548,
+        0.0,
+        1.4044790267944336
+      ],
+      [
+        -0.07595434784889221,
+        0.9982132911682129,
+        0.0,
+        -0.8805190324783325
+      ],
+      [
+        0.0,
+        0.0,
+        1.0407737493515015,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "baseline_evaluated_vertices_sha256": "9fabab23dd4c6d410f907c69a96f29de9d8eac0fced1e78860a8d04bf9f22903",
+    "candidate_evaluated_vertices_sha256": "3327cbb689e754c85d4be5f77d17dd43e580af47dfcebc1c2ec6a030cd6860db",
+    "vertex_count": 8,
+    "modifiers_baked": true,
+    "vertex_correspondence_preserved": true,
+    "wheel_uniform_exception": false,
+    "reason": "Frozen source endpoint fit; preserve affine shear exactly in evaluated mesh, no TRS decomposition"
+  },
+  {
+    "object": "cage2_wireV24",
+    "action": "continuous_local_frame_fit_baked_evaluated_vertices",
+    "owner": "mesh_cage_2",
+    "parameters": [
+      0.09803649779182094,
+      -0.05177552051200947,
+      1.0722230100896921,
+      1.0007272388011492,
+      1.040773709184009,
+      -0.07089765968226606
+    ],
+    "world_transport": [
+      [
+        1.0695295333862305,
+        0.07088971883058548,
+        0.0,
+        1.4044790267944336
+      ],
+      [
+        -0.07595434784889221,
+        0.9982132911682129,
+        0.0,
+        -0.8805187344551086
+      ],
+      [
+        0.0,
+        0.0,
+        1.0407737493515015,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "baseline_evaluated_vertices_sha256": "8a8d93b867c75e4fe7fad03dcdd0544af3dbf2ef1ac7fcb1e22ab873a6307e14",
+    "candidate_evaluated_vertices_sha256": "bc2c91de8261069662ddebb2c02b5043b2b26dbb84ff6a9e419d2fb0fd72262e",
+    "vertex_count": 8,
+    "modifiers_baked": true,
+    "vertex_correspondence_preserved": true,
+    "wheel_uniform_exception": false,
+    "reason": "Frozen source endpoint fit; preserve affine shear exactly in evaluated mesh, no TRS decomposition"
+  },
+  {
+    "object": "cage2_wireV25",
+    "action": "continuous_local_frame_fit_baked_evaluated_vertices",
+    "owner": "mesh_cage_2",
+    "parameters": [
+      0.09803649779182094,
+      -0.05177552051200947,
+      1.0722230100896921,
+      1.0007272388011492,
+      1.040773709184009,
+      -0.07089765968226606
+    ],
+    "world_transport": [
+      [
+        1.0695295333862305,
+        0.07088971883058548,
+        0.0,
+        1.4044790267944336
+      ],
+      [
+        -0.07595434784889221,
+        0.9982132911682129,
+        0.0,
+        -0.880518913269043
+      ],
+      [
+        0.0,
+        0.0,
+        1.0407737493515015,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "baseline_evaluated_vertices_sha256": "25388693401abd5c067b8d1c999cb98e61faa0b4159a1d442828d895b7aca467",
+    "candidate_evaluated_vertices_sha256": "5f4adf59d0384accb3122c79b570e23e8f1579e18dc9b1fe3ffc15ae0c202165",
+    "vertex_count": 8,
+    "modifiers_baked": true,
+    "vertex_correspondence_preserved": true,
+    "wheel_uniform_exception": false,
+    "reason": "Frozen source endpoint fit; preserve affine shear exactly in evaluated mesh, no TRS decomposition"
+  },
+  {
+    "object": "cage2_wireV26",
+    "action": "continuous_local_frame_fit_baked_evaluated_vertices",
+    "owner": "mesh_cage_2",
+    "parameters": [
+      0.09803649779182094,
+      -0.05177552051200947,
+      1.0722230100896921,
+      1.0007272388011492,
+      1.040773709184009,
+      -0.07089765968226606
+    ],
+    "world_transport": [
+      [
+        1.0695295333862305,
+        0.07088971883058548,
+        0.0,
+        1.4044790267944336
+      ],
+      [
+        -0.07595434784889221,
+        0.9982132911682129,
+        0.0,
+        -0.8805186748504639
+      ],
+      [
+        0.0,
+        0.0,
+        1.0407737493515015,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "baseline_evaluated_vertices_sha256": "4528bd4e5d62f1dd98ed40011b5c4ee357968cedc4cccc0c1e3c5b6193854eda",
+    "candidate_evaluated_vertices_sha256": "596958c8f8bbaf633765a29a72d25b840b3b4b7b8bdc5b00f9ee3792f91ef54c",
+    "vertex_count": 8,
+    "modifiers_baked": true,
+    "vertex_correspondence_preserved": true,
+    "wheel_uniform_exception": false,
+    "reason": "Frozen source endpoint fit; preserve affine shear exactly in evaluated mesh, no TRS decomposition"
+  },
+  {
+    "object": "cage2_wireV27",
+    "action": "continuous_local_frame_fit_baked_evaluated_vertices",
+    "owner": "mesh_cage_2",
+    "parameters": [
+      0.09803649779182094,
+      -0.05177552051200947,
+      1.0722230100896921,
+      1.0007272388011492,
+      1.040773709184009,
+      -0.07089765968226606
+    ],
+    "world_transport": [
+      [
+        1.0695295333862305,
+        0.07088971883058548,
+        0.0,
+        1.4044790267944336
+      ],
+      [
+        -0.07595434784889221,
+        0.9982132911682129,
+        0.0,
+        -0.8805188536643982
+      ],
+      [
+        0.0,
+        0.0,
+        1.0407737493515015,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "baseline_evaluated_vertices_sha256": "f9e2f6df6d308f3c98ca275142f8aa65b78d945d7e06f3066a1146e863887d88",
+    "candidate_evaluated_vertices_sha256": "e4ee3d3ba9f542bea3597dc58bef01116f8433dfdd65d6740b708c989afb4548",
+    "vertex_count": 8,
+    "modifiers_baked": true,
+    "vertex_correspondence_preserved": true,
+    "wheel_uniform_exception": false,
+    "reason": "Frozen source endpoint fit; preserve affine shear exactly in evaluated mesh, no TRS decomposition"
+  },
+  {
+    "object": "cage2_wireV28",
+    "action": "continuous_local_frame_fit_baked_evaluated_vertices",
+    "owner": "mesh_cage_2",
+    "parameters": [
+      0.09803649779182094,
+      -0.05177552051200947,
+      1.0722230100896921,
+      1.0007272388011492,
+      1.040773709184009,
+      -0.07089765968226606
+    ],
+    "world_transport": [
+      [
+        1.0695295333862305,
+        0.07088971883058548,
+        0.0,
+        1.4044790267944336
+      ],
+      [
+        -0.07595434784889221,
+        0.9982132911682129,
+        0.0,
+        -0.8805186152458191
+      ],
+      [
+        0.0,
+        0.0,
+        1.0407737493515015,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "baseline_evaluated_vertices_sha256": "a7a8b9c086c0afd1dc36cbc2aaa496969b3a5438c79d025bbcd09b029d12ab23",
+    "candidate_evaluated_vertices_sha256": "b298b9a7fef871cadc43854dfb47bc24ec93f352c3cae6696a2933fdd7013ace",
+    "vertex_count": 8,
+    "modifiers_baked": true,
+    "vertex_correspondence_preserved": true,
+    "wheel_uniform_exception": false,
+    "reason": "Frozen source endpoint fit; preserve affine shear exactly in evaluated mesh, no TRS decomposition"
+  },
+  {
+    "object": "cage2_wireV29",
+    "action": "continuous_local_frame_fit_baked_evaluated_vertices",
+    "owner": "mesh_cage_2",
+    "parameters": [
+      0.09803649779182094,
+      -0.05177552051200947,
+      1.0722230100896921,
+      1.0007272388011492,
+      1.040773709184009,
+      -0.07089765968226606
+    ],
+    "world_transport": [
+      [
+        1.0695295333862305,
+        0.07088971883058548,
+        0.0,
+        1.4044790267944336
+      ],
+      [
+        -0.07595434784889221,
+        0.9982132911682129,
+        0.0,
+        -0.8805187344551086
+      ],
+      [
+        0.0,
+        0.0,
+        1.0407737493515015,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "baseline_evaluated_vertices_sha256": "6b19926a782df03b8fe85cb24f82d41eab901c12b8796314df889252c31eddca",
+    "candidate_evaluated_vertices_sha256": "1e8aa5d73541ff936d0611ffcd7b7764f039363f5deb305bfb5fe7a401da5e0a",
+    "vertex_count": 8,
+    "modifiers_baked": true,
+    "vertex_correspondence_preserved": true,
+    "wheel_uniform_exception": false,
+    "reason": "Frozen source endpoint fit; preserve affine shear exactly in evaluated mesh, no TRS decomposition"
+  },
+  {
+    "object": "cage2_wireV30",
+    "action": "continuous_local_frame_fit_baked_evaluated_vertices",
+    "owner": "mesh_cage_2",
+    "parameters": [
+      0.09803649779182094,
+      -0.05177552051200947,
+      1.0722230100896921,
+      1.0007272388011492,
+      1.040773709184009,
+      -0.07089765968226606
+    ],
+    "world_transport": [
+      [
+        1.0695295333862305,
+        0.07088971883058548,
+        0.0,
+        1.4044790267944336
+      ],
+      [
+        -0.07595434784889221,
+        0.9982132911682129,
+        0.0,
+        -0.8805189728736877
+      ],
+      [
+        0.0,
+        0.0,
+        1.0407737493515015,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "baseline_evaluated_vertices_sha256": "2d4bf974df01afd0b79fa68bb7a385d941236a1b75e65b2aa1571a2e2eec8e48",
+    "candidate_evaluated_vertices_sha256": "c10fc73b72a6c54a90d5168ab1c12f32009ab082056d6cc9d658f8e2042e8db9",
+    "vertex_count": 8,
+    "modifiers_baked": true,
+    "vertex_correspondence_preserved": true,
+    "wheel_uniform_exception": false,
+    "reason": "Frozen source endpoint fit; preserve affine shear exactly in evaluated mesh, no TRS decomposition"
+  },
+  {
+    "object": "cage2_wireV31",
+    "action": "continuous_local_frame_fit_baked_evaluated_vertices",
+    "owner": "mesh_cage_2",
+    "parameters": [
+      0.09803649779182094,
+      -0.05177552051200947,
+      1.0722230100896921,
+      1.0007272388011492,
+      1.040773709184009,
+      -0.07089765968226606
+    ],
+    "world_transport": [
+      [
+        1.0695295333862305,
+        0.07088971883058548,
+        0.0,
+        1.4044790267944336
+      ],
+      [
+        -0.07595434784889221,
+        0.9982132911682129,
+        0.0,
+        -0.8805186748504639
+      ],
+      [
+        0.0,
+        0.0,
+        1.0407737493515015,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "baseline_evaluated_vertices_sha256": "7772283d0b8f132e1cd853615d7d14109a25443aa662545cb3db6b30142f5e7e",
+    "candidate_evaluated_vertices_sha256": "b78811225dbc7bc9a0f4057ec45a5a9ea7361c1fa84bfd885f15346ead71057a",
+    "vertex_count": 8,
+    "modifiers_baked": true,
+    "vertex_correspondence_preserved": true,
+    "wheel_uniform_exception": false,
+    "reason": "Frozen source endpoint fit; preserve affine shear exactly in evaluated mesh, no TRS decomposition"
+  },
+  {
+    "object": "cage2_wireV32",
+    "action": "continuous_local_frame_fit_baked_evaluated_vertices",
+    "owner": "mesh_cage_2",
+    "parameters": [
+      0.09803649779182094,
+      -0.05177552051200947,
+      1.0722230100896921,
+      1.0007272388011492,
+      1.040773709184009,
+      -0.07089765968226606
+    ],
+    "world_transport": [
+      [
+        1.0695295333862305,
+        0.07088971883058548,
+        0.0,
+        1.4044790267944336
+      ],
+      [
+        -0.07595434784889221,
+        0.9982132911682129,
+        0.0,
+        -0.880518913269043
+      ],
+      [
+        0.0,
+        0.0,
+        1.0407737493515015,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "baseline_evaluated_vertices_sha256": "b13b246dad65f8bac69f4b1676256e46cebcce68a3832be76e651343390d29f6",
+    "candidate_evaluated_vertices_sha256": "f5cedc9a19de1c02e6b511d6a79273e810b03c6cbeab25a367eff8d3ea2328a3",
+    "vertex_count": 8,
+    "modifiers_baked": true,
+    "vertex_correspondence_preserved": true,
+    "wheel_uniform_exception": false,
+    "reason": "Frozen source endpoint fit; preserve affine shear exactly in evaluated mesh, no TRS decomposition"
+  },
+  {
+    "object": "cage2_wireV33",
+    "action": "continuous_local_frame_fit_baked_evaluated_vertices",
+    "owner": "mesh_cage_2",
+    "parameters": [
+      0.09803649779182094,
+      -0.05177552051200947,
+      1.0722230100896921,
+      1.0007272388011492,
+      1.040773709184009,
+      -0.07089765968226606
+    ],
+    "world_transport": [
+      [
+        1.0695295333862305,
+        0.07088971883058548,
+        0.0,
+        1.4044790267944336
+      ],
+      [
+        -0.07595434784889221,
+        0.9982132911682129,
+        0.0,
+        -0.8805186748504639
+      ],
+      [
+        0.0,
+        0.0,
+        1.0407737493515015,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "baseline_evaluated_vertices_sha256": "e92a11d254bf314b58e8b20848cd0808a7ae1bf1df4e76d02384fa5c768061d2",
+    "candidate_evaluated_vertices_sha256": "186b57564920f61f10c682862e92023e26e9b3b99ae070fdaebdf24c5b80224c",
+    "vertex_count": 8,
+    "modifiers_baked": true,
+    "vertex_correspondence_preserved": true,
+    "wheel_uniform_exception": false,
+    "reason": "Frozen source endpoint fit; preserve affine shear exactly in evaluated mesh, no TRS decomposition"
+  },
+  {
+    "object": "cage2_wireV34",
+    "action": "continuous_local_frame_fit_baked_evaluated_vertices",
+    "owner": "mesh_cage_2",
+    "parameters": [
+      0.09803649779182094,
+      -0.05177552051200947,
+      1.0722230100896921,
+      1.0007272388011492,
+      1.040773709184009,
+      -0.07089765968226606
+    ],
+    "world_transport": [
+      [
+        1.0695295333862305,
+        0.07088971883058548,
+        0.0,
+        1.4044790267944336
+      ],
+      [
+        -0.07595434784889221,
+        0.9982132911682129,
+        0.0,
+        -0.8805187940597534
+      ],
+      [
+        0.0,
+        0.0,
+        1.0407737493515015,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "baseline_evaluated_vertices_sha256": "e1c67b506693eb53f7ee3d1b51608622eebaa685b44f3643a032092c7cb2bcc8",
+    "candidate_evaluated_vertices_sha256": "f9230f2cfdefaffbb41c7e8daa364bb0796b1ce4e874ddda283c80ce624f5c5f",
+    "vertex_count": 8,
+    "modifiers_baked": true,
+    "vertex_correspondence_preserved": true,
+    "wheel_uniform_exception": false,
+    "reason": "Frozen source endpoint fit; preserve affine shear exactly in evaluated mesh, no TRS decomposition"
+  },
+  {
+    "object": "cage2_wireV35",
+    "action": "continuous_local_frame_fit_baked_evaluated_vertices",
+    "owner": "mesh_cage_2",
+    "parameters": [
+      0.09803649779182094,
+      -0.05177552051200947,
+      1.0722230100896921,
+      1.0007272388011492,
+      1.040773709184009,
+      -0.07089765968226606
+    ],
+    "world_transport": [
+      [
+        1.0695295333862305,
+        0.07088971883058548,
+        0.0,
+        1.4044790267944336
+      ],
+      [
+        -0.07595434784889221,
+        0.9982132911682129,
+        0.0,
+        -0.8805184960365295
+      ],
+      [
+        0.0,
+        0.0,
+        1.0407737493515015,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "baseline_evaluated_vertices_sha256": "eaa5362d12252173a364912b5db7ee8ae35da95b061b540252507e9bed2489c0",
+    "candidate_evaluated_vertices_sha256": "aae7199f16118f40d708a32602544209b2c8dedb1f4d213742b7e221c0967d6c",
+    "vertex_count": 8,
+    "modifiers_baked": true,
+    "vertex_correspondence_preserved": true,
+    "wheel_uniform_exception": false,
+    "reason": "Frozen source endpoint fit; preserve affine shear exactly in evaluated mesh, no TRS decomposition"
+  },
+  {
+    "object": "cage2_wireV36",
+    "action": "continuous_local_frame_fit_baked_evaluated_vertices",
+    "owner": "mesh_cage_2",
+    "parameters": [
+      0.09803649779182094,
+      -0.05177552051200947,
+      1.0722230100896921,
+      1.0007272388011492,
+      1.040773709184009,
+      -0.07089765968226606
+    ],
+    "world_transport": [
+      [
+        1.0695295333862305,
+        0.07088971883058548,
+        0.0,
+        1.4044790267944336
+      ],
+      [
+        -0.07595434784889221,
+        0.9982132911682129,
+        0.0,
+        -0.8805192112922668
+      ],
+      [
+        0.0,
+        0.0,
+        1.0407737493515015,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "baseline_evaluated_vertices_sha256": "ca7e2892fc56bef59b7a9a93f180dd4bac3583759dab57ea374cb06fecd6f785",
+    "candidate_evaluated_vertices_sha256": "f330e4d483a7ac5eadebda53150b920aebb22442f660509c9bdac09885062529",
+    "vertex_count": 8,
+    "modifiers_baked": true,
+    "vertex_correspondence_preserved": true,
+    "wheel_uniform_exception": false,
+    "reason": "Frozen source endpoint fit; preserve affine shear exactly in evaluated mesh, no TRS decomposition"
+  },
+  {
+    "object": "cage2_wireV37",
+    "action": "continuous_local_frame_fit_baked_evaluated_vertices",
+    "owner": "mesh_cage_2",
+    "parameters": [
+      0.09803649779182094,
+      -0.05177552051200947,
+      1.0722230100896921,
+      1.0007272388011492,
+      1.040773709184009,
+      -0.07089765968226606
+    ],
+    "world_transport": [
+      [
+        1.0695295333862305,
+        0.07088971883058548,
+        0.0,
+        1.4044790267944336
+      ],
+      [
+        -0.07595434784889221,
+        0.9982132911682129,
+        0.0,
+        -0.8805189728736877
+      ],
+      [
+        0.0,
+        0.0,
+        1.0407737493515015,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "baseline_evaluated_vertices_sha256": "ecc9cc1df978f6d853b2ac5ab2d6fa7837feec347f1229299c800409ae252c21",
+    "candidate_evaluated_vertices_sha256": "c6d1469f75daadc14ea2344be3429c2801a0c6c5b4fda8910450fc37851a7332",
+    "vertex_count": 8,
+    "modifiers_baked": true,
+    "vertex_correspondence_preserved": true,
+    "wheel_uniform_exception": false,
+    "reason": "Frozen source endpoint fit; preserve affine shear exactly in evaluated mesh, no TRS decomposition"
+  },
+  {
+    "object": "cage2_wireV38",
+    "action": "continuous_local_frame_fit_baked_evaluated_vertices",
+    "owner": "mesh_cage_2",
+    "parameters": [
+      0.09803649779182094,
+      -0.05177552051200947,
+      1.0722230100896921,
+      1.0007272388011492,
+      1.040773709184009,
+      -0.07089765968226606
+    ],
+    "world_transport": [
+      [
+        1.0695295333862305,
+        0.07088971883058548,
+        0.0,
+        1.4044790267944336
+      ],
+      [
+        -0.07595434784889221,
+        0.9982132911682129,
+        0.0,
+        -0.8805186748504639
+      ],
+      [
+        0.0,
+        0.0,
+        1.0407737493515015,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "baseline_evaluated_vertices_sha256": "42c45ef7152f2afed05340b3045778e4d0725a661aa44afd9ecc94b93f2ea685",
+    "candidate_evaluated_vertices_sha256": "6ee90f23a1188288a1400468c5027cd954c9927add4395d9e0b5faf86f9a874e",
+    "vertex_count": 8,
+    "modifiers_baked": true,
+    "vertex_correspondence_preserved": true,
+    "wheel_uniform_exception": false,
+    "reason": "Frozen source endpoint fit; preserve affine shear exactly in evaluated mesh, no TRS decomposition"
+  },
+  {
+    "object": "cage2_wireV39",
+    "action": "continuous_local_frame_fit_baked_evaluated_vertices",
+    "owner": "mesh_cage_2",
+    "parameters": [
+      0.09803649779182094,
+      -0.05177552051200947,
+      1.0722230100896921,
+      1.0007272388011492,
+      1.040773709184009,
+      -0.07089765968226606
+    ],
+    "world_transport": [
+      [
+        1.0695295333862305,
+        0.07088971883058548,
+        0.0,
+        1.4044790267944336
+      ],
+      [
+        -0.07595434784889221,
+        0.9982132911682129,
+        0.0,
+        -0.88051837682724
+      ],
+      [
+        0.0,
+        0.0,
+        1.0407737493515015,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "baseline_evaluated_vertices_sha256": "c85fd7825db27754f7da4cbff38ea6e899e9a35d6e5f770e6db24a3084569a7a",
+    "candidate_evaluated_vertices_sha256": "b2c6c5011fca0b16f7cedd63b98d5bbd4f6a1229f4b8e09d55ddd1bf1cde38f2",
+    "vertex_count": 8,
+    "modifiers_baked": true,
+    "vertex_correspondence_preserved": true,
+    "wheel_uniform_exception": false,
+    "reason": "Frozen source endpoint fit; preserve affine shear exactly in evaluated mesh, no TRS decomposition"
+  },
+  {
+    "object": "cage2_wireV40",
+    "action": "continuous_local_frame_fit_baked_evaluated_vertices",
+    "owner": "mesh_cage_2",
+    "parameters": [
+      0.09803649779182094,
+      -0.05177552051200947,
+      1.0722230100896921,
+      1.0007272388011492,
+      1.040773709184009,
+      -0.07089765968226606
+    ],
+    "world_transport": [
+      [
+        1.0695295333862305,
+        0.07088971883058548,
+        0.0,
+        1.4044790267944336
+      ],
+      [
+        -0.07595434784889221,
+        0.9982132911682129,
+        0.0,
+        -0.8805190324783325
+      ],
+      [
+        0.0,
+        0.0,
+        1.0407737493515015,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "baseline_evaluated_vertices_sha256": "f10198a4cf3b9be24a0e34c8e7d877dba94f621ce5a8937dc2fa16ca6e60b895",
+    "candidate_evaluated_vertices_sha256": "eb41dff2470a0900e0077daff62e205ea1c61b4461e8523dc68d611e4541f94e",
+    "vertex_count": 8,
+    "modifiers_baked": true,
+    "vertex_correspondence_preserved": true,
+    "wheel_uniform_exception": false,
+    "reason": "Frozen source endpoint fit; preserve affine shear exactly in evaluated mesh, no TRS decomposition"
+  },
+  {
+    "object": "cage2_wireV41",
+    "action": "continuous_local_frame_fit_baked_evaluated_vertices",
+    "owner": "mesh_cage_2",
+    "parameters": [
+      0.09803649779182094,
+      -0.05177552051200947,
+      1.0722230100896921,
+      1.0007272388011492,
+      1.040773709184009,
+      -0.07089765968226606
+    ],
+    "world_transport": [
+      [
+        1.0695295333862305,
+        0.07088971883058548,
+        0.0,
+        1.4044790267944336
+      ],
+      [
+        -0.07595434784889221,
+        0.9982132911682129,
+        0.0,
+        -0.8805187940597534
+      ],
+      [
+        0.0,
+        0.0,
+        1.0407737493515015,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "baseline_evaluated_vertices_sha256": "18c04511f0f89f8b3f8946016c498293d90d07505cdea0d5d35d39e6802c28df",
+    "candidate_evaluated_vertices_sha256": "a110b5b7070bf247afaa00b629b67eb1723b8b97ebc539009217b3cb5874c998",
+    "vertex_count": 8,
+    "modifiers_baked": true,
+    "vertex_correspondence_preserved": true,
+    "wheel_uniform_exception": false,
+    "reason": "Frozen source endpoint fit; preserve affine shear exactly in evaluated mesh, no TRS decomposition"
+  },
+  {
+    "object": "cage2_wireV42",
+    "action": "continuous_local_frame_fit_baked_evaluated_vertices",
+    "owner": "mesh_cage_2",
+    "parameters": [
+      0.09803649779182094,
+      -0.05177552051200947,
+      1.0722230100896921,
+      1.0007272388011492,
+      1.040773709184009,
+      -0.07089765968226606
+    ],
+    "world_transport": [
+      [
+        1.0695295333862305,
+        0.07088971883058548,
+        0.0,
+        1.4044790267944336
+      ],
+      [
+        -0.07595434784889221,
+        0.9982132911682129,
+        0.0,
+        -0.8805184960365295
+      ],
+      [
+        0.0,
+        0.0,
+        1.0407737493515015,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "baseline_evaluated_vertices_sha256": "76c0b859121e8228f50377415db5a526e949d54394a5bb3b9f568d12d8bd0beb",
+    "candidate_evaluated_vertices_sha256": "1903bf8d3da1e77f4c77637d0a887bfbe495dedc6771c615d10aaac2aa587220",
+    "vertex_count": 8,
+    "modifiers_baked": true,
+    "vertex_correspondence_preserved": true,
+    "wheel_uniform_exception": false,
+    "reason": "Frozen source endpoint fit; preserve affine shear exactly in evaluated mesh, no TRS decomposition"
+  },
+  {
+    "object": "cage2_wireV43",
+    "action": "continuous_local_frame_fit_baked_evaluated_vertices",
+    "owner": "mesh_cage_2",
+    "parameters": [
+      0.09803649779182094,
+      -0.05177552051200947,
+      1.0722230100896921,
+      1.0007272388011492,
+      1.040773709184009,
+      -0.07089765968226606
+    ],
+    "world_transport": [
+      [
+        1.0695295333862305,
+        0.07088971883058548,
+        0.0,
+        1.4044790267944336
+      ],
+      [
+        -0.07595434784889221,
+        0.9982132911682129,
+        0.0,
+        -0.8805192112922668
+      ],
+      [
+        0.0,
+        0.0,
+        1.0407737493515015,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "baseline_evaluated_vertices_sha256": "f386d8b0ffcd53d7cb159ddda152913e1293cb30aa066e431bab8bb8c8359896",
+    "candidate_evaluated_vertices_sha256": "144db32bc22d6a114ad19ba8aff9a363a9db5fbcceeac0de705f56f499ccbc84",
+    "vertex_count": 8,
+    "modifiers_baked": true,
+    "vertex_correspondence_preserved": true,
+    "wheel_uniform_exception": false,
+    "reason": "Frozen source endpoint fit; preserve affine shear exactly in evaluated mesh, no TRS decomposition"
+  },
+  {
+    "object": "cage2_wireV44",
+    "action": "continuous_local_frame_fit_baked_evaluated_vertices",
+    "owner": "mesh_cage_2",
+    "parameters": [
+      0.09803649779182094,
+      -0.05177552051200947,
+      1.0722230100896921,
+      1.0007272388011492,
+      1.040773709184009,
+      -0.07089765968226606
+    ],
+    "world_transport": [
+      [
+        1.0695295333862305,
+        0.07088971883058548,
+        0.0,
+        1.4044790267944336
+      ],
+      [
+        -0.07595434784889221,
+        0.9982132911682129,
+        0.0,
+        -0.8805188536643982
+      ],
+      [
+        0.0,
+        0.0,
+        1.0407737493515015,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "baseline_evaluated_vertices_sha256": "acca41eb111e02721a13eaa6bb7b5616692e26205728b8b0cc6e29c694d2502f",
+    "candidate_evaluated_vertices_sha256": "b1f3b91d14e13e9834f3aa386d559fc48a682cb30502b9f9fd0c2bca360d0c08",
+    "vertex_count": 8,
+    "modifiers_baked": true,
+    "vertex_correspondence_preserved": true,
+    "wheel_uniform_exception": false,
+    "reason": "Frozen source endpoint fit; preserve affine shear exactly in evaluated mesh, no TRS decomposition"
+  },
+  {
+    "object": "cage2_wireV45",
+    "action": "continuous_local_frame_fit_baked_evaluated_vertices",
+    "owner": "mesh_cage_2",
+    "parameters": [
+      0.09803649779182094,
+      -0.05177552051200947,
+      1.0722230100896921,
+      1.0007272388011492,
+      1.040773709184009,
+      -0.07089765968226606
+    ],
+    "world_transport": [
+      [
+        1.0695295333862305,
+        0.07088971883058548,
+        0.0,
+        1.4044790267944336
+      ],
+      [
+        -0.07595434784889221,
+        0.9982132911682129,
+        0.0,
+        -0.8805186152458191
+      ],
+      [
+        0.0,
+        0.0,
+        1.0407737493515015,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "baseline_evaluated_vertices_sha256": "e96275c78ef4b2633b1e083f30b1a8cc4396549fd5e0b1e07312aeb367a82bcd",
+    "candidate_evaluated_vertices_sha256": "77161c726a9a2b47fef8754d5fa78b71c58f3ecdb37bfbddc3dcd8ff5aefc57d",
+    "vertex_count": 8,
+    "modifiers_baked": true,
+    "vertex_correspondence_preserved": true,
+    "wheel_uniform_exception": false,
+    "reason": "Frozen source endpoint fit; preserve affine shear exactly in evaluated mesh, no TRS decomposition"
+  },
+  {
+    "object": "cage2_wireV46",
+    "action": "continuous_local_frame_fit_baked_evaluated_vertices",
+    "owner": "mesh_cage_2",
+    "parameters": [
+      0.09803649779182094,
+      -0.05177552051200947,
+      1.0722230100896921,
+      1.0007272388011492,
+      1.040773709184009,
+      -0.07089765968226606
+    ],
+    "world_transport": [
+      [
+        1.0695295333862305,
+        0.07088971883058548,
+        0.0,
+        1.4044790267944336
+      ],
+      [
+        -0.07595434784889221,
+        0.9982132911682129,
+        0.0,
+        -0.8805192708969116
+      ],
+      [
+        0.0,
+        0.0,
+        1.0407737493515015,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "baseline_evaluated_vertices_sha256": "a505ed92aba95c1473e855a77497c597baad8ec94c5dc7a308a417249eea4f39",
+    "candidate_evaluated_vertices_sha256": "9980cbbdc5bcd4822117af83c8bceaeed858e87503d9010a60103912364dd9b9",
+    "vertex_count": 8,
+    "modifiers_baked": true,
+    "vertex_correspondence_preserved": true,
+    "wheel_uniform_exception": false,
+    "reason": "Frozen source endpoint fit; preserve affine shear exactly in evaluated mesh, no TRS decomposition"
+  },
+  {
+    "object": "cage2_wireV47",
+    "action": "continuous_local_frame_fit_baked_evaluated_vertices",
+    "owner": "mesh_cage_2",
+    "parameters": [
+      0.09803649779182094,
+      -0.05177552051200947,
+      1.0722230100896921,
+      1.0007272388011492,
+      1.040773709184009,
+      -0.07089765968226606
+    ],
+    "world_transport": [
+      [
+        1.0695295333862305,
+        0.07088971883058548,
+        0.0,
+        1.4044790267944336
+      ],
+      [
+        -0.07595434784889221,
+        0.9982132911682129,
+        0.0,
+        -0.8805190324783325
+      ],
+      [
+        0.0,
+        0.0,
+        1.0407737493515015,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "baseline_evaluated_vertices_sha256": "d2db1b83ff8c65c3eaf2599f310a37f7ea09fc41cf46b5c9388167c1723784aa",
+    "candidate_evaluated_vertices_sha256": "8156d8dd6e41cc6b89a145706d14e163f119157be57a687e21ffa2a8c2329992",
+    "vertex_count": 8,
+    "modifiers_baked": true,
+    "vertex_correspondence_preserved": true,
+    "wheel_uniform_exception": false,
+    "reason": "Frozen source endpoint fit; preserve affine shear exactly in evaluated mesh, no TRS decomposition"
+  },
+  {
+    "object": "cage2_wireV48",
+    "action": "continuous_local_frame_fit_baked_evaluated_vertices",
+    "owner": "mesh_cage_2",
+    "parameters": [
+      0.09803649779182094,
+      -0.05177552051200947,
+      1.0722230100896921,
+      1.0007272388011492,
+      1.040773709184009,
+      -0.07089765968226606
+    ],
+    "world_transport": [
+      [
+        1.0695295333862305,
+        0.07088971883058548,
+        0.0,
+        1.4044790267944336
+      ],
+      [
+        -0.07595434784889221,
+        0.9982132911682129,
+        0.0,
+        -0.8805187344551086
+      ],
+      [
+        0.0,
+        0.0,
+        1.0407737493515015,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "baseline_evaluated_vertices_sha256": "67f80efe8859ba4738d470bc314497fd3e935e3891961a793744b264ee3179e5",
+    "candidate_evaluated_vertices_sha256": "e58005429f9eb5ab717778526683cf4ebe78d51825c1bfd6b8881e82689d31c2",
+    "vertex_count": 8,
+    "modifiers_baked": true,
+    "vertex_correspondence_preserved": true,
+    "wheel_uniform_exception": false,
+    "reason": "Frozen source endpoint fit; preserve affine shear exactly in evaluated mesh, no TRS decomposition"
+  },
+  {
+    "object": "cage2_wireV49",
+    "action": "continuous_local_frame_fit_baked_evaluated_vertices",
+    "owner": "mesh_cage_2",
+    "parameters": [
+      0.09803649779182094,
+      -0.05177552051200947,
+      1.0722230100896921,
+      1.0007272388011492,
+      1.040773709184009,
+      -0.07089765968226606
+    ],
+    "world_transport": [
+      [
+        1.0695295333862305,
+        0.07088971883058548,
+        0.0,
+        1.4044790267944336
+      ],
+      [
+        -0.07595434784889221,
+        0.9982132911682129,
+        0.0,
+        -0.8805184364318848
+      ],
+      [
+        0.0,
+        0.0,
+        1.0407737493515015,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "baseline_evaluated_vertices_sha256": "f024d2da35c9f7f527617296c402828c86245f32cc699a15a5d4bae02f457bee",
+    "candidate_evaluated_vertices_sha256": "d91e8d520a7aed2d5036146f4b627ed288154797772da0ff21a832d8432c12c8",
+    "vertex_count": 8,
+    "modifiers_baked": true,
+    "vertex_correspondence_preserved": true,
+    "wheel_uniform_exception": false,
+    "reason": "Frozen source endpoint fit; preserve affine shear exactly in evaluated mesh, no TRS decomposition"
+  },
+  {
+    "object": "cage2_wireV50",
+    "action": "continuous_local_frame_fit_baked_evaluated_vertices",
+    "owner": "mesh_cage_2",
+    "parameters": [
+      0.09803649779182094,
+      -0.05177552051200947,
+      1.0722230100896921,
+      1.0007272388011492,
+      1.040773709184009,
+      -0.07089765968226606
+    ],
+    "world_transport": [
+      [
+        1.0695295333862305,
+        0.07088971883058548,
+        0.0,
+        1.4044790267944336
+      ],
+      [
+        -0.07595434784889221,
+        0.9982132911682129,
+        0.0,
+        -0.8805190920829773
+      ],
+      [
+        0.0,
+        0.0,
+        1.0407737493515015,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "baseline_evaluated_vertices_sha256": "5b34678b2a7ce1902ec971f5ff3d640f69084fabea9283baacd31247cef91ed8",
+    "candidate_evaluated_vertices_sha256": "16612c93e23f920a292ce358a6d5dc3422f44ccef507b389efb268eed8bd0bdc",
+    "vertex_count": 8,
+    "modifiers_baked": true,
+    "vertex_correspondence_preserved": true,
+    "wheel_uniform_exception": false,
+    "reason": "Frozen source endpoint fit; preserve affine shear exactly in evaluated mesh, no TRS decomposition"
+  },
+  {
+    "object": "cage2_wireV51",
+    "action": "continuous_local_frame_fit_baked_evaluated_vertices",
+    "owner": "mesh_cage_2",
+    "parameters": [
+      0.09803649779182094,
+      -0.05177552051200947,
+      1.0722230100896921,
+      1.0007272388011492,
+      1.040773709184009,
+      -0.07089765968226606
+    ],
+    "world_transport": [
+      [
+        1.0695295333862305,
+        0.07088971883058548,
+        0.0,
+        1.4044790267944336
+      ],
+      [
+        -0.07595434784889221,
+        0.9982132911682129,
+        0.0,
+        -0.8805188536643982
+      ],
+      [
+        0.0,
+        0.0,
+        1.0407737493515015,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "baseline_evaluated_vertices_sha256": "6d643e77daf0cf57989f9528bed84d9edd89ea520178e6f4f3f7d0ff75265550",
+    "candidate_evaluated_vertices_sha256": "7ad6a1577697b77e9e805333bf7282a43cdf2006995040dce190cf206b26a697",
+    "vertex_count": 8,
+    "modifiers_baked": true,
+    "vertex_correspondence_preserved": true,
+    "wheel_uniform_exception": false,
+    "reason": "Frozen source endpoint fit; preserve affine shear exactly in evaluated mesh, no TRS decomposition"
+  },
+  {
+    "object": "cage2_wireV52",
+    "action": "continuous_local_frame_fit_baked_evaluated_vertices",
+    "owner": "mesh_cage_2",
+    "parameters": [
+      0.09803649779182094,
+      -0.05177552051200947,
+      1.0722230100896921,
+      1.0007272388011492,
+      1.040773709184009,
+      -0.07089765968226606
+    ],
+    "world_transport": [
+      [
+        1.0695295333862305,
+        0.07088971883058548,
+        0.0,
+        1.4044790267944336
+      ],
+      [
+        -0.07595434784889221,
+        0.9982132911682129,
+        0.0,
+        -0.8805185556411743
+      ],
+      [
+        0.0,
+        0.0,
+        1.0407737493515015,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "baseline_evaluated_vertices_sha256": "814b7449f9e4701bfc0d842bb9fdf7a1e71451016170e7f9da3f9f89060ce636",
+    "candidate_evaluated_vertices_sha256": "ba96c74d57224dace6d2dda5a8945e81b0ac9cd7f668e048ce37038649deea16",
+    "vertex_count": 8,
+    "modifiers_baked": true,
+    "vertex_correspondence_preserved": true,
+    "wheel_uniform_exception": false,
+    "reason": "Frozen source endpoint fit; preserve affine shear exactly in evaluated mesh, no TRS decomposition"
+  },
+  {
+    "object": "cage2_wireV53",
+    "action": "continuous_local_frame_fit_baked_evaluated_vertices",
+    "owner": "mesh_cage_2",
+    "parameters": [
+      0.09803649779182094,
+      -0.05177552051200947,
+      1.0722230100896921,
+      1.0007272388011492,
+      1.040773709184009,
+      -0.07089765968226606
+    ],
+    "world_transport": [
+      [
+        1.0695295333862305,
+        0.07088971883058548,
+        0.0,
+        1.4044790267944336
+      ],
+      [
+        -0.07595434784889221,
+        0.9982132911682129,
+        0.0,
+        -0.8805192708969116
+      ],
+      [
+        0.0,
+        0.0,
+        1.0407737493515015,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "baseline_evaluated_vertices_sha256": "deced1d4f4c0ddefb07f49482a690e75961a36ca3cf6b7635b515c5c71feaa9c",
+    "candidate_evaluated_vertices_sha256": "fd37f54c4cfc157c6549a09e4131dfcc4a0982e060ddbdf3a1421f7c1fb48cf2",
+    "vertex_count": 8,
+    "modifiers_baked": true,
+    "vertex_correspondence_preserved": true,
+    "wheel_uniform_exception": false,
+    "reason": "Frozen source endpoint fit; preserve affine shear exactly in evaluated mesh, no TRS decomposition"
+  },
+  {
+    "object": "cage2_wireV54",
+    "action": "continuous_local_frame_fit_baked_evaluated_vertices",
+    "owner": "mesh_cage_2",
+    "parameters": [
+      0.09803649779182094,
+      -0.05177552051200947,
+      1.0722230100896921,
+      1.0007272388011492,
+      1.040773709184009,
+      -0.07089765968226606
+    ],
+    "world_transport": [
+      [
+        1.0695295333862305,
+        0.07088971883058548,
+        0.0,
+        1.4044790267944336
+      ],
+      [
+        -0.07595434784889221,
+        0.9982132911682129,
+        0.0,
+        -0.880518913269043
+      ],
+      [
+        0.0,
+        0.0,
+        1.0407737493515015,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "baseline_evaluated_vertices_sha256": "d24acbcb8f1415d14819fcedc45d80bc1f600fa9a1f5a02920bc50c116610f40",
+    "candidate_evaluated_vertices_sha256": "caa58b7c48e939b19b76fec8ee37db28bc50611f98ad08c551d20f20b0b1c056",
+    "vertex_count": 8,
+    "modifiers_baked": true,
+    "vertex_correspondence_preserved": true,
+    "wheel_uniform_exception": false,
+    "reason": "Frozen source endpoint fit; preserve affine shear exactly in evaluated mesh, no TRS decomposition"
+  },
+  {
+    "object": "cage2_wireH0",
+    "action": "continuous_local_frame_fit_baked_evaluated_vertices",
+    "owner": "mesh_cage_2",
+    "parameters": [
+      0.09803649779182094,
+      -0.05177552051200947,
+      1.0722230100896921,
+      1.0007272388011492,
+      1.040773709184009,
+      -0.07089765968226606
+    ],
+    "world_transport": [
+      [
+        1.0695295333862305,
+        0.07088971883058548,
+        0.0,
+        1.4044790267944336
+      ],
+      [
+        -0.07595434784889221,
+        0.9982132911682129,
+        0.0,
+        -0.8805188536643982
+      ],
+      [
+        0.0,
+        0.0,
+        1.0407737493515015,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "baseline_evaluated_vertices_sha256": "a62ac942a9d11d71499d0ef40fcd1f1285e16a0fafe38d225846261739721eba",
+    "candidate_evaluated_vertices_sha256": "902f1c47d0c3e47188b58585bdac952bb179b19b67b96485aca8ac8b41406c1f",
+    "vertex_count": 8,
+    "modifiers_baked": true,
+    "vertex_correspondence_preserved": true,
+    "wheel_uniform_exception": false,
+    "reason": "Frozen source endpoint fit; preserve affine shear exactly in evaluated mesh, no TRS decomposition"
+  },
+  {
+    "object": "cage2_wireH1",
+    "action": "continuous_local_frame_fit_baked_evaluated_vertices",
+    "owner": "mesh_cage_2",
+    "parameters": [
+      0.09803649779182094,
+      -0.05177552051200947,
+      1.0722230100896921,
+      1.0007272388011492,
+      1.040773709184009,
+      -0.07089765968226606
+    ],
+    "world_transport": [
+      [
+        1.0695295333862305,
+        0.07088971883058548,
+        0.0,
+        1.4044790267944336
+      ],
+      [
+        -0.07595434784889221,
+        0.9982132911682129,
+        0.0,
+        -0.8805188536643982
+      ],
+      [
+        0.0,
+        0.0,
+        1.0407737493515015,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "baseline_evaluated_vertices_sha256": "5b440371d61440001ffd015dc6f0647b5f7af12be2b17a2b26d3f10e335d156d",
+    "candidate_evaluated_vertices_sha256": "40607aebbc63ad5acfeeab8e5c663e3b0406238429422f147d0275ebf1aa9030",
+    "vertex_count": 8,
+    "modifiers_baked": true,
+    "vertex_correspondence_preserved": true,
+    "wheel_uniform_exception": false,
+    "reason": "Frozen source endpoint fit; preserve affine shear exactly in evaluated mesh, no TRS decomposition"
+  },
+  {
+    "object": "cage2_wireH2",
+    "action": "continuous_local_frame_fit_baked_evaluated_vertices",
+    "owner": "mesh_cage_2",
+    "parameters": [
+      0.09803649779182094,
+      -0.05177552051200947,
+      1.0722230100896921,
+      1.0007272388011492,
+      1.040773709184009,
+      -0.07089765968226606
+    ],
+    "world_transport": [
+      [
+        1.0695295333862305,
+        0.07088971883058548,
+        0.0,
+        1.4044790267944336
+      ],
+      [
+        -0.07595434784889221,
+        0.9982132911682129,
+        0.0,
+        -0.8805188536643982
+      ],
+      [
+        0.0,
+        0.0,
+        1.0407737493515015,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "baseline_evaluated_vertices_sha256": "0280dba2d9b5e69c7696e729136bd56ee362de70839841d4f6334f285b3ace9f",
+    "candidate_evaluated_vertices_sha256": "932b71cf25706b81d24d9d0601490921f4658b70ed596786ebe6ce7dff39008f",
+    "vertex_count": 8,
+    "modifiers_baked": true,
+    "vertex_correspondence_preserved": true,
+    "wheel_uniform_exception": false,
+    "reason": "Frozen source endpoint fit; preserve affine shear exactly in evaluated mesh, no TRS decomposition"
+  },
+  {
+    "object": "cage2_wireH3",
+    "action": "continuous_local_frame_fit_baked_evaluated_vertices",
+    "owner": "mesh_cage_2",
+    "parameters": [
+      0.09803649779182094,
+      -0.05177552051200947,
+      1.0722230100896921,
+      1.0007272388011492,
+      1.040773709184009,
+      -0.07089765968226606
+    ],
+    "world_transport": [
+      [
+        1.0695295333862305,
+        0.07088971883058548,
+        0.0,
+        1.4044790267944336
+      ],
+      [
+        -0.07595434784889221,
+        0.9982132911682129,
+        0.0,
+        -0.8805188536643982
+      ],
+      [
+        0.0,
+        0.0,
+        1.0407737493515015,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "baseline_evaluated_vertices_sha256": "5b32b7d3acbaac2d61ffc6eaacc219213aea4948327f3e9e53fa3670036c1000",
+    "candidate_evaluated_vertices_sha256": "ac29d5f7e5424ce8deebcf02f07d01c2ac92ad7a94994b74f6b1c2496a7883cd",
+    "vertex_count": 8,
+    "modifiers_baked": true,
+    "vertex_correspondence_preserved": true,
+    "wheel_uniform_exception": false,
+    "reason": "Frozen source endpoint fit; preserve affine shear exactly in evaluated mesh, no TRS decomposition"
+  },
+  {
+    "object": "cage2_wireH4",
+    "action": "continuous_local_frame_fit_baked_evaluated_vertices",
+    "owner": "mesh_cage_2",
+    "parameters": [
+      0.09803649779182094,
+      -0.05177552051200947,
+      1.0722230100896921,
+      1.0007272388011492,
+      1.040773709184009,
+      -0.07089765968226606
+    ],
+    "world_transport": [
+      [
+        1.0695295333862305,
+        0.07088971883058548,
+        0.0,
+        1.4044790267944336
+      ],
+      [
+        -0.07595434784889221,
+        0.9982132911682129,
+        0.0,
+        -0.8805188536643982
+      ],
+      [
+        0.0,
+        0.0,
+        1.0407737493515015,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "baseline_evaluated_vertices_sha256": "4be092b85a5cba9c1ae12d021add24a10b173da2611e2b9f850541e8a9f3fdb1",
+    "candidate_evaluated_vertices_sha256": "d10e9f31df57f171c2d0695a53e632a313ef1024fe942f7fec2e0015e26e8d06",
+    "vertex_count": 8,
+    "modifiers_baked": true,
+    "vertex_correspondence_preserved": true,
+    "wheel_uniform_exception": false,
+    "reason": "Frozen source endpoint fit; preserve affine shear exactly in evaluated mesh, no TRS decomposition"
+  },
+  {
+    "object": "cage2_wireH5",
+    "action": "continuous_local_frame_fit_baked_evaluated_vertices",
+    "owner": "mesh_cage_2",
+    "parameters": [
+      0.09803649779182094,
+      -0.05177552051200947,
+      1.0722230100896921,
+      1.0007272388011492,
+      1.040773709184009,
+      -0.07089765968226606
+    ],
+    "world_transport": [
+      [
+        1.0695295333862305,
+        0.07088971883058548,
+        0.0,
+        1.4044790267944336
+      ],
+      [
+        -0.07595434784889221,
+        0.9982132911682129,
+        0.0,
+        -0.8805188536643982
+      ],
+      [
+        0.0,
+        0.0,
+        1.0407737493515015,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "baseline_evaluated_vertices_sha256": "b2138811632c94ce6a209b2757038bd103365adf29f2ed2f9fe7d716aa6f558e",
+    "candidate_evaluated_vertices_sha256": "9a2f7c7de9104db6ae0fc2fcd748da5eecb294f86f151b3555970f00010bfc8d",
+    "vertex_count": 8,
+    "modifiers_baked": true,
+    "vertex_correspondence_preserved": true,
+    "wheel_uniform_exception": false,
+    "reason": "Frozen source endpoint fit; preserve affine shear exactly in evaluated mesh, no TRS decomposition"
+  },
+  {
+    "object": "cage2_wireH6",
+    "action": "continuous_local_frame_fit_baked_evaluated_vertices",
+    "owner": "mesh_cage_2",
+    "parameters": [
+      0.09803649779182094,
+      -0.05177552051200947,
+      1.0722230100896921,
+      1.0007272388011492,
+      1.040773709184009,
+      -0.07089765968226606
+    ],
+    "world_transport": [
+      [
+        1.0695295333862305,
+        0.07088971883058548,
+        0.0,
+        1.4044790267944336
+      ],
+      [
+        -0.07595434784889221,
+        0.9982132911682129,
+        0.0,
+        -0.8805188536643982
+      ],
+      [
+        0.0,
+        0.0,
+        1.0407737493515015,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "baseline_evaluated_vertices_sha256": "ed903d8ad97f6b11cf8a8a5cfbfdf08f5322ebc76128cb3b6661166e6a126269",
+    "candidate_evaluated_vertices_sha256": "f5b57a530175fc11654e3fbd4b37edec54e6707bb8baac2054f8d71100bad3a5",
+    "vertex_count": 8,
+    "modifiers_baked": true,
+    "vertex_correspondence_preserved": true,
+    "wheel_uniform_exception": false,
+    "reason": "Frozen source endpoint fit; preserve affine shear exactly in evaluated mesh, no TRS decomposition"
+  },
+  {
+    "object": "cage2_wireH7",
+    "action": "continuous_local_frame_fit_baked_evaluated_vertices",
+    "owner": "mesh_cage_2",
+    "parameters": [
+      0.09803649779182094,
+      -0.05177552051200947,
+      1.0722230100896921,
+      1.0007272388011492,
+      1.040773709184009,
+      -0.07089765968226606
+    ],
+    "world_transport": [
+      [
+        1.0695295333862305,
+        0.07088971883058548,
+        0.0,
+        1.4044790267944336
+      ],
+      [
+        -0.07595434784889221,
+        0.9982132911682129,
+        0.0,
+        -0.8805188536643982
+      ],
+      [
+        0.0,
+        0.0,
+        1.0407737493515015,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "baseline_evaluated_vertices_sha256": "779be41a7f8b6fd412e98e89a8d6b52f547e8ab236e8facb075b5fc2ce7026d7",
+    "candidate_evaluated_vertices_sha256": "28614547703cb7d200ff5d05deb2a9749c418f0d8fca4723f8ddc2edb008eb19",
+    "vertex_count": 8,
+    "modifiers_baked": true,
+    "vertex_correspondence_preserved": true,
+    "wheel_uniform_exception": false,
+    "reason": "Frozen source endpoint fit; preserve affine shear exactly in evaluated mesh, no TRS decomposition"
+  },
+  {
+    "object": "cage2_wireH8",
+    "action": "continuous_local_frame_fit_baked_evaluated_vertices",
+    "owner": "mesh_cage_2",
+    "parameters": [
+      0.09803649779182094,
+      -0.05177552051200947,
+      1.0722230100896921,
+      1.0007272388011492,
+      1.040773709184009,
+      -0.07089765968226606
+    ],
+    "world_transport": [
+      [
+        1.0695295333862305,
+        0.07088971883058548,
+        0.0,
+        1.4044790267944336
+      ],
+      [
+        -0.07595434784889221,
+        0.9982132911682129,
+        0.0,
+        -0.8805188536643982
+      ],
+      [
+        0.0,
+        0.0,
+        1.0407737493515015,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "baseline_evaluated_vertices_sha256": "31a44c6f636227b223b001c48b698af680461ae8b74a67d853763a5a810516df",
+    "candidate_evaluated_vertices_sha256": "ef9ec128e4873083418dfcb9af7c356282f6be79505d1dc30c7df5170bd554fd",
+    "vertex_count": 8,
+    "modifiers_baked": true,
+    "vertex_correspondence_preserved": true,
+    "wheel_uniform_exception": false,
+    "reason": "Frozen source endpoint fit; preserve affine shear exactly in evaluated mesh, no TRS decomposition"
+  },
+  {
+    "object": "cage2_wireH9",
+    "action": "continuous_local_frame_fit_baked_evaluated_vertices",
+    "owner": "mesh_cage_2",
+    "parameters": [
+      0.09803649779182094,
+      -0.05177552051200947,
+      1.0722230100896921,
+      1.0007272388011492,
+      1.040773709184009,
+      -0.07089765968226606
+    ],
+    "world_transport": [
+      [
+        1.0695295333862305,
+        0.07088971883058548,
+        0.0,
+        1.4044790267944336
+      ],
+      [
+        -0.07595434784889221,
+        0.9982132911682129,
+        0.0,
+        -0.8805188536643982
+      ],
+      [
+        0.0,
+        0.0,
+        1.0407737493515015,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "baseline_evaluated_vertices_sha256": "c407a74b98e6b7cc9d5513e29b2ef8a980c5e178c7d85b3d7bfb4c6512b28505",
+    "candidate_evaluated_vertices_sha256": "21ab6d39dab3ae2e78432e083d8bb2ed36aa3d0e4b502035b4e57d45035cdc5c",
+    "vertex_count": 8,
+    "modifiers_baked": true,
+    "vertex_correspondence_preserved": true,
+    "wheel_uniform_exception": false,
+    "reason": "Frozen source endpoint fit; preserve affine shear exactly in evaluated mesh, no TRS decomposition"
+  },
+  {
+    "object": "cage2_wireH10",
+    "action": "continuous_local_frame_fit_baked_evaluated_vertices",
+    "owner": "mesh_cage_2",
+    "parameters": [
+      0.09803649779182094,
+      -0.05177552051200947,
+      1.0722230100896921,
+      1.0007272388011492,
+      1.040773709184009,
+      -0.07089765968226606
+    ],
+    "world_transport": [
+      [
+        1.0695295333862305,
+        0.07088971883058548,
+        0.0,
+        1.4044790267944336
+      ],
+      [
+        -0.07595434784889221,
+        0.9982132911682129,
+        0.0,
+        -0.8805188536643982
+      ],
+      [
+        0.0,
+        0.0,
+        1.0407737493515015,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "baseline_evaluated_vertices_sha256": "84dbf6d38ff89b028badfc7bce690fd0e4efbba0f83e18869dc329e83becd689",
+    "candidate_evaluated_vertices_sha256": "9f620a0fc6548bf4de5a4ed54013f9d8680606c6594128b449970e66e42ccbc4",
+    "vertex_count": 8,
+    "modifiers_baked": true,
+    "vertex_correspondence_preserved": true,
+    "wheel_uniform_exception": false,
+    "reason": "Frozen source endpoint fit; preserve affine shear exactly in evaluated mesh, no TRS decomposition"
+  },
+  {
+    "object": "cage2_wireH11",
+    "action": "continuous_local_frame_fit_baked_evaluated_vertices",
+    "owner": "mesh_cage_2",
+    "parameters": [
+      0.09803649779182094,
+      -0.05177552051200947,
+      1.0722230100896921,
+      1.0007272388011492,
+      1.040773709184009,
+      -0.07089765968226606
+    ],
+    "world_transport": [
+      [
+        1.0695295333862305,
+        0.07088971883058548,
+        0.0,
+        1.4044790267944336
+      ],
+      [
+        -0.07595434784889221,
+        0.9982132911682129,
+        0.0,
+        -0.8805188536643982
+      ],
+      [
+        0.0,
+        0.0,
+        1.0407737493515015,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "baseline_evaluated_vertices_sha256": "4fd6a19b943506bed142bebe6ceeb41477fd353ec4e198a3d24361f1cb5f3b27",
+    "candidate_evaluated_vertices_sha256": "3bd50a8d86abc7312d986e210c6e13320035c312e65c1516f03ca4c321fd82e5",
+    "vertex_count": 8,
+    "modifiers_baked": true,
+    "vertex_correspondence_preserved": true,
+    "wheel_uniform_exception": false,
+    "reason": "Frozen source endpoint fit; preserve affine shear exactly in evaluated mesh, no TRS decomposition"
+  },
+  {
+    "object": "cage2_wireH12",
+    "action": "continuous_local_frame_fit_baked_evaluated_vertices",
+    "owner": "mesh_cage_2",
+    "parameters": [
+      0.09803649779182094,
+      -0.05177552051200947,
+      1.0722230100896921,
+      1.0007272388011492,
+      1.040773709184009,
+      -0.07089765968226606
+    ],
+    "world_transport": [
+      [
+        1.0695295333862305,
+        0.07088971883058548,
+        0.0,
+        1.4044790267944336
+      ],
+      [
+        -0.07595434784889221,
+        0.9982132911682129,
+        0.0,
+        -0.8805188536643982
+      ],
+      [
+        0.0,
+        0.0,
+        1.0407737493515015,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "baseline_evaluated_vertices_sha256": "1d7bf9a179b3d176b2429d28b0fcf5eab251b3ae9e88ed5c52acdec80cd16476",
+    "candidate_evaluated_vertices_sha256": "df9245aaef9c28709d4aae0fd60d75cef738e6f0577fe0acf369c3dd56adb6c0",
+    "vertex_count": 8,
+    "modifiers_baked": true,
+    "vertex_correspondence_preserved": true,
+    "wheel_uniform_exception": false,
+    "reason": "Frozen source endpoint fit; preserve affine shear exactly in evaluated mesh, no TRS decomposition"
+  },
+  {
+    "object": "cage2_wireH13",
+    "action": "continuous_local_frame_fit_baked_evaluated_vertices",
+    "owner": "mesh_cage_2",
+    "parameters": [
+      0.09803649779182094,
+      -0.05177552051200947,
+      1.0722230100896921,
+      1.0007272388011492,
+      1.040773709184009,
+      -0.07089765968226606
+    ],
+    "world_transport": [
+      [
+        1.0695295333862305,
+        0.07088971883058548,
+        0.0,
+        1.4044790267944336
+      ],
+      [
+        -0.07595434784889221,
+        0.9982132911682129,
+        0.0,
+        -0.8805188536643982
+      ],
+      [
+        0.0,
+        0.0,
+        1.0407737493515015,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "baseline_evaluated_vertices_sha256": "5b02f1c15e7beb6d10ac26ef9fb7998c30237fb299bef97cbe0126c335e3b1f3",
+    "candidate_evaluated_vertices_sha256": "d680123dce453e3aa573838aaa1487d573b7ccfa7b09f3ba04e2b6b6f6ec7421",
+    "vertex_count": 8,
+    "modifiers_baked": true,
+    "vertex_correspondence_preserved": true,
+    "wheel_uniform_exception": false,
+    "reason": "Frozen source endpoint fit; preserve affine shear exactly in evaluated mesh, no TRS decomposition"
+  },
+  {
+    "object": "cage2_wireH14",
+    "action": "continuous_local_frame_fit_baked_evaluated_vertices",
+    "owner": "mesh_cage_2",
+    "parameters": [
+      0.09803649779182094,
+      -0.05177552051200947,
+      1.0722230100896921,
+      1.0007272388011492,
+      1.040773709184009,
+      -0.07089765968226606
+    ],
+    "world_transport": [
+      [
+        1.0695295333862305,
+        0.07088971883058548,
+        0.0,
+        1.4044790267944336
+      ],
+      [
+        -0.07595434784889221,
+        0.9982132911682129,
+        0.0,
+        -0.8805188536643982
+      ],
+      [
+        0.0,
+        0.0,
+        1.0407737493515015,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "baseline_evaluated_vertices_sha256": "ee3baf387c43f872775f9d8c6be7f53527bd17179d4507402edd6d6fd5e10763",
+    "candidate_evaluated_vertices_sha256": "04cc78f5fd2cd01494b8c0a7979181a4a762f1290e000b6967e0a99634e9a432",
+    "vertex_count": 8,
+    "modifiers_baked": true,
+    "vertex_correspondence_preserved": true,
+    "wheel_uniform_exception": false,
+    "reason": "Frozen source endpoint fit; preserve affine shear exactly in evaluated mesh, no TRS decomposition"
+  },
+  {
+    "object": "cage2_wireH15",
+    "action": "continuous_local_frame_fit_baked_evaluated_vertices",
+    "owner": "mesh_cage_2",
+    "parameters": [
+      0.09803649779182094,
+      -0.05177552051200947,
+      1.0722230100896921,
+      1.0007272388011492,
+      1.040773709184009,
+      -0.07089765968226606
+    ],
+    "world_transport": [
+      [
+        1.0695295333862305,
+        0.07088971883058548,
+        0.0,
+        1.4044790267944336
+      ],
+      [
+        -0.07595434784889221,
+        0.9982132911682129,
+        0.0,
+        -0.8805188536643982
+      ],
+      [
+        0.0,
+        0.0,
+        1.0407737493515015,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "baseline_evaluated_vertices_sha256": "f592e5e5a45df9c74206b524065f55ba5c53513c26a3f965af126597d7f28097",
+    "candidate_evaluated_vertices_sha256": "3f8a64b43dd0d764bec29b48d4373458d4fdba7ef5bd898a9587d23b409c83a1",
+    "vertex_count": 8,
+    "modifiers_baked": true,
+    "vertex_correspondence_preserved": true,
+    "wheel_uniform_exception": false,
+    "reason": "Frozen source endpoint fit; preserve affine shear exactly in evaluated mesh, no TRS decomposition"
+  },
+  {
+    "object": "cage2_wireH16",
+    "action": "continuous_local_frame_fit_baked_evaluated_vertices",
+    "owner": "mesh_cage_2",
+    "parameters": [
+      0.09803649779182094,
+      -0.05177552051200947,
+      1.0722230100896921,
+      1.0007272388011492,
+      1.040773709184009,
+      -0.07089765968226606
+    ],
+    "world_transport": [
+      [
+        1.0695295333862305,
+        0.07088971883058548,
+        0.0,
+        1.4044790267944336
+      ],
+      [
+        -0.07595434784889221,
+        0.9982132911682129,
+        0.0,
+        -0.8805188536643982
+      ],
+      [
+        0.0,
+        0.0,
+        1.0407737493515015,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "baseline_evaluated_vertices_sha256": "3356ced230613762c8041b0eb60297ad0e58ebc8988aa469ff350568fb34ee1e",
+    "candidate_evaluated_vertices_sha256": "3872d065afff012de8a4e4b08ae206079ba5e1f0dbe162c2801a6e7f012dd6ac",
+    "vertex_count": 8,
+    "modifiers_baked": true,
+    "vertex_correspondence_preserved": true,
+    "wheel_uniform_exception": false,
+    "reason": "Frozen source endpoint fit; preserve affine shear exactly in evaluated mesh, no TRS decomposition"
+  },
+  {
+    "object": "cage2_wireH17",
+    "action": "continuous_local_frame_fit_baked_evaluated_vertices",
+    "owner": "mesh_cage_2",
+    "parameters": [
+      0.09803649779182094,
+      -0.05177552051200947,
+      1.0722230100896921,
+      1.0007272388011492,
+      1.040773709184009,
+      -0.07089765968226606
+    ],
+    "world_transport": [
+      [
+        1.0695295333862305,
+        0.07088971883058548,
+        0.0,
+        1.4044790267944336
+      ],
+      [
+        -0.07595434784889221,
+        0.9982132911682129,
+        0.0,
+        -0.8805188536643982
+      ],
+      [
+        0.0,
+        0.0,
+        1.0407737493515015,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "baseline_evaluated_vertices_sha256": "2a60bc36216763d356c02e0ea535851c489adc0e539af3b4a65447a17fabb2c3",
+    "candidate_evaluated_vertices_sha256": "ec75c4b347d707f81b24fc2b5f272abf9467f3d2a8d6418c0fd5188be22ae1cb",
+    "vertex_count": 8,
+    "modifiers_baked": true,
+    "vertex_correspondence_preserved": true,
+    "wheel_uniform_exception": false,
+    "reason": "Frozen source endpoint fit; preserve affine shear exactly in evaluated mesh, no TRS decomposition"
+  },
+  {
+    "object": "cage2_wireH18",
+    "action": "continuous_local_frame_fit_baked_evaluated_vertices",
+    "owner": "mesh_cage_2",
+    "parameters": [
+      0.09803649779182094,
+      -0.05177552051200947,
+      1.0722230100896921,
+      1.0007272388011492,
+      1.040773709184009,
+      -0.07089765968226606
+    ],
+    "world_transport": [
+      [
+        1.0695295333862305,
+        0.07088971883058548,
+        0.0,
+        1.4044790267944336
+      ],
+      [
+        -0.07595434784889221,
+        0.9982132911682129,
+        0.0,
+        -0.8805188536643982
+      ],
+      [
+        0.0,
+        0.0,
+        1.0407737493515015,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "baseline_evaluated_vertices_sha256": "bbc84a3a6ca900d961c4db40091555e7adde5fa3e16440094ec0a9e9ca473de0",
+    "candidate_evaluated_vertices_sha256": "4661e8f17811f83db1a7d97d791c95dc8b4efabd953b5e3dc46a316b1cba3dd6",
+    "vertex_count": 8,
+    "modifiers_baked": true,
+    "vertex_correspondence_preserved": true,
+    "wheel_uniform_exception": false,
+    "reason": "Frozen source endpoint fit; preserve affine shear exactly in evaluated mesh, no TRS decomposition"
+  },
+  {
+    "object": "cage2_wireH19",
+    "action": "continuous_local_frame_fit_baked_evaluated_vertices",
+    "owner": "mesh_cage_2",
+    "parameters": [
+      0.09803649779182094,
+      -0.05177552051200947,
+      1.0722230100896921,
+      1.0007272388011492,
+      1.040773709184009,
+      -0.07089765968226606
+    ],
+    "world_transport": [
+      [
+        1.0695295333862305,
+        0.07088971883058548,
+        0.0,
+        1.4044790267944336
+      ],
+      [
+        -0.07595434784889221,
+        0.9982132911682129,
+        0.0,
+        -0.8805188536643982
+      ],
+      [
+        0.0,
+        0.0,
+        1.0407737493515015,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "baseline_evaluated_vertices_sha256": "9d974325cd9feaa74341454eb3a88161e784734d5714e1b42e5a0e6600816a49",
+    "candidate_evaluated_vertices_sha256": "111d071b7ad7181968d399bc118d97c6f082061f529d858704e822e1a285e17b",
+    "vertex_count": 8,
+    "modifiers_baked": true,
+    "vertex_correspondence_preserved": true,
+    "wheel_uniform_exception": false,
+    "reason": "Frozen source endpoint fit; preserve affine shear exactly in evaluated mesh, no TRS decomposition"
+  },
+  {
+    "object": "cage2_wireH20",
+    "action": "continuous_local_frame_fit_baked_evaluated_vertices",
+    "owner": "mesh_cage_2",
+    "parameters": [
+      0.09803649779182094,
+      -0.05177552051200947,
+      1.0722230100896921,
+      1.0007272388011492,
+      1.040773709184009,
+      -0.07089765968226606
+    ],
+    "world_transport": [
+      [
+        1.0695295333862305,
+        0.07088971883058548,
+        0.0,
+        1.4044790267944336
+      ],
+      [
+        -0.07595434784889221,
+        0.9982132911682129,
+        0.0,
+        -0.8805188536643982
+      ],
+      [
+        0.0,
+        0.0,
+        1.0407737493515015,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "baseline_evaluated_vertices_sha256": "52f9a8aa4d54abab235db2cd6dde251886ba55027926fc532d3d70463c34beb3",
+    "candidate_evaluated_vertices_sha256": "cb09dd15fe67dd651c1c3b12099f6f9e4e44a24b2457c13b919a9c6e70ef51d6",
+    "vertex_count": 8,
+    "modifiers_baked": true,
+    "vertex_correspondence_preserved": true,
+    "wheel_uniform_exception": false,
+    "reason": "Frozen source endpoint fit; preserve affine shear exactly in evaluated mesh, no TRS decomposition"
+  },
+  {
+    "object": "cage2_wireH21",
+    "action": "continuous_local_frame_fit_baked_evaluated_vertices",
+    "owner": "mesh_cage_2",
+    "parameters": [
+      0.09803649779182094,
+      -0.05177552051200947,
+      1.0722230100896921,
+      1.0007272388011492,
+      1.040773709184009,
+      -0.07089765968226606
+    ],
+    "world_transport": [
+      [
+        1.0695295333862305,
+        0.07088971883058548,
+        0.0,
+        1.4044790267944336
+      ],
+      [
+        -0.07595434784889221,
+        0.9982132911682129,
+        0.0,
+        -0.8805188536643982
+      ],
+      [
+        0.0,
+        0.0,
+        1.0407737493515015,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "baseline_evaluated_vertices_sha256": "7809a8f4d344f1226e90f7a695ab5f2e89e553447ff9db3eb17fe7a7c284a995",
+    "candidate_evaluated_vertices_sha256": "ee3f5211bc4303010125d573dbcb2cd3f6a633fd4f3f91b707345e44793e8704",
+    "vertex_count": 8,
+    "modifiers_baked": true,
+    "vertex_correspondence_preserved": true,
+    "wheel_uniform_exception": false,
+    "reason": "Frozen source endpoint fit; preserve affine shear exactly in evaluated mesh, no TRS decomposition"
+  },
+  {
+    "object": "cage2_wireH22",
+    "action": "continuous_local_frame_fit_baked_evaluated_vertices",
+    "owner": "mesh_cage_2",
+    "parameters": [
+      0.09803649779182094,
+      -0.05177552051200947,
+      1.0722230100896921,
+      1.0007272388011492,
+      1.040773709184009,
+      -0.07089765968226606
+    ],
+    "world_transport": [
+      [
+        1.0695295333862305,
+        0.07088971883058548,
+        0.0,
+        1.4044790267944336
+      ],
+      [
+        -0.07595434784889221,
+        0.9982132911682129,
+        0.0,
+        -0.8805188536643982
+      ],
+      [
+        0.0,
+        0.0,
+        1.0407737493515015,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "baseline_evaluated_vertices_sha256": "5fd8a8d2758a870457affa05d09ef0249f45eb45dd793d404f90b82de2221a02",
+    "candidate_evaluated_vertices_sha256": "0870b73d64fa76f56eac87335a5147d15ae8e15f88c00664b9fd8983a43b2cdc",
+    "vertex_count": 8,
+    "modifiers_baked": true,
+    "vertex_correspondence_preserved": true,
+    "wheel_uniform_exception": false,
+    "reason": "Frozen source endpoint fit; preserve affine shear exactly in evaluated mesh, no TRS decomposition"
+  },
+  {
+    "object": "cage2_wireH23",
+    "action": "continuous_local_frame_fit_baked_evaluated_vertices",
+    "owner": "mesh_cage_2",
+    "parameters": [
+      0.09803649779182094,
+      -0.05177552051200947,
+      1.0722230100896921,
+      1.0007272388011492,
+      1.040773709184009,
+      -0.07089765968226606
+    ],
+    "world_transport": [
+      [
+        1.0695295333862305,
+        0.07088971883058548,
+        0.0,
+        1.4044790267944336
+      ],
+      [
+        -0.07595434784889221,
+        0.9982132911682129,
+        0.0,
+        -0.8805188536643982
+      ],
+      [
+        0.0,
+        0.0,
+        1.0407737493515015,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "baseline_evaluated_vertices_sha256": "953c0bc15e843dcd0dd24599ec7c595284bf18303195df6650a1851876af6db3",
+    "candidate_evaluated_vertices_sha256": "d95a380379b3f810ed4c09524262208a5f0a4d73573bb9d29e60ace037b10efc",
+    "vertex_count": 8,
+    "modifiers_baked": true,
+    "vertex_correspondence_preserved": true,
+    "wheel_uniform_exception": false,
+    "reason": "Frozen source endpoint fit; preserve affine shear exactly in evaluated mesh, no TRS decomposition"
+  },
+  {
+    "object": "cage2_wireH24",
+    "action": "continuous_local_frame_fit_baked_evaluated_vertices",
+    "owner": "mesh_cage_2",
+    "parameters": [
+      0.09803649779182094,
+      -0.05177552051200947,
+      1.0722230100896921,
+      1.0007272388011492,
+      1.040773709184009,
+      -0.07089765968226606
+    ],
+    "world_transport": [
+      [
+        1.0695295333862305,
+        0.07088971883058548,
+        0.0,
+        1.4044790267944336
+      ],
+      [
+        -0.07595434784889221,
+        0.9982132911682129,
+        0.0,
+        -0.8805188536643982
+      ],
+      [
+        0.0,
+        0.0,
+        1.0407737493515015,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "baseline_evaluated_vertices_sha256": "0f1ddac6618440283270a7167803e6d8b7e69fa510e1c7ca949980c004364662",
+    "candidate_evaluated_vertices_sha256": "4847fdc51936fe457a832a3795859d3d0a86805ca4af6df94d5ce6c089970100",
+    "vertex_count": 8,
+    "modifiers_baked": true,
+    "vertex_correspondence_preserved": true,
+    "wheel_uniform_exception": false,
+    "reason": "Frozen source endpoint fit; preserve affine shear exactly in evaluated mesh, no TRS decomposition"
+  },
+  {
+    "object": "cage2_wireH25",
+    "action": "continuous_local_frame_fit_baked_evaluated_vertices",
+    "owner": "mesh_cage_2",
+    "parameters": [
+      0.09803649779182094,
+      -0.05177552051200947,
+      1.0722230100896921,
+      1.0007272388011492,
+      1.040773709184009,
+      -0.07089765968226606
+    ],
+    "world_transport": [
+      [
+        1.0695295333862305,
+        0.07088971883058548,
+        0.0,
+        1.4044790267944336
+      ],
+      [
+        -0.07595434784889221,
+        0.9982132911682129,
+        0.0,
+        -0.8805188536643982
+      ],
+      [
+        0.0,
+        0.0,
+        1.0407737493515015,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "baseline_evaluated_vertices_sha256": "e59d3ed147bbb31a5debbd8f4636d199ba9ef768ef68f152d826dfc8b048cf35",
+    "candidate_evaluated_vertices_sha256": "9d87a38a09cf457b133c18f7b55dafdc90f5b22b5eb2294bd94d28c18f6a6f57",
+    "vertex_count": 8,
+    "modifiers_baked": true,
+    "vertex_correspondence_preserved": true,
+    "wheel_uniform_exception": false,
+    "reason": "Frozen source endpoint fit; preserve affine shear exactly in evaluated mesh, no TRS decomposition"
+  },
+  {
+    "object": "cage2_wireH26",
+    "action": "continuous_local_frame_fit_baked_evaluated_vertices",
+    "owner": "mesh_cage_2",
+    "parameters": [
+      0.09803649779182094,
+      -0.05177552051200947,
+      1.0722230100896921,
+      1.0007272388011492,
+      1.040773709184009,
+      -0.07089765968226606
+    ],
+    "world_transport": [
+      [
+        1.0695295333862305,
+        0.07088971883058548,
+        0.0,
+        1.4044790267944336
+      ],
+      [
+        -0.07595434784889221,
+        0.9982132911682129,
+        0.0,
+        -0.8805188536643982
+      ],
+      [
+        0.0,
+        0.0,
+        1.0407737493515015,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "baseline_evaluated_vertices_sha256": "558b3e44cafb65a10621bbc1deccbd3263502c7fa119eab772d888e37d8c9b93",
+    "candidate_evaluated_vertices_sha256": "bdb3b75dbc16526f11ac4895ac50cbb121c34cad64ac44f9ad7bfc08e887ea92",
+    "vertex_count": 8,
+    "modifiers_baked": true,
+    "vertex_correspondence_preserved": true,
+    "wheel_uniform_exception": false,
+    "reason": "Frozen source endpoint fit; preserve affine shear exactly in evaluated mesh, no TRS decomposition"
+  },
+  {
+    "object": "cage2_wireH27",
+    "action": "continuous_local_frame_fit_baked_evaluated_vertices",
+    "owner": "mesh_cage_2",
+    "parameters": [
+      0.09803649779182094,
+      -0.05177552051200947,
+      1.0722230100896921,
+      1.0007272388011492,
+      1.040773709184009,
+      -0.07089765968226606
+    ],
+    "world_transport": [
+      [
+        1.0695295333862305,
+        0.07088971883058548,
+        0.0,
+        1.4044790267944336
+      ],
+      [
+        -0.07595434784889221,
+        0.9982132911682129,
+        0.0,
+        -0.8805188536643982
+      ],
+      [
+        0.0,
+        0.0,
+        1.0407737493515015,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "baseline_evaluated_vertices_sha256": "db35bf5684f2127e0380111be8cea1ae2fdea90be20de5999a57e628230f678f",
+    "candidate_evaluated_vertices_sha256": "3b409672610b3ff9f8818396feeb58d1ef7d15dfcd3c2d5481faf849ba921b54",
+    "vertex_count": 8,
+    "modifiers_baked": true,
+    "vertex_correspondence_preserved": true,
+    "wheel_uniform_exception": false,
+    "reason": "Frozen source endpoint fit; preserve affine shear exactly in evaluated mesh, no TRS decomposition"
+  },
+  {
+    "object": "cage2_wireH28",
+    "action": "continuous_local_frame_fit_baked_evaluated_vertices",
+    "owner": "mesh_cage_2",
+    "parameters": [
+      0.09803649779182094,
+      -0.05177552051200947,
+      1.0722230100896921,
+      1.0007272388011492,
+      1.040773709184009,
+      -0.07089765968226606
+    ],
+    "world_transport": [
+      [
+        1.0695295333862305,
+        0.07088971883058548,
+        0.0,
+        1.4044790267944336
+      ],
+      [
+        -0.07595434784889221,
+        0.9982132911682129,
+        0.0,
+        -0.8805188536643982
+      ],
+      [
+        0.0,
+        0.0,
+        1.0407737493515015,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "baseline_evaluated_vertices_sha256": "22fcb4e1fff5ecf4bc0a1c367b0cd679253d0bbe096b60a07c63904e86e15fe3",
+    "candidate_evaluated_vertices_sha256": "4ead5685af6b98a05636ce11035a975279316f36cc919d085acca981ddddfcf3",
+    "vertex_count": 8,
+    "modifiers_baked": true,
+    "vertex_correspondence_preserved": true,
+    "wheel_uniform_exception": false,
+    "reason": "Frozen source endpoint fit; preserve affine shear exactly in evaluated mesh, no TRS decomposition"
+  },
+  {
+    "object": "skip0_shell",
+    "action": "source_evidence_parametric_rebuild",
+    "reason": "Two rim endpoints triangulated from8/9; support bound from visible8 learned depth and floor contact; frame9support tracking rejected",
+    "vertex_correspondence_preserved": false
+  },
+  {
+    "object": "skip0_side_rim0",
+    "action": "source_evidence_parametric_rebuild",
+    "reason": "Two rim endpoints triangulated from8/9; support bound from visible8 learned depth and floor contact; frame9support tracking rejected",
+    "vertex_correspondence_preserved": false
+  },
+  {
+    "object": "skip0_side_rim1",
+    "action": "source_evidence_parametric_rebuild",
+    "reason": "Two rim endpoints triangulated from8/9; support bound from visible8 learned depth and floor contact; frame9support tracking rejected",
+    "vertex_correspondence_preserved": false
+  },
+  {
+    "object": "skip0_rim0",
+    "action": "source_evidence_parametric_rebuild",
+    "reason": "Two rim endpoints triangulated from8/9; support bound from visible8 learned depth and floor contact; frame9support tracking rejected",
+    "vertex_correspondence_preserved": false
+  },
+  {
+    "object": "skip0_rim1",
+    "action": "source_evidence_parametric_rebuild",
+    "reason": "Two rim endpoints triangulated from8/9; support bound from visible8 learned depth and floor contact; frame9support tracking rejected",
+    "vertex_correspondence_preserved": false
+  },
+  {
+    "object": "skip0_foot0",
+    "action": "source_evidence_parametric_rebuild",
+    "reason": "Two rim endpoints triangulated from8/9; support bound from visible8 learned depth and floor contact; frame9support tracking rejected",
+    "vertex_correspondence_preserved": false
+  },
+  {
+    "object": "skip0_foot1",
+    "action": "source_evidence_parametric_rebuild",
+    "reason": "Two rim endpoints triangulated from8/9; support bound from visible8 learned depth and floor contact; frame9support tracking rejected",
+    "vertex_correspondence_preserved": false
+  }
+]

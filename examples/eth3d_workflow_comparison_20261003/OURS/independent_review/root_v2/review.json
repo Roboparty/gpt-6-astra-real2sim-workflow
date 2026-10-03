@@ -1,0 +1,401 @@
+{
+  "method": "OURS",
+  "version": 2,
+  "model_sha256": "a00d441b2d3293b8105e9d9fbe3b8670b64a0057b92ef062512dcbda62c04a68",
+  "verdict": "needs_bounded_revision",
+  "quality_status": "LIMITED_with_failed_native_structure_gate",
+  "technical_candidate_freeze_recommended": false,
+  "another_bounded_revision_required": true,
+  "visual_acceptance": false,
+  "physical_acceptance": false,
+  "reason": "Five requested v1 visual repairs improved under the same ten-view independent scope, and the camera/visibility contracts hold. However the actual native structural audit now fails11checks (9source-fit groups+2cross-furniture intersection flags), and3realized label meshes are absent from the component inventory. Freezing as successfully accepted native output would be unsupported. Preserve v2 as a valid failed/limited candidate and perform one bounded correction pass if native completion is required.",
+  "scope": "Own current v2 model, same10paired mapping-photo/render views,36camera constraints,2glass triangle-centre rays, ownsemanticmetadata and actual ownnative-stage outputs. No other-method update, heldout images or laser/depth truth accessed.",
+  "requested_fix_verdicts": [
+    {
+      "id": 1,
+      "status": "occlusion_resolved_in_tested_view",
+      "parts": [
+        "van_windshield",
+        "van_cab_body"
+      ],
+      "frames": [
+        12
+      ],
+      "finding": "Both glass triangle-centre rays now first hit van_windshield within1.6micrometres; dark glass is visible in RGB. Remaining native endpoint error concerns its fitted divider/cab geometry, not buried-glass visibility.",
+      "evidence": [
+        "pairs_1.jpg",
+        "camera_occlusion_audit.json"
+      ]
+    },
+    {
+      "id": 2,
+      "status": "implemented_and_visibly_improved",
+      "parts": [
+        "column_1_lower",
+        "column_2_lower"
+      ],
+      "frames": [
+        16,
+        12
+      ],
+      "finding": "Two foreground members now have a visible recessed separation and separate floor contacts. Their projected horizontal interval overlap falls from36.6px in v1 to9.6px in v2 at640width. Cross-section, feet and stripe width remain approximate.",
+      "evidence": [
+        "pairs_1.jpg",
+        "pairs_2.jpg",
+        "camera_occlusion_audit.json"
+      ]
+    },
+    {
+      "id": 3,
+      "status": "implemented_but_likeness_still_limited",
+      "parts": [
+        "storage_rack",
+        "rack_sack_*"
+      ],
+      "frames": [
+        8,
+        4
+      ],
+      "finding": "Bags have improved filled volume/variation and layering rather than the strongest disk-like v1 silhouette, but rows still look more uniform than the observed irregular bags and packing. This is a remaining likeness limitation rather than a new blocking camera/ownership defect.",
+      "evidence": [
+        "pairs_0.jpg",
+        "pairs_1.jpg"
+      ]
+    },
+    {
+      "id": 4,
+      "status": "implemented_and_visibly_improved",
+      "parts": [
+        "compactor_body",
+        "compactor_hopper",
+        "compactor_yellow_front"
+      ],
+      "frames": [
+        20,
+        32,
+        35
+      ],
+      "finding": "Gray upper hopper/cage with diagonal members and a more articulated yellow base replace the plain stack. Source machine proportions, side panels and fine mechanisms remain simplified.",
+      "evidence": [
+        "pairs_2.jpg",
+        "pairs_4.jpg"
+      ]
+    },
+    {
+      "id": 5,
+      "status": "implemented_and_visibly_improved",
+      "parts": [
+        "corridor_luminaire_*",
+        "luminaire_*"
+      ],
+      "frames": [
+        20,
+        32,
+        35
+      ],
+      "finding": "Near/mid corridor fluorescent fixtures now project mainly transversely, repairing the prominent v1 receding-axis mismatch. Spacing, brightness and far-field arrangement remain approximate.",
+      "evidence": [
+        "pairs_2.jpg",
+        "pairs_4.jpg"
+      ]
+    }
+  ],
+  "required_bounded_actions": [
+    {
+      "priority": 1,
+      "kind": "cross_assembly_intersection",
+      "parts": [
+        "flatbed_deck",
+        "trailer_towA",
+        "trailer_towB"
+      ],
+      "frames": [
+        8
+      ],
+      "finding": "Actual native audit flags both flatbed_deck/tow-bar pairs as unexpected cross-furniture intersections. Reported signed-sample values0.514239m and0.030000m are audit outputs, not independently calibrated physical penetration depths.",
+      "action": "Resolve visible deck/tow-bar overlap while retaining the independent trailer ownership and source silhouette; rerun the actual native structure audit. Do not merely whitelist a cross-furniture joint."
+    },
+    {
+      "priority": 1,
+      "kind": "frozen_source_endpoint_fit",
+      "parts": [
+        "lime_skip_0",
+        "lime_skip_1"
+      ],
+      "frames": [
+        8
+      ],
+      "finding": "Actual source landmark medians25.556/25.163px and maxima41.010/36.983px exceed the declared9/18px limits. Source-bound detailed targets/projections are retained.",
+      "action": "Fit the declared rims/feet endpoints with fixed cameras, maintaining tapered shape and contact constraints."
+    },
+    {
+      "priority": 1,
+      "kind": "frozen_source_endpoint_fit",
+      "parts": [
+        "white_van",
+        "black_car"
+      ],
+      "frames": [
+        12
+      ],
+      "finding": "Actual native max errors33.556px at van_windshield_divider and27.566px at car_rear_frame1 exceed18px despite other endpoints being close.",
+      "action": "Correct local upper-body/window geometry while retaining the repaired glass visibility and accurate wheel contacts."
+    },
+    {
+      "priority": 2,
+      "kind": "frozen_source_endpoint_fit",
+      "parts": [
+        "wood_crate_0",
+        "wood_crate_1",
+        "flatbed_trailer",
+        "lumber_cart",
+        "mesh_cage_2"
+      ],
+      "frames": [
+        8,
+        20,
+        24
+      ],
+      "finding": "These five other groups also exceed their median9px or maximum18px source-fit gate. Worst group maxima18.950,17.865,18.006,20.112,30.598px respectively; complete denominators and constraints retained in native_failure_bindings.json.",
+      "action": "Use a bounded local fit pass against the existing endpoint definitions, then regress all ten paired views and native constraints. A questionable annotation/binding requires documented evidence-based review, never silent deletion, relabeling or threshold relaxation."
+    },
+    {
+      "priority": 2,
+      "kind": "semantic_metadata_closure",
+      "parts": [
+        "entry_sign_0_lettering",
+        "entry_sign_1_lettering",
+        "entry_sign_2_lettering"
+      ],
+      "frames": [
+        24,
+        28
+      ],
+      "finding": "The3realized font meshes have valid entity_id tags and appear in the790visible meshes, but the787-row component inventory omits them. All674declared assembly parts are otherwise owner/part consistent.",
+      "action": "Synchronize these3inventory entries through a new versioned/accepted artifact record; preserve the failed checker attempt and prior accepted artifact hashes. Geometry does not need to change for this metadata-only repair."
+    }
+  ],
+  "camera_validation": {
+    "camera_count": 36,
+    "camera_pose_error_max": 0.0,
+    "K_error_max": 0.0,
+    "camera_identity_all": true
+  },
+  "rigid_gauge_unchanged_from_v1": true,
+  "semantic_validation": {
+    "model_sha256": "a00d441b2d3293b8105e9d9fbe3b8670b64a0057b92ef062512dcbda62c04a68",
+    "model_unchanged": true,
+    "semantic_entities": 107,
+    "declared_components": 787,
+    "visible_mesh_objects": 790,
+    "missing_declared": [],
+    "unmapped_visible": [
+      "entry_sign_0_lettering",
+      "entry_sign_1_lettering",
+      "entry_sign_2_lettering"
+    ],
+    "inventory_entities_missing_from_scene": [],
+    "semantic_tag_mismatches": [
+      {
+        "component": "entry_sign_0_lettering",
+        "inventory_entity": null,
+        "actual_entity": "entry_sign_0",
+        "furniture_id": null
+      },
+      {
+        "component": "entry_sign_1_lettering",
+        "inventory_entity": null,
+        "actual_entity": "entry_sign_1",
+        "furniture_id": null
+      },
+      {
+        "component": "entry_sign_2_lettering",
+        "inventory_entity": null,
+        "actual_entity": "entry_sign_2",
+        "furniture_id": null
+      }
+    ],
+    "assembly_count": 14,
+    "assembly_component_count": 674,
+    "assembly_owner_part_mismatches": [],
+    "duplicate_visible_names": false,
+    "reports": {
+      "paired": {
+        "model_hash_match": true,
+        "status": "complete",
+        "count": 10,
+        "model_unchanged": true,
+        "indices": [
+          0,
+          4,
+          8,
+          12,
+          16,
+          20,
+          24,
+          28,
+          32,
+          35
+        ]
+      },
+      "all": {
+        "model_hash_match": true,
+        "status": "complete",
+        "count": 36,
+        "model_unchanged": true,
+        "indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35
+        ]
+      }
+    },
+    "rigid_gauge_unchanged_from_v1": true,
+    "example_properties": {
+      "van_windshield": {
+        "entity_id": "white_van",
+        "component_id": "van_windshield",
+        "provenance": "Fresh custom authoring from source RGB and predicted-depth measurements",
+        "observed_or_assumed": "observed form; hidden backs inferred",
+        "collider": "static visible mesh; optional box proxy listed separately",
+        "furniture_id": "white_van",
+        "part_id": "van_windshield"
+      },
+      "column_1_lower": {
+        "entity_id": "column_1",
+        "component_id": "column_1_lower",
+        "provenance": "Fresh custom authoring from source RGB and predicted-depth measurements",
+        "observed_or_assumed": "observed form; hidden backs inferred",
+        "collider": "static visible mesh; optional box proxy listed separately"
+      }
+    }
+  },
+  "native_gate_status": {
+    "observed_at_utc": "2026-10-03T05:22:50.445873+00:00",
+    "agent_model_attempt2_status": "succeeded",
+    "agent_model_output_hash_matches": true,
+    "build_geometry_attempt1_status": "running_or_not_yet_recorded",
+    "structural_audit_status": "failed",
+    "structural_failures": [
+      {
+        "kind": "source_landmarks",
+        "entity": "wood_crate_0",
+        "median": 12.455538382127456,
+        "maximum": 18.949978136129722
+      },
+      {
+        "kind": "source_landmarks",
+        "entity": "wood_crate_1",
+        "median": 11.529392832455155,
+        "maximum": 17.86504653917756
+      },
+      {
+        "kind": "source_landmarks",
+        "entity": "lime_skip_0",
+        "median": 25.555872397288407,
+        "maximum": 41.009554132999824
+      },
+      {
+        "kind": "source_landmarks",
+        "entity": "lime_skip_1",
+        "median": 25.162680487941834,
+        "maximum": 36.98261031723244
+      },
+      {
+        "kind": "source_landmarks",
+        "entity": "flatbed_trailer",
+        "median": 10.454316059734577,
+        "maximum": 18.00582263499938
+      },
+      {
+        "kind": "source_landmarks",
+        "entity": "white_van",
+        "median": 7.06424954094994,
+        "maximum": 33.555615174005375
+      },
+      {
+        "kind": "source_landmarks",
+        "entity": "black_car",
+        "median": 4.735366598254674,
+        "maximum": 27.565525221533278
+      },
+      {
+        "kind": "source_landmarks",
+        "entity": "lumber_cart",
+        "median": 15.445263439330656,
+        "maximum": 20.112239615625363
+      },
+      {
+        "kind": "source_landmarks",
+        "entity": "mesh_cage_2",
+        "median": 18.04532460020787,
+        "maximum": 30.5976985820212
+      },
+      {
+        "kind": "unexpected_interpenetration",
+        "parts": [
+          "flatbed_deck",
+          "trailer_towA"
+        ],
+        "depth_m": 0.5142393112182617,
+        "cross_furniture": true
+      },
+      {
+        "kind": "unexpected_interpenetration",
+        "parts": [
+          "flatbed_deck",
+          "trailer_towB"
+        ],
+        "depth_m": 0.03000009059906006,
+        "cross_furniture": true
+      }
+    ],
+    "visual_acceptance": "not_granted",
+    "note": "agent_model succeeded records artifact/contract acceptance, not structural or visual pass. Author contact_preparation_report is not substituted for actual native structural audit."
+  },
+  "native_audit_source_model_matches": true,
+  "evidence_hashes": {
+    "camera_occlusion_audit.json": "16e5bf4299d795eac6ebc7e865cf7b16b27689c5e0fb3c9d006af70e9c8c68ec",
+    "native_failure_bindings.json": "dc9d69187c0e1993becbaa1766f90fe0772faad08f381021e70ea96ec0aaa88b",
+    "native_gate_snapshot.json": "60e1ab4924dc2751076d18ff4da31571efe89509f68f4619317f9708c9773b5e",
+    "pairs_0.jpg": "642adc1320b5f9f116beacbddae9fc68b425a3441ab1d310a07a1a2fe0199a38",
+    "pairs_1.jpg": "d53ab02c468956b30786bd9063fff40f1b5900b67e9c2e88435859d8490e510b",
+    "pairs_2.jpg": "1709ef6ea0e28c069d66e99ca172a7266cf1b33768756f5259474e42f05c4b31",
+    "pairs_3.jpg": "75fe2eaf767d1c2367430216dd64977d2760a1b323ab94071b5d1ef8e4902827",
+    "pairs_4.jpg": "4f88d8f328bd64c880f991f9105c6664106007938d63bbff3b7a49300891f2df",
+    "semantic_coverage.json": "9bbb71e30562581695709f6ffe7d4b5266887a0f54baf1662436f9e453f0c77d"
+  }
+}

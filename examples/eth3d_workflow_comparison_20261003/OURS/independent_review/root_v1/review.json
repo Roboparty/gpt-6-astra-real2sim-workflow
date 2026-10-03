@@ -1,0 +1,118 @@
+{
+  "verdict": "needs_revision",
+  "readiness": "LIMITED: coherent editable semantic approximation, not source-likeness or physical acceptance",
+  "evidence_scope": "Exactly10 matched mapping-photo/render pairs at indices0,4,8,12,16,20,24,28,32,35, own current v1 component inventory, own36camera metadata, own visible mesh occlusion audit. No heldout images, laser/depth truth, prior pilots or comparator scores. Same scope and five-fix cap for each method.",
+  "cameras": "36 frame identities preserved; input K unchanged; poses match one declared rigid model_from_input. Do not adjust cameras to hide geometry residuals.",
+  "validation_boundary": "Source/render comparison and two triangle-centre windshield rays establish only the listed visual/occlusion findings; not exhaustive collision or dimensional certification. Semantic parts being present does not prove their visibility or likeness.",
+  "method": "OURS",
+  "model_sha256": "8b240c1b63d64f36b8c28ae4b3fa4ae4f73d1d36385b19e25bdfde7007282b0e",
+  "camera_audit": {
+    "frame_count": 36,
+    "max_pose_error": 0.0,
+    "max_K_error": 0.0,
+    "identity_all": true
+  },
+  "fixes": [
+    {
+      "priority": 1,
+      "part": [
+        "van_windshield",
+        "van_cab_body"
+      ],
+      "frames": [
+        12
+      ],
+      "title": "Expose the windshield surface outside the cab solid",
+      "finding": "Frame12 DSC_0690 has a clearly dark glazed windshield; the render presents a white closed cab slope. Both windshield triangle-centre rays hit van_cab_body first,61.5mm and87.2mm before their target. This verifies the author note about glass occlusion.",
+      "fix": "Cut/rebuild the cab front surface and place the glass on the actual sloped outer surface; retain a distinct frame and recheck first-hit visibility from frame12 and an additional own mapping view. Do not merely darken the existing buried plane.",
+      "evidence": [
+        "pairs_1.jpg",
+        "camera_occlusion_audit.json"
+      ]
+    },
+    {
+      "priority": 1,
+      "part": [
+        "column_1_lower",
+        "column_2_lower"
+      ],
+      "frames": [
+        16,
+        12
+      ],
+      "title": "Restore the recessed separation of the two foreground supports",
+      "finding": "Frame16 DSC_0695 shows two distinct adjacent hazard-striped support faces with a recessed vertical separation and separate floor contacts. The model reads as a fused broad mass. The two lower meshes project to x172.8\u2013298.3 and120.9\u2013209.4 at640px width: their horizontal intervals overlap36.6px. This supports a separation/shape problem, not a blanket instruction to shrink one whole column.",
+      "fix": "Refit the two column cross-sections and relative placement against their separate source boundaries, keeping their support feet and recessed join legible in frame16; regress the vehicle/column occlusion in frame12.",
+      "evidence": [
+        "pairs_1.jpg",
+        "pairs_2.jpg",
+        "camera_occlusion_audit.json"
+      ]
+    },
+    {
+      "priority": 2,
+      "part": [
+        "storage_rack",
+        "rack_sack_*"
+      ],
+      "frames": [
+        8,
+        4
+      ],
+      "title": "Replace regular disk-like sacks with the observed bulk-bag topology",
+      "finding": "Frame8 DSC_0685 shows irregular filled sacks, folds/ties, stacked volume variation and uneven gaps on the shelf. The render has repeated near-identical circular/rounded units in straight rows, with much more uniform spacing and shelf occupancy. The regularity issue is directly visible, not inferred from the component count.",
+      "fix": "Fit bag count, silhouettes, uneven stacking and free gaps per shelf from frame8 plus the nearby mapping photos; keep shelf beams exposed where the source exposes them. Preserve the current shelf layout while revising bag components.",
+      "evidence": [
+        "pairs_0.jpg",
+        "pairs_1.jpg"
+      ]
+    },
+    {
+      "priority": 2,
+      "part": [
+        "compactor_body",
+        "compactor_hopper",
+        "compactor_yellow_front"
+      ],
+      "frames": [
+        20,
+        32,
+        35
+      ],
+      "title": "Recover the compactor silhouette at the corridor entrance",
+      "finding": "In frames20/32/35 the source has a substantial gray upper hopper/cage and a lower yellow mechanism with protrusions; the render reduces this to a clean rectangular gray/yellow stack. The source machine occupies more vertically articulated silhouette and interrupts the corridor wall/floor junction differently.",
+      "fix": "Use those three fixed views to recover the sloping/open upper hopper, lower mechanism/support outline and visible protrusions. Treat hidden internal structure as unresolved; do not add an arbitrary box to match overall depth alone.",
+      "evidence": [
+        "pairs_2.jpg",
+        "pairs_4.jpg"
+      ]
+    },
+    {
+      "priority": 2,
+      "part": [
+        "corridor_luminaire_*",
+        "luminaire_*"
+      ],
+      "frames": [
+        20,
+        32,
+        35
+      ],
+      "title": "Fit fluorescent fixtures to their observed line orientation and spacing",
+      "finding": "The source corridor views show long transverse bright strips spanning across the image with a receding central sequence. The render instead shows prominent strips directed along receding diagonals and a different near-field arrangement. This changes broad ceiling evidence even though fixtures exist semantically.",
+      "fix": "Fit long-axis direction and endpoints of the visible near/middle fixtures from frames20/32/35 before repeating them down the corridor. Verify projected fixture endpoints and preserve actual dark gaps; avoid compensating with ceiling brightness.",
+      "evidence": [
+        "pairs_2.jpg",
+        "pairs_4.jpg"
+      ]
+    }
+  ],
+  "evidence_hashes": {
+    "camera_occlusion_audit.json": "5e8170f741ac14c0bf4716646e78fb383eaa4f04cfd208d99acd7d1173bc8a94",
+    "pairs_0.jpg": "eb649254f473bf9de701f361a18bae16a350c490151d336fef724c2339313384",
+    "pairs_1.jpg": "98c3a013a2ec9852e4d8a6135460f2311d6ea4d67cd87ff555a702fa9027c54f",
+    "pairs_2.jpg": "0fb445defcf4f118343e94f0b40be9fb981e78ab3e3499ad25107278ad988e63",
+    "pairs_3.jpg": "300c0a71a075182c6f33273f30e020f7e9076a0a97044934be6cedea8a40bcc1",
+    "pairs_4.jpg": "77489ebb33e3ac0e5431699a66096131570859d374673fb0473e9b8b367362b8"
+  }
+}

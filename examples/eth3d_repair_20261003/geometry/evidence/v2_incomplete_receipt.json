@@ -1,0 +1,8 @@
+{
+  "directory": "candidate_v2",
+  "status": "rejected_as_final",
+  "reason": "Correct shear bake; frontskip threshold and cab/window anchor still failed",
+  "model_sha256": "569fe2adbfe1f596bf6ec00d7ab736907f09d821f55933a05d19e7a5450182b4",
+  "scene_sha256": "15e679959e0de6aa99901bff952d82dab9bfb3770daf8c190f2538a5f60bc57a",
+  "recipe_snapshot": "No contemporaneous separate recipe snapshot; do not claim frozen-source provenance. Model/JSON/evidence retained."
+}

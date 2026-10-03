@@ -1,0 +1,48 @@
+{
+  "base_sha256": "506982c1c94a94067b19a58dc1a55d7b9ab6039ca1b8d00f61fba76292cc5542",
+  "candidate_sha256": "f36a6b79c439bf0fd53c2de58c84f4a42b4fddce29208d1fb0a273c1ba39bb2f",
+  "candidate_file_matches": true,
+  "source_packet_hash_matches": true,
+  "all_36_source_hashes_and_actual_cache_pixels_match": true,
+  "used_only_0_to35": true,
+  "surface_records": 1720,
+  "mapped_objects": 303,
+  "mapped_faces": 738,
+  "surface_texels": 5371573,
+  "supported_texels": 1741643,
+  "unknown_texels": 3629930,
+  "support_fraction": 0.32423332978998887,
+  "tile_alpha_failures": [],
+  "mask_values": [
+    0,
+    255
+  ],
+  "source_assignment_counts_match": true,
+  "receipt_counts_match": true,
+  "native_audits": [
+    {
+      "path": "/home/wqz/real2sim_agent_repair_20261003/texture/final_texture_v4/appearance_audit.json",
+      "sha256": "7ea63d2d2dae6454eee60c0cec8e0dfd44367e20fa2bc1a75e908bd64bc492f4",
+      "model_sha256": "f36a6b79c439bf0fd53c2de58c84f4a42b4fddce29208d1fb0a273c1ba39bb2f",
+      "status": "failed",
+      "failures_count": 339,
+      "all_failures_soft_world": false
+    },
+    {
+      "path": "/home/wqz/real2sim_agent_repair_20261003/texture/final_texture_v4/per_node_contract/frozen_per_node/appearance_audit.json",
+      "sha256": "b8342bbd66f5ae78ad7396515a1c57e168bdd1f5097e5652d5753ba66c8f3d04",
+      "model_sha256": "f36a6b79c439bf0fd53c2de58c84f4a42b4fddce29208d1fb0a273c1ba39bb2f",
+      "status": "failed",
+      "failures_count": 75,
+      "all_failures_soft_world": true
+    }
+  ],
+  "metadata_hashes": {
+    "review_receipt.json": "27ca45b66fca8c987c448d6b1eb641dae9b078a562f20c5baa79e2059e806606",
+    "surface_support.json": "41b8ab4a373a58cc658cbca8b81bdbab3b1cb991216d7df1dc2d24b59f1b419c",
+    "material_calibration.json": "404bf9d4d00e0bf7a2ecb19da32b8db2e75d05cfa9a055392147052ad92acd28",
+    "layered_texture_binding_audit.json": "8cf81bb9bd38cb2e1deb993cd0becb71d1cce13c7573b4ee2b0b529e7fe846b2",
+    "appearance_audit.json": "7ea63d2d2dae6454eee60c0cec8e0dfd44367e20fa2bc1a75e908bd64bc492f4"
+  },
+  "scope": "Author-input audit only: original36RGB+DA3 lineage and actualcache/atlas/node data; noGT or priorheldout evidence. Atlas fullray source support is not rerun wholesale."
+}

@@ -1,0 +1,37 @@
+{
+  "status": "diagnostic_only_unresolved_contract_failure",
+  "selected_model_sha256": "4d53b2a7fa076a6892592e555f33b55b07476dc2f6dab58651ab146fc1acdf85",
+  "pair": [
+    "flatbed_frame",
+    "flatbed_towA"
+  ],
+  "declared_in_accepted_structure": false,
+  "construction_evidence": "build_scene_v3.py explicitly starts flatbed_towA at (6.55,7.1,.39), inside the observed flatbed frame; this is an intended tow-frame attachment",
+  "source_builder_sha256": "653f9e6a123056e52f6fe86844a1cda2c32fb3ad233a98c0b32af35e5dc12340",
+  "measurements": [
+    {
+      "part": "flatbed_frame",
+      "owner": "flatbed_trailer",
+      "nearest_surface_distance_m": 0.05000019073486328,
+      "outside_distance_m": 0,
+      "anchor": [
+        6.550000190734863,
+        7.099999904632568,
+        0.38999998569488525
+      ]
+    },
+    {
+      "part": "flatbed_towA",
+      "owner": "flatbed_trailer",
+      "nearest_surface_distance_m": 0.0,
+      "outside_distance_m": 0,
+      "anchor": [
+        6.550000190734863,
+        7.099999904632568,
+        0.38999998569488525
+      ]
+    }
+  ],
+  "proposed_repair": "Add the missing measured intended-joint declaration in a future revision and rerun native review; no active artifact or accepted state has been edited.",
+  "limitation": "This note does not erase native failure, grant visual acceptance, or interpret the sampled depth as calibrated penetration."
+}

@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "all_original_labels_retained": true,
+  "all_thresholds_retained": {
+    "landmark_median_px": 9,
+    "landmark_max_px": 18
+  },
+  "v2_and_v3_labels_sha256": "47045b80b0a463d13f8677431bfc6554948cf39194d31b0f1f8472a096815614",
+  "assembly_count": 14,
+  "point_count": 38
+}

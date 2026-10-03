@@ -1,0 +1,32 @@
+[
+  {
+    "issue": 1,
+    "change": "cut cab slope face, exterior windshield and separate window borders",
+    "evidence": "review triangle first-hit audit12, RGB12/13; prior glass117.7..146.1mm occluded",
+    "assumption": "same cab shape retained, glazing mount6mm exterior inference"
+  },
+  {
+    "issue": 2,
+    "change": "center_column x-4.36,y1.2,sx0.60,sy0.58; adjacent x-4.32,y0.63,sx0.56,sy0.33, separate contacts/gap",
+    "evidence": "depth points16/17 fronts~-4.04, ybands0.63/1.2; v1frame16 middle signedmedian+0.216m",
+    "assumption": "unseen cross-section depth inferred; far truck column unchanged"
+  },
+  {
+    "issue": 3,
+    "change": "replace vertical walls with open tapered shells top2.3x2.3,bottom2.0x1.4; rim0.13, thickness0.055, independent feet",
+    "evidence": "RGB8/9/12 silhouette, top depthz1.45..1.49 and bottomz0.125..0.183",
+    "assumption": "taper slope hidden side inferred; v1centres retained"
+  },
+  {
+    "issue": 4,
+    "change": "load endpoints shorten/angle/varied, cartcenterx0.4 from0.95, rearposts y-7.72, add connected upper frame",
+    "evidence": "RGB24/28 triangulation retained residual1.3..3px for accepted points and10px rejected; internal depth samples",
+    "assumption": "per-plank interpolation inferred; no camera change"
+  },
+  {
+    "issue": 5,
+    "change": "uniform boxes replaced by irregular ring-surface filled sacks; unequal level occupancy; top layered flat sacks plus separated bulkbag",
+    "evidence": "RGB4/8/9 visible shelf occupancy; beams/uprights unchanged",
+    "assumption": "hidden sacks and exact folds unobservable, approximate"
+  }
+]

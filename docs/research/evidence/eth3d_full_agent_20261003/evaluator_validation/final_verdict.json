@@ -1,0 +1,85 @@
+{
+  "status": "PASS",
+  "tests": {
+    "optical_z_matches_analytic": true,
+    "hidden_proxy_excluded": true,
+    "transparent_panel_in_opaque_geometry": true,
+    "actual_colored_patch_projection": true,
+    "model_bytes_unchanged": true,
+    "analytic_shell_point_distances": true,
+    "bad_model_hash_rejected": true,
+    "nonrigid_gauge_rejected": true
+  },
+  "receipt_fix": {
+    "field": "surface_samples_each_direction",
+    "reported_legacy": null,
+    "reported_model_samples": 100000,
+    "reported_laser_samples": 6,
+    "fixed": true,
+    "actual_gt_to_model_samples": 6,
+    "actual_model_surface_samples": 100000
+  },
+  "boundary_accounting": {
+    "total_rays": 38400,
+    "exact_silhouette_edge_rays": 120,
+    "alternate_adjacent_surface_hits": 50,
+    "nonboundary_mismatches": 0,
+    "dropped_rays": 0,
+    "rule": "At mathematically exact sheet boundary, floating BVH may hit sheet2m or wall6m; all edge rays must match one of these surfaces within1e-5m. Original strict diagnostic retained in validation_initial_strict.json."
+  },
+  "max_depth_error_m": 2.384185791015625e-06,
+  "max_render_projection_error_px": 0.05925815755386415,
+  "outputs_identical_to_prefixed": {
+    "rendered_z.npy": true,
+    "gt_to_model_m.npy": true,
+    "model_surface_samples.npy": true,
+    "render_pngs": false
+  },
+  "latest_evaluator_sha256": "0136dbc53e515fed031a978b85339a0442402c0d097566dac66294fd045b70fe",
+  "model_sha256": "f6ec1b4e216f1c52a7ce7be4addd2fb45c931e81ba99f3f088b429532c4cb13e",
+  "new_output_directory": "/data/wqz/real2sim-agent-compare-20261003/reference_prep/evaluator_review/synthetic_receipt_fixed",
+  "render_pixel_comparison": [
+    {
+      "file": "synthetic_000.png",
+      "pixels_identical": true,
+      "max_channel_abs_error": 0.0,
+      "mean_channel_abs_error": 0.0
+    },
+    {
+      "file": "synthetic_007.png",
+      "pixels_identical": true,
+      "max_channel_abs_error": 0.0,
+      "mean_channel_abs_error": 0.0
+    },
+    {
+      "file": "synthetic_014.png",
+      "pixels_identical": true,
+      "max_channel_abs_error": 0.0,
+      "mean_channel_abs_error": 0.0
+    },
+    {
+      "file": "synthetic_021.png",
+      "pixels_identical": true,
+      "max_channel_abs_error": 0.0,
+      "mean_channel_abs_error": 0.0
+    },
+    {
+      "file": "synthetic_028.png",
+      "pixels_identical": true,
+      "max_channel_abs_error": 0.0,
+      "mean_channel_abs_error": 0.0
+    },
+    {
+      "file": "synthetic_029.png",
+      "pixels_identical": true,
+      "max_channel_abs_error": 0.0,
+      "mean_channel_abs_error": 0.0
+    },
+    {
+      "file": "synthetic_030.png",
+      "pixels_identical": true,
+      "max_channel_abs_error": 0.0,
+      "mean_channel_abs_error": 0.0
+    }
+  ]
+}

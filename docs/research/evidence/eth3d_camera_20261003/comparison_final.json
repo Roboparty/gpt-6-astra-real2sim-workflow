@@ -1,0 +1,998 @@
+{
+  "status": "complete",
+  "scene": "ETH3D delivery_area",
+  "photographs": 44,
+  "mapping": 36,
+  "heldout": 8,
+  "awsm_depth_code_sha256": "3be3467a840f68585b51e6f5da06c6b43597f2cb20f7d9276fda495f6545ffc8",
+  "awsm_revision": "4dc2f5c515b77fd5f5f8dbedbdad76663882267e",
+  "scope": "Real-scene Pi3X reference and static editable-mesh adapter ablation. Not full semantic Agent reconstruction or an AWSM authoring rerun.",
+  "geometry_domain": "Published ETH3D eval scan points. Model100000 area-weighted samples to all24.9M laser points;100000 uniform laser samples to exact candidate triangle BVH.",
+  "depth_domain": "Official sparse laser-derived optical-Z truth in[0.1,30]m; missing candidate pixels count30m penalty; missing GT is excluded and coverage reported.",
+  "variants": [
+    {
+      "id": "RGB_SE3",
+      "condition": "RGB",
+      "alignment": "SE3",
+      "scale": 1.0,
+      "transform": [
+        [
+          0.8587729568987454,
+          -0.4983851704592926,
+          -0.11883278321089417,
+          -1.5064365444824779
+        ],
+        [
+          -0.24370026834865124,
+          -0.6013511292724708,
+          0.7609119518903084,
+          -0.5952886181535889
+        ],
+        [
+          -0.4506874612258263,
+          -0.6244910257073237,
+          -0.6378806872016373,
+          0.053841215361845156
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "camera_translation_rmse_m": 0.7714876098073793,
+      "scope": "GT-mapping-camera alignment after freeze; Sim3 is a diagnostic, not native metric recovery",
+      "directory": "/data/wqz/real2sim-awsm-20261003/eth3d/benchmark_v1/evaluation/RGB_SE3_colorfix",
+      "depth": {
+        "reconstruction": {
+          "views": 36,
+          "GT_valid_pixels": 74079,
+          "GT_total_grid_pixels": 691200,
+          "absrel": 0.26706987832273754,
+          "rmse_m": 2.1044528245925904,
+          "valid_coverage": 0.792858113207186,
+          "invalid_rate": 0.20714188679281392,
+          "missing_penalty_mae_m": 7.578036460611555,
+          "delta1": 0.22794364039109086
+        },
+        "heldout": {
+          "views": 8,
+          "GT_valid_pixels": 16796,
+          "GT_total_grid_pixels": 153600,
+          "absrel": 0.28134349919855595,
+          "rmse_m": 2.0461211651563644,
+          "valid_coverage": 0.7673216503873976,
+          "invalid_rate": 0.23267834961260242,
+          "missing_penalty_mae_m": 8.292169660329819,
+          "delta1": 0.28039463785574736
+        }
+      },
+      "geometry": {
+        "model_to_laser_mean_m": 0.7410296075418201,
+        "laser_to_model_mean_m": 1.5616895115970866,
+        "symmetric_mean_m": 1.1513595595694532,
+        "model_to_laser_p95_m": 1.890605401604944,
+        "laser_to_model_p95_m": 3.7276219606399525,
+        "fscore_1cm": 0.0004186046511627907,
+        "precision_1cm": 0.00036,
+        "recall_1cm": 0.0005,
+        "fscore_5cm": 0.0022905950095969286,
+        "precision_5cm": 0.00351,
+        "recall_5cm": 0.0017,
+        "fscore_10cm": 0.005006708463949843,
+        "precision_10cm": 0.00934,
+        "recall_10cm": 0.00342
+      },
+      "appearance": [
+        {
+          "frame_id": "DSC_0675",
+          "split": "reconstruction",
+          "source": "/data/wqz/real2sim-awsm-20261003/eth3d/benchmark_v1/observations/rgb/000.png",
+          "render": "/data/wqz/real2sim-awsm-20261003/eth3d/benchmark_v1/evaluation/RGB_SE3_colorfix/DSC_0675.png",
+          "size": [
+            640,
+            426
+          ],
+          "psnr_db": 14.194991184783154,
+          "ssim": 0.45756807262655974,
+          "lpips_alex_v01": 0.6050281524658203
+        },
+        {
+          "frame_id": "DSC_0683",
+          "split": "reconstruction",
+          "source": "/data/wqz/real2sim-awsm-20261003/eth3d/benchmark_v1/observations/rgb/007.png",
+          "render": "/data/wqz/real2sim-awsm-20261003/eth3d/benchmark_v1/evaluation/RGB_SE3_colorfix/DSC_0683.png",
+          "size": [
+            640,
+            426
+          ],
+          "psnr_db": 7.868012505808082,
+          "ssim": 0.252464991540843,
+          "lpips_alex_v01": 0.6815630197525024
+        },
+        {
+          "frame_id": "DSC_0692",
+          "split": "reconstruction",
+          "source": "/data/wqz/real2sim-awsm-20261003/eth3d/benchmark_v1/observations/rgb/014.png",
+          "render": "/data/wqz/real2sim-awsm-20261003/eth3d/benchmark_v1/evaluation/RGB_SE3_colorfix/DSC_0692.png",
+          "size": [
+            640,
+            426
+          ],
+          "psnr_db": 14.180759438581154,
+          "ssim": 0.5568115408097515,
+          "lpips_alex_v01": 0.479800820350647
+        },
+        {
+          "frame_id": "DSC_0701",
+          "split": "reconstruction",
+          "source": "/data/wqz/real2sim-awsm-20261003/eth3d/benchmark_v1/observations/rgb/021.png",
+          "render": "/data/wqz/real2sim-awsm-20261003/eth3d/benchmark_v1/evaluation/RGB_SE3_colorfix/DSC_0701.png",
+          "size": [
+            640,
+            426
+          ],
+          "psnr_db": 15.493301634326697,
+          "ssim": 0.4827135912344839,
+          "lpips_alex_v01": 0.5268824696540833
+        },
+        {
+          "frame_id": "DSC_0710",
+          "split": "reconstruction",
+          "source": "/data/wqz/real2sim-awsm-20261003/eth3d/benchmark_v1/observations/rgb/028.png",
+          "render": "/data/wqz/real2sim-awsm-20261003/eth3d/benchmark_v1/evaluation/RGB_SE3_colorfix/DSC_0710.png",
+          "size": [
+            640,
+            426
+          ],
+          "psnr_db": 14.124843387036423,
+          "ssim": 0.40705303707948115,
+          "lpips_alex_v01": 0.49764660000801086
+        },
+        {
+          "frame_id": "DSC_0679",
+          "split": "heldout",
+          "source": "/data/wqz/real2sim-awsm-20261003/eth3d/benchmark_v1/evaluator/withheld_rgb/000.png",
+          "render": "/data/wqz/real2sim-awsm-20261003/eth3d/benchmark_v1/evaluation/RGB_SE3_colorfix/DSC_0679.png",
+          "size": [
+            640,
+            426
+          ],
+          "psnr_db": 12.662521554770528,
+          "ssim": 0.36475983967663195,
+          "lpips_alex_v01": 0.5713672637939453
+        },
+        {
+          "frame_id": "DSC_0694",
+          "split": "heldout",
+          "source": "/data/wqz/real2sim-awsm-20261003/eth3d/benchmark_v1/evaluator/withheld_rgb/003.png",
+          "render": "/data/wqz/real2sim-awsm-20261003/eth3d/benchmark_v1/evaluation/RGB_SE3_colorfix/DSC_0694.png",
+          "size": [
+            640,
+            426
+          ],
+          "psnr_db": 15.658766662993022,
+          "ssim": 0.5572034860284648,
+          "lpips_alex_v01": 0.5398181080818176
+        },
+        {
+          "frame_id": "DSC_0714",
+          "split": "heldout",
+          "source": "/data/wqz/real2sim-awsm-20261003/eth3d/benchmark_v1/evaluator/withheld_rgb/007.png",
+          "render": "/data/wqz/real2sim-awsm-20261003/eth3d/benchmark_v1/evaluation/RGB_SE3_colorfix/DSC_0714.png",
+          "size": [
+            640,
+            426
+          ],
+          "psnr_db": 11.784508901342427,
+          "ssim": 0.06900477702242255,
+          "lpips_alex_v01": 0.7488190531730652
+        }
+      ],
+      "appearance_means": {
+        "reconstruction": {
+          "psnr_db": 13.172381630107102,
+          "ssim": 0.43132224665822383,
+          "lpips_alex_v01": 0.5581842124462127
+        },
+        "heldout": {
+          "psnr_db": 13.368599039701992,
+          "ssim": 0.3303227009091731,
+          "lpips_alex_v01": 0.620001475016276
+        }
+      }
+    },
+    {
+      "id": "RGB_Sim3",
+      "condition": "RGB",
+      "alignment": "Sim3",
+      "scale": 1.283833420785567,
+      "transform": [
+        [
+          1.1025214229334528,
+          -0.6398435382595515,
+          -0.15256149857111198,
+          -1.9340135820993285
+        ],
+        [
+          -0.3128705491604096,
+          -0.7720346773871399,
+          0.9768841941119574,
+          -0.764251422998835
+        ],
+        [
+          -0.5786076250507152,
+          -0.8017424497837209,
+          -0.8189325447031263,
+          0.06912315169724975
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "camera_translation_rmse_m": 0.2716658059564658,
+      "scope": "GT-mapping-camera alignment after freeze; Sim3 is a diagnostic, not native metric recovery",
+      "directory": "/data/wqz/real2sim-awsm-20261003/eth3d/benchmark_v1/evaluation/RGB_Sim3",
+      "depth": {
+        "reconstruction": {
+          "views": 36,
+          "GT_valid_pixels": 74079,
+          "GT_total_grid_pixels": 691200,
+          "absrel": 0.04479979069179131,
+          "rmse_m": 0.632341642346647,
+          "valid_coverage": 0.8270802989993782,
+          "invalid_rate": 0.17291970100062187,
+          "missing_penalty_mae_m": 5.393401744051112,
+          "delta1": 0.9873860798595193
+        },
+        "heldout": {
+          "views": 8,
+          "GT_valid_pixels": 16796,
+          "GT_total_grid_pixels": 153600,
+          "absrel": 0.05720454826951027,
+          "rmse_m": 0.9482046104967594,
+          "valid_coverage": 0.7671804039341154,
+          "invalid_rate": 0.2328195960658846,
+          "missing_penalty_mae_m": 7.242601793259382,
+          "delta1": 0.9830386984827859
+        }
+      },
+      "geometry": {
+        "model_to_laser_mean_m": 0.1868166216466848,
+        "laser_to_model_mean_m": 1.3832320928603343,
+        "symmetric_mean_m": 0.7850243572535096,
+        "model_to_laser_p95_m": 0.5913493245317512,
+        "laser_to_model_p95_m": 4.451660847663879,
+        "fscore_1cm": 0.03599000575175429,
+        "precision_1cm": 0.02544,
+        "recall_1cm": 0.06149,
+        "fscore_5cm": 0.2927262386542005,
+        "precision_5cm": 0.30295,
+        "recall_5cm": 0.28317,
+        "fscore_10cm": 0.42657571911756104,
+        "precision_10cm": 0.44388,
+        "recall_10cm": 0.41057
+      },
+      "appearance": [
+        {
+          "frame_id": "DSC_0675",
+          "split": "reconstruction",
+          "source": "/data/wqz/real2sim-awsm-20261003/eth3d/benchmark_v1/observations/rgb/000.png",
+          "render": "/data/wqz/real2sim-awsm-20261003/eth3d/benchmark_v1/evaluation/RGB_Sim3/DSC_0675.png",
+          "size": [
+            640,
+            426
+          ],
+          "psnr_db": 13.910809837500741,
+          "ssim": 0.447308448313929,
+          "lpips_alex_v01": 0.49532508850097656
+        },
+        {
+          "frame_id": "DSC_0683",
+          "split": "reconstruction",
+          "source": "/data/wqz/real2sim-awsm-20261003/eth3d/benchmark_v1/observations/rgb/007.png",
+          "render": "/data/wqz/real2sim-awsm-20261003/eth3d/benchmark_v1/evaluation/RGB_Sim3/DSC_0683.png",
+          "size": [
+            640,
+            426
+          ],
+          "psnr_db": 7.767305958361962,
+          "ssim": 0.24037690338813242,
+          "lpips_alex_v01": 0.6531273126602173
+        },
+        {
+          "frame_id": "DSC_0692",
+          "split": "reconstruction",
+          "source": "/data/wqz/real2sim-awsm-20261003/eth3d/benchmark_v1/observations/rgb/014.png",
+          "render": "/data/wqz/real2sim-awsm-20261003/eth3d/benchmark_v1/evaluation/RGB_Sim3/DSC_0692.png",
+          "size": [
+            640,
+            426
+          ],
+          "psnr_db": 13.870585210079307,
+          "ssim": 0.5782526709219437,
+          "lpips_alex_v01": 0.4386514127254486
+        },
+        {
+          "frame_id": "DSC_0701",
+          "split": "reconstruction",
+          "source": "/data/wqz/real2sim-awsm-20261003/eth3d/benchmark_v1/observations/rgb/021.png",
+          "render": "/data/wqz/real2sim-awsm-20261003/eth3d/benchmark_v1/evaluation/RGB_Sim3/DSC_0701.png",
+          "size": [
+            640,
+            426
+          ],
+          "psnr_db": 18.750567118574907,
+          "ssim": 0.5675898724961408,
+          "lpips_alex_v01": 0.4642696678638458
+        },
+        {
+          "frame_id": "DSC_0710",
+          "split": "reconstruction",
+          "source": "/data/wqz/real2sim-awsm-20261003/eth3d/benchmark_v1/observations/rgb/028.png",
+          "render": "/data/wqz/real2sim-awsm-20261003/eth3d/benchmark_v1/evaluation/RGB_Sim3/DSC_0710.png",
+          "size": [
+            640,
+            426
+          ],
+          "psnr_db": 14.81921593832984,
+          "ssim": 0.496480686521718,
+          "lpips_alex_v01": 0.4427669644355774
+        },
+        {
+          "frame_id": "DSC_0679",
+          "split": "heldout",
+          "source": "/data/wqz/real2sim-awsm-20261003/eth3d/benchmark_v1/evaluator/withheld_rgb/000.png",
+          "render": "/data/wqz/real2sim-awsm-20261003/eth3d/benchmark_v1/evaluation/RGB_Sim3/DSC_0679.png",
+          "size": [
+            640,
+            426
+          ],
+          "psnr_db": 12.967355224521693,
+          "ssim": 0.3757337306022192,
+          "lpips_alex_v01": 0.530892014503479
+        },
+        {
+          "frame_id": "DSC_0694",
+          "split": "heldout",
+          "source": "/data/wqz/real2sim-awsm-20261003/eth3d/benchmark_v1/evaluator/withheld_rgb/003.png",
+          "render": "/data/wqz/real2sim-awsm-20261003/eth3d/benchmark_v1/evaluation/RGB_Sim3/DSC_0694.png",
+          "size": [
+            640,
+            426
+          ],
+          "psnr_db": 14.875203716954044,
+          "ssim": 0.5468617539303762,
+          "lpips_alex_v01": 0.4751880466938019
+        },
+        {
+          "frame_id": "DSC_0714",
+          "split": "heldout",
+          "source": "/data/wqz/real2sim-awsm-20261003/eth3d/benchmark_v1/evaluator/withheld_rgb/007.png",
+          "render": "/data/wqz/real2sim-awsm-20261003/eth3d/benchmark_v1/evaluation/RGB_Sim3/DSC_0714.png",
+          "size": [
+            640,
+            426
+          ],
+          "psnr_db": 12.061384375021301,
+          "ssim": 0.07522818932568857,
+          "lpips_alex_v01": 0.7309430837631226
+        }
+      ],
+      "appearance_means": {
+        "reconstruction": {
+          "psnr_db": 13.823696812569352,
+          "ssim": 0.4660017163283728,
+          "lpips_alex_v01": 0.4988280892372131
+        },
+        "heldout": {
+          "psnr_db": 13.301314438832346,
+          "ssim": 0.33260789128609464,
+          "lpips_alex_v01": 0.5790077149868011
+        }
+      }
+    },
+    {
+      "id": "RGB_K_SE3",
+      "condition": "RGB_K",
+      "alignment": "SE3",
+      "scale": 1.0,
+      "transform": [
+        [
+          0.8667349853296605,
+          -0.4809375710748284,
+          -0.13217230396054028,
+          -1.3701998513838447
+        ],
+        [
+          -0.22411044658715998,
+          -0.6122642319403047,
+          0.7582262314224242,
+          -0.5661251340127598
+        ],
+        [
+          -0.4455838562337018,
+          -0.6275600075014278,
+          -0.6384539639227795,
+          0.04998994133892402
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "camera_translation_rmse_m": 0.7254906195815353,
+      "scope": "GT-mapping-camera alignment after freeze; Sim3 is a diagnostic, not native metric recovery",
+      "directory": "/data/wqz/real2sim-awsm-20261003/eth3d/benchmark_v1/evaluation/RGB_K_SE3",
+      "depth": {
+        "reconstruction": {
+          "views": 36,
+          "GT_valid_pixels": 74079,
+          "GT_total_grid_pixels": 691200,
+          "absrel": 0.2557130306959152,
+          "rmse_m": 2.083316837038313,
+          "valid_coverage": 0.8422741277519252,
+          "invalid_rate": 0.15772587224807466,
+          "missing_penalty_mae_m": 6.127424558003743,
+          "delta1": 0.42091143395056785
+        },
+        "heldout": {
+          "views": 8,
+          "GT_valid_pixels": 16796,
+          "GT_total_grid_pixels": 153600,
+          "absrel": 0.27135408855974674,
+          "rmse_m": 2.028007909655571,
+          "valid_coverage": 0.8230348446006399,
+          "invalid_rate": 0.17696515539936014,
+          "missing_penalty_mae_m": 6.660052105784416,
+          "delta1": 0.49141155064549946
+        }
+      },
+      "geometry": {
+        "model_to_laser_mean_m": 0.7018989109024403,
+        "laser_to_model_mean_m": 1.4154583778919838,
+        "symmetric_mean_m": 1.058678644397212,
+        "model_to_laser_p95_m": 1.812296880393688,
+        "laser_to_model_p95_m": 3.514702117443084,
+        "fscore_1cm": 0.0007328395061728394,
+        "precision_1cm": 0.00056,
+        "recall_1cm": 0.00106,
+        "fscore_5cm": 0.003835074309978768,
+        "precision_5cm": 0.00674,
+        "recall_5cm": 0.00268,
+        "fscore_10cm": 0.007567145488029466,
+        "precision_10cm": 0.01684,
+        "recall_10cm": 0.00488
+      },
+      "appearance": [
+        {
+          "frame_id": "DSC_0675",
+          "split": "reconstruction",
+          "source": "/data/wqz/real2sim-awsm-20261003/eth3d/benchmark_v1/observations/rgb/000.png",
+          "render": "/data/wqz/real2sim-awsm-20261003/eth3d/benchmark_v1/evaluation/RGB_K_SE3/DSC_0675.png",
+          "size": [
+            640,
+            426
+          ],
+          "psnr_db": 13.941975325424345,
+          "ssim": 0.46571574415003747,
+          "lpips_alex_v01": 0.5965592861175537
+        },
+        {
+          "frame_id": "DSC_0683",
+          "split": "reconstruction",
+          "source": "/data/wqz/real2sim-awsm-20261003/eth3d/benchmark_v1/observations/rgb/007.png",
+          "render": "/data/wqz/real2sim-awsm-20261003/eth3d/benchmark_v1/evaluation/RGB_K_SE3/DSC_0683.png",
+          "size": [
+            640,
+            426
+          ],
+          "psnr_db": 9.211536397598197,
+          "ssim": 0.3024511531945724,
+          "lpips_alex_v01": 0.6133075952529907
+        },
+        {
+          "frame_id": "DSC_0692",
+          "split": "reconstruction",
+          "source": "/data/wqz/real2sim-awsm-20261003/eth3d/benchmark_v1/observations/rgb/014.png",
+          "render": "/data/wqz/real2sim-awsm-20261003/eth3d/benchmark_v1/evaluation/RGB_K_SE3/DSC_0692.png",
+          "size": [
+            640,
+            426
+          ],
+          "psnr_db": 14.222180406806977,
+          "ssim": 0.5598413802064637,
+          "lpips_alex_v01": 0.47233110666275024
+        },
+        {
+          "frame_id": "DSC_0701",
+          "split": "reconstruction",
+          "source": "/data/wqz/real2sim-awsm-20261003/eth3d/benchmark_v1/observations/rgb/021.png",
+          "render": "/data/wqz/real2sim-awsm-20261003/eth3d/benchmark_v1/evaluation/RGB_K_SE3/DSC_0701.png",
+          "size": [
+            640,
+            426
+          ],
+          "psnr_db": 16.18259881981324,
+          "ssim": 0.5159378291306546,
+          "lpips_alex_v01": 0.5096286535263062
+        },
+        {
+          "frame_id": "DSC_0710",
+          "split": "reconstruction",
+          "source": "/data/wqz/real2sim-awsm-20261003/eth3d/benchmark_v1/observations/rgb/028.png",
+          "render": "/data/wqz/real2sim-awsm-20261003/eth3d/benchmark_v1/evaluation/RGB_K_SE3/DSC_0710.png",
+          "size": [
+            640,
+            426
+          ],
+          "psnr_db": 14.020005886888931,
+          "ssim": 0.4161400192183122,
+          "lpips_alex_v01": 0.4742560386657715
+        },
+        {
+          "frame_id": "DSC_0679",
+          "split": "heldout",
+          "source": "/data/wqz/real2sim-awsm-20261003/eth3d/benchmark_v1/evaluator/withheld_rgb/000.png",
+          "render": "/data/wqz/real2sim-awsm-20261003/eth3d/benchmark_v1/evaluation/RGB_K_SE3/DSC_0679.png",
+          "size": [
+            640,
+            426
+          ],
+          "psnr_db": 13.523605599615376,
+          "ssim": 0.42460200017736716,
+          "lpips_alex_v01": 0.5259780287742615
+        },
+        {
+          "frame_id": "DSC_0694",
+          "split": "heldout",
+          "source": "/data/wqz/real2sim-awsm-20261003/eth3d/benchmark_v1/evaluator/withheld_rgb/003.png",
+          "render": "/data/wqz/real2sim-awsm-20261003/eth3d/benchmark_v1/evaluation/RGB_K_SE3/DSC_0694.png",
+          "size": [
+            640,
+            426
+          ],
+          "psnr_db": 15.511123438786178,
+          "ssim": 0.5631072059076843,
+          "lpips_alex_v01": 0.52519291639328
+        },
+        {
+          "frame_id": "DSC_0714",
+          "split": "heldout",
+          "source": "/data/wqz/real2sim-awsm-20261003/eth3d/benchmark_v1/evaluator/withheld_rgb/007.png",
+          "render": "/data/wqz/real2sim-awsm-20261003/eth3d/benchmark_v1/evaluation/RGB_K_SE3/DSC_0714.png",
+          "size": [
+            640,
+            426
+          ],
+          "psnr_db": 11.66506801873008,
+          "ssim": 0.08582692542008696,
+          "lpips_alex_v01": 0.7307904362678528
+        }
+      ],
+      "appearance_means": {
+        "reconstruction": {
+          "psnr_db": 13.515659367306338,
+          "ssim": 0.45201722518000803,
+          "lpips_alex_v01": 0.5332165360450745
+        },
+        "heldout": {
+          "psnr_db": 13.566599019043878,
+          "ssim": 0.35784537716837944,
+          "lpips_alex_v01": 0.5939871271451315
+        }
+      }
+    },
+    {
+      "id": "RGB_K_Sim3",
+      "condition": "RGB_K",
+      "alignment": "Sim3",
+      "scale": 1.266117397098006,
+      "transform": [
+        [
+          1.0973882435993683,
+          -0.608923425655899,
+          -0.1673456534589657,
+          -1.7348338693381884
+        ],
+        [
+          -0.2837501352954067,
+          -0.7751983956804683,
+          0.96000342253999,
+          -0.7167808811079948
+        ],
+        [
+          -0.5641614722435065,
+          -0.7945646432205129,
+          -0.8083576709688138,
+          0.06329313440912004
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "camera_translation_rmse_m": 0.232853451316979,
+      "scope": "GT-mapping-camera alignment after freeze; Sim3 is a diagnostic, not native metric recovery",
+      "directory": "/data/wqz/real2sim-awsm-20261003/eth3d/benchmark_v1/evaluation/RGB_K_Sim3",
+      "depth": {
+        "reconstruction": {
+          "views": 36,
+          "GT_valid_pixels": 74079,
+          "GT_total_grid_pixels": 691200,
+          "absrel": 0.04460652956428627,
+          "rmse_m": 0.6558921411633492,
+          "valid_coverage": 0.8761296054967902,
+          "invalid_rate": 0.1238703945032098,
+          "missing_penalty_mae_m": 3.9492019748108254,
+          "delta1": 0.9874256398347703
+        },
+        "heldout": {
+          "views": 8,
+          "GT_valid_pixels": 16796,
+          "GT_total_grid_pixels": 153600,
+          "absrel": 0.050800727447494864,
+          "rmse_m": 0.8605268001556396,
+          "valid_coverage": 0.8258422403221535,
+          "invalid_rate": 0.17415775967784647,
+          "missing_penalty_mae_m": 5.471360567957163,
+          "delta1": 0.9862563978524028
+        }
+      },
+      "geometry": {
+        "model_to_laser_mean_m": 0.22535648408427802,
+        "laser_to_model_mean_m": 1.1876085402608154,
+        "symmetric_mean_m": 0.7064825121725468,
+        "model_to_laser_p95_m": 0.6576460476164273,
+        "laser_to_model_p95_m": 4.10970070362091,
+        "fscore_1cm": 0.016480258215962443,
+        "precision_1cm": 0.00939,
+        "recall_1cm": 0.06729,
+        "fscore_5cm": 0.14214844836754228,
+        "precision_5cm": 0.09514,
+        "recall_5cm": 0.28098,
+        "fscore_10cm": 0.4162348236181853,
+        "precision_10cm": 0.3664,
+        "recall_10cm": 0.48176
+      },
+      "appearance": [
+        {
+          "frame_id": "DSC_0675",
+          "split": "reconstruction",
+          "source": "/data/wqz/real2sim-awsm-20261003/eth3d/benchmark_v1/observations/rgb/000.png",
+          "render": "/data/wqz/real2sim-awsm-20261003/eth3d/benchmark_v1/evaluation/RGB_K_Sim3/DSC_0675.png",
+          "size": [
+            640,
+            426
+          ],
+          "psnr_db": 14.77427907207569,
+          "ssim": 0.5366638457799167,
+          "lpips_alex_v01": 0.45467448234558105
+        },
+        {
+          "frame_id": "DSC_0683",
+          "split": "reconstruction",
+          "source": "/data/wqz/real2sim-awsm-20261003/eth3d/benchmark_v1/observations/rgb/007.png",
+          "render": "/data/wqz/real2sim-awsm-20261003/eth3d/benchmark_v1/evaluation/RGB_K_Sim3/DSC_0683.png",
+          "size": [
+            640,
+            426
+          ],
+          "psnr_db": 9.294279772195605,
+          "ssim": 0.32769931420204107,
+          "lpips_alex_v01": 0.5857312679290771
+        },
+        {
+          "frame_id": "DSC_0692",
+          "split": "reconstruction",
+          "source": "/data/wqz/real2sim-awsm-20261003/eth3d/benchmark_v1/observations/rgb/014.png",
+          "render": "/data/wqz/real2sim-awsm-20261003/eth3d/benchmark_v1/evaluation/RGB_K_Sim3/DSC_0692.png",
+          "size": [
+            640,
+            426
+          ],
+          "psnr_db": 14.275018889238362,
+          "ssim": 0.6005586680166191,
+          "lpips_alex_v01": 0.4268256425857544
+        },
+        {
+          "frame_id": "DSC_0701",
+          "split": "reconstruction",
+          "source": "/data/wqz/real2sim-awsm-20261003/eth3d/benchmark_v1/observations/rgb/021.png",
+          "render": "/data/wqz/real2sim-awsm-20261003/eth3d/benchmark_v1/evaluation/RGB_K_Sim3/DSC_0701.png",
+          "size": [
+            640,
+            426
+          ],
+          "psnr_db": 18.460079510226066,
+          "ssim": 0.5478249553719695,
+          "lpips_alex_v01": 0.4335160255432129
+        },
+        {
+          "frame_id": "DSC_0710",
+          "split": "reconstruction",
+          "source": "/data/wqz/real2sim-awsm-20261003/eth3d/benchmark_v1/observations/rgb/028.png",
+          "render": "/data/wqz/real2sim-awsm-20261003/eth3d/benchmark_v1/evaluation/RGB_K_Sim3/DSC_0710.png",
+          "size": [
+            640,
+            426
+          ],
+          "psnr_db": 14.642927194308852,
+          "ssim": 0.49050060971259957,
+          "lpips_alex_v01": 0.4147386848926544
+        },
+        {
+          "frame_id": "DSC_0679",
+          "split": "heldout",
+          "source": "/data/wqz/real2sim-awsm-20261003/eth3d/benchmark_v1/evaluator/withheld_rgb/000.png",
+          "render": "/data/wqz/real2sim-awsm-20261003/eth3d/benchmark_v1/evaluation/RGB_K_Sim3/DSC_0679.png",
+          "size": [
+            640,
+            426
+          ],
+          "psnr_db": 13.76628431157005,
+          "ssim": 0.46632247155247125,
+          "lpips_alex_v01": 0.47988104820251465
+        },
+        {
+          "frame_id": "DSC_0694",
+          "split": "heldout",
+          "source": "/data/wqz/real2sim-awsm-20261003/eth3d/benchmark_v1/evaluator/withheld_rgb/003.png",
+          "render": "/data/wqz/real2sim-awsm-20261003/eth3d/benchmark_v1/evaluation/RGB_K_Sim3/DSC_0694.png",
+          "size": [
+            640,
+            426
+          ],
+          "psnr_db": 15.509283845946571,
+          "ssim": 0.5591546128035998,
+          "lpips_alex_v01": 0.4382520318031311
+        },
+        {
+          "frame_id": "DSC_0714",
+          "split": "heldout",
+          "source": "/data/wqz/real2sim-awsm-20261003/eth3d/benchmark_v1/evaluator/withheld_rgb/007.png",
+          "render": "/data/wqz/real2sim-awsm-20261003/eth3d/benchmark_v1/evaluation/RGB_K_Sim3/DSC_0714.png",
+          "size": [
+            640,
+            426
+          ],
+          "psnr_db": 12.016653250453349,
+          "ssim": 0.09009335301377581,
+          "lpips_alex_v01": 0.7102465629577637
+        }
+      ],
+      "appearance_means": {
+        "reconstruction": {
+          "psnr_db": 14.289316887608916,
+          "ssim": 0.5006494786166291,
+          "lpips_alex_v01": 0.46309722065925596
+        },
+        "heldout": {
+          "psnr_db": 13.764073802656657,
+          "ssim": 0.3718568124566156,
+          "lpips_alex_v01": 0.5427932143211365
+        }
+      }
+    },
+    {
+      "id": "RGB_K_T",
+      "condition": "RGB_K_T",
+      "alignment": "supplied_reference_camera_world",
+      "transform": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "directory": "/data/wqz/real2sim-awsm-20261003/eth3d/benchmark_v1/evaluation/RGB_K_T_colorfix",
+      "depth": {
+        "reconstruction": {
+          "views": 36,
+          "GT_valid_pixels": 74079,
+          "GT_total_grid_pixels": 691200,
+          "absrel": 0.045000746897939176,
+          "rmse_m": 0.5055419719881482,
+          "valid_coverage": 0.9071041456662398,
+          "invalid_rate": 0.09289585433376027,
+          "missing_penalty_mae_m": 3.03981332315339,
+          "delta1": 0.9944757132055337
+        },
+        "heldout": {
+          "views": 8,
+          "GT_valid_pixels": 16796,
+          "GT_total_grid_pixels": 153600,
+          "absrel": 0.04964732239022851,
+          "rmse_m": 0.6140646375715733,
+          "valid_coverage": 0.8685507551166607,
+          "invalid_rate": 0.1314492448833393,
+          "missing_penalty_mae_m": 4.204032227396965,
+          "delta1": 0.9934064857007038
+        }
+      },
+      "geometry": {
+        "model_to_laser_mean_m": 0.21829279150837239,
+        "laser_to_model_mean_m": 1.34280821050333,
+        "symmetric_mean_m": 0.7805505010058512,
+        "model_to_laser_p95_m": 0.6408864493579105,
+        "laser_to_model_p95_m": 4.428490471839904,
+        "fscore_1cm": 0.00935767894959763,
+        "precision_1cm": 0.00643,
+        "recall_1cm": 0.01718,
+        "fscore_5cm": 0.18129608410493828,
+        "precision_5cm": 0.17633,
+        "recall_5cm": 0.18655,
+        "fscore_10cm": 0.3258054063157895,
+        "precision_10cm": 0.37968,
+        "recall_10cm": 0.28532
+      },
+      "appearance": [
+        {
+          "frame_id": "DSC_0675",
+          "split": "reconstruction",
+          "source": "/data/wqz/real2sim-awsm-20261003/eth3d/benchmark_v1/observations/rgb/000.png",
+          "render": "/data/wqz/real2sim-awsm-20261003/eth3d/benchmark_v1/evaluation/RGB_K_T_colorfix/DSC_0675.png",
+          "size": [
+            640,
+            426
+          ],
+          "psnr_db": 14.30377110906109,
+          "ssim": 0.6104355648753018,
+          "lpips_alex_v01": 0.39458125829696655
+        },
+        {
+          "frame_id": "DSC_0683",
+          "split": "reconstruction",
+          "source": "/data/wqz/real2sim-awsm-20261003/eth3d/benchmark_v1/observations/rgb/007.png",
+          "render": "/data/wqz/real2sim-awsm-20261003/eth3d/benchmark_v1/evaluation/RGB_K_T_colorfix/DSC_0683.png",
+          "size": [
+            640,
+            426
+          ],
+          "psnr_db": 12.550790482359124,
+          "ssim": 0.49208312868706766,
+          "lpips_alex_v01": 0.4882752299308777
+        },
+        {
+          "frame_id": "DSC_0692",
+          "split": "reconstruction",
+          "source": "/data/wqz/real2sim-awsm-20261003/eth3d/benchmark_v1/observations/rgb/014.png",
+          "render": "/data/wqz/real2sim-awsm-20261003/eth3d/benchmark_v1/evaluation/RGB_K_T_colorfix/DSC_0692.png",
+          "size": [
+            640,
+            426
+          ],
+          "psnr_db": 15.778633055347584,
+          "ssim": 0.689494460439654,
+          "lpips_alex_v01": 0.3810539245605469
+        },
+        {
+          "frame_id": "DSC_0701",
+          "split": "reconstruction",
+          "source": "/data/wqz/real2sim-awsm-20261003/eth3d/benchmark_v1/observations/rgb/021.png",
+          "render": "/data/wqz/real2sim-awsm-20261003/eth3d/benchmark_v1/evaluation/RGB_K_T_colorfix/DSC_0701.png",
+          "size": [
+            640,
+            426
+          ],
+          "psnr_db": 17.53951242397896,
+          "ssim": 0.5740405353296595,
+          "lpips_alex_v01": 0.46775299310684204
+        },
+        {
+          "frame_id": "DSC_0710",
+          "split": "reconstruction",
+          "source": "/data/wqz/real2sim-awsm-20261003/eth3d/benchmark_v1/observations/rgb/028.png",
+          "render": "/data/wqz/real2sim-awsm-20261003/eth3d/benchmark_v1/evaluation/RGB_K_T_colorfix/DSC_0710.png",
+          "size": [
+            640,
+            426
+          ],
+          "psnr_db": 15.132418411064002,
+          "ssim": 0.5620831732830618,
+          "lpips_alex_v01": 0.4408057630062103
+        },
+        {
+          "frame_id": "DSC_0679",
+          "split": "heldout",
+          "source": "/data/wqz/real2sim-awsm-20261003/eth3d/benchmark_v1/evaluator/withheld_rgb/000.png",
+          "render": "/data/wqz/real2sim-awsm-20261003/eth3d/benchmark_v1/evaluation/RGB_K_T_colorfix/DSC_0679.png",
+          "size": [
+            640,
+            426
+          ],
+          "psnr_db": 14.827716527431221,
+          "ssim": 0.5489874381457029,
+          "lpips_alex_v01": 0.41613060235977173
+        },
+        {
+          "frame_id": "DSC_0694",
+          "split": "heldout",
+          "source": "/data/wqz/real2sim-awsm-20261003/eth3d/benchmark_v1/evaluator/withheld_rgb/003.png",
+          "render": "/data/wqz/real2sim-awsm-20261003/eth3d/benchmark_v1/evaluation/RGB_K_T_colorfix/DSC_0694.png",
+          "size": [
+            640,
+            426
+          ],
+          "psnr_db": 17.56761408972766,
+          "ssim": 0.6662087197310461,
+          "lpips_alex_v01": 0.3837609589099884
+        },
+        {
+          "frame_id": "DSC_0714",
+          "split": "heldout",
+          "source": "/data/wqz/real2sim-awsm-20261003/eth3d/benchmark_v1/evaluator/withheld_rgb/007.png",
+          "render": "/data/wqz/real2sim-awsm-20261003/eth3d/benchmark_v1/evaluation/RGB_K_T_colorfix/DSC_0714.png",
+          "size": [
+            640,
+            426
+          ],
+          "psnr_db": 12.365724531570914,
+          "ssim": 0.11714508150789985,
+          "lpips_alex_v01": 0.6885460019111633
+        }
+      ],
+      "appearance_means": {
+        "reconstruction": {
+          "psnr_db": 15.061025096362151,
+          "ssim": 0.5856273725229489,
+          "lpips_alex_v01": 0.4344938337802887
+        },
+        "heldout": {
+          "psnr_db": 14.920351716243264,
+          "ssim": 0.44411374646154966,
+          "lpips_alex_v01": 0.4961458543936412
+        }
+      }
+    }
+  ],
+  "lpips_status": "complete",
+  "lpips_weights": {
+    "status": "loaded",
+    "torch": "2.5.1+cu124",
+    "numpy": "1.26.4",
+    "scipy": "1.15.3",
+    "lpips_package": "0.1.4",
+    "net": "alex",
+    "version": "0.1",
+    "files": [
+      {
+        "path": "/home/wqz/real2sim_awsm_20261003/torch_eval_cache/hub/checkpoints/alexnet-owt-7be5be79.pth",
+        "bytes": 244408911,
+        "sha256": "7be5be791159472b1fbf3c69796f7cb30dca7ad8466c2df70058c37116cdee02"
+      },
+      {
+        "path": "/home/wqz/real2sim_awsm_20261003/evaldeps/lpips/weights/v0.1/alex.pth",
+        "bytes": 6009,
+        "sha256": "df73285e35b22355a2df87cdb6b70b343713b667eddbda73e1977e0c860835c0"
+      }
+    ]
+  }
+}

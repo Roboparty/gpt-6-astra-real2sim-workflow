@@ -1,0 +1,30 @@
+{
+  "phase": "final protocol bookend",
+  "scene_version": 2,
+  "geometry_changed": false,
+  "materials_changed": false,
+  "cameras_changed": false,
+  "model_sha256": "8bf7eaa7bb795118b58c5782d313f071826990bc999cf94d4568c8db508abcd2",
+  "reason": "Independent v2 review approved technical freeze as LIMITED. Exactly third36-view input-depth pass repeats unchanged reviewed geometry to close AWSM protocol; no new modelling trial or metric-driven update.",
+  "major_repair_output": "checks/v2_all",
+  "final_output": "checks/v2_final_all",
+  "model_and_reference_depth_arrays_exactly_equal": true,
+  "full36_passes": [
+    {
+      "role": "initial",
+      "path": "checks/v1_all",
+      "version": 1
+    },
+    {
+      "role": "major_repair",
+      "path": "checks/v2_all",
+      "version": 2
+    },
+    {
+      "role": "final_unchanged_bookend",
+      "path": "checks/v2_final_all",
+      "version": 2
+    }
+  ],
+  "completed_utc": "2026-10-03T05:22:24.704943+00:00"
+}

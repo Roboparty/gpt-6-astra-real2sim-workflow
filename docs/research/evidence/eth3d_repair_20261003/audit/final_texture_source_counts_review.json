@@ -1,0 +1,204 @@
+{
+  "source_manifest_hash_matches": true,
+  "source_count": 36,
+  "all_source_hashes_match": true,
+  "source_indices_used": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35
+  ],
+  "used_only_allowlist": true,
+  "surface_records": 1720,
+  "surface_texels_summed": 5371573,
+  "supported_texels_summed": 1512693,
+  "unknown_texels": 3858880,
+  "receipt_totals_match": true,
+  "atlas_tile_count_checks": 1720,
+  "atlas_tile_mismatches": [],
+  "all_mask_values": [
+    0,
+    255
+  ],
+  "per_source_assignments_match": true,
+  "scope": "Independent36sourcebytehash and atlas support-alpha/count validation. This does not rerun4.5million occlusion rays or independently prove every baked colour sample; fullscene-BVH code and recorded support remain separate evidence.",
+  "actual_bake_RGB_cache_matches_originals": true,
+  "RGB_cache_checks": [
+    {
+      "index": 0,
+      "byte_pixels_equal": true
+    },
+    {
+      "index": 1,
+      "byte_pixels_equal": true
+    },
+    {
+      "index": 2,
+      "byte_pixels_equal": true
+    },
+    {
+      "index": 3,
+      "byte_pixels_equal": true
+    },
+    {
+      "index": 4,
+      "byte_pixels_equal": true
+    },
+    {
+      "index": 5,
+      "byte_pixels_equal": true
+    },
+    {
+      "index": 6,
+      "byte_pixels_equal": true
+    },
+    {
+      "index": 7,
+      "byte_pixels_equal": true
+    },
+    {
+      "index": 8,
+      "byte_pixels_equal": true
+    },
+    {
+      "index": 9,
+      "byte_pixels_equal": true
+    },
+    {
+      "index": 10,
+      "byte_pixels_equal": true
+    },
+    {
+      "index": 11,
+      "byte_pixels_equal": true
+    },
+    {
+      "index": 12,
+      "byte_pixels_equal": true
+    },
+    {
+      "index": 13,
+      "byte_pixels_equal": true
+    },
+    {
+      "index": 14,
+      "byte_pixels_equal": true
+    },
+    {
+      "index": 15,
+      "byte_pixels_equal": true
+    },
+    {
+      "index": 16,
+      "byte_pixels_equal": true
+    },
+    {
+      "index": 17,
+      "byte_pixels_equal": true
+    },
+    {
+      "index": 18,
+      "byte_pixels_equal": true
+    },
+    {
+      "index": 19,
+      "byte_pixels_equal": true
+    },
+    {
+      "index": 20,
+      "byte_pixels_equal": true
+    },
+    {
+      "index": 21,
+      "byte_pixels_equal": true
+    },
+    {
+      "index": 22,
+      "byte_pixels_equal": true
+    },
+    {
+      "index": 23,
+      "byte_pixels_equal": true
+    },
+    {
+      "index": 24,
+      "byte_pixels_equal": true
+    },
+    {
+      "index": 25,
+      "byte_pixels_equal": true
+    },
+    {
+      "index": 26,
+      "byte_pixels_equal": true
+    },
+    {
+      "index": 27,
+      "byte_pixels_equal": true
+    },
+    {
+      "index": 28,
+      "byte_pixels_equal": true
+    },
+    {
+      "index": 29,
+      "byte_pixels_equal": true
+    },
+    {
+      "index": 30,
+      "byte_pixels_equal": true
+    },
+    {
+      "index": 31,
+      "byte_pixels_equal": true
+    },
+    {
+      "index": 32,
+      "byte_pixels_equal": true
+    },
+    {
+      "index": 33,
+      "byte_pixels_equal": true
+    },
+    {
+      "index": 34,
+      "byte_pixels_equal": true
+    },
+    {
+      "index": 35,
+      "byte_pixels_equal": true
+    }
+  ]
+}

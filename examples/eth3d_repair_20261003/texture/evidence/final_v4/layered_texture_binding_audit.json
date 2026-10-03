@@ -1,0 +1,273 @@
+{
+  "candidate_sha256": "f36a6b79c439bf0fd53c2de58c84f4a42b4fddce29208d1fb0a273c1ba39bb2f",
+  "base_sha256": "506982c1c94a94067b19a58dc1a55d7b9ab6039ca1b8d00f61fba76292cc5542",
+  "status": "passed",
+  "failures": [],
+  "materials": [
+    {
+      "original_BaseColor_fallback_graph_equal": true,
+      "material": "PhotoBaked__bag__atlas1",
+      "source_material": "bag",
+      "passed": true,
+      "alpha_socket": 1.0,
+      "alpha_linked": false,
+      "emission_strength": 0.0,
+      "photo_alpha_is_support_not_opacity": true
+    },
+    {
+      "original_BaseColor_fallback_graph_equal": true,
+      "material": "PhotoBaked__black_vehicle__atlas1",
+      "source_material": "black_vehicle",
+      "passed": true,
+      "alpha_socket": 1.0,
+      "alpha_linked": false,
+      "emission_strength": 0.0,
+      "photo_alpha_is_support_not_opacity": true
+    },
+    {
+      "original_BaseColor_fallback_graph_equal": true,
+      "material": "PhotoBaked__blue__atlas1",
+      "source_material": "blue",
+      "passed": true,
+      "alpha_socket": 1.0,
+      "alpha_linked": false,
+      "emission_strength": 0.0,
+      "photo_alpha_is_support_not_opacity": true
+    },
+    {
+      "original_BaseColor_fallback_graph_equal": true,
+      "material": "PhotoBaked__blue_door__atlas0",
+      "source_material": "blue_door",
+      "passed": true,
+      "alpha_socket": 1.0,
+      "alpha_linked": false,
+      "emission_strength": 0.0,
+      "photo_alpha_is_support_not_opacity": true
+    },
+    {
+      "original_BaseColor_fallback_graph_equal": true,
+      "material": "PhotoBaked__blue_door__atlas1",
+      "source_material": "blue_door",
+      "passed": true,
+      "alpha_socket": 1.0,
+      "alpha_linked": false,
+      "emission_strength": 0.0,
+      "photo_alpha_is_support_not_opacity": true
+    },
+    {
+      "original_BaseColor_fallback_graph_equal": true,
+      "material": "PhotoBaked__ceiling__atlas0",
+      "source_material": "ceiling",
+      "passed": true,
+      "alpha_socket": 1.0,
+      "alpha_linked": false,
+      "emission_strength": 0.0,
+      "photo_alpha_is_support_not_opacity": true
+    },
+    {
+      "original_BaseColor_fallback_graph_equal": true,
+      "material": "PhotoBaked__ceiling__atlas1",
+      "source_material": "ceiling",
+      "passed": true,
+      "alpha_socket": 1.0,
+      "alpha_linked": false,
+      "emission_strength": 0.0,
+      "photo_alpha_is_support_not_opacity": true
+    },
+    {
+      "original_BaseColor_fallback_graph_equal": true,
+      "material": "PhotoBaked__dock__atlas1",
+      "source_material": "dock",
+      "passed": true,
+      "alpha_socket": 1.0,
+      "alpha_linked": false,
+      "emission_strength": 0.0,
+      "photo_alpha_is_support_not_opacity": true
+    },
+    {
+      "original_BaseColor_fallback_graph_equal": true,
+      "material": "PhotoBaked__door__atlas1",
+      "source_material": "door",
+      "passed": true,
+      "alpha_socket": 1.0,
+      "alpha_linked": false,
+      "emission_strength": 0.0,
+      "photo_alpha_is_support_not_opacity": true
+    },
+    {
+      "original_BaseColor_fallback_graph_equal": true,
+      "material": "PhotoBaked__floor__atlas0",
+      "source_material": "floor",
+      "passed": true,
+      "alpha_socket": 1.0,
+      "alpha_linked": false,
+      "emission_strength": 0.0,
+      "photo_alpha_is_support_not_opacity": true
+    },
+    {
+      "original_BaseColor_fallback_graph_equal": true,
+      "material": "PhotoBaked__floor__atlas1",
+      "source_material": "floor",
+      "passed": true,
+      "alpha_socket": 1.0,
+      "alpha_linked": false,
+      "emission_strength": 0.0,
+      "photo_alpha_is_support_not_opacity": true
+    },
+    {
+      "original_BaseColor_fallback_graph_equal": true,
+      "material": "PhotoBaked__hazard__atlas1",
+      "source_material": "hazard",
+      "passed": true,
+      "alpha_socket": 1.0,
+      "alpha_linked": false,
+      "emission_strength": 0.0,
+      "photo_alpha_is_support_not_opacity": true
+    },
+    {
+      "original_BaseColor_fallback_graph_equal": true,
+      "material": "PhotoBaked__lime__atlas1",
+      "source_material": "lime",
+      "passed": true,
+      "alpha_socket": 1.0,
+      "alpha_linked": false,
+      "emission_strength": 0.0,
+      "photo_alpha_is_support_not_opacity": true
+    },
+    {
+      "original_BaseColor_fallback_graph_equal": true,
+      "material": "PhotoBaked__lumber__atlas1",
+      "source_material": "lumber",
+      "passed": true,
+      "alpha_socket": 1.0,
+      "alpha_linked": false,
+      "emission_strength": 0.0,
+      "photo_alpha_is_support_not_opacity": true
+    },
+    {
+      "original_BaseColor_fallback_graph_equal": true,
+      "material": "PhotoBaked__orange__atlas1",
+      "source_material": "orange",
+      "passed": true,
+      "alpha_socket": 1.0,
+      "alpha_linked": false,
+      "emission_strength": 0.0,
+      "photo_alpha_is_support_not_opacity": true
+    },
+    {
+      "original_BaseColor_fallback_graph_equal": true,
+      "material": "PhotoBaked__red__atlas1",
+      "source_material": "red",
+      "passed": true,
+      "alpha_socket": 1.0,
+      "alpha_linked": false,
+      "emission_strength": 0.0,
+      "photo_alpha_is_support_not_opacity": true
+    },
+    {
+      "original_BaseColor_fallback_graph_equal": true,
+      "material": "PhotoBaked__rust__atlas1",
+      "source_material": "rust",
+      "passed": true,
+      "alpha_socket": 1.0,
+      "alpha_linked": false,
+      "emission_strength": 0.0,
+      "photo_alpha_is_support_not_opacity": true
+    },
+    {
+      "original_BaseColor_fallback_graph_equal": true,
+      "material": "PhotoBaked__steel__atlas1",
+      "source_material": "steel",
+      "passed": true,
+      "alpha_socket": 1.0,
+      "alpha_linked": false,
+      "emission_strength": 0.0,
+      "photo_alpha_is_support_not_opacity": true
+    },
+    {
+      "original_BaseColor_fallback_graph_equal": true,
+      "material": "PhotoBaked__wall__atlas0",
+      "source_material": "wall",
+      "passed": true,
+      "alpha_socket": 1.0,
+      "alpha_linked": false,
+      "emission_strength": 0.0,
+      "photo_alpha_is_support_not_opacity": true
+    },
+    {
+      "original_BaseColor_fallback_graph_equal": true,
+      "material": "PhotoBaked__wall__atlas1",
+      "source_material": "wall",
+      "passed": true,
+      "alpha_socket": 1.0,
+      "alpha_linked": false,
+      "emission_strength": 0.0,
+      "photo_alpha_is_support_not_opacity": true
+    },
+    {
+      "original_BaseColor_fallback_graph_equal": true,
+      "material": "PhotoBaked__white_vehicle__atlas1",
+      "source_material": "white_vehicle",
+      "passed": true,
+      "alpha_socket": 1.0,
+      "alpha_linked": false,
+      "emission_strength": 0.0,
+      "photo_alpha_is_support_not_opacity": true
+    },
+    {
+      "original_BaseColor_fallback_graph_equal": true,
+      "material": "PhotoBaked__wood__atlas1",
+      "source_material": "wood",
+      "passed": true,
+      "alpha_socket": 1.0,
+      "alpha_linked": false,
+      "emission_strength": 0.0,
+      "photo_alpha_is_support_not_opacity": true
+    },
+    {
+      "original_BaseColor_fallback_graph_equal": true,
+      "material": "PhotoBaked__wood_y__atlas1",
+      "source_material": "wood_y",
+      "passed": true,
+      "alpha_socket": 1.0,
+      "alpha_linked": false,
+      "emission_strength": 0.0,
+      "photo_alpha_is_support_not_opacity": true
+    },
+    {
+      "original_BaseColor_fallback_graph_equal": true,
+      "material": "PhotoBaked__yellow__atlas1",
+      "source_material": "yellow",
+      "passed": true,
+      "alpha_socket": 1.0,
+      "alpha_linked": false,
+      "emission_strength": 0.0,
+      "photo_alpha_is_support_not_opacity": true
+    }
+  ],
+  "images": [
+    {
+      "name": "photo_atlas_00.png",
+      "packed": true,
+      "packed_sha256": "e83335522e6eca7636e26d5aca231bdfdaef95bcb013635c7827bb45671f5b69",
+      "colorspace": "sRGB",
+      "alpha_mode": "CHANNEL_PACKED",
+      "filepath": "/home/wqz/real2sim_agent_repair_20261003/texture/final_texture_v4/textures/photo_atlas_00.png"
+    },
+    {
+      "name": "photo_atlas_01.png",
+      "packed": true,
+      "packed_sha256": "12019d1240a21431a2668580dfea1f216feff4880359144920da1818239a65de",
+      "colorspace": "sRGB",
+      "alpha_mode": "CHANNEL_PACKED",
+      "filepath": "/home/wqz/real2sim_agent_repair_20261003/texture/final_texture_v4/textures/photo_atlas_01.png"
+    }
+  ],
+  "unpacked_dependencies": [],
+  "linked_libraries": [],
+  "scene_resaved": false,
+  "geometry_transform_visibility_equal": true,
+  "lighting_equal": true,
+  "scope": "Actual saved node links/UV-source names/alpha/emission/packed dependencies plus preserved nonbase-graph hashes. Does not assert physical albedo or native scene acceptance.",
+  "canonical_audit_note": "Canonical single-coordinate appearance checker cannot express UV photo plus exactly preserved original world-coordinate fallback/bump; its raw failed result remains alongside this narrower actual binding audit."
+}

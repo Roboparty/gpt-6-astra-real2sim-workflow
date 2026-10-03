@@ -1,0 +1,16 @@
+{
+  "code_sha256": "cd8f3701bf5e930cb3a2b0c1f1d85eec00320079e4598ce4fda3497fa3a09dee",
+  "editor_active": "DeclaredUV",
+  "render_active": [
+    "RenderUV"
+  ],
+  "declared": "DeclaredUV",
+  "audit_status": "failed",
+  "audit_failures": [
+    "Implicit UV reads a different render-active map: Surface"
+  ],
+  "implicit_vs_declared_MAE": 0.11725452583414153,
+  "implicit_vs_render_MAE": 0.0,
+  "bug_confirmed": false,
+  "fix_confirmed": true
+}

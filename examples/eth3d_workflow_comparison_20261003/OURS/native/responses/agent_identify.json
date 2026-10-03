@@ -1,0 +1,12 @@
+{
+  "status": "complete",
+  "evidence": [
+    "Actual supplied RGB observation and permitted predicted-depth measurement artifacts"
+  ],
+  "reasoning_summary": "Generic category identities are observed. No exact manufacturer model identity is claimed.",
+  "parameters": {},
+  "artifacts": [
+    "identity.json"
+  ],
+  "issues": []
+}

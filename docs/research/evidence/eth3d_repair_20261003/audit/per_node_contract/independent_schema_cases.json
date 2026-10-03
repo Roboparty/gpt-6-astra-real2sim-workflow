@@ -1,0 +1,72 @@
+{
+  "status": "PASS",
+  "cases": [
+    {
+      "case": "valid_rigid_mixed",
+      "expected_accept": true,
+      "actual_accept": true,
+      "error": null
+    },
+    {
+      "case": "valid_soft_all_uv",
+      "expected_accept": true,
+      "actual_accept": true,
+      "error": null
+    },
+    {
+      "case": "missing_material_mapping",
+      "expected_accept": false,
+      "actual_accept": false,
+      "error": "Per-node coordinates must declare every material exactly once"
+    },
+    {
+      "case": "extra_material_mapping",
+      "expected_accept": false,
+      "actual_accept": false,
+      "error": "Per-node coordinates must declare every material exactly once"
+    },
+    {
+      "case": "empty_node_map",
+      "expected_accept": false,
+      "actual_accept": false,
+      "error": "Per-node coordinates need named active texture nodes"
+    },
+    {
+      "case": "unknown_mapping",
+      "expected_accept": false,
+      "actual_accept": false,
+      "error": "Invalid texture-node mapping"
+    },
+    {
+      "case": "extra_coordinate_field",
+      "expected_accept": false,
+      "actual_accept": false,
+      "error": "Texture-node coordinates contain missing or extra fields"
+    },
+    {
+      "case": "UV_missing_name",
+      "expected_accept": false,
+      "actual_accept": false,
+      "error": "Texture-node coordinates contain missing or extra fields"
+    },
+    {
+      "case": "soft_world",
+      "expected_accept": false,
+      "actual_accept": false,
+      "error": "Textured soft surfaces require UV for every texture node"
+    },
+    {
+      "case": "malformed_node_spec",
+      "expected_accept": false,
+      "actual_accept": false,
+      "error": "Invalid texture-node coordinate declaration"
+    },
+    {
+      "case": "empty_node_name",
+      "expected_accept": false,
+      "actual_accept": false,
+      "error": "Invalid texture-node coordinate declaration"
+    }
+  ],
+  "code_sha256": "f2126376eaa165a13f973e610895045f7ab93d4b8d149b4a74e30aeeefddc57c"
+}

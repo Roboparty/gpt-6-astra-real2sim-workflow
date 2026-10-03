@@ -1,0 +1,17 @@
+{
+  "schema": "real2sim.repair-candidate-status/1",
+  "status": "rejected_source_visual_regression",
+  "geometry_sha256": "c288f8bb9688defd71f2faeb8dfddfefdeac2c56b714187dde0c2a3125d771b4",
+  "texture_sha256": "b9e1abb33fb4ab050478c3038127a1cfe755e861ed4b8373d47c0434b8ac2f34",
+  "unchanged_freeze_files": [
+    "geometry_final_freeze.json",
+    "texture_final_freeze.json"
+  ],
+  "cause": "ceiling_pipe2 became an oversized rotated cylinder while shortening its length via dimensions.x; actual first-hit rays occlude wood trolley/cages in allowed input24/28 and20/32/35",
+  "evidence": [
+    "comparison_0.jpg",
+    "comparison_1.jpg"
+  ],
+  "scope": "Numeric structure pass does not establish source-view visual acceptance. Models, evaluations and earlier freeze-time state remain preserved. No post-freeze GT feedback to authors.",
+  "initial_visual_hypothesis": "Initially appeared to be a new shell wall; independent full-scene BVH and author diagnosis both identified ceiling_pipe2 instead"
+}

@@ -1,0 +1,20 @@
+[
+  {
+    "owner": "white_van",
+    "part": "van_hub1_0",
+    "landmark": "white_van_observed_endpoint_1",
+    "owner_affine_vs_actual_point_difference_m": 0.025896403172264153
+  },
+  {
+    "owner": "white_van",
+    "part": "van_tyre-1_0",
+    "landmark": "white_van_observed_endpoint_2",
+    "owner_affine_vs_actual_point_difference_m": 0.11825191528931023
+  },
+  {
+    "owner": "black_car",
+    "part": "car_tyre-1_0",
+    "landmark": "black_car_observed_endpoint_2",
+    "owner_affine_vs_actual_point_difference_m": 0.08705729097642004
+  }
+]

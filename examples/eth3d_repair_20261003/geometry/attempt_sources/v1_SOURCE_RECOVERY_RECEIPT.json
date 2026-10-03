@@ -1,0 +1,9 @@
+{
+  "source": "/home/wqz/real2sim_agent_repair_20261003/geometry/candidate/repair_geometry_recovered.py",
+  "sha256": "823b221c48125c2bf732f85387cb3ef98f36eba7720447f902d5391ce9fb052e",
+  "method": "Recovered by reversing this run recorded source edits from the retained candidate_v3 recipe",
+  "contemporaneous_snapshot": false,
+  "original_pre_run_hash_available": false,
+  "binary_or_geometry_replay_proof": false,
+  "scope": "Qualified recovered recipe; original frozen blend/JSON/failure reports remain authoritative"
+}

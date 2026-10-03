@@ -1,0 +1,24 @@
+{
+  "soft_surface": false,
+  "material_names": [
+    "PhotoWood"
+  ],
+  "texture_scope": {
+    "source_kind": "original",
+    "application": "local",
+    "mapping": "per_node",
+    "node_mappings": {
+      "PhotoWood": {
+        "PhotoAtlasImage": {
+          "mapping": "uv",
+          "uv_map": "PhotoAtlas"
+        },
+        "Noise Texture": {
+          "mapping": "world"
+        }
+      }
+    },
+    "uncertain_completion": "Example only; actual sources/support must be supplied"
+  },
+  "note": "Thisrigidmixedexample is invalid forsoft_surface=true. Missing/extra material/node entries andunknown/extra coordinatefields are rejected; actualBlenderactive nodes mustmatch exactly."
+}

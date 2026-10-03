@@ -1,0 +1,8 @@
+{
+  "directory": "candidate",
+  "status": "rejected",
+  "reason": "Nonuniform object TRS lost shear;15connections and2landmark bindings failed",
+  "model_sha256": "67b1f48fedcb86e58e43952d630d141d26943902bf7d830b5247c55291bb766b",
+  "scene_sha256": "1f3762f43f8c069e4fa0783f5f3dea1f506753d26e17dc0103e80ffaeb3e5bfd",
+  "recipe_snapshot": "No contemporaneous separate recipe snapshot; do not claim frozen-source provenance. Model/JSON/evidence retained."
+}

@@ -45,6 +45,22 @@ python tools/test_appearance_worker.py
 
 ## 范围与迁移
 
+2026-10-03 新增显式逐纹理节点坐标声明，支持刚性材质中的 UV 照片层和世界坐标程序层并存。例如，某行绑定材质 `CoatedWall`，其实际活跃纹理节点分别命名为 `PhotoLayer` 和 `Noise Texture`：
+
+```json
+{
+  "mapping": "per_node",
+  "node_mappings": {
+    "CoatedWall": {
+      "PhotoLayer": {"mapping": "uv", "uv_map": "PhotoAtlas"},
+      "Noise Texture": {"mapping": "world"}
+    }
+  }
+}
+```
+
+以上是 `texture_scope` 中的坐标字段示例，其余来源、应用范围和证据字段仍必填。每个绑定材质、每个活跃纹理节点必须精确列出；漏项、多余节点、错误坐标或 UV 名称均拒绝。软表面的每个纹理节点仍须使用 UV，包括凹凸与回退图层；该扩展不豁免原有软表面或着色器组限制。隐式 UV 以实际渲染激活层为准，不再用编辑器当前选中层冒充。实现与真实 Blender 正反例见 [ETH3D 修复验证](research/ETH3D_REPAIR_20261003.md)。
+
 完整字段与例子见 [appearance.md](../workflow/r2s/prompts/appearance.md)。refinement 默认 `appearance_contract_version: 1`，版本进入阶段指纹。无 refinement 的旧任务保持原行为；显式 version 0 只用于历史协议复现，不代表符合新要求。旧的局部四阶段测试入口显式保持 version 0，不能作为新完整场景验证。
 
 当前着色器适配器要求一个活跃 Principled BSDF，复杂着色器组须先扩充适配与回归，不以不完整检查冒充支持。纹理坐标和 UV 存在性检查不能判定艺术图案是否正确，也不能量化所有 UV 拉伸或残余烘焙光照。重复区域是否真是同种图案、观察是否漏掉物体、全景是否更接近原图，仍由 Agent 对绑定的原图和真实渲染判断。有限测试不构成任意场景质量保证。

@@ -7,6 +7,9 @@ import numpy as np
 from pathlib import Path
 from mathutils import Vector
 from mathutils.bvhtree import BVHTree
+sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
+from r2s.camera import camera_for_frame
+from r2s.blender_camera import apply_camera
 args=sys.argv[sys.argv.index('--')+1:];scene_file=Path(args[0]);out=Path(args[1]);scene=json.loads(scene_file.read_text());structure=scene['structure']
 sha=lambda p:hashlib.sha256(Path(p).read_bytes()).hexdigest()
 result=dict(schema='real2sim.structure-audit/1',source_model_sha256=sha(bpy.data.filepath),source_scene_sha256=sha(scene_file),model_version=scene['model_version'],evaluated_visible_meshes=True,method='Evaluated triangle BVHs, signed solid membership, world-space joint anchors and floor bounds; surface-intersection screening of all non-joint component pairs. No dynamics proxy is used.',assemblies=[],interassembly_checks=[],failures=[],evidence_hashes={})
@@ -74,13 +77,17 @@ for a in structure['assemblies']:
   if not ok:result['failures'].append(dict(kind='floor',entity=a['entity'],part=f['part'],z=z))
  # Bind every fitted correspondence to its owned evaluated part. Re-measure the
  # closest actual mesh point, not a copied residual from the parameter fitting file.
- cal=scene['camera'];R=np.array(cal['rotation_world_to_cv']);C=np.array(cal['position'])
  for lm in row['source_landmarks']:
+  cal=camera_for_frame(scene,lm.get('frame_id',a['fit'].get('frame_id')));R=np.array(cal['rotation_world_to_cv']);C=np.array(cal['position'])
+  lm['resolved_frame_id']=cal.get('frame_id','primary')
   part=lm.get('part')
   if part not in names or names[part] not in meshes:
    result['failures'].append(dict(kind='unbound_source_landmark',entity=a['entity'],landmark=lm['id']));continue
   point,normal,index,distance=meshes[names[part]]['tree'].find_nearest(Vector(lm['world']))
-  q=(np.array(point)-C)@R.T;uv=q[:2]/q[2]*cal['focal_px']+np.array(cal['principal_point']);lm.update(measured_world_point=list(point),distance_to_bound_mesh_m=float(distance),projected=uv.tolist(),error_px=float(np.linalg.norm(uv-lm['uv'])))
+  q=(np.array(point)-C)@R.T
+  if q[2]<=0:
+   lm.update(projected=None,error_px=1e9);result['failures'].append(dict(kind='landmark_behind_source_camera',entity=a['entity'],landmark=lm['id'],frame_id=lm['resolved_frame_id']));continue
+  uv=q[:2]/q[2]*np.array([cal['focal_px'],cal.get('focal_y_px',cal['focal_px'])])+np.array(cal['principal_point']);lm.update(measured_world_point=list(point),distance_to_bound_mesh_m=float(distance),projected=uv.tolist(),error_px=float(np.linalg.norm(uv-lm['uv'])))
   if distance>.008:result['failures'].append(dict(kind='landmark_part_mismatch',entity=a['entity'],landmark=lm['id'],distance_m=float(distance)))
  errors=[v['error_px'] for v in row['source_landmarks']];limits=structure.get('acceptance',{'landmark_median_px':9,'landmark_max_px':18})
  row['landmark_median_px']=float(np.median(errors));row['landmark_max_px']=max(errors)
@@ -120,21 +127,36 @@ if os.environ.get('R2S_STRUCTURE_NO_RENDER')=='1':
 # Views, with coherent shapes exposed from angles unavailable in the source photo.
 sc=bpy.context.scene;sourcecam=sc.camera;visibility={o.name:o.hide_render for o in bpy.data.objects};world_original=sc.world
 sc.render.engine='CYCLES';sc.cycles.samples=24;sc.cycles.use_denoising=True;sc.cycles.device='CPU' if os.environ.get('R2S_CPU')=='1' else 'GPU'
-sc.render.resolution_percentage=100;sc.render.resolution_x=scene['camera']['image_size'][0];sc.render.resolution_y=scene['camera']['image_size'][1]
+sc.render.resolution_percentage=100;apply_camera(sc,sourcecam,scene['camera'])
 if structure.get('scope')=='empty_room':
  # Full frame remains compatible with stage_worker's original-image crop path.
  result['source_crop_xyxy']=[0,0,*scene['camera']['image_size']]
  sc.render.use_border=False;sc.render.use_crop_to_border=False;sc.render.filepath=str(out/'furniture_source_view.png')
  bpy.ops.render.render(write_still=True)
  result['evidence_hashes']['furniture_source_view.png']=sha(out/'furniture_source_view.png')
+ if len(scene.get('cameras',[]))>1 or scene['camera'].get('source_sha256'):
+  result['source_views']=[dict(frame_id=scene['camera'].get('frame_id','primary'),crop_xyxy=result['source_crop_xyxy'],image_size=scene['camera']['image_size'],render='furniture_source_view.png')]
  result['status']='passed' if not result['failures'] else 'failed'
  (out/'structural_audit.json').write_text(json.dumps(result,indent=2));print('STRUCTURE_RESULT',result['status'],json.dumps(result['failures']));sys.exit(0)
-uv=np.array([x['uv'] for a in result['assemblies'] for x in a['source_landmarks']]);lo=np.floor(uv.min(axis=0)-30).astype(int);hi=np.ceil(uv.max(axis=0)+30).astype(int);W,H=scene['camera']['image_size'];lo=np.maximum(lo,0);hi=np.minimum(hi,[W,H]);result['source_crop_xyxy']=[*lo.tolist(),*hi.tolist()]
-sc.render.use_border=True;sc.render.use_crop_to_border=True;sc.render.border_min_x=lo[0]/W;sc.render.border_max_x=hi[0]/W;sc.render.border_min_y=1-hi[1]/H;sc.render.border_max_y=1-lo[1]/H;sc.render.filepath=str(out/'furniture_source_view.png');bpy.ops.render.render(write_still=True);sc.render.use_border=False;sc.render.use_crop_to_border=False
+source_groups={scene['camera'].get('frame_id','primary'):[]}
+for assembly in result['assemblies']:
+ for landmark in assembly['source_landmarks']:source_groups.setdefault(landmark['resolved_frame_id'],[]).append(landmark['uv'])
+result['source_views']=[]
+for index,(frame_id,coordinates) in enumerate(source_groups.items()):
+ cal=camera_for_frame(scene,frame_id);apply_camera(sc,sourcecam,cal);W,H=cal['image_size']
+ uv=np.asarray(coordinates);lo=np.maximum(np.floor(uv.min(axis=0)-30).astype(int),0) if coordinates else np.array([0,0]);hi=np.minimum(np.ceil(uv.max(axis=0)+30).astype(int),[W,H]) if coordinates else np.array([W,H])
+ if np.any(hi<=lo):raise ValueError('Source crop lies outside its declared frame: '+frame_id)
+ crop=[*lo.tolist(),*hi.tolist()];name='furniture_source_view.png' if index==0 else f'furniture_source_view_{index:04d}.png'
+ if index==0:result['source_crop_xyxy']=crop
+ sc.render.use_border=True;sc.render.use_crop_to_border=True;sc.render.border_min_x=lo[0]/W;sc.render.border_max_x=hi[0]/W;sc.render.border_min_y=1-hi[1]/H;sc.render.border_max_y=1-lo[1]/H;sc.render.filepath=str(out/name);bpy.ops.render.render(write_still=True);sc.render.use_border=False;sc.render.use_crop_to_border=False
+ result['source_views'].append(dict(frame_id=frame_id,crop_xyxy=crop,image_size=[W,H],render=name))
+ result['evidence_hashes'][name]=sha(out/name)
+apply_camera(sc,sourcecam,scene['camera'])
 inspection_packet=json.loads((out/'packet.json').read_text()) if (out/'packet.json').exists() else {}
 inspection_size=inspection_packet.get('parameters',{}).get('inspection_resolution',[700,700])
 if len(inspection_size)!=2 or any(type(v) is not int or not 64<=v<=4096 for v in inspection_size):raise ValueError('Invalid inspection_resolution')
 sc.render.resolution_x,sc.render.resolution_y=inspection_size
+sc.render.pixel_aspect_x=sc.render.pixel_aspect_y=1
 result['inspection_resolution']=inspection_size
 world=bpy.data.worlds.new('structure_inspection_world');world.use_nodes=True;world.node_tree.nodes['Background'].inputs[0].default_value=(.8,.8,.8,1);world.node_tree.nodes['Background'].inputs[1].default_value=.7;sc.world=world
 bpy.ops.object.camera_add();cam=bpy.context.object;cam.name='structure_inspection_camera';cam.data.type='ORTHO';sc.camera=cam

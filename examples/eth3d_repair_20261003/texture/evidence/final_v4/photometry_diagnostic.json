@@ -1,0 +1,46 @@
+{
+  "scope": "fixed three input floor regions, no GT/heldout; heuristic exposure diagnosis of photo-baked colour, not physical light/albedo recovery",
+  "rows": [
+    {
+      "frame": 8,
+      "source_roi_xyxy": [
+        650,
+        600,
+        1160,
+        770
+      ],
+      "source_median_linear_luma": 0.20302134606312605,
+      "render_median_linear_luma": 0.19023296228716277,
+      "suggested_exposure_delta_ev": 0.09386417483220313
+    },
+    {
+      "frame": 12,
+      "source_roi_xyxy": [
+        450,
+        590,
+        1100,
+        770
+      ],
+      "source_median_linear_luma": 0.20002896833286188,
+      "render_median_linear_luma": 0.2417174096487265,
+      "suggested_exposure_delta_ev": -0.2731124394522716
+    },
+    {
+      "frame": 20,
+      "source_roi_xyxy": [
+        420,
+        550,
+        1140,
+        760
+      ],
+      "source_median_linear_luma": 0.20143967141732178,
+      "render_median_linear_luma": 0.32495747136168734,
+      "suggested_exposure_delta_ev": -0.6899030836516902
+    }
+  ],
+  "median_ev": -0.2731124394522716,
+  "ev_spread": 0.7837672584838933,
+  "suggested_bounded_delta_ev": -0.2731124394522716,
+  "consistent_sign": false,
+  "colour_pipeline": "source RGB and PNG atlases store sRGB bytes; sampled texture is decoded by Blender sRGB node. Unsupported fallback remains original scene-linear BaseColor graph. Render comparison linearizes display sRGB for diagnostic only."
+}

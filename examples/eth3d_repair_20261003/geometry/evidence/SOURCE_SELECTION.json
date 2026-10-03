@@ -1,0 +1,45 @@
+{
+  "selected_model_sha256": "506982c1c94a94067b19a58dc1a55d7b9ab6039ca1b8d00f61fba76292cc5542",
+  "selection": "LIMITED geometry-only candidate; not full native visual/physical pass",
+  "viewed_fixed_input_indices": [
+    0,
+    4,
+    8,
+    12,
+    16,
+    20,
+    24,
+    28,
+    32,
+    35
+  ],
+  "new_pipe_occlusion_resolved": true,
+  "retained_tradeoffs": [
+    "source12coarsevehicle shape and rear blue region appearance",
+    "foot reconstruction from single-view DA3+floor assumption; second-view tracking rejected",
+    "Unseen cageback depth assumption; longrange terminal uncertainty",
+    "Legacyrectanglecollision unsupported"
+  ],
+  "reference_pixels": 689349,
+  "macro_absrel": [
+    0.07773398844953455,
+    0.06661141835467935
+  ],
+  "conditional_absrel_view_outcomes": {
+    "improved": 30,
+    "regressed": 6
+  },
+  "missing_pixels": [
+    415,
+    1120
+  ],
+  "macro_30m_missing_penalty_mae": [
+    0.5335468672799082,
+    0.505618221451205
+  ],
+  "penalized_view_outcomes": {
+    "improved": 22,
+    "regressed": 14
+  },
+  "selection_basis": "Allowed source RGB/DA3 only. No GT feedback read; geometry frozen before independent measurement."
+}

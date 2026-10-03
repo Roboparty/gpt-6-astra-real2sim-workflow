@@ -91,6 +91,11 @@ def audit(out, accepted=None):
     covered = set()
     for row in data['materials']:
         scope = row['texture_scope']
+        per_node = scope.get('mapping') == 'per_node'
+        mappings = scope.get('node_mappings', {})
+        if per_node and (not isinstance(mappings, dict) or set(mappings) != set(row['material_names'])):
+            failures.append('Per-node coordinates must declare every material exactly once: ' + row['entity'])
+            mappings = {}
         for name in row['objects']:
             obj = bpy.context.scene.objects.get(name)
             if obj is None or obj.hide_render:
@@ -141,33 +146,55 @@ def audit(out, accepted=None):
                     failures.append('Constant material contains an active texture: ' + matname)
                 if any(n.type == 'GROUP' and n.name in reachable for n in nodes):
                     failures.append('Shader group requires explicit audit adapter: ' + matname)
+                declared_nodes = mappings.get(matname, {}) if per_node else {}
+                if per_node and (not isinstance(declared_nodes, dict) or not declared_nodes or set(declared_nodes) != {n.name for n in textures}):
+                    failures.append('Texture-node declarations differ from active nodes: ' + matname)
+                    if not isinstance(declared_nodes, dict):
+                        declared_nodes = {}
+                uv_checks = {}
                 for node in textures:
+                    spec = declared_nodes.get(node.name, {}) if per_node else scope
+                    if not isinstance(spec, dict):
+                        spec = {}
+                    mapping = spec.get('mapping')
+                    if not isinstance(mapping, str) or mapping not in {'uv', 'object', 'world'}:
+                        failures.append('Invalid texture-node mapping: ' + matname + '/' + node.name)
+                        continue
+                    if per_node and set(spec) != ({'mapping', 'uv_map'} if mapping == 'uv' else {'mapping'}):
+                        failures.append('Texture-node coordinate fields differ: ' + matname + '/' + node.name)
                     coords = vector_sources(node.inputs['Vector']) if 'Vector' in node.inputs else {('other', '')}
-                    if scope['mapping'] == 'uv':
-                        uvname = scope.get('uv_map', '')
+                    if mapping == 'uv':
+                        uvname = spec.get('uv_map', '')
+                        if not isinstance(uvname, str) or not uvname.strip():
+                            failures.append('UV texture node requires a named UV map: ' + matname + '/' + node.name)
+                            continue
+                        uv_checks.setdefault(uvname, []).append(node)
                         if not coords or any(kind != 'uv' or uv not in ('', uvname) for kind, uv in coords):
                             failures.append('Declared UV material uses other coordinates: ' + matname)
-                    elif scope['mapping'] in {'object', 'world'} and (not coords or any(kind != scope['mapping'] for kind, _ in coords)):
+                    elif not coords or any(kind != mapping for kind, _ in coords):
                         failures.append('Actual texture coordinates differ from declaration: ' + matname)
+                    if row['soft_surface'] and mapping != 'uv':
+                        failures.append('Soft texture does not follow surface UV: ' + name + '/' + node.name)
                     if node.type == 'TEX_IMAGE' and scope['application'] == 'local' and node.extension == 'REPEAT':
                         failures.append('Local source sample still repeats outside its support: ' + matname)
                     if node.type == 'TEX_IMAGE' and scope['application'] == 'whole_object' and node.extension == 'REPEAT':
                         failures.append('Whole-object image must use EXTEND/CLIP; declare and justify tiling separately: ' + matname)
-                if row['soft_surface'] and textures and scope['mapping'] != 'uv':
-                    failures.append('Soft texture does not follow surface UV: ' + name)
-                if scope['mapping'] == 'uv':
+                if not per_node and scope['mapping'] == 'uv' and not textures:
+                    uv_checks[scope.get('uv_map', '')] = []
+                for uvname, uv_nodes in uv_checks.items():
                     deps = bpy.context.evaluated_depsgraph_get(); ev = obj.evaluated_get(deps); mesh = ev.to_mesh()
                     try:
-                        layer = mesh.uv_layers.get(scope.get('uv_map', '')) if mesh else None
+                        layer = mesh.uv_layers.get(uvname) if mesh else None
                         if not layer or not len(layer.data):
                             failures.append('Missing evaluated UV map: ' + name)
                         elif any(not (-1e10 < v < 1e10) for loop in layer.data for v in loop.uv):
                             failures.append('Nonfinite evaluated UV map: ' + name)
                         elif all((loop.uv-layer.data[0].uv).length < 1e-8 for loop in layer.data):
                             failures.append('Collapsed evaluated UV map: ' + name)
-                        if layer and (not mesh.uv_layers.active or mesh.uv_layers.active.name != layer.name):
-                            if any(('uv', '') in vector_sources(n.inputs['Vector']) for n in textures if 'Vector' in n.inputs):
-                                failures.append('Implicit UV reads a different active map: ' + name)
+                        render_layer = next((item for item in mesh.uv_layers if item.active_render), None) if mesh else None
+                        if layer and (not render_layer or render_layer.name != layer.name):
+                            if any(('uv', '') in vector_sources(n.inputs['Vector']) for n in uv_nodes if 'Vector' in n.inputs):
+                                failures.append('Implicit UV reads a different render-active map: ' + name)
                     finally:
                         ev.to_mesh_clear()
     current = snapshot()

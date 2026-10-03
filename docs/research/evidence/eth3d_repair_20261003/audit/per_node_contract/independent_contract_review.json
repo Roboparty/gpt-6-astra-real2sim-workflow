@@ -1,0 +1,34 @@
+{
+  "status": "PASS",
+  "source_sha256": {
+    "appearance.py": "f2126376eaa165a13f973e610895045f7ab93d4b8d149b4a74e30aeeefddc57c",
+    "blender_appearance.py": "cd8f3701bf5e930cb3a2b0c1f1d85eec00320079e4598ce4fda3497fa3a09dee"
+  },
+  "legacy_metadata_contract": "PASS",
+  "legacy_actual_Blender_UV_shader_material_lock_fixed_view_render": "PASS",
+  "per_node_actual_Blender_cases": 16,
+  "per_node_actual_Blender_status": "passed",
+  "frozen_scene_soft_world_failures_preserved": {
+    "case": "frozen_graph",
+    "status": "rigid_mixed_layers_verified_soft_failures_retained",
+    "failures": 75,
+    "model_sha256": "b9e1abb33fb4ab050478c3038127a1cfe755e861ed4b8373d47c0434b8ac2f34"
+  },
+  "independent_implicit_UV_actual_render_regression": {
+    "code_sha256": "cd8f3701bf5e930cb3a2b0c1f1d85eec00320079e4598ce4fda3497fa3a09dee",
+    "editor_active": "DeclaredUV",
+    "render_active": [
+      "RenderUV"
+    ],
+    "declared": "DeclaredUV",
+    "audit_status": "failed",
+    "audit_failures": [
+      "Implicit UV reads a different render-active map: Surface"
+    ],
+    "implicit_vs_declared_MAE": 0.11725452583414153,
+    "implicit_vs_render_MAE": 0.0,
+    "bug_confirmed": false,
+    "fix_confirmed": true
+  },
+  "scope": "Stable-codehash independent reruns; no frozen asset change. Per-node extension does not make softworld or group coordinates acceptable."
+}

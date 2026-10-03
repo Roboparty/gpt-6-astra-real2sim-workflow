@@ -1,0 +1,18 @@
+[
+  {
+    "variant": "RGB_SE3",
+    "arrays_byte_values_unchanged": {
+      "rendered_z.npy": true,
+      "gt_to_model_m.npy": true,
+      "model_surface_samples.npy": true
+    }
+  },
+  {
+    "variant": "RGB_K_T",
+    "arrays_byte_values_unchanged": {
+      "rendered_z.npy": true,
+      "gt_to_model_m.npy": true,
+      "model_surface_samples.npy": true
+    }
+  }
+]

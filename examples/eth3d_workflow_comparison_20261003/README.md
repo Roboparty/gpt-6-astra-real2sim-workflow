@@ -1,0 +1,9 @@
+# Independently authored ETH3D delivery-area candidates
+
+See the [comparison report](../../docs/research/ETH3D_WORKFLOW_COMPARISON_20261003.md) for common inputs, budgets, frozen scores and limitations. Both are scene-specific semantic construction recipes. No large models, raw photographs/depth, laser scans or inference weights are redistributed.
+
+- `OURS/`: exact final recipe, parameter/observation metadata, native runtime snapshot, checks and timestamped state. Follow [its README](OURS/README.md) to replay the final asset with Blender 4.5.3. `replay_builder.py` relocates the recorded root and does not bypass native acceptance. Later final-state evidence is an append-only addendum.
+- `AWSM/`: independent `build_scene.py` and `layout.json`, camera and semantic metadata, checks and source manifest. Copy the directory to a new workspace, then run `blender --background --factory-startup --threads 2 --python build_scene.py`. It writes `scene.blend` and `scene.glb` beside the recipe. It uses the layout, not the other candidate's geometry. Cameras are recorded in JSON and instantiated by the common checkers.
+- `shared_reference/`: actual common DA3 inference/validation scripts, frozen window configuration and input manifests. Replaying this preparation requires the hash-pinned external source, weights and raw input photographs at the recorded paths (or an explicitly recorded relocation); these are not included. The scripts are provenance for the measured run, not a self-contained model installation.
+
+OURS measurement candidate is `FAILED_NATIVE / LIMITED`; AWSM is `LIMITED`. Neither has full visual or physics acceptance. OURS strict GLB camera and USD identity checks failed. Replaying a recipe is not a successful workflow or interchange validation; exact geometry identity on a fresh replay has not been independently demonstrated. Absolute paths in receipts are original provenance, not assumed local paths.

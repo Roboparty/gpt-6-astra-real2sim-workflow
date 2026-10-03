@@ -1,0 +1,310 @@
+{
+  "model": "depth-anything/DA3-GIANT",
+  "weights_revision": "7cd62ae9315b9dff094d2d300e4ad012640607dd",
+  "official_source_commit": "3d835ec1a5802d64a8b8b15f817a1ab54809bfe4",
+  "source_archive_sha256": "addb90f1ec9c462f794d122085da6c7a6e612d452cebfcae1bbffa40404df1ac",
+  "windows": [
+    [
+      0,
+      1,
+      2,
+      3
+    ],
+    [
+      2,
+      3,
+      4,
+      5
+    ],
+    [
+      4,
+      5,
+      6,
+      7
+    ],
+    [
+      6,
+      7,
+      8,
+      9
+    ],
+    [
+      8,
+      9,
+      10,
+      11
+    ],
+    [
+      10,
+      11,
+      12,
+      13
+    ],
+    [
+      12,
+      13,
+      14,
+      15
+    ],
+    [
+      14,
+      15,
+      16,
+      17
+    ],
+    [
+      16,
+      17,
+      18,
+      19
+    ],
+    [
+      18,
+      19,
+      20,
+      21
+    ],
+    [
+      20,
+      21,
+      22,
+      23
+    ],
+    [
+      22,
+      23,
+      24,
+      25
+    ],
+    [
+      24,
+      25,
+      26,
+      27
+    ],
+    [
+      26,
+      27,
+      28,
+      29
+    ],
+    [
+      28,
+      29,
+      30,
+      31
+    ],
+    [
+      30,
+      31,
+      32,
+      33
+    ],
+    [
+      32,
+      33,
+      34,
+      35
+    ]
+  ],
+  "process_res": 392,
+  "process_res_method": "upper_bound_resize",
+  "align_to_input_ext_scale": true,
+  "ref_view_strategy": "saddle_balanced",
+  "use_ray_pose": false,
+  "selection": "max centrality, ties earliest window",
+  "input_intrinsics": "K_raster, corner-origin pixel centers at (u+0.5,v+0.5), scaled by DA3 API",
+  "output_K_depth": "integer-centre, pixel centers (u,v); subtract 0.5 from API output principal point",
+  "gauge": "registered input camera, metres, Z-up; OpenCV C2W",
+  "source_frames_sha256": "d6ca1eeddcea573d2a4aaaf182839f34e31f73f0d987bca194d6565f1aebfc92",
+  "source_cameras_sha256": "43f58e180828990fbc26b7275104011d0eb9f0a32d5a82809a8b83c54cf6d1d5",
+  "inputs": [
+    {
+      "index": 0,
+      "path": "/data/wqz/real2sim-awsm-20261003/eth3d/benchmark_v1/observations/rgb/000.png",
+      "sha256": "e14725171523ed699d6036f7dbabcae822d432fd529ec526df4e3d326f72d50a"
+    },
+    {
+      "index": 1,
+      "path": "/data/wqz/real2sim-awsm-20261003/eth3d/benchmark_v1/observations/rgb/001.png",
+      "sha256": "bcd637e9db0cb5d9bfaf855ca7848117386fd42ea11671ae8903177e87e36e78"
+    },
+    {
+      "index": 2,
+      "path": "/data/wqz/real2sim-awsm-20261003/eth3d/benchmark_v1/observations/rgb/002.png",
+      "sha256": "c82e19bf07b5c3059ab3ac1fc84d2b3b27efbbef0351115e2eb03d27a1433efb"
+    },
+    {
+      "index": 3,
+      "path": "/data/wqz/real2sim-awsm-20261003/eth3d/benchmark_v1/observations/rgb/003.png",
+      "sha256": "e3fdb5210f4b395d68041aef629c61047fc7e635eb95d4fbcb2fdaf5678dff78"
+    },
+    {
+      "index": 4,
+      "path": "/data/wqz/real2sim-awsm-20261003/eth3d/benchmark_v1/observations/rgb/004.png",
+      "sha256": "dde0b1e3a680c28aaeb9e1d464f72f714bc45eeaa74b58fed6b412e8fad18c65"
+    },
+    {
+      "index": 5,
+      "path": "/data/wqz/real2sim-awsm-20261003/eth3d/benchmark_v1/observations/rgb/005.png",
+      "sha256": "41f65e5ed0ad177869f7ca24f837293fabb8807b3041b4ad7998368ab7707620"
+    },
+    {
+      "index": 6,
+      "path": "/data/wqz/real2sim-awsm-20261003/eth3d/benchmark_v1/observations/rgb/006.png",
+      "sha256": "3ea6a5ff48323669490de2caee6db0378e3388b6344b669ee8139d5f7b3a32ce"
+    },
+    {
+      "index": 7,
+      "path": "/data/wqz/real2sim-awsm-20261003/eth3d/benchmark_v1/observations/rgb/007.png",
+      "sha256": "4cce2504a70458f522d1fcd476a376b0a9f30c6d7ee9145a05c9f41ca8cd625b"
+    },
+    {
+      "index": 8,
+      "path": "/data/wqz/real2sim-awsm-20261003/eth3d/benchmark_v1/observations/rgb/008.png",
+      "sha256": "9684fbf04b95fe4465757e269bb3bb6a4924c406ac7511acbf1e825597b4962b"
+    },
+    {
+      "index": 9,
+      "path": "/data/wqz/real2sim-awsm-20261003/eth3d/benchmark_v1/observations/rgb/009.png",
+      "sha256": "41315267c887821ef94034b2470e650c240284c304c1bd7a37e2f1a1060f1856"
+    },
+    {
+      "index": 10,
+      "path": "/data/wqz/real2sim-awsm-20261003/eth3d/benchmark_v1/observations/rgb/010.png",
+      "sha256": "9950ab16a0500d5b7ea2af03243aa1f7c857b8a6713357723b15f718b257a955"
+    },
+    {
+      "index": 11,
+      "path": "/data/wqz/real2sim-awsm-20261003/eth3d/benchmark_v1/observations/rgb/011.png",
+      "sha256": "c1139b0cc408999f938f7e24f3ff4e917e96d7d28a49644f72b8ba0b4b1f61ab"
+    },
+    {
+      "index": 12,
+      "path": "/data/wqz/real2sim-awsm-20261003/eth3d/benchmark_v1/observations/rgb/012.png",
+      "sha256": "61316c7eccdcc97ca0305888d2d4c83ee57f8edba74d77b777f7d228b8531e4f"
+    },
+    {
+      "index": 13,
+      "path": "/data/wqz/real2sim-awsm-20261003/eth3d/benchmark_v1/observations/rgb/013.png",
+      "sha256": "9e08342c9cf69273bb9b0f3cc809c2e24373a047aaa448318f93d8fbd7085048"
+    },
+    {
+      "index": 14,
+      "path": "/data/wqz/real2sim-awsm-20261003/eth3d/benchmark_v1/observations/rgb/014.png",
+      "sha256": "2b64b82222e4c0ed01eaa8019b89970acb9e8a8db02aa833af3391d7a5100294"
+    },
+    {
+      "index": 15,
+      "path": "/data/wqz/real2sim-awsm-20261003/eth3d/benchmark_v1/observations/rgb/015.png",
+      "sha256": "52081c3fcc23b585402651a841a5b32d812f5ba5cba4ce72ce60b155ecbd4fd9"
+    },
+    {
+      "index": 16,
+      "path": "/data/wqz/real2sim-awsm-20261003/eth3d/benchmark_v1/observations/rgb/016.png",
+      "sha256": "eaf34c6a5e2d1388eddf2d7d6875a475b959cf05a7e0fc6add7bb13b9b971da6"
+    },
+    {
+      "index": 17,
+      "path": "/data/wqz/real2sim-awsm-20261003/eth3d/benchmark_v1/observations/rgb/017.png",
+      "sha256": "1235090c5e37154e47a896055d0a00c99a3d1b89ca469dcfc3d099ce597488e7"
+    },
+    {
+      "index": 18,
+      "path": "/data/wqz/real2sim-awsm-20261003/eth3d/benchmark_v1/observations/rgb/018.png",
+      "sha256": "6128fc349db933c11fb0dcb8b0a33e44d324e1a16c46d8a76b4a5a4e5544267c"
+    },
+    {
+      "index": 19,
+      "path": "/data/wqz/real2sim-awsm-20261003/eth3d/benchmark_v1/observations/rgb/019.png",
+      "sha256": "704da47cb748b67c070d85196a90080ad7692e6d3f6da4e613462f2c23424e01"
+    },
+    {
+      "index": 20,
+      "path": "/data/wqz/real2sim-awsm-20261003/eth3d/benchmark_v1/observations/rgb/020.png",
+      "sha256": "351bcfa6c3f8226bba97c423b63322b4231ad874f07a3bb3d5e77849805fa1a5"
+    },
+    {
+      "index": 21,
+      "path": "/data/wqz/real2sim-awsm-20261003/eth3d/benchmark_v1/observations/rgb/021.png",
+      "sha256": "2d21e9dbb56f8773ebee5659cd763a5185e4d60ec3a2724a5bf10b4f6ed46590"
+    },
+    {
+      "index": 22,
+      "path": "/data/wqz/real2sim-awsm-20261003/eth3d/benchmark_v1/observations/rgb/022.png",
+      "sha256": "fe09a82412c568d6bbc59388cd11424bce114af910163ddfaf327f3254fffcc3"
+    },
+    {
+      "index": 23,
+      "path": "/data/wqz/real2sim-awsm-20261003/eth3d/benchmark_v1/observations/rgb/023.png",
+      "sha256": "4bf4471169f97fab050445862c22b7de214d456fdbc0f555d418b21bfd82b384"
+    },
+    {
+      "index": 24,
+      "path": "/data/wqz/real2sim-awsm-20261003/eth3d/benchmark_v1/observations/rgb/024.png",
+      "sha256": "e65e9f1e77619f0811a2f0ae8611f0c0ad56070e2e32a8c8b582778f68a60591"
+    },
+    {
+      "index": 25,
+      "path": "/data/wqz/real2sim-awsm-20261003/eth3d/benchmark_v1/observations/rgb/025.png",
+      "sha256": "b31706c1258e174010467f7f7a8cef30836be72ad1e3f056a18a8d4f6d401608"
+    },
+    {
+      "index": 26,
+      "path": "/data/wqz/real2sim-awsm-20261003/eth3d/benchmark_v1/observations/rgb/026.png",
+      "sha256": "c321d7ac6582a1441b15e60e9356482bdbd86b22b3c6d522f927379af15bc8ed"
+    },
+    {
+      "index": 27,
+      "path": "/data/wqz/real2sim-awsm-20261003/eth3d/benchmark_v1/observations/rgb/027.png",
+      "sha256": "0f379f2684664e7224067273e27d483a8ef25017d49a72161e982feb8f8d19c2"
+    },
+    {
+      "index": 28,
+      "path": "/data/wqz/real2sim-awsm-20261003/eth3d/benchmark_v1/observations/rgb/028.png",
+      "sha256": "7ac847c26afec3b75092214284482ead89dc74c083f8546d843ad7e1ab9112cc"
+    },
+    {
+      "index": 29,
+      "path": "/data/wqz/real2sim-awsm-20261003/eth3d/benchmark_v1/observations/rgb/029.png",
+      "sha256": "c572cb4a2cd1936a2b044ea0476caa3fad89006f13cb3692a9c348d846d19627"
+    },
+    {
+      "index": 30,
+      "path": "/data/wqz/real2sim-awsm-20261003/eth3d/benchmark_v1/observations/rgb/030.png",
+      "sha256": "51bfd696c1fdf9d4b4f9b361a8fa1af680182e3cd1034b102ebeebf50d00c0ec"
+    },
+    {
+      "index": 31,
+      "path": "/data/wqz/real2sim-awsm-20261003/eth3d/benchmark_v1/observations/rgb/031.png",
+      "sha256": "19992292d0304c96751a3254528fab8cf2d947aa86bf0fa32b04801233bc7561"
+    },
+    {
+      "index": 32,
+      "path": "/data/wqz/real2sim-awsm-20261003/eth3d/benchmark_v1/observations/rgb/032.png",
+      "sha256": "31e4ffd2e7689cbd09f9e40ca4242c905bacf540f7422a6e98fd5d604a30747f"
+    },
+    {
+      "index": 33,
+      "path": "/data/wqz/real2sim-awsm-20261003/eth3d/benchmark_v1/observations/rgb/033.png",
+      "sha256": "ce1d0f2a5bc2df25919c2a9ff1c63f3d7aa94c6b49682b8006983922879e8cab"
+    },
+    {
+      "index": 34,
+      "path": "/data/wqz/real2sim-awsm-20261003/eth3d/benchmark_v1/observations/rgb/034.png",
+      "sha256": "e9b22d9d33bb3b3ea401737a02d9f2376a4fedcc5fe22269b18dc17b1d6c0aa6"
+    },
+    {
+      "index": 35,
+      "path": "/data/wqz/real2sim-awsm-20261003/eth3d/benchmark_v1/observations/rgb/035.png",
+      "sha256": "86044a587b4a3f5298ee4fcf6ff6f814da7a746825992b6a8515c85b559b140e"
+    }
+  ],
+  "deviations": [
+    "Official standalone DA3 source instead of unavailable AWSM vendored VIPE DAV3 runtime; same pinned DA3-GIANT weights and window/resize/scale settings.",
+    "Corner-origin K_raster supplied to match DA3 direct intrinsic resize and normalized corner-origin ray convention; integer-centre K_depth exported explicitly."
+  ],
+  "prohibited_sources_read": false,
+  "preparation_budget_s": 1200,
+  "inference_budget_s": 600
+}

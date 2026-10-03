@@ -1,0 +1,28 @@
+{
+  "ready_for_root_measurement_freeze": true,
+  "scope": "External technical MEASUREMENT candidate LIMITED; not Workflow.freeze or native acceptance",
+  "selected_model": "/home/wqz/real2sim_agent_compare_20261003/OURS/models/v3/model.blend",
+  "selected_model_sha256": "4d53b2a7fa076a6892592e555f33b55b07476dc2f6dab58651ab146fc1acdf85",
+  "selected_scene": "/home/wqz/real2sim_agent_compare_20261003/OURS/models/v3/scene.json",
+  "selected_glb": "/home/wqz/real2sim_agent_compare_20261003/OURS/models/v3/scene.glb",
+  "source": "/home/wqz/real2sim_agent_compare_20261003/OURS/models/v3/build_scene_v3.py",
+  "component_inventory": "/home/wqz/real2sim_agent_compare_20261003/OURS/models/v3/component_inventory.json",
+  "components": 801,
+  "entities": 107,
+  "cameras": "/home/wqz/real2sim_agent_compare_20261003/OURS/models/v3/all36_cameras.json",
+  "model_from_input": "/home/wqz/real2sim_agent_compare_20261003/OURS/model_from_input.json",
+  "paired_check": "/home/wqz/real2sim_agent_compare_20261003/OURS/checks/v3_paired/report.json",
+  "final_all36": {
+    "path": "/home/wqz/real2sim_agent_compare_20261003/OURS/checks/v3_all_final/report.json",
+    "sha256": "1161fd25d6988f4b94a1f5268a54b2c7aa66a69ae2974d57f289208b24e57598",
+    "model_sha256": "4d53b2a7fa076a6892592e555f33b55b07476dc2f6dab58651ab146fc1acdf85",
+    "views": 36,
+    "domain_pixels": 689349,
+    "coverage": 0.9993979827344349,
+    "weighted_missing_penalty_mae_m": 0.5334536012669607,
+    "scope": "Input predicted-depth consistency only"
+  },
+  "native_status": "build_geometry active; actual structural audit FAILED with4source_landmark +1 unexpected internal intersection",
+  "native_structural_summary": "/home/wqz/real2sim_agent_compare_20261003/OURS/models/v3/native_structural_summary.json",
+  "geometry_material_camera_changes_stopped": true
+}

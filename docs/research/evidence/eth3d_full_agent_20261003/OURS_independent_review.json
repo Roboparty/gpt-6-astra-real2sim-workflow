@@ -1,0 +1,284 @@
+{
+  "method": "OURS",
+  "version": 3,
+  "model_sha256": "4d53b2a7fa076a6892592e555f33b55b07476dc2f6dab58651ab146fc1acdf85",
+  "verdict": "SELECT_FOR_TECHNICAL_MEASUREMENT_FREEZE",
+  "quality_status": "FAILED_NATIVE / LIMITED",
+  "measurement_candidate_freezable": true,
+  "another_revision_necessary_for_measurement": false,
+  "workflow_freeze_authorized_by_this_review": false,
+  "visual_acceptance": false,
+  "physical_acceptance": false,
+  "delivery_acceptance": false,
+  "reason": "The exact v3 model is a complete, inspectable bounded comparison candidate. Fixed ten paired views retain the repairs without a new blocking camera or semantic-closure regression; all metadata, cameras and frozen labels are preserved. Actual native structure audit fails five checks: four source-fit groups and one within-assembly intersection flag. These failures must remain part of the measured workflow outcome. They do not prevent independent benchmark measurement of this frozen failed/limited candidate; no further polishing or threshold changes are requested.",
+  "selected_model": "/home/wqz/real2sim_agent_compare_20261003/OURS/models/v3/model.blend",
+  "scope": "Own current v3 model and own fixed10mapping-photo/render pairs;36camera constraints;2glass triangle-centre rays;component/assembly ownership;38frozen source labels;actual native-status snapshot. No GT, heldout data or other-method updates.",
+  "camera_validation": {
+    "camera_count": 36,
+    "camera_pose_error_max": 0.0,
+    "K_error_max": 0.0,
+    "camera_identity_all": true
+  },
+  "semantic_validation": {
+    "model_sha256": "4d53b2a7fa076a6892592e555f33b55b07476dc2f6dab58651ab146fc1acdf85",
+    "model_unchanged": true,
+    "semantic_entities": 107,
+    "declared_components": 801,
+    "visible_mesh_objects": 801,
+    "missing_declared": [],
+    "unmapped_visible": [],
+    "inventory_entities_missing_from_scene": [],
+    "semantic_tag_mismatches": [],
+    "assembly_count": 14,
+    "assembly_component_count": 685,
+    "assembly_owner_part_mismatches": [],
+    "duplicate_visible_names": false,
+    "reports": {
+      "paired": {
+        "model_hash_match": true,
+        "status": "complete",
+        "count": 10,
+        "model_unchanged": true,
+        "indices": [
+          0,
+          4,
+          8,
+          12,
+          16,
+          20,
+          24,
+          28,
+          32,
+          35
+        ]
+      }
+    },
+    "rigid_gauge_unchanged_from_v1": true,
+    "example_properties": {
+      "van_windshield": {
+        "entity_id": "white_van",
+        "component_id": "van_windshield",
+        "provenance": "Fresh custom authoring from source RGB and predicted-depth measurements",
+        "observed_or_assumed": "observed form; hidden backs inferred",
+        "collider": "static visible mesh; optional box proxy listed separately",
+        "furniture_id": "white_van",
+        "part_id": "van_windshield"
+      },
+      "column_1_lower": {
+        "entity_id": "column_1",
+        "component_id": "column_1_lower",
+        "provenance": "Fresh custom authoring from source RGB and predicted-depth measurements",
+        "observed_or_assumed": "observed form; hidden backs inferred",
+        "collider": "static visible mesh; optional box proxy listed separately"
+      }
+    }
+  },
+  "constraint_preservation": {
+    "original_label_count": 38,
+    "v3_label_count": 38,
+    "changed_uv_or_frame_labels": [],
+    "acceptance_v2": {
+      "landmark_median_px": 9,
+      "landmark_max_px": 18
+    },
+    "acceptance_v3": {
+      "landmark_median_px": 9,
+      "landmark_max_px": 18
+    },
+    "acceptance_unchanged": true,
+    "label_files": {
+      "rgb_annotations.json": {
+        "v2_sha256": "0961c86fc984705fe0aac701da676a1875df2ae89a4d086d26234a6e28e816bf",
+        "v3_sha256": "0961c86fc984705fe0aac701da676a1875df2ae89a4d086d26234a6e28e816bf",
+        "unchanged": true
+      },
+      "measurements_landmarks.json": {
+        "v2_sha256": "705ac6397bd0332b4851d3682ebb78b9e2bd4982061f7b4e0debeb3848217dee",
+        "v3_sha256": "705ac6397bd0332b4851d3682ebb78b9e2bd4982061f7b4e0debeb3848217dee",
+        "unchanged": true
+      }
+    },
+    "assembly_graphs": [
+      {
+        "entity": "garage_door",
+        "part_count": 86,
+        "graph_connected": true
+      },
+      {
+        "entity": "storage_rack",
+        "part_count": 169,
+        "graph_connected": true
+      },
+      {
+        "entity": "wood_crate_0",
+        "part_count": 32,
+        "graph_connected": true
+      },
+      {
+        "entity": "wood_crate_1",
+        "part_count": 32,
+        "graph_connected": true
+      },
+      {
+        "entity": "lime_skip_0",
+        "part_count": 7,
+        "graph_connected": true
+      },
+      {
+        "entity": "lime_skip_1",
+        "part_count": 7,
+        "graph_connected": true
+      },
+      {
+        "entity": "white_trailer",
+        "part_count": 14,
+        "graph_connected": true
+      },
+      {
+        "entity": "flatbed_trailer",
+        "part_count": 7,
+        "graph_connected": true
+      },
+      {
+        "entity": "white_van",
+        "part_count": 36,
+        "graph_connected": true
+      },
+      {
+        "entity": "black_car",
+        "part_count": 17,
+        "graph_connected": true
+      },
+      {
+        "entity": "lumber_cart",
+        "part_count": 36,
+        "graph_connected": true
+      },
+      {
+        "entity": "mesh_cage_0",
+        "part_count": 70,
+        "graph_connected": true
+      },
+      {
+        "entity": "mesh_cage_1",
+        "part_count": 84,
+        "graph_connected": true
+      },
+      {
+        "entity": "mesh_cage_2",
+        "part_count": 88,
+        "graph_connected": true
+      }
+    ],
+    "scope": "Declared source labels and connectivity graph only; actual evaluated geometric contact verdict remains native audit responsibility."
+  },
+  "native_gate_status": {
+    "observed_at_utc": "2026-10-03T05:57:26.893107+00:00",
+    "agent_model_attempt3_status": "succeeded",
+    "build_geometry_attempt2_record_status": "not_yet_recorded",
+    "actual_structural_audit_status": "failed",
+    "actual_structural_failures": [
+      {
+        "kind": "source_landmarks",
+        "entity": "lime_skip_0",
+        "median": 25.555872397288407,
+        "maximum": 41.009554132999824
+      },
+      {
+        "kind": "source_landmarks",
+        "entity": "white_van",
+        "median": 7.06424954094994,
+        "maximum": 33.555615174005375
+      },
+      {
+        "kind": "source_landmarks",
+        "entity": "black_car",
+        "median": 4.735366598254674,
+        "maximum": 27.565525221533278
+      },
+      {
+        "kind": "source_landmarks",
+        "entity": "mesh_cage_2",
+        "median": 18.04532460020787,
+        "maximum": 30.5976985820212
+      },
+      {
+        "kind": "unexpected_interpenetration",
+        "parts": [
+          "flatbed_frame",
+          "flatbed_towA"
+        ],
+        "depth_m": 0.04764339327812195,
+        "cross_furniture": false
+      }
+    ],
+    "actual_structural_audit_sha256": "14aba2a7f6da1a7896aedfb2f3a699789f49dc50b7e0017f05e7f27ad8f97175",
+    "expected_remaining_source_fit_failures_from_author_precheck": [
+      {
+        "entity": "lime_skip_0",
+        "median_px": 25.555872397288407,
+        "max_px": 41.009554132999824,
+        "source": "author precheck, not independent native verdict"
+      },
+      {
+        "entity": "white_van",
+        "median_px": 7.06424954094994,
+        "max_px": 33.555615174005375,
+        "source": "author precheck, not independent native verdict"
+      },
+      {
+        "entity": "black_car",
+        "median_px": 4.735366598254674,
+        "max_px": 27.565525221533278,
+        "source": "author precheck, not independent native verdict"
+      },
+      {
+        "entity": "mesh_cage_2",
+        "median_px": 18.04532460020787,
+        "max_px": 30.5976985820212,
+        "source": "author precheck, not independent native verdict"
+      }
+    ],
+    "previous_v2_native_audit_status": "failed",
+    "visual_acceptance": false,
+    "delivery_acceptance": false,
+    "note": "Do not substitute author contact preparation or completed diagnostic renders for actual native acceptance. A completed build worker may still carry failed structural measurements."
+  },
+  "v2_metadata_amendment_closure": {
+    "path": "/home/wqz/real2sim_agent_compare_20261003/independent_review/OURS/v2/inventory_issue_closed.json",
+    "sha256": "92d0d3a5881ab3f61af4d5301b58f76a295319eab64b59e73c0811d0206eb61f",
+    "original_review_sha256_preserved": "915f50202ee1bec85039d7abeb966928b5474acbf0d45727dd32bccb533bf8a8"
+  },
+  "repair_assessment": [
+    {
+      "scope": "crate and lumber geometry",
+      "finding": "Bounded dimension/location adjustments are visible in frames8/24/28, with no new blocking source-view regression. Precheck repairs5of9source-fit groups; actual native verdict is recorded separately."
+    },
+    {
+      "scope": "deck/tow geometry",
+      "finding": "The v3 native audit no longer flags the previous two cross-furniture deck/tow pairs. It instead flags flatbed_frame/flatbed_towA inside one assembly, sampled depth0.047643m. This is retained as a failing native constraint, not declared an independently calibrated physical penetration depth or silently whitelisted."
+    },
+    {
+      "scope": "v1 fivevisualfixes",
+      "finding": "Dark windshield, separated support members, sack volumes, compactor articulation and transverse near/mid fluorescent fixtures remain visible. Glass2/2trianglecentres still first-hit itself. Residual clean materials, simplified shapes and sparse details remain LIMITED."
+    }
+  ],
+  "freeze_conditions": [
+    "Run the reserved final36fit-view pass on this exact selectedmodelhash; retain failures and denominators and do not revise after measurement begins.",
+    "Jointly freeze both methods and checker/evaluator versions before any new truth-based scoring.",
+    "Keep candidate measurement eligibility separate from actual native workflow status. Do not call Workflow.freeze, visual pass, physical pass or delivery acceptance from this review.",
+    "Append the actual native audit/worker outcome when available; if the original9/18pxgates still fail, label the native outcome FAILED_NATIVE/LIMITED with exact failing entities and stages. Never relax thresholds, change camera poses or remove labels to obtain a pass."
+  ],
+  "evidence_hashes": {
+    "camera_occlusion_audit.json": "07dc179de6a109b2f18fe6d13c6b17c8721ef0c1abbe088091450e2559f87466",
+    "constraint_preservation.json": "798b2ded2736cbb2df88c4eba8255776c8f9b342d3488ac81c0dcafb0a55314d",
+    "native_gate_snapshot.json": "c4c9689818261ec7d6d5605edb3ee2d0dff8d765c476a06c47a3e9cf98f12ad2",
+    "pairs_0.jpg": "f241c4fa235f18640260f1c20a3414f3bf45324d0a23cd2dcbe3128845bc16af",
+    "pairs_1.jpg": "a1f5e09ed38eb574d096aeb32907c5de404342fc86ded0aca87de8691a5d25e3",
+    "pairs_2.jpg": "edbf2ebc7696ce0070b480881f33f366835de45b94c38a5fdb497a356f51ce08",
+    "pairs_3.jpg": "6ddfca8dde6893b4c573f9bb6be5664d2442f4f51b579d81c9f0b3e27fc00dc4",
+    "pairs_4.jpg": "cfad72df940f17b6269f2194866316b3bd98a0a3d73ee5b1a0582e8ea31309e7",
+    "semantic_coverage.json": "bec916d1008fe668d085ac570b0cf22e323669a629a954e2337e73d504ec4593",
+    "native_structural_audit_snapshot.json": "14aba2a7f6da1a7896aedfb2f3a699789f49dc50b7e0017f05e7f27ad8f97175"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "model_samples": 100000,
+  "laser_samples": 100000,
+  "full_laser_points": 24898515,
+  "all_finite": true,
+  "recomputed": {
+    "model_to_laser_mean_m": 3.813943752041009,
+    "laser_to_model_mean_m": 0.11184868723000542,
+    "symmetric_mean_m": 1.9628962196355073,
+    "precision_1cm": 0.00924,
+    "recall_1cm": 0.06791,
+    "fscore_1cm": 0.016266711600777705,
+    "precision_5cm": 0.05837,
+    "recall_5cm": 0.32125,
+    "fscore_5cm": 0.09879017175069806,
+    "precision_10cm": 0.10315,
+    "recall_10cm": 0.77705,
+    "fscore_10cm": 0.18212385253351512
+  },
+  "reported_delta": {
+    "model_to_laser_mean_m": 0.0,
+    "laser_to_model_mean_m": 0.0,
+    "symmetric_mean_m": 0.0,
+    "precision_1cm": 0.0,
+    "recall_1cm": 0.0,
+    "fscore_1cm": 0.0,
+    "precision_5cm": 0.0,
+    "recall_5cm": 0.0,
+    "fscore_5cm": 0.0,
+    "precision_10cm": 0.0,
+    "recall_10cm": 0.0,
+    "fscore_10cm": 0.0
+  },
+  "query_reused_only_for_byte_identical_samples": false
+}

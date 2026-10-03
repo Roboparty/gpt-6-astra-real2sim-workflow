@@ -1,0 +1,32 @@
+{
+  "id": "eth3d-delivery-full-agent-v1",
+  "status": "registered_before_authors",
+  "photographs": 36,
+  "heldout_images": 8,
+  "same_input_conditions": "Mapping RGB + fixed K/reference T + shared pose-conditioned DA3-GIANT predicted optical-Z, no GT depth/mesh",
+  "paired_check_indices": [
+    0,
+    4,
+    8,
+    12,
+    16,
+    20,
+    24,
+    28,
+    32,
+    35
+  ],
+  "max_full_versions": 5,
+  "max_paired_check_views": 50,
+  "max_supplemental_paired_views": 10,
+  "full_input_depth_passes": 3,
+  "author_wall_budget_seconds": 7200,
+  "threads_per_blender": 2,
+  "shared_model": "same inherited Codex model; exact serving identifier only if exposed by tool metadata",
+  "author_isolation": "fresh subagent context and separate input/model directories, path allowlist; not OS-enforced filesystem sandbox",
+  "coordinator_disclosure": "Coordinator previously saw static Pi3X pilot metrics and one heldout preview; fresh authors/reviewer receive none. No GT feedback to authors.",
+  "workflow_a": "native quality_v2 with explicit camera constraints and full staged semantic construction",
+  "workflow_b": "AWSM published semantic modelling/check/revision protocol ported to36 real images",
+  "comparison_scope": "workflow-protocol comparison with common inputs; no claim of reproducing original World Lobby scores or original author model identity",
+  "acceptance": "Preserve pass/needs_revision/LIMITED honestly; frozen benchmark candidates may be scored without falsely promoting native quality/physics acceptance"
+}

@@ -1,0 +1,201 @@
+{
+  "method": "AWSM",
+  "version": 2,
+  "model_sha256": "8bf7eaa7bb795118b58c5782d313f071826990bc999cf94d4568c8db508abcd2",
+  "verdict": "freeze_as_LIMITED",
+  "quality_status": "LIMITED",
+  "technical_candidate_freeze_recommended": true,
+  "another_bounded_revision_required": false,
+  "visual_acceptance": false,
+  "physical_acceptance": false,
+  "reason": "All five requested v1 fixes are implemented and independently observable; the specific occlusion bug is repaired, camera contract and complete semantic mapping are intact, and no new blocking regression appears in the same ten fixed source/render views. Remaining issues limit likeness and physical interpretation but do not require another pre-freeze pass for this bounded comparison.",
+  "scope": "Same10paired mapping-photo/render views asv1,ownv2model+inventories,36camera constraints,2glass triangle-centre visibility rays; no actual heldout or laser/depth truth and no other-method updates.",
+  "camera_validation": {
+    "camera_count": 36,
+    "camera_pose_error_max": 8.881784197001252e-16,
+    "K_error_max": 0.0,
+    "camera_identity_all": true,
+    "rigid_gauge_unchanged_from_v1": true
+  },
+  "semantic_validation": {
+    "semantic_entities": 49,
+    "declared_components": 815,
+    "visible_mesh_objects": 815,
+    "missing_declared": [],
+    "unmapped_visible": [],
+    "layout_vs_object_metadata_difference": [],
+    "semantic_tag_mismatches": [],
+    "duplicate_visible_names": false,
+    "model_unchanged": true,
+    "reports": {
+      "paired": {
+        "model_hash_match": true,
+        "status": "complete",
+        "count": 10,
+        "model_unchanged": true,
+        "indices": [
+          0,
+          4,
+          8,
+          12,
+          16,
+          20,
+          24,
+          28,
+          32,
+          35
+        ]
+      },
+      "all": {
+        "model_hash_match": true,
+        "status": "complete",
+        "count": 36,
+        "model_unchanged": true,
+        "indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35
+        ]
+      }
+    }
+  },
+  "requested_fix_verdicts": [
+    {
+      "id": 1,
+      "status": "resolved_for_tested_view",
+      "parts": [
+        "delivery_truck__windshield",
+        "delivery_truck__cab"
+      ],
+      "frames": [
+        12
+      ],
+      "evidence": "pairs_1.jpg; camera_occlusion_audit.json",
+      "finding": "Dark windshield now visible. Both original glass triangle-centre rays first hit delivery_truck__windshield, with target-vs-hit discrepancy<0.4micrometres. New surrounding frame pieces are separately visible. The v1 buried-glass failure is repaired. Full vehicle likeness remains approximate."
+    },
+    {
+      "id": 2,
+      "status": "implemented_and_visibly_improved",
+      "parts": [
+        "center_column",
+        "center_column_adjacent"
+      ],
+      "frames": [
+        16
+      ],
+      "evidence": "pairs_2.jpg; semantic_coverage.json",
+      "finding": "Second support exists as a separately owned semantic object; both members, recessed join and separate contacts are visible. Source silhouette correspondence is substantially closer. Cross-sections and hazard-stripe angle remain approximate; no physical dimensional certification."
+    },
+    {
+      "id": 3,
+      "status": "implemented_and_visibly_improved",
+      "parts": [
+        "green_skip_0",
+        "green_skip_1"
+      ],
+      "frames": [
+        8,
+        12
+      ],
+      "evidence": "pairs_1.jpg",
+      "finding": "Upright rectangular enclosure appearance replaced by open containers with tapered side silhouette, top rim and feet. Source-type geometry is now recognizable. Exact side slope/thickness and secondary reinforcements remain inferred."
+    },
+    {
+      "id": 4,
+      "status": "implemented_and_visibly_improved_with_uncertainty",
+      "parts": [
+        "lumber_trolley"
+      ],
+      "frames": [
+        24,
+        28
+      ],
+      "evidence": "pairs_3.jpg",
+      "finding": "Timber left end is now visible in frame28; loading extent is closer in frame24; connected upper trolley bar restored. Author retained the rejected lower-left two-view correspondence instead of claiming it accurate. End staggering, lower edge and support proportion still differ; further local fitting is optional after freeze."
+    },
+    {
+      "id": 5,
+      "status": "implemented_and_visibly_improved",
+      "parts": [
+        "storage_shelf"
+      ],
+      "frames": [
+        4,
+        8
+      ],
+      "evidence": "pairs_0.jpg; pairs_1.jpg",
+      "finding": "Uniform cargo cuboids replaced by separate filled-bag silhouettes with varied occupancy and upper stacked sacks. Main bag-type and gaps improved. Fold realism and exact visible count/packing remain approximations."
+    }
+  ],
+  "remaining_limitations": [
+    {
+      "frames": [
+        20,
+        32,
+        35
+      ],
+      "finding": "Corridor compactor remains a gray/yellow block approximation without the observed upper hopper/cage and lower mechanism silhouette; broad empty-wall/ceiling details and service items are sparse."
+    },
+    {
+      "frames": [
+        0,
+        4,
+        24,
+        28
+      ],
+      "finding": "Black shell/junction seams and simplified wall/door reveals remain apparent; garage panel/hinge and caged-storage contents are not photo-matched."
+    },
+    {
+      "frames": [
+        8,
+        12,
+        16,
+        24,
+        28
+      ],
+      "finding": "Vehicle contours, two support cross-sections/stripe directions, timber end distribution, bag folds and container reinforcements remain visibly approximate. Missing tow chain/signage/drains and clean floor materials limit likeness."
+    }
+  ],
+  "evidence_hashes": {
+    "camera_occlusion_audit.json": "e408480c89d0f0e8c031e2ead2ce3e434baac8701ecee51439734b4c98cdc27b",
+    "pairs_0.jpg": "a8b7872dcb07295f1bb41ba5439eef0a004fa59c692b91590a3f93ac972ab734",
+    "pairs_1.jpg": "bae3bd9ad2032b2de486b81d072bbabf629803d53c58d081b4ae9ab46590a4ac",
+    "pairs_2.jpg": "ff604f912ce388ba9b8b15b7358f5df0c11afd3c0865c821c077b79af95cd719",
+    "pairs_3.jpg": "26b6af7c17acffa7b192c944e622090a67ecc55dfca6cc6f6a5a9d5529dcc618",
+    "pairs_4.jpg": "c96465a9b3cb8fb0dcc87c77d3e2a21887964ff9ea9817fc6a93c24aef41d764",
+    "semantic_coverage.json": "63f66b3278f01e882193afe0e4ae0adfea0fd40d5e79d019ba04f9f273766cde"
+  }
+}

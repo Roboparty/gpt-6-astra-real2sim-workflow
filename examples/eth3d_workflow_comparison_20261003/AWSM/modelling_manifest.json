@@ -1,0 +1,80 @@
+{
+  "method_id": "AWSM",
+  "model_id": "inherited Codex model; exact serving identifier not exposed",
+  "status": "ready_for_root_freeze",
+  "model_from_input": [
+    [
+      0.99837529540149,
+      0.002186867471625334,
+      0.05693845047636353,
+      0.0
+    ],
+    [
+      -0.0029226752216324754,
+      0.9999132565047825,
+      0.012842797029859961,
+      0.0
+    ],
+    [
+      -0.05690542594108765,
+      -0.01298834387683323,
+      0.9982950843422003,
+      1.4796541998118724
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "geometry_scale": 1,
+  "revisions": 2,
+  "checking_render_count": 20,
+  "input_bvh_pass_count": 3,
+  "input_packet_sha256": "5eca09649e3e389084dac9e0df18da9f121ffd1af37316c93c9fe69e3cf414de",
+  "depth_manifest_sha256": "a3d9eb6be2b6fabf3ff0d776141d41cf8c1f628051c68637ac2a2a38907acdc3",
+  "unresolved_issues": [
+    "Photo likeness remains limited: simplified vehicle shape, missing signage/tow chain/drains/fine clutter, approximate ceiling fixtures/material texture",
+    "Column stripe orientation and hidden cross-sections approximate",
+    "Lumber lower-left two-view correspondence residual was high and excluded; endpoint uncertainty retained",
+    "Bag folds/count in occluded bays, skip thickness and physical parameters inferred",
+    "Existing shell junction artifacts and sparse surface detail are unchanged outside five-fix scope",
+    "Collision proxies are native separate meshes only; no Blender rigid-body, mass, friction, articulation or dynamics acceptance",
+    "Input camera poses live in cameras.json and are instantiated transiently by the checker; export contains no cameras",
+    "Blender procedural texture nodes remain editable; GLB materials retain portable base-color/PBR values, not procedural concrete/wood noise",
+    "Hidden geometry, materials, lights and physical properties remain inferred; independent verdict LIMITED, not visual or physical acceptance"
+  ],
+  "quality_status": "LIMITED",
+  "protocol_deviations": [
+    "36 real ETH3D images replacing synthetic 180 World Lobby",
+    "fixed paired indices 0,4,8,12,16,20,24,28,32,35",
+    "Blender4.5.3 replacing original5.2",
+    "same inherited Codex model replacing original Astra",
+    "actual-aspect width640 RGB and160x120 exact K depth checker",
+    "public registered K/T plus same pose-conditioned DA3 predicted depth, M4-like condition"
+  ],
+  "construction": "editable semantic parametric parts; no fused point or triangle view-patch final mesh",
+  "independent_review": {
+    "status": "technical_freeze_approved_as_LIMITED",
+    "source": "independent_review/root_v2/review.md",
+    "visual_acceptance": false,
+    "physical_acceptance": false
+  },
+  "final_candidate_sha256": "8bf7eaa7bb795118b58c5782d313f071826990bc999cf94d4568c8db508abcd2",
+  "native_bindings": {
+    "semantic_collections": 49,
+    "visible_named_mesh_components": 815,
+    "tagged_semantic_mesh_components": 815,
+    "separate_collision_proxy_meshes": 46,
+    "proxy_hide_render_and_exclude": true,
+    "blender_rigid_body_objects": 0,
+    "blender_constraints": 0,
+    "saved_blender_cameras": 0,
+    "camera_metadata_frames": 36,
+    "saved_area_lights": 21,
+    "native_materials": 17
+  },
+  "portability_verified": true,
+  "final_check_note": "Third full36 pass is an unchanged v2 protocol bookend; byte-identical reviewed scene and identical final/major-repair depth arrays."
+}

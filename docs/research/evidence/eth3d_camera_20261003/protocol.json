@@ -1,0 +1,29 @@
+{
+  "status": "frozen_before_inference",
+  "scene": "ETH3D delivery_area high-res training",
+  "source": "https://www.eth3d.net/datasets",
+  "photographs": 44,
+  "mapping_images": 36,
+  "withheld_images": 8,
+  "split": "sorted filenames; indices4,9,14,19,24,29,34,39 withheld before inference",
+  "conditions": [
+    "RGB",
+    "RGB_K",
+    "RGB_K_T"
+  ],
+  "reference_input": "Registered reference camera poses only in RGB_K_T; never scored as estimated zero-error poses",
+  "truth": "Independent laser scan evaluation points and official scan-derived depth; heldout photographs hidden from modelling",
+  "metrics": [
+    "observed symmetric surface nearest-neighbour distance",
+    "precision/recall/Fscore@1cm/5cm/10cm",
+    "rendered optical-Z AbsRel/RMSE/coverage/missing30m penalty",
+    "withheld view depth"
+  ],
+  "comparable_to_awsm": "Metric definitions and separation of inputs/truth only; different scene, frames, frontend, authoring and budget; no direct leaderboard claim",
+  "camera_sha256": "43f58e180828990fbc26b7275104011d0eb9f0a32d5a82809a8b83c54cf6d1d5",
+  "frames_sha256": "d6ca1eeddcea573d2a4aaaf182839f34e31f73f0d987bca194d6565f1aebfc92",
+  "calibration_source_sha256": "2119d96da9bf30228138d5e86c174e0b87e446e2de7aef7409115a769b8e6a83",
+  "pose_source_sha256": "55e67f9b4ef5092bb1c38cf5b500e39370d56d828fdc71ace91710acb427844c",
+  "model_freeze": "All three raw outputs and editable meshes frozen before opening scan/depth values",
+  "adapter": "Same static triangle-patch adapter for all conditions; not a full independent Agent/SOTA comparison"
+}

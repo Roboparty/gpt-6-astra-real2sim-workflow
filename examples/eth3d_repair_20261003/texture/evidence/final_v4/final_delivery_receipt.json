@@ -1,0 +1,70 @@
+{
+  "status": "ready_for_independent_review_LIMITED",
+  "candidate_model": "/home/wqz/real2sim_agent_repair_20261003/texture/final_texture_v4/model.blend",
+  "candidate_sha256": "f36a6b79c439bf0fd53c2de58c84f4a42b4fddce29208d1fb0a273c1ba39bb2f",
+  "base_model": "/home/wqz/real2sim_agent_repair_20261003/geometry/candidate_v4/model.blend",
+  "base_sha256": "506982c1c94a94067b19a58dc1a55d7b9ab6039ca1b8d00f61fba76292cc5542",
+  "model_bytes": 12114007,
+  "packed_dependency_status": "all2atlasimagespacked; no externalimages or linkedlibraries",
+  "asset_limits": [
+    "Photo-baked observed radiance, not de-lit physical albedo",
+    "Projection seams and thin mounted-feature ghosting remain, including duplicatedA70 sign in24/28",
+    "Unknown texels preserve original material, not completed observations",
+    "Strict native soft-surfaceUV rule still rejects75rows across45staticbagobjects with inheritedworldprocedural graph",
+    "Source12 approximate vehicle/backboard and local lighting mismatch inherited from selectedgeometryv4"
+  ],
+  "geometry_visibility_lighting_camera_unchanged_by_texture": true,
+  "supported_surface_texels": 1741643,
+  "candidate_surface_texels": 5371573,
+  "support_fraction_is_not_physical_scene_area_coverage": true,
+  "mapping_counts": {
+    "objects": 303,
+    "faces": 738,
+    "atlases": 2
+  },
+  "native_pernode_asset_status": "failed",
+  "native_pernode_failures": 75,
+  "layered_actual_binding_status": "passed",
+  "native_full_acceptance_claimed": false,
+  "fixed_input_views_inspected": [
+    0,
+    4,
+    8,
+    12,
+    16,
+    20,
+    24,
+    28,
+    32,
+    35
+  ],
+  "lighting": "unchanged; no uniform compensation justified bythreeinputfloorROIs; separate neutraldiagnostic only",
+  "artifact_hashes": {
+    "review_receipt.json": "27ca45b66fca8c987c448d6b1eb641dae9b078a562f20c5baa79e2059e806606",
+    "surface_support.json": "41b8ab4a373a58cc658cbca8b81bdbab3b1cb991216d7df1dc2d24b59f1b419c",
+    "material_calibration.json": "404bf9d4d00e0bf7a2ecb19da32b8db2e75d05cfa9a055392147052ad92acd28",
+    "appearance_audit.json": "7ea63d2d2dae6454eee60c0cec8e0dfd44367e20fa2bc1a75e908bd64bc492f4",
+    "layered_texture_binding_audit.json": "8cf81bb9bd38cb2e1deb993cd0becb71d1cce13c7573b4ee2b0b529e7fe846b2",
+    "per_node_contract/frozen_per_node/material_calibration.json": "39ae689dcc5ab337e299870093671b773c910cf5bfe178e20ed5dc83e6e1bf00",
+    "per_node_contract/frozen_per_node/appearance_audit.json": "b8342bbd66f5ae78ad7396515a1c57e168bdd1f5097e5652d5753ba66c8f3d04",
+    "comparison_0.jpg": "a078fc13f33f5d04545efe90eacd9141cb40da73e2951629f041b61fa07e4846",
+    "comparison_1.jpg": "d182de0cffe494e0fb026b36678579efb997bca8a0ecc9102c5cddaf7a6a5f71",
+    "neutral_preview/appearance_neutral.png": "0b1cc4ab1c6420f663bcab310c736372fb37b56a8969fbf884e29695399d1179",
+    "lighting_decision.json": "09160232478cd72bcee3583b19555dd68a5dd460e9c24db634220f27a940a453"
+  },
+  "source_code_sha256": {
+    "bake_multiview.py": "cf7e5d126e140343066b5f53a4d8da900a05d46c78e9a47123366ab84542da0d",
+    "image_io.py": "1625de33ee8dc30e01db5b210d485421960bc435aea2bda8580848544f614c22",
+    "render_fit.py": "961d18ed2d0f9ac54055184f1d10a2a0549eb9adf2c5515a29d416bb0701b1b6",
+    "compose_and_photometry.py": "8d974367e37ce5fba1f2f8a118f478c23be1bd18756a70f0804a8a807481b00b",
+    "audit_layered.py": "278de49137783441ed2a11523f2c3c0dbd3fb389efffc041bc504549be829724",
+    "test_per_node_contract.py": "508d5e114ada4522417a73e5f3419353e76abd307668110ba0a20cbeaecaa214",
+    "test_per_node_blender.py": "98e954f1887e3cf01be3c3f8f5d42ca95b8463c1d96aef71f68b5bb151fe9a89"
+  },
+  "raw_legacy_audit_module_sha256": "2fd0c92acb1a45baec512924577caebea105db6d164272ca1cf72ff283ae3808",
+  "upgraded_native_code_sha256": {
+    "appearance.py": "f2126376eaa165a13f973e610895045f7ab93d4b8d149b4a74e30aeeefddc57c",
+    "blender_appearance.py": "cd8f3701bf5e930cb3a2b0c1f1d85eec00320079e4598ce4fda3497fa3a09dee"
+  },
+  "provenance": "v1/v2 material-only diagnostics and rejectedv3strictcandidate preserved separately; v4 recomputed geometryBVH, UV, per-texel source visibility fromscratch; only verifiedsourceRGBcache reused"
+}
