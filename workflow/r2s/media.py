@@ -74,7 +74,7 @@ def preprocess(ingested,out,params=None):
         if camera_bundle:
             from .camera import resize_camera
             camera=resize_camera(camera_by_source[(meta['input_index'],meta.get('source_frame'))],accepted[-1]['processed_size'])
-            camera['processed_sha256']=accepted[-1]['sha256'];accepted[-1]['camera']=camera
+            camera['processed_sha256']=accepted[-1]['sha256'];camera['processed_path']=accepted[-1]['path'];accepted[-1]['camera']=camera
     if not accepted:raise ValueError('No usable original frames remain')
     report={'mode':ingested['mode'],'accepted':accepted,'rejected':rejected,'parameters':params,'image_enhancement':False,'decode_orientation_policy':'OpenCV default EXIF/display orientation; original bytes preserved','quality_status':'insufficient_for_multiview' if ingested['mode']!='single' and len(accepted)<2 else 'usable','sparse_geometry':sparse_tracks(accepted) if len(accepted)>1 else {'status':'not_applicable_single_image' if ingested['mode']=='single' else 'insufficient_distinct_views'}}
     if camera_bundle:report['camera_observations']={k:v for k,v in camera_bundle.items() if k!='cameras'}

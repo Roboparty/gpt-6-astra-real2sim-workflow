@@ -78,6 +78,29 @@ class CameraTests(unittest.TestCase):
         self.assertEqual(self.load()['scope'],'GT-pose diagnostic')
         self.config.pop('camera_observations');self.assertIsNone(self.load())
 
+    def test_one_rigid_model_gauge_without_scale(self):
+        G=[[0,-1,0,3],[1,0,0,-2],[0,0,1,.2],[0,0,0,1]]
+        self.config['camera_observations']['model_from_input']=G
+        result=self.load();camera=result['cameras'][0]
+        self.assertTrue(np.allclose(camera['position'],[1,-1,3.2]))
+        constraints=dict(cameras=[camera],model_from_input=G)
+        check_scene_cameras(dict(camera=camera,model_from_input=G),constraints)
+        with self.assertRaises(ValueError):check_scene_cameras(dict(camera=camera),constraints)
+        self.config['camera_observations']['model_from_input']=[[2,0,0,0],[0,1,0,0],[0,0,1,0],[0,0,0,1]]
+        with self.assertRaises(ValueError):self.load()
+
+    def test_resume_reissues_stale_pre_gauge_artifacts(self):
+        workflow=Workflow(self.root);workflow.run(until='preprocess')
+        artifact=workflow.state['stages']['preprocess']['outputs'][0];path=Path(artifact['path']);data=json.loads(path.read_text())
+        data['camera_observations'].pop('model_from_input');path.write_text(json.dumps(data))
+        artifact['sha256']=hashlib.sha256(path.read_bytes()).hexdigest();workflow.state['stages']['preprocess']['fingerprint']='old implementation';workflow.save()
+        self.config['camera_observations']['model_from_input']=[[1,0,0,1],[0,1,0,0],[0,0,1,0],[0,0,0,1]]
+        (self.root/'case.json').write_text(json.dumps(self.config));resumed=Workflow(self.root)
+        self.assertIsNone(workflow_constraints(resumed));resumed.run(until='preprocess')
+        self.assertEqual(resumed.state['stages']['ingest']['attempt'],2)
+        self.assertEqual(resumed.state['stages']['preprocess']['attempt'],2)
+        self.assertAlmostEqual(workflow_constraints(resumed)['cameras'][0]['position'][0],2.)
+
     def test_calibrated_video_preserves_exact_frame_order(self):
         video=self.root/'source.avi';writer=cv2.VideoWriter(str(video),cv2.VideoWriter_fourcc(*'MJPG'),10.,(80,60))
         self.assertTrue(writer.isOpened())

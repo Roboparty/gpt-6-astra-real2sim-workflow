@@ -56,7 +56,24 @@ if stage in {'build_render','build_geometry'}:
         atomic_json(out/'model_binding.json',{'model_sha256':file_sha(blend),'scene_sha256':file_sha(scene),'model_version':json.loads(scene.read_text()).get('model_version')})
         run([params['blender'],'-b',str(blend),'-t',str(params.get('threads',8)),'--python-exit-code','12','--python',str(package/'blender_structure.py'),'--',str(scene),str(out)])
         from PIL import Image
-        audit=json.loads((out/'structural_audit.json').read_text());Image.open(packet['original_input_allowlist'][0]).crop(audit['source_crop_xyxy']).save(out/'furniture_original_crop.png')
+        audit=json.loads((out/'structural_audit.json').read_text())
+        if audit.get('source_views'):
+            cameras=(packet.get('camera_constraints') or {}).get('cameras') or (json.loads(scene.read_text()).get('cameras') or [json.loads(scene.read_text())['camera']])
+            for index,view in enumerate(audit['source_views']):
+                matches=[c for c in cameras if c.get('frame_id','primary')==view['frame_id']]
+                if len(matches)!=1:raise ContractError('Source crop has no unique allowed camera')
+                camera=matches[0]
+                if camera.get('processed_path'):
+                    source=Path(camera['processed_path']);expected=camera['processed_sha256']
+                else:
+                    source=Path(packet['original_input_allowlist'][camera.get('input_index',0)]);expected=camera.get('source_sha256',file_sha(source))
+                if file_sha(source)!=expected:raise ContractError('Source crop image hash drift')
+                image=Image.open(source)
+                if list(image.size)!=view['image_size']:raise ContractError('Source crop/camera resolution mismatch')
+                name='furniture_original_crop.png' if index==0 else f'furniture_original_crop_{index:04d}.png';image.crop(view['crop_xyxy']).save(out/name)
+                view.update(original_crop=name,source_sha256=expected);audit['evidence_hashes'][name]=file_sha(out/name)
+            atomic_json(out/'structural_audit.json',audit)
+        else:Image.open(packet['original_input_allowlist'][0]).crop(audit['source_crop_xyxy']).save(out/'furniture_original_crop.png')
         binding=json.loads((out/'model_binding.json').read_text());binding['structural_audit_sha256']=file_sha(out/'structural_audit.json');binding['original_crop_sha256']=file_sha(out/'furniture_original_crop.png');atomic_json(out/'model_binding.json',binding)
     run([params['blender'],'-b',str(blend),'-t',str(params.get('threads',8)),'--python-exit-code','12','--python',str(package/'blender_render.py'),'--',str(out)])
     if params.get('geometry_feedback_protocol'):

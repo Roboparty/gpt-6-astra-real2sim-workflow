@@ -16,6 +16,24 @@ def principal_for_raster(camera):
     return np.asarray(camera['principal_point'],float)+(.5 if camera.get('pixel_coordinates')=='integer_centers' else 0.)
 
 
+def rigid_transform(value):
+    matrix=np.asarray(value,float)
+    if matrix.shape!=(4,4) or not np.isfinite(matrix).all() or not np.allclose(matrix[3],[0,0,0,1],atol=1e-9,rtol=0):
+        raise ValueError('model_from_input must be a finite homogeneous transform')
+    rotation=matrix[:3,:3]
+    if not np.allclose(rotation@rotation.T,np.eye(3),atol=1e-6,rtol=0) or not np.isclose(np.linalg.det(rotation),1,atol=1e-6,rtol=0):
+        raise ValueError('model_from_input must be rigid: no scale, shear or reflection')
+    return matrix
+
+
+def camera_for_frame(scene,frame_id=None):
+    if frame_id is None:return scene['camera']
+    cameras=scene.get('cameras') or [scene['camera']]
+    matches=[camera for camera in cameras if camera.get('frame_id','primary')==frame_id]
+    if len(matches)!=1:raise ValueError('Unknown or ambiguous source camera frame_id: '+str(frame_id))
+    return matches[0]
+
+
 def validate_camera(camera):
     if camera.get('pixel_coordinates') not in {None,'integer_centers'}:
         raise ValueError('Unknown camera pixel-coordinate convention')
@@ -49,6 +67,7 @@ def load_observations(config, sources):
                     camera_frame='opencv', pixel_coordinates='integer_centers')
     if any(data.get(key) != value for key, value in expected.items()) or not data.get('frames'):
         raise ValueError('Camera manifest must declare metres, Z-up, OpenCV axes and integer pixel centres')
+    model_from_input=rigid_transform(reference.get('model_from_input',np.eye(4)))
     result = []; keys = set(); ids = set()
     for entry in data['frames']:
         index = entry['input_index']
@@ -81,6 +100,7 @@ def load_observations(config, sources):
             raise ValueError('Expected zero-skew pixel K with homogeneous last row')
         if T.shape != (4, 4) or not np.isfinite(T).all() or not np.allclose(T[3], [0, 0, 0, 1], atol=1e-9, rtol=0):
             raise ValueError('Expected homogeneous camera-to-world transform')
+        T=model_from_input@T
         camera = dict(frame_id=frame_id, role='reconstruction', position=T[:3, 3].tolist(),
                       rotation_world_to_cv=T[:3, :3].T.tolist(), focal_px=float(K[0, 0]),
                       focal_y_px=float(K[1, 1]), principal_point=K[:2, 2].tolist(),
@@ -89,7 +109,7 @@ def load_observations(config, sources):
         validate_camera(camera); result.append(camera)
     if config['mode'] != 'video' and {x['input_index'] for x in result} != set(range(len(sources))):
         raise ValueError('Calibrated still-image inputs require one camera per image')
-    return dict(manifest_sha256=sha, cameras=result, locked=True,
+    return dict(manifest_sha256=sha, cameras=result, locked=True,model_from_input=model_from_input.tolist(),
                 scope='GT-pose diagnostic' if any(c['pose_source'] == 'ground_truth' for c in result) else 'supplied camera constraints')
 
 
@@ -105,14 +125,14 @@ def resize_camera(camera, size):
 
 
 def workflow_constraints(workflow):
-    if not workflow.config.get('camera_observations'):
+    if not workflow.config.get('camera_observations') or not workflow.valid('preprocess'):
         return None
     for artifact in workflow.state['stages'].get('preprocess', {}).get('outputs', []):
         if Path(artifact['path']).name == 'preprocess.json':
             data = json.loads(Path(artifact['path']).read_text())
             from .contracts import digest
             cameras = [frame['camera'] for frame in data['accepted']]
-            return dict(cameras=cameras, sha256=digest(cameras), locked=True,
+            return dict(cameras=cameras, sha256=digest(cameras), locked=True,model_from_input=data['camera_observations'].get('model_from_input',np.eye(4).tolist()),
                         scope=data['camera_observations']['scope'])
     return None
 
@@ -120,6 +140,9 @@ def workflow_constraints(workflow):
 def check_scene_cameras(scene, constraints):
     if not constraints:
         return
+    declared=rigid_transform(scene.get('model_from_input',np.eye(4)))
+    if not np.allclose(declared,constraints.get('model_from_input',np.eye(4)),atol=1e-8,rtol=0):
+        raise ValueError('Scene coordinate gauge differs from its supplied-camera contract')
     expected = constraints['cameras']; actual = scene.get('cameras') or [scene['camera']]
     if len(actual) != len(expected):
         raise ValueError('Scene must retain every accepted supplied camera')

@@ -75,9 +75,29 @@ def review_contract(attempt,review,artifacts,scene,binding):
     audited_assemblies=audit.get('assemblies',[])
     if len(audited_assemblies)!=len(required) or {x['entity'] for x in audited_assemblies}!=required:raise ContractError('Structural evidence must cover each furniture assembly exactly once')
     declared={a['entity']:a for a in structure['assemblies']}
+    source_views={view['frame_id']:view for view in audit.get('source_views',[])}
+    if len(source_views)!=len(audit.get('source_views',[])):raise ContractError('Duplicate audited source frame')
+    if len(scene.get('cameras',[]))>1 or scene['camera'].get('source_sha256'):
+        expected_frames={scene['camera'].get('frame_id','primary')}
+        for assembly in structure['assemblies']:
+            expected_frames.update(point.get('frame_id',assembly['fit'].get('frame_id',scene['camera'].get('frame_id','primary'))) for point in assembly['fit']['landmarks'])
+        if set(source_views)!=expected_frames:raise ContractError('Missing or unexpected multi-camera source evidence')
+    for frame_id,view in source_views.items():
+        from .camera import camera_for_frame
+        camera=camera_for_frame(scene,frame_id)
+        if view.get('image_size')!=camera['image_size'] or not view.get('source_sha256'):raise ContractError('Source crop is not bound to its camera/image')
+        expected_source=camera.get('processed_sha256',camera.get('source_sha256'))
+        if expected_source is not None and view['source_sha256']!=expected_source:raise ContractError('Source crop hash differs from its declared camera image')
+        for key in ['render','original_crop']:
+            ref=view.get(key);evidence_file(attempt,ref,artifacts)
+            if ref not in audit.get('evidence_hashes',{}):raise ContractError('Source crop/render is not hash-bound audit evidence')
     for a in audit['assemblies']:
         if not all(a.get(k) for k in ['ownership_checked','floor_checked','source_landmarks','isolated_views']):raise ContractError('Incomplete furniture structure evidence')
         assembly=declared[a['entity']];part_ids={p['id'] for p in assembly['parts']}
+        if source_views:
+            for landmark in a['source_landmarks']:
+                expected_frame=landmark.get('frame_id',assembly['fit'].get('frame_id',scene['camera'].get('frame_id','primary')))
+                if landmark.get('resolved_frame_id')!=expected_frame or expected_frame not in source_views:raise ContractError('Landmark source camera/crop binding mismatch')
         joints=assembly.get('joints');checked=a.get('joints_checked')
         if not isinstance(joints,list) or not isinstance(checked,list):raise ContractError('Declared joints and joint checks must be explicit lists')
         def joint_key(joint):

@@ -1,0 +1,213 @@
+{
+  "schema": "real2sim.research-checks/1",
+  "scope": "development regressions, not a reconstruction benchmark",
+  "denominator": 14,
+  "passed": 14,
+  "checks": [
+    {
+      "check": "structure_contract",
+      "status": "passed",
+      "returncode": 0,
+      "wall_seconds": 0.06382645305711776,
+      "script_sha256": "c90dfddb33b0903f07fff60793bf4b792c6baf9e02b5ad703f5a7a409b54878f",
+      "command": [
+        "/home/wqz/real2sim_fresh_20260921/runtime/venv/bin/python",
+        "/home/wqz/real2sim_agent_compare_20261003/current_validation/tools/test_structure_contract.py"
+      ]
+    },
+    {
+      "check": "appearance_contract",
+      "status": "passed",
+      "returncode": 0,
+      "wall_seconds": 0.16395125607959926,
+      "script_sha256": "328273389b2250711d176149eab3cb50cbafd25fda2783cddd5be31d79a6a72d",
+      "command": [
+        "/home/wqz/real2sim_fresh_20260921/runtime/venv/bin/python",
+        "/home/wqz/real2sim_agent_compare_20261003/current_validation/tools/test_appearance_contract.py"
+      ]
+    },
+    {
+      "check": "appearance_worker",
+      "status": "passed",
+      "returncode": 0,
+      "wall_seconds": 18.444871866027825,
+      "script_sha256": "dfe2a446af85f85a37b9d9c8034bc6c36af4d9d6fa1149cc8dd403952d64a6cd",
+      "command": [
+        "/home/wqz/real2sim_fresh_20260921/runtime/venv/bin/python",
+        "/home/wqz/real2sim_agent_compare_20261003/current_validation/tools/test_appearance_worker.py"
+      ]
+    },
+    {
+      "check": "refinement",
+      "status": "passed",
+      "returncode": 0,
+      "wall_seconds": 2.7189294119598344,
+      "script_sha256": "1f9faf85ded9be53bf671eeb97597fff7e60b0e9d1de32eeea568c694364c269",
+      "command": [
+        "/home/wqz/real2sim_fresh_20260921/runtime/venv/bin/python",
+        "/home/wqz/real2sim_agent_compare_20261003/current_validation/tools/test_refinement.py"
+      ]
+    },
+    {
+      "check": "surface_contract",
+      "status": "passed",
+      "returncode": 0,
+      "wall_seconds": 0.1644052480114624,
+      "script_sha256": "4db7f650a4cadeb4a6a382df3a948168672db517143d38c35304f580a42502a2",
+      "command": [
+        "/home/wqz/real2sim_fresh_20260921/runtime/venv/bin/python",
+        "/home/wqz/real2sim_agent_compare_20261003/current_validation/tools/test_surface_contract.py"
+      ]
+    },
+    {
+      "check": "viewpoint_aabb",
+      "status": "passed",
+      "returncode": 0,
+      "wall_seconds": 0.36477546801324934,
+      "script_sha256": "9c23e53ee1f95687ba14a20718e6d3f24aff97d6dd940910d84798529859627c",
+      "command": [
+        "/home/wqz/real2sim_fresh_20260921/runtime/blender-4.5.3-linux-x64/blender",
+        "-b",
+        "-t",
+        "2",
+        "--python-exit-code",
+        "12",
+        "-P",
+        "/home/wqz/real2sim_agent_compare_20261003/current_validation/tools/test_viewpoint_aabb.py"
+      ]
+    },
+    {
+      "check": "enclosure_rays",
+      "status": "passed",
+      "returncode": 0,
+      "wall_seconds": 0.21454133500810713,
+      "script_sha256": "759ed9d6a8f81727c2ad1772de6240a5e2f18a0bf3efcb087acc0a1d479b73ef",
+      "command": [
+        "/home/wqz/real2sim_fresh_20260921/runtime/venv/bin/python",
+        "/home/wqz/real2sim_agent_compare_20261003/current_validation/tools/test_enclosure_rays.py"
+      ]
+    },
+    {
+      "check": "shell_collision",
+      "status": "passed",
+      "returncode": 0,
+      "wall_seconds": 0.11431938107125461,
+      "script_sha256": "ed2aa0b38e894d003210a7b0b50a0ab03bb7aafd5a56c07a1c456996db103181",
+      "command": [
+        "/home/wqz/real2sim_fresh_20260921/runtime/venv/bin/python",
+        "/home/wqz/real2sim_agent_compare_20261003/current_validation/tools/test_shell_collision.py"
+      ]
+    },
+    {
+      "check": "geometry_feedback",
+      "status": "passed",
+      "returncode": 0,
+      "wall_seconds": 0.7650957830483094,
+      "script_sha256": "592a9472f9a6de2eada0da2963cbdbda0a8c255d17f8cf191f10005f77ea88c6",
+      "command": [
+        "/home/wqz/real2sim_fresh_20260921/runtime/venv/bin/python",
+        "/home/wqz/real2sim_agent_compare_20261003/current_validation/tools/test_geometry_feedback.py",
+        "--output-dir",
+        "/home/wqz/real2sim_agent_compare_20261003/current_validation/regression/geometry_feedback"
+      ]
+    },
+    {
+      "check": "geometry_feedback_gate",
+      "status": "passed",
+      "returncode": 0,
+      "wall_seconds": 0.11434620094951242,
+      "script_sha256": "f4db2653bfae60e6160162d39b9fd6a51db55d0118603281e7f2f575802c8016",
+      "command": [
+        "/home/wqz/real2sim_fresh_20260921/runtime/venv/bin/python",
+        "/home/wqz/real2sim_agent_compare_20261003/current_validation/tools/test_geometry_feedback_gate.py"
+      ]
+    },
+    {
+      "check": "physical_priors",
+      "status": "passed",
+      "returncode": 0,
+      "wall_seconds": 0.03207187994848937,
+      "script_sha256": "0319f1b0dbc2f61c7792e7c79a49003c4f53bde7587e1c4a57f84cd270f9d9b4",
+      "command": [
+        "/home/wqz/real2sim_fresh_20260921/runtime/venv/bin/python",
+        "/home/wqz/real2sim_agent_compare_20261003/current_validation/tools/test_physical_priors.py"
+      ]
+    },
+    {
+      "check": "physical_prior_runtime",
+      "status": "passed",
+      "returncode": 0,
+      "wall_seconds": 0.1640475649619475,
+      "script_sha256": "c896076b24782aa91f73ec7ee99c4ee6e953e80900fcb4978c803f27affa2a64",
+      "command": [
+        "/home/wqz/real2sim_fresh_20260921/runtime/venv/bin/python",
+        "/home/wqz/real2sim_agent_compare_20261003/current_validation/tools/test_physical_prior_runtime.py"
+      ]
+    },
+    {
+      "check": "optional_dynamics",
+      "status": "passed",
+      "returncode": 0,
+      "wall_seconds": 0.4648538880283013,
+      "script_sha256": "dc3a77685fbb1054d38e58d2f7c8d7c66c77f912aa0628ad5863028620dce80a",
+      "command": [
+        "/home/wqz/real2sim_fresh_20260921/runtime/venv/bin/python",
+        "/home/wqz/real2sim_agent_compare_20261003/current_validation/tools/test_optional_dynamics.py",
+        "--output-dir",
+        "/home/wqz/real2sim_agent_compare_20261003/current_validation/regression/optional_dynamics"
+      ]
+    },
+    {
+      "check": "task_evaluation",
+      "status": "passed",
+      "returncode": 0,
+      "wall_seconds": 0.11433062597643584,
+      "script_sha256": "97253b044d223b4402f6f6e36008b78de9dda2c5d9cb86e34a3bc00abcf2e1f8",
+      "command": [
+        "/home/wqz/real2sim_fresh_20260921/runtime/venv/bin/python",
+        "/home/wqz/real2sim_agent_compare_20261003/current_validation/tools/test_task_evaluation.py"
+      ]
+    }
+  ],
+  "implementation": {
+    "workflow/r2s/__init__.py": "90468c672e280c4d1d3068cace74a5e828b5441d535e07cb79b6abdbadca826d",
+    "workflow/r2s/__main__.py": "db6f3263401eeb522bee180f14c8fd4172cb95654d88db361bb230a115c22b02",
+    "workflow/r2s/appearance.py": "563f72ede827cb3f5f01edcef200a33bf05e03e51f8ac211dc273b6612690c0a",
+    "workflow/r2s/blender_appearance.py": "2fd0c92acb1a45baec512924577caebea105db6d164272ca1cf72ff283ae3808",
+    "workflow/r2s/blender_camera.py": "62f034a890d21bc3a6530b6552eb3b1e1917683fc62e7d9bfd5e2a2aa13344ff",
+    "workflow/r2s/blender_export.py": "760f2bf2e36d521242a6014cee41ddf455d8e8a6bcbaeff879c58a760f7ef733",
+    "workflow/r2s/blender_geometry_feedback.py": "ac6177bbe5f62d6982d497bf64556bfd6adfc8ad19b48449f5482369d3f6581d",
+    "workflow/r2s/blender_metadata.py": "50bb1c5369abf40ea116c67ef5d88eaf2f5e294e2a4a5f9757f2d5b732d03ffc",
+    "workflow/r2s/blender_render.py": "a7e052d46daa5b10bad828909729437e3cfc729c269753d746e1414812df04e2",
+    "workflow/r2s/blender_roomkit_generation.py": "d430c3b7c4d42796d2deb22798ea2817e7235377728033ded2e244e88da9c6e8",
+    "workflow/r2s/blender_structure.py": "e7aea6e251137b4a84919919a00af4a0b2e08c1c7215af8e0531fc12b2ec62f9",
+    "workflow/r2s/blender_surfaces.py": "905b5b1337cc93b667f4ddfe67a2c4d1de8a9a1df404720b22431d0e133b1f20",
+    "workflow/r2s/build_assembly.py": "d43eb91646d7c733a130dd0735d19b5853c423ce58c1849a0bfe6782fc6c19b6",
+    "workflow/r2s/calibration.py": "708888782153d6f56aed728880cb9c0a25be703a26992ffe2000a66a01dc4469",
+    "workflow/r2s/camera.py": "5f33c980929495df9155d01410b2e8739bb10dc49a6549feba5a8d6fb6beb0a0",
+    "workflow/r2s/contracts.py": "64139f2e6ada992064689db6dd8bf04911314ad203a13992ced711ab29b3cb39",
+    "workflow/r2s/core.py": "c15be92b557acbde9c4e643f1ffa16babfd0a350389d68bf1ca7fc5144df1456",
+    "workflow/r2s/dynamics.py": "64003aa812db1b95766c8269ddd80b0f9cb5803ec70b60fe2ce4a4fa9004083a",
+    "workflow/r2s/evaluation.py": "91d75751e29579a78b692ae6058956d85f51288399b5b40127c95042379e4d10",
+    "workflow/r2s/generation_skills.py": "e941e48264ea037c30475dbe0b2fcd23b534cc3be016ecb82a96b8469cc357a3",
+    "workflow/r2s/geometry_feedback.py": "19cd20ab22dd55d80aec97bb2c97af34a8e1b2ceb2fcacafced699721217b2ab",
+    "workflow/r2s/interchange.py": "808c48f725c1b24e6b32fae1a545f60e10d520c03f707715b061fb965b47921a",
+    "workflow/r2s/media.py": "467bbe5328a1778073c9f2f19ac4d78a4ec7bc80f67890c4600e44bd7a8e308f",
+    "workflow/r2s/physical_prior_runtime.py": "397c55cdac764491c3454fc38ba2daba8fc97f02855eb6a8f4d9cbd175f9ef72",
+    "workflow/r2s/physical_priors.py": "6aff6222d3c04ac43f5ae0745ba65a9d4ab1793acfb2598a6c72b5dc98f70dc5",
+    "workflow/r2s/pose_annotations.py": "d297fdd0302713c33609416d6ff61ff31ee97a000f1026aaae70ae9fe871db56",
+    "workflow/r2s/profiles.py": "73298fd77b9570a04fdb2e1c9a543a5d104e559700527498c6276f32bef3beb0",
+    "workflow/r2s/quality.py": "5c3ca5a5a45a4ce1cd9f4cc3dc5eca626bbde892c2a2a6e3b92b548d4f75d699",
+    "workflow/r2s/refinement.py": "2872baaa560a091b2215f5e5a126da6bae9f063f7b61b9a54fb2aaae23f0a545",
+    "workflow/r2s/shell_collision.py": "c4755f90c4bd2f4b6accff79147706fee4698d18f86445e7bdca64e8e00feef6",
+    "workflow/r2s/simulation.py": "380e327f72b9e51f5777cd0fed74e187a1526f724ac4e13a70435eadbfb49e0f",
+    "workflow/r2s/simulation_checks.py": "ce784f935adc8936fb5d109932646df990942552410a8a9202eb4cc91613b959",
+    "workflow/r2s/stage_worker.py": "83bd15a3b51f34696844c90f69ad946037ec56d515c2be3912ba53b297f401d4",
+    "workflow/r2s/structure.py": "3ef85ef5fe075d80f152a50d4a0b7d5ae299d2b2f204668c5babff9c167bffe5",
+    "workflow/r2s/surfaces.py": "a761b497aea5367bb055813c6613565383380529ef0d106525bde375a0a469a6",
+    "workflow/r2s/task_evaluation.py": "9a206320f6068fa0571d863c3196901c5ef13449573694df68f5913e3a08487d",
+    "workflow/r2s/viewpoints.py": "b0fb70f246c19b01aa95b412bbb6ded7577ff2783a0550480b362b052b96e593",
+    "workflow/r2s/web_integration.py": "be24c97f4cfb8517aa68faac8ef0992ee61a62ed8b9c4702abe36451d6d00336",
+    "workflow/r2s/web_research.py": "c61c27075fc1d43edd1d9213f5c2e418f03678de0de6385baa52783253257b09"
+  }
+}
