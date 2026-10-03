@@ -164,3 +164,12 @@ Use a new output directory. The frozen recipe does not require another language-
 [Furniture specifications](docs/FURNITURE_SPEC_ENHANCEMENT.md) · [Replay results](docs/example/RESULTS.md) · [Limitations](KNOWN_LIMITATIONS.md) · [Integrations](docs/INTEGRATIONS.md)
 
 Maintained by Roboparty; not an official OpenAI project. Code: [MIT](LICENSE). Photographs, videos and third-party materials: [media and attribution terms](MEDIA_NOTICE.md).
+## Explicit camera inputs and real-scene diagnostic (2026-10-03)
+
+Per-frame intrinsics and poses now flow through ingestion, preprocessing, Agent
+packets, camera locks and Blender/MuJoCo transfer, including unequal focal lengths
+and off-axis principal points. A 36-input / 8-heldout ETH3D delivery-area experiment
+compares three camera conditions with a shared Pi3X reference and static mesh
+adapter. This is not a full semantic Agent reconstruction or physics acceptance.
+See [camera contract](docs/CAMERA_OBSERVATIONS.md) and
+[measured results and limitations](docs/research/ETH3D_CAMERA_20261003.md).

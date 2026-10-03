@@ -6,8 +6,10 @@ import numpy as np
 import mujoco
 if __package__:
  from .shell_collision import SURFACES,shell_boxes,box_in_entity_frame
+ from .camera import focal_xy,principal_for_raster
 else:
  from shell_collision import SURFACES,shell_boxes,box_in_entity_frame
+ from camera import focal_xy,principal_for_raster
 SPEC=Path(sys.argv[1]).resolve();OUT=Path(sys.argv[2]).resolve();S=json.loads(SPEC.read_text());branch=S.get('branch','A');audit=json.loads((OUT/'geometry_audit.json').read_text());specs={o['id']:o for o in S['objects']}
 def fmt(v):return ' '.join(f'{x:.8g}' for x in v)
 root=Element('mujoco',model='real2sim_'+S['case_id']+'_'+branch);SubElement(root,'compiler',angle='radian',meshdir='meshes',inertiafromgeom='false',fusestatic='false');SubElement(root,'option',timestep='0.002',gravity='0 0 -9.81');asset=SubElement(root,'asset');world=SubElement(root,'worldbody')
@@ -89,10 +91,10 @@ for o in S['objects']:
  if o['kind']=='petal_pendant':SubElement(world,'light',name=o['id']+'_light',pos=fmt(o['position']),dir='0 0 -1',diffuse='.15 .13 .10')
 camera_specs=S.get('cameras') or [S['camera']]
 for index,camera in enumerate(camera_specs):
- Rc=np.array(camera['rotation_world_to_cv']);axes=np.r_[Rc[0],-Rc[1]];W,H=camera['image_size'];f=camera['focal_px'];cx,cy=camera['principal_point'];name='source_camera' if index==0 else f'source_camera_{index:04d}'
+ Rc=np.array(camera['rotation_world_to_cv']);axes=np.r_[Rc[0],-Rc[1]];W,H=camera['image_size'];f,fy=focal_xy(camera);cx,cy=principal_for_raster(camera);name='source_camera' if index==0 else f'source_camera_{index:04d}'
  # MuJoCo frustum offsets are expressed in sensor coordinates. Verify their transfer
  # back to top-left pixel coordinates below instead of assuming a centered fovy camera.
- SubElement(world,'camera',name=name,pos=fmt(camera['position']),xyaxes=fmt(axes),resolution=f'{W} {H}',sensorsize=fmt([.036,.036*H/W]),focalpixel=fmt([f,f]),principalpixel=fmt([W/2-cx,H/2-cy]),ipd='0')
+ SubElement(world,'camera',name=name,pos=fmt(camera['position']),xyaxes=fmt(axes),resolution=f'{W} {H}',sensorsize=fmt([.036,.036*H/W]),focalpixel=fmt([f,fy]),principalpixel=fmt([W/2-cx,H/2-cy]),ipd='0')
 prior_report=None
 if S.get('physical_priors'):
  if __package__:
@@ -109,8 +111,8 @@ if prior_report is not None:
  (OUT/'physical_priors_report.json').write_text(json.dumps(prior_report,indent=2))
 camera_transfer=[]
 for index,camera in enumerate(camera_specs):
- name='source_camera' if index==0 else f'source_camera_{index:04d}';cid=mujoco.mj_name2id(model,mujoco.mjtObj.mjOBJ_CAMERA,name);vc=mujoco.MjvCamera();vc.type=mujoco.mjtCamera.mjCAMERA_FIXED;vc.fixedcamid=cid;view=mujoco.MjvScene(model,maxgeom=max(2000,model.ngeom+50));mujoco.mjv_updateScene(model,data,mujoco.MjvOption(),None,vc,mujoco.mjtCatBit.mjCAT_ALL,view);g=view.camera[0];W,H=camera['image_size'];f=camera['focal_px'];cx,cy=camera['principal_point'];recovered=[g.frustum_near*W/(2*g.frustum_width),g.frustum_near*H/(g.frustum_top-g.frustum_bottom),W/2-g.frustum_center*W/(2*g.frustum_width),H*g.frustum_top/(g.frustum_top-g.frustum_bottom)];error=abs(np.array(recovered)-[f,f,cx,cy]);assert max(error)<.002,'Camera intrinsic transfer mismatch'
- camera_transfer.append({'camera':name,'canonical_fx_fy_cx_cy':[f,f,cx,cy],'recovered_from_engine_frustum':recovered,'maximum_transfer_error_px':float(max(error)),'interpretation':'format transfer consistency, not physical camera calibration accuracy'})
+ name='source_camera' if index==0 else f'source_camera_{index:04d}';cid=mujoco.mj_name2id(model,mujoco.mjtObj.mjOBJ_CAMERA,name);vc=mujoco.MjvCamera();vc.type=mujoco.mjtCamera.mjCAMERA_FIXED;vc.fixedcamid=cid;view=mujoco.MjvScene(model,maxgeom=max(2000,model.ngeom+50));mujoco.mjv_updateScene(model,data,mujoco.MjvOption(),None,vc,mujoco.mjtCatBit.mjCAT_ALL,view);g=view.camera[0];W,H=camera['image_size'];f,fy=focal_xy(camera);cx,cy=camera['principal_point'];recovered=[g.frustum_near*W/(2*g.frustum_width),g.frustum_near*H/(g.frustum_top-g.frustum_bottom),W/2-g.frustum_center*W/(2*g.frustum_width),H*g.frustum_top/(g.frustum_top-g.frustum_bottom)];recovered[2:]=(np.asarray(recovered[2:])-(.5 if camera.get('pixel_coordinates')=='integer_centers' else 0.)).tolist();error=abs(np.array(recovered)-[f,fy,cx,cy]);assert max(error)<.002,'Camera intrinsic transfer mismatch'
+ camera_transfer.append({'camera':name,'canonical_fx_fy_cx_cy':[f,fy,cx,cy],'recovered_from_engine_frustum':recovered,'maximum_transfer_error_px':float(max(error)),'interpretation':'format transfer consistency, not physical camera calibration accuracy'})
 required=['floor','ceiling','wall_back','wall_front','wall_left','wall_right']+[o['id'] for o in S['objects'] if 'lamp' in o['kind'] or 'pendant' in o['kind'] or o.get('semantic_class')=='luminaire'];missing=[x for x in required if mujoco.mj_name2id(model,mujoco.mjtObj.mjOBJ_BODY,x)<0];assert not missing
 # Contact probe has its own file, never becomes part of exported reconstructed scene.
 group=np.array([0,0,1,0,0,0],np.uint8);rid=np.zeros(1,np.int32);probe_xy=None

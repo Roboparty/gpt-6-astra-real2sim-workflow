@@ -1,0 +1,29 @@
+{
+  "status": "frozen_before_inference",
+  "frame_manifest_sha256": "d6ca1eeddcea573d2a4aaaf182839f34e31f73f0d987bca194d6565f1aebfc92",
+  "conditions": [
+    "RGB",
+    "RGB_K",
+    "RGB_K_T"
+  ],
+  "runner_sha256": "89c94237344d0b49df8f1fb36f1c02751535222523a3ac78c931ce1c73a02dd9",
+  "code_revision": "9fa3ddb3f8d53041f8b2738df404f62223bbaa7b",
+  "weight_revision": "bb1deea4d7423de5b30691739cb451a3f57dc1d5",
+  "weight_sha256": "69972d6e1c4492cb4d737a84fe940e357087d81c52f5c9b7c160b49c1f41669a",
+  "preprocessing": {
+    "output_size_wh": [
+      420,
+      280
+    ],
+    "resize": "Pillow LANCZOS",
+    "crop": "none",
+    "color": "RGB",
+    "tensor": "float32_0_1",
+    "camera_convention": "K_raster uses image-corner origin; +0.5 ray grid in Pi3X; native workflow manifest uses integer centres"
+  },
+  "seed": 0,
+  "forwards_per_condition": 1,
+  "max_seconds": 1200,
+  "estimator_scope": "Pi3X static adapter ablation; not complete Agent workflow/AWSM comparison",
+  "permission": "All RGB shared; only RGB_K/RGB_K_T receive K and only RGB_K_T receives mapping GT poses; no GT depth/mesh/heldout inputs"
+}

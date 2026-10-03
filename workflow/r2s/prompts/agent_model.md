@@ -27,3 +27,9 @@ For quality_v2 deliver scene.structure using real2sim.assembly/1: one owner per 
 When surface_contract_version >= 1, also follow surfaces.md; source-bound surface artifacts and front/raking review are mandatory.
 
 When appearance_contract_version >= 1, also follow appearance.md. Whole-scene coverage, scoped textures, actual UV/material checks and persistent fixed-view comparisons are mandatory.
+# Supplied camera constraints
+
+If packet.camera_constraints exists, copy its ordered cameras into scene.cameras
+and its first camera into scene.camera. Preserve their numeric values and frame
+IDs; include camera_constraints_sha256 in response.parameters. The build and
+acceptance stages check these constraints. GT camera inputs are diagnostic only.

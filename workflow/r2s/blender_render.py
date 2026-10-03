@@ -4,6 +4,7 @@ from pathlib import Path
 from mathutils import Matrix,Vector
 sys.path.insert(0,str(Path(__file__).parent))
 from viewpoints import diagnostic_focus,safe_camera_position
+from blender_camera import apply_camera
 out=Path(sys.argv[sys.argv.index('--')+1]);sc=bpy.context.scene
 packet=json.loads((out/'packet.json').read_text()) if (out/'packet.json').exists() else {}
 inspection_size=packet.get('parameters',{}).get('inspection_resolution',[960,640])
@@ -23,8 +24,8 @@ from blender_metadata import synchronize
 for i,c in enumerate(specs):
     name='source_camera' if i==0 else f'source_camera_{i:04d}';camera=bpy.data.objects.get(name)
     if camera is None:bpy.ops.object.camera_add();camera=bpy.context.object;camera.name=name
-    camera.location=c['position'];camera.rotation_euler=(Matrix(c['rotation_world_to_cv']).transposed()@Matrix(((1,0,0),(0,-1,0),(0,0,-1)))).to_euler();W,H=c['image_size'];camera.data.sensor_fit='HORIZONTAL';camera.data.sensor_width=36;camera.data.lens=c['focal_px']*36/W;camera.data.shift_x=(W/2-c['principal_point'][0])/W;camera.data.shift_y=(c['principal_point'][1]-H/2)/W;camera['frame_id']=c.get('frame_id',str(i));cameras.append(camera)
-sc.camera=cameras[0];sc.render.resolution_x=specs[0]['image_size'][0];sc.render.resolution_y=specs[0]['image_size'][1];bpy.ops.file.pack_all();bpy.ops.wm.save_as_mainfile(filepath=str(out/'scene.blend'))
+    apply_camera(sc,camera,c);camera['frame_id']=c.get('frame_id',str(i));cameras.append(camera)
+apply_camera(sc,cameras[0],specs[0]);bpy.ops.file.pack_all();bpy.ops.wm.save_as_mainfile(filepath=str(out/'scene.blend'))
 if holistic:
     from blender_appearance import audit as appearance_audit, comparison_views, neutral_view
     if packet['stage']=='build_render':
@@ -35,16 +36,18 @@ if (out/'surface_realization.json').exists():
     from blender_surfaces import audit
     audit(out)
 for i,(camera,c) in enumerate(zip(cameras,specs)):
-    sc.camera=camera;sc.render.resolution_x=c['image_size'][0];sc.render.resolution_y=c['image_size'][1];sc.render.filepath=str(out/('source_view.png' if i==0 else f'source_view_{i:04d}.png'));bpy.ops.render.render(write_still=True)
+    apply_camera(sc,camera,c);sc.render.filepath=str(out/('source_view.png' if i==0 else f'source_view_{i:04d}.png'));bpy.ops.render.render(write_still=True)
 (out/'render_manifest.json').write_text(json.dumps({'comparison_settings':{'resolution_percentage':sc.render.resolution_percentage,'view_transform':sc.view_settings.view_transform,'look':sc.view_settings.look,'engine':sc.render.engine},'frames':[{'frame_id':c.get('frame_id',str(i)),'camera':camera.name,'render':'source_view.png' if i==0 else f'source_view_{i:04d}.png','role':'reconstruction_view'} for i,(camera,c) in enumerate(zip(cameras,specs))]},indent=2))
 # Geometry-focused review and complete-enclosure views are available before the Agent review gate.
 sc.camera=cameras[0];sc.render.resolution_x=specs[0]['image_size'][0];sc.render.resolution_y=specs[0]['image_size'][1];sc.cycles.samples=48
+apply_camera(sc,cameras[0],specs[0])
 clay=bpy.data.materials.new('review_clay');clay.use_nodes=True;clay.node_tree.nodes['Principled BSDF'].inputs['Base Color'].default_value=(.5,.5,.5,1);clay.node_tree.nodes['Principled BSDF'].inputs['Roughness'].default_value=.8;sc.view_layers[0].material_override=clay
 # Opaque clay also covers glazing. Exterior-only source lights would then
 # produce a black enclosed room instead of usable geometric evidence.
 from blender_appearance import neutral_view
 try:neutral_view(out,S,'source_clay.png')
 finally:sc.view_layers[0].material_override=None
+sc.render.pixel_aspect_x=sc.render.pixel_aspect_y=1
 r=S['room'];xm,xM,ym,yM,h=[r[k] for k in ['x_min','x_max','y_min','y_max','height']];dx=xM-xm;dy=yM-ym;focus=diagnostic_focus(S);diagnostics=[]
 for name,pos in [('wide',(xM-dx*.12,ym+dy*.12,h*.73)),('reverse',(xm+dx*.2,yM-dy*.08,h*.65))]:
     chosen=safe_camera_position(S,pos);bpy.ops.object.camera_add(location=chosen);cam=bpy.context.object;cam.rotation_euler=(focus-cam.location).to_track_quat('-Z','Y').to_euler();cam.data.lens=22;sc.camera=cam;sc.render.resolution_x,sc.render.resolution_y=inspection_size;sc.render.filepath=str(out/f'diagnostic_{name}.png');bpy.ops.render.render(write_still=True);diagnostics.append({'name':name,'position':list(chosen),'target':list(focus),'layout_modified':False,'image_size':inspection_size})

@@ -6,6 +6,8 @@ from scipy.optimize import least_squares
 from scipy.spatial.transform import Rotation
 
 def fit_camera(observations,initial,options=None):
+    if initial.get('focal_y_px',initial['focal_px'])!=initial['focal_px']:
+        raise ValueError('This unknown-camera fitter assumes square pixels; consume supplied calibration without refitting')
     options=options or {};W,H=initial['image_size'];land=observations['landmarks'];xyz=np.array([p['xyz'] for p in land]);uv=np.array([p['uv'] for p in land]);planes=observations.get('plane_outlines',[]);lines=observations.get('parallel_lines',[])
     if len(land)<6:raise ValueError('At least six metric correspondences are required; Agent must document planar ambiguity')
     def unpack(v):return Rotation.from_rotvec(v[:3]).as_matrix(),v[3:6],v[6],v[7:9]
@@ -42,11 +44,11 @@ def fit_multiview_poses(shared_points,views):
     for view in views:
         ids=view['point_ids'];xyz=np.array([shared_points[i] for i in ids],np.float64);uv=np.array(view['uv'],np.float64)
         if len(ids)<6:raise ValueError('At least six reviewed correspondences per view are required')
-        f=view['focal_px'];cx,cy=view['principal_point'];K=np.array([[f,0,cx],[0,f,cy],[0,0,1.]],float)
+        f=view['focal_px'];fy=view.get('focal_y_px',f);cx,cy=view['principal_point'];K=np.array([[f,0,cx],[0,fy,cy],[0,0,1.]],float)
         ok,rvec,tvec,inliers=cv2.solvePnPRansac(xyz,uv,K,None,reprojectionError=3.,iterationsCount=200,flags=cv2.SOLVEPNP_EPNP)
         if not ok or inliers is None or len(inliers)<6:raise ValueError('Insufficient consistent multiview correspondences')
         rvec,tvec=cv2.solvePnPRefineLM(xyz[inliers[:,0]],uv[inliers[:,0]],K,None,rvec,tvec);R,_=cv2.Rodrigues(rvec);C=(-R.T@tvec).ravel();q=(xyz-C)@R.T
         if np.any(q[:,2]<=0):raise ValueError('Negative-depth multiview pose')
-        predicted=q[:,:2]/q[:,2,None]*f+[cx,cy];errors=np.linalg.norm(predicted-uv,axis=1)
-        cameras.append({'frame_id':view['frame_id'],'role':'reconstruction','position':C.tolist(),'rotation_world_to_cv':R.tolist(),'focal_px':f,'principal_point':[cx,cy],'image_size':view['image_size'],'inlier_count':len(inliers),'median_fit_error_px':float(np.median(errors)),'scale_source':'shared reviewed metric anchors; not recovered from essential matrix alone'})
+        predicted=q[:,:2]/q[:,2,None]*[f,fy]+[cx,cy];errors=np.linalg.norm(predicted-uv,axis=1)
+        cameras.append({'frame_id':view['frame_id'],'role':'reconstruction','position':C.tolist(),'rotation_world_to_cv':R.tolist(),'focal_px':f,'focal_y_px':fy,'principal_point':[cx,cy],'image_size':view['image_size'],'inlier_count':len(inliers),'median_fit_error_px':float(np.median(errors)),'scale_source':'shared reviewed metric anchors; not recovered from essential matrix alone'})
     return cameras

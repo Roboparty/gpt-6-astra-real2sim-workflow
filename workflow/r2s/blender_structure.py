@@ -80,7 +80,7 @@ for a in structure['assemblies']:
   if part not in names or names[part] not in meshes:
    result['failures'].append(dict(kind='unbound_source_landmark',entity=a['entity'],landmark=lm['id']));continue
   point,normal,index,distance=meshes[names[part]]['tree'].find_nearest(Vector(lm['world']))
-  q=(np.array(point)-C)@R.T;uv=q[:2]/q[2]*cal['focal_px']+np.array(cal['principal_point']);lm.update(measured_world_point=list(point),distance_to_bound_mesh_m=float(distance),projected=uv.tolist(),error_px=float(np.linalg.norm(uv-lm['uv'])))
+  q=(np.array(point)-C)@R.T;uv=q[:2]/q[2]*np.array([cal['focal_px'],cal.get('focal_y_px',cal['focal_px'])])+np.array(cal['principal_point']);lm.update(measured_world_point=list(point),distance_to_bound_mesh_m=float(distance),projected=uv.tolist(),error_px=float(np.linalg.norm(uv-lm['uv'])))
   if distance>.008:result['failures'].append(dict(kind='landmark_part_mismatch',entity=a['entity'],landmark=lm['id'],distance_m=float(distance)))
  errors=[v['error_px'] for v in row['source_landmarks']];limits=structure.get('acceptance',{'landmark_median_px':9,'landmark_max_px':18})
  row['landmark_median_px']=float(np.median(errors));row['landmark_max_px']=max(errors)

@@ -55,7 +55,9 @@ class Workflow:
         with (self.root/'events.jsonl').open('a',encoding='utf-8') as f:f.write(json.dumps({'time':now(),**data},ensure_ascii=False)+'\n')
     def fingerprint(self,name):
         deps,_=self.stage_map[name];up={d:self.state['stages'][d]['outputs'] for d in deps};config=self.config.get('stages',{}).get(name,{})
-        if name=='ingest':config={k:self.config.get(k) for k in ['mode','inputs','provenance','formal_test']};config['actual_input_hashes']=[file_hash(x['path']) for x in self.config['inputs']]
+        if name=='ingest':
+            config={k:self.config.get(k) for k in ['mode','inputs','provenance','formal_test','camera_observations']};config['actual_input_hashes']=[file_hash(x['path']) for x in self.config['inputs']]
+            if self.config.get('camera_observations'):config['actual_camera_manifest_hash']=file_hash(self.config['camera_observations']['path'])
         source_root=Path(__file__).parent
         source_hash=digest({str(p.relative_to(source_root)):file_hash(p) for p in source_root.rglob('*') if p.is_file() and p.suffix in {'.py','.md'}})
         prior_library=source_root.parents[1]/'public_contract'/'physical_priors.json'
@@ -119,6 +121,11 @@ class Workflow:
             if candidate:self.record_candidate(name,attempt,response,outputs,*candidate)
             item=self.state['stages'][name];item.update(status=response['status'],response=response,outputs=outputs,finished=now());atomic_json(attempt/'record.json',item);self.save();self.event({'stage':name,'status':item['status']});return False
         if self.stage_map[name][1] and (not response.get('evidence') or not response.get('reasoning_summary')):raise ContractError('Agent output lacks explicit evidence or rationale')
+        from .camera import workflow_constraints,check_scene_cameras
+        camera_constraints=workflow_constraints(self)
+        if camera_constraints and name in {'agent_calibrate','agent_calibrate_room','agent_model'}:
+            if response.get('parameters',{}).get('camera_constraints_sha256')!=camera_constraints['sha256']:
+                raise ContractError('Agent must acknowledge the supplied camera constraints hash')
         if web_research_options(self.config):
             from .web_integration import check_consumption
             check_consumption(self,name,response)
@@ -127,7 +134,8 @@ class Workflow:
         if not artifacts:raise ContractError('Stage cannot complete without artifacts')
         for rel in artifacts:
             p=safe_path(attempt,rel)
-            if p.name.startswith('scene') and p.suffix=='.json':scene_check(json.loads(p.read_text()))
+            if p.name.startswith('scene') and p.suffix=='.json':
+                scene=json.loads(p.read_text());scene_check(scene);check_scene_cameras(scene,camera_constraints)
         if candidate:self.record_candidate(name,attempt,response,outputs,*candidate)
         if self.refining and name in {'build_geometry','build_render'} and limits(self.config)['appearance_contract_version']:
             from .appearance import upstream
@@ -166,6 +174,10 @@ class Workflow:
             if name=='preprocess':
                 inp=json.loads(Path(self.state['stages']['ingest']['outputs'][0]['path']).read_text());processed=preprocess(inp,attempt,cfg.get('parameters'));return 'succeeded' if self._finish(name,attempt,{'status':'complete','artifacts':['preprocess.json']+[Path(r['path']).name for r in processed['accepted']],'evidence':['original frame sampling and feature correspondences']}) else 'failed'
             packet=self.packet(name,attempt);packet['revision_request']=self.state.get('revision_requests',{}).get(name)
+            from .camera import workflow_constraints
+            camera_constraints=workflow_constraints(self)
+            if camera_constraints:packet['camera_constraints']=camera_constraints
+            packet['constraints']['formal_real_photography_only']=self.config.get('formal_test',True)
             web=web_research_options(self.config)
             if web:
                 packet['web_research']=web

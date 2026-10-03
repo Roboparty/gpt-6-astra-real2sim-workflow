@@ -1,0 +1,10 @@
+{
+  "date": "2026-10-03",
+  "camera_contract_checks": {"passed": 7, "denominator": 7, "runner": "tools/test_camera_observations.py", "includes": ["image/pose binding", "asymmetric projection", "half-pixel resize", "cache invalidation", "locked scene cameras", "negative provenance and matrix cases", "calibrated video order", "actual MuJoCo frustum"]},
+  "blender_projection": {"versions": ["4.5.3 LTS", "4.5.4 LTS"], "cases": 3, "maximum_error_px": 0.00019279322983978465, "runner": "tools/test_camera_blender.py"},
+  "native_real_inputs": {"accepted_photographs": 36, "accepted_cameras": 36, "status": "passed", "receipt": "camera_integration_receipt.json", "scope": "ingest, preprocess, camera constraints in Agent packet; not full modelling or acceptance"},
+  "existing_development_regressions": {"passed": 14, "denominator": 14, "receipt": "regression_summary.json", "scope": "full suite before final video-order-only edit; seven camera checks including video order run after that edit"},
+  "syntax_and_patch": {"compileall": "passed", "git_diff_check": "passed"},
+  "reconstruction_acceptance": "not_established",
+  "benchmark_scope": "real ETH3D camera-condition reference/static-mesh pilot; not complete Agent workflow or AWSM authoring comparison"
+}

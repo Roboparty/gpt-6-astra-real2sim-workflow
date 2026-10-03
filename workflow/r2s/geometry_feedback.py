@@ -8,6 +8,7 @@ from PIL import Image, ImageDraw
 from scipy.ndimage import binary_erosion, distance_transform_edt
 
 from .contracts import digest
+from .camera import focal_xy,validate_camera
 
 
 def file_sha256(path):
@@ -55,6 +56,7 @@ def _finite(value, shape):
 
 
 def _camera(camera):
+    validate_camera(camera)
     size = camera['image_size']
     if len(size) != 2 or any(type(x) is not int or x <= 0 for x in size):
         raise ValueError('Camera needs positive integer image dimensions')
@@ -72,7 +74,7 @@ def _project(xyz, camera):
     if point[2] <= 0:
         raise ValueError('Landmark is behind the frozen camera')
     with np.errstate(over='ignore', invalid='ignore', divide='ignore'):
-        uv = point[:2] / point[2] * camera['focal_px'] + camera['principal_point']
+        uv = point[:2] / point[2] * focal_xy(camera) + camera['principal_point']
     if not np.isfinite(uv).all():
         raise ValueError('Landmark projection is nonfinite')
     return uv

@@ -3,6 +3,7 @@ Agents supply explicit geometry; unsupported categories are not silently substit
 """
 import bpy,sys,json,math
 from pathlib import Path
+sys.path.insert(0,str(Path(__file__).parent))
 from mathutils import Vector,Matrix
 args=sys.argv[sys.argv.index('--')+1:];src=Path(args[0]).resolve();dest=Path(args[1]).resolve();S=json.loads(src.read_text())
 if S.get('schema_version')!='real2sim.scene/1.0' or S.get('units')!='m' or S.get('up_axis')!='Z':raise ValueError('Invalid canonical scene')
@@ -50,7 +51,8 @@ for entity in S['objects']:
  if not parts:raise ValueError(entity['id']+' has no explicit parts; use a custom Agent builder')
  bpy.ops.object.empty_add();root=bpy.context.object;root.name=entity['id'];root.location=entity['position'];root.rotation_euler[2]=entity.get('rotation_z',0);root['scene_spec']=json.dumps(entity);root['entity_id']=entity['id'];root['layout_locked']=entity.get('layout_lock',True)
  for p in parts:build_part(p,root,entity['id'])
-cam=S['camera'];bpy.ops.object.camera_add(location=cam['position']);camera=bpy.context.object;camera.name='source_camera';camera.rotation_euler=(Matrix(cam['rotation_world_to_cv']).transposed()@Matrix(((1,0,0),(0,-1,0),(0,0,-1)))).to_euler();W,H=cam['image_size'];camera.data.sensor_fit='HORIZONTAL';camera.data.sensor_width=36;camera.data.lens=cam['focal_px']*36/W;camera.data.shift_x=(W/2-cam['principal_point'][0])/W;camera.data.shift_y=(cam['principal_point'][1]-H/2)/W
+from blender_camera import apply_camera
+cam=S['camera'];bpy.ops.object.camera_add();camera=bpy.context.object;camera.name='source_camera';W,H=cam['image_size'];apply_camera(bpy.context.scene,camera,cam)
 for i,light in enumerate(S.get('illumination',[])):
  bpy.ops.object.light_add(type='AREA',location=light['position']);o=bpy.context.object;o.name=light.get('id',f'illumination_{i}');o.data.energy=light['power'];o.data.size=light['size'];o.rotation_euler=(Vector(light['target'])-o.location).to_track_quat('-Z','Y').to_euler();o['evidence']=json.dumps(light.get('evidence',[]))
 sc=bpy.context.scene;sc.camera=camera;sc.render.engine='CYCLES';sc.cycles.samples=64;sc.cycles.use_denoising=True;sc.render.resolution_x=W;sc.render.resolution_y=H;sc.render.resolution_percentage=100;sc['case_id']=S['case_id'];sc['input_provenance']=json.dumps(S.get('input_provenance',{}));bpy.ops.file.pack_all();dest.parent.mkdir(parents=True,exist_ok=True);bpy.ops.wm.save_as_mainfile(filepath=str(dest))

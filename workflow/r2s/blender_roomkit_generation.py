@@ -85,10 +85,8 @@ for entity in entities.values():
         light=bpy.context.object;light.name=entity['id']+'_initial_light';light.data.energy=100;light.data.size=.5
         light['prior_status']='assumed';light['stage']='initial_gray_geometry_only'
 c=scene['camera'];bpy.ops.object.camera_add();camera=bpy.context.object;camera.name='source_camera'
-camera.location=c['position'];camera.rotation_euler=(Matrix(c['rotation_world_to_cv']).transposed()@Matrix(((1,0,0),(0,-1,0),(0,0,-1)))).to_euler()
-W,H=c['image_size'];camera.data.sensor_fit='HORIZONTAL';camera.data.sensor_width=36;camera.data.lens=c['focal_px']*36/W
-camera.data.shift_x=(W/2-c['principal_point'][0])/W;camera.data.shift_y=(c['principal_point'][1]-H/2)/W
-sc.camera=camera;sc.render.resolution_x=W;sc.render.resolution_y=H
+from r2s.blender_camera import apply_camera
+apply_camera(sc,camera,c)
 scene_check(scene)
 scene_path.write_text(json.dumps(scene, indent=2))
 bpy.ops.wm.save_as_mainfile(filepath=str(out/'model.blend'))

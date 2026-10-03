@@ -1,0 +1,37 @@
+{
+  "date": "2026-10-03",
+  "source": "ETH3D official public training data",
+  "downloads_remote_only": true,
+  "archives": [
+    {
+      "file": "delivery_area_dslr_depth.7z",
+      "url": "https://www.eth3d.net/data/delivery_area_dslr_depth.7z",
+      "bytes": 388144128,
+      "sha256": "e6edc65b5b6de343876382040c839405eef79abed33319aa377883f4ddc5775a"
+    },
+    {
+      "file": "delivery_area_dslr_jpg.7z",
+      "url": "https://www.eth3d.net/data/delivery_area_dslr_jpg.7z",
+      "bytes": 372958192,
+      "sha256": "f8190ebdf670935fb93ed2a6e66210a2bcc4633b6f698033855a75cac254f973"
+    },
+    {
+      "file": "delivery_area_dslr_occlusion.7z",
+      "url": "https://www.eth3d.net/data/delivery_area_dslr_occlusion.7z",
+      "bytes": 56850384,
+      "sha256": "f61a1bd74bc8fe07d03973520cc1433ea99566fcd637a654a5b2072d475a1b4c"
+    },
+    {
+      "file": "delivery_area_dslr_scan_eval.7z",
+      "url": "https://www.eth3d.net/data/delivery_area_dslr_scan_eval.7z",
+      "bytes": 122553428,
+      "sha256": "8e07f7a7956a41c1ecc18ca8a61d3fff274c080050301a1b7dff12a3ca5ed5d2"
+    },
+    {
+      "file": "delivery_area_dslr_undistorted.7z",
+      "url": "https://www.eth3d.net/data/delivery_area_dslr_undistorted.7z",
+      "bytes": 478076254,
+      "sha256": "9acf5efec4b99a69b89ebb87b403259730756c1a510307c92e5f2ce2d22658f3"
+    }
+  ]
+}

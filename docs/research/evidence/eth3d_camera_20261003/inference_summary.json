@@ -1,0 +1,41 @@
+{
+  "status": "complete",
+  "gpu": [
+    "3",
+    "GPU-cebad0aa-f06a-6660-6ee4-cd673b55e55a",
+    "1",
+    "0"
+  ],
+  "strict_checkpoint_loading": true,
+  "torch": "2.5.1+cu124",
+  "conditions": [
+    {
+      "condition": "RGB",
+      "status": "complete",
+      "forward_seconds": 2.462332480936311,
+      "peak_reserved_bytes": 17467179008,
+      "predictions_sha256": "917135c5c9dd58c7cc0f79e8cb764ad0336f7214582200732cbf9ea456484c02",
+      "mesh_sha256": "cd133ed3dd4e93e9e1313fe4c1346476a2fcde1f641987e015adf8c61af8f1c6",
+      "wall_seconds": 13.158536251983605
+    },
+    {
+      "condition": "RGB_K",
+      "status": "complete",
+      "forward_seconds": 1.0669141609687358,
+      "peak_reserved_bytes": 17286823936,
+      "predictions_sha256": "21706deb5184208e8dc3172fded40ef71e5bf9557155513e205d70f77d183985",
+      "mesh_sha256": "e6e1b2dc9ea179f3a0b0d7b41fc405c21a90aee469aeea9709eb0db73c7dee64",
+      "wall_seconds": 12.029341465909965
+    },
+    {
+      "condition": "RGB_K_T",
+      "status": "complete",
+      "forward_seconds": 1.2111610359279439,
+      "peak_reserved_bytes": 17762877440,
+      "predictions_sha256": "02e65715374c397d0ebafaf17f0aebbc8d2c3c0cadf09ecd0ca906a0140d0ac1",
+      "mesh_sha256": "5f9b36e1746c8c99f37fdcac1d259edb98313b642a0826560cfbef7042360b12",
+      "wall_seconds": 12.254985691979527
+    }
+  ],
+  "wall_seconds": 48.377270811004564
+}

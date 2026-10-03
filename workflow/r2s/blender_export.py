@@ -7,9 +7,11 @@ from mathutils import Vector,Matrix
 from bpy_extras.object_utils import world_to_camera_view
 sys.path.insert(0,str(Path(__file__).parent))
 from viewpoints import diagnostic_focus,safe_camera_position
+from blender_camera import apply_camera
 args=sys.argv[sys.argv.index('--')+1:]; SPEC=Path(args[0]).resolve();OUT=Path(args[1]).resolve();OUT.mkdir(exist_ok=True,parents=True)
 if '--geometry-only' in args[2:] and '--interchange-only' in args[2:]:raise ValueError('Choose geometry-only or interchange-only, not both')
 S=json.loads(SPEC.read_text());sc=bpy.context.scene;original_camera=sc.camera
+apply_camera(sc,original_camera,S['camera'])
 from blender_metadata import synchronize
 (OUT/'metadata_export_check.json').write_text(json.dumps(synchronize(S),indent=2))
 try:
@@ -73,7 +75,7 @@ for key,obs in sorted(groups.items()):
 # Camera verification uses actual Blender projection, including principal-point shift.
 cam=S['camera'];land=[]
 for p in cam.get('fit_landmarks',[]):
- co=world_to_camera_view(sc,sc.camera,Vector(p['xyz']));uv=[co.x*cam['image_size'][0],(1-co.y)*cam['image_size'][1]];err=math.dist(uv,p['uv']);land.append({'target':p['uv'],'render':uv,'error_px':err})
+ co=world_to_camera_view(sc,sc.camera,Vector(p['xyz']));offset=.5 if cam.get('pixel_coordinates')=='integer_centers' else 0.;uv=[co.x*cam['image_size'][0]-offset,(1-co.y)*cam['image_size'][1]-offset];err=math.dist(uv,p['uv']);land.append({'target':p['uv'],'render':uv,'error_px':err})
 report['camera_reprojection']=land
 report['material_portability']='Blender preserves procedural shaders; GLB/USD preserve image textures and supported PBR inputs, but procedural wood/fabric may become flat approximations.'
 (OUT/'geometry_audit.json').write_text(json.dumps(report,indent=2))
@@ -115,10 +117,11 @@ focus=diagnostic_focus(S)
 views=[('interior_reverse',(xm+dx*.2,yM-dy*.08,h*.65),focus),('interior_wide',(xM-dx*.12,ym+dy*.12,h*.73),focus),('interior_left',(xm+dx*.08,ym+dy*.25,h*.60),focus)]
 sc.render.resolution_x=S['camera']['image_size'][0]*2;sc.render.resolution_y=S['camera']['image_size'][1]*2;sc.cycles.samples=128;sc.render.filepath=str(OUT/'source_view_high.png');bpy.ops.render.render(write_still=True)
 sc.cycles.samples=64
+sc.render.pixel_aspect_x=sc.render.pixel_aspect_y=1
 for name,pos,target in views:
  pos=safe_camera_position(S,pos);bpy.ops.object.camera_add(location=pos);camera=bpy.context.object;camera.name='diagnostic_'+name;camera.rotation_euler=(Vector(target)-camera.location).to_track_quat('-Z','Y').to_euler();camera.data.lens=22;sc.camera=camera
  sc.render.resolution_x=960;sc.render.resolution_y=640;sc.render.resolution_percentage=100;sc.render.filepath=str(OUT/f'{name}.png');bpy.ops.render.render(write_still=True)
-sc.camera=original_camera;W,H=cam['image_size'];sc.render.resolution_x=W;sc.render.resolution_y=H
+apply_camera(sc,original_camera,cam);W,H=cam['image_size']
 # Emissive ID render has no textures, shadows or material confounds.
 def linear(x):return x/12.92 if x<.04045 else ((x+.055)/1.055)**2.4
 palette={}

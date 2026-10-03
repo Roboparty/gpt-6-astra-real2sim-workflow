@@ -8,6 +8,17 @@
 
 ## Runtime and references
 
+The 2026-10-03 camera experiment uses the [ETH3D delivery-area dataset](https://www.eth3d.net/datasets).
+Its real photographs, laser data and calibration remain third-party data; the small
+research contact/comparison previews under `docs/research/evidence/eth3d_camera_20261003`
+do not acquire this repository's MIT licence. Original archives and scans remain remote.
+The experiment uses the [Pi3X](https://github.com/yyfz/Pi3) research checkpoint described
+in its frozen protocol (CC BY-NC 4.0 weights, not redistributed), and loads the optical-Z
+metric function from [AWSM](https://github.com/wentingw/AWSM) commit
+`4dc2f5c515b77fd5f5f8dbedbdad76663882267e` in the remote evaluator. AWSM source and
+LPIPS/AlexNet weights are not vendored into this repository. The report preserves
+their revisions and hashes and does not imply an affiliation or a complete AWSM rerun.
+
 The MIT licence in this repository covers project-authored source code, text documentation, and machine-readable metadata. Example media is covered separately by [MEDIA_NOTICE.md](MEDIA_NOTICE.md).
 
 Runtime dependencies are not redistributed as part of this Git repository and retain their own licences. Consult the exact installed version's notices, including transitive dependencies, when distributing an environment or container:

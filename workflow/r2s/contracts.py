@@ -24,7 +24,8 @@ def scene_check(scene):
     lamps=[o for o in scene['objects'] if 'lamp' in o['kind'] or 'pendant' in o['kind'] or o.get('semantic_class')=='luminaire']
     if not lamps:raise ContractError('Scene must include luminaires, with inferred ones marked as hypotheses')
     for c in [scene['camera']]+scene.get('cameras',[]):
-        if c['focal_px']<=0 or min(c['image_size'])<=0:raise ContractError('Invalid camera')
+        from .camera import validate_camera
+        validate_camera(c)
         if c.get('role','reconstruction')!='reconstruction':raise ContractError('Held-out camera data cannot enter reconstruction scene')
     if scene.get('structure'):
         from .structure import structure_contract

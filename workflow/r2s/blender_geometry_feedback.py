@@ -14,6 +14,8 @@ from mathutils import Matrix, Vector
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 from r2s.contracts import digest
+from r2s.blender_camera import apply_camera
+from r2s.camera import focal_xy
 
 
 def file_record(path):
@@ -29,40 +31,35 @@ def set_camera(scene, spec):
     data = bpy.data.cameras.new('geometry_feedback_camera')
     camera = bpy.data.objects.new(data.name, data)
     scene.collection.objects.link(camera)
-    camera.location = spec['position']
+    apply_camera(scene, camera, spec)
     rotation = Matrix(spec['rotation_world_to_cv'])
-    camera.rotation_euler = (rotation.transposed() @ Matrix.Diagonal((1, -1, -1))).to_euler()
     width, height = spec['image_size']
-    data.type = 'PERSP'
-    data.sensor_fit = 'HORIZONTAL'
-    data.sensor_width = 36
-    data.lens = spec['focal_px'] * 36 / width
-    data.shift_x = (width / 2 - spec['principal_point'][0]) / width
-    data.shift_y = (spec['principal_point'][1] - height / 2) / width
     data.dof.use_dof = False
     data.clip_start = spec.get('clip_start_m', .001)
     data.clip_end = spec.get('clip_end_m', 10000.)
     scene.camera = camera
     scene.render.resolution_x, scene.render.resolution_y = width, height
     scene.render.resolution_percentage = 100
-    scene.render.pixel_aspect_x = scene.render.pixel_aspect_y = 1
     scene.render.use_border = False
     scene.render.use_crop_to_border = False
     bpy.context.view_layer.update()
     # Test the actual Blender projection; input floats alone are not render evidence.
     errors = []
+    offset=.5 if spec.get('pixel_coordinates')=='integer_centers' else 0.
     for u, v in [(width/2, height/2), (0, 0), (width, 0), (0, height), (width, height)]:
-        ray = Vector(((u-spec['principal_point'][0])/spec['focal_px'],
-                      (v-spec['principal_point'][1])/spec['focal_px'], 1))
+        fx, fy = focal_xy(spec)
+        ray = Vector(((u-spec['principal_point'][0])/fx,
+                      (v-spec['principal_point'][1])/fy, 1))
         world = Vector(spec['position']) + rotation.transposed() @ ray
         projected = world_to_camera_view(scene, camera, world)
-        errors.append(math.hypot(projected.x*width-u, (1-projected.y)*height-v))
+        errors.append(math.hypot(projected.x*width-offset-u, (1-projected.y)*height-offset-v))
     if max(errors) > .01:
         raise ValueError('Actual Blender camera differs from protocol by more than 0.01 px: ' + str(errors))
     return {'position': list(camera.matrix_world.translation),
             'rotation_world_to_cv': [list(row) for row in Matrix.Diagonal((1, -1, -1)) @ camera.matrix_world.to_3x3().transposed()],
             'focal_px': data.lens * width / data.sensor_width,
-            'principal_point': [width/2-data.shift_x*width, height/2+data.shift_y*width],
+            'focal_y_px': data.lens * width / data.sensor_width * scene.render.pixel_aspect_x / scene.render.pixel_aspect_y,
+            'principal_point': [width/2-data.shift_x*width-offset, height/2+data.shift_y*width*scene.render.pixel_aspect_x/scene.render.pixel_aspect_y-offset],
             'image_size': [scene.render.resolution_x, scene.render.resolution_y],
             'resolution_percentage': scene.render.resolution_percentage,
             'clip_start_m': data.clip_start, 'clip_end_m': data.clip_end,
