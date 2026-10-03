@@ -1,0 +1,98 @@
+{
+  "model_sha256": "67b1f48fedcb86e58e43952d630d141d26943902bf7d830b5247c55291bb766b",
+  "model_unchanged": true,
+  "camera_metadata_exact": true,
+  "rigid_gauge_exact": true,
+  "source_labels_exact": true,
+  "source_label_count": 38,
+  "acceptance_exact": true,
+  "room_guard": {
+    "bounds_only": true,
+    "nonrectangular_topology": true,
+    "topology": "orthogonal_union",
+    "collision_policy": "mesh_only"
+  },
+  "shell_checks": [
+    {
+      "name": "floor",
+      "nonmanifold_edges": 0,
+      "inconsistent_edges": 0,
+      "duplicate_faces": 0,
+      "signed_volume": 188.02613356717214
+    },
+    {
+      "name": "ceiling",
+      "nonmanifold_edges": 0,
+      "inconsistent_edges": 0,
+      "duplicate_faces": 0,
+      "signed_volume": 188.026399738902
+    },
+    {
+      "name": "wall_front",
+      "nonmanifold_edges": 0,
+      "inconsistent_edges": 0,
+      "duplicate_faces": 0,
+      "signed_volume": 59.940513884168
+    },
+    {
+      "name": "wall_back",
+      "nonmanifold_edges": 0,
+      "inconsistent_edges": 0,
+      "duplicate_faces": 0,
+      "signed_volume": 59.94048526173654
+    },
+    {
+      "name": "wall_left",
+      "nonmanifold_edges": 0,
+      "inconsistent_edges": 0,
+      "duplicate_faces": 0,
+      "signed_volume": 31.11265186454613
+    },
+    {
+      "name": "wall_right",
+      "nonmanifold_edges": 0,
+      "inconsistent_edges": 0,
+      "duplicate_faces": 0,
+      "signed_volume": 24.850616934032907
+    }
+  ],
+  "floor_union_cells_checked": 30,
+  "floor_union_failures": 0,
+  "garage_rays_checked": 133,
+  "garage_failures": [],
+  "lights_exact": true,
+  "changed_light_names": [],
+  "material_slot_changes": [],
+  "material_data_changes": [],
+  "settings_exact": true,
+  "settings_differences": {},
+  "visibility_changes": [],
+  "collection_changes": [],
+  "removed_objects": [
+    "corridor_north_wall",
+    "corridor_south_wall",
+    "lumber_back_wall",
+    "main_side_wall",
+    "rack_back_wall"
+  ],
+  "new_objects": [],
+  "landmark_transport_max_error": 0.09563634904665315,
+  "landmark_transport_errors": [
+    {
+      "landmark": "white_van_observed_endpoint_0",
+      "part": "van_windshield_divider",
+      "difference_m": 0.09563634904665315
+    },
+    {
+      "landmark": "black_car_observed_endpoint_0",
+      "part": "car_rear_frame1",
+      "difference_m": 0.07176657648551399
+    }
+  ],
+  "unknown_completions": [
+    "cageback1.6m",
+    "hidden roomcorner returns",
+    "longrange terminal position uncertainty"
+  ],
+  "not_claimed": "Per-shell topology/planned coverage is not physical scene accuracy, global collision clearance or support of unobserved completion. Native object audit and fixed-view visual check are separate."
+}

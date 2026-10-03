@@ -1,0 +1,8 @@
+{
+  "object": "car_tail_light1",
+  "polygon_loops_identical": true,
+  "triangle_indices_identical": false,
+  "triangle_centres_checked": 108,
+  "max_expected_surface_to_actual_surface_m": 1.0679050319595262e-06,
+  "interpretation": "Preserved polygon topology; different triangulation of same transformed bevel polygons is numerical tessellation, not loss of part binding, when sampled surface difference is microscopic."
+}

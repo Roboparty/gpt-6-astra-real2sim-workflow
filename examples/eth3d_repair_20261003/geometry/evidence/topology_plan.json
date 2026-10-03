@@ -1,0 +1,86 @@
+{
+  "regions": [
+    {
+      "id": "main_hall",
+      "bounds": [
+        -13.6,
+        5.25,
+        -8.0,
+        19.2
+      ],
+      "support": [
+        "frame16 wallpatch xmedian-13.598",
+        "frame12 dockwall ymedian19.190",
+        "garage source0 plane x5.25",
+        "cagefront24/28 y-8"
+      ],
+      "status": "observed major boundaries; hidden corners approximate"
+    },
+    {
+      "id": "storage_bay",
+      "bounds": [
+        5.25,
+        15.8,
+        0.55,
+        10.94
+      ],
+      "support": [
+        "garage-opening6/7",
+        "rack/box-trailer8",
+        "new white rear-wall patches6/7"
+      ],
+      "status": "partially_observed"
+    },
+    {
+      "id": "access_corridor",
+      "bounds": [
+        -48.239051742587364,
+        -13.6,
+        -7.75,
+        0.55
+      ],
+      "support": [
+        "frames20/32/35 corridor sides",
+        "frame20blue terminal302depth pixels"
+      ],
+      "status": "observed corridor; terminal depth uncertain"
+    },
+    {
+      "id": "cage_interiors",
+      "bounds": [
+        -13.6,
+        -1.05,
+        -9.6,
+        -8.0
+      ],
+      "support": [
+        "visible washer/containers behind mesh24/28"
+      ],
+      "status": "assumed conservative1.6m depth; not surveyed"
+    },
+    {
+      "id": "entry_recess",
+      "bounds": [
+        2.95,
+        5.25,
+        -12.44,
+        -8.0
+      ],
+      "support": [
+        "frame24yellow rear door ymedian-12.435"
+      ],
+      "status": "partial observed; sidewall width assumption"
+    }
+  ],
+  "construction": "Union of5floorplan rectangles -> deduplicated grid-cell mesh solids with boundary-only side faces; matching ceiling; external polyline walls grouped by outward direction into6stable shell IDs. Garage aperture retained and closed by authored door assembly.",
+  "shell_object_count": 6,
+  "old_shell_area_m2": 2008.5,
+  "planned_floor_union_area_approx_m2": 940.1306294634752,
+  "room_bounds_semantics": "bounding range only, forbidden canonical rectangle collision fallback",
+  "collision": "Actual static triangle meshes + explicit boundary coverage, no hide_render/alpha/exclude trimming",
+  "unknown_completions": [
+    "cageback1.6m",
+    "hidden roomcorner returns",
+    "longrange terminal position uncertainty"
+  ]
+}

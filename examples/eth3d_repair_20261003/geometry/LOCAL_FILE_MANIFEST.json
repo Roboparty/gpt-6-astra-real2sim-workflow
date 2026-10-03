@@ -1,0 +1,182 @@
+[
+  {
+    "path": "after_reload_receipt.py",
+    "bytes": 4258,
+    "sha256": "ca5f44f5c503d33b7718dc128efabc6c83779b5681ca8a91e527a1f994bd354f"
+  },
+  {
+    "path": "attempt_sources/repair_v1_recovered.py",
+    "bytes": 10177,
+    "sha256": "823b221c48125c2bf732f85387cb3ef98f36eba7720447f902d5391ce9fb052e"
+  },
+  {
+    "path": "attempt_sources/repair_v2_recovered.py",
+    "bytes": 11288,
+    "sha256": "f5d822068676277f16b2235a7ebdd3c83e3e8dfe32de6acfb5159c1c1c14d97f"
+  },
+  {
+    "path": "attempt_sources/repair_v3_rejected.py",
+    "bytes": 16266,
+    "sha256": "0e404fad141faf67ad40b4bb10a9da6a6c93f768b613740f777ac1923c58ce82"
+  },
+  {
+    "path": "attempt_sources/v1_SOURCE_RECOVERY_RECEIPT.json",
+    "bytes": 524,
+    "sha256": "c41d8406feb4287cb7884767c3fbfd98ccb3d03357e2c0941dfced72d314690c"
+  },
+  {
+    "path": "attempt_sources/v2_SOURCE_RECOVERY_RECEIPT.json",
+    "bytes": 527,
+    "sha256": "99192ce85a8e849bc15f8e00a7467611091aa581fc3b5f098eb6589970cefec9"
+  },
+  {
+    "path": "check_shell.py",
+    "bytes": 3201,
+    "sha256": "969da70b1b46f7c0f327d3ae8be3805cf0285bd7d2117bab1b25ae69cf5daf7c"
+  },
+  {
+    "path": "evidence/ACTUAL_GEOMETRY_RUNTIME_HASHES.json",
+    "bytes": 8252,
+    "sha256": "347fa2477539c709d7801d7cc9bc053d4f06c127ae302d90b42ff274fb2d5835"
+  },
+  {
+    "path": "evidence/after_reload_evaluated_mesh_receipt.json",
+    "bytes": 792876,
+    "sha256": "903cac457a488ba900500f84589b95a64b14a7791d291bd9c7800896326b48f1"
+  },
+  {
+    "path": "evidence/bin_foot_seeded_tracks.json",
+    "bytes": 1452,
+    "sha256": "2ac0db3b316e8bf346730656479d7b22acfa64b4c8ab73906b091b6ccbb27582"
+  },
+  {
+    "path": "evidence/bin_multiview_tracks.json",
+    "bytes": 4912,
+    "sha256": "426d8228ecd5ca28c3febd2e5b4639c5c4dac6f0d7f1cb2ec394f77faa42b45d"
+  },
+  {
+    "path": "evidence/geometry_changes.json",
+    "bytes": 177065,
+    "sha256": "43cac5556b5bb6d8808a7deda0b59508ecf05f8cbda73c905ced2f85498ee79e"
+  },
+  {
+    "path": "evidence/input_depth_regression_v4.json",
+    "bytes": 14519,
+    "sha256": "2d9590f5e136f5b934baf872bda67055ab5fb5bd5ea2731aca4efce28bf1d544"
+  },
+  {
+    "path": "evidence/ITERATION_LEDGER.json",
+    "bytes": 5678,
+    "sha256": "6ce3c387e42921dc813836ab3afc143cc494832ec73152c0069f173c1682159b"
+  },
+  {
+    "path": "evidence/LOCAL_SMALL_EVIDENCE_MANIFEST.json",
+    "bytes": 3417,
+    "sha256": "9017f744de8b28b8274c81ddbd0fc0d4ec8b1c46843cb6b8d6f779721565e463"
+  },
+  {
+    "path": "evidence/NATIVE_FINAL_REPAIR_SUMMARY.json",
+    "bytes": 4733,
+    "sha256": "27b1ae9168d42cf9e1e3d31cab0c464c14905c8ac64e57c9814a08fc82ef1c00"
+  },
+  {
+    "path": "evidence/occlusion_v3.json",
+    "bytes": 2039,
+    "sha256": "407963e03129b3f8a68a3d0a8043a25065391a6a09c5605b75590825d1eb51b3"
+  },
+  {
+    "path": "evidence/repair_measurements.json",
+    "bytes": 7249,
+    "sha256": "f34d4d694129b446e9ea8ba6f3f098cf6d4fc370e43518b6c2d58ccc6848b995"
+  },
+  {
+    "path": "evidence/review_receipt.json",
+    "bytes": 1176,
+    "sha256": "cf96ef006f12fc381d776091aa3aa43e10e53582900e59557fab3b52b3c5bb20"
+  },
+  {
+    "path": "evidence/shell_surface_validation.json",
+    "bytes": 21896,
+    "sha256": "cc091d2c5518f1f5baa7e8940f91add68125a57dad89d40be61c4d1c675aa4ef"
+  },
+  {
+    "path": "evidence/source_rebuild_evidence.json",
+    "bytes": 1217,
+    "sha256": "5fafd8c4fdeec7aded60dd5e5eaea34a16deeb0485811730f51b5ae8f3bad13c"
+  },
+  {
+    "path": "evidence/SOURCE_SELECTION.json",
+    "bytes": 1167,
+    "sha256": "0a48202d674f615962a4badfc36765064ba4bb2c5afabeeb7fdf914af1e4496d"
+  },
+  {
+    "path": "evidence/static_collision_boxes.json",
+    "bytes": 14651,
+    "sha256": "0c7501b7ce46a8952df818ab0c1b2153f54b56b3cdf45ddf79cfc6069de562c8"
+  },
+  {
+    "path": "evidence/topology_plan.json",
+    "bytes": 2278,
+    "sha256": "a425aab9424b5a0d89c83639fc5b866f0b02cb9245cf0816847ce03d72539a3c"
+  },
+  {
+    "path": "evidence/v1_rejected_receipt.json",
+    "bytes": 455,
+    "sha256": "79fd4c012afb28deeb505fb67b8154620f4f9fc25a911aed05644ecaa76dcf06"
+  },
+  {
+    "path": "evidence/v2_incomplete_receipt.json",
+    "bytes": 466,
+    "sha256": "0737716f2bd7311781f997796c588d664fd925442a8c9066c4c5091dc65b6b94"
+  },
+  {
+    "path": "evidence/v3_rejected_receipt.json",
+    "bytes": 430,
+    "sha256": "e8cfe2ef812bd09ed0d215a71da25596c20e98f91577011e41ff1136491c1b04"
+  },
+  {
+    "path": "evidence/v4_comparison_0.jpg",
+    "bytes": 284861,
+    "sha256": "2e7ff60fccfdec94639687f4a9a113e0af39907aabe73969a51f99676980fd7b"
+  },
+  {
+    "path": "evidence/v4_comparison_1.jpg",
+    "bytes": 276748,
+    "sha256": "8a0c5ff399bcf84d595f8755f01dfd4e6a95eb5171283bac16b4d23c7f0159f9"
+  },
+  {
+    "path": "evidence/v4_selected_receipt.json",
+    "bytes": 448,
+    "sha256": "d939c22d4032d48958f23274e282ead386844feb75b5bcfa1afeee965e841b94"
+  },
+  {
+    "path": "README.md",
+    "bytes": 5470,
+    "sha256": "7acee4bee3f9814e3e379d7e8b531bb2ed4e3051d82fcf7c659689c86956ec09"
+  },
+  {
+    "path": "repair_geometry.py",
+    "bytes": 17088,
+    "sha256": "db3d927714cb2053f10905473a107ea9128fbd7f65deead44f73e3cc3ee8de0f"
+  },
+  {
+    "path": "run_geometry_repair.py",
+    "bytes": 2371,
+    "sha256": "3b03d5d889e91ed382156b7806b436d782ea8dff31519a6df991607200862cf2"
+  },
+  {
+    "path": "run_native_repair_executed.py",
+    "bytes": 5269,
+    "sha256": "658b668ab8cf72abcca03b1dc98f9d3f82c431e08ebe2cb14720626f120f1688"
+  },
+  {
+    "path": "runtime_changes/shell_collision.py",
+    "bytes": 4695,
+    "sha256": "1f472556d70ca5052687b2198e42848fdf10a7a8e3d5fdc9e43a1b414d4b89e9"
+  },
+  {
+    "path": "runtime_changes/simulation.py",
+    "bytes": 12406,
+    "sha256": "c7ffe98662ea1643dda82e37a0d0e2d36c359da4cf370e8ac21ce2cd2f8a510e"
+  }
+]

@@ -1,0 +1,11 @@
+{
+  "code_sha256": "cd8f3701bf5e930cb3a2b0c1f1d85eec00320079e4598ce4fda3497fa3a09dee",
+  "model_unchanged": true,
+  "model_sha256": "f36a6b79c439bf0fd53c2de58c84f4a42b4fddce29208d1fb0a273c1ba39bb2f",
+  "status": "failed",
+  "failures_count": 75,
+  "all_remaining_failures_soft_UV": true,
+  "failure_multiset_matches_author": true,
+  "calibration_sha256": "39ae689dcc5ab337e299870093671b773c910cf5bfe178e20ed5dc83e6e1bf00",
+  "audit_sha256": "b8342bbd66f5ae78ad7396515a1c57e168bdd1f5097e5652d5753ba66c8f3d04"
+}

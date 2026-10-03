@@ -1,0 +1,83 @@
+{
+  "environment": {
+    "OMP_NUM_THREADS": "2",
+    "OPENBLAS_NUM_THREADS": "2",
+    "MKL_NUM_THREADS": "2"
+  },
+  "preconditions": [
+    "Verify base_model SHA against deliveryreceipt",
+    "Only allowed_sources.json36RGB/K/T/predictedDA3 required",
+    "Use new output directory; never overwrite frozen candidates",
+    "No GT/heldout inputs and no new dependencies downloaded"
+  ],
+  "commands": [
+    {
+      "purpose": "prepareSHA-verified source sRGB cache",
+      "argv": [
+        "/home/wqz/real2sim_fresh_20260921/runtime/venv/bin/python",
+        "/home/wqz/real2sim_agent_repair_20261003/texture/tools/image_io.py",
+        "prepare"
+      ]
+    },
+    {
+      "purpose": "strict texture-only rebuild on exact geometry",
+      "argv": [
+        "/home/wqz/real2sim_fresh_20260921/runtime/blender-4.5.3-linux-x64/blender",
+        "-b",
+        "--factory-startup",
+        "--threads",
+        "2",
+        "--python-exit-code",
+        "1",
+        "--python",
+        "/home/wqz/real2sim_agent_repair_20261003/texture/tools/bake_multiview.py",
+        "--",
+        "--model",
+        "/home/wqz/real2sim_agent_repair_20261003/geometry/candidate_v4/model.blend",
+        "--out",
+        "/home/wqz/real2sim_agent_repair_20261003/texture/replay_NEW_DIRECTORY",
+        "--density",
+        "40"
+      ]
+    },
+    {
+      "purpose": "actual packed/node/nonBaseColor preservation audit, read-only",
+      "argv": [
+        "/home/wqz/real2sim_fresh_20260921/runtime/blender-4.5.3-linux-x64/blender",
+        "-b",
+        "--factory-startup",
+        "--threads",
+        "2",
+        "--python-exit-code",
+        "1",
+        "--python",
+        "/home/wqz/real2sim_agent_repair_20261003/texture/tools/audit_layered.py",
+        "--",
+        "/home/wqz/real2sim_agent_repair_20261003/texture/replay_NEW_DIRECTORY"
+      ]
+    },
+    {
+      "purpose": "new nativepernode binding audit with soft failures retained",
+      "argv": [
+        "/home/wqz/real2sim_fresh_20260921/runtime/blender-4.5.3-linux-x64/blender",
+        "-b",
+        "--factory-startup",
+        "--threads",
+        "2",
+        "--python-exit-code",
+        "1",
+        "--python",
+        "/home/wqz/real2sim_agent_repair_20261003/texture/tools/test_per_node_blender.py",
+        "--",
+        "--package",
+        "/home/wqz/real2sim_agent_repair_20261003/texture/native_test_snapshot/workflow/r2s",
+        "--frozen",
+        "/home/wqz/real2sim_agent_repair_20261003/texture/replay_NEW_DIRECTORY/model.blend",
+        "--out",
+        "/home/wqz/real2sim_agent_repair_20261003/texture/replay_NEW_DIRECTORY/per_node_contract",
+        "--frozen-only"
+      ]
+    }
+  ],
+  "reproducibility_note": "Geometry/UV/atlas sources and recipe are explicit; binary blend hash may differ due saved paths/serialization. Compare packedatlas hashes, geometry and material-state receipts. Rendering packedblend does not require theRGBcache or atlasPNGs to exist."
+}

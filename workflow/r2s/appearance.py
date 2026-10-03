@@ -85,13 +85,32 @@ def materials(data, observed, size, attempt, files):
         scope = row.get('texture_scope', {})
         if scope.get('source_kind') not in {'original', 'procedural', 'licensed', 'generated', 'constant'}:
             raise ContractError('Texture source kind must be explicit')
-        if scope.get('application') not in {'local', 'whole_object', 'tiled', 'constant'} or scope.get('mapping') not in {'uv', 'object', 'world', 'none'}:
+        if scope.get('application') not in {'local', 'whole_object', 'tiled', 'constant'} or scope.get('mapping') not in {'uv', 'object', 'world', 'none', 'per_node'}:
             raise ContractError('Declare texture application scope and coordinates')
         if (scope['application'] == 'constant') != (scope['mapping'] == 'none'):
             raise ContractError('Only a constant surface can omit texture coordinates')
         if set(row.get('pbr_parameters', {})) != set(row['material_names']):
             raise ContractError('Declare actual PBR parameters for each bound material name')
-        if row['soft_surface'] and scope['application'] != 'constant' and (scope['mapping'] != 'uv' or not scope.get('uv_map')):
+        if scope['mapping'] == 'per_node':
+            mappings = scope.get('node_mappings')
+            if not isinstance(mappings, dict) or set(mappings) != set(row['material_names']):
+                raise ContractError('Per-node coordinates must declare every material exactly once')
+            for nodes in mappings.values():
+                if not isinstance(nodes, dict) or not nodes:
+                    raise ContractError('Per-node coordinates need named active texture nodes')
+                for name, spec in nodes.items():
+                    if not isinstance(name, str) or not name or not isinstance(spec, dict):
+                        raise ContractError('Invalid texture-node coordinate declaration')
+                    mapping = spec.get('mapping')
+                    if not isinstance(mapping, str) or mapping not in {'uv', 'object', 'world'}:
+                        raise ContractError('Invalid texture-node mapping')
+                    if set(spec) != ({'mapping', 'uv_map'} if mapping == 'uv' else {'mapping'}):
+                        raise ContractError('Texture-node coordinates contain missing or extra fields')
+                    if mapping == 'uv' and (not isinstance(spec['uv_map'], str) or not spec['uv_map'].strip()):
+                        raise ContractError('UV texture nodes require a named UV map')
+                    if row['soft_surface'] and mapping != 'uv':
+                        raise ContractError('Textured soft surfaces require UV for every texture node')
+        elif row['soft_surface'] and scope['application'] != 'constant' and (scope['mapping'] != 'uv' or not scope.get('uv_map')):
             raise ContractError('Textured soft surfaces require a named object-following UV map')
         samples = scope.get('sample_boxes', [])
         for sample in samples:

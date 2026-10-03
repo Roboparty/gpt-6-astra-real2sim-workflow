@@ -1,0 +1,52 @@
+{
+  "wall_recipe": {
+    "vertices": 13,
+    "faces": 12,
+    "internal_cap_faces": 2,
+    "nonmanifold_edges": 2,
+    "expected_internal_faces": 0
+  },
+  "new_joint_anchor": {
+    "anchor": [
+      6.550000190734863,
+      7.099999904632568,
+      0.38999998569488525
+    ],
+    "parts": {
+      "flatbed_frame": {
+        "nearest_surface_distance_m": 0.05000019073486328,
+        "nearest_normal_signed_side": -0.05000019073486328,
+        "native_outside_distance_m": 0.0,
+        "bounds": [
+          [
+            6.5,
+            7.0,
+            0.3100000023841858
+          ],
+          [
+            8.600000381469727,
+            8.600000381469727,
+            0.4699999690055847
+          ]
+        ]
+      },
+      "flatbed_towA": {
+        "nearest_surface_distance_m": 0.0,
+        "nearest_normal_signed_side": 0.0,
+        "native_outside_distance_m": 0.0,
+        "bounds": [
+          [
+            5.969895362854004,
+            7.08200216293335,
+            0.2476433664560318
+          ],
+          [
+            6.580104827880859,
+            8.14799690246582,
+            0.42235660552978516
+          ]
+        ]
+      }
+    }
+  }
+}

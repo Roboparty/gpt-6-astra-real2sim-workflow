@@ -1,0 +1,877 @@
+{
+  "status": "explicit_static_shell_box_partition",
+  "source_model_sha256": "506982c1c94a94067b19a58dc1a55d7b9ab6039ca1b8d00f61fba76292cc5542",
+  "boxes": [
+    {
+      "entity": "floor",
+      "shape": "box",
+      "position": [
+        -30.919525871293683,
+        -3.6,
+        -0.1
+      ],
+      "dimensions": [
+        34.63905174258736,
+        8.3,
+        0.2
+      ]
+    },
+    {
+      "entity": "ceiling",
+      "shape": "box",
+      "position": [
+        -30.919525871293683,
+        -3.6,
+        4.78
+      ],
+      "dimensions": [
+        34.63905174258736,
+        8.3,
+        0.2
+      ]
+    },
+    {
+      "entity": "floor",
+      "shape": "box",
+      "position": [
+        -7.325,
+        -8.8,
+        -0.1
+      ],
+      "dimensions": [
+        12.549999999999999,
+        1.5999999999999996,
+        0.2
+      ]
+    },
+    {
+      "entity": "ceiling",
+      "shape": "box",
+      "position": [
+        -7.325,
+        -8.8,
+        4.78
+      ],
+      "dimensions": [
+        12.549999999999999,
+        1.5999999999999996,
+        0.2
+      ]
+    },
+    {
+      "entity": "floor",
+      "shape": "box",
+      "position": [
+        -7.325,
+        -7.875,
+        -0.1
+      ],
+      "dimensions": [
+        12.549999999999999,
+        0.25,
+        0.2
+      ]
+    },
+    {
+      "entity": "ceiling",
+      "shape": "box",
+      "position": [
+        -7.325,
+        -7.875,
+        4.78
+      ],
+      "dimensions": [
+        12.549999999999999,
+        0.25,
+        0.2
+      ]
+    },
+    {
+      "entity": "floor",
+      "shape": "box",
+      "position": [
+        -7.325,
+        -3.6,
+        -0.1
+      ],
+      "dimensions": [
+        12.549999999999999,
+        8.3,
+        0.2
+      ]
+    },
+    {
+      "entity": "ceiling",
+      "shape": "box",
+      "position": [
+        -7.325,
+        -3.6,
+        4.78
+      ],
+      "dimensions": [
+        12.549999999999999,
+        8.3,
+        0.2
+      ]
+    },
+    {
+      "entity": "floor",
+      "shape": "box",
+      "position": [
+        -7.325,
+        5.745,
+        -0.1
+      ],
+      "dimensions": [
+        12.549999999999999,
+        10.389999999999999,
+        0.2
+      ]
+    },
+    {
+      "entity": "ceiling",
+      "shape": "box",
+      "position": [
+        -7.325,
+        5.745,
+        4.78
+      ],
+      "dimensions": [
+        12.549999999999999,
+        10.389999999999999,
+        0.2
+      ]
+    },
+    {
+      "entity": "floor",
+      "shape": "box",
+      "position": [
+        -7.325,
+        15.07,
+        -0.1
+      ],
+      "dimensions": [
+        12.549999999999999,
+        8.26,
+        0.2
+      ]
+    },
+    {
+      "entity": "ceiling",
+      "shape": "box",
+      "position": [
+        -7.325,
+        15.07,
+        4.78
+      ],
+      "dimensions": [
+        12.549999999999999,
+        8.26,
+        0.2
+      ]
+    },
+    {
+      "entity": "floor",
+      "shape": "box",
+      "position": [
+        0.9500000000000001,
+        -7.875,
+        -0.1
+      ],
+      "dimensions": [
+        4.0,
+        0.25,
+        0.2
+      ]
+    },
+    {
+      "entity": "ceiling",
+      "shape": "box",
+      "position": [
+        0.9500000000000001,
+        -7.875,
+        4.78
+      ],
+      "dimensions": [
+        4.0,
+        0.25,
+        0.2
+      ]
+    },
+    {
+      "entity": "floor",
+      "shape": "box",
+      "position": [
+        0.9500000000000001,
+        -3.6,
+        -0.1
+      ],
+      "dimensions": [
+        4.0,
+        8.3,
+        0.2
+      ]
+    },
+    {
+      "entity": "ceiling",
+      "shape": "box",
+      "position": [
+        0.9500000000000001,
+        -3.6,
+        4.78
+      ],
+      "dimensions": [
+        4.0,
+        8.3,
+        0.2
+      ]
+    },
+    {
+      "entity": "floor",
+      "shape": "box",
+      "position": [
+        0.9500000000000001,
+        5.745,
+        -0.1
+      ],
+      "dimensions": [
+        4.0,
+        10.389999999999999,
+        0.2
+      ]
+    },
+    {
+      "entity": "ceiling",
+      "shape": "box",
+      "position": [
+        0.9500000000000001,
+        5.745,
+        4.78
+      ],
+      "dimensions": [
+        4.0,
+        10.389999999999999,
+        0.2
+      ]
+    },
+    {
+      "entity": "floor",
+      "shape": "box",
+      "position": [
+        0.9500000000000001,
+        15.07,
+        -0.1
+      ],
+      "dimensions": [
+        4.0,
+        8.26,
+        0.2
+      ]
+    },
+    {
+      "entity": "ceiling",
+      "shape": "box",
+      "position": [
+        0.9500000000000001,
+        15.07,
+        4.78
+      ],
+      "dimensions": [
+        4.0,
+        8.26,
+        0.2
+      ]
+    },
+    {
+      "entity": "floor",
+      "shape": "box",
+      "position": [
+        4.1,
+        -11.02,
+        -0.1
+      ],
+      "dimensions": [
+        2.3,
+        2.84,
+        0.2
+      ]
+    },
+    {
+      "entity": "ceiling",
+      "shape": "box",
+      "position": [
+        4.1,
+        -11.02,
+        4.78
+      ],
+      "dimensions": [
+        2.3,
+        2.84,
+        0.2
+      ]
+    },
+    {
+      "entity": "floor",
+      "shape": "box",
+      "position": [
+        4.1,
+        -8.8,
+        -0.1
+      ],
+      "dimensions": [
+        2.3,
+        1.5999999999999996,
+        0.2
+      ]
+    },
+    {
+      "entity": "ceiling",
+      "shape": "box",
+      "position": [
+        4.1,
+        -8.8,
+        4.78
+      ],
+      "dimensions": [
+        2.3,
+        1.5999999999999996,
+        0.2
+      ]
+    },
+    {
+      "entity": "floor",
+      "shape": "box",
+      "position": [
+        4.1,
+        -7.875,
+        -0.1
+      ],
+      "dimensions": [
+        2.3,
+        0.25,
+        0.2
+      ]
+    },
+    {
+      "entity": "ceiling",
+      "shape": "box",
+      "position": [
+        4.1,
+        -7.875,
+        4.78
+      ],
+      "dimensions": [
+        2.3,
+        0.25,
+        0.2
+      ]
+    },
+    {
+      "entity": "floor",
+      "shape": "box",
+      "position": [
+        4.1,
+        -3.6,
+        -0.1
+      ],
+      "dimensions": [
+        2.3,
+        8.3,
+        0.2
+      ]
+    },
+    {
+      "entity": "ceiling",
+      "shape": "box",
+      "position": [
+        4.1,
+        -3.6,
+        4.78
+      ],
+      "dimensions": [
+        2.3,
+        8.3,
+        0.2
+      ]
+    },
+    {
+      "entity": "floor",
+      "shape": "box",
+      "position": [
+        4.1,
+        5.745,
+        -0.1
+      ],
+      "dimensions": [
+        2.3,
+        10.389999999999999,
+        0.2
+      ]
+    },
+    {
+      "entity": "ceiling",
+      "shape": "box",
+      "position": [
+        4.1,
+        5.745,
+        4.78
+      ],
+      "dimensions": [
+        2.3,
+        10.389999999999999,
+        0.2
+      ]
+    },
+    {
+      "entity": "floor",
+      "shape": "box",
+      "position": [
+        4.1,
+        15.07,
+        -0.1
+      ],
+      "dimensions": [
+        2.3,
+        8.26,
+        0.2
+      ]
+    },
+    {
+      "entity": "ceiling",
+      "shape": "box",
+      "position": [
+        4.1,
+        15.07,
+        4.78
+      ],
+      "dimensions": [
+        2.3,
+        8.26,
+        0.2
+      ]
+    },
+    {
+      "entity": "floor",
+      "shape": "box",
+      "position": [
+        10.525,
+        5.745,
+        -0.1
+      ],
+      "dimensions": [
+        10.55,
+        10.389999999999999,
+        0.2
+      ]
+    },
+    {
+      "entity": "ceiling",
+      "shape": "box",
+      "position": [
+        10.525,
+        5.745,
+        4.78
+      ],
+      "dimensions": [
+        10.55,
+        10.389999999999999,
+        0.2
+      ]
+    },
+    {
+      "entity": "wall_front",
+      "shape": "box",
+      "position": [
+        -30.919525871293683,
+        -7.85,
+        2.34
+      ],
+      "dimensions": [
+        34.63905174258736,
+        0.2,
+        4.68
+      ],
+      "garage_aperture_closed_by": null
+    },
+    {
+      "entity": "wall_left",
+      "shape": "box",
+      "position": [
+        -48.339051742587365,
+        -7.475,
+        2.34
+      ],
+      "dimensions": [
+        0.2,
+        0.5499999999999998,
+        4.68
+      ],
+      "garage_aperture_closed_by": null
+    },
+    {
+      "entity": "wall_back",
+      "shape": "box",
+      "position": [
+        -30.919525871293683,
+        0.65,
+        2.34
+      ],
+      "dimensions": [
+        34.63905174258736,
+        0.2,
+        4.68
+      ],
+      "garage_aperture_closed_by": null
+    },
+    {
+      "entity": "wall_left",
+      "shape": "box",
+      "position": [
+        -48.339051742587365,
+        -3.325,
+        2.34
+      ],
+      "dimensions": [
+        0.2,
+        7.75,
+        4.68
+      ],
+      "garage_aperture_closed_by": null
+    },
+    {
+      "entity": "wall_front",
+      "shape": "box",
+      "position": [
+        -7.325,
+        -9.7,
+        2.34
+      ],
+      "dimensions": [
+        12.549999999999999,
+        0.2,
+        4.68
+      ],
+      "garage_aperture_closed_by": null
+    },
+    {
+      "entity": "wall_right",
+      "shape": "box",
+      "position": [
+        -0.9500000000000001,
+        -8.8,
+        2.34
+      ],
+      "dimensions": [
+        0.2,
+        1.5999999999999996,
+        4.68
+      ],
+      "garage_aperture_closed_by": null
+    },
+    {
+      "entity": "wall_left",
+      "shape": "box",
+      "position": [
+        -13.7,
+        -8.8,
+        2.34
+      ],
+      "dimensions": [
+        0.2,
+        1.5999999999999996,
+        4.68
+      ],
+      "garage_aperture_closed_by": null
+    },
+    {
+      "entity": "wall_left",
+      "shape": "box",
+      "position": [
+        -13.7,
+        -7.875,
+        2.34
+      ],
+      "dimensions": [
+        0.2,
+        0.25,
+        4.68
+      ],
+      "garage_aperture_closed_by": null
+    },
+    {
+      "entity": "wall_left",
+      "shape": "box",
+      "position": [
+        -13.7,
+        5.745,
+        2.34
+      ],
+      "dimensions": [
+        0.2,
+        10.389999999999999,
+        4.68
+      ],
+      "garage_aperture_closed_by": null
+    },
+    {
+      "entity": "wall_back",
+      "shape": "box",
+      "position": [
+        -7.325,
+        19.3,
+        2.34
+      ],
+      "dimensions": [
+        12.549999999999999,
+        0.2,
+        4.68
+      ],
+      "garage_aperture_closed_by": null
+    },
+    {
+      "entity": "wall_left",
+      "shape": "box",
+      "position": [
+        -13.7,
+        15.07,
+        2.34
+      ],
+      "dimensions": [
+        0.2,
+        8.26,
+        4.68
+      ],
+      "garage_aperture_closed_by": null
+    },
+    {
+      "entity": "wall_front",
+      "shape": "box",
+      "position": [
+        0.9500000000000001,
+        -8.1,
+        2.34
+      ],
+      "dimensions": [
+        4.0,
+        0.2,
+        4.68
+      ],
+      "garage_aperture_closed_by": null
+    },
+    {
+      "entity": "wall_back",
+      "shape": "box",
+      "position": [
+        0.9500000000000001,
+        19.3,
+        2.34
+      ],
+      "dimensions": [
+        4.0,
+        0.2,
+        4.68
+      ],
+      "garage_aperture_closed_by": null
+    },
+    {
+      "entity": "wall_front",
+      "shape": "box",
+      "position": [
+        4.1,
+        -12.54,
+        2.34
+      ],
+      "dimensions": [
+        2.3,
+        0.2,
+        4.68
+      ],
+      "garage_aperture_closed_by": null
+    },
+    {
+      "entity": "wall_right",
+      "shape": "box",
+      "position": [
+        5.35,
+        -11.02,
+        2.34
+      ],
+      "dimensions": [
+        0.2,
+        2.84,
+        4.68
+      ],
+      "garage_aperture_closed_by": null
+    },
+    {
+      "entity": "wall_left",
+      "shape": "box",
+      "position": [
+        2.85,
+        -11.02,
+        2.34
+      ],
+      "dimensions": [
+        0.2,
+        2.84,
+        4.68
+      ],
+      "garage_aperture_closed_by": null
+    },
+    {
+      "entity": "wall_right",
+      "shape": "box",
+      "position": [
+        5.35,
+        -8.8,
+        2.34
+      ],
+      "dimensions": [
+        0.2,
+        1.5999999999999996,
+        4.68
+      ],
+      "garage_aperture_closed_by": null
+    },
+    {
+      "entity": "wall_left",
+      "shape": "box",
+      "position": [
+        2.85,
+        -8.8,
+        2.34
+      ],
+      "dimensions": [
+        0.2,
+        1.5999999999999996,
+        4.68
+      ],
+      "garage_aperture_closed_by": null
+    },
+    {
+      "entity": "wall_right",
+      "shape": "box",
+      "position": [
+        5.35,
+        -7.875,
+        2.34
+      ],
+      "dimensions": [
+        0.2,
+        0.25,
+        4.68
+      ],
+      "garage_aperture_closed_by": null
+    },
+    {
+      "entity": "wall_right",
+      "shape": "box",
+      "position": [
+        5.35,
+        -7.475,
+        2.34
+      ],
+      "dimensions": [
+        0.2,
+        0.5499999999999998,
+        4.68
+      ],
+      "garage_aperture_closed_by": null
+    },
+    {
+      "entity": "wall_right",
+      "shape": "box",
+      "position": [
+        5.35,
+        -3.325,
+        4.359999999999999
+      ],
+      "dimensions": [
+        0.2,
+        7.75,
+        0.6399999999999997
+      ],
+      "garage_aperture_closed_by": "garage_door"
+    },
+    {
+      "entity": "wall_right",
+      "shape": "box",
+      "position": [
+        5.35,
+        15.07,
+        2.34
+      ],
+      "dimensions": [
+        0.2,
+        8.26,
+        4.68
+      ],
+      "garage_aperture_closed_by": null
+    },
+    {
+      "entity": "wall_back",
+      "shape": "box",
+      "position": [
+        4.1,
+        19.3,
+        2.34
+      ],
+      "dimensions": [
+        2.3,
+        0.2,
+        4.68
+      ],
+      "garage_aperture_closed_by": null
+    },
+    {
+      "entity": "wall_front",
+      "shape": "box",
+      "position": [
+        10.525,
+        0.45000000000000007,
+        2.34
+      ],
+      "dimensions": [
+        10.55,
+        0.2,
+        4.68
+      ],
+      "garage_aperture_closed_by": null
+    },
+    {
+      "entity": "wall_right",
+      "shape": "box",
+      "position": [
+        15.9,
+        5.745,
+        2.34
+      ],
+      "dimensions": [
+        0.2,
+        10.389999999999999,
+        4.68
+      ],
+      "garage_aperture_closed_by": null
+    },
+    {
+      "entity": "wall_back",
+      "shape": "box",
+      "position": [
+        10.525,
+        11.04,
+        2.34
+      ],
+      "dimensions": [
+        10.55,
+        0.2,
+        4.68
+      ],
+      "garage_aperture_closed_by": null
+    }
+  ],
+  "mesh_coverage_report_sha256": "cc091d2c5518f1f5baa7e8940f91add68125a57dad89d40be61c4d1c675aa4ef",
+  "coverage_validation": "passed",
+  "scope": "Cell/segment boxes cover actual shell union without filling excludedfloor regions. Door leaves and furniture use their actual separate meshes. No native MuJoCo integration certification.",
+  "native_canonical_fallback": "forbidden",
+  "native_simulation": "unsupported/refused"
+}

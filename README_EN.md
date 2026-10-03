@@ -4,7 +4,7 @@
 
 [简体中文](README.md) | **English**
 
-**2026-10-03: supplied camera calibration and independent real-scene comparison.** Per-frame K/poses now propagate through preprocessing, modelling, rendering and structural checks. On ETH3D delivery_area, two independent authors used the same 36 input images, 8 heldout views and DA3 predictions. The AWSM protocol port has lower surface error; our candidate has higher depth coverage and slightly better image metrics, but retains five failed native structural checks. [Camera contract](docs/CAMERA_OBSERVATIONS.md) · [Actual reconstructions, scores and limitations](docs/research/ETH3D_WORKFLOW_COMPARISON_20261003.md).
+**2026-10-03: supplied cameras, real-scene comparison and geometry/texture repair.** Per-frame K/poses propagate through preprocessing, modelling, rendering and structural checks. The independent ETH3D native-workflow/AWSM comparison remains preserved; a follow-up repairs the native candidate's shell, component transforms and source-photo textures. Reused test views are explicitly exposed-test diagnostics. Rejected candidates, local regressions and native acceptance limits remain visible. [Camera contract](docs/CAMERA_OBSERVATIONS.md) · [Original independent comparison](docs/research/ETH3D_WORKFLOW_COMPARISON_20261003.md) · [Repair, previews and validation](docs/research/ETH3D_REPAIR_20261003.md).
 
 Build editable 3D parts and scenes from one RGB photograph. GPT-6 Astra handles observation, modelling decisions and preview review; Blender and Python construct the scene. Web retrieval supplies traceable candidate dimensions, product identities and material information, with optional joint and deformable simulation.
 

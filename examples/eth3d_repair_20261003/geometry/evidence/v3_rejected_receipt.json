@@ -1,0 +1,8 @@
+{
+  "directory": "candidate_v3",
+  "status": "rejected",
+  "reason": "NumericPASS but fullsource visual rejection: wrongly scaled3pipe cross-sections blocked cart/cages",
+  "model_sha256": "c288f8bb9688defd71f2faeb8dfddfefdeac2c56b714187dde0c2a3125d771b4",
+  "scene_sha256": "3d9b5443ec06d2127b4b766b506215e05597d1771957874f72d84089cbc130ee",
+  "recipe_sha256": "0e404fad141faf67ad40b4bb10a9da6a6c93f768b613740f777ac1923c58ce82"
+}

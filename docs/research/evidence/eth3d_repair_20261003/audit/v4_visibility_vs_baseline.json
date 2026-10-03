@@ -1,0 +1,47 @@
+{
+  "baseline_external_count": 6,
+  "v4_external_count": 5,
+  "remaining": [
+    {
+      "landmark": "garage_door_observed_endpoint_0",
+      "frame": "DSC_0675",
+      "v4_first_hit": "column_4_upper",
+      "baseline_first_hit": "column_4_upper",
+      "baseline_external_occluder": true,
+      "classification": "inherited_external_occlusion"
+    },
+    {
+      "landmark": "storage_rack_observed_endpoint_0",
+      "frame": "DSC_0685",
+      "v4_first_hit": "column_5_upper",
+      "baseline_first_hit": "column_5_upper",
+      "baseline_external_occluder": true,
+      "classification": "inherited_external_occlusion"
+    },
+    {
+      "landmark": "storage_rack_observed_endpoint_2",
+      "frame": "DSC_0685",
+      "v4_first_hit": "column_5_lower",
+      "baseline_first_hit": "column_5_lower",
+      "baseline_external_occluder": true,
+      "classification": "inherited_external_occlusion"
+    },
+    {
+      "landmark": "lime_skip_1_observed_endpoint_1",
+      "frame": "DSC_0685",
+      "v4_first_hit": "loading_platform",
+      "baseline_first_hit": "loading_platform",
+      "baseline_external_occluder": true,
+      "classification": "inherited_external_occlusion"
+    },
+    {
+      "landmark": "mesh_cage_2_observed_endpoint_0",
+      "frame": "DSC_0700",
+      "v4_first_hit": "cage_upper_wall",
+      "baseline_first_hit": "cage1_rail1",
+      "baseline_external_occluder": true,
+      "classification": "inherited_external_occlusion"
+    }
+  ],
+  "scope": "Fixed source labels; baseline andcandidate actualmodel-target surfaces andfullscenevisibility compared; noGT. Remaining flags are not silentlywaived."
+}

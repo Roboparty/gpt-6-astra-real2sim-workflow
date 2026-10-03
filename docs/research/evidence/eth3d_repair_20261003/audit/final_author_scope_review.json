@@ -1,0 +1,553 @@
+{
+  "scope": "Independent author-input/frozen-asset review only; noGT or oldheldout evaluation read in this phase",
+  "generated_utc": "2026-10-03T08:28:53.605864+00:00",
+  "geometry_sha256": "506982c1c94a94067b19a58dc1a55d7b9ab6039ca1b8d00f61fba76292cc5542",
+  "texture_sha256": "f36a6b79c439bf0fd53c2de58c84f4a42b4fddce29208d1fb0a273c1ba39bb2f",
+  "outcome": "LIMITED_SOURCE_SELECTED_DIAGNOSTIC; NATIVE_APPEARANCE_ACCEPTANCE_REJECTED",
+  "geometry_implementation_controls": {
+    "model_sha256": "506982c1c94a94067b19a58dc1a55d7b9ab6039ca1b8d00f61fba76292cc5542",
+    "model_unchanged": true,
+    "camera_metadata_exact": true,
+    "rigid_gauge_exact": true,
+    "source_labels_exact": true,
+    "source_label_count": 38,
+    "acceptance_exact": true,
+    "room_guard": {
+      "bounds_only": true,
+      "nonrectangular_topology": true,
+      "topology": "orthogonal_union",
+      "collision_policy": "mesh_only"
+    },
+    "shell_checks": [
+      {
+        "name": "floor",
+        "nonmanifold_edges": 0,
+        "inconsistent_edges": 0,
+        "duplicate_faces": 0,
+        "signed_volume": 188.02613356717214
+      },
+      {
+        "name": "ceiling",
+        "nonmanifold_edges": 0,
+        "inconsistent_edges": 0,
+        "duplicate_faces": 0,
+        "signed_volume": 188.026399738902
+      },
+      {
+        "name": "wall_front",
+        "nonmanifold_edges": 0,
+        "inconsistent_edges": 0,
+        "duplicate_faces": 0,
+        "signed_volume": 59.940513884168
+      },
+      {
+        "name": "wall_back",
+        "nonmanifold_edges": 0,
+        "inconsistent_edges": 0,
+        "duplicate_faces": 0,
+        "signed_volume": 59.94048526173654
+      },
+      {
+        "name": "wall_left",
+        "nonmanifold_edges": 0,
+        "inconsistent_edges": 0,
+        "duplicate_faces": 0,
+        "signed_volume": 31.11265186454613
+      },
+      {
+        "name": "wall_right",
+        "nonmanifold_edges": 0,
+        "inconsistent_edges": 0,
+        "duplicate_faces": 0,
+        "signed_volume": 24.850616934032907
+      }
+    ],
+    "floor_union_cells_checked": 30,
+    "floor_union_failures": 0,
+    "garage_rays_checked": 133,
+    "garage_failures": [],
+    "lights_exact": true,
+    "changed_light_names": [],
+    "material_slot_changes": [],
+    "material_data_changes": [],
+    "settings_exact": true,
+    "settings_differences": {},
+    "visibility_changes": [],
+    "collection_changes": [],
+    "removed_objects": [
+      "corridor_north_wall",
+      "corridor_south_wall",
+      "lumber_back_wall",
+      "main_side_wall",
+      "rack_back_wall"
+    ],
+    "new_objects": [],
+    "matrix_only_landmark_transport_not_an_acceptance_test_for_baked_mesh": true,
+    "matrix_transport_diagnostic": [
+      {
+        "landmark": "garage_door_observed_endpoint_0",
+        "part": "door_leaf_6_rail_2",
+        "difference_m": 0.0
+      },
+      {
+        "landmark": "garage_door_observed_endpoint_1",
+        "part": "door_leaf_6_panel_0",
+        "difference_m": 0.0
+      },
+      {
+        "landmark": "garage_door_observed_endpoint_2",
+        "part": "door_leaf_3_rail_1",
+        "difference_m": 0.0
+      },
+      {
+        "landmark": "storage_rack_observed_endpoint_0",
+        "part": "top_folded_bag_0_2",
+        "difference_m": 0.0
+      },
+      {
+        "landmark": "storage_rack_observed_endpoint_1",
+        "part": "top_folded_bag_0_0",
+        "difference_m": 0.0
+      },
+      {
+        "landmark": "storage_rack_observed_endpoint_2",
+        "part": "rack_pallet_0_0_3",
+        "difference_m": 0.0
+      },
+      {
+        "landmark": "wood_crate_0_observed_endpoint_0",
+        "part": "crate0_strap0",
+        "difference_m": 0.0
+      },
+      {
+        "landmark": "wood_crate_0_observed_endpoint_1",
+        "part": "crate0_foot2",
+        "difference_m": 0.0
+      },
+      {
+        "landmark": "wood_crate_0_observed_endpoint_2",
+        "part": "crate0_strap0",
+        "difference_m": 0.0
+      },
+      {
+        "landmark": "wood_crate_1_observed_endpoint_0",
+        "part": "crate1_strap0",
+        "difference_m": 8.881784197001252e-16
+      },
+      {
+        "landmark": "wood_crate_1_observed_endpoint_1",
+        "part": "crate1_strap0",
+        "difference_m": 0.0
+      },
+      {
+        "landmark": "lime_skip_0_observed_endpoint_0",
+        "part": "skip0_side_rim0",
+        "difference_m": 10.974232465135245
+      },
+      {
+        "landmark": "lime_skip_0_observed_endpoint_1",
+        "part": "skip0_side_rim1",
+        "difference_m": 11.635494134637186
+      },
+      {
+        "landmark": "lime_skip_0_observed_endpoint_2",
+        "part": "skip0_foot0",
+        "difference_m": 9.66213778988259
+      },
+      {
+        "landmark": "lime_skip_1_observed_endpoint_0",
+        "part": "skip1_rim0",
+        "difference_m": 0.0
+      },
+      {
+        "landmark": "lime_skip_1_observed_endpoint_1",
+        "part": "skip1_foot0",
+        "difference_m": 2.220446049250313e-16
+      },
+      {
+        "landmark": "white_trailer_observed_endpoint_0",
+        "part": "trailer_box",
+        "difference_m": 0.0
+      },
+      {
+        "landmark": "white_trailer_observed_endpoint_1",
+        "part": "trailer_box",
+        "difference_m": 0.0
+      },
+      {
+        "landmark": "white_trailer_observed_endpoint_2",
+        "part": "trailer_hub_12.9_-1",
+        "difference_m": 8.881784197001252e-16
+      },
+      {
+        "landmark": "flatbed_trailer_observed_endpoint_0",
+        "part": "flatbed_hitch",
+        "difference_m": 8.881784197001252e-16
+      },
+      {
+        "landmark": "flatbed_trailer_observed_endpoint_1",
+        "part": "flatbed_wheel-1",
+        "difference_m": 0.0
+      },
+      {
+        "landmark": "white_van_observed_endpoint_0",
+        "part": "van_windshield_divider",
+        "difference_m": 0.4846661908704946
+      },
+      {
+        "landmark": "white_van_observed_endpoint_1",
+        "part": "van_hub1_0",
+        "difference_m": 0.12206642255106932
+      },
+      {
+        "landmark": "white_van_observed_endpoint_2",
+        "part": "van_tyre-1_0",
+        "difference_m": 0.1649596662719616
+      },
+      {
+        "landmark": "black_car_observed_endpoint_0",
+        "part": "car_rear_frame1",
+        "difference_m": 0.5140417699480097
+      },
+      {
+        "landmark": "black_car_observed_endpoint_1",
+        "part": "car_lower_body",
+        "difference_m": 0.10602505655283506
+      },
+      {
+        "landmark": "black_car_observed_endpoint_2",
+        "part": "car_tyre-1_0",
+        "difference_m": 0.046166787477357266
+      },
+      {
+        "landmark": "lumber_cart_observed_endpoint_0",
+        "part": "cart_caster1_1",
+        "difference_m": 8.95090418262362e-16
+      },
+      {
+        "landmark": "lumber_cart_observed_endpoint_1",
+        "part": "cart_caster-1_1",
+        "difference_m": 8.88185195937854e-16
+      },
+      {
+        "landmark": "lumber_cart_observed_endpoint_2",
+        "part": "cart_upright2",
+        "difference_m": 3.1401849173675503e-16
+      },
+      {
+        "landmark": "lumber_cart_observed_endpoint_3",
+        "part": "cart_crossbar",
+        "difference_m": 2.220446049250313e-16
+      },
+      {
+        "landmark": "mesh_cage_0_observed_endpoint_0",
+        "part": "cage0_side1",
+        "difference_m": 0.0
+      },
+      {
+        "landmark": "mesh_cage_0_observed_endpoint_1",
+        "part": "cage0_side0",
+        "difference_m": 0.0
+      },
+      {
+        "landmark": "mesh_cage_0_observed_endpoint_2",
+        "part": "cage0_wireV1",
+        "difference_m": 0.0
+      },
+      {
+        "landmark": "mesh_cage_1_observed_endpoint_0",
+        "part": "cage1_wireV48",
+        "difference_m": 0.0
+      },
+      {
+        "landmark": "mesh_cage_1_observed_endpoint_1",
+        "part": "cage1_wireV8",
+        "difference_m": 0.0
+      },
+      {
+        "landmark": "mesh_cage_2_observed_endpoint_0",
+        "part": "cage2_side1",
+        "difference_m": 0.3339830730534353
+      },
+      {
+        "landmark": "mesh_cage_2_observed_endpoint_1",
+        "part": "cage2_wireV13",
+        "difference_m": 0.09935189078093007
+      }
+    ],
+    "unknown_completions": [
+      "cageback1.6m",
+      "hidden roomcorner returns",
+      "longrange terminal position uncertainty"
+    ],
+    "not_claimed": "Per-shell topology/planned coverage is not physical scene accuracy, global collision clearance or support of unobserved completion. Native object audit and fixed-view visual check are separate."
+  },
+  "source_depth_regression": {
+    "scope": "Allowed36source RGB plus frozen DA3 only; notGT",
+    "model_sha256": "506982c1c94a94067b19a58dc1a55d7b9ab6039ca1b8d00f61fba76292cc5542",
+    "model_hash_matches": true,
+    "source_reference_domains_identical": true,
+    "reference_arrays_byte_values_identical": true,
+    "views": 36,
+    "reference_pixels": 689349,
+    "macro_absrel_before": 0.07773398844953455,
+    "macro_absrel_after": 0.06661141835467937,
+    "absrel_improved": 30,
+    "absrel_regressed": 6,
+    "worst_absrel_regression": {
+      "index": 12,
+      "delta_pp": 1.24868633831777
+    },
+    "macro_missing_penalty_before": 0.5335468672799082,
+    "macro_missing_penalty_after": 0.505618221451205,
+    "penalty_improved": 22,
+    "penalty_regressed": 14,
+    "missing_predictions_before": 415,
+    "missing_predictions_after": 1120,
+    "note": "30/6labels refer to conditional AbsRel only. Coverage and30m missing-penalty outcomes are separate and cannot be summarized as all-view improvement."
+  },
+  "remaining_source_occlusions": {
+    "baseline_external_count": 6,
+    "v4_external_count": 5,
+    "remaining": [
+      {
+        "landmark": "garage_door_observed_endpoint_0",
+        "frame": "DSC_0675",
+        "v4_first_hit": "column_4_upper",
+        "baseline_first_hit": "column_4_upper",
+        "baseline_external_occluder": true,
+        "classification": "inherited_external_occlusion"
+      },
+      {
+        "landmark": "storage_rack_observed_endpoint_0",
+        "frame": "DSC_0685",
+        "v4_first_hit": "column_5_upper",
+        "baseline_first_hit": "column_5_upper",
+        "baseline_external_occluder": true,
+        "classification": "inherited_external_occlusion"
+      },
+      {
+        "landmark": "storage_rack_observed_endpoint_2",
+        "frame": "DSC_0685",
+        "v4_first_hit": "column_5_lower",
+        "baseline_first_hit": "column_5_lower",
+        "baseline_external_occluder": true,
+        "classification": "inherited_external_occlusion"
+      },
+      {
+        "landmark": "lime_skip_1_observed_endpoint_1",
+        "frame": "DSC_0685",
+        "v4_first_hit": "loading_platform",
+        "baseline_first_hit": "loading_platform",
+        "baseline_external_occluder": true,
+        "classification": "inherited_external_occlusion"
+      },
+      {
+        "landmark": "mesh_cage_2_observed_endpoint_0",
+        "frame": "DSC_0700",
+        "v4_first_hit": "cage_upper_wall",
+        "baseline_first_hit": "cage1_rail1",
+        "baseline_external_occluder": true,
+        "classification": "inherited_external_occlusion"
+      }
+    ],
+    "scope": "Fixed source labels; baseline andcandidate actualmodel-target surfaces andfullscenevisibility compared; noGT. Remaining flags are not silentlywaived."
+  },
+  "texture_implementation_check": {
+    "geometry_exact": true,
+    "object_camera_light_visibility_controls_exact": true,
+    "world_color_cycles_collections_exact": true,
+    "original_materials_unchanged": true,
+    "new_materials_checked": 24,
+    "node_binding_failures": [],
+    "images": [
+      {
+        "name": "photo_atlas_00.png",
+        "packed": true,
+        "sha256": "e83335522e6eca7636e26d5aca231bdfdaef95bcb013635c7827bb45671f5b69",
+        "colorspace": "sRGB",
+        "alpha_mode": "CHANNEL_PACKED",
+        "matches_external_copy": true
+      },
+      {
+        "name": "photo_atlas_01.png",
+        "packed": true,
+        "sha256": "12019d1240a21431a2668580dfea1f216feff4880359144920da1818239a65de",
+        "colorspace": "sRGB",
+        "alpha_mode": "CHANNEL_PACKED",
+        "matches_external_copy": true
+      }
+    ],
+    "uv_binding_failures": [],
+    "linked_libraries": []
+  },
+  "texture_provenance_and_counts": {
+    "base_sha256": "506982c1c94a94067b19a58dc1a55d7b9ab6039ca1b8d00f61fba76292cc5542",
+    "candidate_sha256": "f36a6b79c439bf0fd53c2de58c84f4a42b4fddce29208d1fb0a273c1ba39bb2f",
+    "candidate_file_matches": true,
+    "source_packet_hash_matches": true,
+    "all_36_source_hashes_and_actual_cache_pixels_match": true,
+    "used_only_0_to35": true,
+    "surface_records": 1720,
+    "mapped_objects": 303,
+    "mapped_faces": 738,
+    "surface_texels": 5371573,
+    "supported_texels": 1741643,
+    "unknown_texels": 3629930,
+    "support_fraction": 0.32423332978998887,
+    "tile_alpha_failures": [],
+    "mask_values": [
+      0,
+      255
+    ],
+    "source_assignment_counts_match": true,
+    "receipt_counts_match": true,
+    "native_audits": [
+      {
+        "path": "/home/wqz/real2sim_agent_repair_20261003/texture/final_texture_v4/appearance_audit.json",
+        "sha256": "7ea63d2d2dae6454eee60c0cec8e0dfd44367e20fa2bc1a75e908bd64bc492f4",
+        "model_sha256": "f36a6b79c439bf0fd53c2de58c84f4a42b4fddce29208d1fb0a273c1ba39bb2f",
+        "status": "failed",
+        "failures_count": 339,
+        "all_failures_soft_world": false
+      },
+      {
+        "path": "/home/wqz/real2sim_agent_repair_20261003/texture/final_texture_v4/per_node_contract/frozen_per_node/appearance_audit.json",
+        "sha256": "b8342bbd66f5ae78ad7396515a1c57e168bdd1f5097e5652d5753ba66c8f3d04",
+        "model_sha256": "f36a6b79c439bf0fd53c2de58c84f4a42b4fddce29208d1fb0a273c1ba39bb2f",
+        "status": "failed",
+        "failures_count": 75,
+        "all_failures_soft_world": true
+      }
+    ],
+    "metadata_hashes": {
+      "review_receipt.json": "27ca45b66fca8c987c448d6b1eb641dae9b078a562f20c5baa79e2059e806606",
+      "surface_support.json": "41b8ab4a373a58cc658cbca8b81bdbab3b1cb991216d7df1dc2d24b59f1b419c",
+      "material_calibration.json": "404bf9d4d00e0bf7a2ecb19da32b8db2e75d05cfa9a055392147052ad92acd28",
+      "layered_texture_binding_audit.json": "8cf81bb9bd38cb2e1deb993cd0becb71d1cce13c7573b4ee2b0b529e7fe846b2",
+      "appearance_audit.json": "7ea63d2d2dae6454eee60c0cec8e0dfd44367e20fa2bc1a75e908bd64bc492f4"
+    },
+    "scope": "Author-input audit only: original36RGB+DA3 lineage and actualcache/atlas/node data; noGT or priorheldout evidence. Atlas fullray source support is not rerun wholesale."
+  },
+  "sampled_visibility_support": {
+    "status": "PASS",
+    "samples": 96,
+    "visible_object_set_matches_robust_collection_helper": true,
+    "uv_failures": [],
+    "failures": [],
+    "max_uv_error": 2.9718330796235648e-08,
+    "scope": "96deterministic supportedtexel samples: actualUV/atlas andfullscene-first-hit existence against onlyrecorded36sourceframes. Doesnotrerunallmillionsofvisibilityrays orallDA3/grazing/colourfilters."
+  },
+  "canonical_native_recheck": {
+    "code_sha256": "cd8f3701bf5e930cb3a2b0c1f1d85eec00320079e4598ce4fda3497fa3a09dee",
+    "model_unchanged": true,
+    "model_sha256": "f36a6b79c439bf0fd53c2de58c84f4a42b4fddce29208d1fb0a273c1ba39bb2f",
+    "status": "failed",
+    "failures_count": 75,
+    "all_remaining_failures_soft_UV": true,
+    "failure_multiset_matches_author": true,
+    "calibration_sha256": "39ae689dcc5ab337e299870093671b773c910cf5bfe178e20ed5dc83e6e1bf00",
+    "audit_sha256": "b8342bbd66f5ae78ad7396515a1c57e168bdd1f5097e5652d5753ba66c8f3d04"
+  },
+  "remaining_soft_objects_count": 45,
+  "remaining_soft_objects": [
+    "rack_sack_0_0_0",
+    "rack_sack_0_0_1",
+    "rack_sack_0_0_2",
+    "rack_sack_0_0_3",
+    "rack_sack_0_0_4",
+    "rack_sack_0_1_0",
+    "rack_sack_0_1_1",
+    "rack_sack_0_1_2",
+    "rack_sack_0_1_3",
+    "rack_sack_0_2_0",
+    "rack_sack_0_2_1",
+    "rack_sack_0_2_2",
+    "rack_sack_0_2_3",
+    "rack_sack_1_0_0",
+    "rack_sack_1_0_1",
+    "rack_sack_1_0_2",
+    "rack_sack_1_0_3",
+    "rack_sack_1_1_0",
+    "rack_sack_1_1_1",
+    "rack_sack_1_1_2",
+    "rack_sack_1_1_3",
+    "rack_sack_1_2_0",
+    "rack_sack_1_2_1",
+    "rack_sack_1_2_2",
+    "rack_sack_1_2_3",
+    "rack_sack_1_2_4",
+    "rack_sack_2_0_0",
+    "rack_sack_2_0_1",
+    "rack_sack_2_0_2",
+    "rack_sack_2_0_3",
+    "rack_sack_2_1_0",
+    "rack_sack_2_1_1",
+    "rack_sack_2_1_2",
+    "rack_sack_2_1_3",
+    "rack_sack_2_1_4",
+    "rack_sack_2_2_0",
+    "rack_sack_2_2_1",
+    "rack_sack_2_2_2",
+    "rack_sack_2_2_3",
+    "top_folded_bag_0_0",
+    "top_folded_bag_0_1",
+    "top_folded_bag_0_2",
+    "top_folded_bag_1_0",
+    "top_folded_bag_1_1",
+    "top_folded_bag_1_2"
+  ],
+  "framework_code_test_summary": {
+    "status": "PASS",
+    "hashes": {
+      "appearance.py": "f2126376eaa165a13f973e610895045f7ab93d4b8d149b4a74e30aeeefddc57c",
+      "blender_appearance.py": "cd8f3701bf5e930cb3a2b0c1f1d85eec00320079e4598ce4fda3497fa3a09dee"
+    },
+    "actual_Blender_cases": 16,
+    "independent_schema_cases": 11,
+    "implicit_render_active_bug_fixed": true
+  },
+  "source_visual_review": {
+    "views": [
+      0,
+      4,
+      8,
+      12,
+      16,
+      20,
+      24,
+      28,
+      32,
+      35
+    ],
+    "all_ten_triptychs_independently_viewed": true,
+    "findings": [
+      "Photo colour adds observed wood/concrete/door/sack detail while geometry/lights remain fixed.",
+      "Inputs24/28 show obvious duplicated A70sign/lettering: source-baked appearance and separately modelled sign do not coincide.",
+      "Inputs0/4 door edges and support boundaries have visible seams/double contours; input12vehicle colour/proportions and dark-blue service region remain imperfect.",
+      "Inputs20/32/35 and24/28 no longer have the rejected giant-pipe occlusion; no new alpha/background replacement was observed."
+    ],
+    "verdict": "LIMITED, not whole-scene visual acceptance",
+    "preview_hashes": {
+      "comparison_0.jpg": "a078fc13f33f5d04545efe90eacd9141cb40da73e2951629f041b61fa07e4846",
+      "comparison_1.jpg": "d182de0cffe494e0fb026b36678579efb997bca8a0ecc9102c5cddaf7a6a5f71"
+    }
+  },
+  "boundaries": [
+    "Photo-baked radiance is not intrinsic albedo; unknown3629930texels retain originalfallback and are not called reconstructed observation.",
+    "Actual savedgraph narrowchecks pass, but75canonicalsoft-world failures across45objects remain; no waiver, no relabelledrigid surfaces, no native appearance pass.",
+    "The per-node software extension has passing regression tests; that does not accept this frozenasset.",
+    "Fullgeometry Workflow completion is not certified by this review. Direct staticdiagnostics andimplementation checks are not dynamics or delivery acceptance.",
+    "Noglobal exposure/light candidate was created; sourcephotometric direction disagreement is not corrected with arbitrary lighting.",
+    "V1/v2structural failures, v3source-occlusion rejection andallpreviousfrozenresults remain unchanged."
+  ],
+  "evidence_hashes": {
+    "final_texture_v4_independent_nodes.json": "e38325616bf44a2f8ccc3cfb46ed69bf8c37098a2128d4350ec018b9ad494567",
+    "final_texture_v4_source_counts_review.json": "309a6e077a4211b964c8bab71c6bbc1b549e2e1cfa31ad365d901a67510befc3",
+    "final_texture_v4_sample_support_review.json": "9071141f6769b0e6b9d97bed4a9b10d28e3e91e0ed4e151846fce8aea272d6c3",
+    "texture_v4_native_recheck_result.json": "bc346b912061333b75f19c6acd824a2b82af2263973835eb1820cb184ce33628",
+    "geometry_v4_control_shell_review.json": "631cfa8debbde295a9622660d8d0b7e06e7c9c272baa5123d5b43c078395c731",
+    "geometry_v4_source_depth_regression_review.json": "7f915a59cbbae848574b7813552908e4183a62495e8c479458fe2391ef08f08d",
+    "v4_visibility_vs_baseline.json": "28ec1cfd9e5be0c45d1d103595c373648d00bf55d262026b2ab7e5746615b09b"
+  }
+}

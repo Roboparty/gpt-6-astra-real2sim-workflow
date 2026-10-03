@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "scope": "Canonical shell collision regression and fail-closed rejection of nonrectangular room bounding boxes",
+  "runtime": "/home/wqz/real2sim_fresh_20260921/runtime/venv/bin/python",
+  "script": "tools/test_shell_collision.py",
+  "script_sha256": "44424164d273d2d75214792b5adfa8353d047f14a3e213d49b4135a67af00cf5",
+  "module_sha256": "1f472556d70ca5052687b2198e42848fdf10a7a8e3d5fdc9e43a1b414d4b89e9",
+  "new_negative_cases": 24,
+  "legacy_checks": "Historical wall trim, openings, overlapping apertures, invalid apertures, arbitrary root transform and unsupported proxies",
+  "not_claimed": "Nonrectangular native dynamics or full scene physical acceptance"
+}

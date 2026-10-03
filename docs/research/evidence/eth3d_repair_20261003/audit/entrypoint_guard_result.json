@@ -1,0 +1,74 @@
+{
+  "status": "PASS",
+  "cases": [
+    {
+      "declaration": "bounds_only",
+      "entity_case": "empty_audit",
+      "returncode": 1,
+      "denied_by_room_guard": true,
+      "forbidden_outputs": []
+    },
+    {
+      "declaration": "bounds_only",
+      "entity_case": "renamed_shell",
+      "returncode": 1,
+      "denied_by_room_guard": true,
+      "forbidden_outputs": []
+    },
+    {
+      "declaration": "nonrectangular",
+      "entity_case": "empty_audit",
+      "returncode": 1,
+      "denied_by_room_guard": true,
+      "forbidden_outputs": []
+    },
+    {
+      "declaration": "nonrectangular",
+      "entity_case": "renamed_shell",
+      "returncode": 1,
+      "denied_by_room_guard": true,
+      "forbidden_outputs": []
+    },
+    {
+      "declaration": "topology",
+      "entity_case": "empty_audit",
+      "returncode": 1,
+      "denied_by_room_guard": true,
+      "forbidden_outputs": []
+    },
+    {
+      "declaration": "topology",
+      "entity_case": "renamed_shell",
+      "returncode": 1,
+      "denied_by_room_guard": true,
+      "forbidden_outputs": []
+    },
+    {
+      "declaration": "mesh_policy",
+      "entity_case": "empty_audit",
+      "returncode": 1,
+      "denied_by_room_guard": true,
+      "forbidden_outputs": []
+    },
+    {
+      "declaration": "mesh_policy",
+      "entity_case": "renamed_shell",
+      "returncode": 1,
+      "denied_by_room_guard": true,
+      "forbidden_outputs": []
+    }
+  ],
+  "scope": "Eight fresh subprocess tests of actual simulation.py entrypoint using installed MuJoCo runtime, not function-only mocks; canonical old regressions not duplicated.",
+  "guard_line": 14,
+  "first_XML_root_line": 16,
+  "source_sha256": {
+    "simulation.py": "c7ffe98662ea1643dda82e37a0d0e2d36c359da4cf370e8ac21ce2cd2f8a510e",
+    "shell_collision.py": "1f472556d70ca5052687b2198e42848fdf10a7a8e3d5fdc9e43a1b414d4b89e9",
+    "camera.py": "5f33c980929495df9155d01410b2e8739bb10dc49a6549feba5a8d6fb6beb0a0"
+  },
+  "limitations": [
+    "Requires the scene to retain the nonrectangular/bounds-only declaration under room; geometry alone is not automatically recognized.",
+    "This intentionally refuses native MJCF export; it does not implement or validate nonrectangular mesh collision.",
+    "Generic custom-object AABB fallback remains for scenes not declared nonrectangular; final nonrectangular candidates must carry the room guard metadata."
+  ]
+}

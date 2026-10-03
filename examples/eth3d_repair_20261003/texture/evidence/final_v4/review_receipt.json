@@ -1,0 +1,1089 @@
+{
+  "base_model": "/home/wqz/real2sim_agent_repair_20261003/geometry/candidate_v4/model.blend",
+  "base_sha256": "506982c1c94a94067b19a58dc1a55d7b9ab6039ca1b8d00f61fba76292cc5542",
+  "candidate_model": "/home/wqz/real2sim_agent_repair_20261003/texture/final_texture_v4/model.blend",
+  "candidate_sha256": "f36a6b79c439bf0fd53c2de58c84f4a42b4fddce29208d1fb0a273c1ba39bb2f",
+  "geometry_transform_visibility_fingerprint_before": "920ad10a281622dd39757e50c9b00c5dfccaed99d0ab30120bed0d76bcd77c49",
+  "geometry_transform_visibility_fingerprint_after": "920ad10a281622dd39757e50c9b00c5dfccaed99d0ab30120bed0d76bcd77c49",
+  "geometry_unchanged": true,
+  "nonbase_material_preservation": [
+    {
+      "original_material": "wall",
+      "candidate_material": "PhotoBaked__wall__atlas1",
+      "nonbase_graph_sha256_before": "49847b7f61f6376a32ffe6043a089e3f4872574c25f6b64674dd75d3c923d59a",
+      "nonbase_graph_sha256_after": "49847b7f61f6376a32ffe6043a089e3f4872574c25f6b64674dd75d3c923d59a",
+      "normal_bump_roughness_metallic_alpha_emission_preserved": true,
+      "original_basecolor_fallback_link_preserved": true,
+      "fallback_source_node": "Color Ramp"
+    },
+    {
+      "original_material": "yellow",
+      "candidate_material": "PhotoBaked__yellow__atlas1",
+      "nonbase_graph_sha256_before": "d31766d513bf85c30ea857dd78369e78d9b5f6a05014af0e374e0fb30a72aadf",
+      "nonbase_graph_sha256_after": "d31766d513bf85c30ea857dd78369e78d9b5f6a05014af0e374e0fb30a72aadf",
+      "normal_bump_roughness_metallic_alpha_emission_preserved": true,
+      "original_basecolor_fallback_link_preserved": false,
+      "fallback_source_node": "original_scene_linear_constant"
+    },
+    {
+      "original_material": "wall",
+      "candidate_material": "PhotoBaked__wall__atlas0",
+      "nonbase_graph_sha256_before": "49847b7f61f6376a32ffe6043a089e3f4872574c25f6b64674dd75d3c923d59a",
+      "nonbase_graph_sha256_after": "49847b7f61f6376a32ffe6043a089e3f4872574c25f6b64674dd75d3c923d59a",
+      "normal_bump_roughness_metallic_alpha_emission_preserved": true,
+      "original_basecolor_fallback_link_preserved": true,
+      "fallback_source_node": "Color Ramp"
+    },
+    {
+      "original_material": "steel",
+      "candidate_material": "PhotoBaked__steel__atlas1",
+      "nonbase_graph_sha256_before": "38112267b3817c29a605d9a593fc5bd7ea60ada8659535d9eb6eeb62bb9d4215",
+      "nonbase_graph_sha256_after": "38112267b3817c29a605d9a593fc5bd7ea60ada8659535d9eb6eeb62bb9d4215",
+      "normal_bump_roughness_metallic_alpha_emission_preserved": true,
+      "original_basecolor_fallback_link_preserved": false,
+      "fallback_source_node": "original_scene_linear_constant"
+    },
+    {
+      "original_material": "dock",
+      "candidate_material": "PhotoBaked__dock__atlas1",
+      "nonbase_graph_sha256_before": "49847b7f61f6376a32ffe6043a089e3f4872574c25f6b64674dd75d3c923d59a",
+      "nonbase_graph_sha256_after": "49847b7f61f6376a32ffe6043a089e3f4872574c25f6b64674dd75d3c923d59a",
+      "normal_bump_roughness_metallic_alpha_emission_preserved": true,
+      "original_basecolor_fallback_link_preserved": true,
+      "fallback_source_node": "Color Ramp"
+    },
+    {
+      "original_material": "blue_door",
+      "candidate_material": "PhotoBaked__blue_door__atlas1",
+      "nonbase_graph_sha256_before": "0edd6e77471f7aeb9a06208c6f1a6b86bdf460fdbfbbb5d44e7373ea88a5eacd",
+      "nonbase_graph_sha256_after": "0edd6e77471f7aeb9a06208c6f1a6b86bdf460fdbfbbb5d44e7373ea88a5eacd",
+      "normal_bump_roughness_metallic_alpha_emission_preserved": true,
+      "original_basecolor_fallback_link_preserved": false,
+      "fallback_source_node": "original_scene_linear_constant"
+    },
+    {
+      "original_material": "blue_door",
+      "candidate_material": "PhotoBaked__blue_door__atlas0",
+      "nonbase_graph_sha256_before": "0edd6e77471f7aeb9a06208c6f1a6b86bdf460fdbfbbb5d44e7373ea88a5eacd",
+      "nonbase_graph_sha256_after": "0edd6e77471f7aeb9a06208c6f1a6b86bdf460fdbfbbb5d44e7373ea88a5eacd",
+      "normal_bump_roughness_metallic_alpha_emission_preserved": true,
+      "original_basecolor_fallback_link_preserved": false,
+      "fallback_source_node": "original_scene_linear_constant"
+    },
+    {
+      "original_material": "hazard",
+      "candidate_material": "PhotoBaked__hazard__atlas1",
+      "nonbase_graph_sha256_before": "66da56f3ffbfe5c195be25242a6b464d88d9d9375767d91b7b010d7b7ea591c6",
+      "nonbase_graph_sha256_after": "66da56f3ffbfe5c195be25242a6b464d88d9d9375767d91b7b010d7b7ea591c6",
+      "normal_bump_roughness_metallic_alpha_emission_preserved": true,
+      "original_basecolor_fallback_link_preserved": true,
+      "fallback_source_node": "Color Ramp"
+    },
+    {
+      "original_material": "door",
+      "candidate_material": "PhotoBaked__door__atlas1",
+      "nonbase_graph_sha256_before": "fdb114939012032160fa534a96bf57a1d14b518f2ca7d0b82a0a053a509a8354",
+      "nonbase_graph_sha256_after": "fdb114939012032160fa534a96bf57a1d14b518f2ca7d0b82a0a053a509a8354",
+      "normal_bump_roughness_metallic_alpha_emission_preserved": true,
+      "original_basecolor_fallback_link_preserved": false,
+      "fallback_source_node": "original_scene_linear_constant"
+    },
+    {
+      "original_material": "blue",
+      "candidate_material": "PhotoBaked__blue__atlas1",
+      "nonbase_graph_sha256_before": "4527ba6d663dc69a605e70765adcd10fb1bbbc44c809e3a9574b4c9c671d739f",
+      "nonbase_graph_sha256_after": "4527ba6d663dc69a605e70765adcd10fb1bbbc44c809e3a9574b4c9c671d739f",
+      "normal_bump_roughness_metallic_alpha_emission_preserved": true,
+      "original_basecolor_fallback_link_preserved": false,
+      "fallback_source_node": "original_scene_linear_constant"
+    },
+    {
+      "original_material": "orange",
+      "candidate_material": "PhotoBaked__orange__atlas1",
+      "nonbase_graph_sha256_before": "5e6811a3ae4926ddb69f4bb7c3f4a9380197ee1a9bdfd532c506228a203acce0",
+      "nonbase_graph_sha256_after": "5e6811a3ae4926ddb69f4bb7c3f4a9380197ee1a9bdfd532c506228a203acce0",
+      "normal_bump_roughness_metallic_alpha_emission_preserved": true,
+      "original_basecolor_fallback_link_preserved": false,
+      "fallback_source_node": "original_scene_linear_constant"
+    },
+    {
+      "original_material": "wood_y",
+      "candidate_material": "PhotoBaked__wood_y__atlas1",
+      "nonbase_graph_sha256_before": "ab256fa12e04b397ccc3bb2391cfdad39712dc815df08f22f9d2111a9719145d",
+      "nonbase_graph_sha256_after": "ab256fa12e04b397ccc3bb2391cfdad39712dc815df08f22f9d2111a9719145d",
+      "normal_bump_roughness_metallic_alpha_emission_preserved": true,
+      "original_basecolor_fallback_link_preserved": true,
+      "fallback_source_node": "Color Ramp"
+    },
+    {
+      "original_material": "lumber",
+      "candidate_material": "PhotoBaked__lumber__atlas1",
+      "nonbase_graph_sha256_before": "2362cf848748efc5d0b5247bf9e0f9dee30af9f24c6ed182fcfd59b69b61d98e",
+      "nonbase_graph_sha256_after": "2362cf848748efc5d0b5247bf9e0f9dee30af9f24c6ed182fcfd59b69b61d98e",
+      "normal_bump_roughness_metallic_alpha_emission_preserved": true,
+      "original_basecolor_fallback_link_preserved": true,
+      "fallback_source_node": "Color Ramp"
+    },
+    {
+      "original_material": "bag",
+      "candidate_material": "PhotoBaked__bag__atlas1",
+      "nonbase_graph_sha256_before": "486a176e198e1f29d059b9e9c17f16408475df9a63d979d42583380765444a72",
+      "nonbase_graph_sha256_after": "486a176e198e1f29d059b9e9c17f16408475df9a63d979d42583380765444a72",
+      "normal_bump_roughness_metallic_alpha_emission_preserved": true,
+      "original_basecolor_fallback_link_preserved": true,
+      "fallback_source_node": "Color Ramp"
+    },
+    {
+      "original_material": "wood",
+      "candidate_material": "PhotoBaked__wood__atlas1",
+      "nonbase_graph_sha256_before": "e49edc0c1c7c01809a154e1d9f811f44ec64fee55d4db1e6b3116687f1da4723",
+      "nonbase_graph_sha256_after": "e49edc0c1c7c01809a154e1d9f811f44ec64fee55d4db1e6b3116687f1da4723",
+      "normal_bump_roughness_metallic_alpha_emission_preserved": true,
+      "original_basecolor_fallback_link_preserved": true,
+      "fallback_source_node": "Color Ramp"
+    },
+    {
+      "original_material": "rust",
+      "candidate_material": "PhotoBaked__rust__atlas1",
+      "nonbase_graph_sha256_before": "178ccc0e557737bf2ac2a39e518a9b8d955d4d96827ce24407a24f7430c30346",
+      "nonbase_graph_sha256_after": "178ccc0e557737bf2ac2a39e518a9b8d955d4d96827ce24407a24f7430c30346",
+      "normal_bump_roughness_metallic_alpha_emission_preserved": true,
+      "original_basecolor_fallback_link_preserved": true,
+      "fallback_source_node": "Color Ramp"
+    },
+    {
+      "original_material": "lime",
+      "candidate_material": "PhotoBaked__lime__atlas1",
+      "nonbase_graph_sha256_before": "03960719988990de3f3838df860ad5150eda0f413f7f18308f62a4647e116920",
+      "nonbase_graph_sha256_after": "03960719988990de3f3838df860ad5150eda0f413f7f18308f62a4647e116920",
+      "normal_bump_roughness_metallic_alpha_emission_preserved": true,
+      "original_basecolor_fallback_link_preserved": true,
+      "fallback_source_node": "Color Ramp"
+    },
+    {
+      "original_material": "white_vehicle",
+      "candidate_material": "PhotoBaked__white_vehicle__atlas1",
+      "nonbase_graph_sha256_before": "0ddec37051e04d761f3b5e5a190c593f6be22034e05c4109e438e00190114ccd",
+      "nonbase_graph_sha256_after": "0ddec37051e04d761f3b5e5a190c593f6be22034e05c4109e438e00190114ccd",
+      "normal_bump_roughness_metallic_alpha_emission_preserved": true,
+      "original_basecolor_fallback_link_preserved": false,
+      "fallback_source_node": "original_scene_linear_constant"
+    },
+    {
+      "original_material": "red",
+      "candidate_material": "PhotoBaked__red__atlas1",
+      "nonbase_graph_sha256_before": "57264a49fc4b2c6c61cfe88ee8b9fb32285c2a843a11bcd69f6c41837abd032e",
+      "nonbase_graph_sha256_after": "57264a49fc4b2c6c61cfe88ee8b9fb32285c2a843a11bcd69f6c41837abd032e",
+      "normal_bump_roughness_metallic_alpha_emission_preserved": true,
+      "original_basecolor_fallback_link_preserved": false,
+      "fallback_source_node": "original_scene_linear_constant"
+    },
+    {
+      "original_material": "black_vehicle",
+      "candidate_material": "PhotoBaked__black_vehicle__atlas1",
+      "nonbase_graph_sha256_before": "68c94330a7ca8b583054edfb4cf18ca3635d04738dcd259b63d5cc5056b16385",
+      "nonbase_graph_sha256_after": "68c94330a7ca8b583054edfb4cf18ca3635d04738dcd259b63d5cc5056b16385",
+      "normal_bump_roughness_metallic_alpha_emission_preserved": true,
+      "original_basecolor_fallback_link_preserved": false,
+      "fallback_source_node": "original_scene_linear_constant"
+    },
+    {
+      "original_material": "floor",
+      "candidate_material": "PhotoBaked__floor__atlas1",
+      "nonbase_graph_sha256_before": "62854a23b956937c8f05fbdf6dcbf7faa9615b25fbea023da156277b52b35c1b",
+      "nonbase_graph_sha256_after": "62854a23b956937c8f05fbdf6dcbf7faa9615b25fbea023da156277b52b35c1b",
+      "normal_bump_roughness_metallic_alpha_emission_preserved": true,
+      "original_basecolor_fallback_link_preserved": true,
+      "fallback_source_node": "Color Ramp"
+    },
+    {
+      "original_material": "floor",
+      "candidate_material": "PhotoBaked__floor__atlas0",
+      "nonbase_graph_sha256_before": "62854a23b956937c8f05fbdf6dcbf7faa9615b25fbea023da156277b52b35c1b",
+      "nonbase_graph_sha256_after": "62854a23b956937c8f05fbdf6dcbf7faa9615b25fbea023da156277b52b35c1b",
+      "normal_bump_roughness_metallic_alpha_emission_preserved": true,
+      "original_basecolor_fallback_link_preserved": true,
+      "fallback_source_node": "Color Ramp"
+    },
+    {
+      "original_material": "ceiling",
+      "candidate_material": "PhotoBaked__ceiling__atlas1",
+      "nonbase_graph_sha256_before": "486a176e198e1f29d059b9e9c17f16408475df9a63d979d42583380765444a72",
+      "nonbase_graph_sha256_after": "486a176e198e1f29d059b9e9c17f16408475df9a63d979d42583380765444a72",
+      "normal_bump_roughness_metallic_alpha_emission_preserved": true,
+      "original_basecolor_fallback_link_preserved": true,
+      "fallback_source_node": "Color Ramp"
+    },
+    {
+      "original_material": "ceiling",
+      "candidate_material": "PhotoBaked__ceiling__atlas0",
+      "nonbase_graph_sha256_before": "486a176e198e1f29d059b9e9c17f16408475df9a63d979d42583380765444a72",
+      "nonbase_graph_sha256_after": "486a176e198e1f29d059b9e9c17f16408475df9a63d979d42583380765444a72",
+      "normal_bump_roughness_metallic_alpha_emission_preserved": true,
+      "original_basecolor_fallback_link_preserved": true,
+      "fallback_source_node": "Color Ramp"
+    }
+  ],
+  "lighting_before": {
+    "world": "warehouse_environment",
+    "world_tree": "[('Background', [('Color', '<bpy_float[4], NodeSocketColor.default_value>'), ('Strength', '0.18000000715255737'), ('Weight', '0.0')]), ('World Output', [])]",
+    "lights": [
+      [
+        "luminaire_-10.0_-5.5_emitter",
+        125.0,
+        [
+          1.0,
+          1.0,
+          1.0
+        ]
+      ],
+      [
+        "luminaire_-5.3_-5.5_emitter",
+        125.0,
+        [
+          1.0,
+          1.0,
+          1.0
+        ]
+      ],
+      [
+        "luminaire_-0.6_-5.5_emitter",
+        125.0,
+        [
+          1.0,
+          1.0,
+          1.0
+        ]
+      ],
+      [
+        "luminaire_4.1_-5.5_emitter",
+        125.0,
+        [
+          1.0,
+          1.0,
+          1.0
+        ]
+      ],
+      [
+        "luminaire_8.8_-5.5_emitter",
+        125.0,
+        [
+          1.0,
+          1.0,
+          1.0
+        ]
+      ],
+      [
+        "luminaire_13.0_-5.5_emitter",
+        125.0,
+        [
+          1.0,
+          1.0,
+          1.0
+        ]
+      ],
+      [
+        "luminaire_-10.0_0.0_emitter",
+        125.0,
+        [
+          1.0,
+          1.0,
+          1.0
+        ]
+      ],
+      [
+        "luminaire_-5.3_0.0_emitter",
+        125.0,
+        [
+          1.0,
+          1.0,
+          1.0
+        ]
+      ],
+      [
+        "luminaire_-0.6_0.0_emitter",
+        125.0,
+        [
+          1.0,
+          1.0,
+          1.0
+        ]
+      ],
+      [
+        "luminaire_4.1_0.0_emitter",
+        125.0,
+        [
+          1.0,
+          1.0,
+          1.0
+        ]
+      ],
+      [
+        "luminaire_8.8_0.0_emitter",
+        125.0,
+        [
+          1.0,
+          1.0,
+          1.0
+        ]
+      ],
+      [
+        "luminaire_13.0_0.0_emitter",
+        125.0,
+        [
+          1.0,
+          1.0,
+          1.0
+        ]
+      ],
+      [
+        "luminaire_-10.0_5.5_emitter",
+        125.0,
+        [
+          1.0,
+          1.0,
+          1.0
+        ]
+      ],
+      [
+        "luminaire_-5.3_5.5_emitter",
+        125.0,
+        [
+          1.0,
+          1.0,
+          1.0
+        ]
+      ],
+      [
+        "luminaire_-0.6_5.5_emitter",
+        125.0,
+        [
+          1.0,
+          1.0,
+          1.0
+        ]
+      ],
+      [
+        "luminaire_4.1_5.5_emitter",
+        125.0,
+        [
+          1.0,
+          1.0,
+          1.0
+        ]
+      ],
+      [
+        "luminaire_8.8_5.5_emitter",
+        125.0,
+        [
+          1.0,
+          1.0,
+          1.0
+        ]
+      ],
+      [
+        "luminaire_13.0_5.5_emitter",
+        125.0,
+        [
+          1.0,
+          1.0,
+          1.0
+        ]
+      ],
+      [
+        "luminaire_-10.0_11.0_emitter",
+        125.0,
+        [
+          1.0,
+          1.0,
+          1.0
+        ]
+      ],
+      [
+        "luminaire_-5.3_11.0_emitter",
+        125.0,
+        [
+          1.0,
+          1.0,
+          1.0
+        ]
+      ],
+      [
+        "luminaire_-0.6_11.0_emitter",
+        125.0,
+        [
+          1.0,
+          1.0,
+          1.0
+        ]
+      ],
+      [
+        "luminaire_4.1_11.0_emitter",
+        125.0,
+        [
+          1.0,
+          1.0,
+          1.0
+        ]
+      ],
+      [
+        "luminaire_8.8_11.0_emitter",
+        125.0,
+        [
+          1.0,
+          1.0,
+          1.0
+        ]
+      ],
+      [
+        "luminaire_13.0_11.0_emitter",
+        125.0,
+        [
+          1.0,
+          1.0,
+          1.0
+        ]
+      ],
+      [
+        "corridor_luminaire_-17_emitter",
+        120.0,
+        [
+          1.0,
+          1.0,
+          1.0
+        ]
+      ],
+      [
+        "corridor_luminaire_-22_emitter",
+        120.0,
+        [
+          1.0,
+          1.0,
+          1.0
+        ]
+      ],
+      [
+        "corridor_luminaire_-27_emitter",
+        120.0,
+        [
+          1.0,
+          1.0,
+          1.0
+        ]
+      ],
+      [
+        "corridor_luminaire_-32_emitter",
+        120.0,
+        [
+          1.0,
+          1.0,
+          1.0
+        ]
+      ],
+      [
+        "corridor_luminaire_-37_emitter",
+        120.0,
+        [
+          1.0,
+          1.0,
+          1.0
+        ]
+      ],
+      [
+        "corridor_luminaire_-42_emitter",
+        120.0,
+        [
+          1.0,
+          1.0,
+          1.0
+        ]
+      ],
+      [
+        "corridor_luminaire_-47_emitter",
+        120.0,
+        [
+          1.0,
+          1.0,
+          1.0
+        ]
+      ]
+    ],
+    "view_transform": "AgX",
+    "exposure": 0.0,
+    "gamma": 1.0,
+    "look": "None",
+    "cycles_bounces": {
+      "max_bounces": 5,
+      "diffuse_bounces": 3,
+      "glossy_bounces": 2,
+      "transparent_max_bounces": 8
+    }
+  },
+  "lighting_after": {
+    "world": "warehouse_environment",
+    "world_tree": "[('Background', [('Color', '<bpy_float[4], NodeSocketColor.default_value>'), ('Strength', '0.18000000715255737'), ('Weight', '0.0')]), ('World Output', [])]",
+    "lights": [
+      [
+        "luminaire_-10.0_-5.5_emitter",
+        125.0,
+        [
+          1.0,
+          1.0,
+          1.0
+        ]
+      ],
+      [
+        "luminaire_-5.3_-5.5_emitter",
+        125.0,
+        [
+          1.0,
+          1.0,
+          1.0
+        ]
+      ],
+      [
+        "luminaire_-0.6_-5.5_emitter",
+        125.0,
+        [
+          1.0,
+          1.0,
+          1.0
+        ]
+      ],
+      [
+        "luminaire_4.1_-5.5_emitter",
+        125.0,
+        [
+          1.0,
+          1.0,
+          1.0
+        ]
+      ],
+      [
+        "luminaire_8.8_-5.5_emitter",
+        125.0,
+        [
+          1.0,
+          1.0,
+          1.0
+        ]
+      ],
+      [
+        "luminaire_13.0_-5.5_emitter",
+        125.0,
+        [
+          1.0,
+          1.0,
+          1.0
+        ]
+      ],
+      [
+        "luminaire_-10.0_0.0_emitter",
+        125.0,
+        [
+          1.0,
+          1.0,
+          1.0
+        ]
+      ],
+      [
+        "luminaire_-5.3_0.0_emitter",
+        125.0,
+        [
+          1.0,
+          1.0,
+          1.0
+        ]
+      ],
+      [
+        "luminaire_-0.6_0.0_emitter",
+        125.0,
+        [
+          1.0,
+          1.0,
+          1.0
+        ]
+      ],
+      [
+        "luminaire_4.1_0.0_emitter",
+        125.0,
+        [
+          1.0,
+          1.0,
+          1.0
+        ]
+      ],
+      [
+        "luminaire_8.8_0.0_emitter",
+        125.0,
+        [
+          1.0,
+          1.0,
+          1.0
+        ]
+      ],
+      [
+        "luminaire_13.0_0.0_emitter",
+        125.0,
+        [
+          1.0,
+          1.0,
+          1.0
+        ]
+      ],
+      [
+        "luminaire_-10.0_5.5_emitter",
+        125.0,
+        [
+          1.0,
+          1.0,
+          1.0
+        ]
+      ],
+      [
+        "luminaire_-5.3_5.5_emitter",
+        125.0,
+        [
+          1.0,
+          1.0,
+          1.0
+        ]
+      ],
+      [
+        "luminaire_-0.6_5.5_emitter",
+        125.0,
+        [
+          1.0,
+          1.0,
+          1.0
+        ]
+      ],
+      [
+        "luminaire_4.1_5.5_emitter",
+        125.0,
+        [
+          1.0,
+          1.0,
+          1.0
+        ]
+      ],
+      [
+        "luminaire_8.8_5.5_emitter",
+        125.0,
+        [
+          1.0,
+          1.0,
+          1.0
+        ]
+      ],
+      [
+        "luminaire_13.0_5.5_emitter",
+        125.0,
+        [
+          1.0,
+          1.0,
+          1.0
+        ]
+      ],
+      [
+        "luminaire_-10.0_11.0_emitter",
+        125.0,
+        [
+          1.0,
+          1.0,
+          1.0
+        ]
+      ],
+      [
+        "luminaire_-5.3_11.0_emitter",
+        125.0,
+        [
+          1.0,
+          1.0,
+          1.0
+        ]
+      ],
+      [
+        "luminaire_-0.6_11.0_emitter",
+        125.0,
+        [
+          1.0,
+          1.0,
+          1.0
+        ]
+      ],
+      [
+        "luminaire_4.1_11.0_emitter",
+        125.0,
+        [
+          1.0,
+          1.0,
+          1.0
+        ]
+      ],
+      [
+        "luminaire_8.8_11.0_emitter",
+        125.0,
+        [
+          1.0,
+          1.0,
+          1.0
+        ]
+      ],
+      [
+        "luminaire_13.0_11.0_emitter",
+        125.0,
+        [
+          1.0,
+          1.0,
+          1.0
+        ]
+      ],
+      [
+        "corridor_luminaire_-17_emitter",
+        120.0,
+        [
+          1.0,
+          1.0,
+          1.0
+        ]
+      ],
+      [
+        "corridor_luminaire_-22_emitter",
+        120.0,
+        [
+          1.0,
+          1.0,
+          1.0
+        ]
+      ],
+      [
+        "corridor_luminaire_-27_emitter",
+        120.0,
+        [
+          1.0,
+          1.0,
+          1.0
+        ]
+      ],
+      [
+        "corridor_luminaire_-32_emitter",
+        120.0,
+        [
+          1.0,
+          1.0,
+          1.0
+        ]
+      ],
+      [
+        "corridor_luminaire_-37_emitter",
+        120.0,
+        [
+          1.0,
+          1.0,
+          1.0
+        ]
+      ],
+      [
+        "corridor_luminaire_-42_emitter",
+        120.0,
+        [
+          1.0,
+          1.0,
+          1.0
+        ]
+      ],
+      [
+        "corridor_luminaire_-47_emitter",
+        120.0,
+        [
+          1.0,
+          1.0,
+          1.0
+        ]
+      ]
+    ],
+    "view_transform": "AgX",
+    "exposure": 0.0,
+    "gamma": 1.0,
+    "look": "None",
+    "cycles_bounces": {
+      "max_bounces": 5,
+      "diffuse_bounces": 3,
+      "glossy_bounces": 2,
+      "transparent_max_bounces": 8
+    }
+  },
+  "lighting_unchanged": true,
+  "model_from_input": [
+    [
+      0.9985254456168041,
+      -0.0029571798849103935,
+      0.05420506934679546,
+      0.0
+    ],
+    [
+      0.0025512528002570685,
+      0.9999681954851007,
+      0.007556396457319363,
+      0.0
+    ],
+    [
+      -0.05422569100446581,
+      -0.007406963304842917,
+      0.998501232512854,
+      1.477518807930019
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "source_packet_sha256": "8ae187971d0143bc8a2939f263ef32abd94c8512121db1e7642beea7176ab9ff",
+  "reference_manifest_sha256": "a3d9eb6be2b6fabf3ff0d776141d41cf8c1f628051c68637ac2a2a38907acdc3",
+  "source_frames": [
+    {
+      "index": 0,
+      "sha256": "e14725171523ed699d6036f7dbabcae822d432fd529ec526df4e3d326f72d50a",
+      "supported_assignments": 39986
+    },
+    {
+      "index": 1,
+      "sha256": "bcd637e9db0cb5d9bfaf855ca7848117386fd42ea11671ae8903177e87e36e78",
+      "supported_assignments": 26004
+    },
+    {
+      "index": 2,
+      "sha256": "c82e19bf07b5c3059ab3ac1fc84d2b3b27efbbef0351115e2eb03d27a1433efb",
+      "supported_assignments": 22024
+    },
+    {
+      "index": 3,
+      "sha256": "e3fdb5210f4b395d68041aef629c61047fc7e635eb95d4fbcb2fdaf5678dff78",
+      "supported_assignments": 26887
+    },
+    {
+      "index": 4,
+      "sha256": "dde0b1e3a680c28aaeb9e1d464f72f714bc45eeaa74b58fed6b412e8fad18c65",
+      "supported_assignments": 51225
+    },
+    {
+      "index": 5,
+      "sha256": "41f65e5ed0ad177869f7ca24f837293fabb8807b3041b4ad7998368ab7707620",
+      "supported_assignments": 86444
+    },
+    {
+      "index": 6,
+      "sha256": "3ea6a5ff48323669490de2caee6db0378e3388b6344b669ee8139d5f7b3a32ce",
+      "supported_assignments": 158645
+    },
+    {
+      "index": 7,
+      "sha256": "4cce2504a70458f522d1fcd476a376b0a9f30c6d7ee9145a05c9f41ca8cd625b",
+      "supported_assignments": 137352
+    },
+    {
+      "index": 8,
+      "sha256": "9684fbf04b95fe4465757e269bb3bb6a4924c406ac7511acbf1e825597b4962b",
+      "supported_assignments": 139686
+    },
+    {
+      "index": 9,
+      "sha256": "41315267c887821ef94034b2470e650c240284c304c1bd7a37e2f1a1060f1856",
+      "supported_assignments": 144166
+    },
+    {
+      "index": 10,
+      "sha256": "9950ab16a0500d5b7ea2af03243aa1f7c857b8a6713357723b15f718b257a955",
+      "supported_assignments": 132966
+    },
+    {
+      "index": 11,
+      "sha256": "c1139b0cc408999f938f7e24f3ff4e917e96d7d28a49644f72b8ba0b4b1f61ab",
+      "supported_assignments": 130986
+    },
+    {
+      "index": 12,
+      "sha256": "61316c7eccdcc97ca0305888d2d4c83ee57f8edba74d77b777f7d228b8531e4f",
+      "supported_assignments": 145226
+    },
+    {
+      "index": 13,
+      "sha256": "9e08342c9cf69273bb9b0f3cc809c2e24373a047aaa448318f93d8fbd7085048",
+      "supported_assignments": 218883
+    },
+    {
+      "index": 14,
+      "sha256": "2b64b82222e4c0ed01eaa8019b89970acb9e8a8db02aa833af3391d7a5100294",
+      "supported_assignments": 181521
+    },
+    {
+      "index": 15,
+      "sha256": "52081c3fcc23b585402651a841a5b32d812f5ba5cba4ce72ce60b155ecbd4fd9",
+      "supported_assignments": 216572
+    },
+    {
+      "index": 16,
+      "sha256": "eaf34c6a5e2d1388eddf2d7d6875a475b959cf05a7e0fc6add7bb13b9b971da6",
+      "supported_assignments": 102120
+    },
+    {
+      "index": 17,
+      "sha256": "1235090c5e37154e47a896055d0a00c99a3d1b89ca469dcfc3d099ce597488e7",
+      "supported_assignments": 36492
+    },
+    {
+      "index": 18,
+      "sha256": "6128fc349db933c11fb0dcb8b0a33e44d324e1a16c46d8a76b4a5a4e5544267c",
+      "supported_assignments": 54411
+    },
+    {
+      "index": 19,
+      "sha256": "704da47cb748b67c070d85196a90080ad7692e6d3f6da4e613462f2c23424e01",
+      "supported_assignments": 66620
+    },
+    {
+      "index": 20,
+      "sha256": "351bcfa6c3f8226bba97c423b63322b4231ad874f07a3bb3d5e77849805fa1a5",
+      "supported_assignments": 130553
+    },
+    {
+      "index": 21,
+      "sha256": "2d21e9dbb56f8773ebee5659cd763a5185e4d60ec3a2724a5bf10b4f6ed46590",
+      "supported_assignments": 113753
+    },
+    {
+      "index": 22,
+      "sha256": "fe09a82412c568d6bbc59388cd11424bce114af910163ddfaf327f3254fffcc3",
+      "supported_assignments": 104613
+    },
+    {
+      "index": 23,
+      "sha256": "4bf4471169f97fab050445862c22b7de214d456fdbc0f555d418b21bfd82b384",
+      "supported_assignments": 44814
+    },
+    {
+      "index": 24,
+      "sha256": "e65e9f1e77619f0811a2f0ae8611f0c0ad56070e2e32a8c8b582778f68a60591",
+      "supported_assignments": 77603
+    },
+    {
+      "index": 25,
+      "sha256": "b31706c1258e174010467f7f7a8cef30836be72ad1e3f056a18a8d4f6d401608",
+      "supported_assignments": 63236
+    },
+    {
+      "index": 26,
+      "sha256": "c321d7ac6582a1441b15e60e9356482bdbd86b22b3c6d522f927379af15bc8ed",
+      "supported_assignments": 52676
+    },
+    {
+      "index": 27,
+      "sha256": "0f379f2684664e7224067273e27d483a8ef25017d49a72161e982feb8f8d19c2",
+      "supported_assignments": 44124
+    },
+    {
+      "index": 28,
+      "sha256": "7ac847c26afec3b75092214284482ead89dc74c083f8546d843ad7e1ab9112cc",
+      "supported_assignments": 47034
+    },
+    {
+      "index": 29,
+      "sha256": "c572cb4a2cd1936a2b044ea0476caa3fad89006f13cb3692a9c348d846d19627",
+      "supported_assignments": 54674
+    },
+    {
+      "index": 30,
+      "sha256": "51bfd696c1fdf9d4b4f9b361a8fa1af680182e3cd1034b102ebeebf50d00c0ec",
+      "supported_assignments": 24861
+    },
+    {
+      "index": 31,
+      "sha256": "19992292d0304c96751a3254528fab8cf2d947aa86bf0fa32b04801233bc7561",
+      "supported_assignments": 105417
+    },
+    {
+      "index": 32,
+      "sha256": "31e4ffd2e7689cbd09f9e40ca4242c905bacf540f7422a6e98fd5d604a30747f",
+      "supported_assignments": 33512
+    },
+    {
+      "index": 33,
+      "sha256": "ce1d0f2a5bc2df25919c2a9ff1c63f3d7aa94c6b49682b8006983922879e8cab",
+      "supported_assignments": 31054
+    },
+    {
+      "index": 34,
+      "sha256": "e9b22d9d33bb3b3ea401737a02d9f2376a4fedcc5fe22269b18dc17b1d6c0aa6",
+      "supported_assignments": 36602
+    },
+    {
+      "index": 35,
+      "sha256": "86044a587b4a3f5298ee4fcf6ff6f814da7a746825992b6a8515c85b559b140e",
+      "supported_assignments": 34592
+    }
+  ],
+  "textures": [
+    {
+      "path": "/home/wqz/real2sim_agent_repair_20261003/texture/final_texture_v4/textures/photo_atlas_00.png",
+      "sha256": "e83335522e6eca7636e26d5aca231bdfdaef95bcb013635c7827bb45671f5b69",
+      "width": 2048,
+      "height": 2048,
+      "supported_surface_texels": 1157049,
+      "nonzero_alpha_including_filter_gutter": 1176279,
+      "note": "RGB source-photo appearance; alpha is support mask mixed into opaque BaseColor, never visibility/transparency"
+    },
+    {
+      "path": "/home/wqz/real2sim_agent_repair_20261003/texture/final_texture_v4/textures/photo_atlas_01.png",
+      "sha256": "12019d1240a21431a2668580dfea1f216feff4880359144920da1818239a65de",
+      "width": 2048,
+      "height": 2048,
+      "supported_surface_texels": 584594,
+      "nonzero_alpha_including_filter_gutter": 681118,
+      "note": "RGB source-photo appearance; alpha is support mask mixed into opaque BaseColor, never visibility/transparency"
+    }
+  ],
+  "mapped_objects": 303,
+  "mapped_surface_polygons": 738,
+  "surface_texels": 5371573,
+  "supported_texels": 1741643,
+  "unknown_texels": 3629930,
+  "reject_counts": {
+    "source_view_texel_pairs": 193376628,
+    "outside_fov_or_depth_grid": 153923091,
+    "depth_or_edge_inconsistent": 27522660,
+    "grazing_or_backface": 3527665,
+    "exact_visibility_rejected": 1138751,
+    "cross_view_colour_rejected": 148146
+  },
+  "exact_full_scene_visibility_rays": 4404231,
+  "recipe": {
+    "normal_cos_min": 0.18,
+    "source_boundary_pixels": 4,
+    "DA3_absolute_plus_relative_tolerance": ".10+.045*z metres",
+    "DA3_four_neighbour_edge_gate": true,
+    "exact_BVH_same_object_distance_tolerance_m": 0.018,
+    "top_candidate_views": 3,
+    "max_blended_views": 2,
+    "colour_disagreement_gate_sRGB": 0.18,
+    "mask_encoding": "PNG alpha 0/255, CHANNEL_PACKED data channel independent of sRGB RGB; mask controls BaseColor Mix only",
+    "uv_sampling": "polygon-local planar UV, atlas V=1-image_y; surface samples at texel centres",
+    "padding": "2px colour-only dilation into unknown RGB without changing support alpha, plus2px edge-extruded non-surface filtering gutter; no cross-island borrowing",
+    "world_surface_UV_atlas": true,
+    "photo_signal_target": "opaque Principled BaseColor",
+    "strict_texture_only": true,
+    "original_nonbase_graphs": "all preserved exactly, including bump/normal/roughness/metallic/alpha/emission",
+    "unsupported_fallback": "original BaseColor graph remains connected as fallback; no new unobserved appearance invented",
+    "opacity_visibility_unchanged": true,
+    "no_billboards_or_background_substitution": true
+  },
+  "limitations": [
+    "Photo-baked observed radiance contains source light/shadow/reflections; not de-lit physical reflectance",
+    "UV seams and calibration/geometry/DA3 discrepancies may limit texture support",
+    "Unknown texels use the preserved original BaseColor graph, not observed surface recovery",
+    "Original normal/bump/roughness/metallic/alpha/emission graphs preserved; inherited world-coordinate procedural fallback may not follow object deformation; photo layer itself uses named UV."
+  ],
+  "seconds": 38.12070870399475
+}

@@ -1,0 +1,406 @@
+{
+  "status": "PASS_NUMERICAL_REPRODUCTION_WITH_EXPOSED_TEST_CAVEAT",
+  "scope": "Post-freeze evaluator-only audit. No new candidate selection, no author feedback, no model/mask edits, no LPIPS network rerun.",
+  "generated_utc": "2026-10-03T08:39:05.907117+00:00",
+  "truth_sha256": "5859ea44649262f1316e7184a790ddfd398fc6eb1b52c33e148cb2ebe2d7711a",
+  "denominators": {
+    "variants": 3,
+    "views_each": 44,
+    "mapping_views": 36,
+    "original_heldout_now_exposed_views": 8,
+    "grid_positions_each": 844800,
+    "GT_valid_each": 90875,
+    "mapping_GT_valid": 74079,
+    "exposed_GT_valid": 16796,
+    "full_laser_points": 24898515,
+    "model_surface_samples_each": 100000,
+    "laser_surface_samples_each": 100000,
+    "LPIPS_pairs": 39,
+    "appearance_pairs_per_variant": {
+      "mapping": 5,
+      "original_heldout_now_exposed": 8
+    }
+  },
+  "aggregation": "Depth: equal-view macro means, with pooled alternatives retained separately. Conditional valid-prediction metrics are accompanied by full-domain counts and30m missing penalty. Surface: untrimmed bidirectional mean and1/5/10cm harmonic Fscores. LPIPS: equal-pair mean within split.",
+  "variants": {
+    "baseline": {
+      "model_sha256": "4d53b2a7fa076a6892592e555f33b55b07476dc2f6dab58651ab146fc1acdf85",
+      "integrity": {
+        "model_hash_matches_freeze": true,
+        "freeze_hash_matches_receipt": true,
+        "truth_hash_matches_receipt": true,
+        "gauge_matches": true
+      },
+      "depth": {
+        "reconstruction": {
+          "views": 36,
+          "GT_valid": 74079,
+          "predicted_valid": 74073,
+          "missing": 6,
+          "macro": {
+            "absrel": 0.062006483898501864,
+            "rmse_m": 1.0107193449005434,
+            "valid_coverage": 0.999932087020334,
+            "missing_penalty_mae_m": 0.3994937143193842,
+            "delta1": 0.9683753974529807
+          },
+          "reported_macro_delta": {
+            "absrel": -1.4600693570843148e-10,
+            "rmse_m": -7.397769286043854e-09,
+            "valid_coverage": 0.0,
+            "missing_penalty_mae_m": 2.215355066059743e-09,
+            "delta1": 0.0
+          }
+        },
+        "heldout": {
+          "views": 8,
+          "GT_valid": 16796,
+          "predicted_valid": 16796,
+          "missing": 0,
+          "macro": {
+            "absrel": 0.06437820883597431,
+            "rmse_m": 1.1178241266677582,
+            "valid_coverage": 1.0,
+            "missing_penalty_mae_m": 0.4285416634078904,
+            "delta1": 0.9622752048341933
+          },
+          "reported_macro_delta": {
+            "absrel": -5.761236210322096e-10,
+            "rmse_m": -1.0543087736181178e-08,
+            "valid_coverage": 0.0,
+            "missing_penalty_mae_m": -6.262377838517352e-10,
+            "delta1": 0.0
+          }
+        }
+      },
+      "pooled_depth": {
+        "reconstruction": {
+          "domain": 74079,
+          "predicted": 74073,
+          "missing": 6,
+          "absrel": 0.05645680315239539,
+          "rmse_m": 1.0162366940785306,
+          "valid_coverage": 0.9999190053861419,
+          "missing_penalty_mae_m": 0.3667836412726086,
+          "delta1": 0.9746196319846637
+        },
+        "heldout": {
+          "domain": 16796,
+          "predicted": 16796,
+          "missing": 0,
+          "absrel": 0.05744286577194078,
+          "rmse_m": 1.1054501332075215,
+          "valid_coverage": 1.0,
+          "missing_penalty_mae_m": 0.3737842009078324,
+          "delta1": 0.9695165515598952
+        }
+      },
+      "geometry": {
+        "model_to_laser_mean_m": 3.813943752041009,
+        "laser_to_model_mean_m": 0.11184868723000542,
+        "symmetric_mean_m": 1.9628962196355073,
+        "precision_1cm": 0.00924,
+        "recall_1cm": 0.06791,
+        "fscore_1cm": 0.016266711600777705,
+        "precision_5cm": 0.05837,
+        "recall_5cm": 0.32125,
+        "fscore_5cm": 0.09879017175069806,
+        "precision_10cm": 0.10315,
+        "recall_10cm": 0.77705,
+        "fscore_10cm": 0.18212385253351512
+      },
+      "geometry_report_max_abs_delta": 0.0,
+      "LPIPS": {
+        "reconstruction": {
+          "count": 5,
+          "mean": 0.508864802122116
+        },
+        "heldout": {
+          "count": 8,
+          "mean": 0.5562385879456997
+        }
+      }
+    },
+    "geometry_v4": {
+      "model_sha256": "506982c1c94a94067b19a58dc1a55d7b9ab6039ca1b8d00f61fba76292cc5542",
+      "integrity": {
+        "model_hash_matches_freeze": true,
+        "freeze_hash_matches_receipt": true,
+        "truth_hash_matches_receipt": true,
+        "gauge_matches": true
+      },
+      "depth": {
+        "reconstruction": {
+          "views": 36,
+          "GT_valid": 74079,
+          "predicted_valid": 74031,
+          "missing": 48,
+          "macro": {
+            "absrel": 0.053999360416255936,
+            "rmse_m": 0.8472553899580396,
+            "valid_coverage": 0.9992042970818004,
+            "missing_penalty_mae_m": 0.37365370191192715,
+            "delta1": 0.9728730766351187
+          },
+          "reported_macro_delta": {
+            "absrel": -2.3452188108175065e-10,
+            "rmse_m": 1.4762902011966617e-09,
+            "valid_coverage": 0.0,
+            "missing_penalty_mae_m": -1.353792800085074e-09,
+            "delta1": 0.0
+          }
+        },
+        "heldout": {
+          "views": 8,
+          "GT_valid": 16796,
+          "predicted_valid": 16793,
+          "missing": 3,
+          "macro": {
+            "absrel": 0.05157502354812141,
+            "rmse_m": 0.9015909154072737,
+            "valid_coverage": 0.9997936158503027,
+            "missing_penalty_mae_m": 0.36054741747323793,
+            "delta1": 0.9658556761764951
+          },
+          "reported_macro_delta": {
+            "absrel": -1.296957180541014e-09,
+            "rmse_m": -5.577471373641174e-09,
+            "valid_coverage": 0.0,
+            "missing_penalty_mae_m": 5.286376891788791e-09,
+            "delta1": 0.0
+          }
+        }
+      },
+      "pooled_depth": {
+        "reconstruction": {
+          "domain": 74079,
+          "predicted": 74031,
+          "missing": 48,
+          "absrel": 0.04969639955031434,
+          "rmse_m": 0.8667655921669201,
+          "valid_coverage": 0.9993520430891346,
+          "missing_penalty_mae_m": 0.34246512181020666,
+          "delta1": 0.9784954951304183
+        },
+        "heldout": {
+          "domain": 16796,
+          "predicted": 16793,
+          "missing": 3,
+          "absrel": 0.0468112990122142,
+          "rmse_m": 0.8824888669695562,
+          "valid_coverage": 0.9998213860442963,
+          "missing_penalty_mae_m": 0.3161537449937345,
+          "delta1": 0.9745727386411005
+        }
+      },
+      "geometry": {
+        "model_to_laser_mean_m": 0.8585466812584319,
+        "laser_to_model_mean_m": 0.10601012634190728,
+        "symmetric_mean_m": 0.4822784038001696,
+        "precision_1cm": 0.01474,
+        "recall_1cm": 0.06434,
+        "fscore_1cm": 0.023985118866970155,
+        "precision_5cm": 0.10336,
+        "recall_5cm": 0.35241,
+        "fscore_5cm": 0.1598398209623275,
+        "precision_10cm": 0.18061,
+        "recall_10cm": 0.78565,
+        "fscore_10cm": 0.29370199842692446
+      },
+      "geometry_report_max_abs_delta": 0.0,
+      "LPIPS": {
+        "reconstruction": {
+          "count": 5,
+          "mean": 0.5085168957710267
+        },
+        "heldout": {
+          "count": 8,
+          "mean": 0.5521374642848969
+        }
+      }
+    },
+    "texture_v4": {
+      "model_sha256": "f36a6b79c439bf0fd53c2de58c84f4a42b4fddce29208d1fb0a273c1ba39bb2f",
+      "integrity": {
+        "model_hash_matches_freeze": true,
+        "freeze_hash_matches_receipt": true,
+        "truth_hash_matches_receipt": true,
+        "gauge_matches": true
+      },
+      "depth": {
+        "reconstruction": {
+          "views": 36,
+          "GT_valid": 74079,
+          "predicted_valid": 74031,
+          "missing": 48,
+          "macro": {
+            "absrel": 0.053999360416255936,
+            "rmse_m": 0.8472553899580396,
+            "valid_coverage": 0.9992042970818004,
+            "missing_penalty_mae_m": 0.37365370191192715,
+            "delta1": 0.9728730766351187
+          },
+          "reported_macro_delta": {
+            "absrel": -2.3452188108175065e-10,
+            "rmse_m": 1.4762902011966617e-09,
+            "valid_coverage": 0.0,
+            "missing_penalty_mae_m": -1.353792800085074e-09,
+            "delta1": 0.0
+          }
+        },
+        "heldout": {
+          "views": 8,
+          "GT_valid": 16796,
+          "predicted_valid": 16793,
+          "missing": 3,
+          "macro": {
+            "absrel": 0.05157502354812141,
+            "rmse_m": 0.9015909154072737,
+            "valid_coverage": 0.9997936158503027,
+            "missing_penalty_mae_m": 0.36054741747323793,
+            "delta1": 0.9658556761764951
+          },
+          "reported_macro_delta": {
+            "absrel": -1.296957180541014e-09,
+            "rmse_m": -5.577471373641174e-09,
+            "valid_coverage": 0.0,
+            "missing_penalty_mae_m": 5.286376891788791e-09,
+            "delta1": 0.0
+          }
+        }
+      },
+      "pooled_depth": {
+        "reconstruction": {
+          "domain": 74079,
+          "predicted": 74031,
+          "missing": 48,
+          "absrel": 0.04969639955031434,
+          "rmse_m": 0.8667655921669201,
+          "valid_coverage": 0.9993520430891346,
+          "missing_penalty_mae_m": 0.34246512181020666,
+          "delta1": 0.9784954951304183
+        },
+        "heldout": {
+          "domain": 16796,
+          "predicted": 16793,
+          "missing": 3,
+          "absrel": 0.0468112990122142,
+          "rmse_m": 0.8824888669695562,
+          "valid_coverage": 0.9998213860442963,
+          "missing_penalty_mae_m": 0.3161537449937345,
+          "delta1": 0.9745727386411005
+        }
+      },
+      "geometry": {
+        "model_to_laser_mean_m": 0.8585466812584319,
+        "laser_to_model_mean_m": 0.10601012634190728,
+        "symmetric_mean_m": 0.4822784038001696,
+        "precision_1cm": 0.01474,
+        "recall_1cm": 0.06434,
+        "fscore_1cm": 0.023985118866970155,
+        "precision_5cm": 0.10336,
+        "recall_5cm": 0.35241,
+        "fscore_5cm": 0.1598398209623275,
+        "precision_10cm": 0.18061,
+        "recall_10cm": 0.78565,
+        "fscore_10cm": 0.29370199842692446
+      },
+      "geometry_report_max_abs_delta": 0.0,
+      "LPIPS": {
+        "reconstruction": {
+          "count": 5,
+          "mean": 0.3915189623832703
+        },
+        "heldout": {
+          "count": 8,
+          "mean": 0.4112602695822716
+        }
+      }
+    }
+  },
+  "geometry_texture_arrays": {
+    "rendered_z.npy": {
+      "byte_hash_identical": true,
+      "array_equal": true,
+      "shape": [
+        44,
+        19200
+      ]
+    },
+    "gt_to_model_m.npy": {
+      "byte_hash_identical": true,
+      "array_equal": true,
+      "shape": [
+        100000
+      ]
+    },
+    "model_surface_samples.npy": {
+      "byte_hash_identical": true,
+      "array_equal": true,
+      "shape": [
+        100000,
+        3
+      ]
+    }
+  },
+  "baseline_consistency": {
+    "evaluation_directory_is_original_immutable_result": true,
+    "LPIPS_all13_values_match_previous_exactly": true,
+    "weight_and_runner_provenance_match_previous": true
+  },
+  "LPIPS_integrity": {
+    "pairs": 39,
+    "all_pair_hashes_and_source_resizes_verified": true,
+    "all_evaluator_render_pixels_equal_packaged_pixels": true,
+    "PNG_reencoded_count": 39,
+    "all8_original_heldout_preserved_each": true,
+    "live_weight_file_hashes_verified_on_4090_1": [
+      "7be5be791159472b1fbf3c69796f7cb30dca7ad8466c2df70058c37116cdee02",
+      "df73285e35b22355a2df87cdb6b70b343713b667eddbda73e1977e0c860835c0"
+    ],
+    "neural_forward_rerun": false
+  },
+  "headlines_confirmed": {
+    "symmetric_surface_mean_m": [
+      1.9628962196355073,
+      0.4822784038001696
+    ],
+    "exposed_heldout_macro_AbsRel": [
+      0.06437820941209793,
+      0.05157502484507859
+    ],
+    "exposed_heldout_LPIPS": [
+      0.5562385879456997,
+      0.4112602695822716
+    ],
+    "relative_reduction_percent": {
+      "symmetric_surface": 75.43026478039046,
+      "AbsRel": 19.88745185575671,
+      "LPIPS": 26.064052639508894
+    }
+  },
+  "methods": [
+    "Independent float64 recomputation of all44 per-view metrics and macro/full-domain arithmetic.",
+    "Rebuilt KD tree over all24,898,515laserpoints; queried100000baseline and100000geometry_v4surface samples. Texture query reused only after byte-identical surface arrays verified. Entire numericjob47.3s.",
+    "Independently verified geometry_v4/texture_v4 rendered_z,gt_to_model andsurface sample files are byte-identical, including NaNs and denominator shape.",
+    "Verified39pair hashes andoriginal source-resize pixels, saved-render pixels, all26newvariant splitmembers plus13baseline values; actual AlexNet/LPIPS weight hashes reread fromdisk."
+  ],
+  "limitations": [
+    "The former heldout set was exposed before this repair. These are exposed-test diagnostics, not new independent generalization or benchmark leadership evidence.",
+    "Missing predictions increase: mapping6\u219248 and exposed0\u21923; retain coverage and30m missing penalties rather than citing conditional AbsRel alone.",
+    "Baseline-to-geometry texture-free LPIPS changes only slightly (heldout0.556238588\u21920.552137464); most LPIPS improvement appears after photo-baked colour. This is not measured physical albedo or independent lighting recovery.",
+    "Numerical improvements do not override the source-only LIMITED verdict, unresolved source visibility conditions,75native soft-world appearance failures or nonrectangular simulation limitations.",
+    "Nearestlaser distances use the full frozen point cloud, and existing whole-model/scan-coverage caveats remain. No post-hoc crop or surface rejection was introduced."
+  ],
+  "evidence_hashes": {
+    "depth_identity_audit.json": "cda4a7f446704b2aff0be7f037cb1c1880838434787e1b796412cc1250395ebb",
+    "baseline_geometry_audit.json": "da1f6ee77ff845ca65b95918750fec87cee012aa19966b176bea99bff3a334b6",
+    "geometry_v4_geometry_audit.json": "641463ec3bdfd54cdf69b3c4c3eaf659f55b336dc158e3c718fbefe41b30a3c8",
+    "texture_v4_geometry_audit.json": "3f54344692b869e7d12bada3d1f78d9f6f7e894a9346b18a24ce51945575d4c7",
+    "lpips39_integrity_audit.json": "661d0c35e3035fb1536c7383206dfc1fc1be0aa0c2b42908af4dec55856ed573",
+    "recompute_repair_v4.py": "fa72e4891acbfbc5d5b3ef37eed07d6390fd1cb49329fbb2886f311ced8f5534",
+    "audit_lpips_v4.py": "b7b093f966cd8ea371eddd7712ca1686da0f01d8577e99393ec8780721971bcc",
+    "repair_v4_metrics.json": "946d17cb4c13af2538a43932d2f2a91e261527f8f8d41577c4b09ae1e582e12c",
+    "lpips_results.json": "8b1266f6f4961eaf5520f02a3fea6c840bac6750467228f9b4b0ca0a8f7449e8"
+  }
+}

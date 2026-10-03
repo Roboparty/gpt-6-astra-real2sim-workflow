@@ -1,0 +1,13 @@
+{
+  "code_sha256": "7621fd5f8b57cc6da2f236394f78ef4e98ce692899e5906e46789784c5a359ad",
+  "editor_active": "DeclaredUV",
+  "render_active": [
+    "RenderUV"
+  ],
+  "declared": "DeclaredUV",
+  "audit_status": "passed",
+  "audit_failures": [],
+  "implicit_vs_declared_MAE": 0.11725452583414153,
+  "implicit_vs_render_MAE": 0.0,
+  "bug_confirmed": true
+}

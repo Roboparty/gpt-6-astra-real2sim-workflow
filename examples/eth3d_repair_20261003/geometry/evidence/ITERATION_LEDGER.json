@@ -1,0 +1,119 @@
+{
+  "start_utc": "2026-10-03T06:46:20+00:00",
+  "as_of_utc": "2026-10-03T08:33:02.152945+00:00",
+  "actual_elapsed_seconds": 6402.152945,
+  "initial_planning_budget_minutes": 30,
+  "initial_budget_exceeded": true,
+  "reason": "Continued source-review-driven repair of real shear/mesh-binding failures, giant-pipe regression and full native/source validation; no false budget-compliance claim",
+  "geometry_build_attempts": [
+    {
+      "directory": "preliminary_neutral_not_for_handoff",
+      "status": "rejected",
+      "reason": "Changed baseline appearance/visibility controls and incomplete garage aperture; no handoff acceptance",
+      "model_sha256": "94a189fbbee9b91b9460075a5ad8d5d2cf142c51df326552989431878f66e1bf",
+      "scene_sha256": "8871a6538074f0ec7ae0df21f0b57e31804e55140e454d3c3d098173ee7c720d",
+      "recipe_snapshot": "No contemporaneous separate recipe snapshot; do not claim frozen-source provenance. Model/JSON/evidence retained."
+    },
+    {
+      "directory": "preliminary_segmented_walls",
+      "status": "rejected",
+      "reason": "Segmented wall boxes retained internal faces; replaced by planar union extrusion",
+      "model_sha256": "6a4157fc7dcf8a7b824ead8e36a41226900c8f408f7863ee7f67a25d1677d946",
+      "scene_sha256": "1f3762f43f8c069e4fa0783f5f3dea1f506753d26e17dc0103e80ffaeb3e5bfd",
+      "recipe_snapshot": "No contemporaneous separate recipe snapshot; do not claim frozen-source provenance. Model/JSON/evidence retained."
+    },
+    {
+      "directory": "candidate",
+      "status": "rejected",
+      "reason": "Nonuniform object TRS lost shear;15connections and2landmark bindings failed",
+      "model_sha256": "67b1f48fedcb86e58e43952d630d141d26943902bf7d830b5247c55291bb766b",
+      "scene_sha256": "1f3762f43f8c069e4fa0783f5f3dea1f506753d26e17dc0103e80ffaeb3e5bfd",
+      "recipe_snapshot": "No contemporaneous separate recipe snapshot; do not claim frozen-source provenance. Model/JSON/evidence retained."
+    },
+    {
+      "directory": "candidate_v2",
+      "status": "rejected_as_final",
+      "reason": "Correct shear bake; frontskip threshold and cab/window anchor still failed",
+      "model_sha256": "569fe2adbfe1f596bf6ec00d7ab736907f09d821f55933a05d19e7a5450182b4",
+      "scene_sha256": "15e679959e0de6aa99901bff952d82dab9bfb3770daf8c190f2538a5f60bc57a",
+      "recipe_snapshot": "No contemporaneous separate recipe snapshot; do not claim frozen-source provenance. Model/JSON/evidence retained."
+    },
+    {
+      "directory": "candidate_v3",
+      "status": "rejected",
+      "reason": "NumericPASS but fullsource visual rejection: wrongly scaled3pipe cross-sections blocked cart/cages",
+      "model_sha256": "c288f8bb9688defd71f2faeb8dfddfefdeac2c56b714187dde0c2a3125d771b4",
+      "scene_sha256": "3d9b5443ec06d2127b4b766b506215e05597d1771957874f72d84089cbc130ee",
+      "recipe_sha256": "0e404fad141faf67ad40b4bb10a9da6a6c93f768b613740f777ac1923c58ce82"
+    },
+    {
+      "directory": "candidate_v4",
+      "status": "selected_LIMITED",
+      "reason": "World-axis pipe correction; all36source comparison and10visualpairs inspected; remaining tradeoffs preserved",
+      "model_sha256": "506982c1c94a94067b19a58dc1a55d7b9ab6039ca1b8d00f61fba76292cc5542",
+      "scene_sha256": "35d39eacd8d15f5f3a61c041dfbcb360b32c61c6ae9d0b2e6d127d837bc109ca",
+      "recipe_sha256": "db3d927714cb2053f10905473a107ea9128fbd7f65deead44f73e3cc3ee8de0f"
+    }
+  ],
+  "full_native_rounds": [
+    {
+      "attempt": "0001",
+      "status": "succeeded",
+      "started": "2026-10-03T07:50:09.358379+00:00",
+      "finished": "2026-10-03T07:59:19.622311+00:00",
+      "renders": 94,
+      "source_views": 36,
+      "source_crops": 6,
+      "isolated_combined": 45,
+      "elapsed_seconds": 550.263932,
+      "structural_status": "passed",
+      "structural_failure_count": 0,
+      "structural_audit_sha256": "444296cbbef4060be2b2f586b50607bb6004d48378d456e3044ea8505654e61c"
+    },
+    {
+      "attempt": "0002",
+      "status": "succeeded",
+      "started": "2026-10-03T08:15:23.632645+00:00",
+      "finished": "2026-10-03T08:24:32.110954+00:00",
+      "renders": 94,
+      "source_views": 36,
+      "source_crops": 6,
+      "isolated_combined": 45,
+      "elapsed_seconds": 548.478309,
+      "structural_status": "passed",
+      "structural_failure_count": 0,
+      "structural_audit_sha256": "6763c7da6d3b7a6ef7c44e92ed2bb51dd68574368917a923fba46eaf43b7cbe5"
+    }
+  ],
+  "direct_no_render_diagnostics": [
+    "native_audit_fast",
+    "native_audit_fast_v3",
+    "native_audit_fast_v2"
+  ],
+  "direct_diagnostic_scope": "Not Workflow.run/accept and not full native acceptance",
+  "common_input_checks": [
+    {
+      "directory": "/home/wqz/real2sim_agent_repair_20261003/geometry/input_checks_v4_paired",
+      "kind": "paired",
+      "views": 10,
+      "seconds": 163.40637585509103,
+      "model_sha256": "506982c1c94a94067b19a58dc1a55d7b9ab6039ca1b8d00f61fba76292cc5542",
+      "report_sha256": "63117cee8d84fd250914fbb987287f65308389e4dffc318573cc85f549cd07ed"
+    },
+    {
+      "directory": "/home/wqz/real2sim_agent_repair_20261003/geometry/input_checks_v4_all",
+      "kind": "all",
+      "views": 36,
+      "seconds": 3.5322217299835756,
+      "model_sha256": "506982c1c94a94067b19a58dc1a55d7b9ab6039ca1b8d00f61fba76292cc5542",
+      "report_sha256": "fa2b0bb17b2a470c775707597f6f7885cd8c1f10417310336e00036e6b40a887"
+    }
+  ],
+  "native_threads": 8,
+  "common_check_threads": 2,
+  "cpu_only": true,
+  "selected_model_sha256": "506982c1c94a94067b19a58dc1a55d7b9ab6039ca1b8d00f61fba76292cc5542",
+  "native_final_review": "changes_requested",
+  "no_gt_feedback_used": true,
+  "raw_large_audits_remain_remote": true
+}

@@ -1,0 +1,1122 @@
+{
+  "status": "passed",
+  "model_sha256": "506982c1c94a94067b19a58dc1a55d7b9ab6039ca1b8d00f61fba76292cc5542",
+  "shells": [
+    {
+      "shell": "floor",
+      "closed_manifold": true,
+      "consistent_winding": true,
+      "duplicate_faces": 0,
+      "signed_volume_m3": 188.02613504851857
+    },
+    {
+      "shell": "ceiling",
+      "closed_manifold": true,
+      "consistent_winding": true,
+      "duplicate_faces": 0,
+      "signed_volume_m3": 188.026204764843
+    },
+    {
+      "shell": "wall_front",
+      "closed_manifold": true,
+      "consistent_winding": true,
+      "duplicate_faces": 0,
+      "signed_volume_m3": 59.94044232368469
+    },
+    {
+      "shell": "wall_back",
+      "closed_manifold": true,
+      "consistent_winding": true,
+      "duplicate_faces": 0,
+      "signed_volume_m3": 59.94044358531634
+    },
+    {
+      "shell": "wall_left",
+      "closed_manifold": true,
+      "consistent_winding": true,
+      "duplicate_faces": 0,
+      "signed_volume_m3": 31.112586220105488
+    },
+    {
+      "shell": "wall_right",
+      "closed_manifold": true,
+      "consistent_winding": true,
+      "duplicate_faces": 0,
+      "signed_volume_m3": 24.850602994362514
+    }
+  ],
+  "boundary_ray_checks": [
+    {
+      "shell": "wall_front",
+      "xy": [
+        -30.919525146484375,
+        -7.75
+      ],
+      "z": 0.5,
+      "expected_shell": true,
+      "actual_shell": true,
+      "pass_check": true
+    },
+    {
+      "shell": "wall_front",
+      "xy": [
+        -30.919525146484375,
+        -7.75
+      ],
+      "z": 2.0,
+      "expected_shell": true,
+      "actual_shell": true,
+      "pass_check": true
+    },
+    {
+      "shell": "wall_front",
+      "xy": [
+        -30.919525146484375,
+        -7.75
+      ],
+      "z": 4.5,
+      "expected_shell": true,
+      "actual_shell": true,
+      "pass_check": true
+    },
+    {
+      "shell": "wall_left",
+      "xy": [
+        -48.239051818847656,
+        -7.474999904632568
+      ],
+      "z": 0.5,
+      "expected_shell": true,
+      "actual_shell": true,
+      "pass_check": true
+    },
+    {
+      "shell": "wall_left",
+      "xy": [
+        -48.239051818847656,
+        -7.474999904632568
+      ],
+      "z": 2.0,
+      "expected_shell": true,
+      "actual_shell": true,
+      "pass_check": true
+    },
+    {
+      "shell": "wall_left",
+      "xy": [
+        -48.239051818847656,
+        -7.474999904632568
+      ],
+      "z": 4.5,
+      "expected_shell": true,
+      "actual_shell": true,
+      "pass_check": true
+    },
+    {
+      "shell": "wall_back",
+      "xy": [
+        -30.919525146484375,
+        0.550000011920929
+      ],
+      "z": 0.5,
+      "expected_shell": true,
+      "actual_shell": true,
+      "pass_check": true
+    },
+    {
+      "shell": "wall_back",
+      "xy": [
+        -30.919525146484375,
+        0.550000011920929
+      ],
+      "z": 2.0,
+      "expected_shell": true,
+      "actual_shell": true,
+      "pass_check": true
+    },
+    {
+      "shell": "wall_back",
+      "xy": [
+        -30.919525146484375,
+        0.550000011920929
+      ],
+      "z": 4.5,
+      "expected_shell": true,
+      "actual_shell": true,
+      "pass_check": true
+    },
+    {
+      "shell": "wall_left",
+      "xy": [
+        -48.239051818847656,
+        -3.3249998092651367
+      ],
+      "z": 0.5,
+      "expected_shell": true,
+      "actual_shell": true,
+      "pass_check": true
+    },
+    {
+      "shell": "wall_left",
+      "xy": [
+        -48.239051818847656,
+        -3.3249998092651367
+      ],
+      "z": 2.0,
+      "expected_shell": true,
+      "actual_shell": true,
+      "pass_check": true
+    },
+    {
+      "shell": "wall_left",
+      "xy": [
+        -48.239051818847656,
+        -3.3249998092651367
+      ],
+      "z": 4.5,
+      "expected_shell": true,
+      "actual_shell": true,
+      "pass_check": true
+    },
+    {
+      "shell": "wall_front",
+      "xy": [
+        -7.325000286102295,
+        -9.600000381469727
+      ],
+      "z": 0.5,
+      "expected_shell": true,
+      "actual_shell": true,
+      "pass_check": true
+    },
+    {
+      "shell": "wall_front",
+      "xy": [
+        -7.325000286102295,
+        -9.600000381469727
+      ],
+      "z": 2.0,
+      "expected_shell": true,
+      "actual_shell": true,
+      "pass_check": true
+    },
+    {
+      "shell": "wall_front",
+      "xy": [
+        -7.325000286102295,
+        -9.600000381469727
+      ],
+      "z": 4.5,
+      "expected_shell": true,
+      "actual_shell": true,
+      "pass_check": true
+    },
+    {
+      "shell": "wall_right",
+      "xy": [
+        -1.0499999523162842,
+        -8.800000190734863
+      ],
+      "z": 0.5,
+      "expected_shell": true,
+      "actual_shell": true,
+      "pass_check": true
+    },
+    {
+      "shell": "wall_right",
+      "xy": [
+        -1.0499999523162842,
+        -8.800000190734863
+      ],
+      "z": 2.0,
+      "expected_shell": true,
+      "actual_shell": true,
+      "pass_check": true
+    },
+    {
+      "shell": "wall_right",
+      "xy": [
+        -1.0499999523162842,
+        -8.800000190734863
+      ],
+      "z": 4.5,
+      "expected_shell": true,
+      "actual_shell": true,
+      "pass_check": true
+    },
+    {
+      "shell": "wall_left",
+      "xy": [
+        -13.600000381469727,
+        -8.800000190734863
+      ],
+      "z": 0.5,
+      "expected_shell": true,
+      "actual_shell": true,
+      "pass_check": true
+    },
+    {
+      "shell": "wall_left",
+      "xy": [
+        -13.600000381469727,
+        -8.800000190734863
+      ],
+      "z": 2.0,
+      "expected_shell": true,
+      "actual_shell": true,
+      "pass_check": true
+    },
+    {
+      "shell": "wall_left",
+      "xy": [
+        -13.600000381469727,
+        -8.800000190734863
+      ],
+      "z": 4.5,
+      "expected_shell": true,
+      "actual_shell": true,
+      "pass_check": true
+    },
+    {
+      "shell": "wall_left",
+      "xy": [
+        -13.600000381469727,
+        -7.875
+      ],
+      "z": 0.5,
+      "expected_shell": true,
+      "actual_shell": true,
+      "pass_check": true
+    },
+    {
+      "shell": "wall_left",
+      "xy": [
+        -13.600000381469727,
+        -7.875
+      ],
+      "z": 2.0,
+      "expected_shell": true,
+      "actual_shell": true,
+      "pass_check": true
+    },
+    {
+      "shell": "wall_left",
+      "xy": [
+        -13.600000381469727,
+        -7.875
+      ],
+      "z": 4.5,
+      "expected_shell": true,
+      "actual_shell": true,
+      "pass_check": true
+    },
+    {
+      "shell": "wall_left",
+      "xy": [
+        -13.600000381469727,
+        5.744999885559082
+      ],
+      "z": 0.5,
+      "expected_shell": true,
+      "actual_shell": true,
+      "pass_check": true
+    },
+    {
+      "shell": "wall_left",
+      "xy": [
+        -13.600000381469727,
+        5.744999885559082
+      ],
+      "z": 2.0,
+      "expected_shell": true,
+      "actual_shell": true,
+      "pass_check": true
+    },
+    {
+      "shell": "wall_left",
+      "xy": [
+        -13.600000381469727,
+        5.744999885559082
+      ],
+      "z": 4.5,
+      "expected_shell": true,
+      "actual_shell": true,
+      "pass_check": true
+    },
+    {
+      "shell": "wall_back",
+      "xy": [
+        -7.325000286102295,
+        19.200000762939453
+      ],
+      "z": 0.5,
+      "expected_shell": true,
+      "actual_shell": true,
+      "pass_check": true
+    },
+    {
+      "shell": "wall_back",
+      "xy": [
+        -7.325000286102295,
+        19.200000762939453
+      ],
+      "z": 2.0,
+      "expected_shell": true,
+      "actual_shell": true,
+      "pass_check": true
+    },
+    {
+      "shell": "wall_back",
+      "xy": [
+        -7.325000286102295,
+        19.200000762939453
+      ],
+      "z": 4.5,
+      "expected_shell": true,
+      "actual_shell": true,
+      "pass_check": true
+    },
+    {
+      "shell": "wall_left",
+      "xy": [
+        -13.600000381469727,
+        15.069999694824219
+      ],
+      "z": 0.5,
+      "expected_shell": true,
+      "actual_shell": true,
+      "pass_check": true
+    },
+    {
+      "shell": "wall_left",
+      "xy": [
+        -13.600000381469727,
+        15.069999694824219
+      ],
+      "z": 2.0,
+      "expected_shell": true,
+      "actual_shell": true,
+      "pass_check": true
+    },
+    {
+      "shell": "wall_left",
+      "xy": [
+        -13.600000381469727,
+        15.069999694824219
+      ],
+      "z": 4.5,
+      "expected_shell": true,
+      "actual_shell": true,
+      "pass_check": true
+    },
+    {
+      "shell": "wall_front",
+      "xy": [
+        0.9500000476837158,
+        -8.0
+      ],
+      "z": 0.5,
+      "expected_shell": true,
+      "actual_shell": true,
+      "pass_check": true
+    },
+    {
+      "shell": "wall_front",
+      "xy": [
+        0.9500000476837158,
+        -8.0
+      ],
+      "z": 2.0,
+      "expected_shell": true,
+      "actual_shell": true,
+      "pass_check": true
+    },
+    {
+      "shell": "wall_front",
+      "xy": [
+        0.9500000476837158,
+        -8.0
+      ],
+      "z": 4.5,
+      "expected_shell": true,
+      "actual_shell": true,
+      "pass_check": true
+    },
+    {
+      "shell": "wall_back",
+      "xy": [
+        0.9500000476837158,
+        19.200000762939453
+      ],
+      "z": 0.5,
+      "expected_shell": true,
+      "actual_shell": true,
+      "pass_check": true
+    },
+    {
+      "shell": "wall_back",
+      "xy": [
+        0.9500000476837158,
+        19.200000762939453
+      ],
+      "z": 2.0,
+      "expected_shell": true,
+      "actual_shell": true,
+      "pass_check": true
+    },
+    {
+      "shell": "wall_back",
+      "xy": [
+        0.9500000476837158,
+        19.200000762939453
+      ],
+      "z": 4.5,
+      "expected_shell": true,
+      "actual_shell": true,
+      "pass_check": true
+    },
+    {
+      "shell": "wall_front",
+      "xy": [
+        4.099999904632568,
+        -12.4399995803833
+      ],
+      "z": 0.5,
+      "expected_shell": true,
+      "actual_shell": true,
+      "pass_check": true
+    },
+    {
+      "shell": "wall_front",
+      "xy": [
+        4.099999904632568,
+        -12.4399995803833
+      ],
+      "z": 2.0,
+      "expected_shell": true,
+      "actual_shell": true,
+      "pass_check": true
+    },
+    {
+      "shell": "wall_front",
+      "xy": [
+        4.099999904632568,
+        -12.4399995803833
+      ],
+      "z": 4.5,
+      "expected_shell": true,
+      "actual_shell": true,
+      "pass_check": true
+    },
+    {
+      "shell": "wall_right",
+      "xy": [
+        5.25,
+        -11.020000457763672
+      ],
+      "z": 0.5,
+      "expected_shell": true,
+      "actual_shell": true,
+      "pass_check": true
+    },
+    {
+      "shell": "wall_right",
+      "xy": [
+        5.25,
+        -11.020000457763672
+      ],
+      "z": 2.0,
+      "expected_shell": true,
+      "actual_shell": true,
+      "pass_check": true
+    },
+    {
+      "shell": "wall_right",
+      "xy": [
+        5.25,
+        -11.020000457763672
+      ],
+      "z": 4.5,
+      "expected_shell": true,
+      "actual_shell": true,
+      "pass_check": true
+    },
+    {
+      "shell": "wall_left",
+      "xy": [
+        2.950000047683716,
+        -11.020000457763672
+      ],
+      "z": 0.5,
+      "expected_shell": true,
+      "actual_shell": true,
+      "pass_check": true
+    },
+    {
+      "shell": "wall_left",
+      "xy": [
+        2.950000047683716,
+        -11.020000457763672
+      ],
+      "z": 2.0,
+      "expected_shell": true,
+      "actual_shell": true,
+      "pass_check": true
+    },
+    {
+      "shell": "wall_left",
+      "xy": [
+        2.950000047683716,
+        -11.020000457763672
+      ],
+      "z": 4.5,
+      "expected_shell": true,
+      "actual_shell": true,
+      "pass_check": true
+    },
+    {
+      "shell": "wall_right",
+      "xy": [
+        5.25,
+        -8.800000190734863
+      ],
+      "z": 0.5,
+      "expected_shell": true,
+      "actual_shell": true,
+      "pass_check": true
+    },
+    {
+      "shell": "wall_right",
+      "xy": [
+        5.25,
+        -8.800000190734863
+      ],
+      "z": 2.0,
+      "expected_shell": true,
+      "actual_shell": true,
+      "pass_check": true
+    },
+    {
+      "shell": "wall_right",
+      "xy": [
+        5.25,
+        -8.800000190734863
+      ],
+      "z": 4.5,
+      "expected_shell": true,
+      "actual_shell": true,
+      "pass_check": true
+    },
+    {
+      "shell": "wall_left",
+      "xy": [
+        2.950000047683716,
+        -8.800000190734863
+      ],
+      "z": 0.5,
+      "expected_shell": true,
+      "actual_shell": true,
+      "pass_check": true
+    },
+    {
+      "shell": "wall_left",
+      "xy": [
+        2.950000047683716,
+        -8.800000190734863
+      ],
+      "z": 2.0,
+      "expected_shell": true,
+      "actual_shell": true,
+      "pass_check": true
+    },
+    {
+      "shell": "wall_left",
+      "xy": [
+        2.950000047683716,
+        -8.800000190734863
+      ],
+      "z": 4.5,
+      "expected_shell": true,
+      "actual_shell": true,
+      "pass_check": true
+    },
+    {
+      "shell": "wall_right",
+      "xy": [
+        5.25,
+        -7.875
+      ],
+      "z": 0.5,
+      "expected_shell": true,
+      "actual_shell": true,
+      "pass_check": true
+    },
+    {
+      "shell": "wall_right",
+      "xy": [
+        5.25,
+        -7.875
+      ],
+      "z": 2.0,
+      "expected_shell": true,
+      "actual_shell": true,
+      "pass_check": true
+    },
+    {
+      "shell": "wall_right",
+      "xy": [
+        5.25,
+        -7.875
+      ],
+      "z": 4.5,
+      "expected_shell": true,
+      "actual_shell": true,
+      "pass_check": true
+    },
+    {
+      "shell": "wall_right",
+      "xy": [
+        5.25,
+        -7.474999904632568
+      ],
+      "z": 0.5,
+      "expected_shell": true,
+      "actual_shell": true,
+      "pass_check": true
+    },
+    {
+      "shell": "wall_right",
+      "xy": [
+        5.25,
+        -7.474999904632568
+      ],
+      "z": 2.0,
+      "expected_shell": true,
+      "actual_shell": true,
+      "pass_check": true
+    },
+    {
+      "shell": "wall_right",
+      "xy": [
+        5.25,
+        -7.474999904632568
+      ],
+      "z": 4.5,
+      "expected_shell": true,
+      "actual_shell": true,
+      "pass_check": true
+    },
+    {
+      "shell": "wall_right",
+      "xy": [
+        5.25,
+        -3.3249998092651367
+      ],
+      "z": 0.5,
+      "expected_shell": false,
+      "actual_shell": false,
+      "pass_check": true
+    },
+    {
+      "shell": "wall_right",
+      "xy": [
+        5.25,
+        -3.3249998092651367
+      ],
+      "z": 2.0,
+      "expected_shell": false,
+      "actual_shell": false,
+      "pass_check": true
+    },
+    {
+      "shell": "wall_right",
+      "xy": [
+        5.25,
+        -3.3249998092651367
+      ],
+      "z": 4.5,
+      "expected_shell": true,
+      "actual_shell": true,
+      "pass_check": true
+    },
+    {
+      "shell": "wall_right",
+      "xy": [
+        5.25,
+        15.069999694824219
+      ],
+      "z": 0.5,
+      "expected_shell": true,
+      "actual_shell": true,
+      "pass_check": true
+    },
+    {
+      "shell": "wall_right",
+      "xy": [
+        5.25,
+        15.069999694824219
+      ],
+      "z": 2.0,
+      "expected_shell": true,
+      "actual_shell": true,
+      "pass_check": true
+    },
+    {
+      "shell": "wall_right",
+      "xy": [
+        5.25,
+        15.069999694824219
+      ],
+      "z": 4.5,
+      "expected_shell": true,
+      "actual_shell": true,
+      "pass_check": true
+    },
+    {
+      "shell": "wall_back",
+      "xy": [
+        4.099999904632568,
+        19.200000762939453
+      ],
+      "z": 0.5,
+      "expected_shell": true,
+      "actual_shell": true,
+      "pass_check": true
+    },
+    {
+      "shell": "wall_back",
+      "xy": [
+        4.099999904632568,
+        19.200000762939453
+      ],
+      "z": 2.0,
+      "expected_shell": true,
+      "actual_shell": true,
+      "pass_check": true
+    },
+    {
+      "shell": "wall_back",
+      "xy": [
+        4.099999904632568,
+        19.200000762939453
+      ],
+      "z": 4.5,
+      "expected_shell": true,
+      "actual_shell": true,
+      "pass_check": true
+    },
+    {
+      "shell": "wall_front",
+      "xy": [
+        10.524999618530273,
+        0.550000011920929
+      ],
+      "z": 0.5,
+      "expected_shell": true,
+      "actual_shell": true,
+      "pass_check": true
+    },
+    {
+      "shell": "wall_front",
+      "xy": [
+        10.524999618530273,
+        0.550000011920929
+      ],
+      "z": 2.0,
+      "expected_shell": true,
+      "actual_shell": true,
+      "pass_check": true
+    },
+    {
+      "shell": "wall_front",
+      "xy": [
+        10.524999618530273,
+        0.550000011920929
+      ],
+      "z": 4.5,
+      "expected_shell": true,
+      "actual_shell": true,
+      "pass_check": true
+    },
+    {
+      "shell": "wall_right",
+      "xy": [
+        15.800000190734863,
+        5.744999885559082
+      ],
+      "z": 0.5,
+      "expected_shell": true,
+      "actual_shell": true,
+      "pass_check": true
+    },
+    {
+      "shell": "wall_right",
+      "xy": [
+        15.800000190734863,
+        5.744999885559082
+      ],
+      "z": 2.0,
+      "expected_shell": true,
+      "actual_shell": true,
+      "pass_check": true
+    },
+    {
+      "shell": "wall_right",
+      "xy": [
+        15.800000190734863,
+        5.744999885559082
+      ],
+      "z": 4.5,
+      "expected_shell": true,
+      "actual_shell": true,
+      "pass_check": true
+    },
+    {
+      "shell": "wall_back",
+      "xy": [
+        10.524999618530273,
+        10.9399995803833
+      ],
+      "z": 0.5,
+      "expected_shell": true,
+      "actual_shell": true,
+      "pass_check": true
+    },
+    {
+      "shell": "wall_back",
+      "xy": [
+        10.524999618530273,
+        10.9399995803833
+      ],
+      "z": 2.0,
+      "expected_shell": true,
+      "actual_shell": true,
+      "pass_check": true
+    },
+    {
+      "shell": "wall_back",
+      "xy": [
+        10.524999618530273,
+        10.9399995803833
+      ],
+      "z": 4.5,
+      "expected_shell": true,
+      "actual_shell": true,
+      "pass_check": true
+    }
+  ],
+  "floor_coverage_checks": [
+    {
+      "x": -30.919525871293683,
+      "y": -11.02,
+      "expected": false,
+      "actual": false,
+      "pass_check": true
+    },
+    {
+      "x": -30.919525871293683,
+      "y": -8.8,
+      "expected": false,
+      "actual": false,
+      "pass_check": true
+    },
+    {
+      "x": -30.919525871293683,
+      "y": -7.875,
+      "expected": false,
+      "actual": false,
+      "pass_check": true
+    },
+    {
+      "x": -30.919525871293683,
+      "y": -3.6,
+      "expected": true,
+      "actual": true,
+      "pass_check": true
+    },
+    {
+      "x": -30.919525871293683,
+      "y": 5.745,
+      "expected": false,
+      "actual": false,
+      "pass_check": true
+    },
+    {
+      "x": -30.919525871293683,
+      "y": 15.07,
+      "expected": false,
+      "actual": false,
+      "pass_check": true
+    },
+    {
+      "x": -7.325,
+      "y": -11.02,
+      "expected": false,
+      "actual": false,
+      "pass_check": true
+    },
+    {
+      "x": -7.325,
+      "y": -8.8,
+      "expected": true,
+      "actual": true,
+      "pass_check": true
+    },
+    {
+      "x": -7.325,
+      "y": -7.875,
+      "expected": true,
+      "actual": true,
+      "pass_check": true
+    },
+    {
+      "x": -7.325,
+      "y": -3.6,
+      "expected": true,
+      "actual": true,
+      "pass_check": true
+    },
+    {
+      "x": -7.325,
+      "y": 5.745,
+      "expected": true,
+      "actual": true,
+      "pass_check": true
+    },
+    {
+      "x": -7.325,
+      "y": 15.07,
+      "expected": true,
+      "actual": true,
+      "pass_check": true
+    },
+    {
+      "x": 0.9500000000000001,
+      "y": -11.02,
+      "expected": false,
+      "actual": false,
+      "pass_check": true
+    },
+    {
+      "x": 0.9500000000000001,
+      "y": -8.8,
+      "expected": false,
+      "actual": false,
+      "pass_check": true
+    },
+    {
+      "x": 0.9500000000000001,
+      "y": -7.875,
+      "expected": true,
+      "actual": true,
+      "pass_check": true
+    },
+    {
+      "x": 0.9500000000000001,
+      "y": -3.6,
+      "expected": true,
+      "actual": true,
+      "pass_check": true
+    },
+    {
+      "x": 0.9500000000000001,
+      "y": 5.745,
+      "expected": true,
+      "actual": true,
+      "pass_check": true
+    },
+    {
+      "x": 0.9500000000000001,
+      "y": 15.07,
+      "expected": true,
+      "actual": true,
+      "pass_check": true
+    },
+    {
+      "x": 4.1,
+      "y": -11.02,
+      "expected": true,
+      "actual": true,
+      "pass_check": true
+    },
+    {
+      "x": 4.1,
+      "y": -8.8,
+      "expected": true,
+      "actual": true,
+      "pass_check": true
+    },
+    {
+      "x": 4.1,
+      "y": -7.875,
+      "expected": true,
+      "actual": true,
+      "pass_check": true
+    },
+    {
+      "x": 4.1,
+      "y": -3.6,
+      "expected": true,
+      "actual": true,
+      "pass_check": true
+    },
+    {
+      "x": 4.1,
+      "y": 5.745,
+      "expected": true,
+      "actual": true,
+      "pass_check": true
+    },
+    {
+      "x": 4.1,
+      "y": 15.07,
+      "expected": true,
+      "actual": true,
+      "pass_check": true
+    },
+    {
+      "x": 10.525,
+      "y": -11.02,
+      "expected": false,
+      "actual": false,
+      "pass_check": true
+    },
+    {
+      "x": 10.525,
+      "y": -8.8,
+      "expected": false,
+      "actual": false,
+      "pass_check": true
+    },
+    {
+      "x": 10.525,
+      "y": -7.875,
+      "expected": false,
+      "actual": false,
+      "pass_check": true
+    },
+    {
+      "x": 10.525,
+      "y": -3.6,
+      "expected": false,
+      "actual": false,
+      "pass_check": true
+    },
+    {
+      "x": 10.525,
+      "y": 5.745,
+      "expected": true,
+      "actual": true,
+      "pass_check": true
+    },
+    {
+      "x": 10.525,
+      "y": 15.07,
+      "expected": false,
+      "actual": false,
+      "pass_check": true
+    }
+  ],
+  "native_simulation": "unsupported/refused by bounds-only guard",
+  "scope": "Actual generated shell topology, aperture and floor-union coverage; not full-scene collision or source visual acceptance"
+}

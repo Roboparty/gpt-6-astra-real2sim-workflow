@@ -51,6 +51,12 @@ for bad in ([0,3,1,2],[1,0,1,2],[0,1,-1,2],[0,float('nan'),1,2]):
     except ValueError:pass
     else:raise AssertionError('Invalid aperture accepted')
 simple['openings']=[]
+for declaration in [dict(bounds_only=True), dict(nonrectangular_topology=True),
+                    dict(topology='orthogonal_union'), dict(collision_policy='mesh_only')]:
+    for surface in SURFACES:
+        try:shell_boxes(dict(simple, **declaration), surface)
+        except ValueError as exc:assert 'fallback is forbidden' in str(exc)
+        else:raise AssertionError('Nonrectangular bounding box silently became a collision shell')
 for unsupported in [dict(shape='box',position=[0,2.05,2.96],dimensions=[.02,.1,.02]),
                     dict(shape='box',position=[0,2.025,1.5],dimensions=[4,.1,3])]:
     simple['collision_proxies']={'wall_back':[unsupported]}

@@ -1,0 +1,18 @@
+{
+  "candidate": "/home/wqz/real2sim_agent_repair_20261003/geometry/candidate_v4/model.blend",
+  "candidate_sha256": "506982c1c94a94067b19a58dc1a55d7b9ab6039ca1b8d00f61fba76292cc5542",
+  "baseline_sha256": "4d53b2a7fa076a6892592e555f33b55b07476dc2f6dab58651ab146fc1acdf85",
+  "input_packet_sha256": "8ae187971d0143bc8a2939f263ef32abd94c8512121db1e7642beea7176ab9ff",
+  "gauge_sha256": "b79a1e09f1353268e67f5044bb06ff5ac89a947de8deb016fac6038c6fcd1ca0",
+  "frozen_source_labels_sha256": "a419d0a41e7a5e370e4575025608403aeb98f9fb917be842756b5866316f25b7",
+  "original_uv_frame_part_labels_unchanged": true,
+  "thresholds": {
+    "median_px": 9,
+    "max_px": 18
+  },
+  "after_reload_receipt": "/home/wqz/real2sim_agent_repair_20261003/geometry/candidate_v4/after_reload_evaluated_mesh_receipt.json",
+  "after_reload_receipt_sha256": "903cac457a488ba900500f84589b95a64b14a7791d291bd9c7800896326b48f1",
+  "native_summary": "/home/wqz/real2sim_agent_repair_20261003/geometry/NATIVE_FINAL_REPAIR_SUMMARY.json",
+  "native_state": "build succeeded; structuralPASS; geometry visualchanges_requested",
+  "selection": "LIMITED geometry-only, not physical or complete visual acceptance"
+}

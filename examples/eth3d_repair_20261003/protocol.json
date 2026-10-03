@@ -1,0 +1,19 @@
+{
+  "schema": "real2sim.repair-experiment/1",
+  "date": "2026-10-03",
+  "baseline_commit": "88750be921a8dc833b9bbaa49aed7d0143d02018",
+  "baseline_model_sha256": "4d53b2a7fa076a6892592e555f33b55b07476dc2f6dab58651ab146fc1acdf85",
+  "objective": "Repair observation-unsupported room geometry and source-image texture fidelity while preserving editable components and fixed cameras",
+  "allowed_author_inputs": "Original 36 mapping RGB images, fixed K/T/model gauge, shared DA3 prediction and original annotations",
+  "forbidden_author_inputs": "Laser/GT depth, eight heldout images, post-freeze GT scores; no source photos from heldout may be used as texture",
+  "split_scope": "Previous heldout results have been exposed to the coordinator and user; all reuse is labelled exposed-test diagnostic, not new independent generalization",
+  "preservation": "Original OURS v1-v3, AWSM v1-v2, protocol, freezes and all outcomes remain unchanged",
+  "ablations": ["geometry_only", "geometry_plus_texture", "separate_lighting_if_needed"],
+  "selection": "Authors select using allowed source evidence; freeze before evaluator-only GT scoring; never choose based on new GT score",
+  "texture_contract": "Surface-bound UV/PBR texture, source/hash provenance, visibility and occlusion checks; no camera billboard, source background replacement or all-scene emission substitution",
+  "lighting_contract": "Freeze geometry and textures for any separate lighting candidate; photographic texture is captured appearance, not measured intrinsic albedo",
+  "geometry_contract": "Repair actual mesh and corresponding collision geometry from input evidence, not hide_render exclusions or GT-driven cropping; preserve source labels, tolerances and cameras",
+  "native_acceptance": "Run actual structural/geometry review, preserve failed or unknown gates; no waiver for intended but undeclared joints",
+  "evaluation": "Same frozen truth, all44depthviews, all8previouslyheldoutimages plus5fixedinputimages, opaqueZ range0.1to30m, fullmodel100000areaweighted samples, full laser reference, macrodepthaggregation",
+  "resources": "Models/raw data/textures remain remote; local code, JSON evidence and small previews only"
+}

@@ -1,0 +1,4572 @@
+{
+  "status": "complete",
+  "scope": "fit-only RGB and learned-depth checks, not heldout/GT evaluation or visual acceptance",
+  "mode": "all",
+  "version": 4,
+  "model": "/home/wqz/real2sim_agent_repair_20261003/geometry/candidate_v4/model.blend",
+  "model_sha256": "506982c1c94a94067b19a58dc1a55d7b9ab6039ca1b8d00f61fba76292cc5542",
+  "model_unchanged": true,
+  "model_from_input": [
+    [
+      0.9985254456168041,
+      -0.0029571798849103935,
+      0.05420506934679546,
+      0.0
+    ],
+    [
+      0.0025512528002570685,
+      0.9999681954851007,
+      0.007556396457319363,
+      0.0
+    ],
+    [
+      -0.05422569100446581,
+      -0.007406963304842917,
+      0.998501232512854,
+      1.477518807930019
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "reference_manifest_sha256": "a3d9eb6be2b6fabf3ff0d776141d41cf8c1f628051c68637ac2a2a38907acdc3",
+  "rows": [
+    {
+      "index": 0,
+      "frame_id": "DSC_0675",
+      "source": "/home/wqz/real2sim_agent_repair_20261003/geometry/inputs/rgb/000.png",
+      "source_sha256": "e14725171523ed699d6036f7dbabcae822d432fd529ec526df4e3d326f72d50a",
+      "reference_sha256": "00d40bc9108b53df15ffa852704b8c02cc932e1de461e4fc8c4f794ffd99fc45",
+      "domain_pixels": 19200,
+      "predicted_pixels": 19098,
+      "coverage": 0.9946875,
+      "signed_mean_m": -0.004108426485353708,
+      "mae_m": 0.10757900019929297,
+      "rmse_m": 0.28087043130132866,
+      "absrel": 0.02476087218328375,
+      "missing_penalty_mae_m": 0.2663824867607342
+    },
+    {
+      "index": 1,
+      "frame_id": "DSC_0676",
+      "source": "/home/wqz/real2sim_agent_repair_20261003/geometry/inputs/rgb/001.png",
+      "source_sha256": "bcd637e9db0cb5d9bfaf855ca7848117386fd42ea11671ae8903177e87e36e78",
+      "reference_sha256": "9ae524c729e00a0802a9699de827e08b7ab53264c2d5a126e6e3abc81b1eb257",
+      "domain_pixels": 19200,
+      "predicted_pixels": 19123,
+      "coverage": 0.9959895833333333,
+      "signed_mean_m": 0.15508000295290933,
+      "mae_m": 0.28711323258151905,
+      "rmse_m": 1.1445017048092383,
+      "absrel": 0.06199988523966672,
+      "missing_penalty_mae_m": 0.4062742888883536
+    },
+    {
+      "index": 2,
+      "frame_id": "DSC_0677",
+      "source": "/home/wqz/real2sim_agent_repair_20261003/geometry/inputs/rgb/002.png",
+      "source_sha256": "c82e19bf07b5c3059ab3ac1fc84d2b3b27efbbef0351115e2eb03d27a1433efb",
+      "reference_sha256": "d2a226a2bbae015304088253c290fdc2e104cbe2c04d90317dd19604e779ab91",
+      "domain_pixels": 19200,
+      "predicted_pixels": 19135,
+      "coverage": 0.9966145833333333,
+      "signed_mean_m": 0.13503935945837828,
+      "mae_m": 0.3271636802053605,
+      "rmse_m": 1.2177019282835884,
+      "absrel": 0.06598271004212121,
+      "missing_penalty_mae_m": 0.42761859482966524
+    },
+    {
+      "index": 3,
+      "frame_id": "DSC_0678",
+      "source": "/home/wqz/real2sim_agent_repair_20261003/geometry/inputs/rgb/003.png",
+      "source_sha256": "e3fdb5210f4b395d68041aef629c61047fc7e635eb95d4fbcb2fdaf5678dff78",
+      "reference_sha256": "8cee34768e1de31b98203bedf7222e96ab79cdc3607d4008362722a946ad960e",
+      "domain_pixels": 19200,
+      "predicted_pixels": 19131,
+      "coverage": 0.99640625,
+      "signed_mean_m": 0.1534941271351603,
+      "mae_m": 0.38319063425622396,
+      "rmse_m": 1.314227484735909,
+      "absrel": 0.07322062514056502,
+      "missing_penalty_mae_m": 0.4896260429143657
+    },
+    {
+      "index": 4,
+      "frame_id": "DSC_0680",
+      "source": "/home/wqz/real2sim_agent_repair_20261003/geometry/inputs/rgb/004.png",
+      "source_sha256": "dde0b1e3a680c28aaeb9e1d464f72f714bc45eeaa74b58fed6b412e8fad18c65",
+      "reference_sha256": "6853b8026b374a31d8b400955144bd59f7a345cc4353a5f2a0f04e4ecaf6b38f",
+      "domain_pixels": 19200,
+      "predicted_pixels": 19138,
+      "coverage": 0.9967708333333334,
+      "signed_mean_m": 0.13544249421861818,
+      "mae_m": 0.41343812295948135,
+      "rmse_m": 1.289169607850046,
+      "absrel": 0.07484706660449451,
+      "missing_penalty_mae_m": 0.5089780623540914
+    },
+    {
+      "index": 5,
+      "frame_id": "DSC_0681",
+      "source": "/home/wqz/real2sim_agent_repair_20261003/geometry/inputs/rgb/005.png",
+      "source_sha256": "41f65e5ed0ad177869f7ca24f837293fabb8807b3041b4ad7998368ab7707620",
+      "reference_sha256": "cca6e3d51b4a63d6e3e5c330d91771af02dfe84e949d4bfb4e7e48b926442f5a",
+      "domain_pixels": 19200,
+      "predicted_pixels": 19155,
+      "coverage": 0.99765625,
+      "signed_mean_m": 0.0667386416364826,
+      "mae_m": 0.4492846548926491,
+      "rmse_m": 1.321258680655785,
+      "absrel": 0.07869264277762336,
+      "missing_penalty_mae_m": 0.5185441439827445
+    },
+    {
+      "index": 6,
+      "frame_id": "DSC_0682",
+      "source": "/home/wqz/real2sim_agent_repair_20261003/geometry/inputs/rgb/006.png",
+      "source_sha256": "3ea6a5ff48323669490de2caee6db0378e3388b6344b669ee8139d5f7b3a32ce",
+      "reference_sha256": "89a4faeeb55443f39b213368f5862d7a16beefd993b83f714836f409561f9ad1",
+      "domain_pixels": 19200,
+      "predicted_pixels": 19199,
+      "coverage": 0.9999479166666667,
+      "signed_mean_m": 0.030047643557198456,
+      "mae_m": 0.6558442193743242,
+      "rmse_m": 1.4289970838790904,
+      "absrel": 0.10671158350468327,
+      "missing_penalty_mae_m": 0.6573725608212319
+    },
+    {
+      "index": 7,
+      "frame_id": "DSC_0683",
+      "source": "/home/wqz/real2sim_agent_repair_20261003/geometry/inputs/rgb/007.png",
+      "source_sha256": "4cce2504a70458f522d1fcd476a376b0a9f30c6d7ee9145a05c9f41ca8cd625b",
+      "reference_sha256": "0d56265a05d8d6bf52f464915b69bf169aeb868991b8271c92d1c8b9a43985f3",
+      "domain_pixels": 19200,
+      "predicted_pixels": 19200,
+      "coverage": 1.0,
+      "signed_mean_m": 0.5977830424495219,
+      "mae_m": 0.8459028474818369,
+      "rmse_m": 1.3678550636786901,
+      "absrel": 0.1478880803573493,
+      "missing_penalty_mae_m": 0.8459028474818369
+    },
+    {
+      "index": 8,
+      "frame_id": "DSC_0685",
+      "source": "/home/wqz/real2sim_agent_repair_20261003/geometry/inputs/rgb/008.png",
+      "source_sha256": "9684fbf04b95fe4465757e269bb3bb6a4924c406ac7511acbf1e825597b4962b",
+      "reference_sha256": "342b2bf6ea5d1250200e16a4a6fd2b30a6b0edd26614e6cc78bb5482c0a60f6f",
+      "domain_pixels": 19200,
+      "predicted_pixels": 19200,
+      "coverage": 1.0,
+      "signed_mean_m": -0.1611338335200305,
+      "mae_m": 0.663407401547016,
+      "rmse_m": 1.5209483665653893,
+      "absrel": 0.08443169231023362,
+      "missing_penalty_mae_m": 0.663407401547016
+    },
+    {
+      "index": 9,
+      "frame_id": "DSC_0686",
+      "source": "/home/wqz/real2sim_agent_repair_20261003/geometry/inputs/rgb/009.png",
+      "source_sha256": "41315267c887821ef94034b2470e650c240284c304c1bd7a37e2f1a1060f1856",
+      "reference_sha256": "194575e80bb548787f474abb77a87c476b82297621ed88271a1964902eda7b3b",
+      "domain_pixels": 19200,
+      "predicted_pixels": 19200,
+      "coverage": 1.0,
+      "signed_mean_m": -0.3029080957700341,
+      "mae_m": 0.6270983526465649,
+      "rmse_m": 1.483618231212217,
+      "absrel": 0.07608515951423758,
+      "missing_penalty_mae_m": 0.6270983526465649
+    },
+    {
+      "index": 10,
+      "frame_id": "DSC_0687",
+      "source": "/home/wqz/real2sim_agent_repair_20261003/geometry/inputs/rgb/010.png",
+      "source_sha256": "9950ab16a0500d5b7ea2af03243aa1f7c857b8a6713357723b15f718b257a955",
+      "reference_sha256": "2b2e9de19569658e2472ba7e62faaef32e15738363350f287dc882f002036bc2",
+      "domain_pixels": 19200,
+      "predicted_pixels": 19200,
+      "coverage": 1.0,
+      "signed_mean_m": -0.2594234316122073,
+      "mae_m": 0.5407461288725399,
+      "rmse_m": 1.2702410552282866,
+      "absrel": 0.0673159777384305,
+      "missing_penalty_mae_m": 0.5407461288725399
+    },
+    {
+      "index": 11,
+      "frame_id": "DSC_0688",
+      "source": "/home/wqz/real2sim_agent_repair_20261003/geometry/inputs/rgb/011.png",
+      "source_sha256": "c1139b0cc408999f938f7e24f3ff4e917e96d7d28a49644f72b8ba0b4b1f61ab",
+      "reference_sha256": "7c52283e9d54c26aa297640ec48968e3967c6089e068799fb2d95a933d8a221b",
+      "domain_pixels": 19200,
+      "predicted_pixels": 19200,
+      "coverage": 1.0,
+      "signed_mean_m": -0.1342280052683324,
+      "mae_m": 0.5248626173370087,
+      "rmse_m": 1.2058891711342687,
+      "absrel": 0.06606858960463592,
+      "missing_penalty_mae_m": 0.5248626173370087
+    },
+    {
+      "index": 12,
+      "frame_id": "DSC_0690",
+      "source": "/home/wqz/real2sim_agent_repair_20261003/geometry/inputs/rgb/012.png",
+      "source_sha256": "61316c7eccdcc97ca0305888d2d4c83ee57f8edba74d77b777f7d228b8531e4f",
+      "reference_sha256": "2bb6022952ca63a4333a018c5620f902a9fec1e51a2865ca5419423af75a0840",
+      "domain_pixels": 19200,
+      "predicted_pixels": 19200,
+      "coverage": 1.0,
+      "signed_mean_m": 0.019359617353979293,
+      "mae_m": 0.62586144567596,
+      "rmse_m": 1.4644258434388746,
+      "absrel": 0.07629974871036191,
+      "missing_penalty_mae_m": 0.62586144567596
+    },
+    {
+      "index": 13,
+      "frame_id": "DSC_0691",
+      "source": "/home/wqz/real2sim_agent_repair_20261003/geometry/inputs/rgb/013.png",
+      "source_sha256": "9e08342c9cf69273bb9b0f3cc809c2e24373a047aaa448318f93d8fbd7085048",
+      "reference_sha256": "9daf680ad04d0d484d7c0eddd82014426a22a9018d4743be5756da08be2b1c8e",
+      "domain_pixels": 19200,
+      "predicted_pixels": 19200,
+      "coverage": 1.0,
+      "signed_mean_m": 0.026016124426981466,
+      "mae_m": 0.40993621564857147,
+      "rmse_m": 1.093511196428451,
+      "absrel": 0.05308612222775301,
+      "missing_penalty_mae_m": 0.40993621564857147
+    },
+    {
+      "index": 14,
+      "frame_id": "DSC_0692",
+      "source": "/home/wqz/real2sim_agent_repair_20261003/geometry/inputs/rgb/014.png",
+      "source_sha256": "2b64b82222e4c0ed01eaa8019b89970acb9e8a8db02aa833af3391d7a5100294",
+      "reference_sha256": "5dd1fa9876fa586da15bb580a8e19716f3fa8516fd1b055d181a5f0b920b210f",
+      "domain_pixels": 19200,
+      "predicted_pixels": 19200,
+      "coverage": 1.0,
+      "signed_mean_m": 0.06425384584403301,
+      "mae_m": 0.38744405541110194,
+      "rmse_m": 1.0658582382848796,
+      "absrel": 0.053085011114673224,
+      "missing_penalty_mae_m": 0.38744405541110194
+    },
+    {
+      "index": 15,
+      "frame_id": "DSC_0693",
+      "source": "/home/wqz/real2sim_agent_repair_20261003/geometry/inputs/rgb/015.png",
+      "source_sha256": "52081c3fcc23b585402651a841a5b32d812f5ba5cba4ce72ce60b155ecbd4fd9",
+      "reference_sha256": "cf6148994619034f6e243c83c6f87779b4d2de87c6580088ae17f090a92f6b3a",
+      "domain_pixels": 19200,
+      "predicted_pixels": 19200,
+      "coverage": 1.0,
+      "signed_mean_m": 0.302381965299186,
+      "mae_m": 0.46835677238111706,
+      "rmse_m": 1.0896320618282909,
+      "absrel": 0.045759190248382674,
+      "missing_penalty_mae_m": 0.46835677238111706
+    },
+    {
+      "index": 16,
+      "frame_id": "DSC_0695",
+      "source": "/home/wqz/real2sim_agent_repair_20261003/geometry/inputs/rgb/016.png",
+      "source_sha256": "eaf34c6a5e2d1388eddf2d7d6875a475b959cf05a7e0fc6add7bb13b9b971da6",
+      "reference_sha256": "84ec70008bcc875170f4dc1d08e5408b2741cd597a1ebc763f449b71bbea24c3",
+      "domain_pixels": 19200,
+      "predicted_pixels": 19200,
+      "coverage": 1.0,
+      "signed_mean_m": 0.08604726649657933,
+      "mae_m": 0.30583371939272475,
+      "rmse_m": 0.96862412615045,
+      "absrel": 0.039102701678091226,
+      "missing_penalty_mae_m": 0.30583371939272475
+    },
+    {
+      "index": 17,
+      "frame_id": "DSC_0696",
+      "source": "/home/wqz/real2sim_agent_repair_20261003/geometry/inputs/rgb/017.png",
+      "source_sha256": "1235090c5e37154e47a896055d0a00c99a3d1b89ca469dcfc3d099ce597488e7",
+      "reference_sha256": "62c829c57116d4cdcebbd3e160e55bcc229d251ba6ec241094623676c22bee93",
+      "domain_pixels": 19200,
+      "predicted_pixels": 19200,
+      "coverage": 1.0,
+      "signed_mean_m": 0.13173839003490365,
+      "mae_m": 0.4871503032900737,
+      "rmse_m": 1.7635806924962105,
+      "absrel": 0.06460575412179152,
+      "missing_penalty_mae_m": 0.4871503032900737
+    },
+    {
+      "index": 18,
+      "frame_id": "DSC_0697",
+      "source": "/home/wqz/real2sim_agent_repair_20261003/geometry/inputs/rgb/018.png",
+      "source_sha256": "6128fc349db933c11fb0dcb8b0a33e44d324e1a16c46d8a76b4a5a4e5544267c",
+      "reference_sha256": "d53a0d97f7f421dfb05aebdd363923a8ba1cbb37a8ca3307f79e77ed84ccf0ce",
+      "domain_pixels": 19110,
+      "predicted_pixels": 19014,
+      "coverage": 0.9949764521193093,
+      "signed_mean_m": 0.06798928000755813,
+      "mae_m": 0.466544918791735,
+      "rmse_m": 1.3622771641450462,
+      "absrel": 0.06949965071963668,
+      "missing_penalty_mae_m": 0.6149076444744139
+    },
+    {
+      "index": 19,
+      "frame_id": "DSC_0698",
+      "source": "/home/wqz/real2sim_agent_repair_20261003/geometry/inputs/rgb/019.png",
+      "source_sha256": "704da47cb748b67c070d85196a90080ad7692e6d3f6da4e613462f2c23424e01",
+      "reference_sha256": "60af0988a1490eccec0e6762b6ca2527bbcc4fba56bd68343722523bc7cff8dd",
+      "domain_pixels": 19019,
+      "predicted_pixels": 18961,
+      "coverage": 0.9969504180030496,
+      "signed_mean_m": 0.08062077848326082,
+      "mae_m": 0.3737132235476822,
+      "rmse_m": 1.001605857156543,
+      "absrel": 0.050951399487061955,
+      "missing_penalty_mae_m": 0.46406101433764146
+    },
+    {
+      "index": 20,
+      "frame_id": "DSC_0700",
+      "source": "/home/wqz/real2sim_agent_repair_20261003/geometry/inputs/rgb/020.png",
+      "source_sha256": "351bcfa6c3f8226bba97c423b63322b4231ad874f07a3bb3d5e77849805fa1a5",
+      "reference_sha256": "d18201d95ab402b662d783d55399ab6b22a6106a7a8ef389858834ee7a4a979a",
+      "domain_pixels": 18994,
+      "predicted_pixels": 18971,
+      "coverage": 0.9987890912919869,
+      "signed_mean_m": 0.08020850914081334,
+      "mae_m": 0.3669141340320814,
+      "rmse_m": 0.7664318842986766,
+      "absrel": 0.039645286129478784,
+      "missing_penalty_mae_m": 0.40279709575248057
+    },
+    {
+      "index": 21,
+      "frame_id": "DSC_0701",
+      "source": "/home/wqz/real2sim_agent_repair_20261003/geometry/inputs/rgb/021.png",
+      "source_sha256": "2d21e9dbb56f8773ebee5659cd763a5185e4d60ec3a2724a5bf10b4f6ed46590",
+      "reference_sha256": "e88151f74db1c1fe22ca7b5fbafda6f466dab0f66141c946ed6cf87b14eb55c3",
+      "domain_pixels": 18992,
+      "predicted_pixels": 18937,
+      "coverage": 0.9971040438079192,
+      "signed_mean_m": 0.12955814294574497,
+      "mae_m": 0.3815344144863895,
+      "rmse_m": 0.7679367230668974,
+      "absrel": 0.04356138845828728,
+      "missing_penalty_mae_m": 0.467308193298692
+    },
+    {
+      "index": 22,
+      "frame_id": "DSC_0702",
+      "source": "/home/wqz/real2sim_agent_repair_20261003/geometry/inputs/rgb/022.png",
+      "source_sha256": "fe09a82412c568d6bbc59388cd11424bce114af910163ddfaf327f3254fffcc3",
+      "reference_sha256": "7f047bc842d587c995e340be171dfef0a286a168931f4f7e6f8c2e01cd4131cb",
+      "domain_pixels": 18965,
+      "predicted_pixels": 18928,
+      "coverage": 0.9980490377010283,
+      "signed_mean_m": 0.07061301325322167,
+      "mae_m": 0.41817910945469033,
+      "rmse_m": 0.7963463868475783,
+      "absrel": 0.05168456087110272,
+      "missing_penalty_mae_m": 0.4758921267470803
+    },
+    {
+      "index": 23,
+      "frame_id": "DSC_0703",
+      "source": "/home/wqz/real2sim_agent_repair_20261003/geometry/inputs/rgb/023.png",
+      "source_sha256": "4bf4471169f97fab050445862c22b7de214d456fdbc0f555d418b21bfd82b384",
+      "reference_sha256": "5293357bb032cd47036f98ad6c324df21c51486a41da55705cb43dfe2fe6e699",
+      "domain_pixels": 19200,
+      "predicted_pixels": 19200,
+      "coverage": 1.0,
+      "signed_mean_m": 0.05598706255516993,
+      "mae_m": 0.2616175059636893,
+      "rmse_m": 0.5174513007264331,
+      "absrel": 0.04475232888326615,
+      "missing_penalty_mae_m": 0.2616175059636893
+    },
+    {
+      "index": 24,
+      "frame_id": "DSC_0705",
+      "source": "/home/wqz/real2sim_agent_repair_20261003/geometry/inputs/rgb/024.png",
+      "source_sha256": "e65e9f1e77619f0811a2f0ae8611f0c0ad56070e2e32a8c8b582778f68a60591",
+      "reference_sha256": "7e2bf50d6974924b5a4b1bfe2d55a2ae9f8c2de60fe7e7609c1a794b310bfcd5",
+      "domain_pixels": 19200,
+      "predicted_pixels": 19200,
+      "coverage": 1.0,
+      "signed_mean_m": -0.05760238793237917,
+      "mae_m": 0.27918872189233007,
+      "rmse_m": 0.7091762820387619,
+      "absrel": 0.050000189478804476,
+      "missing_penalty_mae_m": 0.27918872189233007
+    },
+    {
+      "index": 25,
+      "frame_id": "DSC_0706",
+      "source": "/home/wqz/real2sim_agent_repair_20261003/geometry/inputs/rgb/025.png",
+      "source_sha256": "b31706c1258e174010467f7f7a8cef30836be72ad1e3f056a18a8d4f6d401608",
+      "reference_sha256": "54e66d5f091780ca58de25ef358c3dd0212bae18d313eb72fa8ffb2c256c6c0d",
+      "domain_pixels": 19200,
+      "predicted_pixels": 19143,
+      "coverage": 0.99703125,
+      "signed_mean_m": -0.04180262791954271,
+      "mae_m": 0.29580033205512485,
+      "rmse_m": 0.7232441150133965,
+      "absrel": 0.05495291946299659,
+      "missing_penalty_mae_m": 0.3839846748193362
+    },
+    {
+      "index": 26,
+      "frame_id": "DSC_0707",
+      "source": "/home/wqz/real2sim_agent_repair_20261003/geometry/inputs/rgb/026.png",
+      "source_sha256": "c321d7ac6582a1441b15e60e9356482bdbd86b22b3c6d522f927379af15bc8ed",
+      "reference_sha256": "c499d64f12a84cde32d2e180886d8535f678fa868312699dde379eb14588e1fa",
+      "domain_pixels": 19200,
+      "predicted_pixels": 19102,
+      "coverage": 0.9948958333333333,
+      "signed_mean_m": 0.07705043242614429,
+      "mae_m": 0.26099315777405896,
+      "rmse_m": 0.49081403155161757,
+      "absrel": 0.05676742177217469,
+      "missing_penalty_mae_m": 0.4127860051979205
+    },
+    {
+      "index": 27,
+      "frame_id": "DSC_0708",
+      "source": "/home/wqz/real2sim_agent_repair_20261003/geometry/inputs/rgb/027.png",
+      "source_sha256": "0f379f2684664e7224067273e27d483a8ef25017d49a72161e982feb8f8d19c2",
+      "reference_sha256": "d637ea08c22f2a671fc7337457e81fe5445b1e3e1398e4520ce5b157046dea68",
+      "domain_pixels": 19200,
+      "predicted_pixels": 19110,
+      "coverage": 0.9953125,
+      "signed_mean_m": 0.20082415138821474,
+      "mae_m": 0.20082415138821474,
+      "rmse_m": 0.29979998578206707,
+      "absrel": 0.05282399734533314,
+      "missing_penalty_mae_m": 0.3405077881785825
+    },
+    {
+      "index": 28,
+      "frame_id": "DSC_0710",
+      "source": "/home/wqz/real2sim_agent_repair_20261003/geometry/inputs/rgb/028.png",
+      "source_sha256": "7ac847c26afec3b75092214284482ead89dc74c083f8546d843ad7e1ab9112cc",
+      "reference_sha256": "2b01de529fb15e878413a300304c73f9a02529b01e86fa7e6eacba60abe530eb",
+      "domain_pixels": 19200,
+      "predicted_pixels": 19200,
+      "coverage": 1.0,
+      "signed_mean_m": 0.0812725470642301,
+      "mae_m": 0.36244944971231763,
+      "rmse_m": 0.7117166418443411,
+      "absrel": 0.05560417613069716,
+      "missing_penalty_mae_m": 0.36244944971231763
+    },
+    {
+      "index": 29,
+      "frame_id": "DSC_0711",
+      "source": "/home/wqz/real2sim_agent_repair_20261003/geometry/inputs/rgb/029.png",
+      "source_sha256": "c572cb4a2cd1936a2b044ea0476caa3fad89006f13cb3692a9c348d846d19627",
+      "reference_sha256": "dad08786ff9f5acb9ea88c2530039ce63b5fe91094ab538fa9fe0b10df02410f",
+      "domain_pixels": 19200,
+      "predicted_pixels": 19200,
+      "coverage": 1.0,
+      "signed_mean_m": -0.7825368548923662,
+      "mae_m": 0.85660817183988,
+      "rmse_m": 1.352575247328208,
+      "absrel": 0.10648449054377596,
+      "missing_penalty_mae_m": 0.85660817183988
+    },
+    {
+      "index": 30,
+      "frame_id": "DSC_0712",
+      "source": "/home/wqz/real2sim_agent_repair_20261003/geometry/inputs/rgb/030.png",
+      "source_sha256": "51bfd696c1fdf9d4b4f9b361a8fa1af680182e3cd1034b102ebeebf50d00c0ec",
+      "reference_sha256": "fccb247d17825536ae9a691c8de7b105248dce59244c0879f77737806d43f54c",
+      "domain_pixels": 19200,
+      "predicted_pixels": 19200,
+      "coverage": 1.0,
+      "signed_mean_m": -1.1528822615917504,
+      "mae_m": 1.1735907881381729,
+      "rmse_m": 1.7468656150756852,
+      "absrel": 0.14022454399410747,
+      "missing_penalty_mae_m": 1.1735907881381729
+    },
+    {
+      "index": 31,
+      "frame_id": "DSC_0713",
+      "source": "/home/wqz/real2sim_agent_repair_20261003/geometry/inputs/rgb/031.png",
+      "source_sha256": "19992292d0304c96751a3254528fab8cf2d947aa86bf0fa32b04801233bc7561",
+      "reference_sha256": "0cc94d7aaaaf36a4d1a4be0a5b6dd402b08c2b269a26121bfed512acfd295978",
+      "domain_pixels": 19200,
+      "predicted_pixels": 19200,
+      "coverage": 1.0,
+      "signed_mean_m": -0.27262775717537535,
+      "mae_m": 0.5164888832333933,
+      "rmse_m": 1.220790023009982,
+      "absrel": 0.04924001458405337,
+      "missing_penalty_mae_m": 0.5164888832333933
+    },
+    {
+      "index": 32,
+      "frame_id": "DSC_0715",
+      "source": "/home/wqz/real2sim_agent_repair_20261003/geometry/inputs/rgb/032.png",
+      "source_sha256": "31e4ffd2e7689cbd09f9e40ca4242c905bacf540f7422a6e98fd5d604a30747f",
+      "reference_sha256": "64f0c2fcb44efebe01cba1bb123fa605701c4cc10a248298e4ff99addf23283a",
+      "domain_pixels": 18993,
+      "predicted_pixels": 18933,
+      "coverage": 0.996840941399463,
+      "signed_mean_m": 0.31879076138459284,
+      "mae_m": 0.42645483999763295,
+      "rmse_m": 0.7948645863016973,
+      "absrel": 0.052840321385379474,
+      "missing_penalty_mae_m": 0.5198794021837089
+    },
+    {
+      "index": 33,
+      "frame_id": "DSC_0716",
+      "source": "/home/wqz/real2sim_agent_repair_20261003/geometry/inputs/rgb/033.png",
+      "source_sha256": "ce1d0f2a5bc2df25919c2a9ff1c63f3d7aa94c6b49682b8006983922879e8cab",
+      "reference_sha256": "906edf3a9136352067a0f36213428eb08309fee216d445cf92e214bcb1ab6b9a",
+      "domain_pixels": 18949,
+      "predicted_pixels": 18906,
+      "coverage": 0.9977307509631115,
+      "signed_mean_m": 0.2539321660605638,
+      "mae_m": 0.4471558232338348,
+      "rmse_m": 0.7706389755997413,
+      "absrel": 0.07028111882498743,
+      "missing_penalty_mae_m": 0.514218586419277
+    },
+    {
+      "index": 34,
+      "frame_id": "DSC_0717",
+      "source": "/home/wqz/real2sim_agent_repair_20261003/geometry/inputs/rgb/034.png",
+      "source_sha256": "e9b22d9d33bb3b3ea401737a02d9f2376a4fedcc5fe22269b18dc17b1d6c0aa6",
+      "reference_sha256": "cdcf21c66133f6308d1ee6d51b15690b945455a8b895351abf3fd7d857c12630",
+      "domain_pixels": 18944,
+      "predicted_pixels": 18902,
+      "coverage": 0.9977829391891891,
+      "signed_mean_m": 0.22346149228882758,
+      "mae_m": 0.4783421311101053,
+      "rmse_m": 0.8416053195814052,
+      "absrel": 0.10394511363911156,
+      "missing_penalty_mae_m": 0.5437934418413857
+    },
+    {
+      "index": 35,
+      "frame_id": "DSC_0718",
+      "source": "/home/wqz/real2sim_agent_repair_20261003/geometry/inputs/rgb/035.png",
+      "source_sha256": "86044a587b4a3f5298ee4fcf6ff6f814da7a746825992b6a8515c85b559b140e",
+      "reference_sha256": "07cbf1cf55a4ebedc6653c132853dac40576360762b3538ba4de4bb37c817c59",
+      "domain_pixels": 18983,
+      "predicted_pixels": 18943,
+      "coverage": 0.9978928514987093,
+      "signed_mean_m": 0.2481452472951968,
+      "mae_m": 0.3883843664744064,
+      "rmse_m": 0.6788348773002567,
+      "absrel": 0.04480872593982438,
+      "missing_penalty_mae_m": 0.450780437977384
+    }
+  ],
+  "visible_inventory": [
+    {
+      "name": "cage_upper_wall",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "entrance_soffit",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "entrance_recess_door",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "entry_sign_0",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "entry_sign_0_lettering",
+      "vertices": 2360,
+      "triangles": 2356
+    },
+    {
+      "name": "entry_sign_1",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "entry_sign_1_lettering",
+      "vertices": 44,
+      "triangles": 44
+    },
+    {
+      "name": "entry_sign_2",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "entry_sign_2_lettering",
+      "vertices": 408,
+      "triangles": 404
+    },
+    {
+      "name": "garage_reveal",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "main_dock_sidewall",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "yellow_side_door",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "yellow_door_rail0",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "yellow_door_rail1",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "yellow_door_rail2",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "yellow_door_rail3",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "loading_platform",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "dock_blue_door",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "far_corridor_door",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "column_0_base",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "column_0_lower",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "column_0_upper",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "column_1_base",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "column_1_lower",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "column_1_upper",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "column_2_base",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "column_2_lower",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "column_2_upper",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "column_3_base",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "column_3_lower",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "column_3_upper",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "column_4_base",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "column_4_lower",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "column_4_upper",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "column_5_base",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "column_5_lower",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "column_5_upper",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "column_6_base",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "column_6_lower",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "column_6_upper",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "column_7_base",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "column_7_lower",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "column_7_upper",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "door_leaf_0_panel_0",
+      "vertices": 56,
+      "triangles": 108
+    },
+    {
+      "name": "door_leaf_0_panel_1",
+      "vertices": 56,
+      "triangles": 108
+    },
+    {
+      "name": "door_leaf_0_upright_-1",
+      "vertices": 56,
+      "triangles": 108
+    },
+    {
+      "name": "door_leaf_0_upright_1",
+      "vertices": 56,
+      "triangles": 108
+    },
+    {
+      "name": "door_leaf_0_rail_0",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "door_leaf_0_rail_1",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "door_leaf_0_rail_2",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "door_leaf_0_hinge_0",
+      "vertices": 32,
+      "triangles": 60
+    },
+    {
+      "name": "door_leaf_0_hinge_1",
+      "vertices": 32,
+      "triangles": 60
+    },
+    {
+      "name": "door_leaf_0_hinge_2",
+      "vertices": 32,
+      "triangles": 60
+    },
+    {
+      "name": "door_leaf_0_hinge_3",
+      "vertices": 32,
+      "triangles": 60
+    },
+    {
+      "name": "door_leaf_1_panel_0",
+      "vertices": 56,
+      "triangles": 108
+    },
+    {
+      "name": "door_leaf_1_panel_1",
+      "vertices": 56,
+      "triangles": 108
+    },
+    {
+      "name": "door_leaf_1_upright_-1",
+      "vertices": 56,
+      "triangles": 108
+    },
+    {
+      "name": "door_leaf_1_upright_1",
+      "vertices": 56,
+      "triangles": 108
+    },
+    {
+      "name": "door_leaf_1_rail_0",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "door_leaf_1_rail_1",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "door_leaf_1_rail_2",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "door_leaf_1_hinge_0",
+      "vertices": 32,
+      "triangles": 60
+    },
+    {
+      "name": "door_leaf_1_hinge_1",
+      "vertices": 32,
+      "triangles": 60
+    },
+    {
+      "name": "door_leaf_1_hinge_2",
+      "vertices": 32,
+      "triangles": 60
+    },
+    {
+      "name": "door_leaf_1_hinge_3",
+      "vertices": 32,
+      "triangles": 60
+    },
+    {
+      "name": "door_leaf_2_panel_0",
+      "vertices": 56,
+      "triangles": 108
+    },
+    {
+      "name": "door_leaf_2_panel_1",
+      "vertices": 56,
+      "triangles": 108
+    },
+    {
+      "name": "door_leaf_2_upright_-1",
+      "vertices": 56,
+      "triangles": 108
+    },
+    {
+      "name": "door_leaf_2_upright_1",
+      "vertices": 56,
+      "triangles": 108
+    },
+    {
+      "name": "door_leaf_2_rail_0",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "door_leaf_2_rail_1",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "door_leaf_2_rail_2",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "door_leaf_2_hinge_0",
+      "vertices": 32,
+      "triangles": 60
+    },
+    {
+      "name": "door_leaf_2_hinge_1",
+      "vertices": 32,
+      "triangles": 60
+    },
+    {
+      "name": "door_leaf_2_hinge_2",
+      "vertices": 32,
+      "triangles": 60
+    },
+    {
+      "name": "door_leaf_2_hinge_3",
+      "vertices": 32,
+      "triangles": 60
+    },
+    {
+      "name": "door_leaf_3_panel_0",
+      "vertices": 56,
+      "triangles": 108
+    },
+    {
+      "name": "door_leaf_3_panel_1",
+      "vertices": 56,
+      "triangles": 108
+    },
+    {
+      "name": "door_leaf_3_upright_-1",
+      "vertices": 56,
+      "triangles": 108
+    },
+    {
+      "name": "door_leaf_3_upright_1",
+      "vertices": 56,
+      "triangles": 108
+    },
+    {
+      "name": "door_leaf_3_rail_0",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "door_leaf_3_rail_1",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "door_leaf_3_rail_2",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "door_leaf_3_hinge_0",
+      "vertices": 32,
+      "triangles": 60
+    },
+    {
+      "name": "door_leaf_3_hinge_1",
+      "vertices": 32,
+      "triangles": 60
+    },
+    {
+      "name": "door_leaf_3_hinge_2",
+      "vertices": 32,
+      "triangles": 60
+    },
+    {
+      "name": "door_leaf_3_hinge_3",
+      "vertices": 32,
+      "triangles": 60
+    },
+    {
+      "name": "door_leaf_4_panel_0",
+      "vertices": 56,
+      "triangles": 108
+    },
+    {
+      "name": "door_leaf_4_panel_1",
+      "vertices": 56,
+      "triangles": 108
+    },
+    {
+      "name": "door_leaf_4_upright_-1",
+      "vertices": 56,
+      "triangles": 108
+    },
+    {
+      "name": "door_leaf_4_upright_1",
+      "vertices": 56,
+      "triangles": 108
+    },
+    {
+      "name": "door_leaf_4_rail_0",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "door_leaf_4_rail_1",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "door_leaf_4_rail_2",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "door_leaf_4_hinge_0",
+      "vertices": 32,
+      "triangles": 60
+    },
+    {
+      "name": "door_leaf_4_hinge_1",
+      "vertices": 32,
+      "triangles": 60
+    },
+    {
+      "name": "door_leaf_4_hinge_2",
+      "vertices": 32,
+      "triangles": 60
+    },
+    {
+      "name": "door_leaf_4_hinge_3",
+      "vertices": 32,
+      "triangles": 60
+    },
+    {
+      "name": "door_leaf_5_panel_0",
+      "vertices": 56,
+      "triangles": 108
+    },
+    {
+      "name": "door_leaf_5_panel_1",
+      "vertices": 56,
+      "triangles": 108
+    },
+    {
+      "name": "door_leaf_5_upright_-1",
+      "vertices": 56,
+      "triangles": 108
+    },
+    {
+      "name": "door_leaf_5_upright_1",
+      "vertices": 56,
+      "triangles": 108
+    },
+    {
+      "name": "door_leaf_5_rail_0",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "door_leaf_5_rail_1",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "door_leaf_5_rail_2",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "door_leaf_5_hinge_0",
+      "vertices": 32,
+      "triangles": 60
+    },
+    {
+      "name": "door_leaf_5_hinge_1",
+      "vertices": 32,
+      "triangles": 60
+    },
+    {
+      "name": "door_leaf_5_hinge_2",
+      "vertices": 32,
+      "triangles": 60
+    },
+    {
+      "name": "door_leaf_5_hinge_3",
+      "vertices": 32,
+      "triangles": 60
+    },
+    {
+      "name": "door_leaf_6_panel_0",
+      "vertices": 56,
+      "triangles": 108
+    },
+    {
+      "name": "door_leaf_6_panel_1",
+      "vertices": 56,
+      "triangles": 108
+    },
+    {
+      "name": "door_leaf_6_upright_-1",
+      "vertices": 56,
+      "triangles": 108
+    },
+    {
+      "name": "door_leaf_6_upright_1",
+      "vertices": 56,
+      "triangles": 108
+    },
+    {
+      "name": "door_leaf_6_rail_0",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "door_leaf_6_rail_1",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "door_leaf_6_rail_2",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "door_leaf_6_hinge_0",
+      "vertices": 32,
+      "triangles": 60
+    },
+    {
+      "name": "door_leaf_6_hinge_1",
+      "vertices": 32,
+      "triangles": 60
+    },
+    {
+      "name": "door_leaf_6_hinge_2",
+      "vertices": 32,
+      "triangles": 60
+    },
+    {
+      "name": "door_leaf_6_hinge_3",
+      "vertices": 32,
+      "triangles": 60
+    },
+    {
+      "name": "door_upper_track",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "door_header",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "door_hanger0",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "door_hanger1",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "door_hanger2",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "door_hanger3",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "door_hanger4",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "door_hanger5",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "door_hanger6",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "rack_upright_0_0",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "rack_upright_0_1",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "rack_upright_1_0",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "rack_upright_1_1",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "rack_upright_2_0",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "rack_upright_2_1",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "rack_upright_3_0",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "rack_upright_3_1",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "rack_beam_0_0",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "rack_beam_0_1",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "rack_pallet_joist_0_0_0",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "rack_pallet_joist_0_0_1",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "rack_pallet_joist_0_0_2",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "rack_pallet_0_0_0",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "rack_pallet_0_0_1",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "rack_pallet_0_0_2",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "rack_pallet_0_0_3",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "rack_pallet_0_0_4",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "rack_pallet_0_0_5",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "rack_sack_0_0_0",
+      "vertices": 96,
+      "triangles": 188
+    },
+    {
+      "name": "rack_sack_0_0_1",
+      "vertices": 96,
+      "triangles": 188
+    },
+    {
+      "name": "rack_sack_0_0_2",
+      "vertices": 96,
+      "triangles": 188
+    },
+    {
+      "name": "rack_sack_0_0_3",
+      "vertices": 96,
+      "triangles": 188
+    },
+    {
+      "name": "rack_sack_0_0_4",
+      "vertices": 96,
+      "triangles": 188
+    },
+    {
+      "name": "rack_pallet_joist_0_1_0",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "rack_pallet_joist_0_1_1",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "rack_pallet_joist_0_1_2",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "rack_pallet_0_1_0",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "rack_pallet_0_1_1",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "rack_pallet_0_1_2",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "rack_pallet_0_1_3",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "rack_pallet_0_1_4",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "rack_pallet_0_1_5",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "rack_sack_0_1_0",
+      "vertices": 96,
+      "triangles": 188
+    },
+    {
+      "name": "rack_sack_0_1_1",
+      "vertices": 96,
+      "triangles": 188
+    },
+    {
+      "name": "rack_sack_0_1_2",
+      "vertices": 96,
+      "triangles": 188
+    },
+    {
+      "name": "rack_sack_0_1_3",
+      "vertices": 96,
+      "triangles": 188
+    },
+    {
+      "name": "rack_pallet_joist_0_2_0",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "rack_pallet_joist_0_2_1",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "rack_pallet_joist_0_2_2",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "rack_pallet_0_2_0",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "rack_pallet_0_2_1",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "rack_pallet_0_2_2",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "rack_pallet_0_2_3",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "rack_pallet_0_2_4",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "rack_pallet_0_2_5",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "rack_sack_0_2_0",
+      "vertices": 96,
+      "triangles": 188
+    },
+    {
+      "name": "rack_sack_0_2_1",
+      "vertices": 96,
+      "triangles": 188
+    },
+    {
+      "name": "rack_sack_0_2_2",
+      "vertices": 96,
+      "triangles": 188
+    },
+    {
+      "name": "rack_sack_0_2_3",
+      "vertices": 96,
+      "triangles": 188
+    },
+    {
+      "name": "rack_beam_1_0",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "rack_beam_1_1",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "rack_pallet_joist_1_0_0",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "rack_pallet_joist_1_0_1",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "rack_pallet_joist_1_0_2",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "rack_pallet_1_0_0",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "rack_pallet_1_0_1",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "rack_pallet_1_0_2",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "rack_pallet_1_0_3",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "rack_pallet_1_0_4",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "rack_pallet_1_0_5",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "rack_sack_1_0_0",
+      "vertices": 96,
+      "triangles": 188
+    },
+    {
+      "name": "rack_sack_1_0_1",
+      "vertices": 96,
+      "triangles": 188
+    },
+    {
+      "name": "rack_sack_1_0_2",
+      "vertices": 96,
+      "triangles": 188
+    },
+    {
+      "name": "rack_sack_1_0_3",
+      "vertices": 96,
+      "triangles": 188
+    },
+    {
+      "name": "rack_pallet_joist_1_1_0",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "rack_pallet_joist_1_1_1",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "rack_pallet_joist_1_1_2",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "rack_pallet_1_1_0",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "rack_pallet_1_1_1",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "rack_pallet_1_1_2",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "rack_pallet_1_1_3",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "rack_pallet_1_1_4",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "rack_pallet_1_1_5",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "rack_sack_1_1_0",
+      "vertices": 96,
+      "triangles": 188
+    },
+    {
+      "name": "rack_sack_1_1_1",
+      "vertices": 96,
+      "triangles": 188
+    },
+    {
+      "name": "rack_sack_1_1_2",
+      "vertices": 96,
+      "triangles": 188
+    },
+    {
+      "name": "rack_sack_1_1_3",
+      "vertices": 96,
+      "triangles": 188
+    },
+    {
+      "name": "rack_pallet_joist_1_2_0",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "rack_pallet_joist_1_2_1",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "rack_pallet_joist_1_2_2",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "rack_pallet_1_2_0",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "rack_pallet_1_2_1",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "rack_pallet_1_2_2",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "rack_pallet_1_2_3",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "rack_pallet_1_2_4",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "rack_pallet_1_2_5",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "rack_sack_1_2_0",
+      "vertices": 96,
+      "triangles": 188
+    },
+    {
+      "name": "rack_sack_1_2_1",
+      "vertices": 96,
+      "triangles": 188
+    },
+    {
+      "name": "rack_sack_1_2_2",
+      "vertices": 96,
+      "triangles": 188
+    },
+    {
+      "name": "rack_sack_1_2_3",
+      "vertices": 96,
+      "triangles": 188
+    },
+    {
+      "name": "rack_sack_1_2_4",
+      "vertices": 96,
+      "triangles": 188
+    },
+    {
+      "name": "rack_beam_2_0",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "rack_beam_2_1",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "rack_pallet_joist_2_0_0",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "rack_pallet_joist_2_0_1",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "rack_pallet_joist_2_0_2",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "rack_pallet_2_0_0",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "rack_pallet_2_0_1",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "rack_pallet_2_0_2",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "rack_pallet_2_0_3",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "rack_pallet_2_0_4",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "rack_pallet_2_0_5",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "rack_sack_2_0_0",
+      "vertices": 96,
+      "triangles": 188
+    },
+    {
+      "name": "rack_sack_2_0_1",
+      "vertices": 96,
+      "triangles": 188
+    },
+    {
+      "name": "rack_sack_2_0_2",
+      "vertices": 96,
+      "triangles": 188
+    },
+    {
+      "name": "rack_sack_2_0_3",
+      "vertices": 96,
+      "triangles": 188
+    },
+    {
+      "name": "rack_pallet_joist_2_1_0",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "rack_pallet_joist_2_1_1",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "rack_pallet_joist_2_1_2",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "rack_pallet_2_1_0",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "rack_pallet_2_1_1",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "rack_pallet_2_1_2",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "rack_pallet_2_1_3",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "rack_pallet_2_1_4",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "rack_pallet_2_1_5",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "rack_sack_2_1_0",
+      "vertices": 96,
+      "triangles": 188
+    },
+    {
+      "name": "rack_sack_2_1_1",
+      "vertices": 96,
+      "triangles": 188
+    },
+    {
+      "name": "rack_sack_2_1_2",
+      "vertices": 96,
+      "triangles": 188
+    },
+    {
+      "name": "rack_sack_2_1_3",
+      "vertices": 96,
+      "triangles": 188
+    },
+    {
+      "name": "rack_sack_2_1_4",
+      "vertices": 96,
+      "triangles": 188
+    },
+    {
+      "name": "rack_pallet_joist_2_2_0",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "rack_pallet_joist_2_2_1",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "rack_pallet_joist_2_2_2",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "rack_pallet_2_2_0",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "rack_pallet_2_2_1",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "rack_pallet_2_2_2",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "rack_pallet_2_2_3",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "rack_pallet_2_2_4",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "rack_pallet_2_2_5",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "rack_sack_2_2_0",
+      "vertices": 96,
+      "triangles": 188
+    },
+    {
+      "name": "rack_sack_2_2_1",
+      "vertices": 96,
+      "triangles": 188
+    },
+    {
+      "name": "rack_sack_2_2_2",
+      "vertices": 96,
+      "triangles": 188
+    },
+    {
+      "name": "rack_sack_2_2_3",
+      "vertices": 96,
+      "triangles": 188
+    },
+    {
+      "name": "rack_beam_3_0",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "rack_beam_3_1",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "rack_pallet_joist_3_0_0",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "rack_pallet_joist_3_0_1",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "rack_pallet_joist_3_0_2",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "rack_pallet_3_0_0",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "rack_pallet_3_0_1",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "rack_pallet_3_0_2",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "rack_pallet_3_0_3",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "rack_pallet_3_0_4",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "rack_pallet_3_0_5",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "top_folded_bag_0_0",
+      "vertices": 56,
+      "triangles": 108
+    },
+    {
+      "name": "top_folded_bag_0_1",
+      "vertices": 56,
+      "triangles": 108
+    },
+    {
+      "name": "top_folded_bag_0_2",
+      "vertices": 56,
+      "triangles": 108
+    },
+    {
+      "name": "rack_pallet_joist_3_1_0",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "rack_pallet_joist_3_1_1",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "rack_pallet_joist_3_1_2",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "rack_pallet_3_1_0",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "rack_pallet_3_1_1",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "rack_pallet_3_1_2",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "rack_pallet_3_1_3",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "rack_pallet_3_1_4",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "rack_pallet_3_1_5",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "top_folded_bag_1_0",
+      "vertices": 56,
+      "triangles": 108
+    },
+    {
+      "name": "top_folded_bag_1_1",
+      "vertices": 56,
+      "triangles": 108
+    },
+    {
+      "name": "top_folded_bag_1_2",
+      "vertices": 56,
+      "triangles": 108
+    },
+    {
+      "name": "rack_pallet_joist_3_2_0",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "rack_pallet_joist_3_2_1",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "rack_pallet_joist_3_2_2",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "rack_pallet_3_2_0",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "rack_pallet_3_2_1",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "rack_pallet_3_2_2",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "rack_pallet_3_2_3",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "rack_pallet_3_2_4",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "rack_pallet_3_2_5",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "crate0_foot0",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "crate0_foot1",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "crate0_foot2",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "crate0_base",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "crate0_long_0_0",
+      "vertices": 56,
+      "triangles": 108
+    },
+    {
+      "name": "crate0_short_0_0",
+      "vertices": 56,
+      "triangles": 108
+    },
+    {
+      "name": "crate0_long_0_1",
+      "vertices": 56,
+      "triangles": 108
+    },
+    {
+      "name": "crate0_short_0_1",
+      "vertices": 56,
+      "triangles": 108
+    },
+    {
+      "name": "crate0_long_1_0",
+      "vertices": 56,
+      "triangles": 108
+    },
+    {
+      "name": "crate0_short_1_0",
+      "vertices": 56,
+      "triangles": 108
+    },
+    {
+      "name": "crate0_long_1_1",
+      "vertices": 56,
+      "triangles": 108
+    },
+    {
+      "name": "crate0_short_1_1",
+      "vertices": 56,
+      "triangles": 108
+    },
+    {
+      "name": "crate0_long_2_0",
+      "vertices": 56,
+      "triangles": 108
+    },
+    {
+      "name": "crate0_short_2_0",
+      "vertices": 56,
+      "triangles": 108
+    },
+    {
+      "name": "crate0_long_2_1",
+      "vertices": 56,
+      "triangles": 108
+    },
+    {
+      "name": "crate0_short_2_1",
+      "vertices": 56,
+      "triangles": 108
+    },
+    {
+      "name": "crate0_long_3_0",
+      "vertices": 56,
+      "triangles": 108
+    },
+    {
+      "name": "crate0_short_3_0",
+      "vertices": 56,
+      "triangles": 108
+    },
+    {
+      "name": "crate0_long_3_1",
+      "vertices": 56,
+      "triangles": 108
+    },
+    {
+      "name": "crate0_short_3_1",
+      "vertices": 56,
+      "triangles": 108
+    },
+    {
+      "name": "crate0_long_4_0",
+      "vertices": 56,
+      "triangles": 108
+    },
+    {
+      "name": "crate0_short_4_0",
+      "vertices": 56,
+      "triangles": 108
+    },
+    {
+      "name": "crate0_long_4_1",
+      "vertices": 56,
+      "triangles": 108
+    },
+    {
+      "name": "crate0_short_4_1",
+      "vertices": 56,
+      "triangles": 108
+    },
+    {
+      "name": "crate0_long_5_0",
+      "vertices": 56,
+      "triangles": 108
+    },
+    {
+      "name": "crate0_short_5_0",
+      "vertices": 56,
+      "triangles": 108
+    },
+    {
+      "name": "crate0_long_5_1",
+      "vertices": 56,
+      "triangles": 108
+    },
+    {
+      "name": "crate0_short_5_1",
+      "vertices": 56,
+      "triangles": 108
+    },
+    {
+      "name": "crate0_strap0",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "crate0_strap1",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "crate0_strap2",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "crate0_strap3",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "crate1_foot0",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "crate1_foot1",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "crate1_foot2",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "crate1_base",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "crate1_long_0_0",
+      "vertices": 56,
+      "triangles": 108
+    },
+    {
+      "name": "crate1_short_0_0",
+      "vertices": 56,
+      "triangles": 108
+    },
+    {
+      "name": "crate1_long_0_1",
+      "vertices": 56,
+      "triangles": 108
+    },
+    {
+      "name": "crate1_short_0_1",
+      "vertices": 56,
+      "triangles": 108
+    },
+    {
+      "name": "crate1_long_1_0",
+      "vertices": 56,
+      "triangles": 108
+    },
+    {
+      "name": "crate1_short_1_0",
+      "vertices": 56,
+      "triangles": 108
+    },
+    {
+      "name": "crate1_long_1_1",
+      "vertices": 56,
+      "triangles": 108
+    },
+    {
+      "name": "crate1_short_1_1",
+      "vertices": 56,
+      "triangles": 108
+    },
+    {
+      "name": "crate1_long_2_0",
+      "vertices": 56,
+      "triangles": 108
+    },
+    {
+      "name": "crate1_short_2_0",
+      "vertices": 56,
+      "triangles": 108
+    },
+    {
+      "name": "crate1_long_2_1",
+      "vertices": 56,
+      "triangles": 108
+    },
+    {
+      "name": "crate1_short_2_1",
+      "vertices": 56,
+      "triangles": 108
+    },
+    {
+      "name": "crate1_long_3_0",
+      "vertices": 56,
+      "triangles": 108
+    },
+    {
+      "name": "crate1_short_3_0",
+      "vertices": 56,
+      "triangles": 108
+    },
+    {
+      "name": "crate1_long_3_1",
+      "vertices": 56,
+      "triangles": 108
+    },
+    {
+      "name": "crate1_short_3_1",
+      "vertices": 56,
+      "triangles": 108
+    },
+    {
+      "name": "crate1_long_4_0",
+      "vertices": 56,
+      "triangles": 108
+    },
+    {
+      "name": "crate1_short_4_0",
+      "vertices": 56,
+      "triangles": 108
+    },
+    {
+      "name": "crate1_long_4_1",
+      "vertices": 56,
+      "triangles": 108
+    },
+    {
+      "name": "crate1_short_4_1",
+      "vertices": 56,
+      "triangles": 108
+    },
+    {
+      "name": "crate1_long_5_0",
+      "vertices": 56,
+      "triangles": 108
+    },
+    {
+      "name": "crate1_short_5_0",
+      "vertices": 56,
+      "triangles": 108
+    },
+    {
+      "name": "crate1_long_5_1",
+      "vertices": 56,
+      "triangles": 108
+    },
+    {
+      "name": "crate1_short_5_1",
+      "vertices": 56,
+      "triangles": 108
+    },
+    {
+      "name": "crate1_strap0",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "crate1_strap1",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "crate1_strap2",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "crate1_strap3",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "skip0_shell",
+      "vertices": 16,
+      "triangles": 28
+    },
+    {
+      "name": "skip0_foot0",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "skip0_foot1",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "skip0_rim0",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "skip0_rim1",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "skip0_side_rim0",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "skip0_side_rim1",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "skip1_shell",
+      "vertices": 16,
+      "triangles": 28
+    },
+    {
+      "name": "skip1_foot0",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "skip1_foot1",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "skip1_rim0",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "skip1_rim1",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "skip1_side_rim0",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "skip1_side_rim1",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "trailer_box",
+      "vertices": 56,
+      "triangles": 108
+    },
+    {
+      "name": "trailer_floor",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "trailer_wheel_12.9_-1",
+      "vertices": 48,
+      "triangles": 92
+    },
+    {
+      "name": "trailer_hub_12.9_-1",
+      "vertices": 32,
+      "triangles": 60
+    },
+    {
+      "name": "trailer_wheel_12.9_1",
+      "vertices": 48,
+      "triangles": 92
+    },
+    {
+      "name": "trailer_hub_12.9_1",
+      "vertices": 32,
+      "triangles": 60
+    },
+    {
+      "name": "trailer_wheel_13.65_-1",
+      "vertices": 48,
+      "triangles": 92
+    },
+    {
+      "name": "trailer_hub_13.65_-1",
+      "vertices": 32,
+      "triangles": 60
+    },
+    {
+      "name": "trailer_wheel_13.65_1",
+      "vertices": 48,
+      "triangles": 92
+    },
+    {
+      "name": "trailer_hub_13.65_1",
+      "vertices": 32,
+      "triangles": 60
+    },
+    {
+      "name": "trailer_window_0",
+      "vertices": 56,
+      "triangles": 108
+    },
+    {
+      "name": "trailer_window_1",
+      "vertices": 56,
+      "triangles": 108
+    },
+    {
+      "name": "trailer_towA",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "trailer_towB",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "flatbed_frame",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "flatbed_deck",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "flatbed_wheel-1",
+      "vertices": 48,
+      "triangles": 92
+    },
+    {
+      "name": "flatbed_wheel1",
+      "vertices": 48,
+      "triangles": 92
+    },
+    {
+      "name": "flatbed_towA",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "flatbed_towB",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "flatbed_hitch",
+      "vertices": 32,
+      "triangles": 60
+    },
+    {
+      "name": "sign_base",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "sign_pole",
+      "vertices": 32,
+      "triangles": 60
+    },
+    {
+      "name": "no_parking_red",
+      "vertices": 64,
+      "triangles": 124
+    },
+    {
+      "name": "no_parking_blue",
+      "vertices": 64,
+      "triangles": 124
+    },
+    {
+      "name": "no_parking_slashA",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "no_parking_slashB",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "van_cab_body",
+      "vertices": 20,
+      "triangles": 34
+    },
+    {
+      "name": "van_cargo_box",
+      "vertices": 56,
+      "triangles": 108
+    },
+    {
+      "name": "van_chassis",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "van_windshield",
+      "vertices": 4,
+      "triangles": 2
+    },
+    {
+      "name": "van_windshield_frame0",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "van_windshield_frame1",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "van_windshield_frame2",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "van_windshield_frame3",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "van_windshield_divider",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "van_side_glass-1",
+      "vertices": 4,
+      "triangles": 2
+    },
+    {
+      "name": "van_mirror-1",
+      "vertices": 56,
+      "triangles": 108
+    },
+    {
+      "name": "van_mirror_stem-1",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "van_tyre-1_0",
+      "vertices": 64,
+      "triangles": 124
+    },
+    {
+      "name": "van_hub-1_0",
+      "vertices": 40,
+      "triangles": 76
+    },
+    {
+      "name": "van_tyre-1_1",
+      "vertices": 64,
+      "triangles": 124
+    },
+    {
+      "name": "van_hub-1_1",
+      "vertices": 40,
+      "triangles": 76
+    },
+    {
+      "name": "van_side_glass1",
+      "vertices": 4,
+      "triangles": 2
+    },
+    {
+      "name": "van_mirror1",
+      "vertices": 56,
+      "triangles": 108
+    },
+    {
+      "name": "van_mirror_stem1",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "van_tyre1_0",
+      "vertices": 64,
+      "triangles": 124
+    },
+    {
+      "name": "van_hub1_0",
+      "vertices": 40,
+      "triangles": 76
+    },
+    {
+      "name": "van_tyre1_1",
+      "vertices": 64,
+      "triangles": 124
+    },
+    {
+      "name": "van_hub1_1",
+      "vertices": 40,
+      "triangles": 76
+    },
+    {
+      "name": "van_front_bumper",
+      "vertices": 56,
+      "triangles": 108
+    },
+    {
+      "name": "van_grille",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "van_headlamp-1",
+      "vertices": 56,
+      "triangles": 108
+    },
+    {
+      "name": "van_headlamp1",
+      "vertices": 56,
+      "triangles": 108
+    },
+    {
+      "name": "van_cooler",
+      "vertices": 56,
+      "triangles": 108
+    },
+    {
+      "name": "van_cooler_vent0",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "van_cooler_vent1",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "van_cooler_vent2",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "van_cooler_vent3",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "van_cooler_vent4",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "van_cooler_vent5",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "van_cooler_vent6",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "van_observed_hood_SV",
+      "vertices": 516,
+      "triangles": 508
+    },
+    {
+      "name": "car_lower_body",
+      "vertices": 16,
+      "triangles": 28
+    },
+    {
+      "name": "car_upper_body",
+      "vertices": 16,
+      "triangles": 26
+    },
+    {
+      "name": "car_rear_glass",
+      "vertices": 4,
+      "triangles": 2
+    },
+    {
+      "name": "car_rear_frame0",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "car_rear_frame1",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "car_rear_frame2",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "car_rear_frame3",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "car_tyre-1_0",
+      "vertices": 56,
+      "triangles": 108
+    },
+    {
+      "name": "car_hub-1_0",
+      "vertices": 32,
+      "triangles": 60
+    },
+    {
+      "name": "car_tyre-1_1",
+      "vertices": 56,
+      "triangles": 108
+    },
+    {
+      "name": "car_hub-1_1",
+      "vertices": 32,
+      "triangles": 60
+    },
+    {
+      "name": "car_tail_light-1",
+      "vertices": 56,
+      "triangles": 108
+    },
+    {
+      "name": "car_tyre1_0",
+      "vertices": 56,
+      "triangles": 108
+    },
+    {
+      "name": "car_hub1_0",
+      "vertices": 32,
+      "triangles": 60
+    },
+    {
+      "name": "car_tyre1_1",
+      "vertices": 56,
+      "triangles": 108
+    },
+    {
+      "name": "car_hub1_1",
+      "vertices": 32,
+      "triangles": 60
+    },
+    {
+      "name": "car_tail_light1",
+      "vertices": 56,
+      "triangles": 108
+    },
+    {
+      "name": "cart_floor_frame",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cart_upright0",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cart_upright1",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cart_upright2",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cart_crossbar",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cart_caster-1_-1",
+      "vertices": 32,
+      "triangles": 60
+    },
+    {
+      "name": "cart_caster-1_1",
+      "vertices": 32,
+      "triangles": 60
+    },
+    {
+      "name": "cart_caster1_-1",
+      "vertices": 32,
+      "triangles": 60
+    },
+    {
+      "name": "cart_caster1_1",
+      "vertices": 32,
+      "triangles": 60
+    },
+    {
+      "name": "lumber_board_0_0",
+      "vertices": 56,
+      "triangles": 108
+    },
+    {
+      "name": "lumber_board_0_1",
+      "vertices": 56,
+      "triangles": 108
+    },
+    {
+      "name": "lumber_board_0_2",
+      "vertices": 56,
+      "triangles": 108
+    },
+    {
+      "name": "lumber_board_1_0",
+      "vertices": 56,
+      "triangles": 108
+    },
+    {
+      "name": "lumber_board_1_1",
+      "vertices": 56,
+      "triangles": 108
+    },
+    {
+      "name": "lumber_board_1_2",
+      "vertices": 56,
+      "triangles": 108
+    },
+    {
+      "name": "lumber_board_2_0",
+      "vertices": 56,
+      "triangles": 108
+    },
+    {
+      "name": "lumber_board_2_1",
+      "vertices": 56,
+      "triangles": 108
+    },
+    {
+      "name": "lumber_board_2_2",
+      "vertices": 56,
+      "triangles": 108
+    },
+    {
+      "name": "lumber_board_3_0",
+      "vertices": 56,
+      "triangles": 108
+    },
+    {
+      "name": "lumber_board_3_1",
+      "vertices": 56,
+      "triangles": 108
+    },
+    {
+      "name": "lumber_board_3_2",
+      "vertices": 56,
+      "triangles": 108
+    },
+    {
+      "name": "lumber_board_4_0",
+      "vertices": 56,
+      "triangles": 108
+    },
+    {
+      "name": "lumber_board_4_1",
+      "vertices": 56,
+      "triangles": 108
+    },
+    {
+      "name": "lumber_board_4_2",
+      "vertices": 56,
+      "triangles": 108
+    },
+    {
+      "name": "lumber_board_5_0",
+      "vertices": 56,
+      "triangles": 108
+    },
+    {
+      "name": "lumber_board_5_1",
+      "vertices": 56,
+      "triangles": 108
+    },
+    {
+      "name": "lumber_board_5_2",
+      "vertices": 56,
+      "triangles": 108
+    },
+    {
+      "name": "lumber_board_6_0",
+      "vertices": 56,
+      "triangles": 108
+    },
+    {
+      "name": "lumber_board_6_1",
+      "vertices": 56,
+      "triangles": 108
+    },
+    {
+      "name": "lumber_board_6_2",
+      "vertices": 56,
+      "triangles": 108
+    },
+    {
+      "name": "lumber_board_7_0",
+      "vertices": 56,
+      "triangles": 108
+    },
+    {
+      "name": "lumber_board_7_1",
+      "vertices": 56,
+      "triangles": 108
+    },
+    {
+      "name": "lumber_board_7_2",
+      "vertices": 56,
+      "triangles": 108
+    },
+    {
+      "name": "lumber_board_8_0",
+      "vertices": 56,
+      "triangles": 108
+    },
+    {
+      "name": "lumber_board_8_1",
+      "vertices": 56,
+      "triangles": 108
+    },
+    {
+      "name": "lumber_board_8_2",
+      "vertices": 56,
+      "triangles": 108
+    },
+    {
+      "name": "cage0_side0",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage0_side1",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage0_rail0",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage0_rail1",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage0_wireV0",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage0_wireV1",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage0_wireV2",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage0_wireV3",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage0_wireV4",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage0_wireV5",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage0_wireV6",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage0_wireV7",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage0_wireV8",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage0_wireV9",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage0_wireV10",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage0_wireV11",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage0_wireV12",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage0_wireV13",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage0_wireV14",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage0_wireV15",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage0_wireV16",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage0_wireV17",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage0_wireV18",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage0_wireV19",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage0_wireV20",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage0_wireV21",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage0_wireV22",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage0_wireV23",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage0_wireV24",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage0_wireV25",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage0_wireV26",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage0_wireV27",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage0_wireV28",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage0_wireV29",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage0_wireV30",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage0_wireV31",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage0_wireV32",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage0_wireV33",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage0_wireV34",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage0_wireV35",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage0_wireV36",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage0_wireH0",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage0_wireH1",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage0_wireH2",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage0_wireH3",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage0_wireH4",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage0_wireH5",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage0_wireH6",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage0_wireH7",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage0_wireH8",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage0_wireH9",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage0_wireH10",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage0_wireH11",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage0_wireH12",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage0_wireH13",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage0_wireH14",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage0_wireH15",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage0_wireH16",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage0_wireH17",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage0_wireH18",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage0_wireH19",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage0_wireH20",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage0_wireH21",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage0_wireH22",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage0_wireH23",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage0_wireH24",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage0_wireH25",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage0_wireH26",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage0_wireH27",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage0_wireH28",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage1_side0",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage1_side1",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage1_rail0",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage1_rail1",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage1_wireV0",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage1_wireV1",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage1_wireV2",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage1_wireV3",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage1_wireV4",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage1_wireV5",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage1_wireV6",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage1_wireV7",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage1_wireV8",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage1_wireV9",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage1_wireV10",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage1_wireV11",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage1_wireV12",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage1_wireV13",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage1_wireV14",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage1_wireV15",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage1_wireV16",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage1_wireV17",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage1_wireV18",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage1_wireV19",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage1_wireV20",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage1_wireV21",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage1_wireV22",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage1_wireV23",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage1_wireV24",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage1_wireV25",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage1_wireV26",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage1_wireV27",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage1_wireV28",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage1_wireV29",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage1_wireV30",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage1_wireV31",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage1_wireV32",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage1_wireV33",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage1_wireV34",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage1_wireV35",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage1_wireV36",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage1_wireV37",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage1_wireV38",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage1_wireV39",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage1_wireV40",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage1_wireV41",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage1_wireV42",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage1_wireV43",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage1_wireV44",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage1_wireV45",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage1_wireV46",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage1_wireV47",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage1_wireV48",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage1_wireV49",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage1_wireV50",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage1_wireH0",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage1_wireH1",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage1_wireH2",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage1_wireH3",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage1_wireH4",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage1_wireH5",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage1_wireH6",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage1_wireH7",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage1_wireH8",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage1_wireH9",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage1_wireH10",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage1_wireH11",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage1_wireH12",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage1_wireH13",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage1_wireH14",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage1_wireH15",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage1_wireH16",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage1_wireH17",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage1_wireH18",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage1_wireH19",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage1_wireH20",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage1_wireH21",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage1_wireH22",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage1_wireH23",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage1_wireH24",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage1_wireH25",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage1_wireH26",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage1_wireH27",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage1_wireH28",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage2_side0",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage2_side1",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage2_rail0",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage2_rail1",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage2_wireV0",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage2_wireV1",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage2_wireV2",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage2_wireV3",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage2_wireV4",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage2_wireV5",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage2_wireV6",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage2_wireV7",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage2_wireV8",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage2_wireV9",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage2_wireV10",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage2_wireV11",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage2_wireV12",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage2_wireV13",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage2_wireV14",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage2_wireV15",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage2_wireV16",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage2_wireV17",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage2_wireV18",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage2_wireV19",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage2_wireV20",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage2_wireV21",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage2_wireV22",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage2_wireV23",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage2_wireV24",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage2_wireV25",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage2_wireV26",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage2_wireV27",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage2_wireV28",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage2_wireV29",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage2_wireV30",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage2_wireV31",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage2_wireV32",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage2_wireV33",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage2_wireV34",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage2_wireV35",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage2_wireV36",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage2_wireV37",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage2_wireV38",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage2_wireV39",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage2_wireV40",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage2_wireV41",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage2_wireV42",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage2_wireV43",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage2_wireV44",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage2_wireV45",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage2_wireV46",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage2_wireV47",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage2_wireV48",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage2_wireV49",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage2_wireV50",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage2_wireV51",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage2_wireV52",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage2_wireV53",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage2_wireV54",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage2_wireH0",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage2_wireH1",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage2_wireH2",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage2_wireH3",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage2_wireH4",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage2_wireH5",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage2_wireH6",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage2_wireH7",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage2_wireH8",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage2_wireH9",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage2_wireH10",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage2_wireH11",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage2_wireH12",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage2_wireH13",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage2_wireH14",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage2_wireH15",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage2_wireH16",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage2_wireH17",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage2_wireH18",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage2_wireH19",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage2_wireH20",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage2_wireH21",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage2_wireH22",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage2_wireH23",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage2_wireH24",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage2_wireH25",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage2_wireH26",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage2_wireH27",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage2_wireH28",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage_machine",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "cage_machine_fan",
+      "vertices": 56,
+      "triangles": 108
+    },
+    {
+      "name": "cage_bin0",
+      "vertices": 56,
+      "triangles": 108
+    },
+    {
+      "name": "cage_bin1",
+      "vertices": 56,
+      "triangles": 108
+    },
+    {
+      "name": "cage_bin2",
+      "vertices": 56,
+      "triangles": 108
+    },
+    {
+      "name": "compactor_body",
+      "vertices": 56,
+      "triangles": 108
+    },
+    {
+      "name": "compactor_hopper",
+      "vertices": 8,
+      "triangles": 10
+    },
+    {
+      "name": "compactor_hopper_Xa",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "compactor_hopper_Xb",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "compactor_yellow_front",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "compactor_arm0",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "compactor_pivot0",
+      "vertices": 32,
+      "triangles": 60
+    },
+    {
+      "name": "compactor_foot0",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "compactor_arm1",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "compactor_pivot1",
+      "vertices": 32,
+      "triangles": 60
+    },
+    {
+      "name": "compactor_foot1",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "compactor_lower_crossbar",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "fire_cabinet",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "extinguisher",
+      "vertices": 32,
+      "triangles": 60
+    },
+    {
+      "name": "luminaire_-10.0_-5.5",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "luminaire_-5.3_-5.5",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "luminaire_-0.6_-5.5",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "luminaire_4.1_-5.5",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "luminaire_8.8_-5.5",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "luminaire_13.0_-5.5",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "luminaire_-10.0_0.0",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "luminaire_-5.3_0.0",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "luminaire_-0.6_0.0",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "luminaire_4.1_0.0",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "luminaire_8.8_0.0",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "luminaire_13.0_0.0",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "luminaire_-10.0_5.5",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "luminaire_-5.3_5.5",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "luminaire_-0.6_5.5",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "luminaire_4.1_5.5",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "luminaire_8.8_5.5",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "luminaire_13.0_5.5",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "luminaire_-10.0_11.0",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "luminaire_-5.3_11.0",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "luminaire_-0.6_11.0",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "luminaire_4.1_11.0",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "luminaire_8.8_11.0",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "luminaire_13.0_11.0",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "corridor_luminaire_-17",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "corridor_luminaire_-22",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "corridor_luminaire_-27",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "corridor_luminaire_-32",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "corridor_luminaire_-37",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "corridor_luminaire_-42",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "corridor_luminaire_-47",
+      "vertices": 8,
+      "triangles": 12
+    },
+    {
+      "name": "ceiling_pipe0",
+      "vertices": 32,
+      "triangles": 60
+    },
+    {
+      "name": "ceiling_pipe1",
+      "vertices": 32,
+      "triangles": 60
+    },
+    {
+      "name": "ceiling_pipe2",
+      "vertices": 32,
+      "triangles": 60
+    },
+    {
+      "name": "main_ceiling_pipe0",
+      "vertices": 32,
+      "triangles": 60
+    },
+    {
+      "name": "main_ceiling_pipe1",
+      "vertices": 32,
+      "triangles": 60
+    },
+    {
+      "name": "main_ceiling_pipe2",
+      "vertices": 32,
+      "triangles": 60
+    },
+    {
+      "name": "floor",
+      "vertices": 70,
+      "triangles": 136
+    },
+    {
+      "name": "ceiling",
+      "vertices": 70,
+      "triangles": 136
+    },
+    {
+      "name": "wall_front",
+      "vertices": 40,
+      "triangles": 60
+    },
+    {
+      "name": "wall_back",
+      "vertices": 32,
+      "triangles": 52
+    },
+    {
+      "name": "wall_left",
+      "vertices": 48,
+      "triangles": 80
+    },
+    {
+      "name": "wall_right",
+      "vertices": 62,
+      "triangles": 108
+    }
+  ],
+  "seconds": 3.5322217299835756,
+  "implementation_sha256": {
+    "check_agent_scene.py": "dac0c1e3c6edf4af6d076fa9c0258fe389ef58ae7cb489bbd286953661612fe8",
+    "render_visibility.py": "b6f8ef242860e195ff292c33f3f4eff0e8fded785378ad031344021e511fdae1"
+  },
+  "blender": "4.5.3 LTS",
+  "render_settings": {
+    "engine": "CPU Cycles",
+    "samples": 12,
+    "threads": 2,
+    "width": 640
+  }
+}

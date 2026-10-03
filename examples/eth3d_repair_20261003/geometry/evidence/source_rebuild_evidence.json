@@ -1,0 +1,55 @@
+{
+  "rim_tracks": [
+    {
+      "input_index": 9,
+      "source_uv": [
+        119.0,
+        357.0
+      ],
+      "tracked_uv": [
+        372.0814514160156,
+        355.3526611328125
+      ],
+      "lk_status": 1,
+      "forward_backward_px": 0.284063458442688,
+      "calibrated_reprojection_sum_px": 0.4618038765923572,
+      "model_world": [
+        1.5168141168142943,
+        12.199902778279078,
+        1.5897941542039673
+      ],
+      "reliable": true
+    },
+    {
+      "input_index": 9,
+      "source_uv": [
+        390.0,
+        350.0
+      ],
+      "tracked_uv": [
+        613.8267822265625,
+        347.9338073730469
+      ],
+      "lk_status": 1,
+      "forward_backward_px": 0.2514091730117798,
+      "calibrated_reprojection_sum_px": 0.2595733738272988,
+      "model_world": [
+        3.0902714434419853,
+        9.64572666639607,
+        1.6118611786733066
+      ],
+      "reliable": true
+    }
+  ],
+  "foot_world": [
+    1.458201087199329,
+    10.437128502591948,
+    0.09443590070405472
+  ],
+  "foot_source": "frame8DA3+floor contact only;9tracking failed, not declared multi-view verified",
+  "van_shared_edge_anchor": [
+    -6.705578327178955,
+    9.893365859985352,
+    1.445473551750183
+  ]
+}

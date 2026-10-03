@@ -1,0 +1,9 @@
+{
+  "status": "no_lighting_model_change",
+  "texture_only_preserves_base_lighting": true,
+  "reason": "Fixed input8/12/20 floor-ROI exposure deltas have opposite signs and0.784EV spread. A global compensation would trade one observed view against another; preserve original lighting instead of masking local photo-baked illumination or geometry discrepancies.",
+  "diagnostic": "photometry_diagnostic.json",
+  "separate_controlled_light_preview": "neutral_preview/appearance_neutral.png",
+  "photo_colour_is_physical_albedo": false,
+  "no_GT_or_heldout_selection": true
+}

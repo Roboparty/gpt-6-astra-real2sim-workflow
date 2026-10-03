@@ -1,0 +1,2834 @@
+{
+  "model_sha256": "f36a6b79c439bf0fd53c2de58c84f4a42b4fddce29208d1fb0a273c1ba39bb2f",
+  "status": "failed",
+  "failures": [
+    "Soft texture does not follow surface UV: rack_sack_0_0_0/Noise Texture",
+    "Soft texture does not follow surface UV: rack_sack_0_0_0/Noise Texture",
+    "Soft texture does not follow surface UV: rack_sack_0_0_1/Noise Texture",
+    "Soft texture does not follow surface UV: rack_sack_0_0_1/Noise Texture",
+    "Soft texture does not follow surface UV: rack_sack_0_0_2/Noise Texture",
+    "Soft texture does not follow surface UV: rack_sack_0_0_2/Noise Texture",
+    "Soft texture does not follow surface UV: rack_sack_0_0_3/Noise Texture",
+    "Soft texture does not follow surface UV: rack_sack_0_0_3/Noise Texture",
+    "Soft texture does not follow surface UV: rack_sack_0_0_4/Noise Texture",
+    "Soft texture does not follow surface UV: rack_sack_0_0_4/Noise Texture",
+    "Soft texture does not follow surface UV: rack_sack_0_1_0/Noise Texture",
+    "Soft texture does not follow surface UV: rack_sack_0_1_0/Noise Texture",
+    "Soft texture does not follow surface UV: rack_sack_0_1_1/Noise Texture",
+    "Soft texture does not follow surface UV: rack_sack_0_1_1/Noise Texture",
+    "Soft texture does not follow surface UV: rack_sack_0_1_2/Noise Texture",
+    "Soft texture does not follow surface UV: rack_sack_0_1_2/Noise Texture",
+    "Soft texture does not follow surface UV: rack_sack_0_1_3/Noise Texture",
+    "Soft texture does not follow surface UV: rack_sack_0_1_3/Noise Texture",
+    "Soft texture does not follow surface UV: rack_sack_0_2_0/Noise Texture",
+    "Soft texture does not follow surface UV: rack_sack_0_2_1/Noise Texture",
+    "Soft texture does not follow surface UV: rack_sack_0_2_2/Noise Texture",
+    "Soft texture does not follow surface UV: rack_sack_0_2_3/Noise Texture",
+    "Soft texture does not follow surface UV: rack_sack_1_0_0/Noise Texture",
+    "Soft texture does not follow surface UV: rack_sack_1_0_0/Noise Texture",
+    "Soft texture does not follow surface UV: rack_sack_1_0_1/Noise Texture",
+    "Soft texture does not follow surface UV: rack_sack_1_0_1/Noise Texture",
+    "Soft texture does not follow surface UV: rack_sack_1_0_2/Noise Texture",
+    "Soft texture does not follow surface UV: rack_sack_1_0_2/Noise Texture",
+    "Soft texture does not follow surface UV: rack_sack_1_0_3/Noise Texture",
+    "Soft texture does not follow surface UV: rack_sack_1_0_3/Noise Texture",
+    "Soft texture does not follow surface UV: rack_sack_1_1_0/Noise Texture",
+    "Soft texture does not follow surface UV: rack_sack_1_1_0/Noise Texture",
+    "Soft texture does not follow surface UV: rack_sack_1_1_1/Noise Texture",
+    "Soft texture does not follow surface UV: rack_sack_1_1_1/Noise Texture",
+    "Soft texture does not follow surface UV: rack_sack_1_1_2/Noise Texture",
+    "Soft texture does not follow surface UV: rack_sack_1_1_2/Noise Texture",
+    "Soft texture does not follow surface UV: rack_sack_1_1_3/Noise Texture",
+    "Soft texture does not follow surface UV: rack_sack_1_1_3/Noise Texture",
+    "Soft texture does not follow surface UV: rack_sack_1_2_0/Noise Texture",
+    "Soft texture does not follow surface UV: rack_sack_1_2_1/Noise Texture",
+    "Soft texture does not follow surface UV: rack_sack_1_2_2/Noise Texture",
+    "Soft texture does not follow surface UV: rack_sack_1_2_3/Noise Texture",
+    "Soft texture does not follow surface UV: rack_sack_1_2_4/Noise Texture",
+    "Soft texture does not follow surface UV: rack_sack_2_0_0/Noise Texture",
+    "Soft texture does not follow surface UV: rack_sack_2_0_0/Noise Texture",
+    "Soft texture does not follow surface UV: rack_sack_2_0_1/Noise Texture",
+    "Soft texture does not follow surface UV: rack_sack_2_0_1/Noise Texture",
+    "Soft texture does not follow surface UV: rack_sack_2_0_2/Noise Texture",
+    "Soft texture does not follow surface UV: rack_sack_2_0_2/Noise Texture",
+    "Soft texture does not follow surface UV: rack_sack_2_0_3/Noise Texture",
+    "Soft texture does not follow surface UV: rack_sack_2_0_3/Noise Texture",
+    "Soft texture does not follow surface UV: rack_sack_2_1_0/Noise Texture",
+    "Soft texture does not follow surface UV: rack_sack_2_1_0/Noise Texture",
+    "Soft texture does not follow surface UV: rack_sack_2_1_1/Noise Texture",
+    "Soft texture does not follow surface UV: rack_sack_2_1_1/Noise Texture",
+    "Soft texture does not follow surface UV: rack_sack_2_1_2/Noise Texture",
+    "Soft texture does not follow surface UV: rack_sack_2_1_2/Noise Texture",
+    "Soft texture does not follow surface UV: rack_sack_2_1_3/Noise Texture",
+    "Soft texture does not follow surface UV: rack_sack_2_1_3/Noise Texture",
+    "Soft texture does not follow surface UV: rack_sack_2_1_4/Noise Texture",
+    "Soft texture does not follow surface UV: rack_sack_2_1_4/Noise Texture",
+    "Soft texture does not follow surface UV: rack_sack_2_2_0/Noise Texture",
+    "Soft texture does not follow surface UV: rack_sack_2_2_0/Noise Texture",
+    "Soft texture does not follow surface UV: rack_sack_2_2_1/Noise Texture",
+    "Soft texture does not follow surface UV: rack_sack_2_2_2/Noise Texture",
+    "Soft texture does not follow surface UV: rack_sack_2_2_2/Noise Texture",
+    "Soft texture does not follow surface UV: rack_sack_2_2_3/Noise Texture",
+    "Soft texture does not follow surface UV: rack_sack_2_2_3/Noise Texture",
+    "Soft texture does not follow surface UV: top_folded_bag_0_0/Noise Texture",
+    "Soft texture does not follow surface UV: top_folded_bag_0_1/Noise Texture",
+    "Soft texture does not follow surface UV: top_folded_bag_0_2/Noise Texture",
+    "Soft texture does not follow surface UV: top_folded_bag_1_0/Noise Texture",
+    "Soft texture does not follow surface UV: top_folded_bag_1_1/Noise Texture",
+    "Soft texture does not follow surface UV: top_folded_bag_1_2/Noise Texture",
+    "Soft texture does not follow surface UV: top_folded_bag_1_2/Noise Texture"
+  ],
+  "material_state": {
+    "materials": {
+      "PhotoBaked__bag__atlas1": "5a5377c3693c9c4bcc02ac520e9fe8ecc98fbcfa893b352526d6c8234f2d0a59",
+      "PhotoBaked__black_vehicle__atlas1": "f13803e68637a84d720e08f8f031901534d69218415a845cabf2912018fa28d0",
+      "PhotoBaked__blue__atlas1": "0c58aeda3ec56f4b4c80fdf8a1e695d1589c6e877b59e82279250246b38bf97d",
+      "PhotoBaked__blue_door__atlas0": "ddc5e55f385054c1afd8e481b7115a43619bb2c05c73ac68d124c525da5e617d",
+      "PhotoBaked__blue_door__atlas1": "10a5cb1cc1bddf3c59d09e042e84b3add5f0cf2257132c25489543e3d105e56b",
+      "PhotoBaked__ceiling__atlas0": "e6dcc580b1ddb7915643ce5b50420959da8c5cc34daacce33b5337d1032589f0",
+      "PhotoBaked__ceiling__atlas1": "c16c3440ab6598173bda2eb38f50c037454839f3f21550d8478ff3ccc3070656",
+      "PhotoBaked__dock__atlas1": "e5c7dbca53a788b8ad1f9186468fc4074ab1da2635b04fbf8b84176801bd1351",
+      "PhotoBaked__door__atlas1": "7c7e38228f7fae38f79a2a14976158dcf2f6c91976c3d6bdeea92d93554b8d23",
+      "PhotoBaked__floor__atlas0": "3b58984d6969175ce4c46fdff6a28589f01e436850169759867d18f71a5331cd",
+      "PhotoBaked__floor__atlas1": "de9a4ce7519b08bea973890e27809f80e6524df18def58dca0fe78b909e149d8",
+      "PhotoBaked__hazard__atlas1": "1e5c2a49f2eb8a6df822a407b740a8008cf9ce09ccfd1f6e4d66a00b2fd4297e",
+      "PhotoBaked__lime__atlas1": "0b05c5d49dd95b5b3a0bb7baf9858627eb28c3e449ba728574425f34ed099a76",
+      "PhotoBaked__lumber__atlas1": "8c5db936386eef4038c939ad0d885988be4a178de41e0fab7ee7d103fbfe78c4",
+      "PhotoBaked__orange__atlas1": "96405d9f84aae3eb6620032f172d3833f9bf8b904590581085be2dc483c12060",
+      "PhotoBaked__red__atlas1": "773599f24f3f5f63bc5f00061ff318facc4c995e37aebd990d920f40d3e4c011",
+      "PhotoBaked__rust__atlas1": "ffe7a942fb2a88131d4be905906e8a5e58459764dabcb5e0ea24c9199f16973c",
+      "PhotoBaked__steel__atlas1": "5d78bd34af5767f1a0f92767aec5d907a3b30ba1141c7894cf4aeceae5e0b55d",
+      "PhotoBaked__wall__atlas0": "d87978595495fb5c98212943b0591f9aa92ad0d4f2bc5196a985f8cc75636a95",
+      "PhotoBaked__wall__atlas1": "74daf80d456ed48a3cc2f70473fb6b66dcbd4a7d37f5ddcca0a4ba3a57ae44da",
+      "PhotoBaked__white_vehicle__atlas1": "b1b30b45f7e427f9b4affe789855bbfdbc6ffc3885d44491a41f4674809606bf",
+      "PhotoBaked__wood__atlas1": "a1da0120c700906be5d619758acb370abc062c11cb35f182e7e9bc69353f9043",
+      "PhotoBaked__wood_y__atlas1": "dca64275f1af2da21b4f198f32b8d6d605b225f2046b9e7ab2e01af2280f5ee4",
+      "PhotoBaked__yellow__atlas1": "3130810b713d89fe40d56a44b56db5d4effa7c1f9711ceb59c916a3550916f98",
+      "bag": "79c32b079754cf42be4e58501ac79e058cdff12d0e0e584c238b9bbc93357d35",
+      "black_vehicle": "3a34008e5f2835c8a531682d26f8a53bbc49d276361ad337a68ac58e329c199f",
+      "blue": "ad3b8a56a617483d5bd356d6e1cfa0e3bfb3d98e2fdf190e8c364e8e2d26c0a7",
+      "blue_door": "8402a33323efd8adc51043f9054afe063109a3f0b252bdf29aa5590384f2217f",
+      "bright_metal": "259a21aa926760d2b5a849aa4d7c71f981686a87da790601d39d3508e6f7d62b",
+      "ceiling": "3baefc471824ed7d3795cd0a081ad58e4fdcd79dcc8ac55df594eefa359669ac",
+      "dock": "990c187ea5f9a55a454e349eefc7d5f9e203829b1fdb1a1fba3d58aacb7b949b",
+      "door": "e2b3353e6d9b985944d0a9792f9ace04747439b323930253365e35bcb9dd6610",
+      "floor": "382e23f6616b4d127175746c6aca9dee70c9be2acde3105f37c12eeb557356a9",
+      "glass": "81d0a711f0f24a5c845248830f165897895ee093edfb0faef073fa0342a66b24",
+      "hazard": "d8cf4a513fcf28b7b133602a693e57bdbabbb435e6bfa5af2c73fb0010372d0e",
+      "light": "853d337e426d668b2285cdb1c51ea361336a378023bd7e0b1d684afdcdaf995b",
+      "lime": "33dbe603ed1cd965a93bf0a59e3f479e7e6abeee1e9f1ff8d35a359a04f68f7e",
+      "lumber": "5b76b7c1564205be51919a28005b9f4b76be5281f045a8b38450fbb8b407ce91",
+      "orange": "5f8a3315166eaa38e76d9e144fde2eaf1912e51e6168ceabfbacc34de827621a",
+      "red": "d1d48c8833707d4c0670f0538b614eab6b4dc17abda54f951727378e6005fb5f",
+      "rubber": "22716ecf5db8ecc1765647421275b233faf78ddda7d7fd3cbbb4f5030e4fa124",
+      "rust": "a1feaa288cd77b54fd871ebeebf4f4e8560e785f9582aece281d2e6542aaf6f6",
+      "steel": "7c45db6a99fa1dfdea76fad4823df88abf641f8f5e515a338391ff0bedb26666",
+      "wall": "4a658a8bfb4f2d4b6513724fe08dd68f8f1f0db2928508f3a2b053d7b703466a",
+      "white_vehicle": "bc35a6b5509e40a4b2a59423e31d3630829b2dddfb1aace351c7688733e50ab6",
+      "wood": "f705136f2a58c43aa93dc88db17cb4d2e55f8624f034e76232241553ab695322",
+      "wood_y": "634cdadc35c51262a1acfcec0377fca4e4a9a056a52a18e57c2fe4ce1e834213",
+      "yellow": "267d0349becb76221958f5ff7a6fe81c6129920631d3b819c7aee5f2341136ae"
+    },
+    "assignments": {
+      "cage_upper_wall": [
+        "wall",
+        "PhotoBaked__wall__atlas1"
+      ],
+      "entrance_soffit": [
+        "wall",
+        "PhotoBaked__wall__atlas1"
+      ],
+      "entrance_recess_door": [
+        "yellow",
+        "PhotoBaked__yellow__atlas1"
+      ],
+      "entry_sign_0": [
+        "yellow",
+        "PhotoBaked__yellow__atlas1"
+      ],
+      "entry_sign_0_lettering": [
+        "rubber"
+      ],
+      "entry_sign_1": [
+        "yellow",
+        "PhotoBaked__yellow__atlas1"
+      ],
+      "entry_sign_1_lettering": [
+        "rubber"
+      ],
+      "entry_sign_2": [
+        "yellow",
+        "PhotoBaked__yellow__atlas1"
+      ],
+      "entry_sign_2_lettering": [
+        "rubber"
+      ],
+      "garage_reveal": [
+        "wall"
+      ],
+      "main_dock_sidewall": [
+        "wall",
+        "PhotoBaked__wall__atlas0",
+        "PhotoBaked__wall__atlas1"
+      ],
+      "yellow_side_door": [
+        "yellow",
+        "PhotoBaked__yellow__atlas1"
+      ],
+      "yellow_door_rail0": [
+        "steel",
+        "PhotoBaked__steel__atlas1"
+      ],
+      "yellow_door_rail1": [
+        "steel",
+        "PhotoBaked__steel__atlas1"
+      ],
+      "yellow_door_rail2": [
+        "steel",
+        "PhotoBaked__steel__atlas1"
+      ],
+      "yellow_door_rail3": [
+        "steel",
+        "PhotoBaked__steel__atlas1"
+      ],
+      "loading_platform": [
+        "dock",
+        "PhotoBaked__dock__atlas1"
+      ],
+      "dock_blue_door": [
+        "blue_door",
+        "PhotoBaked__blue_door__atlas1"
+      ],
+      "far_corridor_door": [
+        "blue_door",
+        "PhotoBaked__blue_door__atlas0"
+      ],
+      "column_0_base": [
+        "wall",
+        "PhotoBaked__wall__atlas1"
+      ],
+      "column_0_lower": [
+        "hazard",
+        "PhotoBaked__hazard__atlas1"
+      ],
+      "column_0_upper": [
+        "wall",
+        "PhotoBaked__wall__atlas1"
+      ],
+      "column_1_base": [
+        "wall",
+        "PhotoBaked__wall__atlas1"
+      ],
+      "column_1_lower": [
+        "hazard",
+        "PhotoBaked__hazard__atlas1"
+      ],
+      "column_1_upper": [
+        "wall",
+        "PhotoBaked__wall__atlas1"
+      ],
+      "column_2_base": [
+        "wall",
+        "PhotoBaked__wall__atlas1"
+      ],
+      "column_2_lower": [
+        "hazard",
+        "PhotoBaked__hazard__atlas1"
+      ],
+      "column_2_upper": [
+        "wall",
+        "PhotoBaked__wall__atlas1"
+      ],
+      "column_3_base": [
+        "wall",
+        "PhotoBaked__wall__atlas1"
+      ],
+      "column_3_lower": [
+        "hazard",
+        "PhotoBaked__hazard__atlas1"
+      ],
+      "column_3_upper": [
+        "wall",
+        "PhotoBaked__wall__atlas1"
+      ],
+      "column_4_base": [
+        "wall",
+        "PhotoBaked__wall__atlas1"
+      ],
+      "column_4_lower": [
+        "hazard",
+        "PhotoBaked__hazard__atlas1"
+      ],
+      "column_4_upper": [
+        "wall",
+        "PhotoBaked__wall__atlas1"
+      ],
+      "column_5_base": [
+        "wall",
+        "PhotoBaked__wall__atlas1"
+      ],
+      "column_5_lower": [
+        "hazard",
+        "PhotoBaked__hazard__atlas1"
+      ],
+      "column_5_upper": [
+        "wall",
+        "PhotoBaked__wall__atlas1"
+      ],
+      "column_6_base": [
+        "wall",
+        "PhotoBaked__wall__atlas1"
+      ],
+      "column_6_lower": [
+        "hazard",
+        "PhotoBaked__hazard__atlas1"
+      ],
+      "column_6_upper": [
+        "wall",
+        "PhotoBaked__wall__atlas1"
+      ],
+      "column_7_base": [
+        "wall",
+        "PhotoBaked__wall__atlas1"
+      ],
+      "column_7_lower": [
+        "hazard",
+        "PhotoBaked__hazard__atlas1"
+      ],
+      "column_7_upper": [
+        "wall",
+        "PhotoBaked__wall__atlas1"
+      ],
+      "door_leaf_0_panel_0": [
+        "door",
+        "PhotoBaked__door__atlas1"
+      ],
+      "door_leaf_0_panel_1": [
+        "door",
+        "PhotoBaked__door__atlas1"
+      ],
+      "door_leaf_0_upright_-1": [
+        "steel",
+        "PhotoBaked__steel__atlas1"
+      ],
+      "door_leaf_0_upright_1": [
+        "steel",
+        "PhotoBaked__steel__atlas1"
+      ],
+      "door_leaf_0_rail_0": [
+        "steel",
+        "PhotoBaked__steel__atlas1"
+      ],
+      "door_leaf_0_rail_1": [
+        "steel",
+        "PhotoBaked__steel__atlas1"
+      ],
+      "door_leaf_0_rail_2": [
+        "steel",
+        "PhotoBaked__steel__atlas1"
+      ],
+      "door_leaf_0_hinge_0": [
+        "bright_metal"
+      ],
+      "door_leaf_0_hinge_1": [
+        "bright_metal"
+      ],
+      "door_leaf_0_hinge_2": [
+        "bright_metal"
+      ],
+      "door_leaf_0_hinge_3": [
+        "bright_metal"
+      ],
+      "door_leaf_1_panel_0": [
+        "door",
+        "PhotoBaked__door__atlas1"
+      ],
+      "door_leaf_1_panel_1": [
+        "door",
+        "PhotoBaked__door__atlas1"
+      ],
+      "door_leaf_1_upright_-1": [
+        "steel",
+        "PhotoBaked__steel__atlas1"
+      ],
+      "door_leaf_1_upright_1": [
+        "steel",
+        "PhotoBaked__steel__atlas1"
+      ],
+      "door_leaf_1_rail_0": [
+        "steel",
+        "PhotoBaked__steel__atlas1"
+      ],
+      "door_leaf_1_rail_1": [
+        "steel",
+        "PhotoBaked__steel__atlas1"
+      ],
+      "door_leaf_1_rail_2": [
+        "steel",
+        "PhotoBaked__steel__atlas1"
+      ],
+      "door_leaf_1_hinge_0": [
+        "bright_metal"
+      ],
+      "door_leaf_1_hinge_1": [
+        "bright_metal"
+      ],
+      "door_leaf_1_hinge_2": [
+        "bright_metal"
+      ],
+      "door_leaf_1_hinge_3": [
+        "bright_metal"
+      ],
+      "door_leaf_2_panel_0": [
+        "door",
+        "PhotoBaked__door__atlas1"
+      ],
+      "door_leaf_2_panel_1": [
+        "door",
+        "PhotoBaked__door__atlas1"
+      ],
+      "door_leaf_2_upright_-1": [
+        "steel",
+        "PhotoBaked__steel__atlas1"
+      ],
+      "door_leaf_2_upright_1": [
+        "steel",
+        "PhotoBaked__steel__atlas1"
+      ],
+      "door_leaf_2_rail_0": [
+        "steel",
+        "PhotoBaked__steel__atlas1"
+      ],
+      "door_leaf_2_rail_1": [
+        "steel",
+        "PhotoBaked__steel__atlas1"
+      ],
+      "door_leaf_2_rail_2": [
+        "steel",
+        "PhotoBaked__steel__atlas1"
+      ],
+      "door_leaf_2_hinge_0": [
+        "bright_metal"
+      ],
+      "door_leaf_2_hinge_1": [
+        "bright_metal"
+      ],
+      "door_leaf_2_hinge_2": [
+        "bright_metal"
+      ],
+      "door_leaf_2_hinge_3": [
+        "bright_metal"
+      ],
+      "door_leaf_3_panel_0": [
+        "door",
+        "PhotoBaked__door__atlas1"
+      ],
+      "door_leaf_3_panel_1": [
+        "door",
+        "PhotoBaked__door__atlas1"
+      ],
+      "door_leaf_3_upright_-1": [
+        "steel",
+        "PhotoBaked__steel__atlas1"
+      ],
+      "door_leaf_3_upright_1": [
+        "steel",
+        "PhotoBaked__steel__atlas1"
+      ],
+      "door_leaf_3_rail_0": [
+        "steel",
+        "PhotoBaked__steel__atlas1"
+      ],
+      "door_leaf_3_rail_1": [
+        "steel",
+        "PhotoBaked__steel__atlas1"
+      ],
+      "door_leaf_3_rail_2": [
+        "steel",
+        "PhotoBaked__steel__atlas1"
+      ],
+      "door_leaf_3_hinge_0": [
+        "bright_metal"
+      ],
+      "door_leaf_3_hinge_1": [
+        "bright_metal"
+      ],
+      "door_leaf_3_hinge_2": [
+        "bright_metal"
+      ],
+      "door_leaf_3_hinge_3": [
+        "bright_metal"
+      ],
+      "door_leaf_4_panel_0": [
+        "door",
+        "PhotoBaked__door__atlas1"
+      ],
+      "door_leaf_4_panel_1": [
+        "door",
+        "PhotoBaked__door__atlas1"
+      ],
+      "door_leaf_4_upright_-1": [
+        "steel",
+        "PhotoBaked__steel__atlas1"
+      ],
+      "door_leaf_4_upright_1": [
+        "steel",
+        "PhotoBaked__steel__atlas1"
+      ],
+      "door_leaf_4_rail_0": [
+        "steel",
+        "PhotoBaked__steel__atlas1"
+      ],
+      "door_leaf_4_rail_1": [
+        "steel",
+        "PhotoBaked__steel__atlas1"
+      ],
+      "door_leaf_4_rail_2": [
+        "steel",
+        "PhotoBaked__steel__atlas1"
+      ],
+      "door_leaf_4_hinge_0": [
+        "bright_metal"
+      ],
+      "door_leaf_4_hinge_1": [
+        "bright_metal"
+      ],
+      "door_leaf_4_hinge_2": [
+        "bright_metal"
+      ],
+      "door_leaf_4_hinge_3": [
+        "bright_metal"
+      ],
+      "door_leaf_5_panel_0": [
+        "door",
+        "PhotoBaked__door__atlas1"
+      ],
+      "door_leaf_5_panel_1": [
+        "door",
+        "PhotoBaked__door__atlas1"
+      ],
+      "door_leaf_5_upright_-1": [
+        "steel",
+        "PhotoBaked__steel__atlas1"
+      ],
+      "door_leaf_5_upright_1": [
+        "steel",
+        "PhotoBaked__steel__atlas1"
+      ],
+      "door_leaf_5_rail_0": [
+        "steel",
+        "PhotoBaked__steel__atlas1"
+      ],
+      "door_leaf_5_rail_1": [
+        "steel",
+        "PhotoBaked__steel__atlas1"
+      ],
+      "door_leaf_5_rail_2": [
+        "steel",
+        "PhotoBaked__steel__atlas1"
+      ],
+      "door_leaf_5_hinge_0": [
+        "bright_metal"
+      ],
+      "door_leaf_5_hinge_1": [
+        "bright_metal"
+      ],
+      "door_leaf_5_hinge_2": [
+        "bright_metal"
+      ],
+      "door_leaf_5_hinge_3": [
+        "bright_metal"
+      ],
+      "door_leaf_6_panel_0": [
+        "door",
+        "PhotoBaked__door__atlas1"
+      ],
+      "door_leaf_6_panel_1": [
+        "door",
+        "PhotoBaked__door__atlas1"
+      ],
+      "door_leaf_6_upright_-1": [
+        "steel",
+        "PhotoBaked__steel__atlas1"
+      ],
+      "door_leaf_6_upright_1": [
+        "steel"
+      ],
+      "door_leaf_6_rail_0": [
+        "steel",
+        "PhotoBaked__steel__atlas1"
+      ],
+      "door_leaf_6_rail_1": [
+        "steel",
+        "PhotoBaked__steel__atlas1"
+      ],
+      "door_leaf_6_rail_2": [
+        "steel",
+        "PhotoBaked__steel__atlas1"
+      ],
+      "door_leaf_6_hinge_0": [
+        "bright_metal"
+      ],
+      "door_leaf_6_hinge_1": [
+        "bright_metal"
+      ],
+      "door_leaf_6_hinge_2": [
+        "bright_metal"
+      ],
+      "door_leaf_6_hinge_3": [
+        "bright_metal"
+      ],
+      "door_upper_track": [
+        "steel",
+        "PhotoBaked__steel__atlas1"
+      ],
+      "door_header": [
+        "wall",
+        "PhotoBaked__wall__atlas1"
+      ],
+      "door_hanger0": [
+        "steel"
+      ],
+      "door_hanger1": [
+        "steel"
+      ],
+      "door_hanger2": [
+        "steel"
+      ],
+      "door_hanger3": [
+        "steel"
+      ],
+      "door_hanger4": [
+        "steel"
+      ],
+      "door_hanger5": [
+        "steel"
+      ],
+      "door_hanger6": [
+        "steel"
+      ],
+      "rack_upright_0_0": [
+        "blue",
+        "PhotoBaked__blue__atlas1"
+      ],
+      "rack_upright_0_1": [
+        "blue",
+        "PhotoBaked__blue__atlas1"
+      ],
+      "rack_upright_1_0": [
+        "blue",
+        "PhotoBaked__blue__atlas1"
+      ],
+      "rack_upright_1_1": [
+        "blue",
+        "PhotoBaked__blue__atlas1"
+      ],
+      "rack_upright_2_0": [
+        "blue",
+        "PhotoBaked__blue__atlas1"
+      ],
+      "rack_upright_2_1": [
+        "blue",
+        "PhotoBaked__blue__atlas1"
+      ],
+      "rack_upright_3_0": [
+        "blue",
+        "PhotoBaked__blue__atlas1"
+      ],
+      "rack_upright_3_1": [
+        "blue",
+        "PhotoBaked__blue__atlas1"
+      ],
+      "rack_beam_0_0": [
+        "orange",
+        "PhotoBaked__orange__atlas1"
+      ],
+      "rack_beam_0_1": [
+        "orange"
+      ],
+      "rack_pallet_joist_0_0_0": [
+        "wood_y",
+        "PhotoBaked__wood_y__atlas1"
+      ],
+      "rack_pallet_joist_0_0_1": [
+        "wood_y",
+        "PhotoBaked__wood_y__atlas1"
+      ],
+      "rack_pallet_joist_0_0_2": [
+        "wood_y"
+      ],
+      "rack_pallet_0_0_0": [
+        "lumber",
+        "PhotoBaked__lumber__atlas1"
+      ],
+      "rack_pallet_0_0_1": [
+        "lumber",
+        "PhotoBaked__lumber__atlas1"
+      ],
+      "rack_pallet_0_0_2": [
+        "lumber"
+      ],
+      "rack_pallet_0_0_3": [
+        "lumber"
+      ],
+      "rack_pallet_0_0_4": [
+        "lumber"
+      ],
+      "rack_pallet_0_0_5": [
+        "lumber"
+      ],
+      "rack_sack_0_0_0": [
+        "bag",
+        "PhotoBaked__bag__atlas1"
+      ],
+      "rack_sack_0_0_1": [
+        "bag",
+        "PhotoBaked__bag__atlas1"
+      ],
+      "rack_sack_0_0_2": [
+        "bag",
+        "PhotoBaked__bag__atlas1"
+      ],
+      "rack_sack_0_0_3": [
+        "bag",
+        "PhotoBaked__bag__atlas1"
+      ],
+      "rack_sack_0_0_4": [
+        "bag",
+        "PhotoBaked__bag__atlas1"
+      ],
+      "rack_pallet_joist_0_1_0": [
+        "wood_y"
+      ],
+      "rack_pallet_joist_0_1_1": [
+        "wood_y"
+      ],
+      "rack_pallet_joist_0_1_2": [
+        "wood_y"
+      ],
+      "rack_pallet_0_1_0": [
+        "lumber",
+        "PhotoBaked__lumber__atlas1"
+      ],
+      "rack_pallet_0_1_1": [
+        "lumber",
+        "PhotoBaked__lumber__atlas1"
+      ],
+      "rack_pallet_0_1_2": [
+        "lumber"
+      ],
+      "rack_pallet_0_1_3": [
+        "lumber"
+      ],
+      "rack_pallet_0_1_4": [
+        "lumber"
+      ],
+      "rack_pallet_0_1_5": [
+        "lumber"
+      ],
+      "rack_sack_0_1_0": [
+        "bag",
+        "PhotoBaked__bag__atlas1"
+      ],
+      "rack_sack_0_1_1": [
+        "bag",
+        "PhotoBaked__bag__atlas1"
+      ],
+      "rack_sack_0_1_2": [
+        "bag",
+        "PhotoBaked__bag__atlas1"
+      ],
+      "rack_sack_0_1_3": [
+        "bag",
+        "PhotoBaked__bag__atlas1"
+      ],
+      "rack_pallet_joist_0_2_0": [
+        "wood_y"
+      ],
+      "rack_pallet_joist_0_2_1": [
+        "wood_y"
+      ],
+      "rack_pallet_joist_0_2_2": [
+        "wood_y"
+      ],
+      "rack_pallet_0_2_0": [
+        "lumber"
+      ],
+      "rack_pallet_0_2_1": [
+        "lumber"
+      ],
+      "rack_pallet_0_2_2": [
+        "lumber"
+      ],
+      "rack_pallet_0_2_3": [
+        "lumber"
+      ],
+      "rack_pallet_0_2_4": [
+        "lumber"
+      ],
+      "rack_pallet_0_2_5": [
+        "lumber"
+      ],
+      "rack_sack_0_2_0": [
+        "bag"
+      ],
+      "rack_sack_0_2_1": [
+        "bag"
+      ],
+      "rack_sack_0_2_2": [
+        "bag"
+      ],
+      "rack_sack_0_2_3": [
+        "bag"
+      ],
+      "rack_beam_1_0": [
+        "orange",
+        "PhotoBaked__orange__atlas1"
+      ],
+      "rack_beam_1_1": [
+        "orange",
+        "PhotoBaked__orange__atlas1"
+      ],
+      "rack_pallet_joist_1_0_0": [
+        "wood_y",
+        "PhotoBaked__wood_y__atlas1"
+      ],
+      "rack_pallet_joist_1_0_1": [
+        "wood_y",
+        "PhotoBaked__wood_y__atlas1"
+      ],
+      "rack_pallet_joist_1_0_2": [
+        "wood_y",
+        "PhotoBaked__wood_y__atlas1"
+      ],
+      "rack_pallet_1_0_0": [
+        "lumber",
+        "PhotoBaked__lumber__atlas1"
+      ],
+      "rack_pallet_1_0_1": [
+        "lumber"
+      ],
+      "rack_pallet_1_0_2": [
+        "lumber"
+      ],
+      "rack_pallet_1_0_3": [
+        "lumber"
+      ],
+      "rack_pallet_1_0_4": [
+        "lumber"
+      ],
+      "rack_pallet_1_0_5": [
+        "lumber"
+      ],
+      "rack_sack_1_0_0": [
+        "bag",
+        "PhotoBaked__bag__atlas1"
+      ],
+      "rack_sack_1_0_1": [
+        "bag",
+        "PhotoBaked__bag__atlas1"
+      ],
+      "rack_sack_1_0_2": [
+        "bag",
+        "PhotoBaked__bag__atlas1"
+      ],
+      "rack_sack_1_0_3": [
+        "bag",
+        "PhotoBaked__bag__atlas1"
+      ],
+      "rack_pallet_joist_1_1_0": [
+        "wood_y",
+        "PhotoBaked__wood_y__atlas1"
+      ],
+      "rack_pallet_joist_1_1_1": [
+        "wood_y",
+        "PhotoBaked__wood_y__atlas1"
+      ],
+      "rack_pallet_joist_1_1_2": [
+        "wood_y",
+        "PhotoBaked__wood_y__atlas1"
+      ],
+      "rack_pallet_1_1_0": [
+        "lumber",
+        "PhotoBaked__lumber__atlas1"
+      ],
+      "rack_pallet_1_1_1": [
+        "lumber",
+        "PhotoBaked__lumber__atlas1"
+      ],
+      "rack_pallet_1_1_2": [
+        "lumber"
+      ],
+      "rack_pallet_1_1_3": [
+        "lumber"
+      ],
+      "rack_pallet_1_1_4": [
+        "lumber"
+      ],
+      "rack_pallet_1_1_5": [
+        "lumber"
+      ],
+      "rack_sack_1_1_0": [
+        "bag",
+        "PhotoBaked__bag__atlas1"
+      ],
+      "rack_sack_1_1_1": [
+        "bag",
+        "PhotoBaked__bag__atlas1"
+      ],
+      "rack_sack_1_1_2": [
+        "bag",
+        "PhotoBaked__bag__atlas1"
+      ],
+      "rack_sack_1_1_3": [
+        "bag",
+        "PhotoBaked__bag__atlas1"
+      ],
+      "rack_pallet_joist_1_2_0": [
+        "wood_y"
+      ],
+      "rack_pallet_joist_1_2_1": [
+        "wood_y"
+      ],
+      "rack_pallet_joist_1_2_2": [
+        "wood_y"
+      ],
+      "rack_pallet_1_2_0": [
+        "lumber"
+      ],
+      "rack_pallet_1_2_1": [
+        "lumber"
+      ],
+      "rack_pallet_1_2_2": [
+        "lumber"
+      ],
+      "rack_pallet_1_2_3": [
+        "lumber"
+      ],
+      "rack_pallet_1_2_4": [
+        "lumber"
+      ],
+      "rack_pallet_1_2_5": [
+        "lumber"
+      ],
+      "rack_sack_1_2_0": [
+        "bag"
+      ],
+      "rack_sack_1_2_1": [
+        "bag"
+      ],
+      "rack_sack_1_2_2": [
+        "bag"
+      ],
+      "rack_sack_1_2_3": [
+        "bag"
+      ],
+      "rack_sack_1_2_4": [
+        "bag"
+      ],
+      "rack_beam_2_0": [
+        "orange",
+        "PhotoBaked__orange__atlas1"
+      ],
+      "rack_beam_2_1": [
+        "orange",
+        "PhotoBaked__orange__atlas1"
+      ],
+      "rack_pallet_joist_2_0_0": [
+        "wood_y",
+        "PhotoBaked__wood_y__atlas1"
+      ],
+      "rack_pallet_joist_2_0_1": [
+        "wood_y",
+        "PhotoBaked__wood_y__atlas1"
+      ],
+      "rack_pallet_joist_2_0_2": [
+        "wood_y",
+        "PhotoBaked__wood_y__atlas1"
+      ],
+      "rack_pallet_2_0_0": [
+        "lumber",
+        "PhotoBaked__lumber__atlas1"
+      ],
+      "rack_pallet_2_0_1": [
+        "lumber"
+      ],
+      "rack_pallet_2_0_2": [
+        "lumber"
+      ],
+      "rack_pallet_2_0_3": [
+        "lumber"
+      ],
+      "rack_pallet_2_0_4": [
+        "lumber"
+      ],
+      "rack_pallet_2_0_5": [
+        "lumber"
+      ],
+      "rack_sack_2_0_0": [
+        "bag",
+        "PhotoBaked__bag__atlas1"
+      ],
+      "rack_sack_2_0_1": [
+        "bag",
+        "PhotoBaked__bag__atlas1"
+      ],
+      "rack_sack_2_0_2": [
+        "bag",
+        "PhotoBaked__bag__atlas1"
+      ],
+      "rack_sack_2_0_3": [
+        "bag",
+        "PhotoBaked__bag__atlas1"
+      ],
+      "rack_pallet_joist_2_1_0": [
+        "wood_y",
+        "PhotoBaked__wood_y__atlas1"
+      ],
+      "rack_pallet_joist_2_1_1": [
+        "wood_y",
+        "PhotoBaked__wood_y__atlas1"
+      ],
+      "rack_pallet_joist_2_1_2": [
+        "wood_y",
+        "PhotoBaked__wood_y__atlas1"
+      ],
+      "rack_pallet_2_1_0": [
+        "lumber",
+        "PhotoBaked__lumber__atlas1"
+      ],
+      "rack_pallet_2_1_1": [
+        "lumber",
+        "PhotoBaked__lumber__atlas1"
+      ],
+      "rack_pallet_2_1_2": [
+        "lumber"
+      ],
+      "rack_pallet_2_1_3": [
+        "lumber"
+      ],
+      "rack_pallet_2_1_4": [
+        "lumber"
+      ],
+      "rack_pallet_2_1_5": [
+        "lumber"
+      ],
+      "rack_sack_2_1_0": [
+        "bag",
+        "PhotoBaked__bag__atlas1"
+      ],
+      "rack_sack_2_1_1": [
+        "bag",
+        "PhotoBaked__bag__atlas1"
+      ],
+      "rack_sack_2_1_2": [
+        "bag",
+        "PhotoBaked__bag__atlas1"
+      ],
+      "rack_sack_2_1_3": [
+        "bag",
+        "PhotoBaked__bag__atlas1"
+      ],
+      "rack_sack_2_1_4": [
+        "bag",
+        "PhotoBaked__bag__atlas1"
+      ],
+      "rack_pallet_joist_2_2_0": [
+        "wood_y",
+        "PhotoBaked__wood_y__atlas1"
+      ],
+      "rack_pallet_joist_2_2_1": [
+        "wood_y"
+      ],
+      "rack_pallet_joist_2_2_2": [
+        "wood_y"
+      ],
+      "rack_pallet_2_2_0": [
+        "lumber"
+      ],
+      "rack_pallet_2_2_1": [
+        "lumber"
+      ],
+      "rack_pallet_2_2_2": [
+        "lumber"
+      ],
+      "rack_pallet_2_2_3": [
+        "lumber"
+      ],
+      "rack_pallet_2_2_4": [
+        "lumber"
+      ],
+      "rack_pallet_2_2_5": [
+        "lumber"
+      ],
+      "rack_sack_2_2_0": [
+        "bag",
+        "PhotoBaked__bag__atlas1"
+      ],
+      "rack_sack_2_2_1": [
+        "bag"
+      ],
+      "rack_sack_2_2_2": [
+        "bag",
+        "PhotoBaked__bag__atlas1"
+      ],
+      "rack_sack_2_2_3": [
+        "bag",
+        "PhotoBaked__bag__atlas1"
+      ],
+      "rack_beam_3_0": [
+        "orange",
+        "PhotoBaked__orange__atlas1"
+      ],
+      "rack_beam_3_1": [
+        "orange",
+        "PhotoBaked__orange__atlas1"
+      ],
+      "rack_pallet_joist_3_0_0": [
+        "wood_y",
+        "PhotoBaked__wood_y__atlas1"
+      ],
+      "rack_pallet_joist_3_0_1": [
+        "wood_y",
+        "PhotoBaked__wood_y__atlas1"
+      ],
+      "rack_pallet_joist_3_0_2": [
+        "wood_y",
+        "PhotoBaked__wood_y__atlas1"
+      ],
+      "rack_pallet_3_0_0": [
+        "lumber",
+        "PhotoBaked__lumber__atlas1"
+      ],
+      "rack_pallet_3_0_1": [
+        "lumber"
+      ],
+      "rack_pallet_3_0_2": [
+        "lumber"
+      ],
+      "rack_pallet_3_0_3": [
+        "lumber",
+        "PhotoBaked__lumber__atlas1"
+      ],
+      "rack_pallet_3_0_4": [
+        "lumber",
+        "PhotoBaked__lumber__atlas1"
+      ],
+      "rack_pallet_3_0_5": [
+        "lumber",
+        "PhotoBaked__lumber__atlas1"
+      ],
+      "top_folded_bag_0_0": [
+        "bag"
+      ],
+      "top_folded_bag_0_1": [
+        "bag"
+      ],
+      "top_folded_bag_0_2": [
+        "bag"
+      ],
+      "rack_pallet_joist_3_1_0": [
+        "wood_y",
+        "PhotoBaked__wood_y__atlas1"
+      ],
+      "rack_pallet_joist_3_1_1": [
+        "wood_y",
+        "PhotoBaked__wood_y__atlas1"
+      ],
+      "rack_pallet_joist_3_1_2": [
+        "wood_y",
+        "PhotoBaked__wood_y__atlas1"
+      ],
+      "rack_pallet_3_1_0": [
+        "lumber"
+      ],
+      "rack_pallet_3_1_1": [
+        "lumber"
+      ],
+      "rack_pallet_3_1_2": [
+        "lumber",
+        "PhotoBaked__lumber__atlas1"
+      ],
+      "rack_pallet_3_1_3": [
+        "lumber",
+        "PhotoBaked__lumber__atlas1"
+      ],
+      "rack_pallet_3_1_4": [
+        "lumber",
+        "PhotoBaked__lumber__atlas1"
+      ],
+      "rack_pallet_3_1_5": [
+        "lumber",
+        "PhotoBaked__lumber__atlas1"
+      ],
+      "top_folded_bag_1_0": [
+        "bag"
+      ],
+      "top_folded_bag_1_1": [
+        "bag"
+      ],
+      "top_folded_bag_1_2": [
+        "bag",
+        "PhotoBaked__bag__atlas1"
+      ],
+      "rack_pallet_joist_3_2_0": [
+        "wood_y",
+        "PhotoBaked__wood_y__atlas1"
+      ],
+      "rack_pallet_joist_3_2_1": [
+        "wood_y",
+        "PhotoBaked__wood_y__atlas1"
+      ],
+      "rack_pallet_joist_3_2_2": [
+        "wood_y",
+        "PhotoBaked__wood_y__atlas1"
+      ],
+      "rack_pallet_3_2_0": [
+        "lumber",
+        "PhotoBaked__lumber__atlas1"
+      ],
+      "rack_pallet_3_2_1": [
+        "lumber"
+      ],
+      "rack_pallet_3_2_2": [
+        "lumber"
+      ],
+      "rack_pallet_3_2_3": [
+        "lumber",
+        "PhotoBaked__lumber__atlas1"
+      ],
+      "rack_pallet_3_2_4": [
+        "lumber",
+        "PhotoBaked__lumber__atlas1"
+      ],
+      "rack_pallet_3_2_5": [
+        "lumber",
+        "PhotoBaked__lumber__atlas1"
+      ],
+      "crate0_foot0": [
+        "wood_y",
+        "PhotoBaked__wood_y__atlas1"
+      ],
+      "crate0_foot1": [
+        "wood_y",
+        "PhotoBaked__wood_y__atlas1"
+      ],
+      "crate0_foot2": [
+        "wood_y",
+        "PhotoBaked__wood_y__atlas1"
+      ],
+      "crate0_base": [
+        "wood",
+        "PhotoBaked__wood__atlas1"
+      ],
+      "crate0_long_0_0": [
+        "wood",
+        "PhotoBaked__wood__atlas1"
+      ],
+      "crate0_short_0_0": [
+        "wood_y",
+        "PhotoBaked__wood_y__atlas1"
+      ],
+      "crate0_long_0_1": [
+        "wood",
+        "PhotoBaked__wood__atlas1"
+      ],
+      "crate0_short_0_1": [
+        "wood_y",
+        "PhotoBaked__wood_y__atlas1"
+      ],
+      "crate0_long_1_0": [
+        "wood",
+        "PhotoBaked__wood__atlas1"
+      ],
+      "crate0_short_1_0": [
+        "wood_y",
+        "PhotoBaked__wood_y__atlas1"
+      ],
+      "crate0_long_1_1": [
+        "wood",
+        "PhotoBaked__wood__atlas1"
+      ],
+      "crate0_short_1_1": [
+        "wood_y",
+        "PhotoBaked__wood_y__atlas1"
+      ],
+      "crate0_long_2_0": [
+        "wood",
+        "PhotoBaked__wood__atlas1"
+      ],
+      "crate0_short_2_0": [
+        "wood_y",
+        "PhotoBaked__wood_y__atlas1"
+      ],
+      "crate0_long_2_1": [
+        "wood",
+        "PhotoBaked__wood__atlas1"
+      ],
+      "crate0_short_2_1": [
+        "wood_y",
+        "PhotoBaked__wood_y__atlas1"
+      ],
+      "crate0_long_3_0": [
+        "wood",
+        "PhotoBaked__wood__atlas1"
+      ],
+      "crate0_short_3_0": [
+        "wood_y",
+        "PhotoBaked__wood_y__atlas1"
+      ],
+      "crate0_long_3_1": [
+        "wood",
+        "PhotoBaked__wood__atlas1"
+      ],
+      "crate0_short_3_1": [
+        "wood_y",
+        "PhotoBaked__wood_y__atlas1"
+      ],
+      "crate0_long_4_0": [
+        "wood",
+        "PhotoBaked__wood__atlas1"
+      ],
+      "crate0_short_4_0": [
+        "wood_y",
+        "PhotoBaked__wood_y__atlas1"
+      ],
+      "crate0_long_4_1": [
+        "wood",
+        "PhotoBaked__wood__atlas1"
+      ],
+      "crate0_short_4_1": [
+        "wood_y",
+        "PhotoBaked__wood_y__atlas1"
+      ],
+      "crate0_long_5_0": [
+        "wood",
+        "PhotoBaked__wood__atlas1"
+      ],
+      "crate0_short_5_0": [
+        "wood_y",
+        "PhotoBaked__wood_y__atlas1"
+      ],
+      "crate0_long_5_1": [
+        "wood",
+        "PhotoBaked__wood__atlas1"
+      ],
+      "crate0_short_5_1": [
+        "wood_y",
+        "PhotoBaked__wood_y__atlas1"
+      ],
+      "crate0_strap0": [
+        "rust",
+        "PhotoBaked__rust__atlas1"
+      ],
+      "crate0_strap1": [
+        "rust",
+        "PhotoBaked__rust__atlas1"
+      ],
+      "crate0_strap2": [
+        "rust",
+        "PhotoBaked__rust__atlas1"
+      ],
+      "crate0_strap3": [
+        "rust",
+        "PhotoBaked__rust__atlas1"
+      ],
+      "crate1_foot0": [
+        "wood_y",
+        "PhotoBaked__wood_y__atlas1"
+      ],
+      "crate1_foot1": [
+        "wood_y"
+      ],
+      "crate1_foot2": [
+        "wood_y"
+      ],
+      "crate1_base": [
+        "wood",
+        "PhotoBaked__wood__atlas1"
+      ],
+      "crate1_long_0_0": [
+        "wood",
+        "PhotoBaked__wood__atlas1"
+      ],
+      "crate1_short_0_0": [
+        "wood_y",
+        "PhotoBaked__wood_y__atlas1"
+      ],
+      "crate1_long_0_1": [
+        "wood"
+      ],
+      "crate1_short_0_1": [
+        "wood_y"
+      ],
+      "crate1_long_1_0": [
+        "wood",
+        "PhotoBaked__wood__atlas1"
+      ],
+      "crate1_short_1_0": [
+        "wood_y",
+        "PhotoBaked__wood_y__atlas1"
+      ],
+      "crate1_long_1_1": [
+        "wood"
+      ],
+      "crate1_short_1_1": [
+        "wood_y"
+      ],
+      "crate1_long_2_0": [
+        "wood",
+        "PhotoBaked__wood__atlas1"
+      ],
+      "crate1_short_2_0": [
+        "wood_y",
+        "PhotoBaked__wood_y__atlas1"
+      ],
+      "crate1_long_2_1": [
+        "wood"
+      ],
+      "crate1_short_2_1": [
+        "wood_y"
+      ],
+      "crate1_long_3_0": [
+        "wood",
+        "PhotoBaked__wood__atlas1"
+      ],
+      "crate1_short_3_0": [
+        "wood_y",
+        "PhotoBaked__wood_y__atlas1"
+      ],
+      "crate1_long_3_1": [
+        "wood",
+        "PhotoBaked__wood__atlas1"
+      ],
+      "crate1_short_3_1": [
+        "wood_y"
+      ],
+      "crate1_long_4_0": [
+        "wood",
+        "PhotoBaked__wood__atlas1"
+      ],
+      "crate1_short_4_0": [
+        "wood_y",
+        "PhotoBaked__wood_y__atlas1"
+      ],
+      "crate1_long_4_1": [
+        "wood",
+        "PhotoBaked__wood__atlas1"
+      ],
+      "crate1_short_4_1": [
+        "wood_y"
+      ],
+      "crate1_long_5_0": [
+        "wood",
+        "PhotoBaked__wood__atlas1"
+      ],
+      "crate1_short_5_0": [
+        "wood_y",
+        "PhotoBaked__wood_y__atlas1"
+      ],
+      "crate1_long_5_1": [
+        "wood",
+        "PhotoBaked__wood__atlas1"
+      ],
+      "crate1_short_5_1": [
+        "wood_y"
+      ],
+      "crate1_strap0": [
+        "rust",
+        "PhotoBaked__rust__atlas1"
+      ],
+      "crate1_strap1": [
+        "rust",
+        "PhotoBaked__rust__atlas1"
+      ],
+      "crate1_strap2": [
+        "rust",
+        "PhotoBaked__rust__atlas1"
+      ],
+      "crate1_strap3": [
+        "rust"
+      ],
+      "skip0_shell": [
+        "lime",
+        "PhotoBaked__lime__atlas1"
+      ],
+      "skip0_foot0": [
+        "lime",
+        "PhotoBaked__lime__atlas1"
+      ],
+      "skip0_foot1": [
+        "lime"
+      ],
+      "skip0_rim0": [
+        "lime"
+      ],
+      "skip0_rim1": [
+        "lime"
+      ],
+      "skip0_side_rim0": [
+        "lime"
+      ],
+      "skip0_side_rim1": [
+        "lime"
+      ],
+      "skip1_shell": [
+        "lime",
+        "PhotoBaked__lime__atlas1"
+      ],
+      "skip1_foot0": [
+        "lime",
+        "PhotoBaked__lime__atlas1"
+      ],
+      "skip1_foot1": [
+        "lime"
+      ],
+      "skip1_rim0": [
+        "lime",
+        "PhotoBaked__lime__atlas1"
+      ],
+      "skip1_rim1": [
+        "lime",
+        "PhotoBaked__lime__atlas1"
+      ],
+      "skip1_side_rim0": [
+        "lime",
+        "PhotoBaked__lime__atlas1"
+      ],
+      "skip1_side_rim1": [
+        "lime"
+      ],
+      "trailer_box": [
+        "white_vehicle",
+        "PhotoBaked__white_vehicle__atlas1"
+      ],
+      "trailer_floor": [
+        "steel",
+        "PhotoBaked__steel__atlas1"
+      ],
+      "trailer_wheel_12.9_-1": [
+        "rubber"
+      ],
+      "trailer_hub_12.9_-1": [
+        "bright_metal"
+      ],
+      "trailer_wheel_12.9_1": [
+        "rubber"
+      ],
+      "trailer_hub_12.9_1": [
+        "bright_metal"
+      ],
+      "trailer_wheel_13.65_-1": [
+        "rubber"
+      ],
+      "trailer_hub_13.65_-1": [
+        "bright_metal"
+      ],
+      "trailer_wheel_13.65_1": [
+        "rubber"
+      ],
+      "trailer_hub_13.65_1": [
+        "bright_metal"
+      ],
+      "trailer_window_0": [
+        "glass"
+      ],
+      "trailer_window_1": [
+        "glass"
+      ],
+      "trailer_towA": [
+        "steel",
+        "PhotoBaked__steel__atlas1"
+      ],
+      "trailer_towB": [
+        "steel",
+        "PhotoBaked__steel__atlas1"
+      ],
+      "flatbed_frame": [
+        "steel",
+        "PhotoBaked__steel__atlas1"
+      ],
+      "flatbed_deck": [
+        "door",
+        "PhotoBaked__door__atlas1"
+      ],
+      "flatbed_wheel-1": [
+        "rubber"
+      ],
+      "flatbed_wheel1": [
+        "rubber"
+      ],
+      "flatbed_towA": [
+        "steel",
+        "PhotoBaked__steel__atlas1"
+      ],
+      "flatbed_towB": [
+        "steel",
+        "PhotoBaked__steel__atlas1"
+      ],
+      "flatbed_hitch": [
+        "bright_metal"
+      ],
+      "sign_base": [
+        "steel",
+        "PhotoBaked__steel__atlas1"
+      ],
+      "sign_pole": [
+        "bright_metal"
+      ],
+      "no_parking_red": [
+        "red"
+      ],
+      "no_parking_blue": [
+        "blue"
+      ],
+      "no_parking_slashA": [
+        "red"
+      ],
+      "no_parking_slashB": [
+        "red"
+      ],
+      "van_cab_body": [
+        "white_vehicle",
+        "PhotoBaked__white_vehicle__atlas1"
+      ],
+      "van_cargo_box": [
+        "white_vehicle",
+        "PhotoBaked__white_vehicle__atlas1"
+      ],
+      "van_chassis": [
+        "steel",
+        "PhotoBaked__steel__atlas1"
+      ],
+      "van_windshield": [
+        "glass"
+      ],
+      "van_windshield_frame0": [
+        "white_vehicle",
+        "PhotoBaked__white_vehicle__atlas1"
+      ],
+      "van_windshield_frame1": [
+        "white_vehicle",
+        "PhotoBaked__white_vehicle__atlas1"
+      ],
+      "van_windshield_frame2": [
+        "white_vehicle",
+        "PhotoBaked__white_vehicle__atlas1"
+      ],
+      "van_windshield_frame3": [
+        "white_vehicle",
+        "PhotoBaked__white_vehicle__atlas1"
+      ],
+      "van_windshield_divider": [
+        "rubber"
+      ],
+      "van_side_glass-1": [
+        "glass"
+      ],
+      "van_mirror-1": [
+        "rubber"
+      ],
+      "van_mirror_stem-1": [
+        "rubber"
+      ],
+      "van_tyre-1_0": [
+        "rubber"
+      ],
+      "van_hub-1_0": [
+        "bright_metal"
+      ],
+      "van_tyre-1_1": [
+        "rubber"
+      ],
+      "van_hub-1_1": [
+        "bright_metal"
+      ],
+      "van_side_glass1": [
+        "glass"
+      ],
+      "van_mirror1": [
+        "rubber"
+      ],
+      "van_mirror_stem1": [
+        "rubber"
+      ],
+      "van_tyre1_0": [
+        "rubber"
+      ],
+      "van_hub1_0": [
+        "bright_metal"
+      ],
+      "van_tyre1_1": [
+        "rubber"
+      ],
+      "van_hub1_1": [
+        "bright_metal"
+      ],
+      "van_front_bumper": [
+        "rubber"
+      ],
+      "van_grille": [
+        "rubber"
+      ],
+      "van_headlamp-1": [
+        "door"
+      ],
+      "van_headlamp1": [
+        "door",
+        "PhotoBaked__door__atlas1"
+      ],
+      "van_cooler": [
+        "white_vehicle",
+        "PhotoBaked__white_vehicle__atlas1"
+      ],
+      "van_cooler_vent0": [
+        "steel"
+      ],
+      "van_cooler_vent1": [
+        "steel"
+      ],
+      "van_cooler_vent2": [
+        "steel"
+      ],
+      "van_cooler_vent3": [
+        "steel"
+      ],
+      "van_cooler_vent4": [
+        "steel"
+      ],
+      "van_cooler_vent5": [
+        "steel"
+      ],
+      "van_cooler_vent6": [
+        "steel"
+      ],
+      "van_observed_hood_SV": [
+        "red",
+        "PhotoBaked__red__atlas1"
+      ],
+      "car_lower_body": [
+        "black_vehicle",
+        "PhotoBaked__black_vehicle__atlas1"
+      ],
+      "car_upper_body": [
+        "black_vehicle"
+      ],
+      "car_rear_glass": [
+        "glass"
+      ],
+      "car_rear_frame0": [
+        "black_vehicle",
+        "PhotoBaked__black_vehicle__atlas1"
+      ],
+      "car_rear_frame1": [
+        "black_vehicle",
+        "PhotoBaked__black_vehicle__atlas1"
+      ],
+      "car_rear_frame2": [
+        "black_vehicle",
+        "PhotoBaked__black_vehicle__atlas1"
+      ],
+      "car_rear_frame3": [
+        "black_vehicle"
+      ],
+      "car_tyre-1_0": [
+        "rubber"
+      ],
+      "car_hub-1_0": [
+        "steel"
+      ],
+      "car_tyre-1_1": [
+        "rubber"
+      ],
+      "car_hub-1_1": [
+        "steel"
+      ],
+      "car_tail_light-1": [
+        "red"
+      ],
+      "car_tyre1_0": [
+        "rubber"
+      ],
+      "car_hub1_0": [
+        "steel"
+      ],
+      "car_tyre1_1": [
+        "rubber"
+      ],
+      "car_hub1_1": [
+        "steel"
+      ],
+      "car_tail_light1": [
+        "red"
+      ],
+      "cart_floor_frame": [
+        "blue",
+        "PhotoBaked__blue__atlas1"
+      ],
+      "cart_upright0": [
+        "blue",
+        "PhotoBaked__blue__atlas1"
+      ],
+      "cart_upright1": [
+        "blue",
+        "PhotoBaked__blue__atlas1"
+      ],
+      "cart_upright2": [
+        "blue",
+        "PhotoBaked__blue__atlas1"
+      ],
+      "cart_crossbar": [
+        "blue",
+        "PhotoBaked__blue__atlas1"
+      ],
+      "cart_caster-1_-1": [
+        "rubber"
+      ],
+      "cart_caster-1_1": [
+        "rubber"
+      ],
+      "cart_caster1_-1": [
+        "rubber"
+      ],
+      "cart_caster1_1": [
+        "rubber"
+      ],
+      "lumber_board_0_0": [
+        "lumber"
+      ],
+      "lumber_board_0_1": [
+        "lumber",
+        "PhotoBaked__lumber__atlas1"
+      ],
+      "lumber_board_0_2": [
+        "lumber",
+        "PhotoBaked__lumber__atlas1"
+      ],
+      "lumber_board_1_0": [
+        "lumber"
+      ],
+      "lumber_board_1_1": [
+        "lumber"
+      ],
+      "lumber_board_1_2": [
+        "lumber",
+        "PhotoBaked__lumber__atlas1"
+      ],
+      "lumber_board_2_0": [
+        "lumber"
+      ],
+      "lumber_board_2_1": [
+        "lumber"
+      ],
+      "lumber_board_2_2": [
+        "lumber",
+        "PhotoBaked__lumber__atlas1"
+      ],
+      "lumber_board_3_0": [
+        "lumber"
+      ],
+      "lumber_board_3_1": [
+        "lumber",
+        "PhotoBaked__lumber__atlas1"
+      ],
+      "lumber_board_3_2": [
+        "lumber",
+        "PhotoBaked__lumber__atlas1"
+      ],
+      "lumber_board_4_0": [
+        "lumber"
+      ],
+      "lumber_board_4_1": [
+        "lumber",
+        "PhotoBaked__lumber__atlas1"
+      ],
+      "lumber_board_4_2": [
+        "lumber",
+        "PhotoBaked__lumber__atlas1"
+      ],
+      "lumber_board_5_0": [
+        "lumber"
+      ],
+      "lumber_board_5_1": [
+        "lumber",
+        "PhotoBaked__lumber__atlas1"
+      ],
+      "lumber_board_5_2": [
+        "lumber",
+        "PhotoBaked__lumber__atlas1"
+      ],
+      "lumber_board_6_0": [
+        "lumber"
+      ],
+      "lumber_board_6_1": [
+        "lumber",
+        "PhotoBaked__lumber__atlas1"
+      ],
+      "lumber_board_6_2": [
+        "lumber",
+        "PhotoBaked__lumber__atlas1"
+      ],
+      "lumber_board_7_0": [
+        "lumber"
+      ],
+      "lumber_board_7_1": [
+        "lumber",
+        "PhotoBaked__lumber__atlas1"
+      ],
+      "lumber_board_7_2": [
+        "lumber",
+        "PhotoBaked__lumber__atlas1"
+      ],
+      "lumber_board_8_0": [
+        "lumber",
+        "PhotoBaked__lumber__atlas1"
+      ],
+      "lumber_board_8_1": [
+        "lumber",
+        "PhotoBaked__lumber__atlas1"
+      ],
+      "lumber_board_8_2": [
+        "lumber",
+        "PhotoBaked__lumber__atlas1"
+      ],
+      "cage0_side0": [
+        "bright_metal"
+      ],
+      "cage0_side1": [
+        "bright_metal"
+      ],
+      "cage0_rail0": [
+        "bright_metal"
+      ],
+      "cage0_rail1": [
+        "bright_metal"
+      ],
+      "cage0_wireV0": [
+        "steel"
+      ],
+      "cage0_wireV1": [
+        "steel"
+      ],
+      "cage0_wireV2": [
+        "steel"
+      ],
+      "cage0_wireV3": [
+        "steel"
+      ],
+      "cage0_wireV4": [
+        "steel"
+      ],
+      "cage0_wireV5": [
+        "steel"
+      ],
+      "cage0_wireV6": [
+        "steel"
+      ],
+      "cage0_wireV7": [
+        "steel"
+      ],
+      "cage0_wireV8": [
+        "steel"
+      ],
+      "cage0_wireV9": [
+        "steel"
+      ],
+      "cage0_wireV10": [
+        "steel"
+      ],
+      "cage0_wireV11": [
+        "steel"
+      ],
+      "cage0_wireV12": [
+        "steel"
+      ],
+      "cage0_wireV13": [
+        "steel"
+      ],
+      "cage0_wireV14": [
+        "steel"
+      ],
+      "cage0_wireV15": [
+        "steel"
+      ],
+      "cage0_wireV16": [
+        "steel"
+      ],
+      "cage0_wireV17": [
+        "steel"
+      ],
+      "cage0_wireV18": [
+        "steel"
+      ],
+      "cage0_wireV19": [
+        "steel"
+      ],
+      "cage0_wireV20": [
+        "steel"
+      ],
+      "cage0_wireV21": [
+        "steel"
+      ],
+      "cage0_wireV22": [
+        "steel"
+      ],
+      "cage0_wireV23": [
+        "steel"
+      ],
+      "cage0_wireV24": [
+        "steel"
+      ],
+      "cage0_wireV25": [
+        "steel"
+      ],
+      "cage0_wireV26": [
+        "steel"
+      ],
+      "cage0_wireV27": [
+        "steel"
+      ],
+      "cage0_wireV28": [
+        "steel"
+      ],
+      "cage0_wireV29": [
+        "steel"
+      ],
+      "cage0_wireV30": [
+        "steel"
+      ],
+      "cage0_wireV31": [
+        "steel"
+      ],
+      "cage0_wireV32": [
+        "steel"
+      ],
+      "cage0_wireV33": [
+        "steel"
+      ],
+      "cage0_wireV34": [
+        "steel"
+      ],
+      "cage0_wireV35": [
+        "steel"
+      ],
+      "cage0_wireV36": [
+        "steel"
+      ],
+      "cage0_wireH0": [
+        "steel"
+      ],
+      "cage0_wireH1": [
+        "steel"
+      ],
+      "cage0_wireH2": [
+        "steel"
+      ],
+      "cage0_wireH3": [
+        "steel"
+      ],
+      "cage0_wireH4": [
+        "steel"
+      ],
+      "cage0_wireH5": [
+        "steel"
+      ],
+      "cage0_wireH6": [
+        "steel"
+      ],
+      "cage0_wireH7": [
+        "steel"
+      ],
+      "cage0_wireH8": [
+        "steel"
+      ],
+      "cage0_wireH9": [
+        "steel"
+      ],
+      "cage0_wireH10": [
+        "steel"
+      ],
+      "cage0_wireH11": [
+        "steel"
+      ],
+      "cage0_wireH12": [
+        "steel"
+      ],
+      "cage0_wireH13": [
+        "steel"
+      ],
+      "cage0_wireH14": [
+        "steel"
+      ],
+      "cage0_wireH15": [
+        "steel"
+      ],
+      "cage0_wireH16": [
+        "steel"
+      ],
+      "cage0_wireH17": [
+        "steel"
+      ],
+      "cage0_wireH18": [
+        "steel"
+      ],
+      "cage0_wireH19": [
+        "steel"
+      ],
+      "cage0_wireH20": [
+        "steel"
+      ],
+      "cage0_wireH21": [
+        "steel"
+      ],
+      "cage0_wireH22": [
+        "steel"
+      ],
+      "cage0_wireH23": [
+        "steel"
+      ],
+      "cage0_wireH24": [
+        "steel"
+      ],
+      "cage0_wireH25": [
+        "steel"
+      ],
+      "cage0_wireH26": [
+        "steel"
+      ],
+      "cage0_wireH27": [
+        "steel"
+      ],
+      "cage0_wireH28": [
+        "steel"
+      ],
+      "cage1_side0": [
+        "bright_metal"
+      ],
+      "cage1_side1": [
+        "bright_metal"
+      ],
+      "cage1_rail0": [
+        "bright_metal"
+      ],
+      "cage1_rail1": [
+        "bright_metal"
+      ],
+      "cage1_wireV0": [
+        "steel"
+      ],
+      "cage1_wireV1": [
+        "steel"
+      ],
+      "cage1_wireV2": [
+        "steel"
+      ],
+      "cage1_wireV3": [
+        "steel"
+      ],
+      "cage1_wireV4": [
+        "steel"
+      ],
+      "cage1_wireV5": [
+        "steel"
+      ],
+      "cage1_wireV6": [
+        "steel"
+      ],
+      "cage1_wireV7": [
+        "steel"
+      ],
+      "cage1_wireV8": [
+        "steel"
+      ],
+      "cage1_wireV9": [
+        "steel"
+      ],
+      "cage1_wireV10": [
+        "steel"
+      ],
+      "cage1_wireV11": [
+        "steel"
+      ],
+      "cage1_wireV12": [
+        "steel"
+      ],
+      "cage1_wireV13": [
+        "steel"
+      ],
+      "cage1_wireV14": [
+        "steel"
+      ],
+      "cage1_wireV15": [
+        "steel"
+      ],
+      "cage1_wireV16": [
+        "steel"
+      ],
+      "cage1_wireV17": [
+        "steel"
+      ],
+      "cage1_wireV18": [
+        "steel"
+      ],
+      "cage1_wireV19": [
+        "steel"
+      ],
+      "cage1_wireV20": [
+        "steel"
+      ],
+      "cage1_wireV21": [
+        "steel"
+      ],
+      "cage1_wireV22": [
+        "steel"
+      ],
+      "cage1_wireV23": [
+        "steel"
+      ],
+      "cage1_wireV24": [
+        "steel"
+      ],
+      "cage1_wireV25": [
+        "steel"
+      ],
+      "cage1_wireV26": [
+        "steel"
+      ],
+      "cage1_wireV27": [
+        "steel"
+      ],
+      "cage1_wireV28": [
+        "steel"
+      ],
+      "cage1_wireV29": [
+        "steel"
+      ],
+      "cage1_wireV30": [
+        "steel"
+      ],
+      "cage1_wireV31": [
+        "steel"
+      ],
+      "cage1_wireV32": [
+        "steel"
+      ],
+      "cage1_wireV33": [
+        "steel"
+      ],
+      "cage1_wireV34": [
+        "steel"
+      ],
+      "cage1_wireV35": [
+        "steel"
+      ],
+      "cage1_wireV36": [
+        "steel"
+      ],
+      "cage1_wireV37": [
+        "steel"
+      ],
+      "cage1_wireV38": [
+        "steel"
+      ],
+      "cage1_wireV39": [
+        "steel"
+      ],
+      "cage1_wireV40": [
+        "steel"
+      ],
+      "cage1_wireV41": [
+        "steel"
+      ],
+      "cage1_wireV42": [
+        "steel"
+      ],
+      "cage1_wireV43": [
+        "steel"
+      ],
+      "cage1_wireV44": [
+        "steel"
+      ],
+      "cage1_wireV45": [
+        "steel"
+      ],
+      "cage1_wireV46": [
+        "steel"
+      ],
+      "cage1_wireV47": [
+        "steel"
+      ],
+      "cage1_wireV48": [
+        "steel"
+      ],
+      "cage1_wireV49": [
+        "steel"
+      ],
+      "cage1_wireV50": [
+        "steel"
+      ],
+      "cage1_wireH0": [
+        "steel"
+      ],
+      "cage1_wireH1": [
+        "steel"
+      ],
+      "cage1_wireH2": [
+        "steel"
+      ],
+      "cage1_wireH3": [
+        "steel"
+      ],
+      "cage1_wireH4": [
+        "steel"
+      ],
+      "cage1_wireH5": [
+        "steel"
+      ],
+      "cage1_wireH6": [
+        "steel"
+      ],
+      "cage1_wireH7": [
+        "steel"
+      ],
+      "cage1_wireH8": [
+        "steel"
+      ],
+      "cage1_wireH9": [
+        "steel"
+      ],
+      "cage1_wireH10": [
+        "steel"
+      ],
+      "cage1_wireH11": [
+        "steel"
+      ],
+      "cage1_wireH12": [
+        "steel"
+      ],
+      "cage1_wireH13": [
+        "steel"
+      ],
+      "cage1_wireH14": [
+        "steel"
+      ],
+      "cage1_wireH15": [
+        "steel"
+      ],
+      "cage1_wireH16": [
+        "steel"
+      ],
+      "cage1_wireH17": [
+        "steel"
+      ],
+      "cage1_wireH18": [
+        "steel"
+      ],
+      "cage1_wireH19": [
+        "steel"
+      ],
+      "cage1_wireH20": [
+        "steel"
+      ],
+      "cage1_wireH21": [
+        "steel"
+      ],
+      "cage1_wireH22": [
+        "steel"
+      ],
+      "cage1_wireH23": [
+        "steel"
+      ],
+      "cage1_wireH24": [
+        "steel"
+      ],
+      "cage1_wireH25": [
+        "steel"
+      ],
+      "cage1_wireH26": [
+        "steel"
+      ],
+      "cage1_wireH27": [
+        "steel"
+      ],
+      "cage1_wireH28": [
+        "steel"
+      ],
+      "cage2_side0": [
+        "bright_metal"
+      ],
+      "cage2_side1": [
+        "bright_metal"
+      ],
+      "cage2_rail0": [
+        "bright_metal"
+      ],
+      "cage2_rail1": [
+        "bright_metal"
+      ],
+      "cage2_wireV0": [
+        "steel"
+      ],
+      "cage2_wireV1": [
+        "steel"
+      ],
+      "cage2_wireV2": [
+        "steel"
+      ],
+      "cage2_wireV3": [
+        "steel"
+      ],
+      "cage2_wireV4": [
+        "steel"
+      ],
+      "cage2_wireV5": [
+        "steel"
+      ],
+      "cage2_wireV6": [
+        "steel"
+      ],
+      "cage2_wireV7": [
+        "steel"
+      ],
+      "cage2_wireV8": [
+        "steel"
+      ],
+      "cage2_wireV9": [
+        "steel"
+      ],
+      "cage2_wireV10": [
+        "steel"
+      ],
+      "cage2_wireV11": [
+        "steel"
+      ],
+      "cage2_wireV12": [
+        "steel"
+      ],
+      "cage2_wireV13": [
+        "steel"
+      ],
+      "cage2_wireV14": [
+        "steel"
+      ],
+      "cage2_wireV15": [
+        "steel"
+      ],
+      "cage2_wireV16": [
+        "steel"
+      ],
+      "cage2_wireV17": [
+        "steel"
+      ],
+      "cage2_wireV18": [
+        "steel"
+      ],
+      "cage2_wireV19": [
+        "steel"
+      ],
+      "cage2_wireV20": [
+        "steel"
+      ],
+      "cage2_wireV21": [
+        "steel"
+      ],
+      "cage2_wireV22": [
+        "steel"
+      ],
+      "cage2_wireV23": [
+        "steel"
+      ],
+      "cage2_wireV24": [
+        "steel"
+      ],
+      "cage2_wireV25": [
+        "steel"
+      ],
+      "cage2_wireV26": [
+        "steel"
+      ],
+      "cage2_wireV27": [
+        "steel"
+      ],
+      "cage2_wireV28": [
+        "steel"
+      ],
+      "cage2_wireV29": [
+        "steel"
+      ],
+      "cage2_wireV30": [
+        "steel"
+      ],
+      "cage2_wireV31": [
+        "steel"
+      ],
+      "cage2_wireV32": [
+        "steel"
+      ],
+      "cage2_wireV33": [
+        "steel"
+      ],
+      "cage2_wireV34": [
+        "steel"
+      ],
+      "cage2_wireV35": [
+        "steel"
+      ],
+      "cage2_wireV36": [
+        "steel"
+      ],
+      "cage2_wireV37": [
+        "steel"
+      ],
+      "cage2_wireV38": [
+        "steel"
+      ],
+      "cage2_wireV39": [
+        "steel"
+      ],
+      "cage2_wireV40": [
+        "steel"
+      ],
+      "cage2_wireV41": [
+        "steel"
+      ],
+      "cage2_wireV42": [
+        "steel"
+      ],
+      "cage2_wireV43": [
+        "steel"
+      ],
+      "cage2_wireV44": [
+        "steel"
+      ],
+      "cage2_wireV45": [
+        "steel"
+      ],
+      "cage2_wireV46": [
+        "steel"
+      ],
+      "cage2_wireV47": [
+        "steel"
+      ],
+      "cage2_wireV48": [
+        "steel"
+      ],
+      "cage2_wireV49": [
+        "steel"
+      ],
+      "cage2_wireV50": [
+        "steel"
+      ],
+      "cage2_wireV51": [
+        "steel"
+      ],
+      "cage2_wireV52": [
+        "steel"
+      ],
+      "cage2_wireV53": [
+        "steel"
+      ],
+      "cage2_wireV54": [
+        "steel"
+      ],
+      "cage2_wireH0": [
+        "steel"
+      ],
+      "cage2_wireH1": [
+        "steel"
+      ],
+      "cage2_wireH2": [
+        "steel"
+      ],
+      "cage2_wireH3": [
+        "steel"
+      ],
+      "cage2_wireH4": [
+        "steel"
+      ],
+      "cage2_wireH5": [
+        "steel"
+      ],
+      "cage2_wireH6": [
+        "steel"
+      ],
+      "cage2_wireH7": [
+        "steel"
+      ],
+      "cage2_wireH8": [
+        "steel"
+      ],
+      "cage2_wireH9": [
+        "steel"
+      ],
+      "cage2_wireH10": [
+        "steel"
+      ],
+      "cage2_wireH11": [
+        "steel"
+      ],
+      "cage2_wireH12": [
+        "steel"
+      ],
+      "cage2_wireH13": [
+        "steel"
+      ],
+      "cage2_wireH14": [
+        "steel"
+      ],
+      "cage2_wireH15": [
+        "steel"
+      ],
+      "cage2_wireH16": [
+        "steel"
+      ],
+      "cage2_wireH17": [
+        "steel"
+      ],
+      "cage2_wireH18": [
+        "steel"
+      ],
+      "cage2_wireH19": [
+        "steel"
+      ],
+      "cage2_wireH20": [
+        "steel"
+      ],
+      "cage2_wireH21": [
+        "steel"
+      ],
+      "cage2_wireH22": [
+        "steel"
+      ],
+      "cage2_wireH23": [
+        "steel"
+      ],
+      "cage2_wireH24": [
+        "steel"
+      ],
+      "cage2_wireH25": [
+        "steel"
+      ],
+      "cage2_wireH26": [
+        "steel"
+      ],
+      "cage2_wireH27": [
+        "steel"
+      ],
+      "cage2_wireH28": [
+        "steel"
+      ],
+      "cage_machine": [
+        "door",
+        "PhotoBaked__door__atlas1"
+      ],
+      "cage_machine_fan": [
+        "steel",
+        "PhotoBaked__steel__atlas1"
+      ],
+      "cage_bin0": [
+        "rubber"
+      ],
+      "cage_bin1": [
+        "rubber"
+      ],
+      "cage_bin2": [
+        "rubber"
+      ],
+      "compactor_body": [
+        "steel",
+        "PhotoBaked__steel__atlas1"
+      ],
+      "compactor_hopper": [
+        "steel",
+        "PhotoBaked__steel__atlas1"
+      ],
+      "compactor_hopper_Xa": [
+        "bright_metal"
+      ],
+      "compactor_hopper_Xb": [
+        "bright_metal"
+      ],
+      "compactor_yellow_front": [
+        "yellow",
+        "PhotoBaked__yellow__atlas1"
+      ],
+      "compactor_arm0": [
+        "yellow",
+        "PhotoBaked__yellow__atlas1"
+      ],
+      "compactor_pivot0": [
+        "steel",
+        "PhotoBaked__steel__atlas1"
+      ],
+      "compactor_foot0": [
+        "steel",
+        "PhotoBaked__steel__atlas1"
+      ],
+      "compactor_arm1": [
+        "yellow",
+        "PhotoBaked__yellow__atlas1"
+      ],
+      "compactor_pivot1": [
+        "steel",
+        "PhotoBaked__steel__atlas1"
+      ],
+      "compactor_foot1": [
+        "steel",
+        "PhotoBaked__steel__atlas1"
+      ],
+      "compactor_lower_crossbar": [
+        "yellow",
+        "PhotoBaked__yellow__atlas1"
+      ],
+      "fire_cabinet": [
+        "red",
+        "PhotoBaked__red__atlas1"
+      ],
+      "extinguisher": [
+        "red"
+      ],
+      "luminaire_-10.0_-5.5": [
+        "light"
+      ],
+      "luminaire_-5.3_-5.5": [
+        "light"
+      ],
+      "luminaire_-0.6_-5.5": [
+        "light"
+      ],
+      "luminaire_4.1_-5.5": [
+        "light"
+      ],
+      "luminaire_8.8_-5.5": [
+        "light"
+      ],
+      "luminaire_13.0_-5.5": [
+        "light"
+      ],
+      "luminaire_-10.0_0.0": [
+        "light"
+      ],
+      "luminaire_-5.3_0.0": [
+        "light"
+      ],
+      "luminaire_-0.6_0.0": [
+        "light"
+      ],
+      "luminaire_4.1_0.0": [
+        "light"
+      ],
+      "luminaire_8.8_0.0": [
+        "light"
+      ],
+      "luminaire_13.0_0.0": [
+        "light"
+      ],
+      "luminaire_-10.0_5.5": [
+        "light"
+      ],
+      "luminaire_-5.3_5.5": [
+        "light"
+      ],
+      "luminaire_-0.6_5.5": [
+        "light"
+      ],
+      "luminaire_4.1_5.5": [
+        "light"
+      ],
+      "luminaire_8.8_5.5": [
+        "light"
+      ],
+      "luminaire_13.0_5.5": [
+        "light"
+      ],
+      "luminaire_-10.0_11.0": [
+        "light"
+      ],
+      "luminaire_-5.3_11.0": [
+        "light"
+      ],
+      "luminaire_-0.6_11.0": [
+        "light"
+      ],
+      "luminaire_4.1_11.0": [
+        "light"
+      ],
+      "luminaire_8.8_11.0": [
+        "light"
+      ],
+      "luminaire_13.0_11.0": [
+        "light"
+      ],
+      "corridor_luminaire_-17": [
+        "light"
+      ],
+      "corridor_luminaire_-22": [
+        "light"
+      ],
+      "corridor_luminaire_-27": [
+        "light"
+      ],
+      "corridor_luminaire_-32": [
+        "light"
+      ],
+      "corridor_luminaire_-37": [
+        "light"
+      ],
+      "corridor_luminaire_-42": [
+        "light"
+      ],
+      "corridor_luminaire_-47": [
+        "light"
+      ],
+      "ceiling_pipe0": [
+        "bright_metal"
+      ],
+      "ceiling_pipe1": [
+        "bright_metal"
+      ],
+      "ceiling_pipe2": [
+        "bright_metal"
+      ],
+      "main_ceiling_pipe0": [
+        "bright_metal"
+      ],
+      "main_ceiling_pipe1": [
+        "bright_metal"
+      ],
+      "main_ceiling_pipe2": [
+        "bright_metal"
+      ],
+      "floor": [
+        "floor",
+        "PhotoBaked__floor__atlas1",
+        "PhotoBaked__floor__atlas0"
+      ],
+      "ceiling": [
+        "ceiling",
+        "PhotoBaked__ceiling__atlas1",
+        "PhotoBaked__ceiling__atlas0"
+      ],
+      "wall_front": [
+        "wall",
+        "PhotoBaked__wall__atlas0",
+        "PhotoBaked__wall__atlas1"
+      ],
+      "wall_back": [
+        "wall",
+        "PhotoBaked__wall__atlas0",
+        "PhotoBaked__wall__atlas1"
+      ],
+      "wall_left": [
+        "wall",
+        "PhotoBaked__wall__atlas1",
+        "PhotoBaked__wall__atlas0"
+      ],
+      "wall_right": [
+        "wall",
+        "PhotoBaked__wall__atlas1",
+        "PhotoBaked__wall__atlas0"
+      ]
+    }
+  },
+  "scope": "Actual node/coordinate/UV/assignment checks; visual pattern representativeness and physical albedo still need image review."
+}

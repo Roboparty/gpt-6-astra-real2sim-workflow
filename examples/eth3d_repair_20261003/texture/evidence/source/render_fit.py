@@ -1,0 +1,15 @@
+import bpy,numpy as np,json,pathlib,sys,argparse,hashlib
+from mathutils import Matrix,Vector
+p=argparse.ArgumentParser();p.add_argument('--model',required=True);p.add_argument('--out',required=True);p.add_argument('--indices',default='0,4,8,12,16,20,24,28,32,35');p.add_argument('--width',type=int,default=400);p.add_argument('--neutral',action='store_true');a=p.parse_args(sys.argv[sys.argv.index('--')+1:]);O=pathlib.Path(a.out);O.mkdir(parents=True,exist_ok=True);sha=lambda p:hashlib.sha256(pathlib.Path(p).read_bytes()).hexdigest();before=sha(a.model);bpy.ops.wm.open_mainfile(filepath=a.model,load_ui=False,use_scripts=False);s=bpy.context.scene;s.render.engine='CYCLES';s.cycles.device='CPU';s.cycles.samples=4;s.cycles.use_denoising=True;s.render.threads_mode='FIXED';s.render.threads=2;s.render.image_settings.file_format='PNG';s.render.resolution_percentage=100;s.render.use_compositing=False;s.render.use_sequencer=False;s.render.use_border=False
+P=json.load(open('/home/wqz/real2sim_agent_compare_20261003/OURS/inputs/packet.json'));G=np.array(json.load(open('/home/wqz/real2sim_agent_compare_20261003/OURS/model_from_input.json'))['model_from_input']);cam=bpy.data.objects.new('FIT_TEXTURE_CAMERA',bpy.data.cameras.new('FIT_TEXTURE_CAMERA'));s.collection.objects.link(cam);s.camera=cam
+if a.neutral:
+ for o in s.objects:
+  if o.type=='LIGHT':o.hide_render=True
+ w=bpy.data.worlds.new('appearance_neutral_world');w.use_nodes=True;w.node_tree.nodes['Background'].inputs['Color'].default_value=(1,1,1,1);w.node_tree.nodes['Background'].inputs['Strength'].default_value=.65;s.world=w
+ d=bpy.data.lights.new('appearance_neutral_key','AREA');d.energy=600;d.shape='DISK';d.size=6;light=bpy.data.objects.new(d.name,d);s.collection.objects.link(light)
+rows=[]
+for i in [int(x) for x in a.indices.split(',')]:
+ f=P['frames'][i];W,H=f['image_size'];K=np.array(f['K']);T=G@np.array(f['T_world_camera']);width=a.width;height=round(H*width/W);sx=width/W;sy=height/H;fx=K[0,0]*sx;fy=K[1,1]*sy;cx=(K[0,2]+.5)*sx;cy=(K[1,2]+.5)*sy;ratio=fx/fy;cam.matrix_world=Matrix(T.tolist())@Matrix.Diagonal((1,-1,-1,1));cam.data.type='PERSP';cam.data.sensor_fit='HORIZONTAL';cam.data.sensor_width=36;cam.data.lens=fx*36/width;cam.data.shift_x=(width/2-cx)/width;cam.data.shift_y=(cy-height/2)*ratio/width;cam.data.clip_start=.01;cam.data.clip_end=150;s.render.resolution_x=width;s.render.resolution_y=height;s.render.pixel_aspect_x=max(1,1/ratio);s.render.pixel_aspect_y=max(1,ratio)
+ if a.neutral:light.matrix_world=cam.matrix_world.copy()
+ name=('appearance_neutral' if a.neutral else f'view_{i:03d}')+'.png';s.render.filepath=str(O/name);bpy.ops.render.render(write_still=True);rows.append({'index':i,'path':str(O/name),'sha256':sha(O/name),'input_rgb':f['path'],'camera_to_world':T.tolist()});print('FIT_RENDER',i,flush=True)
+assert sha(a.model)==before;(O/'render_receipt.json').write_text(json.dumps({'model_sha256':before,'model_unchanged':True,'input_only':True,'neutral_diagnostic':a.neutral,'render_engine':'CPU_CYCLES','samples':4,'rows':rows},indent=2))

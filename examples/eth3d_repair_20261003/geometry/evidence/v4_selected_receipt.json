@@ -1,0 +1,8 @@
+{
+  "directory": "candidate_v4",
+  "status": "selected_LIMITED",
+  "reason": "World-axis pipe correction; all36source comparison and10visualpairs inspected; remaining tradeoffs preserved",
+  "model_sha256": "506982c1c94a94067b19a58dc1a55d7b9ab6039ca1b8d00f61fba76292cc5542",
+  "scene_sha256": "35d39eacd8d15f5f3a61c041dfbcb360b32c61c6ae9d0b2e6d127d837bc109ca",
+  "recipe_sha256": "db3d927714cb2053f10905473a107ea9128fbd7f65deead44f73e3cc3ee8de0f"
+}

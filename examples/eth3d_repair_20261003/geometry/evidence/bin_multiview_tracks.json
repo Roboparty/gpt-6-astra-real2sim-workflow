@@ -1,0 +1,242 @@
+[
+  {
+    "input_index": 9,
+    "source_uv": [
+      119.0,
+      357.0
+    ],
+    "tracked_uv": [
+      372.0814514160156,
+      355.3526611328125
+    ],
+    "lk_status": 1,
+    "forward_backward_px": 0.284063458442688,
+    "calibrated_reprojection_sum_px": 0.4618038765923572,
+    "model_world": [
+      1.5168141168142943,
+      12.199902778279078,
+      1.5897941542039673
+    ],
+    "reliable": true
+  },
+  {
+    "input_index": 9,
+    "source_uv": [
+      390.0,
+      350.0
+    ],
+    "tracked_uv": [
+      613.8267822265625,
+      347.9338073730469
+    ],
+    "lk_status": 1,
+    "forward_backward_px": 0.2514091730117798,
+    "calibrated_reprojection_sum_px": 0.2595733738272988,
+    "model_world": [
+      3.0902714434419853,
+      9.64572666639607,
+      1.6118611786733066
+    ],
+    "reliable": true
+  },
+  {
+    "input_index": 9,
+    "source_uv": [
+      145.0,
+      552.0
+    ],
+    "tracked_uv": [
+      275.11859130859375,
+      -44.52253723144531
+    ],
+    "lk_status": 0,
+    "forward_backward_px": 300.2924499511719,
+    "calibrated_reprojection_sum_px": 19355.602309708684,
+    "model_world": [
+      0.6625146727833534,
+      4.623049845158618,
+      1.4907925872784138
+    ],
+    "reliable": false
+  },
+  {
+    "input_index": 10,
+    "source_uv": [
+      119.0,
+      357.0
+    ],
+    "tracked_uv": [
+      1398.9439697265625,
+      -217.3277587890625
+    ],
+    "lk_status": 0,
+    "forward_backward_px": 1402.89306640625,
+    "calibrated_reprojection_sum_px": 663.9511186913542,
+    "model_world": [
+      0.8180197643348466,
+      5.124055676072851,
+      1.7414487652278803
+    ],
+    "reliable": false
+  },
+  {
+    "input_index": 10,
+    "source_uv": [
+      390.0,
+      350.0
+    ],
+    "tracked_uv": [
+      249.0728759765625,
+      -168.05499267578125
+    ],
+    "lk_status": 0,
+    "forward_backward_px": 712.00244140625,
+    "calibrated_reprojection_sum_px": 1029.4675013700692,
+    "model_world": [
+      0.3337231752215978,
+      4.148096450370448,
+      1.2882158598859481
+    ],
+    "reliable": false
+  },
+  {
+    "input_index": 10,
+    "source_uv": [
+      145.0,
+      552.0
+    ],
+    "tracked_uv": [
+      480.61810302734375,
+      -86.88032531738281
+    ],
+    "lk_status": 0,
+    "forward_backward_px": 958.4700317382812,
+    "calibrated_reprojection_sum_px": 2854.965555134826,
+    "model_world": [
+      0.48365145742978854,
+      5.0152418815751885,
+      1.58744821287112
+    ],
+    "reliable": false
+  },
+  {
+    "input_index": 11,
+    "source_uv": [
+      119.0,
+      357.0
+    ],
+    "tracked_uv": [
+      1386.323974609375,
+      -213.16552734375
+    ],
+    "lk_status": 0,
+    "forward_backward_px": 1389.67578125,
+    "calibrated_reprojection_sum_px": 890.4575653997995,
+    "model_world": [
+      0.7813429142961914,
+      5.137282618717999,
+      1.8871648066435252
+    ],
+    "reliable": false
+  },
+  {
+    "input_index": 11,
+    "source_uv": [
+      390.0,
+      350.0
+    ],
+    "tracked_uv": [
+      259.00225830078125,
+      -163.41656494140625
+    ],
+    "lk_status": 0,
+    "forward_backward_px": 694.8521118164062,
+    "calibrated_reprojection_sum_px": 1151.021017153294,
+    "model_world": [
+      -0.05575124726517233,
+      3.8693179250253635,
+      1.260278775059958
+    ],
+    "reliable": false
+  },
+  {
+    "input_index": 11,
+    "source_uv": [
+      145.0,
+      552.0
+    ],
+    "tracked_uv": [
+      512.1265869140625,
+      -87.18438720703125
+    ],
+    "lk_status": 0,
+    "forward_backward_px": 1148.3885498046875,
+    "calibrated_reprojection_sum_px": 1969.8624657934815,
+    "model_world": [
+      0.3101157126914817,
+      5.478332352309003,
+      1.8008851227708758
+    ],
+    "reliable": false
+  },
+  {
+    "input_index": 12,
+    "source_uv": [
+      119.0,
+      357.0
+    ],
+    "tracked_uv": [
+      -85.63156127929688,
+      195.89315795898438
+    ],
+    "lk_status": 0,
+    "forward_backward_px": 137.37335205078125,
+    "calibrated_reprojection_sum_px": 242.74160944534822,
+    "model_world": [
+      0.6944257188075169,
+      3.319388664395547,
+      1.2694261899432613
+    ],
+    "reliable": false
+  },
+  {
+    "input_index": 12,
+    "source_uv": [
+      390.0,
+      350.0
+    ],
+    "tracked_uv": [
+      482.4595642089844,
+      267.7967834472656
+    ],
+    "lk_status": 1,
+    "forward_backward_px": 74.04032897949219,
+    "calibrated_reprojection_sum_px": 90.12849128051282,
+    "model_world": [
+      -0.318176687471304,
+      1.9429737873333293,
+      1.2675370244516238
+    ],
+    "reliable": false
+  },
+  {
+    "input_index": 12,
+    "source_uv": [
+      145.0,
+      552.0
+    ],
+    "tracked_uv": [
+      -69.4320068359375,
+      374.281005859375
+    ],
+    "lk_status": 0,
+    "forward_backward_px": 395.51580810546875,
+    "calibrated_reprojection_sum_px": 129.3636967904057,
+    "model_world": [
+      0.7116665023608283,
+      3.2680003995451847,
+      1.6501834631383248
+    ],
+    "reliable": false
+  }
+]
