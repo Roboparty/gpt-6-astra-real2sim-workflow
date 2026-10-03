@@ -1,0 +1,13 @@
+{
+  "status": "complete",
+  "evidence": [
+    "Actual supplied RGB observation and permitted predicted-depth measurement artifacts"
+  ],
+  "reasoning_summary": "All36 source views inspected; distinct crates, skips, cages and trailers have separate owners. No geometry/evaluator truth read.",
+  "parameters": {},
+  "artifacts": [
+    "observation.json",
+    "furniture_observation.json"
+  ],
+  "issues": []
+}

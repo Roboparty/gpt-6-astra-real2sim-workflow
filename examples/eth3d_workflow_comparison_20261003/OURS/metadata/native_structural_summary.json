@@ -1,0 +1,45 @@
+{
+  "audit": "/home/wqz/real2sim_agent_compare_20261003/OURS/native_case/runs/build_geometry/0002/structural_audit.json",
+  "audit_sha256": "14aba2a7f6da1a7896aedfb2f3a699789f49dc50b7e0017f05e7f27ad8f97175",
+  "status": "failed",
+  "failures": [
+    {
+      "kind": "source_landmarks",
+      "entity": "lime_skip_0",
+      "median": 25.555872397288407,
+      "maximum": 41.009554132999824
+    },
+    {
+      "kind": "source_landmarks",
+      "entity": "white_van",
+      "median": 7.06424954094994,
+      "maximum": 33.555615174005375
+    },
+    {
+      "kind": "source_landmarks",
+      "entity": "black_car",
+      "median": 4.735366598254674,
+      "maximum": 27.565525221533278
+    },
+    {
+      "kind": "source_landmarks",
+      "entity": "mesh_cage_2",
+      "median": 18.04532460020787,
+      "maximum": 30.5976985820212
+    },
+    {
+      "kind": "unexpected_interpenetration",
+      "parts": [
+        "flatbed_frame",
+        "flatbed_towA"
+      ],
+      "depth_m": 0.04764339327812195,
+      "cross_furniture": false
+    }
+  ],
+  "counts": {
+    "source_landmarks": 4,
+    "unexpected_interpenetration": 1
+  },
+  "interpretation": "Native sample depth is not a calibrated penetration measure; internal new flatbed tow/frame attachment requires contract investigation, not silent whitelisting"
+}

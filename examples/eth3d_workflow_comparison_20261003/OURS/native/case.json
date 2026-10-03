@@ -1,0 +1,317 @@
+{
+  "id": "ours_eth3d_delivery_20261003",
+  "workflow_profile": "quality_v2",
+  "mode": "multi",
+  "branch": "A",
+  "formal_test": true,
+  "inputs": [
+    {
+      "path": "/home/wqz/real2sim_agent_compare_20261003/OURS/inputs/rgb/000.png",
+      "sha256": "e14725171523ed699d6036f7dbabcae822d432fd529ec526df4e3d326f72d50a",
+      "role": "reconstruction"
+    },
+    {
+      "path": "/home/wqz/real2sim_agent_compare_20261003/OURS/inputs/rgb/001.png",
+      "sha256": "bcd637e9db0cb5d9bfaf855ca7848117386fd42ea11671ae8903177e87e36e78",
+      "role": "reconstruction"
+    },
+    {
+      "path": "/home/wqz/real2sim_agent_compare_20261003/OURS/inputs/rgb/002.png",
+      "sha256": "c82e19bf07b5c3059ab3ac1fc84d2b3b27efbbef0351115e2eb03d27a1433efb",
+      "role": "reconstruction"
+    },
+    {
+      "path": "/home/wqz/real2sim_agent_compare_20261003/OURS/inputs/rgb/003.png",
+      "sha256": "e3fdb5210f4b395d68041aef629c61047fc7e635eb95d4fbcb2fdaf5678dff78",
+      "role": "reconstruction"
+    },
+    {
+      "path": "/home/wqz/real2sim_agent_compare_20261003/OURS/inputs/rgb/004.png",
+      "sha256": "dde0b1e3a680c28aaeb9e1d464f72f714bc45eeaa74b58fed6b412e8fad18c65",
+      "role": "reconstruction"
+    },
+    {
+      "path": "/home/wqz/real2sim_agent_compare_20261003/OURS/inputs/rgb/005.png",
+      "sha256": "41f65e5ed0ad177869f7ca24f837293fabb8807b3041b4ad7998368ab7707620",
+      "role": "reconstruction"
+    },
+    {
+      "path": "/home/wqz/real2sim_agent_compare_20261003/OURS/inputs/rgb/006.png",
+      "sha256": "3ea6a5ff48323669490de2caee6db0378e3388b6344b669ee8139d5f7b3a32ce",
+      "role": "reconstruction"
+    },
+    {
+      "path": "/home/wqz/real2sim_agent_compare_20261003/OURS/inputs/rgb/007.png",
+      "sha256": "4cce2504a70458f522d1fcd476a376b0a9f30c6d7ee9145a05c9f41ca8cd625b",
+      "role": "reconstruction"
+    },
+    {
+      "path": "/home/wqz/real2sim_agent_compare_20261003/OURS/inputs/rgb/008.png",
+      "sha256": "9684fbf04b95fe4465757e269bb3bb6a4924c406ac7511acbf1e825597b4962b",
+      "role": "reconstruction"
+    },
+    {
+      "path": "/home/wqz/real2sim_agent_compare_20261003/OURS/inputs/rgb/009.png",
+      "sha256": "41315267c887821ef94034b2470e650c240284c304c1bd7a37e2f1a1060f1856",
+      "role": "reconstruction"
+    },
+    {
+      "path": "/home/wqz/real2sim_agent_compare_20261003/OURS/inputs/rgb/010.png",
+      "sha256": "9950ab16a0500d5b7ea2af03243aa1f7c857b8a6713357723b15f718b257a955",
+      "role": "reconstruction"
+    },
+    {
+      "path": "/home/wqz/real2sim_agent_compare_20261003/OURS/inputs/rgb/011.png",
+      "sha256": "c1139b0cc408999f938f7e24f3ff4e917e96d7d28a49644f72b8ba0b4b1f61ab",
+      "role": "reconstruction"
+    },
+    {
+      "path": "/home/wqz/real2sim_agent_compare_20261003/OURS/inputs/rgb/012.png",
+      "sha256": "61316c7eccdcc97ca0305888d2d4c83ee57f8edba74d77b777f7d228b8531e4f",
+      "role": "reconstruction"
+    },
+    {
+      "path": "/home/wqz/real2sim_agent_compare_20261003/OURS/inputs/rgb/013.png",
+      "sha256": "9e08342c9cf69273bb9b0f3cc809c2e24373a047aaa448318f93d8fbd7085048",
+      "role": "reconstruction"
+    },
+    {
+      "path": "/home/wqz/real2sim_agent_compare_20261003/OURS/inputs/rgb/014.png",
+      "sha256": "2b64b82222e4c0ed01eaa8019b89970acb9e8a8db02aa833af3391d7a5100294",
+      "role": "reconstruction"
+    },
+    {
+      "path": "/home/wqz/real2sim_agent_compare_20261003/OURS/inputs/rgb/015.png",
+      "sha256": "52081c3fcc23b585402651a841a5b32d812f5ba5cba4ce72ce60b155ecbd4fd9",
+      "role": "reconstruction"
+    },
+    {
+      "path": "/home/wqz/real2sim_agent_compare_20261003/OURS/inputs/rgb/016.png",
+      "sha256": "eaf34c6a5e2d1388eddf2d7d6875a475b959cf05a7e0fc6add7bb13b9b971da6",
+      "role": "reconstruction"
+    },
+    {
+      "path": "/home/wqz/real2sim_agent_compare_20261003/OURS/inputs/rgb/017.png",
+      "sha256": "1235090c5e37154e47a896055d0a00c99a3d1b89ca469dcfc3d099ce597488e7",
+      "role": "reconstruction"
+    },
+    {
+      "path": "/home/wqz/real2sim_agent_compare_20261003/OURS/inputs/rgb/018.png",
+      "sha256": "6128fc349db933c11fb0dcb8b0a33e44d324e1a16c46d8a76b4a5a4e5544267c",
+      "role": "reconstruction"
+    },
+    {
+      "path": "/home/wqz/real2sim_agent_compare_20261003/OURS/inputs/rgb/019.png",
+      "sha256": "704da47cb748b67c070d85196a90080ad7692e6d3f6da4e613462f2c23424e01",
+      "role": "reconstruction"
+    },
+    {
+      "path": "/home/wqz/real2sim_agent_compare_20261003/OURS/inputs/rgb/020.png",
+      "sha256": "351bcfa6c3f8226bba97c423b63322b4231ad874f07a3bb3d5e77849805fa1a5",
+      "role": "reconstruction"
+    },
+    {
+      "path": "/home/wqz/real2sim_agent_compare_20261003/OURS/inputs/rgb/021.png",
+      "sha256": "2d21e9dbb56f8773ebee5659cd763a5185e4d60ec3a2724a5bf10b4f6ed46590",
+      "role": "reconstruction"
+    },
+    {
+      "path": "/home/wqz/real2sim_agent_compare_20261003/OURS/inputs/rgb/022.png",
+      "sha256": "fe09a82412c568d6bbc59388cd11424bce114af910163ddfaf327f3254fffcc3",
+      "role": "reconstruction"
+    },
+    {
+      "path": "/home/wqz/real2sim_agent_compare_20261003/OURS/inputs/rgb/023.png",
+      "sha256": "4bf4471169f97fab050445862c22b7de214d456fdbc0f555d418b21bfd82b384",
+      "role": "reconstruction"
+    },
+    {
+      "path": "/home/wqz/real2sim_agent_compare_20261003/OURS/inputs/rgb/024.png",
+      "sha256": "e65e9f1e77619f0811a2f0ae8611f0c0ad56070e2e32a8c8b582778f68a60591",
+      "role": "reconstruction"
+    },
+    {
+      "path": "/home/wqz/real2sim_agent_compare_20261003/OURS/inputs/rgb/025.png",
+      "sha256": "b31706c1258e174010467f7f7a8cef30836be72ad1e3f056a18a8d4f6d401608",
+      "role": "reconstruction"
+    },
+    {
+      "path": "/home/wqz/real2sim_agent_compare_20261003/OURS/inputs/rgb/026.png",
+      "sha256": "c321d7ac6582a1441b15e60e9356482bdbd86b22b3c6d522f927379af15bc8ed",
+      "role": "reconstruction"
+    },
+    {
+      "path": "/home/wqz/real2sim_agent_compare_20261003/OURS/inputs/rgb/027.png",
+      "sha256": "0f379f2684664e7224067273e27d483a8ef25017d49a72161e982feb8f8d19c2",
+      "role": "reconstruction"
+    },
+    {
+      "path": "/home/wqz/real2sim_agent_compare_20261003/OURS/inputs/rgb/028.png",
+      "sha256": "7ac847c26afec3b75092214284482ead89dc74c083f8546d843ad7e1ab9112cc",
+      "role": "reconstruction"
+    },
+    {
+      "path": "/home/wqz/real2sim_agent_compare_20261003/OURS/inputs/rgb/029.png",
+      "sha256": "c572cb4a2cd1936a2b044ea0476caa3fad89006f13cb3692a9c348d846d19627",
+      "role": "reconstruction"
+    },
+    {
+      "path": "/home/wqz/real2sim_agent_compare_20261003/OURS/inputs/rgb/030.png",
+      "sha256": "51bfd696c1fdf9d4b4f9b361a8fa1af680182e3cd1034b102ebeebf50d00c0ec",
+      "role": "reconstruction"
+    },
+    {
+      "path": "/home/wqz/real2sim_agent_compare_20261003/OURS/inputs/rgb/031.png",
+      "sha256": "19992292d0304c96751a3254528fab8cf2d947aa86bf0fa32b04801233bc7561",
+      "role": "reconstruction"
+    },
+    {
+      "path": "/home/wqz/real2sim_agent_compare_20261003/OURS/inputs/rgb/032.png",
+      "sha256": "31e4ffd2e7689cbd09f9e40ca4242c905bacf540f7422a6e98fd5d604a30747f",
+      "role": "reconstruction"
+    },
+    {
+      "path": "/home/wqz/real2sim_agent_compare_20261003/OURS/inputs/rgb/033.png",
+      "sha256": "ce1d0f2a5bc2df25919c2a9ff1c63f3d7aa94c6b49682b8006983922879e8cab",
+      "role": "reconstruction"
+    },
+    {
+      "path": "/home/wqz/real2sim_agent_compare_20261003/OURS/inputs/rgb/034.png",
+      "sha256": "e9b22d9d33bb3b3ea401737a02d9f2376a4fedcc5fe22269b18dc17b1d6c0aa6",
+      "role": "reconstruction"
+    },
+    {
+      "path": "/home/wqz/real2sim_agent_compare_20261003/OURS/inputs/rgb/035.png",
+      "sha256": "86044a587b4a3f5298ee4fcf6ff6f814da7a746825992b6a8515c85b559b140e",
+      "role": "reconstruction"
+    }
+  ],
+  "provenance": {
+    "kind": "real_photograph",
+    "status": "verified",
+    "evidence": [
+      "ETH3D delivery-area real DSLR source verified by coordinator; source hashes in inputs/packet.json"
+    ]
+  },
+  "camera_observations": {
+    "path": "/home/wqz/real2sim_agent_compare_20261003/OURS/camera_observations.json",
+    "sha256": "c54d804d16498c6ce3ce4fd6d2785a39fc1a83e5689f383aa7ce7a2e8954f5eb",
+    "allow_ground_truth_pose": true,
+    "model_from_input": [
+      [
+        0.9985254456168041,
+        -0.0029571798849103935,
+        0.05420506934679546,
+        0.0
+      ],
+      [
+        0.0025512528002570685,
+        0.9999681954851007,
+        0.007556396457319363,
+        0.0
+      ],
+      [
+        -0.05422569100446581,
+        -0.007406963304842917,
+        0.998501232512854,
+        1.477518807930019
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ]
+  },
+  "physics": {
+    "hinges": false,
+    "cloth": false,
+    "soft_bodies": false
+  },
+  "stages": {
+    "preprocess": {
+      "parameters": {
+        "max_edge": 1200
+      }
+    },
+    "build_geometry": {
+      "command": [
+        "/home/wqz/real2sim_fresh_20260921/runtime/venv/bin/python",
+        "-m",
+        "r2s.stage_worker",
+        "{packet}"
+      ],
+      "parameters": {
+        "blender": "/home/wqz/real2sim_fresh_20260921/runtime/blender-4.5.3-linux-x64/blender",
+        "threads": 2,
+        "cuda_visible_devices": "",
+        "inspection_resolution": [
+          384,
+          384
+        ]
+      },
+      "timeout_seconds": 2100
+    },
+    "build_render": {
+      "command": [
+        "/home/wqz/real2sim_fresh_20260921/runtime/venv/bin/python",
+        "-m",
+        "r2s.stage_worker",
+        "{packet}"
+      ],
+      "parameters": {
+        "blender": "/home/wqz/real2sim_fresh_20260921/runtime/blender-4.5.3-linux-x64/blender",
+        "threads": 2,
+        "cuda_visible_devices": "",
+        "inspection_resolution": [
+          400,
+          400
+        ]
+      },
+      "timeout_seconds": 1500
+    },
+    "export": {
+      "command": [
+        "/home/wqz/real2sim_fresh_20260921/runtime/venv/bin/python",
+        "-m",
+        "r2s.stage_worker",
+        "{packet}"
+      ],
+      "parameters": {
+        "blender": "/home/wqz/real2sim_fresh_20260921/runtime/blender-4.5.3-linux-x64/blender",
+        "threads": 2,
+        "cuda_visible_devices": ""
+      },
+      "timeout_seconds": 1500
+    },
+    "validate": {
+      "command": [
+        "/home/wqz/real2sim_fresh_20260921/runtime/venv/bin/python",
+        "-m",
+        "r2s.stage_worker",
+        "{packet}"
+      ],
+      "parameters": {
+        "blender": "/home/wqz/real2sim_fresh_20260921/runtime/blender-4.5.3-linux-x64/blender",
+        "threads": 2,
+        "cuda_visible_devices": ""
+      },
+      "timeout_seconds": 1500
+    },
+    "report": {
+      "command": [
+        "/home/wqz/real2sim_fresh_20260921/runtime/venv/bin/python",
+        "-m",
+        "r2s.stage_worker",
+        "{packet}"
+      ],
+      "parameters": {
+        "blender": "/home/wqz/real2sim_fresh_20260921/runtime/blender-4.5.3-linux-x64/blender",
+        "threads": 2,
+        "cuda_visible_devices": ""
+      },
+      "timeout_seconds": 1500
+    }
+  }
+}

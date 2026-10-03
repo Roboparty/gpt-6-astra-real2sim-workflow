@@ -1,0 +1,3033 @@
+{
+  "schema": "real2sim.camera-observations/1",
+  "units": "m",
+  "up_axis": "Z",
+  "camera_frame": "opencv",
+  "pixel_coordinates": "integer_centers",
+  "frames": [
+    {
+      "input_index": 0,
+      "frame_id": "DSC_0675",
+      "image_id": 1,
+      "source_name": "dslr_images_undistorted/DSC_0675.JPG",
+      "path": "/home/wqz/real2sim_agent_compare_20261003/OURS/inputs/rgb/000.png",
+      "sha256": "e14725171523ed699d6036f7dbabcae822d432fd529ec526df4e3d326f72d50a",
+      "source_sha256": "e14725171523ed699d6036f7dbabcae822d432fd529ec526df4e3d326f72d50a",
+      "original_sha256": "593a3c7ae5de60cc3e76776744d0b169351f8ebe9494e21fb1ee287f4e23fb66",
+      "original_size": [
+        6208,
+        4135
+      ],
+      "image_size": [
+        1200,
+        799
+      ],
+      "role": "reconstruction",
+      "K": [
+        [
+          658.8769329896908,
+          0.0,
+          602.0592783505155
+        ],
+        [
+          0.0,
+          658.6909625151148,
+          398.33722611850067
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "K_raster": [
+        [
+          658.8769329896908,
+          0.0,
+          602.5592783505155
+        ],
+        [
+          0.0,
+          658.6909625151148,
+          398.83722611850067
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "T_world_camera": [
+        [
+          0.004015600576109848,
+          0.22588741136474685,
+          0.9741451392574658,
+          0.8350711261634662
+        ],
+        [
+          -0.9997817009106711,
+          0.020881356488808848,
+          -0.0007207463863297803,
+          -2.6884940970701154
+        ],
+        [
+          -0.02050427946013398,
+          -0.9739295900310871,
+          0.22592195153570135,
+          0.0315126940400523
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "distortion_model": "none",
+      "pose_source": "ground_truth",
+      "evidence": [
+        "ETH3D registered reference camera, diagnostic input; no laser geometry/depth exposed"
+      ]
+    },
+    {
+      "input_index": 1,
+      "frame_id": "DSC_0676",
+      "image_id": 2,
+      "source_name": "dslr_images_undistorted/DSC_0676.JPG",
+      "path": "/home/wqz/real2sim_agent_compare_20261003/OURS/inputs/rgb/001.png",
+      "sha256": "bcd637e9db0cb5d9bfaf855ca7848117386fd42ea11671ae8903177e87e36e78",
+      "source_sha256": "bcd637e9db0cb5d9bfaf855ca7848117386fd42ea11671ae8903177e87e36e78",
+      "original_sha256": "05ea2415ee61ba0451380e9cc266b25874aab31823cd45f769cb5dd40b1ac9c2",
+      "original_size": [
+        6208,
+        4135
+      ],
+      "image_size": [
+        1200,
+        799
+      ],
+      "role": "reconstruction",
+      "K": [
+        [
+          658.8769329896908,
+          0.0,
+          602.0592783505155
+        ],
+        [
+          0.0,
+          658.6909625151148,
+          398.33722611850067
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "K_raster": [
+        [
+          658.8769329896908,
+          0.0,
+          602.5592783505155
+        ],
+        [
+          0.0,
+          658.6909625151148,
+          398.83722611850067
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "T_world_camera": [
+        [
+          0.036378215155176995,
+          0.22248834792314853,
+          0.9742564141439114,
+          0.859236106747475
+        ],
+        [
+          -0.9991663896201544,
+          0.026169074286581155,
+          0.03133217841788284,
+          -1.957332809446885
+        ],
+        [
+          -0.018524343862882084,
+          -0.9745840726122155,
+          0.22325486354173402,
+          0.04346733335144792
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "distortion_model": "none",
+      "pose_source": "ground_truth",
+      "evidence": [
+        "ETH3D registered reference camera, diagnostic input; no laser geometry/depth exposed"
+      ]
+    },
+    {
+      "input_index": 2,
+      "frame_id": "DSC_0677",
+      "image_id": 3,
+      "source_name": "dslr_images_undistorted/DSC_0677.JPG",
+      "path": "/home/wqz/real2sim_agent_compare_20261003/OURS/inputs/rgb/002.png",
+      "sha256": "c82e19bf07b5c3059ab3ac1fc84d2b3b27efbbef0351115e2eb03d27a1433efb",
+      "source_sha256": "c82e19bf07b5c3059ab3ac1fc84d2b3b27efbbef0351115e2eb03d27a1433efb",
+      "original_sha256": "dd34e716caf258cfddc3e336a19d6954b6b2d1599bb972b4eec31eb4ac47be06",
+      "original_size": [
+        6208,
+        4135
+      ],
+      "image_size": [
+        1200,
+        799
+      ],
+      "role": "reconstruction",
+      "K": [
+        [
+          658.8769329896908,
+          0.0,
+          602.0592783505155
+        ],
+        [
+          0.0,
+          658.6909625151148,
+          398.33722611850067
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "K_raster": [
+        [
+          658.8769329896908,
+          0.0,
+          602.5592783505155
+        ],
+        [
+          0.0,
+          658.6909625151148,
+          398.83722611850067
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "T_world_camera": [
+        [
+          0.04975522816713562,
+          0.2205277039778442,
+          0.9741108504930519,
+          0.8756837668131048
+        ],
+        [
+          -0.9986566585222008,
+          0.0251123487781594,
+          0.04532381634545602,
+          -1.2594088810756678
+        ],
+        [
+          -0.014467054271994143,
+          -0.9750573838072838,
+          0.22148093060935703,
+          0.05480102737485648
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "distortion_model": "none",
+      "pose_source": "ground_truth",
+      "evidence": [
+        "ETH3D registered reference camera, diagnostic input; no laser geometry/depth exposed"
+      ]
+    },
+    {
+      "input_index": 3,
+      "frame_id": "DSC_0678",
+      "image_id": 4,
+      "source_name": "dslr_images_undistorted/DSC_0678.JPG",
+      "path": "/home/wqz/real2sim_agent_compare_20261003/OURS/inputs/rgb/003.png",
+      "sha256": "e3fdb5210f4b395d68041aef629c61047fc7e635eb95d4fbcb2fdaf5678dff78",
+      "source_sha256": "e3fdb5210f4b395d68041aef629c61047fc7e635eb95d4fbcb2fdaf5678dff78",
+      "original_sha256": "18db101088bbe568572e7aa786f6112de97255a77b0bd51808c14e7527445b3b",
+      "original_size": [
+        6208,
+        4135
+      ],
+      "image_size": [
+        1200,
+        799
+      ],
+      "role": "reconstruction",
+      "K": [
+        [
+          658.8769329896908,
+          0.0,
+          602.0592783505155
+        ],
+        [
+          0.0,
+          658.6909625151148,
+          398.33722611850067
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "K_raster": [
+        [
+          658.8769329896908,
+          0.0,
+          602.5592783505155
+        ],
+        [
+          0.0,
+          658.6909625151148,
+          398.83722611850067
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "T_world_camera": [
+        [
+          0.08521237562307102,
+          0.2181108926083331,
+          0.9721967339825152,
+          0.8573635835416833
+        ],
+        [
+          -0.9962264544471738,
+          0.03479336129760756,
+          0.07951272520312508,
+          -0.5392463137282331
+        ],
+        [
+          -0.016483400750033017,
+          -0.9753035735273456,
+          0.22025266619158893,
+          0.06571568573366804
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "distortion_model": "none",
+      "pose_source": "ground_truth",
+      "evidence": [
+        "ETH3D registered reference camera, diagnostic input; no laser geometry/depth exposed"
+      ]
+    },
+    {
+      "input_index": 4,
+      "frame_id": "DSC_0680",
+      "image_id": 6,
+      "source_name": "dslr_images_undistorted/DSC_0680.JPG",
+      "path": "/home/wqz/real2sim_agent_compare_20261003/OURS/inputs/rgb/004.png",
+      "sha256": "dde0b1e3a680c28aaeb9e1d464f72f714bc45eeaa74b58fed6b412e8fad18c65",
+      "source_sha256": "dde0b1e3a680c28aaeb9e1d464f72f714bc45eeaa74b58fed6b412e8fad18c65",
+      "original_sha256": "2fa0f34b32e31201c66ece1ebe37dc4e951a6919ac22c0190b79f8a8a5d3b0b0",
+      "original_size": [
+        6208,
+        4135
+      ],
+      "image_size": [
+        1200,
+        799
+      ],
+      "role": "reconstruction",
+      "K": [
+        [
+          658.8769329896908,
+          0.0,
+          602.0592783505155
+        ],
+        [
+          0.0,
+          658.6909625151148,
+          398.33722611850067
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "K_raster": [
+        [
+          658.8769329896908,
+          0.0,
+          602.5592783505155
+        ],
+        [
+          0.0,
+          658.6909625151148,
+          398.83722611850067
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "T_world_camera": [
+        [
+          0.021032801096987963,
+          0.22286705343281285,
+          0.9746219255548226,
+          0.8761692280629958
+        ],
+        [
+          -0.9996874113874219,
+          0.017867615609840678,
+          0.017487933723978586,
+          0.8932961372198114
+        ],
+        [
+          -0.013516685671044915,
+          -0.9746850900709391,
+          0.2231731937349902,
+          0.08737758441236654
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "distortion_model": "none",
+      "pose_source": "ground_truth",
+      "evidence": [
+        "ETH3D registered reference camera, diagnostic input; no laser geometry/depth exposed"
+      ]
+    },
+    {
+      "input_index": 5,
+      "frame_id": "DSC_0681",
+      "image_id": 7,
+      "source_name": "dslr_images_undistorted/DSC_0681.JPG",
+      "path": "/home/wqz/real2sim_agent_compare_20261003/OURS/inputs/rgb/005.png",
+      "sha256": "41f65e5ed0ad177869f7ca24f837293fabb8807b3041b4ad7998368ab7707620",
+      "source_sha256": "41f65e5ed0ad177869f7ca24f837293fabb8807b3041b4ad7998368ab7707620",
+      "original_sha256": "405057eb139756fceb724072527761e72781661f05f099a4290dc8ddd7f93572",
+      "original_size": [
+        6208,
+        4135
+      ],
+      "image_size": [
+        1200,
+        799
+      ],
+      "role": "reconstruction",
+      "K": [
+        [
+          658.8769329896908,
+          0.0,
+          602.0592783505155
+        ],
+        [
+          0.0,
+          658.6909625151148,
+          398.33722611850067
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "K_raster": [
+        [
+          658.8769329896908,
+          0.0,
+          602.5592783505155
+        ],
+        [
+          0.0,
+          658.6909625151148,
+          398.83722611850067
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "T_world_camera": [
+        [
+          0.07847210057845647,
+          0.21876497859237795,
+          0.9726170950442322,
+          0.866112329215736
+        ],
+        [
+          -0.9967977570553828,
+          0.03226369986807923,
+          0.07316614791131376,
+          1.4293521327206498
+        ],
+        [
+          -0.015374035259564964,
+          -0.9752440401316478,
+          0.22059624028423228,
+          0.09302488487065341
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "distortion_model": "none",
+      "pose_source": "ground_truth",
+      "evidence": [
+        "ETH3D registered reference camera, diagnostic input; no laser geometry/depth exposed"
+      ]
+    },
+    {
+      "input_index": 6,
+      "frame_id": "DSC_0682",
+      "image_id": 8,
+      "source_name": "dslr_images_undistorted/DSC_0682.JPG",
+      "path": "/home/wqz/real2sim_agent_compare_20261003/OURS/inputs/rgb/006.png",
+      "sha256": "3ea6a5ff48323669490de2caee6db0378e3388b6344b669ee8139d5f7b3a32ce",
+      "source_sha256": "3ea6a5ff48323669490de2caee6db0378e3388b6344b669ee8139d5f7b3a32ce",
+      "original_sha256": "883ce70de5b766bacddb5fdb959643c114c671f14e49efdc388a504050545f3a",
+      "original_size": [
+        6208,
+        4135
+      ],
+      "image_size": [
+        1200,
+        799
+      ],
+      "role": "reconstruction",
+      "K": [
+        [
+          658.8769329896908,
+          0.0,
+          602.0592783505155
+        ],
+        [
+          0.0,
+          658.6909625151148,
+          398.33722611850067
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "K_raster": [
+        [
+          658.8769329896908,
+          0.0,
+          602.5592783505155
+        ],
+        [
+          0.0,
+          658.6909625151148,
+          398.83722611850067
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "T_world_camera": [
+        [
+          0.3232553036758086,
+          0.20947852848875168,
+          0.9228351720365062,
+          0.8996114751222521
+        ],
+        [
+          -0.9463008173140128,
+          0.06685927357389994,
+          0.31629827803515137,
+          2.188155352724063
+        ],
+        [
+          0.004557608615523843,
+          -0.9755247734626517,
+          0.21984231750131752,
+          0.09984127204283988
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "distortion_model": "none",
+      "pose_source": "ground_truth",
+      "evidence": [
+        "ETH3D registered reference camera, diagnostic input; no laser geometry/depth exposed"
+      ]
+    },
+    {
+      "input_index": 7,
+      "frame_id": "DSC_0683",
+      "image_id": 9,
+      "source_name": "dslr_images_undistorted/DSC_0683.JPG",
+      "path": "/home/wqz/real2sim_agent_compare_20261003/OURS/inputs/rgb/007.png",
+      "sha256": "4cce2504a70458f522d1fcd476a376b0a9f30c6d7ee9145a05c9f41ca8cd625b",
+      "source_sha256": "4cce2504a70458f522d1fcd476a376b0a9f30c6d7ee9145a05c9f41ca8cd625b",
+      "original_sha256": "8e74ed969c860eec5a5cedafae6b077809a1053982208e290ca9c0ffe1b0af5d",
+      "original_size": [
+        6208,
+        4135
+      ],
+      "image_size": [
+        1200,
+        799
+      ],
+      "role": "reconstruction",
+      "K": [
+        [
+          658.8769329896908,
+          0.0,
+          602.0592783505155
+        ],
+        [
+          0.0,
+          658.6909625151148,
+          398.33722611850067
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "K_raster": [
+        [
+          658.8769329896908,
+          0.0,
+          602.5592783505155
+        ],
+        [
+          0.0,
+          658.6909625151148,
+          398.83722611850067
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "T_world_camera": [
+        [
+          0.3425828563916673,
+          0.2094318683035552,
+          0.91584675521913,
+          0.9600253493017676
+        ],
+        [
+          -0.9394826931785873,
+          0.07321184819605087,
+          0.3346823785346739,
+          3.0823847304542027
+        ],
+        [
+          0.0030423222108457346,
+          -0.9750786213545044,
+          0.2218387397479634,
+          0.10974593292526569
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "distortion_model": "none",
+      "pose_source": "ground_truth",
+      "evidence": [
+        "ETH3D registered reference camera, diagnostic input; no laser geometry/depth exposed"
+      ]
+    },
+    {
+      "input_index": 8,
+      "frame_id": "DSC_0685",
+      "image_id": 11,
+      "source_name": "dslr_images_undistorted/DSC_0685.JPG",
+      "path": "/home/wqz/real2sim_agent_compare_20261003/OURS/inputs/rgb/008.png",
+      "sha256": "9684fbf04b95fe4465757e269bb3bb6a4924c406ac7511acbf1e825597b4962b",
+      "source_sha256": "9684fbf04b95fe4465757e269bb3bb6a4924c406ac7511acbf1e825597b4962b",
+      "original_sha256": "fe0af689680a83480c15129f2756ff90110db4ff4f79f2d0d76b488bd1e2266e",
+      "original_size": [
+        6208,
+        4135
+      ],
+      "image_size": [
+        1200,
+        799
+      ],
+      "role": "reconstruction",
+      "K": [
+        [
+          658.8769329896908,
+          0.0,
+          602.0592783505155
+        ],
+        [
+          0.0,
+          658.6909625151148,
+          398.33722611850067
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "K_raster": [
+        [
+          658.8769329896908,
+          0.0,
+          602.5592783505155
+        ],
+        [
+          0.0,
+          658.6909625151148,
+          398.83722611850067
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "T_world_camera": [
+        [
+          0.7499801325286436,
+          0.008259459194897133,
+          0.6614087859607898,
+          0.8427970523279318
+        ],
+        [
+          -0.6610143034736724,
+          -0.027356943695319224,
+          0.7498744483144275,
+          4.4368617416244955
+        ],
+        [
+          0.024287680324267848,
+          -0.9995916060899366,
+          -0.015057543591410047,
+          0.10142744155835981
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "distortion_model": "none",
+      "pose_source": "ground_truth",
+      "evidence": [
+        "ETH3D registered reference camera, diagnostic input; no laser geometry/depth exposed"
+      ]
+    },
+    {
+      "input_index": 9,
+      "frame_id": "DSC_0686",
+      "image_id": 12,
+      "source_name": "dslr_images_undistorted/DSC_0686.JPG",
+      "path": "/home/wqz/real2sim_agent_compare_20261003/OURS/inputs/rgb/009.png",
+      "sha256": "41315267c887821ef94034b2470e650c240284c304c1bd7a37e2f1a1060f1856",
+      "source_sha256": "41315267c887821ef94034b2470e650c240284c304c1bd7a37e2f1a1060f1856",
+      "original_sha256": "8f67e30a3b39e174dbe42cae2e4ffa9f4cda01885fdb75b488a76d6178315eef",
+      "original_size": [
+        6208,
+        4135
+      ],
+      "image_size": [
+        1200,
+        799
+      ],
+      "role": "reconstruction",
+      "K": [
+        [
+          658.8769329896908,
+          0.0,
+          602.0592783505155
+        ],
+        [
+          0.0,
+          658.6909625151148,
+          398.33722611850067
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "K_raster": [
+        [
+          658.8769329896908,
+          0.0,
+          602.5592783505155
+        ],
+        [
+          0.0,
+          658.6909625151148,
+          398.83722611850067
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "T_world_camera": [
+        [
+          0.885293249535022,
+          0.020777001860227365,
+          0.46456880924295946,
+          0.44645892149740907
+        ],
+        [
+          -0.4636383546566275,
+          -0.037881815720173524,
+          0.8852143492561776,
+          4.753636141058221
+        ],
+        [
+          0.03599081020227783,
+          -0.9990662061302258,
+          -0.02390350078002581,
+          0.08049895756170367
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "distortion_model": "none",
+      "pose_source": "ground_truth",
+      "evidence": [
+        "ETH3D registered reference camera, diagnostic input; no laser geometry/depth exposed"
+      ]
+    },
+    {
+      "input_index": 10,
+      "frame_id": "DSC_0687",
+      "image_id": 13,
+      "source_name": "dslr_images_undistorted/DSC_0687.JPG",
+      "path": "/home/wqz/real2sim_agent_compare_20261003/OURS/inputs/rgb/010.png",
+      "sha256": "9950ab16a0500d5b7ea2af03243aa1f7c857b8a6713357723b15f718b257a955",
+      "source_sha256": "9950ab16a0500d5b7ea2af03243aa1f7c857b8a6713357723b15f718b257a955",
+      "original_sha256": "404e2e694b965717ff56053dce8f0b0e0086f9003bdafc3208876debedbd35f2",
+      "original_size": [
+        6208,
+        4135
+      ],
+      "image_size": [
+        1200,
+        799
+      ],
+      "role": "reconstruction",
+      "K": [
+        [
+          658.8769329896908,
+          0.0,
+          602.0592783505155
+        ],
+        [
+          0.0,
+          658.6909625151148,
+          398.33722611850067
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "K_raster": [
+        [
+          658.8769329896908,
+          0.0,
+          602.5592783505155
+        ],
+        [
+          0.0,
+          658.6909625151148,
+          398.83722611850067
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "T_world_camera": [
+        [
+          0.9482202630785461,
+          0.03611945460539851,
+          0.3155530346649548,
+          -0.08721160930967065
+        ],
+        [
+          -0.3137324585716728,
+          -0.04832431523617893,
+          0.9482809209277221,
+          4.834704617753667
+        ],
+        [
+          0.04950027399749652,
+          -0.9981784136896389,
+          -0.0344902496107207,
+          0.05227089984850508
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "distortion_model": "none",
+      "pose_source": "ground_truth",
+      "evidence": [
+        "ETH3D registered reference camera, diagnostic input; no laser geometry/depth exposed"
+      ]
+    },
+    {
+      "input_index": 11,
+      "frame_id": "DSC_0688",
+      "image_id": 14,
+      "source_name": "dslr_images_undistorted/DSC_0688.JPG",
+      "path": "/home/wqz/real2sim_agent_compare_20261003/OURS/inputs/rgb/011.png",
+      "sha256": "c1139b0cc408999f938f7e24f3ff4e917e96d7d28a49644f72b8ba0b4b1f61ab",
+      "source_sha256": "c1139b0cc408999f938f7e24f3ff4e917e96d7d28a49644f72b8ba0b4b1f61ab",
+      "original_sha256": "e93c683a3a9b95d3351253fd5fc75394f45b367711ace078347b05bb74075808",
+      "original_size": [
+        6208,
+        4135
+      ],
+      "image_size": [
+        1200,
+        799
+      ],
+      "role": "reconstruction",
+      "K": [
+        [
+          658.8769329896908,
+          0.0,
+          602.0592783505155
+        ],
+        [
+          0.0,
+          658.6909625151148,
+          398.33722611850067
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "K_raster": [
+        [
+          658.8769329896908,
+          0.0,
+          602.5592783505155
+        ],
+        [
+          0.0,
+          658.6909625151148,
+          398.83722611850067
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "T_world_camera": [
+        [
+          0.9382261903464031,
+          0.03560453007403371,
+          0.3441858991682875,
+          -0.6637633236743055
+        ],
+        [
+          -0.34240057474161717,
+          -0.0480144826511495,
+          0.9383264122214365,
+          4.704162542427387
+        ],
+        [
+          0.049934578847584316,
+          -0.9982118647331086,
+          -0.0328574335784871,
+          0.018143412470216003
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "distortion_model": "none",
+      "pose_source": "ground_truth",
+      "evidence": [
+        "ETH3D registered reference camera, diagnostic input; no laser geometry/depth exposed"
+      ]
+    },
+    {
+      "input_index": 12,
+      "frame_id": "DSC_0690",
+      "image_id": 16,
+      "source_name": "dslr_images_undistorted/DSC_0690.JPG",
+      "path": "/home/wqz/real2sim_agent_compare_20261003/OURS/inputs/rgb/012.png",
+      "sha256": "61316c7eccdcc97ca0305888d2d4c83ee57f8edba74d77b777f7d228b8531e4f",
+      "source_sha256": "61316c7eccdcc97ca0305888d2d4c83ee57f8edba74d77b777f7d228b8531e4f",
+      "original_sha256": "64f9d7f269ff7e6092b6a557913c20764a4e32fbf9e79a2ef66f30c3fdbe02ee",
+      "original_size": [
+        6208,
+        4135
+      ],
+      "image_size": [
+        1200,
+        799
+      ],
+      "role": "reconstruction",
+      "K": [
+        [
+          658.8769329896908,
+          0.0,
+          602.0592783505155
+        ],
+        [
+          0.0,
+          658.6909625151148,
+          398.33722611850067
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "K_raster": [
+        [
+          658.8769329896908,
+          0.0,
+          602.5592783505155
+        ],
+        [
+          0.0,
+          658.6909625151148,
+          398.83722611850067
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "T_world_camera": [
+        [
+          0.9717601376232475,
+          0.06525669184032425,
+          -0.22676816155823956,
+          -1.5232228545665234
+        ],
+        [
+          0.2301168588186783,
+          -0.04934113096838682,
+          0.9719113560825314,
+          4.59503678534149
+        ],
+        [
+          0.05223472230108402,
+          -0.9966478901622265,
+          -0.06296440916352004,
+          -0.033611024806828205
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "distortion_model": "none",
+      "pose_source": "ground_truth",
+      "evidence": [
+        "ETH3D registered reference camera, diagnostic input; no laser geometry/depth exposed"
+      ]
+    },
+    {
+      "input_index": 13,
+      "frame_id": "DSC_0691",
+      "image_id": 17,
+      "source_name": "dslr_images_undistorted/DSC_0691.JPG",
+      "path": "/home/wqz/real2sim_agent_compare_20261003/OURS/inputs/rgb/013.png",
+      "sha256": "9e08342c9cf69273bb9b0f3cc809c2e24373a047aaa448318f93d8fbd7085048",
+      "source_sha256": "9e08342c9cf69273bb9b0f3cc809c2e24373a047aaa448318f93d8fbd7085048",
+      "original_sha256": "d111e4291f7d5d0e400b68018974f6ed7c1ad07a9e79d8a228a084cb0eae231e",
+      "original_size": [
+        6208,
+        4135
+      ],
+      "image_size": [
+        1200,
+        799
+      ],
+      "role": "reconstruction",
+      "K": [
+        [
+          658.8769329896908,
+          0.0,
+          602.0592783505155
+        ],
+        [
+          0.0,
+          658.6909625151148,
+          398.33722611850067
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "K_raster": [
+        [
+          658.8769329896908,
+          0.0,
+          602.5592783505155
+        ],
+        [
+          0.0,
+          658.6909625151148,
+          398.83722611850067
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "T_world_camera": [
+        [
+          0.8222167479316616,
+          0.08406947459503943,
+          -0.5629315614370872,
+          -1.9197545569121488
+        ],
+        [
+          0.5673178473001045,
+          -0.041228281753446956,
+          0.8224662235730014,
+          4.386299435080987
+        ],
+        [
+          0.045935602265112375,
+          -0.9956066252416027,
+          -0.08159269709703798,
+          -0.05757729671643563
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "distortion_model": "none",
+      "pose_source": "ground_truth",
+      "evidence": [
+        "ETH3D registered reference camera, diagnostic input; no laser geometry/depth exposed"
+      ]
+    },
+    {
+      "input_index": 14,
+      "frame_id": "DSC_0692",
+      "image_id": 18,
+      "source_name": "dslr_images_undistorted/DSC_0692.JPG",
+      "path": "/home/wqz/real2sim_agent_compare_20261003/OURS/inputs/rgb/014.png",
+      "sha256": "2b64b82222e4c0ed01eaa8019b89970acb9e8a8db02aa833af3391d7a5100294",
+      "source_sha256": "2b64b82222e4c0ed01eaa8019b89970acb9e8a8db02aa833af3391d7a5100294",
+      "original_sha256": "616f65faa7d98ae27480d8078eea31da25517472a045d1be78f08479e94008b0",
+      "original_size": [
+        6208,
+        4135
+      ],
+      "image_size": [
+        1200,
+        799
+      ],
+      "role": "reconstruction",
+      "K": [
+        [
+          658.8769329896908,
+          0.0,
+          602.0592783505155
+        ],
+        [
+          0.0,
+          658.6909625151148,
+          398.33722611850067
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "K_raster": [
+        [
+          658.8769329896908,
+          0.0,
+          602.5592783505155
+        ],
+        [
+          0.0,
+          658.6909625151148,
+          398.83722611850067
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "T_world_camera": [
+        [
+          0.5729643239106811,
+          0.10104425764199258,
+          -0.8133276962720221,
+          -2.1369454453990073
+        ],
+        [
+          0.8190125076410467,
+          -0.03365741991343117,
+          0.5727876486205821,
+          3.874270127657
+        ],
+        [
+          0.03050239094071808,
+          -0.994312443893945,
+          -0.10204101167937332,
+          -0.07234435129601469
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "distortion_model": "none",
+      "pose_source": "ground_truth",
+      "evidence": [
+        "ETH3D registered reference camera, diagnostic input; no laser geometry/depth exposed"
+      ]
+    },
+    {
+      "input_index": 15,
+      "frame_id": "DSC_0693",
+      "image_id": 19,
+      "source_name": "dslr_images_undistorted/DSC_0693.JPG",
+      "path": "/home/wqz/real2sim_agent_compare_20261003/OURS/inputs/rgb/015.png",
+      "sha256": "52081c3fcc23b585402651a841a5b32d812f5ba5cba4ce72ce60b155ecbd4fd9",
+      "source_sha256": "52081c3fcc23b585402651a841a5b32d812f5ba5cba4ce72ce60b155ecbd4fd9",
+      "original_sha256": "923a9fab866e05fc8cdc32742a9e1192e10fe2a898f3d6db6bd4edfd5c93ed8e",
+      "original_size": [
+        6208,
+        4135
+      ],
+      "image_size": [
+        1200,
+        799
+      ],
+      "role": "reconstruction",
+      "K": [
+        [
+          658.8769329896908,
+          0.0,
+          602.0592783505155
+        ],
+        [
+          0.0,
+          658.6909625151148,
+          398.33722611850067
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "K_raster": [
+        [
+          658.8769329896908,
+          0.0,
+          602.5592783505155
+        ],
+        [
+          0.0,
+          658.6909625151148,
+          398.83722611850067
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "T_world_camera": [
+        [
+          0.21999548761835522,
+          0.1115311009648407,
+          -0.9691041218285749,
+          -2.0191819417288097
+        ],
+        [
+          0.9753366338635376,
+          -0.006918355379628996,
+          0.220614113334993,
+          3.1758381917023804
+        ],
+        [
+          0.017900728233960526,
+          -0.9937368614861845,
+          -0.11030237555140068,
+          -0.07106575086216171
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "distortion_model": "none",
+      "pose_source": "ground_truth",
+      "evidence": [
+        "ETH3D registered reference camera, diagnostic input; no laser geometry/depth exposed"
+      ]
+    },
+    {
+      "input_index": 16,
+      "frame_id": "DSC_0695",
+      "image_id": 21,
+      "source_name": "dslr_images_undistorted/DSC_0695.JPG",
+      "path": "/home/wqz/real2sim_agent_compare_20261003/OURS/inputs/rgb/016.png",
+      "sha256": "eaf34c6a5e2d1388eddf2d7d6875a475b959cf05a7e0fc6add7bb13b9b971da6",
+      "source_sha256": "eaf34c6a5e2d1388eddf2d7d6875a475b959cf05a7e0fc6add7bb13b9b971da6",
+      "original_sha256": "7537680fb427d441c8633c887ad2354320c2e9174950685814916f5ce49eece3",
+      "original_size": [
+        6208,
+        4135
+      ],
+      "image_size": [
+        1200,
+        799
+      ],
+      "role": "reconstruction",
+      "K": [
+        [
+          658.8769329896908,
+          0.0,
+          602.0592783505155
+        ],
+        [
+          0.0,
+          658.6909625151148,
+          398.33722611850067
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "K_raster": [
+        [
+          658.8769329896908,
+          0.0,
+          602.5592783505155
+        ],
+        [
+          0.0,
+          658.6909625151148,
+          398.83722611850067
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "T_world_camera": [
+        [
+          -0.11558636300531606,
+          0.11411245893695798,
+          -0.9867209024858877,
+          -1.8190212507677952
+        ],
+        [
+          0.9932817374474997,
+          0.007694026712874116,
+          -0.1154651116407808,
+          1.923698089038917
+        ],
+        [
+          -0.005584150828882164,
+          -0.9934380447055079,
+          -0.1142351460419149,
+          -0.07212063811754943
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "distortion_model": "none",
+      "pose_source": "ground_truth",
+      "evidence": [
+        "ETH3D registered reference camera, diagnostic input; no laser geometry/depth exposed"
+      ]
+    },
+    {
+      "input_index": 17,
+      "frame_id": "DSC_0696",
+      "image_id": 22,
+      "source_name": "dslr_images_undistorted/DSC_0696.JPG",
+      "path": "/home/wqz/real2sim_agent_compare_20261003/OURS/inputs/rgb/017.png",
+      "sha256": "1235090c5e37154e47a896055d0a00c99a3d1b89ca469dcfc3d099ce597488e7",
+      "source_sha256": "1235090c5e37154e47a896055d0a00c99a3d1b89ca469dcfc3d099ce597488e7",
+      "original_sha256": "3bb46e225b4dc70c958b3e1c3a7dcf8630797e7940da795987d24e4fa698cc64",
+      "original_size": [
+        6208,
+        4135
+      ],
+      "image_size": [
+        1200,
+        799
+      ],
+      "role": "reconstruction",
+      "K": [
+        [
+          658.8769329896908,
+          0.0,
+          602.0592783505155
+        ],
+        [
+          0.0,
+          658.6909625151148,
+          398.33722611850067
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "K_raster": [
+        [
+          658.8769329896908,
+          0.0,
+          602.5592783505155
+        ],
+        [
+          0.0,
+          658.6909625151148,
+          398.83722611850067
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "T_world_camera": [
+        [
+          -0.14915742644715627,
+          0.11468387796048556,
+          -0.9821403516155957,
+          -1.6395474960517205
+        ],
+        [
+          0.9887761132562126,
+          0.00866606450753669,
+          -0.14915326741271476,
+          1.1613935653132903
+        ],
+        [
+          -0.008594183474811947,
+          -0.9933642370560236,
+          -0.11468928698228802,
+          -0.06887314352705731
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "distortion_model": "none",
+      "pose_source": "ground_truth",
+      "evidence": [
+        "ETH3D registered reference camera, diagnostic input; no laser geometry/depth exposed"
+      ]
+    },
+    {
+      "input_index": 18,
+      "frame_id": "DSC_0697",
+      "image_id": 23,
+      "source_name": "dslr_images_undistorted/DSC_0697.JPG",
+      "path": "/home/wqz/real2sim_agent_compare_20261003/OURS/inputs/rgb/018.png",
+      "sha256": "6128fc349db933c11fb0dcb8b0a33e44d324e1a16c46d8a76b4a5a4e5544267c",
+      "source_sha256": "6128fc349db933c11fb0dcb8b0a33e44d324e1a16c46d8a76b4a5a4e5544267c",
+      "original_sha256": "5bfa1e7cd00ddab1671c85e53a7f4f4d20b909d5bda76f34d401886addff0263",
+      "original_size": [
+        6208,
+        4135
+      ],
+      "image_size": [
+        1200,
+        799
+      ],
+      "role": "reconstruction",
+      "K": [
+        [
+          658.8769329896908,
+          0.0,
+          602.0592783505155
+        ],
+        [
+          0.0,
+          658.6909625151148,
+          398.33722611850067
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "K_raster": [
+        [
+          658.8769329896908,
+          0.0,
+          602.5592783505155
+        ],
+        [
+          0.0,
+          658.6909625151148,
+          398.83722611850067
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "T_world_camera": [
+        [
+          -0.30020103486845023,
+          0.11337453818831131,
+          -0.9471143292942511,
+          -1.5250435358559913
+        ],
+        [
+          0.9538102958489623,
+          0.024028558931786348,
+          -0.2994470702614686,
+          0.4086440265302391
+        ],
+        [
+          -0.011191880826150568,
+          -0.9932617190077595,
+          -0.11535120006885252,
+          -0.07184869023441376
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "distortion_model": "none",
+      "pose_source": "ground_truth",
+      "evidence": [
+        "ETH3D registered reference camera, diagnostic input; no laser geometry/depth exposed"
+      ]
+    },
+    {
+      "input_index": 19,
+      "frame_id": "DSC_0698",
+      "image_id": 24,
+      "source_name": "dslr_images_undistorted/DSC_0698.JPG",
+      "path": "/home/wqz/real2sim_agent_compare_20261003/OURS/inputs/rgb/019.png",
+      "sha256": "704da47cb748b67c070d85196a90080ad7692e6d3f6da4e613462f2c23424e01",
+      "source_sha256": "704da47cb748b67c070d85196a90080ad7692e6d3f6da4e613462f2c23424e01",
+      "original_sha256": "111badc1820ccbcbd6229d6e5cbc89e2e752e16f9d37fa92a4b2465fb749733a",
+      "original_size": [
+        6208,
+        4135
+      ],
+      "image_size": [
+        1200,
+        799
+      ],
+      "role": "reconstruction",
+      "K": [
+        [
+          658.8769329896908,
+          0.0,
+          602.0592783505155
+        ],
+        [
+          0.0,
+          658.6909625151148,
+          398.33722611850067
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "K_raster": [
+        [
+          658.8769329896908,
+          0.0,
+          602.5592783505155
+        ],
+        [
+          0.0,
+          658.6909625151148,
+          398.83722611850067
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "T_world_camera": [
+        [
+          -0.121990795110996,
+          0.11378916443321613,
+          -0.9859869532431842,
+          -1.372226907946026
+        ],
+        [
+          0.9925311191089982,
+          0.013512501231614382,
+          -0.12124104053786723,
+          -0.38440961379566074
+        ],
+        [
+          -0.00047276677776334364,
+          -0.9934130250646283,
+          -0.11458768748656079,
+          -0.0725209800890374
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "distortion_model": "none",
+      "pose_source": "ground_truth",
+      "evidence": [
+        "ETH3D registered reference camera, diagnostic input; no laser geometry/depth exposed"
+      ]
+    },
+    {
+      "input_index": 20,
+      "frame_id": "DSC_0700",
+      "image_id": 26,
+      "source_name": "dslr_images_undistorted/DSC_0700.JPG",
+      "path": "/home/wqz/real2sim_agent_compare_20261003/OURS/inputs/rgb/020.png",
+      "sha256": "351bcfa6c3f8226bba97c423b63322b4231ad874f07a3bb3d5e77849805fa1a5",
+      "source_sha256": "351bcfa6c3f8226bba97c423b63322b4231ad874f07a3bb3d5e77849805fa1a5",
+      "original_sha256": "9ab400ebc1f1889bfe96c295d12ab7390f84d2d25f0058dca7463b67e507ce75",
+      "original_size": [
+        6208,
+        4135
+      ],
+      "image_size": [
+        1200,
+        799
+      ],
+      "role": "reconstruction",
+      "K": [
+        [
+          658.8769329896908,
+          0.0,
+          602.0592783505155
+        ],
+        [
+          0.0,
+          658.6909625151148,
+          398.33722611850067
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "K_raster": [
+        [
+          658.8769329896908,
+          0.0,
+          602.5592783505155
+        ],
+        [
+          0.0,
+          658.6909625151148,
+          398.83722611850067
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "T_world_camera": [
+        [
+          -0.20847653564268656,
+          0.10704672917158846,
+          -0.9721514963523374,
+          -1.3456185921870563
+        ],
+        [
+          0.9780189757039744,
+          0.018699949178473077,
+          -0.20767569685370424,
+          -1.774011995223316
+        ],
+        [
+          -0.004051820501054117,
+          -0.9940781205088399,
+          -0.10859223303828001,
+          -0.08990404780706385
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "distortion_model": "none",
+      "pose_source": "ground_truth",
+      "evidence": [
+        "ETH3D registered reference camera, diagnostic input; no laser geometry/depth exposed"
+      ]
+    },
+    {
+      "input_index": 21,
+      "frame_id": "DSC_0701",
+      "image_id": 27,
+      "source_name": "dslr_images_undistorted/DSC_0701.JPG",
+      "path": "/home/wqz/real2sim_agent_compare_20261003/OURS/inputs/rgb/021.png",
+      "sha256": "2d21e9dbb56f8773ebee5659cd763a5185e4d60ec3a2724a5bf10b4f6ed46590",
+      "source_sha256": "2d21e9dbb56f8773ebee5659cd763a5185e4d60ec3a2724a5bf10b4f6ed46590",
+      "original_sha256": "c9bf2e69264664b01270eeae47247822802af6b6d3d5eb3a19cf8eed86d9f11a",
+      "original_size": [
+        6208,
+        4135
+      ],
+      "image_size": [
+        1200,
+        799
+      ],
+      "role": "reconstruction",
+      "K": [
+        [
+          658.8769329896908,
+          0.0,
+          602.0592783505155
+        ],
+        [
+          0.0,
+          658.6909625151148,
+          398.33722611850067
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "K_raster": [
+        [
+          658.8769329896908,
+          0.0,
+          602.5592783505155
+        ],
+        [
+          0.0,
+          658.6909625151148,
+          398.83722611850067
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "T_world_camera": [
+        [
+          -0.4278832217283043,
+          0.10930187374020595,
+          -0.8972006737404333,
+          -1.077566820692002
+        ],
+        [
+          0.9037130163356504,
+          0.035494465340692824,
+          -0.42666488844958816,
+          -2.5248537822332233
+        ],
+        [
+          -0.014789613548969899,
+          -0.9933746741925017,
+          -0.11396501219239916,
+          -0.0872704193089282
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "distortion_model": "none",
+      "pose_source": "ground_truth",
+      "evidence": [
+        "ETH3D registered reference camera, diagnostic input; no laser geometry/depth exposed"
+      ]
+    },
+    {
+      "input_index": 22,
+      "frame_id": "DSC_0702",
+      "image_id": 28,
+      "source_name": "dslr_images_undistorted/DSC_0702.JPG",
+      "path": "/home/wqz/real2sim_agent_compare_20261003/OURS/inputs/rgb/022.png",
+      "sha256": "fe09a82412c568d6bbc59388cd11424bce114af910163ddfaf327f3254fffcc3",
+      "source_sha256": "fe09a82412c568d6bbc59388cd11424bce114af910163ddfaf327f3254fffcc3",
+      "original_sha256": "b971bec10b4637bee4e1bc2cf6fe818e1e1d2d91291204004fa3ff4fa0a910a0",
+      "original_size": [
+        6208,
+        4135
+      ],
+      "image_size": [
+        1200,
+        799
+      ],
+      "role": "reconstruction",
+      "K": [
+        [
+          658.8769329896908,
+          0.0,
+          602.0592783505155
+        ],
+        [
+          0.0,
+          658.6909625151148,
+          398.33722611850067
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "K_raster": [
+        [
+          658.8769329896908,
+          0.0,
+          602.5592783505155
+        ],
+        [
+          0.0,
+          658.6909625151148,
+          398.83722611850067
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "T_world_camera": [
+        [
+          -0.4551726760058882,
+          0.10386560707043116,
+          -0.8843244713822693,
+          -0.8503810287258804
+        ],
+        [
+          0.890271553775122,
+          0.03601102900310139,
+          -0.45400414792044397,
+          -3.1579549108813207
+        ],
+        [
+          -0.015309982249151534,
+          -0.9939392041055776,
+          -0.10885983182745633,
+          -0.08462618371555086
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "distortion_model": "none",
+      "pose_source": "ground_truth",
+      "evidence": [
+        "ETH3D registered reference camera, diagnostic input; no laser geometry/depth exposed"
+      ]
+    },
+    {
+      "input_index": 23,
+      "frame_id": "DSC_0703",
+      "image_id": 29,
+      "source_name": "dslr_images_undistorted/DSC_0703.JPG",
+      "path": "/home/wqz/real2sim_agent_compare_20261003/OURS/inputs/rgb/023.png",
+      "sha256": "4bf4471169f97fab050445862c22b7de214d456fdbc0f555d418b21bfd82b384",
+      "source_sha256": "4bf4471169f97fab050445862c22b7de214d456fdbc0f555d418b21bfd82b384",
+      "original_sha256": "4b56e242d7a5e2c1e757d5981b7b369d62873018f3c8ad6f0865d715edf13e19",
+      "original_size": [
+        6208,
+        4135
+      ],
+      "image_size": [
+        1200,
+        799
+      ],
+      "role": "reconstruction",
+      "K": [
+        [
+          658.8769329896908,
+          0.0,
+          602.0592783505155
+        ],
+        [
+          0.0,
+          658.6909625151148,
+          398.33722611850067
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "K_raster": [
+        [
+          658.8769329896908,
+          0.0,
+          602.5592783505155
+        ],
+        [
+          0.0,
+          658.6909625151148,
+          398.83722611850067
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "T_world_camera": [
+        [
+          -0.86654881925776,
+          0.08622988967375361,
+          -0.4915867674885428,
+          -0.30245927575728726
+        ],
+        [
+          0.49706913846165707,
+          0.06051235478169078,
+          -0.8655983632769653,
+          -3.1315689849558654
+        ],
+        [
+          -0.04489337848690314,
+          -0.9944358506437846,
+          -0.09529912655635721,
+          -0.05276738570340944
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "distortion_model": "none",
+      "pose_source": "ground_truth",
+      "evidence": [
+        "ETH3D registered reference camera, diagnostic input; no laser geometry/depth exposed"
+      ]
+    },
+    {
+      "input_index": 24,
+      "frame_id": "DSC_0705",
+      "image_id": 31,
+      "source_name": "dslr_images_undistorted/DSC_0705.JPG",
+      "path": "/home/wqz/real2sim_agent_compare_20261003/OURS/inputs/rgb/024.png",
+      "sha256": "e65e9f1e77619f0811a2f0ae8611f0c0ad56070e2e32a8c8b582778f68a60591",
+      "source_sha256": "e65e9f1e77619f0811a2f0ae8611f0c0ad56070e2e32a8c8b582778f68a60591",
+      "original_sha256": "7039da83502e933df1baff2ee5db8095fa7ee48dd1d762d8cbac8bd766678c6f",
+      "original_size": [
+        6208,
+        4135
+      ],
+      "image_size": [
+        1200,
+        799
+      ],
+      "role": "reconstruction",
+      "K": [
+        [
+          658.8769329896908,
+          0.0,
+          602.0592783505155
+        ],
+        [
+          0.0,
+          658.6909625151148,
+          398.33722611850067
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "K_raster": [
+        [
+          658.8769329896908,
+          0.0,
+          602.5592783505155
+        ],
+        [
+          0.0,
+          658.6909625151148,
+          398.83722611850067
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "T_world_camera": [
+        [
+          -0.9972438320838091,
+          0.07114535383248101,
+          -0.021049418016922176,
+          1.075722894888233
+        ],
+        [
+          0.026092846584448732,
+          0.07072001580703949,
+          -0.9971548739896793,
+          -3.1392920864562885
+        ],
+        [
+          -0.06945432116089299,
+          -0.9949557869535227,
+          -0.07238148437118684,
+          0.022786561206529665
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "distortion_model": "none",
+      "pose_source": "ground_truth",
+      "evidence": [
+        "ETH3D registered reference camera, diagnostic input; no laser geometry/depth exposed"
+      ]
+    },
+    {
+      "input_index": 25,
+      "frame_id": "DSC_0706",
+      "image_id": 32,
+      "source_name": "dslr_images_undistorted/DSC_0706.JPG",
+      "path": "/home/wqz/real2sim_agent_compare_20261003/OURS/inputs/rgb/025.png",
+      "sha256": "b31706c1258e174010467f7f7a8cef30836be72ad1e3f056a18a8d4f6d401608",
+      "source_sha256": "b31706c1258e174010467f7f7a8cef30836be72ad1e3f056a18a8d4f6d401608",
+      "original_sha256": "b18ae18f95697fc8f2def11c6ee34a12cc7e5936856fb5fca9e7201c5ea14011",
+      "original_size": [
+        6208,
+        4135
+      ],
+      "image_size": [
+        1200,
+        799
+      ],
+      "role": "reconstruction",
+      "K": [
+        [
+          658.8769329896908,
+          0.0,
+          602.0592783505155
+        ],
+        [
+          0.0,
+          658.6909625151148,
+          398.33722611850067
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "K_raster": [
+        [
+          658.8769329896908,
+          0.0,
+          602.5592783505155
+        ],
+        [
+          0.0,
+          658.6909625151148,
+          398.83722611850067
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "T_world_camera": [
+        [
+          -0.8767198232086498,
+          0.035993410427241315,
+          0.47965281819125205,
+          1.5210019755588762
+        ],
+        [
+          -0.47704826358307645,
+          0.06251906262585194,
+          -0.8766506265444386,
+          -2.5811957340872205
+        ],
+        [
+          -0.06154109038167747,
+          -0.997394526360658,
+          -0.037641107587758904,
+          0.05959247564962
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "distortion_model": "none",
+      "pose_source": "ground_truth",
+      "evidence": [
+        "ETH3D registered reference camera, diagnostic input; no laser geometry/depth exposed"
+      ]
+    },
+    {
+      "input_index": 26,
+      "frame_id": "DSC_0707",
+      "image_id": 33,
+      "source_name": "dslr_images_undistorted/DSC_0707.JPG",
+      "path": "/home/wqz/real2sim_agent_compare_20261003/OURS/inputs/rgb/026.png",
+      "sha256": "c321d7ac6582a1441b15e60e9356482bdbd86b22b3c6d522f927379af15bc8ed",
+      "source_sha256": "c321d7ac6582a1441b15e60e9356482bdbd86b22b3c6d522f927379af15bc8ed",
+      "original_sha256": "94d023fd0b52cf6e7d50a1ac0b78dd61fb6955903b33a67d78380a3f465bb0a4",
+      "original_size": [
+        6208,
+        4135
+      ],
+      "image_size": [
+        1200,
+        799
+      ],
+      "role": "reconstruction",
+      "K": [
+        [
+          658.8769329896908,
+          0.0,
+          602.0592783505155
+        ],
+        [
+          0.0,
+          658.6909625151148,
+          398.33722611850067
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "K_raster": [
+        [
+          658.8769329896908,
+          0.0,
+          602.5592783505155
+        ],
+        [
+          0.0,
+          658.6909625151148,
+          398.83722611850067
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "T_world_camera": [
+        [
+          -0.5873456670117634,
+          0.020385970926270657,
+          0.8090794025507635,
+          1.3798475844754068
+        ],
+        [
+          -0.807450954542008,
+          0.053433505572767714,
+          -0.5875098437400054,
+          -1.8530176834675824
+        ],
+        [
+          -0.055208907358389334,
+          -0.9983632969373416,
+          -0.01492326628773114,
+          0.06252783636645232
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "distortion_model": "none",
+      "pose_source": "ground_truth",
+      "evidence": [
+        "ETH3D registered reference camera, diagnostic input; no laser geometry/depth exposed"
+      ]
+    },
+    {
+      "input_index": 27,
+      "frame_id": "DSC_0708",
+      "image_id": 34,
+      "source_name": "dslr_images_undistorted/DSC_0708.JPG",
+      "path": "/home/wqz/real2sim_agent_compare_20261003/OURS/inputs/rgb/027.png",
+      "sha256": "0f379f2684664e7224067273e27d483a8ef25017d49a72161e982feb8f8d19c2",
+      "source_sha256": "0f379f2684664e7224067273e27d483a8ef25017d49a72161e982feb8f8d19c2",
+      "original_sha256": "d95aa24542ee79e2cb285c1bb227d04a9d0aec9e404f55030a9fc4c7f7ca0df7",
+      "original_size": [
+        6208,
+        4135
+      ],
+      "image_size": [
+        1200,
+        799
+      ],
+      "role": "reconstruction",
+      "K": [
+        [
+          658.8769329896908,
+          0.0,
+          602.0592783505155
+        ],
+        [
+          0.0,
+          658.6909625151148,
+          398.33722611850067
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "K_raster": [
+        [
+          658.8769329896908,
+          0.0,
+          602.5592783505155
+        ],
+        [
+          0.0,
+          658.6909625151148,
+          398.83722611850067
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "T_world_camera": [
+        [
+          -0.22535840369638255,
+          0.005237690437761696,
+          0.9742618521128169,
+          1.2218459815985174
+        ],
+        [
+          -0.9737098026411185,
+          0.03287408885657866,
+          -0.22540744114257558,
+          -1.4605112025167573
+        ],
+        [
+          -0.03320858509500444,
+          -0.9994457768587189,
+          -0.002308461665243495,
+          0.05922444109671865
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "distortion_model": "none",
+      "pose_source": "ground_truth",
+      "evidence": [
+        "ETH3D registered reference camera, diagnostic input; no laser geometry/depth exposed"
+      ]
+    },
+    {
+      "input_index": 28,
+      "frame_id": "DSC_0710",
+      "image_id": 36,
+      "source_name": "dslr_images_undistorted/DSC_0710.JPG",
+      "path": "/home/wqz/real2sim_agent_compare_20261003/OURS/inputs/rgb/028.png",
+      "sha256": "7ac847c26afec3b75092214284482ead89dc74c083f8546d843ad7e1ab9112cc",
+      "source_sha256": "7ac847c26afec3b75092214284482ead89dc74c083f8546d843ad7e1ab9112cc",
+      "original_sha256": "68c15942b5734108bfc0004b3fbe73ac28d3eb592a24f535bd057f462686b4c8",
+      "original_size": [
+        6208,
+        4135
+      ],
+      "image_size": [
+        1200,
+        799
+      ],
+      "role": "reconstruction",
+      "K": [
+        [
+          658.8769329896908,
+          0.0,
+          602.0592783505155
+        ],
+        [
+          0.0,
+          658.6909625151148,
+          398.33722611850067
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "K_raster": [
+        [
+          658.8769329896908,
+          0.0,
+          602.5592783505155
+        ],
+        [
+          0.0,
+          658.6909625151148,
+          398.83722611850067
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "T_world_camera": [
+        [
+          -0.9919668823538249,
+          0.04542763766310997,
+          -0.1180594513352573,
+          -0.5566572607570768
+        ],
+        [
+          0.11030213382405842,
+          -0.1462803992908793,
+          -0.9830745058525118,
+          -1.25335341803873
+        ],
+        [
+          -0.06192853612909236,
+          -0.9881995620924198,
+          0.14009454626521908,
+          -0.03130464796425647
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "distortion_model": "none",
+      "pose_source": "ground_truth",
+      "evidence": [
+        "ETH3D registered reference camera, diagnostic input; no laser geometry/depth exposed"
+      ]
+    },
+    {
+      "input_index": 29,
+      "frame_id": "DSC_0711",
+      "image_id": 37,
+      "source_name": "dslr_images_undistorted/DSC_0711.JPG",
+      "path": "/home/wqz/real2sim_agent_compare_20261003/OURS/inputs/rgb/029.png",
+      "sha256": "c572cb4a2cd1936a2b044ea0476caa3fad89006f13cb3692a9c348d846d19627",
+      "source_sha256": "c572cb4a2cd1936a2b044ea0476caa3fad89006f13cb3692a9c348d846d19627",
+      "original_sha256": "cfe2c511fb7dc9b6a34dcd26162036dcd3fb4c02b7e21e5ba2b0c2b1e28531ee",
+      "original_size": [
+        6208,
+        4135
+      ],
+      "image_size": [
+        1200,
+        799
+      ],
+      "role": "reconstruction",
+      "K": [
+        [
+          658.8769329896908,
+          0.0,
+          602.0592783505155
+        ],
+        [
+          0.0,
+          658.6909625151148,
+          398.33722611850067
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "K_raster": [
+        [
+          658.8769329896908,
+          0.0,
+          602.5592783505155
+        ],
+        [
+          0.0,
+          658.6909625151148,
+          398.83722611850067
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "T_world_camera": [
+        [
+          0.025484649889711882,
+          -0.9993984812292394,
+          -0.023520381304067053,
+          0.16459811102212862
+        ],
+        [
+          0.4829473599878104,
+          -0.008291927384840771,
+          0.8756101252389954,
+          0.1468700636196707
+        ],
+        [
+          -0.8752784586066331,
+          -0.0336737235383084,
+          0.4824455412191749,
+          -0.08534080430234958
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "distortion_model": "none",
+      "pose_source": "ground_truth",
+      "evidence": [
+        "ETH3D registered reference camera, diagnostic input; no laser geometry/depth exposed"
+      ]
+    },
+    {
+      "input_index": 30,
+      "frame_id": "DSC_0712",
+      "image_id": 38,
+      "source_name": "dslr_images_undistorted/DSC_0712.JPG",
+      "path": "/home/wqz/real2sim_agent_compare_20261003/OURS/inputs/rgb/030.png",
+      "sha256": "51bfd696c1fdf9d4b4f9b361a8fa1af680182e3cd1034b102ebeebf50d00c0ec",
+      "source_sha256": "51bfd696c1fdf9d4b4f9b361a8fa1af680182e3cd1034b102ebeebf50d00c0ec",
+      "original_sha256": "38acd5824322cbb29a50375fe02ca33fdf42fb42b57f74b0de9c29e52c7137d9",
+      "original_size": [
+        6208,
+        4135
+      ],
+      "image_size": [
+        1200,
+        799
+      ],
+      "role": "reconstruction",
+      "K": [
+        [
+          658.8769329896908,
+          0.0,
+          602.0592783505155
+        ],
+        [
+          0.0,
+          658.6909625151148,
+          398.33722611850067
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "K_raster": [
+        [
+          658.8769329896908,
+          0.0,
+          602.5592783505155
+        ],
+        [
+          0.0,
+          658.6909625151148,
+          398.83722611850067
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "T_world_camera": [
+        [
+          0.014859768163414347,
+          -0.9996037684653446,
+          -0.023905927298711403,
+          1.3011341088665522
+        ],
+        [
+          0.4870100068810801,
+          -0.013645353157119218,
+          0.8732897901240504,
+          0.19226968496904817
+        ],
+        [
+          -0.8732699699908498,
+          -0.02461930963896414,
+          0.4866142713742384,
+          -0.024301253732327055
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "distortion_model": "none",
+      "pose_source": "ground_truth",
+      "evidence": [
+        "ETH3D registered reference camera, diagnostic input; no laser geometry/depth exposed"
+      ]
+    },
+    {
+      "input_index": 31,
+      "frame_id": "DSC_0713",
+      "image_id": 39,
+      "source_name": "dslr_images_undistorted/DSC_0713.JPG",
+      "path": "/home/wqz/real2sim_agent_compare_20261003/OURS/inputs/rgb/031.png",
+      "sha256": "19992292d0304c96751a3254528fab8cf2d947aa86bf0fa32b04801233bc7561",
+      "source_sha256": "19992292d0304c96751a3254528fab8cf2d947aa86bf0fa32b04801233bc7561",
+      "original_sha256": "78747f78c8e5002b8e27d7743dfc711b8cb50b728d1a3e5bbf68a8fccb9376e8",
+      "original_size": [
+        6208,
+        4135
+      ],
+      "image_size": [
+        1200,
+        799
+      ],
+      "role": "reconstruction",
+      "K": [
+        [
+          658.8769329896908,
+          0.0,
+          602.0592783505155
+        ],
+        [
+          0.0,
+          658.6909625151148,
+          398.33722611850067
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "K_raster": [
+        [
+          658.8769329896908,
+          0.0,
+          602.5592783505155
+        ],
+        [
+          0.0,
+          658.6909625151148,
+          398.83722611850067
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "T_world_camera": [
+        [
+          -0.08057623886615578,
+          -0.975636857825827,
+          -0.2040592839885798,
+          2.1853795370829845
+        ],
+        [
+          0.4688896032264232,
+          -0.21775989360190634,
+          0.8559925050633646,
+          0.39805318212368945
+        ],
+        [
+          -0.8795737659323134,
+          -0.026708620148448468,
+          0.475012252361362,
+          0.02831091553244658
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "distortion_model": "none",
+      "pose_source": "ground_truth",
+      "evidence": [
+        "ETH3D registered reference camera, diagnostic input; no laser geometry/depth exposed"
+      ]
+    },
+    {
+      "input_index": 32,
+      "frame_id": "DSC_0715",
+      "image_id": 41,
+      "source_name": "dslr_images_undistorted/DSC_0715.JPG",
+      "path": "/home/wqz/real2sim_agent_compare_20261003/OURS/inputs/rgb/032.png",
+      "sha256": "31e4ffd2e7689cbd09f9e40ca4242c905bacf540f7422a6e98fd5d604a30747f",
+      "source_sha256": "31e4ffd2e7689cbd09f9e40ca4242c905bacf540f7422a6e98fd5d604a30747f",
+      "original_sha256": "378ac782253ef8a9efa81df3f5ff6cab15da8e5b00ff6fd824b934e3d0f1db1e",
+      "original_size": [
+        6208,
+        4135
+      ],
+      "image_size": [
+        1200,
+        799
+      ],
+      "role": "reconstruction",
+      "K": [
+        [
+          658.8769329896908,
+          0.0,
+          602.0592783505155
+        ],
+        [
+          0.0,
+          658.6909625151148,
+          398.33722611850067
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "K_raster": [
+        [
+          658.8769329896908,
+          0.0,
+          602.5592783505155
+        ],
+        [
+          0.0,
+          658.6909625151148,
+          398.83722611850067
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "T_world_camera": [
+        [
+          -0.019350496690080106,
+          -0.06639507357404423,
+          -0.9976057600490007,
+          0.5012260325962894
+        ],
+        [
+          0.9997937782628192,
+          -0.007433650815842313,
+          -0.01889819521818894,
+          -3.9279596145209363
+        ],
+        [
+          -0.0061611058101489055,
+          -0.9977657215201599,
+          0.06652522630213863,
+          -0.016912958739845774
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "distortion_model": "none",
+      "pose_source": "ground_truth",
+      "evidence": [
+        "ETH3D registered reference camera, diagnostic input; no laser geometry/depth exposed"
+      ]
+    },
+    {
+      "input_index": 33,
+      "frame_id": "DSC_0716",
+      "image_id": 42,
+      "source_name": "dslr_images_undistorted/DSC_0716.JPG",
+      "path": "/home/wqz/real2sim_agent_compare_20261003/OURS/inputs/rgb/033.png",
+      "sha256": "ce1d0f2a5bc2df25919c2a9ff1c63f3d7aa94c6b49682b8006983922879e8cab",
+      "source_sha256": "ce1d0f2a5bc2df25919c2a9ff1c63f3d7aa94c6b49682b8006983922879e8cab",
+      "original_sha256": "26e5b34121ac5efaf9571a8991de70a96df8d7fd3e1b45ce6082bccf5c6763e1",
+      "original_size": [
+        6208,
+        4135
+      ],
+      "image_size": [
+        1200,
+        799
+      ],
+      "role": "reconstruction",
+      "K": [
+        [
+          658.8769329896908,
+          0.0,
+          602.0592783505155
+        ],
+        [
+          0.0,
+          658.6909625151148,
+          398.33722611850067
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "K_raster": [
+        [
+          658.8769329896908,
+          0.0,
+          602.5592783505155
+        ],
+        [
+          0.0,
+          658.6909625151148,
+          398.83722611850067
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "T_world_camera": [
+        [
+          -0.041172328890699744,
+          -0.07016262543475678,
+          -0.9966855298065777,
+          0.48227244472386466
+        ],
+        [
+          0.9990803318122927,
+          -0.014843630760811357,
+          -0.0402263248591791,
+          -5.327315666341447
+        ],
+        [
+          -0.011972047425381124,
+          -0.9974251213088324,
+          0.07070924594779462,
+          -0.023796782349299495
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "distortion_model": "none",
+      "pose_source": "ground_truth",
+      "evidence": [
+        "ETH3D registered reference camera, diagnostic input; no laser geometry/depth exposed"
+      ]
+    },
+    {
+      "input_index": 34,
+      "frame_id": "DSC_0717",
+      "image_id": 43,
+      "source_name": "dslr_images_undistorted/DSC_0717.JPG",
+      "path": "/home/wqz/real2sim_agent_compare_20261003/OURS/inputs/rgb/034.png",
+      "sha256": "e9b22d9d33bb3b3ea401737a02d9f2376a4fedcc5fe22269b18dc17b1d6c0aa6",
+      "source_sha256": "e9b22d9d33bb3b3ea401737a02d9f2376a4fedcc5fe22269b18dc17b1d6c0aa6",
+      "original_sha256": "2f785e19ede0a0d5b9405942aee12614f12f46287fbc1f9cf4d9aa78b0bcadcb",
+      "original_size": [
+        6208,
+        4135
+      ],
+      "image_size": [
+        1200,
+        799
+      ],
+      "role": "reconstruction",
+      "K": [
+        [
+          658.8769329896908,
+          0.0,
+          602.0592783505155
+        ],
+        [
+          0.0,
+          658.6909625151148,
+          398.33722611850067
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "K_raster": [
+        [
+          658.8769329896908,
+          0.0,
+          602.5592783505155
+        ],
+        [
+          0.0,
+          658.6909625151148,
+          398.83722611850067
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "T_world_camera": [
+        [
+          -0.04048769867471925,
+          -0.07568323704973973,
+          -0.9963095873701597,
+          0.4711284715694759
+        ],
+        [
+          0.9991760179293678,
+          -0.0058949013417639315,
+          -0.040156385955194385,
+          -6.2169659255399035
+        ],
+        [
+          -0.00283398144609276,
+          -0.9971144857877875,
+          0.0758595464086059,
+          -0.02805024919631549
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "distortion_model": "none",
+      "pose_source": "ground_truth",
+      "evidence": [
+        "ETH3D registered reference camera, diagnostic input; no laser geometry/depth exposed"
+      ]
+    },
+    {
+      "input_index": 35,
+      "frame_id": "DSC_0718",
+      "image_id": 44,
+      "source_name": "dslr_images_undistorted/DSC_0718.JPG",
+      "path": "/home/wqz/real2sim_agent_compare_20261003/OURS/inputs/rgb/035.png",
+      "sha256": "86044a587b4a3f5298ee4fcf6ff6f814da7a746825992b6a8515c85b559b140e",
+      "source_sha256": "86044a587b4a3f5298ee4fcf6ff6f814da7a746825992b6a8515c85b559b140e",
+      "original_sha256": "7963700967321d0d3a0f8cb82a02e19e0b9e43b1ebeb3c26e7794c7e5568f694",
+      "original_size": [
+        6208,
+        4135
+      ],
+      "image_size": [
+        1200,
+        799
+      ],
+      "role": "reconstruction",
+      "K": [
+        [
+          658.8769329896908,
+          0.0,
+          602.0592783505155
+        ],
+        [
+          0.0,
+          658.6909625151148,
+          398.33722611850067
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "K_raster": [
+        [
+          658.8769329896908,
+          0.0,
+          602.5592783505155
+        ],
+        [
+          0.0,
+          658.6909625151148,
+          398.83722611850067
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "T_world_camera": [
+        [
+          -0.10165112742764887,
+          -0.0639329143511867,
+          -0.9927636328730276,
+          0.2159158191551458
+        ],
+        [
+          0.994788784101237,
+          -0.014451698978156747,
+          -0.1009278129309619,
+          -3.4080338279800935
+        ],
+        [
+          -0.007894511958974487,
+          -0.9978495532189252,
+          0.06506877762584012,
+          -0.026032747572812376
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "distortion_model": "none",
+      "pose_source": "ground_truth",
+      "evidence": [
+        "ETH3D registered reference camera, diagnostic input; no laser geometry/depth exposed"
+      ]
+    }
+  ]
+}

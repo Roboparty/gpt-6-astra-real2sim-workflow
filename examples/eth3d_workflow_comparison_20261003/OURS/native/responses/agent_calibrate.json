@@ -1,0 +1,18 @@
+{
+  "status": "complete",
+  "evidence": [
+    "Actual supplied RGB observation and permitted predicted-depth measurement artifacts"
+  ],
+  "reasoning_summary": "Retained all36 supplied K/T under a single recorded rigid gauge. Surface-only semantic measurements, no mesh fusion.",
+  "parameters": {
+    "camera_constraints_sha256": "8d7f8873b06d34f776a12fea7e9e24597e9d42e85eb9033ecf66f336a9c28bfd"
+  },
+  "artifacts": [
+    "calibration.json",
+    "model_from_input.json",
+    "measurement_raw.json",
+    "measurements_landmarks.json",
+    "rgb_annotations.json"
+  ],
+  "issues": []
+}

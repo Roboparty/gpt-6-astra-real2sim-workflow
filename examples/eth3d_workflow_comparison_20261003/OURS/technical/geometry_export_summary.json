@@ -1,0 +1,23 @@
+{
+  "source_report_sha256": "208549835f077ef30e517422c77314e16bfcf3282512562f6f0369ab1ce95aa3",
+  "enclosure_present": [
+    "wall_back",
+    "wall_front",
+    "wall_left",
+    "wall_right",
+    "floor",
+    "ceiling"
+  ],
+  "enclosure_hidden": false,
+  "units": "metres",
+  "entities": 107,
+  "warnings": [
+    {
+      "entity": "garage_door",
+      "type": "below_floor",
+      "min_z": -0.009999990463256836
+    }
+  ],
+  "material_portability": "Blender preserves procedural shaders; GLB/USD preserve image textures and supported PBR inputs, but procedural wood/fabric may become flat approximations.",
+  "scope": "Technical export only; native export/validate stages remain blocked by geometry acceptance"
+}

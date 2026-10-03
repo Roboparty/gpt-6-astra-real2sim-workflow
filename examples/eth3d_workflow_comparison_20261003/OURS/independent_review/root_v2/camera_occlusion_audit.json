@@ -1,0 +1,426 @@
+{
+  "method": "OURS",
+  "model_sha256": "a00d441b2d3293b8105e9d9fbe3b8670b64a0057b92ef062512dcbda62c04a68",
+  "model_unchanged": true,
+  "camera_count": 36,
+  "camera_pose_error_max": 0.0,
+  "K_error_max": 0.0,
+  "camera_identity_all": true,
+  "windshield_frame12": [
+    {
+      "part": "van_windshield",
+      "triangle_centres_sampled": 2,
+      "first_hit_counts": {
+        "van_windshield": 2
+      },
+      "records": [
+        {
+          "target_distance_m": 6.575680608586209,
+          "first_hit_distance_m": 6.575679302215576,
+          "occluder": "van_windshield"
+        },
+        {
+          "target_distance_m": 7.190317237046609,
+          "first_hit_distance_m": 7.1903157234191895,
+          "occluder": "van_windshield"
+        }
+      ]
+    },
+    {
+      "part": "van_windshield_frame0",
+      "triangle_centres_sampled": 12,
+      "first_hit_counts": {
+        "van_windshield_frame0": 9,
+        "van_cab_body": 2,
+        "van_windshield_frame1": 1
+      },
+      "records": [
+        {
+          "target_distance_m": 6.332145304565611,
+          "first_hit_distance_m": 6.332144260406494,
+          "occluder": "van_windshield_frame0"
+        },
+        {
+          "target_distance_m": 6.758486414389507,
+          "first_hit_distance_m": 6.758486270904541,
+          "occluder": "van_windshield_frame0"
+        },
+        {
+          "target_distance_m": 6.349893563369304,
+          "first_hit_distance_m": 6.322640895843506,
+          "occluder": "van_windshield_frame0"
+        },
+        {
+          "target_distance_m": 6.791062843866103,
+          "first_hit_distance_m": 6.733019828796387,
+          "occluder": "van_windshield_frame0"
+        },
+        {
+          "target_distance_m": 6.384097120270879,
+          "first_hit_distance_m": 6.302598476409912,
+          "occluder": "van_windshield_frame0"
+        },
+        {
+          "target_distance_m": 6.806755636942506,
+          "first_hit_distance_m": 6.71986198425293,
+          "occluder": "van_windshield_frame0"
+        },
+        {
+          "target_distance_m": 6.366444211538021,
+          "first_hit_distance_m": 6.236998558044434,
+          "occluder": "van_cab_body"
+        },
+        {
+          "target_distance_m": 6.774254669759545,
+          "first_hit_distance_m": 6.665558815002441,
+          "occluder": "van_cab_body"
+        },
+        {
+          "target_distance_m": 7.251324762491832,
+          "first_hit_distance_m": 7.189347743988037,
+          "occluder": "van_windshield_frame0"
+        },
+        {
+          "target_distance_m": 7.235989965989797,
+          "first_hit_distance_m": 7.204934120178223,
+          "occluder": "van_windshield_frame0"
+        },
+        {
+          "target_distance_m": 5.9689214949230545,
+          "first_hit_distance_m": 5.968922138214111,
+          "occluder": "van_windshield_frame0"
+        },
+        {
+          "target_distance_m": 5.987013916838603,
+          "first_hit_distance_m": 5.98492431640625,
+          "occluder": "van_windshield_frame1"
+        }
+      ]
+    },
+    {
+      "part": "van_windshield_frame1",
+      "triangle_centres_sampled": 12,
+      "first_hit_counts": {
+        "van_windshield_frame1": 11,
+        "van_windshield_frame0": 1
+      },
+      "records": [
+        {
+          "target_distance_m": 6.437295040646707,
+          "first_hit_distance_m": 6.4372944831848145,
+          "occluder": "van_windshield_frame1"
+        },
+        {
+          "target_distance_m": 6.1865664862908964,
+          "first_hit_distance_m": 6.18656587600708,
+          "occluder": "van_windshield_frame1"
+        },
+        {
+          "target_distance_m": 6.425401549476375,
+          "first_hit_distance_m": 6.42540168762207,
+          "occluder": "van_windshield_frame1"
+        },
+        {
+          "target_distance_m": 6.196054154036032,
+          "first_hit_distance_m": 6.196053504943848,
+          "occluder": "van_windshield_frame1"
+        },
+        {
+          "target_distance_m": 6.456435926678759,
+          "first_hit_distance_m": 6.413346290588379,
+          "occluder": "van_windshield_frame1"
+        },
+        {
+          "target_distance_m": 6.229181354054195,
+          "first_hit_distance_m": 6.146585464477539,
+          "occluder": "van_windshield_frame1"
+        },
+        {
+          "target_distance_m": 6.468272352852011,
+          "first_hit_distance_m": 6.374688148498535,
+          "occluder": "van_windshield_frame1"
+        },
+        {
+          "target_distance_m": 6.219744219287813,
+          "first_hit_distance_m": 6.174420356750488,
+          "occluder": "van_windshield_frame1"
+        },
+        {
+          "target_distance_m": 5.977479533592101,
+          "first_hit_distance_m": 5.95772647857666,
+          "occluder": "van_windshield_frame0"
+        },
+        {
+          "target_distance_m": 5.97846926852557,
+          "first_hit_distance_m": 5.978468418121338,
+          "occluder": "van_windshield_frame1"
+        },
+        {
+          "target_distance_m": 6.6837853531065585,
+          "first_hit_distance_m": 6.639178276062012,
+          "occluder": "van_windshield_frame1"
+        },
+        {
+          "target_distance_m": 6.703987690295478,
+          "first_hit_distance_m": 6.615095138549805,
+          "occluder": "van_windshield_frame1"
+        }
+      ]
+    },
+    {
+      "part": "van_windshield_frame2",
+      "triangle_centres_sampled": 12,
+      "first_hit_counts": {
+        "van_windshield_frame2": 7,
+        "van_windshield": 2,
+        "van_windshield_frame1": 2,
+        "van_windshield_frame3": 1
+      },
+      "records": [
+        {
+          "target_distance_m": 7.426842947782773,
+          "first_hit_distance_m": 7.344485759735107,
+          "occluder": "van_windshield_frame2"
+        },
+        {
+          "target_distance_m": 7.055341626910154,
+          "first_hit_distance_m": 6.977104187011719,
+          "occluder": "van_windshield_frame2"
+        },
+        {
+          "target_distance_m": 7.4139534213337415,
+          "first_hit_distance_m": 7.358941555023193,
+          "occluder": "van_windshield_frame2"
+        },
+        {
+          "target_distance_m": 7.021630486725473,
+          "first_hit_distance_m": 6.995482444763184,
+          "occluder": "van_windshield_frame2"
+        },
+        {
+          "target_distance_m": 7.37772607953078,
+          "first_hit_distance_m": 7.377725124359131,
+          "occluder": "van_windshield_frame2"
+        },
+        {
+          "target_distance_m": 6.999241252706547,
+          "first_hit_distance_m": 6.999240875244141,
+          "occluder": "van_windshield_frame2"
+        },
+        {
+          "target_distance_m": 7.390678688837888,
+          "first_hit_distance_m": 7.348946571350098,
+          "occluder": "van_windshield"
+        },
+        {
+          "target_distance_m": 7.033059621472516,
+          "first_hit_distance_m": 6.9632110595703125,
+          "occluder": "van_windshield"
+        },
+        {
+          "target_distance_m": 6.685600019522053,
+          "first_hit_distance_m": 6.650026798248291,
+          "occluder": "van_windshield_frame1"
+        },
+        {
+          "target_distance_m": 6.702178307539846,
+          "first_hit_distance_m": 6.630123615264893,
+          "occluder": "van_windshield_frame1"
+        },
+        {
+          "target_distance_m": 7.821909788963058,
+          "first_hit_distance_m": 7.763870716094971,
+          "occluder": "van_windshield_frame2"
+        },
+        {
+          "target_distance_m": 7.803781928819014,
+          "first_hit_distance_m": 7.757218360900879,
+          "occluder": "van_windshield_frame3"
+        }
+      ]
+    },
+    {
+      "part": "van_windshield_frame3",
+      "triangle_centres_sampled": 12,
+      "first_hit_counts": {
+        "van_windshield_frame3": 6,
+        "van_windshield": 3,
+        "van_windshield_frame2": 1,
+        "van_windshield_frame0": 2
+      },
+      "records": [
+        {
+          "target_distance_m": 7.45122870890851,
+          "first_hit_distance_m": 7.361690044403076,
+          "occluder": "van_windshield_frame3"
+        },
+        {
+          "target_distance_m": 7.631864099605261,
+          "first_hit_distance_m": 7.577438831329346,
+          "occluder": "van_windshield_frame3"
+        },
+        {
+          "target_distance_m": 7.41778685554019,
+          "first_hit_distance_m": 7.41778564453125,
+          "occluder": "van_windshield_frame3"
+        },
+        {
+          "target_distance_m": 7.592578105001905,
+          "first_hit_distance_m": 7.592577934265137,
+          "occluder": "van_windshield_frame3"
+        },
+        {
+          "target_distance_m": 7.39524936532589,
+          "first_hit_distance_m": 7.395249843597412,
+          "occluder": "van_windshield_frame3"
+        },
+        {
+          "target_distance_m": 7.594637041686201,
+          "first_hit_distance_m": 7.570794105529785,
+          "occluder": "van_windshield"
+        },
+        {
+          "target_distance_m": 7.4287926763133205,
+          "first_hit_distance_m": 7.354323863983154,
+          "occluder": "van_windshield"
+        },
+        {
+          "target_distance_m": 7.6339124424768166,
+          "first_hit_distance_m": 7.556119441986084,
+          "occluder": "van_windshield"
+        },
+        {
+          "target_distance_m": 7.80115889227347,
+          "first_hit_distance_m": 7.76744270324707,
+          "occluder": "van_windshield_frame2"
+        },
+        {
+          "target_distance_m": 7.824525450147399,
+          "first_hit_distance_m": 7.761590003967285,
+          "occluder": "van_windshield_frame3"
+        },
+        {
+          "target_distance_m": 7.247141548832834,
+          "first_hit_distance_m": 7.209841251373291,
+          "occluder": "van_windshield_frame0"
+        },
+        {
+          "target_distance_m": 7.2401796235245195,
+          "first_hit_distance_m": 7.184445858001709,
+          "occluder": "van_windshield_frame0"
+        }
+      ]
+    },
+    {
+      "part": "van_windshield_divider",
+      "triangle_centres_sampled": 12,
+      "first_hit_counts": {
+        "van_windshield": 2,
+        "van_windshield_divider": 7,
+        "van_windshield_frame0": 2,
+        "van_windshield_frame2": 1
+      },
+      "records": [
+        {
+          "target_distance_m": 6.976818805776639,
+          "first_hit_distance_m": 6.962231636047363,
+          "occluder": "van_windshield"
+        },
+        {
+          "target_distance_m": 6.755080096465267,
+          "first_hit_distance_m": 6.755079746246338,
+          "occluder": "van_windshield_divider"
+        },
+        {
+          "target_distance_m": 6.972650716340675,
+          "first_hit_distance_m": 6.972650527954102,
+          "occluder": "van_windshield_divider"
+        },
+        {
+          "target_distance_m": 6.765307099692412,
+          "first_hit_distance_m": 6.7653069496154785,
+          "occluder": "van_windshield_divider"
+        },
+        {
+          "target_distance_m": 6.9947006084992225,
+          "first_hit_distance_m": 6.965329647064209,
+          "occluder": "van_windshield_divider"
+        },
+        {
+          "target_distance_m": 6.786062819697658,
+          "first_hit_distance_m": 6.729309558868408,
+          "occluder": "van_windshield_divider"
+        },
+        {
+          "target_distance_m": 6.998855566275544,
+          "first_hit_distance_m": 6.954315185546875,
+          "occluder": "van_windshield_divider"
+        },
+        {
+          "target_distance_m": 6.775867143732946,
+          "first_hit_distance_m": 6.73354434967041,
+          "occluder": "van_windshield"
+        },
+        {
+          "target_distance_m": 6.566324276364335,
+          "first_hit_distance_m": 6.529642581939697,
+          "occluder": "van_windshield_frame0"
+        },
+        {
+          "target_distance_m": 6.564290088762213,
+          "first_hit_distance_m": 6.516632556915283,
+          "occluder": "van_windshield_frame0"
+        },
+        {
+          "target_distance_m": 7.203136393956663,
+          "first_hit_distance_m": 7.168215274810791,
+          "occluder": "van_windshield_frame2"
+        },
+        {
+          "target_distance_m": 7.216757554894173,
+          "first_hit_distance_m": 7.170830249786377,
+          "occluder": "van_windshield_divider"
+        }
+      ]
+    }
+  ],
+  "column_frame16": [
+    {
+      "part": "column_1_lower",
+      "box_at640": [
+        207.56467513172217,
+        94.03256895479748,
+        305.26105830833075,
+        393.2287780942752
+      ]
+    },
+    {
+      "part": "column_2_lower",
+      "box_at640": [
+        133.2852470369242,
+        95.69685308539471,
+        217.19765313115394,
+        392.0177079923558
+      ]
+    },
+    {
+      "part": "column_6_lower",
+      "box_at640": [
+        307.2198125934618,
+        172.04451459495192,
+        324.4466836891865,
+        233.1253657745179
+      ]
+    },
+    {
+      "part": "column_7_lower",
+      "box_at640": [
+        88.43076733106342,
+        175.0741443631683,
+        110.5138910898996,
+        231.30206871470006
+      ]
+    }
+  ],
+  "scope": "Mapping cameras and current v2 model only; no GT geometry or heldout data"
+}

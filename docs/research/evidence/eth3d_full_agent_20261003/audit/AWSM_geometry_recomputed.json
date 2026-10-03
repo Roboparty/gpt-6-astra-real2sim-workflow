@@ -1,0 +1,73 @@
+{
+  "metrics": {
+    "model_to_laser_mean_m": 0.8133546352249826,
+    "laser_to_model_mean_m": 0.07665464714558966,
+    "symmetric_mean_m": 0.44500464118528615,
+    "model_to_laser_p95_m": 3.579017276606875,
+    "laser_to_model_p95_m": 0.3464655995368945,
+    "precision_1cm": 0.02963,
+    "recall_1cm": 0.33537,
+    "fscore_1cm": 0.054449386849315065,
+    "precision_5cm": 0.15455,
+    "recall_5cm": 0.75014,
+    "fscore_5cm": 0.2562958295106611,
+    "precision_10cm": 0.21143,
+    "recall_10cm": 0.84325,
+    "fscore_10cm": 0.33808993723214625
+  },
+  "reported_differences": {
+    "model_to_laser_mean_m": 0.0,
+    "laser_to_model_mean_m": 0.0,
+    "symmetric_mean_m": 0.0,
+    "model_to_laser_p95_m": 0.0,
+    "laser_to_model_p95_m": 0.0,
+    "precision_1cm": 0.0,
+    "recall_1cm": 0.0,
+    "fscore_1cm": 0.0,
+    "precision_5cm": 0.0,
+    "recall_5cm": 0.0,
+    "fscore_5cm": 0.0,
+    "precision_10cm": 0.0,
+    "recall_10cm": 0.0,
+    "fscore_10cm": 0.0
+  },
+  "model_samples": 100000,
+  "laser_samples": 100000,
+  "all_finite": true,
+  "laser_full_count": 24898515,
+  "laser_bounds": [
+    [
+      -55.31351089477539,
+      -13.319689750671387,
+      -3.7521955966949463
+    ],
+    [
+      14.824155807495117,
+      34.6866455078125,
+      4.069582462310791
+    ]
+  ],
+  "model_sample_bounds": [
+    [
+      -49.10443115234375,
+      -10.718974113464355,
+      -4.553064823150635
+    ],
+    [
+      15.147188186645508,
+      19.427743911743164,
+      4.637876033782959
+    ]
+  ],
+  "outside_laser_AABB": {
+    "count": 5071,
+    "fraction": 0.05071,
+    "distance_sum_fraction": 0.17247139359395977,
+    "mean_m": 2.7663263147970727
+  },
+  "over_1m": {
+    "count": 23709,
+    "fraction": 0.23709,
+    "distance_sum_fraction": 0.7427602268614605
+  }
+}

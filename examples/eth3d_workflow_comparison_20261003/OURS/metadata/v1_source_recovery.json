@@ -1,0 +1,8 @@
+{
+  "status": "executed_source_recovered_from_this_run_edits",
+  "source": "/home/wqz/real2sim_agent_compare_20261003/OURS/models/v1/build_scene_recovered.py",
+  "sha256": "84dc2db7049e0dd01f03fac3009ef6df645cd539b131b478f1081114abc40e45",
+  "pre_run_source_hash_recorded": false,
+  "geometry_reproduction_check": "pending; no new fitting trial",
+  "note": "Original v1 build command was reviewed; this reverses only the subsequent recorded v2 source edits. Original model and checks were never overwritten."
+}

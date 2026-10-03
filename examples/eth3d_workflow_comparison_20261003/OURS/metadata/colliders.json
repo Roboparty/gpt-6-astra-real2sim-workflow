@@ -1,0 +1,1607 @@
+[
+  {
+    "entity": "floor",
+    "type": "aabb",
+    "position": [
+      -16.5,
+      3.9499998092651367,
+      -0.10000000149011612
+    ],
+    "dimensions": [
+      65.0,
+      30.899999618530273,
+      0.20000000298023224
+    ],
+    "status": "technical static proxy; not physical acceptance"
+  },
+  {
+    "entity": "ceiling",
+    "type": "aabb",
+    "position": [
+      -16.5,
+      3.9499998092651367,
+      4.78000020980835
+    ],
+    "dimensions": [
+      65.0,
+      30.899999618530273,
+      0.19999980926513672
+    ],
+    "status": "technical static proxy; not physical acceptance"
+  },
+  {
+    "entity": "wall_left",
+    "type": "aabb",
+    "position": [
+      -49.099998474121094,
+      3.9499998092651367,
+      2.3399999141693115
+    ],
+    "dimensions": [
+      0.1999969482421875,
+      30.899999618530273,
+      4.679999828338623
+    ],
+    "status": "technical static proxy; not physical acceptance"
+  },
+  {
+    "entity": "wall_right",
+    "type": "aabb",
+    "position": [
+      16.100000381469727,
+      3.9499998092651367,
+      2.3399999141693115
+    ],
+    "dimensions": [
+      0.20000076293945312,
+      30.899999618530273,
+      4.679999828338623
+    ],
+    "status": "technical static proxy; not physical acceptance"
+  },
+  {
+    "entity": "wall_front",
+    "type": "aabb",
+    "position": [
+      -16.5,
+      -11.600000381469727,
+      2.3399999141693115
+    ],
+    "dimensions": [
+      65.0,
+      0.20000076293945312,
+      4.679999828338623
+    ],
+    "status": "technical static proxy; not physical acceptance"
+  },
+  {
+    "entity": "wall_back",
+    "type": "aabb",
+    "position": [
+      -16.5,
+      19.5,
+      2.3399999141693115
+    ],
+    "dimensions": [
+      65.0,
+      0.20000076293945312,
+      4.679999828338623
+    ],
+    "status": "technical static proxy; not physical acceptance"
+  },
+  {
+    "entity": "main_side_wall",
+    "type": "aabb",
+    "position": [
+      -13.649999618530273,
+      9.899999618530273,
+      2.3399999141693115
+    ],
+    "dimensions": [
+      0.2199993133544922,
+      19.0,
+      4.679999828338623
+    ],
+    "status": "technical static proxy; not physical acceptance"
+  },
+  {
+    "entity": "corridor_north_wall",
+    "type": "aabb",
+    "position": [
+      -31.399999618530273,
+      0.550000011920929,
+      2.3399999141693115
+    ],
+    "dimensions": [
+      35.20000076293945,
+      0.2200000286102295,
+      4.679999828338623
+    ],
+    "status": "technical static proxy; not physical acceptance"
+  },
+  {
+    "entity": "corridor_south_wall",
+    "type": "aabb",
+    "position": [
+      -30.799999237060547,
+      -7.75,
+      2.3399999141693115
+    ],
+    "dimensions": [
+      36.400001525878906,
+      0.2200002670288086,
+      4.679999828338623
+    ],
+    "status": "technical static proxy; not physical acceptance"
+  },
+  {
+    "entity": "cage_upper_wall",
+    "type": "aabb",
+    "position": [
+      -4.199999809265137,
+      -7.999999761581421,
+      3.4900001287460327
+    ],
+    "dimensions": [
+      19.299999237060547,
+      0.2199997901916504,
+      2.380000352859497
+    ],
+    "status": "technical static proxy; not physical acceptance"
+  },
+  {
+    "entity": "lumber_back_wall",
+    "type": "aabb",
+    "position": [
+      0.7000000476837158,
+      -8.0,
+      1.1399999856948853
+    ],
+    "dimensions": [
+      4.5,
+      0.23999977111816406,
+      2.2799999713897705
+    ],
+    "status": "technical static proxy; not physical acceptance"
+  },
+  {
+    "entity": "entrance_soffit",
+    "type": "aabb",
+    "position": [
+      4.050000190734863,
+      -9.699999809265137,
+      2.25
+    ],
+    "dimensions": [
+      2.1999998092651367,
+      3.3999996185302734,
+      0.17999982833862305
+    ],
+    "status": "technical static proxy; not physical acceptance"
+  },
+  {
+    "entity": "entrance_recess_door",
+    "type": "aabb",
+    "position": [
+      3.9000000953674316,
+      -11.430000305175781,
+      1.0800000429153442
+    ],
+    "dimensions": [
+      1.25,
+      0.049999237060546875,
+      2.1600000858306885
+    ],
+    "status": "technical static proxy; not physical acceptance"
+  },
+  {
+    "entity": "entry_sign_0",
+    "type": "aabb",
+    "position": [
+      3.299999952316284,
+      -7.850499868392944,
+      3.130000114440918
+    ],
+    "dimensions": [
+      0.5300002098083496,
+      0.03900003433227539,
+      0.5500001907348633
+    ],
+    "status": "technical static proxy; not physical acceptance"
+  },
+  {
+    "entity": "entry_sign_1",
+    "type": "aabb",
+    "position": [
+      2.740000009536743,
+      -7.850499868392944,
+      3.130000114440918
+    ],
+    "dimensions": [
+      0.5300002098083496,
+      0.03900003433227539,
+      0.5500001907348633
+    ],
+    "status": "technical static proxy; not physical acceptance"
+  },
+  {
+    "entity": "entry_sign_2",
+    "type": "aabb",
+    "position": [
+      2.180000126361847,
+      -7.850499868392944,
+      3.130000114440918
+    ],
+    "dimensions": [
+      0.5300000905990601,
+      0.03900003433227539,
+      0.5500001907348633
+    ],
+    "status": "technical static proxy; not physical acceptance"
+  },
+  {
+    "entity": "garage_reveal",
+    "type": "aabb",
+    "position": [
+      5.349999904632568,
+      0.9000000059604645,
+      2.3399999141693115
+    ],
+    "dimensions": [
+      0.39999961853027344,
+      0.6000000834465027,
+      4.679999828338623
+    ],
+    "status": "technical static proxy; not physical acceptance"
+  },
+  {
+    "entity": "rack_back_wall",
+    "type": "aabb",
+    "position": [
+      10.699999809265137,
+      10.9399995803833,
+      2.3399999141693115
+    ],
+    "dimensions": [
+      10.600000381469727,
+      0.2199993133544922,
+      4.679999828338623
+    ],
+    "status": "technical static proxy; not physical acceptance"
+  },
+  {
+    "entity": "main_dock_sidewall",
+    "type": "aabb",
+    "position": [
+      4.880000114440918,
+      14.819999694824219,
+      2.3399999141693115
+    ],
+    "dimensions": [
+      0.2200002670288086,
+      9.15999984741211,
+      4.679999828338623
+    ],
+    "status": "technical static proxy; not physical acceptance"
+  },
+  {
+    "entity": "yellow_side_door",
+    "type": "aabb",
+    "position": [
+      4.757999897003174,
+      14.949999809265137,
+      2.109999895095825
+    ],
+    "dimensions": [
+      0.03600025177001953,
+      1.8999996185302734,
+      3.5999999046325684
+    ],
+    "status": "technical static proxy; not physical acceptance"
+  },
+  {
+    "entity": "yellow_door_rail0",
+    "type": "aabb",
+    "position": [
+      4.71999979019165,
+      14.949999809265137,
+      0.550000011920929
+    ],
+    "dimensions": [
+      0.06999969482421875,
+      1.989999771118164,
+      0.059999942779541016
+    ],
+    "status": "technical static proxy; not physical acceptance"
+  },
+  {
+    "entity": "yellow_door_rail1",
+    "type": "aabb",
+    "position": [
+      4.71999979019165,
+      14.949999809265137,
+      1.600000023841858
+    ],
+    "dimensions": [
+      0.06999969482421875,
+      1.989999771118164,
+      0.059999942779541016
+    ],
+    "status": "technical static proxy; not physical acceptance"
+  },
+  {
+    "entity": "yellow_door_rail2",
+    "type": "aabb",
+    "position": [
+      4.71999979019165,
+      14.949999809265137,
+      2.6500000953674316
+    ],
+    "dimensions": [
+      0.06999969482421875,
+      1.989999771118164,
+      0.059999942779541016
+    ],
+    "status": "technical static proxy; not physical acceptance"
+  },
+  {
+    "entity": "yellow_door_rail3",
+    "type": "aabb",
+    "position": [
+      4.71999979019165,
+      14.949999809265137,
+      3.9000000953674316
+    ],
+    "dimensions": [
+      0.06999969482421875,
+      1.989999771118164,
+      0.059999942779541016
+    ],
+    "status": "technical static proxy; not physical acceptance"
+  },
+  {
+    "entity": "loading_platform",
+    "type": "aabb",
+    "position": [
+      -4.1000001430511475,
+      17.09999990463257,
+      0.4300000071525574
+    ],
+    "dimensions": [
+      18.70000123977661,
+      4.59999942779541,
+      0.8600000143051147
+    ],
+    "status": "technical static proxy; not physical acceptance"
+  },
+  {
+    "entity": "dock_blue_door",
+    "type": "aabb",
+    "position": [
+      -3.599999785423279,
+      19.25,
+      2.4999999403953552
+    ],
+    "dimensions": [
+      4.599999666213989,
+      0.09999847412109375,
+      3.1999999284744263
+    ],
+    "status": "technical static proxy; not physical acceptance"
+  },
+  {
+    "entity": "far_corridor_door",
+    "type": "aabb",
+    "position": [
+      -48.79999923706055,
+      -3.5999999046325684,
+      2.200000047683716
+    ],
+    "dimensions": [
+      0.09999847412109375,
+      7.5,
+      4.400000095367432
+    ],
+    "status": "technical static proxy; not physical acceptance"
+  },
+  {
+    "entity": "column_0",
+    "type": "aabb",
+    "position": [
+      -4.300000190734863,
+      10.699999809265137,
+      2.3400001525878906
+    ],
+    "dimensions": [
+      0.5799999237060547,
+      0.75,
+      4.680000305175781
+    ],
+    "status": "technical static proxy; not physical acceptance"
+  },
+  {
+    "entity": "column_1",
+    "type": "aabb",
+    "position": [
+      -4.340000152587891,
+      1.1699999570846558,
+      2.3400001525878906
+    ],
+    "dimensions": [
+      0.4799995422363281,
+      0.559999942779541,
+      4.680000305175781
+    ],
+    "status": "technical static proxy; not physical acceptance"
+  },
+  {
+    "entity": "column_2",
+    "type": "aabb",
+    "position": [
+      -4.239999771118164,
+      0.5799999833106995,
+      2.3400001525878906
+    ],
+    "dimensions": [
+      0.39999961853027344,
+      0.36000001430511475,
+      4.680000305175781
+    ],
+    "status": "technical static proxy; not physical acceptance"
+  },
+  {
+    "entity": "column_3",
+    "type": "aabb",
+    "position": [
+      -4.25,
+      -7.800000429153442,
+      2.3400001525878906
+    ],
+    "dimensions": [
+      0.5799999237060547,
+      0.6200003623962402,
+      4.680000305175781
+    ],
+    "status": "technical static proxy; not physical acceptance"
+  },
+  {
+    "entity": "column_4",
+    "type": "aabb",
+    "position": [
+      5.349999904632568,
+      0.9200000166893005,
+      2.3400001525878906
+    ],
+    "dimensions": [
+      0.4799995422363281,
+      0.8600000143051147,
+      4.680000305175781
+    ],
+    "status": "technical static proxy; not physical acceptance"
+  },
+  {
+    "entity": "column_5",
+    "type": "aabb",
+    "position": [
+      5.449999809265137,
+      9.5,
+      2.3400001525878906
+    ],
+    "dimensions": [
+      0.5,
+      0.6000003814697266,
+      4.680000305175781
+    ],
+    "status": "technical static proxy; not physical acceptance"
+  },
+  {
+    "entity": "column_6",
+    "type": "aabb",
+    "position": [
+      -13.5,
+      0.3500000089406967,
+      2.3400001525878906
+    ],
+    "dimensions": [
+      0.5,
+      0.5000000298023224,
+      4.680000305175781
+    ],
+    "status": "technical static proxy; not physical acceptance"
+  },
+  {
+    "entity": "column_7",
+    "type": "aabb",
+    "position": [
+      -13.5,
+      -7.550000190734863,
+      2.3400001525878906
+    ],
+    "dimensions": [
+      0.39999961853027344,
+      0.4499998092651367,
+      4.680000305175781
+    ],
+    "status": "technical static proxy; not physical acceptance"
+  },
+  {
+    "entity": "garage_door",
+    "type": "aabb",
+    "position": [
+      5.362499713897705,
+      -3.3250001668930054,
+      2.3024998903274536
+    ],
+    "dimensions": [
+      0.5749998092651367,
+      8.300000429153442,
+      4.624999761581421
+    ],
+    "status": "technical static proxy; not physical acceptance"
+  },
+  {
+    "entity": "storage_rack",
+    "type": "aabb",
+    "position": [
+      10.299999713897705,
+      10.049999713897705,
+      2.2200000286102295
+    ],
+    "dimensions": [
+      8.894999504089355,
+      1.4200010299682617,
+      4.440000057220459
+    ],
+    "status": "technical static proxy; not physical acceptance"
+  },
+  {
+    "entity": "wood_crate_0",
+    "type": "aabb",
+    "position": [
+      2.2251433730125427,
+      7.316700458526611,
+      0.7070897817611694
+    ],
+    "dimensions": [
+      1.4785887002944946,
+      1.1591548919677734,
+      1.4141795635223389
+    ],
+    "status": "technical static proxy; not physical acceptance"
+  },
+  {
+    "entity": "wood_crate_1",
+    "type": "aabb",
+    "position": [
+      2.202390134334564,
+      8.576417446136475,
+      0.703317403793335
+    ],
+    "dimensions": [
+      1.4802924394607544,
+      1.3443269729614258,
+      1.40663480758667
+    ],
+    "status": "technical static proxy; not physical acceptance"
+  },
+  {
+    "entity": "lime_skip_0",
+    "type": "aabb",
+    "position": [
+      2.549999952316284,
+      11.650000095367432,
+      0.8299999833106995
+    ],
+    "dimensions": [
+      2.25,
+      2.9499998092651367,
+      1.659999966621399
+    ],
+    "status": "technical static proxy; not physical acceptance"
+  },
+  {
+    "entity": "lime_skip_1",
+    "type": "aabb",
+    "position": [
+      2.32626873254776,
+      14.553261280059814,
+      0.581000030040741
+    ],
+    "dimensions": [
+      1.8958896398544312,
+      2.7272958755493164,
+      1.162000060081482
+    ],
+    "status": "technical static proxy; not physical acceptance"
+  },
+  {
+    "entity": "white_trailer",
+    "type": "aabb",
+    "position": [
+      11.666984558105469,
+      8.119999647140503,
+      1.3675000645716326
+    ],
+    "dimensions": [
+      6.016031265258789,
+      2.234999179840088,
+      2.7350001378855433
+    ],
+    "status": "technical static proxy; not physical acceptance"
+  },
+  {
+    "entity": "flatbed_trailer",
+    "type": "aabb",
+    "position": [
+      7.252500057220459,
+      7.799999952316284,
+      0.3100000006357303
+    ],
+    "dimensions": [
+      2.695000648498535,
+      1.8799996376037598,
+      0.6200000082652826
+    ],
+    "status": "technical static proxy; not physical acceptance"
+  },
+  {
+    "entity": "sign_base",
+    "type": "aabb",
+    "position": [
+      6.199999809265137,
+      7.8500001430511475,
+      0.05000000074505806
+    ],
+    "dimensions": [
+      0.8000001907348633,
+      0.5000004768371582,
+      0.10000000149011612
+    ],
+    "status": "technical static proxy; not physical acceptance"
+  },
+  {
+    "entity": "sign_pole",
+    "type": "aabb",
+    "position": [
+      6.199999809265137,
+      7.849999904632568,
+      0.9499999582767487
+    ],
+    "dimensions": [
+      0.05000019073486328,
+      0.05000019073486328,
+      1.7999998927116394
+    ],
+    "status": "technical static proxy; not physical acceptance"
+  },
+  {
+    "entity": "no_parking_red",
+    "type": "aabb",
+    "position": [
+      6.199999809265137,
+      7.818000078201294,
+      1.840000033378601
+    ],
+    "dimensions": [
+      0.6000003814697266,
+      0.0689997673034668,
+      0.6000001430511475
+    ],
+    "status": "technical static proxy; not physical acceptance"
+  },
+  {
+    "entity": "no_parking_blue",
+    "type": "aabb",
+    "position": [
+      6.199999809265137,
+      7.820000171661377,
+      1.840000033378601
+    ],
+    "dimensions": [
+      0.48999977111816406,
+      0.012000083923339844,
+      0.49000000953674316
+    ],
+    "status": "technical static proxy; not physical acceptance"
+  },
+  {
+    "entity": "white_van",
+    "type": "aabb",
+    "position": [
+      -5.7200000286102295,
+      10.90749979019165,
+      1.6000000211098961
+    ],
+    "dimensions": [
+      2.529999256134033,
+      5.564999580383301,
+      3.2000000531476394
+    ],
+    "status": "technical static proxy; not physical acceptance"
+  },
+  {
+    "entity": "black_car",
+    "type": "aabb",
+    "position": [
+      -2.900000035762787,
+      13.375,
+      0.7512500265339386
+    ],
+    "dimensions": [
+      1.8220001459121704,
+      3.75,
+      1.5025000613730408
+    ],
+    "status": "technical static proxy; not physical acceptance"
+  },
+  {
+    "entity": "lumber_cart",
+    "type": "aabb",
+    "position": [
+      0.5125604867935181,
+      -7.2058868408203125,
+      0.8999354826113766
+    ],
+    "dimensions": [
+      4.508653879165649,
+      0.818974494934082,
+      1.7998709705072273
+    ],
+    "status": "technical static proxy; not physical acceptance"
+  },
+  {
+    "entity": "mesh_cage_0",
+    "type": "aabb",
+    "position": [
+      -2.4499999284744263,
+      -7.909999847412109,
+      1.1399999856948853
+    ],
+    "dimensions": [
+      2.8399999141693115,
+      0.05500030517578125,
+      2.2799999713897705
+    ],
+    "status": "technical static proxy; not physical acceptance"
+  },
+  {
+    "entity": "mesh_cage_1",
+    "type": "aabb",
+    "position": [
+      -6.675000429153442,
+      -7.909999847412109,
+      1.1399999856948853
+    ],
+    "dimensions": [
+      3.890000820159912,
+      0.05500030517578125,
+      2.2799999713897705
+    ],
+    "status": "technical static proxy; not physical acceptance"
+  },
+  {
+    "entity": "mesh_cage_2",
+    "type": "aabb",
+    "position": [
+      -10.724999904632568,
+      -7.909999847412109,
+      1.1399999856948853
+    ],
+    "dimensions": [
+      4.190001487731934,
+      0.05500030517578125,
+      2.2799999713897705
+    ],
+    "status": "technical static proxy; not physical acceptance"
+  },
+  {
+    "entity": "cage_machine",
+    "type": "aabb",
+    "position": [
+      -2.450000047683716,
+      -9.0,
+      0.8500000238418579
+    ],
+    "dimensions": [
+      1.4000000953674316,
+      1.0,
+      1.7000000476837158
+    ],
+    "status": "technical static proxy; not physical acceptance"
+  },
+  {
+    "entity": "cage_machine_fan",
+    "type": "aabb",
+    "position": [
+      -2.450000047683716,
+      -8.489999771118164,
+      1.2200000286102295
+    ],
+    "dimensions": [
+      0.7400002479553223,
+      0.030000686645507812,
+      0.7400000095367432
+    ],
+    "status": "technical static proxy; not physical acceptance"
+  },
+  {
+    "entity": "cage_bin0",
+    "type": "aabb",
+    "position": [
+      -9.300000190734863,
+      -8.699999809265137,
+      0.5299999713897705
+    ],
+    "dimensions": [
+      0.6299991607666016,
+      0.75,
+      1.0499999523162842
+    ],
+    "status": "technical static proxy; not physical acceptance"
+  },
+  {
+    "entity": "cage_bin1",
+    "type": "aabb",
+    "position": [
+      -10.199999809265137,
+      -8.699999809265137,
+      0.5299999713897705
+    ],
+    "dimensions": [
+      0.6299991607666016,
+      0.75,
+      1.0499999523162842
+    ],
+    "status": "technical static proxy; not physical acceptance"
+  },
+  {
+    "entity": "cage_bin2",
+    "type": "aabb",
+    "position": [
+      -11.300000190734863,
+      -8.699999809265137,
+      0.5299999713897705
+    ],
+    "dimensions": [
+      0.6299991607666016,
+      0.75,
+      1.0499999523162842
+    ],
+    "status": "technical static proxy; not physical acceptance"
+  },
+  {
+    "entity": "compactor_body",
+    "type": "aabb",
+    "position": [
+      -20.600000381469727,
+      -1.5499998927116394,
+      1.2999999523162842
+    ],
+    "dimensions": [
+      2.299999237060547,
+      2.2999998331069946,
+      2.3499999046325684
+    ],
+    "status": "technical static proxy; not physical acceptance"
+  },
+  {
+    "entity": "compactor_hopper",
+    "type": "aabb",
+    "position": [
+      -20.6503324508667,
+      -1.5499998852610588,
+      3.1828192472457886
+    ],
+    "dimensions": [
+      2.599336624145508,
+      2.6149259954690933,
+      1.5343616008758545
+    ],
+    "status": "technical static proxy; not physical acceptance"
+  },
+  {
+    "entity": "compactor_yellow_front",
+    "type": "aabb",
+    "position": [
+      -19.389999389648438,
+      -1.550000011920929,
+      1.25
+    ],
+    "dimensions": [
+      0.15999984741210938,
+      1.7000001668930054,
+      1.25
+    ],
+    "status": "technical static proxy; not physical acceptance"
+  },
+  {
+    "entity": "compactor_arm0",
+    "type": "aabb",
+    "position": [
+      -19.149999618530273,
+      -2.240000009536743,
+      0.9700000286102295
+    ],
+    "dimensions": [
+      0.279998779296875,
+      0.15999984741210938,
+      1.2999999523162842
+    ],
+    "status": "technical static proxy; not physical acceptance"
+  },
+  {
+    "entity": "compactor_pivot0",
+    "type": "aabb",
+    "position": [
+      -18.989999771118164,
+      -2.240000009536743,
+      1.5399999618530273
+    ],
+    "dimensions": [
+      0.049999237060546875,
+      0.23999977111816406,
+      0.24000000953674316
+    ],
+    "status": "technical static proxy; not physical acceptance"
+  },
+  {
+    "entity": "compactor_foot0",
+    "type": "aabb",
+    "position": [
+      -19.25,
+      -2.240000009536743,
+      0.15000000596046448
+    ],
+    "dimensions": [
+      0.5999984741210938,
+      0.23000001907348633,
+      0.30000001192092896
+    ],
+    "status": "technical static proxy; not physical acceptance"
+  },
+  {
+    "entity": "compactor_arm1",
+    "type": "aabb",
+    "position": [
+      -19.149999618530273,
+      -0.8600000143051147,
+      0.9700000286102295
+    ],
+    "dimensions": [
+      0.279998779296875,
+      0.15999996662139893,
+      1.2999999523162842
+    ],
+    "status": "technical static proxy; not physical acceptance"
+  },
+  {
+    "entity": "compactor_pivot1",
+    "type": "aabb",
+    "position": [
+      -18.989999771118164,
+      -0.8600000143051147,
+      1.5399999618530273
+    ],
+    "dimensions": [
+      0.049999237060546875,
+      0.24000000953674316,
+      0.24000000953674316
+    ],
+    "status": "technical static proxy; not physical acceptance"
+  },
+  {
+    "entity": "compactor_foot1",
+    "type": "aabb",
+    "position": [
+      -19.25,
+      -0.8600000143051147,
+      0.15000000596046448
+    ],
+    "dimensions": [
+      0.5999984741210938,
+      0.23000001907348633,
+      0.30000001192092896
+    ],
+    "status": "technical static proxy; not physical acceptance"
+  },
+  {
+    "entity": "compactor_lower_crossbar",
+    "type": "aabb",
+    "position": [
+      -19.049999237060547,
+      -1.5499998927116394,
+      0.4400000125169754
+    ],
+    "dimensions": [
+      0.220001220703125,
+      1.7999998331069946,
+      0.20000001788139343
+    ],
+    "status": "technical static proxy; not physical acceptance"
+  },
+  {
+    "entity": "fire_cabinet",
+    "type": "aabb",
+    "position": [
+      -13.479999542236328,
+      3.799999952316284,
+      1.5
+    ],
+    "dimensions": [
+      0.10000038146972656,
+      0.440000057220459,
+      0.5999999046325684
+    ],
+    "status": "technical static proxy; not physical acceptance"
+  },
+  {
+    "entity": "extinguisher",
+    "type": "aabb",
+    "position": [
+      -13.300000190734863,
+      3.450000047683716,
+      0.6200000196695328
+    ],
+    "dimensions": [
+      0.18000030517578125,
+      0.17999982833862305,
+      0.7000000178813934
+    ],
+    "status": "technical static proxy; not physical acceptance"
+  },
+  {
+    "entity": "luminaire_-10.0_-5.5",
+    "type": "aabb",
+    "position": [
+      -10.0,
+      -5.4999998807907104,
+      4.519999980926514
+    ],
+    "dimensions": [
+      0.09499931335449219,
+      3.3999998569488525,
+      0.07499980926513672
+    ],
+    "status": "technical static proxy; not physical acceptance"
+  },
+  {
+    "entity": "luminaire_-5.3_-5.5",
+    "type": "aabb",
+    "position": [
+      -5.300000190734863,
+      -5.4999998807907104,
+      4.519999980926514
+    ],
+    "dimensions": [
+      0.0950002670288086,
+      3.3999998569488525,
+      0.07499980926513672
+    ],
+    "status": "technical static proxy; not physical acceptance"
+  },
+  {
+    "entity": "luminaire_-0.6_-5.5",
+    "type": "aabb",
+    "position": [
+      -0.6000000238418579,
+      -5.4999998807907104,
+      4.519999980926514
+    ],
+    "dimensions": [
+      0.09500002861022949,
+      3.3999998569488525,
+      0.07499980926513672
+    ],
+    "status": "technical static proxy; not physical acceptance"
+  },
+  {
+    "entity": "luminaire_4.1_-5.5",
+    "type": "aabb",
+    "position": [
+      4.099999904632568,
+      -5.4999998807907104,
+      4.519999980926514
+    ],
+    "dimensions": [
+      0.0950002670288086,
+      3.3999998569488525,
+      0.07499980926513672
+    ],
+    "status": "technical static proxy; not physical acceptance"
+  },
+  {
+    "entity": "luminaire_8.8_-5.5",
+    "type": "aabb",
+    "position": [
+      8.800000190734863,
+      -5.4999998807907104,
+      4.519999980926514
+    ],
+    "dimensions": [
+      0.09499931335449219,
+      3.3999998569488525,
+      0.07499980926513672
+    ],
+    "status": "technical static proxy; not physical acceptance"
+  },
+  {
+    "entity": "luminaire_13.0_-5.5",
+    "type": "aabb",
+    "position": [
+      13.0,
+      -5.4999998807907104,
+      4.519999980926514
+    ],
+    "dimensions": [
+      0.09499931335449219,
+      3.3999998569488525,
+      0.07499980926513672
+    ],
+    "status": "technical static proxy; not physical acceptance"
+  },
+  {
+    "entity": "luminaire_-10.0_0.0",
+    "type": "aabb",
+    "position": [
+      -10.0,
+      0.0,
+      4.519999980926514
+    ],
+    "dimensions": [
+      0.09499931335449219,
+      3.4000000953674316,
+      0.07499980926513672
+    ],
+    "status": "technical static proxy; not physical acceptance"
+  },
+  {
+    "entity": "luminaire_-5.3_0.0",
+    "type": "aabb",
+    "position": [
+      -5.300000190734863,
+      0.0,
+      4.519999980926514
+    ],
+    "dimensions": [
+      0.0950002670288086,
+      3.4000000953674316,
+      0.07499980926513672
+    ],
+    "status": "technical static proxy; not physical acceptance"
+  },
+  {
+    "entity": "luminaire_-0.6_0.0",
+    "type": "aabb",
+    "position": [
+      -0.6000000238418579,
+      0.0,
+      4.519999980926514
+    ],
+    "dimensions": [
+      0.09500002861022949,
+      3.4000000953674316,
+      0.07499980926513672
+    ],
+    "status": "technical static proxy; not physical acceptance"
+  },
+  {
+    "entity": "luminaire_4.1_0.0",
+    "type": "aabb",
+    "position": [
+      4.099999904632568,
+      0.0,
+      4.519999980926514
+    ],
+    "dimensions": [
+      0.0950002670288086,
+      3.4000000953674316,
+      0.07499980926513672
+    ],
+    "status": "technical static proxy; not physical acceptance"
+  },
+  {
+    "entity": "luminaire_8.8_0.0",
+    "type": "aabb",
+    "position": [
+      8.800000190734863,
+      0.0,
+      4.519999980926514
+    ],
+    "dimensions": [
+      0.09499931335449219,
+      3.4000000953674316,
+      0.07499980926513672
+    ],
+    "status": "technical static proxy; not physical acceptance"
+  },
+  {
+    "entity": "luminaire_13.0_0.0",
+    "type": "aabb",
+    "position": [
+      13.0,
+      0.0,
+      4.519999980926514
+    ],
+    "dimensions": [
+      0.09499931335449219,
+      3.4000000953674316,
+      0.07499980926513672
+    ],
+    "status": "technical static proxy; not physical acceptance"
+  },
+  {
+    "entity": "luminaire_-10.0_5.5",
+    "type": "aabb",
+    "position": [
+      -10.0,
+      5.4999998807907104,
+      4.519999980926514
+    ],
+    "dimensions": [
+      0.09499931335449219,
+      3.3999998569488525,
+      0.07499980926513672
+    ],
+    "status": "technical static proxy; not physical acceptance"
+  },
+  {
+    "entity": "luminaire_-5.3_5.5",
+    "type": "aabb",
+    "position": [
+      -5.300000190734863,
+      5.4999998807907104,
+      4.519999980926514
+    ],
+    "dimensions": [
+      0.0950002670288086,
+      3.3999998569488525,
+      0.07499980926513672
+    ],
+    "status": "technical static proxy; not physical acceptance"
+  },
+  {
+    "entity": "luminaire_-0.6_5.5",
+    "type": "aabb",
+    "position": [
+      -0.6000000238418579,
+      5.4999998807907104,
+      4.519999980926514
+    ],
+    "dimensions": [
+      0.09500002861022949,
+      3.3999998569488525,
+      0.07499980926513672
+    ],
+    "status": "technical static proxy; not physical acceptance"
+  },
+  {
+    "entity": "luminaire_4.1_5.5",
+    "type": "aabb",
+    "position": [
+      4.099999904632568,
+      5.4999998807907104,
+      4.519999980926514
+    ],
+    "dimensions": [
+      0.0950002670288086,
+      3.3999998569488525,
+      0.07499980926513672
+    ],
+    "status": "technical static proxy; not physical acceptance"
+  },
+  {
+    "entity": "luminaire_8.8_5.5",
+    "type": "aabb",
+    "position": [
+      8.800000190734863,
+      5.4999998807907104,
+      4.519999980926514
+    ],
+    "dimensions": [
+      0.09499931335449219,
+      3.3999998569488525,
+      0.07499980926513672
+    ],
+    "status": "technical static proxy; not physical acceptance"
+  },
+  {
+    "entity": "luminaire_13.0_5.5",
+    "type": "aabb",
+    "position": [
+      13.0,
+      5.4999998807907104,
+      4.519999980926514
+    ],
+    "dimensions": [
+      0.09499931335449219,
+      3.3999998569488525,
+      0.07499980926513672
+    ],
+    "status": "technical static proxy; not physical acceptance"
+  },
+  {
+    "entity": "luminaire_-10.0_11.0",
+    "type": "aabb",
+    "position": [
+      -10.0,
+      11.0,
+      4.519999980926514
+    ],
+    "dimensions": [
+      0.09499931335449219,
+      3.3999996185302734,
+      0.07499980926513672
+    ],
+    "status": "technical static proxy; not physical acceptance"
+  },
+  {
+    "entity": "luminaire_-5.3_11.0",
+    "type": "aabb",
+    "position": [
+      -5.300000190734863,
+      11.0,
+      4.519999980926514
+    ],
+    "dimensions": [
+      0.0950002670288086,
+      3.3999996185302734,
+      0.07499980926513672
+    ],
+    "status": "technical static proxy; not physical acceptance"
+  },
+  {
+    "entity": "luminaire_-0.6_11.0",
+    "type": "aabb",
+    "position": [
+      -0.6000000238418579,
+      11.0,
+      4.519999980926514
+    ],
+    "dimensions": [
+      0.09500002861022949,
+      3.3999996185302734,
+      0.07499980926513672
+    ],
+    "status": "technical static proxy; not physical acceptance"
+  },
+  {
+    "entity": "luminaire_4.1_11.0",
+    "type": "aabb",
+    "position": [
+      4.099999904632568,
+      11.0,
+      4.519999980926514
+    ],
+    "dimensions": [
+      0.0950002670288086,
+      3.3999996185302734,
+      0.07499980926513672
+    ],
+    "status": "technical static proxy; not physical acceptance"
+  },
+  {
+    "entity": "luminaire_8.8_11.0",
+    "type": "aabb",
+    "position": [
+      8.800000190734863,
+      11.0,
+      4.519999980926514
+    ],
+    "dimensions": [
+      0.09499931335449219,
+      3.3999996185302734,
+      0.07499980926513672
+    ],
+    "status": "technical static proxy; not physical acceptance"
+  },
+  {
+    "entity": "luminaire_13.0_11.0",
+    "type": "aabb",
+    "position": [
+      13.0,
+      11.0,
+      4.519999980926514
+    ],
+    "dimensions": [
+      0.09499931335449219,
+      3.3999996185302734,
+      0.07499980926513672
+    ],
+    "status": "technical static proxy; not physical acceptance"
+  },
+  {
+    "entity": "corridor_luminaire_-17",
+    "type": "aabb",
+    "position": [
+      -17.000000476837158,
+      -3.5999999046325684,
+      4.460000038146973
+    ],
+    "dimensions": [
+      2.40000057220459,
+      0.09499979019165039,
+      0.07499980926513672
+    ],
+    "status": "technical static proxy; not physical acceptance"
+  },
+  {
+    "entity": "corridor_luminaire_-22",
+    "type": "aabb",
+    "position": [
+      -22.0,
+      -3.5999999046325684,
+      4.460000038146973
+    ],
+    "dimensions": [
+      2.4000015258789062,
+      0.09499979019165039,
+      0.07499980926513672
+    ],
+    "status": "technical static proxy; not physical acceptance"
+  },
+  {
+    "entity": "corridor_luminaire_-27",
+    "type": "aabb",
+    "position": [
+      -27.0,
+      -3.5999999046325684,
+      4.460000038146973
+    ],
+    "dimensions": [
+      2.4000015258789062,
+      0.09499979019165039,
+      0.07499980926513672
+    ],
+    "status": "technical static proxy; not physical acceptance"
+  },
+  {
+    "entity": "corridor_luminaire_-32",
+    "type": "aabb",
+    "position": [
+      -32.0,
+      -3.5999999046325684,
+      4.460000038146973
+    ],
+    "dimensions": [
+      2.4000015258789062,
+      0.09499979019165039,
+      0.07499980926513672
+    ],
+    "status": "technical static proxy; not physical acceptance"
+  },
+  {
+    "entity": "corridor_luminaire_-37",
+    "type": "aabb",
+    "position": [
+      -37.0,
+      -3.5999999046325684,
+      4.460000038146973
+    ],
+    "dimensions": [
+      2.4000015258789062,
+      0.09499979019165039,
+      0.07499980926513672
+    ],
+    "status": "technical static proxy; not physical acceptance"
+  },
+  {
+    "entity": "corridor_luminaire_-42",
+    "type": "aabb",
+    "position": [
+      -42.0,
+      -3.5999999046325684,
+      4.460000038146973
+    ],
+    "dimensions": [
+      2.4000015258789062,
+      0.09499979019165039,
+      0.07499980926513672
+    ],
+    "status": "technical static proxy; not physical acceptance"
+  },
+  {
+    "entity": "corridor_luminaire_-47",
+    "type": "aabb",
+    "position": [
+      -47.0,
+      -3.5999999046325684,
+      4.460000038146973
+    ],
+    "dimensions": [
+      2.4000015258789062,
+      0.09499979019165039,
+      0.07499980926513672
+    ],
+    "status": "technical static proxy; not physical acceptance"
+  },
+  {
+    "entity": "ceiling_pipe0",
+    "type": "aabb",
+    "position": [
+      -0.5,
+      -7.25,
+      4.239999771118164
+    ],
+    "dimensions": [
+      29.0,
+      0.1099996566772461,
+      0.1100015640258789
+    ],
+    "status": "technical static proxy; not physical acceptance"
+  },
+  {
+    "entity": "ceiling_pipe1",
+    "type": "aabb",
+    "position": [
+      -0.5,
+      -6.960000038146973,
+      4.239999771118164
+    ],
+    "dimensions": [
+      29.0,
+      0.1099996566772461,
+      0.1100015640258789
+    ],
+    "status": "technical static proxy; not physical acceptance"
+  },
+  {
+    "entity": "ceiling_pipe2",
+    "type": "aabb",
+    "position": [
+      -0.5,
+      -6.670000076293945,
+      4.239999771118164
+    ],
+    "dimensions": [
+      29.0,
+      0.1099996566772461,
+      0.1100015640258789
+    ],
+    "status": "technical static proxy; not physical acceptance"
+  },
+  {
+    "entity": "main_ceiling_pipe0",
+    "type": "aabb",
+    "position": [
+      3.5999999046325684,
+      5.5,
+      4.210000038146973
+    ],
+    "dimensions": [
+      0.13000011444091797,
+      26.0,
+      0.13000106811523438
+    ],
+    "status": "technical static proxy; not physical acceptance"
+  },
+  {
+    "entity": "main_ceiling_pipe1",
+    "type": "aabb",
+    "position": [
+      3.8499999046325684,
+      5.5,
+      4.210000038146973
+    ],
+    "dimensions": [
+      0.13000011444091797,
+      26.0,
+      0.13000106811523438
+    ],
+    "status": "technical static proxy; not physical acceptance"
+  },
+  {
+    "entity": "main_ceiling_pipe2",
+    "type": "aabb",
+    "position": [
+      4.099999904632568,
+      5.5,
+      4.210000038146973
+    ],
+    "dimensions": [
+      0.13000011444091797,
+      26.0,
+      0.13000106811523438
+    ],
+    "status": "technical static proxy; not physical acceptance"
+  }
+]

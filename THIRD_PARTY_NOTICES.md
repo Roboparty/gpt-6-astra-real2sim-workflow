@@ -8,6 +8,8 @@
 
 ## Runtime and references
 
+The independently authored ETH3D comparison also includes small photographic comparison previews under `docs/research/evidence/eth3d_full_agent_20261003`; their source photographs retain ETH3D's applicable terms and are not MIT-licensed project code. The common predicted-depth reference uses [Depth Anything 3](https://github.com/ByteDance-Seed/Depth-Anything-3), pinned to the source and checkpoint revisions in the comparison report. Neither DA3 source nor weights are redistributed. The included AWSM-port scene recipe is independently authored for this experiment; the upstream protocol and metric source retain their own attribution and terms.
+
 The 2026-10-03 camera experiment uses the [ETH3D delivery-area dataset](https://www.eth3d.net/datasets).
 Its real photographs, laser data and calibration remain third-party data; the small
 research contact/comparison previews under `docs/research/evidence/eth3d_camera_20261003`

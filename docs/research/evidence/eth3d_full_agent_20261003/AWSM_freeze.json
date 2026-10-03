@@ -1,0 +1,42 @@
+{
+  "method": "AWSM",
+  "status": "frozen_for_independent_evaluation",
+  "frozen_utc": "2026-10-03T05:31:48.054961+00:00",
+  "model_sha256": "8bf7eaa7bb795118b58c5782d313f071826990bc999cf94d4568c8db508abcd2",
+  "model_from_input": [
+    [
+      0.99837529540149,
+      0.002186867471625334,
+      0.05693845047636353,
+      0.0
+    ],
+    [
+      -0.0029226752216324754,
+      0.9999132565047825,
+      0.012842797029859961,
+      0.0
+    ],
+    [
+      -0.05690542594108765,
+      -0.01298834387683323,
+      0.9982950843422003,
+      1.4796541998118724
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "quality_status": "LIMITED",
+  "visual_acceptance": false,
+  "physical_acceptance": false,
+  "workflow_completion": "published protocol port completed:2versions,20paired checks,3full36-view checks",
+  "independent_review_sha256": "d132652b2b7200586b8e80a3acd35b9ee53687cc6c4ed2e1499fee930c898e46",
+  "final_input_check_sha256": "fe90b9c84bea8fc606d49e09f25971c8b2d20fbb396469cd91e03a1d686860f4",
+  "reference_manifest_sha256": "a3d9eb6be2b6fabf3ff0d776141d41cf8c1f628051c68637ac2a2a38907acdc3",
+  "source_model_path": "/home/wqz/real2sim_agent_compare_20261003/AWSM/scene.blend",
+  "source_evidence_archive_sha256": "15da8797b4be28105d03cdc9e8d0d797cc4574d2bc96fbf67d1da9f60bbebf99",
+  "scope": "Independent semantic authoring under AWSM protocol port to ETH3D; not original World Lobby/model-runtime reproduction; no GT scores fed back"
+}

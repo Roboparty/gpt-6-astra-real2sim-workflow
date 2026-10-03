@@ -1,0 +1,262 @@
+{
+  "status": "complete",
+  "scope": "fit-only RGB and learned-depth checks, not heldout/GT evaluation or visual acceptance",
+  "mode": "paired",
+  "version": 3,
+  "model": "/home/wqz/real2sim_agent_compare_20261003/OURS/models/v3/model.blend",
+  "model_sha256": "4d53b2a7fa076a6892592e555f33b55b07476dc2f6dab58651ab146fc1acdf85",
+  "model_unchanged": true,
+  "model_from_input": [
+    [
+      0.9985254456168041,
+      -0.0029571798849103935,
+      0.05420506934679546,
+      0.0
+    ],
+    [
+      0.0025512528002570685,
+      0.9999681954851007,
+      0.007556396457319363,
+      0.0
+    ],
+    [
+      -0.05422569100446581,
+      -0.007406963304842917,
+      0.998501232512854,
+      1.477518807930019
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "reference_manifest_sha256": "a3d9eb6be2b6fabf3ff0d776141d41cf8c1f628051c68637ac2a2a38907acdc3",
+  "rows": [
+    {
+      "index": 0,
+      "frame_id": "DSC_0675",
+      "source": "/home/wqz/real2sim_agent_compare_20261003/OURS/inputs/rgb/000.png",
+      "source_sha256": "e14725171523ed699d6036f7dbabcae822d432fd529ec526df4e3d326f72d50a",
+      "reference_sha256": "00d40bc9108b53df15ffa852704b8c02cc932e1de461e4fc8c4f794ffd99fc45",
+      "domain_pixels": 19200,
+      "predicted_pixels": 19200,
+      "coverage": 1.0,
+      "signed_mean_m": 0.0650483199891918,
+      "mae_m": 0.17610167042908362,
+      "rmse_m": 0.8661574390629356,
+      "absrel": 0.0401631223939441,
+      "missing_penalty_mae_m": 0.17610167042908362,
+      "render": "view_000.png",
+      "render_sha256": "bb4dfaedfc43ee9172dcc4fcf7a8e90341067a4d30d8e1bcdde863ae3cc5540d",
+      "render_size": [
+        640,
+        426
+      ]
+    },
+    {
+      "index": 4,
+      "frame_id": "DSC_0680",
+      "source": "/home/wqz/real2sim_agent_compare_20261003/OURS/inputs/rgb/004.png",
+      "source_sha256": "dde0b1e3a680c28aaeb9e1d464f72f714bc45eeaa74b58fed6b412e8fad18c65",
+      "reference_sha256": "6853b8026b374a31d8b400955144bd59f7a345cc4353a5f2a0f04e4ecaf6b38f",
+      "domain_pixels": 19200,
+      "predicted_pixels": 19200,
+      "coverage": 1.0,
+      "signed_mean_m": 0.18481474519379498,
+      "mae_m": 0.46242654971735514,
+      "rmse_m": 1.450247861464628,
+      "absrel": 0.08466616604584683,
+      "missing_penalty_mae_m": 0.46242654971735514,
+      "render": "view_004.png",
+      "render_sha256": "fea272502b34ff66957edd1b2ef9f3f1a75f9c20b6fdf7d07b540d119aa0b9ab",
+      "render_size": [
+        640,
+        426
+      ]
+    },
+    {
+      "index": 8,
+      "frame_id": "DSC_0685",
+      "source": "/home/wqz/real2sim_agent_compare_20261003/OURS/inputs/rgb/008.png",
+      "source_sha256": "9684fbf04b95fe4465757e269bb3bb6a4924c406ac7511acbf1e825597b4962b",
+      "reference_sha256": "342b2bf6ea5d1250200e16a4a6fd2b30a6b0edd26614e6cc78bb5482c0a60f6f",
+      "domain_pixels": 19200,
+      "predicted_pixels": 19200,
+      "coverage": 1.0,
+      "signed_mean_m": -0.15958381911480246,
+      "mae_m": 0.6806354904743979,
+      "rmse_m": 1.5620111044893419,
+      "absrel": 0.08627982800366775,
+      "missing_penalty_mae_m": 0.6806354904743979,
+      "render": "view_008.png",
+      "render_sha256": "c77c5f8ed45c56e42819a4b2e18f8084094cff5241388f07c39d6a0d51d9edf9",
+      "render_size": [
+        640,
+        426
+      ]
+    },
+    {
+      "index": 12,
+      "frame_id": "DSC_0690",
+      "source": "/home/wqz/real2sim_agent_compare_20261003/OURS/inputs/rgb/012.png",
+      "source_sha256": "61316c7eccdcc97ca0305888d2d4c83ee57f8edba74d77b777f7d228b8531e4f",
+      "reference_sha256": "2bb6022952ca63a4333a018c5620f902a9fec1e51a2865ca5419423af75a0840",
+      "domain_pixels": 19200,
+      "predicted_pixels": 19200,
+      "coverage": 1.0,
+      "signed_mean_m": -0.10677463726077112,
+      "mae_m": 0.5567718263312396,
+      "rmse_m": 1.2523759251822244,
+      "absrel": 0.06381288532718421,
+      "missing_penalty_mae_m": 0.5567718263312396,
+      "render": "view_012.png",
+      "render_sha256": "6b847b49f7570fe3e23736e7412497db678db6e0573cae597756573790f4656a",
+      "render_size": [
+        640,
+        426
+      ]
+    },
+    {
+      "index": 16,
+      "frame_id": "DSC_0695",
+      "source": "/home/wqz/real2sim_agent_compare_20261003/OURS/inputs/rgb/016.png",
+      "source_sha256": "eaf34c6a5e2d1388eddf2d7d6875a475b959cf05a7e0fc6add7bb13b9b971da6",
+      "reference_sha256": "84ec70008bcc875170f4dc1d08e5408b2741cd597a1ebc763f449b71bbea24c3",
+      "domain_pixels": 19200,
+      "predicted_pixels": 19200,
+      "coverage": 1.0,
+      "signed_mean_m": 0.09132475013284022,
+      "mae_m": 0.3208899817092552,
+      "rmse_m": 1.0174180161853807,
+      "absrel": 0.040488041732009504,
+      "missing_penalty_mae_m": 0.3208899817092552,
+      "render": "view_016.png",
+      "render_sha256": "b7107d7f98553be7bf799d1d3e95d3d89535c711df597a96262c503e6d957530",
+      "render_size": [
+        640,
+        426
+      ]
+    },
+    {
+      "index": 20,
+      "frame_id": "DSC_0700",
+      "source": "/home/wqz/real2sim_agent_compare_20261003/OURS/inputs/rgb/020.png",
+      "source_sha256": "351bcfa6c3f8226bba97c423b63322b4231ad874f07a3bb3d5e77849805fa1a5",
+      "reference_sha256": "d18201d95ab402b662d783d55399ab6b22a6106a7a8ef389858834ee7a4a979a",
+      "domain_pixels": 18994,
+      "predicted_pixels": 18979,
+      "coverage": 0.9992102769295567,
+      "signed_mean_m": 0.1526914416079051,
+      "mae_m": 0.41736507991967436,
+      "rmse_m": 0.9095198952468987,
+      "absrel": 0.046141701357520666,
+      "missing_penalty_mae_m": 0.4407271692005633,
+      "render": "view_020.png",
+      "render_sha256": "f7c184b80d8bb0472c2c97448172ca519efd0fd992cbc8d494b40a1f66a5f556",
+      "render_size": [
+        640,
+        426
+      ]
+    },
+    {
+      "index": 24,
+      "frame_id": "DSC_0705",
+      "source": "/home/wqz/real2sim_agent_compare_20261003/OURS/inputs/rgb/024.png",
+      "source_sha256": "e65e9f1e77619f0811a2f0ae8611f0c0ad56070e2e32a8c8b582778f68a60591",
+      "reference_sha256": "7e2bf50d6974924b5a4b1bfe2d55a2ae9f8c2de60fe7e7609c1a794b310bfcd5",
+      "domain_pixels": 19200,
+      "predicted_pixels": 19200,
+      "coverage": 1.0,
+      "signed_mean_m": 0.07760867783522452,
+      "mae_m": 0.46486395406652736,
+      "rmse_m": 1.0532911179276676,
+      "absrel": 0.08403700624668425,
+      "missing_penalty_mae_m": 0.46486395406652736,
+      "render": "view_024.png",
+      "render_sha256": "cd395fd75bd184e045566fdea1250f90ec1e15dd44489610d7cd6ac0b1fae7ec",
+      "render_size": [
+        640,
+        426
+      ]
+    },
+    {
+      "index": 28,
+      "frame_id": "DSC_0710",
+      "source": "/home/wqz/real2sim_agent_compare_20261003/OURS/inputs/rgb/028.png",
+      "source_sha256": "7ac847c26afec3b75092214284482ead89dc74c083f8546d843ad7e1ab9112cc",
+      "reference_sha256": "2b01de529fb15e878413a300304c73f9a02529b01e86fa7e6eacba60abe530eb",
+      "domain_pixels": 19200,
+      "predicted_pixels": 19200,
+      "coverage": 1.0,
+      "signed_mean_m": 0.18129421017030928,
+      "mae_m": 0.4767966379238297,
+      "rmse_m": 1.03283884065235,
+      "absrel": 0.07082547460097102,
+      "missing_penalty_mae_m": 0.4767966379238297,
+      "render": "view_028.png",
+      "render_sha256": "d361effd81acfba3ff484c4ce2e1a7e6e63a42d13d0093fa04c95a657a04b8c1",
+      "render_size": [
+        640,
+        426
+      ]
+    },
+    {
+      "index": 32,
+      "frame_id": "DSC_0715",
+      "source": "/home/wqz/real2sim_agent_compare_20261003/OURS/inputs/rgb/032.png",
+      "source_sha256": "31e4ffd2e7689cbd09f9e40ca4242c905bacf540f7422a6e98fd5d604a30747f",
+      "reference_sha256": "64f0c2fcb44efebe01cba1bb123fa605701c4cc10a248298e4ff99addf23283a",
+      "domain_pixels": 18993,
+      "predicted_pixels": 18936,
+      "coverage": 0.9969988943294898,
+      "signed_mean_m": 0.38501600656947155,
+      "mae_m": 0.4961275660868971,
+      "rmse_m": 1.1828743316751227,
+      "absrel": 0.06250306089089207,
+      "missing_penalty_mae_m": 0.5846718049503229,
+      "render": "view_032.png",
+      "render_sha256": "01e9fabb7f6fdba229d91ae2669f4b1a3b1857d61c7953b4053214f4e9a9fa3c",
+      "render_size": [
+        640,
+        426
+      ]
+    },
+    {
+      "index": 35,
+      "frame_id": "DSC_0718",
+      "source": "/home/wqz/real2sim_agent_compare_20261003/OURS/inputs/rgb/035.png",
+      "source_sha256": "86044a587b4a3f5298ee4fcf6ff6f814da7a746825992b6a8515c85b559b140e",
+      "reference_sha256": "07cbf1cf55a4ebedc6653c132853dac40576360762b3538ba4de4bb37c817c59",
+      "domain_pixels": 18983,
+      "predicted_pixels": 18943,
+      "coverage": 0.9978928514987093,
+      "signed_mean_m": 0.31835644072362385,
+      "mae_m": 0.46010156887731957,
+      "rmse_m": 1.0446294309862316,
+      "absrel": 0.054252195336669785,
+      "missing_penalty_mae_m": 0.5223465215847372,
+      "render": "view_035.png",
+      "render_sha256": "de5e5dba72918082e2aa3e9fdcd544b7841272381ae798e91c614117a4e0c8cd",
+      "render_size": [
+        640,
+        426
+      ]
+    }
+  ],
+  "seconds": 161.35561813996173,
+  "implementation_sha256": {
+    "check_agent_scene.py": "dac0c1e3c6edf4af6d076fa9c0258fe389ef58ae7cb489bbd286953661612fe8",
+    "render_visibility.py": "b6f8ef242860e195ff292c33f3f4eff0e8fded785378ad031344021e511fdae1"
+  },
+  "blender": "4.5.3 LTS",
+  "render_settings": {
+    "engine": "CPU Cycles",
+    "samples": 12,
+    "threads": 2,
+    "width": 640
+  },
+  "original_report_sha256": "043af65ca2116cd1ebcc8648f67fdf2d59ec56a2c6c9945e5b861c28cb07ca7d",
+  "weighted_missing_penalty_mae_m": 0.46846674393568727
+}

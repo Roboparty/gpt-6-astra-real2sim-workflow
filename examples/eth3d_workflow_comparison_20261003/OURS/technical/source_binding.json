@@ -1,0 +1,7 @@
+{
+  "selected_model_sha256": "4d53b2a7fa076a6892592e555f33b55b07476dc2f6dab58651ab146fc1acdf85",
+  "selected_scene_sha256": "0a9925a3208e1019641b082d115fbdb87af55c62873896ff4f7cfe220e5a8c53",
+  "derived_scene_sha256": "ecd69656458e376919aa77f926993f026bfedc4c12a32eb7bcdbbe0dcb4174cc",
+  "source_model_unchanged": true,
+  "scope": "Only evaluated AABB metadata synchronized in derived copy; selected model and scene unchanged; no acceptance waiver"
+}

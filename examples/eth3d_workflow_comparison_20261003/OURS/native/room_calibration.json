@@ -1,0 +1,199 @@
+{
+  "surfaces": [
+    {
+      "id": "floor",
+      "plane": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "visibility": "observed",
+      "status": "fitted",
+      "evidence": [
+        "source inputs [12, 16, 20, 24]",
+        "measurement_raw.json"
+      ],
+      "uncertainty": "Outer unseen spans are conservative closures; learned-depth bias and long-range uncertainty remain",
+      "image_constraints": [
+        {
+          "input_index": 12,
+          "kind": "visible semantic plane or bounded long-range wall extent"
+        },
+        {
+          "input_index": 16,
+          "kind": "visible semantic plane or bounded long-range wall extent"
+        },
+        {
+          "input_index": 20,
+          "kind": "visible semantic plane or bounded long-range wall extent"
+        },
+        {
+          "input_index": 24,
+          "kind": "visible semantic plane or bounded long-range wall extent"
+        }
+      ],
+      "residuals": {
+        "representative_depth_residual_m": 0.019,
+        "interpretation": "input fit/uncertainty estimate; no independent reality acceptance"
+      }
+    },
+    {
+      "id": "ceiling",
+      "plane": [
+        0,
+        0,
+        1,
+        -4.68
+      ],
+      "visibility": "observed",
+      "status": "fitted",
+      "evidence": [
+        "source inputs [12, 20, 28]",
+        "measurement_raw.json"
+      ],
+      "uncertainty": "Outer unseen spans are conservative closures; learned-depth bias and long-range uncertainty remain",
+      "image_constraints": [
+        {
+          "input_index": 12,
+          "kind": "visible semantic plane or bounded long-range wall extent"
+        },
+        {
+          "input_index": 20,
+          "kind": "visible semantic plane or bounded long-range wall extent"
+        },
+        {
+          "input_index": 28,
+          "kind": "visible semantic plane or bounded long-range wall extent"
+        }
+      ],
+      "residuals": {
+        "representative_depth_residual_m": 0.2,
+        "interpretation": "input fit/uncertainty estimate; no independent reality acceptance"
+      }
+    },
+    {
+      "id": "wall_back",
+      "plane": [
+        0,
+        1,
+        0,
+        -19.4
+      ],
+      "visibility": "partial",
+      "status": "fitted",
+      "evidence": [
+        "source inputs [12]",
+        "measurement_raw.json"
+      ],
+      "uncertainty": "Outer unseen spans are conservative closures; learned-depth bias and long-range uncertainty remain",
+      "image_constraints": [
+        {
+          "input_index": 12,
+          "kind": "visible semantic plane or bounded long-range wall extent"
+        }
+      ],
+      "residuals": {
+        "representative_depth_residual_m": 0.22,
+        "interpretation": "input fit/uncertainty estimate; no independent reality acceptance"
+      }
+    },
+    {
+      "id": "wall_front",
+      "plane": [
+        0,
+        1,
+        0,
+        11.5
+      ],
+      "visibility": "unobserved",
+      "status": "hypothesized",
+      "evidence": [
+        "source inputs [24, 28]",
+        "measurement_raw.json"
+      ],
+      "uncertainty": "Outer unseen spans are conservative closures; learned-depth bias and long-range uncertainty remain"
+    },
+    {
+      "id": "wall_left",
+      "plane": [
+        1,
+        0,
+        0,
+        49.0
+      ],
+      "visibility": "partial",
+      "status": "fitted",
+      "evidence": [
+        "source inputs [20, 32, 35]",
+        "measurement_raw.json"
+      ],
+      "uncertainty": "Outer unseen spans are conservative closures; learned-depth bias and long-range uncertainty remain",
+      "image_constraints": [
+        {
+          "input_index": 20,
+          "kind": "visible semantic plane or bounded long-range wall extent"
+        },
+        {
+          "input_index": 32,
+          "kind": "visible semantic plane or bounded long-range wall extent"
+        },
+        {
+          "input_index": 35,
+          "kind": "visible semantic plane or bounded long-range wall extent"
+        }
+      ],
+      "residuals": {
+        "representative_depth_residual_m": 1.2,
+        "interpretation": "input fit/uncertainty estimate; no independent reality acceptance"
+      }
+    },
+    {
+      "id": "wall_right",
+      "plane": [
+        1,
+        0,
+        0,
+        -16.0
+      ],
+      "visibility": "partial",
+      "status": "fitted",
+      "evidence": [
+        "source inputs [6, 7, 8]",
+        "measurement_raw.json"
+      ],
+      "uncertainty": "Outer unseen spans are conservative closures; learned-depth bias and long-range uncertainty remain",
+      "image_constraints": [
+        {
+          "input_index": 6,
+          "kind": "visible semantic plane or bounded long-range wall extent"
+        },
+        {
+          "input_index": 7,
+          "kind": "visible semantic plane or bounded long-range wall extent"
+        },
+        {
+          "input_index": 8,
+          "kind": "visible semantic plane or bounded long-range wall extent"
+        }
+      ],
+      "residuals": {
+        "representative_depth_residual_m": 1.5,
+        "interpretation": "input fit/uncertainty estimate; no independent reality acceptance"
+      }
+    }
+  ],
+  "openings_and_columns_reviewed": true,
+  "internal_partitions": [
+    "garage plane x5.25, open bay north ofy0.6",
+    "sidewall x-13.65 above corridor",
+    "cage front y-7.91 with open lower bays",
+    "loading platform y14.8"
+  ],
+  "column_evidence": [
+    "measurements_landmarks.json"
+  ],
+  "room_height_m": 4.68,
+  "hidden_completion": "Outer rectangle closes unseen rooms behind internal cage walls. Source-facing internal partitions preserve observed openings.",
+  "quality_note": "Large uncertainty for inaccessible outer bounds is not a physical-accuracy pass."
+}

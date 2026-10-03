@@ -1,0 +1,2958 @@
+{
+  "source_model_sha256": "4d53b2a7fa076a6892592e555f33b55b07476dc2f6dab58651ab146fc1acdf85",
+  "stage_status": "provisional candidate appearance; native material/light calibration not accepted because geometry fails",
+  "materials": [
+    {
+      "name": "bag",
+      "uses_nodes": true,
+      "bindings": [
+        "rack_sack_0_0_0",
+        "rack_sack_0_0_1",
+        "rack_sack_0_0_2",
+        "rack_sack_0_0_3",
+        "rack_sack_0_0_4",
+        "rack_sack_0_1_0",
+        "rack_sack_0_1_1",
+        "rack_sack_0_1_2",
+        "rack_sack_0_1_3",
+        "rack_sack_0_2_0",
+        "rack_sack_0_2_1",
+        "rack_sack_0_2_2",
+        "rack_sack_0_2_3",
+        "rack_sack_1_0_0",
+        "rack_sack_1_0_1",
+        "rack_sack_1_0_2",
+        "rack_sack_1_0_3",
+        "rack_sack_1_1_0",
+        "rack_sack_1_1_1",
+        "rack_sack_1_1_2",
+        "rack_sack_1_1_3",
+        "rack_sack_1_2_0",
+        "rack_sack_1_2_1",
+        "rack_sack_1_2_2",
+        "rack_sack_1_2_3",
+        "rack_sack_1_2_4",
+        "rack_sack_2_0_0",
+        "rack_sack_2_0_1",
+        "rack_sack_2_0_2",
+        "rack_sack_2_0_3",
+        "rack_sack_2_1_0",
+        "rack_sack_2_1_1",
+        "rack_sack_2_1_2",
+        "rack_sack_2_1_3",
+        "rack_sack_2_1_4",
+        "rack_sack_2_2_0",
+        "rack_sack_2_2_1",
+        "rack_sack_2_2_2",
+        "rack_sack_2_2_3",
+        "top_folded_bag_0_0",
+        "top_folded_bag_0_1",
+        "top_folded_bag_0_2",
+        "top_folded_bag_1_0",
+        "top_folded_bag_1_1",
+        "top_folded_bag_1_2"
+      ],
+      "nodes": [
+        {
+          "name": "Principled BSDF",
+          "type": "ShaderNodeBsdfPrincipled"
+        },
+        {
+          "name": "Material Output",
+          "type": "ShaderNodeOutputMaterial"
+        },
+        {
+          "name": "Noise Texture",
+          "type": "ShaderNodeTexNoise"
+        },
+        {
+          "name": "Geometry",
+          "type": "ShaderNodeNewGeometry"
+        },
+        {
+          "name": "Color Ramp",
+          "type": "ShaderNodeValToRGB"
+        }
+      ],
+      "links": [
+        {
+          "from_node": "Principled BSDF",
+          "from_socket": "BSDF",
+          "to_node": "Material Output",
+          "to_socket": "Surface"
+        },
+        {
+          "from_node": "Geometry",
+          "from_socket": "Position",
+          "to_node": "Noise Texture",
+          "to_socket": "Vector"
+        },
+        {
+          "from_node": "Noise Texture",
+          "from_socket": "Fac",
+          "to_node": "Color Ramp",
+          "to_socket": "Fac"
+        },
+        {
+          "from_node": "Color Ramp",
+          "from_socket": "Color",
+          "to_node": "Principled BSDF",
+          "to_socket": "Base Color"
+        }
+      ],
+      "pbr_defaults": {
+        "Base Color": [
+          0.699999988079071,
+          0.699999988079071,
+          0.6200000047683716,
+          1.0
+        ],
+        "Roughness": 0.8999999761581421,
+        "Metallic": 0.0,
+        "Emission Color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "Emission Strength": 0.0
+      }
+    },
+    {
+      "name": "black_vehicle",
+      "uses_nodes": true,
+      "bindings": [
+        "car_lower_body",
+        "car_upper_body",
+        "car_rear_frame0",
+        "car_rear_frame1",
+        "car_rear_frame2",
+        "car_rear_frame3"
+      ],
+      "nodes": [
+        {
+          "name": "Principled BSDF",
+          "type": "ShaderNodeBsdfPrincipled"
+        },
+        {
+          "name": "Material Output",
+          "type": "ShaderNodeOutputMaterial"
+        }
+      ],
+      "links": [
+        {
+          "from_node": "Principled BSDF",
+          "from_socket": "BSDF",
+          "to_node": "Material Output",
+          "to_socket": "Surface"
+        }
+      ],
+      "pbr_defaults": {
+        "Base Color": [
+          0.01600000075995922,
+          0.01899999938905239,
+          0.017000000923871994,
+          1.0
+        ],
+        "Roughness": 0.23999999463558197,
+        "Metallic": 0.3799999952316284,
+        "Emission Color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "Emission Strength": 0.0
+      }
+    },
+    {
+      "name": "blue",
+      "uses_nodes": true,
+      "bindings": [
+        "rack_upright_0_0",
+        "rack_upright_0_1",
+        "rack_upright_1_0",
+        "rack_upright_1_1",
+        "rack_upright_2_0",
+        "rack_upright_2_1",
+        "rack_upright_3_0",
+        "rack_upright_3_1",
+        "no_parking_blue",
+        "cart_floor_frame",
+        "cart_upright0",
+        "cart_upright1",
+        "cart_upright2",
+        "cart_crossbar"
+      ],
+      "nodes": [
+        {
+          "name": "Principled BSDF",
+          "type": "ShaderNodeBsdfPrincipled"
+        },
+        {
+          "name": "Material Output",
+          "type": "ShaderNodeOutputMaterial"
+        }
+      ],
+      "links": [
+        {
+          "from_node": "Principled BSDF",
+          "from_socket": "BSDF",
+          "to_node": "Material Output",
+          "to_socket": "Surface"
+        }
+      ],
+      "pbr_defaults": {
+        "Base Color": [
+          0.014999999664723873,
+          0.0949999988079071,
+          0.30000001192092896,
+          1.0
+        ],
+        "Roughness": 0.41999998688697815,
+        "Metallic": 0.25,
+        "Emission Color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "Emission Strength": 0.0
+      }
+    },
+    {
+      "name": "blue_door",
+      "uses_nodes": true,
+      "bindings": [
+        "dock_blue_door",
+        "far_corridor_door"
+      ],
+      "nodes": [
+        {
+          "name": "Principled BSDF",
+          "type": "ShaderNodeBsdfPrincipled"
+        },
+        {
+          "name": "Material Output",
+          "type": "ShaderNodeOutputMaterial"
+        }
+      ],
+      "links": [
+        {
+          "from_node": "Principled BSDF",
+          "from_socket": "BSDF",
+          "to_node": "Material Output",
+          "to_socket": "Surface"
+        }
+      ],
+      "pbr_defaults": {
+        "Base Color": [
+          0.017000000923871994,
+          0.17000000178813934,
+          0.30000001192092896,
+          1.0
+        ],
+        "Roughness": 0.6000000238418579,
+        "Metallic": 0.11999999731779099,
+        "Emission Color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "Emission Strength": 0.0
+      }
+    },
+    {
+      "name": "bright_metal",
+      "uses_nodes": true,
+      "bindings": [
+        "door_leaf_0_hinge_0",
+        "door_leaf_0_hinge_1",
+        "door_leaf_0_hinge_2",
+        "door_leaf_0_hinge_3",
+        "door_leaf_1_hinge_0",
+        "door_leaf_1_hinge_1",
+        "door_leaf_1_hinge_2",
+        "door_leaf_1_hinge_3",
+        "door_leaf_2_hinge_0",
+        "door_leaf_2_hinge_1",
+        "door_leaf_2_hinge_2",
+        "door_leaf_2_hinge_3",
+        "door_leaf_3_hinge_0",
+        "door_leaf_3_hinge_1",
+        "door_leaf_3_hinge_2",
+        "door_leaf_3_hinge_3",
+        "door_leaf_4_hinge_0",
+        "door_leaf_4_hinge_1",
+        "door_leaf_4_hinge_2",
+        "door_leaf_4_hinge_3",
+        "door_leaf_5_hinge_0",
+        "door_leaf_5_hinge_1",
+        "door_leaf_5_hinge_2",
+        "door_leaf_5_hinge_3",
+        "door_leaf_6_hinge_0",
+        "door_leaf_6_hinge_1",
+        "door_leaf_6_hinge_2",
+        "door_leaf_6_hinge_3",
+        "trailer_hub_12.9_-1",
+        "trailer_hub_12.9_1",
+        "trailer_hub_13.65_-1",
+        "trailer_hub_13.65_1",
+        "flatbed_hitch",
+        "sign_pole",
+        "van_hub-1_0",
+        "van_hub-1_1",
+        "van_hub1_0",
+        "van_hub1_1",
+        "cage0_side0",
+        "cage0_side1",
+        "cage0_rail0",
+        "cage0_rail1",
+        "cage1_side0",
+        "cage1_side1",
+        "cage1_rail0",
+        "cage1_rail1",
+        "cage2_side0",
+        "cage2_side1",
+        "cage2_rail0",
+        "cage2_rail1",
+        "compactor_hopper_Xa",
+        "compactor_hopper_Xb",
+        "ceiling_pipe0",
+        "ceiling_pipe1",
+        "ceiling_pipe2",
+        "main_ceiling_pipe0",
+        "main_ceiling_pipe1",
+        "main_ceiling_pipe2"
+      ],
+      "nodes": [
+        {
+          "name": "Principled BSDF",
+          "type": "ShaderNodeBsdfPrincipled"
+        },
+        {
+          "name": "Material Output",
+          "type": "ShaderNodeOutputMaterial"
+        }
+      ],
+      "links": [
+        {
+          "from_node": "Principled BSDF",
+          "from_socket": "BSDF",
+          "to_node": "Material Output",
+          "to_socket": "Surface"
+        }
+      ],
+      "pbr_defaults": {
+        "Base Color": [
+          0.5,
+          0.5299999713897705,
+          0.5199999809265137,
+          1.0
+        ],
+        "Roughness": 0.25999999046325684,
+        "Metallic": 0.7799999713897705,
+        "Emission Color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "Emission Strength": 0.0
+      }
+    },
+    {
+      "name": "ceiling",
+      "uses_nodes": true,
+      "bindings": [
+        "ceiling",
+        "corridor_south_wall"
+      ],
+      "nodes": [
+        {
+          "name": "Principled BSDF",
+          "type": "ShaderNodeBsdfPrincipled"
+        },
+        {
+          "name": "Material Output",
+          "type": "ShaderNodeOutputMaterial"
+        },
+        {
+          "name": "Noise Texture",
+          "type": "ShaderNodeTexNoise"
+        },
+        {
+          "name": "Geometry",
+          "type": "ShaderNodeNewGeometry"
+        },
+        {
+          "name": "Color Ramp",
+          "type": "ShaderNodeValToRGB"
+        }
+      ],
+      "links": [
+        {
+          "from_node": "Principled BSDF",
+          "from_socket": "BSDF",
+          "to_node": "Material Output",
+          "to_socket": "Surface"
+        },
+        {
+          "from_node": "Geometry",
+          "from_socket": "Position",
+          "to_node": "Noise Texture",
+          "to_socket": "Vector"
+        },
+        {
+          "from_node": "Noise Texture",
+          "from_socket": "Fac",
+          "to_node": "Color Ramp",
+          "to_socket": "Fac"
+        },
+        {
+          "from_node": "Color Ramp",
+          "from_socket": "Color",
+          "to_node": "Principled BSDF",
+          "to_socket": "Base Color"
+        }
+      ],
+      "pbr_defaults": {
+        "Base Color": [
+          0.20000000298023224,
+          0.19499999284744263,
+          0.17000000178813934,
+          1.0
+        ],
+        "Roughness": 0.8999999761581421,
+        "Metallic": 0.0,
+        "Emission Color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "Emission Strength": 0.0
+      }
+    },
+    {
+      "name": "dock",
+      "uses_nodes": true,
+      "bindings": [
+        "loading_platform"
+      ],
+      "nodes": [
+        {
+          "name": "Principled BSDF",
+          "type": "ShaderNodeBsdfPrincipled"
+        },
+        {
+          "name": "Material Output",
+          "type": "ShaderNodeOutputMaterial"
+        },
+        {
+          "name": "Noise Texture",
+          "type": "ShaderNodeTexNoise"
+        },
+        {
+          "name": "Geometry",
+          "type": "ShaderNodeNewGeometry"
+        },
+        {
+          "name": "Color Ramp",
+          "type": "ShaderNodeValToRGB"
+        }
+      ],
+      "links": [
+        {
+          "from_node": "Principled BSDF",
+          "from_socket": "BSDF",
+          "to_node": "Material Output",
+          "to_socket": "Surface"
+        },
+        {
+          "from_node": "Geometry",
+          "from_socket": "Position",
+          "to_node": "Noise Texture",
+          "to_socket": "Vector"
+        },
+        {
+          "from_node": "Noise Texture",
+          "from_socket": "Fac",
+          "to_node": "Color Ramp",
+          "to_socket": "Fac"
+        },
+        {
+          "from_node": "Color Ramp",
+          "from_socket": "Color",
+          "to_node": "Principled BSDF",
+          "to_socket": "Base Color"
+        }
+      ],
+      "pbr_defaults": {
+        "Base Color": [
+          0.054999999701976776,
+          0.07500000298023224,
+          0.04899999871850014,
+          1.0
+        ],
+        "Roughness": 0.8600000143051147,
+        "Metallic": 0.0,
+        "Emission Color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "Emission Strength": 0.0
+      }
+    },
+    {
+      "name": "door",
+      "uses_nodes": true,
+      "bindings": [
+        "door_leaf_0_panel_0",
+        "door_leaf_0_panel_1",
+        "door_leaf_1_panel_0",
+        "door_leaf_1_panel_1",
+        "door_leaf_2_panel_0",
+        "door_leaf_2_panel_1",
+        "door_leaf_3_panel_0",
+        "door_leaf_3_panel_1",
+        "door_leaf_4_panel_0",
+        "door_leaf_4_panel_1",
+        "door_leaf_5_panel_0",
+        "door_leaf_5_panel_1",
+        "door_leaf_6_panel_0",
+        "door_leaf_6_panel_1",
+        "flatbed_deck",
+        "van_headlamp-1",
+        "van_headlamp1",
+        "cage_machine"
+      ],
+      "nodes": [
+        {
+          "name": "Principled BSDF",
+          "type": "ShaderNodeBsdfPrincipled"
+        },
+        {
+          "name": "Material Output",
+          "type": "ShaderNodeOutputMaterial"
+        }
+      ],
+      "links": [
+        {
+          "from_node": "Principled BSDF",
+          "from_socket": "BSDF",
+          "to_node": "Material Output",
+          "to_socket": "Surface"
+        }
+      ],
+      "pbr_defaults": {
+        "Base Color": [
+          0.6200000047683716,
+          0.6299999952316284,
+          0.6200000047683716,
+          1.0
+        ],
+        "Roughness": 0.36000001430511475,
+        "Metallic": 0.15000000596046448,
+        "Emission Color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "Emission Strength": 0.0
+      }
+    },
+    {
+      "name": "floor",
+      "uses_nodes": true,
+      "bindings": [
+        "floor"
+      ],
+      "nodes": [
+        {
+          "name": "Principled BSDF",
+          "type": "ShaderNodeBsdfPrincipled"
+        },
+        {
+          "name": "Material Output",
+          "type": "ShaderNodeOutputMaterial"
+        },
+        {
+          "name": "Noise Texture",
+          "type": "ShaderNodeTexNoise"
+        },
+        {
+          "name": "Geometry",
+          "type": "ShaderNodeNewGeometry"
+        },
+        {
+          "name": "Color Ramp",
+          "type": "ShaderNodeValToRGB"
+        }
+      ],
+      "links": [
+        {
+          "from_node": "Principled BSDF",
+          "from_socket": "BSDF",
+          "to_node": "Material Output",
+          "to_socket": "Surface"
+        },
+        {
+          "from_node": "Geometry",
+          "from_socket": "Position",
+          "to_node": "Noise Texture",
+          "to_socket": "Vector"
+        },
+        {
+          "from_node": "Noise Texture",
+          "from_socket": "Fac",
+          "to_node": "Color Ramp",
+          "to_socket": "Fac"
+        },
+        {
+          "from_node": "Color Ramp",
+          "from_socket": "Color",
+          "to_node": "Principled BSDF",
+          "to_socket": "Base Color"
+        }
+      ],
+      "pbr_defaults": {
+        "Base Color": [
+          0.1899999976158142,
+          0.17499999701976776,
+          0.125,
+          1.0
+        ],
+        "Roughness": 0.7400000095367432,
+        "Metallic": 0.0,
+        "Emission Color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "Emission Strength": 0.0
+      }
+    },
+    {
+      "name": "glass",
+      "uses_nodes": true,
+      "bindings": [
+        "trailer_window_0",
+        "trailer_window_1",
+        "van_windshield",
+        "van_side_glass-1",
+        "van_side_glass1",
+        "car_rear_glass"
+      ],
+      "nodes": [
+        {
+          "name": "Principled BSDF",
+          "type": "ShaderNodeBsdfPrincipled"
+        },
+        {
+          "name": "Material Output",
+          "type": "ShaderNodeOutputMaterial"
+        }
+      ],
+      "links": [
+        {
+          "from_node": "Principled BSDF",
+          "from_socket": "BSDF",
+          "to_node": "Material Output",
+          "to_socket": "Surface"
+        }
+      ],
+      "pbr_defaults": {
+        "Base Color": [
+          0.014999999664723873,
+          0.02800000086426735,
+          0.032999999821186066,
+          1.0
+        ],
+        "Roughness": 0.11999999731779099,
+        "Metallic": 0.25,
+        "Emission Color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "Emission Strength": 0.0
+      }
+    },
+    {
+      "name": "hazard",
+      "uses_nodes": true,
+      "bindings": [
+        "column_0_lower",
+        "column_1_lower",
+        "column_2_lower",
+        "column_3_lower",
+        "column_4_lower",
+        "column_5_lower",
+        "column_6_lower",
+        "column_7_lower"
+      ],
+      "nodes": [
+        {
+          "name": "Principled BSDF",
+          "type": "ShaderNodeBsdfPrincipled"
+        },
+        {
+          "name": "Material Output",
+          "type": "ShaderNodeOutputMaterial"
+        },
+        {
+          "name": "Geometry",
+          "type": "ShaderNodeNewGeometry"
+        },
+        {
+          "name": "Vector Math",
+          "type": "ShaderNodeVectorMath"
+        },
+        {
+          "name": "Math",
+          "type": "ShaderNodeMath"
+        },
+        {
+          "name": "Math.001",
+          "type": "ShaderNodeMath"
+        },
+        {
+          "name": "Color Ramp",
+          "type": "ShaderNodeValToRGB"
+        }
+      ],
+      "links": [
+        {
+          "from_node": "Principled BSDF",
+          "from_socket": "BSDF",
+          "to_node": "Material Output",
+          "to_socket": "Surface"
+        },
+        {
+          "from_node": "Geometry",
+          "from_socket": "Position",
+          "to_node": "Vector Math",
+          "to_socket": "Vector"
+        },
+        {
+          "from_node": "Vector Math",
+          "from_socket": "Value",
+          "to_node": "Math",
+          "to_socket": "Value"
+        },
+        {
+          "from_node": "Math",
+          "from_socket": "Value",
+          "to_node": "Math.001",
+          "to_socket": "Value"
+        },
+        {
+          "from_node": "Math.001",
+          "from_socket": "Value",
+          "to_node": "Color Ramp",
+          "to_socket": "Fac"
+        },
+        {
+          "from_node": "Color Ramp",
+          "from_socket": "Color",
+          "to_node": "Principled BSDF",
+          "to_socket": "Base Color"
+        }
+      ],
+      "pbr_defaults": {
+        "Base Color": [
+          0.6499999761581421,
+          0.6000000238418579,
+          0.04500000178813934,
+          1.0
+        ],
+        "Roughness": 0.7599999904632568,
+        "Metallic": 0.0,
+        "Emission Color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "Emission Strength": 0.0
+      }
+    },
+    {
+      "name": "light",
+      "uses_nodes": true,
+      "bindings": [
+        "luminaire_-10.0_-5.5",
+        "luminaire_-5.3_-5.5",
+        "luminaire_-0.6_-5.5",
+        "luminaire_4.1_-5.5",
+        "luminaire_8.8_-5.5",
+        "luminaire_13.0_-5.5",
+        "luminaire_-10.0_0.0",
+        "luminaire_-5.3_0.0",
+        "luminaire_-0.6_0.0",
+        "luminaire_4.1_0.0",
+        "luminaire_8.8_0.0",
+        "luminaire_13.0_0.0",
+        "luminaire_-10.0_5.5",
+        "luminaire_-5.3_5.5",
+        "luminaire_-0.6_5.5",
+        "luminaire_4.1_5.5",
+        "luminaire_8.8_5.5",
+        "luminaire_13.0_5.5",
+        "luminaire_-10.0_11.0",
+        "luminaire_-5.3_11.0",
+        "luminaire_-0.6_11.0",
+        "luminaire_4.1_11.0",
+        "luminaire_8.8_11.0",
+        "luminaire_13.0_11.0",
+        "corridor_luminaire_-17",
+        "corridor_luminaire_-22",
+        "corridor_luminaire_-27",
+        "corridor_luminaire_-32",
+        "corridor_luminaire_-37",
+        "corridor_luminaire_-42",
+        "corridor_luminaire_-47"
+      ],
+      "nodes": [
+        {
+          "name": "Principled BSDF",
+          "type": "ShaderNodeBsdfPrincipled"
+        },
+        {
+          "name": "Material Output",
+          "type": "ShaderNodeOutputMaterial"
+        }
+      ],
+      "links": [
+        {
+          "from_node": "Principled BSDF",
+          "from_socket": "BSDF",
+          "to_node": "Material Output",
+          "to_socket": "Surface"
+        }
+      ],
+      "pbr_defaults": {
+        "Base Color": [
+          0.8999999761581421,
+          0.9200000166893005,
+          0.8600000143051147,
+          1.0
+        ],
+        "Roughness": 0.30000001192092896,
+        "Metallic": 0.0,
+        "Emission Color": [
+          0.9200000166893005,
+          0.9599999785423279,
+          1.0,
+          1.0
+        ],
+        "Emission Strength": 6.0
+      }
+    },
+    {
+      "name": "lime",
+      "uses_nodes": true,
+      "bindings": [
+        "skip0_shell",
+        "skip0_foot0",
+        "skip0_foot1",
+        "skip0_rim0",
+        "skip0_rim1",
+        "skip0_side_rim0",
+        "skip0_side_rim1",
+        "skip1_shell",
+        "skip1_foot0",
+        "skip1_foot1",
+        "skip1_rim0",
+        "skip1_rim1",
+        "skip1_side_rim0",
+        "skip1_side_rim1"
+      ],
+      "nodes": [
+        {
+          "name": "Principled BSDF",
+          "type": "ShaderNodeBsdfPrincipled"
+        },
+        {
+          "name": "Material Output",
+          "type": "ShaderNodeOutputMaterial"
+        },
+        {
+          "name": "Noise Texture",
+          "type": "ShaderNodeTexNoise"
+        },
+        {
+          "name": "Geometry",
+          "type": "ShaderNodeNewGeometry"
+        },
+        {
+          "name": "Color Ramp",
+          "type": "ShaderNodeValToRGB"
+        }
+      ],
+      "links": [
+        {
+          "from_node": "Principled BSDF",
+          "from_socket": "BSDF",
+          "to_node": "Material Output",
+          "to_socket": "Surface"
+        },
+        {
+          "from_node": "Geometry",
+          "from_socket": "Position",
+          "to_node": "Noise Texture",
+          "to_socket": "Vector"
+        },
+        {
+          "from_node": "Noise Texture",
+          "from_socket": "Fac",
+          "to_node": "Color Ramp",
+          "to_socket": "Fac"
+        },
+        {
+          "from_node": "Color Ramp",
+          "from_socket": "Color",
+          "to_node": "Principled BSDF",
+          "to_socket": "Base Color"
+        }
+      ],
+      "pbr_defaults": {
+        "Base Color": [
+          0.46000000834465027,
+          0.5799999833106995,
+          0.054999999701976776,
+          1.0
+        ],
+        "Roughness": 0.6299999952316284,
+        "Metallic": 0.15000000596046448,
+        "Emission Color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "Emission Strength": 0.0
+      }
+    },
+    {
+      "name": "lumber",
+      "uses_nodes": true,
+      "bindings": [
+        "rack_pallet_0_0_0",
+        "rack_pallet_0_0_1",
+        "rack_pallet_0_0_2",
+        "rack_pallet_0_0_3",
+        "rack_pallet_0_0_4",
+        "rack_pallet_0_0_5",
+        "rack_pallet_0_1_0",
+        "rack_pallet_0_1_1",
+        "rack_pallet_0_1_2",
+        "rack_pallet_0_1_3",
+        "rack_pallet_0_1_4",
+        "rack_pallet_0_1_5",
+        "rack_pallet_0_2_0",
+        "rack_pallet_0_2_1",
+        "rack_pallet_0_2_2",
+        "rack_pallet_0_2_3",
+        "rack_pallet_0_2_4",
+        "rack_pallet_0_2_5",
+        "rack_pallet_1_0_0",
+        "rack_pallet_1_0_1",
+        "rack_pallet_1_0_2",
+        "rack_pallet_1_0_3",
+        "rack_pallet_1_0_4",
+        "rack_pallet_1_0_5",
+        "rack_pallet_1_1_0",
+        "rack_pallet_1_1_1",
+        "rack_pallet_1_1_2",
+        "rack_pallet_1_1_3",
+        "rack_pallet_1_1_4",
+        "rack_pallet_1_1_5",
+        "rack_pallet_1_2_0",
+        "rack_pallet_1_2_1",
+        "rack_pallet_1_2_2",
+        "rack_pallet_1_2_3",
+        "rack_pallet_1_2_4",
+        "rack_pallet_1_2_5",
+        "rack_pallet_2_0_0",
+        "rack_pallet_2_0_1",
+        "rack_pallet_2_0_2",
+        "rack_pallet_2_0_3",
+        "rack_pallet_2_0_4",
+        "rack_pallet_2_0_5",
+        "rack_pallet_2_1_0",
+        "rack_pallet_2_1_1",
+        "rack_pallet_2_1_2",
+        "rack_pallet_2_1_3",
+        "rack_pallet_2_1_4",
+        "rack_pallet_2_1_5",
+        "rack_pallet_2_2_0",
+        "rack_pallet_2_2_1",
+        "rack_pallet_2_2_2",
+        "rack_pallet_2_2_3",
+        "rack_pallet_2_2_4",
+        "rack_pallet_2_2_5",
+        "rack_pallet_3_0_0",
+        "rack_pallet_3_0_1",
+        "rack_pallet_3_0_2",
+        "rack_pallet_3_0_3",
+        "rack_pallet_3_0_4",
+        "rack_pallet_3_0_5",
+        "rack_pallet_3_1_0",
+        "rack_pallet_3_1_1",
+        "rack_pallet_3_1_2",
+        "rack_pallet_3_1_3",
+        "rack_pallet_3_1_4",
+        "rack_pallet_3_1_5",
+        "rack_pallet_3_2_0",
+        "rack_pallet_3_2_1",
+        "rack_pallet_3_2_2",
+        "rack_pallet_3_2_3",
+        "rack_pallet_3_2_4",
+        "rack_pallet_3_2_5",
+        "lumber_board_0_0",
+        "lumber_board_0_1",
+        "lumber_board_0_2",
+        "lumber_board_1_0",
+        "lumber_board_1_1",
+        "lumber_board_1_2",
+        "lumber_board_2_0",
+        "lumber_board_2_1",
+        "lumber_board_2_2",
+        "lumber_board_3_0",
+        "lumber_board_3_1",
+        "lumber_board_3_2",
+        "lumber_board_4_0",
+        "lumber_board_4_1",
+        "lumber_board_4_2",
+        "lumber_board_5_0",
+        "lumber_board_5_1",
+        "lumber_board_5_2",
+        "lumber_board_6_0",
+        "lumber_board_6_1",
+        "lumber_board_6_2",
+        "lumber_board_7_0",
+        "lumber_board_7_1",
+        "lumber_board_7_2",
+        "lumber_board_8_0",
+        "lumber_board_8_1",
+        "lumber_board_8_2"
+      ],
+      "nodes": [
+        {
+          "name": "Principled BSDF",
+          "type": "ShaderNodeBsdfPrincipled"
+        },
+        {
+          "name": "Material Output",
+          "type": "ShaderNodeOutputMaterial"
+        },
+        {
+          "name": "Noise Texture",
+          "type": "ShaderNodeTexNoise"
+        },
+        {
+          "name": "Geometry",
+          "type": "ShaderNodeNewGeometry"
+        },
+        {
+          "name": "Color Ramp",
+          "type": "ShaderNodeValToRGB"
+        },
+        {
+          "name": "Geometry.001",
+          "type": "ShaderNodeNewGeometry"
+        },
+        {
+          "name": "Vector Math",
+          "type": "ShaderNodeVectorMath"
+        },
+        {
+          "name": "Noise Texture.001",
+          "type": "ShaderNodeTexNoise"
+        },
+        {
+          "name": "Bump",
+          "type": "ShaderNodeBump"
+        }
+      ],
+      "links": [
+        {
+          "from_node": "Principled BSDF",
+          "from_socket": "BSDF",
+          "to_node": "Material Output",
+          "to_socket": "Surface"
+        },
+        {
+          "from_node": "Geometry",
+          "from_socket": "Position",
+          "to_node": "Noise Texture",
+          "to_socket": "Vector"
+        },
+        {
+          "from_node": "Noise Texture",
+          "from_socket": "Fac",
+          "to_node": "Color Ramp",
+          "to_socket": "Fac"
+        },
+        {
+          "from_node": "Color Ramp",
+          "from_socket": "Color",
+          "to_node": "Principled BSDF",
+          "to_socket": "Base Color"
+        },
+        {
+          "from_node": "Geometry.001",
+          "from_socket": "Position",
+          "to_node": "Vector Math",
+          "to_socket": "Vector"
+        },
+        {
+          "from_node": "Vector Math",
+          "from_socket": "Vector",
+          "to_node": "Noise Texture.001",
+          "to_socket": "Vector"
+        },
+        {
+          "from_node": "Noise Texture.001",
+          "from_socket": "Fac",
+          "to_node": "Bump",
+          "to_socket": "Height"
+        },
+        {
+          "from_node": "Bump",
+          "from_socket": "Normal",
+          "to_node": "Principled BSDF",
+          "to_socket": "Normal"
+        }
+      ],
+      "pbr_defaults": {
+        "Base Color": [
+          0.6399999856948853,
+          0.5099999904632568,
+          0.30000001192092896,
+          1.0
+        ],
+        "Roughness": 0.8299999833106995,
+        "Metallic": 0.0,
+        "Emission Color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "Emission Strength": 0.0
+      }
+    },
+    {
+      "name": "orange",
+      "uses_nodes": true,
+      "bindings": [
+        "rack_beam_0_0",
+        "rack_beam_0_1",
+        "rack_beam_1_0",
+        "rack_beam_1_1",
+        "rack_beam_2_0",
+        "rack_beam_2_1",
+        "rack_beam_3_0",
+        "rack_beam_3_1"
+      ],
+      "nodes": [
+        {
+          "name": "Principled BSDF",
+          "type": "ShaderNodeBsdfPrincipled"
+        },
+        {
+          "name": "Material Output",
+          "type": "ShaderNodeOutputMaterial"
+        }
+      ],
+      "links": [
+        {
+          "from_node": "Principled BSDF",
+          "from_socket": "BSDF",
+          "to_node": "Material Output",
+          "to_socket": "Surface"
+        }
+      ],
+      "pbr_defaults": {
+        "Base Color": [
+          0.6000000238418579,
+          0.0949999988079071,
+          0.012000000104308128,
+          1.0
+        ],
+        "Roughness": 0.5199999809265137,
+        "Metallic": 0.10000000149011612,
+        "Emission Color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "Emission Strength": 0.0
+      }
+    },
+    {
+      "name": "red",
+      "uses_nodes": true,
+      "bindings": [
+        "no_parking_red",
+        "no_parking_slashA",
+        "no_parking_slashB",
+        "van_observed_hood_SV",
+        "car_tail_light-1",
+        "car_tail_light1",
+        "fire_cabinet",
+        "extinguisher"
+      ],
+      "nodes": [
+        {
+          "name": "Principled BSDF",
+          "type": "ShaderNodeBsdfPrincipled"
+        },
+        {
+          "name": "Material Output",
+          "type": "ShaderNodeOutputMaterial"
+        }
+      ],
+      "links": [
+        {
+          "from_node": "Principled BSDF",
+          "from_socket": "BSDF",
+          "to_node": "Material Output",
+          "to_socket": "Surface"
+        }
+      ],
+      "pbr_defaults": {
+        "Base Color": [
+          0.5,
+          0.019999999552965164,
+          0.012000000104308128,
+          1.0
+        ],
+        "Roughness": 0.25,
+        "Metallic": 0.0,
+        "Emission Color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "Emission Strength": 0.0
+      }
+    },
+    {
+      "name": "rubber",
+      "uses_nodes": true,
+      "bindings": [
+        "entry_sign_0_lettering",
+        "entry_sign_1_lettering",
+        "entry_sign_2_lettering",
+        "trailer_wheel_12.9_-1",
+        "trailer_wheel_12.9_1",
+        "trailer_wheel_13.65_-1",
+        "trailer_wheel_13.65_1",
+        "flatbed_wheel-1",
+        "flatbed_wheel1",
+        "van_windshield_divider",
+        "van_mirror-1",
+        "van_mirror_stem-1",
+        "van_tyre-1_0",
+        "van_tyre-1_1",
+        "van_mirror1",
+        "van_mirror_stem1",
+        "van_tyre1_0",
+        "van_tyre1_1",
+        "van_front_bumper",
+        "van_grille",
+        "car_tyre-1_0",
+        "car_tyre-1_1",
+        "car_tyre1_0",
+        "car_tyre1_1",
+        "cart_caster-1_-1",
+        "cart_caster-1_1",
+        "cart_caster1_-1",
+        "cart_caster1_1",
+        "cage_bin0",
+        "cage_bin1",
+        "cage_bin2"
+      ],
+      "nodes": [
+        {
+          "name": "Principled BSDF",
+          "type": "ShaderNodeBsdfPrincipled"
+        },
+        {
+          "name": "Material Output",
+          "type": "ShaderNodeOutputMaterial"
+        }
+      ],
+      "links": [
+        {
+          "from_node": "Principled BSDF",
+          "from_socket": "BSDF",
+          "to_node": "Material Output",
+          "to_socket": "Surface"
+        }
+      ],
+      "pbr_defaults": {
+        "Base Color": [
+          0.017000000923871994,
+          0.01899999938905239,
+          0.017999999225139618,
+          1.0
+        ],
+        "Roughness": 0.8999999761581421,
+        "Metallic": 0.0,
+        "Emission Color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "Emission Strength": 0.0
+      }
+    },
+    {
+      "name": "rust",
+      "uses_nodes": true,
+      "bindings": [
+        "crate0_strap0",
+        "crate0_strap1",
+        "crate0_strap2",
+        "crate0_strap3",
+        "crate1_strap0",
+        "crate1_strap1",
+        "crate1_strap2",
+        "crate1_strap3"
+      ],
+      "nodes": [
+        {
+          "name": "Principled BSDF",
+          "type": "ShaderNodeBsdfPrincipled"
+        },
+        {
+          "name": "Material Output",
+          "type": "ShaderNodeOutputMaterial"
+        },
+        {
+          "name": "Noise Texture",
+          "type": "ShaderNodeTexNoise"
+        },
+        {
+          "name": "Geometry",
+          "type": "ShaderNodeNewGeometry"
+        },
+        {
+          "name": "Color Ramp",
+          "type": "ShaderNodeValToRGB"
+        }
+      ],
+      "links": [
+        {
+          "from_node": "Principled BSDF",
+          "from_socket": "BSDF",
+          "to_node": "Material Output",
+          "to_socket": "Surface"
+        },
+        {
+          "from_node": "Geometry",
+          "from_socket": "Position",
+          "to_node": "Noise Texture",
+          "to_socket": "Vector"
+        },
+        {
+          "from_node": "Noise Texture",
+          "from_socket": "Fac",
+          "to_node": "Color Ramp",
+          "to_socket": "Fac"
+        },
+        {
+          "from_node": "Color Ramp",
+          "from_socket": "Color",
+          "to_node": "Principled BSDF",
+          "to_socket": "Base Color"
+        }
+      ],
+      "pbr_defaults": {
+        "Base Color": [
+          0.3199999928474426,
+          0.10499999672174454,
+          0.041999999433755875,
+          1.0
+        ],
+        "Roughness": 0.8299999833106995,
+        "Metallic": 0.2199999988079071,
+        "Emission Color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "Emission Strength": 0.0
+      }
+    },
+    {
+      "name": "steel",
+      "uses_nodes": true,
+      "bindings": [
+        "yellow_door_rail0",
+        "yellow_door_rail1",
+        "yellow_door_rail2",
+        "yellow_door_rail3",
+        "door_leaf_0_upright_-1",
+        "door_leaf_0_upright_1",
+        "door_leaf_0_rail_0",
+        "door_leaf_0_rail_1",
+        "door_leaf_0_rail_2",
+        "door_leaf_1_upright_-1",
+        "door_leaf_1_upright_1",
+        "door_leaf_1_rail_0",
+        "door_leaf_1_rail_1",
+        "door_leaf_1_rail_2",
+        "door_leaf_2_upright_-1",
+        "door_leaf_2_upright_1",
+        "door_leaf_2_rail_0",
+        "door_leaf_2_rail_1",
+        "door_leaf_2_rail_2",
+        "door_leaf_3_upright_-1",
+        "door_leaf_3_upright_1",
+        "door_leaf_3_rail_0",
+        "door_leaf_3_rail_1",
+        "door_leaf_3_rail_2",
+        "door_leaf_4_upright_-1",
+        "door_leaf_4_upright_1",
+        "door_leaf_4_rail_0",
+        "door_leaf_4_rail_1",
+        "door_leaf_4_rail_2",
+        "door_leaf_5_upright_-1",
+        "door_leaf_5_upright_1",
+        "door_leaf_5_rail_0",
+        "door_leaf_5_rail_1",
+        "door_leaf_5_rail_2",
+        "door_leaf_6_upright_-1",
+        "door_leaf_6_upright_1",
+        "door_leaf_6_rail_0",
+        "door_leaf_6_rail_1",
+        "door_leaf_6_rail_2",
+        "door_upper_track",
+        "door_hanger0",
+        "door_hanger1",
+        "door_hanger2",
+        "door_hanger3",
+        "door_hanger4",
+        "door_hanger5",
+        "door_hanger6",
+        "trailer_floor",
+        "trailer_towA",
+        "trailer_towB",
+        "flatbed_frame",
+        "flatbed_towA",
+        "flatbed_towB",
+        "sign_base",
+        "van_chassis",
+        "van_cooler_vent0",
+        "van_cooler_vent1",
+        "van_cooler_vent2",
+        "van_cooler_vent3",
+        "van_cooler_vent4",
+        "van_cooler_vent5",
+        "van_cooler_vent6",
+        "car_hub-1_0",
+        "car_hub-1_1",
+        "car_hub1_0",
+        "car_hub1_1",
+        "cage0_wireV0",
+        "cage0_wireV1",
+        "cage0_wireV2",
+        "cage0_wireV3",
+        "cage0_wireV4",
+        "cage0_wireV5",
+        "cage0_wireV6",
+        "cage0_wireV7",
+        "cage0_wireV8",
+        "cage0_wireV9",
+        "cage0_wireV10",
+        "cage0_wireV11",
+        "cage0_wireV12",
+        "cage0_wireV13",
+        "cage0_wireV14",
+        "cage0_wireV15",
+        "cage0_wireV16",
+        "cage0_wireV17",
+        "cage0_wireV18",
+        "cage0_wireV19",
+        "cage0_wireV20",
+        "cage0_wireV21",
+        "cage0_wireV22",
+        "cage0_wireV23",
+        "cage0_wireV24",
+        "cage0_wireV25",
+        "cage0_wireV26",
+        "cage0_wireV27",
+        "cage0_wireV28",
+        "cage0_wireV29",
+        "cage0_wireV30",
+        "cage0_wireV31",
+        "cage0_wireV32",
+        "cage0_wireV33",
+        "cage0_wireV34",
+        "cage0_wireV35",
+        "cage0_wireV36",
+        "cage0_wireH0",
+        "cage0_wireH1",
+        "cage0_wireH2",
+        "cage0_wireH3",
+        "cage0_wireH4",
+        "cage0_wireH5",
+        "cage0_wireH6",
+        "cage0_wireH7",
+        "cage0_wireH8",
+        "cage0_wireH9",
+        "cage0_wireH10",
+        "cage0_wireH11",
+        "cage0_wireH12",
+        "cage0_wireH13",
+        "cage0_wireH14",
+        "cage0_wireH15",
+        "cage0_wireH16",
+        "cage0_wireH17",
+        "cage0_wireH18",
+        "cage0_wireH19",
+        "cage0_wireH20",
+        "cage0_wireH21",
+        "cage0_wireH22",
+        "cage0_wireH23",
+        "cage0_wireH24",
+        "cage0_wireH25",
+        "cage0_wireH26",
+        "cage0_wireH27",
+        "cage0_wireH28",
+        "cage1_wireV0",
+        "cage1_wireV1",
+        "cage1_wireV2",
+        "cage1_wireV3",
+        "cage1_wireV4",
+        "cage1_wireV5",
+        "cage1_wireV6",
+        "cage1_wireV7",
+        "cage1_wireV8",
+        "cage1_wireV9",
+        "cage1_wireV10",
+        "cage1_wireV11",
+        "cage1_wireV12",
+        "cage1_wireV13",
+        "cage1_wireV14",
+        "cage1_wireV15",
+        "cage1_wireV16",
+        "cage1_wireV17",
+        "cage1_wireV18",
+        "cage1_wireV19",
+        "cage1_wireV20",
+        "cage1_wireV21",
+        "cage1_wireV22",
+        "cage1_wireV23",
+        "cage1_wireV24",
+        "cage1_wireV25",
+        "cage1_wireV26",
+        "cage1_wireV27",
+        "cage1_wireV28",
+        "cage1_wireV29",
+        "cage1_wireV30",
+        "cage1_wireV31",
+        "cage1_wireV32",
+        "cage1_wireV33",
+        "cage1_wireV34",
+        "cage1_wireV35",
+        "cage1_wireV36",
+        "cage1_wireV37",
+        "cage1_wireV38",
+        "cage1_wireV39",
+        "cage1_wireV40",
+        "cage1_wireV41",
+        "cage1_wireV42",
+        "cage1_wireV43",
+        "cage1_wireV44",
+        "cage1_wireV45",
+        "cage1_wireV46",
+        "cage1_wireV47",
+        "cage1_wireV48",
+        "cage1_wireV49",
+        "cage1_wireV50",
+        "cage1_wireH0",
+        "cage1_wireH1",
+        "cage1_wireH2",
+        "cage1_wireH3",
+        "cage1_wireH4",
+        "cage1_wireH5",
+        "cage1_wireH6",
+        "cage1_wireH7",
+        "cage1_wireH8",
+        "cage1_wireH9",
+        "cage1_wireH10",
+        "cage1_wireH11",
+        "cage1_wireH12",
+        "cage1_wireH13",
+        "cage1_wireH14",
+        "cage1_wireH15",
+        "cage1_wireH16",
+        "cage1_wireH17",
+        "cage1_wireH18",
+        "cage1_wireH19",
+        "cage1_wireH20",
+        "cage1_wireH21",
+        "cage1_wireH22",
+        "cage1_wireH23",
+        "cage1_wireH24",
+        "cage1_wireH25",
+        "cage1_wireH26",
+        "cage1_wireH27",
+        "cage1_wireH28",
+        "cage2_wireV0",
+        "cage2_wireV1",
+        "cage2_wireV2",
+        "cage2_wireV3",
+        "cage2_wireV4",
+        "cage2_wireV5",
+        "cage2_wireV6",
+        "cage2_wireV7",
+        "cage2_wireV8",
+        "cage2_wireV9",
+        "cage2_wireV10",
+        "cage2_wireV11",
+        "cage2_wireV12",
+        "cage2_wireV13",
+        "cage2_wireV14",
+        "cage2_wireV15",
+        "cage2_wireV16",
+        "cage2_wireV17",
+        "cage2_wireV18",
+        "cage2_wireV19",
+        "cage2_wireV20",
+        "cage2_wireV21",
+        "cage2_wireV22",
+        "cage2_wireV23",
+        "cage2_wireV24",
+        "cage2_wireV25",
+        "cage2_wireV26",
+        "cage2_wireV27",
+        "cage2_wireV28",
+        "cage2_wireV29",
+        "cage2_wireV30",
+        "cage2_wireV31",
+        "cage2_wireV32",
+        "cage2_wireV33",
+        "cage2_wireV34",
+        "cage2_wireV35",
+        "cage2_wireV36",
+        "cage2_wireV37",
+        "cage2_wireV38",
+        "cage2_wireV39",
+        "cage2_wireV40",
+        "cage2_wireV41",
+        "cage2_wireV42",
+        "cage2_wireV43",
+        "cage2_wireV44",
+        "cage2_wireV45",
+        "cage2_wireV46",
+        "cage2_wireV47",
+        "cage2_wireV48",
+        "cage2_wireV49",
+        "cage2_wireV50",
+        "cage2_wireV51",
+        "cage2_wireV52",
+        "cage2_wireV53",
+        "cage2_wireV54",
+        "cage2_wireH0",
+        "cage2_wireH1",
+        "cage2_wireH2",
+        "cage2_wireH3",
+        "cage2_wireH4",
+        "cage2_wireH5",
+        "cage2_wireH6",
+        "cage2_wireH7",
+        "cage2_wireH8",
+        "cage2_wireH9",
+        "cage2_wireH10",
+        "cage2_wireH11",
+        "cage2_wireH12",
+        "cage2_wireH13",
+        "cage2_wireH14",
+        "cage2_wireH15",
+        "cage2_wireH16",
+        "cage2_wireH17",
+        "cage2_wireH18",
+        "cage2_wireH19",
+        "cage2_wireH20",
+        "cage2_wireH21",
+        "cage2_wireH22",
+        "cage2_wireH23",
+        "cage2_wireH24",
+        "cage2_wireH25",
+        "cage2_wireH26",
+        "cage2_wireH27",
+        "cage2_wireH28",
+        "cage_machine_fan",
+        "compactor_body",
+        "compactor_hopper",
+        "compactor_pivot0",
+        "compactor_foot0",
+        "compactor_pivot1",
+        "compactor_foot1"
+      ],
+      "nodes": [
+        {
+          "name": "Principled BSDF",
+          "type": "ShaderNodeBsdfPrincipled"
+        },
+        {
+          "name": "Material Output",
+          "type": "ShaderNodeOutputMaterial"
+        }
+      ],
+      "links": [
+        {
+          "from_node": "Principled BSDF",
+          "from_socket": "BSDF",
+          "to_node": "Material Output",
+          "to_socket": "Surface"
+        }
+      ],
+      "pbr_defaults": {
+        "Base Color": [
+          0.20999999344348907,
+          0.23000000417232513,
+          0.2199999988079071,
+          1.0
+        ],
+        "Roughness": 0.3400000035762787,
+        "Metallic": 0.7200000286102295,
+        "Emission Color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "Emission Strength": 0.0
+      }
+    },
+    {
+      "name": "wall",
+      "uses_nodes": true,
+      "bindings": [
+        "wall_left",
+        "wall_right",
+        "wall_front",
+        "wall_back",
+        "main_side_wall",
+        "corridor_north_wall",
+        "cage_upper_wall",
+        "lumber_back_wall",
+        "entrance_soffit",
+        "garage_reveal",
+        "rack_back_wall",
+        "main_dock_sidewall",
+        "column_0_base",
+        "column_0_upper",
+        "column_1_base",
+        "column_1_upper",
+        "column_2_base",
+        "column_2_upper",
+        "column_3_base",
+        "column_3_upper",
+        "column_4_base",
+        "column_4_upper",
+        "column_5_base",
+        "column_5_upper",
+        "column_6_base",
+        "column_6_upper",
+        "column_7_base",
+        "column_7_upper",
+        "door_header"
+      ],
+      "nodes": [
+        {
+          "name": "Principled BSDF",
+          "type": "ShaderNodeBsdfPrincipled"
+        },
+        {
+          "name": "Material Output",
+          "type": "ShaderNodeOutputMaterial"
+        },
+        {
+          "name": "Noise Texture",
+          "type": "ShaderNodeTexNoise"
+        },
+        {
+          "name": "Geometry",
+          "type": "ShaderNodeNewGeometry"
+        },
+        {
+          "name": "Color Ramp",
+          "type": "ShaderNodeValToRGB"
+        }
+      ],
+      "links": [
+        {
+          "from_node": "Principled BSDF",
+          "from_socket": "BSDF",
+          "to_node": "Material Output",
+          "to_socket": "Surface"
+        },
+        {
+          "from_node": "Geometry",
+          "from_socket": "Position",
+          "to_node": "Noise Texture",
+          "to_socket": "Vector"
+        },
+        {
+          "from_node": "Noise Texture",
+          "from_socket": "Fac",
+          "to_node": "Color Ramp",
+          "to_socket": "Fac"
+        },
+        {
+          "from_node": "Color Ramp",
+          "from_socket": "Color",
+          "to_node": "Principled BSDF",
+          "to_socket": "Base Color"
+        }
+      ],
+      "pbr_defaults": {
+        "Base Color": [
+          0.6499999761581421,
+          0.6399999856948853,
+          0.5799999833106995,
+          1.0
+        ],
+        "Roughness": 0.8600000143051147,
+        "Metallic": 0.0,
+        "Emission Color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "Emission Strength": 0.0
+      }
+    },
+    {
+      "name": "white_vehicle",
+      "uses_nodes": true,
+      "bindings": [
+        "trailer_box",
+        "van_cab_body",
+        "van_cargo_box",
+        "van_windshield_frame0",
+        "van_windshield_frame1",
+        "van_windshield_frame2",
+        "van_windshield_frame3",
+        "van_cooler"
+      ],
+      "nodes": [
+        {
+          "name": "Principled BSDF",
+          "type": "ShaderNodeBsdfPrincipled"
+        },
+        {
+          "name": "Material Output",
+          "type": "ShaderNodeOutputMaterial"
+        }
+      ],
+      "links": [
+        {
+          "from_node": "Principled BSDF",
+          "from_socket": "BSDF",
+          "to_node": "Material Output",
+          "to_socket": "Surface"
+        }
+      ],
+      "pbr_defaults": {
+        "Base Color": [
+          0.75,
+          0.75,
+          0.6899999976158142,
+          1.0
+        ],
+        "Roughness": 0.25999999046325684,
+        "Metallic": 0.1599999964237213,
+        "Emission Color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "Emission Strength": 0.0
+      }
+    },
+    {
+      "name": "wood",
+      "uses_nodes": true,
+      "bindings": [
+        "crate0_base",
+        "crate0_long_0_0",
+        "crate0_long_0_1",
+        "crate0_long_1_0",
+        "crate0_long_1_1",
+        "crate0_long_2_0",
+        "crate0_long_2_1",
+        "crate0_long_3_0",
+        "crate0_long_3_1",
+        "crate0_long_4_0",
+        "crate0_long_4_1",
+        "crate0_long_5_0",
+        "crate0_long_5_1",
+        "crate1_base",
+        "crate1_long_0_0",
+        "crate1_long_0_1",
+        "crate1_long_1_0",
+        "crate1_long_1_1",
+        "crate1_long_2_0",
+        "crate1_long_2_1",
+        "crate1_long_3_0",
+        "crate1_long_3_1",
+        "crate1_long_4_0",
+        "crate1_long_4_1",
+        "crate1_long_5_0",
+        "crate1_long_5_1"
+      ],
+      "nodes": [
+        {
+          "name": "Principled BSDF",
+          "type": "ShaderNodeBsdfPrincipled"
+        },
+        {
+          "name": "Material Output",
+          "type": "ShaderNodeOutputMaterial"
+        },
+        {
+          "name": "Noise Texture",
+          "type": "ShaderNodeTexNoise"
+        },
+        {
+          "name": "Geometry",
+          "type": "ShaderNodeNewGeometry"
+        },
+        {
+          "name": "Color Ramp",
+          "type": "ShaderNodeValToRGB"
+        },
+        {
+          "name": "Geometry.001",
+          "type": "ShaderNodeNewGeometry"
+        },
+        {
+          "name": "Vector Math",
+          "type": "ShaderNodeVectorMath"
+        },
+        {
+          "name": "Noise Texture.001",
+          "type": "ShaderNodeTexNoise"
+        },
+        {
+          "name": "Bump",
+          "type": "ShaderNodeBump"
+        }
+      ],
+      "links": [
+        {
+          "from_node": "Principled BSDF",
+          "from_socket": "BSDF",
+          "to_node": "Material Output",
+          "to_socket": "Surface"
+        },
+        {
+          "from_node": "Geometry",
+          "from_socket": "Position",
+          "to_node": "Noise Texture",
+          "to_socket": "Vector"
+        },
+        {
+          "from_node": "Noise Texture",
+          "from_socket": "Fac",
+          "to_node": "Color Ramp",
+          "to_socket": "Fac"
+        },
+        {
+          "from_node": "Color Ramp",
+          "from_socket": "Color",
+          "to_node": "Principled BSDF",
+          "to_socket": "Base Color"
+        },
+        {
+          "from_node": "Geometry.001",
+          "from_socket": "Position",
+          "to_node": "Vector Math",
+          "to_socket": "Vector"
+        },
+        {
+          "from_node": "Vector Math",
+          "from_socket": "Vector",
+          "to_node": "Noise Texture.001",
+          "to_socket": "Vector"
+        },
+        {
+          "from_node": "Noise Texture.001",
+          "from_socket": "Fac",
+          "to_node": "Bump",
+          "to_socket": "Height"
+        },
+        {
+          "from_node": "Bump",
+          "from_socket": "Normal",
+          "to_node": "Principled BSDF",
+          "to_socket": "Normal"
+        }
+      ],
+      "pbr_defaults": {
+        "Base Color": [
+          0.2800000011920929,
+          0.2199999988079071,
+          0.15000000596046448,
+          1.0
+        ],
+        "Roughness": 0.8500000238418579,
+        "Metallic": 0.0,
+        "Emission Color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "Emission Strength": 0.0
+      }
+    },
+    {
+      "name": "wood_y",
+      "uses_nodes": true,
+      "bindings": [
+        "rack_pallet_joist_0_0_0",
+        "rack_pallet_joist_0_0_1",
+        "rack_pallet_joist_0_0_2",
+        "rack_pallet_joist_0_1_0",
+        "rack_pallet_joist_0_1_1",
+        "rack_pallet_joist_0_1_2",
+        "rack_pallet_joist_0_2_0",
+        "rack_pallet_joist_0_2_1",
+        "rack_pallet_joist_0_2_2",
+        "rack_pallet_joist_1_0_0",
+        "rack_pallet_joist_1_0_1",
+        "rack_pallet_joist_1_0_2",
+        "rack_pallet_joist_1_1_0",
+        "rack_pallet_joist_1_1_1",
+        "rack_pallet_joist_1_1_2",
+        "rack_pallet_joist_1_2_0",
+        "rack_pallet_joist_1_2_1",
+        "rack_pallet_joist_1_2_2",
+        "rack_pallet_joist_2_0_0",
+        "rack_pallet_joist_2_0_1",
+        "rack_pallet_joist_2_0_2",
+        "rack_pallet_joist_2_1_0",
+        "rack_pallet_joist_2_1_1",
+        "rack_pallet_joist_2_1_2",
+        "rack_pallet_joist_2_2_0",
+        "rack_pallet_joist_2_2_1",
+        "rack_pallet_joist_2_2_2",
+        "rack_pallet_joist_3_0_0",
+        "rack_pallet_joist_3_0_1",
+        "rack_pallet_joist_3_0_2",
+        "rack_pallet_joist_3_1_0",
+        "rack_pallet_joist_3_1_1",
+        "rack_pallet_joist_3_1_2",
+        "rack_pallet_joist_3_2_0",
+        "rack_pallet_joist_3_2_1",
+        "rack_pallet_joist_3_2_2",
+        "crate0_foot0",
+        "crate0_foot1",
+        "crate0_foot2",
+        "crate0_short_0_0",
+        "crate0_short_0_1",
+        "crate0_short_1_0",
+        "crate0_short_1_1",
+        "crate0_short_2_0",
+        "crate0_short_2_1",
+        "crate0_short_3_0",
+        "crate0_short_3_1",
+        "crate0_short_4_0",
+        "crate0_short_4_1",
+        "crate0_short_5_0",
+        "crate0_short_5_1",
+        "crate1_foot0",
+        "crate1_foot1",
+        "crate1_foot2",
+        "crate1_short_0_0",
+        "crate1_short_0_1",
+        "crate1_short_1_0",
+        "crate1_short_1_1",
+        "crate1_short_2_0",
+        "crate1_short_2_1",
+        "crate1_short_3_0",
+        "crate1_short_3_1",
+        "crate1_short_4_0",
+        "crate1_short_4_1",
+        "crate1_short_5_0",
+        "crate1_short_5_1"
+      ],
+      "nodes": [
+        {
+          "name": "Principled BSDF",
+          "type": "ShaderNodeBsdfPrincipled"
+        },
+        {
+          "name": "Material Output",
+          "type": "ShaderNodeOutputMaterial"
+        },
+        {
+          "name": "Noise Texture",
+          "type": "ShaderNodeTexNoise"
+        },
+        {
+          "name": "Geometry",
+          "type": "ShaderNodeNewGeometry"
+        },
+        {
+          "name": "Color Ramp",
+          "type": "ShaderNodeValToRGB"
+        },
+        {
+          "name": "Geometry.001",
+          "type": "ShaderNodeNewGeometry"
+        },
+        {
+          "name": "Vector Math",
+          "type": "ShaderNodeVectorMath"
+        },
+        {
+          "name": "Noise Texture.001",
+          "type": "ShaderNodeTexNoise"
+        },
+        {
+          "name": "Bump",
+          "type": "ShaderNodeBump"
+        }
+      ],
+      "links": [
+        {
+          "from_node": "Principled BSDF",
+          "from_socket": "BSDF",
+          "to_node": "Material Output",
+          "to_socket": "Surface"
+        },
+        {
+          "from_node": "Geometry",
+          "from_socket": "Position",
+          "to_node": "Noise Texture",
+          "to_socket": "Vector"
+        },
+        {
+          "from_node": "Noise Texture",
+          "from_socket": "Fac",
+          "to_node": "Color Ramp",
+          "to_socket": "Fac"
+        },
+        {
+          "from_node": "Color Ramp",
+          "from_socket": "Color",
+          "to_node": "Principled BSDF",
+          "to_socket": "Base Color"
+        },
+        {
+          "from_node": "Geometry.001",
+          "from_socket": "Position",
+          "to_node": "Vector Math",
+          "to_socket": "Vector"
+        },
+        {
+          "from_node": "Vector Math",
+          "from_socket": "Vector",
+          "to_node": "Noise Texture.001",
+          "to_socket": "Vector"
+        },
+        {
+          "from_node": "Noise Texture.001",
+          "from_socket": "Fac",
+          "to_node": "Bump",
+          "to_socket": "Height"
+        },
+        {
+          "from_node": "Bump",
+          "from_socket": "Normal",
+          "to_node": "Principled BSDF",
+          "to_socket": "Normal"
+        }
+      ],
+      "pbr_defaults": {
+        "Base Color": [
+          0.2800000011920929,
+          0.2199999988079071,
+          0.15000000596046448,
+          1.0
+        ],
+        "Roughness": 0.8500000238418579,
+        "Metallic": 0.0,
+        "Emission Color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "Emission Strength": 0.0
+      }
+    },
+    {
+      "name": "yellow",
+      "uses_nodes": true,
+      "bindings": [
+        "entrance_recess_door",
+        "entry_sign_0",
+        "entry_sign_1",
+        "entry_sign_2",
+        "yellow_side_door",
+        "compactor_yellow_front",
+        "compactor_arm0",
+        "compactor_arm1",
+        "compactor_lower_crossbar"
+      ],
+      "nodes": [
+        {
+          "name": "Principled BSDF",
+          "type": "ShaderNodeBsdfPrincipled"
+        },
+        {
+          "name": "Material Output",
+          "type": "ShaderNodeOutputMaterial"
+        }
+      ],
+      "links": [
+        {
+          "from_node": "Principled BSDF",
+          "from_socket": "BSDF",
+          "to_node": "Material Output",
+          "to_socket": "Surface"
+        }
+      ],
+      "pbr_defaults": {
+        "Base Color": [
+          0.7799999713897705,
+          0.5799999833106995,
+          0.019999999552965164,
+          1.0
+        ],
+        "Roughness": 0.5,
+        "Metallic": 0.0,
+        "Emission Color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "Emission Strength": 0.0
+      }
+    }
+  ],
+  "lights": [
+    {
+      "name": "luminaire_-10.0_-5.5_emitter",
+      "type": "AREA",
+      "power": 125.0,
+      "color": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "position": [
+        -10.0,
+        -5.5,
+        4.429999828338623
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": 0.1599999964237213,
+      "size_y": 3.4000000953674316
+    },
+    {
+      "name": "luminaire_-5.3_-5.5_emitter",
+      "type": "AREA",
+      "power": 125.0,
+      "color": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "position": [
+        -5.300000190734863,
+        -5.5,
+        4.429999828338623
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": 0.1599999964237213,
+      "size_y": 3.4000000953674316
+    },
+    {
+      "name": "luminaire_-0.6_-5.5_emitter",
+      "type": "AREA",
+      "power": 125.0,
+      "color": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "position": [
+        -0.6000000238418579,
+        -5.5,
+        4.429999828338623
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": 0.1599999964237213,
+      "size_y": 3.4000000953674316
+    },
+    {
+      "name": "luminaire_4.1_-5.5_emitter",
+      "type": "AREA",
+      "power": 125.0,
+      "color": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "position": [
+        4.099999904632568,
+        -5.5,
+        4.429999828338623
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": 0.1599999964237213,
+      "size_y": 3.4000000953674316
+    },
+    {
+      "name": "luminaire_8.8_-5.5_emitter",
+      "type": "AREA",
+      "power": 125.0,
+      "color": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "position": [
+        8.800000190734863,
+        -5.5,
+        4.429999828338623
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": 0.1599999964237213,
+      "size_y": 3.4000000953674316
+    },
+    {
+      "name": "luminaire_13.0_-5.5_emitter",
+      "type": "AREA",
+      "power": 125.0,
+      "color": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "position": [
+        13.0,
+        -5.5,
+        4.429999828338623
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": 0.1599999964237213,
+      "size_y": 3.4000000953674316
+    },
+    {
+      "name": "luminaire_-10.0_0.0_emitter",
+      "type": "AREA",
+      "power": 125.0,
+      "color": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "position": [
+        -10.0,
+        0.0,
+        4.429999828338623
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": 0.1599999964237213,
+      "size_y": 3.4000000953674316
+    },
+    {
+      "name": "luminaire_-5.3_0.0_emitter",
+      "type": "AREA",
+      "power": 125.0,
+      "color": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "position": [
+        -5.300000190734863,
+        0.0,
+        4.429999828338623
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": 0.1599999964237213,
+      "size_y": 3.4000000953674316
+    },
+    {
+      "name": "luminaire_-0.6_0.0_emitter",
+      "type": "AREA",
+      "power": 125.0,
+      "color": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "position": [
+        -0.6000000238418579,
+        0.0,
+        4.429999828338623
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": 0.1599999964237213,
+      "size_y": 3.4000000953674316
+    },
+    {
+      "name": "luminaire_4.1_0.0_emitter",
+      "type": "AREA",
+      "power": 125.0,
+      "color": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "position": [
+        4.099999904632568,
+        0.0,
+        4.429999828338623
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": 0.1599999964237213,
+      "size_y": 3.4000000953674316
+    },
+    {
+      "name": "luminaire_8.8_0.0_emitter",
+      "type": "AREA",
+      "power": 125.0,
+      "color": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "position": [
+        8.800000190734863,
+        0.0,
+        4.429999828338623
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": 0.1599999964237213,
+      "size_y": 3.4000000953674316
+    },
+    {
+      "name": "luminaire_13.0_0.0_emitter",
+      "type": "AREA",
+      "power": 125.0,
+      "color": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "position": [
+        13.0,
+        0.0,
+        4.429999828338623
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": 0.1599999964237213,
+      "size_y": 3.4000000953674316
+    },
+    {
+      "name": "luminaire_-10.0_5.5_emitter",
+      "type": "AREA",
+      "power": 125.0,
+      "color": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "position": [
+        -10.0,
+        5.5,
+        4.429999828338623
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": 0.1599999964237213,
+      "size_y": 3.4000000953674316
+    },
+    {
+      "name": "luminaire_-5.3_5.5_emitter",
+      "type": "AREA",
+      "power": 125.0,
+      "color": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "position": [
+        -5.300000190734863,
+        5.5,
+        4.429999828338623
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": 0.1599999964237213,
+      "size_y": 3.4000000953674316
+    },
+    {
+      "name": "luminaire_-0.6_5.5_emitter",
+      "type": "AREA",
+      "power": 125.0,
+      "color": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "position": [
+        -0.6000000238418579,
+        5.5,
+        4.429999828338623
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": 0.1599999964237213,
+      "size_y": 3.4000000953674316
+    },
+    {
+      "name": "luminaire_4.1_5.5_emitter",
+      "type": "AREA",
+      "power": 125.0,
+      "color": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "position": [
+        4.099999904632568,
+        5.5,
+        4.429999828338623
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": 0.1599999964237213,
+      "size_y": 3.4000000953674316
+    },
+    {
+      "name": "luminaire_8.8_5.5_emitter",
+      "type": "AREA",
+      "power": 125.0,
+      "color": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "position": [
+        8.800000190734863,
+        5.5,
+        4.429999828338623
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": 0.1599999964237213,
+      "size_y": 3.4000000953674316
+    },
+    {
+      "name": "luminaire_13.0_5.5_emitter",
+      "type": "AREA",
+      "power": 125.0,
+      "color": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "position": [
+        13.0,
+        5.5,
+        4.429999828338623
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": 0.1599999964237213,
+      "size_y": 3.4000000953674316
+    },
+    {
+      "name": "luminaire_-10.0_11.0_emitter",
+      "type": "AREA",
+      "power": 125.0,
+      "color": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "position": [
+        -10.0,
+        11.0,
+        4.429999828338623
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": 0.1599999964237213,
+      "size_y": 3.4000000953674316
+    },
+    {
+      "name": "luminaire_-5.3_11.0_emitter",
+      "type": "AREA",
+      "power": 125.0,
+      "color": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "position": [
+        -5.300000190734863,
+        11.0,
+        4.429999828338623
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": 0.1599999964237213,
+      "size_y": 3.4000000953674316
+    },
+    {
+      "name": "luminaire_-0.6_11.0_emitter",
+      "type": "AREA",
+      "power": 125.0,
+      "color": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "position": [
+        -0.6000000238418579,
+        11.0,
+        4.429999828338623
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": 0.1599999964237213,
+      "size_y": 3.4000000953674316
+    },
+    {
+      "name": "luminaire_4.1_11.0_emitter",
+      "type": "AREA",
+      "power": 125.0,
+      "color": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "position": [
+        4.099999904632568,
+        11.0,
+        4.429999828338623
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": 0.1599999964237213,
+      "size_y": 3.4000000953674316
+    },
+    {
+      "name": "luminaire_8.8_11.0_emitter",
+      "type": "AREA",
+      "power": 125.0,
+      "color": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "position": [
+        8.800000190734863,
+        11.0,
+        4.429999828338623
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": 0.1599999964237213,
+      "size_y": 3.4000000953674316
+    },
+    {
+      "name": "luminaire_13.0_11.0_emitter",
+      "type": "AREA",
+      "power": 125.0,
+      "color": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "position": [
+        13.0,
+        11.0,
+        4.429999828338623
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": 0.1599999964237213,
+      "size_y": 3.4000000953674316
+    },
+    {
+      "name": "corridor_luminaire_-17_emitter",
+      "type": "AREA",
+      "power": 120.0,
+      "color": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "position": [
+        -17.0,
+        -3.5999999046325684,
+        4.380000114440918
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": 2.4000000953674316,
+      "size_y": 0.20000000298023224
+    },
+    {
+      "name": "corridor_luminaire_-22_emitter",
+      "type": "AREA",
+      "power": 120.0,
+      "color": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "position": [
+        -22.0,
+        -3.5999999046325684,
+        4.380000114440918
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": 2.4000000953674316,
+      "size_y": 0.20000000298023224
+    },
+    {
+      "name": "corridor_luminaire_-27_emitter",
+      "type": "AREA",
+      "power": 120.0,
+      "color": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "position": [
+        -27.0,
+        -3.5999999046325684,
+        4.380000114440918
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": 2.4000000953674316,
+      "size_y": 0.20000000298023224
+    },
+    {
+      "name": "corridor_luminaire_-32_emitter",
+      "type": "AREA",
+      "power": 120.0,
+      "color": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "position": [
+        -32.0,
+        -3.5999999046325684,
+        4.380000114440918
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": 2.4000000953674316,
+      "size_y": 0.20000000298023224
+    },
+    {
+      "name": "corridor_luminaire_-37_emitter",
+      "type": "AREA",
+      "power": 120.0,
+      "color": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "position": [
+        -37.0,
+        -3.5999999046325684,
+        4.380000114440918
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": 2.4000000953674316,
+      "size_y": 0.20000000298023224
+    },
+    {
+      "name": "corridor_luminaire_-42_emitter",
+      "type": "AREA",
+      "power": 120.0,
+      "color": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "position": [
+        -42.0,
+        -3.5999999046325684,
+        4.380000114440918
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": 2.4000000953674316,
+      "size_y": 0.20000000298023224
+    },
+    {
+      "name": "corridor_luminaire_-47_emitter",
+      "type": "AREA",
+      "power": 120.0,
+      "color": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "position": [
+        -47.0,
+        -3.5999999046325684,
+        4.380000114440918
+      ],
+      "rotation_euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": 2.4000000953674316,
+      "size_y": 0.20000000298023224
+    }
+  ],
+  "color_management": {
+    "view_transform": "AgX",
+    "look": "None",
+    "exposure": 0.0,
+    "gamma": 1.0
+  },
+  "provenance": "Observed RGB palette/strip directions and generic PBR priors; not manufacturer specifications or measured reflectance/power",
+  "uncertainties": [
+    "RGB patches are illuminated colours, not direct albedo",
+    "Procedural wear and grain are conservative synthetic textures",
+    "GLB may flatten procedural Blender shaders",
+    "World/environment lighting and fixture powers are nonunique estimates"
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "protocol": {
+    "id": "eth3d-delivery-full-agent-v1",
+    "status": "registered_before_authors",
+    "photographs": 36,
+    "heldout_images": 8,
+    "same_input_conditions": "Mapping RGB + fixed K/reference T + shared pose-conditioned DA3-GIANT predicted optical-Z, no GT depth/mesh",
+    "paired_check_indices": [
+      0,
+      4,
+      8,
+      12,
+      16,
+      20,
+      24,
+      28,
+      32,
+      35
+    ],
+    "max_full_versions": 5,
+    "max_paired_check_views": 50,
+    "max_supplemental_paired_views": 10,
+    "full_input_depth_passes": 3,
+    "author_wall_budget_seconds": 7200,
+    "threads_per_blender": 2,
+    "shared_model": "same inherited Codex model; exact serving identifier only if exposed by tool metadata",
+    "author_isolation": "fresh subagent context and separate input/model directories, path allowlist; not OS-enforced filesystem sandbox",
+    "coordinator_disclosure": "Coordinator previously saw static Pi3X pilot metrics and one heldout preview; fresh authors/reviewer receive none. No GT feedback to authors.",
+    "workflow_a": "native quality_v2 with explicit camera constraints and full staged semantic construction",
+    "workflow_b": "AWSM published semantic modelling/check/revision protocol ported to36 real images",
+    "comparison_scope": "workflow-protocol comparison with common inputs; no claim of reproducing original World Lobby scores or original author model identity",
+    "acceptance": "Preserve pass/needs_revision/LIMITED honestly; frozen benchmark candidates may be scored without falsely promoting native quality/physics acceptance"
+  },
+  "started_epoch": 1791001815.1443863,
+  "model_identifier": "same inherited Codex model; exact serving identifier unavailable",
+  "versions": [
+    {
+      "version": 1,
+      "model": "/home/wqz/real2sim_agent_compare_20261003/OURS/models/v1/model.blend",
+      "model_sha256": "8b240c1b63d64f36b8c28ae4b3fa4ae4f73d1d36385b19e25bdfde7007282b0e",
+      "paired_check": "checks/v1_paired/report.json",
+      "paired_views": 10,
+      "decision": "needs_revision / LIMITED; no accepted native geometry"
+    },
+    {
+      "version": 2,
+      "model": "/home/wqz/real2sim_agent_compare_20261003/OURS/models/v2/model.blend",
+      "model_sha256": "a00d441b2d3293b8105e9d9fbe3b8670b64a0057b92ef062512dcbda62c04a68",
+      "paired_check": "checks/v2_paired_retry1/report.json",
+      "paired_views": 10,
+      "decision": "needs_revision / LIMITED; no accepted native geometry"
+    },
+    {
+      "version": 3,
+      "model": "/home/wqz/real2sim_agent_compare_20261003/OURS/models/v3/model.blend",
+      "model_sha256": "4d53b2a7fa076a6892592e555f33b55b07476dc2f6dab58651ab146fc1acdf85",
+      "paired_check": "checks/v3_paired/report.json",
+      "paired_views": 10,
+      "decision": "needs_revision / LIMITED; no accepted native geometry"
+    }
+  ],
+  "native_diagnostic_renders": [],
+  "full_input_depth_passes_completed": 3,
+  "paired_views_completed": 30,
+  "v1_visible_geometry_compatibility": "logs/visibility_compatibility.json",
+  "native_case": "native_case",
+  "native_status": "agent_model awaiting author; preceding stages accepted via Workflow.run/accept",
+  "supplemental_paired_checks": [
+    {
+      "input_index": 14,
+      "version": 2,
+      "kind": "RGB source vs existing native full-source render",
+      "justification": "Independent v1 requested glass verification from an additional own mapping view; glass is visible but cab shape remains approximate",
+      "new_render": false
+    }
+  ],
+  "native_v2_failure": {
+    "stage": "build_geometry",
+    "kind": "timeout",
+    "timeout_seconds": 1500,
+    "structural_status": "failed",
+    "source_landmark_failures": 9,
+    "cross_assembly_intersections": 2,
+    "full_source_renders_completed": 29,
+    "isolated_and_combined_renders_completed": 45,
+    "multiframe_source_crops_rendered": 6,
+    "required_views_not_completed": "7 source views plus downstream clay/room diagnostics"
+  },
+  "native_v3_config": {
+    "inspection_resolution": [
+      384,
+      384
+    ],
+    "full_source_resolution": "unchanged1200x799",
+    "timeout_seconds": 2100,
+    "quality_thresholds_unchanged": true
+  },
+  "failed_common_attempts": [
+    {
+      "version": 2,
+      "output": "checks/v2_paired",
+      "views_rendered": 0,
+      "reason": "Visible evaluated font instances rejected; realized identical font surfaces as mesh then retried"
+    }
+  ],
+  "final_all36": "checks/v3_all_final/report.json",
+  "author_scope": "Only OURS inputs/code/own artifacts plus expressly supplied generic checker; discipline-based isolation, not OS-enforced sandbox",
+  "selected_final_model_sha256": "4d53b2a7fa076a6892592e555f33b55b07476dc2f6dab58651ab146fc1acdf85",
+  "geometry_material_camera_changes_stopped": true,
+  "comparison_evaluation_access": "none; coordinator results not accessed",
+  "short_read_only_helpers_overlapped_native_render": "Common final all36 depth-only check and metadata/interchange helpers ran briefly alongside native diagnostics; each Blender process had2threads, CPU only, logs retained"
+}

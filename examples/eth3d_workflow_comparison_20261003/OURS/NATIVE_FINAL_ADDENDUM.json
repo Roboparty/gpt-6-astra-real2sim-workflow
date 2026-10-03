@@ -1,0 +1,87 @@
+{
+  "as_of": "2026-10-03T06:27:07.882004+00:00",
+  "base_bundle": {
+    "path": "/home/wqz/real2sim_agent_compare_20261003/OURS/OURS_small_bundle_20261003T061557Z.zip",
+    "sha256": "e3f4d14a6047fc8555c0c34ca618a267e09f35aabdd2cd56cf6c5d84295a1b5e",
+    "bytes": 528067,
+    "manifest": "/home/wqz/real2sim_agent_compare_20261003/OURS/handoff_small_20261003T061557Z/MANIFEST.json",
+    "manifest_sha256": "945e0fa668bb1e94d7aa4ce61acf4e6256d4278d459cc756060d1b7dddeb6c95",
+    "files": 152,
+    "selected_model_sha256": "4d53b2a7fa076a6892592e555f33b55b07476dc2f6dab58651ab146fc1acdf85",
+    "native_status_at_snapshot": "running"
+  },
+  "selected_model_sha256": "4d53b2a7fa076a6892592e555f33b55b07476dc2f6dab58651ab146fc1acdf85",
+  "selected_model_unchanged": true,
+  "native_build_geometry_status": "succeeded",
+  "native_build_finished": "2026-10-03T06:23:43.100690+00:00",
+  "native_geometry_review_status": "changes_requested",
+  "native_acceptance": false,
+  "ready_for_root_measurement_freeze": true,
+  "classification": "LIMITED technical MEASUREMENT candidate; not Workflow.freeze",
+  "failures": [
+    {
+      "kind": "source_landmarks",
+      "entity": "lime_skip_0",
+      "median": 25.555872397288407,
+      "maximum": 41.009554132999824
+    },
+    {
+      "kind": "source_landmarks",
+      "entity": "white_van",
+      "median": 7.06424954094994,
+      "maximum": 33.555615174005375
+    },
+    {
+      "kind": "source_landmarks",
+      "entity": "black_car",
+      "median": 4.735366598254674,
+      "maximum": 27.565525221533278
+    },
+    {
+      "kind": "source_landmarks",
+      "entity": "mesh_cage_2",
+      "median": 18.04532460020787,
+      "maximum": 30.5976985820212
+    },
+    {
+      "kind": "unexpected_interpenetration",
+      "parts": [
+        "flatbed_frame",
+        "flatbed_towA"
+      ],
+      "depth_m": 0.04764339327812195,
+      "cross_furniture": false
+    }
+  ],
+  "failure_count": 5,
+  "native_uncompleted_stages": [
+    "agent_review_geometry",
+    "agent_materials",
+    "agent_calibrate_lighting",
+    "build_render",
+    "agent_review",
+    "export",
+    "validate",
+    "report"
+  ],
+  "diagnostic_render_counts": {
+    "full_source_views": 36,
+    "isolated_combined": 45,
+    "source_crops": 6,
+    "clay": 1,
+    "overall": 2,
+    "four_walls": 4
+  },
+  "all_common_checks": {
+    "versions": 3,
+    "paired_views": 30,
+    "supplemental_rgb_pairs": 1,
+    "full36_passes": 3
+  },
+  "notes": [
+    "v2timeout and all5finalnativefailures retained",
+    "No geometry/material/camera/annotation changes after measurement freeze",
+    "Intended joint diagnostic is not a pass waiver",
+    "Oldbundle unchanged; this is a final-state addendum"
+  ]
+}

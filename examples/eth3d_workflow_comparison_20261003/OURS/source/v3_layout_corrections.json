@@ -1,0 +1,110 @@
+{
+  "wood_crate_0": {
+    "center": [
+      2.2499999403953552,
+      7.3500001430511475,
+      0.0
+    ],
+    "translation_xy": [
+      -0.02485661565450886,
+      -0.0332992995430084
+    ],
+    "scale_xyz": [
+      1.0024332321983056,
+      0.8491977746926094,
+      0.9889367649302789
+    ],
+    "before": [
+      18.949978136129722,
+      12.455538382127472,
+      8.236177694540043
+    ],
+    "after": [
+      6.544667817464888,
+      1.537629143343581,
+      5.48783997946209
+    ],
+    "policy": "One coherent per-assembly dimensional correction; floor z fixed; original source labels/cameras unchanged; bounded regularization against v2dimensions; not independently accurate",
+    "additional_constraint": "Paired crate footprints maintain >=8mm separation to prevent fitting one into the other"
+  },
+  "wood_crate_1": {
+    "center": [
+      2.2499999403953552,
+      8.720000267028809,
+      0.0
+    ],
+    "translation_xy": [
+      -0.047609692087572715,
+      -0.14358302811335355
+    ],
+    "scale_xyz": [
+      1.0035882352266752,
+      0.9848546492700196,
+      0.9836607490121113
+    ],
+    "before": [
+      5.193739125732751,
+      17.86504653917756
+    ],
+    "after": [
+      6.46010790417007,
+      6.482547975124413
+    ],
+    "policy": "One coherent per-assembly dimensional correction; floor z fixed; original source labels/cameras unchanged; bounded regularization against v2dimensions; not independently accurate",
+    "additional_constraint": "Paired crate footprints maintain >=8mm separation to prevent fitting one into the other"
+  },
+  "lime_skip_1": {
+    "center": [
+      2.549999952316284,
+      15.049999713897705,
+      0.0
+    ],
+    "translation_xy": [
+      -0.2237312667946965,
+      -0.49673824901580127
+    ],
+    "scale_xyz": [
+      0.8426175607974214,
+      0.9245066881820526,
+      0.7000000000000001
+    ],
+    "before": [
+      36.98261031723244,
+      13.342750658651184
+    ],
+    "after": [
+      5.885119765192656,
+      5.839860088729528
+    ],
+    "policy": "One coherent per-assembly dimensional correction; floor z fixed; original source labels/cameras unchanged; bounded regularization against v2dimensions; not independently accurate"
+  },
+  "lumber_cart": {
+    "center": [
+      0.5814989805221558,
+      -7.1875,
+      0.0
+    ],
+    "translation_xy": [
+      -0.06893855326470076,
+      -0.01838709018318615
+    ],
+    "scale_xyz": [
+      0.93815217666058,
+      1.0301562046558406,
+      0.9999283150521993
+    ],
+    "before": [
+      18.72837723782847,
+      4.802081677108085,
+      20.112239615625363,
+      12.162149640832897
+    ],
+    "after": [
+      2.6024708565760815,
+      3.6172497167218873,
+      10.866010511013084,
+      12.265828668927405
+    ],
+    "policy": "One coherent per-assembly dimensional correction; floor z fixed; original source labels/cameras unchanged; bounded regularization against v2dimensions; not independently accurate"
+  }
+}

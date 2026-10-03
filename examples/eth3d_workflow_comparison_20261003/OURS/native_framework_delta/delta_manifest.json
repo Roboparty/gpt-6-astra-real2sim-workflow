@@ -1,0 +1,12 @@
+{
+  "base_revision": "735be2f",
+  "scope": "Coordinator final frozen support snapshot actually used; later coordinator fixes are not part of this execution",
+  "files": {
+    "camera.py": "5421dc48b2ba9d59e608846fe881a6ff81204a7fdf99e07059329625d0fc2e50",
+    "media.py": "467bbe5328a1778073c9f2f19ac4d78a4ec7bc80f67890c4600e44bd7a8e308f",
+    "blender_structure.py": "e7aea6e251137b4a84919919a00af4a0b2e08c1c7215af8e0531fc12b2ec62f9",
+    "structure.py": "3ef85ef5fe075d80f152a50d4a0b7d5ae299d2b2f204668c5babff9c167bffe5",
+    "stage_worker.py": "83bd15a3b51f34696844c90f69ad946037ec56d515c2be3912ba53b297f401d4"
+  },
+  "author_changed_framework_guards": false
+}

@@ -1,0 +1,791 @@
+{
+  "schema_version": 1,
+  "status": "COMPLETE",
+  "model": "DA3-GIANT",
+  "frames": [
+    {
+      "sample_index": 0,
+      "frame_id": "DSC_0675",
+      "window": 0,
+      "centrality": 0,
+      "path": "frames/000.npz",
+      "sha256": "00d40bc9108b53df15ffa852704b8c02cc932e1de461e4fc8c4f794ffd99fc45",
+      "shape": [
+        266,
+        392
+      ],
+      "valid_fraction": 1.0,
+      "finite_confidence_fraction": 1.0,
+      "valid_depth_quantiles_m": [
+        3.577871322631836,
+        4.13510947227478,
+        4.369102478027344,
+        4.7157814502716064,
+        4.841272830963135
+      ]
+    },
+    {
+      "sample_index": 1,
+      "frame_id": "DSC_0676",
+      "window": 0,
+      "centrality": 1,
+      "path": "frames/001.npz",
+      "sha256": "9ae524c729e00a0802a9699de827e08b7ab53264c2d5a126e6e3abc81b1eb257",
+      "shape": [
+        266,
+        392
+      ],
+      "valid_fraction": 1.0,
+      "finite_confidence_fraction": 1.0,
+      "valid_depth_quantiles_m": [
+        3.5617599487304688,
+        4.094341468811035,
+        4.3553361892700195,
+        4.757949161529541,
+        15.036349296569824
+      ]
+    },
+    {
+      "sample_index": 2,
+      "frame_id": "DSC_0677",
+      "window": 0,
+      "centrality": 1,
+      "path": "frames/002.npz",
+      "sha256": "d2a226a2bbae015304088253c290fdc2e104cbe2c04d90317dd19604e779ab91",
+      "shape": [
+        266,
+        392
+      ],
+      "valid_fraction": 1.0,
+      "finite_confidence_fraction": 1.0,
+      "valid_depth_quantiles_m": [
+        3.5842480659484863,
+        4.06878695487976,
+        4.366224050521851,
+        6.688140773773197,
+        15.060712814331055
+      ]
+    },
+    {
+      "sample_index": 3,
+      "frame_id": "DSC_0678",
+      "window": 1,
+      "centrality": 1,
+      "path": "frames/003.npz",
+      "sha256": "8cee34768e1de31b98203bedf7222e96ab79cdc3607d4008362722a946ad960e",
+      "shape": [
+        266,
+        392
+      ],
+      "valid_fraction": 1.0,
+      "finite_confidence_fraction": 1.0,
+      "valid_depth_quantiles_m": [
+        3.5210485458374023,
+        3.9633193016052246,
+        4.339293956756592,
+        10.39651155471802,
+        15.479493141174316
+      ]
+    },
+    {
+      "sample_index": 4,
+      "frame_id": "DSC_0680",
+      "window": 1,
+      "centrality": 1,
+      "path": "frames/004.npz",
+      "sha256": "6853b8026b374a31d8b400955144bd59f7a345cc4353a5f2a0f04e4ecaf6b38f",
+      "shape": [
+        266,
+        392
+      ],
+      "valid_fraction": 1.0,
+      "finite_confidence_fraction": 1.0,
+      "valid_depth_quantiles_m": [
+        3.601362705230713,
+        4.038435459136963,
+        4.475951910018921,
+        11.356775569915776,
+        14.873395919799805
+      ]
+    },
+    {
+      "sample_index": 5,
+      "frame_id": "DSC_0681",
+      "window": 2,
+      "centrality": 1,
+      "path": "frames/005.npz",
+      "sha256": "cca6e3d51b4a63d6e3e5c330d91771af02dfe84e949d4bfb4e7e48b926442f5a",
+      "shape": [
+        266,
+        392
+      ],
+      "valid_fraction": 1.0,
+      "finite_confidence_fraction": 1.0,
+      "valid_depth_quantiles_m": [
+        3.547982931137085,
+        3.936634564399719,
+        4.4719390869140625,
+        12.244679355621345,
+        15.62880802154541
+      ]
+    },
+    {
+      "sample_index": 6,
+      "frame_id": "DSC_0682",
+      "window": 2,
+      "centrality": 1,
+      "path": "frames/006.npz",
+      "sha256": "89a4faeeb55443f39b213368f5862d7a16beefd993b83f714836f409561f9ad1",
+      "shape": [
+        266,
+        392
+      ],
+      "valid_fraction": 1.0,
+      "finite_confidence_fraction": 1.0,
+      "valid_depth_quantiles_m": [
+        3.219132661819458,
+        3.6072668075561523,
+        5.898015975952148,
+        12.927654552459723,
+        17.053956985473633
+      ]
+    },
+    {
+      "sample_index": 7,
+      "frame_id": "DSC_0683",
+      "window": 3,
+      "centrality": 1,
+      "path": "frames/007.npz",
+      "sha256": "0d56265a05d8d6bf52f464915b69bf169aeb868991b8271c92d1c8b9a43985f3",
+      "shape": [
+        266,
+        392
+      ],
+      "valid_fraction": 1.0,
+      "finite_confidence_fraction": 1.0,
+      "valid_depth_quantiles_m": [
+        2.993041753768921,
+        3.6541242837905883,
+        6.099525213241577,
+        11.937168216705324,
+        15.441903114318848
+      ]
+    },
+    {
+      "sample_index": 8,
+      "frame_id": "DSC_0685",
+      "window": 3,
+      "centrality": 1,
+      "path": "frames/008.npz",
+      "sha256": "342b2bf6ea5d1250200e16a4a6fd2b30a6b0edd26614e6cc78bb5482c0a60f6f",
+      "shape": [
+        266,
+        392
+      ],
+      "valid_fraction": 1.0,
+      "finite_confidence_fraction": 1.0,
+      "valid_depth_quantiles_m": [
+        2.173823595046997,
+        2.44531044960022,
+        6.286128520965576,
+        10.87760992050171,
+        21.53508949279785
+      ]
+    },
+    {
+      "sample_index": 9,
+      "frame_id": "DSC_0686",
+      "window": 4,
+      "centrality": 1,
+      "path": "frames/009.npz",
+      "sha256": "194575e80bb548787f474abb77a87c476b82297621ed88271a1964902eda7b3b",
+      "shape": [
+        266,
+        392
+      ],
+      "valid_fraction": 1.0,
+      "finite_confidence_fraction": 1.0,
+      "valid_depth_quantiles_m": [
+        2.2132205963134766,
+        2.511448621749878,
+        6.294640779495239,
+        11.66075067520142,
+        24.92180061340332
+      ]
+    },
+    {
+      "sample_index": 10,
+      "frame_id": "DSC_0687",
+      "window": 4,
+      "centrality": 1,
+      "path": "frames/010.npz",
+      "sha256": "2b2e9de19569658e2472ba7e62faaef32e15738363350f287dc882f002036bc2",
+      "shape": [
+        266,
+        392
+      ],
+      "valid_fraction": 1.0,
+      "finite_confidence_fraction": 1.0,
+      "valid_depth_quantiles_m": [
+        2.236636161804199,
+        2.5125327825546266,
+        6.283811569213867,
+        12.590287876129151,
+        23.759363174438477
+      ]
+    },
+    {
+      "sample_index": 11,
+      "frame_id": "DSC_0688",
+      "window": 5,
+      "centrality": 1,
+      "path": "frames/011.npz",
+      "sha256": "7c52283e9d54c26aa297640ec48968e3967c6089e068799fb2d95a933d8a221b",
+      "shape": [
+        266,
+        392
+      ],
+      "valid_fraction": 1.0,
+      "finite_confidence_fraction": 1.0,
+      "valid_depth_quantiles_m": [
+        2.3021912574768066,
+        2.7478362560272216,
+        6.20371150970459,
+        12.325094890594483,
+        23.750070571899414
+      ]
+    },
+    {
+      "sample_index": 12,
+      "frame_id": "DSC_0690",
+      "window": 5,
+      "centrality": 1,
+      "path": "frames/012.npz",
+      "sha256": "2bb6022952ca63a4333a018c5620f902a9fec1e51a2865ca5419423af75a0840",
+      "shape": [
+        266,
+        392
+      ],
+      "valid_fraction": 1.0,
+      "finite_confidence_fraction": 1.0,
+      "valid_depth_quantiles_m": [
+        2.3959057331085205,
+        2.8728943824768067,
+        6.357860088348389,
+        13.186723041534425,
+        22.266145706176758
+      ]
+    },
+    {
+      "sample_index": 13,
+      "frame_id": "DSC_0691",
+      "window": 6,
+      "centrality": 1,
+      "path": "frames/013.npz",
+      "sha256": "9daf680ad04d0d484d7c0eddd82014426a22a9018d4743be5756da08be2b1c8e",
+      "shape": [
+        266,
+        392
+      ],
+      "valid_fraction": 1.0,
+      "finite_confidence_fraction": 1.0,
+      "valid_depth_quantiles_m": [
+        2.363538980484009,
+        2.8338906526565553,
+        6.585620164871216,
+        12.42391633987427,
+        18.37570571899414
+      ]
+    },
+    {
+      "sample_index": 14,
+      "frame_id": "DSC_0692",
+      "window": 6,
+      "centrality": 1,
+      "path": "frames/014.npz",
+      "sha256": "5dd1fa9876fa586da15bb580a8e19716f3fa8516fd1b055d181a5f0b920b210f",
+      "shape": [
+        266,
+        392
+      ],
+      "valid_fraction": 1.0,
+      "finite_confidence_fraction": 1.0,
+      "valid_depth_quantiles_m": [
+        2.3642630577087402,
+        2.820332980155945,
+        6.393033027648926,
+        11.818373012542725,
+        18.31692123413086
+      ]
+    },
+    {
+      "sample_index": 15,
+      "frame_id": "DSC_0693",
+      "window": 7,
+      "centrality": 1,
+      "path": "frames/015.npz",
+      "sha256": "cf6148994619034f6e243c83c6f87779b4d2de87c6580088ae17f090a92f6b3a",
+      "shape": [
+        266,
+        392
+      ],
+      "valid_fraction": 1.0,
+      "finite_confidence_fraction": 1.0,
+      "valid_depth_quantiles_m": [
+        2.3119935989379883,
+        2.7859726905822755,
+        7.278149843215942,
+        13.213661670684816,
+        24.73480224609375
+      ]
+    },
+    {
+      "sample_index": 16,
+      "frame_id": "DSC_0695",
+      "window": 7,
+      "centrality": 1,
+      "path": "frames/016.npz",
+      "sha256": "84ec70008bcc875170f4dc1d08e5408b2741cd597a1ebc763f449b71bbea24c3",
+      "shape": [
+        266,
+        392
+      ],
+      "valid_fraction": 1.0,
+      "finite_confidence_fraction": 1.0,
+      "valid_depth_quantiles_m": [
+        2.2591745853424072,
+        2.329369878768921,
+        5.376837491989136,
+        11.339985752105713,
+        18.40421485900879
+      ]
+    },
+    {
+      "sample_index": 17,
+      "frame_id": "DSC_0696",
+      "window": 8,
+      "centrality": 1,
+      "path": "frames/017.npz",
+      "sha256": "62c829c57116d4cdcebbd3e160e55bcc229d251ba6ec241094623676c22bee93",
+      "shape": [
+        266,
+        392
+      ],
+      "valid_fraction": 1.0,
+      "finite_confidence_fraction": 1.0,
+      "valid_depth_quantiles_m": [
+        2.249161720275879,
+        2.4059250831604,
+        5.819551944732666,
+        11.44351511001587,
+        26.326292037963867
+      ]
+    },
+    {
+      "sample_index": 18,
+      "frame_id": "DSC_0697",
+      "window": 8,
+      "centrality": 1,
+      "path": "frames/018.npz",
+      "sha256": "d53a0d97f7f421dfb05aebdd363923a8ba1cbb37a8ca3307f79e77ed84ccf0ce",
+      "shape": [
+        266,
+        392
+      ],
+      "valid_fraction": 1.0,
+      "finite_confidence_fraction": 1.0,
+      "valid_depth_quantiles_m": [
+        2.073882818222046,
+        2.241220211982727,
+        5.331887483596802,
+        13.290302944183352,
+        36.34874725341797
+      ]
+    },
+    {
+      "sample_index": 19,
+      "frame_id": "DSC_0698",
+      "window": 9,
+      "centrality": 1,
+      "path": "frames/019.npz",
+      "sha256": "60af0988a1490eccec0e6762b6ca2527bbcc4fba56bd68343722523bc7cff8dd",
+      "shape": [
+        266,
+        392
+      ],
+      "valid_fraction": 1.0,
+      "finite_confidence_fraction": 1.0,
+      "valid_depth_quantiles_m": [
+        2.2355797290802,
+        2.4405423641204833,
+        5.210488796234131,
+        12.90254535675049,
+        47.505043029785156
+      ]
+    },
+    {
+      "sample_index": 20,
+      "frame_id": "DSC_0700",
+      "window": 9,
+      "centrality": 1,
+      "path": "frames/020.npz",
+      "sha256": "d18201d95ab402b662d783d55399ab6b22a6106a7a8ef389858834ee7a4a979a",
+      "shape": [
+        266,
+        392
+      ],
+      "valid_fraction": 1.0,
+      "finite_confidence_fraction": 1.0,
+      "valid_depth_quantiles_m": [
+        2.262270927429199,
+        2.7677472114562987,
+        6.889269828796387,
+        13.2101619720459,
+        48.48517608642578
+      ]
+    },
+    {
+      "sample_index": 21,
+      "frame_id": "DSC_0701",
+      "window": 10,
+      "centrality": 1,
+      "path": "frames/021.npz",
+      "sha256": "e88151f74db1c1fe22ca7b5fbafda6f466dab0f66141c946ed6cf87b14eb55c3",
+      "shape": [
+        266,
+        392
+      ],
+      "valid_fraction": 1.0,
+      "finite_confidence_fraction": 1.0,
+      "valid_depth_quantiles_m": [
+        2.261187791824341,
+        2.739158868789673,
+        5.923192739486694,
+        13.26782684326172,
+        41.5374755859375
+      ]
+    },
+    {
+      "sample_index": 22,
+      "frame_id": "DSC_0702",
+      "window": 10,
+      "centrality": 1,
+      "path": "frames/022.npz",
+      "sha256": "7f047bc842d587c995e340be171dfef0a286a168931f4f7e6f8c2e01cd4131cb",
+      "shape": [
+        266,
+        392
+      ],
+      "valid_fraction": 1.0,
+      "finite_confidence_fraction": 1.0,
+      "valid_depth_quantiles_m": [
+        2.2630574703216553,
+        2.7626484632492065,
+        5.6410393714904785,
+        13.439066123962409,
+        41.82685852050781
+      ]
+    },
+    {
+      "sample_index": 23,
+      "frame_id": "DSC_0703",
+      "window": 11,
+      "centrality": 1,
+      "path": "frames/023.npz",
+      "sha256": "5293357bb032cd47036f98ad6c324df21c51486a41da55705cb43dfe2fe6e699",
+      "shape": [
+        266,
+        392
+      ],
+      "valid_fraction": 1.0,
+      "finite_confidence_fraction": 1.0,
+      "valid_depth_quantiles_m": [
+        2.173450231552124,
+        2.651011085510254,
+        4.4891674518585205,
+        8.239772891998294,
+        11.11674690246582
+      ]
+    },
+    {
+      "sample_index": 24,
+      "frame_id": "DSC_0705",
+      "window": 11,
+      "centrality": 1,
+      "path": "frames/024.npz",
+      "sha256": "7e2bf50d6974924b5a4b1bfe2d55a2ae9f8c2de60fe7e7609c1a794b310bfcd5",
+      "shape": [
+        266,
+        392
+      ],
+      "valid_fraction": 1.0,
+      "finite_confidence_fraction": 1.0,
+      "valid_depth_quantiles_m": [
+        2.185455083847046,
+        2.673370695114136,
+        4.686830759048462,
+        5.955913114547729,
+        9.284708976745605
+      ]
+    },
+    {
+      "sample_index": 25,
+      "frame_id": "DSC_0706",
+      "window": 12,
+      "centrality": 1,
+      "path": "frames/025.npz",
+      "sha256": "54e66d5f091780ca58de25ef358c3dd0212bae18d313eb72fa8ffb2c256c6c0d",
+      "shape": [
+        266,
+        392
+      ],
+      "valid_fraction": 1.0,
+      "finite_confidence_fraction": 1.0,
+      "valid_depth_quantiles_m": [
+        2.1890220642089844,
+        2.6930160760879516,
+        4.058534860610962,
+        6.076984167099,
+        11.15491771697998
+      ]
+    },
+    {
+      "sample_index": 26,
+      "frame_id": "DSC_0707",
+      "window": 12,
+      "centrality": 1,
+      "path": "frames/026.npz",
+      "sha256": "c499d64f12a84cde32d2e180886d8535f678fa868312699dde379eb14588e1fa",
+      "shape": [
+        266,
+        392
+      ],
+      "valid_fraction": 1.0,
+      "finite_confidence_fraction": 1.0,
+      "valid_depth_quantiles_m": [
+        2.1859090328216553,
+        2.6572274923324586,
+        3.718197226524353,
+        6.23127465248108,
+        9.951944351196289
+      ]
+    },
+    {
+      "sample_index": 27,
+      "frame_id": "DSC_0708",
+      "window": 13,
+      "centrality": 1,
+      "path": "frames/027.npz",
+      "sha256": "d637ea08c22f2a671fc7337457e81fe5445b1e3e1398e4520ce5b157046dea68",
+      "shape": [
+        266,
+        392
+      ],
+      "valid_fraction": 1.0,
+      "finite_confidence_fraction": 1.0,
+      "valid_depth_quantiles_m": [
+        2.1786422729492188,
+        2.702914071083069,
+        3.6359832286834717,
+        4.506853866577149,
+        5.029804706573486
+      ]
+    },
+    {
+      "sample_index": 28,
+      "frame_id": "DSC_0710",
+      "window": 13,
+      "centrality": 1,
+      "path": "frames/028.npz",
+      "sha256": "2b01de529fb15e878413a300304c73f9a02529b01e86fa7e6eacba60abe530eb",
+      "shape": [
+        266,
+        392
+      ],
+      "valid_fraction": 1.0,
+      "finite_confidence_fraction": 1.0,
+      "valid_depth_quantiles_m": [
+        3.2180092334747314,
+        4.238228988647461,
+        6.361724853515625,
+        7.440301990509034,
+        10.622239112854004
+      ]
+    },
+    {
+      "sample_index": 29,
+      "frame_id": "DSC_0711",
+      "window": 14,
+      "centrality": 1,
+      "path": "frames/029.npz",
+      "sha256": "dad08786ff9f5acb9ea88c2530039ce63b5fe91094ab538fa9fe0b10df02410f",
+      "shape": [
+        266,
+        392
+      ],
+      "valid_fraction": 1.0,
+      "finite_confidence_fraction": 1.0,
+      "valid_depth_quantiles_m": [
+        2.6913020610809326,
+        3.3550573110580446,
+        6.31425929069519,
+        14.827062129974367,
+        25.91945457458496
+      ]
+    },
+    {
+      "sample_index": 30,
+      "frame_id": "DSC_0712",
+      "window": 14,
+      "centrality": 1,
+      "path": "frames/030.npz",
+      "sha256": "fccb247d17825536ae9a691c8de7b105248dce59244c0879f77737806d43f54c",
+      "shape": [
+        266,
+        392
+      ],
+      "valid_fraction": 1.0,
+      "finite_confidence_fraction": 1.0,
+      "valid_depth_quantiles_m": [
+        2.7842087745666504,
+        3.478712868690491,
+        6.539003849029541,
+        15.764407920837405,
+        28.77758026123047
+      ]
+    },
+    {
+      "sample_index": 31,
+      "frame_id": "DSC_0713",
+      "window": 15,
+      "centrality": 1,
+      "path": "frames/031.npz",
+      "sha256": "0cc94d7aaaaf36a4d1a4be0a5b6dd402b08c2b269a26121bfed512acfd295978",
+      "shape": [
+        266,
+        392
+      ],
+      "valid_fraction": 1.0,
+      "finite_confidence_fraction": 1.0,
+      "valid_depth_quantiles_m": [
+        2.2869784832000732,
+        2.901247239112854,
+        5.614240407943726,
+        15.051121044158942,
+        25.548072814941406
+      ]
+    },
+    {
+      "sample_index": 32,
+      "frame_id": "DSC_0715",
+      "window": 15,
+      "centrality": 1,
+      "path": "frames/032.npz",
+      "sha256": "64f0c2fcb44efebe01cba1bb123fa605701c4cc10a248298e4ff99addf23283a",
+      "shape": [
+        266,
+        392
+      ],
+      "valid_fraction": 1.0,
+      "finite_confidence_fraction": 1.0,
+      "valid_depth_quantiles_m": [
+        2.894369602203369,
+        3.930098223686218,
+        6.193471431732178,
+        13.788720321655275,
+        40.009761810302734
+      ]
+    },
+    {
+      "sample_index": 33,
+      "frame_id": "DSC_0716",
+      "window": 16,
+      "centrality": 1,
+      "path": "frames/033.npz",
+      "sha256": "906edf3a9136352067a0f36213428eb08309fee216d445cf92e214bcb1ab6b9a",
+      "shape": [
+        266,
+        392
+      ],
+      "valid_fraction": 1.0,
+      "finite_confidence_fraction": 1.0,
+      "valid_depth_quantiles_m": [
+        1.8200321197509766,
+        3.354146671295166,
+        5.438941478729248,
+        13.504814720153808,
+        44.7540168762207
+      ]
+    },
+    {
+      "sample_index": 34,
+      "frame_id": "DSC_0717",
+      "window": 16,
+      "centrality": 1,
+      "path": "frames/034.npz",
+      "sha256": "cdcf21c66133f6308d1ee6d51b15690b945455a8b895351abf3fd7d857c12630",
+      "shape": [
+        266,
+        392
+      ],
+      "valid_fraction": 1.0,
+      "finite_confidence_fraction": 1.0,
+      "valid_depth_quantiles_m": [
+        1.1961685419082642,
+        2.4569406747817992,
+        4.845146179199219,
+        13.543733215332033,
+        44.11357879638672
+      ]
+    },
+    {
+      "sample_index": 35,
+      "frame_id": "DSC_0718",
+      "window": 16,
+      "centrality": 0,
+      "path": "frames/035.npz",
+      "sha256": "07cbf1cf55a4ebedc6653c132853dac40576360762b3538ba4de4bb37c817c59",
+      "shape": [
+        266,
+        392
+      ],
+      "valid_fraction": 1.0,
+      "finite_confidence_fraction": 1.0,
+      "valid_depth_quantiles_m": [
+        3.015970468521118,
+        4.002998304367066,
+        6.342841386795044,
+        13.045832443237307,
+        44.140750885009766
+      ]
+    }
+  ],
+  "windows": 17,
+  "seconds": 26.23412326350808,
+  "depth": "optical camera-Z in metres aligned only from registered input camera translations; learned prediction, not ground-truth geometry",
+  "intrinsics": "K_depth is integer-centre; K_depth_raster is corner-origin; use K_depth with integer u/v unprojection",
+  "mask": "valid_mask: finite positive non-sky prediction; invalid depth stored as0. confidence_valid_mask marks finite raw model confidence, not calibrated probability; invalid confidence stored0. No confidence threshold applied.",
+  "camera": "T_world_camera is supplied OpenCV C2W in common canonical metres/Z-up gauge",
+  "files": {
+    "frozen_config.json": "f69c3da39bd2340139e4e180afb3841927f9ddf7f6e4c7bb3d810e29f1054634",
+    "frames.json": "d6ca1eeddcea573d2a4aaaf182839f34e31f73f0d987bca194d6565f1aebfc92",
+    "cameras.json": "43f58e180828990fbc26b7275104011d0eb9f0a32d5a82809a8b83c54cf6d1d5",
+    "provenance.json": "374d1ef3144dc3e4ad13d3d328ce671558220a7bc88769b3e200a5b07c4f2264"
+  },
+  "supporting_files": {
+    "REFERENCE_CONTRACT.md": "d84bc726366ba8a98cc37f209ddbe56fc6f8e4a92ee7eb5bd2583fbacd1a123a",
+    "cameras.json": "43f58e180828990fbc26b7275104011d0eb9f0a32d5a82809a8b83c54cf6d1d5",
+    "frames.json": "d6ca1eeddcea573d2a4aaaf182839f34e31f73f0d987bca194d6565f1aebfc92",
+    "frozen_config.json": "f69c3da39bd2340139e4e180afb3841927f9ddf7f6e4c7bb3d810e29f1054634",
+    "logs/base_runtime_packages.txt": "10fc1333b09ed49afc2372a2915a16ee826fa889b595119e9af51dfd8aed73c4",
+    "logs/gpu_before_inference.csv": "501eb5db95e62b7f66266976d4913e97cdc03ad5c094bc1a1f2e0d7a686cac84",
+    "logs/inference.log": "3cab072a864dd47f1c1275e64a2001e4bdbdf2008a690c0a8169f7736e535ec6",
+    "logs/overlay_packages.txt": "9a944a44c2f39f64e17e5fe7830148fcac5d00d28b45847ed3a1a4101061d517",
+    "logs/pinned_source_verification.json": "c143d0b05a4f38b525a30ce88fbe62245be7e9b7979782c4faef3797b4cf403b",
+    "logs/source_files_sha256.json": "87781fd4d88c35100089399754f62d733ee9b6274b9d30484f0f4c07006ca5f5",
+    "provenance.json": "374d1ef3144dc3e4ad13d3d328ce671558220a7bc88769b3e200a5b07c4f2264",
+    "run_reference.py": "fc08951f33b7f9f52f1304457c1203d67ccdf35ea10e9bd12dd7706b19dd88fe",
+    "validate_reference.py": "eb075b344807511e0d7ffc91be14a0aeee001f338f8b8a4272cdaaf075e74c3b",
+    "window_summary.json": "2a665937894067ae8e4f0ae480e2d967a9898e1496e5ea6e82b242972e6f514f"
+  }
+}

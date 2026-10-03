@@ -1,0 +1,35 @@
+# Agent: editable geometry and invisible completion
+
+When the packet contains `generation_skills`, read its RoomKit and local-refinement skill instructions and `generation_guidance`. You may deliver `roomkit_parts.json` plus canonical scene/observation contracts instead of a prebuilt model; the native acceptance path runs RoomKit and supplies model.blend before existing gates. Stable manifest part IDs must equal declared structure part IDs and Blender object names. Six shell surfaces are built from the canonical room, not from the furniture manifest. Existing custom detailed Blender authoring remains supported.
+
+Use visual/spatial reasoning to author geometry suited to this scene. Deliver a packed model.blend plus scene.json conforming to real2sim.scene/1.0. Stable semantic roots, metre units, Z-up, named camera source_camera, object provenance and confidence are required. The six shell meshes must be named floor, ceiling, wall_back, wall_front, wall_left, wall_right, opaque and retained in every generation. Model all observed luminaires. Create complete backs, legs and support structures with hypotheses explicitly recorded.
+
+Agent modelling may use custom Blender/Python code, reusable parametric builders, or editable primitive assemblies. Provide builder source and all required textures/assets as output artifacts. An unsupported furniture category is a request for custom geometry, not permission to paste a similar stock object. Source-derived planar art/textile appearance is allowed when documented; never use a room-wide billboard as reconstructed geometry.
+
+A builds furniture geometry independently from image/spec priors. B may replace only verified exact asset components while retaining the same scene placement; otherwise copy A and log fallback. Keep catalogue body dimensions distinct from decorated assembly bounds. Geometry/appearance corrections need observed evidence. Generative layout repair may report conflicts but must not move evidence-backed objects.
+
+Return response.json. Do not mark complete merely because Blender saved a file.
+
+When validate_web_research is upstream, use only its model_priors/model_details.
+Record response.parameters.web_research_consumption with report_sha256 and
+used_priors:[{object_id,parameter,application}]; identify actual scene/part parameters
+affected. When none are used, record used_priors:[] and unconsumed_reason. Retain
+identity uncertainty, unquantified source tolerances, hypothetical hidden details
+and the prior/instance-measurement distinction. Source archive integrity alone
+does not prove that an authored dimension or hidden face is correct.
+
+## Mandatory assembly evidence
+
+Read the accepted furniture_observation.json from the observation stage; carry its exact bytes/hash into the model artifacts. It must assign visible parts to furniture, distinguish observed/partial/hidden landmarks and record alternative interpretations. Do not separately ray-fit surfaces, back rails and feet and join them only by screen proximity. Fit a coherent local furniture frame with shared dimensions, parallel/symmetric members where supported, and a connected load path. Hidden joinery may use labelled priors.
+
+For quality_v2 deliver scene.structure using real2sim.assembly/1: one owner per part, actual Blender object name, explicitly declared joint pairs with a shared world-space anchor/tolerance, floor supports and source observation IDs. The assembly graph must be connected. Store actual fit residuals separately from room/camera residuals, and bind model_version consistently in scene and response.parameters. A layout lock is not a structural certificate. Do not add arbitrary joints to whitelist a visually erroneous crossbar or intersection.
+
+When surface_contract_version >= 1, also follow surfaces.md; source-bound surface artifacts and front/raking review are mandatory.
+
+When appearance_contract_version >= 1, also follow appearance.md. Whole-scene coverage, scoped textures, actual UV/material checks and persistent fixed-view comparisons are mandatory.
+# Supplied camera constraints
+
+If packet.camera_constraints exists, copy its ordered cameras into scene.cameras
+and its first camera into scene.camera. Preserve their numeric values and frame
+IDs; include camera_constraints_sha256 in response.parameters. The build and
+acceptance stages check these constraints. GT camera inputs are diagnostic only.

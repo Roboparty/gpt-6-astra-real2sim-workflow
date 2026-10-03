@@ -1,0 +1,371 @@
+{
+  "status": "PASS",
+  "pair_count": 26,
+  "paired_hash_and_identity_checks": [
+    {
+      "method": "OURS",
+      "frame_id": "DSC_0675",
+      "split": "reconstruction",
+      "source_hash_verified": true,
+      "render_hash_verified": true,
+      "source_resize": [
+        "lanczos"
+      ],
+      "value": 0.37335941195487976
+    },
+    {
+      "method": "OURS",
+      "frame_id": "DSC_0683",
+      "split": "reconstruction",
+      "source_hash_verified": true,
+      "render_hash_verified": true,
+      "source_resize": [
+        "lanczos"
+      ],
+      "value": 0.5855796337127686
+    },
+    {
+      "method": "OURS",
+      "frame_id": "DSC_0692",
+      "split": "reconstruction",
+      "source_hash_verified": true,
+      "render_hash_verified": true,
+      "source_resize": [
+        "lanczos"
+      ],
+      "value": 0.538359522819519
+    },
+    {
+      "method": "OURS",
+      "frame_id": "DSC_0701",
+      "split": "reconstruction",
+      "source_hash_verified": true,
+      "render_hash_verified": true,
+      "source_resize": [
+        "lanczos"
+      ],
+      "value": 0.50832599401474
+    },
+    {
+      "method": "OURS",
+      "frame_id": "DSC_0710",
+      "split": "reconstruction",
+      "source_hash_verified": true,
+      "render_hash_verified": true,
+      "source_resize": [
+        "lanczos"
+      ],
+      "value": 0.5386994481086731
+    },
+    {
+      "method": "OURS",
+      "frame_id": "DSC_0679",
+      "split": "heldout",
+      "source_hash_verified": true,
+      "render_hash_verified": true,
+      "source_resize": [
+        "lanczos"
+      ],
+      "value": 0.5101633071899414
+    },
+    {
+      "method": "OURS",
+      "frame_id": "DSC_0684",
+      "split": "heldout",
+      "source_hash_verified": true,
+      "render_hash_verified": true,
+      "source_resize": [
+        "lanczos"
+      ],
+      "value": 0.5959042310714722
+    },
+    {
+      "method": "OURS",
+      "frame_id": "DSC_0689",
+      "split": "heldout",
+      "source_hash_verified": true,
+      "render_hash_verified": true,
+      "source_resize": [
+        "lanczos"
+      ],
+      "value": 0.5531002879142761
+    },
+    {
+      "method": "OURS",
+      "frame_id": "DSC_0694",
+      "split": "heldout",
+      "source_hash_verified": true,
+      "render_hash_verified": true,
+      "source_resize": [
+        "lanczos"
+      ],
+      "value": 0.49879077076911926
+    },
+    {
+      "method": "OURS",
+      "frame_id": "DSC_0699",
+      "split": "heldout",
+      "source_hash_verified": true,
+      "render_hash_verified": true,
+      "source_resize": [
+        "lanczos"
+      ],
+      "value": 0.4995191693305969
+    },
+    {
+      "method": "OURS",
+      "frame_id": "DSC_0704",
+      "split": "heldout",
+      "source_hash_verified": true,
+      "render_hash_verified": true,
+      "source_resize": [
+        "lanczos"
+      ],
+      "value": 0.5309949517250061
+    },
+    {
+      "method": "OURS",
+      "frame_id": "DSC_0709",
+      "split": "heldout",
+      "source_hash_verified": true,
+      "render_hash_verified": true,
+      "source_resize": [
+        "lanczos"
+      ],
+      "value": 0.5544725656509399
+    },
+    {
+      "method": "OURS",
+      "frame_id": "DSC_0714",
+      "split": "heldout",
+      "source_hash_verified": true,
+      "render_hash_verified": true,
+      "source_resize": [
+        "lanczos"
+      ],
+      "value": 0.7069634199142456
+    },
+    {
+      "method": "AWSM",
+      "frame_id": "DSC_0675",
+      "split": "reconstruction",
+      "source_hash_verified": true,
+      "render_hash_verified": true,
+      "source_resize": [
+        "lanczos"
+      ],
+      "value": 0.6067937612533569
+    },
+    {
+      "method": "AWSM",
+      "frame_id": "DSC_0683",
+      "split": "reconstruction",
+      "source_hash_verified": true,
+      "render_hash_verified": true,
+      "source_resize": [
+        "lanczos"
+      ],
+      "value": 0.6166642308235168
+    },
+    {
+      "method": "AWSM",
+      "frame_id": "DSC_0692",
+      "split": "reconstruction",
+      "source_hash_verified": true,
+      "render_hash_verified": true,
+      "source_resize": [
+        "lanczos"
+      ],
+      "value": 0.5878915190696716
+    },
+    {
+      "method": "AWSM",
+      "frame_id": "DSC_0701",
+      "split": "reconstruction",
+      "source_hash_verified": true,
+      "render_hash_verified": true,
+      "source_resize": [
+        "lanczos"
+      ],
+      "value": 0.5223163366317749
+    },
+    {
+      "method": "AWSM",
+      "frame_id": "DSC_0710",
+      "split": "reconstruction",
+      "source_hash_verified": true,
+      "render_hash_verified": true,
+      "source_resize": [
+        "lanczos"
+      ],
+      "value": 0.5211703777313232
+    },
+    {
+      "method": "AWSM",
+      "frame_id": "DSC_0679",
+      "split": "heldout",
+      "source_hash_verified": true,
+      "render_hash_verified": true,
+      "source_resize": [
+        "lanczos"
+      ],
+      "value": 0.5920001864433289
+    },
+    {
+      "method": "AWSM",
+      "frame_id": "DSC_0684",
+      "split": "heldout",
+      "source_hash_verified": true,
+      "render_hash_verified": true,
+      "source_resize": [
+        "lanczos"
+      ],
+      "value": 0.6205042600631714
+    },
+    {
+      "method": "AWSM",
+      "frame_id": "DSC_0689",
+      "split": "heldout",
+      "source_hash_verified": true,
+      "render_hash_verified": true,
+      "source_resize": [
+        "lanczos"
+      ],
+      "value": 0.5931119322776794
+    },
+    {
+      "method": "AWSM",
+      "frame_id": "DSC_0694",
+      "split": "heldout",
+      "source_hash_verified": true,
+      "render_hash_verified": true,
+      "source_resize": [
+        "lanczos"
+      ],
+      "value": 0.5413381457328796
+    },
+    {
+      "method": "AWSM",
+      "frame_id": "DSC_0699",
+      "split": "heldout",
+      "source_hash_verified": true,
+      "render_hash_verified": true,
+      "source_resize": [
+        "lanczos"
+      ],
+      "value": 0.5442543625831604
+    },
+    {
+      "method": "AWSM",
+      "frame_id": "DSC_0704",
+      "split": "heldout",
+      "source_hash_verified": true,
+      "render_hash_verified": true,
+      "source_resize": [
+        "lanczos"
+      ],
+      "value": 0.5348364114761353
+    },
+    {
+      "method": "AWSM",
+      "frame_id": "DSC_0709",
+      "split": "heldout",
+      "source_hash_verified": true,
+      "render_hash_verified": true,
+      "source_resize": [
+        "lanczos"
+      ],
+      "value": 0.5348063111305237
+    },
+    {
+      "method": "AWSM",
+      "frame_id": "DSC_0714",
+      "split": "heldout",
+      "source_hash_verified": true,
+      "render_hash_verified": true,
+      "source_resize": [
+        "lanczos"
+      ],
+      "value": 0.6734422445297241
+    }
+  ],
+  "means": {
+    "OURS": {
+      "reconstruction": {
+        "count": 5,
+        "mean": 0.508864802122116,
+        "frame_ids": [
+          "DSC_0675",
+          "DSC_0683",
+          "DSC_0692",
+          "DSC_0701",
+          "DSC_0710"
+        ]
+      },
+      "heldout": {
+        "count": 8,
+        "mean": 0.5562385879456997,
+        "frame_ids": [
+          "DSC_0679",
+          "DSC_0684",
+          "DSC_0689",
+          "DSC_0694",
+          "DSC_0699",
+          "DSC_0704",
+          "DSC_0709",
+          "DSC_0714"
+        ]
+      }
+    },
+    "AWSM": {
+      "reconstruction": {
+        "count": 5,
+        "mean": 0.5709672451019288,
+        "frame_ids": [
+          "DSC_0675",
+          "DSC_0683",
+          "DSC_0692",
+          "DSC_0701",
+          "DSC_0710"
+        ]
+      },
+      "heldout": {
+        "count": 8,
+        "mean": 0.5792867317795753,
+        "frame_ids": [
+          "DSC_0679",
+          "DSC_0684",
+          "DSC_0689",
+          "DSC_0694",
+          "DSC_0699",
+          "DSC_0704",
+          "DSC_0709",
+          "DSC_0714"
+        ]
+      }
+    }
+  },
+  "identical_image_sanity": 0.0,
+  "weight_provenance": {
+    "status": "loaded",
+    "torch": "2.5.1+cu124",
+    "numpy": "1.26.4",
+    "scipy": "1.15.3",
+    "lpips_package": "0.1.4",
+    "net": "alex",
+    "version": "0.1",
+    "files": [
+      {
+        "path": "/home/wqz/real2sim_awsm_20261003/torch_eval_cache/hub/checkpoints/alexnet-owt-7be5be79.pth",
+        "bytes": 244408911,
+        "sha256": "7be5be791159472b1fbf3c69796f7cb30dca7ad8466c2df70058c37116cdee02"
+      },
+      {
+        "path": "/home/wqz/real2sim_awsm_20261003/evaldeps/lpips/weights/v0.1/alex.pth",
+        "bytes": 6009,
+        "sha256": "df73285e35b22355a2df87cdb6b70b343713b667eddbda73e1977e0c860835c0"
+      }
+    ]
+  },
+  "scope": "Recomputed aggregation and byte/pixel input integrity for all26pairs; neural LPIPS inference itself not rerun in this audit. Original source resize matches PIL Lanczos/Bicubic as recorded per pair."
+}

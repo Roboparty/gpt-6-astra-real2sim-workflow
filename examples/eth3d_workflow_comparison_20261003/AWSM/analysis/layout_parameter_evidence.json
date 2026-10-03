@@ -1,0 +1,51 @@
+{
+  "single_transform": "analysis/measurements.json model_from_input; floor robust normal + sliding-door projected normal, unit scale; every camera is exactly X@T",
+  "parameters": [
+    {
+      "parameter": "ceiling underside z=4.60",
+      "evidence": "ceiling supports frames8,12,20,28; transformed observed range4.46..4.69",
+      "completion": "single horizontal plane; thickness0.16 inferred"
+    },
+    {
+      "parameter": "door surface x=5.12",
+      "evidence": "sliding_door frames0,27 transformed x4.96..5.27; joint plane median residual0.130m vs individual0.007/0.006m",
+      "completion": "cross-window conflict retained; averaged placement,7 leaves inferred from repeated image panels"
+    },
+    {
+      "parameter": "main left wall x=-13.7",
+      "evidence": "left_main_wall frames16,20 x-13.76..-13.53",
+      "completion": "thickness0.18 inferred; wall extends only above corridor opening y0.6"
+    },
+    {
+      "parameter": "cage facade y=-7.98",
+      "evidence": "cage_wall frames24,28 y-8.03..-7.85",
+      "completion": "lower openings and wire grid inferred semantic completion from RGB"
+    },
+    {
+      "parameter": "crate x1.5..2.8,y6.62..8.68,z0..1.46",
+      "evidence": "frame8 interior points and RGB visible side/front; bad crate_back_right point lies on background and retained excluded",
+      "completion": "hidden side thickness, pallet structure and repeating board spacing inferred"
+    },
+    {
+      "parameter": "shelf x5.8..12.5,y9.7..10.6,z0..3.9",
+      "evidence": "frame8 upright point samples; broad shelf ROI median residual0.328m marks mixed surfaces",
+      "completion": "12 bags per shelf and hidden bags are approximate object-level completion, no exact bag count claim"
+    },
+    {
+      "parameter": "truck cab/cargo bounds",
+      "evidence": "frame12 manually labelled front/roof/side points; broad truck ROI contains background and was not used as a physical bounding box",
+      "completion": "wheelbase/cargo rear hidden geometry inferred; truck_box_rear depth uncertain"
+    },
+    {
+      "parameter": "lumber y=-6.97",
+      "evidence": "interior points frames24,28 y-6.94..-6.95; thin left endpoint depth inconsistent -8.43/-11.56 retained",
+      "completion": "constant timber length4.65 and board count11 inferred from visible bundle"
+    },
+    {
+      "parameter": "corridor end x=-48.5",
+      "evidence": "frame20 predicted depth gives x-48.92..-46.54",
+      "completion": "low-confidence far-depth approximation; no GT or scale fit"
+    }
+  ],
+  "physics": "All masses, friction, restitution and actual mechanical articulation unmeasured; only static conservative collision proxies supplied"
+}

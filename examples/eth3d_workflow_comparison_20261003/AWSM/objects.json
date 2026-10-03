@@ -1,0 +1,2627 @@
+{
+  "objects": [
+    {
+      "id": "hall_floor",
+      "category": "floor",
+      "evidence_frames": [
+        8,
+        12,
+        20,
+        24,
+        27
+      ],
+      "provenance": "observed semantic topology and depth-supported visible surfaces; hidden dimensions inferred",
+      "relations": [
+        {
+          "relation": "supported_by",
+          "target": "hall_floor"
+        }
+      ],
+      "components": [
+        "hall_floor__body"
+      ],
+      "dimensions": [
+        18.8,
+        27.2,
+        0.2
+      ],
+      "bounds": [
+        [
+          -13.7,
+          -8.0,
+          -0.2
+        ],
+        [
+          5.1000000000000005,
+          19.2,
+          0.0
+        ]
+      ],
+      "measurement_source": "analysis/measurements.json,point_measurements.json,v2_measurements.json; hidden dimensions explicitly inferred"
+    },
+    {
+      "id": "bay_floor",
+      "category": "floor",
+      "evidence_frames": [
+        6,
+        7,
+        8
+      ],
+      "provenance": "observed semantic topology and depth-supported visible surfaces; hidden dimensions inferred",
+      "relations": [
+        {
+          "relation": "supported_by",
+          "target": "hall_floor"
+        }
+      ],
+      "components": [
+        "bay_floor__body"
+      ],
+      "dimensions": [
+        10.0,
+        10.0,
+        0.2
+      ],
+      "bounds": [
+        [
+          5.0,
+          0.5,
+          -0.2
+        ],
+        [
+          15.0,
+          10.5,
+          0.0
+        ]
+      ],
+      "measurement_source": "analysis/measurements.json,point_measurements.json,v2_measurements.json; hidden dimensions explicitly inferred"
+    },
+    {
+      "id": "corridor_floor",
+      "category": "floor",
+      "evidence_frames": [
+        20,
+        21,
+        22,
+        32,
+        33,
+        34,
+        35
+      ],
+      "provenance": "observed semantic topology and depth-supported visible surfaces; hidden dimensions inferred",
+      "relations": [
+        {
+          "relation": "supported_by",
+          "target": "hall_floor"
+        }
+      ],
+      "components": [
+        "corridor_floor__body"
+      ],
+      "dimensions": [
+        36.0,
+        8.0,
+        0.2
+      ],
+      "bounds": [
+        [
+          -49.0,
+          -7.5,
+          -0.2
+        ],
+        [
+          -13.0,
+          0.5,
+          0.0
+        ]
+      ],
+      "measurement_source": "analysis/measurements.json,point_measurements.json,v2_measurements.json; hidden dimensions explicitly inferred"
+    },
+    {
+      "id": "hall_ceiling",
+      "category": "ceiling",
+      "evidence_frames": [
+        8,
+        12,
+        20,
+        28,
+        29,
+        30,
+        31
+      ],
+      "provenance": "observed semantic topology and depth-supported visible surfaces; hidden dimensions inferred",
+      "relations": [
+        {
+          "relation": "supported_by",
+          "target": "hall_floor"
+        }
+      ],
+      "components": [
+        "hall_ceiling__body"
+      ],
+      "dimensions": [
+        18.8,
+        27.2,
+        0.16000000000000014
+      ],
+      "bounds": [
+        [
+          -13.7,
+          -8.0,
+          4.6
+        ],
+        [
+          5.1000000000000005,
+          19.2,
+          4.76
+        ]
+      ],
+      "measurement_source": "analysis/measurements.json,point_measurements.json,v2_measurements.json; hidden dimensions explicitly inferred"
+    },
+    {
+      "id": "bay_ceiling",
+      "category": "ceiling",
+      "evidence_frames": [
+        6,
+        7,
+        8
+      ],
+      "provenance": "observed semantic topology and depth-supported visible surfaces; hidden dimensions inferred",
+      "relations": [
+        {
+          "relation": "supported_by",
+          "target": "hall_floor"
+        }
+      ],
+      "components": [
+        "bay_ceiling__body"
+      ],
+      "dimensions": [
+        10.0,
+        10.0,
+        0.16000000000000014
+      ],
+      "bounds": [
+        [
+          5.0,
+          0.5,
+          4.6
+        ],
+        [
+          15.0,
+          10.5,
+          4.76
+        ]
+      ],
+      "measurement_source": "analysis/measurements.json,point_measurements.json,v2_measurements.json; hidden dimensions explicitly inferred"
+    },
+    {
+      "id": "corridor_ceiling",
+      "category": "ceiling",
+      "evidence_frames": [
+        20,
+        21,
+        22
+      ],
+      "provenance": "observed semantic topology and depth-supported visible surfaces; hidden dimensions inferred",
+      "relations": [
+        {
+          "relation": "supported_by",
+          "target": "hall_floor"
+        }
+      ],
+      "components": [
+        "corridor_ceiling__body"
+      ],
+      "dimensions": [
+        36.0,
+        8.0,
+        0.16000000000000014
+      ],
+      "bounds": [
+        [
+          -49.0,
+          -7.5,
+          4.6
+        ],
+        [
+          -13.0,
+          0.5,
+          4.76
+        ]
+      ],
+      "measurement_source": "analysis/measurements.json,point_measurements.json,v2_measurements.json; hidden dimensions explicitly inferred"
+    },
+    {
+      "id": "main_left_wall",
+      "category": "wall",
+      "evidence_frames": [
+        12,
+        14,
+        15,
+        16,
+        20
+      ],
+      "provenance": "observed semantic topology and depth-supported visible surfaces; hidden dimensions inferred",
+      "relations": [
+        {
+          "relation": "supported_by",
+          "target": "hall_floor"
+        }
+      ],
+      "components": [
+        "main_left_wall__body"
+      ],
+      "dimensions": [
+        0.17999999999999972,
+        18.6,
+        4.6
+      ],
+      "bounds": [
+        [
+          -13.79,
+          0.5999999999999996,
+          0.0
+        ],
+        [
+          -13.61,
+          19.200000000000003,
+          4.6
+        ]
+      ],
+      "measurement_source": "analysis/measurements.json,point_measurements.json,v2_measurements.json; hidden dimensions explicitly inferred"
+    },
+    {
+      "id": "rear_loading_wall",
+      "category": "wall",
+      "evidence_frames": [
+        10,
+        12,
+        13
+      ],
+      "provenance": "observed semantic topology and depth-supported visible surfaces; hidden dimensions inferred",
+      "relations": [
+        {
+          "relation": "supported_by",
+          "target": "hall_floor"
+        }
+      ],
+      "components": [
+        "rear_loading_wall__body"
+      ],
+      "dimensions": [
+        18.8,
+        0.20000000000000284,
+        5.6
+      ],
+      "bounds": [
+        [
+          -13.7,
+          19.2,
+          0.0
+        ],
+        [
+          5.1000000000000005,
+          19.400000000000002,
+          5.6
+        ]
+      ],
+      "measurement_source": "analysis/measurements.json,point_measurements.json,v2_measurements.json; hidden dimensions explicitly inferred"
+    },
+    {
+      "id": "right_upper_wall",
+      "category": "wall",
+      "evidence_frames": [
+        8,
+        10,
+        12
+      ],
+      "provenance": "observed semantic topology and depth-supported visible surfaces; hidden dimensions inferred",
+      "relations": [
+        {
+          "relation": "supported_by",
+          "target": "hall_floor"
+        }
+      ],
+      "components": [
+        "right_upper_wall__body"
+      ],
+      "dimensions": [
+        0.1999999999999993,
+        9.0,
+        4.6
+      ],
+      "bounds": [
+        [
+          4.98,
+          10.25,
+          0.0
+        ],
+        [
+          5.18,
+          19.25,
+          4.6
+        ]
+      ],
+      "measurement_source": "analysis/measurements.json,point_measurements.json,v2_measurements.json; hidden dimensions explicitly inferred"
+    },
+    {
+      "id": "bay_rear_wall",
+      "category": "wall",
+      "evidence_frames": [
+        6,
+        7,
+        8
+      ],
+      "provenance": "observed semantic topology and depth-supported visible surfaces; hidden dimensions inferred",
+      "relations": [
+        {
+          "relation": "supported_by",
+          "target": "hall_floor"
+        }
+      ],
+      "components": [
+        "bay_rear_wall__body"
+      ],
+      "dimensions": [
+        10.0,
+        0.17999999999999972,
+        4.6
+      ],
+      "bounds": [
+        [
+          5.0,
+          10.81,
+          0.0
+        ],
+        [
+          15.0,
+          10.99,
+          4.6
+        ]
+      ],
+      "measurement_source": "analysis/measurements.json,point_measurements.json,v2_measurements.json; hidden dimensions explicitly inferred"
+    },
+    {
+      "id": "bay_outer_wall",
+      "category": "wall",
+      "evidence_frames": [
+        6,
+        7,
+        8
+      ],
+      "provenance": "observed semantic topology and depth-supported visible surfaces; hidden dimensions inferred",
+      "relations": [
+        {
+          "relation": "supported_by",
+          "target": "hall_floor"
+        }
+      ],
+      "components": [
+        "bay_outer_wall__body"
+      ],
+      "dimensions": [
+        0.17999999999999972,
+        10.8,
+        4.6
+      ],
+      "bounds": [
+        [
+          14.91,
+          0.09999999999999964,
+          0.0
+        ],
+        [
+          15.09,
+          10.9,
+          4.6
+        ]
+      ],
+      "measurement_source": "analysis/measurements.json,point_measurements.json,v2_measurements.json; hidden dimensions explicitly inferred"
+    },
+    {
+      "id": "corridor_south_wall",
+      "category": "wall",
+      "evidence_frames": [
+        20,
+        21,
+        22,
+        32
+      ],
+      "provenance": "observed semantic topology and depth-supported visible surfaces; hidden dimensions inferred",
+      "relations": [
+        {
+          "relation": "supported_by",
+          "target": "hall_floor"
+        }
+      ],
+      "components": [
+        "corridor_south_wall__body"
+      ],
+      "dimensions": [
+        36.0,
+        0.1999999999999993,
+        4.6
+      ],
+      "bounds": [
+        [
+          -49.0,
+          -7.6499999999999995,
+          0.0
+        ],
+        [
+          -13.0,
+          -7.45,
+          4.6
+        ]
+      ],
+      "measurement_source": "analysis/measurements.json,point_measurements.json,v2_measurements.json; hidden dimensions explicitly inferred"
+    },
+    {
+      "id": "corridor_north_wall",
+      "category": "wall",
+      "evidence_frames": [
+        20,
+        21,
+        22,
+        32
+      ],
+      "provenance": "observed semantic topology and depth-supported visible surfaces; hidden dimensions inferred",
+      "relations": [
+        {
+          "relation": "supported_by",
+          "target": "hall_floor"
+        }
+      ],
+      "components": [
+        "corridor_north_wall__body"
+      ],
+      "dimensions": [
+        36.0,
+        0.19999999999999996,
+        4.6
+      ],
+      "bounds": [
+        [
+          -49.0,
+          0.45000000000000007,
+          0.0
+        ],
+        [
+          -13.0,
+          0.65,
+          4.6
+        ]
+      ],
+      "measurement_source": "analysis/measurements.json,point_measurements.json,v2_measurements.json; hidden dimensions explicitly inferred"
+    },
+    {
+      "id": "corridor_end_door",
+      "category": "door",
+      "evidence_frames": [
+        20,
+        21,
+        22
+      ],
+      "provenance": "observed semantic topology and depth-supported visible surfaces; hidden dimensions inferred",
+      "relations": [
+        {
+          "relation": "supported_by",
+          "target": "hall_floor"
+        }
+      ],
+      "components": [
+        "corridor_end_door__body"
+      ],
+      "dimensions": [
+        0.12000000000000455,
+        8.0,
+        4.6
+      ],
+      "bounds": [
+        [
+          -48.56,
+          -7.5,
+          0.0
+        ],
+        [
+          -48.44,
+          0.5,
+          4.6
+        ]
+      ],
+      "measurement_source": "analysis/measurements.json,point_measurements.json,v2_measurements.json; hidden dimensions explicitly inferred"
+    },
+    {
+      "id": "storage_upper_wall",
+      "category": "wall",
+      "evidence_frames": [
+        20,
+        23,
+        24,
+        28
+      ],
+      "provenance": "observed semantic topology and depth-supported visible surfaces; hidden dimensions inferred",
+      "relations": [
+        {
+          "relation": "supported_by",
+          "target": "hall_floor"
+        }
+      ],
+      "components": [
+        "storage_upper_wall__body"
+      ],
+      "dimensions": [
+        18.8,
+        0.17000000000000082,
+        2.1599999999999997
+      ],
+      "bounds": [
+        [
+          -13.7,
+          -8.065000000000001,
+          2.44
+        ],
+        [
+          5.1000000000000005,
+          -7.8950000000000005,
+          4.6
+        ]
+      ],
+      "measurement_source": "analysis/measurements.json,point_measurements.json,v2_measurements.json; hidden dimensions explicitly inferred"
+    },
+    {
+      "id": "storage_solid_pier",
+      "category": "wall",
+      "evidence_frames": [
+        24,
+        28
+      ],
+      "provenance": "observed semantic topology and depth-supported visible surfaces; hidden dimensions inferred",
+      "relations": [
+        {
+          "relation": "supported_by",
+          "target": "hall_floor"
+        }
+      ],
+      "components": [
+        "storage_solid_pier__body"
+      ],
+      "dimensions": [
+        4.0,
+        0.1999999999999993,
+        2.4
+      ],
+      "bounds": [
+        [
+          -1.2,
+          -8.08,
+          0.0
+        ],
+        [
+          2.8,
+          -7.880000000000001,
+          2.4
+        ]
+      ],
+      "measurement_source": "analysis/measurements.json,point_measurements.json,v2_measurements.json; hidden dimensions explicitly inferred"
+    },
+    {
+      "id": "storage_back_wall",
+      "category": "wall",
+      "evidence_frames": [
+        20,
+        24,
+        28
+      ],
+      "provenance": "observed semantic topology and depth-supported visible surfaces; hidden dimensions inferred",
+      "relations": [
+        {
+          "relation": "supported_by",
+          "target": "hall_floor"
+        }
+      ],
+      "components": [
+        "storage_back_wall__body"
+      ],
+      "dimensions": [
+        15.0,
+        0.14999999999999858,
+        3.0
+      ],
+      "bounds": [
+        [
+          -13.0,
+          -10.674999999999999,
+          0.0
+        ],
+        [
+          2.0,
+          -10.525,
+          3.0
+        ]
+      ],
+      "measurement_source": "analysis/measurements.json,point_measurements.json,v2_measurements.json; hidden dimensions explicitly inferred"
+    },
+    {
+      "id": "storage_floor",
+      "category": "floor",
+      "evidence_frames": [
+        20,
+        24,
+        28
+      ],
+      "provenance": "observed semantic topology and depth-supported visible surfaces; hidden dimensions inferred",
+      "relations": [
+        {
+          "relation": "supported_by",
+          "target": "hall_floor"
+        }
+      ],
+      "components": [
+        "storage_floor__body"
+      ],
+      "dimensions": [
+        19.0,
+        2.8000000000000007,
+        0.2
+      ],
+      "bounds": [
+        [
+          -14.0,
+          -10.700000000000001,
+          -0.2
+        ],
+        [
+          5.0,
+          -7.9,
+          0.0
+        ]
+      ],
+      "measurement_source": "analysis/measurements.json,point_measurements.json,v2_measurements.json; hidden dimensions explicitly inferred"
+    },
+    {
+      "id": "sliding_panel_door",
+      "category": "sliding_door",
+      "evidence_frames": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        25,
+        26,
+        27
+      ],
+      "provenance": "observed semantic topology and depth-supported visible surfaces; hidden dimensions inferred",
+      "relations": [
+        {
+          "relation": "mounted_to",
+          "target": "door_header"
+        }
+      ],
+      "components": [
+        "sliding_panel_door__leaf_0_0",
+        "sliding_panel_door__leaf_0_1",
+        "sliding_panel_door__upright_0_-0.525",
+        "sliding_panel_door__upright_0_0.525",
+        "sliding_panel_door__rail_0_0.08",
+        "sliding_panel_door__rail_0_2.03",
+        "sliding_panel_door__rail_0_4.03",
+        "sliding_panel_door__hinge_0_0.5",
+        "sliding_panel_door__hinge_0_1.4",
+        "sliding_panel_door__hinge_0_2.6",
+        "sliding_panel_door__hinge_0_3.5",
+        "sliding_panel_door__leaf_1_0",
+        "sliding_panel_door__leaf_1_1",
+        "sliding_panel_door__upright_1_-0.525",
+        "sliding_panel_door__upright_1_0.525",
+        "sliding_panel_door__rail_1_0.08",
+        "sliding_panel_door__rail_1_2.03",
+        "sliding_panel_door__rail_1_4.03",
+        "sliding_panel_door__hinge_1_0.5",
+        "sliding_panel_door__hinge_1_1.4",
+        "sliding_panel_door__hinge_1_2.6",
+        "sliding_panel_door__hinge_1_3.5",
+        "sliding_panel_door__leaf_2_0",
+        "sliding_panel_door__leaf_2_1",
+        "sliding_panel_door__upright_2_-0.525",
+        "sliding_panel_door__upright_2_0.525",
+        "sliding_panel_door__rail_2_0.08",
+        "sliding_panel_door__rail_2_2.03",
+        "sliding_panel_door__rail_2_4.03",
+        "sliding_panel_door__hinge_2_0.5",
+        "sliding_panel_door__hinge_2_1.4",
+        "sliding_panel_door__hinge_2_2.6",
+        "sliding_panel_door__hinge_2_3.5",
+        "sliding_panel_door__leaf_3_0",
+        "sliding_panel_door__leaf_3_1",
+        "sliding_panel_door__upright_3_-0.525",
+        "sliding_panel_door__upright_3_0.525",
+        "sliding_panel_door__rail_3_0.08",
+        "sliding_panel_door__rail_3_2.03",
+        "sliding_panel_door__rail_3_4.03",
+        "sliding_panel_door__hinge_3_0.5",
+        "sliding_panel_door__hinge_3_1.4",
+        "sliding_panel_door__hinge_3_2.6",
+        "sliding_panel_door__hinge_3_3.5",
+        "sliding_panel_door__leaf_4_0",
+        "sliding_panel_door__leaf_4_1",
+        "sliding_panel_door__upright_4_-0.525",
+        "sliding_panel_door__upright_4_0.525",
+        "sliding_panel_door__rail_4_0.08",
+        "sliding_panel_door__rail_4_2.03",
+        "sliding_panel_door__rail_4_4.03",
+        "sliding_panel_door__hinge_4_0.5",
+        "sliding_panel_door__hinge_4_1.4",
+        "sliding_panel_door__hinge_4_2.6",
+        "sliding_panel_door__hinge_4_3.5",
+        "sliding_panel_door__leaf_5_0",
+        "sliding_panel_door__leaf_5_1",
+        "sliding_panel_door__upright_5_-0.525",
+        "sliding_panel_door__upright_5_0.525",
+        "sliding_panel_door__rail_5_0.08",
+        "sliding_panel_door__rail_5_2.03",
+        "sliding_panel_door__rail_5_4.03",
+        "sliding_panel_door__hinge_5_0.5",
+        "sliding_panel_door__hinge_5_1.4",
+        "sliding_panel_door__hinge_5_2.6",
+        "sliding_panel_door__hinge_5_3.5",
+        "sliding_panel_door__leaf_6_0",
+        "sliding_panel_door__leaf_6_1",
+        "sliding_panel_door__upright_6_-0.525",
+        "sliding_panel_door__upright_6_0.525",
+        "sliding_panel_door__rail_6_0.08",
+        "sliding_panel_door__rail_6_2.03",
+        "sliding_panel_door__rail_6_4.03",
+        "sliding_panel_door__hinge_6_0.5",
+        "sliding_panel_door__hinge_6_1.4",
+        "sliding_panel_door__hinge_6_2.6",
+        "sliding_panel_door__hinge_6_3.5"
+      ],
+      "dimensions": [
+        0.20750000000000046,
+        7.39,
+        4.1
+      ],
+      "bounds": [
+        [
+          4.955,
+          -7.47,
+          0.0
+        ],
+        [
+          5.1625000000000005,
+          -0.07999999999999997,
+          4.1
+        ]
+      ],
+      "measurement_source": "analysis/measurements.json,point_measurements.json,v2_measurements.json; hidden dimensions explicitly inferred"
+    },
+    {
+      "id": "door_header",
+      "category": "header",
+      "evidence_frames": [
+        0,
+        4,
+        26
+      ],
+      "provenance": "observed semantic topology and depth-supported visible surfaces; hidden dimensions inferred",
+      "relations": [
+        {
+          "relation": "supported_by",
+          "target": "hall_floor"
+        }
+      ],
+      "components": [
+        "door_header__body"
+      ],
+      "dimensions": [
+        0.40000000000000036,
+        8.0,
+        0.41999999999999993
+      ],
+      "bounds": [
+        [
+          4.859999999999999,
+          -7.85,
+          4.09
+        ],
+        [
+          5.26,
+          0.1499999999999999,
+          4.51
+        ]
+      ],
+      "measurement_source": "analysis/measurements.json,point_measurements.json,v2_measurements.json; hidden dimensions explicitly inferred"
+    },
+    {
+      "id": "center_column",
+      "category": "structural_column",
+      "evidence_frames": [
+        16,
+        17,
+        18,
+        19
+      ],
+      "provenance": "two RGB-observed distinct support members; front faces depth-verified in16/17, unseen cross-section depth inferred",
+      "relations": [
+        {
+          "relation": "supported_by",
+          "target": "hall_floor"
+        }
+      ],
+      "components": [
+        "center_column__body",
+        "center_column__yellow_base",
+        "center_column__stripe_0_-1",
+        "center_column__stripe_0_0",
+        "center_column__stripe_0_1",
+        "center_column__stripe_0_2",
+        "center_column__stripe_0_3",
+        "center_column__stripe_0_4",
+        "center_column__stripe_0_5",
+        "center_column__stripe_1_-1",
+        "center_column__stripe_1_0",
+        "center_column__stripe_1_1",
+        "center_column__stripe_1_2",
+        "center_column__stripe_1_3",
+        "center_column__stripe_1_4",
+        "center_column__stripe_1_5",
+        "center_column__stripe_2_-1",
+        "center_column__stripe_2_0",
+        "center_column__stripe_2_1",
+        "center_column__stripe_2_2",
+        "center_column__stripe_2_3",
+        "center_column__stripe_2_4",
+        "center_column__stripe_2_5",
+        "center_column__stripe_3_-1",
+        "center_column__stripe_3_0",
+        "center_column__stripe_3_1",
+        "center_column__stripe_3_2",
+        "center_column__stripe_3_3",
+        "center_column__stripe_3_4",
+        "center_column__stripe_3_5"
+      ],
+      "dimensions": [
+        0.6099999999999994,
+        0.5899999999999999,
+        4.6
+      ],
+      "bounds": [
+        [
+          -4.665,
+          0.905,
+          0.0
+        ],
+        [
+          -4.055000000000001,
+          1.4949999999999999,
+          4.6
+        ]
+      ],
+      "measurement_source": "analysis/measurements.json,point_measurements.json,v2_measurements.json; hidden dimensions explicitly inferred"
+    },
+    {
+      "id": "far_column",
+      "category": "structural_column",
+      "evidence_frames": [
+        12,
+        13,
+        14
+      ],
+      "provenance": "observed semantic topology and depth-supported visible surfaces; hidden dimensions inferred",
+      "relations": [
+        {
+          "relation": "supported_by",
+          "target": "hall_floor"
+        }
+      ],
+      "components": [
+        "far_column__body",
+        "far_column__yellow_base",
+        "far_column__stripe_0_-1",
+        "far_column__stripe_0_0",
+        "far_column__stripe_0_1",
+        "far_column__stripe_0_2",
+        "far_column__stripe_0_3",
+        "far_column__stripe_0_4",
+        "far_column__stripe_0_5",
+        "far_column__stripe_1_-1",
+        "far_column__stripe_1_0",
+        "far_column__stripe_1_1",
+        "far_column__stripe_1_2",
+        "far_column__stripe_1_3",
+        "far_column__stripe_1_4",
+        "far_column__stripe_1_5",
+        "far_column__stripe_2_-1",
+        "far_column__stripe_2_0",
+        "far_column__stripe_2_1",
+        "far_column__stripe_2_2",
+        "far_column__stripe_2_3",
+        "far_column__stripe_2_4",
+        "far_column__stripe_2_5",
+        "far_column__stripe_3_-1",
+        "far_column__stripe_3_0",
+        "far_column__stripe_3_1",
+        "far_column__stripe_3_2",
+        "far_column__stripe_3_3",
+        "far_column__stripe_3_4",
+        "far_column__stripe_3_5"
+      ],
+      "dimensions": [
+        0.7300000000000004,
+        0.7300000000000004,
+        4.6
+      ],
+      "bounds": [
+        [
+          -4.765000000000001,
+          10.275,
+          0.0
+        ],
+        [
+          -4.035,
+          11.005,
+          4.6
+        ]
+      ],
+      "measurement_source": "analysis/measurements.json,point_measurements.json,v2_measurements.json; hidden dimensions explicitly inferred"
+    },
+    {
+      "id": "cage_column",
+      "category": "structural_column",
+      "evidence_frames": [
+        23,
+        24,
+        28,
+        32,
+        33
+      ],
+      "provenance": "observed semantic topology and depth-supported visible surfaces; hidden dimensions inferred",
+      "relations": [
+        {
+          "relation": "supported_by",
+          "target": "hall_floor"
+        }
+      ],
+      "components": [
+        "cage_column__body",
+        "cage_column__yellow_base",
+        "cage_column__stripe_0_-1",
+        "cage_column__stripe_0_0",
+        "cage_column__stripe_0_1",
+        "cage_column__stripe_0_2",
+        "cage_column__stripe_0_3",
+        "cage_column__stripe_0_4",
+        "cage_column__stripe_0_5",
+        "cage_column__stripe_1_-1",
+        "cage_column__stripe_1_0",
+        "cage_column__stripe_1_1",
+        "cage_column__stripe_1_2",
+        "cage_column__stripe_1_3",
+        "cage_column__stripe_1_4",
+        "cage_column__stripe_1_5",
+        "cage_column__stripe_2_-1",
+        "cage_column__stripe_2_0",
+        "cage_column__stripe_2_1",
+        "cage_column__stripe_2_2",
+        "cage_column__stripe_2_3",
+        "cage_column__stripe_2_4",
+        "cage_column__stripe_2_5",
+        "cage_column__stripe_3_-1",
+        "cage_column__stripe_3_0",
+        "cage_column__stripe_3_1",
+        "cage_column__stripe_3_2",
+        "cage_column__stripe_3_3",
+        "cage_column__stripe_3_4",
+        "cage_column__stripe_3_5"
+      ],
+      "dimensions": [
+        0.8100000000000005,
+        0.5300000000000002,
+        4.6
+      ],
+      "bounds": [
+        [
+          -4.605,
+          -8.035,
+          0.0
+        ],
+        [
+          -3.795,
+          -7.505,
+          4.6
+        ]
+      ],
+      "measurement_source": "analysis/measurements.json,point_measurements.json,v2_measurements.json; hidden dimensions explicitly inferred"
+    },
+    {
+      "id": "door_north_pier",
+      "category": "structural_column",
+      "evidence_frames": [
+        0,
+        3,
+        4,
+        6,
+        7
+      ],
+      "provenance": "observed semantic topology and depth-supported visible surfaces; hidden dimensions inferred",
+      "relations": [
+        {
+          "relation": "supported_by",
+          "target": "hall_floor"
+        }
+      ],
+      "components": [
+        "door_north_pier__body",
+        "door_north_pier__yellow_base",
+        "door_north_pier__stripe_0_-1",
+        "door_north_pier__stripe_0_0",
+        "door_north_pier__stripe_0_1",
+        "door_north_pier__stripe_0_2",
+        "door_north_pier__stripe_0_3",
+        "door_north_pier__stripe_0_4",
+        "door_north_pier__stripe_0_5",
+        "door_north_pier__stripe_1_-1",
+        "door_north_pier__stripe_1_0",
+        "door_north_pier__stripe_1_1",
+        "door_north_pier__stripe_1_2",
+        "door_north_pier__stripe_1_3",
+        "door_north_pier__stripe_1_4",
+        "door_north_pier__stripe_1_5",
+        "door_north_pier__stripe_2_-1",
+        "door_north_pier__stripe_2_0",
+        "door_north_pier__stripe_2_1",
+        "door_north_pier__stripe_2_2",
+        "door_north_pier__stripe_2_3",
+        "door_north_pier__stripe_2_4",
+        "door_north_pier__stripe_2_5",
+        "door_north_pier__stripe_3_-1",
+        "door_north_pier__stripe_3_0",
+        "door_north_pier__stripe_3_1",
+        "door_north_pier__stripe_3_2",
+        "door_north_pier__stripe_3_3",
+        "door_north_pier__stripe_3_4",
+        "door_north_pier__stripe_3_5"
+      ],
+      "dimensions": [
+        0.6600000000000001,
+        0.6599999999999999,
+        4.6
+      ],
+      "bounds": [
+        [
+          4.72,
+          0.29,
+          0.0
+        ],
+        [
+          5.38,
+          0.95,
+          4.6
+        ]
+      ],
+      "measurement_source": "analysis/measurements.json,point_measurements.json,v2_measurements.json; hidden dimensions explicitly inferred"
+    },
+    {
+      "id": "door_south_pier",
+      "category": "structural_column",
+      "evidence_frames": [
+        25,
+        26,
+        27
+      ],
+      "provenance": "observed semantic topology and depth-supported visible surfaces; hidden dimensions inferred",
+      "relations": [
+        {
+          "relation": "supported_by",
+          "target": "hall_floor"
+        }
+      ],
+      "components": [
+        "door_south_pier__body",
+        "door_south_pier__yellow_base",
+        "door_south_pier__stripe_0_-1",
+        "door_south_pier__stripe_0_0",
+        "door_south_pier__stripe_0_1",
+        "door_south_pier__stripe_0_2",
+        "door_south_pier__stripe_0_3",
+        "door_south_pier__stripe_0_4",
+        "door_south_pier__stripe_0_5",
+        "door_south_pier__stripe_1_-1",
+        "door_south_pier__stripe_1_0",
+        "door_south_pier__stripe_1_1",
+        "door_south_pier__stripe_1_2",
+        "door_south_pier__stripe_1_3",
+        "door_south_pier__stripe_1_4",
+        "door_south_pier__stripe_1_5",
+        "door_south_pier__stripe_2_-1",
+        "door_south_pier__stripe_2_0",
+        "door_south_pier__stripe_2_1",
+        "door_south_pier__stripe_2_2",
+        "door_south_pier__stripe_2_3",
+        "door_south_pier__stripe_2_4",
+        "door_south_pier__stripe_2_5",
+        "door_south_pier__stripe_3_-1",
+        "door_south_pier__stripe_3_0",
+        "door_south_pier__stripe_3_1",
+        "door_south_pier__stripe_3_2",
+        "door_south_pier__stripe_3_3",
+        "door_south_pier__stripe_3_4",
+        "door_south_pier__stripe_3_5"
+      ],
+      "dimensions": [
+        0.6600000000000001,
+        0.6599999999999993,
+        4.6
+      ],
+      "bounds": [
+        [
+          4.72,
+          -8.11,
+          0.0
+        ],
+        [
+          5.38,
+          -7.45,
+          4.6
+        ]
+      ],
+      "measurement_source": "analysis/measurements.json,point_measurements.json,v2_measurements.json; hidden dimensions explicitly inferred"
+    },
+    {
+      "id": "bay_far_pier",
+      "category": "structural_column",
+      "evidence_frames": [
+        8,
+        9,
+        10
+      ],
+      "provenance": "observed semantic topology and depth-supported visible surfaces; hidden dimensions inferred",
+      "relations": [
+        {
+          "relation": "supported_by",
+          "target": "hall_floor"
+        }
+      ],
+      "components": [
+        "bay_far_pier__body",
+        "bay_far_pier__yellow_base",
+        "bay_far_pier__stripe_0_-1",
+        "bay_far_pier__stripe_0_0",
+        "bay_far_pier__stripe_0_1",
+        "bay_far_pier__stripe_0_2",
+        "bay_far_pier__stripe_0_3",
+        "bay_far_pier__stripe_0_4",
+        "bay_far_pier__stripe_0_5",
+        "bay_far_pier__stripe_1_-1",
+        "bay_far_pier__stripe_1_0",
+        "bay_far_pier__stripe_1_1",
+        "bay_far_pier__stripe_1_2",
+        "bay_far_pier__stripe_1_3",
+        "bay_far_pier__stripe_1_4",
+        "bay_far_pier__stripe_1_5",
+        "bay_far_pier__stripe_2_-1",
+        "bay_far_pier__stripe_2_0",
+        "bay_far_pier__stripe_2_1",
+        "bay_far_pier__stripe_2_2",
+        "bay_far_pier__stripe_2_3",
+        "bay_far_pier__stripe_2_4",
+        "bay_far_pier__stripe_2_5",
+        "bay_far_pier__stripe_3_-1",
+        "bay_far_pier__stripe_3_0",
+        "bay_far_pier__stripe_3_1",
+        "bay_far_pier__stripe_3_2",
+        "bay_far_pier__stripe_3_3",
+        "bay_far_pier__stripe_3_4",
+        "bay_far_pier__stripe_3_5"
+      ],
+      "dimensions": [
+        0.6600000000000001,
+        0.7100000000000009,
+        4.6
+      ],
+      "bounds": [
+        [
+          4.72,
+          10.145,
+          0.0
+        ],
+        [
+          5.38,
+          10.855,
+          4.6
+        ]
+      ],
+      "measurement_source": "analysis/measurements.json,point_measurements.json,v2_measurements.json; hidden dimensions explicitly inferred"
+    },
+    {
+      "id": "corridor_north_pier",
+      "category": "structural_column",
+      "evidence_frames": [
+        15,
+        20
+      ],
+      "provenance": "observed semantic topology and depth-supported visible surfaces; hidden dimensions inferred",
+      "relations": [
+        {
+          "relation": "supported_by",
+          "target": "hall_floor"
+        }
+      ],
+      "components": [
+        "corridor_north_pier__body",
+        "corridor_north_pier__yellow_base",
+        "corridor_north_pier__stripe_0_-1",
+        "corridor_north_pier__stripe_0_0",
+        "corridor_north_pier__stripe_0_1",
+        "corridor_north_pier__stripe_0_2",
+        "corridor_north_pier__stripe_0_3",
+        "corridor_north_pier__stripe_0_4",
+        "corridor_north_pier__stripe_0_5",
+        "corridor_north_pier__stripe_1_-1",
+        "corridor_north_pier__stripe_1_0",
+        "corridor_north_pier__stripe_1_1",
+        "corridor_north_pier__stripe_1_2",
+        "corridor_north_pier__stripe_1_3",
+        "corridor_north_pier__stripe_1_4",
+        "corridor_north_pier__stripe_1_5",
+        "corridor_north_pier__stripe_2_-1",
+        "corridor_north_pier__stripe_2_0",
+        "corridor_north_pier__stripe_2_1",
+        "corridor_north_pier__stripe_2_2",
+        "corridor_north_pier__stripe_2_3",
+        "corridor_north_pier__stripe_2_4",
+        "corridor_north_pier__stripe_2_5",
+        "corridor_north_pier__stripe_3_-1",
+        "corridor_north_pier__stripe_3_0",
+        "corridor_north_pier__stripe_3_1",
+        "corridor_north_pier__stripe_3_2",
+        "corridor_north_pier__stripe_3_3",
+        "corridor_north_pier__stripe_3_4",
+        "corridor_north_pier__stripe_3_5"
+      ],
+      "dimensions": [
+        0.6099999999999994,
+        0.56,
+        4.6
+      ],
+      "bounds": [
+        [
+          -13.855,
+          0.27,
+          0.0
+        ],
+        [
+          -13.245000000000001,
+          0.8300000000000001,
+          4.6
+        ]
+      ],
+      "measurement_source": "analysis/measurements.json,point_measurements.json,v2_measurements.json; hidden dimensions explicitly inferred"
+    },
+    {
+      "id": "corridor_south_pier",
+      "category": "structural_column",
+      "evidence_frames": [
+        20,
+        21
+      ],
+      "provenance": "observed semantic topology and depth-supported visible surfaces; hidden dimensions inferred",
+      "relations": [
+        {
+          "relation": "supported_by",
+          "target": "hall_floor"
+        }
+      ],
+      "components": [
+        "corridor_south_pier__body",
+        "corridor_south_pier__yellow_base",
+        "corridor_south_pier__stripe_0_-1",
+        "corridor_south_pier__stripe_0_0",
+        "corridor_south_pier__stripe_0_1",
+        "corridor_south_pier__stripe_0_2",
+        "corridor_south_pier__stripe_0_3",
+        "corridor_south_pier__stripe_0_4",
+        "corridor_south_pier__stripe_0_5",
+        "corridor_south_pier__stripe_1_-1",
+        "corridor_south_pier__stripe_1_0",
+        "corridor_south_pier__stripe_1_1",
+        "corridor_south_pier__stripe_1_2",
+        "corridor_south_pier__stripe_1_3",
+        "corridor_south_pier__stripe_1_4",
+        "corridor_south_pier__stripe_1_5",
+        "corridor_south_pier__stripe_2_-1",
+        "corridor_south_pier__stripe_2_0",
+        "corridor_south_pier__stripe_2_1",
+        "corridor_south_pier__stripe_2_2",
+        "corridor_south_pier__stripe_2_3",
+        "corridor_south_pier__stripe_2_4",
+        "corridor_south_pier__stripe_2_5",
+        "corridor_south_pier__stripe_3_-1",
+        "corridor_south_pier__stripe_3_0",
+        "corridor_south_pier__stripe_3_1",
+        "corridor_south_pier__stripe_3_2",
+        "corridor_south_pier__stripe_3_3",
+        "corridor_south_pier__stripe_3_4",
+        "corridor_south_pier__stripe_3_5"
+      ],
+      "dimensions": [
+        0.5599999999999987,
+        0.5600000000000005,
+        4.6
+      ],
+      "bounds": [
+        [
+          -13.83,
+          -7.78,
+          0.0
+        ],
+        [
+          -13.270000000000001,
+          -7.22,
+          4.6
+        ]
+      ],
+      "measurement_source": "analysis/measurements.json,point_measurements.json,v2_measurements.json; hidden dimensions explicitly inferred"
+    },
+    {
+      "id": "storage_cage_0",
+      "category": "wire_storage_cage",
+      "evidence_frames": [
+        20,
+        23,
+        24,
+        28,
+        32,
+        33
+      ],
+      "provenance": "observed semantic topology and depth-supported visible surfaces; hidden dimensions inferred",
+      "relations": [
+        {
+          "relation": "supported_by",
+          "target": "hall_floor"
+        }
+      ],
+      "components": [
+        "storage_cage_0__post_-13.35",
+        "storage_cage_0__post_-12.25",
+        "storage_cage_0__post_-11.15",
+        "storage_cage_0__post_-10.05",
+        "storage_cage_0__post_-8.95",
+        "storage_cage_0__post_-7.85",
+        "storage_cage_0__post_-6.75",
+        "storage_cage_0__post_-5.65",
+        "storage_cage_0__rail_0.08",
+        "storage_cage_0__rail_1.2",
+        "storage_cage_0__rail_2.4",
+        "storage_cage_0__wire_v_0",
+        "storage_cage_0__wire_v_1",
+        "storage_cage_0__wire_v_2",
+        "storage_cage_0__wire_v_3",
+        "storage_cage_0__wire_v_4",
+        "storage_cage_0__wire_v_5",
+        "storage_cage_0__wire_v_6",
+        "storage_cage_0__wire_v_7",
+        "storage_cage_0__wire_v_8",
+        "storage_cage_0__wire_v_9",
+        "storage_cage_0__wire_v_10",
+        "storage_cage_0__wire_v_11",
+        "storage_cage_0__wire_v_12",
+        "storage_cage_0__wire_v_13",
+        "storage_cage_0__wire_v_14",
+        "storage_cage_0__wire_v_15",
+        "storage_cage_0__wire_v_16",
+        "storage_cage_0__wire_v_17",
+        "storage_cage_0__wire_v_18",
+        "storage_cage_0__wire_v_19",
+        "storage_cage_0__wire_v_20",
+        "storage_cage_0__wire_v_21",
+        "storage_cage_0__wire_v_22",
+        "storage_cage_0__wire_v_23",
+        "storage_cage_0__wire_v_24",
+        "storage_cage_0__wire_v_25",
+        "storage_cage_0__wire_v_26",
+        "storage_cage_0__wire_v_27",
+        "storage_cage_0__wire_v_28",
+        "storage_cage_0__wire_v_29",
+        "storage_cage_0__wire_v_30",
+        "storage_cage_0__wire_v_31",
+        "storage_cage_0__wire_v_32",
+        "storage_cage_0__wire_v_33",
+        "storage_cage_0__wire_v_34",
+        "storage_cage_0__wire_v_35",
+        "storage_cage_0__wire_v_36",
+        "storage_cage_0__wire_v_37",
+        "storage_cage_0__wire_v_38",
+        "storage_cage_0__wire_v_39",
+        "storage_cage_0__wire_v_40",
+        "storage_cage_0__wire_v_41",
+        "storage_cage_0__wire_v_42",
+        "storage_cage_0__wire_v_43",
+        "storage_cage_0__wire_v_44",
+        "storage_cage_0__wire_v_45",
+        "storage_cage_0__wire_v_46",
+        "storage_cage_0__wire_v_47",
+        "storage_cage_0__wire_v_48",
+        "storage_cage_0__wire_v_49",
+        "storage_cage_0__wire_v_50",
+        "storage_cage_0__wire_v_51",
+        "storage_cage_0__wire_v_52",
+        "storage_cage_0__wire_v_53",
+        "storage_cage_0__wire_v_54",
+        "storage_cage_0__wire_v_55",
+        "storage_cage_0__wire_v_56",
+        "storage_cage_0__wire_v_57",
+        "storage_cage_0__wire_v_58",
+        "storage_cage_0__wire_v_59",
+        "storage_cage_0__wire_v_60",
+        "storage_cage_0__wire_v_61",
+        "storage_cage_0__wire_v_62",
+        "storage_cage_0__wire_v_63",
+        "storage_cage_0__wire_v_64",
+        "storage_cage_0__wire_v_65",
+        "storage_cage_0__wire_v_66",
+        "storage_cage_0__wire_v_67",
+        "storage_cage_0__wire_v_68",
+        "storage_cage_0__wire_v_69",
+        "storage_cage_0__wire_v_70",
+        "storage_cage_0__wire_v_71",
+        "storage_cage_0__wire_v_72",
+        "storage_cage_0__wire_h_0",
+        "storage_cage_0__wire_h_1",
+        "storage_cage_0__wire_h_2",
+        "storage_cage_0__wire_h_3",
+        "storage_cage_0__wire_h_4",
+        "storage_cage_0__wire_h_5",
+        "storage_cage_0__wire_h_6",
+        "storage_cage_0__wire_h_7",
+        "storage_cage_0__wire_h_8",
+        "storage_cage_0__wire_h_9",
+        "storage_cage_0__wire_h_10",
+        "storage_cage_0__wire_h_11",
+        "storage_cage_0__wire_h_12",
+        "storage_cage_0__wire_h_13",
+        "storage_cage_0__wire_h_14",
+        "storage_cage_0__wire_h_15",
+        "storage_cage_0__wire_h_16",
+        "storage_cage_0__wire_h_17",
+        "storage_cage_0__wire_h_18",
+        "storage_cage_0__wire_h_19",
+        "storage_cage_0__stored_container_0",
+        "storage_cage_0__stored_container_1",
+        "storage_cage_0__stored_container_2"
+      ],
+      "dimensions": [
+        8.7225,
+        1.1749999999999998,
+        2.42
+      ],
+      "bounds": [
+        [
+          -13.3725,
+          -8.93,
+          0.0
+        ],
+        [
+          -4.65,
+          -7.755,
+          2.42
+        ]
+      ],
+      "measurement_source": "analysis/measurements.json,point_measurements.json,v2_measurements.json; hidden dimensions explicitly inferred"
+    },
+    {
+      "id": "storage_cage_1",
+      "category": "wire_storage_cage",
+      "evidence_frames": [
+        20,
+        23,
+        24,
+        28,
+        32,
+        33
+      ],
+      "provenance": "observed semantic topology and depth-supported visible surfaces; hidden dimensions inferred",
+      "relations": [
+        {
+          "relation": "supported_by",
+          "target": "hall_floor"
+        }
+      ],
+      "components": [
+        "storage_cage_1__post_-3.75",
+        "storage_cage_1__post_-2.65",
+        "storage_cage_1__post_-1.55",
+        "storage_cage_1__rail_0.08",
+        "storage_cage_1__rail_1.2",
+        "storage_cage_1__rail_2.4",
+        "storage_cage_1__wire_v_0",
+        "storage_cage_1__wire_v_1",
+        "storage_cage_1__wire_v_2",
+        "storage_cage_1__wire_v_3",
+        "storage_cage_1__wire_v_4",
+        "storage_cage_1__wire_v_5",
+        "storage_cage_1__wire_v_6",
+        "storage_cage_1__wire_v_7",
+        "storage_cage_1__wire_v_8",
+        "storage_cage_1__wire_v_9",
+        "storage_cage_1__wire_v_10",
+        "storage_cage_1__wire_v_11",
+        "storage_cage_1__wire_v_12",
+        "storage_cage_1__wire_v_13",
+        "storage_cage_1__wire_v_14",
+        "storage_cage_1__wire_v_15",
+        "storage_cage_1__wire_v_16",
+        "storage_cage_1__wire_v_17",
+        "storage_cage_1__wire_v_18",
+        "storage_cage_1__wire_v_19",
+        "storage_cage_1__wire_v_20",
+        "storage_cage_1__wire_h_0",
+        "storage_cage_1__wire_h_1",
+        "storage_cage_1__wire_h_2",
+        "storage_cage_1__wire_h_3",
+        "storage_cage_1__wire_h_4",
+        "storage_cage_1__wire_h_5",
+        "storage_cage_1__wire_h_6",
+        "storage_cage_1__wire_h_7",
+        "storage_cage_1__wire_h_8",
+        "storage_cage_1__wire_h_9",
+        "storage_cage_1__wire_h_10",
+        "storage_cage_1__wire_h_11",
+        "storage_cage_1__wire_h_12",
+        "storage_cage_1__wire_h_13",
+        "storage_cage_1__wire_h_14",
+        "storage_cage_1__wire_h_15",
+        "storage_cage_1__wire_h_16",
+        "storage_cage_1__wire_h_17",
+        "storage_cage_1__wire_h_18",
+        "storage_cage_1__wire_h_19",
+        "storage_cage_1__stored_container_0",
+        "storage_cage_1__stored_container_1",
+        "storage_cage_1__stored_container_2"
+      ],
+      "dimensions": [
+        2.6475,
+        1.1749999999999998,
+        2.42
+      ],
+      "bounds": [
+        [
+          -3.7725,
+          -8.93,
+          0.0
+        ],
+        [
+          -1.1249999999999998,
+          -7.755,
+          2.42
+        ]
+      ],
+      "measurement_source": "analysis/measurements.json,point_measurements.json,v2_measurements.json; hidden dimensions explicitly inferred"
+    },
+    {
+      "id": "wood_crate",
+      "category": "pallet_crate",
+      "evidence_frames": [
+        8,
+        9,
+        10,
+        11
+      ],
+      "provenance": "observed semantic topology and depth-supported visible surfaces; hidden dimensions inferred",
+      "relations": [
+        {
+          "relation": "supported_by",
+          "target": "hall_floor"
+        }
+      ],
+      "components": [
+        "wood_crate__frontback_-1_0",
+        "wood_crate__left_right_-1_0",
+        "wood_crate__frontback_-1_1",
+        "wood_crate__left_right_-1_1",
+        "wood_crate__frontback_-1_2",
+        "wood_crate__left_right_-1_2",
+        "wood_crate__frontback_-1_3",
+        "wood_crate__left_right_-1_3",
+        "wood_crate__frontback_-1_4",
+        "wood_crate__left_right_-1_4",
+        "wood_crate__frontback_-1_5",
+        "wood_crate__left_right_-1_5",
+        "wood_crate__frontback_-1_6",
+        "wood_crate__left_right_-1_6",
+        "wood_crate__corner_-1_1.525",
+        "wood_crate__corner_-1_2.775",
+        "wood_crate__frontback_1_0",
+        "wood_crate__left_right_1_0",
+        "wood_crate__frontback_1_1",
+        "wood_crate__left_right_1_1",
+        "wood_crate__frontback_1_2",
+        "wood_crate__left_right_1_2",
+        "wood_crate__frontback_1_3",
+        "wood_crate__left_right_1_3",
+        "wood_crate__frontback_1_4",
+        "wood_crate__left_right_1_4",
+        "wood_crate__frontback_1_5",
+        "wood_crate__left_right_1_5",
+        "wood_crate__frontback_1_6",
+        "wood_crate__left_right_1_6",
+        "wood_crate__corner_1_1.525",
+        "wood_crate__corner_1_2.775",
+        "wood_crate__pallet_runner_1.67",
+        "wood_crate__pallet_runner_2.15",
+        "wood_crate__pallet_runner_2.63",
+        "wood_crate__base_plank_6.800000000000001",
+        "wood_crate__base_plank_7.140000000000001",
+        "wood_crate__base_plank_7.48",
+        "wood_crate__base_plank_7.82",
+        "wood_crate__base_plank_8.16",
+        "wood_crate__base_plank_8.5"
+      ],
+      "dimensions": [
+        1.305,
+        2.1100000000000003,
+        1.345
+      ],
+      "bounds": [
+        [
+          1.4974999999999998,
+          6.595,
+          0.0
+        ],
+        [
+          2.8024999999999998,
+          8.705,
+          1.345
+        ]
+      ],
+      "measurement_source": "analysis/measurements.json,point_measurements.json,v2_measurements.json; hidden dimensions explicitly inferred"
+    },
+    {
+      "id": "green_skip_0",
+      "category": "open_waste_skip",
+      "evidence_frames": [
+        8,
+        9,
+        12
+      ],
+      "provenance": "RGB-observed tapered open skip topology and depths at top/bottom; hidden inner walls and taper details inferred",
+      "relations": [
+        {
+          "relation": "supported_by",
+          "target": "hall_floor"
+        }
+      ],
+      "components": [
+        "green_skip_0__tapered_wall_0",
+        "green_skip_0__tapered_wall_1",
+        "green_skip_0__tapered_wall_2",
+        "green_skip_0__tapered_wall_3",
+        "green_skip_0__floor",
+        "green_skip_0__long_upper_rim_-1",
+        "green_skip_0__end_upper_rim_-1",
+        "green_skip_0__foot_-1_-0.45",
+        "green_skip_0__foot_-1_0.45",
+        "green_skip_0__base_runner_-1",
+        "green_skip_0__long_upper_rim_1",
+        "green_skip_0__end_upper_rim_1",
+        "green_skip_0__foot_1_-0.45",
+        "green_skip_0__foot_1_0.45",
+        "green_skip_0__base_runner_1"
+      ],
+      "dimensions": [
+        2.4299999999999997,
+        2.4299999999999997,
+        1.565
+      ],
+      "bounds": [
+        [
+          1.435,
+          9.285,
+          0.0
+        ],
+        [
+          3.8649999999999998,
+          11.715,
+          1.565
+        ]
+      ],
+      "measurement_source": "analysis/measurements.json,point_measurements.json,v2_measurements.json; hidden dimensions explicitly inferred"
+    },
+    {
+      "id": "green_skip_1",
+      "category": "open_waste_skip",
+      "evidence_frames": [
+        8,
+        9,
+        12
+      ],
+      "provenance": "RGB-observed tapered open skip topology and depths at top/bottom; hidden inner walls and taper details inferred",
+      "relations": [
+        {
+          "relation": "supported_by",
+          "target": "hall_floor"
+        }
+      ],
+      "components": [
+        "green_skip_1__tapered_wall_0",
+        "green_skip_1__tapered_wall_1",
+        "green_skip_1__tapered_wall_2",
+        "green_skip_1__tapered_wall_3",
+        "green_skip_1__floor",
+        "green_skip_1__long_upper_rim_-1",
+        "green_skip_1__end_upper_rim_-1",
+        "green_skip_1__foot_-1_-0.45",
+        "green_skip_1__foot_-1_0.45",
+        "green_skip_1__base_runner_-1",
+        "green_skip_1__long_upper_rim_1",
+        "green_skip_1__end_upper_rim_1",
+        "green_skip_1__foot_1_-0.45",
+        "green_skip_1__foot_1_0.45",
+        "green_skip_1__base_runner_1"
+      ],
+      "dimensions": [
+        2.4299999999999997,
+        2.4299999999999997,
+        1.565
+      ],
+      "bounds": [
+        [
+          1.435,
+          11.935,
+          0.0
+        ],
+        [
+          3.8649999999999998,
+          14.365,
+          1.565
+        ]
+      ],
+      "measurement_source": "analysis/measurements.json,point_measurements.json,v2_measurements.json; hidden dimensions explicitly inferred"
+    },
+    {
+      "id": "storage_shelf",
+      "category": "pallet_racking",
+      "evidence_frames": [
+        4,
+        6,
+        7,
+        8,
+        9
+      ],
+      "provenance": "shelf beams/uprights unchanged; separately editable filled-bag silhouettes and nonuniform level occupancy observed in4/8/9; hidden sack count and folds inferred",
+      "relations": [
+        {
+          "relation": "supported_by",
+          "target": "hall_floor"
+        }
+      ],
+      "components": [
+        "storage_shelf__upright_0_-0.43",
+        "storage_shelf__upright_0_0.43",
+        "storage_shelf__upright_1_-0.43",
+        "storage_shelf__upright_1_0.43",
+        "storage_shelf__upright_2_-0.43",
+        "storage_shelf__upright_2_0.43",
+        "storage_shelf__upright_3_-0.43",
+        "storage_shelf__upright_3_0.43",
+        "storage_shelf__upright_4_-0.43",
+        "storage_shelf__upright_4_0.43",
+        "storage_shelf__beam_0_-0.43",
+        "storage_shelf__beam_0_0.43",
+        "storage_shelf__deck_0",
+        "storage_shelf__beam_1_-0.43",
+        "storage_shelf__beam_1_0.43",
+        "storage_shelf__deck_1",
+        "storage_shelf__beam_2_-0.43",
+        "storage_shelf__beam_2_0.43",
+        "storage_shelf__deck_2",
+        "storage_shelf__beam_3_-0.43",
+        "storage_shelf__beam_3_0.43",
+        "storage_shelf__deck_3",
+        "storage_shelf__filled_sack_0_0",
+        "storage_shelf__filled_sack_0_0_tied_neck",
+        "storage_shelf__filled_sack_0_1",
+        "storage_shelf__filled_sack_0_1_tied_neck",
+        "storage_shelf__filled_sack_0_2",
+        "storage_shelf__filled_sack_0_2_tied_neck",
+        "storage_shelf__filled_sack_0_3",
+        "storage_shelf__filled_sack_0_3_tied_neck",
+        "storage_shelf__filled_sack_0_4",
+        "storage_shelf__filled_sack_0_4_tied_neck",
+        "storage_shelf__filled_sack_0_5",
+        "storage_shelf__filled_sack_0_5_tied_neck",
+        "storage_shelf__filled_sack_0_6",
+        "storage_shelf__filled_sack_0_6_tied_neck",
+        "storage_shelf__filled_sack_0_7",
+        "storage_shelf__filled_sack_0_7_tied_neck",
+        "storage_shelf__filled_sack_1_0",
+        "storage_shelf__filled_sack_1_0_tied_neck",
+        "storage_shelf__filled_sack_1_1",
+        "storage_shelf__filled_sack_1_1_tied_neck",
+        "storage_shelf__filled_sack_1_2",
+        "storage_shelf__filled_sack_1_2_tied_neck",
+        "storage_shelf__filled_sack_1_3",
+        "storage_shelf__filled_sack_1_3_tied_neck",
+        "storage_shelf__filled_sack_1_4",
+        "storage_shelf__filled_sack_1_4_tied_neck",
+        "storage_shelf__filled_sack_1_5",
+        "storage_shelf__filled_sack_1_5_tied_neck",
+        "storage_shelf__filled_sack_1_6",
+        "storage_shelf__filled_sack_1_6_tied_neck",
+        "storage_shelf__filled_sack_1_7",
+        "storage_shelf__filled_sack_1_7_tied_neck",
+        "storage_shelf__filled_sack_1_8",
+        "storage_shelf__filled_sack_1_8_tied_neck",
+        "storage_shelf__filled_sack_1_9",
+        "storage_shelf__filled_sack_1_9_tied_neck",
+        "storage_shelf__filled_sack_2_0",
+        "storage_shelf__filled_sack_2_0_tied_neck",
+        "storage_shelf__filled_sack_2_1",
+        "storage_shelf__filled_sack_2_1_tied_neck",
+        "storage_shelf__filled_sack_2_2",
+        "storage_shelf__filled_sack_2_2_tied_neck",
+        "storage_shelf__filled_sack_2_3",
+        "storage_shelf__filled_sack_2_3_tied_neck",
+        "storage_shelf__filled_sack_2_4",
+        "storage_shelf__filled_sack_2_4_tied_neck",
+        "storage_shelf__filled_sack_2_5",
+        "storage_shelf__filled_sack_2_5_tied_neck",
+        "storage_shelf__filled_sack_2_6",
+        "storage_shelf__filled_sack_2_6_tied_neck",
+        "storage_shelf__filled_sack_2_7",
+        "storage_shelf__filled_sack_2_7_tied_neck",
+        "storage_shelf__filled_sack_2_8",
+        "storage_shelf__filled_sack_2_8_tied_neck",
+        "storage_shelf__top_flat_sack_0_0",
+        "storage_shelf__top_flat_sack_0_0_tied_neck",
+        "storage_shelf__top_flat_sack_0_1",
+        "storage_shelf__top_flat_sack_0_1_tied_neck",
+        "storage_shelf__top_flat_sack_1_0",
+        "storage_shelf__top_flat_sack_1_0_tied_neck",
+        "storage_shelf__top_flat_sack_1_1",
+        "storage_shelf__top_flat_sack_1_1_tied_neck",
+        "storage_shelf__top_flat_sack_2_0",
+        "storage_shelf__top_flat_sack_2_0_tied_neck",
+        "storage_shelf__top_flat_sack_2_1",
+        "storage_shelf__top_flat_sack_2_1_tied_neck",
+        "storage_shelf__top_flat_sack_3_0",
+        "storage_shelf__top_flat_sack_3_0_tied_neck",
+        "storage_shelf__top_flat_sack_3_1",
+        "storage_shelf__top_flat_sack_3_1_tied_neck",
+        "storage_shelf__top_bulk_sack",
+        "storage_shelf__top_bulk_sack_tied_neck"
+      ],
+      "dimensions": [
+        6.7700000000000005,
+        0.972962909079893,
+        3.9
+      ],
+      "bounds": [
+        [
+          5.765,
+          9.632037090920107,
+          0.0
+        ],
+        [
+          12.535,
+          10.605,
+          3.9
+        ]
+      ],
+      "measurement_source": "analysis/measurements.json,point_measurements.json,v2_measurements.json; hidden dimensions explicitly inferred"
+    },
+    {
+      "id": "box_trailer",
+      "category": "trailer",
+      "evidence_frames": [
+        6,
+        7,
+        8
+      ],
+      "provenance": "observed semantic topology and depth-supported visible surfaces; hidden dimensions inferred",
+      "relations": [
+        {
+          "relation": "supported_by",
+          "target": "hall_floor"
+        }
+      ],
+      "components": [
+        "box_trailer__cargo_box",
+        "box_trailer__chassis",
+        "box_trailer__wheel_11.7_6.97",
+        "box_trailer__wheel_12.3_6.97",
+        "box_trailer__wheel_11.7_8.87",
+        "box_trailer__wheel_12.3_8.87",
+        "box_trailer__window_11.4",
+        "box_trailer__window_12.5",
+        "box_trailer__drawbar",
+        "box_trailer__support_wheel"
+      ],
+      "dimensions": [
+        5.150000000000002,
+        2.0599999999999996,
+        2.73
+      ],
+      "bounds": [
+        [
+          8.549999999999999,
+          6.89,
+          0.0
+        ],
+        [
+          13.700000000000001,
+          8.95,
+          2.73
+        ]
+      ],
+      "measurement_source": "analysis/measurements.json,point_measurements.json,v2_measurements.json; hidden dimensions explicitly inferred"
+    },
+    {
+      "id": "delivery_truck",
+      "category": "refrigerated_delivery_truck",
+      "evidence_frames": [
+        12,
+        13,
+        14,
+        15
+      ],
+      "provenance": "observed semantic topology and depth-supported visible surfaces; hidden dimensions inferred",
+      "relations": [
+        {
+          "relation": "supported_by",
+          "target": "hall_floor"
+        }
+      ],
+      "components": [
+        "delivery_truck__cargo",
+        "delivery_truck__refrigerator",
+        "delivery_truck__cab",
+        "delivery_truck__bumper",
+        "delivery_truck__grille",
+        "delivery_truck__headlamp_-1",
+        "delivery_truck__cab_sideglass_-1",
+        "delivery_truck__wheel_-1_9.3",
+        "delivery_truck__hub_-1_9.3",
+        "delivery_truck__wheel_-1_13.5",
+        "delivery_truck__hub_-1_13.5",
+        "delivery_truck__headlamp_1",
+        "delivery_truck__cab_sideglass_1",
+        "delivery_truck__wheel_1_9.3",
+        "delivery_truck__hub_1_9.3",
+        "delivery_truck__wheel_1_13.5",
+        "delivery_truck__hub_1_13.5",
+        "delivery_truck__windshield",
+        "delivery_truck__windshield_bottom_frame",
+        "delivery_truck__windshield_top_frame",
+        "delivery_truck__windshield_side_frame_-1",
+        "delivery_truck__windshield_side_frame_1"
+      ],
+      "dimensions": [
+        2.292,
+        6.404999999999999,
+        3.0549999999999997
+      ],
+      "bounds": [
+        [
+          -6.786,
+          8.37,
+          0.0
+        ],
+        [
+          -4.494,
+          14.774999999999999,
+          3.0549999999999997
+        ]
+      ],
+      "measurement_source": "analysis/measurements.json,point_measurements.json,v2_measurements.json; hidden dimensions explicitly inferred"
+    },
+    {
+      "id": "black_hatchback",
+      "category": "car",
+      "evidence_frames": [
+        10,
+        11,
+        12,
+        13
+      ],
+      "provenance": "observed semantic topology and depth-supported visible surfaces; hidden dimensions inferred",
+      "relations": [
+        {
+          "relation": "supported_by",
+          "target": "hall_floor"
+        }
+      ],
+      "components": [
+        "black_hatchback__lower_body",
+        "black_hatchback__cabin",
+        "black_hatchback__rear_window",
+        "black_hatchback__taillamp_-1",
+        "black_hatchback__wheel_-1_12.22",
+        "black_hatchback__wheel_-1_14.3",
+        "black_hatchback__taillamp_1",
+        "black_hatchback__wheel_1_12.22",
+        "black_hatchback__wheel_1_14.3"
+      ],
+      "dimensions": [
+        1.7700000000000002,
+        3.3774999999999995,
+        1.4000000000000001
+      ],
+      "bounds": [
+        [
+          -3.685,
+          11.547500000000001,
+          0.0
+        ],
+        [
+          -1.9149999999999998,
+          14.925,
+          1.4000000000000001
+        ]
+      ],
+      "measurement_source": "analysis/measurements.json,point_measurements.json,v2_measurements.json; hidden dimensions explicitly inferred"
+    },
+    {
+      "id": "loading_dock",
+      "category": "raised_platform",
+      "evidence_frames": [
+        9,
+        10,
+        12,
+        13
+      ],
+      "provenance": "observed semantic topology and depth-supported visible surfaces; hidden dimensions inferred",
+      "relations": [
+        {
+          "relation": "supported_by",
+          "target": "hall_floor"
+        }
+      ],
+      "components": [
+        "loading_dock__body"
+      ],
+      "dimensions": [
+        18.7,
+        3.1000000000000014,
+        1.0
+      ],
+      "bounds": [
+        [
+          -13.649999999999999,
+          16.3,
+          0.0
+        ],
+        [
+          5.05,
+          19.400000000000002,
+          1.0
+        ]
+      ],
+      "measurement_source": "analysis/measurements.json,point_measurements.json,v2_measurements.json; hidden dimensions explicitly inferred"
+    },
+    {
+      "id": "blue_service_door",
+      "category": "service_door",
+      "evidence_frames": [
+        10,
+        12,
+        13
+      ],
+      "provenance": "observed semantic topology and depth-supported visible surfaces; hidden dimensions inferred",
+      "relations": [
+        {
+          "relation": "supported_by",
+          "target": "hall_floor"
+        }
+      ],
+      "components": [
+        "blue_service_door__body"
+      ],
+      "dimensions": [
+        4.25,
+        0.03999999999999915,
+        2.7
+      ],
+      "bounds": [
+        [
+          -6.425,
+          19.150000000000002,
+          1.0
+        ],
+        [
+          -2.175,
+          19.19,
+          3.7
+        ]
+      ],
+      "measurement_source": "analysis/measurements.json,point_measurements.json,v2_measurements.json; hidden dimensions explicitly inferred"
+    },
+    {
+      "id": "dock_wooden_box",
+      "category": "wooden_crate",
+      "evidence_frames": [
+        12
+      ],
+      "provenance": "observed semantic topology and depth-supported visible surfaces; hidden dimensions inferred",
+      "relations": [
+        {
+          "relation": "supported_by",
+          "target": "hall_floor"
+        }
+      ],
+      "components": [
+        "dock_wooden_box__body"
+      ],
+      "dimensions": [
+        3.5999999999999996,
+        1.0,
+        1.1
+      ],
+      "bounds": [
+        [
+          -3.3,
+          17.5,
+          1.0
+        ],
+        [
+          0.30000000000000004,
+          18.5,
+          2.1
+        ]
+      ],
+      "measurement_source": "analysis/measurements.json,point_measurements.json,v2_measurements.json; hidden dimensions explicitly inferred"
+    },
+    {
+      "id": "lumber_trolley",
+      "category": "lumber_cart",
+      "evidence_frames": [
+        23,
+        24,
+        25,
+        28
+      ],
+      "provenance": "frame24/28 RGB endpoint triangulation and interior depth; low-res thin-edge DA3 and rejected correspondence preserved; individual plank ends inferred",
+      "relations": [
+        {
+          "relation": "supported_by",
+          "target": "hall_floor"
+        }
+      ],
+      "components": [
+        "lumber_trolley__frame_front",
+        "lumber_trolley__frame_rear",
+        "lumber_trolley__frame_cross_-0.48",
+        "lumber_trolley__upright_-0.48",
+        "lumber_trolley__caster_-0.48_-7.47",
+        "lumber_trolley__caster_fork_-0.48_-7.47",
+        "lumber_trolley__caster_-0.48_-6.869999999999999",
+        "lumber_trolley__caster_fork_-0.48_-6.869999999999999",
+        "lumber_trolley__frame_cross_1.28",
+        "lumber_trolley__upright_1.28",
+        "lumber_trolley__caster_1.28_-7.47",
+        "lumber_trolley__caster_fork_1.28_-7.47",
+        "lumber_trolley__caster_1.28_-6.869999999999999",
+        "lumber_trolley__caster_fork_1.28_-6.869999999999999",
+        "lumber_trolley__rack_horizontal_0.58",
+        "lumber_trolley__rack_horizontal_1.37",
+        "lumber_trolley__lumber_0",
+        "lumber_trolley__lumber_1",
+        "lumber_trolley__lumber_2",
+        "lumber_trolley__lumber_3",
+        "lumber_trolley__lumber_4",
+        "lumber_trolley__lumber_5",
+        "lumber_trolley__lumber_6",
+        "lumber_trolley__lumber_7",
+        "lumber_trolley__lumber_8",
+        "lumber_trolley__lumber_9",
+        "lumber_trolley__lumber_10",
+        "lumber_trolley__restraining_strap"
+      ],
+      "dimensions": [
+        4.412684445588485,
+        1.2271875694822398,
+        1.81
+      ],
+      "bounds": [
+        [
+          -1.4115097154228124,
+          -7.7475,
+          0.009999999999999981
+        ],
+        [
+          3.0011747301656726,
+          -6.52031243051776,
+          1.82
+        ]
+      ],
+      "measurement_source": "analysis/measurements.json,point_measurements.json,v2_measurements.json; hidden dimensions explicitly inferred"
+    },
+    {
+      "id": "corridor_compactor",
+      "category": "industrial_compactor",
+      "evidence_frames": [
+        20,
+        21,
+        22,
+        32,
+        33,
+        34
+      ],
+      "provenance": "observed semantic topology and depth-supported visible surfaces; hidden dimensions inferred",
+      "relations": [
+        {
+          "relation": "supported_by",
+          "target": "hall_floor"
+        }
+      ],
+      "components": [
+        "corridor_compactor__lower_machine",
+        "corridor_compactor__hopper",
+        "corridor_compactor__front_panel"
+      ],
+      "dimensions": [
+        2.2950000000000017,
+        1.7799999999999998,
+        3.075
+      ],
+      "bounds": [
+        [
+          -20.675,
+          -2.11,
+          0.0
+        ],
+        [
+          -18.38,
+          -0.32999999999999996,
+          3.075
+        ]
+      ],
+      "measurement_source": "analysis/measurements.json,point_measurements.json,v2_measurements.json; hidden dimensions explicitly inferred"
+    },
+    {
+      "id": "fire_cabinet",
+      "category": "fire_cabinet",
+      "evidence_frames": [
+        16,
+        20
+      ],
+      "provenance": "observed semantic topology and depth-supported visible surfaces; hidden dimensions inferred",
+      "relations": [
+        {
+          "relation": "supported_by",
+          "target": "hall_floor"
+        }
+      ],
+      "components": [
+        "fire_cabinet__body"
+      ],
+      "dimensions": [
+        0.14999999999999858,
+        0.41999999999999993,
+        0.5500000000000003
+      ],
+      "bounds": [
+        [
+          -13.635,
+          2.49,
+          1.275
+        ],
+        [
+          -13.485000000000001,
+          2.91,
+          1.8250000000000002
+        ]
+      ],
+      "measurement_source": "analysis/measurements.json,point_measurements.json,v2_measurements.json; hidden dimensions explicitly inferred"
+    },
+    {
+      "id": "utility_sink",
+      "category": "sink",
+      "evidence_frames": [
+        16,
+        20
+      ],
+      "provenance": "observed semantic topology and depth-supported visible surfaces; hidden dimensions inferred",
+      "relations": [
+        {
+          "relation": "supported_by",
+          "target": "hall_floor"
+        }
+      ],
+      "components": [
+        "utility_sink__body"
+      ],
+      "dimensions": [
+        0.4800000000000004,
+        0.52,
+        0.21999999999999997
+      ],
+      "bounds": [
+        [
+          -13.64,
+          1.19,
+          0.76
+        ],
+        [
+          -13.16,
+          1.71,
+          0.98
+        ]
+      ],
+      "measurement_source": "analysis/measurements.json,point_measurements.json,v2_measurements.json; hidden dimensions explicitly inferred"
+    },
+    {
+      "id": "fire_extinguisher",
+      "category": "fire_extinguisher",
+      "evidence_frames": [
+        16,
+        20
+      ],
+      "provenance": "observed semantic topology and depth-supported visible surfaces; hidden dimensions inferred",
+      "relations": [
+        {
+          "relation": "supported_by",
+          "target": "hall_floor"
+        }
+      ],
+      "components": [
+        "fire_extinguisher__body"
+      ],
+      "dimensions": [
+        0.19000000000000128,
+        0.1900000000000004,
+        0.6000000000000001
+      ],
+      "bounds": [
+        [
+          -13.545,
+          2.605,
+          0.24000000000000005
+        ],
+        [
+          -13.354999999999999,
+          2.7950000000000004,
+          0.8400000000000001
+        ]
+      ],
+      "measurement_source": "analysis/measurements.json,point_measurements.json,v2_measurements.json; hidden dimensions explicitly inferred"
+    },
+    {
+      "id": "overhead_pipes",
+      "category": "utility_pipes",
+      "evidence_frames": [
+        8,
+        12,
+        20,
+        24,
+        28,
+        29,
+        30,
+        31
+      ],
+      "provenance": "observed semantic topology and depth-supported visible surfaces; hidden dimensions inferred",
+      "relations": [
+        {
+          "relation": "mounted_to",
+          "target": "hall_ceiling"
+        }
+      ],
+      "components": [
+        "overhead_pipes__longitudinal_0",
+        "overhead_pipes__longitudinal_1",
+        "overhead_pipes__longitudinal_2",
+        "overhead_pipes__transverse_0",
+        "overhead_pipes__transverse_1"
+      ],
+      "dimensions": [
+        18.2,
+        27.0,
+        0.10499999999999954
+      ],
+      "bounds": [
+        [
+          -12.899999999999999,
+          -8.0,
+          4.180000000000001
+        ],
+        [
+          5.3,
+          19.0,
+          4.285
+        ]
+      ],
+      "measurement_source": "analysis/measurements.json,point_measurements.json,v2_measurements.json; hidden dimensions explicitly inferred"
+    },
+    {
+      "id": "light_fixtures",
+      "category": "lighting",
+      "evidence_frames": [
+        8,
+        12,
+        20,
+        28,
+        29,
+        30,
+        31
+      ],
+      "provenance": "observed semantic topology and depth-supported visible surfaces; hidden dimensions inferred",
+      "relations": [
+        {
+          "relation": "mounted_to",
+          "target": "hall_ceiling"
+        }
+      ],
+      "components": [
+        "light_fixtures__fixture_-11_-5",
+        "light_fixtures__tube_-11_-5",
+        "light_fixtures__fixture_-11_0",
+        "light_fixtures__tube_-11_0",
+        "light_fixtures__fixture_-11_5",
+        "light_fixtures__tube_-11_5",
+        "light_fixtures__fixture_-11_10",
+        "light_fixtures__tube_-11_10",
+        "light_fixtures__fixture_-11_15",
+        "light_fixtures__tube_-11_15",
+        "light_fixtures__fixture_-4_-5",
+        "light_fixtures__tube_-4_-5",
+        "light_fixtures__fixture_-4_0",
+        "light_fixtures__tube_-4_0",
+        "light_fixtures__fixture_-4_5",
+        "light_fixtures__tube_-4_5",
+        "light_fixtures__fixture_-4_10",
+        "light_fixtures__tube_-4_10",
+        "light_fixtures__fixture_-4_15",
+        "light_fixtures__tube_-4_15",
+        "light_fixtures__fixture_2_-5",
+        "light_fixtures__tube_2_-5",
+        "light_fixtures__fixture_2_0",
+        "light_fixtures__tube_2_0",
+        "light_fixtures__fixture_2_5",
+        "light_fixtures__tube_2_5",
+        "light_fixtures__fixture_2_10",
+        "light_fixtures__tube_2_10",
+        "light_fixtures__fixture_2_15",
+        "light_fixtures__tube_2_15",
+        "light_fixtures__corridor_-17",
+        "light_fixtures__corridor_-23",
+        "light_fixtures__corridor_-29",
+        "light_fixtures__corridor_-35",
+        "light_fixtures__corridor_-41",
+        "light_fixtures__corridor_-46"
+      ],
+      "dimensions": [
+        48.11,
+        23.5,
+        0.11249999999999982
+      ],
+      "bounds": [
+        [
+          -46.05,
+          -6.75,
+          4.3575
+        ],
+        [
+          2.06,
+          16.75,
+          4.47
+        ]
+      ],
+      "measurement_source": "analysis/measurements.json,point_measurements.json,v2_measurements.json; hidden dimensions explicitly inferred"
+    },
+    {
+      "id": "floor_joints",
+      "category": "floor_surface_joints",
+      "evidence_frames": [
+        12,
+        20,
+        24,
+        27
+      ],
+      "provenance": "observed semantic topology and depth-supported visible surfaces; hidden dimensions inferred",
+      "relations": [
+        {
+          "relation": "on_surface",
+          "target": "hall_floor"
+        }
+      ],
+      "components": [
+        "floor_joints__eastwest_-6",
+        "floor_joints__eastwest_-1",
+        "floor_joints__eastwest_4",
+        "floor_joints__eastwest_9",
+        "floor_joints__eastwest_14",
+        "floor_joints__northsouth_-11",
+        "floor_joints__northsouth_-5",
+        "floor_joints__northsouth_1"
+      ],
+      "dimensions": [
+        18.7,
+        27.0,
+        0.002
+      ],
+      "bounds": [
+        [
+          -13.649999999999999,
+          -7.9,
+          0.002
+        ],
+        [
+          5.05,
+          19.1,
+          0.004
+        ]
+      ],
+      "measurement_source": "analysis/measurements.json,point_measurements.json,v2_measurements.json; hidden dimensions explicitly inferred"
+    },
+    {
+      "id": "center_column_adjacent",
+      "category": "structural_column",
+      "evidence_frames": [
+        16,
+        17,
+        18,
+        19
+      ],
+      "provenance": "two RGB-observed distinct support members; front faces depth-verified in16/17, unseen cross-section depth inferred",
+      "relations": [
+        {
+          "relation": "supported_by",
+          "target": "hall_floor"
+        }
+      ],
+      "components": [
+        "center_column_adjacent__body",
+        "center_column_adjacent__yellow_base",
+        "center_column_adjacent__stripe_0_-1",
+        "center_column_adjacent__stripe_0_0",
+        "center_column_adjacent__stripe_0_1",
+        "center_column_adjacent__stripe_0_2",
+        "center_column_adjacent__stripe_0_3",
+        "center_column_adjacent__stripe_0_4",
+        "center_column_adjacent__stripe_0_5",
+        "center_column_adjacent__stripe_1_-1",
+        "center_column_adjacent__stripe_1_0",
+        "center_column_adjacent__stripe_1_1",
+        "center_column_adjacent__stripe_1_2",
+        "center_column_adjacent__stripe_1_3",
+        "center_column_adjacent__stripe_1_4",
+        "center_column_adjacent__stripe_1_5",
+        "center_column_adjacent__stripe_2_-1",
+        "center_column_adjacent__stripe_2_0",
+        "center_column_adjacent__stripe_2_1",
+        "center_column_adjacent__stripe_2_2",
+        "center_column_adjacent__stripe_2_3",
+        "center_column_adjacent__stripe_2_4",
+        "center_column_adjacent__stripe_2_5",
+        "center_column_adjacent__stripe_3_-1",
+        "center_column_adjacent__stripe_3_0",
+        "center_column_adjacent__stripe_3_1",
+        "center_column_adjacent__stripe_3_2",
+        "center_column_adjacent__stripe_3_3",
+        "center_column_adjacent__stripe_3_4",
+        "center_column_adjacent__stripe_3_5"
+      ],
+      "dimensions": [
+        0.5700000000000003,
+        0.3400000000000001,
+        4.6
+      ],
+      "bounds": [
+        [
+          -4.605,
+          0.45999999999999996,
+          0.0
+        ],
+        [
+          -4.035,
+          0.8,
+          4.6
+        ]
+      ],
+      "measurement_source": "analysis/measurements.json,point_measurements.json,v2_measurements.json; hidden dimensions explicitly inferred"
+    }
+  ]
+}

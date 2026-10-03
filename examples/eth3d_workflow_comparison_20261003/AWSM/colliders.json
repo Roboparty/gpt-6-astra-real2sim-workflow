@@ -1,0 +1,787 @@
+{
+  "colliders": [
+    {
+      "name": "COLLIDER__hall_floor",
+      "object_id": "hall_floor",
+      "shape": "box",
+      "center": [
+        -4.3,
+        5.6,
+        -0.1
+      ],
+      "size": [
+        18.8,
+        27.2,
+        0.2
+      ],
+      "physics": "static conservative proxy; mass/friction/restitution unmeasured",
+      "exclude_from_evaluation": true
+    },
+    {
+      "name": "COLLIDER__bay_floor",
+      "object_id": "bay_floor",
+      "shape": "box",
+      "center": [
+        10,
+        5.5,
+        -0.1
+      ],
+      "size": [
+        10,
+        10,
+        0.2
+      ],
+      "physics": "static conservative proxy; mass/friction/restitution unmeasured",
+      "exclude_from_evaluation": true
+    },
+    {
+      "name": "COLLIDER__corridor_floor",
+      "object_id": "corridor_floor",
+      "shape": "box",
+      "center": [
+        -31,
+        -3.5,
+        -0.1
+      ],
+      "size": [
+        36,
+        8,
+        0.2
+      ],
+      "physics": "static conservative proxy; mass/friction/restitution unmeasured",
+      "exclude_from_evaluation": true
+    },
+    {
+      "name": "COLLIDER__hall_ceiling",
+      "object_id": "hall_ceiling",
+      "shape": "box",
+      "center": [
+        -4.3,
+        5.6,
+        4.68
+      ],
+      "size": [
+        18.8,
+        27.2,
+        0.16
+      ],
+      "physics": "static conservative proxy; mass/friction/restitution unmeasured",
+      "exclude_from_evaluation": true
+    },
+    {
+      "name": "COLLIDER__bay_ceiling",
+      "object_id": "bay_ceiling",
+      "shape": "box",
+      "center": [
+        10,
+        5.5,
+        4.68
+      ],
+      "size": [
+        10,
+        10,
+        0.16
+      ],
+      "physics": "static conservative proxy; mass/friction/restitution unmeasured",
+      "exclude_from_evaluation": true
+    },
+    {
+      "name": "COLLIDER__corridor_ceiling",
+      "object_id": "corridor_ceiling",
+      "shape": "box",
+      "center": [
+        -31,
+        -3.5,
+        4.68
+      ],
+      "size": [
+        36,
+        8,
+        0.16
+      ],
+      "physics": "static conservative proxy; mass/friction/restitution unmeasured",
+      "exclude_from_evaluation": true
+    },
+    {
+      "name": "COLLIDER__main_left_wall",
+      "object_id": "main_left_wall",
+      "shape": "box",
+      "center": [
+        -13.7,
+        9.9,
+        2.3
+      ],
+      "size": [
+        0.18,
+        18.6,
+        4.6
+      ],
+      "physics": "static conservative proxy; mass/friction/restitution unmeasured",
+      "exclude_from_evaluation": true
+    },
+    {
+      "name": "COLLIDER__rear_loading_wall",
+      "object_id": "rear_loading_wall",
+      "shape": "box",
+      "center": [
+        -4.3,
+        19.3,
+        2.8
+      ],
+      "size": [
+        18.8,
+        0.2,
+        5.6
+      ],
+      "physics": "static conservative proxy; mass/friction/restitution unmeasured",
+      "exclude_from_evaluation": true
+    },
+    {
+      "name": "COLLIDER__right_upper_wall",
+      "object_id": "right_upper_wall",
+      "shape": "box",
+      "center": [
+        5.08,
+        14.75,
+        2.3
+      ],
+      "size": [
+        0.2,
+        9,
+        4.6
+      ],
+      "physics": "static conservative proxy; mass/friction/restitution unmeasured",
+      "exclude_from_evaluation": true
+    },
+    {
+      "name": "COLLIDER__bay_rear_wall",
+      "object_id": "bay_rear_wall",
+      "shape": "box",
+      "center": [
+        10,
+        10.9,
+        2.3
+      ],
+      "size": [
+        10,
+        0.18,
+        4.6
+      ],
+      "physics": "static conservative proxy; mass/friction/restitution unmeasured",
+      "exclude_from_evaluation": true
+    },
+    {
+      "name": "COLLIDER__bay_outer_wall",
+      "object_id": "bay_outer_wall",
+      "shape": "box",
+      "center": [
+        15,
+        5.5,
+        2.3
+      ],
+      "size": [
+        0.18,
+        10.8,
+        4.6
+      ],
+      "physics": "static conservative proxy; mass/friction/restitution unmeasured",
+      "exclude_from_evaluation": true
+    },
+    {
+      "name": "COLLIDER__corridor_south_wall",
+      "object_id": "corridor_south_wall",
+      "shape": "box",
+      "center": [
+        -31,
+        -7.55,
+        2.3
+      ],
+      "size": [
+        36,
+        0.2,
+        4.6
+      ],
+      "physics": "static conservative proxy; mass/friction/restitution unmeasured",
+      "exclude_from_evaluation": true
+    },
+    {
+      "name": "COLLIDER__corridor_north_wall",
+      "object_id": "corridor_north_wall",
+      "shape": "box",
+      "center": [
+        -31,
+        0.55,
+        2.3
+      ],
+      "size": [
+        36,
+        0.2,
+        4.6
+      ],
+      "physics": "static conservative proxy; mass/friction/restitution unmeasured",
+      "exclude_from_evaluation": true
+    },
+    {
+      "name": "COLLIDER__corridor_end_door",
+      "object_id": "corridor_end_door",
+      "shape": "box",
+      "center": [
+        -48.5,
+        -3.5,
+        2.3
+      ],
+      "size": [
+        0.12,
+        8,
+        4.6
+      ],
+      "physics": "static conservative proxy; mass/friction/restitution unmeasured",
+      "exclude_from_evaluation": true
+    },
+    {
+      "name": "COLLIDER__storage_upper_wall",
+      "object_id": "storage_upper_wall",
+      "shape": "box",
+      "center": [
+        -4.3,
+        -7.98,
+        3.52
+      ],
+      "size": [
+        18.8,
+        0.17,
+        2.16
+      ],
+      "physics": "static conservative proxy; mass/friction/restitution unmeasured",
+      "exclude_from_evaluation": true
+    },
+    {
+      "name": "COLLIDER__storage_solid_pier",
+      "object_id": "storage_solid_pier",
+      "shape": "box",
+      "center": [
+        0.8,
+        -7.98,
+        1.2
+      ],
+      "size": [
+        4,
+        0.2,
+        2.4
+      ],
+      "physics": "static conservative proxy; mass/friction/restitution unmeasured",
+      "exclude_from_evaluation": true
+    },
+    {
+      "name": "COLLIDER__storage_back_wall",
+      "object_id": "storage_back_wall",
+      "shape": "box",
+      "center": [
+        -5.5,
+        -10.6,
+        1.5
+      ],
+      "size": [
+        15,
+        0.15,
+        3
+      ],
+      "physics": "static conservative proxy; mass/friction/restitution unmeasured",
+      "exclude_from_evaluation": true
+    },
+    {
+      "name": "COLLIDER__storage_floor",
+      "object_id": "storage_floor",
+      "shape": "box",
+      "center": [
+        -4.5,
+        -9.3,
+        -0.1
+      ],
+      "size": [
+        19,
+        2.8,
+        0.2
+      ],
+      "physics": "static conservative proxy; mass/friction/restitution unmeasured",
+      "exclude_from_evaluation": true
+    },
+    {
+      "name": "COLLIDER__sliding_panel_door",
+      "object_id": "sliding_panel_door",
+      "shape": "box",
+      "center": [
+        5.12,
+        -3.775,
+        2.05
+      ],
+      "size": [
+        0.16,
+        7.35,
+        4.1
+      ],
+      "physics": "static conservative proxy; mass/friction/restitution unmeasured",
+      "exclude_from_evaluation": true
+    },
+    {
+      "name": "COLLIDER__door_header",
+      "object_id": "door_header",
+      "shape": "box",
+      "center": [
+        5.06,
+        -3.85,
+        4.3
+      ],
+      "size": [
+        0.4,
+        8,
+        0.42
+      ],
+      "physics": "static conservative proxy; mass/friction/restitution unmeasured",
+      "exclude_from_evaluation": true
+    },
+    {
+      "name": "COLLIDER__far_column",
+      "object_id": "far_column",
+      "shape": "box",
+      "center": [
+        -4.4,
+        10.64,
+        2.3
+      ],
+      "size": [
+        0.72,
+        0.72,
+        4.6
+      ],
+      "physics": "static conservative proxy; mass/friction/restitution unmeasured",
+      "exclude_from_evaluation": true
+    },
+    {
+      "name": "COLLIDER__cage_column",
+      "object_id": "cage_column",
+      "shape": "box",
+      "center": [
+        -4.2,
+        -7.77,
+        2.3
+      ],
+      "size": [
+        0.8,
+        0.52,
+        4.6
+      ],
+      "physics": "static conservative proxy; mass/friction/restitution unmeasured",
+      "exclude_from_evaluation": true
+    },
+    {
+      "name": "COLLIDER__door_north_pier",
+      "object_id": "door_north_pier",
+      "shape": "box",
+      "center": [
+        5.05,
+        0.62,
+        2.3
+      ],
+      "size": [
+        0.65,
+        0.65,
+        4.6
+      ],
+      "physics": "static conservative proxy; mass/friction/restitution unmeasured",
+      "exclude_from_evaluation": true
+    },
+    {
+      "name": "COLLIDER__door_south_pier",
+      "object_id": "door_south_pier",
+      "shape": "box",
+      "center": [
+        5.05,
+        -7.78,
+        2.3
+      ],
+      "size": [
+        0.65,
+        0.65,
+        4.6
+      ],
+      "physics": "static conservative proxy; mass/friction/restitution unmeasured",
+      "exclude_from_evaluation": true
+    },
+    {
+      "name": "COLLIDER__bay_far_pier",
+      "object_id": "bay_far_pier",
+      "shape": "box",
+      "center": [
+        5.05,
+        10.5,
+        2.3
+      ],
+      "size": [
+        0.65,
+        0.7,
+        4.6
+      ],
+      "physics": "static conservative proxy; mass/friction/restitution unmeasured",
+      "exclude_from_evaluation": true
+    },
+    {
+      "name": "COLLIDER__corridor_north_pier",
+      "object_id": "corridor_north_pier",
+      "shape": "box",
+      "center": [
+        -13.55,
+        0.55,
+        2.3
+      ],
+      "size": [
+        0.6,
+        0.55,
+        4.6
+      ],
+      "physics": "static conservative proxy; mass/friction/restitution unmeasured",
+      "exclude_from_evaluation": true
+    },
+    {
+      "name": "COLLIDER__corridor_south_pier",
+      "object_id": "corridor_south_pier",
+      "shape": "box",
+      "center": [
+        -13.55,
+        -7.5,
+        2.3
+      ],
+      "size": [
+        0.55,
+        0.55,
+        4.6
+      ],
+      "physics": "static conservative proxy; mass/friction/restitution unmeasured",
+      "exclude_from_evaluation": true
+    },
+    {
+      "name": "COLLIDER__storage_cage_0",
+      "object_id": "storage_cage_0",
+      "shape": "box",
+      "center": [
+        -9.0,
+        -7.78,
+        1.2
+      ],
+      "size": [
+        8.7,
+        0.08,
+        2.4
+      ],
+      "physics": "static conservative proxy; mass/friction/restitution unmeasured",
+      "exclude_from_evaluation": true
+    },
+    {
+      "name": "COLLIDER__storage_cage_1",
+      "object_id": "storage_cage_1",
+      "shape": "box",
+      "center": [
+        -2.5,
+        -7.78,
+        1.2
+      ],
+      "size": [
+        2.5,
+        0.08,
+        2.4
+      ],
+      "physics": "static conservative proxy; mass/friction/restitution unmeasured",
+      "exclude_from_evaluation": true
+    },
+    {
+      "name": "COLLIDER__wood_crate",
+      "object_id": "wood_crate",
+      "shape": "box",
+      "center": [
+        2.15,
+        7.65,
+        0.73
+      ],
+      "size": [
+        1.25,
+        2.05,
+        1.46
+      ],
+      "physics": "static conservative proxy; mass/friction/restitution unmeasured",
+      "exclude_from_evaluation": true
+    },
+    {
+      "name": "COLLIDER__storage_shelf",
+      "object_id": "storage_shelf",
+      "shape": "box",
+      "center": [
+        9.15,
+        10.13,
+        1.95
+      ],
+      "size": [
+        6.7,
+        0.95,
+        3.9
+      ],
+      "physics": "static conservative proxy; mass/friction/restitution unmeasured",
+      "exclude_from_evaluation": true
+    },
+    {
+      "name": "COLLIDER__box_trailer",
+      "object_id": "box_trailer",
+      "shape": "box",
+      "center": [
+        11.6,
+        7.92,
+        1.37
+      ],
+      "size": [
+        4.8,
+        2.1,
+        2.74
+      ],
+      "physics": "static conservative proxy; mass/friction/restitution unmeasured",
+      "exclude_from_evaluation": true
+    },
+    {
+      "name": "COLLIDER__delivery_truck",
+      "object_id": "delivery_truck",
+      "shape": "box",
+      "center": [
+        -5.64,
+        11.55,
+        1.55
+      ],
+      "size": [
+        2.3,
+        6.2,
+        3.1
+      ],
+      "physics": "static conservative proxy; mass/friction/restitution unmeasured",
+      "exclude_from_evaluation": true
+    },
+    {
+      "name": "COLLIDER__black_hatchback",
+      "object_id": "black_hatchback",
+      "shape": "box",
+      "center": [
+        -2.8,
+        13.25,
+        0.73
+      ],
+      "size": [
+        1.78,
+        3.5,
+        1.46
+      ],
+      "physics": "static conservative proxy; mass/friction/restitution unmeasured",
+      "exclude_from_evaluation": true
+    },
+    {
+      "name": "COLLIDER__loading_dock",
+      "object_id": "loading_dock",
+      "shape": "box",
+      "center": [
+        -4.3,
+        17.85,
+        0.5
+      ],
+      "size": [
+        18.7,
+        3.1,
+        1.0
+      ],
+      "physics": "static conservative proxy; mass/friction/restitution unmeasured",
+      "exclude_from_evaluation": true
+    },
+    {
+      "name": "COLLIDER__blue_service_door",
+      "object_id": "blue_service_door",
+      "shape": "box",
+      "center": [
+        -4.3,
+        19.17,
+        2.35
+      ],
+      "size": [
+        4.25,
+        0.04,
+        2.7
+      ],
+      "physics": "static conservative proxy; mass/friction/restitution unmeasured",
+      "exclude_from_evaluation": true
+    },
+    {
+      "name": "COLLIDER__dock_wooden_box",
+      "object_id": "dock_wooden_box",
+      "shape": "box",
+      "center": [
+        -1.5,
+        18.0,
+        1.55
+      ],
+      "size": [
+        3.6,
+        1,
+        1.1
+      ],
+      "physics": "static conservative proxy; mass/friction/restitution unmeasured",
+      "exclude_from_evaluation": true
+    },
+    {
+      "name": "COLLIDER__corridor_compactor",
+      "object_id": "corridor_compactor",
+      "shape": "box",
+      "center": [
+        -19.55,
+        -1.22,
+        1.55
+      ],
+      "size": [
+        2.4,
+        1.9,
+        3.1
+      ],
+      "physics": "static conservative proxy; mass/friction/restitution unmeasured",
+      "exclude_from_evaluation": true
+    },
+    {
+      "name": "COLLIDER__fire_cabinet",
+      "object_id": "fire_cabinet",
+      "shape": "box",
+      "center": [
+        -13.56,
+        2.7,
+        1.55
+      ],
+      "size": [
+        0.15,
+        0.42,
+        0.55
+      ],
+      "physics": "static conservative proxy; mass/friction/restitution unmeasured",
+      "exclude_from_evaluation": true
+    },
+    {
+      "name": "COLLIDER__utility_sink",
+      "object_id": "utility_sink",
+      "shape": "box",
+      "center": [
+        -13.4,
+        1.45,
+        0.87
+      ],
+      "size": [
+        0.48,
+        0.52,
+        0.22
+      ],
+      "physics": "static conservative proxy; mass/friction/restitution unmeasured",
+      "exclude_from_evaluation": true
+    },
+    {
+      "name": "COLLIDER__fire_extinguisher",
+      "object_id": "fire_extinguisher",
+      "shape": "box",
+      "center": [
+        -13.45,
+        2.7,
+        0.55
+      ],
+      "size": [
+        0.25,
+        0.25,
+        0.8
+      ],
+      "physics": "static conservative proxy; mass/friction/restitution unmeasured",
+      "exclude_from_evaluation": true
+    },
+    {
+      "name": "COLLIDER__center_column",
+      "object_id": "center_column",
+      "shape": "box",
+      "center": [
+        -4.36,
+        1.2,
+        2.3
+      ],
+      "size": [
+        0.6,
+        0.58,
+        4.6
+      ],
+      "physics": "static conservative proxy; physical parameters unmeasured",
+      "exclude_from_evaluation": true
+    },
+    {
+      "name": "COLLIDER__center_column_adjacent",
+      "object_id": "center_column_adjacent",
+      "shape": "box",
+      "center": [
+        -4.32,
+        0.63,
+        2.3
+      ],
+      "size": [
+        0.56,
+        0.33,
+        4.6
+      ],
+      "physics": "static conservative proxy; physical parameters unmeasured",
+      "exclude_from_evaluation": true
+    },
+    {
+      "name": "COLLIDER__green_skip_0",
+      "object_id": "green_skip_0",
+      "shape": "box",
+      "center": [
+        2.65,
+        10.5,
+        0.8
+      ],
+      "size": [
+        2.4299999999999997,
+        2.4299999999999997,
+        1.6
+      ],
+      "physics": "static conservative proxy; physical parameters unmeasured",
+      "exclude_from_evaluation": true
+    },
+    {
+      "name": "COLLIDER__green_skip_1",
+      "object_id": "green_skip_1",
+      "shape": "box",
+      "center": [
+        2.65,
+        13.15,
+        0.8
+      ],
+      "size": [
+        2.4299999999999997,
+        2.4299999999999997,
+        1.6
+      ],
+      "physics": "static conservative proxy; physical parameters unmeasured",
+      "exclude_from_evaluation": true
+    },
+    {
+      "name": "COLLIDER__lumber_trolley",
+      "object_id": "lumber_trolley",
+      "shape": "box",
+      "center": [
+        0.7,
+        -7.18,
+        0.95
+      ],
+      "size": [
+        4.5,
+        1.2,
+        1.9
+      ],
+      "physics": "static conservative proxy; physical parameters unmeasured",
+      "exclude_from_evaluation": true
+    }
+  ],
+  "physical_parameters": "unmeasured, no physical acceptance"
+}

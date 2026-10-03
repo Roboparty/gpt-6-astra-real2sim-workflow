@@ -1,0 +1,62 @@
+import os
+import bpy,sys,json
+from pathlib import Path
+from mathutils import Matrix,Vector
+sys.path.insert(0,str(Path(__file__).parent))
+from viewpoints import diagnostic_focus,safe_camera_position
+from blender_camera import apply_camera
+out=Path(sys.argv[sys.argv.index('--')+1]);sc=bpy.context.scene
+packet=json.loads((out/'packet.json').read_text()) if (out/'packet.json').exists() else {}
+inspection_size=packet.get('parameters',{}).get('inspection_resolution',[960,640])
+if len(inspection_size)!=2 or any(type(v) is not int or not 64<=v<=4096 for v in inspection_size):raise ValueError('Invalid inspection_resolution')
+holistic=packet.get('refinement',{}).get('limits',{}).get('appearance_contract_version',0)>=1
+for name in ['floor','ceiling','wall_back','wall_front','wall_left','wall_right']:
+ o=bpy.data.objects.get(name)
+ if o is None or o.hide_render:raise ValueError('Required enclosure surface absent/hidden: '+name)
+try:
+ p=bpy.context.preferences.addons['cycles'].preferences;p.compute_device_type='CUDA';p.get_devices()
+ for d in p.devices:d.use=d.type=='CUDA'
+ sc.cycles.device='GPU' if os.environ.get('R2S_CPU')!='1' and any(d.use for d in p.devices) else 'CPU'
+except Exception:sc.cycles.device='CPU'
+S=json.loads((out/'scene.json').read_text());specs=S.get('cameras') or [S['camera']];cameras=[]
+from blender_metadata import synchronize
+(out/'metadata_render_check.json').write_text(json.dumps(synchronize(S),indent=2))
+for i,c in enumerate(specs):
+    name='source_camera' if i==0 else f'source_camera_{i:04d}';camera=bpy.data.objects.get(name)
+    if camera is None:bpy.ops.object.camera_add();camera=bpy.context.object;camera.name=name
+    apply_camera(sc,camera,c);camera['frame_id']=c.get('frame_id',str(i));cameras.append(camera)
+apply_camera(sc,cameras[0],specs[0]);bpy.ops.file.pack_all();bpy.ops.wm.save_as_mainfile(filepath=str(out/'scene.blend'))
+if holistic:
+    from blender_appearance import audit as appearance_audit, comparison_views, neutral_view
+    if packet['stage']=='build_render':
+        appearance_audit(out,json.loads((out/'accepted_material_state.json').read_text()))
+    comparison_views(out,S,packet)
+    if packet['stage']=='build_render':neutral_view(out,S)
+if (out/'surface_realization.json').exists():
+    from blender_surfaces import audit
+    audit(out)
+for i,(camera,c) in enumerate(zip(cameras,specs)):
+    apply_camera(sc,camera,c);sc.render.filepath=str(out/('source_view.png' if i==0 else f'source_view_{i:04d}.png'));bpy.ops.render.render(write_still=True)
+(out/'render_manifest.json').write_text(json.dumps({'comparison_settings':{'resolution_percentage':sc.render.resolution_percentage,'view_transform':sc.view_settings.view_transform,'look':sc.view_settings.look,'engine':sc.render.engine},'frames':[{'frame_id':c.get('frame_id',str(i)),'camera':camera.name,'render':'source_view.png' if i==0 else f'source_view_{i:04d}.png','role':'reconstruction_view'} for i,(camera,c) in enumerate(zip(cameras,specs))]},indent=2))
+# Geometry-focused review and complete-enclosure views are available before the Agent review gate.
+sc.camera=cameras[0];sc.render.resolution_x=specs[0]['image_size'][0];sc.render.resolution_y=specs[0]['image_size'][1];sc.cycles.samples=48
+apply_camera(sc,cameras[0],specs[0])
+clay=bpy.data.materials.new('review_clay');clay.use_nodes=True;clay.node_tree.nodes['Principled BSDF'].inputs['Base Color'].default_value=(.5,.5,.5,1);clay.node_tree.nodes['Principled BSDF'].inputs['Roughness'].default_value=.8;sc.view_layers[0].material_override=clay
+# Opaque clay also covers glazing. Exterior-only source lights would then
+# produce a black enclosed room instead of usable geometric evidence.
+from blender_appearance import neutral_view
+try:neutral_view(out,S,'source_clay.png')
+finally:sc.view_layers[0].material_override=None
+sc.render.pixel_aspect_x=sc.render.pixel_aspect_y=1
+r=S['room'];xm,xM,ym,yM,h=[r[k] for k in ['x_min','x_max','y_min','y_max','height']];dx=xM-xm;dy=yM-ym;focus=diagnostic_focus(S);diagnostics=[]
+for name,pos in [('wide',(xM-dx*.12,ym+dy*.12,h*.73)),('reverse',(xm+dx*.2,yM-dy*.08,h*.65))]:
+    chosen=safe_camera_position(S,pos);bpy.ops.object.camera_add(location=chosen);cam=bpy.context.object;cam.rotation_euler=(focus-cam.location).to_track_quat('-Z','Y').to_euler();cam.data.lens=22;sc.camera=cam;sc.render.resolution_x,sc.render.resolution_y=inspection_size;sc.render.filepath=str(out/f'diagnostic_{name}.png');bpy.ops.render.render(write_still=True);diagnostics.append({'name':name,'position':list(chosen),'target':list(focus),'layout_modified':False,'image_size':inspection_size})
+(out/'diagnostic_cameras.json').write_text(json.dumps(diagnostics,indent=2))
+packet=json.loads((out/'packet.json').read_text()) if (out/'packet.json').exists() else {}
+if packet.get('workflow_profile')=='quality_v2':
+    # Inspection cameras do not remove or hide the opposite wall or ceiling.
+    center=safe_camera_position(S,((xm+xM)/2,(ym+yM)/2,h*.60))
+    wall_targets={'wall_front':((xm+xM)/2,ym,h*.5),'wall_back':((xm+xM)/2,yM,h*.5),'wall_left':(xm,(ym+yM)/2,h*.5),'wall_right':(xM,(ym+yM)/2,h*.5)}
+    for name,target in wall_targets.items():
+        bpy.ops.object.camera_add(location=center);cam=bpy.context.object;cam.rotation_euler=(Vector(target)-cam.location).to_track_quat('-Z','Y').to_euler();cam.data.lens=18;sc.camera=cam;sc.render.resolution_x,sc.render.resolution_y=inspection_size;sc.render.filepath=str(out/f'inspect_{name}.png');bpy.ops.render.render(write_still=True)
+    (out/'four_wall_views.json').write_text(json.dumps({'camera_position':list(center),'targets':wall_targets,'all_walls_retained':True,'interpretation':'inspection views, not proof that invisible walls were measured'},indent=2))

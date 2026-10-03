@@ -1,0 +1,166 @@
+{
+  "status": "PASS",
+  "tests": {
+    "optical_z_matches_analytic": true,
+    "hidden_proxy_excluded": true,
+    "transparent_panel_in_opaque_geometry": true,
+    "actual_colored_patch_projection": true,
+    "model_bytes_unchanged": true,
+    "analytic_shell_point_distances": true,
+    "bad_model_hash_rejected": true,
+    "nonrigid_gauge_rejected": true
+  },
+  "max_depth_error_m": 2.384185791015625e-06,
+  "boundary_accounting": {
+    "total_rays": 38400,
+    "exact_silhouette_edge_rays": 120,
+    "alternate_adjacent_surface_hits": 50,
+    "nonboundary_mismatches": 0,
+    "dropped_rays": 0,
+    "rule": "At mathematically exact sheet boundary, floating BVH may hit sheet2m or wall6m; all edge rays must match one of these surfaces within1e-5m. Original strict diagnostic retained in validation_initial_strict.json."
+  },
+  "opaque_depth_values": [
+    1.9999996423721313,
+    1.999999761581421,
+    1.9999998807907104,
+    2.0,
+    2.000000238418579,
+    2.000000476837158,
+    2.0000007152557373,
+    5.999997615814209,
+    5.999998092651367,
+    5.999998569488525,
+    5.999999046325684,
+    5.999999523162842,
+    6.0,
+    6.000000476837158,
+    6.000000953674316,
+    6.000001430511475,
+    6.000001907348633
+  ],
+  "analytic_points": 6,
+  "max_point_distance_m": 9.5367431640625e-07,
+  "max_render_projection_error_px": 0.05925815755386415,
+  "projection": [
+    {
+      "frame_id": "synthetic_000",
+      "centroid": [
+        295.4794996525365,
+        227.5
+      ],
+      "expected": [
+        295.5,
+        227.5
+      ],
+      "error_px": 0.020500347463496382,
+      "colored_pixels": 2878
+    },
+    {
+      "frame_id": "synthetic_007",
+      "centroid": [
+        321.999607996864,
+        220.84633477067817
+      ],
+      "expected": [
+        321.9888888888889,
+        220.90461538461537
+      ],
+      "error_px": 0.05925815755386415,
+      "colored_pixels": 2551
+    },
+    {
+      "frame_id": "synthetic_014",
+      "centroid": [
+        295.4794996525365,
+        227.5
+      ],
+      "expected": [
+        295.5,
+        227.5
+      ],
+      "error_px": 0.020500347463496382,
+      "colored_pixels": 2878
+    },
+    {
+      "frame_id": "synthetic_021",
+      "centroid": [
+        321.999607996864,
+        220.84633477067817
+      ],
+      "expected": [
+        321.9888888888889,
+        220.90461538461537
+      ],
+      "error_px": 0.05925815755386415,
+      "colored_pixels": 2551
+    },
+    {
+      "frame_id": "synthetic_028",
+      "centroid": [
+        295.4794996525365,
+        227.5
+      ],
+      "expected": [
+        295.5,
+        227.5
+      ],
+      "error_px": 0.020500347463496382,
+      "colored_pixels": 2878
+    },
+    {
+      "frame_id": "synthetic_029",
+      "centroid": [
+        321.999607996864,
+        220.84633477067817
+      ],
+      "expected": [
+        321.9888888888889,
+        220.90461538461537
+      ],
+      "error_px": 0.05925815755386415,
+      "colored_pixels": 2551
+    },
+    {
+      "frame_id": "synthetic_030",
+      "centroid": [
+        295.4794996525365,
+        227.5
+      ],
+      "expected": [
+        295.5,
+        227.5
+      ],
+      "error_px": 0.020500347463496382,
+      "colored_pixels": 2878
+    }
+  ],
+  "inventory": [
+    {
+      "name": "cube_shell",
+      "vertices": 88,
+      "triangles": 44
+    },
+    {
+      "name": "visible_transparent_panel",
+      "vertices": 4,
+      "triangles": 2
+    }
+  ],
+  "blender": "4.5.4 LTS",
+  "model_sha256": "f6ec1b4e216f1c52a7ce7be4addd2fb45c931e81ba99f3f088b429532c4cb13e",
+  "source_hashes": {
+    "evaluate_agent_scene_blender.py": "0136dbc53e515fed031a978b85339a0442402c0d097566dac66294fd045b70fe",
+    "render_visibility.py": "b6f8ef242860e195ff292c33f3f4eff0e8fded785378ad031344021e511fdae1",
+    "make_fixture.py": "cc63fbb0c51c100a28b5361e60d87038ea3686fc6083358b55a518d61385f991"
+  },
+  "material_convention": "Authored red/blue emissive wall patches remain visible through the authored fully transparent sheet. The sheet still terminates opaque BVH depth at2m; this is the documented distinction from the wall appearance at6m, not a failed depth test.",
+  "receipt_issue": {
+    "field": "surface_samples_each_direction",
+    "reported_legacy": null,
+    "reported_model_samples": 100000,
+    "reported_laser_samples": 6,
+    "fixed": true,
+    "actual_gt_to_model_samples": 6,
+    "actual_model_surface_samples": 100000
+  }
+}

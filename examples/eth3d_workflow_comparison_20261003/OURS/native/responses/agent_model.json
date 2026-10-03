@@ -1,0 +1,37 @@
+{
+  "status": "complete",
+  "evidence": [
+    "All14 actual component graphs connected",
+    "Exact convex intersection verified v2 tow/deck overlap before minimal correction",
+    "Bounded per-assembly dimensions fit unchanged source labels; cart casters retain circular sections"
+  ],
+  "reasoning_summary": "V3 adds observed flatbed coupler and visible van details, clears independently verified overlap, and improves crate/cart/rear-skip coherence. Native source endpoint errors still remain; no visual/physical acceptance is asserted.",
+  "parameters": {
+    "model_version": "v3",
+    "camera_constraints_sha256": "8d7f8873b06d34f776a12fea7e9e24597e9d42e85eb9033ecf66f336a9c28bfd"
+  },
+  "artifacts": [
+    "model.blend",
+    "scene.json",
+    "furniture_observation.json",
+    "component_inventory.json",
+    "colliders.json",
+    "contact_preparation_report.json",
+    "build_scene_v3.py",
+    "prepare_native_assembly.py",
+    "v3_layout_corrections.json",
+    "model_from_input.json",
+    "rgb_annotations.json",
+    "material_observations.json",
+    "measurements_landmarks.json",
+    "tow_mesh_evidence.json",
+    "tow_intersection_verification.json"
+  ],
+  "issues": [
+    {
+      "severity": "major",
+      "entity": "four_assemblies",
+      "finding": "Preliminary endpoint limits still fail for front skip, van, car and far cage; retain native gate failure."
+    }
+  ]
+}

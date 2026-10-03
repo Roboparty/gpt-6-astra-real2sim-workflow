@@ -1,0 +1,14 @@
+{
+  "status": "complete",
+  "evidence": [
+    "Actual supplied RGB observation and permitted predicted-depth measurement artifacts"
+  ],
+  "reasoning_summary": "Recorded every shell surface and uncertainty, fitting visible partitions while retaining hidden closure hypotheses.",
+  "parameters": {
+    "camera_constraints_sha256": "8d7f8873b06d34f776a12fea7e9e24597e9d42e85eb9033ecf66f336a9c28bfd"
+  },
+  "artifacts": [
+    "room_calibration.json"
+  ],
+  "issues": []
+}

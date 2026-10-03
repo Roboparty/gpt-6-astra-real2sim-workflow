@@ -1,0 +1,20 @@
+from pathlib import Path
+import json,hashlib,time,numpy as np
+from scipy.spatial import cKDTree
+r=Path('/data/wqz/real2sim-agent-compare-20261003/comparison');t=Path('/data/wqz/real2sim-awsm-20261003/eth3d/benchmark_v1/evaluation');out=r/'audit';sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest();start=time.monotonic()
+f=np.load(t/'truth_grid.npz');gt=f['depth'];views=json.loads((t/'views.json').read_text());roles=np.array([v['role'] for v in views]);result={'methods':{},'truth_sha256':sha(t/'truth_grid.npz'),'total_grid_positions':int(gt.size),'finite_GT':int(np.isfinite(gt).sum()),'gt_valid_range':'.1<=Z<=30m','roles':{x:int(sum(roles==x)) for x in set(roles)}}
+def metrics(p,g):
+ domain=np.isfinite(g)&(g>=.1)&(g<=30);valid=domain&np.isfinite(p)&(p>=.1)&(p<=30);n=int(domain.sum());nv=int(valid.sum());e=np.abs(p[valid].astype(float)-g[valid].astype(float));ratio=np.maximum(p[valid]/g[valid],g[valid]/p[valid]);return dict(GT_valid_pixels=n,GT_grid_pixels=g.size,predicted_valid_pixels=nv,missing_pixels=n-nv,absrel=float((e/g[valid]).mean()),rmse_m=float(np.sqrt((e**2).mean())),valid_coverage=nv/n,invalid_rate=(n-nv)/n,missing_penalty_mae_m=float((e.sum()+30*(n-nv))/n),delta1=float((ratio<1.25).mean()))
+for method in ['OURS','AWSM']:
+ e=r/'evaluation'/method;score=json.loads((e/'scores.json').read_text());p=np.load(e/'rendered_z.npy');freeze=json.loads((r/'freeze'/f'{method}.json').read_text());assert sha(r/'models'/method/'scene.blend')==freeze['model_sha256'];per=[metrics(x,y) for x,y in zip(p,gt)];splits={}
+ for role in ['reconstruction','heldout']:
+  ids=np.flatnonzero(roles==role);macro={k:float(np.mean([per[i][k] for i in ids])) for k in ['absrel','rmse_m','valid_coverage','invalid_rate','missing_penalty_mae_m','delta1']};pooled=metrics(p[ids].ravel(),gt[ids].ravel());splits[role]=dict(views=len(ids),macro=macro,pooled=pooled,reported=score['depth'][role],macro_report_differences={k:macro[k]-score['depth'][role][k] for k in macro})
+ result['methods'][method]=dict(model_hash_matches_freeze=True,depth=splits,per_view=per)
+(out/'depth_recomputed.json').write_text(json.dumps(result,indent=2));print('DEPTH_DONE',time.monotonic()-start,flush=True)
+laser=np.load(t/'laser_points.npy');assert np.isfinite(laser).all();lo=laser.min(0);hi=laser.max(0);tree=cKDTree(laser);print('TREE_BUILT',len(laser),time.monotonic()-start,flush=True)
+for method in ['OURS','AWSM']:
+ e=r/'evaluation'/method;points=np.load(e/'model_surface_samples.npy');d,_=tree.query(points,k=1,workers=8);back=np.load(e/'gt_to_model_m.npy');np.save(out/f'{method}_model_to_laser_requeried.npy',d);reported=json.loads((e/'scores.json').read_text())['geometry'];geom=dict(model_to_laser_mean_m=float(d.mean()),laser_to_model_mean_m=float(back.mean()),symmetric_mean_m=float((d.mean()+back.mean())/2),model_to_laser_p95_m=float(np.percentile(d,95)),laser_to_model_p95_m=float(np.percentile(back,95)))
+ for cm in [1,5,10]:
+  pr=float((d<cm/100).mean());re=float((back<cm/100).mean());geom.update({f'precision_{cm}cm':pr,f'recall_{cm}cm':re,f'fscore_{cm}cm':2*pr*re/(pr+re) if pr+re else 0})
+ outside=np.any((points<lo)|(points>hi),axis=1);far=d>1;entry=dict(metrics=geom,reported_differences={k:geom[k]-reported[k] for k in geom},model_samples=len(points),laser_samples=len(back),all_finite=bool(np.isfinite(d).all() and np.isfinite(back).all()),laser_full_count=len(laser),laser_bounds=[lo.tolist(),hi.tolist()],model_sample_bounds=[points.min(0).tolist(),points.max(0).tolist()],outside_laser_AABB=dict(count=int(outside.sum()),fraction=float(outside.mean()),distance_sum_fraction=float(d[outside].sum()/d.sum()),mean_m=float(d[outside].mean()) if outside.any() else None),over_1m=dict(count=int(far.sum()),fraction=float(far.mean()),distance_sum_fraction=float(d[far].sum()/d.sum())));(out/f'{method}_geometry_recomputed.json').write_text(json.dumps(entry,indent=2));print('GEOMETRY_DONE',method,json.dumps(entry),time.monotonic()-start,flush=True)
+print('COMPLETE_SECONDS',time.monotonic()-start)

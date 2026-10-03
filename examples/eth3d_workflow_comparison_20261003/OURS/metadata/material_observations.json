@@ -1,0 +1,274 @@
+[
+  {
+    "material": "door_panel",
+    "input_index": 0,
+    "source_sha256": "e14725171523ed699d6036f7dbabcae822d432fd529ec526df4e3d326f72d50a",
+    "box_xyxy": [
+      350,
+      210,
+      430,
+      380
+    ],
+    "median_srgb": [
+      0.8196,
+      0.8118,
+      0.8078
+    ],
+    "note": "Illuminated image colour; not a direct reflectance measurement. Exposure/albedo ambiguity preserved."
+  },
+  {
+    "material": "door_frame",
+    "input_index": 0,
+    "source_sha256": "e14725171523ed699d6036f7dbabcae822d432fd529ec526df4e3d326f72d50a",
+    "box_xyxy": [
+      462,
+      240,
+      470,
+      355
+    ],
+    "median_srgb": [
+      0.3333,
+      0.3373,
+      0.3196
+    ],
+    "note": "Illuminated image colour; not a direct reflectance measurement. Exposure/albedo ambiguity preserved."
+  },
+  {
+    "material": "floor",
+    "input_index": 12,
+    "source_sha256": "61316c7eccdcc97ca0305888d2d4c83ee57f8edba74d77b777f7d228b8531e4f",
+    "box_xyxy": [
+      750,
+      630,
+      840,
+      720
+    ],
+    "median_srgb": [
+      0.5137,
+      0.4902,
+      0.4275
+    ],
+    "note": "Illuminated image colour; not a direct reflectance measurement. Exposure/albedo ambiguity preserved."
+  },
+  {
+    "material": "ceiling",
+    "input_index": 12,
+    "source_sha256": "61316c7eccdcc97ca0305888d2d4c83ee57f8edba74d77b777f7d228b8531e4f",
+    "box_xyxy": [
+      720,
+      70,
+      810,
+      140
+    ],
+    "median_srgb": [
+      0.3843,
+      0.3765,
+      0.3373
+    ],
+    "note": "Illuminated image colour; not a direct reflectance measurement. Exposure/albedo ambiguity preserved."
+  },
+  {
+    "material": "wall_paint",
+    "input_index": 16,
+    "source_sha256": "eaf34c6a5e2d1388eddf2d7d6875a475b959cf05a7e0fc6add7bb13b9b971da6",
+    "box_xyxy": [
+      900,
+      245,
+      1020,
+      325
+    ],
+    "median_srgb": [
+      0.6784,
+      0.6627,
+      0.6314
+    ],
+    "note": "Illuminated image colour; not a direct reflectance measurement. Exposure/albedo ambiguity preserved."
+  },
+  {
+    "material": "hazard_yellow",
+    "input_index": 16,
+    "source_sha256": "eaf34c6a5e2d1388eddf2d7d6875a475b959cf05a7e0fc6add7bb13b9b971da6",
+    "box_xyxy": [
+      410,
+      400,
+      425,
+      418
+    ],
+    "median_srgb": [
+      0.2745,
+      0.2667,
+      0.1647
+    ],
+    "note": "Illuminated image colour; not a direct reflectance measurement. Exposure/albedo ambiguity preserved."
+  },
+  {
+    "material": "hazard_black",
+    "input_index": 16,
+    "source_sha256": "eaf34c6a5e2d1388eddf2d7d6875a475b959cf05a7e0fc6add7bb13b9b971da6",
+    "box_xyxy": [
+      490,
+      430,
+      507,
+      451
+    ],
+    "median_srgb": [
+      0.6627,
+      0.6118,
+      0.2627
+    ],
+    "note": "Illuminated image colour; not a direct reflectance measurement. Exposure/albedo ambiguity preserved."
+  },
+  {
+    "material": "wood_crate",
+    "input_index": 8,
+    "source_sha256": "9684fbf04b95fe4465757e269bb3bb6a4924c406ac7511acbf1e825597b4962b",
+    "box_xyxy": [
+      360,
+      420,
+      430,
+      475
+    ],
+    "median_srgb": [
+      0.4588,
+      0.4196,
+      0.3529
+    ],
+    "note": "Illuminated image colour; not a direct reflectance measurement. Exposure/albedo ambiguity preserved."
+  },
+  {
+    "material": "rusty_strap",
+    "input_index": 8,
+    "source_sha256": "9684fbf04b95fe4465757e269bb3bb6a4924c406ac7511acbf1e825597b4962b",
+    "box_xyxy": [
+      275,
+      575,
+      287,
+      635
+    ],
+    "median_srgb": [
+      0.4902,
+      0.3294,
+      0.2392
+    ],
+    "note": "Illuminated image colour; not a direct reflectance measurement. Exposure/albedo ambiguity preserved."
+  },
+  {
+    "material": "shelf_blue",
+    "input_index": 8,
+    "source_sha256": "9684fbf04b95fe4465757e269bb3bb6a4924c406ac7511acbf1e825597b4962b",
+    "box_xyxy": [
+      620,
+      161,
+      630,
+      190
+    ],
+    "median_srgb": [
+      0.1824,
+      0.298,
+      0.5529
+    ],
+    "note": "Illuminated image colour; not a direct reflectance measurement. Exposure/albedo ambiguity preserved."
+  },
+  {
+    "material": "shelf_orange",
+    "input_index": 8,
+    "source_sha256": "9684fbf04b95fe4465757e269bb3bb6a4924c406ac7511acbf1e825597b4962b",
+    "box_xyxy": [
+      650,
+      225,
+      706,
+      239
+    ],
+    "median_srgb": [
+      0.3137,
+      0.2784,
+      0.2353
+    ],
+    "note": "Illuminated image colour; not a direct reflectance measurement. Exposure/albedo ambiguity preserved."
+  },
+  {
+    "material": "shelf_bag",
+    "input_index": 8,
+    "source_sha256": "9684fbf04b95fe4465757e269bb3bb6a4924c406ac7511acbf1e825597b4962b",
+    "box_xyxy": [
+      663,
+      269,
+      687,
+      295
+    ],
+    "median_srgb": [
+      0.6039,
+      0.6118,
+      0.5765
+    ],
+    "note": "Illuminated image colour; not a direct reflectance measurement. Exposure/albedo ambiguity preserved."
+  },
+  {
+    "material": "lime_skip",
+    "input_index": 8,
+    "source_sha256": "9684fbf04b95fe4465757e269bb3bb6a4924c406ac7511acbf1e825597b4962b",
+    "box_xyxy": [
+      161,
+      386,
+      181,
+      459
+    ],
+    "median_srgb": [
+      0.6627,
+      0.702,
+      0.3137
+    ],
+    "note": "Illuminated image colour; not a direct reflectance measurement. Exposure/albedo ambiguity preserved."
+  },
+  {
+    "material": "van_white",
+    "input_index": 12,
+    "source_sha256": "61316c7eccdcc97ca0305888d2d4c83ee57f8edba74d77b777f7d228b8531e4f",
+    "box_xyxy": [
+      383,
+      421,
+      412,
+      446
+    ],
+    "median_srgb": [
+      0.5373,
+      0.5255,
+      0.4667
+    ],
+    "note": "Illuminated image colour; not a direct reflectance measurement. Exposure/albedo ambiguity preserved."
+  },
+  {
+    "material": "car_black",
+    "input_index": 12,
+    "source_sha256": "61316c7eccdcc97ca0305888d2d4c83ee57f8edba74d77b777f7d228b8531e4f",
+    "box_xyxy": [
+      632,
+      425,
+      656,
+      439
+    ],
+    "median_srgb": [
+      0.0941,
+      0.0941,
+      0.0941
+    ],
+    "note": "Illuminated image colour; not a direct reflectance measurement. Exposure/albedo ambiguity preserved."
+  },
+  {
+    "material": "lumber",
+    "input_index": 24,
+    "source_sha256": "e65e9f1e77619f0811a2f0ae8611f0c0ad56070e2e32a8c8b582778f68a60591",
+    "box_xyxy": [
+      477,
+      512,
+      615,
+      524
+    ],
+    "median_srgb": [
+      0.749,
+      0.698,
+      0.6039
+    ],
+    "note": "Illuminated image colour; not a direct reflectance measurement. Exposure/albedo ambiguity preserved."
+  }
+]

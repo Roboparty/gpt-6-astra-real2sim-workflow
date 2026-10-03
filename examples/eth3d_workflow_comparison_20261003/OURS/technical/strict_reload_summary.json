@@ -1,0 +1,64 @@
+{
+  "status": "failed",
+  "source_report_sha256": "268cc7f0bf3df93db43bdf4599484671158e3d843c39c3b76b5c664d3dc5baad",
+  "sources_unchanged": true,
+  "records": [
+    {
+      "format": "blend",
+      "path": "/home/wqz/real2sim_agent_compare_20261003/OURS/technical_export/scene.blend",
+      "sha256": "bd624d0f72fa364ac31db75ee29adee609442996cc7ec85b3346418f7d39d38d",
+      "status": "passed",
+      "failures": []
+    },
+    {
+      "format": "glb",
+      "path": "/home/wqz/real2sim_agent_compare_20261003/OURS/technical_export/scene.glb",
+      "sha256": "a8018405109add3e286d1ea932afa989764f542357c6b69a4d66483b499bfaa1",
+      "status": "failed",
+      "failures": [
+        "Source camera normalized view frame changed (FOV/shift)"
+      ]
+    },
+    {
+      "format": "usdc",
+      "path": "/home/wqz/real2sim_agent_compare_20261003/OURS/technical_export/scene.usdc",
+      "sha256": "db328fa558d039c2768e970d10d3ea1bc3fa9e29b49b978d51898b81b8e7a369",
+      "status": "failed",
+      "failures": [
+        "Required visible part missing, wrong-owner or ambiguous: garage_door/door_leaf_0_upright_-1 (0 matches)",
+        "Required visible part missing, wrong-owner or ambiguous: garage_door/door_leaf_1_upright_-1 (0 matches)",
+        "Required visible part missing, wrong-owner or ambiguous: garage_door/door_leaf_2_upright_-1 (0 matches)",
+        "Required visible part missing, wrong-owner or ambiguous: garage_door/door_leaf_3_upright_-1 (0 matches)",
+        "Required visible part missing, wrong-owner or ambiguous: garage_door/door_leaf_4_upright_-1 (0 matches)",
+        "Required visible part missing, wrong-owner or ambiguous: garage_door/door_leaf_5_upright_-1 (0 matches)",
+        "Required visible part missing, wrong-owner or ambiguous: garage_door/door_leaf_6_upright_-1 (0 matches)",
+        "Required visible part missing, wrong-owner or ambiguous: white_trailer/trailer_wheel_12.9_-1 (0 matches)",
+        "Required visible part missing, wrong-owner or ambiguous: white_trailer/trailer_hub_12.9_-1 (0 matches)",
+        "Required visible part missing, wrong-owner or ambiguous: white_trailer/trailer_wheel_12.9_1 (0 matches)",
+        "Required visible part missing, wrong-owner or ambiguous: white_trailer/trailer_hub_12.9_1 (0 matches)",
+        "Required visible part missing, wrong-owner or ambiguous: white_trailer/trailer_wheel_13.65_-1 (0 matches)",
+        "Required visible part missing, wrong-owner or ambiguous: white_trailer/trailer_hub_13.65_-1 (0 matches)",
+        "Required visible part missing, wrong-owner or ambiguous: white_trailer/trailer_wheel_13.65_1 (0 matches)",
+        "Required visible part missing, wrong-owner or ambiguous: white_trailer/trailer_hub_13.65_1 (0 matches)",
+        "Required visible part missing, wrong-owner or ambiguous: flatbed_trailer/flatbed_wheel-1 (0 matches)",
+        "Required visible part missing, wrong-owner or ambiguous: white_van/van_side_glass-1 (0 matches)",
+        "Required visible part missing, wrong-owner or ambiguous: white_van/van_mirror-1 (0 matches)",
+        "Required visible part missing, wrong-owner or ambiguous: white_van/van_mirror_stem-1 (0 matches)",
+        "Required visible part missing, wrong-owner or ambiguous: white_van/van_tyre-1_0 (0 matches)",
+        "Required visible part missing, wrong-owner or ambiguous: white_van/van_hub-1_0 (0 matches)",
+        "Required visible part missing, wrong-owner or ambiguous: white_van/van_tyre-1_1 (0 matches)",
+        "Required visible part missing, wrong-owner or ambiguous: white_van/van_hub-1_1 (0 matches)",
+        "Required visible part missing, wrong-owner or ambiguous: white_van/van_headlamp-1 (0 matches)",
+        "Required visible part missing, wrong-owner or ambiguous: black_car/car_tyre-1_0 (0 matches)",
+        "Required visible part missing, wrong-owner or ambiguous: black_car/car_hub-1_0 (0 matches)",
+        "Required visible part missing, wrong-owner or ambiguous: black_car/car_tyre-1_1 (0 matches)",
+        "Required visible part missing, wrong-owner or ambiguous: black_car/car_hub-1_1 (0 matches)",
+        "Required visible part missing, wrong-owner or ambiguous: black_car/car_tail_light-1 (0 matches)",
+        "Required visible part missing, wrong-owner or ambiguous: lumber_cart/cart_caster-1_-1 (0 matches)",
+        "Required visible part missing, wrong-owner or ambiguous: lumber_cart/cart_caster-1_1 (0 matches)",
+        "Required visible part missing, wrong-owner or ambiguous: lumber_cart/cart_caster1_-1 (0 matches)"
+      ]
+    }
+  ],
+  "interpretation": "Blender roundtrip passed; GLB camera shift/FOV and USD stable part identity gates failed. No workaround or pass waiver applied."
+}

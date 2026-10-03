@@ -1,0 +1,54 @@
+{
+  "gauge": [
+    [
+      0.0,
+      -1.0,
+      0.0,
+      3.0
+    ],
+    [
+      1.0,
+      0.0,
+      0.0,
+      -2.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0,
+      0.2
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "cameras": [
+    {
+      "index": 0,
+      "expected_patch_centroid_integer_output": [
+        295.5,
+        227.5
+      ],
+      "transparent_depth_pixels": 4560
+    },
+    {
+      "index": 1,
+      "expected_patch_centroid_integer_output": [
+        321.9888888888889,
+        220.90461538461537
+      ],
+      "transparent_depth_pixels": 0
+    }
+  ],
+  "scope": "Entirely generated synthetic fixture. File laser_sample.npy contains6analytic shell points, no acquired data.",
+  "materials": [
+    "author_neutral_emission",
+    "author_red_marker",
+    "author_blue_marker",
+    "author_transparent_sheet"
+  ],
+  "light": "author_light"
+}
